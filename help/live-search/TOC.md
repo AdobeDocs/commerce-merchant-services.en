@@ -1,5 +1,5 @@
 ---
-user-guide-title: [!DNL Live Search] User Guide
+user-guide-title: [!DNL Live Search] Guide
 user-guide-description: [!DNL Live Search] from Adobe Commerce delivers a lightning fast, super-relevant, and intuitive search experience.
 breadcrumb-title: [!DNL Live Search]
 ---
