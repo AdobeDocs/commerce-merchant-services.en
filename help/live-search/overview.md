@@ -6,7 +6,7 @@ description: [!DNL Live Search] from Adobe Commerce delivers a lightning fast, s
 
 [!DNL Live Search] from Adobe Commerce delivers a lightning fast, super-relevant, and intuitive search experience, and is available for Adobe Commerce at no additional charge. [!DNL Live Search] powered by [Adobe Sensei](https://www.adobe.com/sensei.html) uses artificial intelligence and machine-learning algorithms to perform a deep analysis of aggregated visitor data. This data, when combined with your Adobe Commerce catalog, results in highly engaging, relevant, and personalized shopping experiences. With a focus on speed, relevance, and ease of use, [!DNL Live Search] is a game changer for shoppers and merchants alike.
 
-- [Onboarding](onboarding.md)
+- [Onboarding](install.md)
   Complete the [!DNL Live Search] installation and configuration.
 
 - [Quick Tour](quick-tour.md)
