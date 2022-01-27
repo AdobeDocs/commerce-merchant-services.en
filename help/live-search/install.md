@@ -30,7 +30,7 @@ At this time, [!DNL Live Search] does not support the following:
 * [B2B for Adobe Commerce](https://magento.com/solutions/b2b)
 * [Customer groups](https://docs.magento.com/user-guide/customers/customer-groups.html)
 * [Custom price groups](https://docs.magento.com/user-guide/catalog/product-price-group.html)
-* Multiple inventory locations as used by [MCOM](https://docs.magento.com/user-guide/mcom/mcom-menu.html) or other OMS extensions
+* Multiple inventory locations as used by [MCOM](https://docs.magento.com/user-guide/mcom/mcom-menu.html) or other OMS extensions. Live Search does support [single-source](https://docs.magento.com/user-guide/catalog/inventory-sources.html) (physical) inventory locations with [multiple](https://docs.magento.com/user-guide/catalog/inventory-stock.html) (virtual) stock.)
 * [GraphQL](https://devdocs.magento.com/live-search/graphql-support.html) endpoint for catalog search / category
 * [PWA](https://developer.adobe.com/commerce/pwa-studio/)
 
