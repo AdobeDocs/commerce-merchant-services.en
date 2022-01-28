@@ -254,7 +254,7 @@ To uninstall [!DNL Live Search], refer to [Uninstall modules](https://devdocs.ma
 
 The following [!DNL Live Search] dependencies are captured by [!DNL Composer]:
 
-| Dependency |  Description|
+| Dependency | Description|
 |--- |--- |
 | Export modules | The following modules collect and sync catalog data:<br />`saas-export`<br />`module-bundle-product-exporter`<br />`module-catalog-data-exporter`<br />`module-catalog-inventory-data-exporter`<br />`module-catalog-url-rewrite-data-exporter`<br />`module-configurable-product-data-exporter`<br />`module-data-exporter`<br />`module-parent-product-data-exporter` |
 | `services-connector` | Required to configure your connection to Commerce Services. |
