@@ -8,12 +8,11 @@ breadcrumb-title: [!DNL Live Search]
 
 - [Overview](overview.md)
 - Getting Started {#getting-started}
-   - [Onboarding](onboarding.md)
-      - [Install](install.md)
-      - [Release Notes](release-notes.md)
+   - [Install](install.md)
+   - [Release Notes](release-notes.md)
 - Live Search in the Storefront{#live-search-storefront}
    - [Quick Tour](quick-tour.md)
-   - [Storefront Popover][storefront-popover.md]
+   - [Storefront Popover](storefront-popover.md)
 - Using Live Search {#using-live-search}
    - [Workspace](workspace.md)
    - [Performance](performance.md)
