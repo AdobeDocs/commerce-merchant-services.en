@@ -16,6 +16,8 @@ These release notes describe the latest versions of [!DNL Live Search] and inclu
 * Compatible with Adobe Commerce for Cloud (ECE): 2.4.x
 * Stability: Stable
 
+* FIX - [Custom price attribute](https://docs.magento.com/user-guide/stores/attributes-input-types.html) no longer returns an error when configured as a [facet]({% link live-search/facets-add.md %}).
+* FIX - Fixed issue that caused an error to occur when no [currency symbol](https://docs.magento.com/user-guide/stores/currency-symbols.html) (`data-currency-symbol`) is available.
 * FIX - [Storefront popover](storefront-popover.html) now shows the [Special Price](https://docs.magento.com/user-guide/catalog/product-price-special.html) (minimum final price) when available.
 
 ## [!DNL Live Search] 1.3.0
