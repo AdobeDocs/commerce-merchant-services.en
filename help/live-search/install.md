@@ -23,24 +23,32 @@ This topic provides instructions to do the following:
 * Adobe Commerce on prem (EE) : 2.4.x
 * Adobe Commerce on Cloud (ECE) : 2.4.x
 
-## Boundaries and thresholds {#boundaries*thresholds}
+## Boundaries and thresholds
 
-At this time, [!DNL Live Search] does not support the following:
+At this time, the Live Search category search / category API has the following supported limits and static boundaries:
 
-* [B2B for Adobe Commerce](https://magento.com/solutions/b2b)
-* [Customer groups](https://docs.magento.com/user-guide/customers/customer-groups.html)
-* [Custom price groups](https://docs.magento.com/user-guide/catalog/product-price-group.html)
-* Multiple inventory locations as used by [MCOM](https://docs.magento.com/user-guide/mcom/mcom-menu.html) or other OMS extensions. Live Search does support [single-source](https://docs.magento.com/user-guide/catalog/inventory-sources.html) (physical) inventory locations with [multiple](https://docs.magento.com/user-guide/catalog/inventory-stock.html) (virtual) stock.)
-* [GraphQL](https://devdocs.magento.com/live-search/graphql-support.html) endpoint for catalog search / category
-* [PWA](https://developer.adobe.com/commerce/pwa-studio/)
+### Indexing
 
-[!DNL Live Search] category search and API have the following supported limits and static boundaries that are inherent to the design of the software:
+- Indexes up to 300 product attributes per store view
+- Indexes only products from the Adobe Commerce database
+- Does not index CMS pages
 
-* Indexes up to 300 product attributes per store view
-* Indexes only products from the Adobe Commerce database
-* Does not index CMS pages
-* Does not support the storefront [Advanced (Form) Search](https://docs.magento.com/user-guide/catalog/search-advanced.html) module
-* Does not have access to the full taxonomy of the category tree, which makes some layered navigation search scenarios beyond reach
+### Functionality
+
+- Storefront [Advanced (Form) Search](https://docs.magento.com/user-guide/catalog/search-advanced.html) module
+- [Customer groups](https://docs.magento.com/user-guide/customers/customer-groups.html)
+- [Custom price groups](https://docs.magento.com/user-guide/catalog/product-price-group.html)
+- Multiple inventory locations as used by [MCOM](https://docs.magento.com/user-guide/mcom.html) or other OMS extensions
+- [Integrated B2B capabilities](https://business.adobe.com/products/magento/b2b-ecommerce.html)
+
+### Queries
+
+- Live Search does not have access to the full taxonomy of the category tree, which makes some layered navigation search scenarios beyond its reach.
+- Live Search uses a unique GraphQL endpoint for queries to support features such as intelligent faceting and search-as-you-type. Although similar to the [Magento GraphQL API](https://devdocs.magento.com/guides/v2.4/graphql), there are a few differences and some fields may not be fully compatible at this time.
+
+### Progressive Web Applications (PWA)
+
+- Live Search does not support [PWA](https://developer.adobe.com/commerce/pwa-studio/) at this time.
 
 ## Before you begin {#before-you-begin}
 
