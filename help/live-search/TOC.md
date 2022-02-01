@@ -10,10 +10,10 @@ breadcrumb-title: [!DNL Live Search]
 - Getting Started {#getting-started}
    - [Install](install.md)
    - [Release Notes](release-notes.md)
-- Live Search in the Storefront{#live-search-storefront}
+- Live Search Storefront{#live-search-storefront}
    - [Quick Tour](quick-tour.md)
    - [Storefront Popover](storefront-popover.md)
-- Using Live Search {#using-live-search}
+- Live Search Admin{#live-search-admin}
    - [Workspace](workspace.md)
    - [Performance](performance.md)
    - Facets {#facets}
