@@ -8,18 +8,22 @@ breadcrumb-title: Payment Services Guide
 
 - [Payment Services Guide](guide-overview.md)
 - [Payment Services overview](overview.md)
-- Onboard Payment Services
+- [Release Notes](release-notes.md) 
+- Onboard Payment Services {#get-started}
   - [Onboarding overview](onboard.md)
   - [Install the Payment Services extension](install.md)
+  - [Connect the service](connect.md)
   - [Set up testing sandbox](sandbox.md)
-  - [Enable Payment Services](enable.md)
-- [Configure Payment Services](configure.md)
+  - [Enable for production](production.md)
+- Configure Payment Services {#configure}
+  - [Configure in the Admin](configure-admin.md)
+  - [Command line configuration](configure-cli.md)
 - [Test and validate](test-validate.md)
 - [Create an Order](create-order.md)
-- Financial reporting
-  - [Payouts report](payouts-report.md)
-  - [Order payments status report](order-status-report.md)
-- Manage payments
+- Financial reporting {#reporting}
+  - [Payouts report](payouts.md)
+  - [Order payments status report](order-payment-status.md)
+- Manage payments {#manage}
   - [Refunds](refunds.md)
   - [Voids](voids.md)
-- [Security and compliance](security-compliance.md)
+- [Security and compliance](security.md)
