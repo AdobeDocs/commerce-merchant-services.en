@@ -6,6 +6,12 @@ description: Learn how to install, update, and uninstall [!DNL Live Search] from
 
 [!DNL Live Search] is a set of standalone [packages](#live-search-packages) that replaces standard Magento Open Source and Adobe Commerce search capabilities. The [!DNL Live Search] module is installed from the command line of the server and connects to your Adobe Commerce installation as a [service](https://docs.magento.com/user-guide/system/saas.html). When the process is complete, [!DNL Live Search] appears on the _Marketing_ menu under _SEO & Search_ in the [!DNL Commerce] Admin.
 
+The Adobe Commerce side includes hosting the search Admin, syncing catalog data, and running the query service.
+
+![Live Search architecture diagram](/assets/architecture-diagram.svg?lang=en)
+
+After the [!DNL Live Search] module (with catalog modules as dependencies) is installed and configured, [!DNL Commerce] begins sharing search and catalog data with SaaS services. At this point, Admin users can set up, customize, and manage search facets, synonyms, and merchandising rules.
+
 This topic provides instructions to do the following:
 
 * [Install [!DNL Live Search]](#before-you-begin) (Methods 1 and 2)
