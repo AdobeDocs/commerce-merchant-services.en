@@ -18,6 +18,7 @@ breadcrumb-title: Payment Services Guide
 - Configure Payment Services {#configure}
   - [Configure in the Admin](configure-admin.md)
   - [Command line configuration](configure-cli.md)
+  - [Payment options](payments-options.md)
 - [Test and validate](test-validate.md)
 - [Create an Order](create-order.md)
 - Financial reporting {#reporting}

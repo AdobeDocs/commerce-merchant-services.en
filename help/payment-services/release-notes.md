@@ -22,7 +22,7 @@ These release notes describe the initial release of Payment Services and include
 
 * ![New](../assets/new.svg)<!-- Issue PAY-780 -->Shoppers can check out with Payment Services or you can take the order over the phone and [create an entire order](create-order.md) in the Admin for them.
 
-* ![New](../assets/new.svg)<!-- Issue PAY-1856 -->Payment Services offer merchants comprehensive [reporting](financial-reporting.md) so that you can get a clear view of your store orders and payments.
+* ![New](../assets/new.svg)<!-- Issue PAY-1856 -->Payment Services offer merchants comprehensive reporting so that you can get a clear view of your store orders and payments.
 
 * ![New](../assets/new.svg)<!-- Issue PAY-311 -->Payment Services supports tiered pricing (based on TPV) adapted to any merchant.
 

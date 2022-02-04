@@ -28,9 +28,9 @@ Payment Services is:
 
 Payment Services is your one-stop-shop for online checkout (from settlement and refunds to getting paid). It provides powerful tools to give you the insight and control needed for creating the best experience for your buyers.
 
-* [**Onboarding**](onboard-payments.md)---The process guides you through commercial signup, technical configuration, entitlements, sandbox environment configuration, and live payment enablement.
+* [**Onboarding**](onboard.md)---The process guides you through commercial signup, technical configuration, entitlements, sandbox environment configuration, and live payment enablement.
 * [**Payment checkout**](configure-admin.md)---Use pertinent local and region-specific payment methods to best serve your customers.
-* [**Cash flow management financial reporting**](financial-reporting.md)---Synchronize payment details with orders to get full transparency to the processed volume, payment balance, and detailed transaction-level reporting for financial reconciliation.
+* **Cash flow management financial reporting**---Synchronize [payment details](order-payment-status.md) with orders to get full transparency to the processed volume, payment balance, and detailed [transaction-level reporting](payouts.md) for financial reconciliation.
 * **Transparent pricing**---Pricing is clear and upfront; what you see is what you get.
 
 ## Availability
@@ -56,4 +56,4 @@ Onboarding and setting up Payment Services is completed in just a few steps:
 1. Complete merchant onboarding to enable live payments for your websites.
 1. Activate Payment Services in live mode to begin processing live payments.
 
-To get the full instructions and start the onboarding process, see [Onboard Payment Services](onboard-payments.md).
+To get the full instructions and start the onboarding process, see [Onboard Payment Services](onboard.md).

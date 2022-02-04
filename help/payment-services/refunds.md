@@ -1,6 +1,6 @@
 ---
 title: Refunds
-Description: Create refunds for Payment Services orders in the Admin as part of the credit memo process.
+description: Create refunds for Payment Services orders in the Admin as part of the credit memo process.
 ---
 # Refunds
 

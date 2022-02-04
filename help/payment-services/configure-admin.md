@@ -1,7 +1,7 @@
 ---
 title: Configure in the Admin
-Description: After installation, you can configure Payment Services in the Admin.
-role: Administrator, User
+description: After installation, you can configure Payment Services in the Admin.
+role: Admin, User
 level: Intermediate
 ---
 # Configure in the Admin
@@ -53,7 +53,7 @@ See [Payments options](payments-options.md#paypal-smart-buttons) for more inform
 1. Expand the _Recommended Solutions_ section.
 1. In the _Payment Services_ section, expand the _Credit Card Fields_ section.
 1. For **Title**, enter text (if needed) to change the name of the payment method as shown during checkout.
-1. To [set the payment action](onboard-payments.md#set-payment-services-as-payment-method), select **Authorize** or **Authorize and Capture**.
+1. To [set the payment action](production.md#set-payment-services-as-payment-method), select **Authorize** or **Authorize and Capture**.
 1. For **Debug Mode**, choose `Yes` to enable debug mode (or `No` to disable it).
 1. Click **Save Config** to save your changes.
 
@@ -80,7 +80,7 @@ You can enable and configure the PayPal Smart Buttons payment options within the
 1. Expand the _Recommended Solutions_ section.
 1. In the _Payment Services_ section, expand the _PayPal Smart Buttons_ section.
 1. To change the name of the payment method as shown during checkout, edit the _Title_ field.
-1. To [set the payment action](onboard-payments.md#set-payment-services-as-payment-method), select **Authorize** or **Authorize and Capture**.
+1. To [set the payment action](production.md#set-payment-services-as-payment-method), select **Authorize** or **Authorize and Capture**.
 1. To disable the [Pay Later messaging](payments-options.md#pay-later-button) (if desired), select **No** for _Display Pay Later Message_.
 1. To enable debug mode, select **Yes** for the _Debug Mode_ (**No** disables it).
 1. To save your changes, click **Save Config** .

@@ -14,7 +14,7 @@ To get started using Payment Services for Adobe Commerce and Magento Open Source
 
 This onboarding flow diagram shows the general process for onboarding Payment Services.
 
-After you complete onboarding for sandbox or live payments, [financial reporting](financial-reporting.md) is accessible from Payment Services in the Admin.
+After you complete onboarding for sandbox or live payments, financial reporting is accessible from Payment Services in the Admin.
 
 If both sandbox and live payments are onboarded and enabled, you can easily switch between those modes from the Payment Services home.
 
@@ -48,4 +48,4 @@ To learn how to create or access your API keys, see [API credentials](#obtain-ap
 
 ## Troubleshooting
 
-// add articles from KB
+<!-- add articles from KB -->

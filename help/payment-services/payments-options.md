@@ -1,8 +1,8 @@
 ---
-title: Payments options
+title: Payment options
 description: Set the payment options to customize the methods available for your store customers.
 ---
-# Payments options
+# Payment options
 
 With Adobe Commerce and Magento Open Source Payment Services, you have multiple payment options available to you---all configurable in the Admin (in **Stores** > _Settings_ > **Configuration** > **Sales** >  **Payment Methods** > _Recommended Solutions_).
 

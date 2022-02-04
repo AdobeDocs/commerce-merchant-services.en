@@ -18,7 +18,7 @@ You can download Order payment status transactions in a .csv file format for use
 
 >[!NOTE]
 >
->You cannot view financial reports if you have not [onboarded and activated Live mode](onboard-payments.md#activate-live-payments) for Payment Services.
+>You cannot view financial reports if you have not [onboarded and activated Live mode](production.md#enable-live-payments) for Payment Services.
 
 ## Data used in the report
 
