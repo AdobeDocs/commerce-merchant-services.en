@@ -28,7 +28,7 @@ To complete sandbox onboarding:
    1. In the _Sandbox Accounts_ section, click the three dots in the _Manage accounts_ column for the sandbox account you created.
    1. Click **View/edit account**.
 
-      ![PayPal - View/edit sandbox account](payment-services/assets/onboarding-viewedit-sandbox.png)
+      ![PayPal - View/edit sandbox account](assets/onboarding-viewedit-sandbox.png)
 
    1. Copy and save the Email ID and System-Generated Password for future use.
 

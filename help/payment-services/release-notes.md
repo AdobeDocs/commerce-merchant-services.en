@@ -18,7 +18,7 @@ These release notes describe the initial release of Payment Services and include
 
 * ![New](../assets/new.svg)<!-- Issue PAY-1986 -->Payment Services supports a [sandbox account](onboard.md#enable-sandbox-testing) that allows merchants to assess the extension in test mode.
 
-* ![New](../assets/new.svg)<!-- Issue PAY-666 -->Merchants can [configure Payment Services](configure-admin.html) extension with basic payment behaviors (such as Auth-capture together and switching between sandbox or production environments).
+* ![New](../assets/new.svg)<!-- Issue PAY-666 -->Merchants can [configure Payment Services](configure-admin.md) extension with basic payment behaviors (such as Auth-capture together and switching between sandbox or production environments).
 
 * ![New](../assets/new.svg)<!-- Issue PAY-780 -->Shoppers can check out with Payment Services or you can take the order over the phone and [create an entire order](create-order.md) in the Admin for them.
 

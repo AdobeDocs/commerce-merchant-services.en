@@ -34,7 +34,7 @@ To learn how to create or access your API keys, see [API credentials](#obtain-ap
 
 1. [Install Payment Services](install.md#get-payment-services).
 1. [Obtain API credentials](connect.md#obtain-api-credentials).
-1. [Connect your instance](Connect.md#configure-commerce-services) to Commerce Services. This connect must be completed only once per Commerce instance.
+1. [Connect your instance](connect.md#configure-commerce-services) to Commerce Services. This connect must be completed only once per Commerce instance.
 1. [Set up the sandbox service](sandbox.md#enable-sandbox-testing) (or, alternatively, proceed to [enabling live payments](sandbox.md#enable-live-payments) if you've tested functionality in another environment) to set up a test PayPal payment processing account.
 1. [Set Payment Services as your payment method](production.md#set-payment-services-as-payment-method), in sandbox mode, to start processing test payments.
 1. [Complete merchant onboarding](production.md#complete-merchant-onboarding) to enable live payments for your Commerce websites.

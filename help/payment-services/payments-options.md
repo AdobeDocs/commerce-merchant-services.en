@@ -87,4 +87,4 @@ When a customer enters the checkout flow from the product page, the checkout pag
 
 ## Security
 
-See [PCI compliance](pci.md) for more information.
+See [PCI compliance](security.md#pci-compliance) for more information.
