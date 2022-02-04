@@ -82,59 +82,59 @@ The Payouts view shows extensive info for each transaction shown in the grid.
 
 Payout reports include the following information.
 
-Column | Description
+| Column | Description
 ------------ | --------------------
-Provider | Payment provider
-Provider trans | Transaction ID
-Trans date | Date and time transaction was initiated
-Type | Transaction type---*PAYMENT*, *AUTH*, *BONUS*, *CHARGEBACK*, *CORRECTION*, *CURRENCY_CONVERSATION*, *DEPOSIT*, *DISBURSEMENT*, *DISPUTE*, *FEES*, *HOLD*, *HOLD_RELEASE*, *INCENTIVES*, *OTHERS*, *RECOUP*, *REFUND*, *REVERSAL*, *WITHDRAWAL* <br> <br>See [Transaction types](#transaction-types) for more information.
-Status | Current status of the transaction---*SUCCESS*, *DENIED*, *PENDING*
-Code | Transaction code that indicates either Credit (*CR*) or Debit (*DR*)
-Reference ID | Original transaction ID for which this event is related
-Invoice | Invoice ID (one per order) of the transaction
-Commerce order | Commerce order ID <br> <br>To see related [order info](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"}, click the ID.
-Commerce trans | Commerce transaction ID <br> <br>To see related [transaction info](https://docs.magento.com/user-guide/sales/transactions.html){target="_blank"}, click the ID.
-Pay method | Credit card type---*BANK*, *PAYPAL*, *CREDIT_CARD*---and associated card provider (such as *Visa* or *MasterCard*)
-Trans amt | Amount of the transaction
-Cur | Currency unit for transaction amount
-Pending | Amount yet to be disbursed
-Cur | Currency unit for the pending amount
-Seller amt | Amount of funds transferred to or from a customer <br> <br>Funds moving out of the seller account show a dash (-) prefix.
-Cur | Currency unit for the seller amount
-Partner fee | Partner fees associated with the transaction <br> <br>Funds moving out of the partner fee account show a dash (-) prefix.
-Cur | Currency unit for the partner fee
-Prov fees | Fees associated with the transaction <br> <br>Funds moving out of the provider's fee account show a dash (-) prefix.
-Cur | Currency unit for the provider fee
-Fee % | Percentage of the transaction amount charged as a fee
-Fixed fee | Fixed provider fee amount
-Chbk fee | Chargeback fee associated with the transaction <br> <br>A dash (-) prefix indicates that the chargeback fee was reversed.
-Cur | Currency unit for the chargeback fee
-Hold amt | Amount put on hold or released from hold <br> <br>A dash (-) prefix indicates that on-hold funds are being released.
-Cur | Currency unit for the hold amount
-Recoup amt | Amount recouped from the recoup account <br> <br>Funds moving out of the recoup account show a dash (-) prefix.
-Cur | Currency unit for the recoup amount
+| Provider | Payment provider |
+| Provider trans | Transaction ID |
+| Trans date | Date and time transaction was initiated |
+| Type | Transaction type---*PAYMENT*, *AUTH*, *BONUS*, *CHARGEBACK*, *CORRECTION*, *CURRENCY_CONVERSATION*, *DEPOSIT*, *DISBURSEMENT*, *DISPUTE*, *FEES*, *HOLD*, *HOLD_RELEASE*, *INCENTIVES*, *OTHERS*, *RECOUP*, *REFUND*, *REVERSAL*, *WITHDRAWAL* <br> <br>See [Transaction types](#transaction-types) for more information. |
+| Status | Current status of the transaction---*SUCCESS*, *DENIED*, *PENDING* |
+| Code | Transaction code that indicates either Credit (*CR*) or Debit (*DR*) |
+| Reference ID | Original transaction ID for which this event is related |
+| Invoice | Invoice ID (one per order) of the transaction |
+| Commerce order | Commerce order ID <br> <br>To see related [order info](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"}, click the ID. |
+| Commerce trans | Commerce transaction ID <br> <br>To see related [transaction info](https://docs.magento.com/user-guide/sales/transactions.html){target="_blank"}, click the ID. |
+| Pay method | Credit card type---*BANK*, *PAYPAL*, *CREDIT_CARD*---and associated card provider (such as *Visa* or *MasterCard*) |
+| Trans amt | Amount of the transaction |
+| Cur | Currency unit for transaction amount |
+| Pending | Amount yet to be disbursed |
+| Cur | Currency unit for the pending amount |
+| Seller amt | Amount of funds transferred to or from a customer <br> <br>Funds moving out of the seller account show a dash (-) prefix. |
+| Cur | Currency unit for the seller amount |
+| Partner fee | Partner fees associated with the transaction <br> <br>Funds moving out of the partner fee account show a dash (-) prefix. |
+| Cur | Currency unit for the partner fee |
+| Prov fees | Fees associated with the transaction <br> <br>Funds moving out of the provider's fee account show a dash (-) prefix. |
+| Cur | Currency unit for the provider fee |
+| Fee % | Percentage of the transaction amount charged as a fee |
+| Fixed fee | Fixed provider fee amount |
+| Chbk fee | Chargeback fee associated with the transaction <br> <br>A dash (-) prefix indicates that the chargeback fee was reversed. |
+| Cur | Currency unit for the chargeback fee |
+| Hold amt | Amount put on hold or released from hold <br> <br>A dash (-) prefix indicates that on-hold funds are being released. |
+| Cur | Currency unit for the hold amount |
+| Recoup amt | Amount recouped from the recoup account <br> <br>Funds moving out of the recoup account show a dash (-) prefix. |
+| Cur | Currency unit for the recoup amount |
 
 ### Transaction types
 
 These transaction types may be noted in the payout transactions.
 
-Report | Description
------------- | --------------------
-PAYMENT | Money moved between a buyer and a seller for an order
-AUTH | Authorization and authorization void transactions
-BONUS | --
-CHARGEBACK | Chargeback fee and chargeback fee reversal transactions
-CORRECTION | --
-CURRENCY_CONVERSION | --
-DEPOSIT | --
-DISBURSEMENT | --
-DISPUTE | --
-FEES | Partner fees, payment fees, and fee reversal transactions
-HOLD | --
-HOLD_RELEASE | --
-INCENTIVES | --
-OTHERS | --
-RECOUP | Recoups from bank or loss accounts
-REFUND | --
-REVERSAL | --
-WITHDRAWAL | --
+| Report | Description |
+| ------------ | -------------------- |
+| PAYMENT | Money moved between a buyer and a seller for an order |
+| AUTH | Authorization and authorization void transactions |
+| BONUS | -- |
+| CHARGEBACK | Chargeback fee and chargeback fee reversal transactions |
+| CORRECTION | -- |
+| CURRENCY_CONVERSION | -- |
+| DEPOSIT | -- |
+| DISBURSEMENT | -- |
+| DISPUTE | -- |
+| FEES | Partner fees, payment fees, and fee reversal transactions |
+| HOLD | -- |
+| HOLD_RELEASE | -- |
+| INCENTIVES | -- |
+| OTHERS | -- |
+| RECOUP | Recoups from bank or loss accounts |
+| REFUND | -- |
+| REVERSAL | -- |
+| WITHDRAWAL | -- |

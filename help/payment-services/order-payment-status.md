@@ -119,15 +119,15 @@ Your order payment statuses are downloaded in a .csv format.
 
 These order payment status timeframes are currently available in Payment Services.
 
-Report | Description
------------- | --------------------
-Yesterday | Available from the Order payment status dates selector, this shows information for the prior date.
-Today | Available from the Order payment status dates selector, this shows information for the current day.
-Last 7 days | Available from the Order payment status dates selector, this shows information for the last seven days.
-Last 30 days | Available from the Order payment status dates selector and by default in the Order payment statuses view, this shows information for the last 30 days.
-Last 90 days | Available from the Order payment status dates selector, this shows information for the last 90 days.
-Year to date | Available from the Order payment status dates selector, this shows information for the the entire year to date.
-Custom range | Available from the Order payment status dates selector, this can be filtered to show a custom date range.
+| Report       | Description          |
+| ------------ | -------------------- |
+| Yesterday | Available from the Order payment status dates selector, this shows information for the prior date. |
+| | Today | Available from the Order payment status dates selector, this shows information for the current day. |
+| Last 7 days | Available from the Order payment status dates selector, this shows information for the last seven days. |
+| Last 30 days | Available from the Order payment status dates selector and by default in the Order payment statuses view, this shows information for the last 30 days. |
+| Last 90 days | Available from the Order payment status dates selector, this shows information for the last 90 days. |
+| Year to date | Available from the Order payment status dates selector, this shows information for the the entire year to date. |
+| Custom range | Available from the Order payment status dates selector, this can be filtered to show a custom date range. |
 -->
 
 ## Order payment status information
@@ -138,24 +138,24 @@ The Order payment status view shows extensive info for each status shown in the 
 
 Order payment status reports include the following information.
 
-Column | Description
------------- | --------------------
-Order ID | Commerce order ID<br> <br>To see related [order info](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"}, click the ID.
-Order Date | Order date timestamp
-Authorized Date | Date timestamp of payment authorization
-Order Status | Current Commerce [order status](https://docs.magento.com/user-guide/sales/order-status.html){target="_blank"}
-Invoiced | Invoice status of order---*No*, *Partial*, or *Yes*
-Shipped | Shipping status of order---*No*, *Partial*, or *Yes*
-Order Amt | Grand total amount of the order
-Cur | Currency type of order
-Pay Status | Status of payment for a specific order
-Paid Amt | Amount paid on an order
-Cur| Currency type of the amount paid on an order
-Refund Status | Status of a refund on an order (such as information from returns, RMAs, and credit memos)---   *Requires refund*, *Refund requested*, *Refunded*, *Refund failed*, or *Voided*
-Refund Amount | Total of refunded amount for an order
-Cur | Currency type of the amount refunded for an order
-Dispute Status | Status of any dispute on an order (information from disputes and chargebacks)---*New*, *Representment*, *Accepted*, *Pre-arbitration received*, *Arbitration*, or *Arbitration received*
-Payment Method | Payment method used in the Magento transaction for an order
-Website | Website from which the order was placed
-Store | Store from which the order was placed
-Store View | Store view from which the order was placed
+| Column | Description |
+| ------------ | -------------------- |
+| Order ID | Commerce order ID<br> <br>To see related [order info](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"}, click the ID. |
+| Order Date | Order date timestamp |
+| Authorized Date | Date timestamp of payment authorization |
+| Order Status | Current Commerce [order status](https://docs.magento.com/user-guide/sales/order-status.html){target="_blank"} |
+| Invoiced | Invoice status of order---*No*, *Partial*, or *Yes* |
+| Shipped | Shipping status of order---*No*, *Partial*, or *Yes* |
+| Order Amt | Grand total amount of the order |
+| Cur | Currency type of order |
+| Pay Status | Status of payment for a specific order |
+| Paid Amt | Amount paid on an order |
+| Cur| Currency type of the amount paid on an order |
+| Refund Status | Status of a refund on an order (such as information from returns, RMAs, and credit memos)---   *Requires refund*, *Refund requested*, *Refunded*, *Refund failed*, or *Voided* |
+| Refund Amount | Total of refunded amount for an order |
+| Cur | Currency type of the amount refunded for an order |
+| Dispute Status | Status of any dispute on an order (information from disputes and chargebacks)---*New*, *Representment*, *Accepted*, *Pre-arbitration received*, *Arbitration*, or *Arbitration received* |
+| Payment Method | Payment method used in the Commerce transaction for an order |
+| Website | Website from which the order was placed |
+| Store | Store from which the order was placed |
+| Store View | Store view from which the order was placed |
