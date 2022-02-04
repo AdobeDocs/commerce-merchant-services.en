@@ -1,6 +1,6 @@
 ---
 title: Onboard Payment Services
-description: Complete a few onboarding steps to connect your instance with Payment Services functionality.
+description: Connect your instance with Payment Services functionality by completing a few onboarding steps.
 role: User
 content-type: Context
 feature: Payments
@@ -8,7 +8,7 @@ level: Intermediate
 ---
 # Onboard Payment Services
 
-To get started using Payment Services for Adobe Commerce and Magento Open Source you must complete a few onboarding steps to connect your instance with our payments functionality.
+To get started using Payment Services for Adobe Commerce and Magento Open Source, you must complete a few onboarding steps for connecting your instance with the payments functionality.
 
 ## Onboarding flow
 
@@ -28,25 +28,25 @@ In order to use Payment Services, you must have the following available for your
 * Services ID module
 * API keys
 
-The Services Connector and Services ID modules will be automatically installed during the [installation of Payment Services](install.md). When installation is complete, you will see a new section in the Admin---in **Stores** > _Settings_ > **Configuration** > **Services**---called Commerce Services Connector.
+The Services Connector and Services ID modules are automatically installed during the [installation of Payment Services](install.md). When installation is complete, you can see a new section in the Admin---in **Stores** > _Settings_ > **Configuration** > **Services**---called Commerce Services Connector.
 
-See [API credentials](#obtain-api-credentials) to learn how to create or access your API keys.
+To learn how to create or access your API keys, see [API credentials](#obtain-api-credentials).
 
 ## Onboarding steps
 
 1. [Install Payment Services](install.md#get-payment-services).
 1. [Obtain API credentials](connect.md#obtain-api-credentials).
-1. [Connect your instance](Connect.md#configure-commerce-services) to Commerce Services. This only needs to be completed once per Commerce instance.
+1. [Connect your instance](Connect.md#configure-commerce-services) to Commerce Services. This connect must be completed only once per Commerce instance.
 1. [Set up the sandbox service](sandbox.md#enable-sandbox-testing) (or, alternatively, proceed to [enabling live payments](sandbox.md#enable-live-payments) if you've tested functionality in another environment) to set up a test PayPal payment processing account.
 1. [Set Payment Services as your payment method](production.md#set-payment-services-as-payment-method), in sandbox mode, to start processing test payments.
-1. [Complete merchant onboarding](production.md#complete-merchant-onboarding) to enable live payments for your Commerce website(s).
+1. [Complete merchant onboarding](production.md#complete-merchant-onboarding) to enable live payments for your Commerce websites.
 1. [Request payments entitlement](production.md#request-payments-entitlement-from-adobe) to enable live onboarding.
 1. [Enable Payment Services in live mode](production.md#enable-live-payments) to begin processing live payments.
 1. Test Payments, in both [sandbox](sandbox.md#test-in-sandbox-environment) and [production](production.md#test-in-production) environments.
 
 >[!NOTE]
 >
->If you do not configure your Commerce Services in the Admin (step 3) you cannot set up sandbox or live payments.
+>If you do not configure your Commerce Services in the Admin (step 3), you cannot set up sandbox or live payments.
 
 ## Troubleshooting
 

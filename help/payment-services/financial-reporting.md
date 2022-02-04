@@ -11,4 +11,4 @@ Payment Services for Adobe Commerce and Magento Open Source offers you comprehen
 
 ![Financial reports view](assets/reports-view.png )
 
-Our cash flow management reports---Payouts and Order payment status---synchronize payment details with order info to give you full transparency of processed volume, payment balance, and detailed reporting on a transaction level for financial reconciliation.
+The cash flow management reports---Payouts and Order payment status---synchronize payment details with order info to give you full transparency of processed volume, payment balance, and detailed reporting on a transaction level for financial reconciliation.

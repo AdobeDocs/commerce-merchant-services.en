@@ -18,7 +18,7 @@ See [Issuing a Credit Memo](https://docs.magento.com/user-guide/sales/credit-mem
 
 >[!NOTE]
 >
->If you attempt to partially refund an order for more than the remaining order amount (the original amount minus the total of already created refunds) or issue a refund for an amount greater than the full order amount, for either PayPal or credit card-processed orders, you will receive an error.
+>An error occurs for PayPal or credit card-processed orders if you attempt to partially refund an order for more than the remaining order amount (original amount minus the total of existing refunds), or if you issue a refund for an amount greater than the full order amount.
 
 The Payment Action setting in your Payment Settings configuration---Either `Authorize` or `Authorize and Capture`---determines the [basic refund workflow](https://docs.magento.com/user-guide/sales/credit-memos.html#refund-workflow){target="_blank"} for orders.
 

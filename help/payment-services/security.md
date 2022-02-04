@@ -7,7 +7,7 @@ Security is of the utmost concern in Payment Services and no private or Payment 
 
 ## Commerce security
 
-Adobe Commerce and Magento Open Source provide support for a number of security features. 
+Adobe Commerce and Magento Open Source include support for several security features. 
 
 See [Security](https://docs.magento.com/user-guide/stores/security.html){target="_blank"} in the core user guide to review security best practices, and learn how to manage Admin sessions and credentials, implement CAPTCHA, and manage website restrictions.
 
@@ -27,6 +27,6 @@ With Credit Card Fields, no PCI-regulated data is passed across your services. Y
 
 With PayPal Smart Buttons, no PCI-regulated data is passed across your services. You don't have to store or maintain that data, which vastly reduces PCI compliance concerns.
 
-For security reasons, PayPal does not pass the billing address during checkout---country, email, and name is the only billing information utilized. You can optionally enable your site's PayPal checkout to return the complete billing address by contacting PayPal and completing a vetting process.
+For security reasons, PayPal does not pass the billing address during checkout---country, email, and name is the only billing information used. You can optionally enable your site's PayPal checkout to return the complete billing address by contacting PayPal and completing a vetting process.
 
 PayPal also has integrated fraud protection that uses machine learning to help you fight fraud. See PayPal's [Seller Protection documentation](https://www.paypal.com/us/webapps/mpp/security/seller-protection) for more information.

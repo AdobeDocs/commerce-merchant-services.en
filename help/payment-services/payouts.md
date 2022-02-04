@@ -31,7 +31,7 @@ In the Payouts report view, you can select the data source---_Live_ or _Sandbox_
 
 ![Data sources selection](assets/datasource.png)
 
-If _Live_ is the selected data source, you will see report information for your live store(s). If _Sandbox_ is the selected data source, you will see report information for your Sandbox environment.
+If _Live_ is the selected data source, you can see report information for your live stores. If _Sandbox_ is the selected data source, you can see report information for your Sandbox environment.
 
 Data source selections work as follows:
 
@@ -45,7 +45,7 @@ To select the data source for your Order Payment Status report:
 1. Click the **Data source** dropdown.
 1. Select _Live_ or _Sandbox_.
 
-   The report results will regenerate based on the data source selected.
+   The report results regenerate based on the data source selected.
 
 ## View transactions
 
@@ -66,7 +66,7 @@ From the Payouts view, you can customize the timeframe for the payout transactio
 
 ## Download transactions
 
-You can download a .csv file with all of the transactions visible in the Payouts view grid.
+You can download a .csv file containing all the transactions visible in the Payouts view grid.
 
 1. On the _Admin_ sidebar, go to **Sales** > **Payment Services** > **Payouts**.
 1. [Customize the date range timeframe for your transactions](#customize-transactions-timeframe).
@@ -92,9 +92,9 @@ Status | Current status of the transaction---*SUCCESS*, *DENIED*, *PENDING*
 Code | Transaction code that indicates either Credit (*CR*) or Debit (*DR*)
 Reference ID | Original transaction ID for which this event is related
 Invoice | Invoice ID (one per order) of the transaction
-Commerce order | Commerce order ID <br> <br>Click the ID to see related [order info](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"}.
-Commerce trans | Commerce transaction ID <br> <br>Click the ID to see related [transaction info](https://docs.magento.com/user-guide/sales/transactions.html){target="_blank"}.
-Pay method | Credit card type---*BANK*, *PAYPAL*, *CREDIT_CARD*---and associated card provider (*Visa*, *MasterCard*, etc.)
+Commerce order | Commerce order ID <br> <br>To see related [order info](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"}, click the ID.
+Commerce trans | Commerce transaction ID <br> <br>To see related [transaction info](https://docs.magento.com/user-guide/sales/transactions.html){target="_blank"}, click the ID.
+Pay method | Credit card type---*BANK*, *PAYPAL*, *CREDIT_CARD*---and associated card provider (such as *Visa* or *MasterCard*)
 Trans amt | Amount of the transaction
 Cur | Currency unit for transaction amount
 Pending | Amount yet to be disbursed
@@ -107,9 +107,9 @@ Prov fees | Fees associated with the transaction <br> <br>Funds moving out of th
 Cur | Currency unit for the provider fee
 Fee % | Percentage of the transaction amount charged as a fee
 Fixed fee | Fixed provider fee amount
-Chbk fee | Chargeback fee associated with the transaction <br> <br>A dash (-) prefix indicates the chargeback fee was reversed.
+Chbk fee | Chargeback fee associated with the transaction <br> <br>A dash (-) prefix indicates that the chargeback fee was reversed.
 Cur | Currency unit for the chargeback fee
-Hold amt | Amount put on hold or released from hold <br> <br>A dash (-) prefix indicates on hold funds are being released.
+Hold amt | Amount put on hold or released from hold <br> <br>A dash (-) prefix indicates that on-hold funds are being released.
 Cur | Currency unit for the hold amount
 Recoup amt | Amount recouped from the recoup account <br> <br>Funds moving out of the recoup account show a dash (-) prefix.
 Cur | Currency unit for the recoup amount

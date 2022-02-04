@@ -10,12 +10,12 @@ This guide is intended for administrators of Adobe Commerce and Magento Open Sou
 
 Payment Services has two areas for administrators:
 
-* The Admin console: Use this area for access to the configuration UI and reporting.
-* The command line interface: 
+* The Admin: Use this area for access to the configuration UI and reporting.
+* The command-line interface: 
 
 This guide covers:
 
-* All Payment Services-specific tasks that are done in the Admin console.
+* All Payment Services-specific tasks that are done in the Admin.
 * All Payment Services-specific tasks that are done using the Commerce command line
 
 This guide does not cover the core capabilities of Adobe Commerce and Magento Open Source.
@@ -30,4 +30,4 @@ This guide does not cover the core capabilities of Adobe Commerce and Magento Op
 
 If you need information or have questions that are not covered in this guide, use the following resources:
 
-* [Help center](https://support.magento.com/hc/en-us){target="_blank"}---See our Payment Services-related knowledgebase and [submit Support tickets](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket){target="_blank"} for extra help.
+* [Help center](https://support.magento.com/hc/en-us){target="_blank"}---See the Payment Services-related knowledgebase articles and [submit Support tickets](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket){target="_blank"} for extra help.

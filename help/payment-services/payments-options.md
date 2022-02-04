@@ -22,7 +22,7 @@ You can configure Credit Card Fields in the Admin. See [Configuring Payment Serv
 
 ## PayPal Smart Buttons
 
-PayPal Smart Buttons, which utilizes PayPal to complete a purchase, stores your shopper's shipping address, billing addresses, and payment details for later use. Shoppers can use any payment method previously stored or offered by PayPal.
+PayPal Smart Buttons, which use PayPal to complete a purchase, stores your shopper's shipping address, billing addresses, and payment details for later use. Shoppers can use any payment method previously stored or offered by PayPal.
 
 You can configure PayPal Smart Buttons in the Admin. See [Configuring Payment Services](configure-admin.md#configure-paypal-smart-buttons) for more information.
 
@@ -40,27 +40,27 @@ The Venmo button is visible from the product page, mini-cart, shopping cart, and
 
 ### Pay Later button
 
-Offer your customers short-term, interest-free payments and other financing options so that they can buy now and pay later with the Pay Later button.
+Offer your customers short-term, interest-free payments, and other financing options so that they can buy now and pay later with the Pay Later button.
 
 The Pay Later button is visible from the product page, mini-cart, shopping cart, and checkout views.
 
 There are two payment options with the Pay Later button:
 
-* **Pay in 4**---Customers can pay their order balance in four interest-free payments (every two weeks) after an initial down payment. See the [Pay in 4 documentation](https://www.paypal.com/us/for-you/pay-in-4) for more information.
+* **Pay in 4**---Customers can pay their order balance in four interest-free payments (every two weeks) after an initial down payment. See the [Pay in 4 documentation](https://www.paypal.com/us/digital-wallet/ways-to-pay/buy-now-pay-later) for more information.
 * **PayPal Credit**---Customers can pay their order balance in full over six months, interest-free. See the [PayPal Credit documentation](https://www.paypal.com/us/webapps/mpp/paypal-credit) for more information.
 
 ### Pay Now button
 
 The Pay Now button is visible in the PayPal popup window when a customer clicks a payment button on the payments screen.
 
-If the final order amount is not yet known (such as when we do not yet have shipping address information) and the customer is in the process of checking out from the product page, mini-cart, or shopping cart, a _Continue_ button is available instead. When a customer clicks _Continue_, after they confirm their payment method, they are directed to an order review page to gather any more needed details before completing checkout.
+If the final order amount is not yet known (such as when you do not yet have shipping address information) and the customer is in the process of checking out from the product page, mini-cart, or shopping cart, a _Continue_ button is available instead. When a customer clicks _Continue_, after they confirm their payment method, they are directed to an order review page to gather the needed details before completing checkout.
 
 ## Pay Later messaging
 
 To help your customer identify these as potential payment options, Pay Later messaging is visible on the product page, in the mini-cart and shopping cart, and during checkout.
 
-* **When a customer selects a product between $30 and $600**, messaging under the PayPal and PayLater buttons gives the customer more information about the Pay in 4 payment option. Customers can click **Learn more** to learn about the Pay in 4 option _or_ click the "Or see 6 months special financing" text in the popup to learn about and apply for the PayPal Credit option.
-* **When a customer selects a product or products in excess of $98.99**, messaging under the PayPal and PayLater buttons gives customers more information about the PayPal Credit payment option. Customers can click **Learn more** to learn about and apply for the PayPal Credit option _or_ click the "Or see Pay in 4" text in the popup to learn about the Pay in 4 option.
+* **When a customer selects a product between $30 and $600**, messaging under the PayPal and PayLater buttons gives the customer more information about the Pay in 4 payment option. Customers can click **Learn more** to learn about the "Pay in 4" option _or_ click the "Or see 6 months special financing" text in the popup to learn about and apply for the PayPal Credit option.
+* **When a customer selects a product or products exceeding $98.99**, messaging under the PayPal and PayLater buttons gives customers more information about the PayPal Credit payment option. Customers can click **Learn more** to learn about and apply for the PayPal Credit option _or_ click the "Or see Pay in 4" text in the popup to learn about the Pay in 4 option.
 
    >[!NOTE]
    >
@@ -74,13 +74,13 @@ When a customer enters the checkout flow from the mini-cart, shopping cart, or p
 
 When a customer enters the checkout flow from the checkout page, the system is already aware of the shipping address and final calculated amount, and totals are appropriately represented.
 
-Tax holidays, shipping costs, and sales tax can vary widely from location to location. After Payment Services receives the shipping address and rate, we quickly recalculate all applicable costs and display them appropriately during the last stages of checkout.
+Tax holidays, shipping costs, and sales tax can vary widely from location to location. After Payment Services receives the shipping address and rate, it quickly recalculates all applicable costs and display them appropriately during the last stages of checkout.
 
 ## Checkout from product page
 
-When a customer checks out directly from the product page, using the PayPal or Pay Later buttons, only the item represented in the current product page will be purchased. Items already residing in the customer's cart will not be added to the checkout flow and will not be purchased.
+When a customer checks out directly from the product page, using the PayPal or Pay Later buttons, only the item represented in the current product page is purchased. Items already residing in the customer's cart is not added to the checkout flow and is not purchased.
 
-If the customer cancels the order, the item in the current product page will be added to the customer's cart, joining any other items present in the cart. This allows the customer to quickly purchase the item they are currently viewing, while also retaining any other items they added to their cart previously when browsing products.
+If the customer cancels the order, the item in the current product page is added to the customer's cart, joining any other items present in the cart. This function allows the customer to quickly purchase the item they are currently viewing, while also retaining any other items they added to their cart previously when browsing products.
 
 When a customer enters the checkout flow from the product page, the checkout page is simplified---the view only shows order-related data and options.
 

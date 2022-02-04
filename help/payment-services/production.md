@@ -4,18 +4,18 @@ description:
 ---
 # Enable Payment Services for production
 
-After the Payments Services extension is [installed](install.md), your Commerce instance is [configured and connected](connect.md), and you have [set up the sandbox](sandbox.md) and tested there, you can proceed to put the service into production and complete the [onboarding process](onboard.md).
+After the Payments Services extension is [installed](install.md), your instance is [configured and connected](connect.md), and you have [set up the sandbox](sandbox.md) and tested, you can proceed to put the service into production and complete the [onboarding process](onboard.md).
 
 ## Set Payment Services as payment method
 
-After you [configure your Commerce Services](connect.md#configure-commerce-services) and enable either [sandbox testing](sandbox.md#enable-sandbox-testing) or [live payments](#enable-live-payments) you must set Payment Services as your payment method.
+After you [configure your Commerce Services](connect.md#configure-commerce-services) and enable either [sandbox testing](sandbox.md#enable-sandbox-testing) or [live payments](#enable-live-payments), you must set Payment Services as your payment method.
 
-1. On the _Admin_ sidebar go to **Sales** > **Payment Services**.
+1. On the _Admin_ sidebar, go to **Sales** > **Payment Services**.
 1. Click **Enable Payment Services**.
 
-   This option will be visible if you have not yet configured Payment Services as the payment method for one or more of your Magento websites.
+   This option is visible if you have not yet configured Payment Services as the payment method for one or more of your Magento websites.
 
-   You will be directed to the configuration area in the Admin---**Stores** > _Settings_ > **Configuration** > **Sales** > **Payment Methods** > _Recommended Solutions_ > _Payment Services_---to enable the Payment Services options as your [payment method](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html){target="_blank"}.
+   You are directed to the configuration area in the Admin---**Stores** > _Settings_ > **Configuration** > **Sales** > **Payment Methods** > _Recommended Solutions_ > _Payment Services_---to enable the Payment Services options as your [payment method](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html){target="_blank"}.
 
 1. In _General Configuration_, set **Enable** to `Yes`.
 1. Set **Payment Action**, for both _Credit Card Fields_ and _PayPal Smart Buttons_, to one of the following:
@@ -28,39 +28,39 @@ After you [configure your Commerce Services](connect.md#configure-commerce-servi
 1. Click **Go to Payment Services** to be directed back to the Payment Services home.
 1. [Clear your cache](https://docs.magento.com/user-guide/system/cache-management.html){target="_blank"}.
 
-   This should be done after every configuration change.
+   Clearing should be done after every configuration change.
 
 See [Configure Payment Services](configure-admin.md) for more information about configuring Credit Card Fields and PayPal Smart Buttons.
 
 ## Request payments entitlement from Adobe
 
-To enable live onboarding you will need to request payments entitlement from Adobe [here](https://magento.com/resources/payment-services).
+To enable live onboarding, you must request payments entitlement from Adobe [here](https://business.adobe.com/resources/payment-services.html).
 
 >[!IMPORTANT]
 >
->**Live onboarding** will not be accessible until payments entitlement has been approved.
+>**Live onboarding** is not accessible until payments entitlement has been approved.
 
 ## Complete merchant onboarding
 
-1. On the _Admin_ sidebar go to **Sales** > **Payment Services**.
+1. On the _Admin_ sidebar, go to **Sales** > **Payment Services**.
 1. Click **Live onboarding**.
 
-   This option will be visible if you have not yet completed live onboarding for Payment Services.
+   This option is visible if you have not yet completed live onboarding for Payment Services.
 
    You are presented with a PayPal window.
 
 1. Continue with the PayPal flow, using your PayPal account credentials (not your sandbox account credentials) or sign up for a new PayPal account.
-1. On the _Admin_ sidebar go to **Sales** > **Payment Services**
+1. On the Admin sidebar, go to **Sales** > **Payment Services**
 
-   The **Live onboarding** button will no longer be visible and you see a "Live payments pending" text box.
+   The **Live onboarding** button is no longer visible and you see a "Live payments pending" text box.
 
    In that text box, you may also be asked to confirm your email address with PayPal to complete onboarding.
 
 1. If you are prompted to confirm your email address, check your email for the confirmation message sent from PayPal and click to confirm your email address.
-1. On the _Admin_ sidebar go to **Sales** > **Payment Services**.
+1. On the Admin sidebar, go to **Sales** > **Payment Services**.
 1. Refresh your browser window.
 
-   Once your PayPal merchant onboarding is approved, you will see a notification stating that your payment system is currently in sandbox mode and is not processing live payments.
+   When your PayPal merchant onboarding is approved, you should see a notification stating that your payment system is in sandbox mode and is not processing live payments.
 
    >[!IMPORTANT]
    >
@@ -68,7 +68,7 @@ To enable live onboarding you will need to request payments entitlement from Ado
 
 ## Enable live payments
 
-A production merchant ID will be auto-generated and populated into the [configuration](configure-admin.md). Do not change or alter this ID.
+A production merchant ID is auto-generated and populated into the [configuration](configure-admin.md). Do not change or alter this ID.
 
 To enable live payments:
 
@@ -82,9 +82,9 @@ To enable live payments:
 
    >[!IMPORTANT]
    >
-   >If you do not clear your cache, you will be unable to see PayPal payment options during checkout.
+   >If you do not clear your cache, customers cannot see PayPal payment options during checkout.
 
-If you navigate back to Payment Services home, the Sandbox payment mode message will no longer appear because you are now processing live payments.
+If you navigate back to Payment Services home, the Sandbox payment mode message no longer appears because you are now processing live payments.
 
 See [Configure in the Admin](configure-admin.md) for more configuration options.
 

@@ -3,11 +3,11 @@ title: Test and validate
 ---
 # Test and validate
 
-Before you expose Payment Services for Adobe Commerce and Magento Open Source to your shoppers, it is a good idea to test in your sandbox environment _and_ in production. Testing and validation will help ensure that Payment Services works as expected and provides the best payment options for your store and customers.
+Before you expose Payment Services for Adobe Commerce and Magento Open Source to your shoppers, it is a good idea to test in your sandbox environment _and_ in production. Testing and validation help ensure that Payment Services functions work as expected and provides the best payment options for your store and customers.
 
 ## Test in sandbox environment
 
-Testing Payment Services in a sandbox environment is a very important validation step, even though it is a simulated environment connected only to the PayPal sandbox, not to real banks and merchants.
+Testing Payment Services in a sandbox environment is an important validation step, even though it is a simulated environment connected only to the PayPal sandbox, not to real banks and merchants.
 
 1. Complete a successful checkout from your store, either with [Credit Card Fields](payments-options.md#credit-card-fields) or [PayPal Smart Buttons](payments-options.md#paypal-smart-buttons). See [Use sandbox mode](#use-sandbox-mode) for more information about using fake credit cards for testing.
 1. Capture (when your payment action is [set to `Authorize and Capture`](onboard.md#set-payment-services-as-payment-method)), [refund](refunds.md), or [void](voids.md) the just-completed order. You can also simply [create an invoice](https://docs.magento.com/user-guide/sales/invoice-create.html){target="_blank"} for an order, if your payment action is set to `Authorize` instead of `Authorize and Capture`.
@@ -22,7 +22,7 @@ Use PayPal's Credit Card Generator to [generate random credit card information](
 
 >[!NOTE]
 >
->PayPal's sandbox payment processing is sometimes slow and the service will occasionally go down. This is not an indication of the speed and efficiency of live product payment processing.
+>PayPal's sandbox payment processing is sometimes slow and the service can occasionally go down. This situation is not an indication of the speed and efficiency of live product payment processing.
 
 ## Test in production
 
@@ -33,6 +33,6 @@ You can test Payment Services in production in one of two ways:
 * Choose a time when you know that no orders will be placed by shoppers.
 * Use a webstore which is temporarily inaccessible to shoppers, but is accessible to you for testing.
 
-Complete your production testing with real credit cards and PayPal accounts, testing the entire lifecycle of a payment, including capture and refund. Completing the entire checkout and payment flow during testing will give you the clearest picture of how your Payment Services functionality will work when live shoppers are using it.
+Complete your production testing with real credit cards and PayPal accounts, testing the entire lifecycle of a payment, including capture and refund. Completing the entire checkout and payment flow during testing gives you the clearest picture of how your Payment Services functionality will work when live shoppers are using it.
 
 You should also verify the information that appears on the bank statements for the payment methods you use in production testing are correct and expected (including the description of your business).

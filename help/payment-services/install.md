@@ -40,7 +40,7 @@ This method is used for installing the Payment Services extension for a Commerce
    composer update
    ```
 
-   The `composer update` command will update all dependencies. If you do not want to update all dependencies at the same time, use this command instead: `composer require magento/payment-services`.
+   The `composer update` command updates all dependencies. If you do not want to update all dependencies at the same time, use this command instead: `composer require magento/payment-services`.
 
 1. Commit and push your changes.
 
@@ -48,7 +48,7 @@ This method is used for installing the Payment Services extension for a Commerce
 
 This method is used for installing the Payment Services extension for an On-premises instance.
 
-1. Run these commands to obtain the extension:
+1. To obtain the extension, run these commands:
 
    ```bash
    composer require magento/payment-services --no-update
@@ -60,7 +60,7 @@ This method is used for installing the Payment Services extension for an On-prem
    composer update
    ```
 
-   The `composer update` command will update all dependencies. If you do not want to update all dependencies at the same time, use this command instead: `composer require magento/payment-services`.
+   The `composer update` command updates all dependencies. If you do not want to update all dependencies at the same time, use this command instead: `composer require magento/payment-services`.
 
 1. Upgrade Adobe Commerce:
 
@@ -75,18 +75,19 @@ This method is used for installing the Payment Services extension for an On-prem
    ```
 
 1. Commit changes.
-1. Update your on-premises instance to ensure the committed code is deployed.
+1. To ensure that the committed code is deployed, update your on-premises instance .
 
 ## Upgrade the extension
 
-When we release a new version of Payment Services, you can easily upgrade your extension.
+When a new version of Payment Services is released, you can easily upgrade your extension.
 
 1. To obtain the most recent version of the package:
 
    ```bash
    composer update
    ```
-   The `composer update` command will update all dependencies. If you do not want to update all dependencies at the same time, use this command instead: `composer update magento/payment-services`.
+
+   The `composer update` command updates all dependencies. If you do not want to update all dependencies at the same time, use this command instead: `composer update magento/payment-services`.
 
 1. Commit and push your changes.
 
@@ -96,7 +97,7 @@ You may see errors when attempting to install the Payment Services extension. Us
 
 ### Incorrect Composer keys
 
-If you see the following error denoting you have the incorrect Composer keys:
+If you see the following error denoting that you have the incorrect Composer keys:
 
 ```terminal
 Could not find a matching version of package magento/payment-services. Check the package spelling, your version constraint and that the package is available in a stability which matches your minimum-stability (stable).
