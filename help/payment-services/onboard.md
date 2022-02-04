@@ -39,7 +39,7 @@ To learn how to create or access your API keys, see [API credentials](#obtain-ap
 1. [Set Payment Services as your payment method](production.md#set-payment-services-as-payment-method), in sandbox mode, to start processing test payments.
 1. [Request payments entitlement](production.md#request-payments-entitlement-from-adobe) to enable live onboarding.
 1. [Complete merchant onboarding](production.md#complete-merchant-onboarding) to enable live payments for your Commerce websites.
-1. [Get your Payment Services Merchant ID](production#configure-pricing-tier) and hand it to Sales to configure the correct pricing tier.
+1. [Get your Payment Services Merchant ID](production.md#configure-pricing-tier) and hand it to Sales to configure the correct pricing tier.
 1. [Enable Payment Services in live mode](production.md#enable-live-payments) to begin processing live payments.
 1. Test Payments, in both [sandbox](sandbox.md#test-in-sandbox-environment) and [production](production.md#test-in-production) environments.
 
