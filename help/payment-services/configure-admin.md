@@ -1,7 +1,6 @@
 ---
 title: Configure in the Admin
 Description: After installation, you can configure Payment Services in the Admin.
-feature: Payments
 role: Administrator, User
 level: Intermediate
 ---

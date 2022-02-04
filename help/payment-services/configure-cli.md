@@ -1,7 +1,6 @@
 ---
 title: Command-line configuration
 Description: After installation, you can configure Payment Services using the Command-line Interface (CLI).
-feature: Payments
 role: Administrator, Developer
 level: Intermediate
 ---

@@ -1,5 +1,6 @@
 ---
 title: Security and compliance
+description: Review security and compliance requirements for your site.
 ---
 # Security and compliance
 

@@ -1,9 +1,10 @@
 ---
 title: Test and validate
+description: Testing and validation help ensure that Payment Services functions work as expected and provide the best payment options for your customers
 ---
 # Test and validate
 
-Before you expose Payment Services for Adobe Commerce and Magento Open Source to your shoppers, it is a good idea to test in your sandbox environment _and_ in production. Testing and validation help ensure that Payment Services functions work as expected and provides the best payment options for your store and customers.
+Before you expose Payment Services for Adobe Commerce and Magento Open Source to your shoppers, it is a good idea to test in your sandbox environment _and_ in production. Testing and validation help ensure that Payment Services functions work as expected and provide the best payment options for your store and customers.
 
 ## Test in sandbox environment
 

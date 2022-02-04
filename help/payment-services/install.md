@@ -1,6 +1,6 @@
 ---
 title: Install Payment Services
-description:
+description: Install the Payments Services extension.
 ---
 # Install Payment Services
 

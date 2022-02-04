@@ -1,7 +1,6 @@
 ---
 title: Order payment status report
 description: Use the Order payment status report for gain visibility to the payment status of your orders and identify any potential issues.
-feature: Payments
 role: User
 level: Intermediate
 ---

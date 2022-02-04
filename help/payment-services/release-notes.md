@@ -1,5 +1,6 @@
 ---
 title: Payment Services Release Notes
+description: Review the release notes for information about all Payment Services releases.
 ---
 # Release Notes
 

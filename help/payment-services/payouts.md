@@ -1,7 +1,6 @@
 ---
 title: Payouts report
 description: Use the Payouts report for full transparency into the payment amount, processed volume, and detailed reporting on the transaction level for financial reconciliation.
-feature: Payments
 role: User
 level: Intermediate
 ---

@@ -1,5 +1,6 @@
 ---
 title: Payments options
+description: Set the payment options to customize the methods available for your store customers.
 ---
 # Payments options
 

@@ -1,7 +1,6 @@
 ---
 title: Payment Services for Commerce
 description: Learn how to install and use Payment Services as a turnkey, robust, and secure payment processing solution for your Adobe Commerce and Magento Open Source websites.
-feature: Payments
 role: User
 level: Intermediate
 ---

@@ -1,6 +1,6 @@
 ---
 title: Enable Payment Services for production
-description: 
+description: Complete the onboarding process by enabling Payment Services for production.
 ---
 # Enable Payment Services for production
 

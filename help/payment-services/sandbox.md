@@ -1,6 +1,6 @@
 ---
 title: Set up the testing sandbox
-description: 
+description: Use a PayPal sandbox account to use Payment Services in test mode.
 ---
 # Set up the testing sandbox
 

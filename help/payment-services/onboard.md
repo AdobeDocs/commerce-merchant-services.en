@@ -2,8 +2,6 @@
 title: Onboard Payment Services
 description: Connect your instance with Payment Services functionality by completing a few onboarding steps.
 role: User
-content-type: Context
-feature: Payments
 level: Intermediate
 ---
 # Onboard Payment Services
