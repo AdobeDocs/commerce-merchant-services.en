@@ -32,14 +32,6 @@ After you [configure your Commerce Services](connect.md#configure-commerce-servi
 
 See [Configure Payment Services](configure-admin.md) for more information about configuring Credit Card Fields and PayPal Smart Buttons.
 
-## Request payments entitlement from Adobe
-
-To enable live onboarding, you must request payments entitlement from Adobe [here](https://business.adobe.com/resources/payment-services.html).
-
->[!IMPORTANT]
->
->**Live onboarding** is not accessible until payments entitlement has been approved.
-
 ## Complete merchant onboarding
 
 1. On the _Admin_ sidebar, go to **Sales** > **Payment Services**.
@@ -66,9 +58,27 @@ To enable live onboarding, you must request payments entitlement from Adobe [her
    >
    >If you revoke consent to Payment Services for Adobe Commerce and Magento Open Source for processing your payments (in your PayPal account settings), orders in your store cannot be processed by Payment Services.
 
+## Request payments entitlement from Adobe
+
+To enable live onboarding, you must request payments entitlement from [Adobe](https://business.adobe.com/resources/payment-services.html).
+
+>[!IMPORTANT]
+>
+>**Live onboarding** is not accessible until payments entitlement has been approved.
+
+## Configure pricing tier
+
+To get your Payment Services _Merchant ID_:
+
+1. On the _Admin_ sidebar, navigate to **Stores** > _Settings_ > **Configuration**.
+1. In the left panel, expand **Sales** and choose **Payment Methods**.
+1. Expand the _Recommended Solutions_ section.
+1. In the _Payment Services_ section, expand the _General Configuration_ section.
+1. Select the required _Merchant ID_ and submit it to your Sales representative, who will configure the correct pricing tier.
+
 ## Enable live payments
 
-A production merchant ID is auto-generated and populated into the [configuration](configure-admin.md). Do not change or alter this ID.
+A _production merchant ID_ is auto-generated and populated in the [configuration](configure-admin.md). Do not change or alter this ID.
 
 To enable live payments:
 

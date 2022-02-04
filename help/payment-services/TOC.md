@@ -8,7 +8,8 @@ breadcrumb-title: Payment Services Guide
 
 - [Payment Services Guide](guide-overview.md)
 - [Payment Services overview](overview.md)
-- [Release Notes](release-notes.md) 
+- [Release Notes](release-notes.md)
+- [Payment options](payments-options.md)
 - Onboard Payment Services {#get-started}
   - [Onboarding overview](onboard.md)
   - [Install the Payment Services extension](install.md)
@@ -18,7 +19,6 @@ breadcrumb-title: Payment Services Guide
 - Configure Payment Services {#configure}
   - [Configure in the Admin](configure-admin.md)
   - [Command line configuration](configure-cli.md)
-  - [Payment options](payments-options.md)
 - [Test and validate](test-validate.md)
 - [Create an Order](create-order.md)
 - Financial reporting {#reporting}
