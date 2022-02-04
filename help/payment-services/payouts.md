@@ -82,8 +82,8 @@ The Payouts view shows extensive info for each transaction shown in the grid.
 
 Payout reports include the following information.
 
-| Column | Description
------------- | --------------------
+| Column | Description |
+| ------------ | -------------------- |
 | Provider | Payment provider |
 | Provider trans | Transaction ID |
 | Trans date | Date and time transaction was initiated |
