@@ -1,6 +1,6 @@
 ---
 title: Storefront Popover
-description: The [!DNL Live Search] storefront popover returns suggested products and thumbnails of top search results as customers type.
+description: The [!DNL Live Search] storefront popover returns suggested products and thumbnails of top search results as customers type query text.
 ---
 # Storefront Popover
 
@@ -10,7 +10,7 @@ When [!DNL Live Search] is [installed](install.html), a popover appears in the s
 
 [!NOTE]
 
-The [!DNL Live Search] storefront popover is available only for stores that use the *Luma* theme, or a customized theme that is based on *Luma*. The *Luma* theme is included in the Commerce sample data. The popover does not support the *Blank* theme. See [Working with a modified theme](#working-with-modified-theme) for more information.
+The [!DNL Live Search] storefront popover is available only for stores that use the *Luma* theme, or a customized theme that is based on *Luma*. The *Luma* theme is included in the [!DNL Commerce] sample data. The popover does not support the *Blank* theme. See [Working with a modified theme](#working-with-modified-theme) for more information.
 
 ## Searchable attributes
 
@@ -18,9 +18,9 @@ To produce highly-targeted results, review the set of [searchable](https://docs.
 
 The following attributes are always searchable:
 
--  `sku`
--  `name`
--  `categories`
+*  `sku`
+*  `name`
+*  `categories`
 
 ![Live Search popover](assets/storefront-search-as-you-type.png)
 
@@ -37,6 +37,7 @@ The popover always displays the product `name` and `price`, and the selection of
     background-color: magenta;
 }
 ```
+
 ### Container visibility
 
 The parent component of the `.livesearch.popover-container` is `.search-autocomplete`.  The `.active` class indicates the visibility of the container. The `.active` class is conditionally added when the popover is open.
@@ -52,15 +53,15 @@ For more information about styling storefront elements, refer to [Cascading styl
 
 The following class selectors can be used to style the container, suggestion, and product elements in the popover.
 
--  `.livesearch.popover-container`
--  `.livesearch.view-all-footer`
--  `.livesearch.suggestions-container`
--  `.livesearch.suggestions-header`
--  `.livesearch.suggestion`
--  `.livesearch.products-container`
--  `.livesearch.product-result`
--  `.livesearch.product-name`
--  `.livesearch.product-price`
+*  `.livesearch.popover-container`
+*  `.livesearch.view-all-footer`
+*  `.livesearch.suggestions-container`
+*  `.livesearch.suggestions-header`
+*  `.livesearch.suggestion`
+*  `.livesearch.products-container`
+*  `.livesearch.product-result`
+*  `.livesearch.product-name`
+*  `.livesearch.product-price`
 
 ### Container Class Selectors
 

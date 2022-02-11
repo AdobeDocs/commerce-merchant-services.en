@@ -1,6 +1,6 @@
 ---
 title: Quick Tour
-description: [!DNL Live Search] from Adobe Commerce delivers a lightning fast, super-relevant, and intuitive search experience.
+description: Take a quick tour of [!DNL Live Search] from the storefront.
 ---
 # Quick Tour
 

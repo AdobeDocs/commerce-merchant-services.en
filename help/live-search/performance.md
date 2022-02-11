@@ -6,18 +6,18 @@ description: The [!DNL Live Search] Performance dashboard provides insight into 
 
 The [!DNL Live Search] Performance dashboard provides insight into the search terms that shoppers use. The information can be used to identify trends, increase click-through, and improve the conversion rate. The Performance dashboard provides a snapshot of search metrics for a specific date range and includes the following reports:
 
-- Unique searches
-- Zero results
-- Popular results
+* Unique searches
+* Zero results
+* Popular results
 
 ![Performance](assets/performance-unique-searches.png?lang=en)
 
 ## View a report
 
-1. To enter the **Date range**, click the calendar (![](assets/btn-calendar.png)) and do one of the following:
+1. To enter the **Date range**, click the calendar (![Calendar](assets/btn-calendar.png)) and do one of the following:
 
-   - To specify a single date, double-click the date on the calendar.
-   - To specify a range of dates, click the first and last date on the calendar.
+   * To specify a single date, double-click the date on the calendar.
+   * To specify a range of dates, click the first and last date on the calendar.
 
    ![Performance report timeframe](assets/performance-calendar.png)
 

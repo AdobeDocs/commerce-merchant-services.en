@@ -9,7 +9,7 @@ The workspace is where you configure, manage, and monitor the performance of [!D
 
 ## Set the scope
 
-Initially the [scope](stores/websites-stores-views.html) of all [!DNL Live Search] settings is set to `Default Store View`. If your [!DNL Commerce] installation includes multiple store views, set **Scope** to the [store view](configuration/scope.html) where your facet settings apply.
+Initially the [scope](https://docs.magento.com/user-guide/configuration/scope.html) of all [!DNL Live Search] settings is set to `Default Store View`. If your [!DNL Commerce] installation includes multiple store views, set **Scope** to the [store view](https://docs.magento.com/user-guide/stores/websites-stores-views.html) where your facet settings apply.
 
 ## Menu Options
 

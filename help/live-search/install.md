@@ -4,7 +4,7 @@ description: Learn how to install, update, and uninstall [!DNL Live Search] from
 ---
 # Install [!DNL Live Search]
 
-[!DNL Live Search] is a set of standalone [packages](#live-search-packages) that replaces standard Magento Open Source and Adobe Commerce search capabilities. The [!DNL Live Search] module is installed from the command line of the server and connects to your Adobe Commerce installation as a [service](https://docs.magento.com/user-guide/system/saas.html). When the process is complete, [!DNL Live Search] appears on the _Marketing_ menu under _SEO & Search_ in the [!DNL Commerce] Admin.
+[!DNL Live Search] is a set of standalone [packages](#live-search-packages) that replaces standard Magento Open Source and Adobe Commerce search capabilities. The [!DNL Live Search] module is installed from the command line of the server and connects to your Adobe Commerce installation as a [service](https://docs.magento.com/user-guide/system/saas.html). When the process is complete, [!DNL Live Search] appears on the *Marketing* menu under *SEO & Search* in the [!DNL Commerce] Admin.
 
 The Adobe Commerce side includes hosting the search Admin, syncing catalog data, and running the query service.
 
@@ -35,26 +35,26 @@ At this time, the Live Search category search / category API has the following s
 
 ### Indexing
 
-- Indexes up to 300 product attributes per store view
-- Indexes only products from the Adobe Commerce database
-- Does not index CMS pages
+* Indexes up to 300 product attributes per store view
+* Indexes only products from the Adobe Commerce database
+* Does not index CMS pages
 
 ### Functionality
 
-- Storefront [Advanced (Form) Search](https://docs.magento.com/user-guide/catalog/search-advanced.html) module
-- [Customer groups](https://docs.magento.com/user-guide/customers/customer-groups.html)
-- [Custom price groups](https://docs.magento.com/user-guide/catalog/product-price-group.html)
-- Multiple inventory locations as used by [MCOM](https://docs.magento.com/user-guide/mcom.html) or other OMS extensions
-- [Integrated B2B capabilities](https://business.adobe.com/products/magento/b2b-ecommerce.html)
+* Storefront [Advanced (Form) Search](https://docs.magento.com/user-guide/catalog/search-advanced.html) module
+* [Customer groups](https://docs.magento.com/user-guide/customers/customer-groups.html)
+* [Custom price groups](https://docs.magento.com/user-guide/catalog/product-price-group.html)
+* Multiple inventory locations as used by [MCOM](https://docs.magento.com/user-guide/mcom.html) or other OMS extensions
+* [Integrated B2B capabilities](https://business.adobe.com/products/magento/b2b-ecommerce.html)
 
 ### Queries
 
-- Live Search does not have access to the full taxonomy of the category tree, which makes some layered navigation search scenarios beyond its reach.
-- Live Search uses a unique GraphQL endpoint for queries to support features such as intelligent faceting and search-as-you-type. Although similar to the [Magento GraphQL API](https://devdocs.magento.com/guides/v2.4/graphql), there are a few differences and some fields may not be fully compatible at this time.
+* Live Search does not have access to the full taxonomy of the category tree, which makes some layered navigation search scenarios beyond its reach.
+* Live Search uses a unique GraphQL endpoint for queries to support features such as intelligent faceting and search-as-you-type. Although similar to the [Magento GraphQL API](https://devdocs.magento.com/guides/v2.4/graphql), there are a few differences and some fields may not be fully compatible at this time.
 
 ### Progressive Web Applications (PWA)
 
-- Live Search does not support [PWA](https://developer.adobe.com/commerce/pwa-studio/) at this time.
+* Live Search does not support [PWA](https://developer.adobe.com/commerce/pwa-studio/) at this time.
 
 ## Before you begin {#before-you-begin}
 
