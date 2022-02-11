@@ -4,8 +4,6 @@ description: Use a PayPal sandbox account to use Payment Services in test mode.
 ---
 # Set up the testing sandbox
 
-## Set up sandbox for testing
-
 Before starting sandbox onboarding, you must sign up for a free PayPal Developer's account, and create both merchant (to use for onboarding) and shopper accounts (to use for testing your checkout). You can create multiple Developer accounts, if desired.
 
 A PayPal sandbox account allows you to use Payment Services in test mode. PayPal requires that you use a PayPal Developer Portal-generated Business sandbox test account, email, and password for sandbox onboarding. Do not create another account during the sandbox onboarding process.
@@ -56,7 +54,7 @@ To complete sandbox onboarding:
    >
    >If you revoke consent to Payment Services for Adobe Commerce and Magento Open Source for processing your payments (in your PayPal account settings), orders in your store cannot be processed by Payment Services.
 
-### Enable contact telephone number
+## Enable contact telephone number
 
 Contact telephone number allows you to obtain the contact telephone numbers that PayPal collects from your customers. PayPal always collects contact telephone numbers from PayPal account holders to help confirm their identities and to contact them to resolve problems on their accounts, or to complete their fulfillment processes. However, PayPal discourages the use of contact phone numbers directly from the merchant because it can negatively impact sales. See the [PayPal get contact telephone numbers](https://developer.paypal.com/docs/admin/checkout-settings/#get-contact-telephone-numbers) documentation for more information.
 
