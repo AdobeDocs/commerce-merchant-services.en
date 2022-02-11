@@ -13,6 +13,7 @@ breadcrumb-title: [!DNL Live Search]
 - Live Search Storefront{#live-search-storefront}
    - [Quick Tour](quick-tour.md)
    - [Storefront Popover](storefront-popover.md)
+   - [Styling Popover Elements](storefront-popover-styling.md)
 - Live Search Admin{#live-search-admin}
    - [Workspace](workspace.md)
    - [Performance](performance.md)
@@ -22,6 +23,7 @@ breadcrumb-title: [!DNL Live Search]
       - [Types of Facets](facets-type.md)
       - [Add Facets](facets-add.md)
       - [Manage Facets](facets-manage.md)
+      - [Technical Notes](facet-technical-notes.md)
    - Synonyms {#synonyms}
       - [Overview](synonyms.md)
       - [Types of Synonyms](synonyms-type.md)
@@ -33,6 +35,7 @@ breadcrumb-title: [!DNL Live Search]
       - [Rule Components](rule-components.md)
       - [Add Rules](rules-add.md)
       - [Manage Rules](rules-manage.md)
+      - [Technical Notes](rule-technical-notes.md)
    - [Settings](settings.md)
    - [Indexing](indexing.md)
 - [Feedback](feedback.md)
