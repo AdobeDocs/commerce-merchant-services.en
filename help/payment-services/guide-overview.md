@@ -1,8 +1,9 @@
 ---
 title: Payment Services Guide
-description: Comprehensive information about Payment Services for Adobe Commerce and Magento Open Source administrators, including installation and onboarding 
+description: Comprehensive information about Payment Services for Adobe Commerce and Magento Open Source administrators, including installation and onboarding
 seo-title: Adobe Commerce Payments Services Guide
 seo-description: Describes how to use Payment Services with Adobe Commerce or Magento Open Source.
+exl-id: 30b23f26-9aac-4a24-a607-2431455fc935
 ---
 # Payment Services Guide
 

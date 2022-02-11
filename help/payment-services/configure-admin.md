@@ -3,6 +3,7 @@ title: Configure in the Admin
 description: After installation, you can configure Payment Services in the Admin.
 role: Admin, User
 level: Intermediate
+exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
 ---
 # Configure in the Admin
 

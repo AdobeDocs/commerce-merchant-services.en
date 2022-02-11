@@ -1,6 +1,7 @@
 ---
 title: Set up the testing sandbox
 description: Use a PayPal sandbox account to use Payment Services in test mode.
+exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
 ---
 # Set up the testing sandbox
 

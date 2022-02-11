@@ -1,6 +1,7 @@
 ---
 title: Payment Services Release Notes
 description: Review the release notes for information about all Payment Services releases.
+exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 ---
 # Release Notes
 
