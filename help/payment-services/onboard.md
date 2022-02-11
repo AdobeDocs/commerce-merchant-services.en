@@ -3,6 +3,7 @@ title: Onboard Payment Services
 description: Connect your instance with Payment Services functionality by completing a few onboarding steps.
 role: User
 level: Intermediate
+exl-id: 1ee8c660-0941-4378-a1d7-ae45de3de211
 ---
 # Onboard Payment Services
 

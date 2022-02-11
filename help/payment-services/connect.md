@@ -1,6 +1,7 @@
 ---
 title: Connect your instance
 description: Connect your Commerce instance using an API key and a private key, and specify the data space in the configuration.
+exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
 ---
 # Connect your instance
 

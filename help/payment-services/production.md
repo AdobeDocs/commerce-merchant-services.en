@@ -1,6 +1,7 @@
 ---
 title: Enable Payment Services for production
 description: Complete the onboarding process by enabling Payment Services for production.
+exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
 ---
 # Enable Payment Services for production
 
