@@ -6,9 +6,9 @@ description: The latest release information for [!DNL Live Search] from Adobe Co
 
 These release notes describe the latest versions of [!DNL Live Search] and include:
 
-* New features
-* Fixes and improvements
-* Known issues
+![New](../assets/new.svg) New features
+![Fix](../assets/fix.svg) Fixes and improvements
+![Bug](../assets/bug.svg) Known issues
 
 ## [!DNL Live Search] 1.3.1
 
@@ -16,9 +16,9 @@ These release notes describe the latest versions of [!DNL Live Search] and inclu
 * Compatible with Adobe Commerce for Cloud (ECE): 2.4.x
 * Stability: Stable
 
-* FIX - [Custom price attribute](https://docs.magento.com/user-guide/stores/attributes-input-types.html) no longer returns an error when configured as a [facet]({% link live-search/facets-add.md %}).
-* FIX - Fixed issue that caused an error to occur when no [currency symbol](https://docs.magento.com/user-guide/stores/currency-symbols.html) (`data-currency-symbol`) is available.
-* FIX - [Storefront popover](storefront-popover.html) now shows the [Special Price](https://docs.magento.com/user-guide/catalog/product-price-special.html) (minimum final price) when available.
+* ![Fix](../assets/fix.svg) - [Custom price attribute](https://docs.magento.com/user-guide/stores/attributes-input-types.html) no longer returns an error when configured as a [facet]({% link live-search/facets-add.md %}).
+* ![Fix](../assets/fix.svg) - Fixed issue that caused an error to occur when no [currency symbol](https://docs.magento.com/user-guide/stores/currency-symbols.html) (`data-currency-symbol`) is available.
+* ![Fix](../assets/fix.svg) - [Storefront popover](storefront-popover.html) now shows the [Special Price](https://docs.magento.com/user-guide/catalog/product-price-special.html) (minimum final price) when available.
 
 ## [!DNL Live Search] 1.3.0
 
@@ -26,12 +26,12 @@ These release notes describe the latest versions of [!DNL Live Search] and inclu
 * Compatible with Adobe Commerce for Cloud (ECE): 2.4.x
 * Stability: Stable
 
-* NEW - [Performance](https://docs.magento.com/user-guide/live-search/performance.html) reporting dashboard provides insight into search terms that shoppers use.
-* NEW - [!DNL Live Search] [Storefront Events SDK](https://devdocs.magento.com/shared-services/storefront-events-sdk.html) provides access to a common data layer with event publishing and subscription services, and metrics.
-* FIX - The [Storefront Popover](https://devdocs.magento.com/live-search/storefront-popover.html) has a new `active` class for the `.search-autocomplete` container that controls visibility.
-* FIX - In the storefront, the [Search Terms](https://docs.magento.com/user-guide/marketing/search-terms-popular.html) footer link is removed and its cache disabled for [!DNL Live Search] installations.
-* BUG - Patch for Search adapter handles duplicate products.
-* BUG - [!DNL Live Search] supports [single-source](https://docs.magento.com/user-guide/catalog/inventory-sources.html) (physical) inventory locations with multiple (virtual) [stocks](https://docs.magento.com/user-guide/catalog/inventory-stock.html). Multiple inventory sources are not supported at this time.
+* ![New](../assets/new.svg) - [Performance](https://docs.magento.com/user-guide/live-search/performance.html) reporting dashboard provides insight into search terms that shoppers use.
+* ![New](../assets/new.svg) - [!DNL Live Search] [Storefront Events SDK](https://devdocs.magento.com/shared-services/storefront-events-sdk.html) provides access to a common data layer with event publishing and subscription services, and metrics.
+* ![Fix](../assets/fix.svg) - The [Storefront Popover](https://devdocs.magento.com/live-search/storefront-popover.html) has a new `active` class for the `.search-autocomplete` container that controls visibility.
+* ![Fix](../assets/fix.svg) - In the storefront, the [Search Terms](https://docs.magento.com/user-guide/marketing/search-terms-popular.html) footer link is removed and its cache disabled for [!DNL Live Search] installations.
+* ![Bug](../assets/bug.svg) - Patch for Search adapter handles duplicate products.
+* ![Bug](../assets/bug.svg) - [!DNL Live Search] supports [single-source](https://docs.magento.com/user-guide/catalog/inventory-sources.html) (physical) inventory locations with multiple (virtual) [stocks](https://docs.magento.com/user-guide/catalog/inventory-stock.html). Multiple inventory sources are not supported at this time.
 
 ## [!DNL Live Search] 1.2.0
 
@@ -39,14 +39,14 @@ These release notes describe the latest versions of [!DNL Live Search] and inclu
 * Compatible with Adobe Commerce for Cloud (ECE): 2.4.x
 * Stability: Stable
 
-* NEW - Storefront [popover](storefront-popover.html) displays suggested products and thumbnail images of top search results as shoppers type queries into the Search box.
-* NEW - Commerce Admin session stays open during extended periods of keyboard inactivity
-* NEW - [!DNL Live Search] is automatically enabled after onboarding
-* FIX - Initial indexing time is less than an hour
-* FIX - Incremental product updates near real time (after install and setup)
-* FIX - Sortable columns in Synonym editor
-* FIX - [!DNL Live Search] no longer throws an error if search criteria contains empty sort order value
-* FIX - Range filtering no longer breaks if attribute codes contain strings "to" or "from"
+* ![New](../assets/new.svg) - Storefront [popover](storefront-popover.html) displays suggested products and thumbnail images of top search results as shoppers type queries into the Search box.
+* ![New](../assets/new.svg) - Commerce Admin session stays open during extended periods of keyboard inactivity
+* ![New](../assets/new.svg) - [!DNL Live Search] is automatically enabled after onboarding
+* ![Fix](../assets/fix.svg) - Initial indexing time is less than an hour
+* ![Fix](../assets/fix.svg) - Incremental product updates near real time (after install and setup)
+* ![Fix](../assets/fix.svg) - Sortable columns in Synonym editor
+* ![Fix](../assets/fix.svg) - [!DNL Live Search] no longer throws an error if search criteria contains empty sort order value
+* ![Fix](../assets/fix.svg) - Range filtering no longer breaks if attribute codes contain strings "to" or "from"
 
 ## [!DNL Live Search] 1.1.0
 
@@ -54,10 +54,10 @@ These release notes describe the latest versions of [!DNL Live Search] and inclu
 * Compatible with Adobe Commerce for Cloud (ECE): 2.4.x
 * Stability: Stable
 
-* BUG - The [!DNL Live Search] service supports only the [base currency](https://docs.magento.com/user-guide/stores/currency-configuration.html) of the Adobe Commerce installation.
-* BUG - When adding a facet, the Product Attributes Feed does not update correctly when set to `Update on Save`. To avoid this problem, go to [Index Management](https://docs.magento.com/user-guide/system/index-management.html) and set Product Attributes Feed to `Update by Schedule`.
-* BUG - [!DNL Live Search] synonyms are defined per store view, but are currently stored per website and identified with a combination of `environmentId` + `storeViewCode`. As a result, all websites and store views within the Adobe Commerce installation share the same set of synonyms. The most recently created set of synonyms for the store view takes precedence.
-* BUG - If a synonym term contains multiple words, each word is treated as a separate synonym. For example, if you define “time piece” as a synonym of “watch”, both “time” and “piece” are treated as synonyms of watch.
+* ![Bug](../assets/bug.svg) - The [!DNL Live Search] service supports only the [base currency](https://docs.magento.com/user-guide/stores/currency-configuration.html) of the Adobe Commerce installation.
+* ![Bug](../assets/bug.svg) - When adding a facet, the Product Attributes Feed does not update correctly when set to `Update on Save`. To avoid this problem, go to [Index Management](https://docs.magento.com/user-guide/system/index-management.html) and set Product Attributes Feed to `Update by Schedule`.
+* ![Bug](../assets/bug.svg) - [!DNL Live Search] synonyms are defined per store view, but are currently stored per website and identified with a combination of `environmentId` + `storeViewCode`. As a result, all websites and store views within the Adobe Commerce installation share the same set of synonyms. The most recently created set of synonyms for the store view takes precedence.
+* ![Bug](../assets/bug.svg) - If a synonym term contains multiple words, each word is treated as a separate synonym. For example, if you define “time piece” as a synonym of “watch”, both “time” and “piece” are treated as synonyms of watch.
 
 ## Documentation
 
