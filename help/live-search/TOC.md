@@ -1,12 +1,10 @@
 ---
 user-guide-title: [!DNL Live Search] Guide
-user-guide-description: [!DNL Live Search] from Adobe Commerce delivers a lightning fast, super-relevant, and intuitive search experience.
-breadcrumb-title: [!DNL Live Search]
+user-guide-description: This guide provides detailed information about installing, configuring, and using [!DNL Live Search] from Adobe Commerce.
+breadcrumb-title: [!DNL Live Search] Guide
 ---
-
-# [!DNL Live Search]
-
-- [Overview](overview.md)
+# [!DNL Live Search] for Commerce {#merchant-services}
+- [[!Live Search] Guide](overview.md)
 - Getting Started {#getting-started}
    - [Install](install.md)
    - [Release Notes](release-notes.md)
