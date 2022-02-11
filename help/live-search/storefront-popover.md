@@ -8,9 +8,9 @@ When [!DNL Live Search] is [installed](install.html), a popover appears in the s
 
 [!DNL Live Search] returns results for a query of two characters or more. For a partial match, the maximum number of characters per word is 20. The number of characters in a "search as you type" query is not configurable.
 
-[!NOTE]
-
-The [!DNL Live Search] storefront popover is available only for stores that use the *Luma* theme, or a customized theme that is based on *Luma*. The *Luma* theme is included in the [!DNL Commerce] sample data. The popover does not support the *Blank* theme. See [Working with a modified theme](#working-with-modified-theme) for more information.
+>[!NOTE]
+>
+>The [!DNL Live Search] storefront popover is available only for stores that use the *Luma* theme, or a customized theme that is based on *Luma*. The *Luma* theme is included in the [!DNL Commerce] sample data. The popover does not support the *Blank* theme. See [Working with a modified theme](#working-with-modified-theme) for more information.
 
 ## Searchable attributes
 

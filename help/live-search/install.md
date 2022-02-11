@@ -67,9 +67,9 @@ Do the following:
    * [Method 1](#method-1): Install without [!DNL Elasticsearch]
    * [Method 2](#method-2): Install with [!DNL Elasticsearch] (No downtime)
 
-[!TIP]
-
-To enter instructions on the command line, hover over the far right of the code box and click the [!UICONTROL **Copy**] link. Then, paste it into the command line. If you do not have experience working from the command line, ask your system integrator or developer for assistance.
+   >[!TIP]
+   >
+   >To enter instructions on the command line, hover over the far right of the code box and click the [!UICONTROL **Copy**] link. Then, paste it into the command line. If you do not have experience working from the command line, ask your system integrator or developer for assistance.
 
 ## Method 1: Install without Elasticsearch {#method-1}
 
@@ -100,9 +100,9 @@ In this scenario, storefront operations are interrupted while the [!DNL Live Sea
    bin/magento setup:upgrade
    ```
 
-  [!WARNING]
-
-  While the data is indexed and synchronized, the search and category browse operations are not available in the storefront. Depending on the size of your catalog, the process can take at least an hour from the time `cron` runs to synchronize your data to [!DNL Live Search] services.
+   >[!WARNING]
+   >
+   > While the data is indexed and synchronized, the search and category browse operations are not available in the storefront. Depending on the size of your catalog, the process can take at least an hour from the time `cron` runs to synchronize your data to [!DNL Live Search] services.
 
 1. Verify that the following [indexers](https://docs.magento.com/user-guide/system/index-management.html) are set to `Update by Schedule`:
 
