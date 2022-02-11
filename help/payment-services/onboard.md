@@ -11,7 +11,7 @@ To get started using Payment Services for Adobe Commerce and Magento Open Source
 
 ## Onboarding flow
 
-<!-- ![Onboarding flow](assets/onboard-diagram.svg) -->
+![Onboarding flow](assets/onboarding-diagram.svg)
 
 This onboarding flow diagram shows the general process for onboarding Payment Services.
 
@@ -50,4 +50,6 @@ To learn how to create or access your API keys, see [API credentials](#obtain-ap
 
 ## Troubleshooting
 
-<!-- add articles from KB -->
+* [Troubleshoot Payment Services installation](https://support.magento.com/hc/en-us/articles/4406603542541)
+* [PayPal sandbox account not verified](https://support.magento.com/hc/en-us/articles/4406954952461)
+* [Delayed Payment Services report data](https://support.magento.com/hc/en-us/articles/4406114741517)

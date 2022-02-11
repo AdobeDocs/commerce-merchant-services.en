@@ -11,8 +11,8 @@ This guide is intended for administrators of Adobe Commerce and Magento Open Sou
 
 Payment Services has two areas for administrators:
 
-* The Admin: Use this area for access to the configuration UI and reporting.
-* The command-line interface: 
+* The Admin: Use this area to access the configuration UI and reporting.
+* The command-line interface: Use this tool to execute installation and backend configuration tasks.
 
 This guide covers:
 
@@ -24,11 +24,14 @@ This guide does not cover the core capabilities of Adobe Commerce and Magento Op
 ## Additional documentation
 
 | Guide | Description |
-| Adobe Commerce 2.4 User Guide | add desc. |
-| Adobe Commerce Developer documentation | add desc. |
+|------ | ----------- |
+| [Adobe Commerce 2.4 User Guide](https://docs.magento.com/user-guide/) | Merchant-focused documentation for both Adobe Commerce and Magento Open Source |
+| [Adobe Commerce 2.4 Developer Guide](https://devdocs.magento.com/) | Developer-focused documentation used to build and customize a Adobe Commerce or Magento Open Source. |
 
 ## Support
 
 If you need information or have questions that are not covered in this guide, use the following resources:
 
-* [Help center](https://support.magento.com/hc/en-us){target="_blank"}---See the Payment Services-related knowledgebase articles and [submit Support tickets](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket){target="_blank"} for extra help.
+* [Help center](https://support.magento.com/hc/en-us){target="_blank"}---See the Payment Services-related troubleshooting articles.
+* [Support tickets](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket){target="_blank"}---Submit a ticket to receive additional help.
+
