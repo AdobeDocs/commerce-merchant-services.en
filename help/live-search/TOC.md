@@ -17,7 +17,7 @@ breadcrumb-title: [!DNL Live Search] Guide
    - [Performance](performance.md)
    - Facets {#facets}
       - [Overview](facets.md)
-      - [Faceting Workspace](facets-workspace.md)
+      - [Faceting Workspace](faceting-workspace.md)
       - [Types of Facets](facets-type.md)
       - [Add Facets](facets-add.md)
       - [Manage Facets](facets-manage.md)
