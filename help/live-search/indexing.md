@@ -9,7 +9,6 @@ Product attribute properties (metadata) determine how an attribute can be used i
 The [!DNL Live Search] API allows a client to sort by any product attribute that has the [storefront property](https://docs.magento.com/user-guide/stores/attributes-product.html) `Use in Search` set to `Yes` in the Adobe Commerce Admin.
 
 [!NOTE]
-
 [!DNL Live Search] does not index deleted products or those set to `Not Visible Individually`.
 
 ## Indexing pipeline

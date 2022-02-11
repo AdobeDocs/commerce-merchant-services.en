@@ -3,6 +3,7 @@ title: Workspace
 description: The [!DNL Live Search] workspace is where you configure, manage, and monitor search performance.
 ---
 # Workspace
+
 The workspace is where you configure, manage, and monitor the performance of [!DNL Live Search]. The menu across the top provides access to the tools in each functional area.  The available features reflect the current menu selection.
 
 ![Faceting workspace](assets/faceting-workspace.png?lang=en)
