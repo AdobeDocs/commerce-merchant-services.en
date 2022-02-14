@@ -32,7 +32,7 @@ When [!DNL Live Search] is configured and synchronized during onboarding, it can
 
 The following events trigger a full sync and index build:
 
-*  Onboarding [catalog data sync](install.html#synchronize-catalog-data)
+*  Onboarding [catalog data sync](install.md#synchronize-catalog-data)
 *  Changes to attribute metadata
 
 For example, changing the `Use in Search` property of the `color` attribute from `No` to `Yes` changes the attribute metadata to `searchable=true`, and triggers a full sync and reindex. The following attribute metadata trigger a full sync and reindex when changed:
@@ -44,7 +44,7 @@ For example, changing the `Use in Search` property of the `color` attribute from
 
 ### Streaming product updates
 
-After the initial index is built during [onboarding](install.html#synchronize-catalog-data), the following incremental product updates are continuously synced and reindexed:
+After the initial index is built during [onboarding](install.md#synchronize-catalog-data), the following incremental product updates are continuously synced and reindexed:
 
 *  New product(s) added to the catalog
 *  Changes to product attribute values
