@@ -4,7 +4,7 @@ description: Technical notes about customizing the Live Search storefront popove
 ---
 # Styling popover elements
 
-The [storefront popover](storefront-popover.html) always displays the product `name` and `price`, and the selection of fields is not configurable. However, popover elements can be styled using CSS classes. For example, the following declarations change the background color of the popover container and footer.
+The [storefront popover](storefront-popover.md) always displays the product `name` and `price`, and the selection of fields is not configurable. However, popover elements can be styled using CSS classes. For example, the following declarations change the background color of the popover container and footer.
 
 ```css
 .livesearch.popover-container {

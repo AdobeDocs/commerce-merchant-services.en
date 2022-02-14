@@ -27,20 +27,20 @@ If your Adobe Commerce installation includes multiple store views, set **Scope**
 ## Add a facet
 
 1. Click **Add facets**. 
-1. See [Add Facets](facets-add.html) for detailed instructions.
+1. See [Add Facets](facets-add.md) for detailed instructions.
 
 ## Column descriptions
 
 | Column | Description |
 |--- |--- |
-| (first column) | Lists pinned and dynamic facets by the [label](facets-type.html) that is visible to the shopper. |
-| Select type | The [selection method](facets-type.html) that is assigned to the corresponding product attribute. The `single select` type is used for all [!DNL Commerce] storefronts. For headless implementations, `multi-select` type can be assigned with a logical operator (`or` or `and`) to determine the set of products returned. |
-| Sort type | The [sorting order](facets-type.html) of facet values. Facets are sorted alphabetically for all [!DNL Commerce] storefronts. For [headless] implementations, facets can be sorted either alphabetically or by count. Options: Alphabetical, Count (headless only) |
+| (first column) | Lists pinned and dynamic facets by the [label](facets-type.md) that is visible to the shopper. |
+| Select type | The [selection method](facets-type.md) that is assigned to the corresponding product attribute. The `single select` type is used for all [!DNL Commerce] storefronts. For headless implementations, `multi-select` type can be assigned with a logical operator (`or` or `and`) to determine the set of products returned. |
+| Sort type | The [sorting order](facets-type.md) of facet values. Facets are sorted alphabetically for all [!DNL Commerce] storefronts. For [headless] implementations, facets can be sorted either alphabetically or by count. Options: Alphabetical, Count (headless only) |
 | Max value | The number of facet values that are available in the storefront as filters, with a maximum of 10. |
 
 ## Controls
 
 | Control | Description |
 |--- |--- |
-| Add facets| Opens the [facet editor](facets-add.html). |
-| Filter by | Determines the [type of facets](facets-type.html) that appear in the list. Options: All, Pinned, Dynamic |
+| Add facets| Opens the [facet editor](facets-add.md). |
+| Filter by | Determines the [type of facets](facets-type.md) that appear in the list. Options: All, Pinned, Dynamic |

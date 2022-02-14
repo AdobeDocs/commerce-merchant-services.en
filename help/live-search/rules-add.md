@@ -84,7 +84,7 @@ Event(s) are actions that change the search results when the condition(s) are me
 
 ## Step 4: Complete the details
 
-The information that is entered here appears in the [Rule Details](rules-workspace.html) panel.
+The information that is entered here appears in the [Rule Details](rules-workspace.md) panel.
 
 1. Under *Details*, enter a **Name** for the rule.
 1. Enter a brief **Description** of the rule.

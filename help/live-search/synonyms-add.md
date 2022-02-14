@@ -11,13 +11,13 @@ Add your own curated list of [!DNL Live Search] synonyms to improve response to 
 ## Step 1: Add a synonym
 
 1. In the Admin, go to **Marketing** > SEO & Search > **[!DNL Live Search]**.
-1. For multiple stores, set **Scope** to the [store view](configuration/scope.html) where the synonym settings apply.
+1. For multiple stores, set **Scope** to the [store view](configuration/scope.md) where the synonym settings apply.
 1. Click the **Synonyms** tab.
 1. Click the **Add synonyms** button.
 
 ## Step 2: Define the synonym by type
 
-Follow the instructions for the [type of synonym](synonyms-type.html) that you want to create.
+Follow the instructions for the [type of synonym](synonyms-type.md) that you want to create.
 
 ### Two-way synonym
 
@@ -65,6 +65,6 @@ It can take up to two hours for your updates to become available in the storefro
 
 | Field | Description |
 |--- |--- |
-| [Type](synonyms.html) | Determines if the synonyms have the same meaning as the keyword, or are a subset of the keyword. Options:<br />Two-way (default) - Terms that have the same meaning as the keyword and return the same search results<br />One-way - Terms that are a subset of the keyword. One-way synonyms return a more narrow list of specific products. |
+| [Type](synonyms.md) | Determines if the synonyms have the same meaning as the keyword, or are a subset of the keyword. Options:<br />Two-way (default) - Terms that have the same meaning as the keyword and return the same search results<br />One-way - Terms that are a subset of the keyword. One-way synonyms return a more narrow list of specific products. |
 | Keyword | A word that is commonly associated with a selection of products in your catalog. |
 | Expansion | Additional terms that have the same or similar meaning as the keyword. |

@@ -8,7 +8,7 @@ With a focus on speed, relevance, and ease of use, [!DNL Live Search] is a game 
 
 ## Search as you type
 
-[!DNL Live Search] responds with suggested products and a thumbnail image of top search results in a [popover](storefront-popover.html) as shoppers type queries into the [Search](https://docs.magento.com/user-guide/catalog/search-quick.html) box. The [product detail](https://docs.magento.com/user-guide/quick-tour/product-page.html) page appears when shoppers  click a suggested or featured product. A _View all_ link in the footer of the popover displays the search results page.
+[!DNL Live Search] responds with suggested products and a thumbnail image of top search results in a [popover](storefront-popover.md) as shoppers type queries into the [Search](https://docs.magento.com/user-guide/catalog/search-quick.html) box. The [product detail](https://docs.magento.com/user-guide/quick-tour/product-page.html) page appears when shoppers  click a suggested or featured product. A _View all_ link in the footer of the popover displays the search results page.
 [!DNL Live Search] returns "search as you type" results for a query of two or more characters. For a partial match, the maximum number of characters per word is 20. The number of characters in the query is not configurable. The following fields are included in the popover: `name`, `sku`, and `category_ids`.
 
 ![Example storefront - search as you type](assets/storefront-search-as-you-type.png?lang=en)
@@ -21,12 +21,12 @@ To list all products returned by the "search as you type" query, click _View all
 
 ## Filtered search with facets
 
-Filtered search uses multiple dimensions of attribute values, or [facets](facets.html), as search criteria. The selection of filters is defined by the merchant and changes according to the products returned, with the most commonly-used facets pinned to the top of the list.
+Filtered search uses multiple dimensions of attribute values, or [facets](facets.md), as search criteria. The selection of filters is defined by the merchant and changes according to the products returned, with the most commonly-used facets pinned to the top of the list.
 
 ## Synonyms
 
-[Synonyms](synonyms.html) expand the reach and sharpen the focus of queries by including words shoppers might use that differ from those in the catalog. You can fine tune the synonym dictionary to keep shoppers engaged and on the path to purchase.
+[Synonyms](synonyms.md) expand the reach and sharpen the focus of queries by including words shoppers might use that differ from those in the catalog. You can fine tune the synonym dictionary to keep shoppers engaged and on the path to purchase.
 
 ## Merchandising rules
 
-Merchandising [rules](rules.html) shape the shopping experience with if-then statements that add logic and events to search. You can easily boost or bury products for a promotion, season, or other period of time.
+Merchandising [rules](rules.md) shape the shopping experience with if-then statements that add logic and events to search. You can easily boost or bury products for a promotion, season, or other period of time.

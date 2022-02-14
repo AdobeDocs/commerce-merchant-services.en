@@ -4,7 +4,7 @@ description: The Live Search storefront popover dynamically returns suggested pr
 ---
 # Storefront Popover
 
-When [!DNL Live Search] is [installed](install.html), a popover appears in the storefront when shoppers type in the [Search](https://docs.magento.com/user-guide/catalog/search-quick.html) box. With each character typed, the popover is updated with suggested products and thumbnail images of the top search results.
+When [!DNL Live Search] is [installed](install.md), a popover appears in the storefront when shoppers type in the [Search](https://docs.magento.com/user-guide/catalog/search-quick.html) box. With each character typed, the popover is updated with suggested products and thumbnail images of the top search results.
 
 [!DNL Live Search] returns results for a query of two characters or more. For a partial match, the maximum number of characters per word is 20. The number of characters in a "search as you type" query is not configurable.
 

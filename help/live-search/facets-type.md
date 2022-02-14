@@ -9,7 +9,7 @@ All [!DNL Live Search] facets are dynamic and appear in the *Filters* list only 
 * Pinned facets  - The most commonly-used facets can be pinned to the top of the list. The remaining facets are listed in *Sort type* order after the pinned facets.
 * Intelligent facets - Product attributes that [Adobe Sensei](https://www.adobe.com/sensei.html) finds most relevant to a product set and query. The calculation takes into account the attribute metadata of the entire catalog and determines at query time the most relevant facets for the query.
 * Popular facets - Product attributes that are most often present in search results.
-* Price facets - Return products by price range. You can specify the number of selections and the price range interval on the [*Settings*](settings.html) tab.
+* Price facets - Return products by price range. You can specify the number of selections and the price range interval on the [*Settings*](settings.md) tab.
 
 At query time, [!DNL Live Search] generates the search results in groups of intelligent and popular facets.
 
@@ -35,7 +35,7 @@ For headless implementations, facets can be defined as `single select` or `multi
 
 ### Facet labels
 
-For [!DNL Commerce] storefronts, the facet label is determined by the [*Attribute Properties*](https://docs.magento.com/user-guide/stores/attribute-product-create.html). For stores with multiple views, additional labels can be defined under *Manage Labels*. For headless implementations, labels are edited from the [faceting workspace](faceting-workspace.html).
+For [!DNL Commerce] storefronts, the facet label is determined by the [*Attribute Properties*](https://docs.magento.com/user-guide/stores/attribute-product-create.html). For stores with multiple views, additional labels can be defined under *Manage Labels*. For headless implementations, labels are edited from the [faceting workspace](faceting-workspace.md).
 
 ### Sort type
 

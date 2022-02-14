@@ -4,7 +4,8 @@ user-guide-description: This guide provides detailed instructions for using Live
 breadcrumb-title: Live Search Guide
 ---
 # [!DNL Live Search] for Commerce {#live-search}
-- [[!Live Search] Guide](live-search-guide.md)
+
+- [[!Live Search] Guide](overview.md)
 - Getting Started {#getting-started}
    - [Install](install.md)
    - [Release Notes](release-notes.md)

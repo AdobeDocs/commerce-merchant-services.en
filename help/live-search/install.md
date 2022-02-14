@@ -8,7 +8,7 @@ description: Learn how to install, update, and uninstall Live Search from Adobe 
 
 The Adobe Commerce side includes hosting the search Admin, syncing catalog data, and running the query service.
 
-![Live Search architecture diagram](/assets/architecture-diagram.svg?lang=en)
+![Live Search architecture diagram](assets/architecture-diagram.svg?lang=en)
 
 After the [!DNL Live Search] module (with catalog modules as dependencies) is installed and configured, [!DNL Commerce] begins sharing search and catalog data with SaaS services. At this point, Admin users can set up, customize, and manage search facets, synonyms, and merchandising rules.
 

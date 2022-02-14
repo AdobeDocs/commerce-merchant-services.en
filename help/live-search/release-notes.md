@@ -18,7 +18,7 @@ These release notes describe the latest versions of [!DNL Live Search] and inclu
 
 * ![Fix](../assets/fix.svg) - [Custom price attribute](https://docs.magento.com/user-guide/stores/attributes-input-types.html) no longer returns an error when configured as a [facet]({% link live-search/facets-add.md %}).
 * ![Fix](../assets/fix.svg) - Fixed issue that caused an error to occur when no [currency symbol](https://docs.magento.com/user-guide/stores/currency-symbols.html) (`data-currency-symbol`) is available.
-* ![Fix](../assets/fix.svg) - [Storefront popover](storefront-popover.html) now shows the [Special Price](https://docs.magento.com/user-guide/catalog/product-price-special.html) (minimum final price) when available.
+* ![Fix](../assets/fix.svg) - [Storefront popover](storefront-popover.md) now shows the [Special Price](https://docs.magento.com/user-guide/catalog/product-price-special.html) (minimum final price) when available.
 
 ## [!DNL Live Search] 1.3.0
 
@@ -39,7 +39,7 @@ These release notes describe the latest versions of [!DNL Live Search] and inclu
 * Compatible with Adobe Commerce for Cloud (ECE): 2.4.x
 * Stability: Stable
 
-* ![New](../assets/new.svg) - Storefront [popover](storefront-popover.html) displays suggested products and thumbnail images of top search results as shoppers type queries into the Search box.
+* ![New](../assets/new.svg) - Storefront [popover](storefront-popover.md) displays suggested products and thumbnail images of top search results as shoppers type queries into the Search box.
 * ![New](../assets/new.svg) - Commerce Admin session stays open during extended periods of keyboard inactivity
 * ![New](../assets/new.svg) - [!DNL Live Search] is automatically enabled after onboarding
 * ![Fix](../assets/fix.svg) - Initial indexing time is less than an hour

@@ -8,7 +8,7 @@ Follow these instructions to update the properties of existing facets or change 
 
 ## Configure price facet groupings
 
-Refer to [Settings](settings.html) to configure price faceting intervals and groupings.
+Refer to [Settings](settings.md) to configure price faceting intervals and groupings.
 
 ## Edit facet
 
@@ -18,7 +18,7 @@ Refer to [Settings](settings.html) to configure price faceting intervals and gro
      * Pinned
      * Dynamic
 
-     To learn more, go to [Facet Types](facets-type.html).
+     To learn more, go to [Facet Types](facets-type.md).
 
      ![Filter facets](assets/facets-filter-by-cropped.png?lang=en)
 
@@ -58,7 +58,7 @@ The pin changes color when clicked and is used to move the facet to either the *
 
 ## Move pinned facet
 
-The order of pinned facets can be changed by moving the row to a different position. Pinned facets have a *Move* icon (![Move selector]({% link live-search/assets/btn-move.png %})) at the beginning of the row. Unlike pinned facets, dynamic facets cannot be moved.
+The order of pinned facets can be changed by moving the row to a different position. Pinned facets have a *Move* icon (![Move selector](assets/btn-move.png) at the beginning of the row. Unlike pinned facets, dynamic facets cannot be moved.
 
 1. Find the facet in the *Pinned Facets* section of the list.
 1. Use the **Move** (![Move selector](assets/btn-move.png) icon to drag the row to a new position in the *Pinned Facets* section.

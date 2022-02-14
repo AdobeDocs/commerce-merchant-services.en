@@ -4,7 +4,7 @@ description: Learn how to manage existing Live Search synonyms.
 ---
 # Manage Synonyms
 
-Follow these instructions to manage existing synonyms.
+Follow these instructions to manage existing [!DNL Live Search] [synonyms](synonyms.md).
 
 ## Find synonym
 
