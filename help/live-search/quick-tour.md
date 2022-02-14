@@ -1,6 +1,6 @@
 ---
 title: Quick Tour
-description: Take a quick tour of [!DNL Live Search] from the storefront.
+description: Take a quick tour of Live Search from the storefront.
 ---
 # Quick Tour
 

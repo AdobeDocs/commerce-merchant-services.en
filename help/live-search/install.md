@@ -1,6 +1,6 @@
 ---
-title: Install [!DNL Live Search]
-description: Learn how to install, update, and uninstall [!DNL Live Search] from Adobe Commerce.
+title: Install Live Search
+description: Learn how to install, update, and uninstall Live Search from Adobe Commerce.
 ---
 # Install [!DNL Live Search]
 

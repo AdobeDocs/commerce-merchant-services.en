@@ -1,6 +1,6 @@
 ---
 title: Rule Technical Notes
-description: Technical notes about using [!DNL Live Search] rules.
+description: Technical notes about using Live Search rules.
 ---
 # Rule Technical Notes
 

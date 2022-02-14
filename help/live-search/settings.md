@@ -1,6 +1,6 @@
 ---
-title: [!DNL Live Search] Settings
-description: Configure price facet ranges and intervals that are available as [!DNL Live Search] filters in the storefront.
+title: Live Search Settings
+description: Configure price facet ranges and intervals for Live Search facets.
 ---
 # Settings
 

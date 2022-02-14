@@ -1,6 +1,6 @@
 ---
 title: Add Synonyms
-description: Add your own curated list of [!DNL Live Search] synonyms to improve response to search requests and keep customers engaged.
+description: Add Live Search synonyms to improve response to search requests.
 ---
 # Add Synonyms
 

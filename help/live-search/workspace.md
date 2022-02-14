@@ -1,6 +1,6 @@
 ---
 title: Workspace
-description: The [!DNL Live Search] workspace is where you configure, manage, and monitor search performance.
+description: The Live Search workspace is used to configure, manage, and monitor search performance.
 ---
 # Workspace
 

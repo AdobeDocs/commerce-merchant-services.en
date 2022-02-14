@@ -1,6 +1,6 @@
 ---
 title: Types of Synonyms
-description: Some [!DNL Live Search] synonyms are interchangeable with a keyword, while others represent a subset of a keyword.
+description: One- and two-way Live Search synonyms expand the definition of keywords.
 ---
 # Types of Synonyms
 

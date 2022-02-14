@@ -1,6 +1,6 @@
 ---
 title: Feedback
-description: Share your feedback with the [!DNL Live Search] team.
+description: Share your feedback with the Live Search team.
 ---
 # Feedback
 

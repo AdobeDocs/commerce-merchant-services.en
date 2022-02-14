@@ -1,6 +1,6 @@
 ---
 title: Types of Facets
-description: [!DNL Live Search] facets are dynamic and appear in the Filters list only when relevant.
+description: Live Search facets are dynamic, and appear in the Filters list when relevant.
 ---
 # Types of facets
 

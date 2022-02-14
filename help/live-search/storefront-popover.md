@@ -1,6 +1,6 @@
 ---
 title: Storefront Popover
-description: The [!DNL Live Search] storefront popover returns suggested products and thumbnails of top search results as customers type query text.
+description: The Live Search storefront popover dynamically returns suggested products and thumbnails.
 ---
 # Storefront Popover
 

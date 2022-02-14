@@ -1,6 +1,6 @@
 ---
 title: Rules Workspace
-description: Learn your way around the [!DNL Live Search] rules workspace.
+description: Learn your way around the Live Search rules workspace.
 ---
 # Rules Workspace
 

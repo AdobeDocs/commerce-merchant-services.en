@@ -1,6 +1,6 @@
 ---
 title: Manage Facets
-description: Learn how to manage existing [!DNL Live Search] facets.
+description: Learn how to manage existing Live Search facets.
 ---
 # Manage Facets
 

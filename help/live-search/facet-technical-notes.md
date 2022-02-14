@@ -1,6 +1,6 @@
 ---
 title: Facet Technical Notes
-description: Technical notes about using [!DNL Live Search] facets.
+description: Technical notes about using Live Search facets.
 ---
 # Facet Technical Notes
 

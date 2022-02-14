@@ -1,6 +1,6 @@
 ---
-title: [!DNL Live Search] Indexing
-description: Learn how [!DNL Live Search] indexes product attribute properties
+title: Live Search Indexing
+description: Learn how Live Search indexes product attribute properties
 ---
 # Indexing
 

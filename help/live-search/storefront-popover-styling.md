@@ -1,6 +1,6 @@
 ---
 title: Styling Popover Elements
-description: Technical notes about customizing the [!DNL Live Search] storefront popover.
+description: Technical notes about customizing the Live Search storefront popover.
 ---
 # Styling popover elements
 

@@ -1,6 +1,6 @@
 ---
 title: Synonyms
-description: [!DNL Live Search] Synonyms expand the shopper's query to include words that might differ from those in your catalog.
+description: Live Search Synonyms expand queries with words that differ from those in your catalog.
 ---
 # Synonyms
 

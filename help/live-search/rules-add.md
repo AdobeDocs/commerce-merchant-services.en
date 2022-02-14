@@ -1,6 +1,6 @@
 ---
 title: Add Rules
-description: Learn how to create [!DNL Live Search] rules.
+description: Learn how to create Live Search rules.
 ---
 # Add Rules
 

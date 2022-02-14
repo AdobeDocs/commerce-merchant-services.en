@@ -1,6 +1,6 @@
 ---
 title: Facets
-description: [!DNL Live Search]] facets use multiple dimensions of attribute values as search criteria.
+description: Live Search facets use multiple dimensions of attribute values as search criteria.
 ---
 # Facets
 

@@ -1,6 +1,6 @@
 ---
 title: Rules
-description: [!DNL Live Search] rules combine logic with actions to shape the shopping experience.
+description: Live Search rules combine logic with actions to shape the shopping experience.
 ---
 # Rules
 

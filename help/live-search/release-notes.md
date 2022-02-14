@@ -1,6 +1,6 @@
 ---
-title: [!DNL Live Search] Release Notes
-description: The latest release information for [!DNL Live Search] from Adobe Commerce.
+title: Live Search Release Notes
+description: The latest release information for Live Search from Adobe Commerce.
 ---
 # [!DNL Live Search] Release Notes
 

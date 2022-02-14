@@ -1,6 +1,6 @@
 ---
 title: Rule Components
-description: Learn about[!DNL Live Search] rule components and operators.
+description: Learn about Live Search rule components and operators.
 ---
 # Rule Components
 

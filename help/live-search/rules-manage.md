@@ -1,6 +1,6 @@
 ---
 title: Manage Rules
-description: Learn how to manage existing [!DNL Live Search] rules.
+description: Learn how to manage existing Live Search rules.
 ---
 # Manage Rules
 

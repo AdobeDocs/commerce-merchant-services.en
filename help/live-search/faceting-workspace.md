@@ -1,6 +1,6 @@
 ---
 title: Faceting Workspace
-description: Learn your way around the [!DNL Live Search] faceting workspace.
+description: Learn your way around the Live Search faceting workspace.
 
 ---
 # Faceting workspace

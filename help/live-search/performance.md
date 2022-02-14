@@ -1,6 +1,6 @@
 ---
 title: Performance
-description: The [!DNL Live Search] Performance dashboard provides insight into the search terms that shoppers use.
+description: The Live Search Performance dashboard provides insight into the search terms that shoppers use.
 ---
 # Performance
 

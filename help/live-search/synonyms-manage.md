@@ -1,6 +1,6 @@
 ---
 title: Manage Synonyms
-description: Learn how to manage existing [!DNL Live Search] synonyms.
+description: Learn how to manage existing Live Search synonyms.
 ---
 # Manage Synonyms
 
