@@ -3,8 +3,8 @@ user-guide-title: Live Search Guide
 user-guide-description: This guide provides detailed instructions for using Live Search from Adobe Commerce.
 breadcrumb-title: Live Search Guide
 ---
-# [!DNL Live Search] for Commerce {#merchant-services}
-- [[!Live Search] Guide](overview.md)
+# [!DNL Live Search] for Commerce {#live-search}
+- [[!Live Search] Guide](live-search-guide.md)
 - Getting Started {#getting-started}
    - [Install](install.md)
    - [Release Notes](release-notes.md)
