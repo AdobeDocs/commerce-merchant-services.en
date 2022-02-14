@@ -6,7 +6,7 @@ description: Learn how to add filterable product attributes as Live Search facet
 
 Any filterable product attribute can be used as a facet. The *Add facets* panel lists the current facets and makes it easy to assign additional product attributes as facets. During this three-step process, an attribute is chosen to be used as a facet, properties are edited if needed, and the changes published to the storefront.
 
-![Faceting workspace](facets-add.png?lang=en)
+![Faceting workspace](assets/facets-add.png?lang=en)
 
 ## Step 1: Add a facet
 
@@ -14,7 +14,7 @@ Any filterable product attribute can be used as a facet. The *Add facets* panel 
 1. On the *Faceting* tab, click **Add facets**.
 1. In the *Add facets* list, each available attribute has a separate *Add* button. Do one of the following:
 
-   ![Facet added](facets-list-add.png?lang=en)
+   ![Facet added](assets/facets-list-add.png?lang=en)
 
      * In the *Faceting attributes* list, choose the product attribute that you want to use as a facet and click **Add**.
      * To find a specific product attribute, enter the first few characters of the attribute name in the *Search* box. Then, click **Add**.
@@ -55,7 +55,7 @@ Any filterable product attribute can be used as a facet. The *Add facets* panel 
 
 1. When the facet is complete, click **Publish changes**.
 1. Wait for the facet to appear in the store.
-   If the facet isn't available after two hours, see [Verify export](install.html#synchronize-catalog-data).
+   If the facet isn't available after two hours, see [Verify export](install.md#synchronize-catalog-data) in the installation instructions.
 
 ## Field descriptions
 
