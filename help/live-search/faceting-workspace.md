@@ -7,7 +7,7 @@ exl-id: b47b5c19-59bb-41e4-9599-3b90cbc44b70
 
 The [!DNL Live Search] workspace lists all facets that are currently available and provides access to the tools you need to set up and manage facets. Pinned facets appear first in the list of existing facets, followed by dynamic facets. The list can be filtered to show all facets, or only those that are pinned or dynamic.
 
-![Faceting workspace](assets/faceting-workspace.png?lang=en)
+![Faceting workspace](assets/faceting-workspace.png)
 
 ## Set the scope
 
@@ -22,7 +22,7 @@ If your Adobe Commerce installation includes multiple store views, set **Scope**
    * Pinned
    * Dynamic
 
-   ![Faceting workspace](assets/facets-filter-by.png?lang=en)
+   ![Faceting workspace](assets/facets-filter-by.png)
 
 ## Add a facet
 

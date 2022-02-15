@@ -20,7 +20,7 @@ To construct a dynamic query, the search service needs to know which attributes 
 
 `vendor/magento/module-catalog-data-exporter/etc/et_schema.xml`
 
-![[!DNL Live Search] indexing client search diagram](assets/indexing-pipeline.svg?lang=en)
+![[!DNL Live Search] indexing client search diagram](assets/indexing-pipeline.svg)
 
 1. Check merchant for [!DNL Live Search] entitlement.
 1. Get store views with changes to attribute metadata.
@@ -62,7 +62,7 @@ Streaming update workflow:
 The [!DNL Live Search] API allows a client to sort by any sortable product attribute by setting the [storefront property](https://docs.magento.com/user-guide/catalog/product-attributes.html), *Used for sorting in product listings* to `Yes`. Depending on the theme, this setting causes the attribute to be included as an option in the [Sort by](https://docs.magento.com/user-guide/catalog/navigation.html) pagination control on catalog pages. Up to 300 product attributes can be indexed by [!DNL Live Search], with [storefront properties](https://docs.magento.com/user-guide/stores/attributes-product.html) that are searchable and filterable.
 The index metadata is stored in the indexing pipeline and is accessible by the search service.
 
-![[!DNL Live Search] index metadata API diagram](assets/index-metadata-api.svg?lang=en)
+![[!DNL Live Search] index metadata API diagram](assets/index-metadata-api.svg)
 
 ### Sortable attribute workflow
 

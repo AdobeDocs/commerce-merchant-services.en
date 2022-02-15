@@ -7,7 +7,7 @@ exl-id: 0df6c21b-55b3-41ce-94f4-f70b70ffb84e
 
 Any filterable product attribute can be used as a facet. The *Add facets* panel lists the current facets and makes it easy to assign additional product attributes as facets. During this three-step process, an attribute is chosen to be used as a facet, properties are edited if needed, and the changes published to the storefront.
 
-![Faceting workspace](assets/facets-add.png?lang=en)
+![Faceting workspace](assets/facets-add.png)
 
 ## Step 1: Add a facet
 
@@ -15,7 +15,7 @@ Any filterable product attribute can be used as a facet. The *Add facets* panel 
 1. On the *Faceting* tab, click **Add facets**.
 1. In the *Add facets* list, each available attribute has a separate *Add* button. Do one of the following:
 
-   ![Facet added](assets/facets-list-add.png?lang=en)
+   ![Facet added](assets/facets-list-add.png)
 
      * In the *Faceting attributes* list, choose the product attribute that you want to use as a facet and click **Add**.
      * To find a specific product attribute, enter the first few characters of the attribute name in the *Search* box. Then, click **Add**.
@@ -23,7 +23,7 @@ Any filterable product attribute can be used as a facet. The *Add facets* panel 
        To configure price faceting intervals and groupings, refer to [Settings](settings.md). To learn more, go to [Facet Types](facets-type.md).
        The facet is added to the bottom of the *Dynamic Facets* list and the *Publish changes* button becomes available.
 
-   ![Facet added](assets/facet-added.png?lang=en)
+   ![Facet added](assets/facet-added.png)
 
 1. If the facet you want to add can't be found, go to **Stores** > Attributes > **Product** and verify that the attribute has the [required properties](facets.md) to be used as a facet. If necessary, update the following storefront properties of the attribute:
 
@@ -47,7 +47,7 @@ Any filterable product attribute can be used as a facet. The *Add facets* panel 
 
 1. When complete, click **Save**.
 
-   ![Faceting workspace](assets/facet-edit.png?lang=en)
+   ![Faceting workspace](assets/facet-edit.png)
 
 1. To pin the facet to the top of the *Filters* list, click the gray pushpin (![Pin selector](assets/btn-pin-gray.png).
 1. To change the order of the pinned facet, click the **Move** (![Move selector](assets/btn-move.png) icon and drag the row to a new position in the *Pinned Facets* section.

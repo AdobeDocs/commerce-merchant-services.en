@@ -14,7 +14,7 @@ All [!DNL Live Search] facets are dynamic and appear in the *Filters* list only 
 
 At query time, [!DNL Live Search] generates the search results in groups of intelligent and popular facets.
 
-![Facets - Price](assets/storefront-search-results-run-price.png?lang=en)
+![Facets - Price](assets/storefront-search-results-run-price.png)
 
 ## Storefront and headless options
 
@@ -26,7 +26,7 @@ In contrast, [headless](https://devdocs.magento.com/guides/v2.4/architecture/arc
 
 For headless implementations, facets can be defined as `single select` or `multi-select` with logical operators that determine the returned product set. For example, `green AND blue` or `green OR blue`.
 
-![Facets - Select type](assets/facets-select-type.png?lang=en)
+![Facets - Select type](assets/facets-select-type.png)
 
 | Select type | Description |
 |--- |--- |

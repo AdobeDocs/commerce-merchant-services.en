@@ -14,13 +14,13 @@ To build a rule, the first step is to use the rule editor to define the conditio
 1. Click the **Rules** tab.
 1. Click **Add rule** to launch the rule editor.
 
-   ![Rules workspace](assets/rules-workspace-add-rule.png?lang=en)
+   ![Rules workspace](assets/rules-workspace-add-rule.png)
 
 ## Step 2: Describe the condition(s)
 
 Condition(s) are the requirements to trigger an event. A rule can have up to ten conditions and twenty-five events.
 
-   ![Rule - Build your rule](assets/rules-add-workspace.png?lang=en)
+   ![Rule - Build your rule](assets/rules-add-workspace.png)
 
 ### Single condition
 
@@ -33,12 +33,12 @@ Condition(s) are the requirements to trigger an event. A rule can have up to ten
 
    The results appear immediately in the *Test your rule* pane and are numbered by priority. You can use the *Results per row* slider in the upper-right to change the number of products in each row.
 
-   ![Rule - simple](assets/rule-simple-test.png?lang=en)
+   ![Rule - simple](assets/rule-simple-test.png)
 
 1. To test other queries, change the query text in the *Test your rule* search box and press **Return**.
    Initially, the test pane renders the query from the Conditions search box. But now it is rendering the query from the test query box. The test pane renders only one query at a time.
 
-   ![Rule - update test](assets/rule-update-test.png?lang=en)
+   ![Rule - update test](assets/rule-update-test.png)
 
 1. If you like the result, update the text in the *Conditions* search box. Then, click anywhere on the page to update the results in the test pane.
 1. To build a simple rule with one condition, go to Step 3: [Add event(s)](#events).
@@ -48,11 +48,11 @@ Condition(s) are the requirements to trigger an event. A rule can have up to ten
 1. To build a rule with multiple conditions, click **Add condition**.
    A rule can have up to 10 conditions. The logical operator that joins two conditions is based on the current *Match* setting. By default, *Match* is `All` and the logical operator is `AND`.
 
-   ![Rules - Search query contains](assets/rules-search-query-contains-and.png?lang=en)
+   ![Rules - Search query contains](assets/rules-search-query-contains-and.png)
 
 1. Select the second condition and enter the required query text.
 
-   ![Rule conditions](assets/rules-add-condition.png?lang=en)
+   ![Rule conditions](assets/rules-add-condition.png)
 
 1. To change the logic of the rule, change the **Match** setting to determine how closely the shopper's search criteria must match the query condition. Set **Match** to one of the following:
 
@@ -62,7 +62,7 @@ Condition(s) are the requirements to trigger an event. A rule can have up to ten
    The *Match* value determines the logical operator that is used to join multiple conditions. Changing the *Match* setting changes all logical operators in the rule. It is not possible to combine `AND` and `OR` in the same rule.
    In this example, rather than searching for "yoga pants", there are two separate queries that search for "yoga" or "pants". This rule is less specific and will be triggered more often in the storefront than the other.
 
-   ![Rules - Match](assets/rules-match.png?lang=en)
+   ![Rules - Match](assets/rules-match.png)
 
 1. To add another condition, click **Add condition** and repeat the process.
 
@@ -74,7 +74,7 @@ Event(s) are actions that change the search results when the condition(s) are me
    For example, choose `Pin a product`. Then, enter the name of the product that you want to pin. If you need help, you can find the name in the test pane.
    Then, enter the *Position* where the pinned product is to appear. The product is moved to the new position in the test pane, and is marked with a *Pinned* preview badge.
    
-   ![Rules - Match](assets/rule-event-pin-product.png?lang=en)
+   ![Rules - Match](assets/rule-event-pin-product.png)
 
 1. For multiple events, choose any other events that you want to trigger when condition(s) are met.
 
@@ -93,7 +93,7 @@ The information that is entered here appears in the [Rule Details](rules-workspa
 
    To select a range of dates, click the first date and drag to select the range.
 
-   ![Rule - Complete](assets/rule-add-details.png?lang=en)
+   ![Rule - Complete](assets/rule-add-details.png)
 
 ## Step 5: Test the rule
 

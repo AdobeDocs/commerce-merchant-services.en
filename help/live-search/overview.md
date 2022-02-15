@@ -1,5 +1,5 @@
 ---
-title: Live Search User Guide
+title: Overview
 description: Live Search from Adobe Commerce delivers a lightning fast, super-relevant, and intuitive search experience.
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
 ---

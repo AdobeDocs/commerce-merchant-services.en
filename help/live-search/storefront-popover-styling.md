@@ -46,36 +46,36 @@ The following class selectors can be used to style the container, suggestion, an
 
 `.livesearch.popover-container`
 
-![Popover container](assets/livesearch-popover-container.png?lang=en)
+![Popover container](assets/livesearch-popover-container.png)
 
 `.livesearch.view-all-footer`
 
-![View all footer](assets/livesearch-view-all-footer.png?lang=en)
+![View all footer](assets/livesearch-view-all-footer.png)
 
 ### Suggestion Class Selectors
 
 `.livesearch.suggestions-container`
-![Suggestions container](assets/livesearch-suggestions-container.png?lang=en)
+![Suggestions container](assets/livesearch-suggestions-container.png)
 
 `.livesearch.suggestions-header`
-![Suggestions header](assets/livesearch-suggestions-header.png?lang=en)
+![Suggestions header](assets/livesearch-suggestions-header.png)
 
 `.livesearch.suggestion`
-![Suggestion](assets/livesearch-suggestion.png?lang=en)
+![Suggestion](assets/livesearch-suggestion.png)
 
 ### Product Class Selectors
 
 `.livesearch.products-container`
-![Product container](assets/livesearch-product-container.png?lang=en)
+![Product container](assets/livesearch-product-container.png)
 
 `.livesearch.product-result`
-![Product result](assets/livesearch-product-result.png?lang=en)
+![Product result](assets/livesearch-product-result.png)
 
 `.livesearch.product-name`
-![Product name](assets/livesearch-product-name.png?lang=en)
+![Product name](assets/livesearch-product-name.png)
 
 `.livesearch.product-price`
-![Product price](assets/livesearch-product-price.png?lang=en)
+![Product price](assets/livesearch-product-price.png)
 
 ## Working with a modified theme {#working-with-modified-theme}
 

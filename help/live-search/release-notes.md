@@ -7,9 +7,9 @@ exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 
 These release notes describe the latest versions of [!DNL Live Search] and include:
 
-![New](../assets/new.svg) New features
-![Fix](../assets/fix.svg) Fixes and improvements
-![Bug](../assets/bug.svg) Known issues
+* ![New](../assets/new.svg) - New features
+* ![Fix](../assets/fix.svg) - Fixes and improvements
+* ![Bug](../assets/bug.svg) - Known issues
 
 ## [!DNL Live Search] 1.3.1
 
