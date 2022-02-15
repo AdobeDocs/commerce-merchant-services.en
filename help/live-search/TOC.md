@@ -5,7 +5,7 @@ breadcrumb-title: Live Search Guide
 ---
 # [!DNL Live Search] for Commerce {#live-search}
 
-- [[!Live Search] Guide](overview.md)
+- Live Search Guide](overview.md)
 - Getting Started {#getting-started}
    - [Install](install.md)
    - [Release Notes](release-notes.md)
