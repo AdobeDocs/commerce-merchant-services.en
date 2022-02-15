@@ -6,7 +6,7 @@ description: Live Search facets use multiple dimensions of attribute values as s
 
 Faceting is a method of high-performance filtering that uses multiple dimensions of attribute values as search criteria. Faceted search is similar, but considerably “smarter” than the standard [layered navigation](https://docs.magento.com/user-guide/catalog/navigation-layered.html). The list of available filters is determined by the [filterable attributes](https://docs.magento.com/user-guide/catalog/navigation-layered-filterable-attributes.html) of products returned in the search results. Up to 100 facets can be configured with [!DNL Live Search].
 
-![Filtered search results](assets/storefront-search-results-run.png?lang=en)
+![Filtered search results](assets/storefront-search-results-run.png)
 
 ## Faceting requirements
 

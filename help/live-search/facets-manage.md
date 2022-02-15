@@ -20,26 +20,26 @@ Refer to [Settings](settings.md) to configure price faceting intervals and group
 
      To learn more, go to [Facet Types](facets-type.md).
 
-     ![Filter facets](assets/facets-filter-by-cropped.png?lang=en)
+     ![Filter facets](assets/facets-filter-by-cropped.png)
 
 1. To edit the facet properties, click **More** (...) options.
 1. Click **Edit**
 
-     ![Edit options](assets/facet-edit-menu.png?lang=en)
+     ![Edit options](assets/facet-edit-menu.png)
 
 1. To edit the facet label, do one of the following:
 
      * For a [!DNL Commerce] storefront, edit the [attribute label](https://docs.magento.com/user-guide/stores/attributes-product.html).
      * For a headless implementation, click the value in the first column and edit the text as needed.
 
-     ![Edit label](assets/facet-edit-label.png?lang=en)
+     ![Edit label](assets/facet-edit-label.png)
 
 1. (Headless only) To change the method that is used to sort facet values, click the value in the *Sort Type* column and choose one of the following:
 
      * Alphabetical
      * Count
 
-      ![Edit count](assets/facets-edit-count.png?lang=en)
+      ![Edit count](assets/facets-edit-count.png)
 
 1. In the **Max Value** column, set the maximum number (from 0 – 10) of facet filter values to show in the storefront.
 1. When complete, click **Save**.
@@ -54,7 +54,7 @@ The pin changes color when clicked and is used to move the facet to either the *
 1. To unpin a facet, find the facet in the *Pinned Facets* list and click the blue pin (![Pin selector](assets/btn-pin-blue.png).
       The pin turns gray and the facet moves to the *Dynamic Facets* section.
 
-      ![Pinned and dynamic facets](assets/facets-pinned-unpinned.png?lang=en)
+      ![Pinned and dynamic facets](assets/facets-pinned-unpinned.png)
 
 ## Move pinned facet
 

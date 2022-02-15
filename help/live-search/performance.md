@@ -10,7 +10,7 @@ The [!DNL Live Search] Performance dashboard provides insight into the search te
 * Zero results
 * Popular results
 
-![Performance](assets/performance-unique-searches.png?lang=en)
+![Performance](assets/performance-unique-searches.png)
 
 ## View a report
 
@@ -23,7 +23,7 @@ The [!DNL Live Search] Performance dashboard provides insight into the search te
 
 1. Click the report tab that you want to view.
 
-   ![Performance popular results](assets/performance-popular-results.png?lang=en)
+   ![Performance popular results](assets/performance-popular-results.png)
 
 ## Field descriptions
 
