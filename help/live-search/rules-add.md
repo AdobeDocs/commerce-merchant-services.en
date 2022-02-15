@@ -1,6 +1,7 @@
 ---
 title: Add Rules
 description: Learn how to create Live Search rules.
+exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
 ---
 # Add Rules
 

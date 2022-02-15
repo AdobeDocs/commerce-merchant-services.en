@@ -1,6 +1,7 @@
 ---
 title: Rules
 description: Live Search rules combine logic with actions to shape the shopping experience.
+exl-id: d06a3040-6987-4813-90ae-2f7b3ad0b232
 ---
 # Rules
 

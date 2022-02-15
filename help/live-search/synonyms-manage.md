@@ -1,6 +1,7 @@
 ---
 title: Manage Synonyms
 description: Learn how to manage existing Live Search synonyms.
+exl-id: 9f910b3c-ea28-4a50-9d3f-24b4812c0e75
 ---
 # Manage Synonyms
 

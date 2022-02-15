@@ -1,6 +1,7 @@
 ---
 title: Manage Facets
 description: Learn how to manage existing Live Search facets.
+exl-id: 1d51a36a-20d6-46b6-b379-11e46c8824a0
 ---
 # Manage Facets
 
