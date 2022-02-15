@@ -1,5 +1,5 @@
 ---
-title: Live Search User Guide
+title: Overview
 description: Live Search from Adobe Commerce delivers a lightning fast, super-relevant, and intuitive search experience.
 ---
 # [!DNL Live Search]
