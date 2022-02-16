@@ -7,10 +7,13 @@ hide: yes
 
 # [!DNL Express Checkout] for Adobe Commerce {#express-checkout}
 
-- [!DNL Express Checkout] for Adobe Commerce {#express-checkout}
-  - [Overview](overview.md)
-  - [Prerequisites](prerequisites.md)
-  - [Onboarding](onboarding.md)
+- [Overview](overview.md)
+- Getting Started {#getting-started}
   - [Install](install.md)
-  - [Developer information](developer.md)
+  - [Prerequisites](prerequisites.md)
+- [!DNL Express Checkout] onboarding {#express-checkout-onboarding}
+  - [Onboarding](onboarding.md)
+- Test and Validate {#test-validate}
   - [Testing](testing.md)
+  - [Developer information](developer.md)
+
