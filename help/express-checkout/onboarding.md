@@ -37,7 +37,7 @@ See [API credentials](#obtain-api-credentials) to learn how to create or access 
 
 ## Get extension
 
-See the [Install]({% link express-checkout/install.md %}) topic for detailed information about obtaining the extension.
+See the [Install](../express-checkout/install.md) topic for detailed information about obtaining the extension.
 
 ## Create account with Bolt
 
