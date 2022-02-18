@@ -5,7 +5,7 @@ exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 ---
 # Payment options
 
-With Adobe Commerce and Magento Open Source Payment Services, you have multiple payment options available to you---all configurable in the Admin (in **Stores** > _Settings_ > **Configuration** > **Sales** >  **Payment Methods** > _Recommended Solutions_).
+With Adobe Commerce and Magento Open Source [!DNL Payment Services], you have multiple payment options available to you. Set these options in the Admin store configuration (**[!UICONTROL Stores]** > _[!UICONTROL Settings]_ > **[!UICONTROL Configuration]**) by expanding **[!UICONTROL Sales]**, selecting  **[!UICONTROL Payment Method]s**, and then going to _[!UICONTROL Recommended Solutions]_ on the page.
 
 ![Payment methods view](assets/methods-view.png)
 
@@ -20,13 +20,13 @@ There are different behaviors for each payment method depending on where you are
 
 Credit Card Fields provide a simple and secure checkout for credit card or debit card payment methods. When a shopper checks out using credit card fields, they enter their name, billing address, and credit or debit card information, to place their order. Their customer information is securely used during the purchase session to seamlessly guide them through the checkout flow.
 
-You can configure Credit Card Fields in the Admin. See [Configuring Payment Services](configure-admin.md#configure-credit-card-fields) for more information.
+You can configure Credit Card Fields in the Admin. See [Configuring [!DNL Payment Services]](configure-admin.md#configure-credit-card-fields) for more information.
 
 ## PayPal Smart Buttons
 
 PayPal Smart Buttons, which use PayPal to complete a purchase, stores your shopper's shipping address, billing addresses, and payment details for later use. Shoppers can use any payment method previously stored or offered by PayPal.
 
-You can configure PayPal Smart Buttons in the Admin. See [Configuring Payment Services](configure-admin.md#configure-paypal-smart-buttons) for more information.
+You can configure PayPal Smart Buttons in the Admin. See [Configuring [!DNL Payment Services]](configure-admin.md#configure-paypal-smart-buttons) for more information.
 
 ### PayPal button
 
@@ -68,7 +68,7 @@ To help your customer identify these as potential payment options, Pay Later mes
    >
    >The amounts listed above are subject to change.
 
-See [Configure Payment Services](configure-admin.md#configure-paypal-smart-buttons) to learn how to disable or enable the Pay Later messaging.
+See [Configure [!DNL Payment Services]](configure-admin.md#configure-paypal-smart-buttons) to learn how to disable or enable the Pay Later messaging.
 
 ## Order recalculation
 
@@ -76,7 +76,7 @@ When a customer enters the checkout flow from the mini-cart, shopping cart, or p
 
 When a customer enters the checkout flow from the checkout page, the system is already aware of the shipping address and final calculated amount, and totals are appropriately represented.
 
-Tax holidays, shipping costs, and sales tax can vary widely from location to location. After Payment Services receives the shipping address and rate, it quickly recalculates all applicable costs and display them appropriately during the last stages of checkout.
+Tax holidays, shipping costs, and sales tax can vary widely from location to location. After [!DNL Payment Services] receives the shipping address and rate, it quickly recalculates all applicable costs and display them appropriately during the last stages of checkout.
 
 ## Checkout from product page
 
