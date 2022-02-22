@@ -95,7 +95,7 @@ The number of rows returned in a search, or shown in the default 30 days of orde
 
 ## Update report data
 
-The Order payment status report view shows a _Last updated_ timestamp that shows the last time that the report information was updated. By default, Order payment status report data is auto-refreshed every three hours.
+The Order payment status report view shows a _[!UICONTROL Last updated]_ timestamp that shows the last time that the report information was updated. By default, Order payment status report data is auto-refreshed every three hours.
 
 You can also manually force a refresh of the Order payment status report data to see the most up-to-date report information.
 
@@ -143,8 +143,8 @@ Order payment status reports include the following information.
 | [!UICONTROL Order Date] | Order date timestamp |
 | [!UICONTROL Authorized Date] | Date timestamp of payment authorization |
 | [!UICONTROL Order Status] | Current Commerce [order status](https://docs.magento.com/user-guide/sales/order-status.html){target="_blank"} |
-| [!UICONTROL Invoiced] | Invoice status of order---*No*, *Partial*, or *Yes* |
-| [!UICONTROL Shipped] | Shipping status of order---*No*, *Partial*, or *Yes* |
+| [!UICONTROL Invoiced] | Invoice status of order---*[!UICONTROL No]*, *[!UICONTROL Partial]*, or *[!UICONTROL Yes]* |
+| [!UICONTROL Shipped] | Shipping status of order---*[!UICONTROL No]*, *[!UICONTROL Partial]*, or *[!UICONTROL Yes]* |
 | [!UICONTROL Order Amt] | Grand total amount of the order |
 | [!UICONTROL Cur] | Currency type of order |
 | [!UICONTROL Pay Status] | Status of payment for a specific order |

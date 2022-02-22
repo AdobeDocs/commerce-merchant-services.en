@@ -15,7 +15,7 @@ To consume a Commerce SaaS service, you must use your instance's API keys, which
 
 >[!NOTE]
 >
->Need help with accessing your My Account dashboard? Check out [Create a Commerce account](https://docs.magento.com/user-guide/magento/magento-account-create.html){target="_blank"}.
+>Need help with accessing your [!UICONTROL My Account] dashboard? See [Create a Commerce account](https://docs.magento.com/user-guide/magento/magento-account-create.html){target="_blank"} in our core user guide.
 
 A given API key pair is valid for all Commerce Services in an environment, so if you already have Commerce Services configured for your Commerce instance your API key pair is already present in the Admin. If your private API key is lost, a new API key pair must be generated and applied to the Commerce Services configuration in the Admin.
 
@@ -29,7 +29,7 @@ To learn how to generate an API key for either sandbox or production environment
 
 Some Adobe Commerce and Magento Open Source features are deployed as SaaS (software as a service)---known as Commerce Services. To use these services, you must connect your Commerce instance to these services using an API key and a private key, and specify the desired data space in the [configuration](https://docs.magento.com/user-guide/configuration/services/saas.html){target="_blank"}.
 
-When you create a Commerce account, identified by a MageID, you can generate a Commerce API key and private key. To use Commerce Services, such as [!DNL Payment Services], Product Recommendations, or Live Search, the license-holder must generate these keys in order to pass entitlement validation. These keys can then be passed to the systems integrator or development team that manages the projects and environments on behalf of the license-holder. If you are a solution integrator, you are also entitled to use these services for your own needs. In that case, the signer of the Commerce partner contract should generate the keys.
+When you create a Commerce account, identified by a MageID, you can generate a Commerce API key and private key. To use Commerce Services, such as [!DNL Payment Services], [!DNL Product Recommendations], or [!DNL Live Search], the license-holder must generate these keys in order to pass entitlement validation. These keys can then be passed to the systems integrator or development team that manages the projects and environments on behalf of the license-holder. If you are a solution integrator, you are also entitled to use these services for your own needs. In that case, the signer of the Commerce partner contract should generate the keys.
 
 ### Generate an API key and private key
 

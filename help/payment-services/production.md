@@ -87,7 +87,7 @@ To enable live payments:
 1. In the left panel, expand **[!UICONTROL Sales]** and choose **[!UICONTROL Payment Methods]**.
 1. Expand the _[!UICONTROL Recommended Solutions]_ section.
 1. In the _[!UICONTROL Payment Services]_ section, expand the _[!UICONTROL General Configuration]_ section.
-1. Set **Method** to `Production`.
+1. Set **[!UICONTROL Method]** to `Production`.
 1. Click **[!UICONTROL Save Config]**.
 1. [Clear your cache](https://docs.magento.com/user-guide/system/cache-management.html){target="_blank"}.
 

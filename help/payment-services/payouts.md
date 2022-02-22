@@ -93,7 +93,7 @@ Payout reports include the following information.
 | [!UICONTROL Invoice] | Invoice ID (one per order) of the transaction |
 | [!UICONTROL Commerce order] | Commerce order ID <br> <br>To see related [order info](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"}, click the ID. |
 | [!UICONTROL Commerce trans] | Commerce transaction ID <br> <br>To see related [transaction info](https://docs.magento.com/user-guide/sales/transactions.html){target="_blank"}, click the ID. |
-| [!UICONTROL Pay method] | Credit card type---*BANK*, *PAYPAL*, *CREDIT_CARD*---and associated card provider (such as *Visa* or *MasterCard*) |
+| [!UICONTROL Pay method] | Credit card type---*[!UICONTROL BANK]*, *[!UICONTROL PAYPAL]*, *[!UICONTROL CREDIT_CARD]*---and associated card provider (such as *Visa* or *MasterCard*) |
 | [!UICONTROL Trans amt] | Amount of the transaction |
 | [!UICONTROL Cur] | Currency unit for transaction amount |
 | [!UICONTROL Pending] | Amount yet to be disbursed |

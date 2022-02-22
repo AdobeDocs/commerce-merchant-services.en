@@ -9,13 +9,13 @@ exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
 
 You can customize [!DNL Payment Services] to your needs with helpful configuration options in the Admin.
 
-When you configure [!DNL Payment Services] for Adobe Commerce and Magento Open Source in the Admin, those configurations apply only to the environment that is set in the Method field of General Configuration. Any changes you make in the configuration fields are independent of switching the Method selection---if you switch the method, your selections do not reset.
+When you configure [!DNL Payment Services] for Adobe Commerce and Magento Open Source in the Admin, those configurations apply only to the environment that is set in the [!UICONTROL Method] field of [!UICONTROL General Configuration]. Any changes you make in the configuration fields are independent of switching the [!UICONTROL Method] selection---if you switch the method, your selections do not reset.
 
-See the [General Configuration section](#general-configuration) for more information.
+See the [[!UICONTROL General Configuration] section](#general-configuration) for more information.
 
 ## General configuration
 
-You can enable [!DNL Payment Services] for your store, and enable either sandbox testing or live payments in the General Configuration section.
+You can enable [!DNL Payment Services] for your store, and enable either sandbox testing or live payments in the [!UICONTROL General Configuration] section.
 
 ![Methods view](assets/methods-view.png)
 
@@ -28,7 +28,7 @@ You can enable [!DNL Payment Services] for your store, and enable either sandbox
 
    >[!WARNING]
    >
-   >Your Sandbox Merchant ID and Production Merchant ID are auto-generated and present in their respectable fields when you have finished onboarding for the sandbox and/or production. Do not remove or change these IDs.
+   >Your [!UICONTROL Sandbox Merchant ID] and [!UICONTROL Production Merchant ID] are auto-generated and present in their respectable fields when you have finished onboarding for the sandbox and/or production. Do not remove or change these IDs.
 
 1. Click **[!UICONTROL Save Config]** to save your changes.
 
@@ -36,14 +36,14 @@ You can enable [!DNL Payment Services] for your store, and enable either sandbox
 
 | Field | Scope | Description |
 |---|---|---|
-| Enable | website | Enable or disable [!DNL Payment Services] for your website. Options: [!UICONTROL Yes] / [!UICONTROL No] |
-| Method | store view | Set the method, or environment, for your store. Options: Sandbox / Production |
-| Sandbox Merchant ID | store view | Field for your sandbox merchant ID, auto-generated during sandbox onboarding. Do not change or alter this ID. |
-| Production Merchant ID | store view | Field for your production merchant ID, auto-generated during sandbox onboarding. Do not change or alter this ID. |
+| [!UICONTROL Enable] | website | Enable or disable [!DNL Payment Services] for your website. Options: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Method] | store view | Set the method, or environment, for your store. Options: [!UICONTROL Sandbox] / [!UICONTROL Production] |
+| [!UICONTROL Sandbox Merchant ID] | store view | Your sandbox merchant ID, which is auto-generated during sandbox onboarding. Do not change or alter this ID. |
+| [!UICONTROL Production Merchant ID] | store view | Your production merchant ID, which is auto-generated during sandbox onboarding. Do not change or alter this ID. |
 
-## Credit Card Fields
+## [!UICONTROL Credit Card Fields]
 
-The Credit Card Fields payment options provide a simple and secure checkout for credit card or debit card payment methods.
+The [!UICONTROL Credit Card Fields] payment options provide a simple and secure checkout for credit card or debit card payment methods.
 
 See [Payments options](payments-options.md#paypal-smart-buttons) for more information.
 
@@ -62,13 +62,13 @@ See [Payments options](payments-options.md#paypal-smart-buttons) for more inform
 
 | Field | Scope | Description |
 |---|---|---|
-| Title | store view | Add the text for display as the title for this payment option in the Payment Method view during checkout. Options: text field |
-| Payment Action | website | The [payment action](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} for the specified payment method. Options: Authorize / Authorize and Capture |
-| Debug Mode | website | Enable or disable Debug Mode. Options: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Title] | store view | Add the text for display as the title for this payment option in the Payment Method view during checkout. Options: [!UICONTROL text field] |
+| [!UICONTROL Payment Action] | website | The [payment action](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} for the specified payment method. Options: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Debug Mode] | website | Enable or disable Debug Mode. Options: [!UICONTROL Yes] / [!UICONTROL No] |
 
-## PayPal Smart Buttons
+## [!DNL PayPal Smart Buttons]
 
-The PayPal Smart Buttons payment options provide a simple, fast, and secure checkout process for your customer.
+The [!DNL PayPal Smart Buttons] payment options provide a simple, fast, and secure checkout process for your customer.
 
 See [Payments options](payments-options.md#paypal-smart-buttons) for more information.
 
@@ -91,6 +91,6 @@ You can enable and configure the PayPal Smart Buttons payment options within the
 | Field | Scope | Description |
 |---|---|---|
 | [!UICONTROL Title] | store view | Add the text to be displayed as the title for this payment option in the Payment Method view during checkout. Options: text field |
-| [!UICONTROL Payment Action] | website | The [payment action](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} for the specified payment method. Options: Authorize / Authorize and Capture |
+| [!UICONTROL Payment Action] | website | The [payment action](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} for the specified payment method. Options: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Display Pay Later Message] | website | Enable or disable the Pay Later messaging in the shopping cart, product page, mini-cart, and during the checkout flow. Options: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Debug Mode] | website | Enable or disable Debug Mode. Options: [!UICONTROL Yes] / [!UICONTROL No] |

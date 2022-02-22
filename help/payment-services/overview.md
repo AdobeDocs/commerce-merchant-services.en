@@ -51,7 +51,7 @@ See the [PayPal currency availability](https://developer.paypal.com/docs/platfor
 Onboarding and setting up [!DNL Payment Services] is completed in just a few steps:
 
 1. Get the [[!DNL Payment Services] extension](install.md).
-1. Connect your Commerce instance to Magento Commerce Services.
+1. Connect your Commerce instance to Commerce Services.
 1. Onboard and set up the sandbox service.
 1. Enable [!DNL Payment Services] as your payment method and start processing test payments.
 1. Complete merchant onboarding to enable live payments for your websites.
