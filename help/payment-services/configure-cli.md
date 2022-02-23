@@ -1,19 +1,19 @@
 ---
 title: Command-line configuration
-description: After installation, you can configure Payment Services using the Command-line Interface (CLI).
+description: After installation, you can configure [!DNL Payment Services] using the Command-line Interface (CLI).
 role: Admin, Developer
 level: Intermediate
 exl-id: 265ab1be-fe52-41f3-85cb-addbc2ddfb17
 ---
 # Command-line configuration
 
-After you install Payment Services, you can easily configure it from [within the Admin](configure-admin.md) or via the Command-line Interface (CLI).
+After you install [!DNL Payment Services], you can easily configure it from [within the Admin](configure-admin.md) or via the Command-line Interface (CLI).
 
 ## Configure data export
 
-Payment Services combines order data exported from Magento Open Source and Adobe Commerce with aggregated payment data from payment providers to create useful reports. The Payment Services extension uses indexers to efficiently collect all necessary data for the reports.
+[!DNL Payment Services] combines order data exported from Magento Open Source and Adobe Commerce with aggregated payment data from payment providers to create useful reports. The [!DNL Payment Services] extension uses indexers to efficiently collect all necessary data for the reports.
 
-To learn about the data used in Payment Services reporting, See [Order payment status report](order-payment-status.md#data-used-in-the-report).
+To learn about the data used in [!DNL Payment Services] reporting, See [Order payment status report](order-payment-status.md#data-used-in-the-report).
 
 ### Configure cron on Magento Open Source
 
@@ -23,7 +23,7 @@ If you want to use a `BY SCHEDULE` index mode on Magento Open Source, you must c
 
 Order data is exported and persisted in the Payment Service, using one of two index modes---`ON SAVE` (default) or `BY SCHEDULE` (recommended).
 
-The following indexes are for Payment Services:
+The following indexes are for [!DNL Payment Services]:
 
 |   Code    |   Name    |   Description    |
 |    ---    |  ---  |  ---  |
@@ -51,7 +51,7 @@ When `BY SCHEDULE` mode is set, the system tracks changed entities and the cron 
 
 ### Send reindexed data to payment service
 
-After the data is indexed, it will be sent automatically to Payment Services. You can also manually trigger the process of sending indexed data with this command:
+After the data is indexed, it will be sent automatically to [!DNL Payment Services]. You can also manually trigger the process of sending indexed data with this command:
 
 ``` bash
 bin/magento saas:resync --feed [feedName]
@@ -75,7 +75,7 @@ The `--feed` parameter allows you to specify which feed you want to send:
 |    `paymentServicesStoresProduction`   |    Stores in Production mode   |
 |    `paymentServicesStoresSandbox`  |   Stores in Sandbox mode    |
 
-All data needed for the reports is sent to Payment Services automatically if cron is configured and installed. You can also manually trigger the process of sending cron data to Payment Services.
+All data needed for the reports is sent to [!DNL Payment Services] automatically if cron is configured and installed. You can also manually trigger the process of sending cron data to [!DNL Payment Services].
 
 ``` bash
 bin/magento cron:run --group payment_services_data_export

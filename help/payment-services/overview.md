@@ -1,19 +1,19 @@
 ---
-title: Payment Services for Commerce
-description: Learn how to install and use Payment Services as a turnkey, robust, and secure payment processing solution for your Adobe Commerce and Magento Open Source websites.
+title: [!DNL Payment Services] for Commerce
+description: Learn how to install and use [!DNL Payment Services] as a turnkey, robust, and secure payment processing solution for your Adobe Commerce and Magento Open Source websites.
 role: User
 level: Intermediate
 exl-id: e4d8d789-fcf6-4aaa-bc4e-42ce21c6dd6c
 ---
-# Payment Services for Commerce
+# [!DNL Payment Services] for Commerce
 
-Payment Services for Adobe Commerce and Magento Open Source is your turnkey self-service solution, including sandbox testing and a simple setup, for providing robust and secure payment processing for your Commerce websites.
+[!DNL Payment Services] for Adobe Commerce and Magento Open Source is your turnkey self-service solution, including sandbox testing and a simple setup, for providing robust and secure payment processing for your Commerce websites.
 
-![Payment Services extension Admin view](assets/admin-view.png)
+![[!DNL Payment Services] extension Admin view](assets/admin-view.png)
 
 Whether you are a small business, mid-market contender, or large enterprise, this payments solution helps you reduce operational overhead, increase revenue, and give you useful tools to improve the entire shopper experience. 
 
-Payment Services is:
+[!DNL Payment Services] is:
 
 * Easy to set up and maintain
 * Designed to maximize your profit
@@ -27,7 +27,7 @@ Payment Services is:
 >
 >Some of the features mentioned here may not yet be available for the GA (General Availability) release.
 
-Payment Services is your one-stop-shop for online checkout (from settlement and refunds to getting paid). It provides powerful tools to give you the insight and control needed for creating the best experience for your buyers.
+[!DNL Payment Services] is your one-stop-shop for online checkout (from settlement and refunds to getting paid). It provides powerful tools to give you the insight and control needed for creating the best experience for your buyers.
 
 * [**Onboarding**](onboard.md)---The process guides you through commercial signup, technical configuration, entitlements, sandbox environment configuration, and live payment enablement.
 * [**Payment checkout**](configure-admin.md)---Use pertinent local and region-specific payment methods to best serve your customers.
@@ -36,25 +36,25 @@ Payment Services is your one-stop-shop for online checkout (from settlement and 
 
 ## Availability
 
-Payment Services is available for Adobe Commerce and Magento Open Source. The Payment Services extension is now compatible with Adobe Commerce versions 2.4.0 to 2.4.3-p1.
+[!DNL Payment Services] is available for Adobe Commerce and Magento Open Source. The [!DNL Payment Services] extension is now compatible with Adobe Commerce versions 2.4.0 to 2.4.3-p1.
 
-See [Lifecycle policy](https://devdocs.magento.com/release/lifecycle-policy.html){target="_blank"} and the [Payment Services release notes](release-notes.md) pages for more release and version-specific information.s
+See [Lifecycle policy](https://devdocs.magento.com/release/lifecycle-policy.html){target="_blank"} and the [[!DNL Payment Services] release notes](release-notes.md) pages for more release and version-specific information.s
 
 ## Accepted credit cards and currencies
 
-Currently, Payment Services are only available in the United States (US) and accepts United States Dollars (USD) currency.
+Currently, [!DNL Payment Services] are only available in the United States (US) and accepts United States Dollars (USD) currency.
 
 See the [PayPal currency availability](https://developer.paypal.com/docs/platforms/checkout/reference/country-availability-advanced-cards/) documentation for more information.
 
 ## Get started
 
-Onboarding and setting up Payment Services is completed in just a few steps:
+Onboarding and setting up [!DNL Payment Services] is completed in just a few steps:
 
-1. Get the [Payment Services extension](install.md).
-1. Connect your Commerce instance to Magento Commerce Services.
+1. Get the [[!DNL Payment Services] extension](install.md).
+1. Connect your Commerce instance to Commerce Services.
 1. Onboard and set up the sandbox service.
-1. Enable Payment Services as your payment method and start processing test payments.
+1. Enable [!DNL Payment Services] as your payment method and start processing test payments.
 1. Complete merchant onboarding to enable live payments for your websites.
-1. Activate Payment Services in live mode to begin processing live payments.
+1. Activate [!DNL Payment Services] in live mode to begin processing live payments.
 
-To get the full instructions and start the onboarding process, see [Onboard Payment Services](onboard.md).
+To get the full instructions and start the onboarding process, see [Onboard [!DNL Payment Services]](onboard.md).

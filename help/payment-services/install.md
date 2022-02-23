@@ -1,15 +1,15 @@
 ---
-title: Install Payment Services
+title: Install [!DNL Payment Services]
 description: Install the Payments Services extension.
 exl-id: babaa91a-9376-4acb-b934-a89f9df52016
 ---
-# Install Payment Services
+# Install [!DNL Payment Services]
 
-Installing the Payment Services extension for Adobe Commerce and Magento Open Source is a prerequisite step for using Payment Services.
+Installing the [!DNL Payment Services] extension for Adobe Commerce and Magento Open Source is a prerequisite step for using [!DNL Payment Services].
 
-![Payment Services extension Admin view](assets/admin-view.png)
+![[!DNL Payment Services] extension Admin view](assets/admin-view.png)
 
-The Payment Services extension for Adobe Commerce and Magento Open Source can be installed with Composer keys, which are linked to the Magento ID ([mageid](https://devdocs.magento.com/marketplace/sellers/profile-personal.html#field-descriptions) provided in the signup process. Composer uses these keys during the initial installation of Adobe Commerce, or in situations in which the Composer keys were not previously saved to the `auth.json` file.
+The [!DNL Payment Services] extension for Adobe Commerce and Magento Open Source can be installed with Composer keys, which are linked to the Magento ID ([mageid](https://devdocs.magento.com/marketplace/sellers/profile-personal.html#field-descriptions) provided in the signup process. Composer uses these keys during the initial installation of Adobe Commerce, or in situations in which the Composer keys were not previously saved to the `auth.json` file.
 
 See [Get your authentication keys](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) for more information about obtaining Composer keys.
 
@@ -23,11 +23,11 @@ In your `composer.json` file, change `"minimum-stability": "stable"` to `"minimu
 
 ## Install the extension
 
-You can install the Payment Services extension for both Adobe Commerce on cloud infrastructure and on-premises instances.
+You can install the [!DNL Payment Services] extension for both Adobe Commerce on cloud infrastructure and on-premises instances.
 
 ### Adobe Commerce on cloud infrastructure
 
-This method is used for installing the Payment Services extension for a Commerce Cloud instance.
+This method is used for installing the [!DNL Payment Services] extension for a Commerce Cloud instance.
 
 1. Update your `composer.json` file:
 
@@ -47,7 +47,7 @@ This method is used for installing the Payment Services extension for a Commerce
 
 ### On-premises
 
-This method is used for installing the Payment Services extension for an On-premises instance.
+This method is used for installing the [!DNL Payment Services] extension for an On-premises instance.
 
 1. To obtain the extension, run these commands:
 
@@ -80,7 +80,7 @@ This method is used for installing the Payment Services extension for an On-prem
 
 ## Upgrade the extension
 
-When a new version of Payment Services is released, you can easily upgrade your extension.
+When a new version of [!DNL Payment Services] is released, you can easily upgrade your extension.
 
 1. To obtain the most recent version of the package:
 
@@ -94,7 +94,7 @@ When a new version of Payment Services is released, you can easily upgrade your 
 
 ## Troubleshooting
 
-You may see errors when attempting to install the Payment Services extension. Use the following troubleshooting methods to resolve the errors.
+You may see errors when attempting to install the [!DNL Payment Services] extension. Use the following troubleshooting methods to resolve the errors.
 
 ### Incorrect Composer keys
 
@@ -104,7 +104,7 @@ If you see the following error denoting that you have the incorrect Composer key
 Could not find a matching version of package magento/payment-services. Check the package spelling, your version constraint and that the package is available in a stability which matches your minimum-stability (stable).
 ```
 
-Verify that your Composer keys are linked to the Magento ID used during Payment Services registration.
+Verify that your Composer keys are linked to the Magento ID used during [!DNL Payment Services] registration.
 
 To see which Composer keys are configured:
 

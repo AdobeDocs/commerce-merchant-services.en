@@ -5,7 +5,7 @@ exl-id: 029a7038-2812-46ce-b188-929a7a758d89
 ---
 # Voids
 
-With Payment Services, you can use existing Commerce functionality for voiding transactions. Voids allow you to free the funds in a credit or debit card account that are blocked or held aside by an authorization for the amount of a purchase.
+With [!DNL Payment Services], you can use existing Commerce functionality for voiding transactions. Voids allow you to free the funds in a credit or debit card account that are blocked or held aside by an authorization for the amount of a purchase.
 
 >[!NOTE]
 >

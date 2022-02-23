@@ -5,7 +5,7 @@ exl-id: 083c5a12-1d78-48b5-b9e3-612b104ce7e0
 ---
 # Security and compliance
 
-Security is of the utmost concern in Payment Services and no private or Payment Card Industry (PCI) regulated information is passed across your payment services.
+Security is of the utmost concern in [!DNL Payment Services] and no private or Payment Card Industry (PCI) regulated information is passed across your [!DNL Payment Services].
 
 ## Commerce security
 
