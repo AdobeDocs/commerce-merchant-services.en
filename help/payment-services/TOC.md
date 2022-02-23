@@ -6,7 +6,7 @@ breadcrumb-title: [!DNL Payment Services] Guide
 
 # [!DNL Payment Services] for Commerce {#payment-services}
 
-- [[!DNL Payment Services] Guide](guide-overview.md)
+- [Guide overview](guide-overview.md)
 - [[!DNL Payment Services] overview](overview.md)
 - [Release Notes](release-notes.md)
 - [Payment options](payments-options.md)
