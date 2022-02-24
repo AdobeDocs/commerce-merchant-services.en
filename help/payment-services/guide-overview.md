@@ -7,7 +7,7 @@ exl-id: 30b23f26-9aac-4a24-a607-2431455fc935
 ---
 # [!DNL Payment Services] Guide overview
 
-This guide is intended for administrators of Adobe Commerce and Magento Open Source. It includes detailed information about installation and onboarding of [!DNL Payment Services], as well as configuration and management of the services. It assumes a basic understanding of the 
+This guide is intended for administrators of Adobe Commerce and Magento Open Source. It includes detailed information about installation and onboarding of [!DNL Payment Services], as well as configuration and management of the services. It assumes a basic understanding of the core Commerce configuration and functionality.
 
 [!DNL Payment Services] has two areas for administrators:
 
