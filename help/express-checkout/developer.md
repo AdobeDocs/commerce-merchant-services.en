@@ -1,6 +1,6 @@
 ---
-title: [!DNL Express Checkout] for Adobe Commerce Developer Information
-description: [!DNL Express Checkout] developer information.
+title: "[!DNL Express Checkout] for Adobe Commerce Developer Information"
+description: "[!DNL Express Checkout] developer information."
 ---
 
 # [!DNL Express Checkout] developer information
