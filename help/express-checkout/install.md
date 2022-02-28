@@ -13,13 +13,13 @@ The [!DNL Express Checkout] for Adobe Commerce powers a seamless checkout experi
 
 The [!DNL Express Checkout] extension for Adobe Commerce and Magento Open Source can be installed with Composer keys, which are linked to the [Magento ID (mageid)](https://devdocs.magento.com/marketplace/sellers/profile-personal.html#field-descriptions){target="_blank"} provided in the signup process. Composer uses these keys during the initial installation of Adobe Commerce, or in situations in which the Composer keys were not previously saved to the `auth.json` file.
 
-See [Get your authentication keys](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html){target="_blank"} for more information about obtaining Composer keys.
+See [get your authentication keys](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html){target="_blank"} for more information about obtaining Composer keys.
 
-There are two ways to install this extension---for [Adobe Commerce on cloud infrastructure](#magento-commerce-cloud) or [On-premises](#on-premises) installations. These methods require you to use the Command Line Interface (CLI).
+There are two ways to install this extension---for [Adobe Commerce on cloud infrastructure](#magento-commerce-cloud) or [on-premises](#on-premises) installations. These methods require you to use the Command Line Interface (CLI).
 
 ## Update minimum-stability setting
 
-Before installing the extension, you can change the `minimum-stability` requirement to `RC` (release candidate) in your `composer.json` file if you want to try the release candidate version. You can use an IDE or your favorite text editor (like Visual Studio Code or Sublime Text).
+Before you install the extension, you can change the `minimum-stability` requirement to `RC` (release candidate) in your `composer.json` file if you want to try the release candidate version. You can use an IDE or your favorite text editor (like Visual Studio Code or Sublime Text).
 
 In your `composer.json` file, change `"minimum-stability": "stable"` to `"minimum-stability": "RC"`.
 

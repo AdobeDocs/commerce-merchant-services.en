@@ -11,9 +11,14 @@ hide: yes
 - Getting Started {#getting-started}
   - [Install](install.md)
   - [Prerequisites](prerequisites.md)
-- [!DNL Express Checkout] onboarding {#express-checkout-onboarding}
+- Configure {#configure-express-checkout}
   - [Onboarding](onboarding.md)
 - Test and Validate {#test-validate}
   - [Testing](testing.md)
   - [Developer information](developer.md)
-
+- Custom checkout {#custom-checkout}
+  - [Checkout page](checkout-page.md)
+  - [Checkout flow](checkout-flow.md)
+  - [Shipping details](shipping-details.md)
+  - [Payment methods](payment-methods.md)
+  - [Troubleshoot Express Checkout](troubleshooting.md)

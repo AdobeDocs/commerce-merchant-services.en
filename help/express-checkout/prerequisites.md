@@ -13,13 +13,13 @@ The minimum requirements to use the [!DNL Express Checkout] are:
 
 | **Requirements** | **Constraints** |
 |----------------|-----------------|
-| PHP version| Depending on the Adobe Commerce instance version >=2.4.3 |
-| Composer | Depending on the Adobe Commerce instance version >=2.4.3 |
+| PHP version| Compatible with Adobe Commerce versions >=2.4.3 |
+| Composer | Compatible with Adobe Commerce versions >=2.4.3 |
 | Magento Open Source or Adobe Commerce 2.4.3. | none |
 
 Refer to the [onboarding](../express-checkout/onboarding.md) topic for more information.
 
-## Compatibility issues
+## Compatibility limitations
 
 The [!DNL Express Checkout] has existing compatibility issues for the EAP program (EAP):
 
@@ -28,7 +28,7 @@ The [!DNL Express Checkout] has existing compatibility issues for the EAP progra
 | US only| This feature is only available for US customers |
 | USD only| USD is the only compatible currency |
 | Amazon Pay | Amazon Pay is not compatible with Adobe Commerce versions >=2.4.3 |
-| PWA Studio and headless deployments | Customers MUST use the Luma-based coupled storefront. PWA Studio and headless deployments are not supported during |
+| PWA Studio and headless deployments | Customers MUST use the Luma-based coupled storefront. PWA Studio and headless deployments are not supported |
 | 3D Secure | 3D Secure is not supported |
 | B2B | B2B Secure is not supported |
 | ISPU | In-Store Pickup (ISPU) functionality is not supported |

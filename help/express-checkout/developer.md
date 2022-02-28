@@ -11,8 +11,4 @@ description: "[!DNL Express Checkout] developer information."
 
 This topic contains information for developers who work closely with the Adobe Commerce and Magento Open Source code and want to learn detailed information about the [!DNL Express Checkout] extension.
 
-## Translating the [!DNL Express Checkout] extension
-
-Adobe Commerce enables you to localize your store for multiple regions and markets. You can even localize error messages in your Admin view.
-
-Refer to the [translating and localizing](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/translations/xlate.html) topic for more information.
+Check [Bolt developer help](https://help.bolt.com/developers/) for more information on Bolt for developers.
