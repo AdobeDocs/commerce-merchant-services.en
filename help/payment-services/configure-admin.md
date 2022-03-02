@@ -96,3 +96,6 @@ You can enable and configure the PayPal Smart Buttons payment options within the
 | [!UICONTROL Venmo Enabled] | store view | Enable or disable venmo payment option where payment buttons are displayed. Options: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL PayPal Pay Later Enabled] | store view | Enable or disable pay later payment option appearance where payment buttons are displayed. Options: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Debug Mode] | website | Enable or disable Debug Mode. Options: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Show buttons on product detail page] | store view | Enable or disable [!DNL PayPal Smart Buttons] on the product detail page. Options: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Show buttons in mini cart preview] | store view | Enable or disable [!DNL PayPal Smart Buttons] in the minicart preview. Options: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Show buttons on cart page] | store view | Enable or disable [!DNL PayPal Smart Buttons] on the cart page. Options: [!UICONTROL Yes] / [!UICONTROL No] |
