@@ -1,8 +1,8 @@
 ---
 title: Checkout flow
 description: Overview of the [!DNL Express Checkout] flow in Adobe Commerce.
+exl-id: 82761627-a0d4-4cb0-aad1-9865fcb550d4
 ---
-
 # [!DNL Express Checkout] flow
 
 >[!IMPORTANT]

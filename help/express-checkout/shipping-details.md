@@ -1,8 +1,8 @@
 ---
 title: Checkout flow
 description: Overview of the checkout flow in Adobe Commerce.
+exl-id: 60faef08-7083-4175-93f2-086aa54b1614
 ---
-
 # [!DNL Express Checkout] compatible payment methods
 
 >[!IMPORTANT]

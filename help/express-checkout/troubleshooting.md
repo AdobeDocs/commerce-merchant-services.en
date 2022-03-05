@@ -1,8 +1,8 @@
 ---
 title: Troubleshooting issues for the [!DNL Express Checkout]
 description: Troubleshoot errors, known issues you may experience while using the [!DNL Express Checkout] for Adobe Commerce extension.
+exl-id: a379ff81-360d-4cb9-a123-47e8cbc0cdbd
 ---
-
 # Troubleshoot [!DNL Express Checkout] for Adobe Commerce
 
 >[!IMPORTANT]

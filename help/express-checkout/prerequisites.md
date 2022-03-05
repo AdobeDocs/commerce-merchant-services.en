@@ -1,8 +1,8 @@
 ---
-title: "[!DNL Express Checkout] prerequisites"
-description: Verify that your system meets the requirements necessary to use the [!DNL Express Checkout] for Adobe Commerce extension. 
+title: '[!DNL Express Checkout] prerequisites'
+description: Verify that your system meets the requirements necessary to use the [!DNL Express Checkout] for Adobe Commerce extension.
+exl-id: fa61aa73-a2b6-4c69-ab42-cede74c15caa
 ---
-
 # [!DNL Express Checkout] prerequisites
 
 >[!IMPORTANT]

@@ -1,8 +1,8 @@
 ---
-title: "[!DNL Express Checkout] for Adobe Commerce"
+title: '[!DNL Express Checkout] for Adobe Commerce'
 description: Learn how the [!DNL Express Checkout] could benefit your Adobe Commerce instance and how to successfully onboard and setup the extension.
+exl-id: 6f205568-18af-4f2f-827c-b46f04e0a10a
 ---
-
 # [!DNL Express Checkout] for Adobe Commerce
 
 >[!IMPORTANT]
