@@ -88,7 +88,7 @@ If a Bolt account is found, shoppers continue with their default out-of-the-box 
 - Shipping method
 - Review payment method
 
-Refer to the [troubleshooting](../express-checkout/shipping-details.md) topic for more information if you encounter problems when you place an order as an existing Adobe Commerce user.
+Refer to the [troubleshooting](../express-checkout/troubleshooting.md) topic for more information if you encounter problems when you place an order as an existing Adobe Commerce user.
 
 >[!NOTE]
 >

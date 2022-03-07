@@ -36,7 +36,7 @@ This method is used for installing the [!DNL Express Checkout] extension for a C
 1. Update your `composer.json` file:
 
    ```bash
-   composer require magento/express-checkout
+   composer require magento/express-checkout --no-update
    ```
 
 1. Update dependencies and install the extension:
@@ -56,7 +56,7 @@ This method is used for installing the [!DNL Express Checkout] extension for an 
 1. Add the Express Checkout module to the `require` section of the `composer.json` file:
 
    ```bash
-   composer require magento/express-checkout
+   composer require magento/express-checkout --no-update
    ```
 
 1. Update dependencies and install the extension:
@@ -98,38 +98,10 @@ When we release a new version of the [!DNL Express Checkout], you can easily upg
 
 ## Troubleshooting
 
-You may see errors when attempting to install the [!DNL Express Checkout] extension. Use the following troubleshooting methods to resolve the errors.
+You may see errors when attempting to install the [!DNL Express Checkout] extension.
 
-### Incorrect Composer keys
-
-If you see the following error denoting you have the incorrect Composer keys:
-
-```terminal
-Could not find a matching version of package magento/express-checkout. Check the package spelling, your version constraint and that the package is available in a stability which matches your minimum-stability (stable).
-```
-
-Verify that your Composer keys are linked to the Magento ID used during the Express Checkout registration.
-
-To see which Composer keys are configured:
-
-1. Find the location of the `auth.json` file:
-
-   ```bash
-   composer config --global home
-   ```
-
-1. View the `auth.json` file:
-
-   ```bash
-   cat /path/to/auth.json
-   ```
-
-1. See [which keys are associated with your Magento ID](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html).
+Refer to the [troubleshooting](../express-checkout/troubleshooting.md) topic for more information if you encounter any issues when you install the [!DNL Express Checkout].
 
 ## Prerequisites
 
-See [prerequisites](../express-checkout/prerequisites.md) topic for more information.
-
->[!NOTE]
->
->You can run the [!DNL Express Checkout] in any operating system.
+See the [prerequisites](../express-checkout/prerequisites.md) topic for more information.

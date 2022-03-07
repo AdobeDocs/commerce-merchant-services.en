@@ -7,18 +7,17 @@ hide: yes
 
 # [!DNL Express Checkout] for Adobe Commerce {#express-checkout}
 
-- [Overview](overview.md)
-- Getting Started {#getting-started}
+- [Introduction to [!DNL Express Checkout]](overview.md)
+- Onboard [!DNL Express Checkout] {#getting-started}
   - [Install](install.md)
   - [Prerequisites](prerequisites.md)
-- Configure {#configure-express-checkout}
   - [Onboarding](onboarding.md)
 - Test and Validate {#test-validate}
   - [Testing](testing.md)
   - [Developer information](developer.md)
-- Custom checkout {#custom-checkout}
+- Checkout {#manage-checkout}
   - [Checkout page](checkout-page.md)
   - [Checkout flow](checkout-flow.md)
   - [Shipping details](shipping-details.md)
   - [Payment methods](payment-methods.md)
-  - [Troubleshoot Express Checkout](troubleshooting.md)
+  - [Troubleshoot [!DNL Express Checkout]](troubleshooting.md)
