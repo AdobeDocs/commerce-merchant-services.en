@@ -22,8 +22,8 @@ breadcrumb-title: [!DNL Payment Services] Guide
 - [Test and validate](test-validate.md)
 - [Create an Order](create-order.md)
 - Financial reporting {#reporting}
-  - [Payouts report](payouts.md)
   - [Order payments status report](order-payment-status.md)
+  - [Payouts report](payouts.md)
 - Manage payments {#manage}
   - [Refunds](refunds.md)
   - [Voids](voids.md)
