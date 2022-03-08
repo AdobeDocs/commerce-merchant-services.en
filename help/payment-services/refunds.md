@@ -7,7 +7,7 @@ exl-id: 2b3721a1-9c9d-4e3f-ab7d-5bd61573dcb4
 
 Refunds for [!DNL Payment Services] orders are created in the Admin as part of the credit memo process. A credit memo is a document that shows the amount that is due to the customer, for a full or partial refund, which can be applied toward a purchase or refunded directly to the customer. Credit memos can only be issued for orders that are [invoiced](https://docs.magento.com/user-guide/sales/invoice-create.html){target="_blank"}.
 
-See [Credit Memos](https://docs.magento.com/user-guide/sales/credit-memos.html){target="_blank"} for more information and to learn how to issue and print credit memos.
+See [Credit Memos](https://docs.magento.com/user-guide/sales/credit-memos.html){target="_blank"} in our core user guide for more information and to learn how to issue and print credit memos.
 
 For orders processed with PayPal or a credit card you can:
 
@@ -15,7 +15,7 @@ For orders processed with PayPal or a credit card you can:
 * Refund a partial amount of an order (or multiple partial amounts)
 * Refund an amount less than the value of a specific order item
 
-See [Issuing a Credit Memo](https://docs.magento.com/user-guide/sales/credit-memo-create.html){target="_blank"} for more information.
+See [Issuing a Credit Memo](https://docs.magento.com/user-guide/sales/credit-memo-create.html){target="_blank"} in our core user guide for more information.
 
 >[!NOTE]
 >

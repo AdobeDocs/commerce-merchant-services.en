@@ -31,7 +31,7 @@ To complete sandbox onboarding:
 
    1. Copy and save the Email ID and System-Generated Password for future use.
 
-1. On the Admin sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
+1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. Click **[!UICONTROL Sandbox onboarding]**.
 
    This option is visible if you have not yet completed sandbox onboarding for [!DNL Payment Services].
@@ -45,7 +45,7 @@ To complete sandbox onboarding:
    ![PayPal - Connect PayPal account for payments](assets/paypal-connectacct.png)
 
 1. Continue to follow the PayPal flow, using your previously saved sandbox account credentials.
-1. On the Admin sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
+1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 
    The **[!UICONTROL Sandbox onboarding]** button is no longer visible and you see a "Sandbox payments pending" text.
 

@@ -7,7 +7,7 @@ exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
 
 [!DNL Payment Services] is powered by Commerce Services and deployed as SaaS (software as a service). You connect your Commerce instance using an API key and a private key, and specify the data space in the configuration. You set up this connection only once.
 
-See [Commerce Services Connector](https://docs.magento.com/user-guide/system/saas.html) for detailed information about this service. 
+See [Commerce Services Connector](https://docs.magento.com/user-guide/system/saas.html){target="_blank"} in the core user guide for detailed information about this service. 
 
 ## Obtain API credentials
 
@@ -15,11 +15,11 @@ To consume a Commerce SaaS service, you must use your instance's API keys, which
 
 >[!NOTE]
 >
->Need help with accessing your [!UICONTROL My Account] dashboard? See [Create a Commerce account](https://docs.magento.com/user-guide/magento/magento-account-create.html){target="_blank"} in our core user guide.
+>Need help with accessing your [!UICONTROL My Account] dashboard? See [Create a Commerce account](https://docs.magento.com/user-guide/magento/magento-account-create.html){target="_blank"} in the core user guide.
 
 A given API key pair is valid for all Commerce Services in an environment, so if you already have Commerce Services configured for your Commerce instance your API key pair is already present in the Admin. If your private API key is lost, a new API key pair must be generated and applied to the Commerce Services configuration in the Admin.
 
-To learn how to generate an API key for either sandbox or production environments, see [Commerce Services Connector](https://docs.magento.com/user-guide/system/saas.html){target="_blank"}.
+To learn how to generate an API key for either sandbox or production environments, see [Commerce Services Connector](https://docs.magento.com/user-guide/system/saas.html){target="_blank"} in the core user guide.
 
 >[!IMPORTANT]
 >
@@ -55,7 +55,7 @@ When you create a Commerce account, identified by a MageID, you can generate a C
    
 1. Copy both the API key and private key when you select or create a SaaS project.
 
-   See [SaaS](https://docs.magento.com/user-guide/system/saas.html){target="_blank"} for more detailed information.
+   See [SaaS](https://docs.magento.com/user-guide/system/saas.html){target="_blank"} in the core user guide for more detailed information.
 
 The same API key can be used across instances, but each instance must have its own SaaS Data Space.
 

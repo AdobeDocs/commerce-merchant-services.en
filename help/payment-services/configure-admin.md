@@ -17,10 +17,11 @@ See the [[!UICONTROL General Configuration] section](#general-configuration) for
 
 You can enable [!DNL Payment Services] for your store, and enable either sandbox testing or live payments in the [!UICONTROL General Configuration] section.
 
-![Methods view](assets/methods-view.png)
-
 1. On the _Admin_ sidebar, go to **[!UICONTROL Stores]** > _[!UICONTROL Settings]_ > **[!UICONTROL Configuration]**.
 1. In the left panel, expand **[!UICONTROL Sales]** and choose **[!UICONTROL Payment Methods]**.
+
+   ![Methods view](assets/methods-view.png)
+
 1. Expand the _[!UICONTROL Recommended Solutions]_ section.
 1. In the _[!UICONTROL [!DNL Payment Services]]_ section, expand the _[!UICONTROL General Configuration]_ section.
 1. For **Enable**, set it to `Yes` to enable [!DNL Payment Services] for your store.
