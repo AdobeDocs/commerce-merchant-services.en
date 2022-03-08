@@ -6,7 +6,6 @@ audience: end-user
 mini-toc-levels: 2
 git-repo: https://github.com/AdobeDocs/commerce-merchant-services.en
 role: User
-hide: yes
 ---
 
 # Metadata for internal use

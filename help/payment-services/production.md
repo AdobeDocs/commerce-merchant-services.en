@@ -21,6 +21,7 @@ After you [configure your Commerce Services](connect.md#configure-commerce-servi
 1. In _[!UICONTROL General Configuration]_, set **[!UICONTROL Enable]** to `Yes`.
 1. Set **[!UICONTROL Payment Action]**, for both _[!UICONTROL Credit Card Fields]_ and _[!UICONTROL PayPal Smart Buttons]_, to one of the following:
 
+   |Setting|Description|
    |---|---|
    | `Authorize`  |  Approves the purchase and puts a hold on the funds. The amount is not withdrawn until it is “captured” by the merchant. |
    | `Authorize and Capture`  | Approves the purchase and the merchant "captures" the funds. |
