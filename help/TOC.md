@@ -4,6 +4,7 @@ user-guide-title: Services for Adobe Commerce
 user-guide-description: Documentation and resources for hosted services that provide extended capabilities to Adobe Commerce and Magento Open Source.
 title: Services for Adobe Commerce
 breadcrumb-title: Services documentation
+hide: yes
 ---
 
 # Services for Adobe Commerce documentation {#services}

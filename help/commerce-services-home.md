@@ -1,5 +1,5 @@
 ---
-keywords: Adobe Commerce;services;popular topics;saas
+keywords: Adobe Commerce;services;saas
 title: Services for Adobe Commerce documentation
 description: Browse Services for Adobe Commerce product documentation
 seo-title: Services for Adobe Commerce
