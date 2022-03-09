@@ -9,7 +9,7 @@ breadcrumb-title: Services documentation
 # Services for Adobe Commerce documentation {#services}
 
 + [Services Connector](https://docs.magento.com/user-guide/system/saas.html)
-+ [Live Search](live-search/overview.md)
++ [Live Search](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/overview.html)
 + [Product Recommendations](https://docs.magento.com/user-guide/recommendations/overview.html)
-+ [Payment Services](payment-services/guide-overview.md)
++ [Payment Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/guide-overview.html)
 + [Amazon Sales Channel](https://experienceleague.adobe.com/docs/commerce-channels/amazon/guide-overview.html)
