@@ -1,5 +1,5 @@
 ---
-title: Services for Adobe Commerce documentation
+title: Services documentation
 description: Browse Services for Adobe Commerce product documentation
 seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce and Magento Open Source merchants support key components of their business.
