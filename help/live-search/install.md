@@ -31,7 +31,7 @@ This topic provides instructions to do the following:
 
 ## Boundaries and thresholds
 
-At this time, the Live Search category search/category API has the following supported limits and static boundaries:
+At this time, the Live Search search/category API has the following supported limits and static boundaries:
 
 ### Indexing
 

@@ -17,7 +17,7 @@ These release notes describe the latest versions of [!DNL Live Search] and inclu
 * Stability: Stable
 
 * ![New](../assets/new.svg) - The number of available lines in the [storefront popover](quick-tour.md) can be configured from the Admin.
-* ![New](../assets/new.svg) -  Beta [PWA](https://developer.adobe.com/commerce/pwa-studio/) compatibility for Live Search.
+* ![New](../assets/new.svg) - Beta [PWA](https://developer.adobe.com/commerce/pwa-studio/) compatibility for Live Search.
 * ![New](../assets/new.svg) - The Live Search installation process is updated with advanced process changes.
 * ![Fix](../assets/fix.svg) - [Advanced Search](https://docs.magento.com/user-guide/catalog/search-advanced.html) link removed from the storefront footer.
 * ![Bug](../assets/bug.svg) - The following product attributes are not supported by [Magento GraphQL API](https://devdocs.magento.com/guides/v2.4/graphql) when used in relation to the beta release of PWA: `description`, `name`, `short_description`
