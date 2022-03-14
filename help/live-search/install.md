@@ -31,7 +31,7 @@ This topic provides instructions to do the following:
 
 ## Boundaries and thresholds
 
-At this time, the Live Search category search / category API has the following supported limits and static boundaries:
+At this time, the Live Search category search/category API has the following supported limits and static boundaries:
 
 ### Indexing
 
@@ -39,22 +39,23 @@ At this time, the Live Search category search / category API has the following s
 * Indexes only products from the Adobe Commerce database
 * Does not index CMS pages
 
-### Functionality
-
-* Storefront [Advanced (Form) Search](https://docs.magento.com/user-guide/catalog/search-advanced.html) module
-* [Customer groups](https://docs.magento.com/user-guide/customers/customer-groups.html)
-* [Custom price groups](https://docs.magento.com/user-guide/catalog/product-price-group.html)
-* Multiple inventory locations as used by [MCOM](https://docs.magento.com/user-guide/mcom.html) or other OMS extensions
-* [Integrated B2B capabilities](https://business.adobe.com/products/magento/b2b-ecommerce.html)
-
-### Queries
+### Query limits
 
 * Live Search does not have access to the full taxonomy of the category tree, which makes some layered navigation search scenarios beyond its reach.
 * Live Search uses a unique GraphQL endpoint for queries to support features such as intelligent faceting and search-as-you-type. Although similar to the [Magento GraphQL API](https://devdocs.magento.com/guides/v2.4/graphql), there are a few differences and some fields may not be fully compatible at this time.
 
-### Progressive Web Applications (PWA)
+### PWA beta release
 
-* Live Search does not support [PWA](https://developer.adobe.com/commerce/pwa-studio/) at this time.
+* The beta release of PWA for Live Search does not support [eventing]().
+* The following product attributes are not supported by GraphQL when used in relation to the beta release of [PWA](https://developer.adobe.com/commerce/pwa-studio/): `description`, `name`, `short_description`
+
+### Not supported at this time
+
+* The [Advanced Search](https://docs.magento.com/user-guide/catalog/search-advanced.html) module is disabled when Live Search is installed, and the Advanced Search link in the storefront footer is removed.
+* [Customer groups](https://docs.magento.com/user-guide/customers/customer-groups.html)
+* [Custom price groups](https://docs.magento.com/user-guide/catalog/product-price-group.html)
+* Multiple inventory locations as used by [MCOM](https://docs.magento.com/user-guide/mcom.html) or other OMS extensions
+* [Integrated B2B capabilities](https://business.adobe.com/products/magento/b2b-ecommerce.html)
 
 ## Before you begin {#before-you-begin}
 
@@ -67,10 +68,6 @@ Do the following:
    * [Method 1](#method-1): Install without [!DNL Elasticsearch]
    * [Method 2](#method-2): Install with [!DNL Elasticsearch] (No downtime)
 
-   >[!TIP]
-   >
-   >To enter instructions on the command line, hover over the far right of the code box and click the [!UICONTROL **Copy**] link. Then, paste it into the command line. If you do not have experience working from the command line, ask your system integrator or developer for assistance.
-
 ## Method 1: Install without Elasticsearch {#method-1}
 
 This onboarding method is recommended when installing [!DNL Live Search] to a:
@@ -79,6 +76,10 @@ This onboarding method is recommended when installing [!DNL Live Search] to a:
 * Staging environment
 
 In this scenario, storefront operations are interrupted while the [!DNL Live Search] service indexes all products in the catalog. During the installation, [!DNL Live Search] modules are enabled and [!DNL Elasticsearch] modules are disabled.
+
+   >[!TIP]
+   >
+   >To avoid typing errors, hover over the far right of the code box, click the [!UICONTROL **Copy**] link, and paste it into the command line.
 
 1. Install Adobe Commerce 2.4.x without [!DNL Live Search].
 
@@ -93,7 +94,7 @@ In this scenario, storefront operations are interrupted while the [!DNL Live Sea
 1. Run the following commands to disable [!DNL Elasticsearch] and related modules, and install [!DNL Live Search]:
 
    ```bash
-   bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch6 Magento_Elasticsearch7 Magento_ElasticsearchCatalogPermissions Magento_AdvancedSearch  Magento_InventoryElasticsearch
+   bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch6 Magento_Elasticsearch7 Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch
    ```
 
    ```bash
@@ -127,6 +128,10 @@ This onboarding method is recommended when installing [!DNL Live Search] to:
 * An existing production [!DNL Commerce] installation
 
 In this scenario, [!DNL Elasticsearch] temporarily manages search requests from the storefront while the [!DNL Live Search] service indexes all products in the background, without any interruption to normal storefront operations. [!DNL Elasticsearch] is disabled and [!DNL Live Search] enabled after all catalog data is indexed and synchronized.
+
+ >[!TIP]
+   >
+   >To avoid typing errors, hover over the far right of the code box, click the [!UICONTROL **Copy**] link, and paste it into the command line.
 
 1. To download the `live-search` package, run the following from the command line:
 
@@ -162,8 +167,8 @@ In this scenario, [!DNL Elasticsearch] temporarily manages search requests from 
 
 1. Wait at least an hour for the data to be indexed and synchronized. Then, use the [GraphQL playground](https://devdocs.magento.com/live-search/graphql-support.html) with the default query to verify the following:
 
-   * The product count returned is close to what you expect for the store view
-   * Facet(s) are returned
+   * The returned product count is close to what you expect for the store view.
+   * Facet(s) are returned.
 
 1. Run the following commands to disable [!DNL Elasticsearch] modules, enable [!DNL Live Search] modules, and run `setup`:
 
@@ -172,7 +177,7 @@ In this scenario, [!DNL Elasticsearch] temporarily manages search requests from 
    ```
 
    ```bash
-   bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch6 Magento_Elasticsearch7 Magento_ElasticsearchCatalogPermissions Magento_AdvancedSearch Magento_InventoryElasticsearch
+   bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch6 Magento_Elasticsearch7 Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch
    ```
 
    ```bash
@@ -191,7 +196,7 @@ To generate an API key and private key, refer to [Commerce Services Connector](h
 
 ### Adobe Commerce developer or SI
 
-The developer or SI configures the SaaS Data Space as described in the Commerce Services section of the configuration. Commerce Services becomes available in the Admin Configuration sidebar when a SaaS module is installed.
+The developer or SI configures the SaaS data space as described in the Commerce Services section of the configuration. In the Admin, Commerce Services becomes available in the Configuration sidebar when a SaaS module is installed.
 
 ## Synchronize catalog data {#synchronize-catalog-data}
 
@@ -232,7 +237,7 @@ To update [!DNL Live Search], run the following from the command line:
 composer update magento/live-search --with-dependencies
 ```
 
-To update to a major version such as from 1.0 to 2.0, edit the project’s root [!DNL Composer] `.json` file as follows:
+To update to a major version such as from 1.0.0 to 2.0.0, edit the project’s root [!DNL Composer] `.json` file as follows:
 
 1. Open the root `composer.json` file and search for `magento/live-search`.
 
