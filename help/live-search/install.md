@@ -170,7 +170,7 @@ In this scenario, [!DNL Elasticsearch] temporarily manages search requests from 
    * The returned product count is close to what you expect for the store view.
    * Facet(s) are returned.
 
-1. Run the following commands to disable [!DNL Elasticsearch] modules, enable [!DNL Live Search] modules, and run `setup`:
+1. Run the following commands to enable [!DNL Live Search] modules, disable [!DNL Elasticsearch], and run `setup`.
 
    ```bash
    bin/magento module:enable Magento_LiveSearchAdapter Magento_LiveSearchStorefrontPopover
