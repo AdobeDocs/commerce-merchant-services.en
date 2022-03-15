@@ -7,7 +7,8 @@ title: Services for Adobe Commerce
 
 - [Services for Adobe Commerce](home.md)
 - [Services Connector](https://docs.magento.com/user-guide/system/saas.html)
-- [Live Search](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/overview.html)
-- [Product Recommendations](https://docs.magento.com/user-guide/recommendations/overview.html)
-- [Payment Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/guide-overview.html)
-- [Amazon Sales Channel](https://experienceleague.adobe.com/docs/commerce-channels/amazon/guide-overview.html)
+- [Catalog Sync](https://docs.magento.com/user-guide/system/catalog-sync.html)
+- [[!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/overview.html)
+- [[!DNL Product Recommendations]](https://docs.magento.com/user-guide/recommendations/overview.html)
+- [[!DNL Payment Services]](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/guide-overview.html)
+- [[!DNL Amazon Sales Channel]](https://experienceleague.adobe.com/docs/commerce-channels/amazon/guide-overview.html)
