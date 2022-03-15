@@ -26,7 +26,7 @@ The following attributes are always searchable:
 
 ## Popover page size
 
-The page size of the storefront popover determines how many lines of autocompleted products can be returned Previously, the page size of the popover was hardcoded to six lines. The `page_size` value is now a configurable setting that is passed to the constructor. During the Live Search installation, the `page_size` value changes to the current value of the [Catalog Search](https://docs.magento.com/user-guide/configuration/catalog/catalog.html#catalog-search) - `Autocomplete Limit` setting.
+The page size of the popover determines how many lines of autocompleted products can be returned. Previously, the page size was hardcoded as six lines. However, the `page_size` value is now a setting that can be configured from the *Admin*. During the Live Search installation, the `page_size` value changes to the current value of the [Catalog Search](https://docs.magento.com/user-guide/configuration/catalog/catalog.html#catalog-search) - `Autocomplete Limit` setting.
 
  By default, the Catalog Search - Autocomplete Limit value is set to eight lines (or rows). To change the page size of the popover, do the following:
 
