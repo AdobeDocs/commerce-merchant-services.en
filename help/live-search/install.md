@@ -47,7 +47,7 @@ At this time, the Live Search search/category API has the following supported li
 
 ### PWA beta release
 
-* The beta release of PWA for Live Search does not support [eventing](https://devdocs.magento.com/shared-services/storefront-events-sdk.html).
+* The beta release of PWA for Live Search does not support [event handling](https://devdocs.magento.com/shared-services/storefront-events-sdk.html).
 * The following product attributes are not supported by GraphQL when used in relation to the beta release of [PWA](https://developer.adobe.com/commerce/pwa-studio/): `description`, `name`, `short_description`
 
 ### Not supported at this time
