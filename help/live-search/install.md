@@ -5,13 +5,13 @@ exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 ---
 # Install [!DNL Live Search]
 
-[!DNL Live Search] is a set of standalone [packages](#live-search-packages) that replaces standard Magento Open Source and Adobe Commerce search capabilities. The [!DNL Live Search] module is installed from the command line of the server and connects to your Adobe Commerce installation as a [service](https://docs.magento.com/user-guide/system/saas.html). When the process is complete, [!DNL Live Search] appears on the *Marketing* menu under *SEO & Search* in the [!DNL Commerce] `Admin`.
+[!DNL Live Search] is a set of standalone [packages](#live-search-packages) that replaces standard Magento Open Source and Adobe Commerce search capabilities. The [!DNL Live Search] module is installed from the command line of the server and connects to your Adobe Commerce installation as a [service](https://docs.magento.com/user-guide/system/saas.html). When the process is complete, [!DNL Live Search] appears on the *Marketing* menu under *SEO & Search* in the [!DNL Commerce] *Admin*.
 
-The Adobe Commerce side includes hosting the search `Admin`, syncing catalog data, and running the query service.
+The Adobe Commerce side includes hosting the search *Admin*, syncing catalog data, and running the query service.
 
 ![Live Search architecture diagram](assets/architecture-diagram.svg)
 
-After the [!DNL Live Search] module (with catalog modules as dependencies) is installed and configured, [!DNL Commerce] begins sharing search and catalog data with SaaS services. At this point, Admin users can set up, customize, and manage search facets, synonyms, and merchandising rules.
+After the [!DNL Live Search] module (with catalog modules as dependencies) is installed and configured, [!DNL Commerce] begins sharing search and catalog data with SaaS services. At this point, *Admin* users can set up, customize, and manage search facets, synonyms, and merchandising rules.
 
 This topic provides instructions to do the following:
 
@@ -197,7 +197,7 @@ To generate an API key and private key, refer to [Commerce Services Connector](h
 
 ### Adobe Commerce developer or SI
 
-The developer or SI configures the SaaS data space as described in the Commerce Services section of the configuration. In the `Admin`, Commerce Services becomes available in the Configuration sidebar when a SaaS module is installed.
+The developer or SI configures the SaaS data space as described in the Commerce Services section of the configuration. In the *Admin*, Commerce Services becomes available in the Configuration sidebar when a SaaS module is installed.
 
 ## Synchronize catalog data {#synchronize-catalog-data}
 
@@ -266,7 +266,7 @@ To uninstall [!DNL Live Search], refer to [Uninstall modules](https://devdocs.ma
 
 | Package | Description |
 |--- |--- |
-| `module-live-search` | Allows merchants to configure their search settings for faceting, synonyms, query rules, etc., and provides access to a read-only GraphQL playground to test queries from the `Admin`. |
+| `module-live-search` | Allows merchants to configure their search settings for faceting, synonyms, query rules, etc., and provides access to a read-only GraphQL playground to test queries from the *Admin*. |
 | `module-live-search-adapter` | Routes search requests from the storefront to the [!DNL Live Search] service and renders the results in the storefront. <br />- Category browse - Routes requests from the storefront [top navigation](https://docs.magento.com/user-guide/catalog/navigation-top.html) to the search service.<br />- Global search - Routes requests from the [quick search](https://docs.magento.com/user-guide/catalog/search-quick.html) box in the upper-right of the storefront to the [!DNL Live Search] service. |
 | `module-live-search-storefront-popover` | A "search as you type" popover replaces the standard quick search and returns dynamic product suggestions and thumbnails of top search results. |
 
