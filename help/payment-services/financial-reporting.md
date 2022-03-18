@@ -1,13 +1,13 @@
 ---
 title: Financial reporting
-description: Payment Services offers comprehensive reporting so that you can get a clear view of your store's orders and payments.
+description: "[!DNL Payment Services] offers comprehensive reporting so that you can get a clear view of your store's orders and payments."
 role: User
 feature: Payments
 level: Intermediate
 ---
 # Financial reporting
 
-Payment Services for Adobe Commerce and Magento Open Source offers you comprehensive reporting so that you can get a clear view of your store's orders and payments.
+[!DNL Payment Services] for Adobe Commerce and Magento Open Source offers you comprehensive reporting so that you can get a clear view of your store's orders and payments.
 
 ![Financial reports view](assets/reports-view.png )
 

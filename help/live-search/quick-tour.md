@@ -1,6 +1,7 @@
 ---
 title: Quick Tour
 description: Take a quick tour of Live Search from the storefront.
+exl-id: bcb19506-6617-4c8a-83df-9d961f81e9e8
 ---
 # Quick Tour
 

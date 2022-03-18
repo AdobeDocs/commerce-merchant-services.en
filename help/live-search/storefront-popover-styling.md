@@ -1,6 +1,7 @@
 ---
 title: Styling Popover Elements
 description: Technical notes about customizing the Live Search storefront popover.
+exl-id: 033049f2-976e-4299-b026-333ac4b481a3
 ---
 # Styling popover elements
 

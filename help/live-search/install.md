@@ -1,6 +1,7 @@
 ---
 title: Install Live Search
 description: Learn how to install, update, and uninstall Live Search from Adobe Commerce.
+exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 ---
 # Install [!DNL Live Search]
 
@@ -277,4 +278,4 @@ The following [!DNL Live Search] dependencies are captured by [!DNL Composer]:
 |--- |--- |
 | Export modules | The following modules collect and sync catalog data:<br />`saas-export`<br />`module-bundle-product-exporter`<br />`module-catalog-data-exporter`<br />`module-catalog-inventory-data-exporter`<br />`module-catalog-url-rewrite-data-exporter`<br />`module-configurable-product-data-exporter`<br />`module-data-exporter`<br />`module-parent-product-data-exporter` |
 | `services-connector` | Required to configure your connection to Commerce Services. |
-| `module-services-id` | Required to configure your connection to Commerce Services. | 
+| `module-services-id` | Required to configure your connection to Commerce Services. |

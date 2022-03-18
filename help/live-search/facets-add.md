@@ -1,6 +1,7 @@
 ---
 title: Add Facets
 description: Learn how to add filterable product attributes as Live Search facets.
+exl-id: 0df6c21b-55b3-41ce-94f4-f70b70ffb84e
 ---
 # Add Facets
 

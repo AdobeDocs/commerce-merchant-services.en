@@ -2,6 +2,7 @@
 user-guide-title: Live Search Guide
 user-guide-description: This guide provides detailed instructions for using Live Search from Adobe Commerce.
 breadcrumb-title: Live Search Guide
+hide: yes
 ---
 # Live Search for Commerce {#live-search}
 

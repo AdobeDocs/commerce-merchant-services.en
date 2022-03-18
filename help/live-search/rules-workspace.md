@@ -1,6 +1,7 @@
 ---
 title: Rules Workspace
 description: Learn your way around the Live Search rules workspace.
+exl-id: a52839fb-2264-4443-83c3-9eaa2ccb6996
 ---
 # Rules Workspace
 

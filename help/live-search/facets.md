@@ -1,6 +1,7 @@
 ---
 title: Facets
 description: Live Search facets use multiple dimensions of attribute values as search criteria.
+exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
 ---
 # Facets
 

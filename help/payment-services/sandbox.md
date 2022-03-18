@@ -1,59 +1,59 @@
 ---
 title: Set up the testing sandbox
-description: Use a PayPal sandbox account to use Payment Services in test mode.
+description: Use a PayPal sandbox account to use [!DNL Payment Services] in test mode.
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
 ---
 # Set up the testing sandbox
 
 Before starting sandbox onboarding, you must sign up for a free PayPal Developer's account, and create both merchant (to use for onboarding) and shopper accounts (to use for testing your checkout). You can create multiple Developer accounts, if desired.
 
-A PayPal sandbox account allows you to use Payment Services in test mode. PayPal requires that you use a PayPal Developer Portal-generated Business sandbox test account, email, and password for sandbox onboarding. Do not create another account during the sandbox onboarding process.
+A PayPal sandbox account allows you to use [!DNL Payment Services] in test mode. PayPal requires that you use a PayPal Developer Portal-generated Business sandbox test account, email, and password for sandbox onboarding. Do not create another account during the sandbox onboarding process.
 
 If you created an account during the sandbox PayPal onboarding process, you must reset your onboarding sandbox because or you cannot verify your email.
 
 To reset your sandbox account:
 
-1. Click **Reset sandbox**. See the [PayPal create a business sandbox account](https://developer.paypal.com/docs/api-basics/sandbox/accounts/#create-a-business-sandbox-account) documentation for more information.
-1. Click **Sandbox onboarding** and complete the next set of steps.
+1. Click **[!UICONTROL Reset sandbox]**. See the [PayPal create a business sandbox account](https://developer.paypal.com/docs/api-basics/sandbox/accounts/#create-a-business-sandbox-account) documentation for more information.
+1. Click **[!UICONTROL Sandbox onboarding]** and complete the next set of steps.
 
 To complete sandbox onboarding:
 
 1. Navigate to the [PayPal Developer Account page](https://developer.paypal.com/developer/accounts/).
-1. Click **Log in to Dashboard** and log in with your existing credentials to the PayPal Developers account or click **Sign Up** to create an account.
+1. Click **[!UICONTROL Log in to Dashboard]** and log in with your existing credentials to the PayPal Developers account or click **Sign Up** to create an account.
 1. Create a PayPal sandbox account:
-   1. Go to _SANDBOX_ > **Accounts**.
-   1. Click **Create account**.
-   1. Select **Business** as the Account Type and click **Create**.
-   1. In the _Sandbox Accounts_ section, click the three dots in the _Manage accounts_ column for the sandbox account you created.
-   1. Click **View/edit account**.
+   1. Go to _[!UICONTROL SANDBOX]_ > **[!UICONTROL Accounts]**.
+   1. Click **[!UICONTROL Create account]**.
+   1. Select **[!UICONTROL Business]** as the Account Type and click **[!UICONTROL Create]**.
+   1. In the _[!UICONTROL Sandbox Accounts]_ section, click the three dots in the _[!UICONTROL Manage accounts]_ column for the sandbox account you created.
+   1. Click **[!UICONTROL View/edit account]**.
 
       ![PayPal - View/edit sandbox account](assets/onboarding-viewedit-sandbox.png)
 
    1. Copy and save the Email ID and System-Generated Password for future use.
 
-1. On the Admin sidebar, go to **Sales** > **Payment Services**.
-1. Click **Sandbox onboarding**.
+1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
+1. Click **[!UICONTROL Sandbox onboarding]**.
 
-   This option is visible if you have not yet completed sandbox onboarding for Payment Services.
+   This option is visible if you have not yet completed sandbox onboarding for [!DNL Payment Services].
 
    A sandbox merchant ID is auto-generated and populated into the [configuration](configure-admin.md). Do not change or alter this ID.
 
    You are presented with a PayPal window for connecting a PayPal account to start accepting payments.
 
-1. Enter the email of your business account and your country or region and click **Next**.
+1. Enter the email of your business account and your country or region and click **[!UICONTROL Next]**.
 
    ![PayPal - Connect PayPal account for payments](assets/paypal-connectacct.png)
 
 1. Continue to follow the PayPal flow, using your previously saved sandbox account credentials.
-1. On the Admin sidebar, go to **Sales** > **Payment Services**.
+1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 
-   The **Sandbox onboarding** button is no longer visible and you see a "Sandbox payments pending" text.
+   The **[!UICONTROL Sandbox onboarding]** button is no longer visible and you see a "Sandbox payments pending" text.
 
   When your PayPal sandbox onboarding is approved, you should see a notification stating that your payment system is currently in sandbox mode and is not processing live payments.
 
    >[!IMPORTANT]
    >
-   >If you revoke consent to Payment Services for Adobe Commerce and Magento Open Source for processing your payments (in your PayPal account settings), orders in your store cannot be processed by Payment Services.
+   >If you revoke consent to [!DNL Payment Services] for Adobe Commerce and Magento Open Source for processing your payments (in your PayPal account settings), orders in your store cannot be processed by [!DNL Payment Services].
 
 ## Enable contact telephone number
 
