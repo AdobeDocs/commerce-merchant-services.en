@@ -12,8 +12,8 @@ These release notes describe the latest versions of [!DNL Live Search] and inclu
 
 ## [!DNL Live Search] 2.0
 
-* Compatible with {{site.data.var.ee}} (EE): 2.4.x
-* Compatible with {{site.data.var.ece}} (ECE): 2.4.x
+* Compatible with Adobe Commerce (EE): 2.4.x
+* Compatible with Adobe Commerce for Cloud (ECE): 2.4.x
 * Stability: Stable
 
 * ![New](../assets/new.svg) - The number of available lines in the [storefront popover](quick-tour.md) can be configured from the `Admin`.
