@@ -46,7 +46,7 @@ At this time, the Live Search search/category API has the following supported li
 
 ### PWA beta release
 
-* The beta release of PWA for Live Search does not support [eventing]().
+* The beta release of PWA for Live Search does not support [eventing](https://devdocs.magento.com/shared-services/storefront-events-sdk.html).
 * The following product attributes are not supported by GraphQL when used in relation to the beta release of [PWA](https://developer.adobe.com/commerce/pwa-studio/): `description`, `name`, `short_description`
 
 ### Not supported at this time
@@ -129,9 +129,9 @@ This onboarding method is recommended when installing [!DNL Live Search] to:
 
 In this scenario, [!DNL Elasticsearch] temporarily manages search requests from the storefront while the [!DNL Live Search] service indexes all products in the background, without any interruption to normal storefront operations. [!DNL Elasticsearch] is disabled and [!DNL Live Search] enabled after all catalog data is indexed and synchronized.
 
- >[!TIP]
-   >
-   >To avoid typing errors, hover over the far right of the code box, click the [!UICONTROL **Copy**] link, and paste it into the command line.
+>[!TIP]
+>
+>To avoid typing errors, hover over the far right of the code box, click the [!UICONTROL **Copy**] link, and paste it into the command line.
 
 1. To download the `live-search` package, run the following from the command line:
 
