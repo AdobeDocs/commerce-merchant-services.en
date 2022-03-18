@@ -9,7 +9,7 @@ exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 
 The Adobe Commerce side includes hosting the search *Admin*, syncing catalog data, and running the query service.
 
-![Live Search architecture diagram](assets/architecture-diagram.png)
+![Live Search architecture diagram](assets/architecture-diagram.svg)
 
 After the [!DNL Live Search] module (with catalog modules as dependencies) is installed and configured, [!DNL Commerce] begins sharing search and catalog data with SaaS services. At this point, *Admin* users can set up, customize, and manage search facets, synonyms, and merchandising rules.
 
