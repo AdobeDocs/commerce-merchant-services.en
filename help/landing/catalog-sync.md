@@ -2,7 +2,6 @@
 title: Catalog Sync
 description: Learn how to export product data from the [!DNL Commerce] server to [!DNL Commerce Services] on an ongoing basis to keep the services up to date.
 ---
-
 # Catalog Sync
 
 Adobe Commerce and Magento Open Source use indexers to compile catalog data into tables. The process is automatically triggered by [events](https://docs.magento.com/user-guide/system/index-management-events.html) such as a change to a product price or inventory level. The catalog sync process runs hourly to allow [!DNL Commerce Services] to use catalog data. Catalog sync exports product data from the [!DNL Commerce] server to [!DNL Commerce Services] on an ongoing basis to keep the services up to date. For example, [!DNL Product Recommendations](./product-recommendations/overview.md) needs current catalog information to accurately return recommendations with correct names, pricing, and availability. The _Catalog Sync_ dashboard allows you to observe and manage the synchronization process.

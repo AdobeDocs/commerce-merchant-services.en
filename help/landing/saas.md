@@ -2,7 +2,6 @@
 title: Commerce Services Connector
 description: Learn how to integrate your Adobe Commerce or Magento Open Source instance to services using an API key and a private key.
 ---
-
 # [!DNL Commerce Services Connector]
 
 Some Adobe Commerce and Magento Open Source features are powered by [!DNL Commerce Services]  and deployed as SaaS (software as a service). To use these services, you must connect your [!DNL Commerce] instance using an API key and a private key, and specify the data space in the [configuration](https://docs.magento.com/user-guide/configuration/services/saas.html). You only need to set this up once.
