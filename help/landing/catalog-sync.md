@@ -1,6 +1,6 @@
 ---
 title: Catalog Sync
-description: Learn how to export product data from the [!DNL Commerce] server to [!DNL Commerce Services] on an ongoing basis to keep the services up to date.
+description: "Learn how to export product data from the [!DNL Commerce] server to [!DNL Commerce Services] on an ongoing basis to keep the services up to date."
 ---
 # Catalog Sync
 

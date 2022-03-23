@@ -27,7 +27,7 @@ The logical operators `AND` and `OR` are used to join multiple conditions. If us
 
 >[!NOTE]
 >
->Inclusion and exclusion filters replace the legacy category exclusions in versions 3.2.2 and later of the `magento/product-recommendations` module. See the [release notes](release-notes.md) to learn more about Adobe Commerce releases.
+> Inclusion and exclusion filters replace the legacy category exclusions in versions 3.2.2 and later of the `magento/product-recommendations` module. See the [release notes](release-notes.md) to learn more about Adobe Commerce releases.
 
 ## Types of filters {#filtertypes}
 

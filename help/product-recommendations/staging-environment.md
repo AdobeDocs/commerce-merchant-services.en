@@ -1,12 +1,12 @@
 ---
 title: Test in Staging Environment
-description: Learn how to use Product Recommendations from your production environment in your staging environment for testing purposes.
+description: Learn how to use [!DNL Product Recommendations] from your production environment in your staging environment for testing purposes.
 ---
 # Test in Staging Environment
 
 Before you deploy recommendations to your production environment, you should test on a non-production environment to ensure that everything is working as expected.
 
-Product Recommendations return products based on shopper [behavioral data](behavioral-data.md) collected from your storefront. In a non-production environment, however, it is likely you will not have any behavioral data from shoppers. The only recommendation type that you can test without behavioral data is `More like this`. This recommendation type does not require any input data, as it uses a direct content similarity match.
+[!DNL Product Recommendations] return products based on [shopper-behavioral data](behavioral-data.md) collected from your storefront. In a non-production environment, however, it is likely you do not have any behavioral data from shoppers. The only recommendation type that you can test without behavioral data is `More like this`. This recommendation type does not require any input data, as it uses a direct content similarity match.
 
 The following recommendation types require behavioral data:
 
@@ -31,7 +31,7 @@ To fetch recommendations from your production environment, you must make sure th
 
 1. Use one of the non-production Data Space IDs for [configuration](https://docs.magento.com/user-guide/configuration/services/saas.html) in the Admin.
 
-1. Generate the data yourself by clicking around your storefront to mimic the behavior of actual shoppers (or create an automation script to do this). Through your testing, you generate behavioral events on your non-production environment. Those events are used to produce the product affinities that power recommendations. For testing, we suggest that you interact with the following recommendation types:
+1. Generate the data yourself by clicking around your storefront to mimic the behavior of actual shoppers (or create an automation script). Through your testing, you generate behavioral events on your non-production environment. Those events are used to produce the product affinities that power recommendations. For testing, [!DNL Commerce] suggests that you interact with the following recommendation types:
 
    - Most Viewed - Requires minimal input data. Users must view products.
    - Viewed this, viewed that - Requires multiple users to view multiple products.
@@ -41,4 +41,4 @@ To fetch recommendations from your production environment, you must make sure th
 
 - The behavioral and catalog data from the non-production SaaS Data Space identify an isolated environment in which the resulting product recommendations are based entirely on the behavioral data generated on the associated storefront.
 
-- Because you will not have large amounts of behavioral data, input data for computing product associations is sparse. However, that data is still sent to Sensei to compute the machine learning models and provide recommendations based on data you generated within this environment.
+- Because you do not have large amounts of behavioral data, input data for computing product associations is sparse. However, that data is still sent to Sensei to compute the machine learning models and provide recommendations based on data you generated within this environment.

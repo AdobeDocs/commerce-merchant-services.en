@@ -1,10 +1,10 @@
 ---
 title: Settings
-description: Learn how to change the source of your product recommendations data and how to enable visual recommendations.
+description: Learn how to change the source of your [!DNL Product Recommendations] data and how to enable visual recommendations.
 ---
 # Settings
 
-When you [configure a SaaS data space](https://docs.magento.com/user-guide/configuration/services/saas.html) for Recommendations, the SaaS data space collects catalog data and storefront behavioral data. [Adobe Sensei](https://www.adobe.com/sensei.html) analyzes that data and computes product associations used to serve Product Recommendations.
+When you [configure a SaaS data space](https://docs.magento.com/user-guide/configuration/services/saas.html) for Recommendations, the SaaS data space collects catalog data and storefront-behavioral data. [Adobe Sensei](https://www.adobe.com/sensei.html) analyzes that data and computes product associations used to serve Product Recommendations.
 
 Non-production environments for testing or staging usually don't have the quantity or quality of storefront behavioral data to serve realistic product recommendations. Actual shopper behavior at scale can be captured only in a production environment. To solve this problem, Adobe Commerce allows you to use product recommendations from your production environment with other, non-production SaaS data spaces. Using actual storefront data in a non-production environment allows you to preview the recommendations your shoppers see and experiment with different recommendation types and placement locations. Recommendations from a different SaaS data space can be previewed by shoppers, but not clicked.
 
@@ -39,13 +39,13 @@ To change the source of your product recommendations data, choose the SaaS data 
 
    >[!NOTE]
    >
-   >While you can view recommendations fetched from another SaaS data space on the non-production storefront, you cannot click the recommendations.
+   > While you can view recommendations fetched from another SaaS data space on the non-production storefront, you cannot click the recommendations.
 
 ### Configure a new SaaS data space
 
 1. In the Recommendations source section, click **Edit Configuration**.
 
-1. Follow the instructions to configure a new [Commerce Service](https://docs.magento.com/user-guide/system/saas.html).
+1. Follow the instructions to configure a new [Commerce Service](./landing/saas.md).
 
 ## Enable visual recommendations
 

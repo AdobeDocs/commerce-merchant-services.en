@@ -9,7 +9,7 @@ When you create a recommendation, you create a _recommendation unit_ that contai
 ![Recommendation unit](assets/unit.png)
 _Recommendation unit_
 
-When you activate the recommendation unit, Adobe Commerce starts to [collect data](workspace.md) to measure impressions, views, clicks, and so on. The Product Recommendations table displays the metrics for each recommendation unit to help you make informed business decisions.
+When you activate the recommendation unit, Adobe Commerce starts to [collect data](workspace.md) to measure impressions, views, clicks, and so on. The [!DNL Product Recommendations] table displays the metrics for each recommendation unit to help you make informed business decisions.
 
 1. On the _Admin_ sidebar, go to **Marketing** > _Promotions_ > **Product Recommendations** to display the _Product Recommendations_ workspace.
 
@@ -17,7 +17,7 @@ When you activate the recommendation unit, Adobe Commerce starts to [collect dat
 
    >[!NOTE]
    >
-   >Page Builder recommendation units can be created only for the default store view. To learn more about creating product recommendations with Page Builder, see [Add Content - Product Recommendations](https://docs.magento.com/user-guide/cms/page-builder-add-recommendations.html).
+   > Page Builder recommendation units can be created only for the default store view. To learn more about creating product recommendations with Page Builder, see [Add Content - Product Recommendations](https://docs.magento.com/user-guide/cms/page-builder-add-recommendations.html).
 
 1. Click **Create Recommendation**.
 
@@ -90,4 +90,4 @@ Adobe Commerce [filters](filters.md) recommendations to avoid displaying duplica
 
 >[!NOTE]
 >
->You cannot preview the `Recently viewed` recommendation type because the data is not available in the Admin.
+> You cannot preview the `Recently viewed` recommendation type because the data is not available in the Admin.

@@ -1,14 +1,14 @@
 ---
-user-guide-title: Product Recommendations Guide
-user-guide-description: This guide provides detailed instructions for using Product Recommendations from Adobe Commerce.
+user-guide-title: "[!DNL Product Recommendations] Guide"
+user-guide-description: This guide provides detailed instructions for using [!DNL Product Recommendations] from Adobe Commerce.
 breadcrumb-title: Product Recommendations Guide
 ---
-# Product Recommendations for Commerce {#product-recommendations}
+# [!DNL Product Recommendations] for Commerce {#product-recommendations}
 
-- [Product Recommendations Guide](overview.md)
+- [[!DNL Product Recommendations] Guide](overview.md)
 - Getting Started {#getting-started}
    - [Release Notes](release-notes.md)
-   - [Onboarding](release-notes.md)
+   - [Onboarding](onboarding.md)
    - [Implementation Workflow](implementation-workflow.md)
       - [Behavioral Data](behavioral-data.md)
       - [Headless](headless.md)  
@@ -16,7 +16,7 @@ breadcrumb-title: Product Recommendations Guide
    - [Settings](settings.md)
    - [Verify](verify.md)
    - [Staging Environment](staging-environment.md)
-- Product Recommendations Admin {#product-recs-admin}
+- [!DNL Product Recommendations] Admin {#product-recs-admin}
    - [Workspace](workspace.md)
       - [Create](create.md)
       - [Edit](edit.md)

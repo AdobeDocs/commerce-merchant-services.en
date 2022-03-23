@@ -73,11 +73,11 @@ Adobe Sensei uses AI to process and analyze the imagery in your catalog and buil
 
 >[!NOTE]
 >
->If you are testing this recommendation type in a non-production environment, make sure your image URLs are publicly accessible.
+> If you are testing this recommendation type in a non-production environment, make sure your image URLs are publicly accessible.
 
 >[!NOTE]
 >
->Currently, product images must be 10 MB or less in size.
+> Currently, product images must be 10 MB or less in size.
 
 Because this recommendation type is not applicable to most catalogs, it is not enabled by default. You must explicitly enable this recommendation type.
 
@@ -85,7 +85,7 @@ Because this recommendation type is not applicable to most catalogs, it is not e
 
 >[!NOTE]
 >
->The _Visual similarity_ recommendation type is available when you [install](install-configure.md) it as an optional module.
+> The _Visual similarity_ recommendation type is available when you [install](install-configure.md) it as an optional module.
 
 1. On the _Admin_ sidebar, go to **Marketing** > _Promotions_ > **Product Recommendations** to display the _Product Recommendations_ dashboard.
 

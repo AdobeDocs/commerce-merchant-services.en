@@ -11,7 +11,7 @@ Some recommendation types use behavioral data from your shoppers to train machin
 
 So when can you start using recommendation types that use behavioral data? It depends. This is referred to as the _Cold Start_ problem.
 
-The _Cold Start_ problem is a measure of how much time a model needs to train before it can be considered high quality. In product recommendations, it translates to waiting for Adobe Sensei to train its machine learning models before deploying recommendation units on your site. The more data that these models have, the more accurate and useful the recommendations are. Collecting this data takes time and varies based on traffic volume. Because this data can be collected only on a production site, it is in your best interest to deploy data collection there as early as possible. You can do this by [installing and configuring](install-configure.md) the `magento/production-recommendations` module.
+The _Cold Start_ problem is a measure of how much time that a model needs to train before it can be considered high quality. In product recommendations, it translates to waiting for Adobe Sensei to train its machine learning models before deploying recommendation units on your site. The more data that these models have, the more accurate and useful the recommendations are. Collecting this data takes time and varies based on traffic volume. Because this data can be collected only on a production site, it is in your best interest to deploy data collection there as early as possible. You can do this by [installing and configuring](install-configure.md) the `magento/production-recommendations` module.
 
 The following table provides some general guidance for the amount of time that it takes to collect enough data for each recommendation type:
 

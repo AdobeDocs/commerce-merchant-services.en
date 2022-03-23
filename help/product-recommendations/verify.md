@@ -4,7 +4,7 @@ description: Learn how to verify that behavioral data is being sent to Adobe Com
 ---
 # Verify Event Collection
 
-After you [install and configure](install-configure.md) the `magento/product-recommendations` module, you can verify that the behavioral data is being sent to Adobe Commerce. You can use developer tools available in Chrome, or install the Snowplow Chrome extension. If you need additional help, refer to [Troubleshoot Product Recommendations module](https://support.magento.com/hc/en-us/articles/360042224851) in the Support Knowledge Base.
+After you [install and configure](install-configure.md) the `magento/product-recommendations` module, you can verify that the behavioral data is being sent to Adobe Commerce. You can use developer tools available in Chrome, or install the Snowplow Chrome extension. If you need additional help, refer to [Troubleshoot [!DNL Product Recommendations] module](https://support.magento.com/hc/en-us/articles/360042224851) in the Support Knowledge Base.
 
 ## Verify using developer tools in Chrome
 
@@ -44,7 +44,7 @@ If you run into any problems verifying that the events are collected and sent to
 
 >[!NOTE]
 >
->A value of `Data validity : NOT FOUND` in the debugger indicates an internal schema. The Snowplow Chrome plugin cannot validate the events with an internal schema. This has no impact on actual functionality.
+> A value of `Data validity : NOT FOUND` in the debugger indicates an internal schema. The Snowplow Chrome plugin cannot validate the events with an internal schema. This has no impact on actual functionality.
 
 ## Verify that events are firing correctly
 
@@ -52,4 +52,4 @@ To verify that the events used for metrics are firing correctly, look for the `i
 
 >[!NOTE]
 >
->If [Cookie Restriction Mode](https://docs.magento.com/user-guide/stores/compliance-cookie-restriction-mode.html) is enabled, Adobe Commerce does not collect behavioral data until the shopper consents. If Cookie Restriction Mode is disabled, behavioral data is collected by default.
+> If [Cookie Restriction Mode](https://docs.magento.com/user-guide/stores/compliance-cookie-restriction-mode.html) is enabled, Adobe Commerce does not collect behavioral data until the shopper consents. If Cookie Restriction Mode is disabled, behavioral data is collected by default.

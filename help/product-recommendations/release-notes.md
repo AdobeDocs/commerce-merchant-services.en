@@ -1,15 +1,15 @@
 ---
 title: Release Notes
-description: The latest release information for Product Recommendations from Adobe Commerce.
+description: The latest release information for [!DNL Product Recommendations] from Adobe Commerce.
 ---
 # Release Notes
 
-The release notes contain updates to the following Product Recommendations modules:
+The release notes contain updates to the following [!DNL Product Recommendations] modules:
 
-* As of March 2021, Product Recommendations are now supported in [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/) storefronts.
-* Product Recommendations metapackage: `magento/product-recommendations`
-* Page Builder support in Product Recommendations (optional) module: `magento/module-page-builder-product-recommendations`
-* Visual similarity recommendation type support for Product Recommendations (optional) module: `magento/module-visual-product-recommendations`
+* As of March 2021, [!DNL Product Recommendations] are now supported in [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/) storefronts.
+* [!DNL Product Recommendations] metapackage: `magento/product-recommendations`
+* Page Builder support in [!DNL Product Recommendations] (optional) module: `magento/module-page-builder-product-recommendations`
+* Visual similarity recommendation type support for [!DNL Product Recommendations] (optional) module: `magento/module-visual-product-recommendations`
 
 The release notes include:
 
@@ -27,7 +27,7 @@ See the developer documentation to [learn about product compatibility](https://d
 
 ## 3.3.6 of magento/product-recommendations
 
-* ![New](../assets/new.svg) - Optimized Product Recommendations metapackage by explicitly listing the dependencies
+* ![New](../assets/new.svg) - Optimized [!DNL Product Recommendations] metapackage by explicitly listing the dependencies
 
 ### 3.3.5 of magento/product-recommendations
 
@@ -47,7 +47,7 @@ See the developer documentation to [learn about product compatibility](https://d
 
 ### 3.3.1 of magento/product-recommendations
 
-* ![New](../assets/new.svg) - Added support for B2B customer group pricing. When you set a [price filter](filters.md) on a recommendation unit, B2B customers who are logged in will see the customer group pricing set for the products displayed.
+* ![New](../assets/new.svg) - Added support for B2B customer group pricing. When you set a [price filter](filters.md) on a recommendation unit, B2B customers who are logged in see the customer group pricing set for the products displayed.
 
 ### 3.3.0 of magento/product-recommendations
 
@@ -127,7 +127,7 @@ See the developer documentation to [learn about product compatibility](https://d
 
 This is a major version release. You must [edit](install-configure.md#update) your project's root composer.json file.
 
-* ![New](../assets/new.svg) - Fetch Product Recommendations from alternate SaaS Data Spaces. This allows you to use product recommendations computed in your product environment on other, non-production environments. [Switching SaaS Data Spaces](settings.md) further describes this feature.
+* ![New](../assets/new.svg) - Fetch [!DNL Product Recommendations] from alternate SaaS Data Spaces. This allows you to use product recommendations computed in your product environment on other, non-production environments. [Switching SaaS Data Spaces](settings.md) further describes this feature.
 
 * ![Fix](../assets/fix.svg) - Fixed an issue where checkout was inhibited for shoppers using uBlock Origin
 * ![Fix](../assets/fix.svg) - Fixed an issue sending extraneous add-to-cart events
@@ -142,7 +142,7 @@ This is a major version release. You must [edit](install-configure.md#update) yo
 
 ## Documentation
 
-To learn more about Product Recommendations and Product Recommendations development:
+To learn more about [!DNL Product Recommendations] and [!DNL Product Recommendations] development:
 
-- [User Guide](overview.md)
-- [Developer Documentation](https://devdocs.magento.com/recommendations/product-recs.html)
+* [User Guide](overview.md)
+* [Developer Documentation](https://devdocs.magento.com/recommendations/product-recs.html)
