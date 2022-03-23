@@ -8,11 +8,11 @@ Adobe Commerce and Magento Open Source use indexers to compile catalog data into
 
 >[!NOTE]
 >
->To use the _Catalog Sync_ dashboard, you must have an [API key and a SaaS data space configured](saas.md).
+> To use the _Catalog Sync_ dashboard, you must have an [API key and a SaaS data space configured](saas.md).
 
 >[!NOTE]
 >
->See the [Commerce Developer Guide](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-catalog-sync.html) to learn how to use the command-line interface to trigger catalog sync and reindex product data for consumption by [!DNL Commerce Services].
+> See the [Commerce Developer Guide](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-catalog-sync.html) to learn how to use the command-line interface to trigger catalog sync and reindex product data for consumption by [!DNL Commerce Services].
 
 With the **Catalog Sync** dashboard you can:
 
@@ -37,7 +37,7 @@ Reports a sync status of:
 
 >[!NOTE]
 >
->The catalog sync process automatically runs every hour. However, if you are not seeing products on your storefront, or if the products do not reflect recent changes you made, you can resolve [catalog sync issues](#resolvesync).
+> The catalog sync process automatically runs every hour. However, if you are not seeing products on your storefront, or if the products do not reflect recent changes you made, you can resolve [catalog sync issues](#resolvesync).
 
 ### Products synced
 
@@ -49,7 +49,7 @@ If you must initiate a resync of your catalog before the hourly scheduled sync o
 
 >[!NOTE]
 >
->Forcing a resync triggers a resync of your entire product catalog, which can increase load on hardware resources.
+> Forcing a resync triggers a resync of your entire product catalog, which can increase load on hardware resources.
 
 1. From the _Catalog Sync_ dashboard, select **Settings**.
 

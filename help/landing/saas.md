@@ -38,7 +38,7 @@ The API key and private key are generated from the [!DNL Commerce] account of th
 
    >[!NOTE]
    >
-   >For [!DNL _Product Recommendations_] and [!DNL _Live Search_], select **Production**. Production keys give you access to production and non-production data spaces. Sandbox keys are not used for these services.
+   > For [!DNL _Product Recommendations_] and [!DNL _Live Search_], select **Production**. Production keys give you access to production and non-production data spaces. Sandbox keys are not used for these services.
 
 1. Enter a name in the _API Keys_ section and click **Add New**.
 
@@ -48,7 +48,7 @@ The API key and private key are generated from the [!DNL Commerce] account of th
 
    >[!WARNING]
    >
-   >This is the only opportunity that you have to copy or download your key.
+   > This is the only opportunity that you have to copy or download your key.
 
 1. Click **Download** then click **Cancel**.
 
@@ -62,13 +62,13 @@ For [!DNL Product Recommendations], the SaaS data space contains catalog and beh
 
 >[!WARNING]
 >
->Use your production SaaS data space only on your production [!DNL Commerce] installation to avoid data collisions. Otherwise, you risk polluting your production site data with testing data, which causes deployment delays. For example, your production product data could be mistakenly overwritten from staging data, such as staging URLs.
+> Use your production SaaS data space only on your production [!DNL Commerce] installation to avoid data collisions. Otherwise, you risk polluting your production site data with testing data, which causes deployment delays. For example, your production product data could be mistakenly overwritten from staging data, such as staging URLs.
 
 ### Select or create a SaaS project {#createsaasenv}
 
 >[!NOTE]
 >
->If you do not see the **Commerce Services Connector** section in the [!DNL Commerce] configuration, you must install the [!DNL Commerce] modules for your desired [!DNL Commerce Service], such as [Product Recommendations](./recommendations/install-configure.md).
+> If you do not see the **Commerce Services Connector** section in the [!DNL Commerce] configuration, you must install the [!DNL Commerce] modules for your desired [!DNL Commerce Service], such as [Product Recommendations](./recommendations/install-configure.md).
 
 To select or create a SaaS project, request the [!DNL Commerce] API key from the [!DNL Commerce] license holder for your store.
 
@@ -94,7 +94,7 @@ To select or create a SaaS project, request the [!DNL Commerce] API key from the
 
 >[!WARNING]
 >
->If you generate new keys in the API Portal section of My Account, immediately update the API keys in the Admin configuration. If you generate new keys and do not update them in the Admin, your SaaS extensions no longer work and you lose valuable data.
+> If you generate new keys in the API Portal section of My Account, immediately update the API keys in the Admin configuration. If you generate new keys and do not update them in the Admin, your SaaS extensions no longer work and you lose valuable data.
 
 To change the SaaS project or data space names, click the **Rename this Project** or **Rename Data Space** respectively.
 
