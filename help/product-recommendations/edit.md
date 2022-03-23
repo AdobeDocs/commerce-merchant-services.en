@@ -1,6 +1,6 @@
 ---
 title: Edit Recommendation
-description: Learn how to edit a Product Recommendation.
+description: Learn how to edit a product recommendation.
 ---
 # Edit Recommendation
 

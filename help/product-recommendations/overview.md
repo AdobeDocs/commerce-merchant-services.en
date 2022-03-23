@@ -1,6 +1,6 @@
 ---
 title: Overview
-description: [!DNL Product Recommendations] are a powerful marketing tool that you can use to increase conversions, boost revenue, and stimulate shopper engagement.
+description: "[!DNL Product Recommendations] are a powerful marketing tool that you can use to increase conversions, boost revenue, and stimulate shopper engagement."
 ---
 # Overview
 

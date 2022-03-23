@@ -1,6 +1,6 @@
 ---
 title: Implementation Workflow
-description: Learn the steps to successfully implement Product Recommendation on your storefront.
+description: Learn the steps to successfully implement [!DNL Product Recommendations] on your storefront.
 ---
 # Implementation Workflow
 

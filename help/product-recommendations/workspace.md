@@ -1,6 +1,6 @@
 ---
 title: Workspace
-description: Learn how to configure, manage, and monitor Product Recommendation performance.
+description: Learn how to configure, manage, and monitor product recommendation performance.
 ---
 # Workspace
 

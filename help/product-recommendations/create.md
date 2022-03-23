@@ -1,6 +1,6 @@
 ---
 title: Create New Recommendation
-description: Learn how to create a Product Recommendation unit.
+description: Learn how to create a product recommendation unit.
 ---
 # Create New Recommendation
 

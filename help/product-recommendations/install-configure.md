@@ -1,6 +1,6 @@
 ---
 title: Install and Configure
-description: Learn how to install, update, and uninstall Product Recommendations.
+description: Learn how to install, update, and uninstall [!DNL Product Recommendations].
 ---
 # Install and Configure
 

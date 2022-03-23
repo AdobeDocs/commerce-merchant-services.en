@@ -1,6 +1,6 @@
 ---
 title: Onboarding
-description: Learn the requirements and supported platforms in Product Recommendations.
+description: Learn the requirements and supported platforms in [!DNL Product Recommendations].
 ---
 # Onboarding
 
