@@ -1,0 +1,148 @@
+---
+title: Release Notes
+description: The latest release information for Product Recommendations from Adobe Commerce.
+---
+# Release Notes
+
+The release notes contain updates to the following Product Recommendations modules:
+
+* As of March 2021, Product Recommendations are now supported in [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/) storefronts.
+* Product Recommendations metapackage: `magento/product-recommendations`
+* Page Builder support in Product Recommendations (optional) module: `magento/module-page-builder-product-recommendations`
+* Visual similarity recommendation type support for Product Recommendations (optional) module: `magento/module-visual-product-recommendations`
+
+The release notes include:
+
+* ![New](../assets/new.svg) - New features
+* ![Fix](../assets/fix.svg) - Fixes and improvements
+
+See the developer documentation to [learn about product compatibility](https://devdocs.magento.com/release/availability.html).
+
+## Adobe Commerce 2.3.x and 2.4.x
+
+## 3.3.7 of magento/product-recommendations
+
+* ![New](../assets/new.svg) - Added PHP 8.1 support
+* ![New](../assets/new.svg) - Improved image resizing so that different sized images are handled more consistently in the reference display template
+
+## 3.3.6 of magento/product-recommendations
+
+* ![New](../assets/new.svg) - Optimized Product Recommendations metapackage by explicitly listing the dependencies
+
+### 3.3.5 of magento/product-recommendations
+
+* ![New](../assets/new.svg) - Added [B2B support](onboarding.md#b2bsupport) in Product Recommendations
+* ![New](../assets/new.svg) - Added new feeds to [sync catalog data](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-catalog-sync.html) to Commerce Services via the command line
+
+### 3.3.3 of magento/product-recommendations
+
+* ![New](../assets/new.svg) - Added new [recommendation types](type.md): Conversion (view to cart), Conversion (view to purchase), and Recently viewed. These new recommendation types are available in the `magento/product-recommendations` module 3.2.2 and later.
+* ![Fix](../assets/fix.svg) - Fixed an issue where Fastly's Web Application Firewall (WAF) was incorrectly blocking a cookie
+* ![Fix](../assets/fix.svg) - Fixed issue where products assigned to the non-default Store View were not being displayed in the _Recommendations Product Preview_ panel when creating a recommendation for that specific Store View
+* ![Fix](../assets/fix.svg) - Fixed issue where certain recommendation unit names in Page Builder prevented the recommendation unit to display on the storefront
+
+### 3.3.2 of magento/product-recommendations
+
+* ![Fix](../assets/fix.svg) - Fixed missing dependency for B2B support
+
+### 3.3.1 of magento/product-recommendations
+
+* ![New](../assets/new.svg) - Added support for B2B customer group pricing. When you set a [price filter](filters.md) on a recommendation unit, B2B customers who are logged in will see the customer group pricing set for the products displayed.
+
+### 3.3.0 of magento/product-recommendations
+
+* ![New](../assets/new.svg) - Added support for Adobe Client Data Layer to standardize behavioral data collection across Adobe Commerce features and services. See the [readme](https://github.com/adobe/magento-storefront-event-collector/blob/main/README.md) to learn more.
+
+### 3.2.6 of magento/product-recommendations
+
+* ![Fix](../assets/fix.svg) - Fixed a JavaScript modal error
+* ![Fix](../assets/fix.svg) - Fixed an issue where Fastly's Web Application Firewall (WAF) was incorrectly blocking a cookie
+
+### 3.2.5 of magento/product-recommendations
+
+* ![New](../assets/new.svg) - Renamed Magento Services to [Commerce Services](https://docs.magento.com/user-guide/system/saas.html) and improved usability in the Admin
+
+### 3.2.4 of magento/product-recommendations
+
+* ![Fix](../assets/fix.svg) - Fixed the "Unable to retrieve configurable product options data" error when indexing product attributes
+
+### 3.2.3 of magento/product-recommendations
+
+* ![Fix](../assets/fix.svg) - Fixed the "Unable to retrieve configurable product options data" error during Catalog Sync
+* ![Fix](../assets/fix.svg) - Fixed an issue where the store code was not being set correctly when you enabled the "Add store code to URL" configuration
+* ![Fix](../assets/fix.svg) - Improved detection of Admin Panel configuration changes to ensure that these changes are reflected in Catalog Sync data
+
+### 3.2.2 of magento/product-recommendations
+
+* ![New](../assets/new.svg) - Added the ability to [preview recommendation results](create.md) at creation time. This might require that you update your module to the latest version.
+* ![New](../assets/new.svg) - Added the ability to [monitor and manage](https://docs.magento.com/user-guide/system/catalog-sync.html) the catalog sync process from the Admin.
+* ![New](../assets/new.svg) - Added [filters](filters.md) to control which products are displayed in recommendations.
+* ![New](../assets/new.svg) - Added the [Visual similarity](type.md#visualsim) recommendation type.
+
+### 1.2.1 of magento/module-page-builder-product-recommendations for Page Builder
+
+* ![New](../assets/new.svg) - Added support for the 3.2.0+ version of the `magento/product-recommendations` module
+
+### 3.1.0 of magento/product-recommendations
+
+* ![New](../assets/new.svg) - Added the ability to [resync](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-catalog-sync.html) your catalog to SaaS services via command line.
+* ![New](../assets/new.svg) - Added support for database table prefixes
+* ![Fix](../assets/fix.svg) - Removed PHP 7.1 support
+
+### 3.0.8 of magento/product-recommendations
+
+* ![Fix](../assets/fix.svg) - Fixed an issue where events were sent for data collection before the module was configured, causing invalid traffic
+
+### 3.0.6 of magento/product-recommendations
+
+* ![New](../assets/new.svg) - **(Beta)** Includes support for new [Visual similarity](type.md#visualsim) recommendation type.
+
+### 1.0.0 of magento/module-visual-product-recommendations
+
+* ![New](../assets/new.svg) - **(Beta)** [Visual similarity](type.md#visualsim). With the _Visual similarity_ recommendation type, you can deploy a recommendation unit to your product detail page that displays products that are visually similar to the product being viewed.
+
+### 3.0.5 of magento/product-recommendations
+
+* ![Fix](../assets/fix.svg) - Fixed the "Unable to retrieve product options data" error that could occur during catalog export.
+* ![Fix](../assets/fix.svg) - The currency symbol in the _Revenue_ column on the _Product Recommendations_ dashboard now correctly reflects the configured base currency.
+
+### 3.0.4 of magento/product-recommendations
+
+* ![Fix](../assets/fix.svg) - Added support for Adobe Commerce 2.4.0
+
+### 3.0.3 of magento/product-recommendations
+
+* ![Fix](../assets/fix.svg) - Improved symbol implementation in storefront template
+
+### 1.0.4 of magento/module-page-builder-product-recommendations for Page Builder
+
+* ![New](../assets/new.svg) - Added Product Recommendation name when editing the Page Builder content type
+
+### 3.0.2 magento/product-recommendations
+
+* ![New](../assets/new.svg) - Added a status column on the grid when selecting Recommendation units in Page Builder
+* ![Fix](../assets/fix.svg) - Fixed an issue with incorrect http/https protocols in product and image URLs
+
+### 3.0.1 of magento/product-recommendations
+
+This is a major version release. You must [edit](install-configure.md#update) your project's root composer.json file.
+
+* ![New](../assets/new.svg) - Fetch Product Recommendations from alternate SaaS Data Spaces. This allows you to use product recommendations computed in your product environment on other, non-production environments. [Switching SaaS Data Spaces](settings.md) further describes this feature.
+
+* ![Fix](../assets/fix.svg) - Fixed an issue where checkout was inhibited for shoppers using uBlock Origin
+* ![Fix](../assets/fix.svg) - Fixed an issue sending extraneous add-to-cart events
+
+### 1.0.3 of magento/module-page-builder-product-recommendations for Page Builder
+
+* ![New](../assets/new.svg) - Page Builder support. With the Page Builder integration, you can accurately and granularly place Recommendation units in any arbitrary location on Page Builder-authored content. You can also style the headings and recommendation units themselves. Go to [Page Builder](https://docs.magento.com/user-guide/cms/page-builder-add-recommendations.html) for more information.
+
+### 2.0.0 of magento/product-recommendations
+
+* ![New](../assets/new.svg) - General availability release!
+
+## Documentation
+
+To learn more about Product Recommendations and Product Recommendations development:
+
+- [User Guide](overview.md)
+- [Developer Documentation](https://devdocs.magento.com/recommendations/product-recs.html)
