@@ -11,11 +11,11 @@ Some Adobe Commerce and Magento Open Source features are powered by [!DNL Commer
 
 The following lists the [!DNL Commerce] features you can access through the [!DNL Commerce Services Connector]:
 
-Service | Availability
----|---
-[Product Recommendations powered by Adobe Sensei](./product-recommendations/overview.md) | Adobe Commerce
-[Live Search powered by Adobe Sensei](./live-search/overview.md) | Adobe Commerce
-[Payment Services](./payment-services/index.md) | Adobe Commerce and Magento Open Source
+| Service | Availability |
+| ---|--- |
+|[Product Recommendations powered by Adobe Sensei](./product-recommendations/overview.md) | Adobe Commerce|
+|[Live Search powered by Adobe Sensei](./live-search/overview.md) | Adobe Commerce|
+|[Payment Services](./payment-services/index.md) | Adobe Commerce and Magento Open Source|
 
 ## Architecture
 

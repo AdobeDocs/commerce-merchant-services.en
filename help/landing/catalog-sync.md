@@ -46,7 +46,7 @@ Displays the total number of products synced from your [!DNL Commerce] catalog. 
 
 ## Resync {#resync}
 
-If you must initiate a resync of your catalog before the hourly-scheduled sync occurs, you can force a resync.
+If you must initiate a resync of your catalog before the hourly scheduled sync occurs, you can force a resync.
 
 >[!NOTE]
 >
