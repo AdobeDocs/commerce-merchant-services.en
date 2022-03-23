@@ -1,6 +1,6 @@
 ---
 title: Commerce Services Connector
-description: 
+description: Learn how to integrate your Adobe Commerce or Magento Open Source instance to services using an API key and a private key.
 ---
 
 # [!DNL Commerce Services Connector]

@@ -17,7 +17,7 @@ The [Commerce Services Connector](saas.md) provides the integration for your Ado
 
 ## Catalog synching
 
-For services that use catalog data ([!DNL Product Recommendations] and [!DNL Live Search]), the [Catalog Sync](catalog-sync.md) process exports product data from the [!DNL Commerce] server to Commerce Services on an ongoing basis to keep the services up to date.
+For services that use catalog data ([!DNL Product Recommendations] and [!DNL Live Search]), the [Catalog Sync](catalog-sync.md) process exports product data from the [!DNL Commerce] server to [!DNL Commerce Services] on an ongoing basis to keep the services up to date.
 
 ## Available services
 
