@@ -6,9 +6,7 @@ breadcrumb-title: "[!DNL Product Recommendations] Guide"
 # [!DNL Product Recommendations] for Commerce {#product-recommendations}
 
 - [[!DNL Product Recommendations] Guide](overview.md)
-- Introduction to Product Recommendations
-- Release Notes
-- Getting started
+- Introduction to Product Recommendations {#introduction}
 - Getting Started {#getting-started}
    - [Release Notes](release-notes.md)
    - [Onboarding](onboarding.md)
