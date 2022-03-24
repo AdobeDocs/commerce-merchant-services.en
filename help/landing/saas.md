@@ -12,9 +12,9 @@ The following lists the [!DNL Commerce] features you can access through the [!DN
 
 | Service | Availability |
 | ---|--- |
-|[Product Recommendations powered by Adobe Sensei](./product-recommendations/overview.md) | Adobe Commerce|
-|[Live Search powered by Adobe Sensei](./live-search/overview.md) | Adobe Commerce|
-|[Payment Services](./payment-services/index.md) | Adobe Commerce and Magento Open Source|
+|[!DNL Product Recommendations] powered by Adobe Sensei| Adobe Commerce|
+|[!DNL Live Search] powered by Adobe Sensei | Adobe Commerce|
+|[!DNL Payment Services] | Adobe Commerce and Magento Open Source|
 
 ## Architecture
 

@@ -45,7 +45,7 @@ To change the source of your product recommendations data, choose the SaaS data 
 
 1. In the Recommendations source section, click **Edit Configuration**.
 
-1. Follow the instructions to configure a new [Commerce Service](./landing/saas.md).
+1. Follow the instructions to configure a new [Commerce Service].
 
 ## Enable visual recommendations
 
