@@ -6,15 +6,15 @@ description: "Learn how to export product data from the [!DNL Commerce] server t
 
 Adobe Commerce and Magento Open Source use indexers to compile catalog data into tables. The process is automatically triggered by [events](https://docs.magento.com/user-guide/system/index-management-events.html) such as a change to a product price or inventory level.
 
-The catalog sync process runs hourly to allow [!DNL Commerce Services] to use catalog data. Catalog sync exports product data from the [!DNL Commerce] server to [!DNL Commerce Services] on an ongoing basis to keep the services up to date. For example, [!DNL Product Recommendations](./product-recommendations/overview.md) needs current catalog information to accurately return recommendations with correct names, pricing, and availability. The _Catalog Sync_ dashboard allows you to observe and manage the synchronization process.
+The catalog sync process runs hourly to allow [!DNL Commerce Services] to use catalog data. Catalog sync exports product data from the [!DNL Commerce] server to [!DNL Commerce Services] on an ongoing basis to keep the services up to date. For example, [!DNL Product Recommendations](./product-recommendations/overview.md) needs current catalog information to accurately return recommendations with correct names, pricing, and availability. You can use the _Catalog Sync_ dashboard to observe and manage the synchronization process or the [command-line interface](#resynccmdline) to trigger catalog sync and reindex product data for consumption by [!DNL Commerce Services].
 
 >[!NOTE]
 >
-> To use the _Catalog Sync_ dashboard, you must have an [API key and a SaaS data space configured](saas.md).
+> To use the _Catalog Sync_ dashboard or the command-line interface, you must have an [API key and a SaaS data space configured](saas.md).
 
->[!NOTE]
->
-> See the [Commerce Developer Guide](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-catalog-sync.html) to learn how to use the command-line interface to trigger catalog sync and reindex product data for consumption by [!DNL Commerce Services].
+## Accessing the Catalog Sync dashboard
+
+To access the Catalog Sync dashboard, select **System** > _Data Transfer_ > **Catalog Sync**.
 
 With the **Catalog Sync** dashboard you can:
 
@@ -24,10 +24,6 @@ With the **Catalog Sync** dashboard you can:
 - Search store catalog by name, SKU, and so on
 - View synced product details in JSON to help diagnose a sync discrepancy
 - Reinitiate the sync process
-
-## Accessing the Catalog Sync dashboard
-
-To access the Catalog Sync dashboard, select **System** > _Data Transfer_ > **Catalog Sync**.
 
 ### Last sync
 
@@ -94,3 +90,46 @@ If the sync is not running on a schedule or nothing is synced, see the [Knowledg
 ### Sync failed
 
 If the catalog sync has a status of **Failed**, submit a [support ticket](https://support.magento.com/hc/en-us/articles/360019088251).
+
+## Command-line interface {#resynccmdline}
+
+The `saas:resync` command is part of the `magento/saas-export` package. You can install this package using one of the [!DNL Commerce Services] products, such as [!DNL Product Recommendations](./product-recommendations/install-configure.md) or [!DNL Live Search](./live-search/install.md).
+
+>[!NOTE]
+>
+> When you trigger a data resync from the command line, it can take up to an hour for the data to update.
+
+Command options:
+
+```bash
+bin/magento saas:resync --feed <feed name> [no-reindex]
+```
+
+The following table describes the `saas:resync` parameters and descriptions.
+
+|Parameter|Description|Required?|
+|---| ---| ---|
+|`feed`| Specifies which entity to resync, such as `products`|Yes|
+|`no-reindex`| Resubmits the existing catalog data to [!DNL Commerce Services] without reindexing. When this parameter is not specified, the command runs a full reindex before syncing data.|No|
+
+The feed name can be one of the following:
+
+-  `products`-- Products in your catalog
+-  `categories`-- Categories in your catalog
+-  `variants`-- Product variations of a configurable product, such as color and size
+-  `productattributes`-- Product attributes such as `activity`, `gender`, `tops`, `bottoms`, and so on
+-  `productoverrides`-- Customer-specific pricing and catalog visibility rules, such as those based on category permissions
+
+### Examples
+
+The following example reindexes the product data from the [!DNL Commerce] catalog and resyncs it to Commerce services:
+
+```bash
+bin/magento saas:resync --feed products
+```
+
+If you do not want to run a full reindex of the products, you can instead sync the product data that has already been generated:
+
+```bash
+bin/magento saas:resync --feed products --no-reindex
+```
