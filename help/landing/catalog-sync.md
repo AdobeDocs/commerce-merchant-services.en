@@ -6,7 +6,7 @@ description: "Learn how to export product data from the [!DNL Commerce] server t
 
 Adobe Commerce and Magento Open Source use indexers to compile catalog data into tables. The process is automatically triggered by [events](https://docs.magento.com/user-guide/system/index-management-events.html) such as a change to a product price or inventory level.
 
-The catalog sync process runs hourly to allow [!DNL Commerce Services] to use catalog data. Catalog sync exports product data from the [!DNL Commerce] server to [!DNL Commerce Services] on an ongoing basis to keep the services up to date. For example, [!DNL Product Recommendations](../product-recommendations/overview.md) needs current catalog information to accurately return recommendations with correct names, pricing, and availability. You can use the _Catalog Sync_ dashboard to observe and manage the synchronization process or the [command-line interface](#resynccmdline) to trigger catalog sync and reindex product data for consumption by [!DNL Commerce Services].
+The catalog sync process runs hourly to allow [!DNL Commerce Services] to use catalog data. Catalog sync exports product data from the [!DNL Commerce] server to [!DNL Commerce Services] on an ongoing basis to keep the services up to date. For example, [!DNL Product Recommendations](help/product-recommendations/overview.md) needs current catalog information to accurately return recommendations with correct names, pricing, and availability. You can use the _Catalog Sync_ dashboard to observe and manage the synchronization process or the [command-line interface](#resynccmdline) to trigger catalog sync and reindex product data for consumption by [!DNL Commerce Services].
 
 >[!NOTE]
 >
@@ -93,7 +93,7 @@ If the catalog sync has a status of **Failed**, submit a [support ticket](https:
 
 ## Command-line interface {#resynccmdline}
 
-The `saas:resync` command is part of the `magento/saas-export` package. You can install this package using one of the [!DNL Commerce Services] products, such as [!DNL Product Recommendations](../product-recommendations/install-configure.md) or [!DNL Live Search](../live-search/install.md).
+The `saas:resync` command is part of the `magento/saas-export` package. You can install this package using one of the [!DNL Commerce Services] products, such as [!DNL Product Recommendations](help/product-recommendations/install-configure.md) or [!DNL Live Search](help/live-search/install.md).
 
 >[!NOTE]
 >
