@@ -5,15 +5,18 @@ breadcrumb-title: "[!DNL Product Recommendations] Guide"
 ---
 # [!DNL Product Recommendations] for Commerce {#product-recommendations}
 
-- [[!DNL Product Recommendations] Guide](overview.md)
-- Introduction to Product Recommendations {#introduction}
-- Getting Started {#getting-started}
-   - [Release Notes](release-notes.md)
+- [Guide Overview](guide-overview.md)
+- [Introduction to [!DNL Product Recommendations]](overview.md)
+- [Release Notes](release-notes.md)
+- Get Started {#getting-started}
    - [Onboarding](onboarding.md)
    - [Implementation Workflow](implementation-workflow.md)
    - [Behavioral Data](behavioral-data.md)
    - [Headless](headless.md) 
    - [Install](install-configure.md)
+   - [Settings](settings.md)
+   - [Verify](verify.md)
+   - [Staging Environment](staging-environment.md)
 - [!DNL Product Recommendations] Admin {#product-recs-admin}
    - [Workspace](workspace.md)
    - [Create](create.md)
@@ -21,6 +24,3 @@ breadcrumb-title: "[!DNL Product Recommendations] Guide"
    - [Recommendation Types](type.md)
    - [Filters](filters.md)
    - [Placement and Labels](placement.md)
-- [Settings](settings.md)
-- [Verify](verify.md)
-- [Staging Environment](staging-environment.md)
