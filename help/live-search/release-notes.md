@@ -11,6 +11,19 @@ These release notes describe the latest versions of [!DNL Live Search] and inclu
 * ![Fix](../assets/fix.svg) - Fixes and improvements
 * ![Bug](../assets/bug.svg) - Known issues
 
+## [!DNL Live Search] 2.0
+
+* Compatible with Adobe Commerce (EE): 2.4.x
+* Compatible with Adobe Commerce for Cloud (ECE): 2.4.x
+* Stability: Stable
+
+* ![New](../assets/new.svg) - The number of available lines in the [storefront popover](quick-tour.md) can be configured from the *Admin*.
+* ![New](../assets/new.svg) - Beta [PWA](https://developer.adobe.com/commerce/pwa-studio/) compatibility for Live Search.
+* ![New](../assets/new.svg) - The Live Search installation process is updated with advanced process changes.
+* ![Fix](../assets/fix.svg) - [Advanced Search](https://docs.magento.com/user-guide/catalog/search-advanced.html) link removed from the storefront footer.
+* ![Bug](../assets/bug.svg) - The following product attributes are not supported by [Magento GraphQL API](https://devdocs.magento.com/guides/v2.4/graphql) when used in relation to the beta release of PWA: `description`, `name`, `short_description`
+* ![Bug](../assets/bug.svg) - The beta release of PWA for Live Search does not support [event handling](https://devdocs.magento.com/shared-services/storefront-events-sdk.html).
+
 ## [!DNL Live Search] 1.3.1
 
 * Compatible with Adobe Commerce (EE): 2.4.x
@@ -41,7 +54,7 @@ These release notes describe the latest versions of [!DNL Live Search] and inclu
 * Stability: Stable
 
 * ![New](../assets/new.svg) - Storefront [popover](storefront-popover.md) displays suggested products and thumbnail images of top search results as shoppers type queries into the Search box.
-* ![New](../assets/new.svg) - Commerce Admin session stays open during extended periods of keyboard inactivity
+* ![New](../assets/new.svg) - Commerce *Admin* session stays open during extended periods of keyboard inactivity
 * ![New](../assets/new.svg) - [!DNL Live Search] is automatically enabled after onboarding
 * ![Fix](../assets/fix.svg) - Initial indexing time is less than an hour
 * ![Fix](../assets/fix.svg) - Incremental product updates near real time (after install and setup)
