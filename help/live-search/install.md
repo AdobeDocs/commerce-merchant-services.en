@@ -67,7 +67,7 @@ In this scenario, storefront operations are interrupted while the [!DNL Live Sea
    * Product Variant Feed
    * Catalog Attributes Feed
 
-1. Configure your [API keys](#configure-api-keys) to [synchronize](#synchronize-catalog-data) your catalog data to [!DNL Live Search] services.
+1. Configure your [API keys](#configure-api-keys) and verify that your catalog data is [synchronized](#synchronize-catalog-data) with [!DNL Live Search] services.
 
 1. To make facets available as filters in the storefront, add the [facets](https://docs.magento.com/user-guide/live-search/facets-add.html) you need, according to the [faceting requirements](https://docs.magento.com/user-guide/live-search/facets.html).
 
@@ -115,7 +115,7 @@ In this scenario, [!DNL Elasticsearch] temporarily manages search requests from 
    * Product Variant Feed
    * Catalog Attributes Feed
 
-1. Configure your [API keys](#configure-api-keys) to [synchronize](#synchronize-catalog-data) your catalog data to [!DNL Live Search] services.
+1. Configure your [API keys](#configure-api-keys) and verify that your catalog data is [synchronized](#synchronize-catalog-data) with [!DNL Live Search] services.
 
 1. To make facets available as filters in the storefront, add the [facets](https://docs.magento.com/user-guide/live-search/facets-add.html) you need, according to the [faceting requirements](https://docs.magento.com/user-guide/live-search/facets.html).
 
