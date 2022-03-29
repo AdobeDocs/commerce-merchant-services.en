@@ -1,6 +1,7 @@
 ---
 title: Onboarding Overview
 description: Live Search onboarding flow, system requirements, boundaries and limitations
+exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 ---
 # Onboarding overview
 
