@@ -6,7 +6,7 @@ hide: yes
 ---
 # Live Search for Commerce {#live-search}
 
-- [Guide Overview](overview.md)
+- [Guide Overview](guide-overview.md)
 - [Introduction to Live Search](overview.md)
 - [Release Notes](release-notes.md)
 - Onboard Live Search {#onboard}
