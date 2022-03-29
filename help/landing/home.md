@@ -3,11 +3,10 @@ title: Services documentation
 description: Browse Services for Adobe Commerce product documentation
 seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce and Magento Open Source merchants support key components of their business.
+breadcrumb-title: Documentation
 exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
 ---
-# Services documentation {#documentation}
-
-![Services for Adobe Commerce](./assets/banner-services-home.png)
+# <!-- use banner as heading -->![Services documentation](./assets/banner-services-home.png) {#documentation}
 
 Adobe provides a collection of hosted services to help merchants support key components of their business. 
 
@@ -59,6 +58,14 @@ For services that use catalog data ([!DNL Product Recommendations] and [!DNL Liv
   </td>
 </tr>
 </table>
+
+## Connect to services
+
+The [Commerce Services Connector](https://docs.magento.com/user-guide/system/saas.html) provides the integration for your Adobe Commerce or Magento Open Source instance using an API key and a private key. For data services (Adobe Commerce only), you can also specify the data space in the configuration.
+
+## Catalog synching
+
+For services that use catalog data (Product Recommendations and Live Search), the [Catalog Sync](https://docs.magento.com/user-guide/system/catalog-sync.html) process exports product data from the Commerce server to Commerce Services on an ongoing basis to keep the services up to date.
 
 ## What's new
 

@@ -12,3 +12,5 @@ title: Services for Adobe Commerce
 - [[!DNL Product Recommendations]](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/overview.html)
 - [[!DNL Payment Services]](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/guide-overview.html)
 - [[!DNL Amazon Sales Channel]](https://experienceleague.adobe.com/docs/commerce-channels/amazon/guide-overview.html)
+- [Services Connector](https://docs.magento.com/user-guide/system/saas.html)
+- [Catalog Sync](https://docs.magento.com/user-guide/system/catalog-sync.html)
