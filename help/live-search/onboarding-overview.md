@@ -8,7 +8,7 @@ To get started using Live Search for Adobe Commerce, you must complete a few onb
 
 ## Onboarding flow
 
-![Live Search onboarding diagram](assets/onboarding-overview.svg)
+![Live Search onboarding diagram](assets/onboarding-flow.svg)
 
 ## Requirements {#requirements}
 
