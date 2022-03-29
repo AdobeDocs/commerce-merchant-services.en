@@ -17,7 +17,7 @@ breadcrumb-title: "[!DNL Product Recommendations] Guide"
    - [Settings](settings.md)
    - [Verify](verify.md)
    - [Staging Environment](staging-environment.md)
-- [!DNL Product Recommendations] Admin {#product-recs-admin}
+- [!DNL Product Recommendations] Admin {#admin}
    - [Workspace](workspace.md)
    - [Create](create.md)
    - [Edit](edit.md)
