@@ -61,8 +61,8 @@ If you must initiate a resync of your catalog before the hourly scheduled sync o
 
 The **Synced catalog products** table displays the following information.
 
-|---|---|
 |Field|Description|
+|---|---|
 |ID | Unique identifier of the product|
 |Name | Storefront name of the product|
 |Type | Identifies the product type, such as simple, configurable, downloadable, and so on|
