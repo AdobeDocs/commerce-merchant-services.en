@@ -69,7 +69,7 @@ In this scenario, storefront operations are interrupted while the [!DNL Live Sea
 
 1. Configure your [API keys](#configure-api-keys) and verify that your catalog data is [synchronized](#synchronize-catalog-data) with [!DNL Live Search] services.
 
-1. To make facets available as filters in the storefront, add the [facets](https://docs.magento.com/user-guide/live-search/facets-add.html) you need, according to the [faceting requirements](https://docs.magento.com/user-guide/live-search/facets.html).
+1. To make facets available as filters in the storefront, add the [facets](facets-add.md) you need, according to the [faceting requirements](facets.md).
 
    You should be able to add facets after `cron` runs the attribute feeds and exports attribute metadata.
 
@@ -117,7 +117,7 @@ In this scenario, [!DNL Elasticsearch] temporarily manages search requests from 
 
 1. Configure your [API keys](#configure-api-keys) and verify that your catalog data is [synchronized](#synchronize-catalog-data) with [!DNL Live Search] services.
 
-1. To make facets available as filters in the storefront, add the [facets](https://docs.magento.com/user-guide/live-search/facets-add.html) you need, according to the [faceting requirements](https://docs.magento.com/user-guide/live-search/facets.html).
+1. To make facets available as filters in the storefront, add the [facets](facets-add.md) you need, according to the [faceting requirements](facets.md).
 
    You should be able to add facets after `cron` runs the product and attribute feeds and exports attribute metadata to [!DNL Live Search] services.
 
@@ -171,7 +171,7 @@ For additional help, refer to [[!DNL Live Search] catalog not synchronized](http
 
 ### Future product updates
 
-After the initial synchronization, it can take up to fifteen minutes for incremental product updates to become available to storefront search. To learn more, go to [Streaming Product Updates](https://devdocs.magento.com/live-search/indexing.html).
+After the initial synchronization, it can take up to fifteen minutes for incremental product updates to become available to storefront search. To learn more, go to [Streaming Product Updates](indexing.md).
 
 ## Test the connection {#test-connection}
 
