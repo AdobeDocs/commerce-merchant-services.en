@@ -61,16 +61,16 @@ If you must initiate a resync of your catalog before the hourly scheduled sync o
 
 The **Synced catalog products** table displays the following information.
 
----|---
-Field|Description
-ID | Unique identifier of the product
-Name | Storefront name of the product
-Type | Identifies the product type, such as simple, configurable, downloadable, and so on
-Last Exported | Date the product was last successfully exported from your catalog
-Last Modified | Date the product was last modified in your catalog
-SKU | Displays the stock-keeping unit for the product
-Price | Price of the product
-Visibility | A product's visibility setting as defined in the [!DNL Commerce] catalog
+|---|---|
+|Field|Description|
+|ID | Unique identifier of the product|
+|Name | Storefront name of the product|
+|Type | Identifies the product type, such as simple, configurable, downloadable, and so on|
+|Last Exported | Date the product was last successfully exported from your catalog|
+|Last Modified | Date the product was last modified in your catalog|
+|SKU | Displays the stock-keeping unit for the product|
+|Price | Price of the product|
+|Visibility | A product's visibility setting as defined in the [!DNL Commerce] catalog|
 
 ## Resolve catalog sync issues {#resolvesync}
 

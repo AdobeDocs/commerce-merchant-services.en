@@ -10,14 +10,6 @@ exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
 
 Adobe provides a collection of hosted services to help merchants support key components of their business. 
 
-## Connect to services
-
-The [Commerce Services Connector](saas.md) provides the integration for your Adobe Commerce or Magento Open Source instance using an API key and a private key. For data services (Adobe Commerce only), you can also specify the data space in the configuration.
-
-## Catalog synching
-
-For services that use catalog data ([!DNL Product Recommendations] and [!DNL Live Search]), the [Catalog Sync](catalog-sync.md) process exports product data from the [!DNL Commerce] server to [!DNL Commerce Services] on an ongoing basis to keep the services up to date.
-
 ## Available services
 
 <table>
