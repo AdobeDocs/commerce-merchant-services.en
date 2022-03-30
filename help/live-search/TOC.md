@@ -6,11 +6,13 @@ hide: yes
 ---
 # Live Search for Commerce {#live-search}
 
-- [Live Search Guide](overview.md)
-- Getting Started {#getting-started}
-   - [Install](install.md)
-   - [Release Notes](release-notes.md)
-- Live Search Storefront{#live-search-storefront}
+- [Guide Overview](guide-overview.md)
+- [Introduction to Live Search](overview.md)
+- [Release Notes](release-notes.md)
+- Onboard Live Search {#onboard}
+   - [Onboarding Overview](onboarding-overview.md)
+   - [Install Live Search](install.md)
+- Live Search Storefront {#live-search-storefront}
    - [Quick Tour](quick-tour.md)
    - [Storefront Popover](storefront-popover.md)
    - [Styling Popover Elements](storefront-popover-styling.md)
