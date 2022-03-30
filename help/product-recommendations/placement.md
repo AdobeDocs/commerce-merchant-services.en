@@ -6,6 +6,8 @@ description: Learn where you can place recommendations on various pages on your 
 
 With so many recommendation types to choose from, which should you use on each page? If you are not sure where to begin, try the following:
 
+|Page|Recommendation Type|
+|---|---|
 |Home page|`Recommended for you`|
 |Product page|`Viewed this, viewed that`|
 |Cart|`Bought this, bought that`|
