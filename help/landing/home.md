@@ -63,8 +63,8 @@ For services that use catalog data (Product Recommendations and Live Search), th
 
 The following items are recent changes to the documentation:
 
-* Updated the [!DNL Live Search] release notes for the [1.3.1 release](/help/live-search/release-notes.md).
+* Updated the [!DNL Live Search] release notes for the [2.0 release](/help/live-search/release-notes.md).
 * Added a section (_Boundaries and thresholds_) to the [Install [!DNL Live Search]](/help/live-search/install.md) topic.
 * Added [[!DNL Payment Services] guide](/help/payment-services/guide-overview.md) with the latest information of the new marketplace extension and hosted service v1.0.0.
 * The [!DNL Live Search] [Performance reporting dashboard](/help/live-search/performance.md) provides insight into the effectiveness of search terms that shoppers use.
-* Added B2B support in [[!DNL Product Recommendations]](https://docs.magento.com/user-guide/recommendations/overview.html).
+* Added B2B support in [[!DNL Product Recommendations]](/help/product-recommendations/overview.md).

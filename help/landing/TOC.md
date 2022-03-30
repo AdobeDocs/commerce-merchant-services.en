@@ -6,9 +6,9 @@ title: Services for Adobe Commerce
 # Services for Adobe Commerce documentation {#user-guides}
 
 - [Services for Adobe Commerce](home.md)
-- [[!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/overview.html)
-- [[!DNL Product Recommendations]](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/guide-overview.html)
-- [[!DNL Payment Services]](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/guide-overview.html)
+- [[!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/guide-overview.html)
+- [[!DNL Product Recommendations]](https://experienceleague-review.corp.adobe.com/docs/commerce-merchant-services/product-recommendations/guide-overview.html)
+- [[!DNL Payment Services]](https://experienceleague-review.corp.adobe.com/docs/commerce-merchant-services/payment-services/guide-overview.html)
 - [[!DNL Amazon Sales Channel]](https://experienceleague.adobe.com/docs/commerce-channels/amazon/guide-overview.html)
-- [Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/landing/saas.html)
-- [Catalog Sync](https://experienceleague.adobe.com/docs/commerce-merchant-services/landing/catalog-sync.html)
+- [Services Connector](/help/landing/saas.md)
+- [Catalog Sync](/help/landing/catalog-sync.md)
