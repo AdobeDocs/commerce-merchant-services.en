@@ -1,6 +1,7 @@
 ---
 title: Behavioral Data
 description: Learn about behavioral data and when you can start using it.
+exl-id: d68a97b9-1497-4603-a72c-4aaaf6e048cb
 ---
 # Behavioral Data
 

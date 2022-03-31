@@ -1,6 +1,7 @@
 ---
 title: Placement and Labels
 description: Learn where you can place recommendations on various pages on your site and suggestions for frequently used labels for each recommendation type.
+exl-id: e1025138-49dc-4833-92bb-27e8e415d724
 ---
 # Placement and Labels
 

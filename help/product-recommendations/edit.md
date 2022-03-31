@@ -1,6 +1,7 @@
 ---
 title: Edit Recommendation
 description: Learn how to edit a product recommendation.
+exl-id: 36fd6d3a-74f8-4510-a187-a2a91742cd1a
 ---
 # Edit Recommendation
 

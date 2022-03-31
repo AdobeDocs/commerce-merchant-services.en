@@ -1,6 +1,7 @@
 ---
 title: Implementation Workflow
 description: Learn the steps to successfully implement [!DNL Product Recommendations] on your storefront.
+exl-id: 766e1191-0330-4515-9331-e45318539dc9
 ---
 # Implementation Workflow
 

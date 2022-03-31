@@ -1,6 +1,7 @@
 ---
 title: Filter Products
 description: Define conditions that either include or exclude products from being used as recommendations.
+exl-id: baab28ff-b529-4cbc-adb7-4fa225e87d4a
 ---
 # Filter Products
 
