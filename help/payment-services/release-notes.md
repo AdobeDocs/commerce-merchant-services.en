@@ -15,7 +15,7 @@ These release notes describe the initial release of [!DNL Payment Services] and 
 
 ![New](../assets/new.svg)<!-- Issue PAY-2127 --> [[!DNL Payment Services]](https://marketplace.magento.com/magento-payment-services.html) is now compatible with Adobe Commerce and Magento Open Source versions 2.4.0 to 2.4.4.
 
-![New](../assets/new.svg)<!-- Issue PAY-2682 --> The [!DNL Payment Services] extension for Adobe Commerce and Magento Open Source is available for Canadian merchants. Merchants can view payments configuration in either [French](overview.md?lang=fr) or [English](overview.md?lang=en).
+![New](../assets/new.svg)<!-- Issue PAY-2682 --> The [!DNL Payment Services] extension for Adobe Commerce and Magento Open Source is available for Canadian merchants. Merchants can view payments configuration in either [French](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html?lang=fr) or [English](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html?lang=en).
 
 ![New](../assets/new.svg)<!-- Issue PAY-2681 --> [!DNL Payment Services] supports [Canadian dollars (CAD)](overview.md#accepted-credit-cards-and-currencies) with Credit card and Paypal. Shoppers can have a shopping experience in their preferred language, depending on the locale of the store in which they are shopping.
 
@@ -45,7 +45,7 @@ These release notes describe the initial release of [!DNL Payment Services] and 
 
 ![Known issue](../assets/bug.svg)<!-- Issue PAY-2475 --> [PayPal sandbox account](https://support.magento.com/hc/en-us/articles/4406954952461) for [!DNL Payment Services] cannot be verified  if account is created during onboarding.
 
-![Known issue](../assets/bug.svg)<!-- Issue PAY-2842 --> [Test credit card fails](https://support.magento.com/hc/en-us/articles/4406954952461) with PayPal when processing payments in a Sandbox environment.
+![Known issue](../assets/bug.svg)<!-- Issue PAY-2842 --> [Test credit card fails](https://support.magento.com/hc/en-us/articles/5201041963917) with PayPal when processing payments in a Sandbox environment.
 
 ## v1.0.0
 
