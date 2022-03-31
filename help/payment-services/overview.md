@@ -42,7 +42,10 @@ See [Lifecycle policy](https://devdocs.magento.com/release/lifecycle-policy.html
 
 ## Accepted credit cards and currencies
 
-Currently, [!DNL Payment Services] are only available in the United States (US) and accepts United States Dollars (USD) currency.
+Currently, [!DNL Payment Services] are only available in:
+
+* United States (US) and accepts United States Dollars (USD) currency.
+* Canada (CA) and accepts Canadian Dollars (CAD) currency.
 
 See the [PayPal currency availability](https://developer.paypal.com/docs/platforms/checkout/reference/country-availability-advanced-cards/) documentation for more information.
 
