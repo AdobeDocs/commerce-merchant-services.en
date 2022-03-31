@@ -1,93 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 26.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 1356.46 521.7" style="enable-background:new 0 0 1356.46 521.7;" xml:space="preserve">
+	 viewBox="0 0 1356.46 392.85" style="enable-background:new 0 0 1356.46 392.85;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#FFEFE3;}
-	.st1{fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
-	.st2{font-family:'OpenSans-Semibold';}
-	.st3{font-size:24px;}
-	.st4{fill:#F3F3F3;stroke:#000000;stroke-width:0.5872;stroke-miterlimit:10;}
-	.st5{fill:#B62E35;}
-	.st6{fill:#FFFFFF;}
-	.st7{font-family:'OpenSans-Bold';}
-	.st8{font-size:30px;}
-	.st9{font-family:'OpenSans';}
-	.st10{font-size:12px;}
-	.st11{font-size:14px;}
-	.st12{fill:none;stroke:#000000;stroke-width:0.8006;stroke-miterlimit:10;stroke-dasharray:6.5061,6.5061;}
+	.st0{fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+	.st1{font-family:'OpenSans';}
+	.st2{font-size:14px;}
+	.st3{fill:#B62E35;}
+	.st4{fill:#FFFFFF;}
+	.st5{font-family:'OpenSans-Bold';}
+	.st6{font-size:30px;}
+	.st7{font-family:'OpenSans-Semibold';}
+	.st8{font-size:18px;}
+	.st9{fill:none;stroke:#000000;stroke-width:0.6905;stroke-miterlimit:10;stroke-dasharray:5.6108,5.6108;}
+	.st10{fill:none;stroke:#000000;stroke-width:0.7028;stroke-miterlimit:10;stroke-dasharray:5.7112,5.7112;}
 </style>
 <g id="Layer_1">
-	<g>
-		<rect x="0.5" y="0.5" class="st0" width="1355.46" height="519.41"/>
-		<rect x="0.5" y="0.5" class="st0" width="1355.46" height="519.41"/>
-	</g>
-	<path class="st1" d="M531.63,304.26L531.63,304.26L531.63,304.26z"/>
+	<path class="st0" d="M531.63,200.25L531.63,200.25L531.63,200.25z"/>
+	<text transform="matrix(1 0 0 1 959.1505 149.9452)"><tspan x="0" y="0" class="st1 st2">• Take a quick tour of the storefront</tspan><tspan x="0" y="33.6" class="st1 st2">• Explore Live Search from the Admin</tspan></text>
+	<text transform="matrix(1 0 0 1 526.0536 149.9452)"><tspan x="0" y="0" class="st1 st2">• Configure API keys</tspan><tspan x="0" y="33.6" class="st1 st2">• Verify catalog synchronization</tspan></text>
+	<text transform="matrix(1 0 0 1 125.994 216.7818)"><tspan x="0" y="0" class="st1 st2">• Method 1</tspan><tspan x="0" y="33.6" class="st1 st2">  Install Live Search without Elasticsearch</tspan></text>
+	<text transform="matrix(1 0 0 1 122.2827 301.0609)"><tspan x="0" y="0" class="st1 st2">• Method 2  (no downtime)</tspan><tspan x="0" y="33.6" class="st1 st2">  Install Live Search with Elasticsearch</tspan></text>
 </g>
 <g id="Layer_2">
-	<text transform="matrix(1 0 0 1 25.1325 33.657)" class="st2 st3">Onboarding flow</text>
-	<path class="st4" d="M348.17,376.47H116.38c-6.63,0-12-5.37-12-12v-48.21c0-6.63,5.37-12,12-12h231.79c6.63,0,12,5.37,12,12v48.21
-		C360.17,371.1,354.8,376.47,348.17,376.47z"/>
 	<g>
 		<g>
-			<circle class="st5" cx="178.05" cy="114.42" r="18.2"/>
+			<circle class="st3" cx="90.43" cy="77.1" r="18.2"/>
 		</g>
-		<text transform="matrix(1 0 0 1 168.3091 124.9428)" class="st6 st7 st8">1</text>
+		<text transform="matrix(1 0 0 1 80.6814 87.6232)" class="st4 st5 st6">1</text>
 	</g>
 	<g>
 		<g>
-			<circle class="st5" cx="814.12" cy="114.42" r="18.2"/>
+			<circle class="st3" cx="931.33" cy="77.1" r="18.2"/>
 		</g>
-		<text transform="matrix(1 0 0 1 804.6435 124.9428)" class="st6 st7 st8">3</text>
+		<text transform="matrix(1 0 0 1 921.8525 87.6232)" class="st4 st5 st6">3</text>
 	</g>
 	<g>
 		<g>
-			<circle class="st5" cx="491.08" cy="114.42" r="18.2"/>
+			<circle class="st3" cx="495.55" cy="77.1" r="18.2"/>
 		</g>
-		<text transform="matrix(1 0 0 1 483.4176 124.5973)" class="st6 st7 st8">2</text>
+		<text transform="matrix(1 0 0 1 487.8827 87.2778)" class="st4 st5 st6">2</text>
 	</g>
-	<path class="st1" d="M531.63,304.26L531.63,304.26L531.63,304.26z"/>
-	<text transform="matrix(1 0 0 1 110.0614 258.6193)"><tspan x="0" y="0" class="st9 st10">Use the method you prefer to install Live Search </tspan><tspan x="0" y="14.4" class="st9 st10">from the command line:</tspan></text>
-	<text transform="matrix(1 0 0 1 750.4253 191.6429)" class="st2 st11">Synchronize catalog</text>
-	<text transform="matrix(1 0 0 1 114.9842 343.9164)" class="st9 st10">Install Live Search without Elasticsearch</text>
-	<text transform="matrix(1 0 0 1 426.1465 191.6431)" class="st2 st11">Configure API keys</text>
+	<path class="st0" d="M531.63,200.25L531.63,200.25L531.63,200.25z"/>
+	<text transform="matrix(1 0 0 1 125.994 154.6081)"><tspan x="0" y="0" class="st1 st2">Use the method you prefer to install Live Search </tspan><tspan x="0" y="16.8" class="st1 st2">from the command line:</tspan></text>
+	<text transform="matrix(1 0 0 1 526.0534 84.8409)" class="st7 st8">Configure Live Search</text>
+	<text transform="matrix(1 0 0 1 125.9938 82.608)" class="st7 st8">Install Live Search</text>
 	<g>
 		<g>
-			<line class="st12" x1="531.63" y1="114.42" x2="764.7" y2="114.42"/>
+			<line class="st9" x1="292.88" y1="77.1" x2="465.71" y2="77.1"/>
 			<g>
-				<polygon points="764.04,109.55 764.04,119.28 768.91,114.42 				"/>
+				<polygon points="465.15,72.9 465.15,81.29 469.34,77.1 				"/>
 			</g>
 		</g>
 	</g>
-	<text transform="matrix(1 0 0 1 110.0617 191.6429)" class="st2 st11">Install Live Search</text>
+	<text transform="matrix(1 0 0 1 959.1509 84.8409)" class="st7 st8">Learn Live Search</text>
 	<g>
 		<g>
-			<circle class="st5" cx="1130.46" cy="114.42" r="18.2"/>
-		</g>
-		<text transform="matrix(1 0 0 1 1120.9821 124.9428)" class="st6 st7 st8">4</text>
-	</g>
-	<g>
-		<g>
-			<line class="st12" x1="852.1" y1="114.42" x2="1085.16" y2="114.42"/>
+			<line class="st10" x1="721.76" y1="77.1" x2="900.9" y2="77.1"/>
 			<g>
-				<polygon points="1084.51,109.55 1084.51,119.28 1089.37,114.42 				"/>
+				<polygon points="900.33,72.83 900.33,81.37 904.6,77.1 				"/>
 			</g>
 		</g>
 	</g>
-	<g>
-		<g>
-			<line class="st12" x1="212.47" y1="114.42" x2="445.54" y2="114.42"/>
-			<g>
-				<polygon points="444.88,109.55 444.88,119.28 449.75,114.42 				"/>
-			</g>
-		</g>
-	</g>
-	<text transform="matrix(1 0 0 1 1068.2089 191.6431)" class="st2 st11">Take a quick tour</text>
-	<text transform="matrix(1 0 0 1 192.3759 325.1625)" class="st2 st10">Method 1</text>
-	<path class="st4" d="M348.17,477.7H116.38c-6.63,0-12-5.37-12-12v-48.21c0-6.63,5.37-12,12-12h231.79c6.63,0,12,5.37,12,12v48.21
-		C360.17,472.33,354.8,477.7,348.17,477.7z"/>
-	<text transform="matrix(1 0 0 1 119.9445 447.2831)" class="st9 st10">Install Live Search with Elasticsearch</text>
-	<text transform="matrix(1 0 0 1 192.376 428.5293)" class="st2 st10">Method 2</text>
-	<text transform="matrix(1 0 0 1 153.0636 466.2177)" class="st9 st10">(requires no downtime)</text>
 </g>
 </svg>
