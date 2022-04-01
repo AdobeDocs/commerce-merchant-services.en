@@ -9,7 +9,7 @@ Live Search is installed as an extension from Adobe Marketplace. After the [!DNL
 
 This topic provides instructions to do the following:
 
-* [Install [!DNL Live Search]](#before-you-begin) (Methods 1 and 2)
+* Install [!DNL Live Search] (Methods 1 and 2)
 * [Update [!DNL Live Search]](#update)
 * [Uninstall [!DNL Live Search]](#uninstall)
 
@@ -144,15 +144,15 @@ In this scenario, [!DNL Elasticsearch] temporarily manages search requests from 
 
 ## Configure API keys {#configure-api-keys}
 
-The Adobe Commerce API key and its associated private key are required to connect [!DNL Live Search] to an installation of Adobe Commerce. The API key is generated and maintained in the account of the [!DNL Commerce] license holder, who can share it with the developer or SI. The developer can then create and manage the SaaS Data Spaces on behalf of the license holder.
+The Adobe Commerce API key and its associated private key are required to connect [!DNL Live Search] to an installation of Adobe Commerce. The API key is generated and maintained in the account of the [!DNL Commerce] license holder, who can share it with the developer or SI. The developer can then create and manage the SaaS Data Spaces on behalf of the license holder.  If you already have a set of API keys, you do not need to regenerate them.
 
 ### Adobe Commerce license holder
 
-To generate an API key and private key, refer to [Commerce Services Connector](https://docs.magento.com/user-guide/system/saas.html).
+To generate an API key and private key, refer to [Commerce Services Connector](../landing/saas.md).
 
 ### Adobe Commerce developer or SI
 
-The developer or SI configures the SaaS data space as described in the Commerce Services section of the configuration. In the *Admin*, Commerce Services becomes available in the Configuration sidebar when a SaaS module is installed.
+The developer or SI configures the SaaS data space as described in the *Commerce Services* section of the configuration. In the *Admin*, Commerce Services becomes available in the *Configuration* sidebar when a SaaS module is installed.
 
 ## Synchronize catalog data {#synchronize-catalog-data}
 
@@ -171,7 +171,7 @@ For additional help, refer to [[!DNL Live Search] catalog not synchronized](http
 
 ### Future product updates
 
-After the initial synchronization, it can take up to fifteen minutes for incremental product updates to become available to storefront search. To learn more, go to [Streaming Product Updates](indexing.md).
+After the initial synchronization, it can take up to fifteen minutes for incremental product updates to become available to storefront search. To learn more, go to [Indexing - Streaming Product Updates](indexing.md).
 
 ## Test the connection {#test-connection}
 
