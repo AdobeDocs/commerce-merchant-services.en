@@ -85,7 +85,7 @@ The details panel shows the rule name, status, conditions and events, start and 
 
 | Control | Description |
 |--- |--- |
-| Add rule | Opens the [rule editor]({% link live-search/rules-add.md %}). |
+| Add rule | Opens the [rule editor](rules-add.md). |
 | Status | Filters the list of rules by status. Options: All, Active, Inactive, Scheduled |
 | ![Column selector](assets/btn-show-hide-columns.png) | Specifies the columns that visible in the grid. Options: Last updated, Start date, End date, Status |
 | Search | Searches for a rule by full name or partial match. |

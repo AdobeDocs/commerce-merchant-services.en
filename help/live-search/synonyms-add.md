@@ -57,8 +57,8 @@ Follow the instructions for the [type of synonym](synonyms-type.md) that you wan
 
 ## Step 3: Publish changes
 
-When your synonym(s) are complete, click **Publish changes**.
-It can take up to two hours for your updates to become available in the storefront.
+1. When your synonym(s) are complete, click **Publish changes**.
+1. Wait for up to two hours for your updates to become available in the storefront.
 
 ![Publish changes](assets/synonym-publish.png)
 
