@@ -3,6 +3,7 @@ title: Configure in the dashboard
 description: After installation, you can configure [!DNL Payment Services] in the dashboard.
 role: Admin, User
 level: Intermediate
+exl-id: 015c5c8c-8184-45c1-932a-f4365ddf5a30
 ---
 # Configure in the Dashboard
 
