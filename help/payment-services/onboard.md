@@ -53,3 +53,4 @@ To learn how to create or access your API keys, see [API credentials](#obtain-ap
 * [Troubleshoot [!DNL Payment Services] installation](https://support.magento.com/hc/en-us/articles/4406603542541)
 * [PayPal sandbox account not verified](https://support.magento.com/hc/en-us/articles/4406954952461)
 * [Delayed [!DNL Payment Services] report data](https://support.magento.com/hc/en-us/articles/4406114741517)
+* [Test credit card fails with PayPal when processing payments in a Sandbox environment](https://support.magento.com/hc/en-us/articles/5201041963917)

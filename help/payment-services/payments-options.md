@@ -5,9 +5,10 @@ exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 ---
 # Payment options
 
-With Adobe Commerce and Magento Open Source [!DNL Payment Services], you have multiple payment options available to you. Set these options in the Admin store configuration (**[!UICONTROL Stores]** > _[!UICONTROL Settings]_ > **[!UICONTROL Configuration]**) by expanding **[!UICONTROL Sales]**, selecting  **[!UICONTROL Payment Method]s**, and then going to _[!UICONTROL Recommended Solutions]_ on the page.
+With Adobe Commerce and Magento Open Source [!DNL Payment Services], you have multiple payment options available to you. You can configure these payment options through:
 
-![Payment methods view](assets/methods-view.png)
+* [Dashboard](configure-dashboard.md)
+* [Store configuration](configure-admin.md) (recommended for legacy payment options or a multistore setup)
 
 There are different behaviors for each payment method depending on where you are in the checkout process:
 
@@ -16,17 +17,21 @@ There are different behaviors for each payment method depending on where you are
 * Shopping cart---Available upon click of _View and edit cart_ from the mini-cart
 * Checkout view---Available upon click of _Proceed to Checkout_ from mini-cart or shopping cart
 
+>[!IMPORTANT]
+>
+>Payment Services onboarding must be completed before payments can be processed.
+
 ## [!UICONTROL Credit Card Fields]
 
 [!UICONTROL Credit Card Fields] provide a simple and secure checkout for credit card or debit card payment methods. When a shopper checks out using credit card fields, they enter their name, billing address, and credit or debit card information, to place their order. Their customer information is securely used during the purchase session to seamlessly guide them through the checkout flow.
 
-You can configure [!UICONTROL Credit Card Fields] in the Admin. See [Configuring [!DNL Payment Services]](configure-admin.md#configure-credit-card-fields) for more information.
+You can configure [!UICONTROL Credit Card Fields] in the store configuration or the Payment Services dashboard. See [Configuring [!DNL Payment Services]](configure-dashboard.md#configure-credit-card-fields) for more information.
 
 ## [!DNL PayPal Smart Buttons]
 
 [!DNL PayPal Smart Buttons], which use PayPal to complete a purchase, stores your shopper's shipping address, billing addresses, and payment details for later use. Shoppers can use any payment method previously stored or offered by PayPal.
 
-You can configure [!DNL PayPal Smart Buttons] in the Admin. See [Configuring [!DNL Payment Services]](configure-admin.md#configure-paypal-smart-buttons) for more information.
+You can configure [!DNL PayPal Smart Buttons] in the store configuration or the Payment Services dashboard.  See [Configuring [!DNL Payment Services]](configure-dashboard.md#configure-paypal-smart-buttons) for more information.
 
 ### PayPal button
 

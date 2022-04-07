@@ -37,8 +37,6 @@ These release notes describe the initial release of [!DNL Payment Services] and 
 
 ![Fixed issue](../assets/fix.svg)<!-- Issue PAY-2456 --> [!DNL Payment Services] improves payment method labels in the Admin.
 
-![Fixed issue](../assets/fix.svg)<!-- Issue PAY-2907 --> Improved transaction data collection to  best utilize fraud rules and chargeback protection.
-
 ![Known issue](../assets/bug.svg)<!-- Issue PAY-2473 --> Using [incorrect composer keys](https://support.magento.com/hc/en-us/articles/4406603542541) during installation of the extension prevents user to [authenticate](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) with correct `MAGEID`.
 
 ![Known issue](../assets/bug.svg)<!-- Issue PAY-2474 --> [!DNL Payment Services] [reports](https://support.magento.com/hc/en-us/articles/4406114741517) for Payout and Order payment status may not synchronize immediately.
