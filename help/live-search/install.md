@@ -9,7 +9,7 @@ Live Search is installed as an extension from Adobe Marketplace. After the [!DNL
 
 This topic provides instructions to do the following:
 
-* [Install [!DNL Live Search]](#before-you-begin) (Methods 1 and 2)
+* Install [!DNL Live Search] (Methods 1 and 2)
 * [Update [!DNL Live Search]](#update)
 * [Uninstall [!DNL Live Search]](#uninstall)
 
@@ -69,7 +69,7 @@ In this scenario, storefront operations are interrupted while the [!DNL Live Sea
 
 1. Configure your [API keys](#configure-api-keys) and verify that your catalog data is [synchronized](#synchronize-catalog-data) with [!DNL Live Search] services.
 
-1. To make facets available as filters in the storefront, add the [facets](https://docs.magento.com/user-guide/live-search/facets-add.html) you need, according to the [faceting requirements](https://docs.magento.com/user-guide/live-search/facets.html).
+1. To make facets available as filters in the storefront, add the [facets](facets-add.md) you need, according to the [faceting requirements](facets.md).
 
    You should be able to add facets after `cron` runs the attribute feeds and exports attribute metadata.
 
@@ -117,7 +117,7 @@ In this scenario, [!DNL Elasticsearch] temporarily manages search requests from 
 
 1. Configure your [API keys](#configure-api-keys) and verify that your catalog data is [synchronized](#synchronize-catalog-data) with [!DNL Live Search] services.
 
-1. To make facets available as filters in the storefront, add the [facets](https://docs.magento.com/user-guide/live-search/facets-add.html) you need, according to the [faceting requirements](https://docs.magento.com/user-guide/live-search/facets.html).
+1. To make facets available as filters in the storefront, add the [facets](facets-add.md) you need, according to the [faceting requirements](facets.md).
 
    You should be able to add facets after `cron` runs the product and attribute feeds and exports attribute metadata to [!DNL Live Search] services.
 
@@ -144,15 +144,15 @@ In this scenario, [!DNL Elasticsearch] temporarily manages search requests from 
 
 ## Configure API keys {#configure-api-keys}
 
-The Adobe Commerce API key and its associated private key are required to connect [!DNL Live Search] to an installation of Adobe Commerce. The API key is generated and maintained in the account of the [!DNL Commerce] license holder, who can share it with the developer or SI. The developer can then create and manage the SaaS Data Spaces on behalf of the license holder.
+The Adobe Commerce API key and its associated private key are required to connect [!DNL Live Search] to an installation of Adobe Commerce. The API key is generated and maintained in the account of the [!DNL Commerce] license holder, who can share it with the developer or SI. The developer can then create and manage the SaaS Data Spaces on behalf of the license holder.  If you already have a set of API keys, you do not need to regenerate them.
 
 ### Adobe Commerce license holder
 
-To generate an API key and private key, refer to [Commerce Services Connector](https://docs.magento.com/user-guide/system/saas.html).
+To generate an API key and private key, refer to [Commerce Services Connector](../landing/saas.md).
 
 ### Adobe Commerce developer or SI
 
-The developer or SI configures the SaaS data space as described in the Commerce Services section of the configuration. In the *Admin*, Commerce Services becomes available in the Configuration sidebar when a SaaS module is installed.
+The developer or SI configures the SaaS data space as described in the *Commerce Services* section of the configuration. In the *Admin*, Commerce Services becomes available in the *Configuration* sidebar when a SaaS module is installed.
 
 ## Synchronize catalog data {#synchronize-catalog-data}
 
@@ -171,7 +171,7 @@ For additional help, refer to [[!DNL Live Search] catalog not synchronized](http
 
 ### Future product updates
 
-After the initial synchronization, it can take up to fifteen minutes for incremental product updates to become available to storefront search. To learn more, go to [Streaming Product Updates](https://devdocs.magento.com/live-search/indexing.html).
+After the initial synchronization, it can take up to fifteen minutes for incremental product updates to become available to storefront search. To learn more, go to [Indexing - Streaming Product Updates](indexing.md).
 
 ## Test the connection {#test-connection}
 

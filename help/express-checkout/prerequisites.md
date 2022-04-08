@@ -28,4 +28,4 @@ The [!DNL Express Checkout] has existing compatibility issues for the EAP progra
 | ISPU | [!DNL In-Store Pickup] (ISPU) functionality is not supported |
 | Multishipping | Multishipping is not supported |
 
-Refer to the [Bolt limitations](https://help.bolt.com/integrations/adobe-express-checkout/set-up/#limitations) page for more information about compatibility limitations for Bolt and the [!DNL Express Checkout] extension.
+Refer to the [[!DNL Bolt] limitations](https://help.bolt.com/integrations/adobe-express-checkout/set-up/#limitations) page for more information about compatibility limitations for [!DNL Bolt] and the [!DNL Express Checkout] extension.

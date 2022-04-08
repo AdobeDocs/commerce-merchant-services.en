@@ -18,8 +18,9 @@ index: yes
   - [Set up testing sandbox](sandbox.md)
   - [Enable for production](production.md)
 - Configure [!DNL Payment Services] {#configure}
-  - [Configure in the Admin](configure-admin.md)
+  - [Configure in the Dashboard](configure-dashboard.md)
   - [Command line configuration](configure-cli.md)
+  - [Legacy payments configuration](configure-admin.md)
 - [Test and validate](test-validate.md)
 - [Create an Order](create-order.md)
 - Financial reporting {#reporting}

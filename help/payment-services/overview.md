@@ -30,19 +30,23 @@ Whether you are a small business, mid-market contender, or large enterprise, thi
 [!DNL Payment Services] is your one-stop-shop for online checkout (from settlement and refunds to getting paid). It provides powerful tools to give you the insight and control needed for creating the best experience for your buyers.
 
 * [**Onboarding**](onboard.md)---The process guides you through commercial signup, technical configuration, entitlements, sandbox environment configuration, and live payment enablement.
-* [**Payment checkout**](configure-admin.md)---Use pertinent local and region-specific payment methods to best serve your customers.
+* [**Payment checkout**](configure-dashboard.md)---Use pertinent local and region-specific payment methods to best serve your customers.
+* [**Payment options**](payments-options.md)---Set the payment options to customize the methods available for your store (or multistore) customers.
 * **Cash flow management financial reporting**---Synchronize [payment details](order-payment-status.md) with orders to get full transparency to the processed volume, payment balance, and detailed [transaction-level reporting](payouts.md) for financial reconciliation.
 * **Transparent pricing**---Pricing is clear and upfront; what you see is what you get.
 
 ## Availability
 
-[!DNL Payment Services] is available for Adobe Commerce and Magento Open Source. The [!DNL Payment Services] extension is now compatible with Adobe Commerce versions 2.4.0 to 2.4.3-p1.
+[!DNL Payment Services] is available for Adobe Commerce and Magento Open Source. The [!DNL Payment Services] extension is now compatible with Adobe Commerce versions 2.4.x.
 
 See [Lifecycle policy](https://devdocs.magento.com/release/lifecycle-policy.html){target="_blank"} and the [[!DNL Payment Services] release notes](release-notes.md) pages for more release and version-specific information.s
 
 ## Accepted credit cards and currencies
 
-Currently, [!DNL Payment Services] are only available in the United States (US) and accepts United States Dollars (USD) currency.
+Currently, [!DNL Payment Services] are only available in:
+
+* United States (US) and accepts United States Dollars (USD) currency.
+* Canada (CA) and accepts Canadian Dollars (CAD) currency.
 
 See the [PayPal currency availability](https://developer.paypal.com/docs/platforms/checkout/reference/country-availability-advanced-cards/) documentation for more information.
 

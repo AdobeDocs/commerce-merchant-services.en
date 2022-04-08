@@ -1,6 +1,7 @@
 ---
 title: Verify Event Collection
 description: Learn how to verify that behavioral data is being sent to Adobe Commerce.
+exl-id: c8c34db4-9d87-4012-b8f0-e9b1da214305
 ---
 # Verify Event Collection
 

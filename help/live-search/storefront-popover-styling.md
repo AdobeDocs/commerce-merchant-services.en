@@ -26,7 +26,7 @@ The parent component of the `.livesearch.popover-container` is `.search-autocomp
 .search-autocomplete          /* not visible */
 ```
 
-For more information about styling storefront elements, refer to [Cascading style sheets (CSS)](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/css-topics/css-overview.html) in the [Frontend Developers Guide](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/bk-frontend-dev-guide.html).
+For more information about styling storefront elements, refer to [Cascading style sheets (CSS)](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/css-topics/css-overview.html) in the [Frontend Developer Guide](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/bk-frontend-dev-guide.html).
 
 ## Class selectors
 

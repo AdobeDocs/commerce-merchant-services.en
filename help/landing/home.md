@@ -53,18 +53,18 @@ Adobe provides a collection of hosted services to help merchants support key com
 
 ## Connect to services
 
-The [Commerce Services Connector](https://docs.magento.com/user-guide/system/saas.html) provides the integration for your Adobe Commerce or Magento Open Source instance using an API key and a private key. For data services (Adobe Commerce only), you can also specify the data space in the configuration.
+The [Commerce Services Connector](saas.md) provides the integration for your Adobe Commerce or Magento Open Source instance using an API key and a private key. For data services (Adobe Commerce only), you can also specify the data space in the configuration.
 
 ## Catalog synching
 
-For services that use catalog data (Product Recommendations and Live Search), the [Catalog Sync](https://docs.magento.com/user-guide/system/catalog-sync.html) process exports product data from the Commerce server to Commerce Services on an ongoing basis to keep the services up to date.
+For services that use catalog data (Product Recommendations and Live Search), the [Catalog Sync](catalog-sync.md) process exports product data from the Commerce server to Commerce Services on an ongoing basis to keep the services up to date.
 
 ## What's new
 
 The following items are recent changes to the documentation:
 
-* Updated the [!DNL Live Search] release notes for the [1.3.1 release](/help/live-search/release-notes.md).
+* Updated the [!DNL Live Search] release notes for the [2.0 release](/help/live-search/release-notes.md).
 * Added a section (_Boundaries and thresholds_) to the [Install [!DNL Live Search]](/help/live-search/install.md) topic.
 * Added [[!DNL Payment Services] guide](/help/payment-services/guide-overview.md) with the latest information of the new marketplace extension and hosted service v1.0.0.
 * The [!DNL Live Search] [Performance reporting dashboard](/help/live-search/performance.md) provides insight into the effectiveness of search terms that shoppers use.
-* Added B2B support in [[!DNL Product Recommendations]](https://docs.magento.com/user-guide/recommendations/overview.html).
+* Added B2B support in [[!DNL Product Recommendations]](/help/product-recommendations/overview.md).

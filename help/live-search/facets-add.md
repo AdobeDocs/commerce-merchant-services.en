@@ -37,7 +37,7 @@ Any filterable product attribute can be used as a facet. The *Add facets* panel 
 
 ## Step 2: Edit facet properties (Optional)
 
-1. To edit the facet properties, click **More** (![More selector](assets/btn-more.png) options in the far-right column.
+1. To edit the facet properties, click **More** (![More selector](assets/btn-more.png)) options in the far-right column.
 1. On the menu, click **Edit**. Then, adjust the following properties as needed.
 
      * Label - ([Headless](facets-type.md) only) Enter the facet label that you want to use.

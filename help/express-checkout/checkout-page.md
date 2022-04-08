@@ -13,7 +13,7 @@ The checkout page is where customers enter the required information to place an 
 
 An example of a checkout page:
 
-![Checkout page](../assets/checkout-page.png)
+![Checkout page](assets/checkout-page.png)
 
 For more information on the Adobe Commerce standard checkout page, refer to the [checkout page](https://docs.magento.com/user-guide/quick-tour/checkout-page.html) topic.
 

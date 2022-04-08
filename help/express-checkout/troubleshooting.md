@@ -89,9 +89,9 @@ Adobe Commerce usually can be configured to support up to 20 street address line
 
 There is a known issue for the [!DNL Express Checkout].
 
-When you enable the `Enable terms and conditions` checkbox and [login with a Bolt account](https://help.bolt.com/shoppers/guides/checkout/log-in/), the checkbox is not displayed.
+When you enable the `Enable terms and conditions` checkbox in the Admin and log in with a [!DNL Bolt] account, the `Enable terms and conditions` checkbox is not displayed during the checkout. Refer to the [log in](https://help.bolt.com/shoppers/account/login-dashboard/) [!DNL Bolt] page for more information.
 
-See [terms and conditions](https://docs.magento.com/user-guide/sales/terms-and-conditions.html) topic for more information.
+See [terms and conditions](https://docs.magento.com/user-guide/sales/terms-and-conditions.html) topic for more information on the Admin configuration.
 
 ## Unexpected behaviour when `Display Billing Address On` is set to `payment page`
 
@@ -99,7 +99,7 @@ There is a known issue for the [!DNL Express Checkout].
 
 If you set the `Display Billing Address On` parameter to `payment page` and [login with a Bolt account](https://help.bolt.com/shoppers/guides/checkout/log-in/) when you check the `My billing and shipping address are the same` checkbox:
 
-![Same address](../assets/checked-address.png)
+![Same address](assets/checked-address.png)
 
 Radio button displays `use existing card`.
 
@@ -113,4 +113,4 @@ Refer to the [translating and localizing](https://devdocs.magento.com/guides/v2.
 
 ## Get help
 
-Contact Adobe Commerce Support for more assistance or questions.
+Contact Adobe Commerce Support for any assistance.

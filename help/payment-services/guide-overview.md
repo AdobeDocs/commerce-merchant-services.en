@@ -30,8 +30,9 @@ This guide does not cover the core capabilities of Adobe Commerce and Magento Op
 
 ## Support
 
-If you need information or have questions that are not covered in this guide, use the following resources:
+If you need information or have questions that are not covered in this guide, use the following resources available from your dashboard:
+
+![Help resources](assets/help-resources.png)
 
 * [Help center](https://support.magento.com/hc/en-us){target="_blank"}---See the [!DNL Payment Services]-related troubleshooting articles.
 * [Support tickets](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket){target="_blank"}---Submit a ticket to receive additional help.
-

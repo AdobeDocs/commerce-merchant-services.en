@@ -1,6 +1,7 @@
 ---
 title: Test in Staging Environment
 description: Learn how to use [!DNL Product Recommendations] from your production environment in your staging environment for testing purposes.
+exl-id: 178ff2aa-7821-45f7-85f1-d490d8182817
 ---
 # Test in Staging Environment
 

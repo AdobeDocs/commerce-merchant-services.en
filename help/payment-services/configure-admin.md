@@ -1,11 +1,11 @@
 ---
-title: Configure in the Admin
-description: After installation, you can configure [!DNL Payment Services] in the Admin.
+title: Legacy Payment Services configuration
+description: After installation, you can configure [!DNL Payment Services] in the Admin at the store configuration.
 role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
 ---
-# Configure in the Admin
+# Legacy Payment Services configuration
 
 You can customize [!DNL Payment Services] to your needs with helpful configuration options in the Admin.
 
@@ -73,7 +73,7 @@ The [!DNL PayPal Smart Buttons] payment options provide a simple, fast, and secu
 
 See [Payments options](payments-options.md#paypal-smart-buttons) for more information.
 
-### Configure PayPal Smart Buttons
+### Configure [!DNL PayPal Smart Buttons]
 
 You can enable and configure the PayPal Smart Buttons payment options within the Admin:
 
@@ -87,7 +87,7 @@ You can enable and configure the PayPal Smart Buttons payment options within the
 1. To enable debug mode, select `Yes` for the **[!UICONTROL Debug Mode]** (`No` disables it).
 1. To save your changes, click **[!UICONTROL Save Config]** .
 
-#### Configuration options
+### Configuration options
 
 | Field | Scope | Description |
 |---|---|---|
@@ -100,3 +100,15 @@ You can enable and configure the PayPal Smart Buttons payment options within the
 | [!UICONTROL Show buttons on product detail page] | store view | Enable or disable [!DNL PayPal Smart Buttons] on the product detail page. Options: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Show buttons in mini cart preview] | store view | Enable or disable [!DNL PayPal Smart Buttons] in the minicart preview. Options: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Show buttons on cart page] | store view | Enable or disable [!DNL PayPal Smart Buttons] on the cart page. Options: [!UICONTROL Yes] / [!UICONTROL No] |
+
+### [!DNL PayPal Smart Buttons] Styling options
+
+|Field|[Scope]({% link configuration/scope.md %})|Description|
+|--- |--- |--- |
+|[!UICONTROL Layout]|Store View|Define style of layout for Paypal Smart Buttons. Options: [!UICONTROL Vertical] / [!UICONTROL Horizontal]|
+|[!UICONTROL Color]|Store View|Define color of the Paypal Smart Buttons. Options: [!UICONTROL Blue] / [!UICONTROL Gold] / [!UICONTROL Silver] / [!UICONTROL White] / [!UICONTROL Black]|
+|[!UICONTROL Shape]|Store View|Define shape of the Paypal Smart Buttons. Options: [!UICONTROL Rectangular] / [!UICONTROL Pill]|
+|[!UICONTROL Use Default Height]|Store View|Defines if PayPal Smart Buttons use a default height. Options: [!UICONTROL Yes] / [!UICONTROL No]|
+|[!UICONTROL Height]|Store View|Define height of the PayPal Smart Buttons. Default value: none|
+|[!UICONTROL Label]|Store View|Define label that appears in the PayPal Smart Buttons. Options: [!UICONTROL PayPal] / [!UICONTROL Checkout] / [!UICONTROL Buynow] / [!UICONTROL Pay] / [!UICONTROL Installment]|
+|[!UICONTROL Tagline]|Store View|Enables tagline. Options: [!UICONTROL Yes] / [!UICONTROL No]|

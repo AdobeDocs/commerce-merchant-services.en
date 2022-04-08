@@ -60,6 +60,7 @@ Condition(s) are the requirements to trigger an event. A rule can have up to ten
    * All - All logical operators in the rule are set to `AND` and the results appear in the test pane.
 
    The *Match* value determines the logical operator that is used to join multiple conditions. Changing the *Match* setting changes all logical operators in the rule. It is not possible to combine `AND` and `OR` in the same rule.
+
    In this example, rather than searching for "yoga pants", there are two separate queries that search for "yoga" or "pants". This rule is less specific and will be triggered more often in the storefront than the other.
 
    ![Rules - Match](assets/rules-match.png)
@@ -68,9 +69,10 @@ Condition(s) are the requirements to trigger an event. A rule can have up to ten
 
 ## Step 3: Add event(s)
 
-Event(s) are actions that change the search results when the condition(s) are met. A single rule can have up to twenty-five events.
+Event(s) are actions that change the search results when the condition(s) are met. A single rule can have up to 25 events.
 
 1. Under *Events*, choose the **Event** to take place when the associated condition(s) are met.
+
    For example, choose `Pin a product`. Then, enter the name of the product that you want to pin. If you need help, you can find the name in the test pane.
    Then, enter the *Position* where the pinned product is to appear. The product is moved to the new position in the test pane, and is marked with a *Pinned* preview badge.
    
@@ -102,8 +104,11 @@ The information that is entered here appears in the [Rule Details](rules-workspa
 
 ## Step 6: Save and publish
 
-When complete, click **Save and publish**.
-The rule is added to the list in the rules workspace. Although active rules go into effect immediately, it might take up to fifteen minutes for cached query results in the storefront to be refreshed.
+1. When complete, click **Save and publish**.
+
+   The rule is added to the list in the rules workspace. 
+
+1. Although active rules go into effect immediately, you might have to wait up to 15 minutes for the cached query results in the storefront to be refreshed.
 
 ## Field descriptions
 
