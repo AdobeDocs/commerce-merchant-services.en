@@ -17,7 +17,7 @@ Use extension points to customize the [!DNL Express Checkout].
 
 By using extension points, you can make customizations without actually altering the core components in the application code.
 
-### Shipping details step
+## Shipping details step
 
 An extension point can be used to customize the automated step navigation after logging in with [!DNL Bolt].
 
