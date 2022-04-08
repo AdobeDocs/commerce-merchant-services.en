@@ -20,4 +20,5 @@ hide: yes
   - [Checkout flow](checkout-flow.md)
   - [Shipping details](shipping-details.md)
   - [Payment methods](payment-methods.md)
+  - [Create an Order in Admin](create-order-admin.md)
   - [Troubleshoot [!DNL Express Checkout]](troubleshooting.md)
