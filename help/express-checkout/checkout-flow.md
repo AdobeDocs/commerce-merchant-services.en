@@ -16,11 +16,11 @@ A successful [!DNL Express Checkout] flow consists of the following steps:
 1. Open your storefront and add items in your cart.
 1. Proceed to checkout.
 
-  ![Checkout](../assets/proceed-checkout.png)
+  ![Checkout](assets/proceed-checkout.png)
 
-1. When prompted, enter an email address associated with a Bolt account.
-1. Input the One-Time Password (OTP) sent to that Bolt account’s email address or phone number.
-1. Once logged in with your Bolt account, checkout details are automatically filled in:
+1. When prompted, enter an email address associated with a [!DNL Bolt] account.
+1. Input the One-Time Password (OTP) sent to that [!DNL Bolt] account’s email address or phone number.
+1. Once logged in with your [!DNL Bolt] account, checkout details are automatically filled in:
 
    - Shipping information
    - Payment method
@@ -37,20 +37,20 @@ The [!DNL Express Checkout] is compatible with standard additional Adobe Commerc
 
 The [!DNL Express Checkout] allows for multiple use cases during a checkout flow:
 
-- Guest user with a registered Bolt account.
-- Guest user with a new Bolt account.
-- An existing Adobe Commerce user with/without a registered Bolt account.
+- Guest user with a registered [!DNL Bolt] account.
+- Guest user with a new [!DNL Bolt] account.
+- An existing Adobe Commerce user with/without a registered [!DNL Bolt] account.
 
 ## Guest user checkout: How it works
 
-Guest checkout experience is different from the logged-in experience. When a shopper enters an email address into checkout, the [!DNL Express Checkout] validates it to find an existing Bolt account.
+Guest checkout experience is different from the logged-in experience. When a shopper enters an email address into checkout, the [!DNL Express Checkout] validates it to find an existing [!DNL Bolt] account.
 
-### Registered Bolt account
+### Registered [!DNL Bolt] account
 
-If a Bolt account is found, shoppers continue with their [!DNL Express Checkout] seamless checkout experience: 
+If a [!DNL Bolt] account is found, shoppers continue with their [!DNL Express Checkout] seamless checkout experience: 
 
-1. Input the One-Time Password (OTP) sent to that Bolt account’s email address or mobile, depending on user's preferences in the Bolt account.
-1. Once logged in with your Bolt account, it fills the checkout details automatically:
+1. Input the One-Time Password (OTP) sent to that [!DNL Bolt] account’s email address or mobile, depending on user's preferences in the [!DNL Bolt] account.
+1. Once logged in with your [!DNL Bolt] account, it fills the checkout details automatically:
 
    - Shipping information
    - Payment method
@@ -61,16 +61,16 @@ If a Bolt account is found, shoppers continue with their [!DNL Express Checkout]
 >
 > Guest user places the order and can register in Adobe Commerce.
 
-### New Bolt account
+### New [!DNL Bolt] account
 
-If no Bolt account is found, shoppers continue with their default out-of-the-box Adobe Commerce checkout and shopper provides all necessary details to place order:
+If no [!DNL Bolt] account is found, shoppers continue with their default out-of-the-box Adobe Commerce checkout and shopper provides all necessary details to place order:
 
 - Shipping and billing information
 - Shipping method
 - Review payment method
-- A checkbox appears to register in Bolt for faster checkouts before placing the order. They can agree to the terms & conditions to create their Bolt account.
+- A checkbox appears to register in [!DNL Bolt] for faster checkouts before placing the order. They can agree to the terms & conditions to create their [!DNL Bolt] account.
 
-  ![Remember Bolt](../assets/checked-bolt.png)
+   ![Remember [!DNL Bolt]](assets/checked-bolt.png)
 
 - The guest user places the order and can register in Adobe Commerce.
 
@@ -78,11 +78,11 @@ If no Bolt account is found, shoppers continue with their default out-of-the-box
 
 An existing user can select existing details when user places an order with the [!DNL Express Checkout] for a faster checkout experience.
 
-When a shopper enters an email address into checkout, the [!DNL Express Checkout] validates it to find an existing Bolt account.
+When a shopper enters an email address into checkout, the [!DNL Express Checkout] validates it to find an existing [!DNL Bolt] account.
 
-### Registered Bolt account with an Adobe Commerce user
+### Registered [!DNL Bolt] account with an Adobe Commerce user
 
-If a Bolt account is found, shoppers continue with their default out-of-the-box Adobe Commerce checkout and shopper provides all necessary details and then places order:
+If a [!DNL Bolt] account is found, shoppers continue with their default out-of-the-box Adobe Commerce checkout and shopper provides all necessary details and then places order:
 
 - Shipping and billing information
 - Shipping method
@@ -92,19 +92,19 @@ Refer to the [troubleshooting](../express-checkout/troubleshooting.md) topic for
 
 >[!NOTE]
 >
-> If user has a Bolt account and email does not appear as registered in Adobe Commerce, it triggers the One-Time Password (OTP) login. See the [registered Bolt account](#registered-bolt-account) flow.
+> If user has a [!DNL Bolt] account and email does not appear as registered in Adobe Commerce, it triggers the One-Time Password (OTP) login. See the [registered [!DNL Bolt] account](#registered-bolt-account) flow.
 
-### New Bolt account
+### New [!DNL Bolt] account
 
-If no Bolt account is found, shoppers continue with their default Adobe Commerce checkout and shopper selects all necessary details from their saved information to place the order:
+If no [!DNL Bolt] account is found, shoppers continue with their default Adobe Commerce checkout and shopper selects all necessary details from their saved information to place the order:
 
 - Shipping and billing information
 - Shipping method
 - Review payment method
-- A checkbox appears to register in Bolt for faster checkouts before placing the order. They can agree to the terms & conditions to create their Bolt account.
+- A checkbox appears to register in [!DNL Bolt] for faster checkouts before placing the order. They can agree to the terms & conditions to create their [!DNL Bolt] account.
 
-  ![Remember Bolt](../assets/checked-bolt.png)
+  ![Remember [!DNL Bolt]](assets/checked-bolt.png)
 
 ## Get help
 
-Contact Adobe Commerce Support for assistance and questions.
+Contact Adobe Commerce Support for any assistance.

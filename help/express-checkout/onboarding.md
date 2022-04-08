@@ -12,24 +12,24 @@ exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
 To get started using the [!DNL Express Checkout] for Adobe Commerce extension you must complete a few onboarding steps to connect your instance with our checkout functionality.
 
 1. [Get extension](#get-extension).
-1. [Create a production or sandbox merchant account with Bolt](#create-account-with-bolt). Provide all required information to verify your identity.
-1. [Provide the unique API Key and Publishable Key generated in Bolt](#obtain-api-credentials).
-1. [Set up a payment provider in the Bolt account](#configure-payment-providers).
+1. [Create a production or sandbox merchant account with [!DNL Bolt]](#create-account-with-bolt). Provide all required information to verify your identity.
+1. [Provide the unique API Key and Publishable Key generated in [!DNL Bolt]](#obtain-api-credentials).
+1. [Set up a payment provider in the [!DNL Bolt] account](#configure-payment-providers).
 1. [Set Enable dropdown to Yes](#enable-extension) to activate the extension.
 1. [Define your Service Settings](#complete-admin-configuration) to configure the [!DNL Express Checkout] extension.
 1. [Click the Save Config button](#enable-live-express-checkout) to enable extension.
 
 >[!NOTE]
 >
-> If you do not configure your Bolt accounts (step 2 above) you cannot set up your sandbox or production environments.
+> If you do not configure your [!DNL Bolt] accounts (step 2 above) you cannot set up your sandbox or production environments.
 
 ## Prerequisites
 
-In order to use the [!DNL Express Checkout], you must have the following available for Bolt:
+In order to use the [!DNL Express Checkout], you must have the following available for [!DNL Bolt]:
 
 - Supported payment providers
-- Merchant and Production account in Bolt
-- API and Publishable key generated in Bolt
+- Merchant and Production account in [!DNL Bolt]
+- API and Publishable key generated in [!DNL Bolt]
 
 Refer to the [prerequisites](../express-checkout/prerequisites.md) topic for more information.
 
@@ -41,18 +41,18 @@ See the [install](../express-checkout/install.md) topic for detailed information
 
 ## Create account with Bolt
 
-Before configuring the [!DNL Express Checkout] in your Adobe Commerce Admin it is required to create a [production](https://merchant.bolt.com/register){target="_blank"} and [sandbox](https://merchant-sandbox.bolt.com/register){target="_blank"} merchant account in Bolt. Provide all of the required details to create an account in Bolt.
+Before configuring the [!DNL Express Checkout] in your Adobe Commerce Admin it is required to create a [sandbox](https://merchant-sandbox.bolt.com/register){target="_blank"} and [production](https://merchant.bolt.com/register){target="_blank"}  merchant account in [!DNL Bolt]. Provide all of the required details to create an account in [!DNL Bolt].
 
 Refer to the [test and validate](../express-checkout/testing.md) topic for more information.
 
 ## Obtain API credentials
 
-To use the [!DNL Express Checkout] you require Bolt unique keys. Obtain the following API keys by navigating to **Developers** > **API** > **Keys** in the **Bolt Merchant Dashboard**.
+To use the [!DNL Express Checkout] you require [!DNL Bolt] unique keys. Obtain the following API keys by navigating to **Developers** > **API** > **Keys** in the **Bolt Merchant Dashboard**.
 
-- API key: A private key used by your back end to interact with Bolt APIs.
-- Publishable key: A key used by your front end to interact with Bolt APIs.
+- API key: A private key used by your back end to interact with [!DNL Bolt] APIs.
+- Publishable key: A key used by your front end to interact with [!DNL Bolt] APIs.
 
-See the [Bolt environment details](https://help.bolt.com/developers/references/environment-details/#about-keys){target="_blank"} page to learn about API and Publishable keys for the [!DNL Express Checkout] extension.
+See the [[!DNL Bolt] environment details](https://help.bolt.com/developers/references/environment-details/#about-keys){target="_blank"} page to learn about API and Publishable keys for the [!DNL Express Checkout] extension.
 
 >[!CAUTION]
 >
@@ -60,16 +60,20 @@ See the [Bolt environment details](https://help.bolt.com/developers/references/e
 
 ## Configure payment providers
 
-To connect your payment services provider follow the steps described in the [processor setup](https://help.bolt.com/integrations/adobe-express-checkout/set-up/){target="_blank"} developer Bolt page.
+To connect your payment services provider follow the steps described in the [processor setup](https://help.bolt.com/integrations/adobe-express-checkout/set-up/){target="_blank"} developer [!DNL Bolt] page.
 
 ## Enable extension
 
 1. On the _Admin_ sidebar, navigate to **Stores** > **Configuration** > **Checkout** to access the Checkout Admin configuration page.
 
-  ![Express Checkout](../assets/admin-view.png)
+   ![Express Checkout](assets/admin-view.png)
 
 1. In the [!DNL Express Checkout] view, set **Enable** to `Yes`.
-1. Select method (Production or Sandbox) to use.
+1. Select method (Sandbox or Production) to use.
+
+   - Sandbox for testing and development purposes
+   - Production to process transactions with the live payment processor
+
 1. Validate Credentials after providing your unique API and Publishable keys.
 
 >[!CAUTION]
@@ -95,6 +99,6 @@ To enable the [!DNL Express Checkout] for Adobe Commerce extension:
 
 ## Get help
 
-The onboarding process is designed to guide you through the required steps for setting up and enabling all [!DNL Express Checkout] functionality. Contact Adobe Commerce Support for assistance and questions.
+The onboarding process is designed to guide you through the required steps for setting up and enabling all [!DNL Express Checkout] functionality. Contact Adobe Commerce Support for any assistance.
 
 Refer to the [test and validate](../express-checkout/testing.md) topic for more information.

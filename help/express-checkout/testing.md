@@ -19,7 +19,7 @@ Testing the [!DNL Express Checkout] in a sandbox environment is a very important
 
 ### Using sandbox account
 
-When you test and validate your sandbox you must use a fake credit card number and a [sandbox](https://merchant-sandbox.bolt.com/register){target="_blank"} merchant account in Bolt, so that you are not creating real charges to an existing credit card account.
+When you test and validate your sandbox you must use a fake credit card number and a [sandbox](https://merchant-sandbox.bolt.com/register){target="_blank"} merchant account in [!DNL Bolt], so that you are not creating real charges to an existing credit card account.
 
 ## Testing in production
 
@@ -42,7 +42,7 @@ Complete a successful checkout from your store following these steps:
 
 1. Go to your storefront and place desired items in your cart.
 1. Proceed to checkout.
-1. Enter an email address that is associated with a Bolt Account when prompted.
+1. Enter an email address that is associated with a [!DNL Bolt] Account when prompted.
 1. Input the One-Time Password (OTP) sent to the account’s email address.
 1. Select the environment dashboard:
 
