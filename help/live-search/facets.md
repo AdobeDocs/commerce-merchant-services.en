@@ -5,13 +5,16 @@ exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
 ---
 # Facets
 
-Faceting is a method of high-performance filtering that uses multiple dimensions of attribute values as search criteria. Faceted search is similar, but considerably “smarter” than the standard [layered navigation](https://docs.magento.com/user-guide/catalog/navigation-layered.html). The list of available filters is determined by the [filterable attributes](https://docs.magento.com/user-guide/catalog/navigation-layered-filterable-attributes.html) of products returned in the search results. Up to 100 facets can be configured with [!DNL Live Search].
+Faceting is a method of high-performance filtering that uses multiple dimensions of attribute values as search criteria. Faceted search is similar, but considerably “smarter” than the standard [layered navigation](https://docs.magento.com/user-guide/catalog/navigation-layered.html). The list of available filters is determined by the [filterable attributes](https://docs.magento.com/user-guide/catalog/navigation-layered-filterable-attributes.html) of products returned in the search results. 
 
 ![Filtered search results](assets/storefront-search-results-run.png)
 
 ## Faceting requirements
 
 The category and product attribute requirements for faceting are similar to the filterable attributes used for layered navigation. The storefront properties of each attribute must be set to `filterable (with results)`.
+
+* Up to 100 attributes can be configured as facets with [!DNL Live Search].
+* [!DNL Live Search] indexes up to 300 attributes as filterable/searchable/sortable and visible in search.
 
 | Setting | Description |
 |--- |--- |
@@ -21,7 +24,7 @@ The category and product attribute requirements for faceting are similar to the 
 
 ## Default attribute values
 
-The following product attributes have [storefront properties](https://docs.magento.com/user-guide/stores/attributes-product.html) that are used by Live Search and enabled by default.
+The following product attributes have [storefront properties](https://docs.magento.com/user-guide/stores/attributes-product.html) that are used by [!DNL Live Search] and enabled by default.
 
 | Property | Storefront Property | Attribute |
 |---|---|---|
