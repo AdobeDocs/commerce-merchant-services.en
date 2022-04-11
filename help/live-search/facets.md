@@ -19,6 +19,16 @@ The category and product attribute requirements for faceting are similar to the 
 | [Attribute properties](https://docs.magento.com/user-guide/stores/attribute-product-create.html) | [Catalog Input type](https://docs.magento.com/user-guide/stores/attributes-input-types.html) - `Yes/No`, `Dropdown`, `Multiple Select`, `Price` |
 | Attribute storefront properties | Use in Layered Navigation - `Filterable (with results)` |
 
+## Default attribute values
+
+The following product attributes have [storefront properties](https://docs.magento.com/user-guide/stores/attributes-product.html) that are used by Live Search and enabled by default.
+
+| Property | Storefront Property | Attribute |
+|---|---|---|
+| Sortable | Used for Sorting in Product Listing | `price`|
+| Searchable | Use in Search | `price` <br />`sku`<br />`name`|
+| FilterableInSearch | Use in Layered Navigation - Filterable (with results)| `price`<br />`visibility`<br />`category_name`|
+
 ## Default non-system attribute properties
 
 The following table shows the default search and filterable properties of non-system attributes, including those that are specific to the Luma sample data. Setting the *Use in Search* attribute property to `Yes` makes the attribute searchable in both [!DNL Live Search] and native Adobe Commerce.
