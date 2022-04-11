@@ -33,8 +33,6 @@ This onboarding method is recommended when installing [!DNL Live Search] to a:
 
 In this scenario, storefront operations are interrupted while the [!DNL Live Search] service indexes all products in the catalog. During the installation, [!DNL Live Search] modules are enabled and [!DNL Elasticsearch] modules are disabled.
 
-+++Click for instructions
-
    >[!TIP]
    >
    >To avoid typing errors, hover over the far right of the code box, click the [!UICONTROL **Copy**] link, and paste it into the command line.
@@ -80,8 +78,6 @@ In this scenario, storefront operations are interrupted while the [!DNL Live Sea
 
 1. [Test](#test-the-connection) the connection from the storefront.
 
-+++
-
 ## Method 2: Install with Elasticsearch {#method-2}
 
 This onboarding method is recommended when installing [!DNL Live Search] to:
@@ -89,9 +85,6 @@ This onboarding method is recommended when installing [!DNL Live Search] to:
 * An existing production [!DNL Commerce] installation
 
 In this scenario, [!DNL Elasticsearch] temporarily manages search requests from the storefront while the [!DNL Live Search] service indexes all products in the background, without any interruption to normal storefront operations. [!DNL Elasticsearch] is disabled and [!DNL Live Search] enabled after all catalog data is indexed and synchronized.
-
-
-+++Click for instructions
 
 >[!TIP]
 >
@@ -150,8 +143,6 @@ In this scenario, [!DNL Elasticsearch] temporarily manages search requests from 
    ```
 
 1. [Test](#test-the-connection) the connection from the storefront.
-
-+++
 
 ## Configure API keys {#configure-api-keys}
 
