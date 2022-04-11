@@ -1,7 +1,6 @@
 ---
 title: Create an order with [!DNL Express Checkout]
 description: The Admin provides the ability to place an order using [!DNL Express Checkout] directly from the Admin by a merchant for their customers who need assistance.
-exl-id: 0955b8f4-1d26-4133-b81d-4deb54f1d84d
 ---
 # Create an order with [!DNL Express Checkout]
 
