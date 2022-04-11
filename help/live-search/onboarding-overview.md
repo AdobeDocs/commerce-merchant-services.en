@@ -14,7 +14,7 @@ To get started using Live Search for Adobe Commerce, you must complete a few onb
 ## Requirements {#requirements}
 
 * [Adobe Commerce](https://magento.com/products/magento-commerce) 2.4.x
-* PHP 7.3 / 7.4
+* PHP 7.3 / 7.4 / 8.1
 * [!DNL Composer]
 
 ### Supported platforms
