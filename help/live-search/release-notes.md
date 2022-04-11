@@ -17,6 +17,10 @@ These release notes describe the latest versions of [!DNL Live Search] and inclu
 * Compatible with Adobe Commerce for Cloud (ECE): 2.4.x
 * Stability: Stable
 
+Existing Live Search installations must be upgraded to Live Search 2.0.0 to take advantage of the following new features, fixes, and improvements:
+
+* ![New](../assets/new.svg) - Live Search now supports PHP 8.1 for installations running Adobe Commerce 2.4.4.
+* ![New](../assets/new.svg) - The `Magento_ElasticsearchCatalogPermissionsGraphQl` module is added to the list of modules that are disabled during the installation.
 * ![New](../assets/new.svg) - The number of available lines in the [storefront popover](quick-tour.md) can be configured from the *Admin*.
 * ![New](../assets/new.svg) - Beta [PWA](https://developer.adobe.com/commerce/pwa-studio/) compatibility for Live Search.
 * ![New](../assets/new.svg) - The Live Search installation process is updated with advanced process changes.
