@@ -53,7 +53,7 @@ In this scenario, storefront operations are interrupted while the [!DNL Live Sea
 
    ```bash
    bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch6 Magento_Elasticsearch7 Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch 
-Magento_ElasticsearchCatalogPermissionsGraphQl
+   Magento_ElasticsearchCatalogPermissionsGraphQl
    ```
 
    ```bash
@@ -142,7 +142,7 @@ In this scenario, [!DNL Elasticsearch] temporarily manages search requests from 
 
    ```bash
    bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch6 Magento_Elasticsearch7 Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch 
-Magento_ElasticsearchCatalogPermissionsGraphQl
+   Magento_ElasticsearchCatalogPermissionsGraphQl
    ```
 
    ```bash
