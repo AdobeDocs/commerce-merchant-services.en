@@ -64,7 +64,7 @@ To connect your payment services provider follow the steps described in the [pro
 
 ## Enable extension
 
-1. On the _Admin_ sidebar, navigate to **Stores** > **Configuration** > **Checkout** to access the Checkout Admin configuration page.
+1. On the _Admin_ sidebar, navigate to **Stores** > **Configuration** > **SALES** > **Checkout** to access the Checkout Admin configuration page.
 
    ![Express Checkout](assets/admin-view.png)
 
