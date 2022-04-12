@@ -3,7 +3,7 @@ title: Faceting Workspace
 description: Learn your way around the Live Search faceting workspace.
 exl-id: b47b5c19-59bb-41e4-9599-3b90cbc44b70
 ---
-# Faceting workspace
+# Faceting Workspace
 
 The [!DNL Live Search] workspace lists all facets that are currently available and provides access to the tools you need to set up and manage facets. Pinned facets appear first in the list of existing facets, followed by dynamic facets. The list can be filtered to show all facets, or only those that are pinned or dynamic.
 
