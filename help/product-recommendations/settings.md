@@ -46,7 +46,7 @@ To change the source of your product recommendations data, choose the SaaS data 
 
 1. In the Recommendations source section, click **Edit Configuration**.
 
-1. Follow the instructions to configure a new [Commerce Service].
+1. Follow the instructions to configure a new [[!DNL Commerce] service](/help/landing/saas.md).
 
 ## Enable visual recommendations
 
