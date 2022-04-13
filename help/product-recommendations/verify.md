@@ -17,6 +17,9 @@ To ensure that the event collector JS file is loading on all site pages:
 1. Reload the page.
 1. You should see `ds.js` or `ds.min.js` in the **Name** column.
 
+![Event collector JS](assets/filter-ds.png)
+_Event Collector JS_
+
 To ensure that events are firing on pages across your site (home, product, checkout, and so on):
 
 1. Make sure you disable any ad blockers on your browser and accept cookies on the site.
@@ -24,6 +27,9 @@ To ensure that events are firing on pages across your site (home, product, check
 1. Choose the **Network** tab and filter for `tp2`.
 1. Reload the page.
 1. You should see calls under `tp2` in the **Name** column.
+
+![Firing events](assets/filter-tp2.png)
+_Verify that events are firing_
 
 ## Verify using Snowplow Chrome extension
 
@@ -41,7 +47,8 @@ Install the [Snowplow Analytics Debugger extension for Chrome](https://chrome.go
 
 1. Verify that the [SaaS Data Space ID](https://docs.magento.com/user-guide/configuration/services/saas.html) is set correctly.
 
-If you run into any problems verifying that the events are collected and sent to Adobe Commerce, [contact support](https://support.magento.com/hc/en-us).
+![Snowplow filter](assets/snowplow-filter.png)
+_Snowplow Filter_
 
 >[!NOTE]
 >

@@ -13,9 +13,9 @@ The following lists the [!DNL Commerce] features you can access through the [!DN
 
 | Service | Availability |
 | ---|--- |
-|[!DNL Product Recommendations] powered by Adobe Sensei| Adobe Commerce|
-|[!DNL Live Search] powered by Adobe Sensei | Adobe Commerce|
-|[!DNL Payment Services] | Adobe Commerce and Magento Open Source|
+|[[!DNL Product Recommendations]](/help/product-recommendations/overview.md) powered by Adobe Sensei| Adobe Commerce|
+|[[!DNL Live Search]](/help/live-search/overview.md) powered by Adobe Sensei | Adobe Commerce|
+|[[!DNL Payment Services]](/help/payment-services/overview.md) | Adobe Commerce and Magento Open Source|
 
 ## Architecture
 
@@ -69,7 +69,7 @@ For [!DNL Product Recommendations], the SaaS data space contains catalog and beh
 
 >[!NOTE]
 >
-> If you do not see the **Commerce Services Connector** section in the [!DNL Commerce] configuration, you must install the [!DNL Commerce] modules for your desired [!DNL Commerce Service], such as [!DNL Product Recommendations].
+> If you do not see the **Commerce Services Connector** section in the [!DNL Commerce] configuration, you must install the [!DNL Commerce] modules for your desired [!DNL Commerce Service], such as [[!DNL Product Recommendations]](/help/product-recommendations/install-configure.md).
 
 To select or create a SaaS project, request the [!DNL Commerce] API key from the [!DNL Commerce] license holder for your store.
 
