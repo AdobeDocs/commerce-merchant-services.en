@@ -69,7 +69,7 @@ For [!DNL Product Recommendations], the SaaS data space contains catalog and beh
 
 >[!NOTE]
 >
-> If you do not see the **Commerce Services Connector** section in the [!DNL Commerce] configuration, you must install the [!DNL Commerce] modules for your desired [!DNL Commerce Service], such as [[!DNL Product Recommendations]](/help/product-recommendations/install-configure.md).
+> If you do not see the **[!UICONTROL Commerce Services Connector]** section in the [!DNL Commerce] configuration, you must install the [!DNL Commerce] modules for your desired [!DNL Commerce] service, such as [[!DNL Product Recommendations]](/help/product-recommendations/install-configure.md).
 
 To select or create a SaaS project, request the [!DNL Commerce] API key from the [!DNL Commerce] license holder for your store.
 
