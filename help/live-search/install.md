@@ -42,7 +42,7 @@ In this scenario, storefront operations are interrupted while the [!DNL Live Sea
 1. To download the `live-search` package, run the following from the command line:
 
    ```bash
-   composer require magento/DNL live-search
+   composer require magento/live-search
    ```
 
    For more information, refer to the list of [!DNL Live Search] [dependencies](#dependencies) that are captured by [!DNL Composer].
