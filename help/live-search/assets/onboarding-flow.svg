@@ -21,8 +21,8 @@
 	<path class="st0" d="M493.63,174.25L493.63,174.25L493.63,174.25z"/>
 	<text transform="matrix(1 0 0 1 1006.1505 108.9452)"><tspan x="0" y="0" class="st1 st2">•   Take a quick tour of the storefront</tspan><tspan x="0" y="38.4" class="st1 st2">•   Explore Live Search from the Admin</tspan></text>
 	<text transform="matrix(1 0 0 1 518.0536 108.9452)"><tspan x="0" y="0" class="st1 st2">•  Generate API keys (if necessary) </tspan><tspan x="0" y="38.4" class="st1 st2">•  Configure Commerce Services</tspan><tspan x="0" y="76.8" class="st1 st2">•   Verify catalog synchronization</tspan></text>
-	<text transform="matrix(1 0 0 1 87.994 175.7818)"><tspan x="0" y="0" class="st1 st2">•   </tspan><tspan x="18.48" y="0" class="st3 st2">Method 1 </tspan><tspan x="0" y="22" class="st1 st2">    Install Live Search without Elasticsearch</tspan></text>
-	<text transform="matrix(1 0 0 1 84.2827 260.0609)"><tspan x="0" y="0" class="st1 st2">•   </tspan><tspan x="18.48" y="0" class="st3 st2">Method 2</tspan><tspan x="91.95" y="0" class="st1 st2">  (no downtime) </tspan><tspan x="0" y="22" class="st1 st2">    Install Live Search with Elasticsearch</tspan></text>
+	<text transform="matrix(1 0 0 1 87.994 175.7818)"><tspan x="0" y="0" class="st3 st2">Method 1 </tspan><tspan x="0" y="22" class="st1 st2">Install Live Search without Elasticsearch</tspan></text>
+	<text transform="matrix(1 0 0 1 84.2827 260.0609)"><tspan x="0" y="0" class="st3 st2">Method 2</tspan><tspan x="73.46" y="0" class="st1 st2">  (no downtime) </tspan><tspan x="0" y="22" class="st1 st2">Install Live Search with Elasticsearch</tspan></text>
 	<rect x="75.94" y="234.8" class="st4" width="66.14" height="1.67"/>
 	<text transform="matrix(1 0 0 1 537.9001 99.1552)" class="st3 st2 st5">	</text>
 </g>
@@ -66,5 +66,6 @@
 			</g>
 		</g>
 	</g>
+	<text transform="matrix(1 0 0 1 786.7751 480.3788)" style="font-family:'MyriadPro-Regular'; font-size:12px;">Lorem ipsum</text>
 </g>
 </svg>
