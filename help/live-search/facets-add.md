@@ -49,8 +49,8 @@ Any filterable product attribute can be used as a facet. The *Add facets* panel 
 
    ![Faceting workspace](assets/facet-edit.png)
 
-1. To pin the facet to the top of the *Filters* list, click the gray pushpin (![Pin selector](assets/btn-pin-gray.png).
-1. To change the order of the pinned facet, click the **Move** (![Move selector](assets/btn-move.png) icon and drag the row to a new position in the *Pinned Facets* section.
+1. To pin the facet to the top of the *Filters* list, click the gray pushpin (![Pin selector](assets/btn-pin-gray.png)).
+1. To change the order of the pinned facet, click the **Move** (![Move selector](assets/btn-move.png)) icon and drag the row to a new position in the *Pinned Facets* section.
 
 ## Step 3: Publish changes
 
