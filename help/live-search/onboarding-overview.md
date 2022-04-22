@@ -39,6 +39,7 @@ At this time, the [!DNL Live Search] search/category API has the following suppo
 
 ### PWA beta release
 
+* The current beta PWA implementation of Live Search requires more processing time to return search results than Live Search with the native Commerce storefront.
 * The beta release of PWA for [!DNL Live Search] does not support [event handling](https://devdocs.magento.com/shared-services/storefront-events-sdk.html).
 * The following product attributes are not supported by GraphQL when used in relation to the beta release of [PWA](https://developer.adobe.com/commerce/pwa-studio/): `description`, `name`, `short_description`
 
@@ -49,3 +50,5 @@ At this time, the [!DNL Live Search] search/category API has the following suppo
 * [Custom price groups](https://docs.magento.com/user-guide/catalog/product-price-group.html)
 * Multiple inventory locations as used by [MCOM](https://docs.magento.com/user-guide/mcom.html) or other OMS extensions
 * [Integrated B2B capabilities](https://business.adobe.com/products/magento/b2b-ecommerce.html)
+* Product prices do not include [value added tax](https://docs.magento.com/user-guide/tax/vat.html) (VAT).
+* Out-of-stock products appear in search results regardless of the [Stock Options](https://docs.magento.com/user-guide/catalog/inventory-options-global.html) configuration.
