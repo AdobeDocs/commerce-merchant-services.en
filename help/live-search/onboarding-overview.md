@@ -39,9 +39,9 @@ At this time, the [!DNL Live Search] search/category API has the following suppo
 
 ### PWA beta release
 
+* The current beta PWA implementation of Live Search requires more processing time to return search results than Live Search with the native Commerce storefront.
 * The beta release of PWA for [!DNL Live Search] does not support [event handling](https://devdocs.magento.com/shared-services/storefront-events-sdk.html).
 * The following product attributes are not supported by GraphQL when used in relation to the beta release of [PWA](https://developer.adobe.com/commerce/pwa-studio/): `description`, `name`, `short_description`
-* The current beta implementation is slow. Full PWA support will be available later in the year.
 
 ### Not supported at this time
 
