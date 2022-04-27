@@ -31,7 +31,7 @@ This technique uses searchable product attributes, rather than synonyms, to crea
 
 ### Use of singular and plural
 
-It is not necessary to define both singular and plural forms a word as a synonym. If you have a mixture of singular and plural terms in your catalog, Search will find the correct set of products. For example, if you use the word “pant” in the product name and a shopper searches for “pants”, the correct set of products is returned, and the singular word “pant” is offered as a suggestion. The singular term “pant” is often used in the fashion industry and sometimes in retail, although the plural form “pants” is more commonly used in some areas. (The word “pant” technically refers to the part of a garment that covers one leg, which is why you need a “pair of pants” to cover both legs.)
+It is not necessary to define both singular and plural forms a word as a synonym. If you have a mixture of singular and plural terms in your catalog, Search finds the correct set of products. For example, if you use the word “pant” in the product name and a shopper searches for “pants”, the correct set of products is returned, and the singular word “pant” is offered as a suggestion. The singular term “pant” is often used in the fashion industry and sometimes in retail, although the plural form “pants” is more commonly used in some areas. (The word “pant” technically refers to the part of a garment that covers one leg, which is why you need a “pair of pants” to cover both legs.)
 
 ### Consistency
 
