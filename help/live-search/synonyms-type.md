@@ -27,7 +27,7 @@ Keep in mind the following best practices to get the most from Live Search synon
 
 ### Keyword mapping
 
-This technique uses searchable product attributes, rather than synonyms, to create keyword-based associations between products. As a result, both mapped products appear in the search results of the other. To learn more, see [Search Results](https://docs.magento.com/user-guide/catalog/search-results.html).
+This technique uses searchable product attributes, rather than synonyms, to create keyword-based associations between products. As a result, a mapped product can appear in the search results of another product. To learn more, see [Search Results](https://docs.magento.com/user-guide/catalog/search-results.html).
 
 ### Use of singular and plural
 
