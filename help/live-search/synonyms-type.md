@@ -25,6 +25,14 @@ A one-way synonym is a subset of a keyword, but with a more specific meaning. Fo
 
 Keep in mind the following best practices to get the most from Live Search synonyms.
 
+### Keyword mapping
+
+This technique uses searchable product attributes, rather than synonyms, to create keyword-based associations between products. As a result, both mapped products appear in the search results of the other. To learn more, see [Search Results](https://docs.magento.com/user-guide/catalog/search-results.html).
+
+### Use of singular and plural
+
 It is not necessary to define both singular and plural forms a word as a synonym. If you have a mixture of singular and plural terms in your catalog, Search will find the correct set of products. For example, if you use the word “pant” in the product name and a shopper searches for “pants”, the correct set of products is returned, and the singular word “pant” is offered as a suggestion. The singular term “pant” is often used in the fashion industry and sometimes in retail, although the plural form “pants” is more commonly used in some areas. (The word “pant” technically refers to the part of a garment that covers one leg, which is why you need a “pair of pants” to cover both legs.)
+
+### Consistency
 
 Be consistent with the way terminology is used in your catalog. Keep in mind that there might be regional differences in usage, and sometimes differences within an industry.
