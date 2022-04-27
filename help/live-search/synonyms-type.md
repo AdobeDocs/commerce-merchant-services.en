@@ -16,7 +16,7 @@ Two-way synonyms have the same meaning and return the same search results. In th
 
 ## One-way
 
-A one-way synonym is a subset of a keyword, but with a more specific meaning. For example, capris and shorts are pants, but not all pants are capris or shorts. A search for pants includes capris and shorts. However, a search for shorts will not return capris.
+A one-way synonym is a subset of a keyword, but with a more specific meaning. For example, capris and shorts are pants, but not all pants are capris or shorts. A search for pants includes capris and shorts. However, a search for shorts does not return capris.
 
 **sweatshirt** ![One-way selector](assets/btn-one-way.png) hoodie
 **pants** ![One-way selector](assets/btn-one-way.png) capris ![Multiple one-way selector](assets/btn-multiple-one-way.png) calf-length-pants ![Multiple one-way selector](assets/btn-multiple-one-way.png) peddle pushers
