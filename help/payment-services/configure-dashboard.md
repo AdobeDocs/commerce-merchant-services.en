@@ -92,4 +92,4 @@ You can also configure the _[!UICONTROL Button style]_ options of the PayPal sma
 1. To save your changes, click **[!UICONTROL Save]** at the top right of the page.
 1. Navigate to **[!UICONTROL System]** > **[!UICONTROL Cache Management]** and click **[!UICONTROL Flush Cache]** to refresh all invalid caches.
 
-You can configure [!DNL PayPal Smart Buttons] styling in the Admin or the Dashboard. See [Configuring [!DNL PayPal Smart Buttons style]](configure-admin.md#configure-paypal-smart-button-styling) for more information.
+You can configure [!DNL PayPal Smart Buttons] styling in the Admin or the Dashboard. See [PayPal's Buttons style guide](https://developer.paypal.com/docs/checkout/standard/customize/buttons-style-guide/) for more information.

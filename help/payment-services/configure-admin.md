@@ -103,7 +103,7 @@ You can enable and configure the PayPal Smart Buttons payment options within the
 
 ### [!DNL PayPal Smart Buttons] Styling options
 
-|Field|[Scope]({% link configuration/scope.md %})|Description|
+|Field|Scope|Description|
 |--- |--- |--- |
 |[!UICONTROL Layout]|Store View|Define style of layout for Paypal Smart Buttons. Options: [!UICONTROL Vertical] / [!UICONTROL Horizontal]|
 |[!UICONTROL Color]|Store View|Define color of the Paypal Smart Buttons. Options: [!UICONTROL Blue] / [!UICONTROL Gold] / [!UICONTROL Silver] / [!UICONTROL White] / [!UICONTROL Black]|
