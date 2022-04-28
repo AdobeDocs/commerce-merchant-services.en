@@ -45,9 +45,7 @@ You can enable [!DNL Payment Services] for your website, and enable either sandb
 
 1. To save your changes, click **[!UICONTROL Save]** at the top right of the page.
 
-   >[!NOTE]
-   >
-   >A modal appears when you try to leave this view with unsaved changes. This modal prompts you to either save or discard those changes.
+   If you try to navigate away from this view without saving your changes, a modal appears that prompts you to discard changes, keep editing, or save changes.
 
 1. Navigate to **[!UICONTROL System]** > **[!UICONTROL Cache Management]** and click **[!UICONTROL Flush Cache]** to refresh all invalid caches.
 
@@ -62,9 +60,7 @@ See [Payments options](payments-options.md#paypal-smart-buttons) for more inform
 1. For **[!UICONTROL Debug Mode]**, toggle the selector to enable debug mode.
 1. To save your changes, click **[!UICONTROL Save]** at the top right of the page.
 
-   >[!NOTE]
-   >
-   >A modal appears when you try to leave this view with unsaved changes. This modal prompts you to either save or discard those changes.
+   If you try to navigate away from this view without saving your changes, a modal appears that prompts you to discard changes, keep editing, or save changes.
 
 1. Navigate to **[!UICONTROL System]** > **[!UICONTROL Cache Management]** and click **[!UICONTROL Flush Cache]** to refresh all invalid caches.
 
@@ -87,9 +83,7 @@ You can enable the PayPal smart buttons payment options within the dashboard:
 1. To enable debug mode, click **[!UICONTROL Debug Mode]**,  
 1. To save your changes, click **[!UICONTROL Save]** at the top right of the page.
 
-   >[!NOTE]
-   >
-   >A modal appears when you try to leave this view with unsaved changes. This modal prompts you to either save or discard those changes.
+   If you try to navigate away from this view without saving your changes, a modal appears that prompts you to discard changes, keep editing, or save changes.
 
 1. Navigate to **[!UICONTROL System]** > **[!UICONTROL Cache Management]** and click **[!UICONTROL Flush Cache]** to refresh all invalid caches.
 
@@ -105,9 +99,7 @@ You can also configure the _[!UICONTROL Button style]_ options of the PayPal sma
 1. To modify the **[!UICONTROL Label]**, select the desired label option.
 1. To save your changes, click **[!UICONTROL Save]** at the top right of the page.
 
-   >[!NOTE]
-   >
-   >A modal appears when you try to leave this view with unsaved changes. This modal prompts you to either save or discard those changes.
+   If you try to navigate away from this view without saving your changes, a modal appears that prompts you to discard changes, keep editing, or save changes.
 
 1. Navigate to **[!UICONTROL System]** > **[!UICONTROL Cache Management]** and click **[!UICONTROL Flush Cache]** to refresh all invalid caches.
 
