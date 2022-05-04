@@ -34,7 +34,7 @@ At this time, the [!DNL Live Search] search/category API has the following suppo
 
 ### Synonyms
 
-* [!DNL Live Search] can manage up to 200 synonyms per `Data Space ID` / `Environment ID`.
+* [!DNL Live Search] can manage up to 200 synonyms per `Data Space ID`.
 
 ### Query
 
