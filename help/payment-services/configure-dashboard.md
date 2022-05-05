@@ -45,6 +45,8 @@ You can enable [!DNL Payment Services] for your website, and enable either sandb
 
 1. To save your changes, click **[!UICONTROL Save]** at the top right of the page.
 
+   If you try to navigate away from this view without saving your changes, a modal appears that prompts you to discard changes, keep editing, or save changes.
+
 1. Navigate to **[!UICONTROL System]** > **[!UICONTROL Cache Management]** and click **[!UICONTROL Flush Cache]** to refresh all invalid caches.
 
 ### Credit card fields
@@ -57,6 +59,9 @@ See [Payments options](payments-options.md#paypal-smart-buttons) for more inform
 1. To [set the payment action](production.md#set-payment-services-as-payment-method), set **[!UICONTROL Payment action]** to `Authorize` or `Authorize and Capture`.
 1. For **[!UICONTROL Debug Mode]**, toggle the selector to enable debug mode.
 1. To save your changes, click **[!UICONTROL Save]** at the top right of the page.
+
+   If you try to navigate away from this view without saving your changes, a modal appears that prompts you to discard changes, keep editing, or save changes.
+
 1. Navigate to **[!UICONTROL System]** > **[!UICONTROL Cache Management]** and click **[!UICONTROL Flush Cache]** to refresh all invalid caches.
 
 ### PayPal smart buttons
@@ -77,6 +82,9 @@ You can enable the PayPal smart buttons payment options within the dashboard:
 1. To change the [Pay Later messaging](payments-options.md#pay-later-button) (if desired), toggle the **[!UICONTROL Display Pay Later message]** option.
 1. To enable debug mode, click **[!UICONTROL Debug Mode]**,  
 1. To save your changes, click **[!UICONTROL Save]** at the top right of the page.
+
+   If you try to navigate away from this view without saving your changes, a modal appears that prompts you to discard changes, keep editing, or save changes.
+
 1. Navigate to **[!UICONTROL System]** > **[!UICONTROL Cache Management]** and click **[!UICONTROL Flush Cache]** to refresh all invalid caches.
 
 ### Button style
@@ -90,6 +98,9 @@ You can also configure the _[!UICONTROL Button style]_ options of the PayPal sma
 1. To enable button height selector, click **[!UICONTROL Responsive button height]**.
 1. To modify the **[!UICONTROL Label]**, select the desired label option.
 1. To save your changes, click **[!UICONTROL Save]** at the top right of the page.
+
+   If you try to navigate away from this view without saving your changes, a modal appears that prompts you to discard changes, keep editing, or save changes.
+
 1. Navigate to **[!UICONTROL System]** > **[!UICONTROL Cache Management]** and click **[!UICONTROL Flush Cache]** to refresh all invalid caches.
 
 You can configure [!DNL PayPal Smart Buttons] styling in the Admin or the Dashboard. See [PayPal's Buttons style guide](https://developer.paypal.com/docs/checkout/standard/customize/buttons-style-guide/) for more information.
