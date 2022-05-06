@@ -189,7 +189,7 @@ If you encounter problems in the storefront, check the `var/log/system.log` file
 
 ## Checking the installed version
 
-Before updating Live Search, run the following from the command line to check the version that is currently installed.
+Before updating Live Search, run the following from the command line to check the version of Live Search that is currently installed:
 
 ```bash
 composer show magento/module-live-search | grep version
