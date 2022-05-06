@@ -187,6 +187,14 @@ If everything works correctly, congratulations! [!DNL Live Search] is installed,
 
 If you encounter problems in the storefront, check the `var/log/system.log` file for API communication failures or errors on the services side.
 
+## Checking the installed version
+
+Before updating Live Search, run the following from the command line to check the version that is currently installed.
+
+```bash
+composer show magento/module-live-search | grep version
+```
+
 ## Updating [!DNL Live Search] {#update}
 
 To update [!DNL Live Search], run the following from the command line:
