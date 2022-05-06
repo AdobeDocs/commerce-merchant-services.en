@@ -26,3 +26,9 @@ If you need information or have questions that are not covered in this guide, us
 
 [Help center](https://support.magento.com/hc/en-us) - See the Live Search-related troubleshooting articles.
 [Support tickets](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket) - Submit a ticket to receive additional help.
+
+Before submitting a support ticket, run the following from the command line to check the version of Live Search that is currently installed:
+
+```bash
+composer show magento/module-live-search | grep version
+```
