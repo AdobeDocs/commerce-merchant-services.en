@@ -19,7 +19,7 @@ To reset your sandbox account:
 To complete sandbox onboarding:
 
 1. Navigate to the [PayPal Developer Account page](https://developer.paypal.com/developer/accounts/).
-1. Click **[!UICONTROL Log in to Dashboard]** and log in with your existing credentials to the PayPal Developers account or click **Sign Up** to create an account.
+1. Click **[!UICONTROL Log in to Home]** and log in with your existing credentials to the PayPal Developers account or click **Sign Up** to create an account.
 1. Create a PayPal sandbox account:
    1. Go to _[!UICONTROL SANDBOX]_ > **[!UICONTROL Accounts]**.
    1. Click **[!UICONTROL Create account]**.
@@ -36,7 +36,7 @@ To complete sandbox onboarding:
 
    This option is visible if you have not yet completed sandbox onboarding for [!DNL Payment Services].
 
-   A sandbox merchant ID is auto-generated and populated into the [configuration](configure-admin.md). Do not change or alter this ID.
+   A sandbox merchant ID is auto-generated and populated into the [settings](settings.md). Do not change or alter this ID.
 
    You are presented with a PayPal window for connecting a PayPal account to start accepting payments.
 
@@ -53,7 +53,7 @@ To complete sandbox onboarding:
 
    >[!IMPORTANT]
    >
-   >If you revoke consent to [!DNL Payment Services] for Adobe Commerce and Magento Open Source for processing your payments (in your PayPal account settings), orders in your store cannot be processed by [!DNL Payment Services].
+   >If you revoke consent to [!DNL Payment Services] for [!DNL Adobe Commerce] and [!DNL Magento Open Source] for processing your payments (in your PayPal account settings), orders in your store cannot be processed by [!DNL Payment Services].
 
 ## Enable contact telephone number
 

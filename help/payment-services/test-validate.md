@@ -5,7 +5,7 @@ exl-id: 95b4615e-73b0-41e8-83e2-e65a0b22f10f
 ---
 # Test and validate
 
-Before you expose [!DNL Payment Services] for Adobe Commerce and Magento Open Source to your shoppers, it is a good idea to test in your sandbox environment _and_ in production. Testing and validation help ensure that [!DNL Payment Services] functions work as expected and provide the best payment options for your store and customers.
+Before you expose [!DNL Payment Services] for [!DNL Adobe Commerce] and [!DNL Magento Open Source] to your shoppers, it is a good idea to test in your sandbox environment _and_ in production. Testing and validation help ensure that [!DNL Payment Services] functions work as expected and provide the best payment options for your store and customers.
 
 ## Test in sandbox environment
 

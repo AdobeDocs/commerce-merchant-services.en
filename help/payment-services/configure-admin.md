@@ -9,13 +9,13 @@ exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
 
 You can customize [!DNL Payment Services] to your needs with helpful configuration options in the Admin.
 
-When you configure [!DNL Payment Services] for Adobe Commerce and Magento Open Source in the Admin, those configurations apply only to the environment that is set in the [!UICONTROL Method] field of [!UICONTROL General Configuration]. Any changes you make in the configuration fields are independent of switching the [!UICONTROL Method] selection---if you switch the method, your selections do not reset.
+When you configure [!DNL Payment Services] for [!DNL Adobe Commerce] and [!DNL Magento Open Source] in the Admin, those configurations apply only to the environment that is set in the _[!UICONTROL Method]_ field of _[!UICONTROL General Configuration]_. Any changes you make in the configuration fields are independent of switching the _[!UICONTROL Method]_ selection---if you switch the method, your selections do not reset.
 
 See the [[!UICONTROL General Configuration] section](#general-configuration) for more information.
 
 ## General configuration
 
-You can enable [!DNL Payment Services] for your store, and enable either sandbox testing or live payments in the [!UICONTROL General Configuration] section.
+You can enable [!DNL Payment Services] for your store, and enable either sandbox testing or live payments in the _[!UICONTROL General Configuration]_ section.
 
 1. On the _Admin_ sidebar, go to **[!UICONTROL Stores]** > _[!UICONTROL Settings]_ > **[!UICONTROL Configuration]**.
 1. In the left panel, expand **[!UICONTROL Sales]** and choose **[!UICONTROL Payment Methods]**.
@@ -29,7 +29,7 @@ You can enable [!DNL Payment Services] for your store, and enable either sandbox
 
    >[!WARNING]
    >
-   >Your [!UICONTROL Sandbox Merchant ID] and [!UICONTROL Production Merchant ID] are auto-generated and present in their respectable fields when you have finished onboarding for the sandbox and/or production. Do not remove or change these IDs.
+   >Your _[!UICONTROL Sandbox Merchant ID]_ and _[!UICONTROL Production Merchant ID]_ are auto-generated and present in their respectable fields when you have finished onboarding for the sandbox and/or production. Do not remove or change these IDs.
 
 1. Click **[!UICONTROL Save Config]** to save your changes.
 

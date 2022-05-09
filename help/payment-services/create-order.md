@@ -5,9 +5,9 @@ exl-id: 1542a33f-9c01-4c36-bbce-bfa3107fbeb8
 ---
 # Create an order with [!DNL Payment Services]
 
-You can customize [!DNL Payment Services] to your needs using the configuration options in the Admin.
+You can customize Payment Services to your needs using [[!DNL Payment Services] settings](settings.md).
 
-[!DNL Payment Services] for Adobe Commerce and Magento Open Source allows you to fulfill an order directly from the Admin by a merchant for their customers who need assistance. The **[!UICONTROL Create New Order]** form includes all the information that is required to complete the normal checkout process, including hosted fields with credit card information. See [Creating an order](https://docs.magento.com/user-guide/customers/customer-account-create-order.html){target="_blank"} for detailed information about the required steps.
+[!DNL Payment Services] for [!DNL Adobe Commerce] and [!DNL Magento Open Source] allows you to fulfill an order directly from the Admin by a merchant for their customers who need assistance. The **[!UICONTROL Create New Order]** form includes all the information that is required to complete the normal checkout process, including hosted fields with credit card information. See [Creating an order](https://docs.magento.com/user-guide/customers/customer-account-create-order.html){target="_blank"} for detailed information about the required steps.
 
 ## Hosted credit card fields
 

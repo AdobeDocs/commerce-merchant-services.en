@@ -1,13 +1,13 @@
 ---
 title: Introduction to [!DNL Payment Services]
-description: Learn how to install and use [!DNL Payment Services] as a turnkey, robust, and secure payment processing solution for your Adobe Commerce and Magento Open Source websites.
+description: Learn how to install and use [!DNL Payment Services] as a turnkey, robust, and secure payment processing solution for your [!DNL Adobe Commerce] and [!DNL Magento Open Source] websites.
 role: User
 level: Intermediate
 exl-id: e4d8d789-fcf6-4aaa-bc4e-42ce21c6dd6c
 ---
 # Introduction to [!DNL Payment Services]
 
-[!DNL Payment Services] for Adobe Commerce and Magento Open Source is your turnkey self-service solution, including sandbox testing and a simple setup, for providing robust and secure payment processing for your Commerce websites.
+[!DNL Payment Services] for [!DNL Adobe Commerce] and [!DNL Magento Open Source] is your turnkey self-service solution, including sandbox testing and a simple setup, for providing robust and secure payment processing for your Commerce websites.
 
 ![[!DNL Payment Services] extension Admin view](assets/admin-view.png)
 
@@ -30,14 +30,13 @@ Whether you are a small business, mid-market contender, or large enterprise, thi
 [!DNL Payment Services] is your one-stop-shop for online checkout (from settlement and refunds to getting paid). It provides powerful tools to give you the insight and control needed for creating the best experience for your buyers.
 
 * [**Onboarding**](onboard.md)---The process guides you through commercial signup, technical configuration, entitlements, sandbox environment configuration, and live payment enablement.
-* [**Payment checkout**](configure-dashboard.md)---Use pertinent local and region-specific payment methods to best serve your customers.
 * [**Payment options**](payments-options.md)---Set the payment options to customize the methods available for your store (or multistore) customers.
 * **Cash flow management financial reporting**---Synchronize [payment details](order-payment-status.md) with orders to get full transparency to the processed volume, payment balance, and detailed [transaction-level reporting](payouts.md) for financial reconciliation.
 * **Transparent pricing**---Pricing is clear and upfront; what you see is what you get.
 
 ## Availability
 
-[!DNL Payment Services] is available for Adobe Commerce and Magento Open Source. The [!DNL Payment Services] extension is now compatible with Adobe Commerce versions 2.4.x.
+[!DNL Payment Services] is available for [!DNL Adobe Commerce] and [!DNL Magento Open Source]. The [!DNL Payment Services] extension is now compatible with [!DNL Adobe Commerce] versions 2.4.x.
 
 See [Lifecycle policy](https://devdocs.magento.com/release/lifecycle-policy.html){target="_blank"} and the [[!DNL Payment Services] release notes](release-notes.md) pages for more release and version-specific information.s
 

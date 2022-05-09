@@ -5,15 +5,15 @@ exl-id: babaa91a-9376-4acb-b934-a89f9df52016
 ---
 # Install [!DNL Payment Services]
 
-Installing the [!DNL Payment Services] extension for Adobe Commerce and Magento Open Source is a prerequisite step for using [!DNL Payment Services].
+Installing the [!DNL Payment Services] extension for [!DNL Adobe Commerce] and [!DNL Magento Open Source] is a prerequisite step for using [!DNL Payment Services].
 
 ![[!DNL Payment Services] extension Admin view](assets/admin-view.png)
 
-The [!DNL Payment Services] extension for Adobe Commerce and Magento Open Source can be installed with Composer keys, which are linked to the Magento ID ([mageid](https://devdocs.magento.com/marketplace/sellers/profile-personal.html#field-descriptions) provided in the signup process. Composer uses these keys during the initial installation of Adobe Commerce, or in situations in which the Composer keys were not previously saved to the `auth.json` file.
+The [!DNL Payment Services] extension for [!DNL Adobe Commerce] and [!DNL Magento Open Source] can be installed with Composer keys, which are linked to the Magento ID ([mageid](https://devdocs.magento.com/marketplace/sellers/profile-personal.html#field-descriptions) provided in the signup process. Composer uses these keys during the initial installation of [!DNL Adobe Commerce], or in situations in which the Composer keys were not previously saved to the `auth.json` file.
 
 See [Get your authentication keys](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) for more information about obtaining Composer keys.
 
-There are two ways to install this extension---for [Adobe Commerce on cloud infrastructure](https://devdocs.magento.com/payment-services/install-payments.html#magento-commerce-cloud) or [On-premises](https://devdocs.magento.com/payment-services/install-payments.html#on-premises) installations. These methods require you to use the Command Line Interface (CLI).
+There are two ways to install this extension---for [[!DNL Adobe Commerce] on cloud infrastructure](install.md#adobe-commerce-on-cloud-infrastructure) or [On-premises](install.md#on-premises) installations. These methods require you to use the Command Line Interface (CLI).
 
 ## Update minimum-stability setting
 
@@ -23,9 +23,9 @@ In your `composer.json` file, change `"minimum-stability": "stable"` to `"minimu
 
 ## Install the extension
 
-You can install the [!DNL Payment Services] extension for both Adobe Commerce on cloud infrastructure and on-premises instances.
+You can install the [!DNL Payment Services] extension for both [!DNL Adobe Commerce] on cloud infrastructure and on-premises instances.
 
-### Adobe Commerce on cloud infrastructure
+### [!DNL Adobe Commerce] on cloud infrastructure
 
 This method is used for installing the [!DNL Payment Services] extension for a Commerce Cloud instance.
 
@@ -63,7 +63,7 @@ This method is used for installing the [!DNL Payment Services] extension for an 
 
    The `composer update` command updates all dependencies. If you do not want to update all dependencies at the same time, use this command instead: `composer require magento/payment-services`.
 
-1. Upgrade Adobe Commerce:
+1. Upgrade [!DNL Adobe Commerce]:
 
    ```bash
    bin/magento setup:upgrade

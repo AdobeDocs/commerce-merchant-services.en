@@ -7,7 +7,7 @@ exl-id: 1ee8c660-0941-4378-a1d7-ae45de3de211
 ---
 # Onboard [!DNL Payment Services]
 
-To get started using [!DNL Payment Services] for Adobe Commerce and Magento Open Source, you must complete a few onboarding steps for connecting your instance with the payments functionality.
+To get started using [!DNL Payment Services] for [!DNL Adobe Commerce] and [!DNL Magento Open Source], you must complete a few onboarding steps for connecting your instance with the payments functionality.
 
 ## Onboarding flow
 
@@ -17,7 +17,7 @@ This onboarding flow diagram shows the general process for onboarding [!DNL Paym
 
 After you complete onboarding for sandbox or live payments, financial reporting is accessible from [!DNL Payment Services] in the Admin.
 
-If both sandbox and live payments are onboarded and enabled, you can easily switch between those modes from the [!DNL Payment Services] home.
+If both sandbox and live payments are onboarded and enabled, you can easily switch between those modes from the [!DNL Payment Services] Home.
 
 ## Prerequisites
 

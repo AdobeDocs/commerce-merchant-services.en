@@ -1,15 +1,14 @@
 ---
-title: Configure in the dashboard
-description: After installation, you can configure [!DNL Payment Services] in the dashboard.
+title: Payment Services Settings
+description: After installation, you can configure [!DNL Payment Services] in the Home.
 role: Admin, User
 level: Intermediate
-exl-id: 015c5c8c-8184-45c1-932a-f4365ddf5a30
 ---
-# Configure in the Dashboard
+# Configure in the Home view
 
-You can customize [!DNL Payment Services] to your needs with helpful configuration options in the dashboard.
+You can customize [!DNL Payment Services] to your needs with helpful settings in the Home view.
 
-When you click [!UICONTROL Settings] in the dashboard, you can quickly configure [!DNL Payment Services] for Adobe Commerce and Magento Open Source. These configuration options apply only to the environment that is set in the [!UICONTROL Payment mode] field in the General settings.
+To configure [!DNL Payment Services] for [!DNL Adobe Commerce] and [!DNL Magento Open Source] click **[!UICONTROL Settings]**. These configuration options apply only to the environment that is set in the _[!UICONTROL Payment mode]_ field in the General settings.
 
 See the [[!UICONTROL General] settings section](#general-settings) for more information.
 
@@ -23,9 +22,9 @@ You can enable [!DNL Payment Services] for your website, and enable either sandb
 
 1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 
-   ![Dashboard view](assets/payment-services-menu-small.png)
+   ![Home view](assets/payment-services-menu-small.png)
 
-1. On the dashboard, click **[!UICONTROL Settings]** at the top right of the page.
+1. In the Home view, click **[!UICONTROL Settings]**. See [Home](payments-home.md) for more information.
 
    The _[!UICONTROL General]_ section includes the configuration options used to set [!DNL Payment Services] as a payment method.
 
@@ -35,7 +34,7 @@ You can enable [!DNL Payment Services] for your website, and enable either sandb
 
    >[!WARNING]
    >
-   >Your [!UICONTROL Sandbox Merchant ID] and [!UICONTROL Production Merchant ID] are auto-generated and present in their respectable fields when you have finished onboarding for the sandbox and/or production. Do not remove or change these IDs.
+   >Your _[!UICONTROL Sandbox Merchant ID]_ and _[!UICONTROL Production Merchant ID]_ are auto-generated and present in their respectable fields when you have finished onboarding for the sandbox and/or production. Do not remove or change these IDs.
 
 1. To change the default settings for payment functions and storefront display, set the additional options as needed:
 
@@ -51,7 +50,7 @@ You can enable [!DNL Payment Services] for your website, and enable either sandb
 
 ### Credit card fields
 
-The [!UICONTROL Credit Card Fields] payment options provide a simple and secure checkout for credit card or debit card payment methods.
+The _[!UICONTROL Credit Card Fields]_ payment options provide a simple and secure checkout for credit card or debit card payment methods.
 
 See [Payments options](payments-options.md#paypal-smart-buttons) for more information.
 
@@ -68,7 +67,7 @@ See [Payments options](payments-options.md#paypal-smart-buttons) for more inform
 
 The [!DNL PayPal Smart Buttons] payment options provide a simple, fast, and secure checkout process for your customer. See [Payments options](payments-options.md#paypal-smart-buttons) for more information.
 
-You can enable the PayPal smart buttons payment options within the dashboard:
+You can enable the PayPal smart buttons payment options in Home:
 
 1. To change the name of the payment method as shown during checkout, edit the value in the **[!UICONTROL Checkout Title]** field.
 1. To [set the payment action](production.md#set-payment-services-as-payment-method), set **[!UICONTROL Payment action]** to `Authorize` or `Authorize and Capture`.
@@ -89,7 +88,7 @@ You can enable the PayPal smart buttons payment options within the dashboard:
 
 ### Button style
 
-You can also configure the _[!UICONTROL Button style]_ options of the PayPal smart buttons within the dashboard:
+You can also configure the _[!UICONTROL Button style]_ options of the PayPal smart buttons in Home:
 
 1. To change the **[!UICONTROL Layout]**, select `Vertical` or `Horizontal`.
 1. To enable tagline in a horizontal layout, click **[!UICONTROL Show tagline]**.
@@ -103,4 +102,4 @@ You can also configure the _[!UICONTROL Button style]_ options of the PayPal sma
 
 1. Navigate to **[!UICONTROL System]** > **[!UICONTROL Cache Management]** and click **[!UICONTROL Flush Cache]** to refresh all invalid caches.
 
-You can configure [!DNL PayPal Smart Buttons] styling in the Admin or the Dashboard. See [PayPal's Buttons style guide](https://developer.paypal.com/docs/checkout/standard/customize/buttons-style-guide/) for more information.
+You can configure [!DNL PayPal Smart Buttons] styling in the Admin or Home. See [PayPal's Buttons style guide](https://developer.paypal.com/docs/checkout/standard/customize/buttons-style-guide/) for more information.

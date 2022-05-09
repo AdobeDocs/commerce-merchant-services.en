@@ -7,13 +7,13 @@ exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
 ---
 # Payouts report
 
-[!DNL Payment Services] for Adobe Commerce and Magento Open Source offers you comprehensive reporting so that you can get a clear view of your store's orders and payments.
+[!DNL Payment Services] for [!DNL Adobe Commerce] and [!DNL Magento Open Source] offers you comprehensive reporting so that you can get a clear view of your store's orders and payments.
 
 ![Financial reports view](assets/reports-view.png )
 
 The Payouts report shows comprehensive payout information at-a-glance, allowing you full transparency into the payment amount, processed volume, and detailed reporting on the transaction level for financial reconciliation.
 
-You don't have to open multiple dashboards or views to cross-reference orders and payments or reconcile accounts. [!DNL Payment Services] for Adobe Commerce and Magento Open Source enables you to take all these actions from one place---Payouts report---so that you can view and manage your payouts efficiently.
+You don't have to open multiple views to cross-reference orders and payments or reconcile accounts. [!DNL Payment Services] for [!DNL Adobe Commerce] and [!DNL Magento Open Source] enables you to take all these actions from one place---Payouts report---so that you can view and manage your payouts efficiently.
 
 See linked Commerce order and transaction IDs, transaction amounts, payment method per transaction, and more, all within the Payouts report in the Admin.
 
@@ -39,7 +39,7 @@ If _[!UICONTROL Live]_ is the selected data source, you can see report informati
 
 Data source selections work as follows:
 
-* If you do not have any stores that are in Live mode, the data source selection defaults to [!UICONTROL Sandbox]_.
+* If you do not have any stores that are in Live mode, the data source selection defaults to _[!UICONTROL Sandbox]_.
 * If you have any stores (one or multiple) in Live mode, the data source selection defaults to _[!UICONTROL Live]_.
 * Report exports always honor the data source selection.
 

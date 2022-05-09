@@ -11,7 +11,7 @@ See [Commerce Services Connector](https://docs.magento.com/user-guide/system/saa
 
 ## Obtain API credentials
 
-To consume a Commerce SaaS service, you must use your instance's API keys, which are created and managed in your [My Account dashboard](https://account.magento.com/customer/account/login){target="_blank"}. Two different API key pairs can be created for a Commerce account---one for sandbox and one for production (live payments)---though only one pair can be actively used at a time.
+To consume a Commerce SaaS service, you must use your instance's API keys, which are created and managed in your [My Account Dashboard](https://account.magento.com/customer/account/login){target="_blank"}. Two different API key pairs can be created for a Commerce account---one for sandbox and one for production (live payments)---though only one pair can be actively used at a time.
 
 >[!NOTE]
 >
@@ -27,7 +27,7 @@ To learn how to generate an API key for either sandbox or production environment
 
 ### Commerce API key and private key
 
-Some Adobe Commerce and Magento Open Source features are deployed as SaaS (software as a service)---known as Commerce Services. To use these services, you must connect your Commerce instance to these services using an API key and a private key, and specify the desired data space in the [configuration](https://docs.magento.com/user-guide/configuration/services/saas.html){target="_blank"}.
+Some [!DNL Adobe Commerce] and [!DNL Magento Open Source] features are deployed as SaaS (software as a service)---known as Commerce Services. To use these services, you must connect your Commerce instance to these services using an API key and a private key, and specify the desired data space in the [configuration](https://docs.magento.com/user-guide/configuration/services/saas.html){target="_blank"}.
 
 When you create a Commerce account, identified by a MageID, you can generate a Commerce API key and private key. To use Commerce Services, such as [!DNL Payment Services], [!DNL Product Recommendations], or [!DNL Live Search], the license-holder must generate these keys in order to pass entitlement validation. These keys can then be passed to the systems integrator or development team that manages the projects and environments on behalf of the license-holder. If you are a solution integrator, you are also entitled to use these services for your own needs. In that case, the signer of the Commerce partner contract should generate the keys.
 
@@ -61,8 +61,8 @@ The same API key can be used across instances, but each instance must have its o
 
 When you create a SaaS project, Commerce generates one or more SaaS data spaces depending on your Commerce license:
 
-* Adobe Commerce - One production data space; two testing data spaces
-* Magento Open Source - One production data space; no testing data spaces
+* [!DNL Adobe Commerce] - One production data space; two testing data spaces
+* [!DNL Magento Open Source] - One production data space; no testing data spaces
 
 ### Configure SaaS project
 

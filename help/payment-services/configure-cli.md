@@ -7,17 +7,17 @@ exl-id: 265ab1be-fe52-41f3-85cb-addbc2ddfb17
 ---
 # Command-line configuration
 
-After you install [!DNL Payment Services], you can easily configure it from [within the Admin](configure-admin.md) or via the Command-line Interface (CLI).
+After you install [!DNL Payment Services], you can easily configure it from [within the home](payments-home.md) or via the Command-line Interface (CLI).
 
 ## Configure data export
 
-[!DNL Payment Services] combines order data exported from Magento Open Source and Adobe Commerce with aggregated payment data from payment providers to create useful reports. The [!DNL Payment Services] extension uses indexers to efficiently collect all necessary data for the reports.
+[!DNL Payment Services] combines order data exported from [!DNL Magento Open Source] and [!DNL Adobe Commerce] with aggregated payment data from payment providers to create useful reports. The [!DNL Payment Services] extension uses indexers to efficiently collect all necessary data for the reports.
 
 To learn about the data used in [!DNL Payment Services] reporting, See [Order payment status report](order-payment-status.md#data-used-in-the-report).
 
-### Configure cron on Magento Open Source
+### Configure cron on [!DNL Magento Open Source]
 
-If you want to use a `BY SCHEDULE` index mode on Magento Open Source, you must configure cron. See [Configure and run cron](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html).
+If you want to use a `BY SCHEDULE` index mode on [!DNL Magento Open Source], you must configure cron. See [Configure and run cron](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html).
 
 ### Set indexers
 

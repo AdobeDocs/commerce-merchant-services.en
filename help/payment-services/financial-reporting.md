@@ -7,7 +7,7 @@ level: Intermediate
 ---
 # Financial reporting
 
-[!DNL Payment Services] for Adobe Commerce and Magento Open Source offers you comprehensive reporting so that you can get a clear view of your store's orders and payments.
+[!DNL Payment Services] for [!DNL Adobe Commerce] and [!DNL Magento Open Source] offers you comprehensive reporting so that you can get a clear view of your store's orders and payments.
 
 ![Financial reports view](assets/reports-view.png )
 
