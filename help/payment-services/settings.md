@@ -76,8 +76,8 @@ You can enable the PayPal smart buttons payment options in Home:
    - **[!UICONTROL Show buttons on product detail page]**
    - **[!UICONTROL Show buttons in mini cart preview]**
    - **[!UICONTROL Show buttons on cart page]**
-   - **[!UICONTROL Show Venmo button]**.
-   - **[!UICONTROL PayPal Pay Later enabled]** to enable option to show button during checkout.
+   - **[!UICONTROL Show Venmo button]**
+   - **[!UICONTROL PayPal Pay Later enabled]**
 
 1. To change the [Pay Later messaging](payments-options.md#pay-later-button) (if desired), toggle the **[!UICONTROL Display Pay Later message]** option.
 1. To enable debug mode, click **[!UICONTROL Debug Mode]**,  
@@ -92,6 +92,11 @@ You can enable the PayPal smart buttons payment options in Home:
 You can also configure the _[!UICONTROL Button style]_ options of the PayPal smart buttons in Home:
 
 1. To change the **[!UICONTROL Layout]**, select `Vertical` or `Horizontal`.
+
+   >[!NOTE]
+   >
+   > If your store is configured to show all three PayPal smart buttons and the button style is configured as `Horizontal`, only two buttons are visible on the product page, mini cart, and checkout page, and one button is visible in the cart.
+
 1. To enable tagline in a horizontal layout, click **[!UICONTROL Show tagline]**.
 1. To modify the **[!UICONTROL Color]**, select the desired color option.
 1. To change the **[!UICONTROL Shape]**, select `Pill` or `Rect`.
