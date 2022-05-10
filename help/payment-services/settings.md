@@ -3,6 +3,7 @@ title: Payment Services Settings
 description: After installation, you can configure [!DNL Payment Services] in the Home.
 role: Admin, User
 level: Intermediate
+exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
 ---
 # Configure in the Home view
 

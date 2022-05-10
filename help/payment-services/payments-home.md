@@ -3,8 +3,8 @@ title: Home
 description: Introduction to the [!DNL Payment Services] Home.
 role: Admin, User
 level: Intermediate
+exl-id: d7a4c87f-33cb-446a-b442-3cdf05b518a2
 ---
-
 # Introduction to the [!DNL Payment Services] Home
 
 [!DNL Payment Services] for [!DNL Adobe Commerce] and [!DNL Magento Open Source] provides a Home view with all the necessary information to start setting up and using the extension.
