@@ -95,7 +95,7 @@ You can also configure the _[!UICONTROL Button style]_ options of the PayPal sma
 
    >[!NOTE]
    >
-   > If your store is configured to show all three PayPal smart buttons and the button style is configured as `Horizontal`, only two buttons are visible on the product page, mini cart, and checkout page, and one button is visible in the cart.
+   > If the button style is configured as `Horizontal` and your store is configured to show multiple PayPal smart buttons, you may only see two buttons displayed on the product page, checkout page, and mini cart, and one button displayed in the cart.
 
 1. To enable the tagline in a horizontal layout, toggle the **[!UICONTROL Show tagline]** selector.
 1. To modify the **[!UICONTROL Color]**, select the desired color option.
