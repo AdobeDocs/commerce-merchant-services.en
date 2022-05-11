@@ -7,9 +7,9 @@ exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
 ---
 # Settings
 
-You can customize [!DNL Payment Services] to your needs with helpful settings in the Home view.
+You can customize [!DNL Payment Services] to your needs with helpful settings in the Payment Services Home.
 
-To configure [!DNL Payment Services] for [!DNL Adobe Commerce] and [!DNL Magento Open Source] click **[!UICONTROL Settings]**. These configuration options apply only to the environment that is set in the _[!UICONTROL Payment mode]_ field in the General settings.
+To configure [!DNL Payment Services] for [!DNL Adobe Commerce] and [!DNL Magento Open Source] click **[!UICONTROL Settings]**. These configuration options apply only to the environment that is set in the _[!UICONTROL Payment mode]_ field in General settings.
 
 See the [[!UICONTROL General] settings section](#general-settings) for more information.
 
@@ -17,7 +17,7 @@ See the [[!UICONTROL General] settings section](#general-settings) for more info
 >
 > For multi-store or legacy configuration, refer to the [Configure in the Admin](configure-admin.md) topic.
 
-## Configure Payment Services
+## Enable Payment Services
 
 You can enable [!DNL Payment Services] for your website, and enable either sandbox testing or live payments, in the [!UICONTROL General] section.
 
@@ -31,7 +31,7 @@ You can enable [!DNL Payment Services] for your website, and enable either sandb
 
 1. To enable [!DNL Payment Services] as the payment method for your store, toggle (**[!UICONTROL Enable Payment Services as payment method]**) to `Yes`.
 
-1. For **Payment mode**, set it to `Sandbox` If you are still testing [!DNL Payment Services] for your store, set **Payment mode** to `Sandbox`. If you are ready to enable live payments, set it to `Production`.
+1. If you are still testing [!DNL Payment Services] for your store, set **Payment mode** to `Sandbox`. If you are ready to enable live payments, set it to `Production`.
 
    >[!WARNING]
    >
@@ -80,7 +80,7 @@ You can enable and configure the PayPal smart buttons payment options:
    - **[!UICONTROL Show Venmo button]**
 
 1. To change the [Pay Later messaging](payments-options.md#pay-later-button), toggle the **[!UICONTROL Display Pay Later message]** option.
-1. To enable debug mode, toggle the **[!UICONTROL Debug Mode]** selector,  
+1. To enable debug mode, toggle the **[!UICONTROL Debug Mode]** selector.  
 1. Click **[!UICONTROL Save]**.
 
    If you try to navigate away from this view without saving your changes, a modal appears that prompts you to discard changes, keep editing, or save changes.
@@ -97,7 +97,7 @@ You can also configure the _[!UICONTROL Button style]_ options of the PayPal sma
    >
    > If your store is configured to show all three PayPal smart buttons and the button style is configured as `Horizontal`, only two buttons are visible on the product page, mini cart, and checkout page, and one button is visible in the cart.
 
-1. To enable the tagline in a horizontal layout, toggle **[!UICONTROL Show tagline]**.
+1. To enable the tagline in a horizontal layout, toggle the **[!UICONTROL Show tagline]** selector.
 1. To modify the **[!UICONTROL Color]**, select the desired color option.
 1. To modify the **[!UICONTROL Shape]**, select `Pill` or `Rect`.
 1. To enable button height selector, toggle the **[!UICONTROL Responsive button height]** selector.
@@ -108,4 +108,4 @@ You can also configure the _[!UICONTROL Button style]_ options of the PayPal sma
 
 1. Navigate to **[!UICONTROL System]** > **[!UICONTROL Cache Management]** and click **[!UICONTROL Flush Cache]** to refresh all invalid caches.
 
-You can configure [!DNL PayPal Smart Buttons] styling in the Admin or Payment Service's Home. See [PayPal's Buttons style guide](https://developer.paypal.com/docs/checkout/standard/customize/buttons-style-guide/) for more information.
+You can configure [!DNL PayPal Smart Buttons] styling in the Admin or Payment Services Home. See [PayPal's Buttons style guide](https://developer.paypal.com/docs/checkout/standard/customize/buttons-style-guide/) for more information.
