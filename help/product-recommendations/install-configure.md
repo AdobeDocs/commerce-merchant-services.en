@@ -46,7 +46,7 @@ After you install the `magento/product-recommendations` module, you must configu
 
 To ensure that catalog export is running correctly, confirm that the [cron](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html) jobs and the [indexers](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html) are running and the `Product Feed` indexer is set to `Update by Schedule`.
 
-When you successfully link to Commerce Services through API keys and specify the SaaS Data Space, the catalog sync initiates. You can then [verify](verify.md) that behavioral data is being sent to your storefront.
+When you successfully link to Commerce Services through API keys and specify the SaaS Data Space, the catalog sync begins. You can then [verify](verify.md) that behavioral data is being sent to your storefront.
 
 ## Update your [!DNL Product Recommendations] installation {#update}
 
