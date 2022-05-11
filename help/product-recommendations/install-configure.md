@@ -5,7 +5,7 @@ exl-id: fa599f72-1064-41da-ac54-2b3a3c16a1fe
 ---
 # Install and Configure
 
-Deploying [!DNL Product Recommendations] to your storefront and Admin requires that you install module and configure the Commerce Services Connector. As updates are released, you can easily update your installation with the latest version.
+Deploying [!DNL Product Recommendations] to your storefront and Admin requires that you install the module and configure the [Commerce Services Connector](../landing/saas.md). As updates are released, you can easily update your installation with the latest version.
 
 - [Install](#install)
 - [Configure](#configure)
@@ -42,11 +42,11 @@ composer require magento/module-visual-product-recommendations
 
 ## Configure [!DNL Product Recommendations] {#configure}
 
-After you install the `magento/product-recommendations` module, you must configure the [Commerce Services Connector](https://docs.magento.com/user-guide/configuration/services/saas.html) by specifying the API Key and selecting a SaaS Data Space.
+After you install the `magento/product-recommendations` module, you must configure the [Commerce Services Connector](https://docs.magento.com/user-guide/configuration/services/saas.html) by specifying API Keys and selecting a SaaS Data Space.
 
 To ensure that catalog export is running correctly, confirm that the [cron](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html) jobs and the [indexers](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html) are running and the `Product Feed` indexer is set to `Update by Schedule`.
 
-When you successfully link to Commerce Services through the API key and specify the SaaS Data Space, the catalog sync initiates and [verifies](verify.md) that behavioral data is being sent to your storefront.
+When you successfully link to Commerce Services through API keys and specify the SaaS Data Space, the catalog sync begins. You can then [verify](verify.md) that behavioral data is being sent to your storefront.
 
 ## Update your [!DNL Product Recommendations] installation {#update}
 
