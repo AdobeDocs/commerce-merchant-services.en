@@ -37,10 +37,6 @@ The API key and private key are generated from the [!DNL Commerce] account of th
 
 1. From the _Environment_ menu, select **Production** or **Sandbox**.
 
-   >[!NOTE]
-   >
-   > For [!DNL _Product Recommendations_] and [!DNL _Live Search_], select **Production**. Production keys give you access to production and non-production data spaces. Sandbox keys are not used for these services.
-
 1. Enter a name in the _API Keys_ section and click **Add New**.
 
    This opens a dialog for downloading the new key.
