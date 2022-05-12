@@ -23,7 +23,7 @@ The following attributes are always searchable:
 *  `name`
 *  `categories`
 
-[!DNL Live Search popover](assets/storefront-search-as-you-type.png)
+[[!DNL Live Search popover]](assets/storefront-search-as-you-type.png)
 
 ## [!DNL Popover] page size
 

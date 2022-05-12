@@ -5,7 +5,7 @@ exl-id: 033049f2-976e-4299-b026-333ac4b481a3
 ---
 # Styling [!DNL Popover] Elements
 
-The [!DNL storefront popover](storefront-popover.md) always displays the product `name` and `price`, and the selection of fields is not configurable. However, [!DNL popover] elements can be styled using CSS classes. For example, the following declarations change the background color of the [!DNL popover] container and footer.
+The [[!DNL storefront popover]](storefront-popover.md) always displays the product `name` and `price`, and the selection of fields is not configurable. However, [!DNL popover] elements can be styled using CSS classes. For example, the following declarations change the background color of the [!DNL popover] container and footer.
 
 ```css
 .livesearch.popover-container {
@@ -46,7 +46,7 @@ The following class selectors can be used to style the container, suggestion, an
 
 `.livesearch.popover-container`
 
-![!DNL Popover] container](assets/livesearch-popover-container.png)
+![[!DNL Popover] container](assets/livesearch-popover-container.png)
 
 `.livesearch.view-all-footer`
 
