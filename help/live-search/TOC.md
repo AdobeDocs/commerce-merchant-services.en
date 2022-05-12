@@ -13,8 +13,8 @@ breadcrumb-title: Live Search Guide
    - [Install Live Search](install.md)
 - Live Search Storefront {#live-search-storefront}
    - [Quick Tour](quick-tour.md)
-   - [!DNL Storefront Popover](storefront-popover.md)
-   - [Styling [!DNL Popover] Elements](storefront-popover-styling.md)
+   - [Storefront Popover](storefront-popover.md)
+   - [Styling Popover Elements](storefront-popover-styling.md)
 - Live Search Admin{#live-search-admin}
    - [Workspace](workspace.md)
    - [Performance](performance.md)
