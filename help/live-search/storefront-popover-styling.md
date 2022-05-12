@@ -1,11 +1,11 @@
 ---
-title: Styling Popover Elements
-description: Technical notes about customizing the Live Search storefront popover.
+title: Styling [!DNL Popover] Elements
+description: Technical notes about customizing the [!DNL Live Search storefront popover].
 exl-id: 033049f2-976e-4299-b026-333ac4b481a3
 ---
-# Styling Popover Elements
+# Styling [!DNL Popover] Elements
 
-The [storefront popover](storefront-popover.md) always displays the product `name` and `price`, and the selection of fields is not configurable. However, popover elements can be styled using CSS classes. For example, the following declarations change the background color of the popover container and footer.
+The [!DNL storefront popover](storefront-popover.md) always displays the product `name` and `price`, and the selection of fields is not configurable. However, [!DNL popover] elements can be styled using CSS classes. For example, the following declarations change the background color of the [!DNL popover] container and footer.
 
 ```css
 .livesearch.popover-container {
@@ -19,7 +19,7 @@ The [storefront popover](storefront-popover.md) always displays the product `nam
 
 ## Container visibility
 
-The parent component of the `.livesearch.popover-container` is `.search-autocomplete`.  The `.active` class indicates the visibility of the container. The `.active` class is conditionally added when the popover is open.
+The parent component of the `.livesearch.popover-container` is `.search-autocomplete`.  The `.active` class indicates the visibility of the container. The `.active` class is conditionally added when the [!DNL popover] is open.
 
 ```css
 .search-autocomplete.active   /* visible */
@@ -30,7 +30,7 @@ For more information about styling storefront elements, refer to [Cascading styl
 
 ## Class selectors
 
-The following class selectors can be used to style the container, suggestion, and product elements in the popover.
+The following class selectors can be used to style the container, suggestion, and product elements in the [!DNL popover].
 
 *  `.livesearch.popover-container`
 *  `.livesearch.view-all-footer`
@@ -46,7 +46,7 @@ The following class selectors can be used to style the container, suggestion, an
 
 `.livesearch.popover-container`
 
-![Popover container](assets/livesearch-popover-container.png)
+![!DNL Popover] container](assets/livesearch-popover-container.png)
 
 `.livesearch.view-all-footer`
 
@@ -79,7 +79,7 @@ The following class selectors can be used to style the container, suggestion, an
 
 ## Working with a modified theme {#working-with-modified-theme}
 
-The storefront popover can be used with a customized [theme](https://devdocs.magento.com/guides/v2.3/frontend-dev-guide/themes/theme-overview.html) that inherits the required files from *Luma*. The `top.search` block in the `header-wrapper` of the `Magento_Search` module must not be modified.
+The [!DNL storefront popover] can be used with a customized [theme](https://devdocs.magento.com/guides/v2.3/frontend-dev-guide/themes/theme-overview.html) that inherits the required files from *Luma*. The `top.search` block in the `header-wrapper` of the `Magento_Search` module must not be modified.
 
 ```html
 <referenceContainer name="header-wrapper">
@@ -91,9 +91,9 @@ The storefront popover can be used with a customized [theme](https://devdocs.mag
 </referenceContainer>
 ```
 
-## Disabling the popover
+## Disabling the [!DNL popover]
 
-To disable the popover and restore the standard [Quick Search](https://docs.magento.com/user-guide/catalog/search-quick.html) functionality, enter the following command:
+To disable the [!DNL popover] and restore the standard [Quick Search](https://docs.magento.com/user-guide/catalog/search-quick.html) functionality, enter the following command:
 
 ```bash
 bin/magento module:disable Magento_LiveSearchStorefrontPopover
