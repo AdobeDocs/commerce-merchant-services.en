@@ -9,7 +9,7 @@ exl-id: 11e2ed97-ce80-4826-b914-71688dd29e4b
 
 Live Search has three areas for administrators:
 
-* Storefront: Use CSS styling to customize the storefront popover.
+* Storefront: Use CSS styling to customize the [!DNL storefront popover].
 * Admin: Use this area to access the configuration and setup.
 * Command-line interface: Use this tool to execute installation and backend configuration tasks.
 
