@@ -29,6 +29,10 @@ Keep in mind the following best practices to get the most from Live Search synon
 
 This technique uses searchable product attributes, rather than synonyms, to create keyword-based associations between products. As a result, a mapped product can appear in the search results of another product. To learn more, see [Search Results](https://docs.magento.com/user-guide/catalog/search-results.html).
 
+### Use single words
+
+If a synonym term contains multiple words, each word is treated as a separate synonym. For example, if you define “time piece” as a synonym for “watch”, the blank space causes the words “time” and “piece” to be treated as separate synonyms.
+
 ### Use of singular and plural
 
 It is not necessary to define both the singular and plural forms of a word as a synonym. If you have a mixture of singular and plural terms in your catalog, Search finds the correct set of products. For example, if you use the word “pant” in the product name and a shopper searches for “pants”, the correct set of products is returned, and the singular word “pant” is offered as a suggestion. The singular term “pant” is often used in the fashion industry and sometimes in retail, although the plural form “pants” is more commonly used in some areas. (The word “pant” technically refers to the part of a garment that covers one leg, which is why you need a “pair of pants” to cover both legs.)
