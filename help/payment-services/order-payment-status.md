@@ -155,7 +155,7 @@ Order payment status reports include the following information.
 | [!UICONTROL Refund Status] | Status of a refund on an order (such as information from returns, RMAs, and credit memos)---   *[!UICONTROL Requires refund]*, *[!UICONTROL Refund requested]*, *[!UICONTROL Refunded]*, *[!UICONTROL Refund failed]*, or *[!UICONTROL Voided]* |
 | [!UICONTROL Refund Amount] | Total of refunded amount for an order |
 | [!UICONTROL Cur] | Currency type of the amount refunded for an order |
-| [!UICONTROL Dispute Status] | Status of any dispute on an order (information from disputes and chargebacks)---*[!UICONTROL New]*, *[!UICONTROL Representment]*, *[!UICONTROL Accepted]*, *[!UICONTROL Pre-arbitration received]*, *[!UICONTROL Arbitration]*, or *[!UICONTROL Arbitration received]* |
+| [!UICONTROL Disputes] | Status of any dispute on an order (information from disputes and chargebacks)---*[!UICONTROL Open]*, *[!UICONTROL Waiting for buyer response]*, *[!UICONTROL Waiting for seller response]*, *[!UICONTROL Under review]*, *[!UICONTROL Resolved]*, or *[!UICONTROL Other]* |
 | [!UICONTROL Payment Method] | Payment method used in the Commerce transaction for an order |
 | [!UICONTROL Website] | Website from which the order was placed |
 | [!UICONTROL Store] | Store from which the order was placed |
