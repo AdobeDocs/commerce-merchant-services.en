@@ -1,6 +1,6 @@
 ---
 title: Synonyms
-description: Live Search Synonyms expand queries with words that differ from those in your catalog.
+description: "[!DNL Live Search]" Synonyms expand queries with words that differ from those in your catalog.
 exl-id: f2b7c5fb-f009-4834-baff-06e8ed7be7e5
 ---
 # Synonyms

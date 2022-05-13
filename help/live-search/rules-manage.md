@@ -1,6 +1,6 @@
 ---
 title: Manage Rules
-description: Learn how to manage existing Live Search rules.
+description: Learn how to manage existing "[!DNL Live Search]" rules.
 exl-id: 1a2ca9f9-1cf2-446f-809b-03ca5c798b13
 ---
 # Manage Rules

@@ -1,6 +1,6 @@
 ---
 title: Rule Components
-description: Learn about Live Search rule components and operators.
+description: Learn about "[!DNL Live Search]" rule components and operators.
 exl-id: 4065aec3-a8d4-4d55-b939-16ad7b0f33ee
 ---
 # Rule Components

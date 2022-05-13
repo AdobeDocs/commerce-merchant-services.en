@@ -1,6 +1,6 @@
 ---
 title: Faceting Workspace
-description: Learn your way around the Live Search faceting workspace.
+description: Learn your way around the "[!DNL Live Search]" faceting workspace.
 exl-id: b47b5c19-59bb-41e4-9599-3b90cbc44b70
 ---
 # Faceting Workspace
