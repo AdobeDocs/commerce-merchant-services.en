@@ -106,6 +106,16 @@ You can also manually force a refresh of the Order payment status report data to
 
    The Order payment status report data is refreshed, an *[!UICONTROL Update complete]* confirmation appears, and the latest information is present in the grid.
 
+## Manage disputes
+
+You can view and manage disputes right from the Order payment status report.
+
+1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
+1. Navigate to the **[UICONTROL Disputes column]**.
+1. View any disputes for a specific order, including [the status](#order-payment-status-information).
+1. To manage a dispute, click the dispute link (beginning with _PP-D-_) to go to the [PayPal Resolution Center](https://www.paypal.com/us/smarthelp/article/what-is-the-resolution-center-faq3327).
+1. Take appropriate action for the dispute, as needed.
+
 ## Download order payment statuses
 
 You can download a .csv file with all statuses visible in the Order payment status view grid, whether you are viewing the default 30 days of statuses or a customized timeframe.
