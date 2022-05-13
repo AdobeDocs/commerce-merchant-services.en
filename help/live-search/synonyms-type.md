@@ -31,7 +31,7 @@ This technique uses searchable product attributes, rather than synonyms, to crea
 
 ### Use single words
 
-If a synonym term contains multiple words, each word is treated as a separate synonym. For example, if you define “time piece” as a synonym for “watch”, the blank space causes the words “time” and “piece” to be treated as separate synonyms.
+If a synonym term contains multiple words, the blank space between the words causes them to be treated as a separate synonyms. For example, if you define “time piece” as a synonym for “watch”, the words “time” and “piece” are treated as separate synonyms.
 
 ### Use of singular and plural
 
