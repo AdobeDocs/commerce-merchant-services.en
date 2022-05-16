@@ -1,6 +1,6 @@
 ---
-title: Live Search Settings
-description: Configure price facet ranges and intervals for Live Search facets.
+title: "[!DNL Live Search] Settings"
+description: "Configure price facet ranges and intervals for [!DNL Live Search] facets."
 exl-id: a0b63116-4b8f-490c-a54e-e21f1b02b634
 ---
 # Settings

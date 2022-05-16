@@ -1,6 +1,6 @@
 ---
-title: Rule Technical Notes
-description: Technical notes about using Live Search rules.
+title: "Rule Technical Notes"
+description: "Technical notes about using [!DNL Live Search] rules."
 exl-id: 24ff6a19-f7cd-42f7-b466-fc18f9091504
 ---
 # Rule Technical Notes

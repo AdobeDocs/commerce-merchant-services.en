@@ -1,21 +1,21 @@
 ---
-user-guide-title: Live Search Guide
-user-guide-description: This guide provides detailed instructions for using Live Search from Adobe Commerce.
-breadcrumb-title: Live Search Guide
+user-guide-title: "[!DNL Live Search] Guide"
+user-guide-description: "This guide provides detailed instructions for using [!DNL Live Search] from Adobe Commerce."
+breadcrumb-title: "[!DNL Live Search] Guide"
 ---
-# Live Search for Commerce {#live-search}
+# [!DNL Live Search] for Commerce {#live-search}
 
 - [Guide Overview](guide-overview.md)
-- [Introduction to Live Search](overview.md)
+- [Introduction to [!DNL Live Search]](overview.md)
 - [Release Notes](release-notes.md)
 - Onboard Live Search {#onboard}
    - [Onboarding Overview](onboarding-overview.md)
-   - [Install Live Search](install.md)
-- Live Search Storefront {#live-search-storefront}
+   - [Install [!DNL Live Search]](install.md)
+- [!DNL Live Search] Storefront {#live-search-storefront}
    - [Quick Tour](quick-tour.md)
-   - [Storefront Popover](storefront-popover.md)
-   - [Styling Popover Elements](storefront-popover-styling.md)
-- Live Search Admin{#live-search-admin}
+   - [Storefront [!DNL Popover]](storefront-popover.md)
+   - [Styling [!DNL Popover] Elements](storefront-popover-styling.md)
+- [!DNL Live Search] Admin{#live-search-admin}
    - [Workspace](workspace.md)
    - [Performance](performance.md)
    - Facets {#facets}
