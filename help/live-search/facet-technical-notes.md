@@ -1,6 +1,6 @@
 ---
 title: Facet Technical Notes
-description: Technical notes about using "[!DNL Live Search]" facets.
+description: Technical notes about using [!DNL Live Search] facets.
 exl-id: 37982610-0ff7-48b7-b088-be7d2eff8a57
 ---
 # Facet Technical Notes

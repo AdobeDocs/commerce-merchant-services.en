@@ -1,6 +1,6 @@
 ---
 title: Types of Synonyms
-description: One- and two-way "[!DNL Live Search]" synonyms expand the definition of keywords.
+description: One- and two-way [!DNL Live Search] synonyms expand the definition of keywords.
 exl-id: 708d7b0d-7361-44f4-ae9e-b92f574ac975
 ---
 # Types of Synonyms

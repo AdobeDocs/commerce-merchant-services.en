@@ -1,6 +1,6 @@
 ---
 title: Performance
-description: The "[!DNL Live Search]" Performance dashboard provides insight into the search terms that shoppers use.
+description: The [!DNL Live Search] Performance dashboard provides insight into the search terms that shoppers use.
 exl-id: ee2053fc-98c5-4d2c-9345-4d1f9a3180fb
 ---
 # Performance
