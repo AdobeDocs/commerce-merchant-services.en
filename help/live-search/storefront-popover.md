@@ -1,6 +1,6 @@
 ---
-title: [!DNL Storefront Popover]
-description: The [!DNL Live Search storefront popover] dynamically returns suggested products and thumbnails.
+title: "[!DNL Storefront Popover]"
+description: "The [!DNL Live Search storefront popover] dynamically returns suggested products and thumbnails."
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
 ---
 # [!DNL Storefront Popover]

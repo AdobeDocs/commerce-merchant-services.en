@@ -1,6 +1,6 @@
 ---
-title: Styling [!DNL Popover] Elements
-description: Technical notes about customizing the [!DNL Live Search storefront popover]
+title: "Styling [!DNL Popover] Elements"
+description: "Technical notes about customizing the [!DNL Live Search storefront popover]"
 exl-id: 033049f2-976e-4299-b026-333ac4b481a3
 ---
 # Styling [!DNL Popover] Elements
