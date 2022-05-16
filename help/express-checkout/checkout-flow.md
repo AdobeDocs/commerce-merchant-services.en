@@ -107,4 +107,4 @@ If no [!DNL Bolt] account is found, shoppers continue with their default Adobe C
 
 ## Get help
 
-Contact Adobe Commerce Support for any assistance.
+Contact [!DNL Adobe Commerce] engineering team through your assigned Slack [Adobe Beta Programs channel](http://adobe-beta-programs.slack.com/) for any assistance.

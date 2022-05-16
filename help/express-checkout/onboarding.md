@@ -96,9 +96,10 @@ For more information on the Adobe Commerce standard checkout options, refer to t
 To enable the [!DNL Express Checkout] for Adobe Commerce extension:
 
 1. Click **Save Config**.
+1. Navigate to **[!UICONTROL System]** > **[!UICONTROL Cache Management]** and click **[!UICONTROL Flush Cache]** to refresh all invalid caches.
 
 ## Get help
 
-The onboarding process is designed to guide you through the required steps for setting up and enabling all [!DNL Express Checkout] functionality. Contact Adobe Commerce Support for any assistance.
+The onboarding process is designed to guide you through the required steps for setting up and enabling the [!DNL Express Checkout] functionality. Contact [!DNL Adobe Commerce] engineering team through your assigned Slack [Adobe Beta Programs channel](http://adobe-beta-programs.slack.com/) for any assistance.
 
 Refer to the [test and validate](../express-checkout/testing.md) topic for more information.

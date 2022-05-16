@@ -111,6 +111,10 @@ Adobe Commerce enables you to localize your store for multiple regions and marke
 
 Refer to the [translating and localizing](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/translations/xlate.html) topic for more information.
 
+## Flush your cache
+
+1. Navigate to **[!UICONTROL System]** > **[!UICONTROL Cache Management]** and click **[!UICONTROL Flush Cache]** to refresh all invalid caches.
+
 ## Get help
 
-Contact Adobe Commerce Support for any assistance.
+Contact [!DNL Adobe Commerce] engineering team through your assigned Slack [Adobe Beta Programs channel](http://adobe-beta-programs.slack.com/) for any assistance.
