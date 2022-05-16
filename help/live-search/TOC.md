@@ -1,9 +1,9 @@
 ---
-user-guide-title: ""[!DNL Live Search]" Guide"
-user-guide-description: "This guide provides detailed instructions for using "[!DNL Live Search]" from Adobe Commerce."
-breadcrumb-title: ""[!DNL Live Search]" Guide"
+user-guide-title: '[!DNL Live Search]' Guide
+user-guide-description: This guide provides detailed instructions for using '[!DNL Live Search]' from Adobe Commerce.
+breadcrumb-title: '[!DNL Live Search]' Guide
 ---
-# [!DNL Live Search] for Commerce {#live-search}
+# '[!DNL Live Search]' for Commerce {#live-search}
 
 - [Guide Overview](guide-overview.md)
 - [Introduction to [!DNL Live Search]](overview.md)
