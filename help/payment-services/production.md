@@ -58,7 +58,7 @@ See [Configure Payment Services](settings.md) for more information about configu
 
    >[!IMPORTANT]
    >
-   >If you revoke consent to [!DNL Payment Services] for [!DNL Adobe Commerce] and [!DNL Magento Open Source] for processing your payments (in your PayPal account settings), orders in your store cannot be processed by [!DNL Payment Services].
+   >If you revoke consent to [!DNL Payment Services] for [!DNL Adobe Commerce] and [!DNL Magento Open Source] for processing your payments (in your PayPal account settings), orders in your store cannot be processed by [!DNL Payment Services]. On your Payment Services Home, an alert about the revoked consent appears.
 
 ## Request payments entitlement from Adobe
 
@@ -109,7 +109,7 @@ See [Configure in the Admin](configure-admin.md) for legacy configuration option
 
 >[!IMPORTANT]
 >
->If you revoke consent to [!DNL Payment Services] for processing your payments (in your PayPal account settings), orders in your store cannot be processed by [!DNL Payment Services]. If you want to re-enable payment processing, you must complete onboarding again.
+>If you revoke consent to [!DNL Payment Services] for processing your payments (in your PayPal account settings), orders in your store cannot be processed by [!DNL Payment Services]. If you want to re-enable payment processing, you must complete onboarding again. On your Payment Services Home, an alert about the revoked consent appears.
 
 ## Test in production
 
