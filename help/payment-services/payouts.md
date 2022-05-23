@@ -67,6 +67,16 @@ From the Payouts view, you can customize the timeframe for the payout transactio
 1. Choose the applicable date range.
 1. View the payouts statuses in the grid for your specified dates.
 
+## Show and hide columns
+
+The Payouts report shows most available columns of information by default. You can, however, customize which columns you see in your report.
+
+1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Payouts]**.
+1. Click the _Column settings_ icon (![column settings icon](assets/column-settings.png)).
+1. To customize which columns you see in the report, check or uncheck columns in the list.
+
+   The Payouts report will immediately show any changes you made in the Column settings menu.
+
 ## Download transactions
 
 You can download a .csv file containing all the transactions visible in the Payouts view grid.
