@@ -106,6 +106,14 @@ You can also manually force a refresh of the Order payment status report data to
 
    The Order payment status report data is refreshed, an *[!UICONTROL Update complete]* confirmation appears, and the latest information is present in the grid.
 
+## Show and hide columns
+
+The Order Payment Status report shows all available columns of information by default. You can, however, customize which columns you see in your report.
+
+1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
+1. Click the _Column settings_ icon (![column settings icon](assets/column-settings.png)).
+1. To customize which columns you see in the report, check or uncheck columns in the list.
+
 ## Download order payment statuses
 
 You can download a .csv file with all statuses visible in the Order payment status view grid, whether you are viewing the default 30 days of statuses or a customized timeframe.
