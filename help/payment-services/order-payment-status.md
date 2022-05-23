@@ -87,6 +87,16 @@ From the Order payment status report view, you can customize the timeframe of th
 1. Choose the applicable date range.
 1. View the order payment statuses for your specified dates in the grid.
 
+## Show and hide columns
+
+The Order Payment Status report shows all available columns of information by default. You can, however, customize which columns you see in your report.
+
+1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
+1. Click the _Column settings_ icon (![column settings icon](assets/column-settings.png)).
+1. To customize which columns you see in the report, check or uncheck columns in the list.
+
+   The Order payment status report will immediately show any changes you made in the Column settings menu. The column preferences will be saved and will remain in effect if you navigate away from the report view.
+
 ## View statuses
 
 By default, 30 days of order payment statuses are shown in the grid.
