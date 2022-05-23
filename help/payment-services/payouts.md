@@ -15,7 +15,7 @@ The Payouts report shows comprehensive payout information at-a-glance, allowing 
 
 >[!NOTE]
 >
->Payouts reports only show orders that have been captured (payment action is set to [`Authorize and Capture`](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/production.html#set-payment-services-as-payment-method))---not orders that are only authorized (payment action is set to `Authorize`).
+>Payouts reports only show orders that are captured---payment action is set to [`Authorize and Capture`](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/production.html#set-payment-services-as-payment-method))---or [marked as `Invoiced`](https://docs.magento.com/user-guide/sales/invoice-create.html) in the [!DNL Adobe Commerce] Admin.
 
 You don't have to open multiple views to cross-reference orders and payments or reconcile accounts. [!DNL Payment Services] for [!DNL Adobe Commerce] and [!DNL Magento Open Source] enables you to take all these actions from one place---Payouts report---so that you can view and manage your payouts efficiently.
 
