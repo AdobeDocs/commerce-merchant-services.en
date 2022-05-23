@@ -13,6 +13,10 @@ exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
 
 The Payouts report shows comprehensive payout information at-a-glance, allowing you full transparency into the payment amount, processed volume, and detailed reporting on the transaction level for financial reconciliation.
 
+>[!NOTE]
+>
+>Payouts reports only show orders that have been captured (payment action is set to [`Authorize and Capture`](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/production.html#set-payment-services-as-payment-method))---not orders that are only authorized (payment action is set to `Authorize`).
+
 You don't have to open multiple views to cross-reference orders and payments or reconcile accounts. [!DNL Payment Services] for [!DNL Adobe Commerce] and [!DNL Magento Open Source] enables you to take all these actions from one place---Payouts report---so that you can view and manage your payouts efficiently.
 
 See linked Commerce order and transaction IDs, transaction amounts, payment method per transaction, and more, all within the Payouts report in the Admin.
@@ -90,7 +94,7 @@ Payout reports include the following information.
 | [!UICONTROL Provider] | Payment provider |
 | [!UICONTROL Provider trans] | Transaction ID |
 | [!UICONTROL Trans date] | Date and time transaction was initiated |
-| [!UICONTROL Type] | Transaction type---*[!UICONTROL PAYMENT]*, *[!UICONTROL AUTH]*, *[!UICONTROL BONUS]*, *[!UICONTROL CHARGEBACK]*, *[!UICONTROL CORRECTION]*, *[!UICONTROL CURRENCY_CONVERSATION]*, *[!UICONTROL DEPOSIT]*, *[!UICONTROL DISBURSEMENT]*, *[!UICONTROL DISPUTE]*, *[!UICONTROL FEES]*, *[!UICONTROL HOLD]*, *[!UICONTROL HOLD_RELEASE]*, *[!UICONTROL INCENTIVES]*, *[!UICONTROL OTHERS]*, *[!UICONTROL RECOUP]*, *[!UICONTROL REFUND]*, *[!UICONTROL REVERSAL]*, *[!UICONTROL WITHDRAWAL]* <br> <br>See [Transaction types](#transaction-types) for more information. |
+| [!UICONTROL Type] | Transaction type---*[!UICONTROL PAYMENT]*, *[!UICONTROL BONUS]*, *[!UICONTROL CHARGEBACK]*, *[!UICONTROL CORRECTION]*, *[!UICONTROL CURRENCY_CONVERSATION]*, *[!UICONTROL DEPOSIT]*, *[!UICONTROL DISBURSEMENT]*, *[!UICONTROL DISPUTE]*, *[!UICONTROL FEES]*, *[!UICONTROL HOLD]*, *[!UICONTROL HOLD_RELEASE]*, *[!UICONTROL INCENTIVES]*, *[!UICONTROL OTHERS]*, *[!UICONTROL RECOUP]*, *[!UICONTROL REFUND]*, *[!UICONTROL REVERSAL]*, *[!UICONTROL WITHDRAWAL]* <br> <br>See [Transaction types](#transaction-types) for more information. |
 | [!UICONTROL Status] | Current status of the transaction---*[!UICONTROL SUCCESS]*, *[!UICONTROL DENIED]*, *[!UICONTROL PENDING]* |
 | [!UICONTROL Code] | Transaction code that indicates either Credit (*CR*) or Debit (*DR*) |
 | [!UICONTROL Reference ID] | Original transaction ID for which this event is related |
