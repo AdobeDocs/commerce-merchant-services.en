@@ -95,7 +95,7 @@ The Order Payment Status report shows all available columns of information by de
 1. Click the _Column settings_ icon (![column settings icon](assets/column-settings.png)).
 1. To customize which columns you see in the report, check or uncheck columns in the list.
 
-   The Order payment status report will immediately show any changes you made in the Column settings menu.
+   The Order payment status report will immediately show any changes you made in the Column settings menu. The column preferences will be saved and will remain in effect if you navigate away from the report view.
 
 ## View statuses
 
