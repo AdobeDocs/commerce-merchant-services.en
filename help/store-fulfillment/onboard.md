@@ -29,16 +29,6 @@ After you complete onboarding, configure and manage the solution from the Commer
 
 1. Configure the schedules for for background processes to sync data to the fulfillment service.
 
-## Onboarding overview
-
-1. [Install the [!DNL Channel Manager] extension](install.md).
-
-1. [Configure the [!DNL Commerce Services Connector]](connect.md) to integrate Channel Manager with the Commerce instance, and other supporting services.
-
-1. [Connect your [!DNL Commerce] store to [!DNL Walmart Marketplace]](connect.md).
-
-1. [Complete store setup](complete-store-setup.md).
-
 ## Prerequisites
 
 * Verify that you have the required [Walmart Marketplace prerequisites](walmart-prerequisites.md) to integrate with Channel Manager.
@@ -89,7 +79,7 @@ The Store Fulfillment by Walmart Technologies extension has been tested for comp
 | MySQL          | 5.7                 | 8.0                 |
 | PHP            | 7.4                 | 8.1                 |
 
-For detailed requirements, review the Adobe Commerce [System requirements](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html) in the Developer documentation.
+For detailed requirements, review the Adobe Commerce [System requirements](<https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html) in the Developer documentation.
 
 ### Business Requirements
 

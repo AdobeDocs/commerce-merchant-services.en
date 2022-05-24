@@ -9,7 +9,7 @@ level: Intermediate
 Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies is
 an advanced omnichannel fulfillment solution that integrates with your [!DNL Commerce] store to deliver a superior buy online, pick up in store (BOPIS) customer experience.
 
-![Store Fulfillment by Walmart Technologies Admin configuration](assets/store-fulfillment-home.png
+![Store Fulfillment by Walmart Technologies Admin configuration](assets/store-fulfillment-admin-home.png
 )
 
 Store Fulfillment also offers an end-to-end fulfillment workflow that helps merchants reduce costs while increasing conversion rates, average order value, and customer satisfaction rates. This workflow delivers: 
