@@ -76,4 +76,4 @@ pickup times, locations, and costs to customers during their online shopping ses
 
 * **Transactional emails**–Extends the Admin capabilities for [!UICONTROL Sales Emails] to add email templates for buy online, pickup in-store transactions. The templates support real-time communication between customers and store associates during the order pickup process.
 
-* **Flexible Fulfillment**–Extends [!DNL Commerce] capabilities to support backorder processing, quantity reductions, and partial order fulfillment scenarios while facilitating any cancellations and credit memos required to support these scenarios.
+* **Flexible Fulfillment**–Extends [!DNL Commerce] capabilities to support scenarios for processing backorders, quantity reductions, and partial order fulfillment while facilitating any cancellations and credit memos required to support these scenarios.
