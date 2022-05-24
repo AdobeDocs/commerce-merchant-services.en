@@ -1,10 +1,10 @@
 ---
-title: Introduction to [!DNL Store Fulfillment]
+title: About [!DNL Store Fulfillment]
 description: Learn how [!DNL Store Fulfillment by Walmart Technologies] supports buy online, pick up in-store (BOPIS) services to Adobe Commerce and Magento Open Source customers. Use the Store Assist mobile to streamline BOPIS fulfillment and order processing for store associates and Commerce customers.
 role: User
 level: Intermediate
 ---
-# Introduction to [!DNL Store Fulfillment by Walmart Technologies]
+# About [!DNL Store Fulfillment by Walmart Technologies]
 
 Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies is
 an advanced omnichannel fulfillment solution that integrates with your [!DNL Commerce] store to deliver a superior buy online, pick up in store (BOPIS) customer experience.
