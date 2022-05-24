@@ -4,6 +4,7 @@ description: Learn how [!DNL Store Fulfillment by Walmart Technologies] supports
 role: User
 level: Intermediate
 ---
+
 # About [!DNL Store Fulfillment by Walmart Technologies]
 
 Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies is
