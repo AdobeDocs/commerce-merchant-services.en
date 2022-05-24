@@ -31,7 +31,7 @@ After you complete onboarding, configure and manage the solution from the Commer
 
 ## Prerequisites
 
-* **Commerce account information**–Downloading and installing [!DNL Channel Manager] requires a [Commerce account](https://docs.magento.com/user-guide/magento/magento-account.html){target="_blank"}. You need an account ID and credentials with Owner or Admin access to the [!DNL Adobe Commerce] or [!DNL Magento Open Source] instance.
+* **Commerce account information**–Installing [!DNL Store Fulfillment by Walmart Technologies] requires a [Commerce account](https://docs.magento.com/user-guide/magento/magento-account.html){target="_blank"}. You need an account ID and credentials with Owner or Admin access to the [!DNL Adobe Commerce] or [!DNL Magento Open Source] instance.
 
 * For [!DNL Adobe Commerce] on cloud infrastructure projects, software installers must have the following access to the [!DNL Commerce] instance:
 
@@ -41,7 +41,7 @@ After you complete onboarding, configure and manage the solution from the Commer
     
     See [Manage user access](https://devdocs.magento.com/cloud/project/user-admin.html).
 
-* **Access to the Store Fulfillment by Walmart Technologies software archive to install the Store Fulfillment solution on your Adobe Commerce instance**–Your customer account representative can provide access to the extension installation file.
+* **Access to the Store Fulfillment by Walmart Technologies software archive (.zip file) to install the Store Fulfillment solution on your Adobe Commerce instance**–Your customer account representative can provide access to the extension installation file.
 
 * **Experience using Composer and the [!DNL Commerce CLI]** –See [General CLI Installation](https://devdocs.magento.com/extensions/install/){target="_blank"} for information about using these tools to install and manage extensions on [!DNL Adobe Commerce] and [!DNL Magento Open Source] platforms.
 
