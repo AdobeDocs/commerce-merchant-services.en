@@ -3,8 +3,8 @@ title: Onboard "[!DNL Store Fulfillment]"
 description: Connect your Commerce instance to the [!DNL Store Fulfillment Manager] service by completing a few onboarding steps.
 role: User, Admin
 level: Intermediate
+exl-id: f8e403ac-9bbd-4ea2-b209-9b1a8d1e32a2
 ---
-
 # Onboard Store Fulfillment by Walmart Technologies
 
 Onboard Store Fulfillment by installing the extension on your Commerce instance and configuring the API connections. These connections enable communication and data synchronization between your Commerce instance, third-party systems for inventory management, and the Store Assist app.

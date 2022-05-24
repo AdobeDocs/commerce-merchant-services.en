@@ -1,6 +1,7 @@
 ---
-title: "[!DNL Store Fulfillment by Walmart Technologies] Release Notes"
+title: '[!DNL Store Fulfillment by Walmart Technologies] Release Notes'
 description: Review the release notes for information about all [!DNL Store Fulfillment by Walmart Technologies] releases.
+exl-id: 04dcec10-fff8-483d-a2c1-4b58e063e0f0
 ---
 # Release Notes
 
@@ -18,4 +19,3 @@ Initial release, compatible with the following Commerce versions:
 * Adobe Commerce for Cloud (ECE): 2.4.x
 * Magento Open Source: 2.4.x
 * Stability: Stable
-
