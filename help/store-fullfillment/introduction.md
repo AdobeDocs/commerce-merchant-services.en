@@ -43,7 +43,7 @@ from the Admin.
 * Supports the Store Assist app from Walmart Commerce Technology. This app sends pickup orders directly to your employee's handheld device in the right store so items can be picked and quickly and accurately
 and handed to customers when they arrive for pickup.
 
-### Store Assist App
+## Store Assist App
 
 The Store Assist App for iOS and Android™ devices interacts with Walmart Commerce Technology
 to bring omnichannel fulfillment capabilities to your retail stores.
@@ -56,7 +56,7 @@ to bring omnichannel fulfillment capabilities to your retail stores.
 
 * Automatically synchronize data about your retail store locations and inventory with Adobe Commerce
 
-### Enhanced User Experience
+## Enhanced User Experience
 
 Store Fulfillment enhances Adobe Commerce by adding the following capabilities to 
 deliver improved shopping experiences and streamlined fulfillment workflows:
