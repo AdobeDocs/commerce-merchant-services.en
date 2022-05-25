@@ -116,6 +116,18 @@ You can also manually force a refresh of the Order payment status report data to
 
    The Order payment status report data is refreshed, an *[!UICONTROL Update complete]* confirmation appears, and the latest information is present in the grid.
 
+## View disputes
+
+You can view any disputes on your store's orders, and navigate to the PayPal Resolution Center to take action on them, from within the Order payment status report.
+
+1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
+1. Navigate to the **[!UICONTROL Disputes column]**.
+1. View any disputes for a specific order and see [the dispute status](#order-payment-status-information).
+1. Click the dispute ID link (beginning with _PP-D-_) to go to the [PayPal Resolution Center](https://www.paypal.com/us/smarthelp/article/what-is-the-resolution-center-faq3327).
+1. Take appropriate action for the dispute, as needed.
+
+   To sort order disputes by status, click the Disputes column header.
+
 ## Download order payment statuses
 
 You can download a .csv file with all statuses visible in the Order payment status view grid, whether you are viewing the default 30 days of statuses or a customized timeframe.
@@ -165,7 +177,7 @@ Order payment status reports include the following information.
 | [!UICONTROL Refund Status] | Status of a refund on an order (such as information from returns, RMAs, and credit memos)---   *[!UICONTROL Requires refund]*, *[!UICONTROL Refund requested]*, *[!UICONTROL Refunded]*, *[!UICONTROL Refund failed]*, or *[!UICONTROL Voided]* |
 | [!UICONTROL Refund Amount] | Total of refunded amount for an order |
 | [!UICONTROL Cur] | Currency type of the amount refunded for an order |
-| [!UICONTROL Dispute Status] | Status of any dispute on an order (information from disputes and chargebacks)---*[!UICONTROL New]*, *[!UICONTROL Representment]*, *[!UICONTROL Accepted]*, *[!UICONTROL Pre-arbitration received]*, *[!UICONTROL Arbitration]*, or *[!UICONTROL Arbitration received]* |
+| [!UICONTROL Disputes] | Status of any dispute on an order (information from disputes and chargebacks)---*[!UICONTROL Open]*, *[!UICONTROL Waiting for buyer response]*, *[!UICONTROL Waiting for seller response]*, *[!UICONTROL Under review]*, *[!UICONTROL Resolved]*, or *[!UICONTROL Other]* |
 | [!UICONTROL Payment Method] | Payment method used in the Commerce transaction for an order |
 | [!UICONTROL Website] | Website from which the order was placed |
 | [!UICONTROL Store] | Store from which the order was placed |
