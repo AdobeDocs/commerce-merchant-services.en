@@ -29,6 +29,14 @@ Other variables that can impact the time needed to train:
 - Some recommendation types train faster than others
 - Adobe Commerce recomputes behavioral data every four hours. While you can technically deploy your recommendation units at that time, know that the recommendations become more accurate the longer they are used on your site.
 
+To help you visualize the training progress of each recommendation type, the [create recommendation](create.md) page displays color-coded readiness indicators:
+
+- Ready (green) - A recommendation type is considered ready when 75% or more of the catalog has one or more recommended products of this type.
+
+- Partially ready (yellow) - A recommendation type is considered partially ready when at least 50% of the catalog has one or more recommended products of this type.
+
+- Not ready (red) - A recommendation type is considered not ready when less than 50% of the catalog has one or more products of this type.
+
 While data is collected on production and machine learning models are trained, you can implement the [remaining tasks](implementation-workflow.md) necessary to deploy recommendations to your storefront. By the time you have finished testing and configuring recommendations, the machine learning models have collected and computed enough data to build relevant recommendations thus allowing you to deploy the recommendations to your storefront.
 
 ## Backup recommendations
