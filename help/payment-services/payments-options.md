@@ -31,25 +31,40 @@ You can configure [!UICONTROL Credit Card Fields] in the store configuration or 
 
 [!DNL PayPal Smart Buttons], which use PayPal to complete a purchase, stores your shopper's shipping address, billing addresses, and payment details for later use. Shoppers can use any payment method previously stored or offered by PayPal.
 
-You can configure [!DNL PayPal Smart Buttons] in the store configuration or the Payment Services Home.  See [Configuring [!DNL Payment Services]](settings.md#configure-paypal-smart-buttons) for more information.
+You can configure [!UICONTROL PayPal Smart Buttons] in the store configuration or the Payment Services Home.  See [Configuring [!DNL Payment Services]](settings.md#configure-paypal-smart-buttons) for more information.
 
-### PayPal button
+### [!DNL PayPal] button
 
 Customers can check out with ease and confidence using the PayPal button.
 
-The PayPal button is visible from the product page, mini-cart, shopping cart, and checkout views.
+The [!DNL PayPal] button is visible from the product page, mini-cart, shopping cart, and checkout views.
 
-### Venmo button
+### [!DNL Venmo] button
 
 Customers can check out using the [Venmo](https://venmo.com/) button.
 
-The Venmo button is visible from the product page, mini-cart, shopping cart, and checkout views.
+The [!DNL Venmo] button is visible from the product page, mini-cart, shopping cart, and checkout views.
+
+### [!DNL Apple Pay] button
+
+Customers can use Touch ID on their devices to use [[!DNL Apple Pay]](https://www.apple.com/apple-pay/), which utilizes credit and debit card payment credentials stored on their iOS or macOS device.
+
+The [!DNL Apple Pay] button is visible from the product page, mini-cart, shopping cart, and checkout views.
 
 ### [!DNL Pay Later] button
 
 Offer your customers short-term, interest-free payments, and other financing options so that they can buy now and pay later with the [!DNL Pay Later] button.
 
-The [!DNL Pay Later] button is visible from the product page, mini-cart, shopping cart, and checkout views.
+The [!DNL Pay Later] button is visible from the product page, mini-cart, shopping cart, and checkout views:
+
+* **When a customer selects a product between $30 and $600**, messaging under the PayPal and [!DNL Pay Later] buttons gives the customer more information about the Pay in 4 payment option. Customers can click **Learn more** to learn about the "Pay in 4" option _or_ click the "Or see 6 months special financing" text in the popup to learn about and apply for the PayPal Credit option.
+* **When a customer selects a product or products exceeding $98.99**, messaging under the PayPal and [!DNL Pay Later] buttons gives customers more information about the PayPal Credit payment option. Customers can click **Learn more** to learn about and apply for the PayPal Credit option _or_ click the "Or see Pay in 4" text in the popup to learn about the Pay in 4 option.
+
+   >[!NOTE]
+   >
+   >The amounts listed above are subject to change.
+
+See [Configure [!DNL Payment Services]](configure-admin.md#configure-paypal-smart-buttons) to learn how to disable or enable the [!DNL Pay Later] messaging.
 
 There are two payment options with the [!DNL Pay Later] button:
 
@@ -61,19 +76,6 @@ There are two payment options with the [!DNL Pay Later] button:
 The [!DNL Pay Now] button is visible in the PayPal popup window when a customer clicks a payment button on the payments screen.
 
 If the final order amount is not yet known (such as when you do not yet have shipping address information) and the customer is in the process of checking out from the product page, mini-cart, or shopping cart, a _Continue_ button is available instead. When a customer clicks _Continue_, after they confirm their payment method, they are directed to an order review page to gather the needed details before completing checkout.
-
-## [!DNL Pay Later] messaging
-
-To help your customer identify these as potential payment options, [!DNL Pay Later] messaging is visible on the product page, in the mini-cart and shopping cart, and during checkout.
-
-* **When a customer selects a product between $30 and $600**, messaging under the PayPal and [!DNL Pay Later] buttons gives the customer more information about the Pay in 4 payment option. Customers can click **Learn more** to learn about the "Pay in 4" option _or_ click the "Or see 6 months special financing" text in the popup to learn about and apply for the PayPal Credit option.
-* **When a customer selects a product or products exceeding $98.99**, messaging under the PayPal and [!DNL Pay Later] buttons gives customers more information about the PayPal Credit payment option. Customers can click **Learn more** to learn about and apply for the PayPal Credit option _or_ click the "Or see Pay in 4" text in the popup to learn about the Pay in 4 option.
-
-   >[!NOTE]
-   >
-   >The amounts listed above are subject to change.
-
-See [Configure [!DNL Payment Services]](configure-admin.md#configure-paypal-smart-buttons) to learn how to disable or enable the [!DNL Pay Later] messaging.
 
 ## Order recalculation
 
