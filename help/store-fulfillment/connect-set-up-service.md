@@ -1,5 +1,5 @@
 ---
-title: Service connection and setup
+title: Service Connection and Setup
 description: Add description
 role: User, Admin
 level: Intermediate

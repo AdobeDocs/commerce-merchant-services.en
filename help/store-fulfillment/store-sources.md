@@ -1,5 +1,5 @@
 ---
-title: Store sources
+title: Store Sources
 description: Add description
 role: User, Admin
 level: Intermediate

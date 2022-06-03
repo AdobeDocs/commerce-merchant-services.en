@@ -1,5 +1,5 @@
 ---
-title: Sales emails
+title: Sales Emails
 description: Add description
 role: User, Admin
 level: Intermediate

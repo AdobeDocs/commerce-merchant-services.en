@@ -1,5 +1,5 @@
 ---
-title: '[!DNL Store Fulfillment by Walmart Commerce Technologies] Guide overview'
+title: '[!DNL Store Fulfillment by Walmart Commerce Technologies] Guide Overview'
 description: Comprehensive information about [!DNL Store Fulfillment] for Adobe Commerce and Magento Open Source administrators, including installation and onboarding
 seo-title: Adobe Commerce Store Fulfillment Guide
 seo-description: Describes how to use [!DNL Store Fulfillment by Walmart Technologies] services with Adobe Commerce or Magento Open Source.

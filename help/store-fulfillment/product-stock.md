@@ -1,5 +1,5 @@
 ---
-title: Product stock management
+title: Product Stock Management
 description: Add description
 role: User, Admin
 level: Intermediate

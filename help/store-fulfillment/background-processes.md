@@ -1,5 +1,5 @@
 ---
-title: Background processes
+title: Background Processes
 description: Add description
 role: User, Admin
 level: Intermediate
