@@ -9,9 +9,7 @@ exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
 
 You can customize [!DNL Payment Services] to your needs with helpful settings in the [!DNL Payment Services] Home.
 
-To configure [!DNL Payment Services] for [!DNL Adobe Commerce] and [!DNL Magento Open Source] click **[!UICONTROL Settings]**. These configuration options apply only to the environment that is set in the _[!UICONTROL Payment mode]_ field in General settings.
-
-See the [[!UICONTROL General] settings section](#general-settings) for more information.
+To configure [!DNL Payment Services] for [!DNL Adobe Commerce] and [!DNL Magento Open Source] click **[!UICONTROL Settings]**. These configuration options apply only to the environment that is set in the _[!UICONTROL Payment mode]_ field in _[!UICONTROL Settings]_ > _[!UICONTROL General]_.
 
 >[!IMPORTANT]
 >
@@ -78,6 +76,7 @@ You can enable and configure the PayPal smart buttons payment options:
    - **[!UICONTROL Show buttons on cart page]**
    - **[!UICONTROL PayPal Pay Later enabled]**
    - **[!UICONTROL Show Venmo button]**
+   - **[!UICONTROL Show Apple Pay button]**
 
 1. To change the [Pay Later messaging](payments-options.md#pay-later-button), toggle the **[!UICONTROL Display Pay Later message]** option.
 1. To enable debug mode, toggle the **[!UICONTROL Debug Mode]** selector.  
