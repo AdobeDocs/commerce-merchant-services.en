@@ -31,7 +31,7 @@ You can configure [!UICONTROL Credit Card Fields] in the store configuration or 
 
 [!DNL PayPal Smart Buttons], which use PayPal to complete a purchase, stores your shopper's shipping address, billing addresses, and payment details for later use. Shoppers can use any payment method previously stored or offered by PayPal.
 
-![[!DNL PayPal Smart Buttons] options](assets/buttons-med.png)
+![[!DNL PayPal Smart Buttons] options](assets/buttons-md.png)
 
 You can configure [!UICONTROL PayPal Smart Buttons] in the store configuration or the Payment Services Home.  See [Configuring [!DNL Payment Services]](settings.md#configure-paypal-smart-buttons) for more information.
 
