@@ -17,5 +17,4 @@ Initial release, compatible with the following Commerce versions:
 
 * Adobe Commerce (EE): 2.4.x
 * Adobe Commerce for Cloud (ECE): 2.4.x
-* Magento Open Source: 2.4.x
 * Stability: Stable
