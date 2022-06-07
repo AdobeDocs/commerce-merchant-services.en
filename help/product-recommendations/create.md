@@ -40,13 +40,13 @@ When you activate the recommendation unit, Adobe Commerce starts to [collect dat
 
 1. In the _Select Recommendation type_ section, specify the [type of recommendation](type.md) you want to appear on the selected page. For some pages, the [placement](placement.md) of recommendations is limited to certain types.
 
-   Some recommendation types use behavioral data from your shoppers to train machine learning models to build personalized recommendations. The training phase can take [some time](behavioral-data.md). To help you visualize the training progress of each recommendation type, this section displays color-coded readiness indicators:
-
-   - Ready (green) - A recommendation type is considered ready when 75% or more of the catalog has one or more recommended products of this type.
-
-   - Partially ready (yellow) - A recommendation type is considered partially ready when at least 50% of the catalog has one or more recommended products of this type.
-
-   - Not ready (red) - A recommendation type is considered not ready when less than 50% of the catalog has one or more products of this type.
+  Some recommendation types use behavioral data from your shoppers to [train machine learning models](behavioral-data.md) to build personalized recommendations. To help you visualize the training progress of each recommendation type, this section displays a measure of readiness for each type. These readiness indicators are calculated based on a couple factors:
+  
+    - Sufficient result set size: Are there enough results being returned in most scenarios to avoid using [backup recommendations](behavioral-data.md#backuprecs)? 
+  
+    - Sufficient result set diversity: Do the products being returned represent a diverse set of products from your catalog? The goal with this factor is to avoid having a minority of products being the only items recommended across the site. 
+  
+   Based on the above factors, a readiness value is calculated and displayed. A recommendation type is considered ready to deploy when its readiness value is 75% or higher. A recommendation type is considered partially ready when its readiness is at least 50%. Finally, a recommendation type is considered not ready to deploy when its readiness value is less than 50%.
 
 1. In the _Storefront display label_ section, enter the [label](placement.md#recommendation-labels) that is visible to your shoppers, such as "Top sellers".
 

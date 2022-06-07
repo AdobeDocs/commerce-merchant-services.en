@@ -18,7 +18,7 @@ As a best practice, Adobe recommends the following guidelines when using recomme
 
 - Do not deploy the same recommendations to your cart page and order confirmation page. Consider using `Most Added to Cart` for the cart page and `Bought This, Bought That` for the order confirmation page.
 
-- Keep your site tidy. Do not deploy more than three recommendation units on same page.
+- Keep your site tidy. Do not deploy more than three recommendation units on the same page.
 
 - If your store sells clothing, the `More like this` recommendation can suggest gender-specific items that do not match the gender of the product being viewed. Consider only using this recommendation type for non-clothing categories.
 
