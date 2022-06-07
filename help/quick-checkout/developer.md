@@ -1,19 +1,15 @@
 ---
-title: '[!DNL Express Checkout] for Adobe Commerce Developer Information'
-description: '[!DNL Express Checkout] developer information.'
+title: "[!DNL Quick Checkout] for Adobe Commerce Developer Information"
+description: "[!DNL Quick Checkout] developer information."
 exl-id: 8926eda4-b4de-4938-a86c-b095616f61f6
 ---
-# [!DNL Express Checkout] developer information
+# [!DNL Quick Checkout] developer information
 
->[!IMPORTANT]
->
-> This feature is for Early Adopter Program (EAP) users only and is not yet accessible for all customers. Currently limited to US customers. Contact Adobe Commerce Support for assistance and questions.
-
-This topic contains information for developers who work closely with the Adobe Commerce and Magento Open Source code and want to learn detailed information about the [!DNL Express Checkout] extension.
+This topic contains information for developers who work closely with the Adobe Commerce and Magento Open Source code and want to learn detailed information about the [!DNL Quick Checkout] extension.
 
 ## Extension points
 
-Use extension points to customize the [!DNL Express Checkout].
+Use extension points to customize the [!DNL Quick Checkout].
 
 By using extension points, you can make customizations without actually altering the core components in the application code.
 
@@ -21,7 +17,7 @@ By using extension points, you can make customizations without actually altering
 
 An extension point can be used to customize the automated step navigation after logging in with [!DNL Bolt].
 
-Once a shopper logs in with [!DNL Bolt], all valid information is prefilled and redirected to the payment details step to place the order. See the [checkout flow](https://experienceleague.adobe.com/docs/commerce-merchant-services/express-checkout/manage-checkout/checkout-flow.html) topic for more information.
+Once a shopper logs in with [!DNL Bolt], all valid information is prefilled and redirected to the payment details step to place the order. See the [checkout flow](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/manage-checkout/checkout-flow.html) topic for more information.
 
 This extension point allows to prevent navigation to a payment step and can be useful in case there are extensions that require a shopper to perform additional actions on the shipping step. See an example below on how you can use the extension point with a mixin:
 

@@ -1,14 +1,14 @@
 ---
-user-guide-title: [!DNL Express Checkout] for Adobe Commerce
-user-guide-description: Learn how the [!DNL Express Checkout] could benefit your Adobe Commerce instance and how to successfully onboard and set up the extension.
+user-guide-title: "[!DNL Quick Checkout] for Adobe Commerce"
+user-guide-description: "Learn how the [!DNL Quick Checkout] could benefit your Adobe Commerce instance and how to successfully onboard and set up the extension."
 breadcrumb-title: Merchant Services Guide
 hide: yes
 ---
 
-# [!DNL Express Checkout] for Adobe Commerce {#express-checkout}
+# [!DNL Quick Checkout] for Adobe Commerce {#quick-checkout}
 
-- [Introduction to [!DNL Express Checkout]](overview.md)
-- Onboard [!DNL Express Checkout] {#getting-started}
+- [Introduction to [!DNL Quick Checkout]](overview.md)
+- Onboard [!DNL Quick Checkout] {#getting-started}
   - [Install](install.md)
   - [Prerequisites](prerequisites.md)
   - [Onboarding](onboarding.md)
@@ -21,4 +21,4 @@ hide: yes
   - [Shipping details](shipping-details.md)
   - [Payment methods](payment-methods.md)
   - [Create an Order in Admin](create-order-admin.md)
-  - [Troubleshoot [!DNL Express Checkout]](troubleshooting.md)
+  - [Troubleshoot [!DNL Quick Checkout]](troubleshooting.md)

@@ -1,13 +1,9 @@
 ---
-title: Checkout page
-description: Overview of the checkout page in Adobe Commerce.
+title: "Checkout page"
+description: "Overview of the checkout page in Adobe Commerce."
 exl-id: afe3a93d-8aba-428e-ac9d-0be8d23ceb47
 ---
 # Checkout page in Adobe Commerce
-
->[!IMPORTANT]
->
-> This feature is for Early Adopter Program (EAP) users only and is not yet accessible for all customers. Currently limited to US customers. Contact Adobe Commerce Support for assistance and questions.
 
 The checkout page is where customers enter the required information to place an order.
 
@@ -26,4 +22,4 @@ Out-of-the-box, the checkout consists of two steps:
 >
 > After the first step is completed, checkout displays the checkout totals and the corresponding side-bar information.
 
-Refer to the [checkout flow](../express-checkout/onboarding.md) topic for more information on the [!DNL Express Checkout] flow.
+Refer to the [checkout flow](../quick-checkout/onboarding.md) topic for more information on the [!DNL Quick Checkout] flow.

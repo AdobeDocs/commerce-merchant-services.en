@@ -1,17 +1,13 @@
 ---
-title: Checkout flow
-description: Overview of the [!DNL Express Checkout] flow in Adobe Commerce.
+title: "Checkout flow"
+description: "Overview of the [!DNL Quick Checkout] flow in Adobe Commerce."
 exl-id: 82761627-a0d4-4cb0-aad1-9865fcb550d4
 ---
-# [!DNL Express Checkout] flow
+# [!DNL Quick Checkout] flow
 
->[!IMPORTANT]
->
-> This feature is for Early Adopter Program (EAP) users only and is not yet accessible for all customers. Currently limited to US customers. Contact Adobe Commerce Support for assistance and questions.
+This section provides an overview of the typical checkout experience using the [!DNL Quick Checkout] for Adobe Commerce extension.
 
-This section provides an overview of the typical checkout experience using the [!DNL Express Checkout] for Adobe Commerce extension.
-
-A successful [!DNL Express Checkout] flow consists of the following steps:
+A successful [!DNL Quick Checkout] flow consists of the following steps:
 
 1. Open your storefront and add items in your cart.
 1. Proceed to checkout.
@@ -31,11 +27,11 @@ A successful [!DNL Express Checkout] flow consists of the following steps:
 
 1. Place Order.
 
-The [!DNL Express Checkout] is compatible with standard additional Adobe Commerce checkout options, such as [gift cards](https://docs.magento.com/user-guide/catalog/product-gift-card.html) or [discount codes](https://docs.magento.com/user-guide/marketing/price-rules-cart-coupon.html).
+The [!DNL Quick Checkout] is compatible with standard additional Adobe Commerce checkout options, such as [gift cards](https://docs.magento.com/user-guide/catalog/product-gift-card.html) or [discount codes](https://docs.magento.com/user-guide/marketing/price-rules-cart-coupon.html).
 
-## [!DNL Express Checkout] use cases
+## [!DNL Quick Checkout] use cases
 
-The [!DNL Express Checkout] allows for multiple use cases during a checkout flow:
+The [!DNL Quick Checkout] allows for multiple use cases during a checkout flow:
 
 - Guest user with a registered [!DNL Bolt] account.
 - Guest user with a new [!DNL Bolt] account.
@@ -43,11 +39,11 @@ The [!DNL Express Checkout] allows for multiple use cases during a checkout flow
 
 ## Guest user checkout: How it works
 
-Guest checkout experience is different from the logged-in experience. When a shopper enters an email address into checkout, the [!DNL Express Checkout] validates it to find an existing [!DNL Bolt] account.
+Guest checkout experience is different from the logged-in experience. When a shopper enters an email address into checkout, the [!DNL Quick Checkout] validates it to find an existing [!DNL Bolt] account.
 
 ### Registered [!DNL Bolt] account
 
-If a [!DNL Bolt] account is found, shoppers continue with their [!DNL Express Checkout] seamless checkout experience: 
+If a [!DNL Bolt] account is found, shoppers continue with their [!DNL Quick Checkout] seamless checkout experience: 
 
 1. Input the One-Time Password (OTP) sent to that [!DNL Bolt] account’s email address or mobile, depending on user's preferences in the [!DNL Bolt] account.
 1. Once logged in with your [!DNL Bolt] account, it fills the checkout details automatically:
@@ -76,9 +72,9 @@ If no [!DNL Bolt] account is found, shoppers continue with their default out-of-
 
 ## An existing Adobe Commerce user: How it works
 
-An existing user can select existing details when user places an order with the [!DNL Express Checkout] for a faster checkout experience.
+An existing user can select existing details when user places an order with the [!DNL Quick Checkout] for a faster checkout experience.
 
-When a shopper enters an email address into checkout, the [!DNL Express Checkout] validates it to find an existing [!DNL Bolt] account.
+When a shopper enters an email address into checkout, the [!DNL Quick Checkout] validates it to find an existing [!DNL Bolt] account.
 
 ### Registered [!DNL Bolt] account with an Adobe Commerce user
 
@@ -88,7 +84,7 @@ If a [!DNL Bolt] account is found, shoppers continue with their default out-of-t
 - Shipping method
 - Review payment method
 
-Refer to the [troubleshooting](../express-checkout/troubleshooting.md) topic for more information if you encounter problems when you place an order as an existing Adobe Commerce user.
+Refer to the [troubleshooting](../quick-checkout/troubleshooting.md) topic for more information if you encounter problems when you place an order as an existing Adobe Commerce user.
 
 >[!NOTE]
 >
@@ -107,4 +103,4 @@ If no [!DNL Bolt] account is found, shoppers continue with their default Adobe C
 
 ## Get help
 
-Contact [!DNL Adobe Commerce] engineering team through your assigned Slack [Adobe Beta Programs channel](http://adobe-beta-programs.slack.com/) for any assistance.
+Contact [Adobe Commerce Support](mailto:quick-checkout-support@adobe.com) for any assistance.
