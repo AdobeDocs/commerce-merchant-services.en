@@ -27,9 +27,7 @@ Store Fulfillment also offers an end-to-end fulfillment workflow that helps merc
 
 ## Store Fulfillment extension
 
-The Store Fulfillment extension integrates with Adobe Commerce 
-so you can manage the configuration for Adobe Commerce operations and customer interfaces 
-from the Admin.
+Supports and Enhances Native Adobe Commerce Features
 
 * Supports most product types–simple, configurable, grouped, bundled, and virtual
 
@@ -37,17 +35,15 @@ from the Admin.
 
 * Integrates with point of sale (POS) merchant systems like ERP, OMS, and WMS) merchant systems for inventory management
 
-* Fully compatible with the Luma theme.
+* Fully compatible with the Luma theme
 
-* Provides GraphQL support for headless and Venia storefronts.
+* Provides GraphQL support for headless and Venia storefronts
 
-* Supports the Store Assist app from Walmart Commerce Technology. This app sends pickup orders directly to your employee's handheld device in the right store so items can be picked and quickly and accurately
-and handed to customers when they arrive for pickup.
+* Supports the Store Assist app from Walmart Commerce Technology. This app sends pickup orders directly to your employee's handheld device in the right store so items can be picked and quickly and accurately picked, staged, and handed to the customers upon their check-in. 
 
 ## Store Assist App
 
-The Store Assist App for iOS and Android™ devices interacts with Walmart Commerce Technology
-to bring omnichannel fulfillment capabilities to your retail stores.
+The Store Assist App for iOS and Android™ devices interacts with Walmart Commerce Technology to bring omnichannel fulfillment capabilities to your retail stores.
 
 * Send in-store and curbside pick-up orders directly to store associates' mobile devices
 
@@ -59,17 +55,13 @@ to bring omnichannel fulfillment capabilities to your retail stores.
 
 ## Enhanced User Experience
 
-Store Fulfillment enhances Adobe Commerce by adding the following capabilities to 
-deliver improved shopping experiences and streamlined fulfillment workflows:
+Store Fulfillment enhances Adobe Commerce by adding the following capabilities to deliver improved shopping experiences and streamlined fulfillment workflows:
 
-* **Store Location Selector (SLS)**–Adds store pickup options,
-inventory availability, and store selectors to Adobe Commerce product, cart, and 
-checkout interfaces.
+* **Store Location Selector (SLS)**–Exposes store pickup option, inventory availability and store selector on the product and cart pages in addition to the native checkout.
 
 * **Inventory Availability**–Adds additional product and global configuration options to Adobe Commerce Inventory Management to support store-level inventory allocation to drive timely local fulfillment.
 
-* **Cart and Checkout Enhancements**–Communicate the fastest available
-pickup times, locations, and costs to customers during their online shopping session.
+* **Cart and Checkout Enhancements**–Communicate the fastest available pickup times, locations, and costs to customers during their online shopping session.
 
 * **Check-in Process Flow**–Adds interfaces to improve the customer check-in process and interactions with store associates when they arrive for in-store or curbside pickup.
 
