@@ -59,7 +59,7 @@ Offer your customers short-term, interest-free payments, and other financing opt
 
 The [!DNL Pay Later] button is visible from the product page, mini-cart, shopping cart, and checkout views:
 
-* **When a customer selects a product between $30 and $600**, messaging under the PayPal and [!DNL Pay Later] buttons gives the customer more information about the Pay in 4 payment option. Customers can click **Learn more** to learn about the "Pay in 4" option _or_ click the "Or see 6 months special financing" text in the popup to learn about and apply for the PayPal Credit option.
+* **When a customer selects a product between $30 and $600**, messaging under the PayPal and [!DNL Pay Later] buttons gives the customer more information about the Pay in 4 payment option. Customers can click **Learn more** for details about Pay in 4,  _or_ click the "Or see 6 months special financing" text in the popup to learn about and apply for the PayPal Credit option.
 * **When a customer selects a product or products exceeding $98.99**, messaging under the PayPal and [!DNL Pay Later] buttons gives customers more information about the PayPal Credit payment option. Customers can click **Learn more** to learn about and apply for the PayPal Credit option _or_ click the "Or see Pay in 4" text in the popup to learn about the Pay in 4 option.
 
    >[!NOTE]

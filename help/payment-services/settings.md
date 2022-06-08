@@ -80,7 +80,7 @@ You can enable and configure the PayPal smart buttons payment options:
 
       >[!NOTE]
       >
-      > Apple Pay is enabled by default for sandbox mode, but you also [must have an Apple Developer Account](test-validate.md#test-in-sandbox-environment) (complete with fake credit card and billing information) to test it. When you want to use Apple Pay in production mode, after completing any [testing and validation](test-validate.md), you must contact sales to enable it for your live store(s).
+      > Apple Pay is enabled by default for sandbox mode, but you also [must have an Apple Developer Account](test-validate.md#test-in-sandbox-environment) (complete with fake credit card and billing information) to test it. When you are ready to use Apple Pay in production mode, after completing any [testing and validation](test-validate.md), contact sales to enable it for your live store(s).
 
 1. To change the [Pay Later messaging](payments-options.md#pay-later-button), toggle the **[!UICONTROL Display Pay Later message]** option.
 1. To enable debug mode, toggle the **[!UICONTROL Debug Mode]** selector.  
