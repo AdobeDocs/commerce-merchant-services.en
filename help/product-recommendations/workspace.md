@@ -96,5 +96,5 @@ From the recommendation details page, click **Create**. To learn more, go to [Cr
 |Revenue|The revenue driven by the recommendation for the current time range.|
 |Lt Revenue|(Lifetime Revenue) The lifetime revenue driven by a recommendation.|
 |Viewability|The percentage of recommendation units that register for the view.|
-|Ctr|(Registered Click Percent) The percentage of unit impressions for the recommendation that register a click.|
-|vCtr|(Viewable Registered Click Percent) The percentage of viewable impressions for the recommendation unit that register a click.|
+|Ctr|(Click-Through Rate) The percentage of unit impressions for the recommendation that register a click.|
+|vCtr|(Viewable Click-Through Rate) The percentage of viewable impressions for the recommendation unit that register a click.|
