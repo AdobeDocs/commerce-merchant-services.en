@@ -22,7 +22,7 @@ When testing and validating your sandbox you must use fake credit card numbers, 
 
 Use PayPal's Credit Card Generator to [generate random credit card information](https://www.paypal.com/us/smarthelp/article/where-can-i-find-test-credit-card-numbers-ts2157) for testing.
 
-To test Apple Pay, a PayPal Smart Button, in sandbox mode, you must have an [Apple Developer Account](https://developer.apple.com/programs/enroll/), complete with fake credit card and billing information.
+To test Apple Pay in sandbox mode, you must have an [Apple Developer Account](https://developer.apple.com/programs/enroll/), complete with fake credit card and billing information.
 
 >[!NOTE]
 >
@@ -43,4 +43,4 @@ You should also verify the information that appears on the bank statements for t
 
 >[!NOTE]
 >
->To complete production testing for Apple Pay, a PayPal Smart Button, you must contact sales to enable Apple Pay for your production environment.
+>To complete production testing for Apple Pay you must contact sales to enable Apple Pay for your production environment.
