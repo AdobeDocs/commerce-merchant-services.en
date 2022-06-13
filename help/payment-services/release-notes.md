@@ -29,8 +29,6 @@ See [Availabilty](https://devdocs.magento.com/release/availability.html) in the 
 
 ![Fixed issue](../assets/fix.svg)<!-- Issue PAY-2710 --> [!DNL Payment Services] is now compatible with [PHP 8.1](https://www.php.net/releases/8.1/en.php).
 
-<!--![Fixed issue](../assets/fix.svg)<!-- Issue PAY-3035 --> Improved Admin Checkout for the [!DNL Payment Services] extension.
-
 ![Fixed issue](../assets/fix.svg)<!-- Issue PAY-3017 --> Improved Sandbox mode alert to display proper alerts with multiple stores. -->
 
 ![Fixed issue](../assets/fix.svg)<!-- Issue PAY-2742 --> You can now enable and disable available payment methods, such as Venmo, at the store view level. Previously, you could configure payment methods per website only.
@@ -38,8 +36,6 @@ See [Availabilty](https://devdocs.magento.com/release/availability.html) in the 
 ![Fixed issue](../assets/fix.svg)<!-- Issue PAY-2277 --> You can now selectively [enable or disable individual PayPal smart buttons](settings.md#paypal-smart-buttons).
 
 ![Fixed issue](../assets/fix.svg)<!-- Issue PAY-2561 --> Previously removed products do not appear in the cart on the _Review Order_ page.
-
-<!-- ![Fixed issue](../assets/fix.svg)<!-- Issue PAY-2456 --> [!DNL Payment Services] improves payment method labels in the Admin. -->
 
 ![Known issue](../assets/bug.svg)<!-- Issue PAY-2842 --> Test credit card transactions [may fail with PayPal](https://support.magento.com/hc/en-us/articles/5201041963917) when processing payments in a sandbox environment.
 
