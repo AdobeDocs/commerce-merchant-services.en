@@ -44,7 +44,7 @@ When you activate the recommendation unit, Adobe Commerce starts to [collect dat
   
     - Sufficient result set size: Are there enough results being returned in most scenarios to avoid using [backup recommendations](behavioral-data.md#backuprecs)? 
   
-    - Sufficient result set diversity: Do the products being returned represent a diverse set of products from your catalog? The goal with this factor is to avoid having a minority of products being the only items recommended across the site. 
+    - Sufficient result set variety: Do the products being returned represent a variety of products from your catalog? The goal with this factor is to avoid having a minority of products being the only items recommended across the site. 
   
    Based on the above factors, a readiness value is calculated and displayed. A recommendation type is considered ready to deploy when its readiness value is 75% or higher. A recommendation type is considered partially ready when its readiness is at least 50%. Finally, a recommendation type is considered not ready to deploy when its readiness value is less than 50%.
 

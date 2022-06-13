@@ -21,6 +21,10 @@ See the developer documentation to [learn about product compatibility](https://d
 
 ## Adobe Commerce 2.3.x and 2.4.x
 
+## 3.3.8 of magento/product-recommendations
+
+* ![New](../assets/new.svg) - Added [readiness indicators](create.md) to help you visualize the training progress of each recommendation type.
+
 ## 3.3.7 of magento/product-recommendations
 
 * ![New](../assets/new.svg) - Added PHP 8.1 support
