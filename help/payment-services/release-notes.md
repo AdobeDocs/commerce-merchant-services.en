@@ -41,7 +41,7 @@ See [Availabilty](https://devdocs.magento.com/release/availability.html) in the 
 
 ## v1.0.0
 
-![New](../assets/new.svg)<!-- Issue PAY-2127 --> General availability release---[!DNL Payment Services](https://marketplace.magento.com/magento-payment-services.html) is now compatible with [!DNL Adobe Commerce] and [!DNL Magento Open Source] versions 2.4.0 to 2.4.3-p1.
+![New](../assets/new.svg)<!-- Issue PAY-2127 --> General availability release---[[!DNL Payment Services]](https://marketplace.magento.com/magento-payment-services.html) is now compatible with [!DNL Adobe Commerce] and [!DNL Magento Open Source] versions 2.4.0 to 2.4.3-p1.
 
 ![New](../assets/new.svg)<!-- Issue PAY-124 --> The [!DNL Payment Services] extension for [!DNL Adobe Commerce] and [!DNL Magento Open Source] can be installed either for [[!DNL Adobe Commerce] on cloud infrastructure](install.md#magento-commerce-cloud) or [On-premises](install.md#on-premises) instances. These methods require the use of a Command Line Interface.
 
