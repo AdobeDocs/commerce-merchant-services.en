@@ -21,9 +21,9 @@ See [Availabilty](https://devdocs.magento.com/release/availability.html) in the 
 
 ![New](../assets/new.svg)<!-- Issue PAY-2682 --> The [!DNL Payment Services] extension for [!DNL Adobe Commerce] and [!DNL Magento Open Source] is now available for Canadian merchant. Merchants can view payments configuration in either [French](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html?lang=fr) or [English](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html?lang=en).
 
-![New](../assets/new.svg)<!-- Issue PAY-2681 --> [!DNL Payment Services] supports [Canadian dollars (CAD)](overview.md#accepted-credit-cards-and-currencies) for credit cards and PayPal transactions. Shoppers can have a shopping experience in their preferred language, depending on the locale of the store in which they are shopping.
+![New](../assets/new.svg)<!-- Issue PAY-2681 --> [!DNL Payment Services] supports [Canadian dollars (CAD)](overview.md#accepted-credit-cards-and-currencies) for credit cards and PayPal transactions.
 
-![New](../assets/new.svg)<!-- Issue PAY-2680 --> Merchants can [onboard [!DNL Payment Services]](onboard.md) extension in their preferred language.
+![New](../assets/new.svg)<!-- Issue PAY-2680 --> Merchants can [onboard [!DNL Payment Services]](onboard.md) extension in English or French languages.
 
 ![New](../assets/new.svg)<!-- Issue PAY-2678 --> Merchants can now view financial reports, both the [Order payment status](order-payment-status.md) and [Payouts reports](payouts.md), in Canadian dollars (CAD).
 
@@ -57,7 +57,7 @@ See [Availabilty](https://devdocs.magento.com/release/availability.html) in the 
 
 ![New](../assets/new.svg)<!-- Issue PAY-1856 --> Comprehensive reporting, via [Order payment status](order-payment-status.md) and [Payouts reports](payouts.md), are available for [!DNL Payment Services] to give you a clear view of your store's orders and related payments.
 
-![New](../assets/new.svg)<!-- Issue PAY-311 --> [!DNL Payment Services] supports tiered pricing (based on TPV) adapted to any merchant.
+![New](../assets/new.svg)<!-- Issue PAY-311 --> [!DNL Payment Services] supports flexible tiered pricing, based on total processing volume, adapted to any merchant.
 
 ![New](../assets/new.svg)<!-- Issue PAY-1443 --> You can easily [customize the look and feel](payments-options.md) of PayPal smart buttons and credit card fields for the Payment Services extension.
 
