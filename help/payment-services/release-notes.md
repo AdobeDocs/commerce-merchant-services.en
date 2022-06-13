@@ -7,7 +7,7 @@ exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 
 These release notes describe the initial release of [!DNL Payment Services] and include:
 
-![New](../assets/new.svg) New features
+![New](.../assets/new.svg) New features
 ![Fixed issue](../assets/fix.svg) Fixes and improvements
 ![Known issue](../assets/bug.svg) Known issues
 
