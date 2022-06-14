@@ -1,16 +1,15 @@
 ---
 title: "Introduction to [!DNL Store Fulfillment]"
-description: "Learn how [!DNL Store Fulfillment for Adobe Commerce by Walmart Technologies] supports buy online, pick up in store (BOPIS) for customers. Use the Store Assist mobile to streamline BOPIS fulfillment and order processing for store associates and Commerce customers."
+description: "Learn how [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] supports buy online, pick up in store (BOPIS) for customers. Use the Store Assist mobile to streamline BOPIS fulfillment and order processing for store associates and Commerce customers."
 role: User
 level: Intermediate
 exl-id: d2f90af8-3eba-499d-84de-4b70ecc7166c
 ---
 # Introduction to [!DNL Store Fulfillment]
 
-Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies is
-an advanced omnichannel fulfillment solution that integrates with your [!DNL Commerce] store to deliver a superior buy online, pick up in store (BOPIS) customer experience.
+Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies is an advanced omnichannel fulfillment solution that integrates with your [!DNL Commerce] store to deliver a superior buy online, pick up in store (BOPIS) customer experience.
 
-![Store Fulfillment by Walmart Technologies Admin configuration](assets/store-fulfillment-admin-home.png
+![Store Fulfillment solution Adobe Admin configuration](assets/store-fulfillment-admin-home.png
 )
 
 Store Fulfillment also offers an end-to-end fulfillment workflow that helps merchants reduce costs while increasing conversion rates, average order value, and customer satisfaction rates. This workflow delivers: 

@@ -1,11 +1,11 @@
 ---
-title: '[!DNL Store Fulfillment by Walmart Technologies] Release Notes'
-description: Review the release notes for information about all [!DNL Store Fulfillment by Walmart Technologies] releases.
+title: '[!DNL Store Fulfillment by Walmart Commerce Technologies] Release Notes'
+description: Review the release notes for information about all [!DNL Store Fulfillment by Walmart Commerce Technologies] releases.
 exl-id: 04dcec10-fff8-483d-a2c1-4b58e063e0f0
 ---
 # Release Notes
 
-These release notes describe the initial release of [!DNL Store Fulfillment Services by Walmart Technologies] and include:
+These release notes describe the initial release of [!DNL Store Fulfillment Services by Walmart Commerce Technologies] and include:
 
 ![New](../assets/new.svg) New features
 ![Fixed issue](../assets/fix.svg) Fixes and improvements
