@@ -97,10 +97,6 @@ To select or create a SaaS project, request the [!DNL Commerce] API key from the
 
 To change the SaaS project or data space names, click the **Rename this Project** or **Rename Data Space** respectively.
 
-## IMS Organization (optional) {#organizationid}
-
-To connect your Adobe Commerce instance to the Adobe Experience Platform, sign in to your Adobe account using your Adobe ID. After you sign in, the IMS organization associated with your Adobe account will be displayed in this section. You can then [access](../experience-platform-connector/overview.md) the Experience Platform Connector and send [!DNL Commerce] data to the Adobe Experience Platform edge.
-
 ## Catalog sync
 
 When your [!DNL Commerce] instance successfully connects to [!DNL Commerce Services], the catalog sync process exports product data from your [!DNL Commerce] server to [!DNL Commerce Services]. [Learn more](catalog-sync.md) about the catalog sync process.
