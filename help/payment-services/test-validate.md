@@ -12,7 +12,7 @@ Before you expose [!DNL Payment Services] for [!DNL Adobe Commerce] and [!DNL Ma
 Testing [!DNL Payment Services] in a sandbox environment is an important validation step, even though it is a simulated environment connected only to the PayPal sandbox, not to real banks and merchants.
 
 1. Complete a successful checkout from your store, either with [Credit Card Fields](payments-options.md#credit-card-fields) or [PayPal Smart Buttons](payments-options.md#paypal-smart-buttons). See [Use sandbox mode](#use-sandbox-mode) for more information about using fake credit cards for testing.
-1. Capture (when your payment action is [set to `Authorize and Capture`](onboard.md#set-payment-services-as-payment-method)), [refund](refunds.md), or [void](voids.md) the just-completed order. You can also simply [create an invoice](https://docs.magento.com/user-guide/sales/invoice-create.html){target="_blank"} for an order, if your payment action is set to `Authorize` instead of `Authorize and Capture`.
+1. Capture (when your payment action is [set to `Authorize and Capture`](production.md#set-payment-services-as-payment-method), [refund](refunds.md), or [void](voids.md) the just-completed order. You can also simply [create an invoice](https://docs.magento.com/user-guide/sales/invoice-create.html){target="_blank"} for an order, if your payment action is set to `Authorize` instead of `Authorize and Capture`.
 1. Within 24-48 hours, view the transaction and other information in the [Payouts report](payouts.md).
 1. See details of the order in the [Order payment status report](order-payment-status.md).
 
@@ -32,8 +32,8 @@ It is highly recommended that you test [!DNL Payment Services] in production, wi
 
 You can test [!DNL Payment Services] in production in one of two ways:
 
-* Choose a time when you know that no orders will be placed by shoppers.
-* Use a webstore which is temporarily inaccessible to shoppers, but is accessible to you for testing.
+*  Choose a time when you know that no orders will be placed by shoppers.
+*  Use a webstore which is temporarily inaccessible to shoppers, but is accessible to you for testing.
 
 Complete your production testing with real credit cards and PayPal accounts, testing the entire lifecycle of a payment, including capture and refund. Completing the entire checkout and payment flow during testing gives you the clearest picture of how your [!DNL Payment Services] functionality will work when live shoppers are using it.
 

@@ -37,6 +37,7 @@ You can enable [!DNL Payment Services] for your website, and enable either sandb
    >
    >Your _[!UICONTROL Sandbox Merchant ID]_ and _[!UICONTROL Production Merchant ID]_ are auto-generated and present in their respectable fields when you finish onboarding for the sandbox and/or production. Do not remove or change these IDs.
 
+1. Select the store view, in the **[!UICONTROL Scope]** dropdown menu, for which you want to enable a payment method.
 1. To change the default settings for payment functions and storefront display, set the additional options as needed:
 
    - [Credit card fields](#credit-card-fields)
