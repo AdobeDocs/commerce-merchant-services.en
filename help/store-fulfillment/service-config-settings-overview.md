@@ -3,6 +3,7 @@ title: Configuration overview for Store Fulfillment
 description: Learn about the Admin configuration settings categories available for the Store Fulfillment solution and how they are configured.
 role: User, Admin
 level: Intermediate
+exl-id: c432791a-94a0-457d-9ed9-8937846ce4f4
 ---
 # Configuration Overview for Store Fulfillment
 
@@ -39,4 +40,4 @@ In the configuration reference for each type, the configuration details are disp
 
 - **Required** value indicates whether a value must be set on the field
 
-For technical reference, you can also find the internal configuration path for each field. 
+For technical reference, you can also find the internal configuration path for each field.

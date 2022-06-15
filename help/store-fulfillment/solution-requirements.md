@@ -1,10 +1,10 @@
 ---
 title: Service Requirements
-description: "Requirements for provisioning and onboarding the [!DNL Store Fulfillment Manager] service"
+description: Requirements for provisioning and onboarding the [!DNL Store Fulfillment Manager] service
 role: User, Admin
 level: Intermediate
+exl-id: f9e05049-5904-4f6c-b45d-9f81fbc76b69
 ---
-
 # Requirements for Store Fulfillment for Adobe Commerce
 
 You must meet the following technical and business requirements to install and enable the Store Fulfillment solution for Adobe Commerce.
