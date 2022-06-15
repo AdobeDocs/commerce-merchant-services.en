@@ -1,8 +1,9 @@
 ---
 title: Merchant Store Configuration
-description: Setup enhanced Inventory Management sources as merchant stores. 
+description: Setup enhanced Inventory Management sources as merchant stores.
 role: User, Admin
 level: Intermediate
+exl-id: 7c3444d0-5ecb-4ac1-aa81-e48eea290f5d
 ---
 # Merchant Stores (Source) Configuration 
 
@@ -141,10 +142,3 @@ Manage Merchant Stores configuration from the Admin: **[!UICONTROL Stores > Inve
 | **[!UICONTROL Is Car Make a Mandatory Field?]**</br>`Extension Attribute: car_make_mandatory`                             | Specify whether vehicle make identification is required for customers during Check-In.</br></br>If enabled, the customer is prompted to specify the make of their vehicle upon arrival. If disabled, the customer can skip this input.                                                                                                                                                                                                         | Global    | No           |
 | **[!UICONTROL Use Additional Information]**</br> `Extension Attribute: use_additional_information`                        | Specify whether to support collection of additional information from the customer during Check-In.                                                                                                                                                                                                                                                                                                                                             | Global    | No           |
 | **[!UICONTROL Is Additional Information a Mandatory Field?]**</br>`Extension Attribute: additional_information_mandatory` | Specify whether additional information is required for customers during Check-In. </br></br>If enabled, the customer is prompted to enter additional information upon arrival. If disabled, the customer can skip this input.                                                                                                                                                                                                                  | Global    | No           |
-
-
-
-
-
-
-

@@ -1,8 +1,9 @@
 ---
 title: Onboarding Overview for Store Fulfillment services
-description: "[!DNL Live Search] onboarding flow, system requirements, boundaries, and limitations."
+description: '[!DNL Live Search] onboarding flow, system requirements, boundaries, and limitations.'
 role: User, Admin
 level: Intermediate
+exl-id: f8e403ac-9bbd-4ea2-b209-9b1a8d1e32a2
 ---
 # Onboarding Overview for Store Fulfillment
 
@@ -45,4 +46,3 @@ Get started with [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce 
 1. [Download Walmart’s [!DNL Store Assist] app to your desired device. The app is available on both app store (iOS) and play store (Android)](app-setup.md).
 
 After you have successfully installed, configured, completed onboarding, and have access to the [!DNL Store Assist] app, you can [begin creating orders and testing](test-and-deploy.md).
-

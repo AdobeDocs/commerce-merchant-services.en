@@ -3,6 +3,7 @@ title: Connect the Store Fulfillment Solution
 description: Establish the connections between Adobe Commerce and the Store Fulfillment solution by creating and authorizing an Adobe Commerce integration and adding the Store Fulfillment account credentials to the Adobe Commerce service configuration.
 role: User, Admin
 level: Intermediate
+exl-id: 74c71c43-305a-4ea7-84f8-95f3ce0a9482
 ---
 # Connect the Store Fulfillment Solution
 
@@ -70,11 +71,3 @@ These credentials are required to configure and use Store Fulfillment.
 >[!NOTE]
 >
 >If the credentials are invalid, verify that you entered the correct values for each environment and revalidate. Contact your account representative if you still have problems connecting.
-
-
-
-
-
-
-
-

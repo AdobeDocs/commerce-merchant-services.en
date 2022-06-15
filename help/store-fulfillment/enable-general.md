@@ -1,10 +1,10 @@
 ---
 title: General configuration
-description: "Configure general settings to enable [!DNL Store Fulfillment] for your store. Configure global extension settings, system settings for logging, data synchronization, and security. Provide key data to enable the integration between Adobe Commerce and Store Fulfillment services."
+description: Configure general settings to enable [!DNL Store Fulfillment] for your store. Configure global extension settings, system settings for logging, data synchronization, and security. Provide key data to enable the integration between Adobe Commerce and Store Fulfillment services.
 role: User, Admin
 level: Intermediate
+exl-id: 51dcfc95-3dd6-40d9-bd26-d8409a25f3c8
 ---
-
 # General Configuration
 
 In the Adobe commerce Admin, configure general configuration settings to enable [!DNL Store Fulfillment] services for your store, configure global extension settings, and provide key data for the integration by configuring the [!UICONTROL Account Credentials].

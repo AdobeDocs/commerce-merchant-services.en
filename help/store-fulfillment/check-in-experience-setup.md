@@ -3,8 +3,8 @@ title: Check-In Experience setup
 description: Configure the Car make and model selections available to curbside pickup customers when they complete the Pickup order form.
 role: User, Admin
 level: Intermediate
+exl-id: 341b96cd-bb83-4d07-965c-b09fab24dc81
 ---
-
 # Check-In Experience setup
 
 The Store pickup workflow for the Store Fulfillment solution includes a Pickup Order form that customers complete during the shopping experience. This form can be customized to require car description inputs.

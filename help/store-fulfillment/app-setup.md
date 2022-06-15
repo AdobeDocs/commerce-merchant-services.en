@@ -1,11 +1,10 @@
 ---
 title: App Setup
-description: "Set up the [!DNL Store Assist] app to manage end-to-end store fulfillment workflows and processes for buy online, pick up in store orders." 
+description: Set up the [!DNL Store Assist] app to manage end-to-end store fulfillment workflows and processes for buy online, pick up in store orders.
 role: User, Admin
 level: Intermediate
-
+exl-id: bcb5b02b-0141-407a-ad55-6e10e8e1aa90
 ---
-
 # App Setup
 
 Store Assist is a fulfillment-as-a-service (FaaS) platform app powered by Walmart Commerce Technologies. The app provides in-store fulfillment capabilities to handle [!DNL buy online], [!DNL pick up in store] (BOPIS) orders.  With Store Assist, store associates can see which items customers ordered, pick the correct items faster, and set up fulfilled orders for in-store or curbside pickup delivery to customers. 
@@ -66,4 +65,3 @@ After the Store Assist app configuration has been completed, Store Associates ca
   - Store Assist account credentials—username and password credentials for their account. 
 
   An Adobe Commerce Administrator can create user account and set permissions for theStore Assist App user accounts for store locations that have [In-Store Pickup](merchant-store-configuration.md#pickup-location-configuration) enabled in the Admin Stores settings.
-

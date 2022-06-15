@@ -3,8 +3,8 @@ title: Multiple website and scope configuration
 description: Configure stocks and delivery methods for multiple websites and store scopes.
 role: User, Admin
 level: Intermediate
+exl-id: 8939046e-1c26-4380-83be-ff8e074e591d
 ---
-
 # Multiple website and scope configuration
 
 You can set the [Scope](https://docs.magento.com/user-guide/configuration/scope.html) for a few elements to accommodate multiple websites, stores, and store views:

@@ -3,8 +3,8 @@ title: Store location and mapping system configuration
 description: Configure a distance provider to support store location mapping in the storefront UI. The Store Fulfillment solutions requires a distance provider to enable retail store search and other mapping and scheduling capabilities for the end-to-end fulfillment workflow.
 role: User, Admin
 level: Intermediate
+exl-id: d09c4652-e2eb-49dc-8c42-2aa9b6be5d6b
 ---
-
 # Store Location and Mapping setup
 
 Enable the store location and mapping capabilities for Store Fulfillment by configuring a [distance provider](https://docs.magento.com/user-guide/catalog/inventory-configure-distance-priority.html) to search for retail store locations.
