@@ -84,7 +84,7 @@ If a [!DNL Bolt] account is found, shoppers continue with their default out-of-t
 - Shipping method
 - Review payment method
 
-Refer to the [troubleshooting](../quick-checkout/troubleshooting.md) topic for more information if you encounter problems when you place an order as an existing Adobe Commerce user.
+If you encounter issues when you place an order as an existing Adobe Commerce user, see the [Troubleshoot Quick Checkout issues](https://support.magento.com/hc/en-us/articles/6909450342541) article in the Adobe Commerce Help Center.
 
 >[!NOTE]
 >

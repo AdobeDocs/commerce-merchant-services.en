@@ -18,7 +18,5 @@ hide: yes
 - Checkout {#manage-checkout}
   - [Checkout page](checkout-page.md)
   - [Checkout flow](checkout-flow.md)
-  - [Shipping details](shipping-details.md)
   - [Payment methods](payment-methods.md)
   - [Create an Order in Admin](create-order-admin.md)
-  - [Troubleshoot [!DNL Quick Checkout]](troubleshooting.md)
