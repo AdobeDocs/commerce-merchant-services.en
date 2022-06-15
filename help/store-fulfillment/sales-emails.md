@@ -1,10 +1,11 @@
 ---
 title: Sales Emails
-description: Configure settings for the transactional email templates to communicate with customers and store administrators during the order and fulfillment process.
+description: Configure the transactional email templates for communicating with customers and store administrators during the fulfillment process for Store Pickup orders.
 role: User, Admin
 level: Intermediate
 exl-id: 688732e3-06f0-4613-a589-2d465597eb28
 ---
+
 # Sales Emails
 
 Store Fulfillment offers an extended set of transactional email templates to support order and fulfillment workflows. They offer consistent, automated communication and messaging across channels—

@@ -1,11 +1,11 @@
 ---
-title: Service Requirements
-description: Requirements for provisioning and onboarding the [!DNL Store Fulfillment Manager] service
+title: Store Fulfillment Requirements
+description: "Requirements for provisioning and onboarding the [!DNL Store Fulfillment solution]."
 role: User, Admin
 level: Intermediate
-exl-id: f9e05049-5904-4f6c-b45d-9f81fbc76b69
 ---
-# Requirements for Store Fulfillment for Adobe Commerce
+
+# Store Fulfillment requirements for Adobe Commerce
 
 You must meet the following technical and business requirements to install and enable the Store Fulfillment solution for Adobe Commerce.
 
@@ -30,13 +30,13 @@ The Store Fulfillment solution is compatible with the following software version
 
 For detailed requirements, review the Adobe Commerce [System requirements](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html) in the Developer documentation.
 
-## Business Requirements
+## Business requirements
 
 Your business must meet the following minimum criteria to implement the Store Fulfillment solution.
 
-* US-Based businesses only
+* US-based businesses only
 
-* B2C Retailers, CPG Manufacturers selling D2C, or Distributors selling D2C or to small businesses
+* B2C Retailers, CPG Manufacturers selling D2C, or distributors selling D2C or to small businesses
 
 * At least one physical store or warehouse
 

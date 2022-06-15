@@ -1,22 +1,21 @@
 ---
-title: "Store Assist fulfillment workflows"
-description: "Learn about the Pick, Stage, Hand-Off, and Orders modules available in the Store Assist App. These modules enable the end-to-end store fulfillment workflow for BOPIS orders. Store Associates use these modules to manage and deliver store pickup orders to customers.
-."
+title: "Store Assist Fulfillment Workflows"
+description: "Learn about the Pick, Stage, Hand-Off, and Orders modules available in the Store Assist App. These modules enable the end-to-end store fulfillment workflow for BOPIS orders. Store Associates use these modules to manage and deliver store pickup orders to customers."
 role: User
 level: Intermediate
 ---
 
-# Store Assist workflows
+# Store Assist Fulfillment Workflows
 
 The Store Assist app provides Store Associates with four modules to manage the in-store fulfillment process for buy online, pick up in store orders: 
 
-**[Pick](#pick-module)**—Get full visibility into all ordered items and the tools to make sure that the right items and right quantities are picked. Store associates can pick one or multiple orders simultaneously for greater efficiency 
+- **[Pick](#pick-module)**—Get full visibility into all ordered items and the tools to make sure that the right items and right quantities are picked. Store associates can pick one or multiple orders simultaneously for greater efficiency.
 
-**[Stage](#stage-module)**—Enter a location where the orders are placed while customers are traveling to the store so Store Associates can find them easily for order handoff 
+- **[Stage](#stage-module)**—Enter a location where the orders are placed while customers are traveling to the store so Store Associates can find them easily for order handoff 
 
-**[Hand Off](#hand-off)**—Get real-time notifications after customers arrive at the store to minimize their wait time and handoff orders seamlessly 
+- **[Hand Off](#hand-off-module)**—Get real-time notifications after customers arrive at the store to minimize their wait time and handoff orders seamlessly 
 
-**[Orders](#orders-module)**—View a list of all orders placed for a store so that everyone knows the number of orders and status of each order. 
+- **[Orders](#orders-module)**—View a list of all orders placed for a store so that everyone knows the number of orders and status of each order. 
 
 >[!NOTE]
 >

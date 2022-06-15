@@ -43,7 +43,7 @@ To integrate Adobe Commerce with Store Fulfillment services, you create a Commer
 
 After you complete the intake form, a Walmart Store Fulfillment account is created for you. You will receive the following credentials when they are available:
 
-- [!DNL Merchant I]D
+- [!DNL Merchant ID]
 - [!DNL Consumer ID]
 - [!DNL Consumer Secret]
 - [!DNL API Server URL]

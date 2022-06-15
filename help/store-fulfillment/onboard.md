@@ -1,6 +1,6 @@
 ---
 title: Onboarding Overview for Store Fulfillment services
-description: "[!DNL Live Search] onboarding flow, system requirements, boundaries, and limitations"
+description: "[!DNL Live Search] onboarding flow, system requirements, boundaries, and limitations."
 role: User, Admin
 level: Intermediate
 ---
@@ -20,9 +20,6 @@ Get started with [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce 
   |-------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
   | ![[!DNL Store Assist App Getting Started] view on mobile device](assets/store-assist-get-started-small.png) | ![[!DNL Store Assist App Orders view] on mobile device](assets/store-assist-orders-small.png) |
 
-
- 
-
 ## Provisioning steps
 
 - **Sign up for [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies]**-Complete the sign up form on [business.adobe.com](https://business.adobe.com/resources/store-fulfillment.html), or contact your Adobe Commerce Account Manager for assistance. 
@@ -41,12 +38,11 @@ Get started with [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce 
 
 1. [Configure the Store Fulfillment extension from the Adobe Commerce Admin](service-config-settings-overview.md).
 
-1. [Connect the [!DNL Store Fulfillment] service using the Store Fulfillment credentials provided to you.](connect-set-up-service.md)
+1. [Connect the [!DNL Store Fulfillment] service using the Store Fulfillment credentials provided to you](connect-set-up-service.md).
 
-1. [Create users and roles for the Store Assist app](user-setup.md)
+1. [Create users and roles for the Store Assist app](user-setup.md).
 
-1. [Download Walmart’s [!DNL Store Assist] app to your desired device. The app is available on both app store (iOS) and play store (Android)](app-setup.md)
+1. [Download Walmart’s [!DNL Store Assist] app to your desired device. The app is available on both app store (iOS) and play store (Android)](app-setup.md).
 
 After you have successfully installed, configured, completed onboarding, and have access to the [!DNL Store Assist] app, you can [begin creating orders and testing](test-and-deploy.md).
-
 

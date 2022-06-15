@@ -1,15 +1,15 @@
 ---
-title: User Setup
-description: Setup enhanced Inventory Management sources as merchant stores. 
+title: User setup
+description: Setup enhanced Inventory Management sources as merchant stores to support the Store Fulfillment solution for Adobe Commerce. 
 role: User, Admin
 level: Intermediate
-
 ---
-# User Setup
+
+# User setup
 
 Store Assist app Users are managed in Adobe Commerce. However, these users do not interact with Adobe Commerce directly. The user management is configured in Adobe Commerce to enable secure connections between Adobe Commerce and the app.
 
-The Store Fulfillment App User model is separated from other Adobe Commerce user models. The App maintains its own permission model through user roles and users that can be assigned to all or specific locations. The following permissions are supported: Picking order, Dispensing Order, and Item qty reduction (and cancellation).
+The Store Fulfillment App User model is separated from other Adobe Commerce user models. The app maintains its own permission model through user roles and users that can be assigned to all or specific locations. The following permissions are supported: Picking order, Dispensing Order, and Item qty reduction (and cancellation).
 
 >[!TIP]
 >
@@ -37,7 +37,6 @@ Configure User Roles from **[!UICONTROL System > Store Fulfillment App Permissio
 
 Manage Store Assist app user profiles from the Admin System settings:  **[!UICONTROL System > Store Fulfillment App Permissions > All Store Fulfillment App Users]**.
 
-
 | **Field**                                | **Description**                                                                                                                                                                                                                                                         | **Scope** | **Required** |
 |------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------|
 | **[!UICONTROL is Active]**               | Enable or disable user.                                                                                                                                                                                                                                                 | Global    | Yes          |
@@ -49,8 +48,3 @@ Manage Store Assist app user profiles from the Admin System settings:  **[!UICON
 | **Interface Locale**                     | If your store has multiple languages, set Interface Locale to the language to be used for the Admin interface.                                                                                                                                                          | Global    | No           |
 | **Active From**                          | To set a starting date, select the calendar icon.                                                                                                                                                                                                                       | Global    | No           |
 | **Active To**                            | Set the Expiration Date by selecting the calendar icon. Setting an expiration date is useful to set up temporary user or role assignments. After the expiration date, the user account status changes to `Inactive`, but the account can still be updated if necessary. | Global    | No           |
-
-
-
-
-

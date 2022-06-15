@@ -1,10 +1,11 @@
 ---
-title: Multiple Website and Scope Configurations
+title: Multiple website and scope configuration
 description: Configure stocks and delivery methods for multiple websites and store scopes.
 role: User, Admin
 level: Intermediate
 ---
-# Multiple Website and Scope Configurations
+
+# Multiple website and scope configuration
 
 You can set the [Scope](https://docs.magento.com/user-guide/configuration/scope.html) for a few elements to accommodate multiple websites, stores, and store views:
 
@@ -24,9 +25,9 @@ Enable or disable the [!UICONTROL In-Store Pickup] options for each website or s
 
 1. Select the scope (Website ot Store) to configure.
 
-1.  With scope selected, navigate to **[!UICONTROL Sales > Delivery Methods]**.
+1. With scope selected, navigate to **[!UICONTROL Sales > Delivery Methods]**.
 
-1.  Disable or enable the **[!UICONTROL In-Store Pickup]** Delivery method.
+1. Disable or enable the **[!UICONTROL In-Store Pickup]** Delivery method.
 
 You can also manage whether curbside or in-store pickup is available globally in this section. 
 

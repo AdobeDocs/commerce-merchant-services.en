@@ -1,9 +1,10 @@
 ---
 title: General configuration
-description: Configure general settings to enable [!DNL Store Fulfillment] for your store. Configure global extension settings, system settings for logging, data synchronization, and security. Provide key data to enable the integration between Adobe Commerce and Store Fulfillment services.
+description: "Configure general settings to enable [!DNL Store Fulfillment] for your store. Configure global extension settings, system settings for logging, data synchronization, and security. Provide key data to enable the integration between Adobe Commerce and Store Fulfillment services."
 role: User, Admin
 level: Intermediate
 ---
+
 # General Configuration
 
 In the Adobe commerce Admin, configure general configuration settings to enable [!DNL Store Fulfillment] services for your store, configure global extension settings, and provide key data for the integration by configuring the [!UICONTROL Account Credentials].
@@ -12,27 +13,23 @@ The integration must be connected to the Store Fulfillment service. Also, config
 
 The general configuration for [!DNL Store Fulfillment] includes the following configuration settings:
 
-- [Enable the extension](#enable-the-extension)
+- [Enable the solution](#enable-the-store-fulfillment-solution)
 - [Manage Account credentials to connect to Store Fulfillment services](#account-credentials)
 - [Configure Logging](#configure-logging)
-- [Set options for managing [order synchronization]operations](#order-synchronization)
+- [Set options for managing order and error synchronization operations](#order-synchronization)
 - [Enable Store Fulfillment shipping options](#enable-store-fullment-shipping-options)
 - [Configure security and authentication settings for the Store Fulfillment App](#store-fulfillment-app)
 - [Set Delivery method availability and messaging configuration](#in-store-delivery-methods)
 
-
-## Enable the extension
+## Enable the Store Fulfillment solution
 
 | **Field**                | **Description**                                                                                                                                                                                                                                                                                                                                                                                  | **Scope** | **Required** |
 |--------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------|
 | **[!UICONTROL Enabled]** | Enable or disable the solution. When enabled, configure and use Store Fulfillment capabilities and establish the connection between your Adobe Commerce store and Store Fulfillment services. When disabled, all Store Fulfillment features are disabled and there is no communication between Adobe Commerce and Store Fulfillment services. Order information cannot be processed or received. | Global    | Yes          |
 
-
 To complete this setup, see **Stores → Configuration → Services → Store Fulfillment by Walmart Commerce Technologies**.
 
 ## Add Account Credentials
-
-
 
 | **Field**                              | **Description**                                                                                                                                                                                                                                                                                                                                                               | **Scope** | **Required** |
 |----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------|
@@ -86,7 +83,6 @@ Configure the Store Fulfillment shipping options that determine the availability
 
 ### Ship To Store
 
-
 | **Field**                             | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | **Scope** | **Required** |
 |---------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------|
 | **[!UICONTROL Enable Ship To Store]** | The ship-to-store setting leverages your existing ship-to-store capabilities. If you use Inventory Management, or if you can accept and fulfill orders at merchant locations with no inventory via store-to-store inventory transfers, set this option to `Yes`.</br></br>If you cannot support the ship-to-store option or do not wish to offer it, set to `No`. When disabled, items in your catalog with zero inventory for a merchant store, or items that are below that location's [!DNL Out of Stock Threshold], are not offered with in-store pickup options.</br></br>This is a global setting that can be adjusted per merchant location. | Global    | No           |
@@ -111,7 +107,6 @@ Configure the settings for the Store Fulfillment App user account and password s
 | **[!UICONTROL Lockout Time (minutes)]**                    | Number of minutes to lock an account after login failure.                                                                                                                                            | Global    | No           |
 | **[!UICONTROL Force Password Change]**                     | Determines if a user password change is required.</br></br>`Yes`: Require the user to change their password after account setup.</br>`No`: Recommends that user change password after account setup. | Global    | No           |
 | **Password Lifetime**                                      | The number of days that a password remains valid before a required password change. Leave empty to disable this option.                                                                              | Global    | No           |
-
 
 ### Two-factor authentication
 
@@ -145,7 +140,6 @@ In-store pickup, says its global setting, but scope is Website.  How do you conf
 | **Enable Curbside Pickup**              | Enable or disable the curbside pick up option during the checkout process for customers that choose store pickup.</br></br>This global setting applies to all retail store locations. When enabled, you can selectively disable it at the retail store location.                                                              | Website   | No           |
 
 For details about customizing the delivery methods at selected retail store locations, see **Retail Store Configuration**.
-
 
 #### Delivery Method Title Configuration
 
@@ -257,8 +251,3 @@ For details about customizing the delivery methods at selected retail store loca
 <td>No</td>
 </tr>
 </tbody></table>
-
-
-
-
-

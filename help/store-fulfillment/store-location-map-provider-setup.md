@@ -1,6 +1,6 @@
 ---
-title: Store Location and Mapping system configuration
-description: Configure a distance provider to support store location mapping in the storefront UI.
+title: Store location and mapping system configuration
+description: Configure a distance provider to support store location mapping in the storefront UI. The Store Fulfillment solutions requires a distance provider to enable retail store search and other mapping and scheduling capabilities for the end-to-end fulfillment workflow.
 role: User, Admin
 level: Intermediate
 ---
@@ -34,4 +34,3 @@ To configure the distance provider:
    - Add your **Google API key**.
    
    - Set **[!UICONTROL Computation Mode]** to `Driving` and **[!UICONTROL Value]** to `Distance`
-

@@ -1,19 +1,20 @@
 ---
 title: Installation
-description: Add description
+description: "Install the [!DNL Store Fulfillment solution] for an Adobe Commerce storefront using Composer for PHP."
 role: User, Admin
 level: Intermediate
 exl-id: 6613268a-7d22-4c54-af89-834921b7f262
 ---
+
 # Installation
 
-Complete initial installation of the [!DNL Store Fulfillment] extension in a non-production environment with queue manager running and caching configured to allow exception handling. Your environment should include any other development tools to ensure best practices for operating and maintaining your Adobe Commerce instance. 
+Complete the initial installation of the [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] extension in a non-production environment with queue manager running and caching configured to allow exception handling. Ensure that your development environment includes development tools to ensure best practices for operating and maintaining your Adobe Commerce instance. 
 
 ## Prerequisites
 
 Review the [requirements](solution-requirements.md) for the Store Fulfillment solution and gather required information before you install the [!DNL Store Fulfillment] extension for Adobe Commerce.
 
-If you have installed a pre-release or beta version of the Store Fulfillment for Adobe Commerce extension, remove it before installing the current version. 
+If you have installed a pre-release or beta version of the Store Fulfillment for Adobe Commerce extension, use the following command to remove it before installing the current version.
 
 ```terminal
 rm -rf composer.lock vendor/walmart &&
@@ -32,9 +33,9 @@ composer require walmart/magento-bopis-metapackage:1.0.0
 
 - **Experience installing third-party extensions on Adobe Commerce**–For reference, see the Adobe Commerce documentation.  
   
-  - [Install an extension for an Adobe Commerce on cloud infrastructure instance](https://devdocs.magento.com/cloud/howtos/install-components.html#install-an-extension)
+  - [Install an extension for an Adobe Commerce on cloud infrastructure instance](https://devdocs.magento.com/cloud/howtos/install-components.html#install-an-extension).
   
-  - [Install an extension for an Adobe Commerce on-premises instance](https://devdocs.magento.com/extensions/install/)
+  - [Install an extension for an Adobe Commerce on-premises instance](https://devdocs.magento.com/extensions/install/).
 
 ### Step 1: Download the extension bundle
 
@@ -72,8 +73,8 @@ Use Composer to configure the source directory for the installation and install 
    ```bash
    composer config repositories.artifacts artifact artifacts/
    ```
-
-1. Add the Store Fulfillment Services extension to `composer.json`
+   
+1. Add the Store Fulfillment Services extension to `composer.json`.
 
    ```bash
    composer require walmart/magento-bopis-metapackage:1.0.0
@@ -122,7 +123,7 @@ From the Adobe Commerce server, verify that the modules for the Store Fulfillmen
 
 1. Log in to the server.
 
-   For installations on Adobe Commerce on cloud infrastructure, use SSH to log in to the remote environment.
+   For installations on Adobe Commerce on cloud infrastructure, [use SSH to log in to the remote environment](https://devdocs.magento.com/cloud/env/environments-ssh.html#ssh).
 
 1. Verify that the Store Fulfillment Services modules are enabled.
 
@@ -176,7 +177,7 @@ From the Adobe Commerce server, verify that the modules for the Store Fulfillmen
 
 ### Additional Steps
 
-If needed, use the [setup:static-content: deploy](https://devdocs.magento.com/guides/v2.4/reference/cli/magento-commerce.html#setupstatic-contentdeploy) CLI command to deploy static view files to your production environment.
+If needed, use the `[setup:static-content: deploy](https://devdocs.magento.com/guides/v2.4/reference/cli/magento-commerce.html#setupstatic-contentdeploy)` CLI command to deploy static view files to your production environment.
 
 ```terminal
 php bin/magento setup:static-content:deploy -f
@@ -187,4 +188,3 @@ The `-f` option is required if you are using a blank theme.
 >[!NOTE]
 >
 >For more information, see [Static content deploy best practices in Adobe Commerce](https://support.magento.com/hc/en-us/articles/360031624091) in the Adobe Commerce Help Center. 
-

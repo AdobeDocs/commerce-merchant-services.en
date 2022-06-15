@@ -1,6 +1,6 @@
 ---
 title: Test and Deploy Store Fulfillment
-description: Test plan to verify the Store Fulfillment functionality. Tests cover the Inventory Sync API, the end-to-end fulfillment workflow for canceled orders, Store Fulfillment app user management,  and the Customer Check-In experience.
+description: Test plan to verify the Store Fulfillment functionality. Tests cover the Inventory Sync API, the end-to-end fulfillment workflow for canceled orders, Store Fulfillment app user management, and the Customer Check-In experience.
 role: User, Admin
 level: Intermediate
 ---
@@ -49,9 +49,6 @@ This sample test plan covers the following functional areas:
 | Adobe Commerce Frontend             | Product Types                            | Customer, Admin                  |
 | Frontend Checkout</br>Check-In Form | Check-In Experience                      | Customer, Admin                  |
 | Store Assist App                    | Order</br>Pick</br>Stage</br>and Handoff | Store Associate                  |
-
-
-
 
 ### Inventory API Synchronization
 
@@ -634,8 +631,6 @@ This section of the test plan covers scenarios for testing order, pick, and hand
 </tbody>
 </table>
 
-
-
 ## Deploy
 
 After you have verified that the solution has been configured and tested to your specifications, you are ready to deploy from staging to production.
@@ -645,7 +640,6 @@ Deployment and testing vary depending on your infrastructure and capabilities.
 >[!TIP]
 >
 >For deployment guidelines, checklists, and best practices for Adobe Commerce on cloud infrastructure projects, see [Deploy your store](https://devdocs.magento.com/cloud/live/stage-prod-live.html) in the Adobe Commerce Developer documentation.
-
 
 
 
