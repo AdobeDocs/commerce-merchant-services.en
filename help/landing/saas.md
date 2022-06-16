@@ -67,35 +67,33 @@ For [!DNL Product Recommendations], the SaaS data space contains catalog and beh
 
 >[!NOTE]
 >
-> If you do not see the **[!UICONTROL Commerce Services Connector]** section in the [!DNL Commerce] configuration, you must install the [!DNL Commerce] modules for your desired [!DNL Commerce] service, such as [[!DNL Product Recommendations]](/help/product-recommendations/install-configure.md).
+> If you do not see the **[!UICONTROL Commerce Services Connector]** section in the [!DNL Commerce] configuration, you must install the [!DNL Commerce] modules for your desired [!DNL Commerce] service, such as [[!DNL Product Recommendations]](/help/product-recommendations/install-configure.md) or [[!DNL Live Search]](/help/live-search/install.md).
 
 To select or create a SaaS project, request the [!DNL Commerce] API key from the [!DNL Commerce] license holder for your store.
 
-1. On the _Admin_ sidebar, go to **Stores** > _Settings_ > **Configuration**.
-
-1. In the left panel, expand **Services** and choose **Commerce Services Connector**.
+1. On the _Admin_ sidebar, go to **System** > Services > **Commerce Services Connector**.
 
 1. In the _Sandbox API Keys_ and _Production API Keys_ sections, paste your key values.
 
    Private keys must include `----BEGIN PRIVATE KEY---` at the beginning of the key and `----END PRIVATE KEY----` at the end of the private key.
 
-1. Click **Save Config**.
+1. Click **Save**.
 
-  Any SaaS projects that are associated with your keys appear in the **SaaS Project** field.
+  Any SaaS projects that are associated with your keys appear in the **Project** field in the **SaaS Identifier** section.
 
-1. If no SaaS projects exist, click **Create Project**. Then in the **Project Name** field, enter a name for your SaaS project.
+1. If no SaaS projects exist, click **Create Project**. Then in the **Project** field, enter a name for your SaaS project.
 
    When you create a SaaS project, [!DNL Commerce] generates one or more SaaS data spaces depending on your [!DNL Commerce] license:
    - Adobe Commerce - One production data space; two testing data spaces
    - Magento Open Source - One production data space; no testing data spaces
 
-1. Select the **SaaS Data Space** to use for the current configuration of your [!DNL Commerce] store.
+1. Select the **Data Space** to use for the current configuration of your [!DNL Commerce] store.
 
 >[!WARNING]
 >
 > If you generate new keys in the API Portal section of My Account, immediately update the API keys in the Admin configuration. If you generate new keys and do not update them in the Admin, your SaaS extensions no longer work and you lose valuable data.
 
-To change the SaaS project or data space names, click the **Rename this Project** or **Rename Data Space** respectively.
+To change the SaaS project or data space names, click **Rename**.
 
 ## Catalog sync
 
