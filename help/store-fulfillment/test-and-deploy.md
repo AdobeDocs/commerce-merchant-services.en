@@ -130,7 +130,6 @@ This section of the test plan includes scenarios to test the end-to-end workflow
 </td>
 <td>
 <ul>
-<td>
 <li>Order history updated with <code>We refunded $X online. Transaction ID: transactionID</code> and <code>Received Cancel acknowledgment from the BOPIS solution.</code></li>
 <li>Order status is <code>Closed</code>. (We have set PAYMENT REVIEW now.)</li>
 <li>Credit memo created in Adobe Commerce. (Wait until cron works.)</li>
@@ -444,7 +443,7 @@ This section of the test plan covers the Check-In Experience for Store Pickup or
 
 - Alternate pickup contact—Verify the workflow for adding an [!UICONTROL Alternate Pickup Contact] and selecting a [!UICONTROL Preferred Contact] on Store Pickup orders.
 
-- Check-in form–Verify the workflow for submitting a check-in request for Store pickup orders.
+- Check-in form—Verify the workflow for submitting a check-in request for Store pickup orders.
 
 **Functional areas:** Cart Checkout, Check-In Form for store pickup orders</br>
 **Role:** Admin, Customer, Store Associate</br>
@@ -561,7 +560,7 @@ This section of the test plan covers scenarios for testing order, pick, and hand
 </tr>
 <tr>
 <td>
-<strong>Single order picking–happy path, curbside pickup</strong></td>
+<strong>Single order picking—happy path, curbside pickup</strong></td>
 <td>Pick single and multi-quantity items. No nilpicks, and curbside pick-up (with staging).
 </td>
 <td>
