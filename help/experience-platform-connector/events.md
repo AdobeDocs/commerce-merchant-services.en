@@ -9,7 +9,7 @@ The following lists the [!DNL Commerce] events available when you install the Ex
 Click the event name to see the full schema definition.
 
 |Event|Type|
-|---|---|---|
+|---|---|
 |[Add to Cart](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/product/addToCartAEP.ts)|Storefront|
 |[View Shopping Cart](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/shoppingCart/viewAEP.ts)|Storefront|
 |[View Page](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/page/viewAEP.ts)|Storefront|
