@@ -17,10 +17,10 @@ To use the Experience Platform connector, you must first:
 When access is granted:
 
 1. [Sign in](https://helpx.adobe.com/manage-account/using/access-adobe-id-account.html) to your Adobe account.
-1. Take a look at your [organization](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=en#concept_EA8AEE5B02CF46ACBDAD6A8508646255). The organization ID is the ID associated with your provisioned Experience Cloud company. This ID is a 24-character alphanumeric string, followed by (and must include) @AdobeOrg.
+1. Look at your [organization](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=en#concept_EA8AEE5B02CF46ACBDAD6A8508646255). The organization ID is the ID associated with your provisioned Experience Cloud company. This ID is a 24-character alphanumeric string, followed by (and must include) @AdobeOrg.
 1. Access the datastream workspace and [create a datastream](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=en).
 
-The organization ID and datastream will be used when you connect your Adobe Commerce instance to the Adobe Experience Platform.
+The organization ID and datastream is used when you connect your Adobe Commerce instance to the Adobe Experience Platform.
 
 ## Next steps
 
@@ -41,6 +41,6 @@ Currently, the Experience Platform connector has the following known issues:
 
 ## Support
 
-If you need information or have questions that are not covered in this guide, post to the following slack channel:
+If you need information or have questions that are not covered in this guide, post to the following Slack channel:
 
 - `#beacon-ama`
