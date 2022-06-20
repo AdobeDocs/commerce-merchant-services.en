@@ -8,8 +8,7 @@ exl-id: 688732e3-06f0-4613-a589-2d465597eb28
 
 # Sales Emails
 
-Store Fulfillment offers an extended set of transactional email templates to support order and fulfillment workflows. They offer consistent, automated communication and messaging across channels—
-notifying customer and store administrators about order status changes, instructions for in-store pickup orders, and more. 
+Store Fulfillment offers an extended set of transactional email templates to support order and fulfillment workflows. They offer consistent, automated communication and messaging across channels—notifying customer and store administrators about order status changes, instructions for in-store pickup orders, and more. 
 
 Store Fulfillment email templates are configured with default messaging and settings. Merchant administrators in Adobe Commerce can manage and modify configurations, and select the email templates to communicate with customers in different scenarios. Administrators can configure and customize templates as well.
 
