@@ -23,15 +23,15 @@ composer require walmart/magento-bopis-metapackage:1.0.0
 
 ## Installation requirements
 
-- **Access to the Store Fulfillment by Walmart Commerce Technologies software archive (.zip file)**–During the onboarding and enablement process, work with your Account Manager to get access to the installation file for the Store Fulfillment extension.
+- **Access to the Store Fulfillment by Walmart Commerce Technologies software archive (.zip file)**—During the onboarding and enablement process, work with your Account Manager to get access to the installation file for the Store Fulfillment extension.
 
-- **Adobe Commerce account information**-Installing [!DNL Channel Manager] requires a [Commerce account](https://docs.magento.com/user-guide/magento/magento-account.html){target="_blank"}. You need an account ID and credentials with Owner or Admin access to the [!DNL Adobe Commerce] project.
+- **Adobe Commerce account information**—Installing [!DNL Channel Manager] requires a [Commerce account](https://docs.magento.com/user-guide/magento/magento-account.html){target="_blank"}. You need an account ID and credentials with Owner or Admin access to the [!DNL Adobe Commerce] project.
 
 - For [!DNL Adobe Commerce] on cloud infrastructure projects, software installers must have administrator access to the Cloud project. See [Manage user access](https://devdocs.magento.com/cloud/project/user-admin.html).
 
 - **Experience using Composer and the [!DNL Commerce CLI]**—See [General CLI Installation](https://devdocs.magento.com/extensions/install/){target="_blank"} for information about using these tools to install and manage extensions on the [!DNL Adobe Commerce] platform.
 
-- **Experience installing third-party extensions on Adobe Commerce**–For reference, see the Adobe Commerce documentation.  
+- **Experience installing third-party extensions on Adobe Commerce**—For reference, see the Adobe Commerce documentation.  
   
   - [Install an extension for an Adobe Commerce on cloud infrastructure instance](https://devdocs.magento.com/cloud/howtos/install-components.html#install-an-extension).
   
@@ -88,7 +88,8 @@ Use Composer to configure the source directory for the installation and install 
 
 Complete the installation by using the `bin/magento setup:upgrade` to update the database schema and data with the changes to support the Store Fulfillment solution.
 
->Note:
+>[!NOTE]
+>
 >For Adobe Commerce on cloud infrastructure projects, you do not have to register the extension. Instead, commit the code changes from the previous step, and push them to your environment branch. The commands to update the database schema and data are run automatically during the cloud build and deployment process.
 
 ### Step 5: Complete the installation
@@ -177,7 +178,7 @@ From the Adobe Commerce server, verify that the modules for the Store Fulfillmen
 
 ### Additional Steps
 
-If needed, use the `[setup:static-content: deploy](https://devdocs.magento.com/guides/v2.4/reference/cli/magento-commerce.html#setupstatic-contentdeploy)` CLI command to deploy static view files to your production environment.
+If needed, use the [setup:static-content:deploy](https://devdocs.magento.com/guides/v2.4/reference/cli/magento-commerce.html#setupstatic-contentdeploy){target="_blank"} CLI command to deploy static view files to your production environment.
 
 ```terminal
 php bin/magento setup:static-content:deploy -f
