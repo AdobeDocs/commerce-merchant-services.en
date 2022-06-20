@@ -25,7 +25,7 @@ Before you install the extension, [review the prerequisites](overview.md#prereqs
    composer require magento/data-services
    ```
    
-   The Commerce Data Services extension provides attribute context for storefront events. For example, when a checkout event occurs, information about how many items were in the cart, and product attribute data for those items are included.
+   The Commerce Data Services extension provides attribute context for storefront events. For example, when a checkout event occurs, information about how many items were in the cart and product attribute data for those items are included.
 
 1. Install the Commerce Service Connector.
 

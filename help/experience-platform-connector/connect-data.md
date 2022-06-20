@@ -24,7 +24,7 @@ The Datastream ID enables event-forwarding from Adobe Experience Platform to oth
 
 | Field | Description |
 |--- |--- |
-| Scope | Specific storeview where you want the configuration settings to apply |
+| Scope | Specific storeview where you want the configuration settings to apply. |
 | IMS Org (Global)| ID that belongs to the organization that purchased the Adobe DX product. This ID links your Adobe Commerce instance to Adobe Experience Platform. |
 | Datastream ID (Storeview) | ID that allows data to flow from Adobe Experience Platform to other Adobe DX products. This ID can be associated to a specific storeView within your specific Adobe Commerce instance. |
 
