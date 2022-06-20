@@ -5,7 +5,7 @@ exl-id: c3b16307-479b-4736-968b-b6ab38233a48
 ---
 # Recommendation Types
 
-Adobe Commerce provides a large set of recommendations that you can deploy to various pages on your site. All of the recommendation types are data-driven. They are powered by behavioral data, product attribute data, and metrics. For easy reference, recommendation types are grouped as follows:
+Adobe Commerce provides a large set of recommendations that you can deploy to various pages on your site. All recommendation types are data-driven. They are powered by behavioral data, product attribute data, and metrics. For easy reference, recommendation types are grouped as follows:
 
 - [Personalized](#personalized)
 - [Cross-sells and up-sells](#crossup)
@@ -20,7 +20,7 @@ As a best practice, Adobe recommends the following guidelines when using recomme
 
 - Keep your site tidy. Do not deploy more than three recommendation units on the same page.
 
-- If your store sells clothing, the `More like this` recommendation can suggest gender-specific products that do not match the gender of the product being viewed. Consider only using this recommendation type for non-clothing categories.
+- If your store sells clothing, the `More like this` recommendation can suggest gender-specific products that do not match the gender of the product being viewed. Consider using this recommendation type only for non-clothing categories.
 
 ## Personalized {#personalized}
 

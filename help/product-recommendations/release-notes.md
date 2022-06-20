@@ -24,7 +24,7 @@ See the developer documentation to [learn about product compatibility](https://d
 ## 4.0.0 of magento/product-recommendations
 
 * ![New](../assets/new.svg) - Added [readiness indicators](create.md) to help you visualize the training progress of each recommendation type.
-* ![New](../assets/new.svg) - This is a major version release. You must [edit](install-configure.md#update) your project's root composer.json file. You will also need new production and sandbox [API keys](../landing/saas.md) to continue using this feature.
+* ![New](../assets/new.svg) - This is a major version release. You must [edit](install-configure.md#update) the root `composer.json` file for your project. This release also requires you to provide two API keys when installing and configuring Product Recommendations: [a production key and a sandbox key](../landing/saas.md).
 
 ## 3.3.7 of magento/product-recommendations
 
