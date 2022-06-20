@@ -25,9 +25,13 @@ A one-way synonym is a subset of a keyword, but with a more specific meaning. Fo
 
 Keep in mind the following best practices to get the most from Live Search synonyms.
 
-### Keyword mapping
+### Avoid "stop words"
 
-This technique uses searchable product attributes, rather than synonyms, to create keyword-based associations between products. As a result, a mapped product can appear in the search results of another product. To learn more, see [Search Results](https://docs.magento.com/user-guide/catalog/search-results.html).
+Live Search filters out common English "stop words" from synonyms, such as:
+
+a, an, and, are, as, at, be, but, by, for, if, in, into, is, it, no, not, of, on, or, such, that, the, their, then, there, these, they, this, to, was, will, with
+
+Stop words do not make synonyms more meaningful, but increase the amount of data that must be processed.
 
 ### Use single words
 
@@ -40,3 +44,7 @@ It is not necessary to define both the singular and plural forms of a word as a 
 ### Consistency
 
 Be consistent with the way terminology is used in your catalog. Keep in mind that there might be regional differences in usage, and sometimes differences within an industry.
+
+### Keyword mapping
+
+This technique uses searchable product attributes, rather than synonyms, to create keyword-based associations between products. As a result, a mapped product can appear in the search results of another product. To learn more, see [Search Results](https://docs.magento.com/user-guide/catalog/search-results.html).
