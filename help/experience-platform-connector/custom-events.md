@@ -36,7 +36,7 @@ In Experience Platform Edge:
 
 >[!NOTE]
 >
-> Using custom events may affect OOTB Adobe Analytics reports.
+> Using custom events may affect default Adobe Analytics reports.
 
 ## Handle Event Overrides (custom attributes)
 
@@ -98,4 +98,4 @@ In Experience Platform Edge:
 
 >[!NOTE]
 >
-> Overriding events with custom attributes may affect OOTB Adobe Analytics reports.
+> Overriding events with custom attributes may affect default Adobe Analytics reports.
