@@ -15,7 +15,7 @@ Click the event name to see the full schema definition.
 |[View Page](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/page/viewAEP.ts)|Storefront|
 |[View Product](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/product/viewAEP.ts)|Storefront|
 |[Start Checkout](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/shoppingCart/initiateCheckoutAEP.ts)|Storefront|
-|Complete Checkout|Storefront|
+|[Complete Checkout](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/checkout/placeOrderAEP.ts)|Storefront|
 |[Sign In](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/signInAEP.ts)|Profile|
 |[Sign Out](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/signOutAEP.ts)|Profile|
 |[Create Account](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/createAccountAEP.ts)|Profile|
