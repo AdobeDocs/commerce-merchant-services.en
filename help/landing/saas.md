@@ -7,7 +7,7 @@ exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 
 Some Adobe Commerce and Magento Open Source features are powered by [!DNL Commerce Services]  and deployed as SaaS (software as a service). To use these services, you must connect your [!DNL Commerce] instance using production and sandbox API keys, and specify the data space in the [configuration](https://docs.magento.com/user-guide/configuration/services/saas.html). You only need to set this up once.
 
-## Available services
+## Available services {#availableservices}
 
 The following lists the [!DNL Commerce] features you can access through the [!DNL Commerce Services Connector]:
 
@@ -67,7 +67,7 @@ For [!DNL Product Recommendations], the SaaS data space contains catalog and beh
 
 >[!NOTE]
 >
-> If you do not see the **[!UICONTROL Commerce Services Connector]** section in the [!DNL Commerce] configuration, you must install the [!DNL Commerce] modules for your desired [!DNL Commerce] service, such as [[!DNL Product Recommendations]](/help/product-recommendations/install-configure.md) or [[!DNL Live Search]](/help/live-search/install.md).
+> If you do not see the **[!UICONTROL Commerce Services Connector]** section in the [!DNL Commerce] configuration, you must install the [!DNL Commerce] modules for your desired [[!DNL Commerce] service](#availableservices).
 
 To select or create a SaaS project, request the [!DNL Commerce] API key from the [!DNL Commerce] license holder for your store.
 
