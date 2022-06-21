@@ -84,7 +84,7 @@ composer update magento/product-recommendations --with-dependencies
 
 >[!NOTE]
 >
-> In versions 3.x.x of Product Recommendations, you only needed a single API key. In versions 4.x.x and higher, you must provide Production and Sandbox API keys. If you do not provide both API keys, you will not be able to access the Product Recommendations feature in the Admin. Data collection, however, will continue on your storefront and existing recommendations will continue to be shown to your shoppers.
+> In versions 3.x.x of Product Recommendations, you only needed a single API key. In versions 4.x.x and higher, you must provide Production public and private API keys as well as Sandbox public and private API keys. If you do not provide both pairs of API keys, you will not be able to access the Product Recommendations feature in the Admin. Data collection, however, will continue on your storefront and existing recommendations will continue to be shown to your shoppers.
 
 ## Uninstall [!DNL Product Recommendations] {#uninstall}
 
