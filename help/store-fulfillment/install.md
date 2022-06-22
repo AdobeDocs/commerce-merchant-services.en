@@ -25,7 +25,7 @@ composer require walmart/magento-bopis-metapackage:1.0.0
 
 - **Access to the Store Fulfillment by Walmart Commerce Technologies software archive (.zip file)**–During the onboarding and enablement process, work with your Account Manager to get access to the installation file for the Store Fulfillment extension.
 
-- **Adobe Commerce account information**-Installing [!DNL Channel Manager] requires a [Commerce account](https://docs.magento.com/user-guide/magento/magento-account.html){target="_blank"}. You need an account ID and credentials with Owner or Admin access to the [!DNL Adobe Commerce] project.
+- **Adobe Commerce account information**-Installing the [!DNL Store Fulfillment] solution requires a [Commerce account](https://docs.magento.com/user-guide/magento/magento-account.html){target="_blank"}. You need an account ID and credentials with Owner or Admin access to the [!DNL Adobe Commerce] project.
 
 - For [!DNL Adobe Commerce] on cloud infrastructure projects, software installers must have administrator access to the Cloud project. See [Manage user access](https://devdocs.magento.com/cloud/project/user-admin.html).
 
