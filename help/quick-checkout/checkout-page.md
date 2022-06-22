@@ -22,4 +22,4 @@ Out-of-the-box, the checkout consists of two steps:
 >
 > After the first step is completed, checkout displays the checkout totals and the corresponding side-bar information.
 
-Refer to the [checkout flow](../quick-checkout/onboarding.md) topic for more information on the [!DNL Quick Checkout] flow.
+Refer to the [checkout flow](../quick-checkout/checkout-flow.md) topic for more information on the [!DNL Quick Checkout] flow.

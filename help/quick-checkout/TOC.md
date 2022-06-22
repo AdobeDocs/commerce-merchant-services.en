@@ -8,9 +8,10 @@ hide: yes
 # [!DNL Quick Checkout] for Adobe Commerce {#quick-checkout}
 
 - [Introduction to [!DNL Quick Checkout]](overview.md)
+- [Release Notes](release-notes.md)
 - Onboard [!DNL Quick Checkout] {#getting-started}
-  - [Install](install.md)
   - [Prerequisites](prerequisites.md)
+  - [Install](install.md)
   - [Onboarding](onboarding.md)
 - Test and Validate {#test-validate}
   - [Testing](testing.md)
