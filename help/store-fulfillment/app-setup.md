@@ -42,13 +42,13 @@ The Store Assist app requires two types of configuration:
 
   - Customize all in app instructions (picking, staging, hand off).
 
-  - **Picking notifications**–Specify whether to send a push notification to start the picking process after a customer places an order.
+  - **Picking notifications**—Specify whether to send a push notification to start the picking process after a customer places an order.
 
-  - **Check in notifications**–Specify whether to send a push notification during the check-in process for order pickups- after check-in, after customer wait time exceeds a specified time period. Or, disable notification.
+  - **Check in notifications**—Specify whether to send a push notification during the check-in process for order pickups- after check-in, after customer wait time exceeds a specified time period. Or, disable notification.
 
   - **Hand off process**—Enable optional processes when Store Associate delivers order to customer, for example require a customer signature or prompt the associate to check customer ID.
 
-  - **Enable item rejection upon handoff**–Allow customers to return or cancel order items during order handoff.
+  - **Enable item rejection upon handoff**—Allow customers to return or cancel order items during order handoff.
 
   Work with the Walmart Commerce Technologies Client Services team to complete frontend configuration for the Store Assist App.
 
@@ -62,8 +62,8 @@ After the Store Assist app configuration has been completed, Store Associates ca
 
 - Store Associates require the following information to log in:
 
-  - The company name associated with your Store Assist account
+  - **[!UICONTROL Company name]** associated with the Store Assist account
 
-  - Store Assist account credentials—username and password credentials for their account. 
+  - **Store Assist account credentials**—username and password credentials for their account. 
 
   An Adobe Commerce Administrator can create user account and set permissions for theStore Assist App user accounts for store locations that have [In-Store Pickup](merchant-store-configuration.md#pickup-location-configuration) enabled in the Admin Stores settings.

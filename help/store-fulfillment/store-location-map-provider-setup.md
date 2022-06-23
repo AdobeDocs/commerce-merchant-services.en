@@ -15,13 +15,13 @@ During the configuration process, you provide a Google API key for the Google Ma
 
 To configure the distance provider:
 
-1. From the [!UICONTROL Stores > General] configuration in the Admin, add the Google Maps integration for the Map content type.
+1. From the **[!UICONTROL Stores > General]** configuration in the Admin, add the Google Maps integration for the Map content type.
 
    - Go to **[!UICONTROL Stores > Configuration  > General > Content Management]**.
    
    - Add your Google API Key to **[!UICONTROL Google Maps API Key]** field.
 
-1. From the [!UICONTROL Stores > Inventory] configuration in the Admin, select the distance provider for Store Fulfillment.
+1. From the **[!UICONTROL Stores > Inventory]** configuration in the Admin, select the distance provider for Store Fulfillment.
 
    - Go to **[!UICONTROL Stores > Configuration > Catalog > Inventory]**.
    
