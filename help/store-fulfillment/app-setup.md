@@ -56,7 +56,9 @@ The Store Assist app requires two types of configuration:
 
 After the Store Assist app configuration has been completed, Store Associates can download, install, and log in to the Store Assist app from their mobile devices.
 
-- Download the Store Assist app from the [Apple App Store](https://apps.apple.com/us/app/store-assist-by-walmart/id16092815390) or the Google Play store.
+- Verify that the mobile device meets the [hardware and software requirements](solution-requirements.md#store-assist-app-requirements) for the Store Fulfillment solution.
+
+- Download the Store Assist app from the [Apple App Store](https://apps.apple.com/us/app/store-assist-by-walmart/id16092815390){target="_blank"} or the [Google Play store](https://play.google.com/store/apps/details?id=com.walmart.faas.storeassist){target="_blank"}.
 
 - Store Associates require the following information to log in:
 
