@@ -59,6 +59,9 @@ See [Payments options](payments-options.md#paypal-smart-buttons) for more inform
 1. To change the name of the payment method displayed during checkout, edit the value in the **[!UICONTROL Checkout title]** field.
 1. To [set the payment action](production.md#set-payment-services-as-payment-method), toggle **[!UICONTROL Payment action]** to `Authorize` or `Authorize and Capture`.
 1. To enable debug mode, toggle the **[!UICONTROL Debug Mode]** selector.
+
+   When you enable debug mode, extra debugging information about the payment is written to the `var/log/payment.log` file. This information can give you more insight into that specific payment to assist with troubleshooting.
+
 1. Click **[!UICONTROL Save]**.
 
    If you try to navigate away from this view without saving your changes, a modal appears that prompts you to discard changes, keep editing, or save changes.
@@ -81,7 +84,10 @@ You can enable and configure the PayPal smart buttons payment options:
    - **[!UICONTROL Show Venmo button]**
 
 1. To change the [Pay Later messaging](payments-options.md#pay-later-button), toggle the **[!UICONTROL Display Pay Later message]** option.
-1. To enable debug mode, toggle the **[!UICONTROL Debug Mode]** selector.  
+1. To enable debug mode, toggle the **[!UICONTROL Debug Mode]** selector.
+
+   When you enable debug mode, extra debugging information about the payment is written to the `var/log/payment.log` file. This information can give you more insight into that specific payment to assist with troubleshooting.
+
 1. Click **[!UICONTROL Save]**.
 
    If you try to navigate away from this view without saving your changes, a modal appears that prompts you to discard changes, keep editing, or save changes.
