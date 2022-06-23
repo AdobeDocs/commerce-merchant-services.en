@@ -69,3 +69,8 @@ Store Fulfillment enhances Adobe Commerce by adding the following capabilities t
 * **Transactional emails**–Extends the Admin capabilities for [!UICONTROL Sales Emails] to add email templates for buy online, pickup in-store transactions. The templates support real-time communication between customers and store associates during the order pickup process.
 
 * **Flexible Fulfillment**–Extends [!DNL Commerce] capabilities to support scenarios for processing backorders, quantity reductions, and partial order fulfillment while facilitating any cancellations and credit memos required to support these scenarios.
+
+>[!TIP]
+>
+> For a quick demo of the Store Fulfillment solution, see the [Store Fulfillment Overview](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/orders/store-fulfillment.html) available in _Adobe Commerce Videos and Tutorials_.
+
