@@ -1,6 +1,7 @@
 ---
 title: Project Beacon Release Notes
 description: The latest release information for Project Beacon from Adobe Commerce.
+exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 ---
 # Experience Platform connector Release Notes
 

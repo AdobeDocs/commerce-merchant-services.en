@@ -1,6 +1,7 @@
 ---
 title: Install and Configure Adobe Experience Platform Connector from Adobe Commerce
 description: Learn how to install, configure, update, and uninstall the Adobe Experience Platform Connector from Adobe Commerce.
+exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
 ---
 # Install and configure Experience Platform connector
 

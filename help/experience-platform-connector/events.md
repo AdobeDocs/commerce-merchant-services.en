@@ -1,6 +1,7 @@
 ---
 title: Events
 description: Learn which events capture data and see the full schema definition.
+exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
 ---
 # Project Beacon Events
 
