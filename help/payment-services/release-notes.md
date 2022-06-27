@@ -15,7 +15,15 @@ See [Upcoming Releases](https://devdocs.magento.com/release/) to learn about rel
 
 See [Availabilty](https://devdocs.magento.com/release/availability.html) in the developer documentation to learn about product compatibility.
 
-## v1.1.0
+## v1.2.0 _June 29, 2022_
+
+![New](../assets/new.svg)<!-- Issue PAY-2127 --> General availability release---[!DNL Payment Services] is now [compatible with [!DNL Adobe Commerce] and [!DNL Magento Open Source] versions 2.4.0 to 2.4.4](https://devdocs.magento.com/release/availability.html#compatibility).
+
+![Fixed issue](../assets/fix.svg)<!-- Issue PAY-2710 --> [!DNL Payment Services] is now compatible with [PHP 8.1](https://www.php.net/releases/8.1/en.php).
+
+![Known issue](../assets/bug.svg)<!-- Issue PAY-0 --> Payment Services is incompatible with the [v101.2.0 version or higher of the `SalesDataExporter` module](https://github.com/magento-commerce/commerce-data-export/releases/tag/v101.2.0), which renders it also incompatible with the Channels manager extension.
+
+## v1.1.0 _March 31, 2022_
 
 ![New](../assets/new.svg)<!-- Issue PAY-2127 --> General availability release---[!DNL Payment Services] is now [compatible with [!DNL Adobe Commerce] and [!DNL Magento Open Source] versions 2.4.0 to 2.4.4](https://devdocs.magento.com/release/availability.html#compatibility).
 
@@ -39,7 +47,7 @@ See [Availabilty](https://devdocs.magento.com/release/availability.html) in the 
 
 ![Known issue](../assets/bug.svg)<!-- Issue PAY-2842 --> Test credit card transactions [may fail with PayPal](https://support.magento.com/hc/en-us/articles/5201041963917) when processing payments in a sandbox environment.
 
-## v1.0.0
+## v1.0.0 _November 29, 2021_
 
 ![New](../assets/new.svg)<!-- Issue PAY-2127 --> General availability release---[[!DNL Payment Services]](https://marketplace.magento.com/magento-payment-services.html) is now compatible with [!DNL Adobe Commerce] and [!DNL Magento Open Source] versions 2.4.0 to 2.4.3-p1.
 
