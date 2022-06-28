@@ -27,17 +27,17 @@ _June 29, 2022_
 
 ![Fixed issue](../assets/fix.svg)<!-- Issue PAY-3330 --> Payments no longer fail during checkout when a guest user enters a phone number that includes dashes.
 
-![Fixed issue](../assets/fix.svg)<!-- Issue PAY-3338 PAY-2502 --> When Commerce Services credentials are invalid, the [!DNL Payment Services]Home will now appear in the Admin. A credentials error appears to alert you that your credentials are invalid.
+![Fixed issue](../assets/fix.svg)<!-- Issue PAY-3338 PAY-2502 --> When Commerce Services credentials are invalid, the [!DNL Payment Services] Home will now appear in the Admin. A credentials error appears to alert you that your credentials are invalid.
 
-![Known issue](../assets/bug.svg)<!-- Issue PAY-0 --> Payment Services is currently incompatible with the [`commerce-data-export` v101.20 and higher](https://github.com/magento-commerce/commerce-data-export/releases/tag/v101.2.0), which renders it incompatible with the [[!DNL Amazon sales channel] extension](https://experienceleague.adobe.com/docs/commerce-channels/amazon/guide-overview.html).
+![Known issue](../assets/bug.svg)<!-- Issue PAY-0 --> [!DNL Payment Services] is currently incompatible with the [`commerce-data-export` v101.20 and higher](https://github.com/magento-commerce/commerce-data-export/releases/tag/v101.2.0), which renders it incompatible with the [[!DNL Amazon sales channel] extension](https://experienceleague.adobe.com/docs/commerce-channels/amazon/guide-overview.html).
 
 ### Non-extension releases
 
 These release notes describe feature changes and fixes that occurred and were released outside of the regular versioned feature releases, between the current v1.2.0 release and the previous 1.1.0 release.
 
-![New](../assets/new.svg)<!-- Issue PAY-1720 --> Disputes for your store's orders are now available in [the Order payment status report](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#view-disputes). You can navigate directly to the PayPal Resolution Center from [!DNL Payment Services]to take action on disputes.
+![New](../assets/new.svg)<!-- Issue PAY-1720 --> Disputes for your store's orders are now available in [the Order payment status report](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#view-disputes). You can navigate directly to the PayPal Resolution Center from [!DNL Payment Services] to take action on disputes.
 
-![New](../assets/new.svg)<!-- Issue PAY-2854 --> We improved the user experience in the [!DNL Payment Services]Home to include the ability to modify a configuration at the current inheritance level and other improvements to the appearance of the header and navigation.
+![New](../assets/new.svg)<!-- Issue PAY-2854 --> We improved the user experience in the [!DNL Payment Services] Home to include the ability to modify a configuration at the current inheritance level and other improvements to the appearance of the header and navigation.
 
 ![New](../assets/new.svg)<!-- Issue PAY-2854 --> Now, you will see warnings when switching from sandbox mode to production mode and when attempting to navigate away from a view when there is unsaved data or changes.
 
@@ -87,7 +87,7 @@ _November 29, 2021_
 
 ![New](../assets/new.svg)<!-- Issue PAY-311 --> [!DNL Payment Services] supports flexible tiered pricing, based on total processing volume, adapted to any merchant.
 
-![New](../assets/new.svg)<!-- Issue PAY-1443 --> You can easily [customize the look and feel](payments-options.md) of PayPal smart buttons and credit card fields for the [!DNL Payment Services]extension.
+![New](../assets/new.svg)<!-- Issue PAY-1443 --> You can easily [customize the look and feel](payments-options.md) of PayPal smart buttons and credit card fields for the [!DNL Payment Services] extension.
 
 ![Known issue](../assets/bug.svg)<!-- Issue PAY-2473 --> Using [incorrect Composer keys](https://support.magento.com/hc/en-us/articles/4406603542541) during installation of the extension prevents the user from [authenticating](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) with the correct `MAGEID`.
 
