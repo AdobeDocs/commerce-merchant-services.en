@@ -56,7 +56,7 @@ See the [[!DNL Bolt] environment details](https://help.bolt.com/developers/refer
 
 ## Configure payment providers
 
-To connect your payment services provider follow the steps described in the [processor setup](https://help.bolt.com/integrations/adobe-express-checkout/set-up/){target="_blank"} developer [!DNL Bolt] page.
+To connect your payment services provider follow the steps described in the [processor setup](https://help.bolt.com/integrations/adobe-quick-checkout/set-up/){target="_blank"} developer [!DNL Bolt] page.
 
 ## Enable extension
 
