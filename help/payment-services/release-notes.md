@@ -29,6 +29,8 @@ _June 29, 2022_
 
 ![Fixed issue](../assets/fix.svg)<!-- Issue PAY-3338 PAY-2502 --> When Commerce Services credentials are invalid, the [!DNL Payment Services]Home will now appear in the Admin. A credentials error appears to alert you that your credentials are invalid.
 
+![Known issue](../assets/bug.svg)<!-- Issue PAY-0 --> Payment Services is currently incompatible with the [`commerce-data-export` v101.20 and higher](https://github.com/magento-commerce/commerce-data-export/releases/tag/v101.2.0), which renders it incompatible with the [[!DNL Amazon sales channel] extension](https://experienceleague.adobe.com/docs/commerce-channels/amazon/guide-overview.html).
+
 ### Non-extension releases
 
 These release notes describe feature changes and fixes that occurred and were released outside of the regular versioned feature releases, between the current v1.2.0 release and the previous 1.1.0 release.
