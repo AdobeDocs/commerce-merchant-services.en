@@ -16,6 +16,8 @@ The following lists the [!DNL Commerce] features you can access through the [!DN
 |[[!DNL Product Recommendations]](/help/product-recommendations/overview.md) powered by Adobe Sensei| Adobe Commerce|
 |[[!DNL Live Search]](/help/live-search/overview.md) powered by Adobe Sensei | Adobe Commerce|
 |[[!DNL Payment Services]](/help/payment-services/overview.md) | Adobe Commerce and Magento Open Source|
+|[[!DNL Channel Manager]](https://experienceleague.corp.adobe.com/docs/commerce-channels/channel-manager/intro-to-channel-manager/overview.html)|Adobe Commerce and Magento Open Source|
+|[[!DNL Site-Wide Analysis Tool]](https://experienceleague.corp.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html)|Adobe Commerce|
 
 ## Architecture
 
