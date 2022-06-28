@@ -11,17 +11,31 @@ These release notes describe the initial release of [!DNL Payment Services] and 
 ![Fixed issue](../assets/fix.svg) Fixes and improvements
 ![Known issue](../assets/bug.svg) Known issues
 
+For feature changes and fixes released outside of the regular versioned feature release, see the Non-extension releases section(s).
+
 See [Upcoming Releases](https://devdocs.magento.com/release/) to learn about release schedules and support.
 
 See [Availabilty](https://devdocs.magento.com/release/availability.html) in the developer documentation to learn about product compatibility.
 
 ## v1.2.0 _June 29, 2022_
 
-![New](../assets/new.svg)<!-- Issue PAY-2127 --> General availability release---[!DNL Payment Services] is now [compatible with [!DNL Adobe Commerce] and [!DNL Magento Open Source] versions 2.4.0 to 2.4.4](https://devdocs.magento.com/release/availability.html#compatibility).
+![Fixed issue](../assets/fix.svg)<!-- Issue PAY-3264 --> Previously, when a logged-in customer selected a different billing/shipping address other than the default saved one for their account, checkout failed. We fixed this issue, and now the selected billing/shipping address is sent (instead of the default saved address) and checkout is completed successfully.
 
-![Fixed issue](../assets/fix.svg)<!-- Issue PAY-2710 --> [!DNL Payment Services] is now compatible with [PHP 8.1](https://www.php.net/releases/8.1/en.php).
+![Fixed issue](../assets/fix.svg)<!-- Issue PAY-3314 --> Now, if you disable PayPal smart buttons for checkout no errors are shown.
 
-![Known issue](../assets/bug.svg)<!-- Issue PAY-0 --> Payment Services is incompatible with the [v101.2.0 version or higher of the `SalesDataExporter` module](https://github.com/magento-commerce/commerce-data-export/releases/tag/v101.2.0), which renders it also incompatible with the Channels manager extension.
+![Fixed issue](../assets/fix.svg)<!-- Issue PAY-3330 --> Previously, payments failed during checkout when a guest user entered a phone number that included dashes. That issue is fixed.
+
+![Fixed issue](../assets/fix.svg)<!-- Issue PAY-3338 PAY-2502 -->When Commerce Services credentials are invalid, the Payment Services Home will now appear in the Admin. A credentials error appears to alert you that your credentials are invalid.
+
+### Non-extension releases
+
+These release notes describe feature changes and fixes that occurred and were released outside of the regular versioned feature releases, between the current v1.2.0 release and the previous 1.1.0 release.
+
+![New](../assets/new.svg)<!-- Issue PAY-1720 --> Disputes for your store's orders are now available in [the Order payment status report](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#view-disputes). You can navigate directly to the PayPal Resolution Center to take action on disputes from Payment Services.
+
+![New](../assets/new.svg)<!-- Issue PAY-2854 --> We improved user experience in Payment Services Home in the Admin to include the ability to modify a configuration at the current inheritance level, a warning when switching from sandbox mode to production mode, a warning about unsaved data when navigating away from a view, and other improvements to the appearance of the header and navigation.
+
+![New](../assets/new.svg)<!-- Issue PAY-2761 --> We added the ability show/hide columns in both the [Order payment status report](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) and the [Payouts report](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns).
 
 ## v1.1.0 _March 31, 2022_
 
