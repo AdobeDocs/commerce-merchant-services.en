@@ -15,7 +15,7 @@ For feature changes and fixes released outside of the regular versioned feature 
 
 See [Upcoming Releases](https://devdocs.magento.com/release/) to learn about release schedules and support.
 
-See [Availabilty](https://devdocs.magento.com/release/availability.html) in the developer documentation to learn about product compatibility.
+See [Availability](https://devdocs.magento.com/release/availability.html) in the developer documentation to learn about product compatibility.
 
 ## v1.2.0 _June 29, 2022_
 
