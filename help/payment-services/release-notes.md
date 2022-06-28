@@ -19,21 +19,23 @@ See [Availabilty](https://devdocs.magento.com/release/availability.html) in the 
 
 ## v1.2.0 _June 29, 2022_
 
-![Fixed issue](../assets/fix.svg)<!-- Issue PAY-3264 --> Previously, when a logged-in customer selected a different billing/shipping address other than the default saved one for their account, checkout failed. We fixed this issue, and now the selected billing/shipping address is sent (instead of the default saved address) and checkout is completed successfully.
+![Fixed issue](../assets/fix.svg)<!-- Issue PAY-3264 --> Previously, when a logged-in user selected a different billing/shipping address other than the default address for their account, checkout failed. We fixed this issue, and now the selected billing/shipping address is sent (instead of the default saved address) and checkout is completed successfully.
 
-![Fixed issue](../assets/fix.svg)<!-- Issue PAY-3314 --> Now, if you disable PayPal smart buttons for checkout no errors are shown.
+![Fixed issue](../assets/fix.svg)<!-- Issue PAY-3314 --> If you disable PayPal smart buttons for checkout, no errors are shown.
 
-![Fixed issue](../assets/fix.svg)<!-- Issue PAY-3330 --> Previously, payments failed during checkout when a guest user entered a phone number that included dashes. That issue is fixed.
+![Fixed issue](../assets/fix.svg)<!-- Issue PAY-3330 --> Payments no longer fail during checkout when a guest user enters a phone number that includes dashes.
 
-![Fixed issue](../assets/fix.svg)<!-- Issue PAY-3338 PAY-2502 -->When Commerce Services credentials are invalid, the Payment Services Home will now appear in the Admin. A credentials error appears to alert you that your credentials are invalid.
+![Fixed issue](../assets/fix.svg)<!-- Issue PAY-3338 PAY-2502 --> When Commerce Services credentials are invalid, the [!DNL Payment Services]Home will now appear in the Admin. A credentials error appears to alert you that your credentials are invalid.
 
 ### Non-extension releases
 
 These release notes describe feature changes and fixes that occurred and were released outside of the regular versioned feature releases, between the current v1.2.0 release and the previous 1.1.0 release.
 
-![New](../assets/new.svg)<!-- Issue PAY-1720 --> Disputes for your store's orders are now available in [the Order payment status report](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#view-disputes). You can navigate directly to the PayPal Resolution Center to take action on disputes from Payment Services.
+![New](../assets/new.svg)<!-- Issue PAY-1720 --> Disputes for your store's orders are now available in [the Order payment status report](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#view-disputes). You can navigate directly to the PayPal Resolution Center from [!DNL Payment Services]to take action on disputes.
 
-![New](../assets/new.svg)<!-- Issue PAY-2854 --> We improved user experience in Payment Services Home in the Admin to include the ability to modify a configuration at the current inheritance level, a warning when switching from sandbox mode to production mode, a warning about unsaved data when navigating away from a view, and other improvements to the appearance of the header and navigation.
+![New](../assets/new.svg)<!-- Issue PAY-2854 --> We improved the user experience in the [!DNL Payment Services]Home to include the ability to modify a configuration at the current inheritance level and other improvements to the appearance of the header and navigation.
+
+![New](../assets/new.svg)<!-- Issue PAY-2854 --> Now, you will see warnings when switching from sandbox mode to production mode and when attempting to navigate away from a view when there is unsaved data or changes.
 
 ![New](../assets/new.svg)<!-- Issue PAY-2761 --> We added the ability show/hide columns in both the [Order payment status report](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) and the [Payouts report](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns).
 
@@ -77,7 +79,7 @@ These release notes describe feature changes and fixes that occurred and were re
 
 ![New](../assets/new.svg)<!-- Issue PAY-311 --> [!DNL Payment Services] supports flexible tiered pricing, based on total processing volume, adapted to any merchant.
 
-![New](../assets/new.svg)<!-- Issue PAY-1443 --> You can easily [customize the look and feel](payments-options.md) of PayPal smart buttons and credit card fields for the Payment Services extension.
+![New](../assets/new.svg)<!-- Issue PAY-1443 --> You can easily [customize the look and feel](payments-options.md) of PayPal smart buttons and credit card fields for the [!DNL Payment Services]extension.
 
 ![Known issue](../assets/bug.svg)<!-- Issue PAY-2473 --> Using [incorrect Composer keys](https://support.magento.com/hc/en-us/articles/4406603542541) during installation of the extension prevents the user from [authenticating](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) with the correct `MAGEID`.
 
