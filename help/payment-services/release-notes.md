@@ -17,7 +17,9 @@ See [Upcoming Releases](https://devdocs.magento.com/release/) to learn about rel
 
 See [Availability](https://devdocs.magento.com/release/availability.html) in the developer documentation to learn about product compatibility.
 
-## v1.2.0 _June 29, 2022_
+## v1.2.0
+
+_June 29, 2022_
 
 ![Fixed issue](../assets/fix.svg)<!-- Issue PAY-3264 --> Previously, when a logged-in user selected a different billing/shipping address other than the default address for their account, checkout failed. We fixed this issue, and now the selected billing/shipping address is sent (instead of the default saved address) and checkout is completed successfully.
 
@@ -39,7 +41,9 @@ These release notes describe feature changes and fixes that occurred and were re
 
 ![New](../assets/new.svg)<!-- Issue PAY-2761 --> We added the ability show/hide columns in both the [Order payment status report](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) and the [Payouts report](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns).
 
-## v1.1.0 _March 31, 2022_
+## v1.1.0
+
+_March 31, 2022_
 
 ![New](../assets/new.svg)<!-- Issue PAY-2127 --> General availability release---[!DNL Payment Services] is now [compatible with [!DNL Adobe Commerce] and [!DNL Magento Open Source] versions 2.4.0 to 2.4.4](https://devdocs.magento.com/release/availability.html#compatibility).
 
@@ -63,7 +67,9 @@ These release notes describe feature changes and fixes that occurred and were re
 
 ![Known issue](../assets/bug.svg)<!-- Issue PAY-2842 --> Test credit card transactions [may fail with PayPal](https://support.magento.com/hc/en-us/articles/5201041963917) when processing payments in a sandbox environment.
 
-## v1.0.0 _November 29, 2021_
+## v1.0.0
+
+_November 29, 2021_
 
 ![New](../assets/new.svg)<!-- Issue PAY-2127 --> General availability release---[[!DNL Payment Services]](https://marketplace.magento.com/magento-payment-services.html) is now compatible with [!DNL Adobe Commerce] and [!DNL Magento Open Source] versions 2.4.0 to 2.4.3-p1.
 
