@@ -19,7 +19,7 @@ You can perform both of these actions using the available SDKs as described in t
 
 1. [Install](install-configure.md) the [!DNL Product Recommendations] module.
 
-1. Install and use the [Storefront Events SDK](https://devdocs.magento.com/shared-services/storefront-events-sdk.html) to fire the [behavioral events](https://devdocs.magento.com/recommendations/events.html).
+1. Install and use the [Adobe Commerce Storefront Event SDK](https://devdocs.magento.com/shared-services/storefront-events-sdk.html) to fire the [behavioral events](https://devdocs.magento.com/recommendations/events.html).
 
     The minimum required events to return [!DNL Product Recommendations] results:
 
@@ -38,7 +38,7 @@ You can perform both of these actions using the available SDKs as described in t
     |`rec-click` | recommendation-unit|
     |`rec-add-to-cart-click` | recommendation-unit (if an add to cart button is present in the recommendations template)|
 
-1. When the events are fired, use the [Storefront Events Collector](https://devdocs.magento.com/shared-services/storefront-event-collector.html) to handle the events and send them to Adobe Sensei.
+1. When the events are fired, use the [Adobe Commerce Storefront Event Collector](https://devdocs.magento.com/shared-services/storefront-event-collector.html) to handle the events and send them to Adobe Sensei.
 
 1. After the behavioral data is collected, you can [create](create.md) [!DNL Product Recommendations] in the Admin.
 
