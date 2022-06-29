@@ -11,7 +11,7 @@ These release notes describe the initial release of [!DNL Payment Services] and 
 ![Fixed issue](../assets/fix.svg) Fixes and improvements
 ![Known issue](../assets/bug.svg) Known issues
 
-For feature changes and fixes released outside of the regular versioned feature release, see the HOsted service updates section(s).
+For feature changes and fixes released outside of the regular versioned feature release, see the Hosted service updates section(s).
 
 See [Upcoming Releases](https://devdocs.magento.com/release/) to learn about release schedules and support.
 
@@ -33,7 +33,7 @@ _June 29, 2022_
 
 ### Hosted service updates
 
-These release notes describe feature changes and fixes that occurred and were released outside of the regular versioned feature releases, between the current v1.2.0 release and the previous 1.1.0 release for the hosted service..
+These release notes describe feature changes and fixes that occurred and were released outside of the regular versioned feature releases, between the current v1.2.0 release and the previous 1.1.0 release for the hosted service.
 
 ![New](../assets/new.svg)<!-- Issue PAY-1720 --> Disputes for store orders are now available in [the Order payment status report](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#view-disputes). You can navigate directly to the PayPal Resolution Center from [!DNL Payment Services] to take action on disputes.
 
