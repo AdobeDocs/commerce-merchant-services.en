@@ -11,7 +11,7 @@ These release notes describe the initial release of [!DNL Payment Services] and 
 ![Fixed issue](../assets/fix.svg) Fixes and improvements
 ![Known issue](../assets/bug.svg) Known issues
 
-For feature changes and fixes released outside of the regular versioned feature release, see the Non-extension releases section(s).
+For feature changes and fixes released outside of the regular versioned feature release, see the HOsted service updates section(s).
 
 See [Upcoming Releases](https://devdocs.magento.com/release/) to learn about release schedules and support.
 
@@ -29,11 +29,11 @@ _June 29, 2022_
 
 ![Fixed issue](../assets/fix.svg)<!-- Issue PAY-3338 PAY-2502 --> When Commerce Services credentials are invalid, the [!DNL Payment Services] Home will now appear in the Admin. A credentials error appears to alert you that your credentials are invalid.
 
-![Known issue](../assets/bug.svg)<!-- Issue PAY-0 --> [!DNL Payment Services] is currently incompatible with the [`commerce-data-export` v101.20 and higher](https://github.com/magento-commerce/commerce-data-export/releases/tag/v101.2.0), which renders it incompatible with the [[!DNL Amazon sales channel] extension](https://experienceleague.adobe.com/docs/commerce-channels/amazon/guide-overview.html).
+![Known issue](../assets/bug.svg)<!-- Issue PAY-0 --> [!DNL Payment Services] is currently incompatible with the [`commerce-data-export` v101.20 and higher](https://github.com/magento-commerce/commerce-data-export/releases/tag/v101.2.0), which renders it incompatible with the [[!DNL Channel manager] extension](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html).
 
-### Non-extension releases
+### Hosted service updates
 
-These release notes describe feature changes and fixes that occurred and were released outside of the regular versioned feature releases, between the current v1.2.0 release and the previous 1.1.0 release.
+These release notes describe feature changes and fixes that occurred and were released outside of the regular versioned feature releases, between the current v1.2.0 release and the previous 1.1.0 release for the hosted service..
 
 ![New](../assets/new.svg)<!-- Issue PAY-1720 --> Disputes for your store's orders are now available in [the Order payment status report](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#view-disputes). You can navigate directly to the PayPal Resolution Center from [!DNL Payment Services] to take action on disputes.
 
