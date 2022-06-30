@@ -21,4 +21,4 @@ When placing orders on behalf of the shopper, the [!DNL Quick Checkout] appears 
 
 >[!IMPORTANT]
 >
-> During the Early Adopter Program (EAP) users cannot use the OTP login to automatically fill in shipping and payment details.
+> Users cannot use the OTP login to automatically fill in all shipping and payment details.

@@ -33,73 +33,8 @@ The [!DNL Quick Checkout] is compatible with standard additional Adobe Commerce 
 
 The [!DNL Quick Checkout] allows for multiple use cases during a checkout flow:
 
-- Guest user with a registered [!DNL Bolt] account.
-- Guest user with a new [!DNL Bolt] account.
-- An existing Adobe Commerce user with/without a registered [!DNL Bolt] account.
-
-## Guest user checkout: How it works
-
-Guest checkout experience is different from the logged-in experience. When a shopper enters an email address into checkout, the [!DNL Quick Checkout] validates it to find an existing [!DNL Bolt] account.
-
-### Registered [!DNL Bolt] account
-
-If a [!DNL Bolt] account is found, shoppers continue with their [!DNL Quick Checkout] seamless checkout experience: 
-
-1. Input the One-Time Password (OTP) sent to that [!DNL Bolt] account’s email address or mobile, depending on user's preferences in the [!DNL Bolt] account.
-1. Once logged in with your [!DNL Bolt] account, it fills the checkout details automatically:
-
-   - Shipping information
-   - Payment method
-
-1. Place Order.
-
->[!TIP]
->
-> Guest user places the order and can register in Adobe Commerce.
-
-### New [!DNL Bolt] account
-
-If no [!DNL Bolt] account is found, shoppers continue with their default out-of-the-box Adobe Commerce checkout and shopper provides all necessary details to place order:
-
-- Shipping and billing information
-- Shipping method
-- Review payment method
-- A checkbox appears to register in [!DNL Bolt] for faster checkouts before placing the order. They can agree to the terms & conditions to create their [!DNL Bolt] account.
-
-   ![Remember [!DNL Bolt]](assets/checked-bolt.png)
-
-- The guest user places the order and can register in Adobe Commerce.
-
-## An existing Adobe Commerce user: How it works
-
-An existing user can select existing details when user places an order with the [!DNL Quick Checkout] for a faster checkout experience.
-
-When a shopper enters an email address into checkout, the [!DNL Quick Checkout] validates it to find an existing [!DNL Bolt] account.
-
-### Registered [!DNL Bolt] account with an Adobe Commerce user
-
-If a [!DNL Bolt] account is found, shoppers continue with their default out-of-the-box Adobe Commerce checkout and shopper provides all necessary details and then places order:
-
-- Shipping and billing information
-- Shipping method
-- Review payment method
-
-If you encounter issues when you place an order as an existing Adobe Commerce user, see the [Troubleshoot Quick Checkout issues](https://support.magento.com/hc/en-us/articles/6909450342541) article in the Adobe Commerce Help Center.
-
->[!NOTE]
->
-> If user has a [!DNL Bolt] account and email does not appear as registered in Adobe Commerce, it triggers the One-Time Password (OTP) login. See the [registered [!DNL Bolt] account](#registered-bolt-account) flow.
-
-### New [!DNL Bolt] account
-
-If no [!DNL Bolt] account is found, shoppers continue with their default Adobe Commerce checkout and shopper selects all necessary details from their saved information to place the order:
-
-- Shipping and billing information
-- Shipping method
-- Review payment method
-- A checkbox appears to register in [!DNL Bolt] for faster checkouts before placing the order. They can agree to the terms & conditions to create their [!DNL Bolt] account.
-
-  ![Remember [!DNL Bolt]](assets/checked-bolt.png)
+- [Guest user](../quick-checkout/checkout-adobe-commerce.md) with a registered or new [!DNL Bolt] account.
+- An existing [Adobe Commerce user](../quick-checkout/checkout-adobe-commerce.md) with/without a registered [!DNL Bolt] account.
 
 ## Get help
 

@@ -18,6 +18,9 @@ hide: yes
   - [Developer information](developer.md)
 - Checkout {#manage-checkout}
   - [Checkout page](checkout-page.md)
-  - [Checkout flow](checkout-flow.md)
+  - Checkout options {#checkout-options}
+    - [Checkout flow](checkout-flow.md)
+    - [Bolt user checkout](checkout-bolt.md)
+    - [Adobe Commerce user checkout](checkout-adobe-commerce.md)
   - [Payment methods](payment-methods.md)
-  - [Create an Order in Admin](create-order-admin.md)
+- [Create an Order in Admin](create-order-admin.md)
