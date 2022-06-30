@@ -3,7 +3,7 @@ title: Events
 description: Learn which events capture data and see the full schema definition.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
 ---
-# Project Beacon Events
+# Experience Platform Connector Events
 
 The following lists the [!DNL Commerce] events available when you install the Experience Platform connector extension. The data these events collect is sent to the Adobe Experience Platform edge. You can also create [custom events](custom-events.md) to collect additional data not provided out of the box.
 

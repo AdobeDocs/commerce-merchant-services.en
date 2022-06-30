@@ -5,7 +5,7 @@ exl-id: 5a754106-c66a-4280-9896-6d065df8a841
 ---
 # Create Custom Events
 
-You can extend the [eventing platform](events.md) by creating your own storefront events to collect data unique to your industry. When you create and configure a custom event, it is sent to the [Magento Storefront Event Collector](https://www.npmjs.com/package/@adobe/magento-storefront-event-collector).
+You can extend the [eventing platform](events.md) by creating your own storefront events to collect data unique to your industry. When you create and configure a custom event, it is sent to the [Adobe Commerce Event Collector](https://www.npmjs.com/package/@adobe/magento-storefront-event-collector).
 
 ## Handle Custom Events
 
