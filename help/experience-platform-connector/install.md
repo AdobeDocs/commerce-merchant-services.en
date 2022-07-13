@@ -17,10 +17,10 @@ Before you install the extension, [review the prerequisites](overview.md#prereqs
    
    This metapackage contains the following modules and extensions:
 
-   * `module-platform-connector-admin` - Updates the Admin UI so you can configure the Datastream ID 
+   * `module-platform-connector-admin` - Updates the Admin UI so you can select the Datastream ID for a specific Adobe Commerce instance
    * `module-platform-connector` - Sets the `ImsOrgId` and `datastreamId` in the Adobe Commerce Storefront Event SDK
    * `data-services` - Provides attribute context for storefront events. For example, when a checkout event occurs, information about how many items were in the cart and product attribute data for those items are included.
-   * `commerce-services` - Connects your Adobe Commerce instance to [Adobe Commerce SaaS](../landing/saas.md) using sandbox and production API keys and to the Adobe Experience Platform using the IMS Organization ID
+   * `services-id` - Connects your Adobe Commerce instance to [Adobe Commerce SaaS](../landing/saas.md) using sandbox and production API keys and to the Adobe Experience Platform to retrieve the IMS Organization ID
 
 1. (Optional) To include [!DNL Live Search] data, which comprises search events, install the [[!DNL Live Search]](../live-search/install.md) extension.
 
