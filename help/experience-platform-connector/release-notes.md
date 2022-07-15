@@ -1,6 +1,6 @@
 ---
-title: Project Beacon Release Notes
-description: The latest release information for Project Beacon from Adobe Commerce.
+title: Release Notes
+description: The latest release information for Adobe Experience Platform connector from Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 ---
 # Experience Platform connector Release Notes
@@ -13,8 +13,8 @@ These release notes describe the latest versions of Experience Platform connecto
 
 ## Experience Platform connector 1.1.0
 
-* Compatible with Adobe Commerce (EE): 2.4.x
-* Compatible with Adobe Commerce for Cloud (ECE): 2.4.x
+* Compatible with Adobe Commerce (EE): 2.4.4
+* Compatible with Adobe Commerce for Cloud (ECE): 2.4.4
 * Stability: Stable
 
 ## Documentation
