@@ -1,8 +1,8 @@
 ---
-title: "Checkout flow"
-description: "Overview of the [!DNL Quick Checkout] flow for an Adobe Commerce user."
+title: Checkout flow
+description: Overview of the [!DNL Quick Checkout] flow for an Adobe Commerce user.
+exl-id: 085e393b-15f6-4d5a-a04d-927b1f95b74e
 ---
-
 # An existing Adobe Commerce user: How it works
 
 An existing Adobe Commerce user can select saved shipping and payment details when placing an order with the [!DNL Quick Checkout] for a faster checkout experience.
