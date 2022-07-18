@@ -3,7 +3,7 @@ title: Install and Configure Adobe Experience Platform Connector from Adobe Comm
 description: Learn how to install, configure, update, and uninstall the Adobe Experience Platform Connector from Adobe Commerce.
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
 ---
-# Install and configure Experience Platform connector
+# Install and configure the Experience Platform connector
 
 Before you install the extension, [review the prerequisites](overview.md#prereqs).
 
@@ -17,10 +17,10 @@ Before you install the extension, [review the prerequisites](overview.md#prereqs
    
    This metapackage contains the following modules and extensions:
 
-   * `module-platform-connector-admin` - Updates the Admin UI so you can configure the Datastream ID 
+   * `module-platform-connector-admin` - Updates the Admin UI so you can select the Datastream ID for a specific Adobe Commerce instance
    * `module-platform-connector` - Sets the `ImsOrgId` and `datastreamId` in the Adobe Commerce Storefront Event SDK
    * `data-services` - Provides attribute context for storefront events. For example, when a checkout event occurs, information about how many items were in the cart and product attribute data for those items are included.
-   * `commerce-services` - Connects your Adobe Commerce instance to [Adobe Commerce SaaS](../landing/saas.md) using sandbox and production API keys and to the Adobe Experience Platform using the IMS Organization ID
+   * `services-id` - Connects your Adobe Commerce instance to [Adobe Commerce SaaS](../landing/saas.md) using sandbox and production API keys and to the Adobe Experience Platform to retrieve the IMS Organization ID
 
 1. (Optional) To include [!DNL Live Search] data, which comprises search events, install the [[!DNL Live Search]](../live-search/install.md) extension.
 

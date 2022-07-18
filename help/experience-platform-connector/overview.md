@@ -18,10 +18,13 @@ To use the Experience Platform connector, you must first:
 When access is granted:
 
 1. [Sign in](https://helpx.adobe.com/manage-account/using/access-adobe-id-account.html) to your Adobe account.
-1. Look at your [organization](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=en#concept_EA8AEE5B02CF46ACBDAD6A8508646255). The organization ID is the ID associated with your provisioned Experience Cloud company. This ID is a 24-character alphanumeric string, followed by (and must include) @AdobeOrg.
-1. Access the datastream workspace and [create a datastream](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=en).
+1. Look at your [organization](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=en#concept_EA8AEE5B02CF46ACBDAD6A8508646255). The organization ID is the ID associated with your provisioned Experience Cloud company. This ID is a 24-character alphanumeric string, followed by (and must include) `@AdobeOrg`.
+1. Create or update your [XDM schema](update-xdm.md) with Commerce-specific field groups.
+1. [Create a datastream](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=en) and select the XDM schema that contains the Commerce-specific **Field Groups**.
 
-The organization ID and datastream is used when you connect your Adobe Commerce instance to the Adobe Experience Platform.
+>[!NOTE]
+>
+> The organization ID and datastream is used to connect your Adobe Commerce instance to the Adobe Experience Platform.
 
 ## Next steps
 

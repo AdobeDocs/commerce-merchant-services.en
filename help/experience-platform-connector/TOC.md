@@ -11,6 +11,7 @@ hide: yes
 - Fundamentals {#fundamentals}
    - [Install the Experience Platform Connector](install.md)
    - [Configure the Experience Platform Connector](connect-data.md)
+   - [Add field groups to XDM schema](update-xdm.md)
 - Event Forwarding {#event-forwarding}
    - [Events](events.md)
    - [Custom Events](custom-events.md)
