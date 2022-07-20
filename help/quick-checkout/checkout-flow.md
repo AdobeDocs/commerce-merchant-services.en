@@ -16,6 +16,9 @@ A successful [!DNL Quick Checkout] flow consists of the following steps:
 
 1. When prompted, enter an email address associated with a [!DNL Bolt] account.
 1. Input the One-Time Password (OTP) sent to that [!DNL Bolt] account’s email address or phone number.
+
+  ![OTP Pop-up](assets/pop-up.png)
+
 1. Once logged in with your [!DNL Bolt] account, checkout details are automatically filled in:
 
    - Shipping information
@@ -33,8 +36,8 @@ The [!DNL Quick Checkout] is compatible with standard additional Adobe Commerce 
 
 The [!DNL Quick Checkout] allows for multiple use cases during a checkout flow:
 
-- [Guest user](../quick-checkout/checkout-adobe-commerce.md) with a registered or new [!DNL Bolt] account.
-- An existing [Adobe Commerce user](../quick-checkout/checkout-adobe-commerce.md) with/without a registered [!DNL Bolt] account.
+- [Guest user](../quick-checkout/checkout-bolt.md) with a registered or new [!DNL Bolt] account.
+- An existing [Adobe Commerce user](../quick-checkout/checkout-adobe-commerce.md) with or without a registered [!DNL Bolt] account.
 
 ## Get help
 

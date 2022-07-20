@@ -12,6 +12,9 @@ The guest checkout experience is different from the Adobe user experience. When 
 If a [!DNL Bolt] account is found, shoppers continue with their [!DNL Quick Checkout] seamless checkout experience: 
 
 1. Input the One-Time Password (OTP) sent to that [!DNL Bolt] account’s email address or mobile, depending on [user's preferences in the [!DNL Bolt] account](https://help.bolt.com/shoppers/account/account-settings/#how-to-set-preferred-login-method){target=_blank}.
+
+  ![OTP Pop-up](assets/pop-up.png)
+
 1. Once logged in with your [!DNL Bolt] account, the details are automatically added:
 
    - Shipping information
@@ -32,6 +35,6 @@ If no [!DNL Bolt] account is found, shoppers continue with their default out-of-
 - Review payment method
 - A checkbox appears to register in [!DNL Bolt] for faster checkouts before placing the order. The shopper can agree to the terms and conditions to create their [!DNL Bolt] account.
 
-   ![Remember [!DNL Bolt]](assets/checked-bolt.png)
+   ![Remember [!DNL Bolt]](assets/checkbox-remember-bolt.png)
 
 - The guest user places the order, and they can optionally register in Adobe Commerce.

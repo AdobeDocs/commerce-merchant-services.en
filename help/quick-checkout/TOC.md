@@ -23,4 +23,5 @@ hide: yes
     - [Bolt user checkout](checkout-bolt.md)
     - [Adobe Commerce user checkout](checkout-adobe-commerce.md)
   - [Payment methods](payment-methods.md)
+- [User session lifetime](user-session-lifetime.md)
 - [Create an Order in Admin](create-order-admin.md)
