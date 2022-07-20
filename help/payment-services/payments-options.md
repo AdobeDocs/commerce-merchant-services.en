@@ -7,13 +7,13 @@ exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 
 With [!DNL Adobe Commerce] and [!DNL Magento Open Source] [!DNL Payment Services], you have multiple payment options available to you. You can configure these payment options through:
 
-* [Home](payments-home.md)
+* [Home settings](payments-home.md)
 * [Store configuration](configure-admin.md) (recommended for legacy payment options or a multistore setup)
 
 There are different behaviors for each payment method depending on where you are in the checkout process:
 
 * Product page---The product page for an item
-* Mini-cart---Available upon click of the cart icon when a product has been added to the cart
+* Mini cart---Available upon click of the cart icon when a product has been added to the cart
 * Shopping cart---Available upon click of _View and edit cart_ from the mini-cart
 * Checkout view---Available upon click of _Proceed to Checkout_ from mini-cart or shopping cart
 
@@ -25,7 +25,7 @@ There are different behaviors for each payment method depending on where you are
 
 [!UICONTROL Credit Card Fields] provide a simple and secure checkout for credit card or debit card payment methods. When a shopper checks out using credit card fields, they enter their name, billing address, and credit or debit card information, to place their order. Their customer information is securely used during the purchase session to seamlessly guide them through the checkout flow.
 
-You can configure [!UICONTROL Credit Card Fields] in the store configuration or the Payment Services Home. See [Configuring [!DNL Payment Services]](settings.md#configure-credit-card-fields) for more information.
+You can configure [!UICONTROL Credit Card Fields] in the store configuration or the Payment Services Home. See [Settings](settings.md#credit-card-fields) for more information.
 
 ## [!DNL PayPal Smart Buttons]
 
@@ -33,7 +33,7 @@ You can configure [!UICONTROL Credit Card Fields] in the store configuration or 
 
 ![[!DNL PayPal Smart Buttons] options](assets/buttons-md.png)
 
-You can configure [!UICONTROL PayPal Smart Buttons] in the store configuration or the Payment Services Home.  See [Configuring [!DNL Payment Services]](settings.md#configure-paypal-smart-buttons) for more information.
+You can configure [!UICONTROL PayPal Smart Buttons] in the store configuration or the Payment Services Home.  See [Settings](settings.md#payment-buttons) for more information.
 
 ### [!DNL PayPal] button
 
@@ -66,7 +66,7 @@ The [!DNL Pay Later] button is visible from the product page, mini-cart, shoppin
    >
    >The amounts listed above are subject to change.
 
-See [Settings](settings.md#payment-buttons) to learn how to disable/enable and change the text of the [!DNL Pay Later] messaging.
+See [Settings](settings.md#payment-buttons) to learn how to disable/enable the [!DNL Pay Later] messaging.
 
 There are two payment options with the [!DNL Pay Later] button:
 
