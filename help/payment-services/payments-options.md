@@ -66,7 +66,7 @@ The [!DNL Pay Later] button is visible from the product page, mini-cart, shoppin
    >
    >The amounts listed above are subject to change.
 
-See [Configure [!DNL Payment Services]](configure-admin.md#configure-paypal-smart-buttons) to learn how to disable or enable the [!DNL Pay Later] messaging.
+See [Settings](settings.md#payment-buttons) to learn how to disable/enable and change the text of the [!DNL Pay Later] messaging.
 
 There are two payment options with the [!DNL Pay Later] button:
 
