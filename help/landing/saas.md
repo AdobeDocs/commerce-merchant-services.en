@@ -1,13 +1,13 @@
 ---
 title: Commerce Services Connector
-description: Learn how to integrate your Adobe Commerce or Magento Open Source instance to services using an API key and a private key.
+description: Learn how to integrate your Adobe Commerce or Magento Open Source instance to services using production and sandbox API keys.
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 ---
 # [!DNL Commerce Services Connector]
 
-Some Adobe Commerce and Magento Open Source features are powered by [!DNL Commerce Services]  and deployed as SaaS (software as a service). To use these services, you must connect your [!DNL Commerce] instance using an API key and a private key, and specify the data space in the [configuration](https://docs.magento.com/user-guide/configuration/services/saas.html). You only need to set this up once.
+Some Adobe Commerce and Magento Open Source features are powered by [!DNL Commerce Services]  and deployed as SaaS (software as a service). To use these services, you must connect your [!DNL Commerce] instance using production and sandbox API keys, and specify the data space in the [configuration](https://docs.magento.com/user-guide/configuration/services/saas.html). You only need to set this up once.
 
-## Available services
+## Available services {#availableservices}
 
 The following lists the [!DNL Commerce] features you can access through the [!DNL Commerce Services Connector]:
 
@@ -16,6 +16,8 @@ The following lists the [!DNL Commerce] features you can access through the [!DN
 |[[!DNL Product Recommendations]](/help/product-recommendations/overview.md) powered by Adobe Sensei| Adobe Commerce|
 |[[!DNL Live Search]](/help/live-search/overview.md) powered by Adobe Sensei | Adobe Commerce|
 |[[!DNL Payment Services]](/help/payment-services/overview.md) | Adobe Commerce and Magento Open Source|
+|[[!DNL Channel Manager]](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/intro-to-channel-manager/overview.html)|Adobe Commerce and Magento Open Source|
+|[[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html)|Adobe Commerce|
 
 ## Architecture
 
@@ -27,9 +29,9 @@ The following sections discuss each of these elements in more detail.
 
 ## Credentials {#apikey}
 
-The API key and private key are generated from the [!DNL Commerce] account of the license holder, which is identified by a unique [!DNL Commerce] ID (MageID). To pass entitlement validation for services such as [!DNL Product Recommendations] or [!DNL Live Search], the license holder of the merchant's organization can generate the set of API keys as long as the account is in good standing. The keys can be shared on a "need to know" basis with the systems integrator or development team that manages projects and environments on behalf of the license holder. Additionally, solution integrators are also entitled to use [!DNL Commerce Services]. If you are a solution integrator, the signer of the [!DNL Commerce] partner contract should generate the API keys.
+The production and sandbox API keys are generated from the [!DNL Commerce] account of the license holder, which is identified by a unique [!DNL Commerce] ID (MageID). To pass entitlement validation for services such as [!DNL Product Recommendations] or [!DNL Live Search], the license holder of the merchant's organization can generate the set of API keys as long as the account is in good standing. The keys can be shared on a "need to know" basis with the systems integrator or development team that manages projects and environments on behalf of the license holder. Additionally, solution integrators are also entitled to use [!DNL Commerce Services]. If you are a solution integrator, the signer of the [!DNL Commerce] partner contract should generate the API keys.
 
-### Generate an API key and private key {#genapikey}
+### Generate the production and sandbox API keys {#genapikey}
 
 1. Log in to your [!DNL Commerce] account at [https://account.magento.com](https://account.magento.com/){:target="_blank"}.
 
@@ -45,11 +47,13 @@ The API key and private key are generated from the [!DNL Commerce] account of th
 
    >[!WARNING]
    >
-   > This is the only opportunity that you have to copy or download your key.
+   > This is the only opportunity that you have to copy or download your keys.
 
 1. Click **Download** then click **Cancel**.
 
-   The **API Keys** section now displays your API key. You need both the API key and private key when you [select or create a SaaS project](#createsaasenv).
+1. Repeat the above steps for each environment (production and sandbox).
+
+   The **API Keys** section now displays your API keys. You need both the production and sandbox keys when you [select or create a SaaS project](#createsaasenv).
 
 ## SaaS configuration {#saasenv}
 
@@ -65,35 +69,37 @@ For [!DNL Product Recommendations], the SaaS data space contains catalog and beh
 
 >[!NOTE]
 >
-> If you do not see the **[!UICONTROL Commerce Services Connector]** section in the [!DNL Commerce] configuration, you must install the [!DNL Commerce] modules for your desired [!DNL Commerce] service, such as [[!DNL Product Recommendations]](/help/product-recommendations/install-configure.md).
+> If you do not see the **[!UICONTROL Commerce Services Connector]** section in the [!DNL Commerce] configuration, you must install the [!DNL Commerce] modules for your desired [[!DNL Commerce] service](#availableservices).
 
 To select or create a SaaS project, request the [!DNL Commerce] API key from the [!DNL Commerce] license holder for your store.
 
-1. On the _Admin_ sidebar, go to **Stores** > _Settings_ > **Configuration**.
+1. On the _Admin_ sidebar, go to **System** > Services > **Commerce Services Connector**.
 
-1. In the left panel, expand **Services** and choose **Commerce Services Connector**.
-
-1. In the _API Keys_ section, paste your key values for the **Production API Key** and the **Production Private Key**.
+1. In the _Sandbox API Keys_ and _Production API Keys_ sections, paste your key values.
 
    Private keys must include `----BEGIN PRIVATE KEY---` at the beginning of the key and `----END PRIVATE KEY----` at the end of the private key.
 
-1. Click **Save Config**.
+1. Click **Save**.
 
-  Any SaaS projects that are associated with your API key appear in the **SaaS Project** field.
+  Any SaaS projects that are associated with your keys appear in the **Project** field in the **SaaS Identifier** section.
 
-1. If no SaaS projects exist, click **Create Project**. Then in the **Project Name** field, enter a name for your SaaS project.
+1. If no SaaS projects exist, click **Create Project**. Then in the **Project** field, enter a name for your SaaS project.
 
    When you create a SaaS project, [!DNL Commerce] generates one or more SaaS data spaces depending on your [!DNL Commerce] license:
    - Adobe Commerce - One production data space; two testing data spaces
    - Magento Open Source - One production data space; no testing data spaces
 
-1. Select the **SaaS Data Space** to use for the current configuration of your [!DNL Commerce] store.
+1. Select the **Data Space** to use for the current configuration of your [!DNL Commerce] store.
 
 >[!WARNING]
 >
 > If you generate new keys in the API Portal section of My Account, immediately update the API keys in the Admin configuration. If you generate new keys and do not update them in the Admin, your SaaS extensions no longer work and you lose valuable data.
 
-To change the SaaS project or data space names, click the **Rename this Project** or **Rename Data Space** respectively.
+To change the SaaS project or data space names, click **Rename**.
+
+## IMS Organization (optional) {#organizationid}
+
+(This feature is for future integration with the Adobe Experience Platform). To connect your Adobe Commerce instance to the Adobe Experience Platform, sign in to your Adobe account using your Adobe ID. After you sign in, the IMS organization associated with your Adobe account is displayed in this section.
 
 ## Catalog sync
 

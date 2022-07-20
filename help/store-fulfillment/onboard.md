@@ -1,87 +1,48 @@
 ---
-title: Onboarding Overview
-description: "Connect your [!DNL Commerce] instance to the [!DNL Store Fulfillment Manager] service by completing a few onboarding steps."
+title: Onboarding Overview for Store Fulfillment services
+description: '[!DNL Live Search] onboarding flow, system requirements, boundaries, and limitations.'
 role: User, Admin
 level: Intermediate
 exl-id: f8e403ac-9bbd-4ea2-b209-9b1a8d1e32a2
 ---
-# Onboarding Overview
+# Onboarding Overview for Store Fulfillment
 
-Onboard Store Fulfillment by installing the extension on your Commerce instance and configuring the API connections. These connections enable communication and data synchronization between your Commerce instance, third-party systems for inventory management, and the Store Assist app.
+Get started with [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] by setting up, configuring, and enabling the following components:
 
-After you complete onboarding, configure and manage the solution from the Commerce Admin
+- **Store Fulfillment extension**-Install and configure this third-party extension on your Adobe Commerce instance. After installation, you can configure and manage the Store Fulfillment solution from the Admin to support [!DNL buy online, pickup in store] (BOPIS) scenarios in the Commerce storefront.
 
-![[!DNL Store Fulfillment Service] configuration in Admin view](assets/store-fulfillment-admin-home.png)
+  ![[!DNL Store Fulfillment Service] configuration in Admin view](assets/store-fulfillment-admin-home.png)
 
-## Onboarding Overview
+- **Store Fulfillment account**–During the enablement process, an Account Manager creates your Store Fulfillment account and provides you with the account information and credentials. These credentials are required to enabled the connection between Adobe Commerce and the Store Fulfillment solution.
 
-1. Install the Store Fulfillment by Walmart Technologies extension for Adobe Commerce.
+- **Store Assist app**—Provides store associates with an end-to-end store fulfillment workflow to manage BOPIS orders from mobile devices. Store Associates can download and install Walmart’s [!DNL Store Assist] for iOS and Android devices. The app onboarding process is managed by the Walmart Commerce Technology Client Center as a separate process. However, [some app configuration settings](user-setup.md) are completed from the Adobe Commerce Admin.
 
-1. From the Admin, enable the solution and complete general configuration for the integration, its active features, and complete the onboarding intake form to connect to fulfillment services.
+  | Store Assist App - Get Started view                                                                         | Store Assist App — Modules view                                                               |
+  |-------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
+  | ![[!DNL Store Assist App Getting Started] view on mobile device](assets/store-assist-get-started-small.png) | ![[!DNL Store Assist App Orders view] on mobile device](assets/store-assist-orders-small.png) |
 
-1. Configure the delivery methods.
+## Provisioning steps
 
-1. Set up sources as your physical stores and configure products in your catalog.
+- **Sign up for [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies]**-Complete the sign up form on [business.adobe.com](https://business.adobe.com/resources/store-fulfillment.html), or contact your Adobe Commerce Account Manager for assistance. 
 
-1. Select and configure the email templates to manage customer communication for buy online, pickup in-store (BOPIS) transactions.
+- **Initiate the provisioning request for Store Fulfillment**–Complete the intake form provided by your Account Manager to provide the information required to begin the provisioning process.
 
-1. Create users and roles for the Store Assist app.
+- **Get your Store Fulfillment account credentials**–After your Store Fulfillment account is created for you, you receive the credentials required to integrate the Store Fulfillment solution with Adobe Commerce.
+   
+- **[Download the source code to install the [!DNL Store Fulfillment] extension](install.md)**
 
-1. Configure the schedules for background processes to sync data to the fulfillment service.
+## Onboarding steps
 
-## Requirements
+1. [Install the Store Fulfillment extension for Adobe Commerce](install.md).
 
-You must meet the following requirements to install, deploy, and use the solution.
+1. From the Admin, [enable the solution](enable-general.md).
 
-* **Commerce account information**-Installing [!DNL Channel Manager] requires a [Commerce account](https://docs.magento.com/user-guide/magento/magento-account.html){target="_blank"}. You need an account ID and credentials with Owner or Admin access to the [!DNL Adobe Commerce] instance.
+1. [Configure the Store Fulfillment extension from the Adobe Commerce Admin](service-config-settings-overview.md).
 
-* For [!DNL Adobe Commerce] on cloud infrastructure projects, software installers must have administrator access to the Cloud project. See [Manage user access](https://devdocs.magento.com/cloud/project/user-admin.html).
+1. [Connect the [!DNL Store Fulfillment] service using the Store Fulfillment credentials provided to you](connect-set-up-service.md).
 
-* **Access to the Store Fulfillment by Walmart Technologies software archive (.zip file) to install the Store Fulfillment solution**–During the onboarding and enablement process, your customer account representative will provide download access to the installation file.
+1. [Create users and roles for the Store Assist app](user-setup.md).
 
-* **Experience using Composer and the [!DNL Commerce CLI]**—See [General CLI Installation](https://devdocs.magento.com/extensions/install/){target="_blank"} for information about using these tools to install and manage extensions on [!DNL Adobe Commerce] and [!DNL Magento Open Source] platforms.
+1. [Download Walmart’s [!DNL Store Assist] app to your desired device. The app is available on both app store (iOS) and play store (Android)](app-setup.md).
 
-* [!DNL Inventory Management] extension for Adobe Commerce and Magento Open Source
-
-   You must have the Inventory Management extension installed and enabled on your Adobe Commerce and Magento Open Source instance. Typically, this extension is installed and enabled by default on Adobe Commerce 2.3.x and later. For more information, see [Install Inventory Management](https://devdocs.magento.com/extensions/inventory-management/) in the Adobe Commerce Developer documentation.
-
-## Platform and version requirements
-
-The [!DNL Store Fulfillment] solution is available to Adobe Commerce customers on the following platforms.
-
-* Adobe Commerce on cloud infrastructure (ECE)
-* Adobe Commerce on premises (EE)
-
-The Store Fulfillment solution is compatible with the following software versions.
-
-**Software Compatibility**
-
-| **Software**   | **Minimum Version** | **Maximum Version** |
-|----------------|---------------------|---------------------|
-| Adobe Commerce | 2.4.0               | 2.4.4               |
-| Composer       | 1.x                 | 2.x                 |
-| MariaDB        | 10.2                | 10.4                |
-| MySQL          | 5.7                 | 8.0                 |
-| PHP            | 7.4                 | 8.1                 |
-
-For detailed requirements, review the Adobe Commerce [System requirements](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html) in the Developer documentation.
-
-### Business Requirements
-
-Your business must meet the following minimum criteria to implement the Store Fulfillment solution.
-
-* US-Based businesses only
-
-* B2C Retailers, CPG Manufacturers selling D2C, or Distributors selling D2C or to small businesses
-
-* At least one physical store or warehouse
-
-* Manage your product inventory with Inventory Management for Adobe Commerce (was MSI)
-
-* Ability to syndicate merchant inventory
-
-* Store Wi-Fi availability at all locations that support the Store Fulfillment solution
-
-* Store and warehouse associates have access to iOS or Android mobile devices during their shifts, either personal or provided by the merchant
-
-* Products managed by using the Store Fulfillment solution must have product attributes that include either a SKU or UPC product code
+After you have successfully installed, configured, completed onboarding, and have access to the [!DNL Store Assist] app, you can [begin creating orders and testing](test-and-deploy.md).

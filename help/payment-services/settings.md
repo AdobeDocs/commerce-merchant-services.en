@@ -35,10 +35,11 @@ You can enable [!DNL Payment Services] for your website, and enable either sandb
    >
    >Your _[!UICONTROL Sandbox Merchant ID]_ and _[!UICONTROL Production Merchant ID]_ are auto-generated and present in their respectable fields when you finish onboarding for the sandbox and/or production. Do not remove or change these IDs.
 
+1. Select the store view, in the **[!UICONTROL Scope]** dropdown menu, for which you want to enable a payment method.
 1. To change the default settings for payment functions and storefront display, set the additional options as needed:
 
    - [Credit card fields](#credit-card-fields)
-   - [PayPal smart buttons](#paypal-smart-buttons)
+   - [Payment buttons](#payment-buttons)
    - [Button style](#button-style)
 
 1. Click **[!UICONTROL Save]**.
@@ -56,25 +57,28 @@ See [Payments options](payments-options.md#paypal-smart-buttons) for more inform
 1. To change the name of the payment method displayed during checkout, edit the value in the **[!UICONTROL Checkout title]** field.
 1. To [set the payment action](production.md#set-payment-services-as-payment-method), toggle **[!UICONTROL Payment action]** to `Authorize` or `Authorize and Capture`.
 1. To enable debug mode, toggle the **[!UICONTROL Debug Mode]** selector.
+
+   When you enable debug mode, extra debugging information about the credit card payment is written to the `var/log/payment.log` file. This information can give you more insight into a specific payment to assist with troubleshooting.
+
 1. Click **[!UICONTROL Save]**.
 
    If you try to navigate away from this view without saving your changes, a modal appears that prompts you to discard changes, keep editing, or save changes.
 
 1. Navigate to **[!UICONTROL System]** > **[!UICONTROL Cache Management]** and click **[!UICONTROL Flush Cache]** to refresh all invalid caches.
 
-### PayPal smart buttons
+### Payment buttons
 
 The [!DNL PayPal Smart Buttons] payment options provide a simple, fast, and secure checkout process for your customer. See [Payments options](payments-options.md#paypal-smart-buttons) for more information.
 
-You can enable and configure the PayPal smart buttons payment options:
+You can enable and configure the Payment buttons:
 
 1. To change the name of the payment method as shown during checkout, edit the value in the **[!UICONTROL Checkout Title]** field.
 1. To [set the payment action](production.md#set-payment-services-as-payment-method), toggle **[!UICONTROL Payment action]** to `Authorize` or `Authorize and Capture`.
 1. Use the toggle selectors to enable or disable [!DNL PayPal smart button] display features:
-   - **[!UICONTROL Show buttons on product detail page]**
-   - **[!UICONTROL Show buttons in mini cart preview]**
-   - **[!UICONTROL Show buttons on cart page]**
-   - **[!UICONTROL PayPal Pay Later enabled]**
+   - **[!UICONTROL Show PayPal buttons on product detail page]**
+   - **[!UICONTROL Show PayPal buttons on mini cart preview]**
+   - **[!UICONTROL Show PayPal buttons on cart page]**
+   - **[!UICONTROL Show PayPal Pay Later button]**
    - **[!UICONTROL Show Venmo button]**
    - **[!UICONTROL Show Apple Pay button]**
 
@@ -82,8 +86,11 @@ You can enable and configure the PayPal smart buttons payment options:
       >
       > Apple Pay is enabled by default for sandbox mode, but you also [must have an Apple Developer Account](test-validate.md#test-in-sandbox-environment) (complete with fake credit card and billing information) to test it. When you are ready to use Apple Pay in production mode, after completing any [testing and validation](test-validate.md), contact sales to enable it for your live store(s).
 
-1. To change the [Pay Later messaging](payments-options.md#pay-later-button), toggle the **[!UICONTROL Display Pay Later message]** option.
-1. To enable debug mode, toggle the **[!UICONTROL Debug Mode]** selector.  
+1. To change the [Pay Later messaging](payments-options.md#pay-later-button), toggle the **[!UICONTROL Show PayPal Pay Later message]** option.
+1. To enable debug mode, toggle the **[!UICONTROL Debug Mode]** selector.
+
+   When you enable debug mode, extra debugging information about the PayPal payment is written to the `var/log/payment.log` file. This information can give you more insight into a specific payment to assist with troubleshooting.
+
 1. Click **[!UICONTROL Save]**.
 
    If you try to navigate away from this view without saving your changes, a modal appears that prompts you to discard changes, keep editing, or save changes.
@@ -92,13 +99,13 @@ You can enable and configure the PayPal smart buttons payment options:
 
 #### Button style
 
-You can also configure the _[!UICONTROL Button style]_ options of the PayPal smart buttons:
+You can also configure the _[!UICONTROL Button style]_ options of the Payment buttons:
 
 1. To change the **[!UICONTROL Layout]**, select `Vertical` or `Horizontal`.
 
    >[!NOTE]
    >
-   > If the button style is configured as `Horizontal` and your store is configured to show multiple PayPal smart buttons, you may only see two buttons displayed on the product page, checkout page, and mini cart, and one button displayed in the cart.
+   > If the button style is configured as `Horizontal` and your store is configured to show multiple Payment buttons, you may only see two buttons displayed on the product page, checkout page, and mini cart, and one button displayed in the cart.
 
 1. To enable the tagline in a horizontal layout, toggle the **[!UICONTROL Show tagline]** selector.
 1. To modify the **[!UICONTROL Color]**, select the desired color option.
