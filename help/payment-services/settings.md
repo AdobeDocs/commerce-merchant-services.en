@@ -35,20 +35,13 @@ You can enable [!DNL Payment Services] for your website, and enable either sandb
    >
    >Your _[!UICONTROL Sandbox Merchant ID]_ and _[!UICONTROL Production Merchant ID]_ are auto-generated and present in their respectable fields when you finish onboarding for the sandbox and/or production.
 
-1. Select the store view, in the **[!UICONTROL Scope]** dropdown menu, for which you want to enable a payment method.
-1. To change the default settings for payment functions and storefront display, set the additional options as needed:
-
-   - [Credit card fields](#credit-card-fields)
-   - [Payment buttons](#payment-buttons)
-   - [Button style](#button-style)
-
 1. Click **[!UICONTROL Save]**.
 
    If you try to navigate away from this view without saving your changes, a modal appears that prompts you to discard changes, keep editing, or save changes.
 
 1. Navigate to **[!UICONTROL System]** > **[!UICONTROL Cache Management]** and click **[!UICONTROL Flush Cache]** to refresh all invalid caches.
 
-### Configuration options
+### General configuration options
 
 | Field | Scope | Description |
 |---|---|---|
@@ -57,12 +50,17 @@ You can enable [!DNL Payment Services] for your website, and enable either sandb
 | [!UICONTROL Sandbox Merchant ID] | store view | Your sandbox merchant ID, which is auto-generated during sandbox onboarding. |
 | [!UICONTROL Production Merchant ID] | store view | Your production merchant ID, which is auto-generated during sandbox onboarding. |
 
+## Configure payment options
+
+Now that you have enabled Payment Services for your website, you can change the default settings for payment functions and storefront display.
+
 ### Credit card fields
 
 The _[!UICONTROL Credit Card Fields]_ settings provide a simple and secure checkout option for credit card or debit card payment methods.
 
-See [Payments options](payments-options.md#paypal-smart-buttons) for more information.
+See [Payments options](payments-options.md#credit-card-fields) for more information.
 
+1. Select the store view, in the **[!UICONTROL Scope]** dropdown menu, for which you want to enable a payment method.
 1. To change the name of the payment method displayed during checkout, edit the value in the **[!UICONTROL Checkout title]** field.
 1. To [set the payment action](production.md#set-payment-services-as-payment-method), toggle **[!UICONTROL Payment action]** to `Authorize` or `Authorize and Capture`.
 1. To enable debug mode, toggle the **[!UICONTROL Debug Mode]** selector.
@@ -86,6 +84,7 @@ The [!DNL PayPal Smart Buttons] payment options provide a simple, fast, and secu
 
 You can enable and configure the PayPal smart buttons payment options:
 
+1. Select the store view, in the **[!UICONTROL Scope]** dropdown menu, for which you want to enable a payment method.
 1. To change the name of the payment method as shown during checkout, edit the value in the **[!UICONTROL Checkout Title]** field.
 1. To [set the payment action](production.md#set-payment-services-as-payment-method), toggle **[!UICONTROL Payment action]** to `Authorize` or `Authorize and Capture`.
 1. Use the toggle selectors to enable or disable [!DNL PayPal smart button] display features:
@@ -123,7 +122,7 @@ You can enable and configure the PayPal smart buttons payment options:
 | [!UICONTROL Show Apple Pay button] | store view | Enable or disable the Apple Pay payment option where payment buttons are displayed. Options: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Debug Mode] | website | Enable or disable Debug Mode. Options: [!UICONTROL Yes] / [!UICONTROL No] |
 
-#### Button style
+### Button style
 
 You can also configure the _[!UICONTROL Button style]_ options of the PayPal smart buttons:
 
@@ -144,7 +143,9 @@ You can also configure the _[!UICONTROL Button style]_ options of the PayPal sma
 
 1. Navigate to **[!UICONTROL System]** > **[!UICONTROL Cache Management]** and click **[!UICONTROL Flush Cache]** to refresh all invalid caches.
 
-You can configure [!DNL PayPal Smart Buttons] styling [in the Admin](configure-admin.md#configure-paypal-smart-buttons) or [!DNL Payment Services Home]. See [PayPal's Buttons style guide](https://developer.paypal.com/docs/checkout/standard/customize/buttons-style-guide/) for more information about the options.
+You can configure [!DNL PayPal Smart Buttons] styling [in the Legacy configuration in the Admin](configure-admin.md#configure-paypal-smart-buttons) or here in [!DNL Payment Services Home]. See [PayPal's Buttons style guide](https://developer.paypal.com/docs/checkout/standard/customize/buttons-style-guide/) for more information about the options.
+
+#### Configuration options
 
 |Field|Scope|Description|
 |--- |--- |--- |
