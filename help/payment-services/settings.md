@@ -41,6 +41,8 @@ You can enable [!DNL Payment Services] for your website, and enable either sandb
 
 1. Navigate to **[!UICONTROL System]** > **[!UICONTROL Cache Management]** and click **[!UICONTROL Flush Cache]** to refresh all invalid caches.
 
+You can now proceed to changing the default settings for [payment options](#configure-payment-options) functions and storefront display.
+
 ### General configuration options
 
 | Field | Scope | Description |
