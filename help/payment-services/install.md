@@ -15,12 +15,6 @@ See [Get your authentication keys](https://devdocs.magento.com/guides/v2.4/insta
 
 There are two ways to install this extension---for [[!DNL Adobe Commerce] on cloud infrastructure](install.md#adobe-commerce-on-cloud-infrastructure) or [On-premises](install.md#on-premises) installations. These methods require you to use the Command Line Interface (CLI).
 
-## Update minimum-stability setting
-
-Before installing the extension, you must change the `minimum-stability` requirement to `RC` (release candidate) in your `composer.json` file. You can use an IDE or your favorite text editor (like Visual Studio Code or Sublime Text).
-
-In your `composer.json` file, change `"minimum-stability": "stable"` to `"minimum-stability": "RC"`.
-
 ## Install the extension
 
 You can install the [!DNL Payment Services] extension for both [!DNL Adobe Commerce] on cloud infrastructure and on-premises instances.
