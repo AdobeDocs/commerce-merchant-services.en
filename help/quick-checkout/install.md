@@ -13,9 +13,9 @@ There are two ways to install this extension---for [Adobe Commerce on cloud infr
 
 ## Update minimum-stability setting
 
-Before you install the extension, you can change the `minimum-stability` requirement to `RC` (release candidate) in your `composer.json` file if you want to try the release candidate version. You can use an IDE or your favorite text editor (like Visual Studio Code or Sublime Text).
+Before you install the extension, ensure that the `minimum-stability` field in your `composer.json` file is set to `"stable"`:
 
-In your `composer.json` file, change `"minimum-stability": "stable"` to `"minimum-stability": "RC"`.
+`"minimum-stability": "stable"`
 
 ## Install the extension
 
