@@ -10,5 +10,7 @@ title: Services for Adobe Commerce
 - [[!DNL Product Recommendations]](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/guide-overview.html)
 - [[!DNL Payment Services]](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/guide-overview.html)
 - [[!DNL Amazon Sales Channel]](https://experienceleague.adobe.com/docs/commerce-channels/amazon/guide-overview.html)
+- [[!DNL Channel Manager]](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html)
+- [[!DNL Store Fulfillment]](https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/guide-overview.html)
 - [Services Connector](/help/landing/saas.md)
 - [Catalog Sync](/help/landing/catalog-sync.md)

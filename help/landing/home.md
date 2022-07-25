@@ -20,7 +20,7 @@ Adobe provides a collection of hosted services to help merchants support key com
     <strong>[!DNL Product Recommendations]</strong></a>
     </div>
     <p>(Adobe Commerce only)<br><em>Add AI-fueled recommendations based on shopper behavior, popular trends, product similarity, and more.</em></p>
-    <br>
+    </br>
   </td>
   <td valign="top">
       <img alt="[!DNL Live Search]" src="assets/live-search.png" />
@@ -28,7 +28,7 @@ Adobe provides a collection of hosted services to help merchants support key com
     <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/overview.html"><strong>[!DNL Live Search]</strong></a>
     </div>
     <p>(Adobe Commerce only)<br><em>Implement this AI-powered search tool that delivers smarter, faster and relevant results for B2C shoppers.</em></p>
-    <br>
+    </br>
   </td>
 </tr>
 <tr>
@@ -38,14 +38,32 @@ Adobe provides a collection of hosted services to help merchants support key com
     <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/guide-overview.html"><strong>[!DNL Payment Services]</strong></a>
     </div>
     <em>Drive customer satisfaction by easily offering various payment methods, including interest-free payment installments, and a single view into payment processing, orders, and invoices right in your Admin dashboard.</em>
-    <br>
+    </br>
   </td>
     <td valign="top">
        <img alt="Amazon sales channel" src="assets/amazon-channel.png" />
     <div><a href="https://experienceleague.adobe.com/docs/commerce-channels/amazon/guide-overview.html">
     <strong>[!DNL Amazon Sales Channel]</strong></a>
     </div>
-    <p><em>Build multi-channel commerce experiences for B2B and B2C customers on a single platform. From catalog to payment to fulfillment, this future-proof technology gives you a commerce platform that’s endlessly flexible, extensible, and scalable.</em></p>
+    <p><em>Integrate your stores with the world’s largest global internet shopping destination. This service enables Amazon sales by connecting Commerce with your Amazon Seller Central account and providing both automation and synchronization of catalog and order data. Completely manage all Amazon listings, implement simple or intelligent pricing rules, and maintain your orders and inventory through a single Commerce dashboard.</em></p>
+    </br>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <img alt="[!DNL Channel Manager]" src="assets/channel-manager.png"/>
+    <div>
+    <a href="https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html"><strong>[!DNL Channel Manager]</strong></a>
+    </div>
+    <em>Increase sales, reach new customers, streamline sales operations, and save time by integrating an Adobe Commerce or Magento Open Source product catalog with the Walmart Marketplace. Enable store administrators and operations staff to manage Walmart Marketplace sales, inventory, and product pricing seamlessly from the Commerce environment.</em>
+    </br>
+  </td>
+    <td valign="top">
+       <img alt="Store Fulfillment" src="assets/store-fulfillment-landing-graphic.png"/>
+    <div><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/guide-overview.html">
+    <strong>[!DNL Store Fulfillment]</strong></a>
+    </div>
+    <p>(Adobe Commerce only)<br><em>Deliver a superior buy online, pick up in store (BOPIS) customer experience, and maximize store employees' productivity by providing an end-to-end, seamless omnichannel fulfillment workflow that is enabled through a mobile device.</em></p>
     <br>
   </td>
 </tr>
@@ -68,3 +86,6 @@ The following items are recent changes to the documentation:
 * Added [[!DNL Payment Services] guide](/help/payment-services/guide-overview.md) with the latest information of the new marketplace extension and hosted service v1.0.0.
 * The [!DNL Live Search] [Performance reporting dashboard](/help/live-search/performance.md) provides insight into the effectiveness of search terms that shoppers use.
 * Added B2B support in [[!DNL Product Recommendations]](/help/product-recommendations/overview.md).
+* Added the [[!DNL Channel Manager User Guide]](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html) for customers that want to manage Walmart Marketplace sales from their [!DNL Commerce] instance.
+* Added the [[!DNL Store Fulfillment User Guide]](https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/guide-overview.html) for customers that want to improve their buy online, pick up in store (BOPIS) customer experience and deliver a mobile-enabled, seamless omnichannel fulfillment workflow for in-store and curbside pickup.
+
