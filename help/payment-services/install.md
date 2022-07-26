@@ -15,8 +15,8 @@ You must first download the extension from [Commerce Marketplace](https://experi
 
 1. Navigate to the [Payment Services extension in the Commerce Marketplace](https://marketplace.magento.com/magento-payment-services.html).
 1. To choose the edition and version, toggle **[!UICONTROL Edition]** and **[!UICONTROL Your store version]** to your preferred selections.
-1. Click [!UICONTROL Add to Cart].
-1. Complete checkout and click [!UICONTROL Place Order].
+1. Click **[!UICONTROL Add to Cart]**.
+1. Complete checkout and click **[!UICONTROL Place Order]**.
 1. Check the email associated with your Marketplace download for order confirmation and details.
 
 ## Install the extension
