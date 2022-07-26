@@ -67,14 +67,14 @@ If _[!UICONTROL Live]_ is the selected data source, you can see report informati
 
 Data source selections work as follows:
 
-* If you do not have any stores that use [!DNL Payment Services] in Live mode, the data source selection defaults to [!UICONTROL Sandbox]_.
+* If you do not have any stores that use [!DNL Payment Services] in Live mode, the data source selection defaults to _[!UICONTROL Sandbox]_.
 * If you have any stores (one or multiple) that use [!DNL Payment Services] in Live mode, the data source selection defaults to _[!UICONTROL Live]_.
 * Report exports always honor the data source selection.
 
 To select the data source for your [!UICONTROL Order Payment Status] report:
 
 1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
-1. Click **[!UICONTROL Data source]** and select _[!UICONTROL Live]_ or [!UICONTROL Sandbox]_.
+1. Click **[!UICONTROL Data source]** and select _[!UICONTROL Live]_ or _[!UICONTROL Sandbox]_.
 
    The report results regenerate based on the data source selected.
 
@@ -99,11 +99,23 @@ The Order Payment Status report shows all available columns of information by de
 
 ## View statuses
 
+The Order payment status report view shows comprehensive transaction status and pay status information for each Payment Services order.
+
+### Transaction status
+
 By default, 30 days of order payment statuses are shown in the grid.
 
 Scroll to the left and right to view [order payment status information](#column-descriptions), including order date, authorized date, invoiced, shipped, pay status, and more.
 
 The number of rows returned in a search, or shown in the default 30 days of order payment statuses, are shown above the Order payment status view grid alongside the Order dates calendar selector filter.
+
+### Pay status
+
+The Pay status column shows the current status for any payment. A `Capture failed` payment shows a red alert status and a `Voided` payment shows a gray alert status.
+
+### Refund status
+
+The Refund status column shows the current status for any refund. A `Capture failed` payment shows a red alert status and a `Voided` payment shows a gray alert status.
 
 ## Update report data
 
