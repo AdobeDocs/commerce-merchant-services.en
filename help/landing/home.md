@@ -58,13 +58,13 @@ Adobe provides a collection of hosted services to help merchants support key com
     <em>Increase sales, reach new customers, streamline sales operations, and save time by integrating an Adobe Commerce or Magento Open Source product catalog with the Walmart Marketplace. Enable store administrators and operations staff to manage Walmart Marketplace sales, inventory, and product pricing seamlessly from the Commerce environment.</em>
     </br>
   </td>
-    <td valign="top">
-       <img alt="Store Fulfillment" src="assets/store-fulfillment-landing-graphic.png"/>
+  <td valign="top">
+    <img alt="Store Fulfillment" src="assets/store-fulfillment-landing-graphic.png"/>
     <div><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/guide-overview.html">
     <strong>[!DNL Store Fulfillment]</strong></a>
     </div>
     <p>(Adobe Commerce only)<br><em>Deliver a superior buy online, pick up in store (BOPIS) customer experience, and maximize store employees' productivity by providing an end-to-end, seamless omnichannel fulfillment workflow that is enabled through a mobile device.</em></p>
-    <br>
+    </br>
   </td>
 </tr>
 </table>
@@ -88,4 +88,3 @@ The following items are recent changes to the documentation:
 * Added B2B support in [[!DNL Product Recommendations]](/help/product-recommendations/overview.md).
 * Added the [[!DNL Channel Manager User Guide]](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html) for customers that want to manage Walmart Marketplace sales from their [!DNL Commerce] instance.
 * Added the [[!DNL Store Fulfillment User Guide]](https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/guide-overview.html) for customers that want to improve their buy online, pick up in store (BOPIS) customer experience and deliver a mobile-enabled, seamless omnichannel fulfillment workflow for in-store and curbside pickup.
-
