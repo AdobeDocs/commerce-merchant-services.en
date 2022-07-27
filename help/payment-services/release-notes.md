@@ -21,8 +21,6 @@ See [Availability](https://devdocs.magento.com/release/availability.html) in the
 
 _June 29, 2022_
 
-![Known issue](../assets/bug.svg)<!-- Issue PAY-x --> Apple Pay is incompatible with the Safari browser v15.5 on mobile and desktop. When using Safari version 15.5, you are not able to complete checkout with Apple Pay.
-
 ![Fixed issue](../assets/fix.svg)<!-- Issue PAY-3264 --> Previously, when a logged-in user selected a different billing/shipping address other than the default address for their account, checkout failed. We fixed this issue, and now the selected billing/shipping address is sent (instead of the default saved address) and checkout is completed successfully.
 
 ![Fixed issue](../assets/fix.svg)<!-- Issue PAY-3314 --> If you disable PayPal smart buttons for checkout, no errors are shown.
@@ -38,6 +36,8 @@ _June 29, 2022_
 These release notes describe feature changes and fixes that occurred and were released outside of the regular versioned feature releases, between the current v1.2.0 release and the previous 1.1.0 release for the hosted service.
 
 ![New](../assets/new.svg)<!-- Issue PAY-3420 --> Apple Pay is now available as a PayPal Smart Button. This [payment option](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-options.html#apple-pay-button) enables customers to use Touch ID on their devices to use Apple Pay, which uses credit and debit card payment credentials stored on their iOS or macOS devices.
+
+![Known issue](../assets/bug.svg)<!-- Issue PAY-x --> Apple Pay is incompatible with the Safari browser v15.5 on mobile and desktop. When using Safari version 15.5, you are not able to complete checkout with Apple Pay.
 
 ![New](../assets/new.svg)<!-- Issue PAY-1720 --> Disputes for store orders are now available in [the Order payment status report](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#view-disputes). You can navigate directly to the PayPal Resolution Center from [!DNL Payment Services] to take action on disputes.
 
