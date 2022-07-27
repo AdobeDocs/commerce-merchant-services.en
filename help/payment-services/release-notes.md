@@ -37,7 +37,7 @@ _June 29, 2022_
 
 These release notes describe feature changes and fixes that occurred and were released outside of the regular versioned feature releases, between the current v1.2.0 release and the previous 1.1.0 release for the hosted service.
 
-![New](../assets/new.svg)<!-- Issue PAY-3420 --> Apple Pay is now available as a PayPal Smart Button. This [payment option](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-options.html#apple-pay-button) enables customers to use Touch ID on their devices to use Apple Pay, which utilizes credit and debit card payment credentials stored on their iOS or macOS devices.
+![New](../assets/new.svg)<!-- Issue PAY-3420 --> Apple Pay is now available as a PayPal Smart Button. This [payment option](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-options.html#apple-pay-button) enables customers to use Touch ID on their devices to use Apple Pay, which uses credit and debit card payment credentials stored on their iOS or macOS devices.
 
 ![New](../assets/new.svg)<!-- Issue PAY-1720 --> Disputes for store orders are now available in [the Order payment status report](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#view-disputes). You can navigate directly to the PayPal Resolution Center from [!DNL Payment Services] to take action on disputes.
 
