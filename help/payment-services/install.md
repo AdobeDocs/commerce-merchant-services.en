@@ -65,7 +65,7 @@ This method is used for installing the [!DNL Payment Services] extension for an 
 
    The `composer update` command updates all dependencies. If you do not want to update all dependencies at the same time, use this command instead: `composer require magento/payment-services`.
 
-1. Upgrade [!DNL Adobe Commerce]:
+1. Upgrade your instance:
 
    ```bash
    bin/magento setup:upgrade
