@@ -29,7 +29,7 @@ To learn how to generate an API key for either sandbox or production environment
 
 >[!IMPORTANT]
 >
->If you regenerate an API key pair and change the SaaS Identifier, all the data for Commerce Services used by this instance is lost. It is recommended that you do not regenerate an API key pair and change the SaaS Identifier on an active production instance.
+>If you regenerate an API key pair and change the SaaS Identifier, all the data for Commerce Services used by this instance is lost. An account verification error dialog appears in Payment Services notifying you that the account was not verified. It is recommended that you do not regenerate an API key pair and change the SaaS Identifier on an active production instance.
 
 ## Configure Commerce Services
 

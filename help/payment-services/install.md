@@ -21,7 +21,9 @@ You must first download the extension from [Commerce Marketplace](https://experi
 
 ## Install the extension
 
-You can install the [!DNL Payment Services] extension for both [!DNL Adobe Commerce] on cloud infrastructure and on-premises instances with Composer keys, which are linked to the Magento ID ([mageid](https://devdocs.magento.com/marketplace/sellers/profile-personal.html#field-descriptions)) provided in the signup process. Composer uses these keys during the initial installation of [!DNL Adobe Commerce], or in situations in which the Composer keys were not previously saved to the `auth.json` file.
+You can install the [!DNL Payment Services] extension for both [!DNL Adobe Commerce] on cloud infrastructure and on-premises instances, which are linked to the Magento ID ([mageid](https://devdocs.magento.com/marketplace/sellers/profile-personal.html#field-descriptions)) provided in the signup process, with Composer keys. [!DNL Magento] Open Source customers use the on-premises instructions.
+
+Composer uses these keys during the initial installation of [!DNL Adobe Commerce], or in situations in which the Composer keys were not previously saved to the `auth.json` file.
 
 See [Get your authentication keys](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) for more information about obtaining Composer keys.
 
@@ -49,7 +51,7 @@ This method is used for installing the [!DNL Payment Services] extension for a C
 
 ### On-premises
 
-This method is used for installing the [!DNL Payment Services] extension for an On-premises instance.
+This method is used for installing the [!DNL Payment Services] extension for an on-premises instance and for [!DNL Magento] Open Source customers.
 
 1. To obtain the extension, run these commands:
 
@@ -78,7 +80,7 @@ This method is used for installing the [!DNL Payment Services] extension for an 
    ```
 
 1. Commit changes.
-1. To ensure that the committed code is deployed, update your on-premises instance .
+1. To ensure that the committed code is deployed, update your instance .
 
 ## Upgrade the extension
 
