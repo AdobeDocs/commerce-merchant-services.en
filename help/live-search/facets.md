@@ -20,7 +20,7 @@ The category and product attribute requirements for faceting are similar to the 
 |--- |--- |
 | [Category display settings](https://docs.magento.com/user-guide/catalog/categories-display-settings.html) | Anchor - `Yes` |
 | [Attribute properties](https://docs.magento.com/user-guide/stores/attribute-product-create.html) | [Catalog Input type](https://docs.magento.com/user-guide/stores/attributes-input-types.html) - `Yes/No`, `Dropdown`, `Multiple Select`, `Price` |
-| Attribute storefront properties | Use in Layered Navigation - `Filterable (with results)` |
+| Attribute storefront properties | Use in Search Results Layered Navigation = `Yes` |
 
 ## Default attribute values
 
