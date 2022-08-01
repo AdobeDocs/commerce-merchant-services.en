@@ -9,6 +9,8 @@ Before starting sandbox onboarding, you must sign up for a free PayPal Developer
 
 A PayPal sandbox account allows you to use [!DNL Payment Services] in test mode. PayPal requires that you use a PayPal Developer Portal-generated Business sandbox test account, email, and password for sandbox onboarding. *Do not create another account during the sandbox onboarding process.*
 
+## Sandbox onboarding
+
 To complete sandbox onboarding:
 
 1. Navigate to the [PayPal Developer Account page](https://developer.paypal.com/developer/accounts/).
@@ -51,7 +53,7 @@ To complete sandbox onboarding:
    >
    >If you revoke consent to [!DNL Payment Services] for [!DNL Adobe Commerce] and [!DNL Magento Open Source] for processing your payments (in your PayPal account settings), orders in your store cannot be processed by [!DNL Payment Services]. On your Payment Services home, an alert about the revoked consent appears. To dismiss the alert, click **[!UICONTROL Do not show again]**.
 
-## Reset your sandbox account
+### Reset your sandbox account
 
 If you created an a PayPal sandbox account during the sandbox PayPal onboarding process, you must reset your onboarding sandbox because or you cannot verify your email.
 
