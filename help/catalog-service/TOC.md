@@ -6,4 +6,9 @@ hidden: yes
 ---
 # [!DNL Catalog Service] for Adobe Commerce {#catalog-service}
 
-- [Introduction to [!DNL Live Search]](overview.md)
+- [Guide Overview](guide-overview.md)
+- [Introduction to [!DNL Catalog Service]](overview.md)
+- [Release Notes](release-notes.md)
+- [Onboarding](onboarding.md)
+- [Installation](installation.md)
+- [Implementation](implementation.md)

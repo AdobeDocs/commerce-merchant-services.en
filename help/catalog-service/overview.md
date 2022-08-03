@@ -5,9 +5,7 @@ description: "[!DNL Catalog Service] for Adobe Commerce provides a way to retrie
 
 # [!DNL Catalog Service] for Adobe Commerce
 
->[!IMPORTANT]
->
-> This product is for Beta users only. Contact your Adobe Commerce Beta program manager for assistance and questions.
+{{catalog-service-beta}}
 
 The [!DNL Catalog Service] for Adobe Commerce extension provides rich view-model (read-only) catalog data to quickly and fully render product-related storefront experiences, including:
 
@@ -31,5 +29,4 @@ In the core GraphQL system, the PWA sends a request to the Commerce application,
 [!DNL Catalog Service] sends queries to a separate GraphQL gateway. The service accesses a separate database that contains product details and related information, such as product attributes, variants, prices, and categories. The service keeps the database in sync with the Adobe Commerce through indexation.
 Because the service bypasses direct communication with the application, it is able to reduce the latency of the request and response cycle.
 
-The core and service GraphQL systems do not directly communicate with each other. You access each system from a different URL, and calls require different header information. You can use [!DNL Catalog Service] and [!DNL Live Search] together, if you have a valid license key for both products. However, you can implement [API Mesh for Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/) to integrate the two Adobe Commerce GraphQL systems with private and third-party APIs and other software interfaces using Adobe IO.
-
+The core and service GraphQL systems do not directly communicate with each other. You access each system from a different URL, and calls require different header information. You can use [!DNL Catalog Service] and [!DNL Live Search] together, if you have a valid license key for both products. However, you can implement [API Mesh for Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/) to integrate the two Adobe Commerce GraphQL systems with private and third-party APIs and other software interfaces using Adobe Developer.
