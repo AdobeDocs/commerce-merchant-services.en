@@ -577,7 +577,7 @@ Create the following data elements:
 - **Type**: `searchResponse`
 - **XDM data**: `%search response%`
 
-### addToCart {addtocart}
+### addToCart {#addtocart}
 
 #### Data Elements
 
