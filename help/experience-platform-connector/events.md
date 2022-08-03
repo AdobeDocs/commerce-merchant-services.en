@@ -21,6 +21,8 @@ Click the event name to see the full schema definition.
 |[Sign Out](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/signOutAEP.ts)|Profile|
 |[Create Account](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/createAccountAEP.ts)|Profile|
 |[Edit Account](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/editAccountAEP.ts)|Profile|
+|[Search Request Sent](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/search/searchRequestSentAEP.ts)|Search|
+|[Search Response Received](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/search/searchResponseReceivedAEP.ts)|Search|
 
 >[!NOTE]
 >

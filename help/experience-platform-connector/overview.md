@@ -31,10 +31,15 @@ When access is granted:
 - Install the [Experience Platform connector extension](install.md).
 
     The Experience Platform connector extension is installed from the command line of the server and connects to your Adobe Commerce installation as a [service](../landing/saas.md). When the process is complete, Experience Platform connector appears on the **System** menu under **Services** in the [!DNL Commerce] _Admin_.
+- [Upload shopper profiles](profile.md) to Adobe Experience Platform so storefront data can be attributed to specific shoppers to enhance their shopping experience.
 
 ## Audience
 
 This guide is designed for the Adobe Commerce merchant who must connect their Adobe Commerce storefront data to other Adobe DX products.
+
+### PWA Studio support
+
+See the [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/aep/) documentation for information about how to use the Experience Platform connector in a PWA Studio storefront.
 
 ## Known issues
 
