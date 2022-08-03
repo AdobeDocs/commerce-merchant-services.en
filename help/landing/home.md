@@ -8,7 +8,7 @@ exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
 ---
 # <!-- use banner as heading -->![Services documentation](./assets/banner-services-home.png) {#documentation}
 
-Adobe provides a collection of hosted services to help merchants support key components of their business. 
+Adobe provides a collection of services to help merchants support key components of their business. 
 
 ## Available services
 
@@ -40,17 +40,17 @@ Adobe provides a collection of hosted services to help merchants support key com
     <em>Drive customer satisfaction by easily offering various payment methods, including interest-free payment installments, and a single view into payment processing, orders, and invoices right in your Admin dashboard.</em>
     </br>
   </td>
-    <td valign="top">
-       <img alt="Amazon sales channel" src="assets/amazon-channel.png" />
-    <div><a href="https://experienceleague.adobe.com/docs/commerce-channels/amazon/guide-overview.html">
-    <strong>[!DNL Amazon Sales Channel]</strong></a>
+  <td valign="top">
+    <img alt="Store Fulfillment" src="assets/store-fulfillment-landing-graphic.png"/>
+    <div><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/guide-overview.html">
+    <strong>[!DNL Store Fulfillment]</strong></a>
     </div>
-    <p><em>Integrate your stores with the world’s largest global internet shopping destination. This service enables Amazon sales by connecting Commerce with your Amazon Seller Central account and providing both automation and synchronization of catalog and order data. Completely manage all Amazon listings, implement simple or intelligent pricing rules, and maintain your orders and inventory through a single Commerce dashboard.</em></p>
+    <p>(Adobe Commerce only)<br><em>Deliver a superior buy online, pick up in store (BOPIS) customer experience, and maximize store employees' productivity by providing an end to end, seamless omnichannel fulfillment workflow that is enabled through a mobile device.</em></p>
     </br>
   </td>
-</tr>
-<tr>
-  <td valign="top">
+  </tr>
+  <tr>
+   <td valign="top">
     <img alt="[!DNL Channel Manager]" src="assets/channel-manager.png"/>
     <div>
     <a href="https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html"><strong>[!DNL Channel Manager]</strong></a>
@@ -58,12 +58,12 @@ Adobe provides a collection of hosted services to help merchants support key com
     <em>Increase sales, reach new customers, streamline sales operations, and save time by integrating an Adobe Commerce or Magento Open Source product catalog with the Walmart Marketplace. Enable store administrators and operations staff to manage Walmart Marketplace sales, inventory, and product pricing seamlessly from the Commerce environment.</em>
     </br>
   </td>
-  <td valign="top">
-    <img alt="Store Fulfillment" src="assets/store-fulfillment-landing-graphic.png"/>
-    <div><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/guide-overview.html">
-    <strong>[!DNL Store Fulfillment]</strong></a>
+    <td valign="top">
+       <img alt="Amazon sales channel" src="assets/amazon-channel.png" />
+    <div><a href="https://experienceleague.adobe.com/docs/commerce-channels/amazon/guide-overview.html">
+    <strong>[!DNL Amazon Sales Channel]</strong></a>
     </div>
-    <p>(Adobe Commerce only)<br><em>Deliver a superior buy online, pick up in store (BOPIS) customer experience, and maximize store employees' productivity by providing an end-to-end, seamless omnichannel fulfillment workflow that is enabled through a mobile device.</em></p>
+    <p><em>Integrate your stores with the world’s largest global internet shopping destination. This service enables Amazon sales by connecting Commerce with your Amazon Seller Central account and providing both automation and synchronization of catalog and order data. Completely manage all Amazon listings, implement simple or intelligent pricing rules, and maintain your orders and inventory through a single Commerce dashboard.</em></p>
     </br>
   </td>
 </tr>

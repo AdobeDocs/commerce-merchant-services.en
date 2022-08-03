@@ -50,7 +50,7 @@ To use the [!DNL Quick Checkout] you require [!DNL Bolt] unique keys and [!DNL s
 - [!DNL Publishable key]: A key used by your front end to interact with [!DNL Bolt] APIs.
 - [!DNL Signing secret]: Used for signature verification on requests received from [!DNL Bolt].
 
-![Quick Checkout](assets/account-credentials.png)
+  ![Quick Checkout](assets/account-credentials.png)
 
 See the [[!DNL Bolt] environment details](https://help.bolt.com/developers/references/environment-details/#about-keys){target="_blank"} page to learn about keys and signing secret from [!DNL Bolt] for the [!DNL Quick Checkout] extension.
 
@@ -67,6 +67,13 @@ To connect your payment services provider follow the steps described in the [pro
 1. On the _Admin_ sidebar, go to **Stores** > _Settings_ > **Configuration**.
 1. In the left panel, expand **Sales** and select **Checkout**.
 1. In the [!DNL Quick Checkout] view, set **Enable** to `Yes`.
+
+  ![Quick Checkout](assets/quick-checkout-view-no-enable.png)
+
+  >[!CAUTION]
+  >
+  > Quick checkout fields are only visible when **Enable** is set to `Yes`.
+
 1. Select method (Sandbox or Production) to use.
 
    - Sandbox for testing and development purposes
@@ -74,7 +81,7 @@ To connect your payment services provider follow the steps described in the [pro
 
 1. Validate credentials after providing your unique API and [!DNL Publishable keys].
 
-![Quick Checkout](assets/extension-view.png)
+![Quick Checkout](assets/quick-checkout-main-view.png)
 
 >[!CAUTION]
 >
