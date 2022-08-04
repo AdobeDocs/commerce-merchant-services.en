@@ -472,10 +472,8 @@ Create the following data elements:
     - **Data Element Type**: `XDM object`
     - **Field Group**: `siteSearch` > `phrase`
     - **value**: Not yet available
-    - **Field Group**: `siteSearch` > `sort`
-    - **value**: Select **Provide entire object**
-    - **Field Group**: `siteSearch` > `filter`
-    - **value**: Select **Provide entire object**
+    - **Field Group**: `siteSearch` > `sort`. Select **Provide entire object**.
+    - **Field Group**: `siteSearch` > `filter`. Select **Provide entire object**.
     - **Field Group**: `searchRequest` > `value`
     - **value**: **Value** = `1`
 
@@ -554,12 +552,10 @@ Create the following data elements:
     - **Name**: `Search response`
     - **Extension**: `Adobe Experience Platform Web SDK`
     - **Data Element Type**: `XDM object`
-    - **Field Group**: `siteSearch` > `suggestions`
-    - **value**: Select **Provide entire object**
+    - **Field Group**: `siteSearch` > `suggestions`. Select **Provide entire object**.
     - **Field Group**: `siteSearch` > `numberOfResults`
     - **value**: `%search result number of products%`
-    - **Field Group**: `productListItems`
-    - **value**: Select **Provide entire object**
+    - **Field Group**: `productListItems`. Select **Provide entire object**.
     - **Field Group**: `searchResponse` > `value`
     - **value**: **Value** = `1`
 
@@ -1119,11 +1115,11 @@ Experience Platform connector profiles are joined and generated based on the `pe
 
 If you have a previous setup that relies on different fields, you can continue to use those. To set Experience Platform connector profile identity fields, you must set the following fields:
 
-- `personalEmail` - Account events only - follow the steps under account events
-- `personID` - All events:
+- `personalEmail` - Account events only - follow the steps outlined above for account events
+- `personID` - All other events:
     
-  - If you are already capturing `ECID` in Tags, you can set `personID` in all of your Adobe Experience Platform Web SDK rules to `%ECID%`.
-  - To capture `ECID` in Tags, you must add a **Custom Code** action to your send event rules following the [Tags documentation](https://experienceleague.adobe.com/docs/experience-platform/edge/extension/accessing-the-ecid.html). 
+  - If you are already capturing `ECID` in tags, you can set `personID` in all of your Adobe Experience Platform Web SDK rules to `%ECID%`.
+  - To capture `ECID` in tags, you must add a **Custom Code** action to your send event rules following the [Tags documentation](https://experienceleague.adobe.com/docs/experience-platform/edge/extension/accessing-the-ecid.html). See the example below.
 
 ### Example
 
@@ -1168,8 +1164,8 @@ Adobe Commerce and Experience Platform connector data collection consent is enab
     ![Update SDK with consent](assets/config-sdk-consent.png)
     _Update SDK with consent_
 
-### Risks
+## Warnings
 
 - Not following steps to turn off Experience Platform collection results in events being double-counted
-- Not setting up mappings/events as described affects Adobe Analytics boards
-- Not possible to set up Target through Beacon if data collection is disabled
+- Not setting up mappings/events as described in this topic can affect Adobe Analytics boards
+- You cannot set up Target through the Experience Platform connector if data collection is disabled

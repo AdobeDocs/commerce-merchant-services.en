@@ -24,7 +24,7 @@ In this topic you will learn how to upload your Adobe Commerce customer profiles
 
     >[!NOTE]
     >
-    > If you use the local file upload connector, you must enable the **Profile dataset** option when defining the dataset. This identifies the dataset as being profile data.
+    > If you use the local file upload connector, you must enable the **Profile dataset** option when [defining the dataset](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/local-system/local-file-upload.html#use-an-existing-dataset). This identifies the dataset as being profile data.
 
 After you create the shopper profiles in Profile, all storefront data associated with that shopper will be linked to their profile. 
 
