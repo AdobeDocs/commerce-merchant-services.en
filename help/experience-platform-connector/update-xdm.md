@@ -22,8 +22,8 @@ One of the [prerequisites](overview.md#prereqs) to using the Experience Platform
     
     >[!NOTE]
     >
-    > Do not set any Commerce-specific field groups as `Primary identity`. Doing so, identifies the field as required and Experience Platform expects that field in every event. If that field is absent, data ingestion fails.
+    > Do not set any Commerce-specific field groups as `Primary identity`. Doing so identifies the field as required and Experience Platform expects that field in every event. If that field is absent, data ingestion fails.
     
     Your XDM schema now contains Commerce-specific field groups so that the data collected from the Commerce storefront [events](events.md) is represented in the XDM.
 
-1. [Create a datastream](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=en) and select the XDM schema that contains the Commerce-specific field groups.
+1. [Create a datastream](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html) and select the XDM schema that contains the Commerce-specific field groups.
