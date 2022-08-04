@@ -1,6 +1,7 @@
 ---
 title: Upload Shopper Profiles to Adobe Experience Platform
 description: Learn how to upload shopper profiles to Adobe Experience Platform.
+exl-id: fd0ee7fa-5274-4640-ba00-bcb2ec78f314
 ---
 # Upload shopper profile to Adobe Experience Platform
 
