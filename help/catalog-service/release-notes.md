@@ -27,3 +27,11 @@ These release notes describe the latest versions of [!DNL Catalog Service] and i
   * A specific price for simple products and price ranges for configurable products. 
   * Customer group prices and price ranges. They return a fallback default price on shoppers without a customer group.
   * Product types that use B2B customer-specific pricing.
+
+## Known limitations
+
+* Bundle and virtual product types are not supported.
+* Tier pricing is not supported.
+* In an array of images, only the first image contains roles.
+* Images for variants are not retrieved.
+* Updates are not received when products or variants are deleted from the catalog.
