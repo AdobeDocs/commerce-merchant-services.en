@@ -156,7 +156,7 @@ Create the following data elements:
     - **Name**: `Account email`
     - **Extension**: `Adobe Client Data Layer`
     - **Data Element Type**: `Data Layer Computed State`
-    - **[Optional] path**: `accountContext.accountEmail`
+    - **[Optional] path**: `accountContext.emailAddress`
 
 1. Account type:
 
@@ -205,7 +205,7 @@ Create the following data elements:
     - **Name**: `Account email`
     - **Extension**: `Adobe Client Data Layer`
     - **Data Element Type**: `Data Layer Computed State`
-    - **[Optional] path**: `accountContext.accountEmail`
+    - **[Optional] path**: `accountContext.emailAddress`
 
 1. Account type:
 
@@ -254,7 +254,7 @@ Create the following data elements:
     - **Name**: `Account email`
     - **Extension**: `Adobe Client Data Layer`
     - **Data Element Type**: `Data Layer Computed State`
-    - **[Optional] path**: `accountContext.accountEmail`
+    - **[Optional] path**: `accountContext.emailAddress`
 
 1. Account type:
 
@@ -708,13 +708,13 @@ Create the following data elements:
     - **Open Editor**:
 
     ```bash
-    const searchResult = _satellite.getVar('storefront');
+    const searchResultstorefrontContext = _satellite.getVar('storefront');
     const cart = _satellite.getVar('cart');
     
     const returnList = [];
     cart.items.forEach(item => {
         const selectedOptions = [];
-        item.configurableOptions.forEach(option => {
+        item.configurableOptions?.forEach(option => {
             selectedOptions.push({
                 attribute: option.optionLabel,
                 value: option.valueLabel,
@@ -894,13 +894,13 @@ Create the following data elements:
     - **Open Editor**:
 
     ```bash
-    const searchResult = _satellite.getVar('storefront');
+    const searchResultstorefrontContext = _satellite.getVar('storefront');
     const cart = _satellite.getVar('cart');
     
     const returnList = [];
     cart.items.forEach(item => {
         const selectedOptions = [];
-        item.configurableOptions.forEach(option => {
+        item.configurableOptions?.forEach(option => {
             selectedOptions.push({
                 attribute: option.optionLabel,
                 value: option.valueLabel,
@@ -1054,13 +1054,13 @@ Create the following data elements:
     - **Open Editor**:
 
     ```bash
-    const searchResult = _satellite.getVar('storefront');
+    const storefrontContext = _satellite.getVar('storefront');
     const cart = _satellite.getVar('cart');
     
     const returnList = [];
     cart.items.forEach(item => {
         const selectedOptions = [];
-        item.configurableOptions.forEach(option => {
+        item.configurableOptions?.forEach(option => {
             selectedOptions.push({
                 attribute: option.optionLabel,
                 value: option.valueLabel,
