@@ -17,13 +17,15 @@ These release notes describe the latest versions of [!DNL Live Search] and inclu
 * Compatible with Adobe Commerce for Cloud (ECE): 2.4.x
 * Stability: Stable
 
-* ![New](../assets/new.svg) - Live search now supports B2B features by honoring category permissions, shared catalogs, and customer group-specific pricing.
+* ![New](../assets/new.svg) - Live Search now supports B2B features by honoring category permissions, shared catalogs, and customer group-specific pricing.
 
-Merchants will need to upgrade to live search extension version >= 2.0.3 to be able to access these features.
+Merchants must upgrade the Live Search extension version >= 2.0.3 to access these features.
 
 We advise that users to upgrade and test before pushing to production. Consider upgrading the production environment during off-peak hours after verifying their testing environment results.
 
-Note: B2B support will be added in a phased manner starting August 9th on our backend services and we expect the migration to complete by end of August. If the Live Search extension is not upgraded, your storefront will continue to work normally but without B2B features.
+>[!NOTE]
+>
+>B2B support will be added in a phased manner starting August 9th on the backend services, with an expected migration to be completed by the end of August. If the Live Search extension is not upgraded, your storefront will continue to work normally but without B2B features.
 
 * ![Fix](../assets/fix.svg) - The Product Attributes Feed was not picking up changes to Product Attributes when set to "Update By Schedule". Feature now works as expected.
 * ![Fix](../assets/fix.svg) - The Product Overrides Feed was not picking up changes to Category Permissions when set to "Update By Schedule". This feature now works as expected.
