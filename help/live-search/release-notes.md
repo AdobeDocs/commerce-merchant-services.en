@@ -25,11 +25,14 @@ We advise that users to upgrade and test before pushing to production. Consider 
 
 Note: B2B support will be added in a phased manner starting August 9th on our backend services and we expect the migration to complete by end of August. If the Live Search extension is not upgraded, your storefront will continue to work normally but without B2B features.
 
+* ![Fix](../assets/fix.svg) - The Product Attributes Feed was not picking up changes to Product Attributes when set to "Update By Schedule". Feature now works as expected.
+* ![Fix](../assets/fix.svg) - The Product Overrides Feed was not picking up changes to Category Permissions when set to "Update By Schedule". This feature now works as expected.
+
 ### Known Limitations / Bugs:
 
-* Suggestions are sourced from products not displayable to the customer group.
-* Products are not displayed if not added to the "Default shared catalog".
-* B2B with Live Search for PWA Studio will not be available until PWA Studio adds support for it.
+* ![Bug](../assets/bug.svg) - Suggestions are sourced from products not displayable to the customer group.
+* ![Bug](../assets/bug.svg) - Products are not displayed if not added to the "Default shared catalog".
+* ![Bug](../assets/bug.svg) - B2B with Live Search for PWA Studio will not be available until PWA Studio adds support for it.
 
 ## [!DNL Live Search] 2.0
 
