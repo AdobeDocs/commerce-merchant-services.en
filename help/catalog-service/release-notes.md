@@ -15,16 +15,12 @@ These release notes describe the latest versions of [!DNL Catalog Service] and i
 
 ## Beta Release
 
-*  Adobe Commerce on cloud infrastructure: 2.4.x
-*  Adobe Commerce on premises: 2.4.x
-*  Stability: Beta
-
 *  ![New](../assets/new.svg) - The `products` and `refineProduct` queries return the following data:
    *  Predefined (system) product attributes.
    *  Dynamic product attributes and filter them by role (product display page/product list page).
    *  Product options.
    *  Product images and filter them by role (PDP/PLP).
-   *  A specific price for simple products and price ranges for configurable products. 
+   *  A specific price for simple products and price ranges for configurable products.
    *  Customer group prices and price ranges. They return a fallback default price on shoppers without a customer group.
    *  Product types that use B2B customer-specific pricing.
 

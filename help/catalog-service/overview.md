@@ -1,6 +1,6 @@
 ---
 title: "[!DNL Catalog Service]"
-description: "[!DNL Catalog Service] for Adobe Commerce provides a way to retrieve the contents of Product Display Pages and Product List Pages faster than the native Adobe Commerce GraphQL queries."
+description: "[!DNL Catalog Service] for Adobe Commerce provides a way to retrieve the contents of Product Display Pages and Product List Pages much more quickly than the native Adobe Commerce GraphQL queries."
 ---
 
 # [!DNL Catalog Service] for Adobe Commerce
@@ -35,7 +35,9 @@ Because the service bypasses direct communication with the application, it is ab
 >
 >The gateway is for future integration with [!DNL Live Search] and [!DNL Product Recommendations]. In this release, you can access [!DNL Catalog Service] and Live Search queries from the same endpoint, if you have a valid license key for both products. However, the queries from the two products do not currently share any response data.
 
-The core and service GraphQL systems do not directly communicate with each other. You access each system from a different URL, and calls require different header information. You can implement [API Mesh for Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/) to integrate the two Adobe Commerce GraphQL systems with private and third-party APIs and other software interfaces using Adobe Developer. Together, these products can ensure quick response times while enabling full access to storefront data.
+The core and service GraphQL systems do not directly communicate with each other. You access each system from a different URL, and calls require different header information. The two GraphQL systems are designed to be used together. The [!DNL Catalog Service] GraphQL system augments the core system to make product storefront experiences faster.
+
+You can optionally implement [API Mesh for Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/) to integrate the two Adobe Commerce GraphQL systems with private and third-party APIs and other software interfaces using Adobe Developer. The mesh can be configured to ensure calls routed to each endpoint contain the correct authorization information in the headers.
 
 ## Implementation
 
