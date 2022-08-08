@@ -723,7 +723,7 @@ Create the following data elements:
     - **Open Editor**:
 
     ```bash
-    const searchResultstorefrontContext = _satellite.getVar('storefront');
+    const storefrontContext = _satellite.getVar('storefront');
     const cart = _satellite.getVar('cart');
     
     const returnList = [];
@@ -909,7 +909,7 @@ Create the following data elements:
     - **Open Editor**:
 
     ```bash
-    const searchResultstorefrontContext = _satellite.getVar('storefront');
+    const storefrontContext = _satellite.getVar('storefront');
     const cart = _satellite.getVar('cart');
     
     const returnList = [];
