@@ -13,6 +13,10 @@ These release notes describe the latest versions of [!DNL Live Search] and inclu
 
 ## [!DNL Live Search] 2.0.3
 
+* Compatible with Adobe Commerce (EE): 2.4.x
+* Compatible with Adobe Commerce for Cloud (ECE): 2.4.x
+* Stability: Stable
+
 * ![New](../assets/new.svg) - Live search now supports B2B features by honoring category permissions, shared catalogs, and customer group-specific pricing.
 
 Merchants will need to upgrade to live search extension version >= 2.0.3 to be able to access these features.
