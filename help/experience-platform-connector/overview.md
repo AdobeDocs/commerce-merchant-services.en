@@ -1,11 +1,11 @@
 ---
 title: Guide Overview
-description: Adobe Experience Platform connector for Adobe Commerce connects your [!DNL Commerce] instance to other Adobe Experience Cloud products.
+description: Adobe Experience Platform connector for Adobe Commerce connects your Commerce instance to other Adobe Experience Cloud products.
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
 ---
 # Experience Platform connector overview
 
-The Experience Platform connector extension allows Adobe Commerce merchants to send data to the Adobe Experience Platform edge so other Adobe Experience Cloud products, such as Adobe Analytics and Adobe Target, can use that [!DNL Commerce] data. By connecting your [!DNL Commerce] data to other products in the Adobe Experience Cloud, you can perform tasks, such as analyze user behavior on your site, perform AB testing, and create personalized campaigns.
+The Experience Platform connector extension allows Adobe Commerce merchants to send data to the Adobe Experience Platform edge so other Adobe Experience Cloud products, such as Adobe Analytics and Adobe Target, can use that Commerce data. By connecting your Commerce data to other products in the Adobe Experience Cloud, you can perform tasks, such as analyze user behavior on your site, perform AB testing, and create personalized campaigns.
 
 Storefront events capture shopper interactions, such as `View Page`, `View Product`, `Add to Cart`, and so on. Captured data does not include personally identifiable information (PII). All user identifiers, such as cookie IDs and IP addresses, are strictly anonymized. [Learn more](https://www.adobe.com/privacy/experience-cloud.html). See the complete list of [storefront events](events.md).
 
@@ -30,7 +30,7 @@ When access is granted:
 
 - Install the [Experience Platform connector extension](install.md).
 
-    The Experience Platform connector extension is installed from the command line of the server and connects to your Adobe Commerce installation as a [service](../landing/saas.md). When the process is complete, Experience Platform connector appears on the **System** menu under **Services** in the [!DNL Commerce] _Admin_.
+    The Experience Platform connector extension is installed from the command line of the server and connects to your Adobe Commerce installation as a [service](../landing/saas.md). When the process is complete, Experience Platform connector appears on the **System** menu under **Services** in the Commerce _Admin_.
 - [Upload shopper profiles](profile.md) to Adobe Experience Platform so storefront data can be attributed to specific shoppers to enhance their shopping experience.
 
 ## Audience
@@ -48,8 +48,8 @@ Currently, the Experience Platform connector has the following known issues:
 - Search events are not supported on an Adobe Commerce Enterprise Edition with the B2B module installed.
 - Storefront data takes about an hour to get from Adobe Commerce to the various destinations after connecting to the Adobe Experience Platform edge.
 
-## Support
+If you need information or have questions that are not covered in this guide, use the following resources:
 
-If you need information or have questions that are not covered in this guide, post to the following Slack channel:
-
-- `#beacon-ama`
+- [Help center](https://support.magento.com/hc/en-us){target="_blank"}
+- [Support tickets](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket){target="_blank"}---Submit a ticket to receive additional help.
+- On Slack: `#beacon-ama`
