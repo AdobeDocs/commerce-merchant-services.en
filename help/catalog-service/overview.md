@@ -20,6 +20,8 @@ The [!DNL Catalog Service] uses [GraphQL](https://graphql.org/) to request and r
 
 Adobe Commerce has two GraphQL systems. The core GraphQL system provides a wide range of queries (read operations) and mutations (write operations) that allow a shopper to interact with many types of pages, including product, customer account, cart, checkout, and more. However, the queries that return product information are not optimized for speed. The services GraphQL system can only perform queries on products and related information. These queries are more performant than similar core queries.
 
+## Architecture
+
 The following diagram shows the two GraphQL systems:
 
 ![Catalog architecture diagram](assets/catalog-service-architecture.png)
@@ -29,4 +31,14 @@ In the core GraphQL system, the PWA sends a request to the Commerce application,
 [!DNL Catalog Service] sends queries to a separate GraphQL gateway. The service accesses a separate database that contains product details and related information, such as product attributes, variants, prices, and categories. The service keeps the database in sync with the Adobe Commerce through indexation.
 Because the service bypasses direct communication with the application, it is able to reduce the latency of the request and response cycle.
 
-The core and service GraphQL systems do not directly communicate with each other. You access each system from a different URL, and calls require different header information. You can use [!DNL Catalog Service] and [!DNL Live Search] together, if you have a valid license key for both products. However, you can implement [API Mesh for Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/) to integrate the two Adobe Commerce GraphQL systems with private and third-party APIs and other software interfaces using Adobe Developer.
+>[!NOTE]
+>
+>The gateway is for future integration with [!DNL Live Search] and [!DNL Product Recommendations]. In this release, you can access [!DNL Catalog Service] and Live Search queries from the same endpoint, if you have a valid license key for both products. However, the queries from the two products do not currently share any response data.
+
+The core and service GraphQL systems do not directly communicate with each other. You access each system from a different URL, and calls require different header information. You can implement [API Mesh for Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/) to integrate the two Adobe Commerce GraphQL systems with private and third-party APIs and other software interfaces using Adobe Developer. Together, these products can ensure quick response times while enabling full access to storefront data.
+
+## Implementation
+
+The installation process requires configuration of the [Commerce Services Connector](../landing/saas.md). Once that is accomplished, the next step is for a systems integrator to update the storefront code to incorporate the [!DNL Catalog Service] queries. All [!DNL Catalog Service] queries are routed to the GraphQL gateway. The URL is provided during the onboarding process.
+
+[Adobe Commerce Devdocs](https://devdocs.magento.com/catalog-service/index.html) describes the differences between the core and [!DNL Catalog Service] queries. Reference information for each query is also included.

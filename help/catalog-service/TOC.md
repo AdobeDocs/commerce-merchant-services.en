@@ -8,7 +8,5 @@ hide: yes
 
 - [Guide Overview](guide-overview.md)
 - [Introduction to [!DNL Catalog Service]](overview.md)
+- [Onboarding and installation](installation.md)
 - [Release Notes](release-notes.md)
-- [Onboarding](onboarding.md)
-- [Installation](installation.md)
-- [Implementation](implementation.md)
