@@ -11,11 +11,9 @@ These release notes describe the latest versions of Experience Platform connecto
 * ![Fix](../assets/fix.svg) - Fixes and improvements
 * ![Bug](../assets/bug.svg) - Known issues
 
-## Experience Platform connector 1.1.0
+## Experience Platform connector 1.0.0
 
-* Compatible with Adobe Commerce (EE): 2.4.4
-* Compatible with Adobe Commerce for Cloud (ECE): 2.4.4
-* Stability: Stable
+* ![New](../assets/new.svg) - General availability release!
 
 ## Documentation
 
