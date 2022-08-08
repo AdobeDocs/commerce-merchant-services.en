@@ -4,4 +4,4 @@
 
 >[!IMPORTANT]
 >
->Catalog Service for Adobe Commerce is for Beta users only. Contact your Adobe Commerce Beta program manager for assistance and questions.
+>Catalog Service for Adobe Commerce is for Beta users only. [Onboarding and installation](installation.html) describes how to join the Beta program.

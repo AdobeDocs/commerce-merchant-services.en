@@ -5,8 +5,6 @@ description: "Learn how to install [!DNL Catalog Service]"
 
 # Onboarding and Installation
 
-{{catalog-service-beta}}
-
 Partners and customers are welcome to start using the [!DNL Catalog Service] Beta version released on Aug 9, 2022. To participate, you must read and agree to our [Adobe Commerce Beta program terms](https://experiencecloudpanel.adobe.com/h/s/6eGskQlHvLSHztsNmKCWMy).
 
 Once you've signed the agreement, reach out to our team on the [#storefront-services](https://magentocommeng.slack.com/archives/C03HVPG8RS4) public Slack channel. We will provide all information and the next steps needed to work with the [!DNL Catalog Service] Beta version.

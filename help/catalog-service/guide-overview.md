@@ -11,11 +11,9 @@ This guide is intended for administrators of Adobe [!DNL Commerce]. It includes 
 
 [!DNL Catalog Service] has two types of users:
 
-* Adobe [!DNL Commerce] administrators install and maintain the service.
+*  Adobe [!DNL Commerce] system administrators install and maintain the service. [!DNL Catalog Service] does not have an Admin UI or features for standard Admin users.
 
-* Integrators build GraphQL queries and integrate them on a storefront that uses a [Progressive Web App](https://developer.adobe.com/commerce/pwa-studio/) (PWA) or other frontend client.
-
-This guide covers all [!DNL Catalog Service]-specific tasks that are done from the command line. There are no tasks to be performed from the Admin. It does not cover the core capabilities of Adobe Commerce and Magento Open Source.
+*  Integrators build GraphQL queries and integrate them on a storefront that uses a frontend client.
 
 You can find detailed integration information at [Catalog Service for Adobe Commerce](https://devdocs.magento.com/catalog-service/index.html).
 
