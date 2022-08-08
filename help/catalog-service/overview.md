@@ -16,7 +16,7 @@ The [!DNL Catalog Service] for Adobe Commerce extension provides rich view-model
 *  Product comparison pages
 *  Any other pages that render product data, such as cart, order, and wish list pages
 
-The [!DNL Catalog Service] uses [GraphQL](https://graphql.org/) to request and receive product data. GraphQL is a query language that a [Progressive Web App](https://developer.adobe.com/commerce/pwa-studio/) (PWA) or other frontend client uses to communicate with the application programming interface (API) defined on a backend such as Adobe Commerce. GraphQL is a popular method of communication because it is lightweight and allows a system integrator to specify the contents and order of each response.
+The [!DNL Catalog Service] uses [GraphQL](https://graphql.org/) to request and receive product data. GraphQL is a query language that a frontend client uses to communicate with the application programming interface (API) defined on a backend such as Adobe Commerce. GraphQL is a popular method of communication because it is lightweight and allows a system integrator to specify the contents and order of each response.
 
 Adobe Commerce has two GraphQL systems. The core GraphQL system provides a wide range of queries (read operations) and mutations (write operations) that allow a shopper to interact with many types of pages, including product, customer account, cart, checkout, and more. However, the queries that return product information are not optimized for speed. The services GraphQL system can only perform queries on products and related information. These queries are more performant than similar core queries.
 
