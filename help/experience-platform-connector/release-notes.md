@@ -13,7 +13,7 @@ These release notes describe the latest versions of Experience Platform connecto
 
 ## Experience Platform connector 1.0.0
 
-* ![New](../assets/new.svg) - General availability release!
+* ![New](../assets/new.svg) - General availability release
 
 ## Documentation
 
