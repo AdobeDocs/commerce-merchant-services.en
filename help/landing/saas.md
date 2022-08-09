@@ -18,6 +18,7 @@ The following lists the [!DNL Commerce] features you can access through the [!DN
 |[[!DNL Payment Services]](/help/payment-services/overview.md) | Adobe Commerce and Magento Open Source|
 |[[!DNL Channel Manager]](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/intro-to-channel-manager/overview.html)|Adobe Commerce and Magento Open Source|
 |[[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html)|Adobe Commerce|
+|[[!DNL Catalog Service]](/help/catalog-service/overview.md)|Adobe Commerce|
 |[Experience Platform Connector](/help/experience-platform-connector/overview.md)|Adobe Commerce|
 
 ## Architecture
