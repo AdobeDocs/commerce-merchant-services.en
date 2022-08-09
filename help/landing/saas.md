@@ -19,6 +19,7 @@ The following lists the [!DNL Commerce] features you can access through the [!DN
 |[[!DNL Channel Manager]](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/intro-to-channel-manager/overview.html)|Adobe Commerce and Magento Open Source|
 |[[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html)|Adobe Commerce|
 |[[!DNL Catalog Service]](/help/catalog-service/overview.md)|Adobe Commerce|
+|[Experience Platform Connector](/help/experience-platform-connector/overview.md)|Adobe Commerce|
 
 ## Architecture
 
@@ -100,7 +101,7 @@ To change the SaaS project or data space names, click **Rename**.
 
 ## IMS Organization (optional) {#organizationid}
 
-(This feature is for future integration with the Adobe Experience Platform). To connect your Adobe Commerce instance to the Adobe Experience Platform, sign in to your Adobe account using your Adobe ID. After you sign in, the IMS organization associated with your Adobe account is displayed in this section.
+To connect your Adobe Commerce instance to the Adobe Experience Platform, sign in to your Adobe account using your Adobe ID. After you sign in, the IMS organization associated with your Adobe account is displayed in this section.
 
 ## Catalog sync
 

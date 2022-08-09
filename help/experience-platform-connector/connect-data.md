@@ -29,7 +29,7 @@ The Datastream ID enables event-forwarding from Adobe Experience Platform to oth
 | IMS Org (Global)| ID that belongs to the organization that purchased the Adobe DX product. This ID links your Adobe Commerce instance to Adobe Experience Platform. |
 | Datastream ID (Storeview) | ID that allows data to flow from Adobe Experience Platform to other Adobe DX products. This ID can be associated to a specific storeView within your specific Adobe Commerce instance. |
 
-With the Experience Platform connector extension installed, the link between Adobe Commerce and Adobe Experience Platform created, and the Datastream ID specified, [!DNL Commerce] data begins to flow to the Adobe Experience Platform edge and to other Adobe DX products.
+With the Experience Platform connector extension installed, the link between Adobe Commerce and Adobe Experience Platform created, and the Datastream ID specified, Commerce data begins to flow to the Adobe Experience Platform edge and to other Adobe DX products.
 
 ## Commerce data at the edge
 

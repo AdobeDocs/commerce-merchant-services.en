@@ -11,6 +11,29 @@ These release notes describe the latest versions of [!DNL Live Search] and inclu
 * ![Fix](../assets/fix.svg) - Fixes and improvements
 * ![Bug](../assets/bug.svg) - Known issues
 
+## [!DNL Live Search] 2.0.3
+
+* Compatible with Adobe Commerce (EE): 2.4.x
+* Compatible with Adobe Commerce for Cloud (ECE): 2.4.x
+* Stability: Stable
+
+* ![New](../assets/new.svg) - Live Search now supports B2B features by honoring category permissions, shared catalogs, and customer group-specific pricing.
+
+Merchants must upgrade the Live Search extension version >= 2.0.3 to access these features.
+
+We advise users to upgrade and test before pushing to production. Consider upgrading the production environment during off-peak hours after verifying their testing environment results.
+
+>[!NOTE]
+>
+>B2B support will be added in a phased manner starting August 9th on the backend services, with an expected migration to be completed by the end of August. If the Live Search extension is not upgraded, your storefront will continue to work normally but without B2B features.
+
+### Known Limitations / Bugs:
+
+* ![Bug](../assets/bug.svg) - Suggestions are sourced from products not displayable to the customer group.
+* ![Bug](../assets/bug.svg) - Products are not displayed if not added to the "Default shared catalog".
+* B2B with Live Search for PWA Studio will not be available until PWA Studio adds support for it.
+* Product overrides and product attributes feed may have sync issues requiring admins to run `bin/magento indexer:reset` and `bin/magento indexer:reindex` to re-sync correctly.
+
 ## [!DNL Live Search] 2.0
 
 * Compatible with Adobe Commerce (EE): 2.4.x
