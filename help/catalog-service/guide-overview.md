@@ -24,9 +24,6 @@ You can find detailed integration information at [Catalog Service for Adobe Comm
 | [Adobe Commerce 2.4 User Guide](https://docs.magento.com/user-guide/) | Merchant-focused documentation for both Adobe Commerce and Magento Open Source |
 | [Adobe Commerce 2.4 Developer Guide](https://devdocs.magento.com/) | Developer-focused documentation used to build and customize Adobe Commerce or Magento Open Source |
 
-## Support
+## Get help
 
-If you need information or have questions that are not covered in this guide, use the following resources:
-
-*  [Help center](https://support.magento.com/hc/en-us){target="_blank"}
-*  [Support tickets](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket){target="_blank"}---Submit a ticket to receive additional help.
+The onboarding process is designed to guide you through the required steps for setting up and enabling the [!DNL Catalog Service] functionality. Contact the Adobe Commerce engineering team in the [#storefront-services](https://magentocommeng.slack.com/archives/C03HVPG8RS4) public Slack channel for assistance.

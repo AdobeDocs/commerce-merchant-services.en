@@ -5,7 +5,7 @@ description: "Learn how to install [!DNL Catalog Service]"
 
 # Onboarding and Installation
 
-Partners and customers are welcome to start using the [!DNL Catalog Service] Beta version released on Aug 9, 2022. To participate, you must read and agree to our [Adobe Commerce Beta program terms](https://experiencecloudpanel.adobe.com/h/s/6eGskQlHvLSHztsNmKCWMy).
+Partners and customers are welcome to start using the [!DNL Catalog Service] for Adobe Commerce Beta version released on Aug 9, 2022. To participate, you must read and agree to our [Adobe Commerce Beta program terms](https://experiencecloudpanel.adobe.com/h/s/6eGskQlHvLSHztsNmKCWMy).
 
 Once you've signed the agreement, reach out to our team on the [#storefront-services](https://magentocommeng.slack.com/archives/C03HVPG8RS4) public Slack channel. We will provide all information and the next steps needed to work with the [!DNL Catalog Service] Beta version.
 
@@ -26,7 +26,9 @@ The onboarding process for [!DNL Catalog Service] requires access to the command
 
 ## Install the extension
 
-The [!DNL Catalog Service] for Adobe Commerce is installed with Composer keys, which are linked to the Magento ID ([mageid](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-personal/#field-descriptions) provided in the signup process. Composer uses these keys during the initial installation of [!DNL Adobe Commerce], or in situations in which the Composer keys were not previously saved to the `auth.json` file.
+You can install the [!DNL Catalog Service] extension for both Adobe Commerce on cloud infrastructure and on-premises instances.
+
+The [!DNL Catalog Service] is installed with Composer keys, which are linked to the Magento ID ([mageid](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-personal/#field-descriptions) provided in the signup process. Composer uses these keys during the initial installation of [!DNL Adobe Commerce], or in situations in which the Composer keys were not previously saved to the `auth.json` file.
 
 See [Get your authentication keys](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) for more information about obtaining Composer keys.
 
