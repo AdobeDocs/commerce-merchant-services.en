@@ -11,7 +11,11 @@ Once you've signed the agreement, reach out to our team on the [#storefront-serv
 
 ## Prerequisites
 
-The onboarding process for [!DNL Catalog Service] requires access to the command line of the server as described in [Installation](installation.md). If you are not familiar with working from the command line, ask a developer or system integrator to help.
+>[!NOTE]
+>
+>You must install [[!DNL Live Search]](../live-search/install.md) before installing [!DNL Catalog Service].
+
+The onboarding process for [!DNL Catalog Service] requires access to the command line of the server. If you are not familiar with working from the command line, ask a developer or system integrator to help.
 
 ### Software requirements
 
@@ -34,21 +38,18 @@ See [Get your authentication keys](https://devdocs.magento.com/guides/v2.4/insta
 
 Use this method for installing the [!DNL Catalog Service] extension for a Commerce Cloud instance.
 
-1. Open the `<Commerce_root>/composer.json` file in a text editor and update the `require` section as follows:
+1. Install [!DNL Live Search], if you have not done so already. You can use the following command to determine whether [!DNL Live Search] has been installed.
 
-   ```json
-   "require": {
-     "magento/magento-cloud-metapackage": ">=2.4.3 <2.4.4",
-     "magento/composer-root-update-plugin": "~1.1",
-     "magento/saas-export": "^101.3.1",
-     "magento/commerce-data-export": "^101.2.4",    
-     "magento/commerce-data-export-ee": "^101.2.4",
-     "magento/services-id": "^3.0.0",
-     "magento/services-connector": "1.2.1"
-   }
+   ```bash
+   composer show magento/module-live-search | grep version
    ```
 
-   <!-- What if the customer already has other services installed, and some of these lines are already present? Do they need to delete the duplications? What if the version numbers are different? -->
+1. Run the following command to download the [!DNL Catalog Service ] modules:
+
+   ```bash
+   composer require magento/module-product-variant-data-exporter
+   composer require magento/module-saas-product-variant
+   ```
 
 1. Update dependencies and install the extension:
 
@@ -64,18 +65,17 @@ Use this method for installing the [!DNL Catalog Service] extension for a Commer
 
 Use this method for installing the [!DNL Catalog Service] extension for an on-premises instance.
 
-1. Open the `<Commerce_root>/composer.json` file in a text editor and update the `require` section as follows:
+1. Install [!DNL Live Search], if you have not done so already. You can use the following command to determine whether [!DNL Live Search] has been installed.
 
-   ```json
-   "require": {
-     "magento/magento-cloud-metapackage": ">=2.4.3 <2.4.4",
-     "magento/composer-root-update-plugin": "~1.1",
-     "magento/saas-export": "^101.3.1",
-     "magento/commerce-data-export": "^101.2.4",    
-     "magento/commerce-data-export-ee": "^101.2.4",
-     "magento/services-id": "^3.0.0",
-     "magento/services-connector": "1.2.1"
-   }
+   ```bash
+   composer show magento/module-live-search | grep version
+   ```
+
+1. Run the following command to download the [!DNL Catalog Service ] modules:
+
+   ```bash
+   composer require magento/module-product-variant-data-exporter
+   composer require magento/module-saas-product-variant
    ```
 
 1. Update dependencies and install the extension:
@@ -98,8 +98,8 @@ Use this method for installing the [!DNL Catalog Service] extension for an on-pr
    bin/magento cache:clean
    ```
 
-## Configure catalog export
+## Verify the installation
 
-After you install [!DNL Catalog Service], you must configure the [Commerce Services Connector](../landing/saas.md) by specifying API Keys and selecting a SaaS Data Space.
+If you fully installed and configured [!DNL Live Search], the [Commerce Services Connector](../landing/saas.md) should already be set up. Review the connector settings to be sure.
 
 To ensure that catalog export is running correctly, confirm that the [cron jobs](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) and the [indexers](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) are running and the Product Feed indexer is set to Update by Schedule.
