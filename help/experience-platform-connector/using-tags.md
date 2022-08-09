@@ -16,7 +16,7 @@ In this topic, you will learn how to map the storefront event values provided by
 
 To collect Commerce event data:
 
-- Install the [Adobe Commerce Event SDK](https://www.npmjs.com/package/@adobe/magento-storefront-events-sdk). For PHP storefronts, see the [install](install.md) topic. For PWA Studio storefronts, see the [PWA Studio guide](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/aep/).
+- Install the [Adobe Commerce Events SDK](https://github.com/adobe/commerce-events/tree/main/packages/commerce-events-sdk). For PHP storefronts, see the [install](install.md) topic. For PWA Studio storefronts, see the [PWA Studio guide](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/aep/).
 
     >[!NOTE]
     >
@@ -156,7 +156,7 @@ Create the following data elements:
     - **Name**: `Account email`
     - **Extension**: `Adobe Client Data Layer`
     - **Data Element Type**: `Data Layer Computed State`
-    - **[Optional] path**: `accountContext.accountEmail`
+    - **[Optional] path**: `accountContext.emailAddress`
 
 1. Account type:
 
@@ -205,7 +205,7 @@ Create the following data elements:
     - **Name**: `Account email`
     - **Extension**: `Adobe Client Data Layer`
     - **Data Element Type**: `Data Layer Computed State`
-    - **[Optional] path**: `accountContext.accountEmail`
+    - **[Optional] path**: `accountContext.emailAddress`
 
 1. Account type:
 
@@ -254,7 +254,7 @@ Create the following data elements:
     - **Name**: `Account email`
     - **Extension**: `Adobe Client Data Layer`
     - **Data Element Type**: `Data Layer Computed State`
-    - **[Optional] path**: `accountContext.accountEmail`
+    - **[Optional] path**: `accountContext.emailAddress`
 
 1. Account type:
 
@@ -339,12 +339,23 @@ Create the following data elements:
     - **Data Element Type**: `Data Layer Computed State`
     - **[Optional] path**: `productContext.sku` 
 
-1. Currency code:
+1. Product currency:
 
-    - **Name**: `Currency code`
+    - **Name**: `Product currency`
     - **Extension**: `Adobe Client Data Layer`
     - **Data Element Type**: `Data Layer Computed State`
     - **[Optional] path**: `productContext.pricing.currencyCode`
+
+1. Currency code:
+
+    - **Name**: `Currency code`
+    - **Extension**: `Core`
+    - **Data Element Type**: `Custom Code`
+    - **Open Editor**:
+    
+    ```bash
+    return _satellite.getVar('product currency') || _satellite.getVar('storefront').storeViewCurrencyCode
+    ```
 
 1. Special price:
 
@@ -365,7 +376,11 @@ Create the following data elements:
     - **Name**: `Product price`
     - **Extension**: `Core`
     - **Data Element Type**: `Custom Code`
-    - **Open Editor**: `return _satellite.getVar('product regular price') || _satellite.getVar('product special price')`
+    - **Open Editor**:
+    
+    ```bash
+    return _satellite.getVar('product regular price') || _satellite.getVar('product special price')
+    ```
 
 1. Product view:
 
@@ -409,7 +424,7 @@ Create the following data elements:
     - **Open Editor**:
     
     ```bash
-    `return _satellite.getVar('search input').phrase;`
+    return _satellite.getVar('search input').phrase;
     ```
 
 1. Search input sort
@@ -513,7 +528,7 @@ Create the following data elements:
     - **Open Editor**:
 
     ```bash
-    return _satellite.getVar('search result').productCount;
+    return _satellite.getVar('search result').products.length;
     ```
 
 1. Search result products:
@@ -708,13 +723,13 @@ Create the following data elements:
     - **Open Editor**:
 
     ```bash
-    const searchResult = _satellite.getVar('storefront');
+    const storefrontContext = _satellite.getVar('storefront');
     const cart = _satellite.getVar('cart');
     
     const returnList = [];
     cart.items.forEach(item => {
         const selectedOptions = [];
-        item.configurableOptions.forEach(option => {
+        item.configurableOptions?.forEach(option => {
             selectedOptions.push({
                 attribute: option.optionLabel,
                 value: option.valueLabel,
@@ -894,13 +909,13 @@ Create the following data elements:
     - **Open Editor**:
 
     ```bash
-    const searchResult = _satellite.getVar('storefront');
+    const storefrontContext = _satellite.getVar('storefront');
     const cart = _satellite.getVar('cart');
     
     const returnList = [];
     cart.items.forEach(item => {
         const selectedOptions = [];
-        item.configurableOptions.forEach(option => {
+        item.configurableOptions?.forEach(option => {
             selectedOptions.push({
                 attribute: option.optionLabel,
                 value: option.valueLabel,
@@ -1054,13 +1069,13 @@ Create the following data elements:
     - **Open Editor**:
 
     ```bash
-    const searchResult = _satellite.getVar('storefront');
+    const storefrontContext = _satellite.getVar('storefront');
     const cart = _satellite.getVar('cart');
     
     const returnList = [];
     cart.items.forEach(item => {
         const selectedOptions = [];
-        item.configurableOptions.forEach(option => {
+        item.configurableOptions?.forEach(option => {
             selectedOptions.push({
                 attribute: option.optionLabel,
                 value: option.valueLabel,
