@@ -13,14 +13,18 @@ Faceting is a method of high-performance filtering that uses multiple dimensions
 
 The category and product attribute requirements for faceting are similar to the filterable attributes used for layered navigation. The storefront properties of each attribute must be set to `filterable (with results)`.
 
-* Up to 100 attributes can be configured as facets with [!DNL Live Search].
-* [!DNL Live Search] indexes up to 300 attributes as filterable/searchable/sortable and visible in search.
+Live Search supports up to:
+
+* 100 attributes configured as facets
+* 50 sortable attributes
+* 200 filterable attributes
+* 200 searchable attributes
 
 | Setting | Description |
 |--- |--- |
 | [Category display settings](https://docs.magento.com/user-guide/catalog/categories-display-settings.html) | Anchor - `Yes` |
 | [Attribute properties](https://docs.magento.com/user-guide/stores/attribute-product-create.html) | [Catalog Input type](https://docs.magento.com/user-guide/stores/attributes-input-types.html) - `Yes/No`, `Dropdown`, `Multiple Select`, `Price` |
-| Attribute storefront properties | Use in Layered Navigation - `Filterable (with results)` |
+| Attribute storefront properties | Use in Search Results Layered Navigation - `Yes` |
 
 ## Default attribute values
 

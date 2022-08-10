@@ -5,7 +5,7 @@ exl-id: 5a754106-c66a-4280-9896-6d065df8a841
 ---
 # Create Custom Events
 
-You can extend the [eventing platform](events.md) by creating your own storefront events to collect data unique to your industry. When you create and configure a custom event, it is sent to the [Adobe Commerce Event Collector](https://www.npmjs.com/package/@adobe/magento-storefront-event-collector).
+You can extend the [eventing platform](events.md) by creating your own storefront events to collect data unique to your industry. When you create and configure a custom event, it is sent to the [Adobe Commerce Events Collector](https://github.com/adobe/commerce-events/tree/main/packages/commerce-events-collectors).
 
 ## Handle Custom Events
 
@@ -15,7 +15,7 @@ For any `custom` event, the collector adds a `personId` (`ecid`) to `customConte
 
 Example:
 
-Custom event published through MSE SDK:
+Custom event published through Adobe Commerce Events SDK:
 
 ```javascript
 mse.publish.custom({
@@ -47,7 +47,7 @@ For any event with a set `customContext`, the collector overrides `personId` and
 
 Examples:
 
-Product view with overrides published though MSE SDK:
+Product view with overrides published though Adobe Commerce Events SDK:
 
 ```javascript
 mse.publish.productPageView({
@@ -72,7 +72,7 @@ In Experience Platform Edge:
 }
 ```
 
-Product view with Adobe Commerce overrides published though MSE SDK:
+Product view with Adobe Commerce overrides published though Adobe Commerce Events SDK:
 
 ```javascript
 mse.publish.productPageView({
