@@ -1,8 +1,8 @@
 ---
-title: "[!DNL Catalog Service]"
-description: "[!DNL Catalog Service] for Adobe Commerce provides a way to retrieve the contents of Product Display Pages and Product List Pages much more quickly than the native Adobe Commerce GraphQL queries."
+title: '[!DNL Catalog Service]'
+description: '[!DNL Catalog Service] for Adobe Commerce provides a way to retrieve the contents of Product Display Pages and Product List Pages much more quickly than the native Adobe Commerce GraphQL queries.'
+exl-id: 266faca4-6a65-4590-99a9-65b1705cac87
 ---
-
 # [!DNL Catalog Service] for Adobe Commerce
 
 {{catalog-service-beta}}
