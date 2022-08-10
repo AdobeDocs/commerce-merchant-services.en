@@ -52,4 +52,3 @@ If you need information or have questions that are not covered in this guide, us
 
 - [Help center](https://support.magento.com/hc/en-us){target="_blank"}
 - [Support tickets](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket){target="_blank"}---Submit a ticket to receive additional help.
-- On Slack: `#beacon-ama`
