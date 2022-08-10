@@ -11,9 +11,7 @@ Storefront events capture shopper interactions, such as `View Page`, `View Produ
 
 ## Prerequisites for using the Experience Platform connector {#prereqs}
 
-To use the Experience Platform connector, you must first:
-
-- Fill out the following [form](https://forms.office.com/pages/responsepage.aspx?id=Wht7-jR7h0OUrtLBeN7O4VH_dtG9hJVAk_TqGkZC2DxUM1FSWkdJOE41UVpUWUw0M1JWV0RKS1VXQi4u) and Adobe will provision you with access to Datastreams and the Adobe Experience Platform (if needed).
+To use the Experience Platform connector, you must first fill out the following [form](https://forms.office.com/pages/responsepage.aspx?id=Wht7-jR7h0OUrtLBeN7O4VH_dtG9hJVAk_TqGkZC2DxUM1FSWkdJOE41UVpUWUw0M1JWV0RKS1VXQi4u) and Adobe will provision you with access to Datastreams and the Adobe Experience Platform (if needed).
 
 When access is granted:
 
