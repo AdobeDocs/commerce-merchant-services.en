@@ -16,7 +16,7 @@ Store Fulfillment also offers an end-to-end fulfillment workflow that helps merc
 
 * **Omnichannel flexibility**–Turn stores and warehouses into pickup points and fulfillment centers.
 
-* **Convenient customer pickup options**–Customers can easily see product availability and select a store to pick up items — either curbside or in-store — while selecting online purchases.
+* **Convenient customer pickup options**–While selecting online purchases, customers can easily see product availability and select a store for either in-store or curbside pickup.
 
 * **Fulfillment efficiency**—The Store Assist mobile application helps store associates increase order fulfillment speed and accuracy.
 
@@ -26,47 +26,47 @@ Store Fulfillment also offers an end-to-end fulfillment workflow that helps merc
 
 ## Store Fulfillment extension
 
-Supports and Enhances Native Adobe Commerce Features
+The Store Fulfillment solution supports and enhances native Adobe Commerce capabilities.
 
 * Supports most product types–simple, configurable, grouped, bundled, and virtual
 
 * Integrates with [[!DNL Adobe Commerce] Inventory Management](https://docs.magento.com/user-guide/catalog/inventory-learn-more.html)
 
-* Integrates with point of sale (POS) merchant systems like ERP, OMS, and WMS) merchant systems for inventory management
+* Integrates with point of sale (POS) merchant inventory management systems like ERP, OMS, and WMS
 
 * Fully compatible with the Luma theme
 
 * Provides GraphQL support for headless and Venia storefronts
 
-* Supports the Store Assist app from Walmart Commerce Technology. This app sends pickup orders directly to your employee's handheld device in the right store so items can be picked and quickly and accurately picked, staged, and handed to the customers upon their check-in. 
+* Supports the Store Assist app from Walmart Commerce Technologies. This app delivers pickup order information directly to your employee's handheld device in the selected store location. With this information, they can quickly and accurately pick, stage, and handoff items to customers when they arrive at the store.
 
 ## Store Assist App
 
-The Store Assist App for iOS and Android™ devices interacts with Walmart Commerce Technology to bring omnichannel fulfillment capabilities to your retail stores.
+The Store Assist App for iOS and Android™ devices interacts with [!DNL Walmart Commerce Technologies] to bring omnichannel fulfillment capabilities to your retail stores.
 
-* Send in-store and curbside pick-up orders directly to store associates' mobile devices
+* Send in-store and curbside pickup orders directly to store associates' mobile devices
 
-* Ensure that store orders are quickly and accurately picked, staged, and handed to customers when they check in for order pickup.
+* Ensure that store orders are quickly and accurately picked, staged, and handed to customers when they arrive at the store for order pickup
 
 * Manage store associate user access, including security policies, two-factor authentication, and more
 
-* Automatically synchronize data about your retail store locations and inventory with Adobe Commerce
+* Automatically synchronize data about your retail store locations and inventory to Adobe Commerce
 
 ## Enhanced User Experience
 
-Store Fulfillment enhances Adobe Commerce by adding the following capabilities to deliver improved shopping experiences and streamlined fulfillment workflows:
+Store Fulfillment enhances Adobe Commerce by adding capabilities to deliver improved shopping experiences and streamlined fulfillment workflows.
 
-* **Store Location Selector (SLS)**–Exposes store pickup option, inventory availability and store selector on the product and cart pages in addition to the native checkout.
+* **Store Location Selector (SLS)**–Adds store pickup options, inventory availability, and store selectors to the product and cart pages in addition to the native checkout.
 
-* **Inventory Availability**–Adds additional product and global configuration options to Adobe Commerce Inventory Management to support store-level inventory allocation to drive timely local fulfillment.
+* **Inventory Availability**–Adds additional product and global configuration options to Adobe Commerce Inventory Management. These options support store-level inventory allocation to drive timely local fulfillment.
 
-* **Cart and Checkout Enhancements**–Communicate the fastest available pickup times, locations, and costs to customers during their online shopping session.
+* **Cart and Checkout Enhancements**–Communicates the fastest available pickup times, locations, and costs to customers during their online shopping session.
 
 * **Check-in Process Flow**–Adds interfaces to improve the customer check-in process and interactions with store associates when they arrive for in-store or curbside pickup.
 
 * **My Account History**–Extends the [!DNL Commerce] account history to display steps in the order history.
 
-* **Transactional emails**–Extends the Admin capabilities for [!UICONTROL Sales Emails] to add email templates for buy online, pickup in-store transactions. The templates support real-time communication between customers and store associates during the order pickup process.
+* **Transactional emails**–Extends the Admin capabilities for [!UICONTROL Sales Emails] to add email templates for buy online, pick up in store transactions. The templates support real-time communication between customers and store associates during the order pickup process.
 
 * **Flexible Fulfillment**–Extends [!DNL Commerce] capabilities to support scenarios for processing backorders, quantity reductions, and partial order fulfillment while facilitating any cancellations and credit memos required to support these scenarios.
 
