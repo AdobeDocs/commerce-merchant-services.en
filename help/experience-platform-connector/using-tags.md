@@ -57,7 +57,10 @@ For example, let's add the Adobe Commerce `signOut` event to Adobe Experience Pl
     ![Create New Data Element](assets/create-new-data-elements.png)
     _Create New Data Element_
 
-1. Set **Name** to `Sign out`.
+line 78. Need to add one step before - Click '+ Add' in event section
+
+
+1. Set **Name** to `sign out`.
 
 1. Set **Extension** to `Adobe Experience Platform Web SDK`.
 
@@ -70,16 +73,22 @@ For example, let's add the Adobe Commerce `signOut` event to Adobe Experience Pl
      ![Update Sign out value](assets/signout-value.png)
     _Update Sign out value_
 
+1. Click **Save**.
+
 1. Create a Rule:
 
     ![Create New Rule](assets/create-new-rule.png)
     _Create New Rule_
 
+1. Click the **Add** button under **EVENTS**.
+
 1. Set **Extension** to `Adobe Client Data Layer`.
 
 1. Set **Event Type** to `Data Pushed`.
 
-1. Select **Specific Event** and set the **Event/Key to register for** to `sign out`.
+1. Select **Specific Event** and set the **Event/Key to register for** to `sign-out`.
+
+1. Click to save the new rule.
 
 1. Add an action.
 
@@ -153,24 +162,24 @@ Create the following data elements:
 
 1. Account email:
 
-    - **Name**: `Account email`
+    - **Name**: `account email`
     - **Extension**: `Adobe Client Data Layer`
     - **Data Element Type**: `Data Layer Computed State`
     - **[Optional] path**: `accountContext.emailAddress`
 
 1. Account type:
 
-    - **Name**: `Account type`
+    - **Name**: `account type`
     - **Extension**: `Adobe Client Data Layer`
     - **Data Element Type**: `Data Layer Computed State`
-    - **[Optional] path**: `accountContext.accountType` 
+    - **[Optional] path**: `accountContext.accountType`
 
 1. Account ID:
 
-    - **Name**: `Account ID`
+    - **Name**: `account id`
     - **Extension**: `Adobe Client Data Layer`
     - **Data Element Type**: `Data Layer Computed State`
-    - **[Optional] path***: `accountContext.accountId` 
+    - **[Optional] path***: `accountContext.accountId`
 
 1. Sign in:
 
@@ -178,13 +187,13 @@ Create the following data elements:
     - **Extension**: `Adobe Experience Platform Web SDK`
     - **Data Element Type**: `XDM object`
     - **Field Group**: `person` > `accountID`
-    - **Account ID**: **Value** = `account id`
+    - **Account ID**: **Value** = `%account id%`
     - **Field Group**: `person` > `accountType`
-    - **Account Type**: **Value** = `account type`
+    - **Account Type**: **Value** = `%account type%`
     - **Field Group**: `person` > `personalEmailID`
-    - **Personal Email Address**: **Value** = `account email`
+    - **Personal Email Address**: **Value** = `%account email%`
     - **Field Group**: `personalEmail` > `address`
-    - **Address**: **Value** = `account email`
+    - **Address**: **Value** = `%account email%`
     - **Field Group**: `userAccount` > `login`
     - **Visitor Login**: **Value** = `1`
 
@@ -210,24 +219,24 @@ Create the following data elements:
 
 1. Account email:
 
-    - **Name**: `Account email`
+    - **Name**: `account email`
     - **Extension**: `Adobe Client Data Layer`
     - **Data Element Type**: `Data Layer Computed State`
     - **[Optional] path**: `accountContext.emailAddress`
 
 1. Account type:
 
-    - **Name**: `Account type`
+    - **Name**: `account type`
     - **Extension**: `Adobe Client Data Layer`
     - **Data Element Type**: `Data Layer Computed State`
-    - **[Optional] path**: `accountContext.accountType` 
+    - **[Optional] path**: `accountContext.accountType`
 
 1. Account ID:
 
-    - **Name**: `Account ID`
+    - **Name**: `account id`
     - **Extension**: `Adobe Client Data Layer`
     - **Data Element Type**: `Data Layer Computed State`
-    - **[Optional] path***: `accountContext.accountId` 
+    - **[Optional] path**: `accountContext.accountId`
 
 1.  Create account:
 
@@ -235,13 +244,13 @@ Create the following data elements:
     - **Extension**: `Adobe Experience Platform Web SDK`
     - **Data Element Type**: `XDM object`
     - **Field Group**: `person` > `accountID`
-    - **Account ID**: **Value** = `account id`
+    - **Account ID**: **Value** = `%account id%`
     - **Field Group**: `person` > `accountType`
-    - **Account Type**: **Value** = `account type`
+    - **Account Type**: **Value** = `%account type%`
     - **Field Group**: `person` > `personalEmailID`
-    - **Personal Email Address**: **Value** = `account email`
+    - **Personal Email Address**: **Value** = `%account email%`
     - **Field Group**: `personalEmail` > `address`
-    - **Address**: **Value** = `account email`
+    - **Address**: **Value** = `%account email%`
     - **Field Group**: `userAccount` > `createProfile`
     - **Account Profile Create**: **Value** = `1`
 
@@ -267,24 +276,24 @@ Create the following data elements:
 
 1. Account email:
 
-    - **Name**: `Account email`
+    - **Name**: `account email`
     - **Extension**: `Adobe Client Data Layer`
     - **Data Element Type**: `Data Layer Computed State`
     - **[Optional] path**: `accountContext.emailAddress`
 
 1. Account type:
 
-    - **Name**: `Account type`
+    - **Name**: `account type`
     - **Extension**: `Adobe Client Data Layer`
     - **Data Element Type**: `Data Layer Computed State`
-    - **[Optional] path**: `accountContext.accountType` 
+    - **[Optional] path**: `accountContext.accountType`
 
 1. Account ID:
 
-    - **Name**: `Account ID`
+    - **Name**: `account id`
     - **Extension**: `Adobe Client Data Layer`
     - **Data Element Type**: `Data Layer Computed State`
-    - **[Optional] path***: `accountContext.accountId` 
+    - **[Optional] path**: `accountContext.accountId`
 
 1. Edit account:
 
@@ -292,13 +301,13 @@ Create the following data elements:
     - **Extension**: `Adobe Experience Platform Web SDK`
     - **Data Element Type**: `XDM object`
     - **Field Group**: `person` > `accountID`
-    - **Account ID**: **Value** = `account id`
+    - **Account ID**: **Value** = `%account id%`
     - **Field Group**: `person` > `accountType`
-    - **Account Type**: **Value** = `account type`
+    - **Account Type**: **Value** = `%account type%`
     - **Field Group**: `person` > `personalEmailID`
-    - **Personal Email Address**: **Value** = `account email`
+    - **Personal Email Address**: **Value** = `%account email%`
     - **Field Group**: `personalEmail` > `address`
-    - **Address**: **Value** = `account email`
+    - **Address**: **Value** = `%account email%`
     - **Field Group**: `userAccount` > `updateProfile`
     - **Account Profile Create**: **Value** = `1`
 
@@ -327,14 +336,14 @@ Create the following data elements:
     - **Name**: `page name`
     - **Extension**: `Adobe Client Data Layer`
     - **Data Element Type**: `Data Layer Computed State`
-    - **[Optional] path**: `pageContext.pageName` 
+    - **[Optional] path**: `pageContext.pageName`
 
 #### Rules 
 
 - **Name**: `page view`
 - **Extension**: `Adobe Client Data Layer`
 - **Event Type**: `Data Pushed`
-- **Specific event**: `Core-Library Loaded`
+- **Specific event**: `page-view`
 
 ##### Actions
 
@@ -354,14 +363,14 @@ Create the following data elements:
     - **Name**: `product name`
     - **Extension**: `Adobe Client Data Layer`
     - **Data Element Type**: `Data Layer Computed State`
-    - **[Optional] path**: `productContext.name` 
+    - **[Optional] path**: `productContext.name`
 
 1. Product SKU:
 
     - **Name**: `product sku`
     - **Extension**: `Adobe Client Data Layer`
     - **Data Element Type**: `Data Layer Computed State`
-    - **[Optional] path**: `productContext.sku` 
+    - **[Optional] path**: `productContext.sku`
 
 1. Product currency:
 
@@ -413,13 +422,13 @@ Create the following data elements:
     - **Data Element Type**: `XDM object`
     - **Field Group**: `productListItems`. Select **Provide individual items** and click the **Add item** button. Because this view is for a PDP, you can populate with a single item.
     - **Field Group**: `productListItems` > `name`
-    - **Name**: **Value** = `product name`
+    - **Name**: **Value** = `%product name%`
     - **Field Group**: `productListItems` > `SKU`
-    - **SKU**: **Value** = `product sku`
+    - **SKU**: **Value** = `%product sku%`
     - **Field Group**: `productListItems` > `priceTotal`
-    - **Price total**: **Value** = `product price`
+    - **Price total**: **Value** = `%product price%`
     - **Field Group**: `productListItems` > `currencyCode`
-    - **Currency code**: **Value** = `currency code`
+    - **Currency code**: **Value** = `%currency code%`
     - **Field Group**: `commerce` > `productViews` > `value`
     - **value**: **Value** = `1`
 
@@ -700,15 +709,15 @@ Create the following data elements:
     - **Data Element Type**: `XDM object`
     - **Field Group**: `productListItems`. Select **Provide individual items** and click the **Add item** button. Because this view is for a PDP, you can populate with a single item.
     - **Field Group**: `productListItems` > `name`
-    - **Name**: **Value** = `product name`
+    - **Name**: **Value** = `%product name%`
     - **Field Group**: `productListItems` > `SKU`
-    - **SKU**: **Value** = `product sku`
+    - **SKU**: **Value** = `%product sku%`
     - **Field Group**: `productListItems` > `priceTotal`
-    - **Price total**: **Value** = `product price`
+    - **Price total**: **Value** = `%product price%`
     - **Field Group**: `productListItems` > `currencyCode`
-    - **Currency code**: **Value** = `currency code`
+    - **Currency code**: **Value** = `%currency code%`
     - **Field Group**: `commerce` > `cart` > `cartID`
-    - **Cart ID**: **Value** = `cart id`
+    - **Cart ID**: **Value** = `%cart id%`
     - **Field Group**: `commerce` > `productListAdds` > `value`
     - **value**: **Value** = `1`
 
@@ -894,13 +903,13 @@ Create the following data elements:
     - **Data Element Type**: `XDM object`
     - **Field Group**: `productListItems`. Select **Provide individual items** and click the **Add item** button. Because this view is for a PDP, you can populate with a single item.
     - **Field Group**: `productListItems` > `name`
-    - **Name**: **Value** = `product name`
+    - **Name**: **Value** = `%product name%`
     - **Field Group**: `productListItems` > `SKU`
-    - **SKU**: **Value** = `product sku`
+    - **SKU**: **Value** = `%product sku%`
     - **Field Group**: `productListItems` > `priceTotal`
-    - **Price total**: **Value** = `product price`
+    - **Price total**: **Value** = `%product price%`
     - **Field Group**: `productListItems` > `currencyCode`
-    - **Currency code**: **Value** = `currency code`
+    - **Currency code**: **Value** = `%currency code%`
     - **Field Group**: `commerce` > `cart` > `cartID`
     - **Cart ID**: **Value** = `%cart id%`
     - **Field Group**: `commerce` > `productListRemovals` > `value`
@@ -993,7 +1002,7 @@ Create the following data elements:
     - **Data Element Type**: `XDM object`
     - **Field Group**: `productListItems`. For `productListItems`, there can be multiple items that are precomputed. Select **productListItems** > **Populate entire array**.
     - **Field Group**: `commerce` > `cart` > `cartID`
-    - **Cart ID**: **Value** = `cart id`
+    - **Cart ID**: **Value** = `%cart id%`
     - **Field Group**: `commerce` > `checkouts` > `value`
     - **value**: **Value** = `1`
 
@@ -1087,7 +1096,7 @@ Create the following data elements:
 
 1. Order shipping:
 
-    - **Name**: ` order shipping`
+    - **Name**: `order shipping`
     - **Extension**: `Core`
     - **Data Element Type**: `Custom Code`
     - **Open Editor**:
@@ -1153,11 +1162,11 @@ Create the following data elements:
     - **Data Element Type**: `XDM object`
     - **Field Group**: `productListItems`. For `productListItems`, there can be multiple items that are precomputed. Select **productListItems** > **Populate entire array**.
     - **Field Group**: `commerce` > `order`
-    - **Unique Identifier**: **Value** = `commerce order`
+    - **Unique Identifier**: **Value** = `%commerce order%`
     - **Field Group**: `commerce` > `shipping`
-    - **Unique Identifier**: **value** = ` order shipping`
+    - **Unique Identifier**: **Value** = `%order shipping%`
     - **Field Group**: `commerce` > `promotionID`
-    - **Promotion ID**: **Value** = `promotion id`
+    - **Promotion ID**: **Value** = `%promotion id%`
     - **Field Group**: `commerce` > `purchases` > `value`
     - **value**: **Value** = `1`
 
