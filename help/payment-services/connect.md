@@ -21,7 +21,7 @@ To consume a Commerce SaaS service, you must use your instance's API keys (Comme
 
 A public API key, once created, is always available in your My Account Dashboard. It can be copied or deleted as needed. The private API key becomes visible when you create a public API key for either sandbox or production; it is only available for copying or saving from the ensuing dialog box and cannot be accessed later.
 
-A given API key pair is valid for all Commerce Services in an environment, so if you already have Commerce Services configured for your instance your API key pair is already present in the Commerce Services Connector.
+A given API key pair is valid for all Commerce Services in an environment, so if you already have Commerce Services configured for your instance, your API key pair is already present in the Commerce Services Connector.
 
 If your API key is lost, a new API key pair must be [generated](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html#generate-an-api-key-and-private-key) and [applied](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html#configure-saas-project) to the Commerce Services Connector configuration in the Admin. If the wrong keys are configured or none exist in the config, an account verification error dialog appears in Payment Services notifying you that the account was not verified.
 

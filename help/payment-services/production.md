@@ -5,7 +5,11 @@ exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
 ---
 # Enable [!DNL Payment Services] for production
 
-After the Payments Services extension is [installed](install.md), your instance is [configured and connected](connect.md), and you have [set up the sandbox](sandbox.md) and [tested](test-validate.md), you can proceed to put the service into production and complete the [onboarding process](onboard.md).
+You can put the service into production and complete the [onboarding process](onboard.md), per the steps in this topic, after you:
+
+* [Install](install.md) the Payment Services extension
+* [Configure and connect](connect.md) your instance
+* [Set up](sandbox.md) and [test](test-validate.md) your sandbox
 
 ## Set [!DNL Payment Services] as payment method
 
