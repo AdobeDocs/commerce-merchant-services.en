@@ -70,14 +70,14 @@ For example, let's add the Adobe Commerce `signOut` event to Adobe Experience Pl
      ![Update Sign out value](assets/signout-value.png)
     _Update Sign out value_
 
-1. Click **Save**.
+1. Select **Save**.
 
 1. Create a Rule:
 
     ![Create New Rule](assets/create-new-rule.png)
     _Create New Rule_
 
-1. Click the **Add** button under **EVENTS**.
+1. Select **Add** under **EVENTS**.
 
 1. Set **Extension** to `Adobe Client Data Layer`.
 
