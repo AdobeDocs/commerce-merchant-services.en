@@ -85,7 +85,7 @@ For example, let's add the Adobe Commerce `signOut` event to Adobe Experience Pl
 
 1. Select **Specific Event** and set the **Event/Key to register for** to `sign-out`.
 
-1. Click to save the new rule.
+1. Select **Keep Changes** to save the new rule.
 
 1. Add an action.
 
