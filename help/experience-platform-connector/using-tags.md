@@ -609,9 +609,11 @@ Create the following data elements:
     - **Extension**: `Adobe Experience Platform Web SDK`
     - **Data Element Type**: `XDM object`
     - **Field Group**: `siteSearch` > `suggestions`. Select **Provide entire object**.
+    - **Data element**: `%search result suggestions%`
     - **Field Group**: `siteSearch` > `numberOfResults`
     - **value**: `%search result number of products%`
     - **Field Group**: `productListItems`. Select **Provide entire object**.
+    - **Data element**: `%search result products%`
     - **Field Group**: `searchResponse` > `value`
     - **value**: **Value** = `1`
 
@@ -804,6 +806,7 @@ Create the following data elements:
     - **Extension**: `Adobe Experience Platform Web SDK`
     - **Data Element Type**: `XDM object`
     - **Field Group**: `productListItems`. For `productListItems`, there can be multiple items that are precomputed. Select **productListItems** > **Populate entire array**.
+    - **Data element**: `%product list items%`
     - **Field Group**: `commerce` > `cart` > `cartID`
     - **Cart ID**: **Value** = `%cart id%`
     - **Field Group**: `commerce` > `productListViews` > `value`
@@ -998,6 +1001,7 @@ Create the following data elements:
     - **Extension**: `Adobe Experience Platform Web SDK`
     - **Data Element Type**: `XDM object`
     - **Field Group**: `productListItems`. For `productListItems`, there can be multiple items that are precomputed. Select **productListItems** > **Populate entire array**.
+    - **Data element**: `%product list items%`
     - **Field Group**: `commerce` > `cart` > `cartID`
     - **Cart ID**: **Value** = `%cart id%`
     - **Field Group**: `commerce` > `checkouts` > `value`
@@ -1158,6 +1162,7 @@ Create the following data elements:
     - **Extension**: `Adobe Experience Platform Web SDK`
     - **Data Element Type**: `XDM object`
     - **Field Group**: `productListItems`. For `productListItems`, there can be multiple items that are precomputed. Select **productListItems** > **Populate entire array**.
+    - **Data element**: `%product list items%`
     - **Field Group**: `commerce` > `order`
     - **Unique Identifier**: **Value** = `%commerce order%`
     - **Field Group**: `commerce` > `shipping`
