@@ -7,7 +7,7 @@ exl-id: bcb5b02b-0141-407a-ad55-6e10e8e1aa90
 ---
 # App Setup
 
-Store Assist is a fulfillment-as-a-service (FaaS) platform app powered by Walmart Commerce Technologies. The app provides in-store fulfillment capabilities to handle [!DNL buy online], [!DNL pick up in store] (BOPIS) orders.  With Store Assist, store associates can see which items customers ordered, pick the correct items faster, and set up fulfilled orders for in-store or curbside pickup delivery to customers. 
+Store Assist is a fulfillment-as-a-service (FaaS) platform app powered by Walmart Commerce Technologies. The app provides in-store fulfillment capabilities to handle [!DNL buy online, pick up in store] (BOPIS) orders. With Store Assist, store associates can see which items customers ordered, pick the correct items faster, and set up fulfilled orders for in-store or curbside pickup delivery to customers. 
 
 The Store Assist app receives all order and customer information—from order details to pick up times-and makes the data available to store associates online, through mobile devices. The app includes [!UICONTROL Pick], [!UICONTROL Stage], [!UICONTROL Handoff], and [!UICONTROL Orders] modules to help Store Associates with fulfillment activities like the following:
 
@@ -24,13 +24,13 @@ The Store Assist app receives all order and customer information—from order de
 
 The Store Assist app requires two types of configuration:
 
-- Adobe Commerce Admin configuration settings to [manage user accounts, user roles, and resource permissions from the Adobe Commerce Admin system settings](user-setup.md).
+- Adobe Commerce Admin system settings to [manage user accounts, user roles, resource permissions](user-setup.md), and [the car make and model selections available to customers during the check-in process](check-in-experience-setup.md).
 
 - Frontend configuration settings to customize the Store Assist app interface and other settings including:
 
   - **Brand the Store Assist app**—Customize the app user interface with your company logo and colors.
 
-  - **Update the default instructions**—Customize the instructions in the Store Assist interfaces for the Pick, Stage, Handoff, and Order modules to comply with your company policies and procedures, and guide Store Associates through each step of the fulfillment workflow.
+  - **Update the default instructions**—Customize the instructions in the Store Assist Pick, Stage, Handoff, and Order modules to guide Store Associates through each step of the fulfillment workflow for your company.
 
   - **Localization**—Select the available language for the app. Choose your date and time format, and select your default measurement units and default currency.
 
@@ -54,7 +54,7 @@ The Store Assist app requires two types of configuration:
 
 ## App download and installation
 
-After the Store Assist app configuration has been completed, Store Associates can download, install, and log in to the Store Assist app from their mobile devices.
+After the Store Assist app has been set up and configured, Store Associates can download, install, and log in to the Store Assist app from their mobile devices.
 
 - Verify that the mobile device meets the [hardware and software requirements](solution-requirements.md#store-assist-app-requirements) for the Store Fulfillment solution.
 
@@ -64,6 +64,6 @@ After the Store Assist app configuration has been completed, Store Associates ca
 
   - **[!UICONTROL Company name]** associated with the Store Assist account
 
-  - **Store Assist account credentials**—username and password credentials for their account. 
+  - **Store Assist account credentials**—username and password credentials for their account.
 
-  An Adobe Commerce Administrator can create user account and set permissions for theStore Assist App user accounts for store locations that have [In-Store Pickup](merchant-store-configuration.md#pickup-location-configuration) enabled in the Admin Stores settings.
+  An Adobe Commerce Administrator can create user account and set permissions for the [!DNL Store Assist app] user accounts for store locations that have [In-Store Pickup](merchant-store-configuration.md#pickup-location-configuration) enabled in the Admin Stores settings.
