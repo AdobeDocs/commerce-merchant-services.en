@@ -49,9 +49,9 @@ This method is used for installing the [!DNL Payment Services] extension for a C
 
 1. Commit and push your changes.
 
-### On-premises
+### On-premises and other configurations
 
-This method is used for installing the [!DNL Payment Services] extension for an on-premises instance and for [!DNL Magento] Open Source customers.
+This method is used for installing the [!DNL Payment Services] extension for an on-premises instance and [!DNL Magento] Open Source customers.
 
 1. To obtain the extension, run these commands:
 
