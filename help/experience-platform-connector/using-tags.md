@@ -57,9 +57,6 @@ For example, let's add the Adobe Commerce `signOut` event to Adobe Experience Pl
     ![Create New Data Element](assets/create-new-data-elements.png)
     _Create New Data Element_
 
-line 78. Need to add one step before - Click '+ Add' in event section
-
-
 1. Set **Name** to `sign out`.
 
 1. Set **Extension** to `Adobe Experience Platform Web SDK`.
