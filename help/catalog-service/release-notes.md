@@ -26,6 +26,7 @@ These release notes describe the latest versions of [!DNL Catalog Service] and i
 
 ## Known limitations
 
+*  Bundle and grouped products are not supported.
 *  Tier pricing is not supported.
 *  In an array of images, only the first image contains roles.
 *  Images for variants are not retrieved.
