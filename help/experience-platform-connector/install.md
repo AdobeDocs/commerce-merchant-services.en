@@ -9,7 +9,9 @@ Before you install the extension, [review the prerequisites](overview.md#prereqs
 
 ## Install the extension
 
-1. Install the Experience Platform connector metapackage.
+The Experience Platform connector is installed as an extension from [Adobe Marketplace](https://marketplace.magento.com/magento-experience-platform-connector.html).
+
+1. To download the `experience-platform-connector` package, run the following from the command line:
 
    ```bash
    composer require magento/experience-platform-connector
