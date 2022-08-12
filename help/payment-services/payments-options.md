@@ -53,6 +53,10 @@ Customers can use Touch ID on their devices to use [[!DNL Apple Pay]](https://ww
 
 The [!DNL Apple Pay] button is visible from the product page, mini-cart, shopping cart, and checkout views.
 
+   >[!NOTE]
+   >
+   > To use Apple Pay you contact your Sales representative to enable it for your live store(s).
+
 ### [!DNL Pay Later] button
 
 Offer your customers short-term, interest-free payments, and other financing options so that they can buy now and pay later with the [!DNL Pay Later] button.
