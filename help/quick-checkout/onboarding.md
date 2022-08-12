@@ -38,7 +38,7 @@ See the [install](../quick-checkout/install.md) topic for detailed information a
 
 ## Create account with [!DNL Bolt]
 
-Before configuring the [!DNL Quick Checkout] in your Adobe Commerce Admin it is required to create a [sandbox](https://merchant-sandbox.bolt.com/register){target="_blank"} and [production](https://merchant.bolt.com/register){target="_blank"}  merchant accounts in [!DNL Bolt]. Provide all of the required details to create an account in [!DNL Bolt].
+Before configuring the [!DNL Quick Checkout] in your Adobe Commerce Admin it is required to create a [sandbox](https://merchant-sandbox.bolt.com/register?platform=magento2){target="_blank"} and [production](https://merchant.bolt.com/register?platform=magento2){target="_blank"}  merchant accounts in [!DNL Bolt]. Provide all of the required details to create an account in [!DNL Bolt].
 
 Refer to the [test and validate](../quick-checkout/testing.md) topic for more information.
 

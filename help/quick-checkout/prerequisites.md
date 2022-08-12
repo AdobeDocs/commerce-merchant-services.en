@@ -11,7 +11,7 @@ Refer to the [onboarding](../quick-checkout/onboarding.md) topic for more inform
 
 ## Compatibility limitations
 
-The [!DNL Quick Checkout] has existing compatibility issues for the Early Access Program (EAP):
+[!DNL Quick Checkout] existing compatibility issues:
 
 | **Issue** | **Constraints** |
 |----------------|-----------------|

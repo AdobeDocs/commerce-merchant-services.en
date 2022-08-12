@@ -15,7 +15,17 @@ See [Upcoming Releases](https://devdocs.magento.com/release/) to learn about rel
 
 See [Availabilty](https://devdocs.magento.com/release/availability.html) in the developer documentation to learn about product compatibility.
 
+## v1.1.0
+
+_August 12, 2022_
+
+![Fixed issue](../assets/fix.svg)<!-- Issue BOLT-375 --> User experience improvements in [[!DNL Quick Checkout] Admin Panel](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) now include only the parameters that are visible and validated when the extension is enabled.
+
+![Fixed issue](../assets/fix.svg)<!-- Issue BOLT-349 --> Compatibility improvements for existing shipping addresses with the Bolt wallet.
+
 ## v1.0.0
+
+_August 9, 2022_
 
 ![New](../assets/new.svg)<!-- Issue BOLT-341 --> General availability release---[[!DNL Quick Checkout]](https://marketplace.magento.com/magento-quick-checkout.html) is now compatible with Adobe Commerce versions 2.4.1 to 2.4.4.
 
@@ -35,4 +45,6 @@ See [Availabilty](https://devdocs.magento.com/release/availability.html) in the 
 
 ![New](../assets/new.svg)<!-- Issue BOLT-288 --> Custom [user session lifetime](user-session-lifetime.md) for [!DNL Quick Checkout] for Adobe Commerce.
 
-![Known issue](../assets/bug.svg)<!-- Issue BOLT-342 --> Using [incorrect Composer keys](https://support.magento.com/hc/en-us/articles/6909450342541) during installation of the [!DNL Quick Checkout] prevents the user from [authenticating](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) with the correct `MAGEID`.
+![Fixed issue](../assets/fix.svg)<!-- Issue BOLT-375 --> User experience improvements in [[!DNL Quick Checkout] Admin Panel](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) allows you to save your configuration when all required parameters are provided.
+
+![Known issue](../assets/bug.svg)<!-- Issue BOLT-342 --> Common [troubleshooting](https://support.magento.com/hc/en-us/articles/6909450342541) issues during installation of [!DNL Quick Checkout].
