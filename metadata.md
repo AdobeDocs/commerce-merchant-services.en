@@ -5,6 +5,7 @@ type: Documentation
 audience: end-user
 mini-toc-levels: 2
 git-repo: https://github.com/AdobeDocs/commerce-merchant-services.en
+index: y
 role: User
 ---
 
