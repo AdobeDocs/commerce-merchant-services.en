@@ -27,7 +27,17 @@ Adobe provides a collection of services to help merchants support key components
     <div>
     <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/overview.html"><strong>[!DNL Live Search]</strong></a>
     </div>
-    <p>(Adobe Commerce only)<br><em>Implement this AI-powered search tool that delivers smarter, faster and relevant results for B2C shoppers.</em></p>
+    <p>(Adobe Commerce only)<br><em>Implement this AI-powered search tool that delivers smarter, faster and relevant results for B2C and B2B shoppers.</em></p>
+    </br>
+  </td>
+</tr>
+<tr>
+   <td valign="top">
+       <img alt="Catalog Service for Adobe Commerce" src="missing" />
+    <div><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/overview.html](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/overview.html">
+    <strong>[!DNL Catalog Service]</strong></a>
+    </div>
+    <p>(Adobe Commerce only)<br><em>Boost your site performance and scalability to give your customers an optimized product experience to help you increase your site's conversion rate.</em></p>
     </br>
   </td>
 </tr>
@@ -83,6 +93,7 @@ The following items are recent changes to the documentation:
 
 * Updated the [!DNL Live Search] release notes for the [2.0 release](/help/live-search/release-notes.md).
 * Added a section (_Boundaries and thresholds_) to the [Install [!DNL Live Search]](/help/live-search/install.md) topic.
+* Now available Catalog Service for Adobe Commerce (https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/overview.html).
 * Added [[!DNL Payment Services] guide](/help/payment-services/guide-overview.md) with the latest information of the new marketplace extension and hosted service v1.0.0.
 * The [!DNL Live Search] [Performance reporting dashboard](/help/live-search/performance.md) provides insight into the effectiveness of search terms that shoppers use.
 * Added B2B support in [[!DNL Product Recommendations]](/help/product-recommendations/overview.md).
