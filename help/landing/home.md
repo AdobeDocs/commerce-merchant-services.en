@@ -73,6 +73,10 @@ Adobe provides a collection of services to help merchants support key components
 
 The [Commerce Services Connector](saas.md) provides the integration for your Adobe Commerce or Magento Open Source instance using an API key and a private key. For data services (Adobe Commerce only), you can also specify the data space in the configuration.
 
+## Catalog Service
+
+Increase your conversion rate, boost performance, and improve scalability---*and* give your customers an optimized product experience---with Catalog Service.
+
 ## Catalog synching
 
 For services that use catalog data (Product Recommendations and Live Search), the [Catalog Sync](catalog-sync.md) process exports product data from the Commerce server to Commerce Services on an ongoing basis to keep the services up to date.
@@ -81,6 +85,7 @@ For services that use catalog data (Product Recommendations and Live Search), th
 
 The following items are recent changes to the documentation:
 
+* Now available---[Catalog Service](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/overview.html) for Adobe Commerce
 * Updated the [!DNL Live Search] release notes for the [2.0 release](/help/live-search/release-notes.md).
 * Added a section (_Boundaries and thresholds_) to the [Install [!DNL Live Search]](/help/live-search/install.md) topic.
 * Added [[!DNL Payment Services] guide](/help/payment-services/guide-overview.md) with the latest information of the new marketplace extension and hosted service v1.0.0.
