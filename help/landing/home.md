@@ -75,7 +75,7 @@ The [Commerce Services Connector](saas.md) provides the integration for your Ado
 
 ## Catalog Service
 
-Increase your conversion rate, boost performance, and improve scalability---*and* give your customers an optimized product experience---with Catalog Service.
+Increase your conversion rate, boost performance, and improve scalability---*and* give your customers an optimized product experience---with [Catalog Service](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/guide-overview.html).
 
 ## Catalog synching
 
@@ -87,8 +87,8 @@ The following items are recent changes to the documentation:
 
 * *Payment Services*---Added instructions for [downloading the extension](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/install.html#download-the-extension), improved the workflow of [connecting to the Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html), and [added info](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html) to the Connect the Service topic for the user to determine whether their services are already connected (and what to do if they are not).
 * Now available!---[Catalog Service](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/overview.html) for Adobe Commerce
-* *Live Search*---Added new information to [Install Live Search](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html) and [Onboarding Overview](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html) topics about the OpenSearch search engine introduced in new modules (for availability in Adobe Commerce v2.4.6).
-* *Experience Platform Connector*---Added [Using tags](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/event-forwarding/using-tags.html) and [Profile](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/fundamentals/profile.html) topics that explain how to create profiles and use the AEP tag.
+* *Live Search*---Added new information to [Install Live Search](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html) and [Onboarding Overview](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/onboarding-overview.html) topics about the OpenSearch search engine introduced in new modules (for availability in Adobe Commerce v2.4.6).
+* *Experience Platform Connector*---Added a topic [about using tags](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/event-forwarding/using-tags.html) and a topic [about how to upload a shopper profile](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/fundamentals/profile.html) topics that explain how to create profiles and use the AEP tag.
 * *Quick Checkout*---Improved [Onboarding topic](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html) by reordering steps and including latest product changes present in the Admin UI.
 * *Payment Services*---[Apple Pay now available](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-options.html#apple-pay-button) in Payment Services.
 * *Experience Platform Connector*---Added a new [topic about updating the XDM schema](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/fundamentals/update-xdm.html) with Adobe Commerce-specific field names.
