@@ -73,18 +73,18 @@ Adobe provides a collection of services to help merchants support key components
 
 The [Commerce Services Connector](saas.md) provides the integration for your Adobe Commerce or Magento Open Source instance using an API key and a private key. For data services (Adobe Commerce only), you can also specify the data space in the configuration.
 
-## Catalog synching
+## Catalog Service
 
-For services that use catalog data (Product Recommendations and Live Search), the [Catalog Sync](catalog-sync.md) process exports product data from the Commerce server to Commerce Services on an ongoing basis to keep the services up to date.
+The Catalog Service provides rich read-only catalog data to quickly and fully render product-related content on the storefront, including product detail pages and product list pages. It gives your customers an optimized product experience while boosting performance, improving scalability, and increasing conversions.
 
 ## What's new
 
 The following items are recent changes to the documentation:
 
-* Updated the [!DNL Live Search] release notes for the [2.0 release](/help/live-search/release-notes.md).
-* Added a section (_Boundaries and thresholds_) to the [Install [!DNL Live Search]](/help/live-search/install.md) topic.
-* Added [[!DNL Payment Services] guide](/help/payment-services/guide-overview.md) with the latest information of the new marketplace extension and hosted service v1.0.0.
-* The [!DNL Live Search] [Performance reporting dashboard](/help/live-search/performance.md) provides insight into the effectiveness of search terms that shoppers use.
-* Added B2B support in [[!DNL Product Recommendations]](/help/product-recommendations/overview.md).
-* Added the [[!DNL Channel Manager User Guide]](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html) for customers that want to manage Walmart Marketplace sales from their [!DNL Commerce] instance.
-* Added the [[!DNL Store Fulfillment User Guide]](https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/guide-overview.html) for customers that want to improve their buy online, pick up in store (BOPIS) customer experience and deliver a mobile-enabled, seamless omnichannel fulfillment workflow for in-store and curbside pickup.
+* *Payment Services*---Added instructions for [downloading the extension](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/install.html#download-the-extension), improved the workflow of [connecting to the Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html), and [added info](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html) to the Connect the Service topic for the user to determine whether their services are already connected (and what to do if they are not).
+* Now available!---[Catalog Service](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/overview.html) for Adobe Commerce
+* *Live Search*---Added new information to [Install Live Search](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html) and [Onboarding Overview](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/onboarding-overview.html) topics about the OpenSearch search engine introduced in new modules (for availability in Adobe Commerce v2.4.6).
+* *Experience Platform Connector*---Added a topic [about using tags](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/event-forwarding/using-tags.html) and a topic [about how to upload a shopper profile](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/fundamentals/profile.html) topics that explain how to create profiles and use the AEP tag.
+* *Quick Checkout*---Improved [Onboarding topic](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html) by reordering steps and including latest product changes present in the Admin UI.
+* *Payment Services*---[Apple Pay now available](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-options.html#apple-pay-button) in Payment Services.
+* *Experience Platform Connector*---Added a new [topic about updating the XDM schema](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/fundamentals/update-xdm.html) with Adobe Commerce-specific field names.
