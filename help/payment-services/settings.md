@@ -102,6 +102,8 @@ You can enable and configure the PayPal smart buttons payment options:
       >
       > To use Apple Pay you [must have an Apple Developer Account](test-validate.md#test-in-sandbox-environment) (complete with fake credit card and billing information) to test it. When you are ready to use Apple Pay in sandbox *or* production mode, after completing any [testing and validation](test-validate.md), contact your Sales representative to enable it for your live store(s).
 
+      As you toggle on/off visibility to payment buttons or the PayPal Pay Later message, a visual preview of that configuration shows at the bottom of the Settings page.
+
 1. To enable debug mode, toggle the **[!UICONTROL Debug Mode]** selector.  
 1. Click **[!UICONTROL Save]**.
 
@@ -139,6 +141,9 @@ You can also configure the _[!UICONTROL Button style]_ options of the PayPal sma
 1. To modify the **[!UICONTROL Shape]**, select `Pill` or `Rect`.
 1. To enable button height selector, toggle the **[!UICONTROL Responsive button height]** selector.
 1. To modify the **[!UICONTROL Label]**, select the desired label option.
+
+   As you change configuration options for layout, color, shape, height, and label, a visual preview of that configuration shows at the bottom of the Settings page.
+
 1. Click **[!UICONTROL Save]**.
 
    If you try to navigate away from this view without saving your changes, a modal appears that prompts you to discard changes, keep editing, or save changes.
