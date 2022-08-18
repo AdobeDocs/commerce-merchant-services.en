@@ -75,11 +75,7 @@ The [Commerce Services Connector](saas.md) provides the integration for your Ado
 
 ## Catalog Service
 
-Increase your conversion rate, boost performance, and improve scalability---*and* give your customers an optimized product experience---with [Catalog Service](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/guide-overview.html).
-
-## Catalog synching
-
-For services that use catalog data (Product Recommendations and Live Search), the [Catalog Sync](catalog-sync.md) process exports product data from the Commerce server to Commerce Services on an ongoing basis to keep the services up to date.
+The Catalog Service provides rich read-only catalog data to quickly and fully render product-related content on the storefront, including product detail pages and product list pages. It gives your customers an optimized product experience while boosting performance, improving scalability, and increasing conversions.
 
 ## What's new
 
