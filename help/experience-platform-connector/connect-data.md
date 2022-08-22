@@ -17,7 +17,7 @@ Before you connect your Adobe Commerce data to the Adobe Experience Platform, yo
 
 1. In the **IMS Org ID** field, you see the ID associated with your Adobe Experience Platform account, as configured in the [Commerce Services Connector](../landing/saas.md#organizationid).
 
-1. In the **Datastream ID** field, paste the ID of the datastream you [created](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html) in Adobe Experience Platform.
+1. In the **Datastream ID** field, paste the ID of the datastream you [created](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html) in Adobe Experience Platform.
 
 ## Relationship of Datastream ID and your Commerce Instance Storeview
 
