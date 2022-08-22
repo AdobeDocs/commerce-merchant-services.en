@@ -61,3 +61,9 @@ Onboarding and setting up [!DNL Payment Services] is completed in just a few ste
 1. Activate [!DNL Payment Services] in live mode to begin processing live payments.
 
 To get the full instructions and start the onboarding process, see [Onboard [!DNL Payment Services]](onboard.md).
+
+## [!DNL Payment Services] demo
+
+Watch this video to learn about [!DNL Payment Services]:
+
+>[!VIDEO](https://video.tv.adobe.com/v/343990?quality=12)
