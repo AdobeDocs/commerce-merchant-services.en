@@ -7,19 +7,21 @@ exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 
 Before you connect your Adobe Commerce data to the Adobe Experience Platform, you must sign in to your Adobe account in the [Commerce Services Connector](../landing/saas.md#organizationid). After you sign in and select your organization ID, you can then specify the scope and datastream ID on the **Experience Platform Connector** page in the Admin.
 
+![Experience Platform connector configuration](assets/epc-config.png)
+
 1. In the Admin, go to **System** > Services > **Experience Platform Connector**.
 
 1. In the **Scope** drop-down, select the context, or “scope” of the store view.
 
-   The Organization Id is global. Only one Organization Id can be associated per Adobe Commerce instance.
+   The IMS Org Id is global. Only one IMS Org Id can be associated per Adobe Commerce instance.
 
-1. In the **IMS Organization** field, you see the ID associated with your Adobe Experience Platform account, as configured in the [Commerce Services Connector](../landing/saas.md#organizationid).
+1. In the **IMS Org ID** field, you see the ID associated with your Adobe Experience Platform account, as configured in the [Commerce Services Connector](../landing/saas.md#organizationid).
 
 1. In the **Datastream ID** field, paste the ID of the data stream you [created](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html) in Adobe Experience Platform.
 
 ## Relationship of Datastream ID and your Commerce Instance Storeview
 
-The Datastream ID enables event-forwarding from Adobe Experience Platform to other Adobe DX products and can be associated to a specific storeview within your specific Adobe Commerce instance. You can also associate multiple storeviews to the same Datastream ID. It depends on what makes the most sense for your business.
+The Datastream ID enables event forwarding from Adobe Experience Platform to other Adobe DX products and can be associated to a specific storeview within your specific Adobe Commerce instance. You can also associate multiple storeviews to the same Datastream ID. It depends on what makes the most sense for your business. [Learn more](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=en#event-forwarding-settings) about event forwarding.
 
 ## Field descriptions
 

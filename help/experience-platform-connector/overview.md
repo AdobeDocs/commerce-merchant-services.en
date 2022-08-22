@@ -9,6 +9,10 @@ The Experience Platform connector extension allows Adobe Commerce merchants to s
 
 Storefront events capture shopper interactions, such as `View Page`, `View Product`, `Add to Cart`, and so on. Captured data does not include personally identifiable information (PII). All user identifiers, such as cookie IDs and IP addresses, are strictly anonymized. [Learn more](https://www.adobe.com/privacy/experience-cloud.html). See the complete list of [storefront events](events.md).
 
+The Experience Platform connector appears in the Commerce Admin under **System** > Services > **Experience Platform Connector**. 
+
+![Experience Platform connector extension Admin view](assets/epc-adminui.png)
+
 ## Prerequisites for using the Experience Platform connector {#prereqs}
 
 To use the Experience Platform connector, you must first:
