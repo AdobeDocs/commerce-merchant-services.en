@@ -1,9 +1,9 @@
 ---
-title: Overview
+title: Introduction to [!DNL Product Recommendations]
 description: '[!DNL Product Recommendations] are a powerful marketing tool that you can use to increase conversions, boost revenue, and stimulate shopper engagement.'
 exl-id: 818ac876-58c9-4c68-975e-53da59ed6b52
 ---
-# Overview
+# Introduction to [!DNL Product Recommendations]
 
 Product recommendations are a powerful marketing tool that you can use to increase conversions, boost revenue, and stimulate shopper engagement. Adobe Commerce product recommendations are powered by [Adobe Sensei](https://www.adobe.com/sensei.html), which uses artificial intelligence and machine-learning algorithms to perform a deep analysis of aggregated visitor data. This data, when combined with your Adobe Commerce catalog, results in a highly engaging, relevant, and personalized experience.
 
@@ -26,3 +26,9 @@ Product recommendations allow you to:
 - Choose from nine distinct intelligent recommendation types based on the following areas: shopper-based, item-based, popularity-based, trending, and similarity-based
 - Use behavioral data to personalize recommendations throughout the shopper’s storefront journey
 - Measure key metrics relevant to each recommendation to help you understand the impact of your recommendations
+
+## [!DNL Product Recommendations] demo
+
+Watch this video to learn about [!DNL Product Recommendations]:
+
+>[!VIDEO](https://video.tv.adobe.com/v/343991?quality=12)
