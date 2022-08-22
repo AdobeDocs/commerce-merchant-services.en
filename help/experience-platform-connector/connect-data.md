@@ -13,7 +13,7 @@ Before you connect your Adobe Commerce data to the Adobe Experience Platform, yo
 
 1. In the **Scope** drop-down, select the context, or “scope” of the store view.
 
-   The IMS Org Id is global. Only one IMS Org Id can be associated per Adobe Commerce instance.
+   The IMS Org ID is global. Only one IMS Org ID can be associated per Adobe Commerce instance.
 
 1. In the **IMS Org ID** field, you see the ID associated with your Adobe Experience Platform account, as configured in the [Commerce Services Connector](../landing/saas.md#organizationid).
 
@@ -21,15 +21,15 @@ Before you connect your Adobe Commerce data to the Adobe Experience Platform, yo
 
 ## Relationship of Datastream ID and your Commerce Instance Storeview
 
-The Datastream ID enables event forwarding from Adobe Experience Platform to other Adobe DX products and can be associated to a specific storeview within your specific Adobe Commerce instance. You can also associate multiple storeviews to the same Datastream ID. It depends on what makes the most sense for your business. [Learn more](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=en#event-forwarding-settings) about event forwarding.
+The Datastream ID enables event forwarding from Adobe Experience Platform to other Adobe DX products and can be associated to a specific store view within your specific Adobe Commerce instance. You can also associate multiple store views to the same Datastream ID. It depends on what makes the most sense for your business. [Learn more](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=en#event-forwarding-settings) about event forwarding.
 
 ## Field descriptions
 
 | Field | Description |
 |--- |--- |
-| Scope | Specific storeview where you want the configuration settings to apply. |
+| Scope | Specific store view where you want the configuration settings to apply. |
 | IMS Org (Global)| ID that belongs to the organization that purchased the Adobe DX product. This ID links your Adobe Commerce instance to Adobe Experience Platform. |
-| Datastream ID (Storeview) | ID that allows data to flow from Adobe Experience Platform to other Adobe DX products. This ID can be associated to a specific storeView within your specific Adobe Commerce instance. |
+| Datastream ID (Store view) | ID that allows data to flow from Adobe Experience Platform to other Adobe DX products. This ID can be associated to a specific storeView within your specific Adobe Commerce instance. |
 
 With the Experience Platform connector extension installed, the link between Adobe Commerce and Adobe Experience Platform created, and the Datastream ID specified, Commerce data begins to flow to the Adobe Experience Platform edge and to other Adobe DX products.
 
