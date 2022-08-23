@@ -75,7 +75,7 @@ The [Commerce Services Connector](saas.md) provides the integration for your Ado
 
 ## Catalog Service
 
-The Catalog Service provides rich read-only catalog data to quickly and fully render product-related content on the storefront, including product detail pages and product list pages. It gives your customers an optimized product experience while boosting performance, improving scalability, and increasing conversions.
+The [Catalog Service](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/guide-overview.html) provides rich read-only catalog data to quickly and fully render product-related content on the storefront, including product detail pages and product list pages. It gives your customers an optimized product experience while boosting performance, improving scalability, and increasing conversions.
 
 ## What's new
 
