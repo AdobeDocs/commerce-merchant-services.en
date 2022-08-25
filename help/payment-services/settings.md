@@ -166,7 +166,7 @@ You can configure [!DNL PayPal Smart Buttons] styling [in the Legacy configurati
 
 ## Use multiple PayPal accounts
 
-In Payment Services, you can use multiple PayPal accounts within **one** merchant account. If you are operating your store(s) in multiple countries (which use different currencies) or want to use Adobe Commerce for some parts of your business but not *all*, for instance, you can set up your merchant account to use multiple PayPal accounts.
+In Payment Services, you can use multiple PayPal accounts within **one** merchant account. For instance, if you are operating your store(s) in multiple countries (which use different [currencies](https://docs.magento.com/user-guide/stores/currency.html)) or want to use Adobe Commerce for some parts of your business but not *all*, you can set up your merchant account to use multiple PayPal accounts.
 
 See [Site, Store, and View Scope](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) for more information about the hierarchy of websites, stores, and store views.
 
