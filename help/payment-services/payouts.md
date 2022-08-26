@@ -50,7 +50,7 @@ Data source selections work as follows:
 To select the data source for your Order Payment Status report:
 
 1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]**.
-1. Click **[!UICONTROL Data source]** and select _[!UICONTROL Live]_ or [!UICONTROL Sandbox]_.
+1. Click **[!UICONTROL Data source]** and select _[!UICONTROL Live]_ or _[!UICONTROL Sandbox]_.
 
    The report results regenerate based on the data source selected.
 
@@ -111,7 +111,7 @@ Payout reports include the following information.
 | [!UICONTROL Invoice] | Invoice ID (one per order) of the transaction |
 | [!UICONTROL Commerce order] | Commerce order ID <br> <br>To see related [order info](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"}, click the ID. |
 | [!UICONTROL Commerce trans] | Commerce transaction ID <br> <br>To see related [transaction info](https://docs.magento.com/user-guide/sales/transactions.html){target="_blank"}, click the ID. |
-| [!UICONTROL Pay method] | Credit card type---*[!UICONTROL BANK]*, *[!UICONTROL PAYPAL]*, *[!UICONTROL CREDIT_CARD]*---and associated card provider (such as *Visa* or *MasterCard*) |
+| [!UICONTROL Pay method] | Credit card type---*[!UICONTROL BANK]*, *[!UICONTROL PAYPAL]*, *[!UICONTROL APPLE_PAY]*, *[!UICONTROL CREDIT_CARD]*---and associated card provider (such as *Visa* or *MasterCard*) |
 | [!UICONTROL Trans amt] | Amount of the transaction |
 | [!UICONTROL Cur] | Currency unit for transaction amount |
 | [!UICONTROL Pending] | Amount yet to be disbursed |
