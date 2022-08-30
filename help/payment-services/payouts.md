@@ -11,7 +11,7 @@ exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
 
 ![Financial reports view](assets/reports-view.png ) <!-- REPLACE IMG -->
 
-There are two available tables to enable you to see in-depth information about all of your payouts---the data visualization view and the report view.
+There are two available Payouts reporting views to enable you to see in-depth information about all of your payouts---the data visualization view and the report view.
 
 The Payouts views show comprehensive payout information at-a-glance, allowing you full transparency into the payment amount, processed volume, and detailed reporting on the transaction level for financial reconciliation.
 
@@ -21,17 +21,43 @@ The Payouts views show comprehensive payout information at-a-glance, allowing yo
 
 ## Payouts data visualization view
 
+The Payouts data visualization view is available in the Payment Services Home.
+
 On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** to see the data visualization chart of credits vs. debits and the moving averages over time.
 
 ![Payout data visualization in the Admin](assets/payouts-data.png)
 
+Click **[!UICONTROL View Report]** to navigate to the detailed tabular [Payouts report view](#payouts-report-view).
+
 ### Customize transactions timeframe
 
-By default, 30 days of transactions are shown in the grid.
+By default, 30 days of transactions are shown.
+
+From the Payouts data visualization view, you can customize the timeframe for the payout transactions you want to view by selecting a date range:
+
+1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**. The Payouts data visualization view is visible in the Payouts section.
+1. Click the **[!UICONTROL Range]** selector filter.
+1. Choose the applicable date range---30 days, 15 days, or 7 days.
+1. View the transactions info for your specified dates.
 
 ### Transactions information
 
+The transaction amounts for a selected date range are shown on the left of the Payouts data visualization view. The dates for the selected date range are shown on the bottom of the view. If there were no payouts on a particular date, that date will not be appear.
+
+The Payouts data visualization view includes the following information.
+
+| Data | Description |
+| ------------ | -------------------- |
+| [!UICONTROL Transaction amount] | Amount range for transactions in specified time frame; data on the Y axis (left) |
+| Date range | Date range for the specified time frame; data on the X axis (bottom) |
+| Credit | Payments for the specified time frame |
+| Debit | Debits (refunds) for the specified time frame |
+| Moving average | Representation of the average payout for each date in the specified time frame |
+| Net for range | Net payout amount for the specified time frame (range) |
+
 ## Payouts report view
+
+The Payouts report view is available in the Payouts view of Payment Services.
 
 On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]** to see the detailed tabular Payouts report view.
 
@@ -57,20 +83,20 @@ If _[!UICONTROL Live]_ is the selected data source, you can see report informati
 
 Data source selections work as follows:
 
-* If you do not have any stores that are in Live mode, the data source selection defaults to _[!UICONTROL Sandbox]_.
-* If you have any stores (one or multiple) in Live mode, the data source selection defaults to _[!UICONTROL Live]_.
-* Report exports always honor the data source selection.
+*  If you do not have any stores that are in Live mode, the data source selection defaults to _[!UICONTROL Sandbox]_.
+*  If you have any stores (one or multiple) in Live mode, the data source selection defaults to _[!UICONTROL Live]_.
+*  Report exports always honor the data source selection.
 
 To select the data source for your Order Payment Status report:
 
 1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]**.
-1. Click **[!UICONTROL Data source]** and select _[!UICONTROL Live]_ or [!UICONTROL Sandbox]_.
+1. Click **[!UICONTROL Data source]** and select _[!UICONTROL Live]_ or _[!UICONTROL Sandbox]_.
 
    The report results regenerate based on the data source selected.
 
 ### View transactions
 
-By default, 30 days of transactions are shown in the grid.
+By default, 30 days of transactions are shown.
 
 The number of rows returned in a search, or shown in the default 30 days of transactions, are shown above the Payouts view grid alongside the Transaction dates calendar selector filter.
 
@@ -78,7 +104,7 @@ Scroll to the left and right to view [information for each payout transaction](#
 
 #### Customize transactions timeframe
 
-From the Payouts view, you can customize the timeframe for the payout transactions you want to view by entering specific dates or selecting a date range from the date picker:
+From the Payouts report view, you can customize the timeframe for the payout transactions you want to view by entering specific dates or selecting a date range from the date picker:
 
 1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]**.
 1. Click the Transaction dates calendar selector filter.
@@ -87,13 +113,13 @@ From the Payouts view, you can customize the timeframe for the payout transactio
 
 ### Show and hide columns
 
-The Payouts report shows most available columns of information by default. You can, however, customize which columns you see in your report.
+The Payouts report view shows most available columns of information by default. You can, however, customize which columns you see in the report.
 
 1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Payouts]**.
 1. Click the _Column settings_ icon (![column settings icon](assets/column-settings.png)).
 1. To customize which columns you see in the report, check or uncheck columns in the list.
 
-   The Payouts report will immediately show any changes you made in the Column settings menu. The column preferences will be saved and will remain in effect if you navigate away from the report view.
+   The Payouts report view will immediately show any changes you made in the Column settings menu. The column preferences will be saved and will remain in effect if you navigate away from the report view.
 
 ### Download transactions
 
@@ -119,8 +145,8 @@ Payout reports include the following information.
 | [!UICONTROL Code] | Transaction code that indicates either Credit (*CR*) or Debit (*DR*) |
 | [!UICONTROL Reference ID] | Original transaction ID for which this event is related |
 | [!UICONTROL Invoice] | Invoice ID (one per order) of the transaction |
-| [!UICONTROL Commerce order] | Commerce order ID <br> <br>To see related [order info](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"}, click the ID. |
-| [!UICONTROL Commerce trans] | Commerce transaction ID <br> <br>To see related [transaction info](https://docs.magento.com/user-guide/sales/transactions.html){target="_blank"}, click the ID. |
+| [!UICONTROL Commerce order] | Commerce order ID <br> <br>To see related [order info](https://docs.magento.com/user-guide/sales/orders.html), click the ID. |
+| [!UICONTROL Commerce trans] | Commerce transaction ID <br> <br>To see related [transaction info](https://docs.magento.com/user-guide/sales/transactions.html), click the ID. |
 | [!UICONTROL Pay method] | Credit card type---*[!UICONTROL BANK]*, *[!UICONTROL PAYPAL]*, *[!UICONTROL CREDIT_CARD]*---and associated card provider (such as *Visa* or *MasterCard*) |
 | [!UICONTROL Trans amt] | Amount of the transaction |
 | [!UICONTROL Cur] | Currency unit for transaction amount |
