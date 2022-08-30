@@ -9,15 +9,35 @@ exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
 
 [!DNL Payment Services] for [!DNL Adobe Commerce] and [!DNL Magento Open Source] offers you comprehensive reporting so that you can get a clear view of your store's orders and payments.
 
-![Financial reports view](assets/reports-view.png )
+![Financial reports view](assets/reports-view.png ) <!-- REPLACE IMG -->
 
-The Payouts report shows comprehensive payout information at-a-glance, allowing you full transparency into the payment amount, processed volume, and detailed reporting on the transaction level for financial reconciliation.
+There are two available tables to enable you to see in-depth information about all of your payouts---the data visualization view and the report view.
+
+The Payouts views show comprehensive payout information at-a-glance, allowing you full transparency into the payment amount, processed volume, and detailed reporting on the transaction level for financial reconciliation.
 
 >[!NOTE]
 >
->Payouts reports only show orders that are captured---payment action is set to [`Authorize and Capture`](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/production.html#set-payment-services-as-payment-method))---or [marked as `Invoiced`](https://docs.magento.com/user-guide/sales/invoice-create.html).
+>Payouts reports only show orders that are captured (payment action is set to [`Authorize and Capture`](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/production.html#set-payment-services-as-payment-method))---or [marked as `Invoiced`](https://docs.magento.com/user-guide/sales/invoice-create.html).
 
-You don't have to open multiple views to cross-reference orders and payments or reconcile accounts. [!DNL Payment Services] for [!DNL Adobe Commerce] and [!DNL Magento Open Source] enables you to take all these actions from one place---Payouts report---so that you can view and manage your payouts efficiently.
+## Payouts data visualization view
+
+On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** to see the data visualization chart of credits vs. debits and the moving averages over time.
+
+![Payout data visualization in the Admin](assets/payouts-data.png)
+
+### Customize transactions timeframe
+
+By default, 30 days of transactions are shown in the grid.
+
+### Transactions information
+
+## Payouts report view
+
+On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]** to see the detailed tabular Payouts report view.
+
+![Payout transactions in the Admin](assets/payouts-report.png)
+
+You can configure this view, per the sections in this topic, to best present the data you desire to see.
 
 See linked Commerce order and transaction IDs, transaction amounts, payment method per transaction, and more, all within the Payouts report in the Admin.
 
@@ -27,13 +47,7 @@ You can download payout transactions in a .csv file format for use in existing a
 >
 >The data shown in this table is sorted in descending order (`DESC`) by default using the `TRANS DATE`. The `TRANS DATE` is the date and time when the transaction was initiated.
 
-## Availability
-
-On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]**.
-
-![Payout transactions in the Admin](assets/payouts-report.png)
-
-## Select data source
+### Select data source
 
 In the Payouts report view, you can select the data source---_[!UICONTROL Live]_ or [!UICONTROL Sandbox]_---for which you want to see report results.
 
@@ -54,7 +68,7 @@ To select the data source for your Order Payment Status report:
 
    The report results regenerate based on the data source selected.
 
-## View transactions
+### View transactions
 
 By default, 30 days of transactions are shown in the grid.
 
@@ -62,7 +76,7 @@ The number of rows returned in a search, or shown in the default 30 days of tran
 
 Scroll to the left and right to view [information for each payout transaction](#column-descriptions) in the daily report, including transaction date, reference ID, invoice number, and payment method details.
 
-### Customize transactions timeframe
+#### Customize transactions timeframe
 
 From the Payouts view, you can customize the timeframe for the payout transactions you want to view by entering specific dates or selecting a date range from the date picker:
 
@@ -71,7 +85,7 @@ From the Payouts view, you can customize the timeframe for the payout transactio
 1. Choose the applicable date range.
 1. View the payouts statuses in the grid for your specified dates.
 
-## Show and hide columns
+### Show and hide columns
 
 The Payouts report shows most available columns of information by default. You can, however, customize which columns you see in your report.
 
@@ -81,7 +95,7 @@ The Payouts report shows most available columns of information by default. You c
 
    The Payouts report will immediately show any changes you made in the Column settings menu. The column preferences will be saved and will remain in effect if you navigate away from the report view.
 
-## Download transactions
+### Download transactions
 
 You can download a .csv file containing all the transactions visible in the Payouts view grid.
 
@@ -90,10 +104,6 @@ You can download a .csv file containing all the transactions visible in the Payo
 1. Click the _Download_ (![](assets/icon-download.png)) icon.
 
 Your payout transactions are downloaded in a .csv format.
-
-## Transactions information
-
-The Payouts view shows extensive info for each transaction shown in the grid.
 
 ### Column descriptions
 
