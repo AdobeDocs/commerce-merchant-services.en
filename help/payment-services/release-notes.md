@@ -22,7 +22,7 @@ See [Availability](https://devdocs.magento.com/release/availability.html) in the
 These release notes describe feature changes and fixes that occurred and were released outside of the regular versioned feature releases for the hosted service.
 
 <details>
-   <summary>See Hosted services updates</summary>
+   <summary>See Hosted service updates</summary>
 
 _August 31, 2022_
 ![Fixed issue](../assets/fix.svg)<!-- Issue PAY-3629 --> When a new merchant accesses the Payment Services Home for the first time, it now immediately loads instead of requiring a page reload to show content.
