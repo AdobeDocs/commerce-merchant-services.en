@@ -21,7 +21,7 @@ The Payouts views show comprehensive payout information at-a-glance, allowing yo
 
 ## Payouts data visualization view
 
-The Payouts data visualization view is available in the Payment Services Home.
+The Payouts data visualization view is available in the Payment Services Home. It is a visual representation of some of the data in the detailed tabular [Payouts report view](#payouts-report-view).
 
 On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** to see the data visualization chart of credits vs. debits and the moving averages over time.
 
@@ -57,11 +57,11 @@ The Payouts data visualization view includes the following information.
 
 ## Payouts report view
 
-The Payouts report view is available in the Payouts view of Payment Services.
+The Payouts report view is available in the Payouts view of Payment Services. It includes all available information about payouts for your store(s). The [Payouts data visualization view](#payouts-data-visualization-view) in Payment Services Home---is a visual representation of some of the data in this more detailed report view.
 
 On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]** to see the detailed tabular Payouts report view.
 
-![Payout transactions in the Admin](assets/payouts-report.png)
+![Payout transactions in the Admin](assets/payouts-report-new.png)
 
 You can configure this view, per the sections in this topic, to best present the data you desire to see.
 
@@ -75,7 +75,7 @@ You can download payout transactions in a .csv file format for use in existing a
 
 ### Select data source
 
-In the Payouts report view, you can select the data source---_[!UICONTROL Live]_ or [!UICONTROL Sandbox]_---for which you want to see report results.
+In the Payouts report view, you can select the data source---_[!UICONTROL Live]_ or _[!UICONTROL Sandbox]_---for which you want to see report results.
 
 ![Data sources selection](assets/datasource.png)
 
@@ -146,7 +146,7 @@ Payout reports include the following information.
 | [!UICONTROL Reference ID] | Original transaction ID for which this event is related |
 | [!UICONTROL Invoice] | Invoice ID (one per order) of the transaction |
 | [!UICONTROL Commerce order] | Commerce order ID <br> <br>To see related [order info](https://docs.magento.com/user-guide/sales/orders.html), click the ID. |
-| [!UICONTROL Commerce trans] | Commerce transaction ID <br> <br>To see related [transaction info](https://docs.magento.com/user-guide/sales/transactions.html), click the ID. |
+| [!UICONTROL Commerce trans] | Commerce transaction ID |
 | [!UICONTROL Pay method] | Credit card type---*[!UICONTROL BANK]*, *[!UICONTROL PAYPAL]*, *[!UICONTROL CREDIT_CARD]*---and associated card provider (such as *Visa* or *MasterCard*) |
 | [!UICONTROL Trans amt] | Amount of the transaction |
 | [!UICONTROL Cur] | Currency unit for transaction amount |
