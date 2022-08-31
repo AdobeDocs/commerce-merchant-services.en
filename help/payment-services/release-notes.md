@@ -21,6 +21,9 @@ See [Availability](https://devdocs.magento.com/release/availability.html) in the
 
 These release notes describe feature changes and fixes that occurred and were released outside of the regular versioned feature releases for the hosted service.
 
+<details>
+   <summary>See Hosted services updates</summary>
+
 _August 31, 2022_
 ![Fixed issue](../assets/fix.svg)<!-- Issue PAY-3629 --> When a new merchant accesses the Payment Services Home for the first time, it now immediately loads instead of requiring a page reload to show content.
 
@@ -35,6 +38,8 @@ _June 28, 2021_
 ![New](../assets/new.svg)<!-- Issue PAY-2854 --> You can now see warnings when you switch from sandbox mode to production mode and when you attempt to navigate away from a view with updates that have not been saved.
 
 ![New](../assets/new.svg)<!-- Issue PAY-2761 --> You can now customize the data that displays in the [Order payment status report](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) and the [Payouts report](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) by showing or hiding columns using the Column settings control.
+
+</details>
 
 ## v1.3.0
 
