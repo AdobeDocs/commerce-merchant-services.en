@@ -68,12 +68,6 @@ _June 29, 2022_
 
 ![Known issue](../assets/bug.svg)<!-- Issue PAY-0 --> [!DNL Payment Services] is currently incompatible with `commerce-data-export` v101.20 and higher, which renders it incompatible with the [[!DNL Channel manager] extension](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html).
 
-### Hosted service updates
-
-These release notes describe feature changes and fixes that occurred and were released outside of the regular versioned feature releases, between the v1.2.0 release and the previous 1.1.0 release for the hosted service. _These changes may also be applicable to earlier release versions._
-
-
-
 ## v1.1.0
 
 _March 31, 2022_
