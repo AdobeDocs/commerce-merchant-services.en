@@ -17,6 +17,16 @@ See [Upcoming Releases](https://devdocs.magento.com/release/) to learn about rel
 
 See [Availability](https://devdocs.magento.com/release/availability.html) in the developer documentation to learn about product compatibility.
 
+## v1.4.0
+
+_TBD_
+
+### Hosted service updates
+
+These release notes describe feature changes and fixes that occurred and were released outside of the regular versioned feature releases, between the v1.4.0 release and the previous 1.3.0 release for the hosted service.
+
+![Fixed issue](../assets/fix.svg)<!-- Issue PAY-3629 --> When a new merchant accesses the Payment Services Home for the first time, it now immediately loads instead of requiring a page reload to show content.
+
 ## v1.3.0
 
 _August 9, 2022_
@@ -43,7 +53,7 @@ _June 29, 2022_
 
 ### Hosted service updates
 
-These release notes describe feature changes and fixes that occurred and were released outside of the regular versioned feature releases, between the current v1.2.0 release and the previous 1.1.0 release for the hosted service.
+These release notes describe feature changes and fixes that occurred and were released outside of the regular versioned feature releases, between the v1.2.0 release and the previous 1.1.0 release for the hosted service.
 
 ![New](../assets/new.svg)<!-- Issue PAY-3420 --> Apple Pay is now available as a PayPal Smart Button. This [payment option](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-options.html#apple-pay-button) enables customers to use Touch ID on their devices to use Apple Pay, which uses credit and debit card payment credentials stored on their iOS or macOS devices.
 
