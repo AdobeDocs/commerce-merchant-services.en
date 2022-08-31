@@ -36,7 +36,7 @@ _June 28, 2021_
 
 ![New](../assets/new.svg)<!-- Issue PAY-1720 --> Disputes for store orders are now available in [the Order payment status report](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#view-disputes). You can navigate directly to the PayPal Resolution Center from [!DNL Payment Services] to take action on disputes.
 
-![New](../assets/new.svg)<!-- Issue PAY-2854 --> User experience improvements from [!DNL Payment Services] Home include the ability to modify a configuration at the current inheritance level and improvements to display of the header and navigation.
+![New](../assets/new.svg)<!-- Issue PAY-2854 --> User experience improvements from [!DNL Payment Services] Home include the ability to modify a configuration at the current inheritance level and improvements to the display of the header and navigation.
 
 ![New](../assets/new.svg)<!-- Issue PAY-2854 --> You can now see warnings when you switch from sandbox mode to production mode and when you attempt to navigate away from a view with updates that have not been saved.
 
