@@ -30,7 +30,7 @@ _August 31, 2022_
 
 _August 9, 2021_
 
-![New](../assets/new.svg)<!-- Issue PAY-3420 --> Apple Pay is now available as a PayPal Smart Button. This [payment option](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-options.html#apple-pay-button) enables customers to use Touch ID on their devices to use Apple Pay, which uses credit and debit card payment credentials stored on their iOS or macOS devices.
+![New](../assets/new.svg)<!-- Issue PAY-3420 --> Apple Pay is now available as a PayPal Smart Button. This [payment option](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-options.html#apple-pay-button) enables customers to use the Touch ID feature on their iOS or macOS device to select Apple Pay. Apple Pay processes the payment using the credit and debit card payment credentials stored on the device.
 
 _June 28, 2021_
 
