@@ -11,7 +11,10 @@ exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
 
 ![Financial reports view](assets/reports-view.png ) <!-- REPLACE IMG -->
 
-There are two available Payouts reporting views to enable you to see in-depth information about all of your payouts---the data visualization view and the report view.
+There are two available Payouts reporting views to enable you to see in-depth information about all of your payouts:
+
+*  **[Payouts data visualization view](#payouts-data-visualization-view)**---Chart available on the Payment Services Home that is a visual representation of some of the data from the Payouts report view
+*  **[Payouts report view](#payouts-report-view)**---Report available in Payouts that shows detailed payout information for all transactions
 
 The Payouts views show comprehensive payout information at-a-glance, allowing you full transparency into the payment amount, processed volume, and detailed reporting on the transaction level for financial reconciliation.
 
