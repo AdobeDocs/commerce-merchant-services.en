@@ -13,7 +13,7 @@ exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
 
 There are two available Payouts reporting views to enable you to see in-depth information about all of your payouts:
 
-*  **[Payouts data visualization view](#payouts-data-visualization-view)**---Chart available on the Payment Services Home that is a visual representation of some of the data from the Payouts report view
+*  **[Payouts data visualization view](#payouts-data-visualization-view)**---Chart available on the Payment Services Home that is a visual representation of aggregated amounts per day from the Payouts report view
 *  **[Payouts report view](#payouts-report-view)**---Report available in Payouts that shows detailed payout information for all transactions
 
 The Payouts views show comprehensive payout information at-a-glance, allowing you full transparency into the payment amount, processed volume, and detailed reporting on the transaction level for financial reconciliation.
@@ -24,7 +24,7 @@ The Payouts views show comprehensive payout information at-a-glance, allowing yo
 
 ## Payouts data visualization view
 
-The Payouts data visualization view is available in the Payment Services Home. It is a visual representation of some of the data in the detailed tabular [Payouts report view](#payouts-report-view).
+The Payouts data visualization view is available in the Payment Services Home. It is a visual representation of the aggregated amounts per day from the detailed tabular [Payouts report view](#payouts-report-view).
 
 On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** to see the data visualization chart of credits vs. debits and the moving averages over time.
 
@@ -60,7 +60,7 @@ The Payouts data visualization view includes the following information.
 
 ## Payouts report view
 
-The Payouts report view is available in the Payouts view of Payment Services. It includes all available information about payouts for your store(s). The [Payouts data visualization view](#payouts-data-visualization-view) in Payment Services Home---is a visual representation of some of the data in this more detailed report view.
+The Payouts report view is available in the Payouts view of Payment Services. It includes all available information about payouts for your store(s). The [Payouts data visualization view](#payouts-data-visualization-view) in Payment Services Home is a visual representation of aggregated amounts per day in this more detailed report view.
 
 On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]** to see the detailed tabular Payouts report view.
 
