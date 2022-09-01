@@ -1,6 +1,6 @@
 ---
 title: Guide Overview
-description: Adobe Experience Platform connector for Adobe Commerce connects your Commerce instance to other Adobe Experience Cloud products.
+description: Learn how to integrate Adobe Commerce data with Adobe Experience Platform using the Experience Platform connetor.
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
 ---
 # Experience Platform connector overview

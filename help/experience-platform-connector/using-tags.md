@@ -105,7 +105,7 @@ For example, let's add the Adobe Commerce `signOut` event to Adobe Experience Pl
 
 Repeat the above steps in tags for each of the Adobe Commerce events described below.
 
-### Available events
+## Available events
 
 For each of the following events, map the Adobe Commerce events to your XDM by following the above steps.
 
@@ -633,6 +633,8 @@ Create the following data elements:
 
 ### addToCart {#addtocart}
 
+Triggered when a product is added to a cart or every time the quantity of a product in the cart is incremented.
+
 #### Data Elements
 
 Create the following data elements:
@@ -827,6 +829,8 @@ Create the following data elements:
 - **XDM data**: `%view cart%`
 
 ### removeFromCart {#removefromcart}
+
+Triggered when a product is removed from a cart or every time the quantity of a product in the cart is decremented.
 
 #### Data Elements
 
