@@ -17,6 +17,32 @@ See [Upcoming Releases](https://devdocs.magento.com/release/) to learn about rel
 
 See [Availability](https://devdocs.magento.com/release/availability.html) in the developer documentation to learn about product compatibility.
 
+## Hosted service updates
+
+These release notes describe feature changes and fixes that occurred and were released outside of the regular versioned feature releases for the hosted service.
+
++++Hosted service updates
+
+_August 31, 2022_
+
+![Fixed issue](../assets/fix.svg)<!-- Issue PAY-3629 --> When a new merchant accesses the Payment Services Home for the first time, the page now loads immediately to display the content instead of requiring a page refresh.
+
+_August 9, 2021_
+
+![New](../assets/new.svg)<!-- Issue PAY-3420 --> Apple Pay is now available as a PayPal Smart Button. This [payment option](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-options.html#apple-pay-button) enables customers to use the Touch ID feature on their iOS or macOS device to select Apple Pay. Apple Pay processes the payment using the credit and debit card payment credentials stored on the device.
+
+_June 28, 2021_
+
+![New](../assets/new.svg)<!-- Issue PAY-1720 --> Disputes for store orders are now available in [the Order payment status report](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#view-disputes). You can take action on disputes by navigating directly to the PayPal Resolution Center from [!DNL Payment Services].
+
+![New](../assets/new.svg)<!-- Issue PAY-2854 --> User experience improvements from [!DNL Payment Services] Home include the ability to modify a configuration at the current inheritance level and improvements to the display of the header and navigation.
+
+![New](../assets/new.svg)<!-- Issue PAY-2854 --> You can now see warnings when you switch from sandbox mode to production mode and when you attempt to navigate away from a view with updates that have not been saved.
+
+![New](../assets/new.svg)<!-- Issue PAY-2761 --> You can now customize the data that displays in the [Order payment status report](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) and the [Payouts report](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) by showing or hiding columns using the Column settings control.
+
++++
+
 ## v1.3.0
 
 _August 9, 2022_
@@ -40,20 +66,6 @@ _June 29, 2022_
 ![Fixed issue](../assets/fix.svg)<!-- Issue PAY-3338 PAY-2502 --> When Commerce Services credentials are invalid, the [!DNL Payment Services] Home will now appear in the Admin. A credentials error appears to alert you that your credentials are invalid.
 
 ![Known issue](../assets/bug.svg)<!-- Issue PAY-0 --> [!DNL Payment Services] is currently incompatible with `commerce-data-export` v101.20 and higher, which renders it incompatible with the [[!DNL Channel manager] extension](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html).
-
-### Hosted service updates
-
-These release notes describe feature changes and fixes that occurred and were released outside of the regular versioned feature releases, between the current v1.2.0 release and the previous 1.1.0 release for the hosted service.
-
-![New](../assets/new.svg)<!-- Issue PAY-3420 --> Apple Pay is now available as a PayPal Smart Button. This [payment option](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-options.html#apple-pay-button) enables customers to use Touch ID on their devices to use Apple Pay, which uses credit and debit card payment credentials stored on their iOS or macOS devices.
-
-![New](../assets/new.svg)<!-- Issue PAY-1720 --> Disputes for store orders are now available in [the Order payment status report](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#view-disputes). You can navigate directly to the PayPal Resolution Center from [!DNL Payment Services] to take action on disputes.
-
-![New](../assets/new.svg)<!-- Issue PAY-2854 --> User experience improvements from [!DNL Payment Services] Home include the ability to modify a configuration at the current inheritance level and improvements to display of the header and navigation.
-
-![New](../assets/new.svg)<!-- Issue PAY-2854 --> You can now see warnings when you switch from sandbox mode to production mode and when you attempt to navigate away from a view with updates that have not been saved.
-
-![New](../assets/new.svg)<!-- Issue PAY-2761 --> You can now customize the data that displays in the [Order payment status report](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) and the [Payouts report](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) by showing or hiding columns using the Column settings control.
 
 ## v1.1.0
 
