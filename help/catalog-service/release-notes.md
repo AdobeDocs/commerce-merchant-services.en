@@ -13,18 +13,45 @@ These release notes describe the latest versions of [!DNL Catalog Service] and i
 *  ![Fix](../assets/fix.svg) - Fixes and improvements
 *  ![Bug](../assets/bug.svg) - Known issues
 
+## 0.3 Release - Beta+
+
+Release Date: 2022-09-12
+Compatible with Adobe Commerce (EE): 2.4.x
+Compatible with Adobe Commerce for Cloud (ECE): 2.4.x
+Stability: Beta
+
+![New](../assets/new.svg) - Images for variants support: product images are returned based on the selected options
+![New](../assets/new.svg) - Roles for prices support: allow only members of specific customer groups to see the price of products
+![Fix](../assets/fix.svg) - Improved stability and performance of the service
+![New](../assets/new.svg) - Updates are received when products are deleted from the catalog 
+
+### Known limitations
+
+These features are not yet supported:
+
+*  Tier pricing
+*  Bundle and grouped products
+*  No updates are received when variants are deleted from the catalog
+*  B2B visibility overrides: products can be searchable, or added to cart for specific customer groups
+
+
 ## Beta Release
 
-*  ![New](../assets/new.svg) - The `products` and `refineProduct` queries return the following data:
-   *  Predefined (system) product attributes.
-   *  Dynamic product attributes and filter them by role (product display page/product list page).
-   *  Product options.
-   *  Product images and filter them by role (PDP/PLP).
-   *  A specific price for simple products and price ranges for configurable products.
-   *  Customer group prices and price ranges. They return a fallback default price on shoppers without a customer group.
-   *  Product types that use B2B customer-specific pricing.
+Release Date: 2022-08-09
+Compatible with Adobe Commerce (EE): 2.4.x
+Compatible with Adobe Commerce for Cloud (ECE): 2.4.x
+Stability: Beta
 
-## Known limitations
+*  ![New](../assets/new.svg) - The `products` and `refineProduct` queries return the following data:
+*  Predefined (system) product attributes.
+*  Dynamic product attributes and filter them by role (product display page/product list page).
+*  Product options.
+*  Product images and filter them by role (PDP/PLP).
+*  A specific price for simple products and price ranges for configurable products.
+*  Customer group prices and price ranges. They return a fallback default price on shoppers without a customer group.
+*  Product types that use B2B customer-specific pricing.
+
+### Known limitations
 
 *  Bundle and grouped products are not supported.
 *  Tier pricing is not supported.
