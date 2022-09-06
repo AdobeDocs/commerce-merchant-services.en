@@ -23,10 +23,6 @@ These release notes describe feature changes and fixes that occurred and were re
 
 +++Hosted service updates
 
-_September 6, 2022_
-
-![Fixed issue](../assets/fix.svg)<!-- Issue PAY-3663 --> Now, when a merchant's store is capturing an order authorized with a non-global currency, the capture process completes and no error is shown.
-
 _August 31, 2022_
 
 ![Fixed issue](../assets/fix.svg)<!-- Issue PAY-3629 --> When a new merchant accesses the Payment Services Home for the first time, the page now loads immediately to display the content instead of requiring a page refresh.
@@ -47,6 +43,11 @@ _June 28, 2021_
 
 +++
 
+## v1.3.1
+
+_September 6, 2022_
+
+![Fixed issue](../assets/fix.svg)<!-- Issue PAY-3663 --> Now, when a merchant's store is capturing an order authorized with a non-global currency, the capture process completes and no error is shown.
 ## v1.3.0
 
 _August 9, 2022_
