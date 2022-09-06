@@ -27,6 +27,7 @@ index: yes
 - Financial reporting {#reporting}
   - [Order payments status report](order-payment-status.md)
   - [Payouts report](payouts.md)
+  - [Available data](data.md)
 - Manage payments {#manage}
   - [Refunds](refunds.md)
   - [Voids](voids.md)
