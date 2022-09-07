@@ -1,6 +1,6 @@
 ---
 title: Guide Overview
-description: Learn how to integrate Adobe Commerce data with Adobe Experience Platform using the Experience Platform connetor.
+description: Learn how to integrate Adobe Commerce data with Adobe Experience Platform using the Experience Platform connector.
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
 ---
 # Experience Platform connector overview

@@ -125,6 +125,8 @@ For each of the following events, map the Adobe Commerce events to your XDM by f
 
 ### signOut {#signout}
 
+Triggered when a shopper attempts to sign out.
+
 #### Data Elements
 
 Create the following data element:
@@ -152,6 +154,8 @@ Create the following data element:
 - **XDM data**: `%sign-out%`
 
 ### signIn {#signin}
+
+Triggered when a shopper attempts to sign in.
 
 #### Data Elements
 
@@ -210,6 +214,8 @@ Create the following data elements:
 
 ### createAccount {#createaccount}
 
+Triggered when a shopper attempts to create an account.
+
 #### Data Elements
 
 Create the following data elements:
@@ -266,6 +272,8 @@ Create the following data elements:
 - **XDM data**: `%create account%`
 
 ### editAccount {#editaccount}
+
+Triggered when a shopper attempts to edit an account.
 
 #### Data Elements
 
@@ -324,6 +332,8 @@ Create the following data elements:
 
 ### pageView {#pageview}
 
+Triggered when any page loads.
+
 #### Data Elements
 
 Create the following data elements:
@@ -351,6 +361,8 @@ Create the following data elements:
 
 ### productView {#productview}
 
+Triggered when any product page loads.
+
 #### Data Elements
 
 Create the following data elements:
@@ -369,6 +381,13 @@ Create the following data elements:
     - **Data Element Type**: `Data Layer Computed State`
     - **[Optional] path**: `productContext.sku`
 
+1. Product Image URL:
+
+    - **Name**: `product image`
+    - **Extension**: `Adobe Client Data Layer`
+    - **Data Element Type**: `Data Layer Computed State`
+    - **[Optional] path**: `productContext.mainImageUrl`
+    
 1. Product currency:
 
     - **Name**: `product currency`
@@ -428,6 +447,8 @@ Create the following data elements:
     - **Currency code**: **Value** = `%currency code%`
     - **Field Group**: `commerce` > `productViews` > `value`
     - **value**: **Value** = `1`
+    - **Field Group**: `productListItems` > `ProductImageUrl`
+    - **ProductImageUrl**: **Value** = `%product image%`
 
 #### Rules 
 
@@ -444,6 +465,8 @@ Create the following data elements:
 - **XDM data**: `%product view%`
 
 ### searchRequestSent {#searchrequestsent}
+
+Triggered by events in the “search as you type” popover and by events on search results pages.
 
 #### Data Elements
 
@@ -549,6 +572,8 @@ Create the following data elements:
 
 ### searchResponseReceived {#searchresponsereceived}
 
+Triggered when Live Search returns results for the “search as you type” popover or search results page.
+
 #### Data Elements
 
 Create the following data elements:
@@ -603,6 +628,13 @@ Create the following data elements:
     return suggestions;
     ```
 
+1. Product Image URL:
+
+    - **Name**: `product image`
+    - **Extension**: `Adobe Client Data Layer`
+    - **Data Element Type**: `Data Layer Computed State`
+    - **[Optional] path**: `productContext.mainImageUrl`
+
 1. Search response:
 
     - **Name**: `search response`
@@ -616,6 +648,8 @@ Create the following data elements:
     - **Data element**: `%search result products%`
     - **Field Group**: `searchResponse` > `value`
     - **value**: **Value** = `1`
+    - **Field Group**: `productListItems` > `ProductImageUrl`
+    - **ProductImageUrl**: **Value** = `%product image%`
 
 #### Rules 
 
@@ -666,6 +700,13 @@ Create the following data elements:
     - **Extension**: `Adobe Client Data Layer`
     - **Data Element Type**: `Data Layer Computed State`
     - **[Optional] path**: `productContext.pricing.specialPrice`
+
+1. Product Image URL:
+
+    - **Name**: `product image`
+    - **Extension**: `Adobe Client Data Layer`
+    - **Data Element Type**: `Data Layer Computed State`
+    - **[Optional] path**: `productContext.mainImageUrl`
 
 1. Product regular price:
 
@@ -721,6 +762,8 @@ Create the following data elements:
     - **Cart ID**: **Value** = `%cart id%`
     - **Field Group**: `commerce` > `productListAdds` > `value`
     - **value**: **Value** = `1`
+    - **Field Group**: `productListItems` > `ProductImageUrl`
+    - **ProductImageUrl**: **Value** = `%product image%`
 
 #### Rules 
 
@@ -738,6 +781,8 @@ Create the following data elements:
 
 ### viewCart {#viewcart}
 
+Triggered when any cart page loads.
+
 #### Data Elements
 
 Create the following data elements:
@@ -749,7 +794,14 @@ Create the following data elements:
     - **Data Element Type**: `Data Layer Computed State`
     - **[Optional] path**: `storefrontInstanceContext`
 
-1. Cart:
+1. Product Image URL:
+
+    - **Name**: `product image`
+    - **Extension**: `Adobe Client Data Layer`
+    - **Data Element Type**: `Data Layer Computed State`
+    - **[Optional] path**: `productContext.mainImageUrl`
+    
+    1. Cart:
 
     - **Name**: `cart`
     - **Extension**: `Adobe Client Data Layer`
@@ -813,6 +865,8 @@ Create the following data elements:
     - **Cart ID**: **Value** = `%cart id%`
     - **Field Group**: `commerce` > `productListViews` > `value`
     - **value**: **Value** = `1`
+    - **Field Group**: `productListItems` > `ProductImageUrl`
+    - **ProductImageUrl**: **Value** = `%product image%`
 
 #### Rules 
 
@@ -935,6 +989,8 @@ Create the following data elements:
 
 ### initiateCheckout {#initiatecheckout}
 
+Triggered when the shopper clicks a checkout button.
+
 #### Data Elements
 
 Create the following data elements:
@@ -946,6 +1002,13 @@ Create the following data elements:
     - **Data Element Type**: `Data Layer Computed State`
     - **[Optional] path**: `storefrontInstanceContext`
 
+1. Product Image URL:
+
+    - **Name**: `product image`
+    - **Extension**: `Adobe Client Data Layer`
+    - **Data Element Type**: `Data Layer Computed State`
+    - **[Optional] path**: `productContext.mainImageUrl`
+    
 1. Cart:
 
     - **Name**: `cart`
@@ -1010,6 +1073,8 @@ Create the following data elements:
     - **Cart ID**: **Value** = `%cart id%`
     - **Field Group**: `commerce` > `checkouts` > `value`
     - **value**: **Value** = `1`
+    - **Field Group**: `productListItems` > `ProductImageUrl`
+    - **ProductImageUrl**: **Value** = `%product image%`
 
 #### Rules 
 
@@ -1027,6 +1092,8 @@ Create the following data elements:
 
 ### placeOrder {#placeorder}
 
+Triggered when the shopper places an order.
+
 #### Data Elements
 
 Create the following data elements:
@@ -1038,6 +1105,13 @@ Create the following data elements:
     - **Data Element Type**: `Data Layer Computed State`
     - **[Optional] path**: `storefrontInstanceContext`
 
+1. Product Image URL:
+
+    - **Name**: `product image`
+    - **Extension**: `Adobe Client Data Layer`
+    - **Data Element Type**: `Data Layer Computed State`
+    - **[Optional] path**: `productContext.mainImageUrl`
+    
 1. Cart:
 
     - **Name**: `cart`
@@ -1175,6 +1249,8 @@ Create the following data elements:
     - **Promotion ID**: **Value** = `%promotion id%`
     - **Field Group**: `commerce` > `purchases` > `value`
     - **value**: **Value** = `1`
+    - **Field Group**: `productListItems` > `ProductImageUrl`
+    - **ProductImageUrl**: **Value** = `%product image%`
 
 #### Rules 
 
