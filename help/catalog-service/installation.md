@@ -39,7 +39,7 @@ Use this method for installing the [!DNL Catalog Service] extension for a Commer
 1. Open the `<Commerce_root>/composer.json` file in a text editor and update the `require` section as follows:
 
    ```json
-  "require": {
+   "require": {
     "magento/composer-root-update-plugin": "^2.0.2",
     "magento/magento-cloud-metapackage": ">=2.4.5 <2.4.6",
     "magento/saas-export": "^101.4.0",
@@ -47,7 +47,7 @@ Use this method for installing the [!DNL Catalog Service] extension for a Commer
     "magento/commerce-data-export-ee": "^101.3.1",
     "magento/services-id": "^3.0.1",
     "magento/services-connector": "1.2.1"
-}
+    }
    ```
 
    <!-- What if the customer already has other services installed, and some of these lines are already present? Do they need to delete the duplications? What if the version numbers are different? -->
