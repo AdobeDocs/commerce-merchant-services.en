@@ -43,6 +43,12 @@ _June 28, 2021_
 
 +++
 
+<!-- ## v1.3.2
+
+_TBD, 2022_
+
+![New](../assets/new.svg)<!-- Issue PAY-3231 --> You can [add a [!UICONTROL Soft Descriptor]](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#add-soft-descriptor) to your website(s) or individual store view(s) configuration that show on customer transaction bank statements to delineate between multiple stores/brands/catalogs. -->
+
 ## v1.3.1
 
 _September 6, 2022_
