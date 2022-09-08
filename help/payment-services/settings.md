@@ -138,7 +138,7 @@ You can also configure the _[!UICONTROL Button style]_ options of the PayPal sma
 
 1. To enable the tagline in a horizontal layout, toggle the **[!UICONTROL Show tagline]** selector.
 1. To modify the **[!UICONTROL Color]**, select the desired color option.
-1. To modify the **[!UICONTROL Shape]**, select `Pill` or `Rect`.
+1. To modify the **[!UICONTROL Shape]**, select `Pill` or `Rectangle`.
 1. To enable button height selector, toggle the **[!UICONTROL Responsive button height]** selector.
 1. To modify the **[!UICONTROL Label]**, select the desired label option.
 
