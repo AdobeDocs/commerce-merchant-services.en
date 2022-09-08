@@ -15,9 +15,13 @@ To configure [!DNL Payment Services] for [!DNL Adobe Commerce] and [!DNL Magento
 >
 > For multi-store or legacy configuration, refer to the [Configure in the Admin](configure-admin.md) topic.
 
-## Enable Payment Services
+## Configure General settings
 
-You can enable [!DNL Payment Services] for your website, and enable either sandbox testing or live payments, in the [!UICONTROL General] section.
+The [!UICONTROL General] settings provide the ability to enable or disable Payment Services as your payment method and add information to your transactions to mark or prefix a website or store view with custom information.
+
+### Enable Payment Services
+
+You can enable [!DNL Payment Services] for your website, and enable either sandbox testing or live payments.
 
 1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 
@@ -43,7 +47,23 @@ You can enable [!DNL Payment Services] for your website, and enable either sandb
 
 You can now proceed to changing the default settings for [payment options](#configure-payment-options) functions and storefront display.
 
-### General configuration options
+### Add soft descriptor
+
+You can add a [!UICONTROL Soft Descriptor] to your website(s) or individual store view(s) configuration that show on customer transaction bank statements. If you have multiple stores/brands/catalogs, for instance, you can easily delineate between those by adding custom text to the [!UICONTROL Soft Descriptor] field.
+
+1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
+
+   ![Home view](assets/payment-services-menu-small.png)
+
+1. Click **[!UICONTROL Settings]**. See [Introduction to [!DNL Payment Services] Home](payments-home.md) for more information.
+1. Select the website or store view, in the **[!UICONTROL Scope]** dropdown menu, for which you want to enable a payment method.
+1. To enable the soft descriptor used for the parent website, toggle on [!UICONTROL Use website].
+1. To create a new soft descriptor for a website or store view, toggle off [!UICONTROL Use website] and add your custom text in the text field, replacing `Custom descriptor`.
+1. Click **[!UICONTROL Save]**.
+
+   If you try to navigate away from this view without saving your changes, a modal appears that prompts you to discard changes, keep editing, or save changes.
+
+### Configuration options
 
 | Field | Scope | Description |
 |---|---|---|
@@ -51,6 +71,7 @@ You can now proceed to changing the default settings for [payment options](#conf
 | [!UICONTROL Payment mode] | store view | Set the method, or environment, for your store. Options: [!UICONTROL Sandbox] / [!UICONTROL Production] |
 | [!UICONTROL Sandbox Merchant ID] | store view | Your sandbox merchant ID, which is auto-generated during sandbox onboarding. |
 | [!UICONTROL Production Merchant ID] | store view | Your production merchant ID, which is auto-generated during sandbox onboarding. |
+| [!UICONTROL Soft Descriptor] | website or store view | Your production merchant ID, which is auto-generated during sandbox onboarding. The [!UICONTROL Use website] toggle applies any soft descriptor added at the website level.|
 
 ## Configure payment options
 
