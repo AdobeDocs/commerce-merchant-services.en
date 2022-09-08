@@ -15,6 +15,28 @@ See [Upcoming Releases](https://devdocs.magento.com/release/) to learn about rel
 
 See [Availabilty](https://devdocs.magento.com/release/availability.html) in the developer documentation to learn about product compatibility.
 
+## v1.2.0
+
+_September 8, 2022_
+
+![New](../assets/new.svg)<!-- Issue BOLT-341 --> General availability release---[[!DNL Quick Checkout]](https://marketplace.magento.com/magento-quick-checkout.html) is now compatible with Adobe Commerce versions 2.4.5.
+
+![New](../assets/new.svg)<!-- Issue BOLT-328 --> [!DNL Quick Checkout] for Adobe Commerce and Magento Open Source provides an [Admin panel view](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/admin-panel.html) with all the necessary information to set up and use the extension.
+
+![New](../assets/new.svg)<!-- Issue BOLT-364 --> An administrator user [can set up user roles and permissions](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/user-roles-setup.html) to allow other users to view the [!DNL Quick Checkout] Admin panel.
+
+![New](../assets/new.svg)<!-- Issue BOLT-377 --> [!DNL Quick Checkout] Admin panel now contains a page header that includes specific sections such as **Overview**, **Reports**, and **Settings**.
+
+![New](../assets/new.svg)<!-- Issue BOLT-379 --> [!DNL Quick Checkout] Admin panel adds a Welcome widget that provides a feature tour powered by Gainsight.
+
+![New](../assets/new.svg)<!-- Issue BOLT-378 --> [!DNL Quick Checkout] [Admin panel view](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/admin-panel.html) incorporates a **Configuration** step that appears when the API and publishable keys are not provided in the [Settings](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) view.
+
+![New](../assets/new.svg)<!-- Issue BOLT-380 --> [!DNL Quick Checkout] [Admin panel view](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/admin-panel.html) incorporates a **Resources** section that changes depending on the onboarding stage.
+
+![New](../assets/new.svg)<!-- Issue BOLT-381 --> [!DNL Quick Checkout] [Admin panel view](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/admin-panel.html) includes a **Help and Support** section.
+
+![Fixed issue](../assets/fix.svg)<!-- Issue BOLT-369 --> The [[!DNL Quick Checkout] Admin Panel](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) now displays the extension version in the footer.
+
 ## v1.1.0
 
 _August 12, 2022_
