@@ -17,7 +17,7 @@ To configure [!DNL Payment Services] for [!DNL Adobe Commerce] and [!DNL Magento
 
 ## Configure General settings
 
-The [!UICONTROL General] settings provide the ability to enable or disable Payment Services as your payment method and add information to your transactions to mark or prefix a website or store view with custom information.
+The [!UICONTROL General] settings provide the ability to enable or disable Payment Services as your payment method and add information to customer transactions to mark or prefix a website or store view with custom information.
 
 ### Enable Payment Services
 
@@ -31,7 +31,7 @@ You can enable [!DNL Payment Services] for your website, and enable either sandb
 
    The _[!UICONTROL General]_ section includes settings used to enable [!DNL Payment Services] as the payment method.
 
-1. To enable [!DNL Payment Services] as the payment method for your store, in the _[!UICONTROL General]_ section, toggle (**[!UICONTROL Enable Payment Services as payment method]**) to `Yes`.
+1. To enable [!DNL Payment Services] as the payment method for your store, in the _[!UICONTROL General]_ section, toggle **[!UICONTROL Enable Payment Services as payment method]** to `Yes`.
 
 1. If you are still testing [!DNL Payment Services] for your store, set **Payment mode** to `Sandbox`. If you are ready to enable live payments, set it to `Production`.
 
@@ -49,17 +49,25 @@ You can now proceed to changing the default settings for [payment options](#conf
 
 ### Add soft descriptor
 
-You can add a [!UICONTROL Soft Descriptor] to your website(s) or individual store view(s) configuration that show on customer transaction bank statements. If you have multiple stores/brands/catalogs, for instance, you can easily delineate between those by adding custom text to the [!UICONTROL Soft Descriptor] field.
+You can add a [!UICONTROL Soft Descriptor] to your website(s) or individual store view(s) configuration. Soft descriptors show on customer transaction bank statements. If you have multiple stores/brands/catalogs, for instance, you can easily delineate between those by adding custom text to the [!UICONTROL Soft Descriptor] field.
 
 1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 
    ![Home view](assets/payment-services-menu-small.png)
 
 1. Click **[!UICONTROL Settings]**. See [Introduction to [!DNL Payment Services] Home](payments-home.md) for more information.
-1. Select the website or store view, in the **[!UICONTROL Scope]** dropdown menu, for which you want to enable a payment method.
-1. To enable the soft descriptor used for the parent website, toggle on [!UICONTROL Use website].
-1. To create a new soft descriptor for a website or store view, toggle off [!UICONTROL Use website] and add your custom text in the text field, replacing `Custom descriptor`.
+1. Select the website or store view, in the **[!UICONTROL Scope]** dropdown menu, for which you want to create a soft descriptor. For initial setup, leave this as default to set the default value.
+1. Add your custom text (up to 22 characters) in the text field, replacing `Custom descriptor`.
 1. Click **[!UICONTROL Save]**.
+1. To create a soft descriptor other than the configured default for a website or store view:
+   1. Select the website or store view, in the **[!UICONTROL Scope]** dropdown menu, for which you want to create a soft descriptor.
+   1. Toggle *off* **[!UICONTROL Use website]** (or **[!UICONTROL Use website]**, dependant on which scope you selected).
+   1. Add your custom text in the text field.
+   1. Click **[!UICONTROL Save]**.
+1. To enable for a website or store view the default soft descriptor *or* the soft descriptor used for the parent website:
+   1. Select the website or store view, in the **[!UICONTROL Scope]** dropdown menu, for which you want to enable an existing soft descriptor.
+   1. Toggle *on* **[!UICONTROL Use website]** (or **[!UICONTROL Use website]**, dependant on which scope you selected).
+   1. Click **[!UICONTROL Save]**.
 
    If you try to navigate away from this view without saving your changes, a modal appears that prompts you to discard changes, keep editing, or save changes.
 
@@ -71,7 +79,7 @@ You can add a [!UICONTROL Soft Descriptor] to your website(s) or individual stor
 | [!UICONTROL Payment mode] | store view | Set the method, or environment, for your store. Options: [!UICONTROL Sandbox] / [!UICONTROL Production] |
 | [!UICONTROL Sandbox Merchant ID] | store view | Your sandbox merchant ID, which is auto-generated during sandbox onboarding. |
 | [!UICONTROL Production Merchant ID] | store view | Your production merchant ID, which is auto-generated during sandbox onboarding. |
-| [!UICONTROL Soft Descriptor] | website or store view | Your production merchant ID, which is auto-generated during sandbox onboarding. The [!UICONTROL Use website] toggle applies any soft descriptor added at the website level.|
+| [!UICONTROL Soft Descriptor] | website or store view | Add a soft descriptor to your website(s) and store view(s) to add information to customer transactions which delineate brands, stores, or product lines. The [!UICONTROL Use website] toggle applies any soft descriptor added at the website level. The [!UICONTROL Use default] toggle applies any soft descriptor added as the default.|
 
 ## Configure payment options
 
