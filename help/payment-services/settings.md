@@ -61,7 +61,7 @@ You can add a [!UICONTROL Soft Descriptor] to your website(s) or individual stor
 1. Click **[!UICONTROL Save]**.
 1. To create a soft descriptor other than the configured default for a website or store view:
    1. Select the website or store view, in the **[!UICONTROL Scope]** dropdown menu, for which you want to create a soft descriptor.
-   1. Toggle *off* **[!UICONTROL Use website]** (or **[!UICONTROL Default]**, dependant on which scope you selected).
+   1. Toggle *off* **[!UICONTROL Use website]** (or **[!UICONTROL Use default]**, dependant on which scope you selected).
    1. Add your custom text in the text field.
    1. Click **[!UICONTROL Save]**.
 1. To enable for a website or store view the default soft descriptor *or* the soft descriptor used for the parent website:
