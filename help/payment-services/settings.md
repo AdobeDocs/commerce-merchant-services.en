@@ -56,17 +56,17 @@ You can add a [!UICONTROL Soft Descriptor] to your website(s) or individual stor
    ![Home view](assets/payment-services-menu-small.png)
 
 1. Click **[!UICONTROL Settings]**. See [Introduction to [!DNL Payment Services] Home](payments-home.md) for more information.
-1. Select the website or store view, in the **[!UICONTROL Scope]** dropdown menu, for which you want to create a soft descriptor. For initial setup, leave this as default to set the default value.
+1. Select the website or store view, in the **[!UICONTROL Scope]** dropdown menu, for which you want to create a soft descriptor. For initial setup, leave this as **[!UICONTROL Default]** to set the default value.
 1. Add your custom text (up to 22 characters) in the text field, replacing `Custom descriptor`.
 1. Click **[!UICONTROL Save]**.
 1. To create a soft descriptor other than the configured default for a website or store view:
    1. Select the website or store view, in the **[!UICONTROL Scope]** dropdown menu, for which you want to create a soft descriptor.
-   1. Toggle *off* **[!UICONTROL Use website]** (or **[!UICONTROL Use website]**, dependant on which scope you selected).
+   1. Toggle *off* **[!UICONTROL Use website]** (or **[!UICONTROL Default]**, dependant on which scope you selected).
    1. Add your custom text in the text field.
    1. Click **[!UICONTROL Save]**.
 1. To enable for a website or store view the default soft descriptor *or* the soft descriptor used for the parent website:
    1. Select the website or store view, in the **[!UICONTROL Scope]** dropdown menu, for which you want to enable an existing soft descriptor.
-   1. Toggle *on* **[!UICONTROL Use website]** (or **[!UICONTROL Use website]**, dependant on which scope you selected).
+   1. Toggle *on* **[!UICONTROL Use website]** (or **[!UICONTROL Use default]**, dependant on which scope you selected).
    1. Click **[!UICONTROL Save]**.
 
    If you try to navigate away from this view without saving your changes, a modal appears that prompts you to discard changes, keep editing, or save changes.
