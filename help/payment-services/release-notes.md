@@ -23,6 +23,10 @@ These release notes describe feature changes and fixes that occurred and were re
 
 +++Hosted service updates
 
+_September 12, 2022_
+
+![New](../assets/new.svg)<!-- Issue PAY-3705 --> The `increment_id` is now available for use in reconciling payouts in external ERP systems. It is propagated to the [`custom_id` _and_ `invoice_id`](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/data.html#reconcile-with-erp-system), visible in both the PayPal webhook and the merchant activity detail for a payout.
+
 _August 31, 2022_
 
 ![Fixed issue](../assets/fix.svg)<!-- Issue PAY-3629 --> When a new merchant accesses the Payment Services Home for the first time, the page now loads immediately to display the content instead of requiring a page refresh.

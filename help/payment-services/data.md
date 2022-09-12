@@ -14,10 +14,7 @@ You can reconcile Adobe Commerce financial reporting with your non-Adobe Enterpr
 
 When Payment Services sends the Commerce order to PayPal, the increment ID is included as the `custom_id` _and_ in the `invoice_id` (which also contains a random string after the `increment_id`).
 
-The IDs are easily accessible:
-
-*  `custom_id`---Visible in the merchant activity detail for a payout and in the PayPal webhook
-*  `invoice_id`---Visible in the PayPal webhook
+The IDs are easily accessible in both the merchant activity detail for a payout and in the PayPal webhook.
 
 `invoice_id` and `custom_id` near the bottom of the merchant activity detail for a payout:
 
