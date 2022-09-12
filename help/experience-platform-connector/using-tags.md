@@ -445,10 +445,10 @@ Create the following data elements:
     - **Price total**: **Value** = `%product price%`
     - **Field Group**: `productListItems` > `currencyCode`
     - **Currency code**: **Value** = `%currency code%`
-    - **Field Group**: `commerce` > `productViews` > `value`
-    - **value**: **Value** = `1`
     - **Field Group**: `productListItems` > `ProductImageUrl`
     - **ProductImageUrl**: **Value** = `%product image%`
+    - **Field Group**: `commerce` > `productViews` > `value`
+    - **value**: **Value** = `1`
 
 #### Rules 
 
@@ -645,11 +645,11 @@ Create the following data elements:
     - **Field Group**: `siteSearch` > `numberOfResults`
     - **value**: `%search result number of products%`
     - **Field Group**: `productListItems`. Select **Provide entire object**.
+    - **Field Group**: `productListItems` > `ProductImageUrl`
+    - **ProductImageUrl**: **Value** = `%product image%`
     - **Data element**: `%search result products%`
     - **Field Group**: `searchResponse` > `value`
     - **value**: **Value** = `1`
-    - **Field Group**: `productListItems` > `ProductImageUrl`
-    - **ProductImageUrl**: **Value** = `%product image%`
 
 #### Rules 
 
@@ -757,13 +757,13 @@ Create the following data elements:
     - **Field Group**: `productListItems` > `priceTotal`
     - **Price total**: **Value** = `%product price%`
     - **Field Group**: `productListItems` > `currencyCode`
+    - **Field Group**: `productListItems` > `ProductImageUrl`
+    - **ProductImageUrl**: **Value** = `%product image%`
     - **Currency code**: **Value** = `%currency code%`
     - **Field Group**: `commerce` > `cart` > `cartID`
     - **Cart ID**: **Value** = `%cart id%`
     - **Field Group**: `commerce` > `productListAdds` > `value`
     - **value**: **Value** = `1`
-    - **Field Group**: `productListItems` > `ProductImageUrl`
-    - **ProductImageUrl**: **Value** = `%product image%`
 
 #### Rules 
 
@@ -861,14 +861,14 @@ Create the following data elements:
     - **Data Element Type**: `XDM object`
     - **Field Group**: `productListItems`. For `productListItems`, there can be multiple items that are precomputed. Select **productListItems** > **Populate entire array**.
     - **Data element**: `%product list items%`
+    - **Field Group**: `productListItems` > `ProductImageUrl`
+    - **ProductImageUrl**: **Value** = `%product image%`
     - **Field Group**: `commerce` > `cart` > `cartID`
     - **Cart ID**: **Value** = `%cart id%`
     - **Field Group**: `commerce` > `productListViews` > `value`
     - **value**: **Value** = `1`
-    - **Field Group**: `productListItems` > `ProductImageUrl`
-    - **ProductImageUrl**: **Value** = `%product image%`
 
-#### Rules 
+#### Rules
 
 - **Name**: `view cart`
 - **Extension**: `Adobe Client Data Layer`
@@ -1069,12 +1069,12 @@ Create the following data elements:
     - **Data Element Type**: `XDM object`
     - **Field Group**: `productListItems`. For `productListItems`, there can be multiple items that are precomputed. Select **productListItems** > **Populate entire array**.
     - **Data element**: `%product list items%`
+    - **Field Group**: `productListItems` > `ProductImageUrl`
+    - **ProductImageUrl**: **Value** = `%product image%`
     - **Field Group**: `commerce` > `cart` > `cartID`
     - **Cart ID**: **Value** = `%cart id%`
     - **Field Group**: `commerce` > `checkouts` > `value`
     - **value**: **Value** = `1`
-    - **Field Group**: `productListItems` > `ProductImageUrl`
-    - **ProductImageUrl**: **Value** = `%product image%`
 
 #### Rules 
 
@@ -1241,6 +1241,8 @@ Create the following data elements:
     - **Data Element Type**: `XDM object`
     - **Field Group**: `productListItems`. For `productListItems`, there can be multiple items that are precomputed. Select **productListItems** > **Populate entire array**.
     - **Data element**: `%product list items%`
+    - **Field Group**: `productListItems` > `ProductImageUrl`
+    - **ProductImageUrl**: **Value** = `%product image%`
     - **Field Group**: `commerce` > `order`
     - **Unique Identifier**: **Value** = `%commerce order%`
     - **Field Group**: `commerce` > `shipping`
@@ -1249,8 +1251,6 @@ Create the following data elements:
     - **Promotion ID**: **Value** = `%promotion id%`
     - **Field Group**: `commerce` > `purchases` > `value`
     - **value**: **Value** = `1`
-    - **Field Group**: `productListItems` > `ProductImageUrl`
-    - **ProductImageUrl**: **Value** = `%product image%`
 
 #### Rules 
 
