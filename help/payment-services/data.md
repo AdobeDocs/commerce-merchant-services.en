@@ -74,5 +74,5 @@ The IDs are easily accessible:
 
 See PayPal's REST APIs documentation for more information:
 
-*  [`purchase_unit` in which `custom_id` resides](https://developer.paypal.com/docs/api/orders/v2/#definition-purchase_unit:~:text=Read%20only.-,purchase_unit,-Collapse)
+*  [`purchase_unit`, in which `custom_id` and `invoice_id` reside](https://developer.paypal.com/docs/api/orders/v2/#definition-purchase_unit:~:text=Read%20only.-,purchase_unit,-Collapse)
 *  [Show order details](https://developer.paypal.com/docs/api/orders/v2/#orders_get)
