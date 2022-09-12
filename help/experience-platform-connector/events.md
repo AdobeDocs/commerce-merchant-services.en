@@ -188,7 +188,6 @@ The following table describes the data collected for this event.
 |`eventType`|The primary event type for this time-series record, such as: `userAccount.login`|
 |`person`|An individual actor, contact, or owner|
 |`accountID`|Captures the user account ID|
-|`accountType`|Captures the user account type, such as `Personal` or `Company`, if applicable|
 |`personalEmailID`|Specifies the unique identifier for the personal email|
 |`address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
 |`userAccount`|Indicates any loyalty details, preferences, login processes, and other account preferences|
