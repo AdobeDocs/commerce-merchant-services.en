@@ -5,42 +5,133 @@ role: User, Admin
 level: Intermediate
 exl-id: 51dcfc95-3dd6-40d9-bd26-d8409a25f3c8
 ---
-# General Configuration
+# Store service and sales configuration
 
-In the Adobe commerce Admin, configure general configuration settings to enable [!DNL Store Fulfillment] services for your store, configure global extension settings, and provide key data for the integration by configuring the [!UICONTROL Account Credentials].
+Configure[!DNL Store Fulfillment] to enable the extension, specify extension settings, configure the security settings for Store Assist app users, and set options for delivery methods.
 
-The integration must be connected to the Store Fulfillment service. Also, configure the Store Fulfillment general settings to enable and customize Store Fulfillment services based on your organization's capabilities and operational requirements.
+>[!IMPORTANT]
+>
+>The Store Fulfillment service configuration applies only after you connect your Adobe Commerce instance and the [!DNL Store Fulfillment] app. See [Connect Store Fulfillment](connect-set-up-service.md).
 
-The general configuration for [!DNL Store Fulfillment] includes the following configuration settings:
+Configure the Store Fulfillment services settings from the Admin Store Configuration menu in Adobe Commerce.
 
-- [Enable the solution](#enable-the-store-fulfillment-solution)
-- [Manage Account credentials to connect to Store Fulfillment services](#account-credentials)
-- [Configure Logging](#configure-logging)
-- [Set options for managing order and error synchronization operations](#order-synchronization)
-- [Enable Store Fulfillment shipping options](#enable-store-fullment-shipping-options)
-- [Configure security and authentication settings for the Store Fulfillment App](#store-fulfillment-app)
-- [Set Delivery method availability and messaging configuration](#in-store-delivery-methods)
+Access the settings to enable the extension, configure global settings, and specify security options for Store Assist app user connections and accounts by selecting **[!UICONTROL Stores > Configuration > Services > Store Fulfillment by Walmart Commerce Technologies]**.
+
+![Admin Store services configuration for Store Fulfillment](assets/store-services-admin-sf-config.png)
+
+Access the settings to configure delivery methods by selecting **[!UICONTROL Store > Configuration > Sales > Delivery Methods > In-Store Pickup]**.
+
+![Admin Store sales configuration for Store Fulfillment](assets/store-sales-admin-sf-deliver-config.png)
+
+## Basic settings
+
+<table>
+<thead>
+<tr>
+<td><strong>Field</strong></td>
+<td><strong>Description</strong></td>
+<td><strong>Scope</strong></td>
+<td><strong>Required</strong></td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>[!UICONTROL Price]</strong></td>
+<td>The price you charge the customer for in-store pickup. Defaults to zero.</td>
+<td>Website</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>[!UICONTROL Search Radius]</strong></td>
+<td>The radius, in kilometers, to use when a shopper searches for a store pickup location in the storefront checkout. The search results return only stores located within specified search radius.</td>
+<td>Website</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>[!UICONTROL Displayed error message]</strong></td>
+<td>A message that displays when a customer selects in-store pickup, but the delivery method is not available. You can customize the default text if needed.
+</td>
+<td>Store View</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+
+>[!NOTE]
+>
+>The [!UICONTROL Search Radius] setting is used only if you have configured the [store location and mapping setup](store-location-map-provider-setup.md) for Adobe Commerce.
 
 ## Enable the Store Fulfillment solution
 
-| **Field**                | **Description**                                                                                                                                                                                                                                                                                                                                                                                  | **Scope** | **Required** |
-|--------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------|
-| **[!UICONTROL Enabled]** | Enable or disable the solution. When enabled, configure and use Store Fulfillment capabilities and establish the connection between your Adobe Commerce store and Store Fulfillment services. When disabled, all Store Fulfillment features are disabled and there is no communication between Adobe Commerce and Store Fulfillment services. Order information cannot be processed or received. | Global    | Yes          |
+Enable the [!DNL Store Fulfillment] solution to add the in-store and curbside pickup capabilities to the shopping and checkout experiences in your Adobe Commerce storefront.
 
-To complete this setup, see **Stores > Configuration > Services > Store Fulfillment by Walmart Commerce Technologies**.
+<table>
+<thead>
+<tr>
+<td><strong>Field</strong></td>
+<td><strong>Description</strong></td>
+<td><strong>Scope</strong></td>
+<td><strong>Required</strong></td>
+</tr>
+ </thead>
+ <tbody>
+<tr>
+<td><strong>[!UICONTROL Enabled]</strong></td>
+<td>Enable or disable the solution. When enabled, configure and use Store Fulfillment capabilities and establish the connection between your Adobe Commerce store and Store Fulfillment services. When disabled, all Store Fulfillment features are disabled and there is no communication between Adobe Commerce and Store Fulfillment services. Order information cannot be processed or received.</td>
+<td>Global</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
 
 ## Add Account Credentials
 
-| **Field**                              | **Description**                                                                                                                                                                                                                                                                                                                                                               | **Scope** | **Required** |
-|----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------|
-| **[!UICONTROL Environment]**           | Can select *Sandbox* or *Production*:</br> Sandbox communicates with the fulfillment services in a test.</br>Production communicates with a live environment. Use **only** in production.</br>You are given a set of credentials for each environment and are able to manage both sets in the same installation. </br></br>Save credentials before validating the connection. | Global    | Yes          |
-| **[!UICONTROL API Server URL]**        | The URL to the Walmart Store Fulfillment API endpoint. This must be fully-qualified URL that is provided to you during your onboarding process. Store Fulfillment customers receive both a Sandbox and Production URL. Please ensure to copy/paste the full URL, including trailing slash "/".                                                                                | Global    | Yes          |
-| **[!UICONTROL Token Auth Server URL]** | The URL to the Walmart Store Fulfillment Authentication endpoint. The value must be the fully-qualified URL that is provided to you during your onboarding process. You receive both a Sandbox and Production URL. Please ensure to copy/paste the full URL, including trailing slash `/`".                                                                                   | Global    | Yes          |
-| **[!UICONTROL Merchant Id]**           | Your unique merchant (tenant) ID provided to you during your onboarding process. Your ID is used to route your orders and ensures that your merchant stores are receiving them.                                                                                                                                                                                               | Global    | Yes          |
-| **[!UICONTROL Consumer Id]**           | Your unique integration ID. This is provided to you during your onboarding process. It does not change. It is used to authenticate all communication with the fulfillment services.                                                                                                                                                                                           | Global    | Yes          |
-| **[!UICONTROL Consumer Secret]**       | Your unique integration key. This is provided to you during your onboarding process. It is used to authenticate all communication with the fulfillment services.                                                                                                                                                                                                              | Global    | Yes          |
+<table>
+<tr>
+<td><strong>Field</strong></td>
+<td><strong>Description</strong></td>
+<td><strong>Scope</strong></td>
+<td><strong>Required</strong></td>
+    </tr>
+<tr>
+<td><strong>[!UICONTROL Environment]</strong></td>
+<td>Select either <i>Sandbox</i> or <i>Production</i><br></br> Sandbox communicates with the fulfillment services in a test.&lt;/br&gt;Production communicates with a live environment. Use <strong>only</strong> in production.<br></br>You are given a set of credentials for each environment and are able to manage both sets in the same installation. <br></br>Save credentials before validating the connection.</td>
+<td>Global</td>
+<td>Yes</td>
+    </tr>
+<tr>
+<td><strong>[!UICONTROL API Server URL]</strong></td>
+<td>The URL to the Walmart Store Fulfillment API endpoint. This must be the fully qualified URL that is provided to you during your onboarding process. Store Fulfillment customers receive both a Sandbox and Production URL. Please ensure to copy/paste the full URL, including trailing slash "/".</td>
+<td>Global</td>
+<td>Yes</td>
+    </tr>
+<tr>
+<td><strong>[!UICONTROL Token Auth Server URL]</strong></td>
+<td>The URL to the Walmart Store Fulfillment Authentication endpoint. The value must be the fully qualified URL that is provided to you during your onboarding process. You receive both a Sandbox and Production URL. Please ensure to copy/paste the full URL, including trailing slash `/`".</td>
+<td>Global</td>
+<td>Yes</td>
+    </tr>
+<tr>
+<td><strong>[!UICONTROL Merchant Id]</strong></td>
+<td>Your unique merchant (tenant) ID provided to you during your onboarding process. Your ID is used to route your orders and ensures that your merchant stores are receiving them.</td>
+<td>Global</td>
+<td>Yes</td>
+    </tr>
+<tr>
+<td><strong>[!UICONTROL Consumer Id]</strong></td>
+<td>Your unique integration ID. This is provided to you during your onboarding process. It does not change. It is used to authenticate all communication with the fulfillment services.</td>
+<td>Global</td>
+<td>Yes</td>
+    </tr>
+<tr>
+<td><strong>[!UICONTROL Consumer Secret]</strong></td>
+<td>Your unique integration key. This is provided to you during your onboarding process. It is used to authenticate all communication with the fulfillment services.</td>
+<td>Global</td>
+<td>Yes</td>
+    </tr>
+</table>
 
-After you've configured the Account Credentials, select **[!UICONTROL Validate Credentials]** to verify and establish a connection to the fulfillment web service for the first time.
+After you've configured the Account Credentials, select <strong>[!UICONTROL Validate Credentials]</strong> to verify and establish a connection to the fulfillment web service for the first time.
 
 ## Configure Logging
 
@@ -48,34 +139,99 @@ When logging is enabled, your log file can quickly expand. To prevent response t
 
 Ask the system administrator to configure your environments to allow exception handling so that API-related exceptions can be captured through the firewall or cache. You can also ask your system administrator to set up log rotation on this file to minimize size.
 
-| **Field**      | **Description**                                                                                                                                                                                                                                 | **Scope** | **Required** |
-|----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------|
-| **Debug Mode** | Debug Mode is used to increase the logged activity within the integration. When disabled, no debug information is logged. When enabled, all debug information is logged.</br> All logged data can be found in file: `var/log/walmart-bopis.log` | Global    | No           |
+<table>
+<thead>
+<tr>
+<td><strong>Field</strong></td>
+<td><strong>Description</strong></td>
+<td><strong>Scope</strong></td>
+<td><strong>Required</strong></td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>[!UICONTROL Debug Mode]</strong></td>
+<td>Debug Mode is used to increase the logged activity within the integration. When disabled, no debug information is logged. When enabled, all debug information is logged.&lt;/br&gt; All logged data can be found in file: `var/log/walmart-bopis.log`</td>
+<td>Global</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
 
 ## Manage Order synchronization
 
 Configure the settings to manage error handling for order  synchronization, catalog attributes to use for barcode scanning during order picking, and configure order batch sizes for the store fulfillment queue.
 
 You can view details about order synchronization operations from the Store Fulfillment Queue Management dashboard in the Admin (
-**[!UICONTROL System > Tools > Store Fulfillment Queue]**).
+<strong>[!UICONTROL System > Tools > Store Fulfillment Queue]</strong>).
 
 ### Synchronization Error Management
 
-| **Field**                               | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             | **Scope**  | **Required** |
-|-----------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|--------------|
-| **Retry Critical Error**                | Specifies the retry attempts for a record synchronization operation after a critical error occurs.</br></br>Critical errors occur anytime the integration fails to get a positive response from the fulfillment service. This can occur when the service is down or when there is an error in the order data being sent.</br></br>When the retry threshold is reached, the item remains in a queue but is not processed again. View all items with errors from **[!UICONTROL System > Tools > Store Fulfillment Queue]** Management in the Admin. To troubleshoot consistently failing items, contact your Account Manager. | Global     | No           |
-| **Enable Error Notification Email**     | Enable error notifications to receive an email when the [!UICONTROL Retry Critical Error Threshold] is reached for an order. The notification includes any available details about the error.                                                                                                                                                                                                                                                                                                                                                                                                                               | Global     | No           |
-| **Send Error Notification Email To**    | A comma-delimited list of recipient email addresses for error notifications.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | Global     | No           |
-| **Order Sync Exception Email Template** | Specifies the email template used to notify recipients about order synchronization errors. A default template is provided. It does not support customization.                                                                                                                                                                                                                                                                                                                                                                                                                                                               | Store View | No           |
+<table>
+<tr>
+<td><strong>Field</strong></td>
+<td><strong>Description</strong></td>
+<td><strong>Scope</strong></td>
+<td><strong>Required</strong></td>
+</tr>
+<tr>
+<td><strong>[!UICONTROL Retry Critical Error]</strong></td>
+<td>Specifies the retry attempts for a record synchronization operation after a critical error occurs.<br></br>Critical errors occur anytime the integration fails to get a positive response from the fulfillment service. This can occur when the service is down or when there is an error in the order data being sent.<br></br>When the retry threshold is reached, the item remains in a queue but is not processed again. View all items with errors from <strong>[!UICONTROL System &gt; Tools &gt; Store Fulfillment Queue]</strong> Management in the Admin. To troubleshoot consistently failing items, contact your Account Manager.</td>
+<td>Global</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>[!UICONTROL Enable Error Notification Email]</strong></td>
+<td>Enable error notifications to receive an email when the [!UICONTROL Retry Critical Error Threshold] is reached for an order. The notification includes any available details about the error.</td>
+<td>Global</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>[!UICONTROL Send Error Notification Email To]</strong></td>
+<td>A comma-delimited list of recipient email addresses for error notifications.</td>
+<td>Global</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>[!UICONTROL Order Sync Exception Email Template]</strong></td>
+<td>Specifies the email template used to notify recipients about order synchronization errors. A default template is provided. It does not support customization.</td>
+<td>Store View</td>
+<td>No</td>
+</tr>
+</table>
 
 ### Order Synchronization
 
-| **Field**                            | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  | **Scope** | **Required** |
-|--------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------|
-| **[!UICONTROL Barcode Source]**      | The catalog attribute that stores the scannable code for corresponding items in your merchant locations.</br></br>If you have only one existing merchant location, it is likely that you use UPC codes, while your e-commerce channel identifies products by SKU. If this is your scenario, select the catalog attribute that contains the UPC code.</br></br>This setting ensures that orders sent to your merchant stores list items with the correct identifier so that store associates can accurately scan items during the picking process.</br></br>If you are unsure, check with your fulfillment associates in the Shipping and Picking department to determine which attribute should be sent. You might need to add the appropriate attribute to the Adobe Commerce product attribute set if the attribute is not currently included in the database. | Website   | Yes          |
-| **[!UICONTROL Barcode Type]**        | The catalog attribute that stores the barcode source for corresponding items in your merchant locations.</br></br>This setting ensures that orders sent to your merchant stores list items with correct identifier so that store associates can accurately scan items during the picking process. The options include - SKU, UPC, GTIN, UPCA, EAN13, UPCE0, DISA, UAB, CODABAR, Price Embedded UPC.</br></br>If you are unsure, select the option that most closely resembles the values contained in your [!UICONTROL Barcode Source] attribute. Store associates can still match items manually from their pick list.                                                                                                                                                                                                                                          | Website   | Yes          |
-| **[!UICONTROL Max Number of Items]** | The maximum number of items to send from the store fulfillment queue at one time.</br></br>BOPIS orders are sent to the fulfillment service in batches, at regular intervals. This setting allows you to control the size of the batch.</br></br>The default value is 100 items. Depending on your order volume and capacity, you might need to adjust this value up or down.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | Global    | No           |
-
+<table>
+<thead>
+<tr>
+<td><strong>Field</strong></td>
+<td><strong>Description</strong></td>
+<td><strong>Scope</strong></td>
+<td><strong>Required</strong></td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>[!UICONTROL Barcode Source]</strong></td>
+<td>The catalog attribute that stores the scannable code for corresponding items in your merchant locations.<br></br>If you have only one existing merchant location, it is likely that you use UPC codes, while your e-commerce channel identifies products by SKU. If this is your scenario, select the catalog attribute that contains the UPC code.<br></br>This setting ensures that orders sent to your stores list items with the correct identifier so that store associates can accurately scan items during the picking process.<br></br>If you are unsure, check with your fulfillment associates in the Shipping and Picking department to determine which attribute should be sent. You might need to add the appropriate attribute to the Adobe Commerce product attribute set if the attribute is not currently included in the database.</td>
+<td>Website</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><strong>[!UICONTROL Barcode Type]</strong></td>
+<td>The catalog attribute that stores the barcode source for corresponding items in your merchant locations.<br></br>This setting ensures that orders sent to your stores list items with correct identifier so that store associates can accurately scan items during the picking process. The options include - SKU, UPC, GTIN, UPCA, EAN13, UPCE0, DISA, UAB, CODABAR, Price Embedded UPC.<br></br>If you are unsure, select the option that most closely resembles the values contained in your [!UICONTROL Barcode Source] attribute. Store associates can still match items manually from their pick list.</td>
+<td>Website</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><strong>[!UICONTROL Max Number of Items]</strong></td>
+<td>The maximum number of items to send from the store fulfillment queue at one time.<br></br>BOPIS orders are sent to the fulfillment service in batches, at regular intervals. This setting allows you to control the size of the batch.<br></br>The default value is 100 items. Depending on your order volume and capacity, you might need to adjust this value up or down.</td>
+<td>Global</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
 
 ## Enable Store Fulfillment shipping options
 
@@ -83,15 +239,45 @@ Configure the Store Fulfillment shipping options that determine the availability
 
 ### Ship To Store
 
-| **Field**                             | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | **Scope** | **Required** |
-|---------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------|
-| **[!UICONTROL Enable Ship To Store]** | The ship-to-store setting leverages your existing ship-to-store capabilities. If you use Inventory Management, or if you can accept and fulfill orders at merchant locations with no inventory via store-to-store inventory transfers, set this option to `Yes`.</br></br>If you cannot support the ship-to-store option or do not wish to offer it, set to `No`. When disabled, items in your catalog with zero inventory for a merchant store, or items that are below that location's [!DNL Out of Stock Threshold], are not offered with in-store pickup options.</br></br>This is a global setting that can be adjusted per merchant location. | Global    | No           |
+<table>
+<thead>
+<tr>
+<td><strong>Field</strong></td>
+<td><strong>Description</strong></td>
+<td><strong>Scope</strong></td>
+<td><strong>Required</strong></td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>[!UICONTROL Enable Ship To Store]</strong></td>
+<td>The ship-to-store setting is based on your existing ship-to-store capabilities. If you use Inventory Management, or if you can accept and fulfill orders at merchant locations with no inventory via store-to-store inventory transfers, set this option to `Yes`.<br></br>If you cannot support the ship-to-store option or do not wish to offer it, set to `No`. When disabled, items in your catalog with zero inventory for a merchant store, or items that are below that location's [!DNL Out of Stock Threshold], are not offered with in-store pickup options.<br></br>This is a global setting that can be adjusted per merchant location.</td>
+<td>Global</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
 
 ### Ship From Store
 
-| **Field**                               | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | **Scope** | **Required** |
-|-----------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------|
-| **[!UICONTROL Enable Ship From Store]** | Enables or disables the Home Delivery option in your merchant stores. When enabled, your merchant store locations are considered in aggregate with other assigned sources in the stock associated to your website.</br></br>In standard Inventory Management services, the [!DNL Ship from Store] is option is inherent and cannot be disabled. With the Store Fulfillment solution, you have the option to turn it on or off.</br></br>This is a global setting. You can also adjust this setting per merchant location and product. | Global    | No           |
+<table>
+<thead>
+<tr>
+<td><strong>Field</strong></td>
+<td><strong>Description</strong></td>
+<td><strong>Scope</strong></td>
+<td><strong>Required</strong></td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>[!UICONTROL Enable Ship From Store]</strong></td>
+<td>Enables or disables the Home Delivery option in your merchant stores. When enabled, your merchant store locations are considered in aggregate with other assigned sources in the stock associated to your website.<br></br>In standard Inventory Management services, the [!DNL Ship from Store] is option is inherent and cannot be disabled. With the Store Fulfillment solution, you can turn it on or off.<br></br>This is a global setting. You can also adjust this setting per merchant location and product.</td>
+<td>Global</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
 
 
 ## Manage Store Fulfillment App use accounts and permissions
@@ -100,26 +286,86 @@ Configure the settings for the Store Fulfillment App user account and password s
 
 ### App Security
 
-| **Field**                                                  | **Description**                                                                                                                                                                                      | **Scope** | **Required** |
-|------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------|
-| **[!UICONTROL User Session Lifetime]**                     | The timeframe, in seconds, that a store associate user session remains active before automatic logout. Valid values range from 60 to 31536000.                                                       | Global    | No           |
-| **[!UICONTROL Maximum Login Failures to Lockout Account]** | Specifies the number of failed login attempts allowed before a store associate is locked out of their account.</br></br>To disable account lockout, set the value to 0.                              | Global    | No           |
-| **[!UICONTROL Lockout Time (minutes)]**                    | Number of minutes to lock an account after login failure.                                                                                                                                            | Global    | No           |
-| **[!UICONTROL Force Password Change]**                     | Determines if a user password change is required.</br></br>`Yes`: Require the user to change their password after account setup.</br>`No`: Recommends that user change password after account setup. | Global    | No           |
-| **Password Lifetime**                                      | The number of days that a password remains valid before a required password change. Leave empty to disable this option.                                                                              | Global    | No           |
+<table>
+<thead>
+<tr>
+<td><strong>Field</strong></td>
+<td><strong>Description</strong></td>
+<td><strong>Scope</strong></td>
+<td><strong>Required</strong></td>
+</tr>
+ </thead>
+ <tbody>
+<tr>
+<td><strong>[!UICONTROL User Session Lifetime]</strong></td>
+<td>The timeframe, in seconds, that a store associate user session remains active before automatic logout. Valid values range from 60 to 31536000.</td>
+<td>Global</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>[!UICONTROL Maximum Login Failures to Lockout Account]</strong></td>
+<td>Specifies the number of failed login attempts allowed before a store associate is locked out of their account.<br></br>To disable account lockout, set the value to 0.</td>
+<td>Global</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>[!UICONTROL Lockout Time (minutes)]</strong></td>
+<td>Number of minutes to lock an account after login failure.</td>
+<td>Global</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>[!UICONTROL Force Password Change]</strong></td>
+<td>Determines if a user password change is required.<br></br>`Yes`: Require the user to change their password after account setup.&lt;/br&gt;`No`: Recommends that user change password after account setup.</td>
+<td>Global</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>[!UICONTROL Password Lifetime]</strong></td>
+<td>The number of days that a password remains valid before a required password change. Leave empty to disable this option.</td>
+<td>Global</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
 
 ### Two-factor authentication
 
-| **Field**          | **Description**                                                                                                                                                                                                                                                                            | **Scope** | **Required** |
-|--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------|
-| **APP User 2FA**   | Enable or disable two-factor authentication for store associates. When enabled, the store associate is prompted to provide a one-time password generated by an authentication provider.                                                                                                    | Global    | No           |
-| **APP 2FA Policy** | Sets the enforcement policy for two-factor authentication.</br></br>**[!UICONTROL Optional]**: The store associate can bypass two-factor authentication if no provider is set.</br></br>**[!UICONTROL Mandatory]**: The store associate is required to complete two-factor authentication. | Global    | No           |
-| **2FA Providers**  | Select one or more authentication provider services to offer store associates. To set up two-factor authentication and authenticate, store associates must install the authentication app from one of the available providers installed on their mobile devices.                           | Global    | No           |
+<table>
+<thead>
+<tr>
+<td><strong>Field</strong></td>
+<td><strong>Description</strong></td>
+<td><strong>Scope</strong></td>
+<td><strong>Required</strong></td>
+</tr>
+ </thead>
+ <tbody>
+<tr>
+<td><strong>[!UICONTROL APP User 2FA]</strong></td>
+<td>Enable or disable two-factor authentication for store associates. When enabled, the store associate is prompted to provide a one-time password generated by an authentication provider.</td>
+<td>Global</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>[!UICONTROL APP 2FA Policy]</strong></td>
+<td>Sets the enforcement policy for two-factor authentication.<br></br><strong>[!UICONTROL Optional]</strong>: The store associate can bypass two-factor authentication if no provider is set.<br></br><strong>[!UICONTROL Mandatory]</strong>: The store associate is required to complete two-factor authentication.</td>
+<td>Global</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>[!UICONTROL 2FA Providers]</strong></td>
+<td>Select one or more authentication provider services to offer store associates. To set up two-factor authentication and authenticate, store associates must install the authentication app from one of the available providers installed on their mobile devices.</td>
+<td>Global</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
 
-### Delivery Methods 
+## Delivery Methods 
 
 Store Fulfillment works by extending the native Adobe Commerce [!DNL In-Store Delivery] capabilities. 
-After you install the extension, additional Admin configuration options are available for in-store delivery methods. Configure these additional options from the Admin by selecting **[!UICONTROL Stores > Configuration > Sales > Delivery Methods > In-Store Pickup]**.
+After you install the extension, additional Admin configuration options are available for in-store delivery methods. Configure these additional options from the Admin by selecting <strong>[!UICONTROL Stores > Configuration > Sales > Delivery Methods > In-Store Pickup]</strong>.
 
 In the Store Fulfillment settings, you can configure the following delivery methods for In-Store Pickup orders.
 
@@ -128,20 +374,41 @@ This is the most common delivery scenario for BOPIS orders.
 
 - **Curbside pick up**–Offer options for customers  to park at a store location and have their order delivered to them by a  store associate.
 
-#### Delivery Methods Configuration
+>[!NOTE]
+>
+>For additional information about configuring in-store delivery options, see [In-Store Delivery](https://docs.magento.com/user-guide/shipping/shipping-in-store-delivery.html) in the Adobe Commerce User Guide.
 
-<!---
-In-store pickup, says its global setting, but scope is Website.  How do you configure the in-store pickup options at the retail level?
---->
 
-| **Field**                               | **Description**                                                                                                                                                                                                                                                                                                               | **Scope** | **Required** |
-|-----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------|
-| **[!UICONTROL Enable In-Store Pickup]** | Enable or disable the in-store pick up option available during checkout for customers that choose store pickup. When in-store pickup is disabled, the option is not displayed.</br></br>This global setting applies to all retail store locations. When enabled, you can selectively disable it at the retail store location. | Website   | No           |
-| **Enable Curbside Pickup**              | Enable or disable the curbside pick up option during the checkout process for customers that choose store pickup.</br></br>This global setting applies to all retail store locations. When enabled, you can selectively disable it at the retail store location.                                                              | Website   | No           |
+### Delivery Methods Configuration
 
-For details about customizing the delivery methods at selected retail store locations, see **Retail Store Configuration**.
+With the in-store delivery method, the customer can select a source to be used as a pickup location during the checkout.
 
-#### Delivery Method Title Configuration
+<table>
+<thead>
+<tr>
+<td><strong>Field</strong></td>
+<td><strong>Description</strong></td>
+<td><strong>Scope</strong></td>
+<td><strong>Required</strong></td>
+</tr>
+ </thead>
+ <tbody>
+<tr>
+<td><strong>[!UICONTROL Enable In-Store Pickup]</strong></td>
+<td>Enable or disable the in-store pickup option available during checkout for customers that choose store pickup. When in-store pickup is disabled, the option is not displayed.<br></br>This global setting applies to all retail store locations. When enabled, you can selectively disable it at the retail store location.</td>
+<td>Website</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>[!UICONTROL Enable Curbside Pickup]</strong></td>
+<td>Enable or disable the curbside pick up option during the checkout process for customers that choose store pickup.<br></br>This global setting applies to all retail store locations. When enabled, you can selectively disable it at the retail store location.</td>
+<td>Website</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+
+### Delivery Method Title Configuration
 
 <table>
 <thead>
@@ -154,7 +421,7 @@ For details about customizing the delivery methods at selected retail store loca
 </thead>
 <tbody><tr>
 <td><strong>Home Delivery Title</strong></td>
-<td>Specifies the title to display for the Home Delivery option in the product, cart, and checkout areas. Home delivery refers to the standard shipping capabilities of Adobe Commerce, from a warehouse, by a carrier, direct to the customer-provided shipping address.</br></br>This label does not affect the selected shipping carrier or their available shipping method labels.</td>
+<td>Specifies the title to display for the Home Delivery option in the product, cart, and checkout areas. Home delivery refers to the standard shipping capabilities of Adobe Commerce—from a warehouse, by a carrier, or direct to the customer-provided shipping address.</br></br>This label does not affect the selected shipping carrier or their available shipping method labels.</td>
 <td>Store View</td>
 <td>No</td>
 </tr>
@@ -221,7 +488,7 @@ For details about customizing the delivery methods at selected retail store loca
 </tr>
 </tbody></table>
 
-#### Stock Availability Titles Configuration
+### Stock Availability Titles Configuration
 
 <table>
 <thead>
@@ -233,8 +500,8 @@ For details about customizing the delivery methods at selected retail store loca
 </tr>
 </thead>
 <tbody><tr>
-<td><strong>In-Stock</strong></td>
-<td>When a customer is using the retail store locator, inventory availability for the current item(s) is shown for each location.</br></br>You can customize the “in-stock” status label here.</td>
+<td><strong>n-Stock</strong></td>
+<td>When a customer is using the retail store locator, inventory availability for onr ot motr current items is shown for each location.</br></br>You can customize the "in-stock" status label here.</td>
 <td>Store View</td>
 <td>No</td>
 </tr>
@@ -246,7 +513,7 @@ For details about customizing the delivery methods at selected retail store loca
 </tr>
 <tr>
 <td><strong>Partially In-Stock</strong></td>
-<td>When a customer is using the retail store locator, inventory availability for any current items ia shown for each location.</br></br>You can customize the “partially in-stock” status label here.</td>
+<td>When a customer is using the retail store locator, inventory availability for any current items ia shown for each location.</br></br>You can customize the "partially in-stock" status label here.</td>
 <td>Store View</td>
 <td>No</td>
 </tr>

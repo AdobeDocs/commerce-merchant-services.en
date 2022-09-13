@@ -38,7 +38,7 @@ The Store Assist app requires two types of configuration:
 
   - **Cancellation from the store**—Specify whether orders can be cancelled from the store and which roles have cancellation permissions 
 
-  - **Order cleanup window**—Specify how long past the scheduled pickup time that a picked order remains in staging before being restocked—for example, three days. 
+  - **Order cleanup window**—Specify how long past the [Estimated Pickup Lead Time](enable-general.md#delivery-method-title-configuration) that a picked order remains in staging before being restocked—for example, three days. The default value is 7 days. If this configuration is turned on, the order is automatically cancelled when this time expires. Items are restocked, and the merchant receives a cancellation email.
 
   - Customize all in app instructions (picking, staging, hand off).
 

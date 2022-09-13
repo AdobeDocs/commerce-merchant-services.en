@@ -11,9 +11,10 @@ These release notes describe the initial release of [!DNL Store Fulfillment Serv
 ![Fixed issue](../assets/fix.svg) Fixes and improvements
 ![Known issue](../assets/bug.svg) Known issues
 
-## v1.1.0
-
-![Fixed issue](../assets/fix.svg) <!-- Issue WM-x -->Simplified the [Check-in experience configuration](check-in-experience-setup.md) for the Store Assist app by adding default car make and model selections. In the previous version, merchants had to manually configure the car make and model selections.
+<!-- ## v1.1 -->
+<!--
+![Fixed issue](../assets/fix.svg)-->
+<!-- Simplified the [Check-in experience configuration](check-in-experience-setup.md) for the Store Assist app by adding default car make and model selections. In the previous version, merchants had to manually configure the car make and model selections.-->
 
 ## v1.0.0
 
