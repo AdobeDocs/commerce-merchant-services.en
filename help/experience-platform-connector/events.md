@@ -305,11 +305,11 @@ The following table describes the data collected for this event.
 |---|---|
 |`searchRequest`|Indicates if a search request was sent|
 |`filter`|Indicates if any filters were applied to limit search results|
-|`attribute`|The facet of an item used to determine whether to include it in search results|
+|`attribute` (filter)|The facet of an item used to determine whether to include it in search results|
 |`value`|Attribute values used to determine which items are included in search results|
 |`isRange`|When true, values indicate endpoints of an acceptable range of values|
 |`sort`|Indicates how search results should be sorted|
-|`attribute`|An attribute used to sort items in search results|
+|`attribute` (sort)|An attribute used to sort items in search results|
 |`order`|The order in which to return search results|
 |`query`|The terms searched for|
 
