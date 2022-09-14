@@ -81,7 +81,7 @@ Event(s) are actions that change the search results when the conditions are met.
 1. For multiple events, choose any other events that you want to trigger when conditions are met.
 
    * Boost - Select Boost. Then, enter the product name or SKU that you want to move higher in the search results. In the test pane, each boosted product has a *Boosted* preview badge.
-   * Bury - Moves a SKU lower in the search results. Each SKU is marked with a *Buried* preview badge in test pane.
+   * Bury - Moves a SKU lower in the search results. Each SKU is marked with a *Buried* preview badge in the test pane.
    * Pin a product - Enter the product name or SKU. Then, select the Position in the search results where the product should appear. The product is marked with a *Pinned* preview badge in the test pane.
    * Hide a product - Excludes a SKU from the search results.
 
@@ -139,9 +139,9 @@ The information that is entered here appears in the [Rule Details](rules-workspa
 
 |Event |Description |
 |--- |--- |
-| Boost | Moves a SKU or range of SKUs higher in the search results. Each is marked with a "boosted" preview badge in test search results. |
-| Bury | Moves a SKU or range of SKUs lower in the search results. Each is marked with a "buried" preview badge in test search results. |
-| Pin a product | Attaches a single SKU to a specific position in the search results. The product is marked with a "pinned" preview badge in test search results. |
+| Boost | Moves a SKU or range of SKUs higher in the search results. Each is marked with a "boosted" preview badge in the test search results. |
+| Bury | Moves a SKU or range of SKUs lower in the search results. Each is marked with a "buried" preview badge in the test search results. |
+| Pin a product | Attaches a single SKU to a specific position in the search results. The product is marked with a "pinned" preview badge in the test search results. |
 | Hide a product | Excludes a SKU, or range of SKUs, from the search results. |
 
 ### Details
