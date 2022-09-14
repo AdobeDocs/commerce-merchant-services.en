@@ -5,7 +5,7 @@ exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
 ---
 # Add Rules
 
-To build a rule, the first step is to use the rule editor to define the condition(s) in the shopper's query text that trigger the associated event(s). Then, complete the rule details, test the results, and publish the rule.
+To build a rule, the first step is to use the rule editor to define the conditions in the shopper's query text that trigger the associated event(s). Then, complete the rule details, test the results, and publish the rule.
 
 ## Step 1: Add a rule
 
@@ -16,9 +16,9 @@ To build a rule, the first step is to use the rule editor to define the conditio
 
    ![Rules workspace](assets/rules-workspace-add-rule.png)
 
-## Step 2: Describe the condition(s)
+## Step 2: Describe the conditions
 
-Condition(s) are the requirements to trigger an event. A rule can have up to ten conditions and twenty-five events.
+conditions are the requirements to trigger an event. A rule can have up to ten conditions and twenty-five events.
 
    ![Rule - Build your rule](assets/rules-add-workspace.png)
 
@@ -26,10 +26,10 @@ Condition(s) are the requirements to trigger an event. A rule can have up to ten
 
 1. Under *Build your rule*, select the **Condition** to be met, and follow the instructions to complete the statement.
 
-   * Search query contains - Enter the string of text that must be in the shopper’s query. The Match setting determines the degree to which the shopper’s query matches the catalog. Options:<br /> Any - Any part of the shopper's query text can match the condition.<br />All - All of the shopper's query must match the condition.
-   * Search query is - Enter a string of text that exactly matches the shopper’s query. For example: "yoga pants". Rules with `Search query is` and Match `All` can have only one condition.
-   * Search query starts with - Enter a character or string of text that must be at the beginning of the shopper’s query.
-   * Search query ends with - Enter a character or string of text that must be at the end of the shopper’s query.
+   * Search query contains - Enter the string of text that must be in the shopper's query. The Match setting determines the degree to which the shopper's query matches the catalog. Options:<br /> Any - Any part of the shopper's query text can match the condition.<br />All - All of the shopper's query must match the condition.
+   * Search query is - Enter a string of text that exactly matches the shopper's query. For example: "yoga pants". Rules with `Search query is` and Match `All` can have only one condition.
+   * Search query starts with - Enter a character or string of text that must be at the beginning of the shopper's query.
+   * Search query ends with - Enter a character or string of text that must be at the end of the shopper's query.
 
    The results appear immediately in the *Test your rule* pane and are numbered by priority. You can use the *Results per row* slider in the upper-right to change the number of products in each row.
 
@@ -69,16 +69,16 @@ Condition(s) are the requirements to trigger an event. A rule can have up to ten
 
 ## Step 3: Add event(s)
 
-Event(s) are actions that change the search results when the condition(s) are met. A single rule can have up to 25 events.
+Event(s) are actions that change the search results when the conditions are met. A single rule can have up to 25 events.
 
-1. Under *Events*, choose the **Event** to take place when the associated condition(s) are met.
+1. Under *Events*, choose the **Event** to take place when the associated conditions are met.
 
    For example, choose `Pin a product`. Then, enter the name of the product that you want to pin. If you need help, you can find the name in the test pane.
    Then, enter the *Position* where the pinned product is to appear. The product is moved to the new position in the test pane, and is marked with a *Pinned* preview badge.
    
    ![Rules - Match](assets/rule-event-pin-product.png)
 
-1. For multiple events, choose any other events that you want to trigger when condition(s) are met.
+1. For multiple events, choose any other events that you want to trigger when conditions are met.
 
    * Boost - Select Boost. Then, enter the product name or SKU that you want to move higher in the search results. In the test pane, each boosted product has a *Boosted* preview badge.
    * Bury - Moves a SKU lower in the search results. Each SKU is marked with a *Buried* preview badge in test pane.
@@ -116,10 +116,10 @@ The information that is entered here appears in the [Rule Details](rules-workspa
 
 | Condition | Description |
 |--- |--- |
-| Search query contains | A character or string of text that is included in the shopper’s query. The shopper’s query needs to match only a single character to meet this condition. |
-| Search query is | A character or string of text that exactly matches the shopper’s query. Complex queries with multiple conditions cannot be composed when this condition is used. |
-| Search query starts with | The shopper’s query begins with this character or string of text. |
-| Search query ends with | The shopper’s query ends with this character or string of text. |
+| Search query contains | A character or string of text that is included in the shopper's query. The shopper's query needs to match only a single character to meet this condition. |
+| Search query is | A character or string of text that exactly matches the shopper's query. Complex queries with multiple conditions cannot be composed when this condition is used. |
+| Search query starts with | The shopper's query begins with this character or string of text. |
+| Search query ends with | The shopper's query ends with this character or string of text. |
 
 ### Logical operators
 
@@ -139,9 +139,9 @@ The information that is entered here appears in the [Rule Details](rules-workspa
 
 |Event |Description |
 |--- |--- |
-| Boost | Moves a SKU or range of SKUs higher in the search results. Each is marked with a “boosted” preview badge in test search results. |
-| Bury | Moves a SKU or range of SKUs lower in the search results. Each is marked with a “buried” preview badge in test search results. |
-| Pin a product | Attaches a single SKU to a specific position in the search results. The product is marked with a “pinned” preview badge in test search results. |
+| Boost | Moves a SKU or range of SKUs higher in the search results. Each is marked with a "boosted" preview badge in test search results. |
+| Bury | Moves a SKU or range of SKUs lower in the search results. Each is marked with a "buried" preview badge in test search results. |
+| Pin a product | Attaches a single SKU to a specific position in the search results. The product is marked with a "pinned" preview badge in test search results. |
 | Hide a product | Excludes a SKU, or range of SKUs, from the search results. |
 
 ### Details

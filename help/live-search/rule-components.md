@@ -5,7 +5,7 @@ exl-id: 4065aec3-a8d4-4d55-b939-16ad7b0f33ee
 ---
 # Rule Components
 
-A rule describes the condition(s) that are required to trigger event(s) that change the search results returned in response to a shopper's query.
+A rule describes the conditions that are required to trigger event(s) that change the search results returned in response to a shopper's query.
 
 ## Requirements
 

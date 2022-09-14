@@ -9,8 +9,8 @@ exl-id: d06a3040-6987-4813-90ae-2f7b3ad0b232
 
 Each rule has three main components:
 
-* Conditions – The condition(s) that trigger an action.
-* Events – The action(s) that take place when the condition(s) are met.
+* Conditions – The conditions that trigger an action.
+* Events – The actions that take place when the conditions are met.
 * Details – The name of the rule, and optional time frame and description.
 
 You can combine multiple conditions and actions, and schedule a rule to be active for a specific period of time.

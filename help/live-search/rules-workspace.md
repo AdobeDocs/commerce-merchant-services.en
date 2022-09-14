@@ -96,7 +96,7 @@ The details panel shows the rule name, status, conditions and events, start and 
 | Field | Description |
 |--- |--- |
 | Status | The current status of the rule. |
-| Conditions | The search query that describes the condition(s) associated with the rule. |
+| Conditions | The search query that describes the conditions associated with the rule. |
 | Start Date | The date the rule goes into effect, if scheduled. |
 | End Date | The date the rule expires, if scheduled. |
 | Description | A brief description of the rule. |
