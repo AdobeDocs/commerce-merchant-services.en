@@ -173,7 +173,7 @@ For additional help, refer to [[!DNL Live Search] catalog not synchronized](http
 
 ### Future product updates
 
-After the initial synchronization, it can take up to fifteen minutes for incremental product updates to become available to storefront search. To learn more, go to [Indexing - Streaming Product Updates](indexing.md).
+After the initial synchronization, it can take up to 15 minutes for incremental product updates to become available to storefront search. To learn more, go to [Indexing - Streaming Product Updates](indexing.md).
 
 ## Test the connection {#test-connection}
 
@@ -203,7 +203,7 @@ To update [!DNL Live Search], run the following from the command line:
 composer update magento/live-search --with-dependencies
 ```
 
-To update to a major version such as from 1.0.0 to 2.0.0, edit the project’s root [!DNL Composer] `.json` file as follows:
+To update to a major version such as from 1.0.0 to 2.0.0, edit the project's root [!DNL Composer] `.json` file as follows:
 
 1. If your currently installed `magento/live-search` version is `1.3.1` or below, and you are upgrading to version `2.0.0` or higher, run the following command before the upgrade:
 
