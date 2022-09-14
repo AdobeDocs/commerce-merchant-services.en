@@ -7,7 +7,7 @@ The following are a set of guidelines to follow when contributing to this projec
 ## Code Of Conduct
 
 This project adheres to the Adobe [code of conduct](code-of-conduct.md). By participating,
-you are expected to uphold this code. Please report unacceptable behavior to
+you are expected to uphold this code. Report unacceptable behavior to
 [Grp-opensourceoffice@adobe.com](mailto:Grp-opensourceoffice@adobe.com).
 
 ## Contributor Guide Documentation
@@ -17,15 +17,14 @@ See the [Contributor Guide](https://docs.adobe.com/content/help/en/contributor/c
 ## Have A Question?
 
 Start by filing an issue. The existing committers on this project work to reach
-consensus around project direction and issue solutions within issue threads
-(when appropriate).
+consensus around project direction and issue solutions within issue threads when appropriate.
 
 ## Contributor License Agreement
 
 All third-party contributions to this project must be accompanied by a signed contributor
 license agreement. This gives Adobe permission to redistribute your contributions
 as part of the project. [Sign our CLA](http://opensource.adobe.com/cla.html). You
-only need to submit an Adobe CLA one time, so if you have submitted one previously,
+only need to submit an Adobe CLA one time. If you submitted one previously,
 you are good to go!
 
 ## Code Reviews
@@ -50,4 +49,4 @@ feel free to reach out to existing committers to have a conversation about that.
 
 ## Security Issues
 
-Security issues shouldn't be reported on this issue tracker. Instead, [file an issue to our security experts](https://helpx.adobe.com/security/alertus.html)
+Security issues should not be reported on this issue tracker. Instead, [file an issue to our security experts](https://helpx.adobe.com/security/alertus.html).
