@@ -5,7 +5,7 @@ exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
 ---
 # Add Rules
 
-To build a rule, the first step is to use the rule editor to define the conditions in the shopper's query text that trigger the associated event(s). Then, complete the rule details, test the results, and publish the rule.
+To build a rule, the first step is to use the rule editor to define the conditions in the shopper's query text that trigger the associated events. Then, complete the rule details, test the results, and publish the rule.
 
 ## Step 1: Add a rule
 
@@ -18,7 +18,7 @@ To build a rule, the first step is to use the rule editor to define the conditio
 
 ## Step 2: Describe the conditions
 
-conditions are the requirements to trigger an event. A rule can have up to ten conditions and twenty-five events.
+Conditions are the requirements to trigger an event. A rule can have up to ten conditions and 25 events.
 
    ![Rule - Build your rule](assets/rules-add-workspace.png)
 
@@ -31,7 +31,7 @@ conditions are the requirements to trigger an event. A rule can have up to ten c
    * Search query starts with - Enter a character or string of text that must be at the beginning of the shopper's query.
    * Search query ends with - Enter a character or string of text that must be at the end of the shopper's query.
 
-   The results appear immediately in the *Test your rule* pane and are numbered by priority. You can use the *Results per row* slider in the upper-right to change the number of products in each row.
+   The results appear immediately in the *Test your rule* pane and are numbered by priority. You can use the *Results per row* slider in the upper    right to change the number of products in each row.
 
    ![Rule - simple](assets/rule-simple-test.png)
 
@@ -41,12 +41,12 @@ conditions are the requirements to trigger an event. A rule can have up to ten c
    ![Rule - update test](assets/rule-update-test.png)
 
 1. If you like the result, update the text in the *Conditions* search box. Then, click anywhere on the page to update the results in the test pane.
-1. To build a simple rule with one condition, go to Step 3: [Add event(s)](#events).
+1. To build a simple rule with one condition, go to Step 3: [Add events](#events).
 
 ### Multiple conditions
 
 1. To build a rule with multiple conditions, click **Add condition**.
-   A rule can have up to 10 conditions. The logical operator that joins two conditions is based on the current *Match* setting. By default, *Match* is `All` and the logical operator is `AND`.
+   A rule can have up to ten conditions. The logical operator that joins two conditions is based on the current *Match* setting. By default, *Match* is `All` and the logical operator is `AND`.
 
    ![Rules - Search query contains](assets/rules-search-query-contains-and.png)
 
@@ -61,15 +61,15 @@ conditions are the requirements to trigger an event. A rule can have up to ten c
 
    The *Match* value determines the logical operator that is used to join multiple conditions. Changing the *Match* setting changes all logical operators in the rule. It is not possible to combine `AND` and `OR` in the same rule.
 
-   In this example, rather than searching for "yoga pants", there are two separate queries that search for "yoga" or "pants". This rule is less specific and will be triggered more often in the storefront than the other.
+   In this example, rather than searching for "yoga pants", there are two separate queries that search for "yoga" or "pants". This rule is less specific and is triggered more often in the storefront than the other.
 
    ![Rules - Match](assets/rules-match.png)
 
 1. To add another condition, click **Add condition** and repeat the process.
 
-## Step 3: Add event(s)
+## Step 3: Add events
 
-Event(s) are actions that change the search results when the conditions are met. A single rule can have up to 25 events.
+events are actions that change the search results when the conditions are met. A single rule can have up to 25 events.
 
 1. Under *Events*, choose the **Event** to take place when the associated conditions are met.
 
@@ -91,7 +91,7 @@ The information that is entered here appears in the [Rule Details](rules-workspa
 
 1. Under *Details*, enter a **Name** for the rule.
 1. Enter a brief **Description** of the rule.
-1. Enter the **Start Date** and **End Date** when the rule will be active or choose the dates from the calendar.
+1. Enter the **Start Date** and **End Date** for the rule to be active or choose the dates from the calendar.
 
    To select a range of dates, click the first date and drag to select the range.
 
