@@ -33,6 +33,7 @@ We advise users to upgrade and test before pushing to production. Consider upgra
 * ![Bug](../assets/bug.svg) - Products are not displayed if not added to the "Default shared catalog".
 * B2B with Live Search for PWA Studio will not be available until PWA Studio adds support for it.
 * Product overrides and product attributes feed may have sync issues requiring admins to run `bin/magento indexer:reset` and `bin/magento indexer:reindex` to re-sync correctly.
+* If you enable or disable the Catalog Permissions/Shared Catalog/B2B features, the `productOverrides` indexers are not updated and incorrectly marked as 'valid. Use `bin/magento saas:resync --feed=productOverrides` to fix the issue.
 
 ## [!DNL Live Search] 2.0
 
@@ -98,7 +99,7 @@ Existing [!DNL Live Search] installations must be upgraded to [!DNL Live Search]
 * ![Bug](../assets/bug.svg) - The [!DNL Live Search] service supports only the [base currency](https://docs.magento.com/user-guide/stores/currency-configuration.html) of the Adobe Commerce installation.
 * ![Bug](../assets/bug.svg) - When adding a facet, the Product Attributes Feed does not update correctly when set to `Update on Save`. To avoid this problem, go to [Index Management](https://docs.magento.com/user-guide/system/index-management.html) and set Product Attributes Feed to `Update by Schedule`.
 * ![Bug](../assets/bug.svg) - [!DNL Live Search] synonyms are defined per store view, but are currently stored per website and identified with a combination of `environmentId` + `storeViewCode`. As a result, all websites and store views within the Adobe Commerce installation share the same set of synonyms. The most recently created set of synonyms for the store view takes precedence.
-* ![Bug](../assets/bug.svg) - If a synonym term contains multiple words, each word is treated as a separate synonym. For example, if you define “time piece” as a synonym of “watch”, both “time” and “piece” are treated as synonyms of watch.
+* ![Bug](../assets/bug.svg) - If a synonym term contains multiple words, each word is treated as a separate synonym. For example, if you define "time piece" as a synonym of "watch", both "time" and "piece" are treated as synonyms of watch.
 
 ## Documentation
 
