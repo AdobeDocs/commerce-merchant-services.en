@@ -44,7 +44,7 @@ Refer to [Settings](settings.md) to configure price faceting intervals and group
 
 1. In the **Max Value** column, set the maximum number (from 0 – 10) of facet filter values to show in the storefront.
 1. When complete, click **Save**.
-      Your changes won’t appear in the storefront until after they are published.
+      Your changes won't appear in the storefront until after they are published.
 
 ## Pin/unpin facet
 
@@ -75,4 +75,4 @@ The order of pinned facets can be changed by moving the row to a different posit
 ## Publish changes
 
 1. To update the storefront with your changes, click **Publish changes**.
-1. Wait about fifteen minutes for the updates to appear in your store.
+1. Wait about 15 minutes for the updates to appear in your store.
