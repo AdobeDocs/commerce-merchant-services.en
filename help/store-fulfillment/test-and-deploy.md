@@ -90,12 +90,12 @@ This section of the test plan covers inventory and order synchronization to veri
 <tr>
 <td><strong>New Order Push, API Sync—Customer order</strong></td>
 <td>Customer submits a store pickup order.</td>
-<td><ul><li>In the Admin Order view, an <strong>Adobe Commerce Admin user</strong> sees that the Order Sync status updated to <code>Sent</code></li><li>The order details log includes the message <code>Order was sent to BOPIS solution for sync, it’s not yet acknowledged yet.</code></li></ul></td>
+<td><ul><li>In the Admin Order view, an <strong>Adobe Commerce Admin user</strong> sees that the Order Sync status updated to <code>Sent</code></li><li>The order details log includes the message <code>Order was sent to BOPIS solution for sync, it's not yet acknowledged yet.</code></li></ul></td>
 </tr>
 <tr>
 <td><strong>New Order Push, API Sync—Admin submits order</strong></td>
 <td>An Adobe Commerce <strong>Admin</strong> submits a pickup order.</td>
-<td><ul><li>In the Admin Order view, the Order Sync status updates to <code>Sent</code>.</li><li>The order details log includes the message <code>Order was sent to BOPIS solution for sync, it’s not yet acknowledged yet.</code></li></ul></td>
+<td><ul><li>In the Admin Order view, the Order Sync status updates to <code>Sent</code>.</li><li>The order details log includes the message <code>Order was sent to BOPIS solution for sync, it's not yet acknowledged yet.</code></li></ul></td>
 </tr>
 <tr>
 <td><strong>New Order Push, Exception Queue<strong></td>
@@ -155,7 +155,7 @@ This section of the test plan includes scenarios to test the end-to-end workflow
 <li>Receipt of order refund email: <code>$x amount was refunded</code></li>
 <li>Order status is <code>Processing</code>.</li>
 <li>Credit memo created in Adobe Commerce (Wait until cron works).</li>
-<li>If some items were not picked, confirm that the [!UICONTROL Ready for Pickup] email with the nilpick or refund section is displayed. <code>DISPLAY COMMENT HISTORY</code> shows <code>Order is ready for pickup, but some items not available.</code>.</li>
+<li>If some items were not picked, confirm that the [!UICONTROL Ready for Pickup] email with the nil pick or refund section is displayed. <code>DISPLAY COMMENT HISTORY</code> shows <code>Order is ready for pickup, but some items not available.</code>.</li>
 <li><code>CUSTOMER NOTIFIED</code> flag is <code>true</code>.</li>
 </ul>
 </td>
@@ -561,25 +561,25 @@ This section of the test plan covers scenarios for testing order, pick, and hand
 <tr>
 <td>
 <strong>Single order picking—happy path, curbside pickup</strong></td>
-<td>Pick single and multi-quantity items. No nilpicks, and curbside pick-up (with staging).
+<td>Pick single and multi-quantity items. No nil picks, and curbside pick-up (with staging).
 </td>
 <td>
 </td>
 </tr>
 <tr>
 <td><strong>Multi order picking—happy path, curbside pickup</strong></td>
-<td>Single and multi-quantity items. No nilpicks, and curbside pick-up (with staging)</td>
+<td>Single and multi-quantity items. No nil picks, and curbside pick-up (with staging)</td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Single order picking—happy path in-store pickup</strong></td>
-<td>Single and multi-quantity items. No nilpicks, and instore pick-up (with staging)</td>
+<td>Single and multi-quantity items. No nil picks, and instore pick-up (with staging)</td>
 <td>
 </td>
 </tr>
 <tr>
 <td><strong>Multi order picking—happy path, in-store pickup</strong></td>
-<td>Pick single and multi-quantity items. No nilpicks, and curbside pick-up (with staging).</td>
+<td>Pick single and multi-quantity items. No nil picks, and curbside pick-up (with staging).</td>
 <td></td>
 </tr>
 <tr>

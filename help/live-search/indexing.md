@@ -5,7 +5,13 @@ exl-id: 04441e58-ffac-4335-aa26-893988a89720
 ---
 # Indexing
 
-Product attribute properties (metadata) determine how an attribute can be used in the catalog, its appearance and behavior in the store, and the data that is included in data transfer operations. The scope of attribute metadata is `website/store/store view`.
+Product attribute properties (metadata) determine:
+
+*  How an attribute can be used in the catalog
+*  Its appearance and behavior in the store
+*  The data that is included in data transfer operations
+
+The scope of attribute metadata is `website/store/store view`.
 
 The [!DNL Live Search] API allows a client to sort by any product attribute that has the [storefront property](https://docs.magento.com/user-guide/stores/attributes-product.html) `Use in Search` set to `Yes` in the Adobe Commerce Admin. When enabled, `Search Weight` and `Visible in Advanced Search` can be set for the attribute.
 
@@ -47,7 +53,7 @@ For example, changing the `Use in Search` property of the `color` attribute from
 
 After the initial index is built during [onboarding](install.md#synchronize-catalog-data), the following incremental product updates are continuously synced and reindexed:
 
-*  New product(s) added to the catalog
+*  New products added to the catalog
 *  Changes to product attribute values
 
 For example, adding a new swatch value to the `color` attribute is handled as a streaming product update.
