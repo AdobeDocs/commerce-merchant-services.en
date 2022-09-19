@@ -11,7 +11,7 @@ With [!DNL Payment Services], you can use existing Commerce functionality for vo
 >
 >You can only void a transaction if payment is not yet captured.
 
-If your store is [configured](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} to authorize only (not capture) funds at the point of sale, a purchase from your store results in an order with a `Processing` status in the Magento Admin.
+If your store is [configured](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} to authorize only (not capture) funds at the point of sale, a purchase from your store results in an order with a `Processing` status in the Commerce Admin.
 
 You can also [cancel an order](https://docs.magento.com/user-guide/sales/order-update.html#cancel-a-pending-order){target="_blank"} that is not invoiced. Any uncaptured authorizations are also voided as part of that cancellation process.
 
