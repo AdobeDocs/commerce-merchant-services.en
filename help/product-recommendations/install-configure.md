@@ -34,7 +34,7 @@ By enabling [!DNL Product Recommendations] in Page Builder, you can add an exist
 
    >[!NOTE]
    >
-   > Page Builder recommendation units can be created only for the default store view.
+   >[!DNL Page Builder] recommendation units can be created only for the default store view.
 
 ### Add Visual similarity recommendation type {#vissimsupport}
 

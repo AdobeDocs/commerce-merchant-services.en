@@ -30,7 +30,7 @@ The onboarding process for [!DNL Product Recommendations] requires access to the
 
    >[!NOTE]
    >
-   > Page Builder recommendation units can be created only for the default store view.
+   >[!DNL Page Builder] recommendation units can be created only for the default store view.
 
 ### B2B support {#b2bsupport}
 
