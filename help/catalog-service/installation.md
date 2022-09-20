@@ -109,3 +109,9 @@ To ensure that the catalog export is running correctly:
 -  Confirm that [cron jobs](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) are running. 
 -  Verify the [indexers](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) are running.
 -  Ensure that the `Catalog Attributes Feed`, `Product Feed`, `Product Overrides Feed`, and `Product Variant Feed` indexers are set to `Update by Schedule`.
+
+## [!DNL Catalog Service] demo
+
+Watch this video to learn about [!DNL Catalog Service] installation and testing:
+
+>[!VIDEO](https://video.tv.adobe.com/v/3409390?quality=12&learn=on)
