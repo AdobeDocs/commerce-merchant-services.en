@@ -5,7 +5,7 @@ description: 'A reference guide for the `productSearch` GraphQL query for Adobe 
 
 # productSearch query
 
-The Catalog Service for Adobe Commerce `productSearch` query can use LiveSearch to return details about the SKUs specified as input. Although this query is the same  as the [`productSearch` query](https://devdocs.magento.com//live-search/product-search.html), LiveSearch returns a `productView` object. See the [`productSearch` query](https://devdocs.magento.com//live-search/product-search.html) topic for reference information.
+The Catalog Service for Adobe Commerce `productSearch` query can use Live Search to return details about the SKUs specified as input. Although this query is the same  as the [`productSearch` query](https://devdocs.magento.com//live-search/product-search.html), Live Search returns a `productView` object. See the [`productSearch` query](https://devdocs.magento.com//live-search/product-search.html) topic for reference information.
 
 ## Syntax
 
@@ -26,7 +26,7 @@ You must specify the following HTTP headers to run this query.
 |Header | Description|
 |--- | ---|
 |`Magento-Customer-Group` | For storefront clients, this value will be available at the storefront in the `dataservices_customer_group` cookie.|
-|`Magento-Environment-Id` | This value is displayed at **System** > **Commerce Services Connector** > **SaaS Identifier** > **Data Space ID** or can be obtained by running the `bin/magento config:show services_connector/services_id/environment_id` command.|
+|`Magento-Environment-Id` | This value can be obtained by running the `bin/magento config:show services_connector/services_id/environment_id` command. See the "Data Space" field in [Commerce Services](https://docs.magento.com/user-guide/configuration/services/saas.html)|
 |`Magento-Store-Code`| The code assigned to the store associated with the active store view. For example, `main_website_store`.|
 |`Magento-Store-View-Code`| The code assigned to the active store view. For example, `default`.|
 |`Magento-Website-Code`| The code assigned to the website associated with the active store view. For example, `base`.|
