@@ -316,7 +316,7 @@ The `Price type` defines the price of a simple product or a part of a price rang
 The `PriceAdjustment` type specifies the amount and type of a price adjustment. An example code value is `weee`.
 
 |Field | Data Type | Description|
-|--- | --- | ---
+|--- | --- | ---|
 |`amount` | Float | The amount of the price adjustment.|
 |`code` | String | Identifies the type of price adjustment.|
 
