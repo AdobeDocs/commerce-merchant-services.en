@@ -293,6 +293,7 @@ The `ProductView` return object is an interface that can contain the following f
 The `ComplexProductView` type represents bundle, configurable, and group products. Complex product prices are returned as a price range, because price values can vary based on selected options. The type implements `ProductView`.
 
 |Field | Data Type | Description|
+|--- | --- | ---|
 |`attributes(roles: [String])` | [ProductViewAttribute] | A list of merchant-defined attributes designated for the storefront.|
 |`description` | String | The detailed description of the product.|
 |`id` | ID! | The product ID, generated as a composite key, unique per locale.|
@@ -309,6 +310,8 @@ The `ComplexProductView` type represents bundle, configurable, and group product
 
 The `Price type` defines the price of a simple product or a part of a price range for a complex product. It can include a list of price adjustments.
 
+|Field | Data Type | Description|
+|--- | --- | ---|
 |`amount` | ProductViewMoney | Contains the monetary value and currency code of a product. |
 
 ### PriceAdjustment type
