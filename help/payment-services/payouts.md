@@ -151,24 +151,24 @@ Payout reports include the following information.
 | [!UICONTROL Commerce order] | Commerce order ID <br> <br>To see related [order info](https://docs.magento.com/user-guide/sales/orders.html), click the ID. |
 | [!UICONTROL Commerce trans] | Commerce transaction ID |
 | [!UICONTROL Pay method] | Credit card type---*[!UICONTROL BANK]*, *[!UICONTROL PAYPAL]*, *[!UICONTROL CREDIT_CARD]*---and associated card provider (such as *Visa* or *MasterCard*) |
-| [!UICONTROL Trans amt] | Amount of the transaction |
-| [!UICONTROL Cur] | Currency unit for transaction amount |
-| [!UICONTROL Pending] | Amount yet to be disbursed |
-| [!UICONTROL Cur] | Currency unit for the pending amount |
-| [!UICONTROL Seller amt] | Amount of funds transferred to or from a customer <br> <br>Funds moving out of the seller account show a dash (-) prefix. |
-| [!UICONTROL Cur] | Currency unit for the seller amount |
-| [!UICONTROL Partner fee] | Partner fees associated with the transaction <br> <br>Funds moving out of the partner fee account show a dash (-) prefix. |
-| [!UICONTROL Cur] | Currency unit for the partner fee |
-| [!UICONTROL Prov fees] | Fees associated with the transaction <br> <br>Funds moving out of the provider's fee account show a dash (-) prefix. |
-| [!UICONTROL Cur] | Currency unit for the provider fee |
-| [!UICONTROL Fee %] | Percentage of the transaction amount charged as a fee |
-| [!UICONTROL Fixed fee] | Fixed provider fee amount |
-| [!UICONTROL Chbk fee] | Chargeback fee associated with the transaction <br> <br>A dash (-) prefix indicates that the chargeback fee was reversed. |
-| [!UICONTROL Cur] | Currency unit for the chargeback fee |
-| [!UICONTROL Hold amt] | Amount put on hold or released from hold <br> <br>A dash (-) prefix indicates that on-hold funds are being released. |
-| [!UICONTROL Cur] | Currency unit for the hold amount |
-| [!UICONTROL Recoup amt] | Amount recouped from the recoup account <br> <br>Funds moving out of the recoup account show a dash (-) prefix. |
-| [!UICONTROL Cur] | Currency unit for the recoup amount |
+| [!UICONTROL TRANS AMT] | Amount of the transaction |
+| [!UICONTROL CUR] | Currency unit for transaction amount |
+| [!UICONTROL PENDING] | Amount yet to be disbursed |
+| [!UICONTROL CUR] | Currency unit for the pending amount |
+| [!UICONTROL SELLER AMT] | Amount of funds transferred to or from a customer <br> <br>Funds moving out of the seller account show a dash (-) prefix. |
+| [!UICONTROL CUR] | Currency unit for the seller amount |
+| [!UICONTROL PARTNER FEE] | Partner fees associated with the transaction <br> <br>Funds moving out of the partner fee account show a dash (-) prefix. |
+| [!UICONTROL CUR] | Currency unit for the partner fee |
+| [!UICONTROL PROV FEES] | Fees associated with the transaction <br> <br>Funds moving out of the provider's fee account show a dash (-) prefix. |
+| [!UICONTROL CUR] | Currency unit for the provider fee |
+| [!UICONTROL FEE %] | Percentage of the transaction amount charged as a fee |
+| [!UICONTROL FIXED FEE] | Fixed provider fee amount |
+| [!UICONTROL CHBK FEE] | Chargeback fee associated with the transaction <br> <br>A dash (-) prefix indicates that the chargeback fee was reversed. |
+| [!UICONTROL CUR] | Currency unit for the chargeback fee |
+| [!UICONTROL HOLD AMT] | Amount put on hold or released from hold <br> <br>A dash (-) prefix indicates that on-hold funds are being released. |
+| [!UICONTROL CUR] | Currency unit for the hold amount |
+| [!UICONTROL RECOUP AMT] | Amount recouped from the recoup account <br> <br>Funds moving out of the recoup account show a dash (-) prefix. |
+| [!UICONTROL CUR] | Currency unit for the recoup amount |
 
 ### Transaction types
 
