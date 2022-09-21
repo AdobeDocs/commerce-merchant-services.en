@@ -34,7 +34,6 @@ These features are not yet supported:
 *  No updates are received when variants are deleted from the catalog
 *  B2B visibility overrides: products can be searchable, or added to cart for specific customer groups
 
-
 ## Beta Release
 
 Release Date: 2022-08-09
