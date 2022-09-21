@@ -5,7 +5,7 @@ description: 'A reference guide for the `products` GraphQL query for Adobe Comme
 
 # products query
 
-The Catalog Service for Adobe Commerce `products` query returns details about the SKUs specified as input. Although this query has the same name as  the [`products` query]({{site.baseurl}}/guides/v2.4/graphql/queries/products.html) that is provided with core Adobe Commerce and Magento Open Source, there are some differences.
+The Catalog Service for Adobe Commerce `products` query returns details about the SKUs specified as input. Although this query has the same name as  the [`products` query](https://devdocs.magento.com//guides/v2.4/graphql/queries/products.html) that is provided with core Adobe Commerce and Magento Open Source, there are some differences.
 
 The Catalog Service query requires one or more SKU values as input. The query is primarily designed to retrieve information to render the following types of content:
 
