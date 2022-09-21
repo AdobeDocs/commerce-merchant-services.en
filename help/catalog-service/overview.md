@@ -42,5 +42,3 @@ You can optionally implement [API Mesh for Adobe Developer App Builder](https://
 ## Implementation
 
 The installation process requires configuration of the [Commerce Services Connector](../landing/saas.md). Once that is accomplished, the next step is for a systems integrator to update the storefront code to incorporate the [!DNL Catalog Service] queries. All [!DNL Catalog Service] queries are routed to the GraphQL gateway. The URL is provided during the onboarding process.
-
-[Adobe Commerce Devdocs](https://devdocs.magento.com/catalog-service/index.html) describes the differences between the core and [!DNL Catalog Service] queries. Reference information for each query is also included.
