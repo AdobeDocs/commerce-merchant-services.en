@@ -33,7 +33,7 @@ Because the service bypasses direct communication with the application, it is ab
 
 >[!NOTE]
 >
->The gateway is for future integration with Product Recommendations. In this release, you can access [!DNL Catalog Service] and [!DNL Live Search] federated queries from the same endpoint, if you have a valid license key for both products.
+>The gateway is for future integration with Product Recommendations. In this release, you can access [!DNL Catalog Service] and [!DNL Live Search] federated queries from the same endpoint if you have a valid license key for both products.
 
 The core and service GraphQL systems do not directly communicate with each other. You access each system from a different URL, and calls require different header information. The two GraphQL systems are designed to be used together. The [!DNL Catalog Service] GraphQL system augments the core system to make product storefront experiences faster.
 
