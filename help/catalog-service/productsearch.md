@@ -5,7 +5,7 @@ description: 'A reference guide for the `productSearch` GraphQL query for Adobe 
 
 # productSearch query
 
-The Catalog Service for Adobe Commerce `productSearch` query can use Live Search to return details about the SKUs specified as input. Although this query is the same  as the [`productSearch` query](https://devdocs.magento.com//live-search/product-search.html), Live Search returns a `productView` object. See the [`productSearch` query](https://devdocs.magento.com//live-search/product-search.html) topic for reference information.
+The Catalog Service for Adobe Commerce `productSearch` query can use Live Search to return details about the SKUs specified as input. Although this query is the same  as the [`productSearch` query](https://devdocs.magento.com/live-search/product-search.html), Live Search returns a `productView` object. See the [`productSearch` query](https://devdocs.magento.com/live-search/product-search.html) topic for reference information.
 
 ## Syntax
 
