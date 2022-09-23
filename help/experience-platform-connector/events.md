@@ -1,6 +1,6 @@
 ---
 title: Events
-description: Learn what data each event captures and view the full schema definition.
+description: Learn what data each event captures.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
 ---
 # Experience Platform Connector Events
@@ -15,7 +15,7 @@ In addition to the data the following events collect, you also get [other data](
 
 ## addToCart
 
-Triggered when a product is added to the cart or when the quantity of a product in the cart is incremented. [Full schema](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/product/addToCartAEP.ts).
+Triggered when a product is added to the cart or when the quantity of a product in the cart is incremented.
 
 ### XDM event name
 
@@ -32,10 +32,11 @@ The following table describes the data collected for this event.
 |Field|Description|
 |---|---|
 |`productListAdds`|Indicates if a product was added to a shopping cart. A value of `1` indicates that a product was added.|
+|`productListItems`|An array of products added to the shopping cart|
 |`SKU`|Stock Keeping Unit. The unique identifier for the product.|
 |`name`|The display name or human-readable name of the product|
-|`priceTotal`|The total for this order after all discounts and taxes have been applied|
-|`quantity`|The number of units the customer has indicated they require of the product|
+|`priceTotal`|The total price for the product line item|
+|`quantity`|The number of product units added to the cart|
 |`discountAmount`|Indicates the discount amount applied|
 |`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency for the product|
 |`productImageUrl`|Main image URL of the product|
@@ -61,11 +62,11 @@ The following table describes the data collected for this event.
 |Field|Description|
 |---|---|
 |`productListOpens`|Indicates if a cart was created. A value of `1` indicates that a cart was created.|
-|`productListItems`|An array of products in the shopping cart|
+|`productListItems`|An array of products added to the shopping cart|
 |`SKU`|Stock Keeping Unit. The unique identifier for the product.|
 |`name`|The display name or human-readable name of the product|
-|`priceTotal`|The total for this order after all discounts and taxes have been applied|
-|`quantity`|The number of units the customer has indicated they require of the product|
+|`priceTotal`|The total price for the product line item|
+|`quantity`|The number of product units in the cart|
 |`discountAmount`|Indicates the discount amount applied|
 |`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency for the product|
 |`productImageUrl`|Main image URL of the product|
@@ -91,11 +92,11 @@ The following table describes the data collected for this event.
 |Field|Description|
 |---|---|
 |`productListRemovals`|Indicates if a product was removed from the cart. A value of `1` indicates that a product was removed from the cart.|
-|`productListItems`|An array of products in the shopping cart|
+|`productListItems`|An array of products removed from the shopping cart|
 |`SKU`|Stock Keeping Unit. The unique identifier for the product.|
 |`name`|The display name or human-readable name of the product|
-|`priceTotal`|The total for this order after all discounts and taxes have been applied|
-|`quantity`|The number of units the customer has indicated they require of the product|
+|`priceTotal`|The total price for the product line item|
+|`quantity`|The number of product units removed from the cart|
 |`discountAmount`|Indicates the discount amount applied|
 |`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency for the product|
 |`productImageUrl`|Main image URL of the product|
@@ -104,7 +105,7 @@ The following table describes the data collected for this event.
 
 ## shoppingCartView
 
-Triggered when any cart page loads. [Full schema](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/shoppingCart/viewAEP.ts).
+Triggered when any cart page loads.
 
 ### XDM event name
 
@@ -124,8 +125,8 @@ The following table describes the data collected for this event.
 |`productListItems`|An array of products in the shopping cart|
 |`SKU`|Stock Keeping Unit. The unique identifier for the product.|
 |`name`|The display name or human-readable name of the product|
-|`priceTotal`|The total for this order after all discounts and taxes have been applied|
-|`quantity`|The number of units the customer has indicated they require of the product|
+|`priceTotal`|The total price for the product line item|
+|`quantity`|The number of product units in the cart|
 |`discountAmount`|Indicates the discount amount applied|
 |`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency for the product|
 |`productImageUrl`|Main image URL of the product|
@@ -134,7 +135,7 @@ The following table describes the data collected for this event.
 
 ## pageView
 
-Triggered when any page loads. [Full schema](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/page/viewAEP.ts).
+Triggered when any page loads.
 
 ### XDM event name
 
@@ -154,7 +155,7 @@ The following table describes the data collected for this event.
 
 ## productPageView
 
-Triggered when any product page loads. [Full schema](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/product/viewAEP.ts).
+Triggered when any product page loads.
 
 ### XDM event name
 
@@ -174,7 +175,7 @@ The following table describes the data collected for this event.
 |`productListItems`|An array of products in the shopping cart|
 |`SKU`|Stock Keeping Unit. The unique identifier for the product.|
 |`name`|The display name or human-readable name of the product|
-|`priceTotal`|The total for this order after all discounts and taxes have been applied|
+|`priceTotal`|The total price for the product line item|
 |`discountAmount`|Indicates the discount amount applied|
 |`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency for the product|
 |`productImageUrl`|Main image URL of the product|
@@ -182,7 +183,7 @@ The following table describes the data collected for this event.
 
 ## startCheckout
 
-Triggered when the shopper clicks a checkout button. [Full schema](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/shoppingCart/initiateCheckoutAEP.ts).
+Triggered when the shopper clicks a checkout button.
 
 ### XDM event name
 
@@ -202,8 +203,8 @@ The following table describes the data collected for this event.
 |`productListItems`|An array of products in the shopping cart|
 |`SKU`|Stock Keeping Unit. The unique identifier for the product.|
 |`name`|The display name or human-readable name of the product|
-|`priceTotal`|The total for this order after all discounts and taxes have been applied|
-|`quantity`|The number of units the customer has indicated they require of the product|
+|`priceTotal`|The total price for the product line item|
+|`quantity`|The number of product units in the cart|
 |`discountAmount`|Indicates the discount amount applied|
 |`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency for the product|
 |`productImageUrl`|Main image URL of the product|
@@ -212,7 +213,7 @@ The following table describes the data collected for this event.
 
 ## completeCheckout
 
-Triggered when the shopper places an order. [Full schema](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/checkout/placeOrderAEP.ts).
+Triggered when the shopper places an order.
 
 ### XDM event name
 
@@ -244,8 +245,8 @@ The following table describes the data collected for this event.
 |`productListItems`|An array of products in the shopping cart|
 |`SKU`|Stock Keeping Unit. The unique identifier for the product.|
 |`name`|The display name or human-readable name of the product|
-|`priceTotal`|The total for this order after all discounts and taxes have been applied|
-|`quantity`|The number of units the customer has indicated they require of the product|
+|`priceTotal`|The total price for the product line item|
+|`quantity`|The number of product units in the cart|
 |`discountAmount`|Indicates the discount amount applied|
 |`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for the order totals.|
 |`productImageUrl`|Main image URL of the product|
@@ -253,7 +254,7 @@ The following table describes the data collected for this event.
 
 ## signIn
 
-Triggered when a shopper attempts to sign in. [Full schema](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/signInAEP.ts).
+Triggered when a shopper attempts to sign in.
 
 >[!NOTE]
 >
@@ -283,7 +284,7 @@ The following table describes the data collected for this event.
 
 ## signOut
 
-Triggered when a shopper attempts to sign out. [Full schema](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/signOutAEP.ts).
+Triggered when a shopper attempts to sign out.
 
 >[!NOTE]
 >
@@ -309,7 +310,7 @@ The following table describes the data collected for this event.
 
 ## createAccount
 
-Triggered when a shopper attempts to create an account. [Full schema](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/createAccountAEP.ts).
+Triggered when a shopper attempts to create an account.
 
 >[!NOTE]
 >
@@ -340,7 +341,7 @@ The following table describes the data collected for this event.
 
 ## editAccount
 
-Triggered when a shopper attempts to edit an account. [Full schema](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/editAccountAEP.ts).
+Triggered when a shopper attempts to edit an account.
 
 >[!NOTE]
 >
@@ -387,8 +388,6 @@ Triggered by the following events on search results pages:
 - Navigate to the previous page
 - Navigate to a different page
 
-[Full schema](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/search/searchRequestSentAEP.ts).
-
 >[!NOTE]
 >
 >Search events are not supported on an Adobe Commerce Enterprise Edition with the B2B module installed.
@@ -420,8 +419,6 @@ The following table describes the data collected for this event.
 ## searchResponseReceived
 
 Triggered when Live Search returns results for the “search as you type” popover or search results page.
-
-[Full schema](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/search/searchResponseReceivedAEP.ts)
 
 >[!NOTE]
 >
