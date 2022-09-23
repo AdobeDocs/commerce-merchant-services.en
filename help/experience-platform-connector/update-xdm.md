@@ -5,13 +5,12 @@ exl-id: 4401bbe7-1ccc-4349-a998-9e9ee9db590f
 ---
 # Add field groups to XDM schema
 
-One of the [prerequisites](overview.md#prereqs) to using the Experience Platform connector is to access the datastream workspace and [create a datastream](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=en) that is specific to Adobe Commerce. When you create that datastream, you must also select an XDM schema that represents the data you plan to ingest. This topic provides you with the field groups your XDM schema must include to successfully collect the data provided by the Adobe Commerce storefront [events](events.md).
+One of the [onboarding steps](overview.md#onboard) to using the Experience Platform connector is to access the datastream workspace and [create a datastream](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html) that is specific to Adobe Commerce. When you create that datastream, you must also select an XDM schema that represents the data you plan to ingest. This topic provides you with the field groups your XDM schema must include to successfully collect the data provided by the Adobe Commerce storefront [events](events.md).
 
-1. If you do not already have an XDM schema, [create](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=en#create) one. Otherwise, [edit](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=en#edit) your existing XDM schema in the Adobe Experience Platform UI.
+1. If you do not already have an XDM schema, [create](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#create) one. Otherwise, [edit](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#edit) your existing XDM schema in the Adobe Experience Platform UI.
 
-1. [Add](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=en#add-field-groups) the following Commerce-specific field groups:
+1. [Add](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#add-field-groups) the following Commerce-specific field groups:
     
-    - Commerce
     - Site Search 
     - Visit Web Page
     - User Login Process
