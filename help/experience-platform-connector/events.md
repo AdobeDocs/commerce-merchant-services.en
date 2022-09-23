@@ -66,7 +66,7 @@ The following table describes the data collected for this event.
 |`SKU`|Stock Keeping Unit. The unique identifier for the product.|
 |`name`|The display name or human-readable name of the product|
 |`priceTotal`|The total price for the product line item|
-|`quantity`|The number of product units in the cart|
+|`quantity`|The number of product units added to the cart|
 |`discountAmount`|Indicates the discount amount applied|
 |`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency for the product|
 |`productImageUrl`|Main image URL of the product|
