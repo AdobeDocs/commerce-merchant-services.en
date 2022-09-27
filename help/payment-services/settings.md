@@ -9,11 +9,9 @@ exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
 
 You can customize [!DNL Payment Services] to your needs with helpful settings in the [!DNL Payment Services] Home.
 
-To configure [!DNL Payment Services] for [!DNL Adobe Commerce] and [!DNL Magento Open Source] click **[!UICONTROL Settings]**. These configuration options apply only to the environment that is set in the _[!UICONTROL Payment mode]_ field in _[!UICONTROL Settings]_ > _[!UICONTROL General]_.
+To configure [!DNL Payment Services] for [!DNL Adobe Commerce] and [!DNL Magento Open Source] click **[!UICONTROL Settings]**. These configuration options apply only to the environment that is set in the _[!UICONTROL Payment mode]_ field the [_General_ configuration options](#general-configuration-options).
 
->[!IMPORTANT]
->
-> For multi-store or legacy configuration, refer to the [Configure in the Admin](configure-admin.md) topic.
+For multi-store or legacy configuration, refer to the [Configure in the Admin](configure-admin.md) topic.
 
 ## Enable Payment Services
 
@@ -65,7 +63,8 @@ See [Payments options](payments-options.md#credit-card-fields) for more informat
 1. Select the store view, in the **[!UICONTROL Scope]** dropdown menu, for which you want to enable a payment method.
 1. To change the name of the payment method displayed during checkout, edit the value in the **[!UICONTROL Checkout title]** field.
 1. To [set the payment action](production.md#set-payment-services-as-payment-method), toggle **[!UICONTROL Payment action]** to `Authorize` or `Authorize and Capture`.
-1. To enable debug mode, toggle the **[!UICONTROL Debug Mode]** selector.
+1. To enable or disable credit card fields on the checkout page, toggle the **[!UICONTROL Show on checkout page]** selector.
+1. To enable or disable debug mode, toggle the **[!UICONTROL Debug Mode]** selector.
 1. Click **[!UICONTROL Save]**.
 
    If you try to navigate away from this view without saving your changes, a modal appears that prompts you to discard changes, keep editing, or save changes.
@@ -78,6 +77,7 @@ See [Payments options](payments-options.md#credit-card-fields) for more informat
 |---|---|---|
 | [!UICONTROL Title] | store view | Add the text for display as the title for this payment option in the Payment Method view during checkout. Options: [!UICONTROL text field] |
 | [!UICONTROL Payment Action] | website | The [payment action](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} for the specified payment method. Options: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Show on checkout page] | website | Enable or disable credit card fields to show on checkout page. Options: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Debug Mode] | website | Enable or disable Debug Mode. Options: [!UICONTROL Yes] / [!UICONTROL No] |
 
 ### Payment buttons
@@ -90,6 +90,7 @@ You can enable and configure the PayPal smart buttons payment options:
 1. To change the name of the payment method as shown during checkout, edit the value in the **[!UICONTROL Checkout Title]** field.
 1. To [set the payment action](production.md#set-payment-services-as-payment-method), toggle **[!UICONTROL Payment action]** to `Authorize` or `Authorize and Capture`.
 1. Use the toggle selectors to enable or disable [!DNL PayPal smart button] display features:
+   - **[!UICONTROL Show PayPal buttons on product checkout page]**
    - **[!UICONTROL Show PayPal buttons on product detail page]**
    - **[!UICONTROL Show PayPal buttons in mini-cart preview]**
    - **[!UICONTROL Show PayPal buttons on cart page]**
@@ -103,7 +104,7 @@ You can enable and configure the PayPal smart buttons payment options:
       > To use Apple Pay you [must have an Apple Developer Account](test-validate.md#test-in-sandbox-environment) (complete with fake credit card and billing information) to test it. When you are ready to use Apple Pay in sandbox *or* production mode, after completing any [testing and validation](test-validate.md), contact your Sales representative to enable it for your live store(s).
 
       As you toggle on/off visibility to payment buttons or the PayPal Pay Later message, a visual preview of that configuration shows at the bottom of the Settings page.
-
+git 
 1. To enable debug mode, toggle the **[!UICONTROL Debug Mode]** selector.  
 1. Click **[!UICONTROL Save]**.
 
@@ -117,6 +118,7 @@ You can enable and configure the PayPal smart buttons payment options:
 |---|---|---|
 | [!UICONTROL Title] | store view | Add the text to be displayed as the title for this payment option in the Payment Method view during checkout. Options: text field |
 | [!UICONTROL Payment Action] | website | The [payment action](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} for the specified payment method. Options: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Show PayPal buttons on checkout page] | store view | Enable or disable [!DNL PayPal Smart Buttons] on the checkout page. Options: [!UICONTROL  Yes] / [!UICONTROL No] |
 | [!UICONTROL Show PayPal buttons on product detail page] | store view | Enable or disable [!DNL PayPal Smart Buttons] on the product detail page. Options: [!UICONTROL  Yes] / [!UICONTROL No] |
 | [!UICONTROL Show PayPal buttons in mini-cart preview] | store view | Enable or disable [!DNL PayPal Smart Buttons] in the mini-cart preview. Options: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Show PayPal buttons on cart page] | store view | Enable or disable [!DNL PayPal Smart Buttons] on the cart page. Options: [!UICONTROL Yes] / [!UICONTROL No] |
@@ -163,3 +165,14 @@ You can configure [!DNL PayPal Smart Buttons] styling [in the Legacy configurati
 |[!UICONTROL Responsive Button Height]|Store View|Defines if payment buttons use a default height. Options: [!UICONTROL Yes] / [!UICONTROL No]|
 |[!UICONTROL Height]|Store View|Define height of the payment buttons. Default value: none|
 |[!UICONTROL Label]|Store View|Define label that appears in the payment buttons. Options: [!UICONTROL PayPal] / [!UICONTROL Checkout] / [!UICONTROL Buynow] / [!UICONTROL Pay] / [!UICONTROL Installment]|
+
+## Flush the cache
+
+ If you make any changes to the configuration in _Settings_, such as toggling Apple Pay, Venmo, or PayPal PayLater buttons, you must manually flush the cache so that your store shows the latest configurations.
+
+ 1. Navigate to **[!UICONTROL System]** > **[!UICONTROL Cache Management]**.
+ 1. Click **[!UICONTROL Flush Cache]** to refresh all invalid caches.
+
+If you see a status of `INVALIDATED` for a Cache Type, your store may not be showing the most recent configuration for that item.
+
+It is recommended to periodically flush the cache to ensure your store is showing the correct configuration. See [Cache Management](https://docs.magento.com/user-guide/system/cache-management.html) for more information.

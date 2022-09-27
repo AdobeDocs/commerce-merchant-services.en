@@ -11,8 +11,6 @@ You can customize [!DNL Payment Services] to your needs with helpful configurati
 
 When you configure [!DNL Payment Services] for [!DNL Adobe Commerce] and [!DNL Magento Open Source] in the Admin, those configurations apply only to the environment that is set in the _[!UICONTROL Method]_ field of _[!UICONTROL General Configuration]_. Any changes you make in the configuration fields are independent of switching the _[!UICONTROL Method]_ selection---if you switch the method, your selections do not reset.
 
-See the [[!UICONTROL General Configuration] section](#general-configuration) for more information.
-
 ## General configuration
 
 You can enable [!DNL Payment Services] for your store, and enable either sandbox testing or live payments in the _[!UICONTROL General Configuration]_ section.
@@ -32,6 +30,7 @@ You can enable [!DNL Payment Services] for your store, and enable either sandbox
    >Your _[!UICONTROL Sandbox Merchant ID]_ and _[!UICONTROL Production Merchant ID]_ are auto-generated and present in their respectable fields when you have finished onboarding for the sandbox and/or production. Do not remove or change these IDs.
 
 1. Click **[!UICONTROL Save Config]** to save your changes.
+1. Navigate to **[!UICONTROL System]** > **[!UICONTROL Cache Management]** and click **[!UICONTROL Flush Cache]** to refresh all invalid caches.
 
 ### Configuration options
 
@@ -58,6 +57,7 @@ See [Payments options](payments-options.md#paypal-smart-buttons) for more inform
 1. To [set the payment action](production.md#set-payment-services-as-payment-method), select **[!UICONTROL Authorize]** or **Authorize and Capture**.
 1. For **Debug Mode**, choose `Yes` to enable debug mode (or `No` to disable it).
 1. Click **[!UICONTROL Save Config]** to save your changes.
+1. Navigate to **[!UICONTROL System]** > **[!UICONTROL Cache Management]** and click **[!UICONTROL Flush Cache]** to refresh all invalid caches.
 
 #### Configuration options
 
@@ -86,6 +86,7 @@ You can enable and configure the PayPal Smart Buttons payment options within the
 1. To disable the [Pay Later messaging](payments-options.md#pay-later-button) (if desired), select `No` for **[!UICONTROL Display Pay Later Message]**.
 1. To enable debug mode, select `Yes` for the **[!UICONTROL Debug Mode]** (`No` disables it).
 1. To save your changes, click **[!UICONTROL Save Config]** .
+1. Navigate to **[!UICONTROL System]** > **[!UICONTROL Cache Management]** and click **[!UICONTROL Flush Cache]** to refresh all invalid caches.
 
 ### Configuration options
 
@@ -113,3 +114,7 @@ You can enable and configure the PayPal Smart Buttons payment options within the
 |[!UICONTROL Height]|Store View|Define height of the PayPal Smart Buttons. Default value: none|
 |[!UICONTROL Label]|Store View|Define label that appears in the PayPal Smart Buttons. Options: [!UICONTROL PayPal] / [!UICONTROL Checkout] / [!UICONTROL Buynow] / [!UICONTROL Pay] / [!UICONTROL Installment]|
 |[!UICONTROL Tagline]|Store View|Enables tagline. Options: [!UICONTROL Yes] / [!UICONTROL No]|
+
+## Flush the cache
+
+ If you make any changes to the configuration in _Settings_ you must [manually flush the cache](/help/payment-services/settings.md#flush-the-cache) so that your store shows the latest configurations.
