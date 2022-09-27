@@ -171,9 +171,6 @@ You can configure [!DNL PayPal Smart Buttons] styling [in the Legacy configurati
  If you make any changes to the configuration in _Settings_, such as toggling Apple Pay, Venmo, or PayPal PayLater buttons, you must manually flush the cache so that your store shows the latest configurations.
 
  1. On the _Admin_ sidebar, go to **[!UICONTROL System]** > **[!UICONTROL Cache Management]**.
-
-   ![Admin menu](assets/payment-services-menu-small.png)
-
  1. Click **[!UICONTROL Flush Cache]** to refresh all invalid caches.
 
 If you see a status of `INVALIDATED` for a Cache Type, your store may not be showing the most recent configuration for that item.
