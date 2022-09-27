@@ -117,4 +117,4 @@ You can enable and configure the PayPal Smart Buttons payment options within the
 
 ## Flush the cache
 
- If you make any changes to the configuration in _Settings_ you must [manually flush the cache](/help/payment-services/settings.md#flush-the-cache) so that your store shows the latest configurations.
+ If you make any changes to the configuration you must [manually flush the cache](/help/payment-services/settings.md#flush-the-cache) so that your store shows the latest configurations.

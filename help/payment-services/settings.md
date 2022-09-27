@@ -11,7 +11,7 @@ You can customize [!DNL Payment Services] to your needs with helpful settings in
 
 To configure [!DNL Payment Services] for [!DNL Adobe Commerce] and [!DNL Magento Open Source] click **[!UICONTROL Settings]**. These configuration options apply only to the environment that is set in the _[!UICONTROL Payment mode]_ field the [_General_ configuration options](#general-configuration-options).
 
-For multi-store or legacy configuration, refer to the [Configure in the Admin](configure-admin.md) topic.
+For multi-store or legacy configuration see [Configure in the Admin](configure-admin.md).
 
 ## Enable Payment Services
 
@@ -69,7 +69,7 @@ See [Payments options](payments-options.md#credit-card-fields) for more informat
 
    If you try to navigate away from this view without saving your changes, a modal appears that prompts you to discard changes, keep editing, or save changes.
 
-1. Navigate to **[!UICONTROL System]** > **[!UICONTROL Cache Management]** and click **[!UICONTROL Flush Cache]** to refresh all invalid caches.
+1. [Flush the cache](#flush-the-cache).
 
 #### Configuration options
 
@@ -110,7 +110,7 @@ git
 
    If you try to navigate away from this view without saving your changes, a modal appears that prompts you to discard changes, keep editing, or save changes.
 
-1. Navigate to **[!UICONTROL System]** > **[!UICONTROL Cache Management]** and click **[!UICONTROL Flush Cache]** to refresh all invalid caches.
+1. [Flush the cache](#flush-the-cache).
 
 #### Configuration options
 
@@ -150,7 +150,7 @@ You can also configure the _[!UICONTROL Button style]_ options of the PayPal sma
 
    If you try to navigate away from this view without saving your changes, a modal appears that prompts you to discard changes, keep editing, or save changes.
 
-1. Navigate to **[!UICONTROL System]** > **[!UICONTROL Cache Management]** and click **[!UICONTROL Flush Cache]** to refresh all invalid caches.
+1. [Flush the cache](#flush-the-cache).
 
 You can configure [!DNL PayPal Smart Buttons] styling [in the Legacy configuration in the Admin](configure-admin.md#configure-paypal-smart-buttons) or here in [!DNL Payment Services Home]. See [PayPal's Buttons style guide](https://developer.paypal.com/docs/checkout/standard/customize/buttons-style-guide/) for more information about the options.
 
@@ -170,7 +170,10 @@ You can configure [!DNL PayPal Smart Buttons] styling [in the Legacy configurati
 
  If you make any changes to the configuration in _Settings_, such as toggling Apple Pay, Venmo, or PayPal PayLater buttons, you must manually flush the cache so that your store shows the latest configurations.
 
- 1. Navigate to **[!UICONTROL System]** > **[!UICONTROL Cache Management]**.
+ 1. On the _Admin_ sidebar, go to **[!UICONTROL System]** > **[!UICONTROL Cache Management]**.
+
+   ![Admin menu](assets/payment-services-menu-small.png)
+
  1. Click **[!UICONTROL Flush Cache]** to refresh all invalid caches.
 
 If you see a status of `INVALIDATED` for a Cache Type, your store may not be showing the most recent configuration for that item.
