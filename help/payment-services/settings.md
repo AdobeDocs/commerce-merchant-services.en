@@ -9,7 +9,7 @@ exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
 
 You can customize [!DNL Payment Services] to your needs with helpful settings in the [!DNL Payment Services] Home.
 
-To configure [!DNL Payment Services] for [!DNL Adobe Commerce] and [!DNL Magento Open Source] click **[!UICONTROL Settings]**. These configuration options apply only to the environment that is set in the _[!UICONTROL Payment mode]_ field the [_General_ configuration options](#general-configuration-options).
+To configure [!DNL Payment Services] for [!DNL Adobe Commerce] and [!DNL Magento Open Source] click **[!UICONTROL Settings]**. These configuration options apply only to the environment that is set in the _[!UICONTROL Payment mode]_ field of the [_General_ configuration options](#general-configuration-options).
 
 For multi-store or legacy configuration see [Configure in the Admin](configure-admin.md).
 
