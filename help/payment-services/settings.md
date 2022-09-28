@@ -175,4 +175,4 @@ You can configure [!DNL PayPal Smart Buttons] styling [in the Legacy configurati
 
 If any Cache Type in the Cache Management table has an `INVALIDATED` status, your store might not show the most recent configuration for that item. Flush the cache to update your store to show the latest configuration.
 
-It is recommended to periodically flush the cache to ensure your store is showing the correct configuration. See [Cache Management](https://docs.magento.com/user-guide/system/cache-management.html) for more information.
+To ensure that your store is showing the correct configuration, periodically [flush the cache](https://docs.magento.com/user-guide/system/cache-management.html).
