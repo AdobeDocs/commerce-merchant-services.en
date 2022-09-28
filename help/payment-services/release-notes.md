@@ -47,6 +47,20 @@ _June 28, 2021_
 
 +++
 
+## v1.4.0
+
+_September 30, 2022_
+
+![New](../assets/new.svg)<!-- Issue PAY-784 --> Payment Services now includes the ability to set up a merchant account to [use multiple PayPal business accounts](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#use-multiple-business-accounts). This enables the merchant to operate your stores in multiple countries using different currencies, or to use Adobe Commerce for a portion of your business.
+
+![New](../assets/new.svg)<!-- Issue PAY-3231 --> Merchants can [add a [!UICONTROL Soft Descriptor]](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#add-soft-descriptor) to websites or individual store views configuration that show on customer transaction bank statements to delineate brands, stores, or product lines.
+
+![New](../assets/new.svg)<!-- Issue PAY-3707 --> [Enable or disable credit card fields and PayPal smart buttons](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html) for checkout in Payment Services settings.
+
+![Fixed issue](../assets/fix.svg)<!-- Issue PAY-3546 --> When a customer clicks **[!UICONTROL Edit cart]**, the page redirects to the cart page and shows the updated items instead of showing an empty cart.
+
+![Fixed issue](../assets/fix.svg)<!-- Issue PAY-3663 --> An error is no longer visible to the customer when Payment Services captures an order that is authorized with a non-global currency.
+
 ## v1.3.1
 
 _September 6, 2022_
