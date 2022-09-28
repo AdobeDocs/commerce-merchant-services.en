@@ -168,11 +168,11 @@ You can configure [!DNL PayPal Smart Buttons] styling [in the Legacy configurati
 
 ## Flush the cache
 
- If you make any changes to the configuration in _Settings_, such as toggling Apple Pay, Venmo, or PayPal PayLater buttons, you must manually flush the cache so that your store shows the latest configurations.
+ If you change the configuration in _Settings_, for example toggling the Apple Pay, Venmo, or PayPal PayLater buttons, manually flush the cache so that your store shows the latest configurations.
 
  1. On the _Admin_ sidebar, go to **[!UICONTROL System]** > **[!UICONTROL Cache Management]**.
  1. Click **[!UICONTROL Flush Cache]** to refresh all invalid caches.
 
-If you see a status of `INVALIDATED` for a Cache Type, your store may not be showing the most recent configuration for that item.
+If any Cache Type in the Cache Management table has an `INVALIDATED` status, your store might not show the most recent configuration for that item. Flush the cache to update your store to show the latest configuration.
 
 It is recommended to periodically flush the cache to ensure your store is showing the correct configuration. See [Cache Management](https://docs.magento.com/user-guide/system/cache-management.html) for more information.
