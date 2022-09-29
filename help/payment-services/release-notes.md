@@ -59,8 +59,6 @@ _September 30, 2022_
 
 ![Fixed issue](../assets/fix.svg)<!-- Issue PAY-3546 --> When a customer clicks **[!UICONTROL Edit cart]**, the page redirects to the cart page and shows the updated items instead of showing an empty cart.
 
-![Fixed issue](../assets/fix.svg)<!-- Issue PAY-3663 --> An error is no longer visible to the customer when Payment Services captures an order that is authorized with a non-global currency.
-
 ## v1.3.1
 
 _September 6, 2022_
