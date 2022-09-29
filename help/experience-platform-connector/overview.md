@@ -38,6 +38,10 @@ This guide is designed for the Adobe Commerce merchant who want to connect their
 
 See the [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/aep/) documentation for information about how to use the Experience Platform connector in a PWA Studio storefront.
 
+### AEM support
+
+See the [AEM]() documentation for information about how to use the Experience Platform connector in an AEM storefront.
+
 If you need information or have questions that are not covered in this guide, use the following resources:
 
 - [Help center](https://support.magento.com/hc/en-us){target="_blank"}
