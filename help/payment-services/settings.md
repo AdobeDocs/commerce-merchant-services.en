@@ -163,3 +163,11 @@ You can configure [!DNL PayPal Smart Buttons] styling [in the Legacy configurati
 |[!UICONTROL Responsive Button Height]|Store View|Defines if payment buttons use a default height. Options: [!UICONTROL Yes] / [!UICONTROL No]|
 |[!UICONTROL Height]|Store View|Define height of the payment buttons. Default value: none|
 |[!UICONTROL Label]|Store View|Define label that appears in the payment buttons. Options: [!UICONTROL PayPal] / [!UICONTROL Checkout] / [!UICONTROL Buynow] / [!UICONTROL Pay] / [!UICONTROL Installment]|
+
+## Use multiple PayPal accounts
+
+In Payment Services, you can use multiple PayPal accounts within **one** merchant account on the website level. For instance, if you are operating your store(s) in multiple countries (which use different [currencies](https://docs.magento.com/user-guide/stores/currency.html)) or want to use Adobe Commerce for some parts of your business but not *all*, you can set up your merchant account to use multiple PayPal accounts.
+
+See [Site, Store, and View Scope](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) for more information about the hierarchy of websites, stores, and store views.
+
+Your Sales representative can create a new [scope](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) for your merchant account and onboard the additional site with PayPal so that any of the PayPal buttons you configure to appear will show on your site. Contact your Sales representative for assistance with using multiple PayPal accounts for your websites.
