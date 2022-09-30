@@ -15,8 +15,6 @@ This guide is intended for administrators of Adobe [!DNL Commerce]. It includes 
 
 *  Integrators build GraphQL queries and integrate them on a storefront that uses a frontend client.
 
-You can find detailed integration information at [Catalog Service for Adobe Commerce](https://devdocs.magento.com/catalog-service/index.html).
-
 ## Additional documentation
 
 | Guide | Description |

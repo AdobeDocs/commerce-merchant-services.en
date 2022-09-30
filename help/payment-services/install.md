@@ -21,7 +21,7 @@ You must first download the extension from [Commerce Marketplace](https://experi
 
 ## Install the extension
 
-You can install the [!DNL Payment Services] extension for both [!DNL Adobe Commerce] on cloud infrastructure and on-premises instances, which are linked to the Magento ID ([mageid](https://devdocs.magento.com/marketplace/sellers/profile-personal.html#field-descriptions)) provided in the signup process, with Composer keys. [!DNL Magento] Open Source customers use the on-premises instructions.
+You can install the [!DNL Payment Services] extension for both [!DNL Adobe Commerce] on cloud infrastructure and on-premises instances, which are linked to your Commerce account [mageid](https://devdocs.magento.com/marketplace/sellers/profile-personal.html#field-descriptions) provided in the signup process. [!DNL Magento Open Source] customers use the on-premises instructions.
 
 Composer uses these keys during the initial installation of [!DNL Adobe Commerce], or in situations in which the Composer keys were not previously saved to the `auth.json` file.
 
@@ -51,7 +51,7 @@ This method is used for installing the [!DNL Payment Services] extension for a C
 
 ### On-premises and other configurations
 
-This method is used for installing the [!DNL Payment Services] extension for an on-premises instance and [!DNL Magento] Open Source customers.
+This method is used for installing the [!DNL Payment Services] extension for an on-premises instance and [!DNL Magento Open Source] customers.
 
 1. To obtain the extension, run these commands:
 
@@ -108,7 +108,7 @@ If you see the following error denoting that you have the incorrect Composer key
 Could not find a matching version of package magento/payment-services. Check the package spelling, your version constraint and that the package is available in a stability which matches your minimum-stability (stable).
 ```
 
-Verify that your Composer keys are linked to the Magento ID used during [!DNL Payment Services] registration.
+Verify that your Composer keys are linked to the `MageID` used during [!DNL Payment Services] registration.
 
 To see which Composer keys are configured:
 
@@ -124,7 +124,7 @@ To see which Composer keys are configured:
    cat /path/to/auth.json
    ```
 
-1. See [which keys are associated with your Magento ID](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html).
+1. See [which keys are associated with your Commerce account `MageID`](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html).
 
 ### Not enough memory for PHP
 

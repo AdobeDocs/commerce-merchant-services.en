@@ -32,6 +32,10 @@ composer require magento/module-page-builder-product-recommendations
 
 By enabling [!DNL Product Recommendations] in Page Builder, you can add an existing, active [recommendation unit](https://docs.magento.com/user-guide/cms/page-builder-add-recommendations.html) to any content created in Page Builder, such as pages, blocks, and dynamic blocks.
 
+   >[!NOTE]
+   >
+   >[!DNL Page Builder] recommendation units can be created only for the default store view.
+
 ### Add Visual similarity recommendation type {#vissimsupport}
 
 The _Visual similarity_ recommendation type allows you to deploy a recommendation unit to your product detail page that displays products that are [visually similar](type.md#visualsim) to the product being viewed. This recommendation type is most useful where images and visual aspects of the products are important parts of the shopping experience. Install the _Visual similarity_ recommendation type by running the following command:

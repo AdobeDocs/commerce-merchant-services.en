@@ -18,7 +18,7 @@ After you [configure your Commerce Services](connect.md#configure-commerce-servi
 1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. Click **[!UICONTROL Enable Payment Services]**.
 
-   This option is visible if you have not yet configured [!DNL Payment Services] as the payment method for one or more of your Magento websites.
+   This option is visible if you have not yet configured [!DNL Payment Services] as the payment method for one or more of your websites.
 
    You are directed to the settings area in the Home view with the relevant options expanded (**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_), where you can enable the [!DNL Payment Services] options as your [payment method](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html){target="_blank"}.
 
@@ -27,7 +27,7 @@ After you [configure your Commerce Services](connect.md#configure-commerce-servi
 
    |Setting|Description|
    |---|---|
-   | `Authorize`  |  Approves the purchase and puts a hold on the funds. The amount is not withdrawn until it is “captured” by the merchant. |
+   | `Authorize`  |  Approves the purchase and puts a hold on the funds. The amount is not withdrawn until it is "captured" by the merchant. |
    | `Authorize and Capture`  | Approves the purchase and the merchant "captures" the funds. |
 
 1. Click **[!UICONTROL Save]**.

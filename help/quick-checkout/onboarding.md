@@ -7,6 +7,8 @@ exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
 
 To get started using the [!DNL Quick Checkout] for Adobe Commerce extension you must complete a few onboarding steps to connect your instance with our checkout functionality.
 
+![Quick Checkout](assets/overview-admin-panel.png)
+
 1. [Get extension](#get-extension).
 1. [Create a production or sandbox merchant account with [!DNL Bolt]](#create-account-with-bolt). Provide all required information to verify your identity.
 1. [Provide the unique [!DNL API Key] and [!DNL Publishable Key]](#obtain-api-credentials) generated in [!DNL Bolt].
@@ -15,6 +17,16 @@ To get started using the [!DNL Quick Checkout] for Adobe Commerce extension you 
 1. [Define your Service Settings](#complete-admin-configuration) to configure the [!DNL Quick Checkout] extension.
 1. [Click the Save Config](#enable-live-quick-checkout) button to enable extension.
 1. Switch scope to **Main Website** and [click the Configure Callback URL](#check-shopper-valid-account) button.
+
+If Gainsight is enabled, it triggers the **Take the tour** button in your [!DNL Quick Checkout] Admin panel about [!DNL Quick Checkout] for Adobe Commerce:
+
+1. On the _Admin_ sidebar, go to **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > Advanced:
+
+    ![Quick Checkout](assets/gainsight-admin.png)
+
+If Gainsight is not enabled, continue with the onboarding steps.
+
+See the [[!DNL Quick Checkout] Admin panel](../quick-checkout/admin-panel.md) topic for more information.
 
 >[!NOTE]
 >

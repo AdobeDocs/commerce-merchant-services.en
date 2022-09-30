@@ -5,7 +5,7 @@ exl-id: 8926eda4-b4de-4938-a86c-b095616f61f6
 ---
 # [!DNL Quick Checkout] developer information
 
-This topic contains information for developers who work closely with the Adobe Commerce and Magento Open Source code and want to learn detailed information about the [!DNL Quick Checkout] extension.
+This topic contains information for developers who work closely with the Adobe Commerce and [!DNL Magento Open Source] code and want to learn detailed information about the [!DNL Quick Checkout] extension.
 
 ## Extension points
 
