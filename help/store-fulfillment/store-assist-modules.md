@@ -11,7 +11,7 @@ The Store Assist app provides Store Associates with four modules to manage the i
 
 - **[Pick](#pick-module)**—Get full visibility into all ordered items and the tools to make sure that the right items and right quantities are picked. Store associates can pick one or multiple orders simultaneously for greater efficiency.
 
-- **[Stage](#stage-module)**—Enter a location where the orders are placed while customers are traveling to the store so Store Associates can find them easily for order handoff 
+- **[Stage](#stage-module)**—Enter a location where the orders are placed while customers are traveling to the store so Store Associates can find them easily for order handoff.
 
 - **[Hand Off](#hand-off-module)**—Get real-time notifications after customers arrive at the store to minimize their wait time and handoff orders seamlessly 
 
@@ -52,10 +52,12 @@ Once you select on an order that is ready for customer handoff. Everyone can see
 
 The customer might have chosen an alternate person to pick up the order. In this case, you see the name and contact information for the person who is supposed to pick the order.  
 
-Upon handing the order to the customer, the Store Associate must either accept the order or reject certain items. Once the customer is satisfied, they must sign for the order on your associate’s device, if a signature your company requires a signature.
+Upon handing the order to the customer, the Store Associate must either accept the order or reject certain items. Once the customer is satisfied, they must sign for the order on your associate's device, if a signature your company requires a signature.
 
 If customers arrive without checking in, your associates can check them in manually.  
 
 ## Orders module 
 
 The Orders module displays all existing orders and their status. When a customer calls to check on their order, Store Associates can find the information quickly by looking up the number or searching from the Orders module.
+
+Store Associates can also cancel orders from the Orders page in the Store Assist app.

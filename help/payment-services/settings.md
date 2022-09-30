@@ -120,7 +120,7 @@ You can enable and configure the PayPal smart buttons payment options:
 1. To [set the payment action](production.md#set-payment-services-as-payment-method), toggle **[!UICONTROL Payment action]** to `Authorize` or `Authorize and Capture`.
 1. Use the toggle selectors to enable or disable [!DNL PayPal smart button] display features:
    - **[!UICONTROL Show PayPal buttons on product detail page]**
-   - **[!UICONTROL Show PayPal buttons in mini cart preview]**
+   - **[!UICONTROL Show PayPal buttons in mini-cart preview]**
    - **[!UICONTROL Show PayPal buttons on cart page]**
    - **[!UICONTROL Show PayPal Pay Later button]**
    - **[!UICONTROL Show PayPal Pay Later message]**
@@ -147,7 +147,7 @@ You can enable and configure the PayPal smart buttons payment options:
 | [!UICONTROL Title] | store view | Add the text to be displayed as the title for this payment option in the Payment Method view during checkout. Options: text field |
 | [!UICONTROL Payment Action] | website | The [payment action](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} for the specified payment method. Options: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Show PayPal buttons on product detail page] | store view | Enable or disable [!DNL PayPal Smart Buttons] on the product detail page. Options: [!UICONTROL  Yes] / [!UICONTROL No] |
-| [!UICONTROL Show PayPal buttons in mini cart preview] | store view | Enable or disable [!DNL PayPal Smart Buttons] in the mini cart preview. Options: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Show PayPal buttons in mini-cart preview] | store view | Enable or disable [!DNL PayPal Smart Buttons] in the mini-cart preview. Options: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Show PayPal buttons on cart page] | store view | Enable or disable [!DNL PayPal Smart Buttons] on the cart page. Options: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Show PayPal Pay Later button] | store view | Enable or disable pay later payment option appearance where payment buttons are displayed. Options: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Show PayPal Pay Later Message] | website | Enable or disable the Pay Later messaging in the shopping cart, product page, mini-cart, and during the checkout flow. Options: [!UICONTROL Yes] / [!UICONTROL No] |
@@ -163,7 +163,7 @@ You can also configure the _[!UICONTROL Button style]_ options of the PayPal sma
 
    >[!NOTE]
    >
-   > If the button style is configured as `Horizontal` and your store is configured to show multiple PayPal smart buttons, you may only see two buttons displayed on the product page, checkout page, and mini cart, and one button displayed in the cart.
+   > If the button style is configured as `Horizontal` and your store is configured to show multiple PayPal smart buttons, you may only see two buttons displayed on the product page, checkout page, and mini-cart, and one button displayed in the cart.
 
 1. To enable the tagline in a horizontal layout, toggle the **[!UICONTROL Show tagline]** selector.
 1. To modify the **[!UICONTROL Color]**, select the desired color option.
@@ -192,3 +192,11 @@ You can configure [!DNL PayPal Smart Buttons] styling [in the Legacy configurati
 |[!UICONTROL Responsive Button Height]|Store View|Defines if payment buttons use a default height. Options: [!UICONTROL Yes] / [!UICONTROL No]|
 |[!UICONTROL Height]|Store View|Define height of the payment buttons. Default value: none|
 |[!UICONTROL Label]|Store View|Define label that appears in the payment buttons. Options: [!UICONTROL PayPal] / [!UICONTROL Checkout] / [!UICONTROL Buynow] / [!UICONTROL Pay] / [!UICONTROL Installment]|
+
+## Use multiple PayPal accounts
+
+In Payment Services, you can use multiple PayPal accounts within **one** merchant account on the website level. For instance, if you are operating your store(s) in multiple countries (which use different [currencies](https://docs.magento.com/user-guide/stores/currency.html)) or want to use Adobe Commerce for some parts of your business but not *all*, you can set up your merchant account to use multiple PayPal accounts.
+
+See [Site, Store, and View Scope](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) for more information about the hierarchy of websites, stores, and store views.
+
+Your Sales representative can create a new [scope](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) for your merchant account and onboard the additional site with PayPal so that any of the PayPal buttons you configure to appear will show on your site. Contact your Sales representative for assistance with using multiple PayPal accounts for your websites.

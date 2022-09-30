@@ -46,7 +46,7 @@ Configure the Sales Email templates from the Admin: **[!UICONTROL Stores > Confi
 </thead>
 <tbody><tr>
 <td><strong>Enabled</strong></td>
-<td>This email is sent to the customer when the store associate has completed picking their order. Set to “No” to disable the email notification. If the email template is disabled, it does not prevent an order from being picked by the store associate.</td>
+<td>This email is sent to the customer when the store associate has completed picking their order. Set to "No" to disable the email notification. If the email template is disabled, it does not prevent an order from being picked by the store associate.</td>
 <td>Store View</td>
 <td>No</td>
 </tr>
@@ -81,7 +81,7 @@ Configure the Sales Email templates from the Admin: **[!UICONTROL Stores > Confi
 </tr>
 <tr>
 <td><strong>Send Order Ready For Pickup Email Copy Method</strong></td>
-<td>The method of email “carbon copy” sends to use.</td>
+<td>The email copy method---carbon copy---to use.</td>
 <td>Store View</td>
 <td>No</td>
 </tr>
@@ -101,7 +101,7 @@ Configure the Sales Email templates from the Admin: **[!UICONTROL Stores > Confi
 </thead>
 <tbody><tr>
 <td><strong>Enabled</strong></td>
-<td>This email is sent to the customer when to confirm that they have picked up their order from the store. Set to “No” to disable the email notification. If the email template is disabled, it does not prevent an order from being picked up by the customer.</td>
+<td>This email is sent to the customer when to confirm that they have picked up their order from the store. Set to "No" to disable the email notification. If the email template is disabled, it does not prevent an order from being picked up by the customer.</td>
 <td>Store View</td>
 <td>No</td>
 </tr>
@@ -130,7 +130,7 @@ Configure the Sales Email templates from the Admin: **[!UICONTROL Stores > Confi
 </tr>
 <tr>
 <td><strong>Send Has Been Picked Up Email Copy Method</strong></td>
-<td>The method of email “carbon copy” send to use.</td>
+<td>The email copy method---carbon copy---to use.</td>
 <td>Store View</td>
 <td>No</td>
 </tr>
@@ -149,7 +149,7 @@ Configure the Sales Email templates from the Admin: **[!UICONTROL Stores > Confi
 </thead>
 <tbody><tr>
 <td><strong>Enabled</strong></td>
-<td>This email is sent to the customer to notify them about a delay in processing or picking their order at the merchant store. Set to “No” to disable the email notification. If the email template is disabled, feature does not prevent an order from being delayed.</td>
+<td>This email is sent to the customer to notify them about a delay in processing or picking their order at the merchant store. Set to "No" to disable the email notification. If the email template is disabled, feature does not prevent an order from being delayed.</td>
 <td>Store View</td>
 <td>No</td>
 </tr>
@@ -179,7 +179,7 @@ Configure the Sales Email templates from the Admin: **[!UICONTROL Stores > Confi
 </tr>
 <tr>
 <td><strong>Send Order Delayed Copy Method</strong></td>
-<td>The method of email “carbon copy” send to use.</td>
+<td>The email copy method---carbon copy---to use.</td>
 <td>Store View</td>
 <td>No</td>
 </tr>
@@ -230,7 +230,7 @@ Configure the Sales Email templates from the Admin: **[!UICONTROL Stores > Confi
 </tr>
 <tr>
 <td><strong>Send Order Canceled Copy Method</strong></td>
-<td>The method of email “carbon copy” send to use.</td>
+<td>The email copy method---carbon copy---to use.</td>
 <td>Store View</td>
 <td>No</td>
 </tr>
@@ -286,7 +286,7 @@ Configure the Sales Email templates from the Admin: **[!UICONTROL Stores > Confi
 </tr>
 <tr>
 <td><strong>Send Order Partly Canceled Copy Method</strong></td>
-<td>The method of email “carbon copy” send to use.</td>
+<td>The email copy method---carbon copy---to use.</td>
 <td>Store View</td>
 <td>No</td>
 </tr>

@@ -9,6 +9,8 @@ Before you install the extension, [review the prerequisites](overview.md#prereqs
 
 ## Install the extension
 
+The Experience Platform connector extension is installed from the command line of the server and connects to your Adobe Commerce installation as a [service](../landing/saas.md). When the process is complete, **Experience Platform Connector** appears on the **System** menu under **Services** in the Commerce _Admin_.
+
 The Experience Platform connector is installed as an extension from [Adobe Marketplace](https://marketplace.magento.com/magento-experience-platform-connector.html).
 
 1. To download the `experience-platform-connector` package, run the following from the command line:

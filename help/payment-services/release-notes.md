@@ -23,6 +23,10 @@ These release notes describe feature changes and fixes that occurred and were re
 
 +++Hosted service updates
 
+_September 12, 2022_
+
+![New](../assets/new.svg)<!-- Issue PAY-3705 --> The `increment_id` is now available for use in reconciling payouts in external ERP systems. It is propagated to the [`custom_id` _and_ `invoice_id`](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/data.html#reconcile-with-erp-system), visible in both the PayPal webhook and the merchant activity detail for a payout.
+
 _August 31, 2022_
 
 ![Fixed issue](../assets/fix.svg)<!-- Issue PAY-3629 --> When a new merchant accesses the Payment Services Home for the first time, the page now loads immediately to display the content instead of requiring a page refresh.
@@ -43,11 +47,17 @@ _June 28, 2021_
 
 +++
 
-<!-- ## v1.3.2
+## v1.4.0
 
-_TBD, 2022_
+_September 30, 2022_
 
-![New](../assets/new.svg)<!-- Issue PAY-3231 --> You can [add a [!UICONTROL Soft Descriptor]](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#add-soft-descriptor) to your website(s) or individual store view(s) configuration that show on customer transaction bank statements to delineate brands, stores, or product lines. -->
+![New](../assets/new.svg)<!-- Issue PAY-784 --> Payment Services now includes the ability to set up a merchant account to [use multiple PayPal business accounts](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#use-multiple-business-accounts). This enables the merchant to operate your stores in multiple countries using different currencies, or to use Adobe Commerce for a portion of your business.
+
+![New](../assets/new.svg)<!-- Issue PAY-3231 --> Merchants can [add a [!UICONTROL Soft Descriptor]](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#add-soft-descriptor) to websites or individual store views configuration that show on customer transaction bank statements to delineate brands, stores, or product lines.
+
+![New](../assets/new.svg)<!-- Issue PAY-3707 --> [Enable or disable credit card fields and PayPal smart buttons](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html) for checkout in Payment Services settings.
+
+![Fixed issue](../assets/fix.svg)<!-- Issue PAY-3546 --> When a customer clicks **[!UICONTROL Edit cart]**, the page redirects to the cart page and shows the updated items instead of showing an empty cart.
 
 ## v1.3.1
 
