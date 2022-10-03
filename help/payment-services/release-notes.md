@@ -55,7 +55,7 @@ _September 30, 2022_
 
 ![New](../assets/new.svg)<!-- Issue PAY-3231 --> Merchants can [add a [!UICONTROL Soft Descriptor]](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#add-soft-descriptor) to websites or individual store views configuration that show on customer transaction bank statements to delineate brands, stores, or product lines.
 
-![New](../assets/new.svg)<!-- Issue PAY-3707 --> [Enable or disable credit card fields and PayPal smart buttons](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html) for checkout in Payment Services settings.
+![New](../assets/new.svg)<!-- Issue PAY-3707 --> [Enable or disable credit card fields and PayPal smart buttons](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#configure-payment-options) for checkout in Payment Services settings.
 
 ![Fixed issue](../assets/fix.svg)<!-- Issue PAY-3546 --> When a customer clicks **[!UICONTROL Edit cart]**, the page redirects to the cart page and shows the updated items instead of showing an empty cart.
 
