@@ -9,7 +9,7 @@ exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
 
 [!DNL Payment Services] for [!DNL Adobe Commerce] and [!DNL Magento Open Source] offers you comprehensive reporting so that you can get a clear view of your store's orders and payments.
 
-![Financial reports view](assets/reports-view.png)
+![Financial reports view](assets/report-view.png)
 
 There are two available Payouts reporting views to enable you to see in-depth information about all of your payouts:
 
