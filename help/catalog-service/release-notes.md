@@ -33,6 +33,7 @@ These features are not yet supported:
 *  Updates are not received when variants are deleted from the catalog
 *  Maximum size for the dynamic attributes payload is <9MB
 *  This release does not support bundled fixed price products. Only dynamic prices are supported for bundled product types.
+*  Prices for Grouped products are incorrectly received from the Domain Services -> ProductOverride endpoint.
 
 ## 0.3 Release - Beta+
 
