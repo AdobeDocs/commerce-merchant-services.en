@@ -32,6 +32,7 @@ These features are not yet supported:
 *  Tier pricing
 *  Updates are not received when variants are deleted from the catalog
 *  Maximum size for the dynamic attributes payload is <9MB
+*  This release does not support bundled fixed price products. Only dynamic prices are supported for bundled product types.
 
 ## 0.3 Release - Beta+
 
