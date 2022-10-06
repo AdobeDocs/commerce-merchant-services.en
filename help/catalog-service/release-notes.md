@@ -21,7 +21,7 @@ Compatible with Adobe Commerce (EE): 2.4.x
 Compatible with Adobe Commerce for Cloud (ECE): 2.4.x
 Stability: General Availability
 
-![New](../assets/new.svg) - Support for bundle and grouped products types
+![New](../assets/new.svg) - Support for bundled and grouped products
 ![New](../assets/new.svg) - B2B visibility overrides: products can be searchable, or added to cart for specific customer groups
 ![Fix](../assets/fix.svg) - Improved stability and performance of the service
 
@@ -32,8 +32,10 @@ These features are not yet supported:
 *  Tier pricing
 *  Updates are not received when variants are deleted from the catalog
 *  Maximum size for the dynamic attributes payload is <9MB
-*  This release does not support bundled fixed price products. Only dynamic prices are supported for bundled product types.
-*  Prices for Grouped products are incorrectly received from the Domain Services -> ProductOverride endpoint.
+*  Fixed price bundle products
+*  Total price for group products
+*  Support for virtual, downloadable, and gift card product types
+*  Minimum Advertised Price (MAP)
 
 ## 0.3 Release - Beta+
 
