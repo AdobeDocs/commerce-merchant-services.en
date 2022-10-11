@@ -5,13 +5,34 @@ exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 ---
 # [!DNL Catalog Service] Release Notes
 
-{{catalog-service-beta}}
-
 These release notes describe the latest versions of [!DNL Catalog Service] and include:
 
 *  ![New](../assets/new.svg) - New features
 *  ![Fix](../assets/fix.svg) - Fixes and improvements
 *  ![Bug](../assets/bug.svg) - Known issues
+
+## V1.0 Release
+
+Release Date: 2022-10-04
+Compatible with Adobe Commerce (EE): 2.4.x
+Compatible with Adobe Commerce for Cloud (ECE): 2.4.x
+Stability: General Availability
+
+![New](../assets/new.svg) - Now support bundled and grouped products.
+![New](../assets/new.svg) - Added B2B visibility overrides. Products are now searchable and can be added to the cart for specific customer groups.
+![Fix](../assets/fix.svg) - Service is now more stable and has improved performance.
+
+### Known limitations
+
+These features are not yet supported:
+
+*  Tier pricing
+*  Updates are not received when variants are deleted from the catalog
+*  Maximum size for the dynamic attributes payload is <9MB
+*  Fixed price for bundle products
+*  Total price for grouped products
+*  Support for virtual, downloadable, and gift card product types
+*  Minimum Advertised Price (MAP)
 
 ## 0.3 Release - Beta+
 
@@ -33,7 +54,6 @@ These features are not yet supported:
 *  Bundle and grouped products
 *  No updates are received when variants are deleted from the catalog
 *  B2B visibility overrides: products can be searchable, or added to cart for specific customer groups
-
 
 ## Beta Release
 

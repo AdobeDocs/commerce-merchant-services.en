@@ -9,4 +9,8 @@ hide: yes
 - [Guide Overview](guide-overview.md)
 - [Introduction to [!DNL Catalog Service]](overview.md)
 - [Onboarding and installation](installation.md)
+- GraphQL queries {#graphql}
+    - [products query](products.md)
+    - [productSearch query](productsearch.md)
+    - [refineProduct query](refine-product.md)
 - [Release Notes](release-notes.md)

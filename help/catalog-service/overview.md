@@ -5,8 +5,6 @@ exl-id: 266faca4-6a65-4590-99a9-65b1705cac87
 ---
 # [!DNL Catalog Service] for Adobe Commerce
 
-{{catalog-service-beta}}
-
 The [!DNL Catalog Service] for Adobe Commerce extension provides rich view-model (read-only) catalog data to quickly and fully render product-related storefront experiences, including:
 
 *  Product detail pages
@@ -33,7 +31,7 @@ Because the service bypasses direct communication with the application, it is ab
 
 >[!NOTE]
 >
->The gateway is for future integration with [!DNL Live Search] and [!DNL Product Recommendations]. In this release, you can access [!DNL Catalog Service] and Live Search queries from the same endpoint, if you have a valid license key for both products. However, the queries from the two products do not currently share any response data.
+>The gateway is for future integration with Product Recommendations. In this release, you can access [!DNL Catalog Service] and [!DNL Live Search] federated queries from the same endpoint if you have a valid license key for both products.
 
 The core and service GraphQL systems do not directly communicate with each other. You access each system from a different URL, and calls require different header information. The two GraphQL systems are designed to be used together. The [!DNL Catalog Service] GraphQL system augments the core system to make product storefront experiences faster.
 
@@ -42,5 +40,3 @@ You can optionally implement [API Mesh for Adobe Developer App Builder](https://
 ## Implementation
 
 The installation process requires configuration of the [Commerce Services Connector](../landing/saas.md). Once that is accomplished, the next step is for a systems integrator to update the storefront code to incorporate the [!DNL Catalog Service] queries. All [!DNL Catalog Service] queries are routed to the GraphQL gateway. The URL is provided during the onboarding process.
-
-[Adobe Commerce Devdocs](https://devdocs.magento.com/catalog-service/index.html) describes the differences between the core and [!DNL Catalog Service] queries. Reference information for each query is also included.

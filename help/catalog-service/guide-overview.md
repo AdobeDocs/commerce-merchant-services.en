@@ -5,8 +5,6 @@ exl-id: d83375b2-0d87-4a0a-baf8-eb7eebe85a80
 ---
 # [!DNL Catalog Service] Guide Overview
 
-{{catalog-service-beta}}
-
 This guide is intended for administrators of Adobe [!DNL Commerce]. It includes general information about [!DNL Catalog Service], including onboarding and installation. It assumes a basic understanding of the core [!DNL Commerce] configuration and functionality.
 
 [!DNL Catalog Service] has two types of users:
@@ -14,8 +12,6 @@ This guide is intended for administrators of Adobe [!DNL Commerce]. It includes 
 *  Adobe [!DNL Commerce] system administrators install and maintain the service. [!DNL Catalog Service] does not have an Admin UI or features for standard Admin users.
 
 *  Integrators build GraphQL queries and integrate them on a storefront that uses a frontend client.
-
-You can find detailed integration information at [Catalog Service for Adobe Commerce](https://devdocs.magento.com/catalog-service/index.html).
 
 ## Additional documentation
 

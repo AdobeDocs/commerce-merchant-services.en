@@ -9,7 +9,7 @@ exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
 
 [!DNL Payment Services] for [!DNL Adobe Commerce] and [!DNL Magento Open Source] offers you comprehensive reporting so that you can get a clear view of your store's orders and payments.
 
-![Financial reports view](assets/orderpayment-dataviz.png )
+![Financial reports view](assets/report-view.png )
 
 There are two available Order payment status reporting views to enable you to quickly view the payment status of your orders:
 
