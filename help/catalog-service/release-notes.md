@@ -5,14 +5,11 @@ exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 ---
 # [!DNL Catalog Service] Release Notes
 
-{{catalog-service-beta}}
-
 These release notes describe the latest versions of [!DNL Catalog Service] and include:
 
 *  ![New](../assets/new.svg) - New features
 *  ![Fix](../assets/fix.svg) - Fixes and improvements
 *  ![Bug](../assets/bug.svg) - Known issues
-
 
 ## V1.0 Release
 
