@@ -9,7 +9,7 @@ exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
 
 [!DNL Payment Services] for [!DNL Adobe Commerce] and [!DNL Magento Open Source] offers you comprehensive reporting so that you can get a clear view of your store's orders and payments.
 
-![Financial reports view](assets/reports-view-new.png)
+![Financial reports view](assets/report-view.png)
 
 There are two available Payouts reporting views to enable you to see in-depth information about all of your payouts:
 
@@ -28,7 +28,7 @@ The Payouts data visualization view is available in the Payment Services Home. I
 
 On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** to see the data visualization chart of credits vs. debits and the moving averages over time.
 
-![Payout data visualization in the Admin](assets/payouts-data.png)
+![Payout data visualization in the Admin](assets/payouts-report.png)
 
 Click **[!UICONTROL View Report]** to navigate to the detailed tabular [Payouts report view](#payouts-report-view).
 
@@ -148,9 +148,9 @@ Payout reports include the following information.
 | [!UICONTROL Code] | Transaction code that indicates either Credit (*CR*) or Debit (*DR*) |
 | [!UICONTROL Reference ID] | Original transaction ID for which this event is related |
 | [!UICONTROL Invoice] | Invoice ID (one per order) of the transaction |
-| [!UICONTROL Commerce order] | Commerce order ID <br> <br>To see related [order info](https://docs.magento.com/user-guide/sales/orders.html), click the ID. |
-| [!UICONTROL Commerce trans] | Commerce transaction ID |
-| [!UICONTROL Pay method] | Credit card type---*[!UICONTROL BANK]*, *[!UICONTROL PAYPAL]*, *[!UICONTROL CREDIT_CARD]*---and associated card provider (such as *Visa* or *MasterCard*) |
+| [!UICONTROL Commerce order] | Commerce order ID <br> <br>To see related [order info](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"}, click the ID. |
+| [!UICONTROL Commerce trans] | Commerce transaction ID <br> <br>To see related [transaction info](https://docs.magento.com/user-guide/sales/transactions.html){target="_blank"}, click the ID. |
+| [!UICONTROL Pay method] | Credit card type---*[!UICONTROL BANK]*, *[!UICONTROL PAYPAL]*, *[!UICONTROL APPLE_PAY]*, *[!UICONTROL CREDIT_CARD]*---and associated card provider (such as *Visa* or *MasterCard*) |
 | [!UICONTROL Trans amt] | Amount of the transaction |
 | [!UICONTROL Cur] | Currency unit for transaction amount |
 | [!UICONTROL Pending] | Amount yet to be disbursed |

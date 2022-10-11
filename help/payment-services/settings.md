@@ -13,9 +13,13 @@ To configure [!DNL Payment Services] for [!DNL Adobe Commerce] and [!DNL Magento
 
 For multi-store or legacy configuration see [Configure in the Admin](configure-admin.md).
 
-## Enable Payment Services
+## Configure General settings
 
-You can enable [!DNL Payment Services] for your website, and enable either sandbox testing or live payments, in the [!UICONTROL General] section.
+The [!UICONTROL General] settings provide the ability to enable or disable Payment Services as your payment method and add information to customer transactions to mark or prefix a website or store view with custom information.
+
+### Enable Payment Services
+
+You can enable [!DNL Payment Services] for your website, and enable either sandbox testing or live payments.
 
 1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 
@@ -25,7 +29,7 @@ You can enable [!DNL Payment Services] for your website, and enable either sandb
 
    The _[!UICONTROL General]_ section includes settings used to enable [!DNL Payment Services] as the payment method.
 
-1. To enable [!DNL Payment Services] as the payment method for your store, in the _[!UICONTROL General]_ section, toggle (**[!UICONTROL Enable Payment Services as payment method]**) to `Yes`.
+1. To enable [!DNL Payment Services] as the payment method for your store, in the _[!UICONTROL General]_ section, toggle **[!UICONTROL Enable Payment Services as payment method]** to `Yes`.
 
 1. If you are still testing [!DNL Payment Services] for your store, set **Payment mode** to `Sandbox`. If you are ready to enable live payments, set it to `Production`.
 
@@ -41,7 +45,31 @@ You can enable [!DNL Payment Services] for your website, and enable either sandb
 
 You can now proceed to changing the default settings for [payment options](#configure-payment-options) functions and storefront display.
 
-### General configuration options
+### Add soft descriptor
+
+You can add a [!UICONTROL Soft Descriptor] to your website(s) or individual store view(s) configuration. Soft descriptors show on customer transaction bank statements. If you have multiple stores/brands/catalogs, for instance, you can easily delineate between those by adding custom text to the [!UICONTROL Soft Descriptor] field.
+
+1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
+
+   ![Home view](assets/payment-services-menu-small.png)
+
+1. Click **[!UICONTROL Settings]**. See [Introduction to [!DNL Payment Services] Home](payments-home.md) for more information.
+1. Select the website or store view, in the **[!UICONTROL Scope]** dropdown menu, for which you want to create a soft descriptor. For initial setup, leave this as **[!UICONTROL Default]** to set the default value.
+1. Add your custom text (up to 22 characters) in the text field, replacing `Custom descriptor`.
+1. Click **[!UICONTROL Save]**.
+1. To create a soft descriptor other than the configured default for a website or store view:
+   1. Select the website or store view, in the **[!UICONTROL Scope]** dropdown menu, for which you want to create a soft descriptor.
+   1. Toggle *off* **[!UICONTROL Use website]** (or **[!UICONTROL Use default]**, dependant on which scope you selected).
+   1. Add your custom text in the text field.
+   1. Click **[!UICONTROL Save]**.
+1. To enable for a website or store view the default soft descriptor *or* the soft descriptor used for the parent website:
+   1. Select the website or store view, in the **[!UICONTROL Scope]** dropdown menu, for which you want to enable an existing soft descriptor.
+   1. Toggle *on* **[!UICONTROL Use website]** (or **[!UICONTROL Use default]**, dependant on which scope you selected).
+   1. Click **[!UICONTROL Save]**.
+
+   If you try to navigate away from this view without saving your changes, a modal appears that prompts you to discard changes, keep editing, or save changes.
+
+### Configuration options
 
 | Field | Scope | Description |
 |---|---|---|
@@ -49,6 +77,7 @@ You can now proceed to changing the default settings for [payment options](#conf
 | [!UICONTROL Payment mode] | store view | Set the method, or environment, for your store. Options: [!UICONTROL Sandbox] / [!UICONTROL Production] |
 | [!UICONTROL Sandbox Merchant ID] | store view | Your sandbox merchant ID, which is auto-generated during sandbox onboarding. |
 | [!UICONTROL Production Merchant ID] | store view | Your production merchant ID, which is auto-generated during sandbox onboarding. |
+| [!UICONTROL Soft Descriptor] | website or store view | Add a soft descriptor to your website(s) and store view(s) to add information to customer transactions which delineate brands, stores, or product lines. The [!UICONTROL Use website] toggle applies any soft descriptor added at the website level. The [!UICONTROL Use default] toggle applies any soft descriptor added as the default.|
 
 ## Configure payment options
 
@@ -140,7 +169,7 @@ You can also configure the _[!UICONTROL Button style]_ options of the PayPal sma
 
 1. To enable the tagline in a horizontal layout, toggle the **[!UICONTROL Show tagline]** selector.
 1. To modify the **[!UICONTROL Color]**, select the desired color option.
-1. To modify the **[!UICONTROL Shape]**, select `Pill` or `Rect`.
+1. To modify the **[!UICONTROL Shape]**, select `Pill` or `Rectangle`.
 1. To enable button height selector, toggle the **[!UICONTROL Responsive button height]** selector.
 1. To modify the **[!UICONTROL Label]**, select the desired label option.
 
@@ -176,3 +205,12 @@ You can configure [!DNL PayPal Smart Buttons] styling [in the Legacy configurati
 If any Cache Type in the Cache Management table has an `INVALIDATED` status, your store might not show the most recent configuration for that item. Flush the cache to update your store to show the latest configuration.
 
 To ensure that your store is showing the correct configuration, periodically [flush the cache](https://docs.magento.com/user-guide/system/cache-management.html).
+
+## Use multiple PayPal accounts
+
+In Payment Services, you can use multiple PayPal accounts within **one** merchant account on the website level. For instance, if you are operating your store(s) in multiple countries (which use different [currencies](https://docs.magento.com/user-guide/stores/currency.html)) or want to use Adobe Commerce for some parts of your business but not *all*, you can set up your merchant account to use multiple PayPal accounts.
+
+See [Site, Store, and View Scope](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) for more information about the hierarchy of websites, stores, and store views.
+
+Your Sales representative can create a new [scope](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) for your merchant account and onboard the additional site with PayPal so that any of the PayPal buttons you configure to appear will show on your site. Contact your Sales representative for assistance with using multiple PayPal accounts for your websites.
+

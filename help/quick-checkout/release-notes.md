@@ -15,6 +15,24 @@ See [Upcoming Releases](https://devdocs.magento.com/release/) to learn about rel
 
 See [Availabilty](https://devdocs.magento.com/release/availability.html) in the developer documentation to learn about product compatibility.
 
+## Admin panel updates
+
+These release notes describe feature changes and fixes that occurred and were released outside of the regular versioned feature releases for the Admin panel.
+
++++Admin panel updates
+
+_October 5, 2022_
+
+![New](../assets/new.svg)<!-- Issue BOLT-379 --> [!DNL Quick Checkout] Admin panel integrates a [feature tour powered by Gainsight](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html).
+
+![New](../assets/new.svg)<!-- Issue BOLT-377 --> The **Reports** tab in the [!DNL Quick Checkout] Admin panel contains the outline of diagrams and reporting information that will soon be available.
+
+![New](../assets/new.svg)<!-- Issue BOLT-377 --> The **Reports** tab in the [!DNL Quick Checkout] Admin panel shows the filter date range for diagrams and reporting information that will soon be available.
+
+![Fixed issue](../assets/fix.svg)<!-- Issue BOLT-369 --> [[!DNL Quick Checkout] Admin Panel](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) now displays the react app version in the footer.
+
++++
+
 ## v1.2.0
 
 _September 8, 2022_
