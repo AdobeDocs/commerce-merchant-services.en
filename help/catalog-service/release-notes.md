@@ -21,9 +21,9 @@ Compatible with Adobe Commerce (EE): 2.4.x
 Compatible with Adobe Commerce for Cloud (ECE): 2.4.x
 Stability: General Availability
 
-![New](../assets/new.svg) - Support for bundled and grouped products
-![New](../assets/new.svg) - B2B visibility overrides: products can be searchable, or added to cart for specific customer groups
-![Fix](../assets/fix.svg) - Improved stability and performance of the service
+![New](../assets/new.svg) - Now support bundled and grouped products.
+![New](../assets/new.svg) - Added B2B visibility overrides. Products are now searchable and can be added to the cart for specific customer groups.
+![Fix](../assets/fix.svg) - Service is now more stable and has improved performance.
 
 ### Known limitations
 
