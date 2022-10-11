@@ -32,11 +32,10 @@ These features are not yet supported:
 *  Tier pricing
 *  Updates are not received when variants are deleted from the catalog
 *  Maximum size for the dynamic attributes payload is <9MB
-*  Fixed price bundle products
-*  Total price for group products
+*  Fixed price for bundle products
+*  Total price for grouped products
 *  Support for virtual, downloadable, and gift card product types
 *  Minimum Advertised Price (MAP)
-*  Product recommendations will not work with ad blockers, Incognito mode, or if cookies are not accepted.
 
 ## 0.3 Release - Beta+
 
