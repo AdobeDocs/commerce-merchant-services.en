@@ -19,7 +19,7 @@ Triggered when a product is added to the cart or when the quantity of a product 
 
 ### XDM event name
 
-`productListAdds`
+`commerce.productListAdds`
 
 ### Type
 
@@ -49,7 +49,7 @@ Triggered when a new cart is created, which is when a product is added to an emp
 
 ### XDM event name
 
-`productListOpens`
+`commerce.productListOpens`
 
 ### Type
 
@@ -79,7 +79,7 @@ Triggered every time a product is removed or every time the quantity of a produc
 
 ### XDM event name
 
-`productListRemovals`
+`commerce.productListRemovals`
 
 ### Type
 
@@ -109,7 +109,7 @@ Triggered when any cart page loads.
 
 ### XDM event name
 
-`productListViews`
+`commerce.productListViews`
 
 ### Type
 
@@ -139,7 +139,7 @@ Triggered when any page loads.
 
 ### XDM event name
 
-`pageViews`
+`web.webpagedetails.pageViews`
 
 ### Type
 
@@ -159,7 +159,7 @@ Triggered when any product page loads.
 
 ### XDM event name
 
-`productViews`
+`commerce.productViews`
 
 ### Type
 
@@ -187,7 +187,7 @@ Triggered when the shopper clicks a checkout button.
 
 ### XDM event name
 
-`checkouts`
+`commerce.checkouts`
 
 ### Type
 
@@ -217,7 +217,7 @@ Triggered when the shopper places an order.
 
 ### XDM event name
 
-`purchases`
+`commerce.order`
 
 ### Type
 
@@ -262,7 +262,7 @@ Triggered when a shopper attempts to sign in.
 
 ### XDM event name
 
-`login`
+`userAccount.login`
 
 ### Type
 
@@ -292,7 +292,7 @@ Triggered when a shopper attempts to sign out.
 
 ### XDM event name
 
-`logout`
+`userAccount.logout`
 
 ### Type
 
@@ -318,7 +318,7 @@ Triggered when a shopper attempts to create an account.
 
 ### XDM event name
 
-`createProfile`
+`userAccount.createProfile`
 
 ### Type
 
@@ -349,7 +349,7 @@ Triggered when a shopper attempts to edit an account.
 
 ### XDM event name
 
-`updateProfile`
+`userAccount.updateProfile`
 
 ### Type
 
