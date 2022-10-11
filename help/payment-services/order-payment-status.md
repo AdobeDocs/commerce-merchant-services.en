@@ -30,7 +30,7 @@ The Order payment status data visualization view is available in the Payment Ser
 
 On the _Admin_ sidebar, go to **Sales** > **Payment Services** to see the data visualization [chart of payment statuses](#statuses-information).
 
-IMAGE
+![Payout data visualization in the Admin](assets/orderpayment-dataviz.png)
 
 Click **View Report** to navigate to the detailed tabular [Order payment status report view](#order-payment-status-report-view).
 
