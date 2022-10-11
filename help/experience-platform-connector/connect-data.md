@@ -13,19 +13,17 @@ To connect your Adobe Commerce instance to the Adobe Experience Platform, you mu
 
 1. In the Admin, go to **System** > Services > **Experience Platform Connector**.
 
-1. In the **Scope** drop-down, set the context to Website.
+1. In the **Scope** drop-down, set the context to **Website**.
 
 1. In the **Organization ID** field, you see the ID associated with your Adobe Experience Platform account, as configured in the [Commerce Services Connector](../landing/saas.md#organizationid). The organization ID is global. Only one organization ID can be associated per Adobe Commerce instance.
 
-1. In the **Datastream ID** field, paste the ID of the datastream you [created](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html) in the Adobe Experience Platform.
+1. In the **Datastream ID** field, paste the ID of the datastream you [created](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html#create) in the Adobe Experience Platform.
 
-1. (Optional) In the **Web SDK name** field, paste the name of the Web SDK already deployed to your site. If you do not have a Web SDK deployed to your site, the Experience Platform connector installs one for you. In that case, you can leave this field blank.
+    >[!NOTE]
+    >
+    >The scope of the datastream ID must be set at the website level or higher. At that level, the same datastream ID is used for each website in the hierarchy. You cannot set the datastream ID scope at the storeview level.
 
-## Relationship of datastream ID and your Commerce instance website
-
-CLARIFY that certain fields are global while the datastream is per website!!!
-
-The datastream ID enables event forwarding from Adobe Experience Platform to other Adobe DX products and must be associated to a specific website within your specific Adobe Commerce instance. You can also associate multiple websites to the same datastream ID. It depends on what makes the most sense for your business. [Learn more](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=en#event-forwarding-settings) about event forwarding.
+1. (Optional) In the **Web SDK Name** field, paste the name of the Web SDK already deployed to your site. If you do not have a Web SDK deployed to your site, leave this field blank and the Experience Platform connector deploys one for you.
 
 ## Field descriptions
 
