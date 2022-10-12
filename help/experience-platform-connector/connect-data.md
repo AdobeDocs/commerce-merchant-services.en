@@ -23,7 +23,7 @@ To connect your Adobe Commerce instance to the Adobe Experience Platform, you mu
     >
     >The scope of the datastream ID must be set at the website level or higher. At that level, the same datastream ID is used for each website in the hierarchy. You cannot set the datastream ID scope at the storeview level.
 
-1. (Optional) If you do not have an AEP Web SDK deployed to your site, leave this field blank and the Experience Platform connector deploys one for you. Otherwise, add the name of the AEP Web SDK.
+1. (Optional) If you do not have an AEP Web SDK deployed to your site, leave this field blank and the Experience Platform connector deploys one for you. Otherwise, add the name of your AEP Web SDK.
 
 ## Field descriptions
 
