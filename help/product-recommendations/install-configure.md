@@ -18,9 +18,9 @@ Because the [!DNL Product Recommendations] module is a stand-alone metapackage, 
 
 Install the `magento/product-recommendations` module with Composer:
 
-   ```bash
-   composer require magento/product-recommendations
-   ```
+```bash
+composer require magento/product-recommendations
+```
 
 ### Add Page Builder support {#pbsupport}
 
@@ -84,6 +84,12 @@ Save the `composer.json` file and run:
 
 ```bash
 composer update magento/product-recommendations --with-dependencies
+```
+
+or if you have installed the `magento/module-visual-product-recommendations` and `magento/module-page-builder-product-recommendations` modules:
+
+```bash
+composer update --with-dependencies magento/product-recommendations magento/module-visual-product-recommendations magento/module-page-builder-product-recommendations
 ```
 
 >[!NOTE]
