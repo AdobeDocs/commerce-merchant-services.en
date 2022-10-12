@@ -86,7 +86,7 @@ Save the `composer.json` file and run:
 composer update magento/product-recommendations --with-dependencies
 ```
 
-or if you have installed the `magento/module-visual-product-recommendations` and `magento/module-page-builder-product-recommendations` modules:
+Or if you have installed the `magento/module-visual-product-recommendations` and `magento/module-page-builder-product-recommendations` modules:
 
 ```bash
 composer update --with-dependencies magento/product-recommendations magento/module-visual-product-recommendations magento/module-page-builder-product-recommendations
