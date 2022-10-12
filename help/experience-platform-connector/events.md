@@ -1,21 +1,25 @@
 ---
 title: Events
-description: Learn what data each event captures and view the full schema definition.
+description: Learn what data each event captures.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
 ---
 # Experience Platform Connector Events
 
 The following lists the Commerce events available when you install the Experience Platform connector extension. The data these events collect is sent to the Adobe Experience Platform edge. You can also create [custom events](custom-events.md) to collect additional data not provided out of the box.
 
-In addition to the data the following events collect, you also get [additional data](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html) provided by the Adobe Experience Platform Web SDK.
+In addition to the data the following events collect, you also get [other data](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html) provided by the Adobe Experience Platform Web SDK.
 
 >[!NOTE]
 >
->All events include the `personID` field, which is a unique identifier of the person.
+>All storefront events include the `personID` field, which is a unique identifier of the person.
 
 ## addToCart
 
-Triggered when a product is added to the cart or when the quantity of a product in the cart is incremented. [Full schema](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/product/addToCartAEP.ts).
+Triggered when a product is added to the cart or when the quantity of a product in the cart is incremented.
+
+### XDM event name
+
+`commerce.productListAdds`
 
 ### Type
 
@@ -28,10 +32,71 @@ The following table describes the data collected for this event.
 |Field|Description|
 |---|---|
 |`productListAdds`|Indicates if a product was added to a shopping cart. A value of `1` indicates that a product was added.|
+|`productListItems`|An array of products added to the shopping cart|
 |`SKU`|Stock Keeping Unit. The unique identifier for the product.|
 |`name`|The display name or human-readable name of the product|
-|`priceTotal`|The total for this order after all discounts and taxes have been applied|
-|`quantity`|The number of units the customer has indicated they require of the product|
+|`priceTotal`|The total price for the product line item|
+|`quantity`|The number of product units added to the cart|
+|`discountAmount`|Indicates the discount amount applied|
+|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency for the product|
+|`productImageUrl`|Main image URL of the product|
+|`selectedOptions`|Field used for a configurable product. `attribute` identifies an attribute of the configurable product, such as `size` or `color` and `value` identifies the value of the attribute such as `small` or `black`.|
+|`cartID`|The unique ID that identifies the customer’s cart|
+
+## openCart
+
+Triggered when a new cart is created, which is when a product is added to an empty cart.
+
+### XDM event name
+
+`commerce.productListOpens`
+
+### Type
+
+Storefront
+
+### Data collected
+
+The following table describes the data collected for this event.
+
+|Field|Description|
+|---|---|
+|`productListOpens`|Indicates if a cart was created. A value of `1` indicates that a cart was created.|
+|`productListItems`|An array of products added to the shopping cart|
+|`SKU`|Stock Keeping Unit. The unique identifier for the product.|
+|`name`|The display name or human-readable name of the product|
+|`priceTotal`|The total price for the product line item|
+|`quantity`|The number of product units added to the cart|
+|`discountAmount`|Indicates the discount amount applied|
+|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency for the product|
+|`productImageUrl`|Main image URL of the product|
+|`selectedOptions`|Field used for a configurable product. `attribute` identifies an attribute of the configurable product, such as `size` or `color` and `value` identifies the value of the attribute such as `small` or `black`.|
+|`cartID`|The unique ID that identifies the customer’s cart|
+
+## removeFromCart
+
+Triggered every time a product is removed or every time the quantity of a product in the cart is decremented.
+
+### XDM event name
+
+`commerce.productListRemovals`
+
+### Type
+
+Storefront
+
+### Data collected
+
+The following table describes the data collected for this event.
+
+|Field|Description|
+|---|---|
+|`productListRemovals`|Indicates if a product was removed from the cart. A value of `1` indicates that a product was removed from the cart.|
+|`productListItems`|An array of products removed from the shopping cart|
+|`SKU`|Stock Keeping Unit. The unique identifier for the product.|
+|`name`|The display name or human-readable name of the product|
+|`priceTotal`|The total price for the product line item|
+|`quantity`|The number of product units removed from the cart|
 |`discountAmount`|Indicates the discount amount applied|
 |`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency for the product|
 |`productImageUrl`|Main image URL of the product|
@@ -40,7 +105,11 @@ The following table describes the data collected for this event.
 
 ## shoppingCartView
 
-Triggered when any cart page loads. [Full schema](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/shoppingCart/viewAEP.ts).
+Triggered when any cart page loads.
+
+### XDM event name
+
+`commerce.productListViews`
 
 ### Type
 
@@ -53,11 +122,11 @@ The following table describes the data collected for this event.
 |Field|Description|
 |---|---|
 |`productListViews`|Indicates if a product list was viewed|
-|`productListItems`|An array of products added to a shopping cart|
+|`productListItems`|An array of products in the shopping cart|
 |`SKU`|Stock Keeping Unit. The unique identifier for the product.|
 |`name`|The display name or human-readable name of the product|
-|`priceTotal`|The total for this order after all discounts and taxes have been applied|
-|`quantity`|The number of units the customer has indicated they require of the product|
+|`priceTotal`|The total price for the product line item|
+|`quantity`|The number of product units in the cart|
 |`discountAmount`|Indicates the discount amount applied|
 |`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency for the product|
 |`productImageUrl`|Main image URL of the product|
@@ -66,7 +135,11 @@ The following table describes the data collected for this event.
 
 ## pageView
 
-Triggered when any page loads. [Full schema](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/page/viewAEP.ts).
+Triggered when any page loads.
+
+### XDM event name
+
+`web.webpagedetails.pageViews`
 
 ### Type
 
@@ -82,7 +155,11 @@ The following table describes the data collected for this event.
 
 ## productPageView
 
-Triggered when any product page loads. [Full schema](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/product/viewAEP.ts).
+Triggered when any product page loads.
+
+### XDM event name
+
+`commerce.productViews`
 
 ### Type
 
@@ -95,10 +172,10 @@ The following table describes the data collected for this event.
 |Field|Description|
 |---|---|
 |`productViews`|Indicates if the product was viewed|
-|`productListItems`|An array of products added to a shopping cart|
+|`productListItems`|An array of products in the shopping cart|
 |`SKU`|Stock Keeping Unit. The unique identifier for the product.|
 |`name`|The display name or human-readable name of the product|
-|`priceTotal`|The total for this order after all discounts and taxes have been applied|
+|`priceTotal`|The total price for the product line item|
 |`discountAmount`|Indicates the discount amount applied|
 |`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency for the product|
 |`productImageUrl`|Main image URL of the product|
@@ -106,7 +183,11 @@ The following table describes the data collected for this event.
 
 ## startCheckout
 
-Triggered when the shopper clicks a checkout button. [Full schema](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/shoppingCart/initiateCheckoutAEP.ts).
+Triggered when the shopper clicks a checkout button.
+
+### XDM event name
+
+`commerce.checkouts`
 
 ### Type
 
@@ -119,11 +200,11 @@ The following table describes the data collected for this event.
 |Field|Description|
 |---|---|
 |`checkouts`|Indicates if an action occurred during the checkout process|
-|`productListItems`|An array of products added to a shopping cart|
+|`productListItems`|An array of products in the shopping cart|
 |`SKU`|Stock Keeping Unit. The unique identifier for the product.|
 |`name`|The display name or human-readable name of the product|
-|`priceTotal`|The total for this order after all discounts and taxes have been applied|
-|`quantity`|The number of units the customer has indicated they require of the product|
+|`priceTotal`|The total price for the product line item|
+|`quantity`|The number of product units in the cart|
 |`discountAmount`|Indicates the discount amount applied|
 |`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency for the product|
 |`productImageUrl`|Main image URL of the product|
@@ -132,7 +213,11 @@ The following table describes the data collected for this event.
 
 ## completeCheckout
 
-Triggered when the shopper places an order. [Full schema](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/checkout/placeOrderAEP.ts).
+Triggered when the shopper places an order.
+
+### XDM event name
+
+`commerce.order`
 
 ### Type
 
@@ -157,11 +242,11 @@ The following table describes the data collected for this event.
 |`shippingMethod`|The method of shipping chosen by the customer, such as standard delivery, expedited delivery, pick up in store, and so on|
 |`shippingAmount`|The total shipping cost for the items in the cart|
 |`promotionID`|Unique identifier of the promotion, if any|
-|`productListItems`|An array of products added to a shopping cart|
+|`productListItems`|An array of products in the shopping cart|
 |`SKU`|Stock Keeping Unit. The unique identifier for the product.|
 |`name`|The display name or human-readable name of the product|
-|`priceTotal`|The total for this order after all discounts and taxes have been applied|
-|`quantity`|The number of units the customer has indicated they require of the product|
+|`priceTotal`|The total price for the product line item|
+|`quantity`|The number of product units in the cart|
 |`discountAmount`|Indicates the discount amount applied|
 |`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for the order totals.|
 |`productImageUrl`|Main image URL of the product|
@@ -169,11 +254,15 @@ The following table describes the data collected for this event.
 
 ## signIn
 
-Triggered when a shopper attempts to sign in. [Full schema](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/signInAEP.ts).
+Triggered when a shopper attempts to sign in.
 
 >[!NOTE]
 >
 > This event is triggered when the specific action is attempted. It does not indicate that the action was successful. 
+
+### XDM event name
+
+`userAccount.login`
 
 ### Type
 
@@ -195,11 +284,15 @@ The following table describes the data collected for this event.
 
 ## signOut
 
-Triggered when a shopper attempts to sign out. [Full schema](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/signOutAEP.ts).
+Triggered when a shopper attempts to sign out.
 
 >[!NOTE]
 >
 > This event is triggered when the specific action is attempted. It does not indicate that the action was successful. 
+
+### XDM event name
+
+`userAccount.logout`
 
 ### Type
 
@@ -217,11 +310,15 @@ The following table describes the data collected for this event.
 
 ## createAccount
 
-Triggered when a shopper attempts to create an account. [Full schema](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/createAccountAEP.ts).
+Triggered when a shopper attempts to create an account.
 
 >[!NOTE]
 >
 > This event is triggered when the specific action is attempted. It does not indicate that the action was successful. 
+
+### XDM event name
+
+`userAccount.createProfile`
 
 ### Type
 
@@ -244,11 +341,15 @@ The following table describes the data collected for this event.
 
 ## editAccount
 
-Triggered when a shopper attempts to edit an account. [Full schema](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/editAccountAEP.ts).
+Triggered when a shopper attempts to edit an account.
 
 >[!NOTE]
 >
 > This event is triggered when the specific action is attempted. It does not indicate that the action was successful. 
+
+### XDM event name
+
+`userAccount.updateProfile`
 
 ### Type
 
@@ -287,11 +388,13 @@ Triggered by the following events on search results pages:
 - Navigate to the previous page
 - Navigate to a different page
 
-[Full schema](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/search/searchRequestSentAEP.ts).
-
 >[!NOTE]
 >
 >Search events are not supported on an Adobe Commerce Enterprise Edition with the B2B module installed.
+
+### XDM event name
+
+`searchRequest`
 
 ### Type
 
@@ -317,11 +420,13 @@ The following table describes the data collected for this event.
 
 Triggered when Live Search returns results for the “search as you type” popover or search results page.
 
-[Full schema](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/search/searchResponseReceivedAEP.ts)
-
 >[!NOTE]
 >
 >Search events are not supported on an Adobe Commerce Enterprise Edition with the B2B module installed.
+
+### XDM event name
+
+`searchResponse`
 
 ### Type
 
@@ -336,4 +441,4 @@ The following table describes the data collected for this event.
 |`searchResponse`|Indicates if a search response has been received|
 |`suggestions`|An array of strings that include the names of products and categories that exist in the catalog that are similar to the search query|
 |`numberOfResults`|The number of products returned|
-|`productListItems`|An array of products added to a shopping cart. Includes the `SKU`(Stock Keeping Unit) and `name` of the product (display name or human-readable name.)|
+|`productListItems`|An array of products in the shopping cart. Includes the `SKU`(Stock Keeping Unit) and `name` of the product (display name or human-readable name.)|

@@ -13,23 +13,26 @@ To connect your Adobe Commerce instance to the Adobe Experience Platform, you mu
 
 1. In the Admin, go to **System** > Services > **Experience Platform Connector**.
 
-1. In the **Scope** drop-down, select the context, or “scope” of the store view.
+1. In the **Scope** drop-down, set the context to **Website**.
 
 1. In the **Organization ID** field, you see the ID associated with your Adobe Experience Platform account, as configured in the [Commerce Services Connector](../landing/saas.md#organizationid). The organization ID is global. Only one organization ID can be associated per Adobe Commerce instance.
 
-1. In the **Datastream ID** field, paste the ID of the datastream you [created](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html) in the Adobe Experience Platform.
+1. In the **Datastream ID** field, paste the ID of the datastream you [created](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html#create) in the Adobe Experience Platform.
 
-## Relationship of datastream ID and your Commerce instance storeview
+    >[!NOTE]
+    >
+    >The scope of the datastream ID must be set at the website level or higher. At that level, the same datastream ID is used for each website in the hierarchy. You cannot set the datastream ID scope at the storeview level.
 
-The datastream ID enables event forwarding from Adobe Experience Platform to other Adobe DX products and can be associated to a specific store view within your specific Adobe Commerce instance. You can also associate multiple store views to the same Datastream ID. It depends on what makes the most sense for your business. [Learn more](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=en#event-forwarding-settings) about event forwarding.
+1. (Optional) If you do not have an AEP Web SDK deployed to your site, leave this field blank and the Experience Platform connector deploys one for you. Otherwise, add the name of your AEP Web SDK.
 
 ## Field descriptions
 
 | Field | Description |
 |--- |--- |
-| Scope | Specific store view where you want the configuration settings to apply. |
+| Scope | Specific website where you want the configuration settings to apply. |
 | Organization ID (Global)| ID that belongs to the organization that purchased the Adobe DX product. This ID links your Adobe Commerce instance to Adobe Experience Platform. |
-| Datastream ID (Store view) | ID that allows data to flow from Adobe Experience Platform to other Adobe DX products. This ID can be associated to a specific store view within your specific Adobe Commerce instance. |
+| Datastream ID (Website) | ID that allows data to flow from Adobe Experience Platform to other Adobe DX products. This ID must be associated to a specific website within your specific Adobe Commerce instance. |
+|AEP Web SDK Name (Global)| If you do not have an AEP Web SDK deployed to your site, leave this field blank and the Experience Platform connector deploys one for you. If you already have an AEP Web SDK deployed to your site, specify the name of that SDK in this field. This allows the Storefront Event Collector and Storefront Event SDK to use your AEP Web SDK rather than the version deployed by the Experience Platform connector.|
 
 With the Experience Platform connector extension installed, the link between Adobe Commerce and Adobe Experience Platform created, and the Datastream ID specified, Commerce data begins to flow to the Adobe Experience Platform edge and to other Adobe DX products. 
 
