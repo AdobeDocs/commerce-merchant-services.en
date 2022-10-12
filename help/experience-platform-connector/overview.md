@@ -21,7 +21,7 @@ In order to use the Experience Platform connector, you must have the following:
 - Adobe ID and Organization ID
 - Entitlements to other Adobe DX products
 
-## Onboarding steps {#onboard}
+## Onboarding steps
 
 1. [Install](install.md) the Experience Platform connector extension.
 1. [Sign in](https://helpx.adobe.com/manage-account/using/access-adobe-id-account.html) to your Adobe account and [view](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=en#concept_EA8AEE5B02CF46ACBDAD6A8508646255) your organization ID. The organization ID is the ID associated with your provisioned Experience Cloud company. This ID is a 24-character alphanumeric string, followed by (and must include) `@AdobeOrg`.
