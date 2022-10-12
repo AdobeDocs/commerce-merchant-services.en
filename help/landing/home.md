@@ -9,9 +9,60 @@ exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
 <!-- # <!-- use banner as heading -->![Services documentation](./assets/banner-services-home.png) {#documentation} -->
 # Adobe Commerce Services Guides
 
-Adobe provides a collection of services to help merchants support key components of their business. 
+Adobe provides a collection of services to help merchants support key components of their business.
 
 ## Available services
+
+<table>
+<tr>
+    <td valign="top">
+       <img alt="Amazon sales channel" src="assets/amazon-channel.png" ></td>
+   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-channels/amazon/guide-overview.html"> <strong>Amazon sales channel</strong></a> <em>(Available for Magento Open Source)</em>
+    <div>Integrate with the world's largest global online shopping destination by enabling Amazon sales, providing automation and synchronization of data, manage Amazon listings, implement intelligent pricing rules, and maintain orders and inventory through a single dashboard.</div>
+  </td>
+   </tr>
+<tr>
+    <td valign="top">
+       <img alt="[!DNL Channel manager]" src="assets/channel-manager.png" ></td>
+   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html"> <strong>Channel manager</strong></a> <em>(Available for Magento Open Source)</em>
+    <div>Increase sales, reach new customers, streamline operations, and save time by integrating a product catalog with the Walmart Marketplace. Enable staff to manage Walmart Marketplace sales, inventory, and product pricing seamlessly in Commerce.</div>
+  </td>
+   </tr>
+<tr>
+  <td valign="top">
+      <img alt="[!DNL Live Search]" src="assets/live-search.png" /></td>
+   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/overview.html"><strong>[!DNL Live Search]</strong></a>  
+    <div>
+    <p>Implement this AI-powered search tool that delivers smarter, faster and relevant results for B2C shoppers.</em></p>
+    </div>
+  </td>
+   </tr>
+<tr>
+  <td valign="top">
+    <img alt="Payment Services" src="assets/payment-services.png" /></td>
+   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/guide-overview.html"><strong>Payment Services</strong></a>  <em>(Available for Magento Open Source)</em>
+    <div>Drive customer satisfaction by easily offering various payment methods, including interest-free payment installments, and a single view into payment processing, orders, and invoices.
+   </div>
+  </td>
+    </tr>
+<tr>
+   <td valign="top" width="200">
+       <img alt="[!UICONTROL Product Recommendations]" src="assets/product-recs.png" /></td>
+   <td valign="top">
+   <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/overview.html"><strong>[!DNL Product Recommendations]</strong></a>
+    <div>
+    <p>Add AI-fueled recommendations based on shopper behavior, popular trends, product similarity, and more.</em></p></em>
+    </div>
+  </td>
+   </tr>
+<tr>
+    <td valign="top">
+       <img alt="Store Fulfillment" src="assets/store-fulfillment-landing-graphic.png" /></td>
+   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/guide-overview.html"> <strong>Store Fulfillment</strong></a> <em>(Available for Magento Open Source)</em>
+    <div>Deliver a superior buy online, pick up in store (BOPIS) customer experience, and maximize employee productivity, by providing a seamless fulfillment workflow enabled through a mobile device.</div>
+  </td>
+   </tr>
+</table>
 
 <table>
 <tr>
