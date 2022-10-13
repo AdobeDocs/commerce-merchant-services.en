@@ -55,14 +55,12 @@ The Order payment status data visualization view includes the following informat
 | ------------ | -------------------- |
 | [!UICONTROL Orders] | Amount range for orders in specified time frame; data on the Y axis (left) |
 | Date range | Date range for the specified time frame; data on the X axis (bottom) |
+| Authorized | Order authorized |
+| Capture requested | Capture requested for order |
+| Capture confirmed | Order capture completed |
+| Partial capture | Order partially captured |
 | Capture failed | Order capture failed |
 | Voided | Order voided |
-| Paid | Order paid |
-| Capture confirmed | Order capture completed |
-| Part capture confirmed | Portion of order captured |
-| Capture requested | Capture requested for order |
-| Part capture requested | Partial capture requested for order |
-| Authorized | Order authorized |
 
 ## Order payment status report view
 
