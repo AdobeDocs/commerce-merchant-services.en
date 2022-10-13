@@ -6,7 +6,6 @@ seo-description: Access the product documentation for hosted services that help 
 breadcrumb-title: Documentation
 exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
 ---
-<!-- # <!-- use banner as heading -->![Services documentation](./assets/banner-services-home.png) {#documentation} -->
 # Adobe Commerce Services Guides
 
 Adobe provides a collection of services to help merchants support key components of their business.
