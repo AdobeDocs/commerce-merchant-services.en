@@ -118,6 +118,7 @@ For each of the following events, map the Adobe Commerce events to your XDM by f
 - [`searchRequestSent`](#searchrequestsent)
 - [`searchResponseReceived`](#searchresponsereceived)
 - [`addToCart`](#addtocart)
+- [`openCart`](#opencart)
 - [`viewCart`](#viewcart)
 - [`removeFromCart`](#removefromcart)
 - [`initiateCheckout`](#initiatecheckout)
@@ -778,6 +779,39 @@ Create the following data elements:
 - **Action Type**: `Send event`
 - **Type**: `commerce.productListAdds`
 - **XDM data**: `%add to cart%`
+
+### openCart {#opencart}
+
+Triggered when a new cart is created, which is when a product is added to an empty cart.
+
+#### Data Elements
+
+Create the following data element:
+
+1. Open cart:
+
+    - **Name**: `open cart`
+    - **Extension**: `Adobe Experience Platform Web SDK`
+    - **Data Element Type**: `XDM object`
+    - **Field Group**: `commerce` > `productListOpens` > `value`
+    - **value**: **Value** = `1`
+    - **Field Group**: `commerce` > `cart` > `cartID`
+    - **Cart ID**: **Value** = `%cart id%`
+    - **Field Group**: `productListItems`. For `productListItems`, there can be multiple items that are precomputed. Select **productListItems** > **Provide entire array**.
+
+#### Rules 
+
+- **Name**: `open cart`
+- **Extension**: `Adobe Client Data Layer`
+- **Event Type**: `Data Pushed`
+- **Specific event**: `open-cart`
+
+##### Actions
+
+- **Extension**: `Adobe Experience Platform Web SDK`
+- **Action Type**: `Send event`
+- **Type**: `commerce.productListOpens`
+- **XDM data**: `%open cart%`
 
 ### viewCart {#viewcart}
 
