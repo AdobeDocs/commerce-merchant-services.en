@@ -6,7 +6,7 @@ title: Services for Adobe Commerce
 # Services for Adobe Commerce documentation {#user-guides}
 
 - [Overview](home.md)
-- Commerce services {#services}
+- Commerce services {#commerce-services}
    - [[!DNL Amazon Sales Channel]](https://experienceleague.adobe.com/docs/commerce-channels/amazon/guide-overview.html)
    - [[!DNL Catalog Service]](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/guide-overview.html)
    - [Catalog Sync](/help/landing/catalog-sync.md)
