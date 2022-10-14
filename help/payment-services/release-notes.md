@@ -51,7 +51,7 @@ _June 28, 2021_
 
 _October 14, 2022_
 
-![New](../assets/new.svg)<!-- Issue PAY-3766 --> When a customer's payment method is declined, the visible error message is more descriptive. It advises the customer to re-enter payment information and try again, try another payment method, or contact the issuing bank for their failed payment method.
+![New](../assets/new.svg)<!-- Issue PAY-3766 --> When a customer's payment method is declined, the visible error message is more descriptive. It advises the customer to re-enter payment information and try again, try another payment method, or to contact their bank about the declined the transaction.
 
 ## v1.4.0
 
