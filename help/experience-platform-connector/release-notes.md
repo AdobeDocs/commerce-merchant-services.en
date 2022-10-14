@@ -26,12 +26,12 @@ These release notes describe feature changes and fixes related to extensions use
 _October 12, 2022_
 
 * ![New](../assets/new.svg) - Added two new [storefront events](events.md): `openCart` and `removeFromCart` to the Adobe Commerce Storefront Events SDK and Collector
+* ![New](../assets/new.svg) - Added support for an [AEM storefront](overview.md#aem-support)
 
 ## 2.0.0
 
 _October 12, 2022_
 
-* ![New](../assets/new.svg) - Added support for an [AEM storefront](overview.md#aem-support)
 * ![New](../assets/new.svg) - Added ability to specify your own AEP Web SDK when [connecting](connect-data.md) your Adobe Commerce instance to the Experience Platform
 * ![Fix](../assets/fix.svg) - Updated datastream scope requirement so that datastream IDs must be scoped to the website rather than storeview
 
