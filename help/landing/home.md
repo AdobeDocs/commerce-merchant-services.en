@@ -10,26 +10,24 @@ exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
 
 Adobe provides a collection of services to help merchants support key components of their business.
 
-## Available services
-
 <table>
 <tr>
-    <td valign="top">
-       <img alt="Amazon sales channel" src="assets/amazon-channel.png" ></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-channels/amazon/guide-overview.html"> <strong>Amazon sales channel</strong></a> <em>(Available for Magento Open Source)</em>
-    <div>Integrate with the world's largest global online shopping destination by enabling Amazon sales, providing automation and synchronization of data, manage Amazon listings, implement intelligent pricing rules, and maintain orders and inventory through a single dashboard.</div>
+    <td valign="top" width="200px">
+       <img alt="Amazon sales channel" src="assets/amazon-channel.png" width="170px"></td>
+   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-channels/amazon/guide-overview.html"> <strong>Amazon sales channel</strong></a> <br><em>(Available for Magento Open Source)</em>
+    <div>Integrate with the world's largest global online shopping destination to enable Amazon sales, provide data automation and synchronization, manage Amazon listings, and more through a single dashboard.</div>
   </td>
    </tr>
 <tr>
     <td valign="top">
-       <img alt="[!DNL Channel manager]" src="assets/channel-manager.png" ></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html"> <strong>Channel manager</strong></a> <em>(Available for Magento Open Source)</em>
-    <div>Increase sales, reach new customers, streamline operations, and save time by integrating a product catalog with the Walmart Marketplace. Enable staff to manage Walmart Marketplace sales, inventory, and product pricing seamlessly in Commerce.</div>
+       <img alt="[!DNL Channel manager]" src="assets/channel-manager.png" width="170px"></td>
+   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html"> <strong>Channel manager</strong></a> <br><em>(Available for Magento Open Source)</em>
+    <div>Increase sales, reach new customers, streamline operations, and save time by integrating with the Walmart Marketplace. Enable staff to manage Walmart Marketplace product catalogs seamlessly in Commerce.</div>
   </td>
    </tr>
 <tr>
   <td valign="top">
-      <img alt="[!DNL Live Search]" src="assets/live-search.png" /></td>
+      <img alt="[!DNL Live Search]" src="assets/live-search.png" width="170px"/></td>
    <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/overview.html"><strong>[!DNL Live Search]</strong></a>  
     <div>
     <p>Implement this AI-powered search tool that delivers smarter, faster and relevant results for B2C shoppers.</em></p>
@@ -38,15 +36,15 @@ Adobe provides a collection of services to help merchants support key components
    </tr>
 <tr>
   <td valign="top">
-    <img alt="Payment Services" src="assets/payment-services.png" /></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/guide-overview.html"><strong>Payment Services</strong></a>  <em>(Available for Magento Open Source)</em>
+    <img alt="Payment Services" src="assets/payment-services.png" width="170px"/></td>
+   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/guide-overview.html"><strong>Payment Services</strong></a>  <br><em>(Available for Magento Open Source)</em>
     <div>Drive customer satisfaction by easily offering various payment methods, including interest-free payment installments, and a single view into payment processing, orders, and invoices.
    </div>
   </td>
     </tr>
 <tr>
    <td valign="top" width="200">
-       <img alt="[!UICONTROL Product Recommendations]" src="assets/product-recs.png" /></td>
+       <img alt="[!UICONTROL Product Recommendations]" src="assets/product-recs.png" width="170px"/></td>
    <td valign="top">
    <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/overview.html"><strong>[!DNL Product Recommendations]</strong></a>
     <div>
@@ -56,68 +54,11 @@ Adobe provides a collection of services to help merchants support key components
    </tr>
 <tr>
     <td valign="top">
-       <img alt="Store Fulfillment" src="assets/store-fulfillment-landing-graphic.png" /></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/guide-overview.html"> <strong>Store Fulfillment</strong></a> <em>(Available for Magento Open Source)</em>
-    <div>Deliver a superior buy online, pick up in store (BOPIS) customer experience, and maximize employee productivity, by providing a seamless fulfillment workflow enabled through a mobile device.</div>
+       <img alt="Store Fulfillment" src="assets/store-fulfillment-landing-graphic.png" width="170px"/></td>
+   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/guide-overview.html"> <strong>Store Fulfillment</strong></a> <br><em>(Available for Magento Open Source)</em>
+    <div>Deliver a superior buy online, pick up in store (BOPIS) customer experience and maximize employee productivity by providing a comprehensive fulfillment workflow enabled through a mobile device.</div>
   </td>
    </tr>
-</table>
-
-<table>
-<tr>
-   <td valign="top">
-       <img alt="[!UICONTROL Product Recommendations]" src="assets/product-recs.png" />
-    <div><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/overview.html">
-    <strong>[!DNL Product Recommendations]</strong></a>
-    </div>
-    <p>(Adobe Commerce only)<br><em>Add AI-fueled recommendations based on shopper behavior, popular trends, product similarity, and more.</em></p>
-    </br>
-  </td>
-  <td valign="top">
-      <img alt="[!DNL Live Search]" src="assets/live-search.png" />
-    <div>
-    <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/overview.html"><strong>[!DNL Live Search]</strong></a>
-    </div>
-    <p>(Adobe Commerce only)<br><em>Implement this AI-powered search tool that delivers smarter, faster and relevant results for B2C shoppers.</em></p>
-    </br>
-  </td>
-</tr>
-<tr>
-  <td valign="top">
-    <img alt="[!DNL Payment Services]" src="assets/payment-services.png"/>
-    <div>
-    <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/guide-overview.html"><strong>[!DNL Payment Services]</strong></a>
-    </div>
-    <em>Drive customer satisfaction by easily offering various payment methods, including interest-free payment installments, and a single view into payment processing, orders, and invoices right in your Admin dashboard.</em>
-    </br>
-  </td>
-  <td valign="top">
-    <img alt="Store Fulfillment" src="assets/store-fulfillment-landing-graphic.png"/>
-    <div><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/guide-overview.html">
-    <strong>[!DNL Store Fulfillment]</strong></a>
-    </div>
-    <p>(Adobe Commerce only)<br><em>Deliver a superior buy online, pick up in store (BOPIS) customer experience, and maximize store employees' productivity by providing an end to end, seamless omnichannel fulfillment workflow that is enabled through a mobile device.</em></p>
-    </br>
-  </td>
-  </tr>
-  <tr>
-   <td valign="top">
-    <img alt="[!DNL Channel Manager]" src="assets/channel-manager.png"/>
-    <div>
-    <a href="https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html"><strong>[!DNL Channel Manager]</strong></a>
-    </div>
-    <em>Increase sales, reach new customers, streamline sales operations, and save time by integrating an Adobe Commerce or Magento Open Source product catalog with the Walmart Marketplace. Enable store administrators and operations staff to manage Walmart Marketplace sales, inventory, and product pricing seamlessly from the Commerce environment.</em>
-    </br>
-  </td>
-    <td valign="top">
-       <img alt="Amazon sales channel" src="assets/amazon-channel.png" />
-    <div><a href="https://experienceleague.adobe.com/docs/commerce-channels/amazon/guide-overview.html">
-    <strong>[!DNL Amazon Sales Channel]</strong></a>
-    </div>
-    <p><em>Integrate your stores with the world's largest global internet shopping destination. This service enables Amazon sales by connecting Commerce with your Amazon Seller Central account and providing both automation and synchronization of catalog and order data. Completely manage all Amazon listings, implement simple or intelligent pricing rules, and maintain your orders and inventory through a single Commerce dashboard.</em></p>
-    </br>
-  </td>
-</tr>
 </table>
 
 ## Connect to services
