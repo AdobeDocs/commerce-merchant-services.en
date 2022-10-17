@@ -782,7 +782,7 @@ Create the following data elements:
 
 ### openCart {#opencart}
 
-Triggered when a new cart is created, which is when a product is added to an empty cart.
+Triggered when a new cart is created, which happens when a product is added to an empty cart.
 
 #### Data Elements
 
@@ -797,7 +797,7 @@ Create the following data element:
     - **value**: **Value** = `1`
     - **Field Group**: `commerce` > `cart` > `cartID`
     - **Cart ID**: **Value** = `%cart id%`
-    - **Field Group**: `productListItems`. For `productListItems`, there can be multiple items that are precomputed. Select **productListItems** > **Provide entire array**.
+    - **Field Group**: `productListItems`. For `productListItems`, multiple items can be precomputed. Select **productListItems** > **Provide entire array**.
 
 #### Rules 
 

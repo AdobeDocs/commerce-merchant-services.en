@@ -11,7 +11,7 @@ These release notes contain updates to the Experience Platform connector and inc
 * ![Fix](../assets/fix.svg) - Fixes and improvements
 * ![Bug](../assets/bug.svg) - Known issues
 
-For feature changes and fixes related to extensions used by the Experience Platform connector, see the **Supported service updates** section.
+For feature changes and fixes related to extensions used by the Experience Platform connector, see **Supported service updates**.
 
 See [Upcoming Releases](https://experienceleague.adobe.com/docs/commerce-operations/release/schedule.html) to learn about release schedules and support.
 
@@ -25,7 +25,7 @@ These release notes describe feature changes and fixes related to extensions use
 
 _October 12, 2022_
 
-* ![New](../assets/new.svg) - Added two new [storefront events](events.md): `openCart` and `removeFromCart` to the Adobe Commerce Storefront Events SDK and Collector
+* ![New](../assets/new.svg) - Added two [storefront events](events.md): `openCart` and `removeFromCart` to the Adobe Commerce Storefront Events SDK and Collector
 * ![New](../assets/new.svg) - Added support for an [AEM storefront](overview.md#aem-support)
 
 ## 2.0.0
