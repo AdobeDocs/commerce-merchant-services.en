@@ -7,9 +7,9 @@ exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 
 These release notes describe the latest versions of [!DNL Catalog Service] and include:
 
-*  ![New](../assets/new.svg) - New features
-*  ![Fix](../assets/fix.svg) - Fixes and improvements
-*  ![Bug](../assets/bug.svg) - Known issues
+*  ![New](../assets/new.svg) New features
+*  ![Fix](../assets/fix.svg) Fixes and improvements
+*  ![Bug](../assets/bug.svg) Known issues
 
 ## V1.0 Release
 
@@ -18,9 +18,9 @@ Compatible with Adobe Commerce (EE): 2.4.x
 Compatible with Adobe Commerce for Cloud (ECE): 2.4.x
 Stability: General Availability
 
-![New](../assets/new.svg) - Now support bundled and grouped products.
-![New](../assets/new.svg) - Added B2B visibility overrides. Products are now searchable and can be added to the cart for specific customer groups.
-![Fix](../assets/fix.svg) - Service is now more stable and has improved performance.
+![New](../assets/new.svg) Now support bundled and grouped products.
+![New](../assets/new.svg) Added B2B visibility overrides. Products are now searchable and can be added to the cart for specific customer groups.
+![Fix](../assets/fix.svg) Service is now more stable and has improved performance.
 
 ### Known limitations
 
@@ -41,10 +41,10 @@ Compatible with Adobe Commerce (EE): 2.4.x
 Compatible with Adobe Commerce for Cloud (ECE): 2.4.x
 Stability: Beta
 
-![New](../assets/new.svg) - Images for variants support: product images are returned based on the selected options
-![New](../assets/new.svg) - Roles for prices support: allow only members of specific customer groups to see the price of products
-![Fix](../assets/fix.svg) - Improved stability and performance of the service
-![New](../assets/new.svg) - Updates are received when products are deleted from the catalog 
+![New](../assets/new.svg) Images for variants support: product images are returned based on the selected options
+![New](../assets/new.svg) Roles for prices support: allow only members of specific customer groups to see the price of products
+![Fix](../assets/fix.svg) Improved stability and performance of the service
+![New](../assets/new.svg) Updates are received when products are deleted from the catalog 
 
 ### Known limitations
 
@@ -62,7 +62,8 @@ Compatible with Adobe Commerce (EE): 2.4.x
 Compatible with Adobe Commerce for Cloud (ECE): 2.4.x
 Stability: Beta
 
-*  ![New](../assets/new.svg) - The `products` and `refineProduct` queries return the following data:
+![New](../assets/new.svg) The `products` and `refineProduct` queries return the following data:
+
 *  Predefined (system) product attributes.
 *  Dynamic product attributes and filter them by role (product display page/product list page).
 *  Product options.
