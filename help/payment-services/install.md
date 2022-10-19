@@ -42,10 +42,10 @@ This method is used for installing the [!DNL Payment Services] extension for a C
 1. Update dependencies and install the extension:
 
    ```bash
-   composer update
+   composer update magento/payment-services --with-dependencies
    ```
 
-   The `composer update` command updates all dependencies. If you do not want to update all dependencies at the same time, use this command instead: `composer require magento/payment-services`.
+   Use `composer update` command to updates all root dependencies.
 
 1. Commit and push your changes.
 
@@ -62,10 +62,10 @@ This method is used for installing the [!DNL Payment Services] extension for an 
 1. Update dependencies and install the extension:
 
    ```bash
-   composer update
+   composer update magento/payment-services --with-dependencies
    ```
 
-   The `composer update` command updates all dependencies. If you do not want to update all dependencies at the same time, use this command instead: `composer require magento/payment-services`.
+   Use `composer update` command to updates all root dependencies.
 
 1. Upgrade your instance:
 
@@ -89,10 +89,10 @@ When a new version of [!DNL Payment Services] is released, you can easily upgrad
 1. To obtain the most recent version of the package:
 
    ```bash
-   composer update
+   composer update magento/payment-services --with-dependecies
    ```
 
-   The `composer update` command updates all dependencies. If you do not want to update all dependencies at the same time, use this command instead: `composer update magento/payment-services`.
+   Use `composer update` command to updates all dependencies.
 
 1. Commit and push your changes.
 
@@ -108,7 +108,7 @@ If you see the following error denoting that you have the incorrect Composer key
 Could not find a matching version of package magento/payment-services. Check the package spelling, your version constraint and that the package is available in a stability which matches your minimum-stability (stable).
 ```
 
-Verify that your Composer keys are linked to the `MageID` used during [!DNL Payment Services] registration.
+Verify that your Composer keys are valid and you have access to other magento packages.
 
 To see which Composer keys are configured:
 
