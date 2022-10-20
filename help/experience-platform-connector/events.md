@@ -441,4 +441,7 @@ The following table describes the data collected for this event.
 |`searchResponse`|Indicates if a search response has been received|
 |`suggestions`|An array of strings that include the names of products and categories that exist in the catalog that are similar to the search query|
 |`numberOfResults`|The number of products returned|
-|`productListItems`|An array of products in the shopping cart. Includes the `SKU`(Stock Keeping Unit) and `name` of the product (display name or human-readable name.)|
+|`productListItems`|An array of products in the shopping cart.|
+|`SKU`|Stock Keeping Unit. The unique identifier for the product.|
+|`name`|The display name or human-readable name of the product|
+|`productImageUrl`|Main image URL of the product|
