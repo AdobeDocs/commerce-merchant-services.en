@@ -32,14 +32,20 @@ At this time, the [!DNL Live Search] search/category API has the following suppo
 * Indexes only products from the Adobe Commerce database
 * Does not index CMS pages
 
-### Synonyms
-
-* [!DNL Live Search] can manage up to 200 synonyms per `Data Space ID`.
-
 ### Query
 
 * [!DNL Live Search] does not have access to the full taxonomy of the category tree, which makes some layered navigation search scenarios beyond its reach.
 * [!DNL Live Search] uses a unique GraphQL endpoint for queries to support features such as intelligent faceting and search-as-you-type. Although similar to the [Magento GraphQL API](https://devdocs.magento.com/guides/v2.4/graphql), there are a few differences and some fields may not be fully compatible at this time.
+
+### Rules
+
+* Maximum number of rules per Data Space ID is 50.
+* Maximum number of conditions per rule is 10.
+* Maximum number of events per rule is 25.
+
+### Synonyms
+
+* [!DNL Live Search] can manage up to 200 synonyms per `Data Space ID`.
 
 ### PWA beta release
 

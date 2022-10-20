@@ -11,7 +11,14 @@ These release notes describe the latest versions of Experience Platform connecto
 * ![Fix](../assets/fix.svg) - Fixes and improvements
 * ![Bug](../assets/bug.svg) - Known issues
 
-## Experience Platform connector 1.0.0
+## 2.0.0
+
+* ![New](../assets/new.svg) - Added two new [storefront events](events.md): `openCart` and `removeFromCart`
+* ![New](../assets/new.svg) - Added support for an [AEM storefront](overview.md#aem-support)
+* ![New](../assets/new.svg) - Added ability to specify your own AEP Web SDK when [connecting](connect-data.md) your Adobe Commerce instance to the Experience Platform
+* ![Fix](../assets/fix.svg) - Updated datastream scope requirement so that datastream IDs must be scoped to the website rather than storeview
+
+## 1.0.0
 
 * ![New](../assets/new.svg) - General availability release
 

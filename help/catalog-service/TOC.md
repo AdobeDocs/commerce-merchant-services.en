@@ -10,7 +10,7 @@ hide: yes
 - [Introduction to [!DNL Catalog Service]](overview.md)
 - [Onboarding and installation](installation.md)
 - GraphQL queries {#graphql}
-    - [products query](products.md)
-    - [productSearch query](productsearch.md)
-    - [refineProduct query](refine-product.md)
+    - [products query](https://devdocs.magento.com/catalog-service/products.html)
+    - [productSearch query](https://devdocs.magento.com/catalog-service/productsearch.html)
+    - [refineProduct query](https://devdocs.magento.com/catalog-service/refine-product.html)
 - [Release Notes](release-notes.md)
