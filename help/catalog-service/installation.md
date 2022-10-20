@@ -3,6 +3,7 @@ title: Onboarding and Installation
 description: Learn how to install [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
 ---
+# Onboarding and Installation
 
 ## Prerequisites
 
