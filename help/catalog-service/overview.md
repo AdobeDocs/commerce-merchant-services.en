@@ -26,12 +26,12 @@ The following diagram shows the two GraphQL systems:
 
 In the core GraphQL system, the PWA sends a request to the Commerce application, which receives each request, processes it, possibly sending a request through multiple subsystems, then returns a response to the storefront. This round trip can cause slow page load times, potentially leading to lower conversion rates.
 
-[!DNL Catalog Service] sends queries to a separate GraphQL gateway. The service accesses a separate database that contains product details and related information, such as product attributes, variants, prices, and categories. The service keeps the database in sync with the Adobe Commerce through indexation.
+[!DNL Catalog Service] is a federated GQL gateway service. The service accesses a separate database that contains product details and related information, such as product attributes, variants, prices, and categories. The service keeps the database in sync with the Adobe Commerce through indexation.
 Because the service bypasses direct communication with the application, it is able to reduce the latency of the request and response cycle.
 
 >[!NOTE]
 >
->The gateway is for future integration with Product Recommendations. In this release, you can access [!DNL Catalog Service] and [!DNL Live Search] federated queries from the same endpoint if you have a valid license key for both products.
+>The gateway is for future integration with Product Recommendations. In this release, you can access the [!DNL Catalog Service Federated GraphQL] and the [!DNL Live Search] federated queries from the same endpoint if you have a valid license key for both products.
 
 The core and service GraphQL systems do not directly communicate with each other. You access each system from a different URL, and calls require different header information. The two GraphQL systems are designed to be used together. The [!DNL Catalog Service] GraphQL system augments the core system to make product storefront experiences faster.
 
