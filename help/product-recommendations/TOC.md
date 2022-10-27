@@ -24,3 +24,8 @@ breadcrumb-title: "[!DNL Product Recommendations] Guide"
    - [Recommendation Types](type.md)
    - [Filters](filters.md)
    - [Placement and Labels](placement.md)
+- [!DNL Product Recommendations] Developer {#developer}
+   - [Overview](development/overview.md)
+   - [Collect Data](development/events.md)
+   - [Edit](development/customize.md)
+   - [Handle Cookie Restrictions](development/setting-cookie.md)
