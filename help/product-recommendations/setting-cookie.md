@@ -2,7 +2,6 @@
 title: Handle Cookie Restrictions
 description: Learn how product recommendations handle cookie restrictions.
 ---
-
 # Handle Cookie Restrictions
 
 Both Adobe Commerce and Magento Open Source ask for consent before data is stored in browser cookies. For more information, refer to [Cookie restriction mode](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html).

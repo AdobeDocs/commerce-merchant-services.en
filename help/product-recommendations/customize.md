@@ -2,7 +2,6 @@
 title: Customize
 description: Learn how to customize your product recommendations.
 ---
-
 # Customize
 
 When you install the Product Recommendations module, Adobe Commerce creates the `ProductRecommendationsLayout` directory. This directory contains template files that you can customize to change how the recommendations appear on your storefront. Specifically, you can modify or override the following template:
@@ -29,7 +28,7 @@ In addition to the `recommendations.html` file, the `ProductRecommendationsLayou
 
 ## Recommendation unit positioning
 
-When you [create](../create.md) a recommendation, you specify the [location](../placement.md) where it appears on the page. A recommendation unit can be placed at either the top or the bottom of the main content container. However, you can customize this placement. If you create a Page Builder recommendation content type, use the Page Builder tools to position the recommendation unit on the page. For all other page types, edit the `*.xml` files that are generated when the recommendation is created.
+When you [create](create.md) a recommendation, you specify the [location](placement.md) where it appears on the page. A recommendation unit can be placed at either the top or the bottom of the main content container. However, you can customize this placement. If you create a Page Builder recommendation content type, use the Page Builder tools to position the recommendation unit on the page. For all other page types, edit the `*.xml` files that are generated when the recommendation is created.
 
 1. Change to the `layout` directory:
 
@@ -105,7 +104,7 @@ Developers often need access to custom product attribute values in recommendatio
 
 For example, if your store sells some organic products, you might have a custom attribute on those products designating them as `Organic = Yes`. You may need access to this attribute value on the storefront so that you can give these products special visual treatment when they appear in Recommendations. Similarly, access to these custom product attribute values allows you to badge products or drive custom logic in the presentation layer of your site.
 
-![Add Badge](../assets/unit.png)
+![Add Badge](assets/unit.png)
 
 To make sure a custom product attribute is available when you render the recommendation unit on the page, set the `Used in Product Listing` property to `Yes` in the [Product Attributes](https://experienceleague.corp.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html) page in the Admin.
 
