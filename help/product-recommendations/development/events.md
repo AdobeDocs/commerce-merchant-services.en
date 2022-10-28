@@ -5,7 +5,7 @@ description: Learn how events collect data for product recommendations.
 
 # Collect data
 
-When you install and configure SaaS-based Adobe Commerce features such as [Product Recommendations](../install-configure.md) or [Live Search](https://docs.magento.com/user-guide/live-search/install.html), the modules deploy behavioral data collection to your storefront. This mechanism collects anonymized behavioral data from your shoppers and powers product recommendations. For example, the `view` event is used to compute the `Viewed this, viewed that` recommendation type, and the `place-order` event is used to compute the `Bought this, bought that` recommendation type.
+When you install and configure SaaS-based Adobe Commerce features such as [Product Recommendations](../install-configure.md) or [Live Search](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html), the modules deploy behavioral data collection to your storefront. This mechanism collects anonymized behavioral data from your shoppers and powers product recommendations. For example, the `view` event is used to compute the `Viewed this, viewed that` recommendation type, and the `place-order` event is used to compute the `Bought this, bought that` recommendation type.
 
 >[!NOTE]
 >
@@ -32,4 +32,4 @@ Ad blockers and privacy settings can prevent the `magento/product-recommendation
 
 >[!NOTE]
 >
->If [Cookie Restriction Mode](https://docs.magento.com/user-guide/stores/compliance-cookie-restriction-mode.html) is enabled, Adobe Commerce does not collect behavioral data until the shopper consents to using cookies. If Cookie Restriction Mode is disabled, Adobe Commerce collects behavioral data by default.
+>If [Cookie Restriction Mode](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) is enabled, Adobe Commerce does not collect behavioral data until the shopper consents to using cookies. If Cookie Restriction Mode is disabled, Adobe Commerce collects behavioral data by default.
