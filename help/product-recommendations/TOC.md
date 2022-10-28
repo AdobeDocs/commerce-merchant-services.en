@@ -12,7 +12,7 @@ breadcrumb-title: "[!DNL Product Recommendations] Guide"
    - [Onboarding](onboarding.md)
    - [Implementation Workflow](implementation-workflow.md)
    - [Behavioral Data](behavioral-data.md)
-   - [Headless](headless.md) 
+   - [Headless](headless.md)
    - [Install](install-configure.md)
    - [Settings](settings.md)
    - [Verify](verify.md)
@@ -24,3 +24,8 @@ breadcrumb-title: "[!DNL Product Recommendations] Guide"
    - [Recommendation Types](type.md)
    - [Filters](filters.md)
    - [Placement and Labels](placement.md)
+- [!DNL Product Recommendations] Developer {#developer}
+   - [Overview](development-overview.md)
+   - [Collect Data](events.md)
+   - [Edit](customize.md)
+   - [Handle Cookie Restrictions](setting-cookie.md)
