@@ -27,5 +27,5 @@ breadcrumb-title: "[!DNL Product Recommendations] Guide"
 - [!DNL Product Recommendations] Developer {#developer}
    - [Overview](development-overview.md)
    - [Collect Data](events.md)
-   - [Edit](customize.md)
+   - [Customize](customize.md)
    - [Handle Cookie Restrictions](setting-cookie.md)
