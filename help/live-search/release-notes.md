@@ -11,6 +11,22 @@ These release notes describe the latest versions of [!DNL Live Search] and inclu
 * ![Fix](../assets/fix.svg) - Fixes and improvements
 * ![Bug](../assets/bug.svg) - Known issues
 
+## [!DNL Live Search] 2.0.4
+
+* Compatible with Adobe Commerce (EE): 2.4.x
+* Compatible with Adobe Commerce for Cloud (ECE): 2.4.x
+* Stability: Stable
+
+* ![New](../assets/new.svg) - Live Search now supports filtering by the 'Display Out of Stock Products' setting in the admin. If 'Display Out of Stock Products' is set to false, `inStock = true` is added to the filter.
+* ![Fix](../assets/fix.svg) - To improve performance, the 'Suggestions' block has been removed from the Live Search popup. The data is still passed through GraphQL, in case you want to replace the feature.
+* ![Fix](../assets/fix.svg) - `categories` and `categoryPath` have replaced `categoryIds` for category filtering. Read more in the [productSearch](https://devdocs.magento.com/live-search/product-search.html#filter) topic.
+* ![Fix](../assets/fix.svg) - Previously, a user tied to a B2B company would recieve an incorrect Customer Group Code when doing searches. Live Search now returns the correct value.
+* ![Fix](../assets/fix.svg) - Previously, when searching for a term that does not exist, Live Search would return an error. That bug is now fixed.
+
+Merchants must upgrade the Live Search extension version >= 2.0.4 to access these features.
+
+We advise users to upgrade and test before pushing to production. Consider upgrading the production environment during off-peak hours after verifying their testing environment results.
+
 ## [!DNL Live Search] 2.0.3
 
 * Compatible with Adobe Commerce (EE): 2.4.x
