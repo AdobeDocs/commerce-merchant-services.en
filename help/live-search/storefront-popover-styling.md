@@ -41,29 +41,29 @@ The following class selectors can be used to style the container and product ele
 
 ### Container Class Selectors
 
-#### `.livesearch.popover-container`
+#### .livesearch.popover-container
 
 ![[!DNL Popover] container](assets/livesearch-popover-container.png)
 
-#### `.livesearch.view-all-footer`
+#### .livesearch.view-all-footer
 
 ![View all footer](assets/livesearch-view-all-footer.png)
 
 ### Product Class Selectors
 
-#### `.livesearch.products-container`
+#### .livesearch.products-container
 
 ![Product container](assets/livesearch-product-container.png)
 
-#### `.livesearch.product-result`
+#### .livesearch.product-result
 
 ![Product result](assets/livesearch-product-result.png)
 
-#### `.livesearch.product-name`
+#### .livesearch.product-name
 
 ![Product name](assets/livesearch-product-name.png)
 
-#### `.livesearch.product-price`
+#### .livesearch.product-price
 
 ![Product price](assets/livesearch-product-price.png)
 
