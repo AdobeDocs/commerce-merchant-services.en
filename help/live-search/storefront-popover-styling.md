@@ -30,13 +30,10 @@ For more information about styling storefront elements, refer to [Cascading styl
 
 ## Class selectors
 
-The following class selectors can be used to style the container, suggestion, and product elements in the [!DNL popover].
+The following class selectors can be used to style the container and product elements in the [!DNL popover].
 
 *  `.livesearch.popover-container`
 *  `.livesearch.view-all-footer`
-*  `.livesearch.suggestions-container`
-*  `.livesearch.suggestions-header`
-*  `.livesearch.suggestion`
 *  `.livesearch.products-container`
 *  `.livesearch.product-result`
 *  `.livesearch.product-name`
@@ -44,37 +41,30 @@ The following class selectors can be used to style the container, suggestion, an
 
 ### Container Class Selectors
 
-`.livesearch.popover-container`
+#### .livesearch.popover-container
 
 ![[!DNL Popover] container](assets/livesearch-popover-container.png)
 
-`.livesearch.view-all-footer`
+#### .livesearch.view-all-footer
 
 ![View all footer](assets/livesearch-view-all-footer.png)
 
-### Suggestion Class Selectors
-
-`.livesearch.suggestions-container`
-![Suggestions container](assets/livesearch-suggestions-container.png)
-
-`.livesearch.suggestions-header`
-![Suggestions header](assets/livesearch-suggestions-header.png)
-
-`.livesearch.suggestion`
-![Suggestion](assets/livesearch-suggestion.png)
-
 ### Product Class Selectors
 
-`.livesearch.products-container`
+#### .livesearch.products-container
+
 ![Product container](assets/livesearch-product-container.png)
 
-`.livesearch.product-result`
+#### .livesearch.product-result
+
 ![Product result](assets/livesearch-product-result.png)
 
-`.livesearch.product-name`
+#### .livesearch.product-name
+
 ![Product name](assets/livesearch-product-name.png)
 
-`.livesearch.product-price`
+#### .livesearch.product-price
+
 ![Product price](assets/livesearch-product-price.png)
 
 ## Working with a modified theme {#working-with-modified-theme}
