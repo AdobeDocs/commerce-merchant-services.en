@@ -93,7 +93,9 @@ To connect your payment services provider follow the steps described in the [pro
 
 1. Validate credentials after providing your unique API and [!DNL Publishable keys].
 
-![Quick Checkout](assets/quick-checkout-main-view.png)
+![Quick Checkout](assets/quick-checkout-main-view-react.png)
+
+Refer to the [Settings](../quick-checkout/settings-quick-checkout.md) topic for more information on the configuration options for the [!DNL Quick Checkout] for Adobe Commerce extension.
 
 >[!CAUTION]
 >

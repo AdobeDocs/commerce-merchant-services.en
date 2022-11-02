@@ -24,7 +24,7 @@ Refer to the [Onboarding](../quick-checkout/onboarding.md) topic for more inform
 | Field | Description |
 |---|---|
 | [!UICONTROL Overview] | The Overview tab shows all the resources for using [!DNL Quick Checkout]. |
-| [!UICONTROL Reports] | The Reports tab shows comprehensive [!DNL Quick Checkout] reporting information. |
+| [!UICONTROL Reports] | The Reports tab shows comprehensive [!DNL Quick Checkout] information. |
 
 ## Help and Support
 
@@ -33,7 +33,7 @@ Refer to the [Onboarding](../quick-checkout/onboarding.md) topic for more inform
 | [!UICONTROL Troubleshooting guide] | The Adobe Commerce Help Center contains [!DNL Quick Checkout] troubleshooting articles. |
 | [!UICONTROL Feedback] | Provide feedback to the team. |
 
-## Ressources
+## Resources
 
 | Field | Description |
 |---|---|
