@@ -20,10 +20,6 @@ See the developer documentation to [learn about product compatibility](https://d
 
 ## Adobe Commerce 2.3.x and 2.4.x
 
-### 4.0.1 of magento/product-recommendations
-
-* ![Fix](../assets/fix.svg) - Previously, Product Recommendations would throw an error when the display currency was switched to a non-deafult currency. Switching currencies now works properly.
-
 ### 4.0.0 of magento/product-recommendations
 
 * ![New](../assets/new.svg) - Added [readiness indicators](create.md) to help you visualize the training progress of each recommendation type.
