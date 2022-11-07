@@ -12,9 +12,12 @@ breadcrumb-title: Merchant Services Guide
   - [Prerequisites](prerequisites.md)
   - [Install](install.md)
   - [Onboarding](onboarding.md)
+  - [Settings](settings-quick-checkout.md)
   - [!DNL Quick Checkout] Admin panel {#quick-checkout-admin-panel}
     - [Configure Admin panel](admin-panel.md)
     - [User setup](user-roles-setup.md)
+  - [!DNL Quick Checkout] reporting {#quick-checkout-reporting}
+    - [Reports](reports.md)
 - Test and Validate {#test-validate}
   - [Testing](testing.md)
   - [Developer information](developer.md)
