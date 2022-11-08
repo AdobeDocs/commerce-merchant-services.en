@@ -73,7 +73,3 @@ Adobe provides a collection of Commerce, integration, and data services to help 
 ## Connect to services
 
 The [Commerce Services Connector](saas.md) provides the integration for your Adobe Commerce or Magento Open Source instance using an API key and a private key. For data services (Adobe Commerce only), you can also specify the data space in the configuration.
-
-## Catalog Service
-
-The [Catalog Service](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/guide-overview.html) provides rich read-only catalog data to quickly and fully render product-related content on the storefront, including product detail pages and product list pages. It gives your customers an optimized product experience while boosting performance, improving scalability, and increasing conversions.
