@@ -56,15 +56,15 @@ Adobe provides a collection of Commerce, integration, and data services to help 
    </tr>
 <tr>
     <td valign="top" width="200px">
-       <img alt="Amazon sales channel" src="assets/amazon-channel.png" width="170px"></td>
+       <img alt="Amazon Sales Channel" src="assets/amazon-channel.png" width="170px"></td>
    <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-channels/amazon/guide-overview.html"> <strong>Amazon sales channel</strong></a> <br><em>(Available for Magento Open Source)</em>
     <div>Integrate with the world's largest global online shopping destination to enable Amazon sales, provide data automation and synchronization, manage Amazon listings, and more through a single dashboard.</div>
   </td>
    </tr>
 <tr>
     <td valign="top">
-       <img alt="[!DNL Channel manager]" src="assets/channel-manager.png" width="170px"></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html"> <strong>Channel manager</strong></a> <br><em>(Available for Magento Open Source)</em>
+       <img alt="[!DNL Channel Manager]" src="assets/channel-manager.png" width="170px"></td>
+   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html"> <strong>Channel Manager</strong></a> <br><em>(Available for Magento Open Source)</em>
     <div>Increase sales, reach new customers, streamline operations, and save time by integrating with the Walmart Marketplace. Enable staff to manage Walmart Marketplace sales, inventory, and pricing seamlessly---all in Commerce.</div>
   </td>
    </tr>
