@@ -7,6 +7,7 @@ exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 
 The release notes contain updates to the following [!DNL Product Recommendations] modules:
 
+* As of March 2021, [!DNL Product Recommendations] are now supported in [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/) storefronts.
 * [!DNL Product Recommendations] metapackage: `magento/product-recommendations`
 * Page Builder support in [!DNL Product Recommendations] (optional) module: `magento/module-page-builder-product-recommendations`
 * Visual similarity recommendation type support for [!DNL Product Recommendations] (optional) module: `magento/module-visual-product-recommendations`
@@ -19,10 +20,6 @@ The release notes include:
 See the developer documentation to [learn about product compatibility](https://devdocs.magento.com/release/availability.html).
 
 ## Adobe Commerce 2.3.x and 2.4.x
-
-### 4.0.1 of magento/product-recommendations
-
-* ![Fix](../assets/fix.svg) - Previously, Product Recommendations would throw an error when the display currency was switched to a non-deafult currency. Switching currencies now works properly.
 
 ### 4.0.0 of magento/product-recommendations
 
