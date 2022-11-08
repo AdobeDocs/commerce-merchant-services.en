@@ -1,8 +1,8 @@
 ---
-title: "[!DNL Quick Checkout] reporting"
-description: "[!DNL Quick Checkout] offers comprehensive reporting information."
+title: '[!DNL Quick Checkout] reporting'
+description: '[!DNL Quick Checkout] offers comprehensive reporting information.'
+exl-id: 91c687f4-9953-4c2f-b240-73430603e6a1
 ---
-
 # Reports
 
 [!DNL Quick Checkout] for Adobe Commerce and Magento Open Source offers you comprehensive reporting so that you can get detailed information of your store's checkout experience statistics.
@@ -49,4 +49,3 @@ You can filter the results shown by date, or existing presets, like **Last 30 da
 |---|---|
 | [!UICONTROL Preset] | A dropdown that displays default presets that can be used to show specific ranges of data. By default: Last 30 days |
 | [!UICONTROL Date range] | A dropdown that allows you to select a specific range of data depending on the selected dates. |
-

@@ -3,6 +3,7 @@ title: Available data
 description: Use financial reporting data to reconcile reporting with non-Commerce systems.
 role: User
 level: Intermediate
+exl-id: dbf41ce9-01f9-45d0-b651-e4c499e83822
 ---
 # Available data
 

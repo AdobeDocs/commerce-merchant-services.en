@@ -1,8 +1,8 @@
 ---
-title: "[!DNL Quick Checkout] for Adobe Commerce Admin panel"
-description: "Learn how the [!DNL Quick Checkout] Admin panel could help how to successfully onboard, setup and visualize the extension."
+title: '[!DNL Quick Checkout] for Adobe Commerce Admin panel'
+description: Learn how the [!DNL Quick Checkout] Admin panel could help how to successfully onboard, setup and visualize the extension.
+exl-id: d91763ed-b4f6-4736-9503-0305edd77e91
 ---
-
 # Introduction to the [!DNL Quick Checkout] Admin panel
 
 [!DNL Quick Checkout] for Adobe Commerce and Magento Open Source provides an Admin panel view with all the necessary information to set up and use the extension.
