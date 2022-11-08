@@ -105,7 +105,7 @@ Developers often need access to custom product attribute values in recommendatio
 
 For example, if your store sells some organic products, you might have a custom attribute on those products designating them as `Organic = Yes`. You may need access to this attribute value on the storefront so that you can give these products special visual treatment when they appear in Recommendations. Similarly, access to these custom product attribute values allows you to badge products or drive custom logic in the presentation layer of your site.
 
-![Add Badge](assets/unit.png)
+![Add Badge](assets/unit-custom.png)
 
 To make sure a custom product attribute is available when you render the recommendation unit on the page, set the `Used in Product Listing` property to `Yes` in the [Product Attributes](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html) page in the Admin.
 
