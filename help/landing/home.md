@@ -77,22 +77,3 @@ The [Commerce Services Connector](saas.md) provides the integration for your Ado
 ## Catalog Service
 
 The [Catalog Service](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/guide-overview.html) provides rich read-only catalog data to quickly and fully render product-related content on the storefront, including product detail pages and product list pages. It gives your customers an optimized product experience while boosting performance, improving scalability, and increasing conversions.
-
-## What's new
-
-The following items are recent changes to the documentation:
-
-* **Payment Services**
-  * Added information to the Settings and the legacy configuration topics about [flushing the cache](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#flush-the-cache) after configuration changes.<!--PAY-3750 -->
-  * *NEW* Added an [Available data topic](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/data.html) that explains how to use financial reporting data for external reconciliation purposes.
-  * Revised documentation to include the [new data visualization view](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#payouts-data-visualization-view) in Payouts reporting.
-  * Added instructions for [enabling/disabling credit card and PayPal smart buttons for checkout](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#configure-payment-options).
-* **Quick Checkout**
-  * Updated the [release notes](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/release-notes.html) page with the v1.3.0 Quick Checkout extension and Admin panel release.<!-- BOLT-293 -->
-  * *NEW* Added new topic for the [Quick Checkout Admin panel](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/admin-panel.html) about reports and updates the existing [onboarding](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html?lang=en) topic with information about new settings in the configuration page.<!-- BOLT-459 -->
-  * *NEW* Added an [overview topic about the Admin Panel](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/admin-panel.html).
-  * *NEW* Added a [user setup topic](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/user-roles-setup.html) to guide the user in configuring roles and permissions.
-* **Live Search**
-  * Updated [release notes](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/release-notes.html) for the Live Search 2.04 release.
-* **Product Recommendations**
-  * Migrated the [Product Recommendations developer content](https://devdocs.magento.com/recommendations/product-recs.html) to the existing [Product Recommendations section](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/admin/create.html). <!-- COMDOX-227 -->
