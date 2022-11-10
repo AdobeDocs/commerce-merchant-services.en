@@ -32,7 +32,7 @@ _October 12, 2022_
 
 ## 2.0.1
 
-_November 9, 2022_
+_November 10, 2022_
 
 * ![Fixed issue](../assets/fix.svg) - Now the Adobe Experience Platform context is set only after the Storefront Event Collector and Storefront Event SDK are successfully loaded.
 
