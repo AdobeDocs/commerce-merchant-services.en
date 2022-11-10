@@ -11,6 +11,17 @@ These release notes describe the latest versions of [!DNL Live Search] and inclu
 * ![Fix](../assets/fix.svg) - Fixes and improvements
 * ![Bug](../assets/bug.svg) - Known issues
 
+## [!DNL Live Search] 2.0.5
+
+* Compatible with Adobe Commerce (EE): 2.4.x
+* Compatible with Adobe Commerce for Cloud (ECE): 2.4.x
+* Stability: Stable
+
+* ![Fix](../assets/fix.svg) - Live Search would throw an error when SDK resources were not available due to network issues. This bug has now been fixed.
+
+Merchants must upgrade the Live Search extension version >= 2.0.5 to access these features.
+
+We advise users to upgrade and test before pushing to production. Consider upgrading the production environment during off-peak hours after verifying their testing environment results.
 ## [!DNL Live Search] 2.0.4
 
 * Compatible with Adobe Commerce (EE): 2.4.x
@@ -24,8 +35,6 @@ These release notes describe the latest versions of [!DNL Live Search] and inclu
 * ![Fix](../assets/fix.svg) - Previously, when searching for a term that does not exist, Live Search would return an error. That bug is now fixed.
 
 Merchants must upgrade the Live Search extension version >= 2.0.4 to access these features.
-
-We advise users to upgrade and test before pushing to production. Consider upgrading the production environment during off-peak hours after verifying their testing environment results.
 
 ## [!DNL Live Search] 2.0.3
 
