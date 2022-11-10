@@ -103,16 +103,10 @@ The first step for using the API Mesh with Catalog Service is to set up a Mesh f
 
 To complete the mesh setup, you will need the [Adobe IO CLI package](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) installed.
 
-Once the Mesh is configured, run the following commands for connecting to the new mesh.
+Once the Mesh is configured on Adobe IO, run the following command to connect the new mesh.
 
 ```bash
-aio api-mesh:source:discover
-```
-
-This returns a list of available meshes. Install the `CommerceCatalogService` mesh with:
-
-```bash
-aio api-mesh:source:install "CommerceCatalogService"
+aio api-mesh:source:install "CommerceCatalogServiceGraph"
 ```
 
 After running this command, the Catalog Service should be running through the mesh.
