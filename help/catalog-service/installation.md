@@ -94,6 +94,29 @@ Use this method for installing the [!DNL Catalog Service] extension for an on-pr
    bin/magento cache:clean
    ```
 
+
+## Catalog Service and API MESH
+
+The [API Mesh](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) enables developers to integrate private or third-party APIs and other interfaces with Adobe products using Adobe IO.
+
+The first step for using the API Mesh with Catalog Service is to set up a Mesh for your instance. See detailed instructions in [Create a Mesh](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/).
+
+To complete the mesh setup, you will need the [Adobe IO CLI package](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) installed.
+
+Once the Mesh is configured, run the following commands for connecting to the new mesh.
+
+```bash
+aio api-mesh:source:discover
+```
+
+This returns a list of available meshes. Install the `CommerceCatalogService` mesh with:
+
+```bash
+aio api-mesh:source:install "CommerceCatalogService"
+```
+
+After running this command, the Catalog Service should be running through the mesh.
+
 ## Configure catalog export
 
 After you install [!DNL Catalog Service], you must configure the [Commerce Services Connector](../landing/saas.md) by specifying API Keys and selecting a SaaS Data Space.
