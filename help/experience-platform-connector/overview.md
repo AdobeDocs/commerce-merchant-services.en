@@ -44,5 +44,5 @@ See the [AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-s
 
 If you need information or have questions that are not covered in this guide, use the following resources:
 
-- [Help center](https://support.magento.com/hc/en-us){target="_blank"}
-- [Support tickets](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket){target="_blank"}---Submit a ticket to receive additional help.
+- [Help center](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html){target="_blank"}
+- [Support tickets](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket){target="_blank"}---Submit a ticket to receive additional help.
