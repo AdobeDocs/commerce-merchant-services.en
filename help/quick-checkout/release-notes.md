@@ -109,4 +109,4 @@ _August 9, 2022_
 
 ![Fixed issue](../assets/fix.svg)<!-- Issue BOLT-375 --> User experience improvements in [[!DNL Quick Checkout] Admin Panel](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) allows you to save your configuration when all required parameters are provided.
 
-![Known issue](../assets/bug.svg)<!-- Issue BOLT-342 --> Common [troubleshooting](https://support.magento.com/hc/en-us/articles/6909450342541) issues during installation of [!DNL Quick Checkout].
+![Known issue](../assets/bug.svg)<!-- Issue BOLT-342 --> Common [troubleshooting](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/quick-checkout-issues.html) issues during installation of [!DNL Quick Checkout].

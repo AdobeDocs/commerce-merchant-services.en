@@ -41,4 +41,4 @@ The [!DNL Quick Checkout] allows for multiple use cases during a checkout flow:
 
 ## Get help
 
-Contact Adobe Commerce Support through the [Adobe Commerce Help Center](https://support.magento.com/hc/en-us/articles/360000913794-Adobe-Commerce-Help-Center-User-Guide) for any assistance.
+Contact Adobe Commerce Support through the [Adobe Commerce Help Center](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html) for any assistance.
