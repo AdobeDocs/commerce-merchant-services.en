@@ -21,7 +21,7 @@ These release notes describe the latest versions of [!DNL Live Search] and inclu
 
 Merchants must upgrade the Live Search extension version >= 2.0.5 to access these features.
 
-We advise users to upgrade and test before pushing to production. Consider upgrading the production environment during off-peak hours after verifying their testing environment results.
+It is recommended to upgrade and test before pushing to production. Consider upgrading the production environment during off-peak hours after verifying their testing environment results.
 
 ## [!DNL Live Search] 2.0.4
 
