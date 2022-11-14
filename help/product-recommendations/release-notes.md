@@ -22,7 +22,7 @@ See the developer documentation to [learn about product compatibility](https://d
 
 ### 4.0.1 of magento/product-recommendations
 
-* ![Fix](../assets/fix.svg) - Previously, Product Recommendations would throw an error when the display currency was switched to a non-deafult currency. Switching currencies now works properly.
+* ![Fix](../assets/fix.svg) - Previously, Product Recommendations would show an error when the display currency was switched to a non-default currency. Switching currencies now works properly.
 
 ### 4.0.0 of magento/product-recommendations
 
