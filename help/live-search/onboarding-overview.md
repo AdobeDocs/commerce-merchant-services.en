@@ -28,9 +28,9 @@ At this time, the [!DNL Live Search] search/category API has the following suppo
 
 ### Indexing
 
-* Indexes up to 300 product attributes per store view
-* Indexes only products from the Adobe Commerce database
-* CMS pages are not indexed
+* Indexes up to 300 product attributes per store view.
+* Indexes only products from the Adobe Commerce database.
+* CMS pages are not indexed.
 
 ### Query
 
