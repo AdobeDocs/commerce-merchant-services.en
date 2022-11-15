@@ -86,7 +86,7 @@ Use this method for installing the [!DNL Catalog Service] extension for an on-pr
    ```
 
 
-## Catalog Service and API MESH
+## Catalog Service and API Mesh
 
 The [API Mesh](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) enables developers to integrate private or third-party APIs and other interfaces with Adobe products using Adobe IO.
 
