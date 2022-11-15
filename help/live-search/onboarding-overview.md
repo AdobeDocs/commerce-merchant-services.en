@@ -28,9 +28,9 @@ At this time, the [!DNL Live Search] search/category API has the following suppo
 
 ### Indexing
 
-* Indexes up to 300 product attributes per store view
-* Indexes only products from the Adobe Commerce database
-* Does not index CMS pages
+* Indexes up to 300 product attributes per store view.
+* Indexes only products from the Adobe Commerce database.
+* CMS pages are not indexed.
 
 ### Query
 
@@ -39,13 +39,13 @@ At this time, the [!DNL Live Search] search/category API has the following suppo
 
 ### Rules
 
-* Maximum number of rules per Data Space ID is 50.
+* Maximum number of rules per store view is 50.
 * Maximum number of conditions per rule is 10.
 * Maximum number of events per rule is 25.
 
 ### Synonyms
 
-* [!DNL Live Search] can manage up to 200 synonyms per `Data Space ID`.
+* [!DNL Live Search] can manage up to 200 synonyms per store view.
 
 ### PWA beta release
 
