@@ -56,9 +56,6 @@ At this time, the [!DNL Live Search] search/category API has the following suppo
 ### Not supported at this time
 
 * The [Advanced Search](https://docs.magento.com/user-guide/catalog/search-advanced.html) module is disabled when [!DNL Live Search] is installed, and the Advanced Search link in the storefront footer is removed.
-* [Customer groups](https://docs.magento.com/user-guide/customers/customer-groups.html)
 * [Custom price groups](https://docs.magento.com/user-guide/catalog/product-price-group.html)
 * Multiple inventory locations as used by [MCOM](https://docs.magento.com/user-guide/mcom.html) or other OMS extensions
-* [Integrated B2B capabilities](https://business.adobe.com/products/magento/b2b-ecommerce.html)
 * Product prices do not include [value added tax](https://docs.magento.com/user-guide/tax/vat.html) (VAT).
-* Out-of-stock products appear in search results regardless of the [Stock Options](https://docs.magento.com/user-guide/catalog/inventory-options-global.html) configuration.

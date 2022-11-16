@@ -11,7 +11,7 @@ These release notes describe the latest versions of [!DNL Live Search] and inclu
 * ![Fix](../assets/fix.svg) - Fixes and improvements
 * ![Bug](../assets/bug.svg) - Known issues
 
-## [!DNL Live Search] 2.0.4
+## [!DNL Live Search] 2.0.4 {#204}
 
 * Compatible with Adobe Commerce (EE): 2.4.x
 * Compatible with Adobe Commerce for Cloud (ECE): 2.4.x
@@ -27,7 +27,7 @@ Merchants must upgrade the Live Search extension version >= 2.0.4 to access thes
 
 We advise users to upgrade and test before pushing to production. Consider upgrading the production environment during off-peak hours after verifying their testing environment results.
 
-## [!DNL Live Search] 2.0.3
+## [!DNL Live Search] 2.0.3 {#203}
 
 * Compatible with Adobe Commerce (EE): 2.4.x
 * Compatible with Adobe Commerce for Cloud (ECE): 2.4.x
@@ -53,7 +53,7 @@ We advise users to upgrade and test before pushing to production. Consider upgra
 * Product overrides and product attributes feed may have sync issues requiring admins to run `bin/magento indexer:reset` and `bin/magento indexer:reindex` to re-sync correctly.
 * If you enable or disable the Catalog Permissions/Shared Catalog/B2B features, the `catalog_data_exporter_product_overrides` indexer is not updated and incorrectly marked as `valid`. Use `bin/magento saas:resync --feed=productOverrides` to fix the issue.
 
-## [!DNL Live Search] 2.0
+## [!DNL Live Search] 2.0 {#20}
 
 * Compatible with Adobe Commerce (EE): 2.4.x
 * Compatible with Adobe Commerce for Cloud (ECE): 2.4.x
@@ -70,7 +70,7 @@ Existing [!DNL Live Search] installations must be upgraded to [!DNL Live Search]
 * ![Bug](../assets/bug.svg) - The following product attributes are not supported by [Magento GraphQL API](https://devdocs.magento.com/guides/v2.4/graphql) when used in relation to the beta release of PWA: `description`, `name`, `short_description`
 * ![Bug](../assets/bug.svg) - The beta release of PWA for [!DNL Live Search] does not support [event handling](https://devdocs.magento.com/shared-services/storefront-events-sdk.html).
 
-## [!DNL Live Search] 1.3.1
+## [!DNL Live Search] 1.3.1 {#131}
 
 * Compatible with Adobe Commerce (EE): 2.4.x
 * Compatible with Adobe Commerce for Cloud (ECE): 2.4.x
@@ -80,7 +80,7 @@ Existing [!DNL Live Search] installations must be upgraded to [!DNL Live Search]
 * ![Fix](../assets/fix.svg) - Fixed issue that caused an error to occur when no [currency symbol](https://docs.magento.com/user-guide/stores/currency-symbols.html) (`data-currency-symbol`) is available.
 * ![Fix](../assets/fix.svg) - [[!DNL Storefront popover]](storefront-popover.md) now shows the [Special Price](https://docs.magento.com/user-guide/catalog/product-price-special.html) (minimum final price) when available.
 
-## [!DNL Live Search] 1.3.0
+## [!DNL Live Search] 1.3.0 {#130}
 
 * Compatible with Adobe Commerce (EE): 2.4.x
 * Compatible with Adobe Commerce for Cloud (ECE): 2.4.x
@@ -93,7 +93,7 @@ Existing [!DNL Live Search] installations must be upgraded to [!DNL Live Search]
 * ![Bug](../assets/bug.svg) - Patch for Search adapter handles duplicate products.
 * ![Bug](../assets/bug.svg) - [!DNL Live Search] supports [single-source](https://docs.magento.com/user-guide/catalog/inventory-sources.html) (physical) inventory locations with multiple (virtual) [stocks](https://docs.magento.com/user-guide/catalog/inventory-stock.html). Multiple inventory sources are not supported at this time.
 
-## [!DNL Live Search] 1.2.0
+## [!DNL Live Search] 1.2.0 {#120}
 
 * Compatible with Adobe Commerce (EE): 2.4.x
 * Compatible with Adobe Commerce for Cloud (ECE): 2.4.x
@@ -108,7 +108,7 @@ Existing [!DNL Live Search] installations must be upgraded to [!DNL Live Search]
 * ![Fix](../assets/fix.svg) - [!DNL Live Search] no longer throws an error if search criteria contains empty sort order value
 * ![Fix](../assets/fix.svg) - Range filtering no longer breaks if attribute codes contain strings "to" or "from"
 
-## [!DNL Live Search] 1.1.0
+## [!DNL Live Search] 1.1.0 {#110}
 
 * Compatible with Adobe Commerce (EE): 2.4.x
 * Compatible with Adobe Commerce for Cloud (ECE): 2.4.x
