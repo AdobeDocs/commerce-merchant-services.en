@@ -35,15 +35,11 @@ Use this method for installing the [!DNL Catalog Service] extension for a Commer
 1. Open the `<Commerce_root>/composer.json` file in a text editor and update the `require` section as follows:
 
    ```json
-   "require": {
-    "magento/composer-root-update-plugin": "^2.0.2",
-    "magento/magento-cloud-metapackage": ">=2.4.5 <2.4.6",
-    "magento/saas-export": "^101.4.0",
-    "magento/commerce-data-export": "^101.3.1",
-    "magento/commerce-data-export-ee": "^101.3.1",
-    "magento/services-id": "^3.0.1",
-    "magento/services-connector": "1.2.1"
-    }
+   "require":{
+   "magento/composer-root-update-plugin":"^2.0.2",
+   "magento/magento-cloud-metapackage":">=2.4.5 <2.4.6",
+   "magento/catalog-service": "^1.0.0"
+      }
    ```
 
 1. Test the new configuration locally and update dependencies:
@@ -64,13 +60,8 @@ Use this method for installing the [!DNL Catalog Service] extension for an on-pr
 
    ```json
    "require": {
-     "magento/magento-cloud-metapackage": ">=2.4.3 <2.4.4",
-     "magento/composer-root-update-plugin": "~1.1",
-     "magento/saas-export": "^101.3.1",
-     "magento/commerce-data-export": "^101.2.4",    
-     "magento/commerce-data-export-ee": "^101.2.4",
-     "magento/services-id": "^3.0.0",
-     "magento/services-connector": "1.2.1"
+   "magento/composer-root-update-plugin":"^2.0.2",
+   "magento/catalog-service": "^1.0.0"
    }
    ```
 
@@ -93,6 +84,23 @@ Use this method for installing the [!DNL Catalog Service] extension for an on-pr
    ```bash
    bin/magento cache:clean
    ```
+
+
+## Catalog Service and API Mesh
+
+The [API Mesh](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) enables developers to integrate private or third-party APIs and other interfaces with Adobe products using Adobe IO.
+
+The first step for using the API Mesh with Catalog Service is to connect API Mesh to your instance. See detailed instructions in [Create a Mesh](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/).
+
+To complete the setup, you will need the [Adobe IO CLI package](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) installed.
+
+Once Mesh is configured on Adobe IO, run the following command to connect the new mesh.
+
+```bash
+aio api-mesh:source:install "CommerceCatalogServiceGraph"
+```
+
+After running this command, the Catalog Service should be running through the API Mesh.
 
 ## Configure catalog export
 
