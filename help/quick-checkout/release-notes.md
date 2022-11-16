@@ -21,17 +21,39 @@ These release notes describe feature changes and fixes that occurred and were re
 
 +++Admin panel updates
 
+_November 2, 2022_
+
+![New](../assets/new.svg)<!-- Issue BOLT-293 --> Now, the [reporting](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html) tab in the [!DNL Quick Checkout] Admin panel shows charts and reporting information of your store's checkout experience statistics.
+
+![New](../assets/new.svg)<!-- Issue BOLT-422 --> The [_Overview_](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html#reports-overview) section of the Reports topic section shows detailed information about your store's checkout performance, including the average checkout time, new accounts created during checkout, and checkout abandonment.
+
+![New](../assets/new.svg)<!-- Issue BOLT-423 --> The [_Trends_](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html#reports-trends) section of the Reports tab shows your checkout experience trends filtered by account type and new accounts created during checkout.
+
+![New](../assets/new.svg)<!-- Issue BOLT-439 --> The **Reports** tab displays [default filter presets](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html#filter-data) that can be used to show specific data ranges.
+
+![New](../assets/new.svg)<!-- Issue BOLT-433 --> You can now see a _No Data Available_ warning for a chart when a request returns no data.
+
+![New](../assets/new.svg)<!-- Issue BOLT-473 --> User experience improvements from the [!DNL Quick Checkout] Admin panel include the ability to enable a [checkout tracking](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/settings-quick-checkout.html#service-settings) setting that allows Adobe Commerce to share reporting information with Bolt.
+
 _October 5, 2022_
 
-![New](../assets/new.svg)<!-- Issue BOLT-379 --> [!DNL Quick Checkout] Admin panel integrates a [feature tour powered by Gainsight](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html).
+![New](../assets/new.svg)<!-- Issue BOLT-379 --> Now, when a new merchant accesses the [!DNL Quick Checkout] Admin panel for the first time a [feature tour powered by Gainsight](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html) appears.
 
-![New](../assets/new.svg)<!-- Issue BOLT-377 --> The **Reports** tab in the [!DNL Quick Checkout] Admin panel contains the outline of diagrams and reporting information that will soon be available.
+![New](../assets/new.svg)<!-- Issue BOLT-377 --> The **Reports** tab in the [!DNL Quick Checkout] Admin panel shows charts and reporting analytics.
 
-![New](../assets/new.svg)<!-- Issue BOLT-377 --> The **Reports** tab in the [!DNL Quick Checkout] Admin panel shows the filter date range for diagrams and reporting information that will soon be available.
+![New](../assets/new.svg)<!-- Issue BOLT-377 --> The **Reports** tab in the [!DNL Quick Checkout] Admin panel shows the date range and filter presets for charts and reporting analytics.
 
-![Fixed issue](../assets/fix.svg)<!-- Issue BOLT-369 --> [[!DNL Quick Checkout] Admin Panel](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) now displays the react app version in the footer.
+![Fixed issue](../assets/fix.svg)<!-- Issue BOLT-369 --> Now, the [[!DNL Quick Checkout] Admin Panel](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) displays the app version in the footer.
 
 +++
+
+## v1.3.0
+
+_November 2, 2022_
+
+![New](../assets/new.svg)<!-- Issue BOLT-293 --> Now, [!DNL Quick Checkout] includes the ability to enable a [checkout tracking](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/settings-quick-checkout.html#service-settings) setting that allows Adobe Commerce to share reporting information with Bolt.
+
+![New](../assets/new.svg)<!-- Issue BOLT-461 --> You can now see a warning message in your [!DNL Quick Checkout] Admin panel if [checkout tracking](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html) configuration is disabled.
 
 ## v1.2.0
 
@@ -45,7 +67,7 @@ _September 8, 2022_
 
 ![New](../assets/new.svg)<!-- Issue BOLT-377 --> [!DNL Quick Checkout] Admin panel now contains a page header that includes specific sections such as **Overview**, **Reports**, and **Settings**.
 
-![New](../assets/new.svg)<!-- Issue BOLT-379 --> [!DNL Quick Checkout] Admin panel adds a Welcome widget that provides a feature tour powered by Gainsight.
+![New](../assets/new.svg)<!-- Issue BOLT-379 --> When a new merchant accesses the [!DNL Quick Checkout] Admin panel for the first time a Welcome widget appears that provides a feature tour.
 
 ![New](../assets/new.svg)<!-- Issue BOLT-378 --> [!DNL Quick Checkout] [Admin panel view](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/admin-panel.html) incorporates a **Configuration** step that appears when the API and publishable keys are not provided in the [Settings](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) view.
 
@@ -87,4 +109,4 @@ _August 9, 2022_
 
 ![Fixed issue](../assets/fix.svg)<!-- Issue BOLT-375 --> User experience improvements in [[!DNL Quick Checkout] Admin Panel](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) allows you to save your configuration when all required parameters are provided.
 
-![Known issue](../assets/bug.svg)<!-- Issue BOLT-342 --> Common [troubleshooting](https://support.magento.com/hc/en-us/articles/6909450342541) issues during installation of [!DNL Quick Checkout].
+![Known issue](../assets/bug.svg)<!-- Issue BOLT-342 --> Common [troubleshooting](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/quick-checkout-issues.html) issues during installation of [!DNL Quick Checkout].

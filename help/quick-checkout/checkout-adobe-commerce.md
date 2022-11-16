@@ -32,7 +32,7 @@ If a [!DNL Bolt] account is found during checkout, shoppers can continue with th
 
 If the shopper is logged in to Adobe Commerce prior to checkout, the [!DNL Bolt] OTP pop-up will not appear during checkout.
 
-If you encounter issues when you place an order as an existing Adobe Commerce user, see the [Troubleshoot Quick Checkout issues](https://support.magento.com/hc/en-us/articles/6909450342541) article in the Adobe Commerce Help Center.
+If you encounter issues when you place an order as an existing Adobe Commerce user, see the [Troubleshoot Quick Checkout issues](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/quick-checkout-issues.html) article in the Adobe Commerce Help Center.
 
 ## New [!DNL Bolt] account
 

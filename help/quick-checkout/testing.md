@@ -38,15 +38,15 @@ You should also verify the information that appears on the bank statements for t
 Complete a successful checkout from your store:
 
 1. Go to your storefront and place desired items in your cart.
-2. Proceed to checkout.
-3. Enter an email address that is associated with a [!DNL Bolt] account when prompted.
-4. Input the one-time Password (OTP) sent to the account’s email address.
-5. Select the environment dashboard:
+1. Proceed to checkout.
+1. Enter an email address that is associated with a [!DNL Bolt] account when prompted.
+1. Input the one-time Password (OTP) sent to the account's email address.
+1. Select the environment dashboard:
 
    - Sandbox
    - Production
 
-6. Place the order.
+1. Place the order.
 
 Once an order is placed, you can view details of your orders in your _Orders grid_ view:
 

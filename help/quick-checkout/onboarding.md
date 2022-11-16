@@ -93,7 +93,9 @@ To connect your payment services provider follow the steps described in the [pro
 
 1. Validate credentials after providing your unique API and [!DNL Publishable keys].
 
-![Quick Checkout](assets/quick-checkout-main-view.png)
+![Quick Checkout](assets/quick-checkout-main-view-react.png)
+
+Refer to the [Settings](../quick-checkout/settings-quick-checkout.md) topic for more information on the configuration options for the [!DNL Quick Checkout] for Adobe Commerce extension.
 
 >[!CAUTION]
 >
@@ -134,6 +136,6 @@ See the [Site, Store, and View Scope](https://experienceleague.adobe.com/docs/co
 
 The onboarding process is designed to guide you through the required steps for setting up and enabling the [!DNL Express Checkout] functionality.
 
-Contact Adobe Commerce Support through the [Adobe Commerce Help Center](https://support.magento.com/hc/en-us/articles/360000913794-Adobe-Commerce-Help-Center-User-Guide) for any assistance.
+Contact Adobe Commerce Support through the [Adobe Commerce Help Center](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en) for any assistance.
 
 See the [test and validate](../quick-checkout/testing.md) topic for more information.
