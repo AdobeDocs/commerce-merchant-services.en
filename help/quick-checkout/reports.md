@@ -22,9 +22,9 @@ The charts in the Overview section show detailed information about your store's 
 | Chart | Description |
 |---|---|
 | [!UICONTROL Checkout abandonment] | The percentage of visitors who exit the checkout process without completing a purchase. |
-| [!UICONTROL Checkout abandonment breakdown] | The checkout abandonment divided by type of visitor. Options: [!UICONTROL Bolt] / [!UICONTROL Merchant] / [!UICONTROL Guest] |
+| [!UICONTROL Checkout abandonment breakdown] | The checkout abandonment divided by type of visitor. Tooltip shows a percentage difference between Bolt and Guest. Options: [!UICONTROL Bolt] / [!UICONTROL Merchant] / [!UICONTROL Guest] |
 | [!UICONTROL Average checkout time] | The average time a visitor takes to complete the checkout process. |
-| [!UICONTROL Average checkout time breakdown] | Average checkout time divided by type of visitor. Options: [!UICONTROL Bolt] / [!UICONTROL Merchant] / [!UICONTROL Guest] |
+| [!UICONTROL Average checkout time breakdown] | Average checkout time divided by type of visitor. Tooltip shows a percentage difference between Bolt and Guest. Options: [!UICONTROL Bolt] / [!UICONTROL Merchant] / [!UICONTROL Guest] |
 | [!UICONTROL Orders by account type] | Orders placed divided by type of visitor. Options: [!UICONTROL Bolt] / [!UICONTROL Merchant] / [!UICONTROL Guest] |
 
 ## Trends reports
