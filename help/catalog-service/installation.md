@@ -85,7 +85,6 @@ Use this method for installing the [!DNL Catalog Service] extension for an on-pr
    bin/magento cache:clean
    ```
 
-
 ## Catalog Service and API Mesh
 
 The [API Mesh](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) enables developers to integrate private or third-party APIs and other interfaces with Adobe products using Adobe IO.
@@ -97,7 +96,16 @@ To complete the setup, you will need the [Adobe IO CLI package](https://develope
 Once Mesh is configured on Adobe IO, run the following command to connect the new mesh.
 
 ```bash
-aio api-mesh:source:install "CommerceCatalogServiceGraph"
+aio api-mesh:source:install "CommerceCatalogServiceGraph" -f variables.json
+```
+
+where `variables.json` is a separate file that stores commonly used values for Adobe IO.
+For instance, the API key can be saved within the file:
+
+```json
+{
+    "CATALOG_SERVICE_API_KEY":"your_api_key"
+}
 ```
 
 After running this command, the Catalog Service should be running through the API Mesh.
