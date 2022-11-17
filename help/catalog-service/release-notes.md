@@ -11,6 +11,24 @@ These release notes describe the latest versions of [!DNL Catalog Service] and i
 *  ![Fix](../assets/fix.svg) Fixes and improvements
 *  ![Bug](../assets/bug.svg) Known issues
 
+## V1.1 Release
+
+Release Date: 2022-11-18
+Compatible with Adobe Commerce (EE): 2.4.x
+Compatible with Adobe Commerce for Cloud (ECE): 2.4.x
+Stability: General Availability
+
+![New](../assets/new.svg) Catalog Service now supports Adobe's [API Mesh](https://developer.adobe.com/graphql-mesh-gateway/).
+![Fix](../assets/fix.svg) We have improved API scalability and overall performance.
+
+### Known limitations
+
+These features are not yet supported:
+
+*  Tier pricing
+*  No updates are received when variants are deleted from the catalog
+*  Maximum size for dynamic attributes payload is <9MB
+
 ## V1.0 Release
 
 Release Date: 2022-10-04
