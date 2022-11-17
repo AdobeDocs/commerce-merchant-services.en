@@ -27,7 +27,7 @@ These features are not yet supported:
 
 *  Tier pricing
 *  No updates are received when variants are deleted from the catalog
-*  Maximum size for dynamic attributes payload is <9MB
+*  Maximum size for dynamic attributes payload is 9MB
 
 ## V1.0 Release
 
