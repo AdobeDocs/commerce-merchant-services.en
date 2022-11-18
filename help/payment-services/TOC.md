@@ -10,7 +10,9 @@ index: yes
 - [Guide overview](guide-overview.md)
 - [Introduction to [!DNL Payment Services]](overview.md)
 - [Release Notes](release-notes.md)
-- [Payment options](payments-options.md)
+- Payments and checkout {#payments-checkout}
+  - [Payment options](payments-options.md)
+  - [Credit card vaulting](vaulting.md)
 - Onboard [!DNL Payment Services] {#get-started}
   - [Onboarding overview](onboard.md)
   - [Install the [!DNL Payment Services] extension](install.md)

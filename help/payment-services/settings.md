@@ -9,7 +9,7 @@ exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
 
 You can customize [!DNL Payment Services] to your needs with helpful settings in the [!DNL Payment Services] Home.
 
-To configure [!DNL Payment Services] for [!DNL Adobe Commerce] and [!DNL Magento Open Source] click **[!UICONTROL Settings]**. These configuration options apply only to the environment that is set in the _[!UICONTROL Payment mode]_ field of the [_General_ configuration options](#general-configuration-options).
+To configure [!DNL Payment Services] for [!DNL Adobe Commerce] and [!DNL Magento Open Source] click **[!UICONTROL Settings]**. These configuration options apply only to the environment that is set in the _[!UICONTROL Payment mode]_ field of the [_General_ configuration options](#configure-general-settings).
 
 For multi-store or legacy configuration see [Configure in the Admin](configure-admin.md).
 
@@ -59,12 +59,12 @@ You can add a [!UICONTROL Soft Descriptor] to your website(s) or individual stor
 1. Click **[!UICONTROL Save]**.
 1. To create a soft descriptor other than the configured default for a website or store view:
    1. Select the website or store view, in the **[!UICONTROL Scope]** dropdown menu, for which you want to create a soft descriptor.
-   1. Toggle *off* **[!UICONTROL Use website]** (or **[!UICONTROL Use default]**, dependant on which scope you selected).
+   1. Toggle _off_ **[!UICONTROL Use website]** (or **[!UICONTROL Use default]**, dependant on which scope you selected).
    1. Add your custom text in the text field.
    1. Click **[!UICONTROL Save]**.
-1. To enable for a website or store view the default soft descriptor *or* the soft descriptor used for the parent website:
+1. To enable for a website or store view the default soft descriptor _or_ the soft descriptor used for the parent website:
    1. Select the website or store view, in the **[!UICONTROL Scope]** dropdown menu, for which you want to enable an existing soft descriptor.
-   1. Toggle *on* **[!UICONTROL Use website]** (or **[!UICONTROL Use default]**, dependant on which scope you selected).
+   1. Toggle _on_ **[!UICONTROL Use website]** (or **[!UICONTROL Use default]**, depending on the scope you selected).
    1. Click **[!UICONTROL Save]**.
 
    If you try to navigate away from this view without saving your changes, a modal appears that prompts you to discard changes, keep editing, or save changes.
@@ -83,16 +83,28 @@ You can add a [!UICONTROL Soft Descriptor] to your website(s) or individual stor
 
 Now that you have enabled Payment Services for your website, you can change the default settings for payment functions and storefront display.
 
+1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
+
+   ![Home view](assets/payment-services-menu-small.png)
+
+1. Click **[!UICONTROL Settings]**. See [Introduction to [!DNL Payment Services] Home](payments-home.md) for more information.
+1. Configure payment options for [credit cards](#credit-card-fields), [payment buttons](#payment-buttons), and [button style](#button-style), per the following sections.
+
 ### Credit card fields
 
 The _[!UICONTROL Credit Card Fields]_ settings provide a simple and secure checkout option for credit card or debit card payment methods.
 
 See [Payments options](payments-options.md#credit-card-fields) for more information.
 
+1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
+
+   ![Home view](assets/payment-services-menu-small.png)
+
 1. Select the store view, in the **[!UICONTROL Scope]** dropdown menu, for which you want to enable a payment method.
 1. To change the name of the payment method displayed during checkout, edit the value in the **[!UICONTROL Checkout title]** field.
 1. To [set the payment action](production.md#set-payment-services-as-payment-method), toggle **[!UICONTROL Payment action]** to `Authorize` or `Authorize and Capture`.
 1. To enable or disable credit card fields on the checkout page, toggle the **[!UICONTROL Show on checkout page]** selector.
+1. To enable or disable [card vaulting](#card-vaulting), toggle the **[!UICONTROL Vault enabled]** selector.
 1. To enable or disable debug mode, toggle the **[!UICONTROL Debug Mode]** selector.
 1. Click **[!UICONTROL Save]**.
 
@@ -107,6 +119,7 @@ See [Payments options](payments-options.md#credit-card-fields) for more informat
 | [!UICONTROL Title] | store view | Add the text for display as the title for this payment option in the Payment Method view during checkout. Options: [!UICONTROL text field] |
 | [!UICONTROL Payment Action] | website | The [payment action](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} for the specified payment method. Options: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Show on checkout page] | website | Enable or disable credit card fields to show on checkout page. Options: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Vault enabled] | website | Enable or disable credit card vaulting. Options: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Debug Mode] | website | Enable or disable Debug Mode. Options: [!UICONTROL Yes] / [!UICONTROL No] |
 
 ### Payment buttons
@@ -130,10 +143,10 @@ You can enable and configure the PayPal smart buttons payment options:
 
       >[!NOTE]
       >
-      > To use Apple Pay you [must have an Apple Developer Account](test-validate.md#test-in-sandbox-environment) (complete with fake credit card and billing information) to test it. When you are ready to use Apple Pay in sandbox *or* production mode, after completing any [testing and validation](test-validate.md), contact your Sales representative to enable it for your live store(s).
+      > To use Apple Pay you [must have an Apple Developer Account](test-validate.md#test-in-sandbox-environment) (complete with fake credit card and billing information) to test it. When you are ready to use Apple Pay in sandbox _or_ production mode, after completing any [testing and validation](test-validate.md), contact your Sales representative to enable it for your live store(s).
 
       As you toggle on/off visibility to payment buttons or the PayPal Pay Later message, a visual preview of that configuration shows at the bottom of the Settings page.
-git 
+
 1. To enable debug mode, toggle the **[!UICONTROL Debug Mode]** selector.  
 1. Click **[!UICONTROL Save]**.
 
@@ -206,11 +219,18 @@ If any Cache Type in the Cache Management table has an `INVALIDATED` status, you
 
 To ensure that your store is showing the correct configuration, periodically [flush the cache](https://docs.magento.com/user-guide/system/cache-management.html).
 
+## Card vaulting
+
+You can enable functionality that allows your customers to vault---or "save"---their credit card information in their My Account to use for future purchases.
+
+Enable or disable card vaulting in the [Credit card field settings](#credit-card-fields).
+
+See [Credit card vaulting](vaulting.md) for more information about vaulting.
+
 ## Use multiple PayPal accounts
 
-In Payment Services, you can use multiple PayPal accounts within **one** merchant account on the website level. For instance, if you are operating your store(s) in multiple countries (which use different [currencies](https://docs.magento.com/user-guide/stores/currency.html)) or want to use Adobe Commerce for some parts of your business but not *all*, you can set up your merchant account to use multiple PayPal accounts.
+In Payment Services, you can use multiple PayPal accounts within **one** merchant account on the website level. For instance, if you are operating your store(s) in multiple countries (which use different [currencies](https://docs.magento.com/user-guide/stores/currency.html)) or want to use Adobe Commerce for some parts of your business but not _all_, you can set up your merchant account to use multiple PayPal accounts.
 
 See [Site, Store, and View Scope](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) for more information about the hierarchy of websites, stores, and store views.
 
 Your Sales representative can create a new [scope](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) for your merchant account and onboard the additional site with PayPal so that any of the PayPal buttons you configure to appear will show on your site. Contact your Sales representative for assistance with using multiple PayPal accounts for your websites.
-

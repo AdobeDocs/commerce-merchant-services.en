@@ -47,11 +47,19 @@ _June 28, 2021_
 
 +++
 
+## v1.5.0
+
+_November 18, 2022_
+
+![New](../assets/new.svg)<!-- Issue PAY-3880 --> A shopper can now [vault (save) their credit card information during checkout](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html) to use in a later purchase for the same or another store within the same merchant account.
+
+![New](../assets/new.svg)<!-- Issue PAY-3950 --> Merchants can now enable the [Instant Purchase Commerce feature](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html) for their stores so that shoppers can (use [vaulted credit card information](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html)) to expedite checkout.
+
 ## v1.4.1
 
 _October 14, 2022_
 
-![New](../assets/new.svg)<!-- Issue PAY-3766 --> When a customer's payment method is declined, the visible error message is more descriptive. It advises the customer to re-enter payment information and try again, try another payment method, or to contact their bank about the declined the transaction.
+![Fix](../assets/fix.svg)<!-- Issue PAY-3766 --> When a customer's payment method is declined, the visible error message is more descriptive. It advises the customer to re-enter payment information and try again, try another payment method, or to contact their bank about the declined the transaction.
 
 ## v1.4.0
 

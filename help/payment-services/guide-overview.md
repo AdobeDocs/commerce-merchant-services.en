@@ -29,8 +29,8 @@ This guide does not cover the core capabilities of [!DNL Adobe Commerce] and [!D
 
 | Guide | Description |
 |------ | ----------- |
-| [[!DNL Adobe Commerce] 2.4 User Guide](https://docs.magento.com/user-guide/) | Merchant-focused documentation for both [!DNL Adobe Commerce] and [!DNL Magento Open Source] |
-| [[!DNL Adobe Commerce] 2.4 Developer Guide](https://devdocs.magento.com/) | Developer-focused documentation used to build and customize [!DNL Adobe Commerce] or [!DNL Magento Open Source] |
+| [[!DNL Adobe Commerce] 2.4 User Guide](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html) | Merchant-focused documentation for both [!DNL Adobe Commerce] and [!DNL Magento Open Source] |
+| [[!DNL Adobe Commerce] 2.4 Developer Guide](https://developer.adobe.com/commerce/docs) | Developer-focused documentation used to build and customize [!DNL Adobe Commerce] or [!DNL Magento Open Source] |
 
 ## Support
 

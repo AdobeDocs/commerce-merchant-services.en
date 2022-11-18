@@ -55,6 +55,8 @@ See [Payments options](payments-options.md#paypal-smart-buttons) for more inform
 1. In the _[!UICONTROL Payment Services]_ section, expand the _[!UICONTROL Credit Card Fields]_ section.
 1. For **[!UICONTROL Title]**, enter text (if needed) to change the name of the payment method as shown during checkout.
 1. To [set the payment action](production.md#set-payment-services-as-payment-method), select **[!UICONTROL Authorize]** or **Authorize and Capture**.
+1. For **[!UICONTROL Show on checkout page]**, choose `Yes` to enable or disable credit card fields on the checkout page.
+1. For **[!UICONTROL Vault Enabled]**, choose `Yes` to enable credit card vaulting for checkout.
 1. For **Debug Mode**, choose `Yes` to enable debug mode (or `No` to disable it).
 1. Click **[!UICONTROL Save Config]** to save your changes.
 1. Navigate to **[!UICONTROL System]** > **[!UICONTROL Cache Management]**, and then click **[!UICONTROL Flush Cache]** to refresh all invalid caches.

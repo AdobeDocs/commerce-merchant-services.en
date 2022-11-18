@@ -25,6 +25,8 @@ There are different behaviors for each payment method depending on where you are
 
 [!UICONTROL Credit Card Fields] provide a simple and secure checkout for credit card or debit card payment methods. When a shopper checks out using credit card fields, they enter their name, billing address, and credit or debit card information, to place their order. Their customer information is securely used during the purchase session to seamlessly guide them through the checkout flow.
 
+Enable [credit card vaulting](#vaulting) for your stores to allow shoppers to vault (save) their credit card information for a fast checkout later.
+
 You can configure [!UICONTROL Credit Card Fields] in the store configuration or the Payment Services Home. See [Settings](settings.md#credit-card-fields) for more information.
 
 ## [!DNL PayPal Smart Buttons]
@@ -98,6 +100,12 @@ When a customer checks out directly from the product page, using the PayPal or [
 If the customer cancels the order, the item in the current product page is added to the customer's cart, joining any other items present in the cart. This function allows the customer to quickly purchase the item they are currently viewing, while also retaining any other items they added to their cart previously when browsing products.
 
 When a customer enters the checkout flow from the product page, the checkout page is simplified---the view only shows order-related data and options.
+
+## Credit card vaulting
+
+Shoppers can vault---or "save"---their credit card information for future purchases on the website level (any store within the same merchant's account).
+
+See [Credit card vaulting](vaulting.md) for more information.
 
 ## Security
 
