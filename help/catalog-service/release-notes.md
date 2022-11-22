@@ -25,9 +25,20 @@ Stability: General Availability
 
 These features are not yet supported:
 
+*  Bundle products with fixed price
+*  No updates are received when variants are deleted from the catalog.
+*  Maximum size for dynamic attributes payload is 9MB.
+*  Group product price. Can be calculated with simple product prices.
+*  In an image array, only the first image contains roles.
+*  Color swatches
+*  Loading the Product Detail Page through the product URL.
+
+The following limitations can be solved by using the GraphQL API
+
+*  Minimum Advertised Price
 *  Tier pricing
-*  No updates are received when variants are deleted from the catalog
-*  Maximum size for dynamic attributes payload is 9MB
+*  Downloadable products and gift cards
+*  Categories (`categories` and `categoryList`)
 
 ## V1.0 Release
 
