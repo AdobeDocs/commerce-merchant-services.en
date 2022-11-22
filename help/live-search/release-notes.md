@@ -100,7 +100,7 @@ Existing [!DNL Live Search] installations must be upgraded to [!DNL Live Search]
 
 * ![New](../assets/new.svg) - [Performance](performance.md) reporting dashboard provides insight into search terms that shoppers use.
 * ![New](../assets/new.svg) - [!DNL Live Search] [Storefront Events SDK](https://devdocs.magento.com/shared-services/storefront-events-sdk.html) provides access to a common data layer with event publishing and subscription services, and metrics.
-* ![Fix](../assets/fix.svg) - The [[!DNL Storefront Popover]](storefront-popover.html) has a new `active` class for the `.search-autocomplete` container that controls visibility.
+* ![Fix](../assets/fix.svg) - The [[!DNL Storefront popover]](storefront-popover.md) has a new `active` class for the `.search-autocomplete` container that controls visibility.
 * ![Fix](../assets/fix.svg) - In the storefront, the [Search Terms](https://docs.magento.com/user-guide/marketing/search-terms-popular.html) footer link is removed and its cache disabled for [!DNL Live Search] installations.
 * ![Bug](../assets/bug.svg) - Patch for Search adapter handles duplicate products.
 * ![Bug](../assets/bug.svg) - [!DNL Live Search] supports [single-source](https://docs.magento.com/user-guide/catalog/inventory-sources.html) (physical) inventory locations with multiple (virtual) [stocks](https://docs.magento.com/user-guide/catalog/inventory-stock.html). Multiple inventory sources are not supported at this time.
