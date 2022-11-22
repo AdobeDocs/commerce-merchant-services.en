@@ -122,7 +122,7 @@ In this scenario, [!DNL Elasticsearch] temporarily manages search requests from 
 
    You should be able to add facets after `cron` runs the product and attribute feeds and exports attribute metadata to [!DNL Live Search] services.
 
-1. Wait at least an hour for the data to be indexed and synchronized. Then, use the [GraphQL playground](https://devdocs.magento.com/live-search/graphql-support.html) with the default query to verify the following:
+1. Wait at least an hour for the data to be indexed and synchronized. Then, use the [GraphQL playground](https://developer-stage.adobe.com/commerce/webapi/graphql/schema/live-search/) with the default query to verify the following:
 
    * The returned product count is close to what you expect for the store view.
    * Facet(s) are returned.

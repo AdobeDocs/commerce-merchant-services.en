@@ -10,7 +10,7 @@ hide: yes
 - [Introduction to [!DNL Catalog Service]](overview.md)
 - [Onboarding and installation](installation.md)
 - GraphQL queries {#graphql}
-    - [products query](https://devdocs.magento.com/catalog-service/products.html)
-    - [productSearch query](https://devdocs.magento.com/catalog-service/productsearch.html)
-    - [refineProduct query](https://devdocs.magento.com/catalog-service/refine-product.html)
+    - [products query](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/)
+    - [productSearch query](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/product-search/)
+    - [refineProduct query](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/refine-product/)
 - [Release Notes](release-notes.md)
