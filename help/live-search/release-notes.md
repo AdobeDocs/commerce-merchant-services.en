@@ -31,8 +31,8 @@ It is recommended to upgrade and test before pushing to production. Consider upg
 
 * ![New](../assets/new.svg) - Live Search now supports filtering by the 'Display Out of Stock Products' setting in the admin. If 'Display Out of Stock Products' is set to false, `inStock = true` is added to the filter.
 * ![Fix](../assets/fix.svg) - To improve performance, the 'Suggestions' block has been removed from the Live Search popup. The data is still passed through GraphQL, in case you want to replace the feature.
-* ![Fix](../assets/fix.svg) - `categories` and `categoryPath` have replaced `categoryIds` for category filtering. Read more in the [productSearch](https://devdocs.magento.com/live-search/product-search.html#filter) topic.
-* ![Fix](../assets/fix.svg) - Previously, a user tied to a B2B company would recieve an incorrect Customer Group Code when doing searches. Live Search now returns the correct value.
+* ![Fix](../assets/fix.svg) - `categories` and `categoryPath` have replaced `categoryIds` for category filtering. Read more in the [productSearch](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) topic.
+* ![Fix](../assets/fix.svg) - Previously, a user tied to a B2B company would receive an incorrect Customer Group Code when doing searches. Live Search now returns the correct value.
 * ![Fix](../assets/fix.svg) - Previously, when searching for a term that does not exist, Live Search would return an error. That bug is now fixed.
 
 Merchants must upgrade the Live Search extension version >= 2.0.4 to access these features.
@@ -79,7 +79,7 @@ Existing [!DNL Live Search] installations must be upgraded to [!DNL Live Search]
 * ![New](../assets/new.svg) - Beta [PWA](https://developer.adobe.com/commerce/pwa-studio/) compatibility for [!DNL Live Search].
 * ![New](../assets/new.svg) - The [!DNL Live Search] installation process is updated with advanced process changes.
 * ![Fix](../assets/fix.svg) - [Advanced Search](https://docs.magento.com/user-guide/catalog/search-advanced.html) link removed from the storefront footer.
-* ![Bug](../assets/bug.svg) - The following product attributes are not supported by [Magento GraphQL API](https://devdocs.magento.com/guides/v2.4/graphql) when used in relation to the beta release of PWA: `description`, `name`, `short_description`
+* ![Bug](../assets/bug.svg) - The following product attributes are not supported by [Magento GraphQL API](https://developer.adobe.com/commerce/webapi/graphql/) when used in relation to the beta release of PWA: `description`, `name`, `short_description`
 * ![Bug](../assets/bug.svg) - The beta release of PWA for [!DNL Live Search] does not support [event handling](https://devdocs.magento.com/shared-services/storefront-events-sdk.html).
 
 ## [!DNL Live Search] 1.3.1 {#131}
@@ -100,7 +100,7 @@ Existing [!DNL Live Search] installations must be upgraded to [!DNL Live Search]
 
 * ![New](../assets/new.svg) - [Performance](performance.md) reporting dashboard provides insight into search terms that shoppers use.
 * ![New](../assets/new.svg) - [!DNL Live Search] [Storefront Events SDK](https://devdocs.magento.com/shared-services/storefront-events-sdk.html) provides access to a common data layer with event publishing and subscription services, and metrics.
-* ![Fix](../assets/fix.svg) - The [[!DNL Storefront Popover]](https://devdocs.magento.com/live-search/storefront-popover.html) has a new `active` class for the `.search-autocomplete` container that controls visibility.
+* ![Fix](../assets/fix.svg) - The [[!DNL Storefront popover]](storefront-popover.md) has a new `active` class for the `.search-autocomplete` container that controls visibility.
 * ![Fix](../assets/fix.svg) - In the storefront, the [Search Terms](https://docs.magento.com/user-guide/marketing/search-terms-popular.html) footer link is removed and its cache disabled for [!DNL Live Search] installations.
 * ![Bug](../assets/bug.svg) - Patch for Search adapter handles duplicate products.
 * ![Bug](../assets/bug.svg) - [!DNL Live Search] supports [single-source](https://docs.magento.com/user-guide/catalog/inventory-sources.html) (physical) inventory locations with multiple (virtual) [stocks](https://docs.magento.com/user-guide/catalog/inventory-stock.html). Multiple inventory sources are not supported at this time.

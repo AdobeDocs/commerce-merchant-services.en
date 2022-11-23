@@ -7,7 +7,7 @@ exl-id: 37982610-0ff7-48b7-b088-be7d2eff8a57
 
 Faceting is a high-performance filtering method that uses multiple dimensions of searchable static and dynamic attribute values as search criteria.
 
-[!DNL Live Search] uses the `productSearch` query which returns faceting and other data that is specific to [!DNL Live Search]. Refer to [`productSearch` query](https://devdocs.magento.com/live-search/product-search.html) for code examples.
+[!DNL Live Search] uses the `productSearch` query which returns faceting and other data that is specific to [!DNL Live Search]. Refer to [`productSearch` query](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) for code examples.
 
 ## Facet aggregation
 
