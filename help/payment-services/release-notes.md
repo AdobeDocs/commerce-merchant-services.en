@@ -47,6 +47,14 @@ _June 28, 2021_
 
 +++
 
+## v1.5.1
+
+_November 23, 2022_
+
+![New](../assets/new.svg)<!-- Issue PAY-3923 --> Payment Services now includes the version number in the user agent header for requests to be able to track, filter or deprecate unused endpoints.
+
+![Fixed issue](../assets/fix.svg)<!-- Issue PAY-3968 --> Payment Services now correctly displays order data when an order is placed from the product page using smart buttons.
+
 ## v1.5.0
 
 _November 18, 2022_
