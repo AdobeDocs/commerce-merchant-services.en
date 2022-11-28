@@ -87,13 +87,13 @@ Use this method for installing the [!DNL Catalog Service] extension for an on-pr
 
 ## Catalog Service and API Mesh
 
-The [API Mesh](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) enables developers to integrate private or third-party APIs and other interfaces with Adobe products using Adobe IO.
+The [API Mesh for Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) enables developers to integrate private or third-party APIs and other interfaces with Adobe products using Adobe IO.
 
 The first step for using the API Mesh with Catalog Service is to connect API Mesh to your instance. See detailed instructions in [Create a Mesh](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/).
 
 To complete the setup, you will need the [Adobe IO CLI package](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) installed.
 
-Once Mesh is configured on Adobe IO, run the following command to connect the new mesh.
+Once Mesh is configured on Adobe IO, run the following command which adds a `CommerceCatalogServiceGraph` source to your mesh.
 
 ```bash
 aio api-mesh:source:install "CommerceCatalogServiceGraph" -f variables.json
