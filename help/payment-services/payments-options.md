@@ -57,7 +57,7 @@ The [!DNL Apple Pay] button is visible from the product page, mini-cart, shoppin
 
    >[!NOTE]
    >
-   > To use Apple Pay you contact your Sales representative to enable it for your live store(s).
+   > To use Apple Pay contact your Sales representative or Account Manager to enable it for your live stores.
 
 ### [!DNL Pay Later] button
 
