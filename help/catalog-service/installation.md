@@ -35,11 +35,22 @@ Use this method for installing the [!DNL Catalog Service] extension for a Commer
 1. Open the `<Commerce_root>/composer.json` file in a text editor and update the `require` section as follows:
 
    ```json
-   "require":{
-   "magento/composer-root-update-plugin":"^2.0.2",
-   "magento/magento-cloud-metapackage":">=2.4.5 <2.4.6",
-   "magento/catalog-service": "^1.0.0"
-      }
+   "require": {
+      "magento/module-saas-catalog": "^101.4.0",
+      "magento/module-saas-product-override": "^101.4.0",
+      "magento/module-saas-product-variant": "^101.4.0",
+      "magento/module-bundle-product-data-exporter": "^101.3.1",
+      "magento/module-catalog-data-exporter": "^101.3.1",
+      "magento/module-catalog-inventory-data-exporter": "^101.3.1",
+      "magento/module-catalog-url-rewrite-data-exporter": "^101.3.1",
+      "magento/module-configurable-product-data-exporter": "^101.3.1",
+      "magento/module-data-exporter": "^101.3.1",
+      "magento/module-parent-product-data-exporter": "^101.3.1",
+      "magento/module-product-override-data-exporter": "^101.3.1",
+      "magento/data-services": "^7.0.11",
+      "magento/services-id": "^3.0.1",
+      "magento/services-connector": "1.2.1"
+    }
    ```
 
 1. Test the new configuration locally and update dependencies:
@@ -60,8 +71,20 @@ Use this method for installing the [!DNL Catalog Service] extension for an on-pr
 
    ```json
    "require": {
-   "magento/composer-root-update-plugin":"^2.0.2",
-   "magento/catalog-service": "^1.0.0"
+    "magento/module-saas-catalog": "^101.4.0",
+    "magento/module-saas-product-override": "^101.4.0",
+    "magento/module-saas-product-variant": "^101.4.0",
+    "magento/module-bundle-product-data-exporter": "^101.3.1",
+    "magento/module-catalog-data-exporter": "^101.3.1",
+    "magento/module-catalog-inventory-data-exporter": "^101.3.1",
+    "magento/module-catalog-url-rewrite-data-exporter": "^101.3.1",
+    "magento/module-configurable-product-data-exporter": "^101.3.1",
+    "magento/module-data-exporter": "^101.3.1",
+    "magento/module-parent-product-data-exporter": "^101.3.1",
+    "magento/module-product-override-data-exporter": "^101.3.1",
+    "magento/data-services": "^7.0.11",
+    "magento/services-id": "^3.0.1",
+    "magento/services-connector": "1.2.1"
    }
    ```
 
