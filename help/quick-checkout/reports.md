@@ -11,7 +11,7 @@ exl-id: 91c687f4-9953-4c2f-b240-73430603e6a1
 
 >[!WARNING]
 >
-> You must enable [**Checkout tracking**](../quick-checkout/settings-quick-checkout.md) in your Admin panel so Adobe Commerce is allowed to share checkout information with Bolt. By default this configuration option is set to **Yes**. If this option is disabled (set to **No**), reporting will be affected.
+> To allow Adobe Commerce sharing checkout information with Bolt, the [**Checkout tracking**](../quick-checkout/settings-quick-checkout.md)  setting must enabled in the Admin. By default, this configuration option is set to **Yes**. If this option is set to **No**, reporting will be affected. Bolt refreshes the reporting information once per day at 03:00 AM  Eastern Standard Time (EST).
 
 ## Overview reports
 
