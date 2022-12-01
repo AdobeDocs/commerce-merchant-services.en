@@ -126,11 +126,23 @@ To check if the shopper has a [!DNL Bolt] account:
 1. Switch the scope to **Main Website**.
 1. Click the **Configure Callback URL** button. This enables [!DNL Bolt] to determine if the shopper has an account. If they do, the OTP pop-up appears.
 
->[!CAUTION]
->
-> Switching the scope to the **Main Website** ensures that the proper URL is set. Each website could have multiple domains.
+   >[!CAUTION]
+   >
+   > Switching the scope to the **Main Website** ensures that the proper URL is set. Each website could have multiple domains.
 
 See the [Site, Store, and View Scope](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings){target="_blank"} topic for more information about scopes in Adobe Commerce.
+
+## Configure Service Settings
+
+![Quick Checkout](assets/service-settings.png)
+
+1. Set **Enable Checkout Tracking** to `Yes`.
+
+   >[!CAUTION]
+   >
+   > Disabling this option will affect reporting because Adobe Commerce is not allowed to share checkout tracking information with Bolt.
+
+1. Select the **Next Stage After Login** option to change the navigation flow after the customer has logged in. By default it is set to the **Payments** page.
 
 ## Get help
 

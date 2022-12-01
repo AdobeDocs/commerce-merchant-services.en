@@ -21,6 +21,14 @@ These release notes describe feature changes and fixes that occurred and were re
 
 +++Admin panel updates
 
+_November 30, 2022_
+
+![New](../assets/new.svg)<!-- Issue BOLT-502 --> Now, the [reporting](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html) tab has a new "Last year" preset.
+
+![New](../assets/new.svg)<!-- Issue BOLT-471 --> User experience improvements in the [!DNL Quick Checkout] Admin panel show more information in [Tooltips](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html).
+
+![Fixed issue](../assets/fix.svg)<!-- Issue BOLT-514 --> User experience improvements in the [!DNL Quick Checkout] Admin panel show correct total orders numbers, consistency in colors, and the correct legends for all charts.
+
 _November 2, 2022_
 
 ![New](../assets/new.svg)<!-- Issue BOLT-293 --> Now, the [reporting](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html) tab in the [!DNL Quick Checkout] Admin panel shows charts and reporting information of your store's checkout experience statistics.
@@ -46,6 +54,16 @@ _October 5, 2022_
 ![Fixed issue](../assets/fix.svg)<!-- Issue BOLT-369 --> Now, the [[!DNL Quick Checkout] Admin Panel](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) displays the app version in the footer.
 
 +++
+
+## v1.4.0
+
+_November 30, 2022_
+
+![New](../assets/new.svg)<!-- Issue BOLT-513 --> Now, when an Adobe Commerce customer is logged into the store during the checkout process, and has a Bolt account, an option to log into the shopper's Bolt account is displayed.
+
+![New](../assets/new.svg)<!-- Issue BOLT-512 --> A new configuration automatically detects if logged-in shoppers can also be logged in Bolt.
+
+![New](../assets/new.svg)<!-- Issue BOLT-480 --> A new configuration in the [!DNL Quick Checkout] Admin Panel allows you to change the default navigation flow to the **Shipping** page once a Bolt customer logs in. By default, it is configured to the **Payments** page.
 
 ## v1.3.0
 

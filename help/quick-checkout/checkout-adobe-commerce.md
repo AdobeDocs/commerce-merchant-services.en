@@ -30,7 +30,7 @@ If a [!DNL Bolt] account is found during checkout, shoppers can continue with th
 >
 > The Bolt OTP pop-up only appears when the shopper is on the checkout page. The shopper can opt out from logging in to Bolt by closing that pop-up window.
 
-If the shopper is logged in to Adobe Commerce prior to checkout, the [!DNL Bolt] OTP pop-up will not appear during checkout.
+If the shopper is logged in to Adobe Commerce prior to checkout, the [!DNL Bolt] OTP pop-up will not appear during checkout, but a message appears suggesting the shopper to log in to access their Bolt Wallet.
 
 If you encounter issues when you place an order as an existing Adobe Commerce user, see the [Troubleshoot Quick Checkout issues](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/quick-checkout-issues.html) article in the Adobe Commerce Help Center.
 
