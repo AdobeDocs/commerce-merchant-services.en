@@ -85,6 +85,16 @@ Use this method for installing the [!DNL Catalog Service] extension for an on-pr
    bin/magento cache:clean
    ```
 
+## Configure catalog export
+
+After you install [!DNL Catalog Service], you must configure the [Commerce Services Connector](../landing/saas.md) by specifying API Keys and selecting a SaaS Data Space.
+
+To ensure that the catalog export is running correctly:
+
+-  Confirm that [cron jobs](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) are running. 
+-  Verify the [indexers](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) are running.
+-  Ensure that the `Catalog Attributes Feed`, `Product Feed`, `Product Overrides Feed`, and `Product Variant Feed` indexers are set to `Update by Schedule`.
+
 ## Catalog Service and API Mesh
 
 The [API Mesh for Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) enables developers to integrate private or third-party APIs and other interfaces with Adobe products using Adobe IO.
@@ -108,17 +118,7 @@ For instance, the API key can be saved within the file:
 }
 ```
 
-After running this command, the Catalog Service should be running through the API Mesh.
-
-## Configure catalog export
-
-After you install [!DNL Catalog Service], you must configure the [Commerce Services Connector](../landing/saas.md) by specifying API Keys and selecting a SaaS Data Space.
-
-To ensure that the catalog export is running correctly:
-
--  Confirm that [cron jobs](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) are running. 
--  Verify the [indexers](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) are running.
--  Ensure that the `Catalog Attributes Feed`, `Product Feed`, `Product Overrides Feed`, and `Product Variant Feed` indexers are set to `Update by Schedule`.
+After running this command, the Catalog Service should be running through the API Mesh. You can run the `aio api-mesh:get` command to view the configuration of your updated mesh.
 
 ## [!DNL Catalog Service] demo
 
