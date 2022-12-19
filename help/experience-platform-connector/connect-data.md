@@ -17,7 +17,9 @@ To connect your Adobe Commerce instance to the Adobe Experience Platform, you mu
 
 1. In the **Organization ID** field, you see the ID associated with your Adobe Experience Platform account, as configured in the [Commerce Services Connector](../landing/saas.md#organizationid). The organization ID is global. Only one organization ID can be associated per Adobe Commerce instance.
 
-1. In the **Datastream ID** field, paste the ID of the datastream you [created](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html#create) in the Adobe Experience Platform.
+1. [Create](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html#create) a new datastream in the Adobe Experience Platform.
+
+1. In the **Datastream ID** field, paste the ID of that new datastream.
 
     >[!NOTE]
     >
