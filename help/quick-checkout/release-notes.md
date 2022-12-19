@@ -21,6 +21,10 @@ These release notes describe feature changes and fixes that occurred and were re
 
 +++Admin panel updates
 
+_December 14, 2022_
+
+![Fixed issue](../assets/fix.svg)<!-- Issue BOLT-524 --> The [!DNL Quick Checkout] Admin panel now shows the correct total orders and updated reporting information.
+
 _November 30, 2022_
 
 ![New](../assets/new.svg)<!-- Issue BOLT-502 --> Now, the [reporting](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html) tab has a new "Last year" preset.
