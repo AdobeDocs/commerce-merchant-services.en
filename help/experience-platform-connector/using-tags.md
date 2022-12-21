@@ -1182,6 +1182,8 @@ Create the following data elements:
     const order = _satellite.getVar('order');
     const storefront = _satellite.getVar('storefront');
     
+    const orderType = orderContext?.orderType === "instant_purchase" ? "instant_purchase" : "checkout";
+
     if (order.payments && order.payments.length) {
         payments = order.payments.map(payment => {
             return {
@@ -1204,6 +1206,7 @@ Create the following data elements:
         purchaseID: order.orderId.toString(),
         currencyCode: storefront.storeViewCurrencyCode,
         payments,
+        orderType,
     };
     ```
 
