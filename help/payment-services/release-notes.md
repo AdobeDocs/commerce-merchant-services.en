@@ -47,6 +47,14 @@ _June 28, 2021_
 
 +++
 
+## v1.5.2
+
+_December 22, 2022_
+
+![Fixed issue](../assets/fix.svg)<!-- Issue PAY-3992 --> Improved invoicing in Payment Services when a payment method is declined.
+
+![Fixed issue](../assets/fix.svg)<!-- Issue PAY-3999 --> Payment Services now correctly displays PayPal smart buttons with [Fire Checkout's](https://marketplace.magento.com/swissup-firecheckout.html){target=_blank} custom template for the checkout page.
+
 ## v1.5.1
 
 _November 23, 2022_
