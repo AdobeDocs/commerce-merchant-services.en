@@ -1132,6 +1132,13 @@ Triggered when the shopper places an order.
 
 Create the following data elements:
 
+1. Account email:
+
+    - **Name**: `account email`
+    - **Extension**: `Adobe Client Data Layer`
+    - **Data Element Type**: `Data Layer Computed State`
+    - **[Optional] path**: `accountContext.emailAddress`
+
 1. Storefront:
 
     - **Name**: `storefront`
@@ -1285,6 +1292,9 @@ Create the following data elements:
     - **Promotion ID**: **Value** = `%promotion id%`
     - **Field Group**: `commerce` > `purchases` > `value`
     - **value**: **Value** = `1`
+    - **Personal Email Address**: **Value** = `%account email%`
+    - **Field Group**: `personalEmail` > `address`
+    - **Address**: **Value** = `%account email%`
 
 #### Rules 
 

@@ -22,7 +22,7 @@ In Step 3, Add field groups to XDM schema says to create a datastream - as the l
     - Personal Contact Details 
     - Commerce Details
     - Adobe Analytics Experience event Commerce (if you want to send data to Adobe Analytics)
-    - Person Identifier
+    - Identity Map
     
     >[!NOTE]
     >
