@@ -51,20 +51,6 @@ Merchants must upgrade the Live Search extension version >= 2.0.3 to access thes
 
 We advise users to upgrade and test before pushing to production. Consider upgrading the production environment during off-peak hours after verifying their testing environment results.
 
->[!NOTE]
->
->B2B support will be added in a phased manner starting August 9th on the backend services, with an expected migration to be completed by the end of August. If the Live Search extension is not upgraded, your storefront will continue to work normally but without B2B features.
-
-### Known Limitations / Bugs:
-
-* ![Bug](../assets/bug.svg) - Suggestions are sourced from products not displayable to the customer group.
-* ![Bug](../assets/bug.svg) - Products are not displayed if not added to the "Default shared catalog".
-* ![Bug](../assets/bug.svg) - The Search Adapter does not render the "No" bucket for boolean product attributes even though products are configured with the attribute and the "No" bucket is returned in the response.
-* While some products and queries may return non-english results, multi-language queries are not currently supported. 
-* B2B with Live Search for PWA Studio will not be available until PWA Studio adds support for it.
-* Product overrides and product attributes feed may have sync issues requiring admins to run `bin/magento indexer:reset` and `bin/magento indexer:reindex` to re-sync correctly.
-* If you enable or disable the Catalog Permissions/Shared Catalog/B2B features, the `catalog_data_exporter_product_overrides` indexer is not updated and incorrectly marked as `valid`. Use `bin/magento saas:resync --feed=productOverrides` to fix the issue.
-
 ## [!DNL Live Search] 2.0 {#20}
 
 * Compatible with Adobe Commerce (EE): 2.4.x
