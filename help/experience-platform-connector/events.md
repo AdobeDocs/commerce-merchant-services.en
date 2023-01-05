@@ -9,23 +9,21 @@ The following lists the Commerce events available when you install the Experienc
 
 In addition to the data the following events collect, you also get [other data](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html) provided by the Adobe Experience Platform Web SDK.
 
+## Storefront events
+
++++ The storefront events collect anonymized behavioral data from your shoppers as they browse your site. The data these events collect can be used to create promotions and campaigns targeted to a specific set of shoppers.
+
 >[!NOTE]
 >
 >All storefront events include the `personID` field, which is a unique identifier of the person.
 
-## addToCart
+### addToCart
 
-Triggered when a product is added to the cart or when the quantity of a product in the cart is incremented.
+|Description| XDM event name|
+|---|---|
+|Triggered when a product is added to the cart or when the quantity of a product in the cart is incremented.|`commerce.productListAdds`|
 
-### XDM event name
-
-`commerce.productListAdds`
-
-### Type
-
-Storefront
-
-### Data collected
+#### Data collected from addToCart
 
 The following table describes the data collected for this event.
 
@@ -43,19 +41,13 @@ The following table describes the data collected for this event.
 |`selectedOptions`|Field used for a configurable product. `attribute` identifies an attribute of the configurable product, such as `size` or `color` and `value` identifies the value of the attribute such as `small` or `black`.|
 |`cartID`|The unique ID that identifies the customer’s cart|
 
-## openCart
+### openCart
 
-Triggered when a new cart is created, which is when a product is added to an empty cart.
+|Description| XDM event name|
+|---|---|
+|Triggered when a new cart is created, which is when a product is added to an empty cart.|`commerce.productListOpens`|
 
-### XDM event name
-
-`commerce.productListOpens`
-
-### Type
-
-Storefront
-
-### Data collected
+#### Data collected from openCart
 
 The following table describes the data collected for this event.
 
@@ -73,19 +65,13 @@ The following table describes the data collected for this event.
 |`selectedOptions`|Field used for a configurable product. `attribute` identifies an attribute of the configurable product, such as `size` or `color` and `value` identifies the value of the attribute such as `small` or `black`.|
 |`cartID`|The unique ID that identifies the customer’s cart|
 
-## removeFromCart
+### removeFromCart
 
-Triggered every time a product is removed or every time the quantity of a product in the cart is decremented.
+|Description| XDM event name|
+|---|---|
+|Triggered every time a product is removed or every time the quantity of a product in the cart is decremented.|`commerce.productListRemovals`|
 
-### XDM event name
-
-`commerce.productListRemovals`
-
-### Type
-
-Storefront
-
-### Data collected
+#### Data collected from removeFromCart
 
 The following table describes the data collected for this event.
 
@@ -103,19 +89,13 @@ The following table describes the data collected for this event.
 |`selectedOptions`|Field used for a configurable product. `attribute` identifies an attribute of the configurable product, such as `size` or `color` and `value` identifies the value of the attribute such as `small` or `black`.|
 |`cartID`|The unique ID that identifies the customer’s cart|
 
-## shoppingCartView
+### shoppingCartView
 
-Triggered when any cart page loads.
+|Description| XDM event name|
+|---|---|
+|Triggered when any cart page loads.|`commerce.productListViews`|
 
-### XDM event name
-
-`commerce.productListViews`
-
-### Type
-
-Storefront
-
-### Data collected
+#### Data collected from shoppingCartView
 
 The following table describes the data collected for this event.
 
@@ -133,19 +113,13 @@ The following table describes the data collected for this event.
 |`selectedOptions`|Field used for a configurable product. `attribute` identifies an attribute of the configurable product, such as `size` or `color` and `value` identifies the value of the attribute such as `small` or `black`.|
 |`cartID`|The unique ID that identifies the customer’s cart|
 
-## pageView
+### pageView
 
-Triggered when any page loads.
+|Description| XDM event name|
+|---|---|
+|Triggered when any page loads.|`web.webpagedetails.pageViews`|
 
-### XDM event name
-
-`web.webpagedetails.pageViews`
-
-### Type
-
-Storefront
-
-### Data collected
+#### Data collected from pageView
 
 The following table describes the data collected for this event.
 
@@ -153,19 +127,13 @@ The following table describes the data collected for this event.
 |---|---|
 |`pageViews`|Indicates if a page was loaded. A `value` of `1` indicates that the page was loaded.|
 
-## productPageView
+### productPageView
 
-Triggered when any product page loads.
+|Description| XDM event name|
+|---|---|
+|Triggered when any product page loads.|`commerce.productViews`|
 
-### XDM event name
-
-`commerce.productViews`
-
-### Type
-
-Storefront
-
-### Data collected
+#### Data collected from productPageView
 
 The following table describes the data collected for this event.
 
@@ -181,19 +149,13 @@ The following table describes the data collected for this event.
 |`productImageUrl`|Main image URL of the product|
 |`selectedOptions`|Field used for a configurable product. `attribute` identifies an attribute of the configurable product, such as `size` or `color` and `value` identifies the value of the attribute such as `small` or `black`.|
 
-## startCheckout
+### startCheckout
 
-Triggered when the shopper clicks a checkout button.
+|Description| XDM event name|
+|---|---|
+|Triggered when the shopper clicks a checkout button.|`commerce.checkouts`|
 
-### XDM event name
-
-`commerce.checkouts`
-
-### Type
-
-Storefront
-
-### Data collected
+#### Data collected from startCheckout
 
 The following table describes the data collected for this event.
 
@@ -211,19 +173,13 @@ The following table describes the data collected for this event.
 |`selectedOptions`|Field used for a configurable product. `attribute` identifies an attribute of the configurable product, such as `size` or `color` and `value` identifies the value of the attribute such as `small` or `black`.|
 |`cartID`|The unique ID that identifies the customer’s cart|
 
-## completeCheckout
+### completeCheckout
 
-Triggered when the shopper places an order.
+|Description| XDM event name|
+|---|---|
+|Triggered when the shopper places an order.|`commerce.order`|
 
-### XDM event name
-
-`commerce.order`
-
-### Type
-
-Storefront
-
-### Data collected
+#### Data collected from completeCheckout
 
 The following table describes the data collected for this event.
 
@@ -242,6 +198,8 @@ The following table describes the data collected for this event.
 |`shippingMethod`|The method of shipping chosen by the customer, such as standard delivery, expedited delivery, pick up in store, and so on|
 |`shippingAmount`|The total shipping cost for the items in the cart|
 |`promotionID`|Unique identifier of the promotion, if any|
+|`personalEmail`|Specifies the personal email address|
+|`address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
 |`productListItems`|An array of products in the shopping cart|
 |`SKU`|Stock Keeping Unit. The unique identifier for the product.|
 |`name`|The display name or human-readable name of the product|
@@ -251,24 +209,23 @@ The following table describes the data collected for this event.
 |`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for the order totals.|
 |`productImageUrl`|Main image URL of the product|
 |`selectedOptions`|Field used for a configurable product. `attribute` identifies an attribute of the configurable product, such as `size` or `color` and `value` identifies the value of the attribute such as `small` or `black`.|
++++
 
-## signIn
+## Profile events
 
-Triggered when a shopper attempts to sign in.
++++ Profile events include account information, such as `signIn`, `signOut`, `createAccount`, and `editAccount`. The data these events collect can be used to...
+
+### signIn
+
+|Description| XDM event name|
+|---|---|
+|Triggered when a shopper attempts to sign in.|`userAccount.login`|
 
 >[!NOTE]
 >
-> This event is triggered when the specific action is attempted. It does not indicate that the action was successful. 
+> This event is triggered when the specific action is attempted. It does not indicate that the action was successful.
 
-### XDM event name
-
-`userAccount.login`
-
-### Type
-
-Profile
-
-### Data collected
+#### Data collected from signIn
 
 The following table describes the data collected for this event.
 
@@ -282,23 +239,17 @@ The following table describes the data collected for this event.
 |`userAccount`|Indicates any loyalty details, preferences, login processes, and other account preferences|
 |`login`|Indicates if a visitor attempted to log in|
 
-## signOut
+### signOut
 
-Triggered when a shopper attempts to sign out.
+|Description| XDM event name|
+|---|---|
+|Triggered when a shopper attempts to sign out.|`userAccount.logout`|
 
 >[!NOTE]
 >
-> This event is triggered when the specific action is attempted. It does not indicate that the action was successful. 
+> This event is triggered when the specific action is attempted. It does not indicate that the action was successful.
 
-### XDM event name
-
-`userAccount.logout`
-
-### Type
-
-Profile
-
-### Data collected
+#### Data collected from signOut
 
 The following table describes the data collected for this event.
 
@@ -308,23 +259,17 @@ The following table describes the data collected for this event.
 |`userAccount`|Indicates any loyalty details, preferences, login processes, and other account preferences|
 |`logout`|Indicates if a visitor attempted to log out|
 
-## createAccount
+### createAccount
 
-Triggered when a shopper attempts to create an account.
+|Description| XDM event name|
+|---|---|
+|Triggered when a shopper attempts to create an account.|`userAccount.createProfile`|
 
 >[!NOTE]
 >
-> This event is triggered when the specific action is attempted. It does not indicate that the action was successful. 
+> This event is triggered when the specific action is attempted. It does not indicate that the action was successful.
 
-### XDM event name
-
-`userAccount.createProfile`
-
-### Type
-
-Profile
-
-### Data collected
+#### Data collected from createAccount
 
 The following table describes the data collected for this event.
 
@@ -339,23 +284,17 @@ The following table describes the data collected for this event.
 |`userAccount`|Indicates any loyalty details, preferences, login processes, and other account preferences|
 |`createProfile`|Indicates if a user has created an account profile|
 
-## editAccount
+### editAccount
 
-Triggered when a shopper attempts to edit an account.
+|Description| XDM event name|
+|---|---|
+|Triggered when a shopper attempts to edit an account.|`userAccount.updateProfile`|
 
 >[!NOTE]
 >
-> This event is triggered when the specific action is attempted. It does not indicate that the action was successful. 
+> This event is triggered when the specific action is attempted. It does not indicate that the action was successful.
 
-### XDM event name
-
-`userAccount.updateProfile`
-
-### Type
-
-Profile
-
-### Data collected
+#### Data collected from editAccount
 
 The following table describes the data collected for this event.
 
@@ -370,37 +309,23 @@ The following table describes the data collected for this event.
 |`address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
 |`userAccount`|Indicates any loyalty details, preferences, login processes, and other account preferences|
 |`updateProfile`|Indicates if a user has updated their account profile|
++++
 
-## searchRequestSent
+## Search events
 
-Triggered by the following events in the “search as you type” popover:
++++ The search events collected...
 
-- Press Enter
-- Click _View All_
+### searchRequestSent
 
-Triggered by the following events on search results pages:
-
-- Select a filter
-- Change the sort order (_Sort By_)
-- Change the sort direction (ascending or descending)
-- Change the number of results per page (_Show # per page_)
-- Navigate to the next page
-- Navigate to the previous page
-- Navigate to a different page
+|Description| XDM event name|
+|---|---|
+|Triggered by the following events in the “search as you type” popover:<br>Press Enter, Click _View All_<br>Triggered by the following events on search results pages:<br>Select a filter, Change the sort order (_Sort By_), Change the sort direction (ascending or descending), Change the number of results per page (_Show # per page_), Navigate to the next page, Navigate to the previous page, Navigate to a different page|`searchRequest`|
 
 >[!NOTE]
 >
 >Search events are not supported on an Adobe Commerce Enterprise Edition with the B2B module installed.
 
-### XDM event name
-
-`searchRequest`
-
-### Type
-
-Search
-
-### Data collected
+#### Data collected from searchRequestSent
 
 The following table describes the data collected for this event.
 
@@ -416,23 +341,17 @@ The following table describes the data collected for this event.
 |`order`|The order in which to return search results|
 |`query`|The terms searched for|
 
-## searchResponseReceived
+### searchResponseReceived
 
-Triggered when Live Search returns results for the “search as you type” popover or search results page.
+|Description| XDM event name|
+|---|---|
+|Triggered when Live Search returns results for the “search as you type” popover or search results page.|`searchResponse`|
 
 >[!NOTE]
 >
 >Search events are not supported on an Adobe Commerce Enterprise Edition with the B2B module installed.
 
-### XDM event name
-
-`searchResponse`
-
-### Type
-
-Search
-
-### Data collected
+#### Data collected from searchResponseReceived
 
 The following table describes the data collected for this event.
 
@@ -445,3 +364,58 @@ The following table describes the data collected for this event.
 |`SKU`|Stock Keeping Unit. The unique identifier for the product.|
 |`name`|The display name or human-readable name of the product|
 |`productImageUrl`|Main image URL of the product|
+
++++
+
+## (Beta) Order status events
+
++++ The order status events contain information about an order, such as if an order was placed, cancelled, refunded, or shipped.
+
+### orderPlaced
+
+|Description| XDM event name|
+|---|---|
+|Triggered when a shopper places an order.||
+
+#### Data collected from orderPlaced
+
+The following table describes the data collected for this event.
+|Field|Description|
+|---|---|
+
+### orderCancelled
+
+|Description| XDM event name|
+|---|---|
+|Triggered when ||
+
+#### Data collected from orderCancelled
+
+The following table describes the data collected for this event.
+|Field|Description|
+|---|---|
+
+### orderRefunded
+
+|Description| XDM event name|
+|---|---|
+|Triggered when ||
+
+#### Data collected from orderRefunded
+
+The following table describes the data collected for this event.
+|Field|Description|
+|---|---|
+
+### orderShipped
+
+|Description| XDM event name|
+|---|---|
+|Triggered when ||
+
+#### Data collected from orderShipped
+
+The following table describes the data collected for this event.
+|Field|Description|
+|---|---|
++++
