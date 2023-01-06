@@ -213,7 +213,8 @@ The following table describes the data collected for this event.
 
 ## Profile events
 
-+++ Profile events include account information, such as `signIn`, `signOut`, `createAccount`, and `editAccount`. The data these events collect can be used to...
++++
+Profile events include account information, such as `signIn`, `signOut`, `createAccount`, and `editAccount`. This data is used to help populate key customer details that are needed to better define segments or execute marketing campaigns, such as if you want to target shoppers who live in New York.
 
 ### signIn
 
@@ -313,7 +314,7 @@ The following table describes the data collected for this event.
 
 ## Search events
 
-+++ The search events collected...
++++ The search events provide data relevant to the shopper's intent. Insight into a shopper's intent helps merchants see how shoppers are searching for items, what they click on, and ultimately purchase or abandon. An example of how you might use this data, is if you want to target existing shoppers who search for your top product, but never purchase the product.
 
 ### searchRequestSent
 
@@ -369,53 +370,127 @@ The following table describes the data collected for this event.
 
 ## (Beta) Order status events
 
-+++ The order status events contain information about an order, such as if an order was placed, cancelled, refunded, or shipped.
++++ The order status events contain information about an order, such as if an order was placed, cancelled, refunded, or shipped. The data these server-side events collect show a 360 view of the shopper order. This can help merchants better target or analyze the entire order status when developing marketing campaigns. For example, you can spot trends in certain product categories that perform well at different times of the year. Such as, winter clothes that sell better during colder months or certain product colors that shoppers are interested in over the years. In addition, order status data can help you calculate lifetime customer value by understanding a shoppers propensity to convert based on previous orders.
 
 ### orderPlaced
 
 |Description| XDM event name|
 |---|---|
-|Triggered when a shopper places an order.||
+|Triggered when a shopper places an order.|`orderPlaced`|
 
 #### Data collected from orderPlaced
 
 The following table describes the data collected for this event.
+
 |Field|Description|
 |---|---|
-
-### orderCancelled
-
-|Description| XDM event name|
-|---|---|
-|Triggered when ||
-
-#### Data collected from orderCancelled
-
-The following table describes the data collected for this event.
-|Field|Description|
-|---|---|
-
-### orderRefunded
-
-|Description| XDM event name|
-|---|---|
-|Triggered when ||
-
-#### Data collected from orderRefunded
-
-The following table describes the data collected for this event.
-|Field|Description|
-|---|---|
+|`MAGEID`|Identifies an Adobe Commerce Account|
+|`websiteCode`|The Adobe Commerce website code|
+|`orderNumber`|Unique identifier assigned by the seller for this purchase or contract. There is no guarantee that the ID is unique.|
+|`orderDate`|The date when the order was placed|
+|`channel`|Indicates where an order was initially placed. Currently, this value will always be `magento`|
+|`productlistitems`|An array of products in the order|
+|`name`|The display name or human-readable name of the product|
+|`SKU`|Stock Keeping Unit. The unique identifier for the product.|
+|`price`|The total price for the product line item|
+|`discountAmount`|Indicates the discount amount applied|
+|`quantity`|The number of product units in the cart|
+|`shipping`|Shipping details for one or more products|
+|`shippingMethod`|The method of shipping chosen by the customer, such as standard delivery, expedited delivery, pick up in store, and so on|
+|`shippingAmount`|The amount the customer had to pay for shipping.|
+|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for the order totals.|
+|`shippingAddress`|Physical shipping address|
+|`street1`|Primary street level information, apartment number, street number, and street name|
+|`city`|The name of the city|
+|`State`|The name of the State. This is a free-form field.|
+|`postalCode`|The postal code of the location. Postal codes are not available for all countries. In some countries, this will only contain part of the postal code.|
+|`country`|The name of the government-administered territory. Other than `xdm:countryCode`, this is a free-form field that can have the country name in any language.|
+|`billingAddress`|Billing postal address|
+|`street1`|Primary street level information, apartment number, street number, and street name|
+|`city`|The name of the city|
+|`State`|The name of the State. This is a free-form field.|
+|`postalCode`|The postal code of the location. Postal codes are not available for all countries. In some countries, this will only contain part of the postal code.|
+|`country`|The name of the government-administered territory. Other than `xdm:countryCode`, this is a free-form field that can have the country name in any language.|
+|`payment`|The list of payments for this order|
+|`paymentType`|The method of payment for this order. Enumerated, custom values allowed.|
+|`paymentTotal`|The value of the payment|
+|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for this payment item|
+|`emailAddress`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
 
 ### orderShipped
 
 |Description| XDM event name|
 |---|---|
-|Triggered when ||
+|Triggered when an order is shipped.|`orderLineItemShipped`|
 
 #### Data collected from orderShipped
 
 The following table describes the data collected for this event.
 |Field|Description|
 |---|---|
+|`MAGEID`|Identifies an Adobe Commerce Account|
+|`websiteCode`|The Adobe Commerce website code|
+|`shipDate`|The date when the order was shipped|
+|`productlistitems`|An array of products in the order|
+|`name`|The display name or human-readable name of the product|
+|`SKU`|Stock Keeping Unit. The unique identifier for the product.|
+|`price`|The total price for the product line item|
+|`discountAmount`|Indicates the discount amount applied|
+|`quantity`|The number of product units in the cart|
+|`shipping`|Shipping details for one or more products|
+|`shippingMethod`|The method of shipping chosen by the customer, such as standard delivery, expedited delivery, pick up in store, and so on|
+|`shippingAmount`|The amount the customer had to pay for shipping.|
+|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for the order totals.|
+|`shippingAddress`|Physical shipping address|
+|`street1`|Primary street level information, apartment number, street number, and street name|
+|`city`|The name of the city|
+|`State`|The name of the State. This is a free-form field.|
+|`postalCode`|The postal code of the location. Postal codes are not available for all countries. In some countries, this will only contain part of the postal code.|
+|`country`|The name of the government-administered territory. Other than `xdm:countryCode`, this is a free-form field that can have the country name in any language.|
+|`emailAddress`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
+
+### orderCancelled
+
+|Description| XDM event name|
+|---|---|
+|Triggered when a shopper cancels an order.|`orderCancelled`|
+
+#### Data collected from orderCancelled
+
+The following table describes the data collected for this event.
+|Field|Description|
+|---|---|
+|`MAGEID`|Identifies an Adobe Commerce Account|
+|`websiteCode`|The Adobe Commerce website code|
+|`cancelDate`|The date when the order was canceled|
+|`productlistitems`|An array of products in the order|
+|`name`|The display name or human-readable name of the product|
+|`SKU`|Stock Keeping Unit. The unique identifier for the product.|
+|`price`|The total price for the product line item|
+|`discountAmount`|Indicates the discount amount applied|
+|`quantity`|The number of product units in the cart|
+|`emailAddress`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
+
+### orderRefunded
+
+|Description| XDM event name|
+|---|---|
+|Triggered when a shopper returns an item in an order.|`orderLineItemReturned`|
+
+#### Data collected from orderRefunded
+
+The following table describes the data collected for this event.
+|Field|Description|
+|---|---|
+|`MAGEID`|Identifies an Adobe Commerce Account|
+|`websiteCode`|The Adobe Commerce website code|
+|`creditMemoIssueDate`|The date when the refund was created|
+|`productlistitems`|An array of products in the order|
+|`name`|The display name or human-readable name of the product|
+|`SKU`|Stock Keeping Unit. The unique identifier for the product.|
+|`price`|The total price for the product line item|
+|`discountAmount`|Indicates the discount amount applied|
+|`quantity`|The number of product units in the cart|
+|`emailAddress`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
+
 +++

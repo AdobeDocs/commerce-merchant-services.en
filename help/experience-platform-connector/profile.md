@@ -21,7 +21,7 @@ In this topic you will learn how to upload your Adobe Commerce customer profiles
 
 1. Determine where you store your customer data. For some merchants, this data is stored in Adobe Commerce and can be [exported](https://docs.magento.com/user-guide/system/data-export.html) as a CSV file. For others, it might be in a separate Customer relationship management (CRM) system.
 
-1. After you determine where you store your customer data, find the appropriate [source connector](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=en) based on where your customer data is stored. If you do not see an appropriate source connector, then use the [local file upload](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/local-system/local-file-upload.html) connector and import your shopper profiles from a CSV file.
+1. After you determine where you store your customer data, find the appropriate [source connector](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html) based on where your customer data is stored. If you do not see an appropriate source connector, then use the [local file upload](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/local-system/local-file-upload.html) connector and import your shopper profiles from a CSV file.
 
     >[!NOTE]
     >
