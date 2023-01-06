@@ -15,7 +15,7 @@ In addition to the data the following events collect, you also get [other data](
 
 >[!NOTE]
 >
->All storefront events include the `personID` field, which is a unique identifier of the person.
+>All storefront events include the `identityMap` field, which is a unique identifier of the person.
 
 ### addToCart
 
