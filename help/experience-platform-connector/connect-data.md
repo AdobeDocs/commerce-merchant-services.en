@@ -49,11 +49,7 @@ When Commerce data is sent to the Adobe Experience Platform edge, you can build 
 ![Commerce Data in Adobe Experience Manager](assets/aem-data-1.png)
 _Commerce Data in Adobe Experience Manager_
 
-
-
-
-
-# Connect Commerce data to Adobe Experience Platform {#connectaep}
+<!--# Connect Commerce data to Adobe Experience Platform {#connectaep}
 
 To connect your Adobe Commerce instance to the Adobe Experience Platform, you must provide an organization ID and a datastream ID.
 
@@ -93,7 +89,7 @@ With the Experience Platform connector extension installed, the link between Ado
 >[!NOTE]
 >
 > The amount of time it takes for data to flow from the edge to other Adobe DX products can vary.
-
+-->
 <!--
 This page documents the setup needed to stream server side Order events into AEP.
 Profile stitching
