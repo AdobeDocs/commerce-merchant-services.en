@@ -48,9 +48,9 @@ Adobe provides a collection of Commerce, integration, and data services to help 
   </td>
     </tr>
 <tr>
-    <td valign="top">
+    <td valign="top" width="200px">
        <img alt="Store Fulfillment" src="assets/store-fulfillment-landing-graphic.png" width="170px"/></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/guide-overview.html"> <strong>Store Fulfillment</strong></a> <br><em>(Available for Magento Open Source)</em>
+   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/guide-overview.html"> <strong>Store Fulfillment</strong></a></br>
     <div>Deliver a superior buy online, pick up in store (BOPIS) customer experience and maximize employee productivity by providing a comprehensive fulfillment workflow enabled through a mobile device.</div>
   </td>
    </tr>
