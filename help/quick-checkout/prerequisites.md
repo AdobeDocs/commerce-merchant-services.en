@@ -5,7 +5,7 @@ exl-id: fa61aa73-a2b6-4c69-ab42-cede74c15caa
 ---
 # [!DNL Quick Checkout] prerequisites
 
-The [!DNL Quick Checkout] is compatible with [!DNL Magento Open Source] and Adobe Commerce versions `>= 2.4.1-p1`.
+The [!DNL Quick Checkout] is compatible with both [!DNL Magento Open Source] and Adobe Commerce. See [Lifecycle Policy](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html){target=_blank} for more information about supported versions.
 
 Refer to the [onboarding](../quick-checkout/onboarding.md) topic for more information.
 
