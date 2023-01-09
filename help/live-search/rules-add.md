@@ -89,7 +89,7 @@ events are actions that change the search results when the conditions are met. A
 
 The information that is entered here appears in the [Rule Details](rules-workspace.md) panel.
 
-1. Under *Details*, enter a **Name** for the rule.
+1. Under *Details*, enter a **Name** for the rule. All rule names must be unique.
 1. Enter a brief **Description** of the rule.
 1. Enter the **Start Date** and **End Date** for the rule to be active or choose the dates from the calendar.
 
@@ -148,7 +148,7 @@ The information that is entered here appears in the [Rule Details](rules-workspa
 
 |Field |Description |
 |--- |--- |
-| Name | The name of the rule. |
+| Name | The name of the rule. Rule names must be unique. |
 | Start date | The start date of the rule, if scheduled. |
 | End date | The end date of the rule, if scheduled. |
 | Description | A brief description of the rule. |
