@@ -10,7 +10,7 @@ To build a rule, the first step is to use the rule editor to define the conditio
 ## Step 1: Add a rule
 
 1. In the Admin, go to **Marketing** > SEO & Search > **Live Search**.
-1. Set the **Scope** to identify the [store view](https://docs.magento.com/user-guide/configuration/scope.html) where the rule applies.
+1. Set the **Scope** to identify the [store view](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) where the rule applies.
 1. Click the **Rules** tab.
 1. Click **Add rule** to launch the rule editor.
 

@@ -64,9 +64,9 @@ Existing [!DNL Live Search] installations must be upgraded to [!DNL Live Search]
 * ![New](../assets/new.svg) - The number of available lines in the [[!DNL storefront popover]](quick-tour.md) can be configured from the *Admin*.
 * ![New](../assets/new.svg) - Beta [PWA](https://developer.adobe.com/commerce/pwa-studio/) compatibility for [!DNL Live Search].
 * ![New](../assets/new.svg) - The [!DNL Live Search] installation process is updated with advanced process changes.
-* ![Fix](../assets/fix.svg) - [Advanced Search](https://docs.magento.com/user-guide/catalog/search-advanced.html) link removed from the storefront footer.
+* ![Fix](../assets/fix.svg) - [Advanced Search](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#advanced-search) link removed from the storefront footer.
 * ![Bug](../assets/bug.svg) - The following product attributes are not supported by [Magento GraphQL API](https://developer.adobe.com/commerce/webapi/graphql/) when used in relation to the beta release of PWA: `description`, `name`, `short_description`
-* ![Bug](../assets/bug.svg) - The beta release of PWA for [!DNL Live Search] does not support [event handling](https://devdocs.magento.com/shared-services/storefront-events-sdk.html).
+* ![Bug](../assets/bug.svg) - The beta release of PWA for [!DNL Live Search] does not support [event handling](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/).
 
 ## [!DNL Live Search] 1.3.1 {#131}
 
@@ -74,9 +74,9 @@ Existing [!DNL Live Search] installations must be upgraded to [!DNL Live Search]
 * Compatible with Adobe Commerce for Cloud (ECE): 2.4.x
 * Stability: Stable
 
-* ![Fix](../assets/fix.svg) - [Custom price attribute](https://docs.magento.com/user-guide/stores/attributes-input-types.html) no longer returns an error when configured as a [facet]({% link live-search/facets-add.md %}).
-* ![Fix](../assets/fix.svg) - Fixed issue that caused an error to occur when no [currency symbol](https://docs.magento.com/user-guide/stores/currency-symbols.html) (`data-currency-symbol`) is available.
-* ![Fix](../assets/fix.svg) - [[!DNL Storefront popover]](storefront-popover.md) now shows the [Special Price](https://docs.magento.com/user-guide/catalog/product-price-special.html) (minimum final price) when available.
+* ![Fix](../assets/fix.svg) - [Custom price attribute](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/attributes-input-types.html) no longer returns an error when configured as a [facet]({% link live-search/facets-add.md %}).
+* ![Fix](../assets/fix.svg) - Fixed issue that caused an error to occur when no [currency symbol](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html#step-5%3A-customize-currency-symbols-(optional)) (`data-currency-symbol`) is available.
+* ![Fix](../assets/fix.svg) - [[!DNL Storefront popover]](storefront-popover.md) now shows the [Special Price](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-special.html) (minimum final price) when available.
 
 ## [!DNL Live Search] 1.3.0 {#130}
 
@@ -85,11 +85,11 @@ Existing [!DNL Live Search] installations must be upgraded to [!DNL Live Search]
 * Stability: Stable
 
 * ![New](../assets/new.svg) - [Performance](performance.md) reporting dashboard provides insight into search terms that shoppers use.
-* ![New](../assets/new.svg) - [!DNL Live Search] [Storefront Events SDK](https://devdocs.magento.com/shared-services/storefront-events-sdk.html) provides access to a common data layer with event publishing and subscription services, and metrics.
+* ![New](../assets/new.svg) - [!DNL Live Search] [Storefront Events SDK](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/) provides access to a common data layer with event publishing and subscription services, and metrics.
 * ![Fix](../assets/fix.svg) - The [[!DNL Storefront popover]](storefront-popover.md) has a new `active` class for the `.search-autocomplete` container that controls visibility.
-* ![Fix](../assets/fix.svg) - In the storefront, the [Search Terms](https://docs.magento.com/user-guide/marketing/search-terms-popular.html) footer link is removed and its cache disabled for [!DNL Live Search] installations.
+* ![Fix](../assets/fix.svg) - In the storefront, the [Search Terms](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html#popular-search-terms) footer link is removed and its cache disabled for [!DNL Live Search] installations.
 * ![Bug](../assets/bug.svg) - Patch for Search adapter handles duplicate products.
-* ![Bug](../assets/bug.svg) - [!DNL Live Search] supports [single-source](https://docs.magento.com/user-guide/catalog/inventory-sources.html) (physical) inventory locations with multiple (virtual) [stocks](https://docs.magento.com/user-guide/catalog/inventory-stock.html). Multiple inventory sources are not supported at this time.
+* ![Bug](../assets/bug.svg) - [!DNL Live Search] supports [single-source](https://experienceleague.adobe.com/docs/commerce-admin/inventory/sources/sources-manage.html) (physical) inventory locations with multiple (virtual) [stocks](https://experienceleague.adobe.com/docs/commerce-admin/inventory/stocks/stocks-manage.html). Multiple inventory sources are not supported at this time.
 
 ## [!DNL Live Search] 1.2.0 {#120}
 
@@ -112,8 +112,8 @@ Existing [!DNL Live Search] installations must be upgraded to [!DNL Live Search]
 * Compatible with Adobe Commerce for Cloud (ECE): 2.4.x
 * Stability: Stable
 
-* ![Bug](../assets/bug.svg) - The [!DNL Live Search] service supports only the [base currency](https://docs.magento.com/user-guide/stores/currency-configuration.html) of the Adobe Commerce installation.
-* ![Bug](../assets/bug.svg) - When adding a facet, the Product Attributes Feed does not update correctly when set to `Update on Save`. To avoid this problem, go to [Index Management](https://docs.magento.com/user-guide/system/index-management.html) and set Product Attributes Feed to `Update by Schedule`.
+* ![Bug](../assets/bug.svg) - The [!DNL Live Search] service supports only the [base currency](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html) of the Adobe Commerce installation.
+* ![Bug](../assets/bug.svg) - When adding a facet, the Product Attributes Feed does not update correctly when set to `Update on Save`. To avoid this problem, go to [Index Management](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) and set Product Attributes Feed to `Update by Schedule`.
 * ![Bug](../assets/bug.svg) - [!DNL Live Search] synonyms are defined per store view, but are currently stored per website and identified with a combination of `environmentId` + `storeViewCode`. As a result, all websites and store views within the Adobe Commerce installation share the same set of synonyms. The most recently created set of synonyms for the store view takes precedence.
 * ![Bug](../assets/bug.svg) - If a synonym term contains multiple words, each word is treated as a separate synonym. For example, if you define "time piece" as a synonym of "watch", both "time" and "piece" are treated as synonyms of watch.
 
@@ -121,6 +121,6 @@ Existing [!DNL Live Search] installations must be upgraded to [!DNL Live Search]
 
 To learn more:
 
-* [Adobe Commerce Developer Documentation](https://devdocs.magento.com/)
-* [Adobe Commerce User Guide](https://docs.magento.com/user-guide/)
+* [Adobe Commerce Developer Documentation](https://developer.adobe.com/commerce/docs)
+* [Adobe Commerce User Guide](https://experienceleague.adobe.com/docs/commerce.html)
 * [[!DNL Live Search] on Marketplace](https://marketplace.magento.com/magento-live-search.html)

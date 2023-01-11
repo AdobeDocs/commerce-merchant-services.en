@@ -11,7 +11,7 @@ The [!DNL Live Search] workspace lists all facets that are currently available a
 
 ## Set the scope
 
-If your Adobe Commerce installation includes multiple store views, set **Scope** to the [store view](https://docs.magento.com/user-guide/configuration/scope.html) where your facet settings apply.
+If your Adobe Commerce installation includes multiple store views, set **Scope** to the [store view](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) where your facet settings apply.
 
 ## Filter the list
 
