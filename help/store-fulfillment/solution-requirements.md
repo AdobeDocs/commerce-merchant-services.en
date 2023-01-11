@@ -16,19 +16,19 @@ The [!DNL Store Fulfillment] solution is available to Adobe Commerce customers o
 - Adobe Commerce on cloud infrastructure (ECE)
 - Adobe Commerce on premises (EE)
 
-The Store Fulfillment solution is compatible with the following software versions.
+The Store Fulfillment solution is compatible with the software versions listed in the *Software Compatibility* table.
 
 **Software Compatibility**
 
 | **Software**   | **Minimum Version** | **Maximum Version** |
 |----------------|---------------------|---------------------|
-| Adobe Commerce | 2.4.0               | 2.4.4               |
+| Adobe Commerce | 2.4.0               | 2.4.5               |
 | Composer       | 1.x                 | 2.x                 |
 | MariaDB        | 10.2                | 10.4                |
 | MySQL          | 5.7                 | 8.0                 |
 | PHP            | 7.4                 | 8.1                 |
 
-For detailed requirements, review the Adobe Commerce [System requirements](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html) in the Developer documentation.
+For detailed requirements, review the Adobe Commerce [System requirements](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) in the *Adobe Commerce Installationg Guide*.
 
 ## Store Assist app requirements
 
@@ -46,7 +46,7 @@ The end-to-end process to manage store pickup orders is managed through the Stor
 
 ## Business requirements
 
-Your business must meet the following minimum criteria to implement the Store Fulfillment solution.
+Your business must meet the following minimum criteria to implement the Store Fulfillment solution:
 
 - US-based businesses only
 
