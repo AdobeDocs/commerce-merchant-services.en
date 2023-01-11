@@ -135,7 +135,7 @@
 	<path pointer-events="all" class="st10" d="M371,70.5h291c2.5,0,4.5,2,4.5,4.5v21c0,2.5-2,4.5-4.5,4.5H371c-2.5,0-4.5-2-4.5-4.5V75
 		C366.5,72.5,368.5,70.5,371,70.5z"/>
 	<g transform="translate(-0.5 -0.5)">
-		<text transform="matrix(1 0 0 1 418.7803 89.5)" class="st3 st6">Catalog Service Federated GraphQL</text>
+		<text transform="matrix(1 0 0 1 418.7803 89.5)" class="st3 st6">Catalog Service GraphQL</text>
 	</g>
 </g>
 </svg>
