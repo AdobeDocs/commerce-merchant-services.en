@@ -50,12 +50,12 @@ At this time, the [!DNL Live Search] search/category API has the following suppo
 ### PWA beta release
 
 * The current beta PWA implementation of Live Search requires more processing time to return search results than Live Search with the native Commerce storefront.
-* The beta release of PWA for [!DNL Live Search] does not support [event handling](https://devdocs.magento.com/shared-services/storefront-events-sdk.html).
+* The beta release of PWA for [!DNL Live Search] does not support [event handling](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/).
 * The following product attributes are not supported by GraphQL when used in relation to the beta release of [PWA](https://developer.adobe.com/commerce/pwa-studio/): `description`, `name`, `short_description`
 
 ### Not supported at this time
 
-* The [Advanced Search](https://docs.magento.com/user-guide/catalog/search-advanced.html) module is disabled when [!DNL Live Search] is installed, and the Advanced Search link in the storefront footer is removed.
-* [Custom price groups](https://docs.magento.com/user-guide/catalog/product-price-group.html)
-* Multiple inventory locations as used by [MCOM](https://docs.magento.com/user-guide/mcom.html) or other OMS extensions
-* Product prices do not include [value added tax](https://docs.magento.com/user-guide/tax/vat.html) (VAT).
+* The [Advanced Search](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#advanced-search) module is disabled when [!DNL Live Search] is installed, and the Advanced Search link in the storefront footer is removed.
+* [Custom price groups](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-group.html)
+* Multiple inventory locations as used by [MCOM](https://experienceleague.adobe.com/docs/commerce-admin/systems/integrations/mcom.html) or other OMS extensions
+* Product prices do not include [value added tax](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/vat.html) (VAT).

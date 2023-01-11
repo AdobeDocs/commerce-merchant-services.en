@@ -23,7 +23,7 @@ When you install the `magento/product-recommendations module`, Adobe Sensei aggr
 
    Deploying [!DNL Product Recommendations] requires two main [data sources](type.md): catalog and behavioral. Because production is the only environment where your shoppers' actions are captured and analyzed, it is in your best interest to start data collection on production as early as possible. [Learn](behavioral-data.md) how Adobe Sensei trains machine learning models that results in higher-quality recommendations. As an added benefit, when you start collecting behavioral data on production, you can [fetch recommendations](verify.md) based on this production data while operating in non-production environments. You can then test and experiment with different recommendations that are computed based on real shopper data collected in production.
 
-   To deploy data collection to production, you must [install and configure](install-configure.md) the [!DNL Product Recommendations] module by providing an [API key](https://docs.magento.com/user-guide/system/saas.html#apikey).
+   To deploy data collection to production, you must [install and configure](install-configure.md) the [!DNL Product Recommendations] module by providing an [API key](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html).
 
    >[!TIP]
    >
@@ -37,7 +37,7 @@ When you install the `magento/product-recommendations module`, Adobe Sensei aggr
    >
    > By customizing the template, you can specify your stylesheet, overwrite where a recommendation unit appears on a page, and so on.
 
-   See [Customize](https://devdocs.magento.com/recommendations/customize.html) in the developer documentation to learn how to complete this step.
+   See [Customize](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/customize.html) in the developer documentation to learn how to complete this step.
 
 1. **Test recommendations on your non-production environment**
 

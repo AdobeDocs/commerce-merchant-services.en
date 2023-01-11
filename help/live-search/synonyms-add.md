@@ -12,7 +12,7 @@ Increase customer engagement by adding your own curated list of Live Search syno
 ## Step 1: Add a synonym
 
 1. In the Admin, go to **Marketing** > SEO & Search > **[!DNL Live Search]**.
-1. For multiple stores, set **Scope** to the [store view](https://docs.magento.com/user-guide/configuration/scope.html) where the synonym settings apply.
+1. For multiple stores, set **Scope** to the [store view](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) where the synonym settings apply.
 1. Click the **Synonyms** tab.
 1. Click the **Add synonyms** button.
 

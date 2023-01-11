@@ -25,12 +25,12 @@ This guide does not cover the core capabilities of Adobe Commerce and Magento Op
 
 | Guide | Description |
 |------ | ----------- |
-| [Adobe Commerce 2.4 User Guide](https://docs.magento.com/user-guide/) | Merchant-focused documentation for both Adobe Commerce and Magento Open Source |
-| [Adobe Commerce 2.4 Developer Guide](https://devdocs.magento.com/) | Developer-focused documentation used to build and customize Adobe Commerce or Magento Open Source |
+| [Adobe Commerce 2.4 User Guide](https://experienceleague.adobe.com/docs/commerce.html) | Merchant-focused documentation for both Adobe Commerce and Magento Open Source |
+| [Adobe Commerce 2.4 Developer Guide](https://developer.adobe.com/commerce/docs) | Developer-focused documentation used to build and customize Adobe Commerce or Magento Open Source |
 
 ## Support
 
 If you need information or have questions that are not covered in this guide, use the following resources:
 
 * [Help center](https://support.magento.com/hc/en-us){target="_blank"}---See the [!DNL Product Recommendations]-related troubleshooting articles.
-* [Support tickets](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket){target="_blank"}---Submit a ticket to receive additional help.
+* [Support tickets](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket){target="_blank"}---Submit a ticket to receive additional help.

@@ -45,7 +45,7 @@ Install the [Snowplow Analytics Debugger extension for Chrome](https://chrome.go
 
 1. Scroll down until you see **Context Data _n_**. Look for the storefront instance in the **Schema**.
 
-1. Verify that the [SaaS Data Space ID](https://docs.magento.com/user-guide/configuration/services/saas.html) is set correctly.
+1. Verify that the [SaaS Data Space ID](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) is set correctly.
 
 ![Snowplow filter](assets/snowplow-filter.png)
 _Snowplow Filter_
@@ -56,8 +56,8 @@ _Snowplow Filter_
 
 ## Verify that events are firing correctly
 
-To verify that the events used for metrics are firing correctly, look for the `impression-render`, `view`, and `rec-click` events in the Snowplow Analytics Debugger. See the [full list of events](https://devdocs.magento.com/recommendations/events.html).
+To verify that the events used for metrics are firing correctly, look for the `impression-render`, `view`, and `rec-click` events in the Snowplow Analytics Debugger. See the [full list of events](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/events.html).
 
 >[!NOTE]
 >
-> If [Cookie Restriction Mode](https://docs.magento.com/user-guide/stores/compliance-cookie-restriction-mode.html) is enabled, Adobe Commerce does not collect behavioral data until the shopper consents. If Cookie Restriction Mode is disabled, behavioral data is collected by default.
+> If [Cookie Restriction Mode](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) is enabled, Adobe Commerce does not collect behavioral data until the shopper consents. If Cookie Restriction Mode is disabled, behavioral data is collected by default.
