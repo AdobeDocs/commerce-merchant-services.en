@@ -7,7 +7,9 @@ exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 
 To connect your Adobe Commerce instance to the Adobe Experience Platform, you must provide an organization ID and a datastream ID.
 
-![Experience Platform connector configuration](assets/epc-config.png)
+![Experience Platform connector configuration](assets/epc-config-beta.png)
+
+## General
 
 1. Sign in to your Adobe account in the [Commerce Services Connector](../landing/saas.md#organizationid) and select your organization ID.
 
@@ -17,6 +19,18 @@ To connect your Adobe Commerce instance to the Adobe Experience Platform, you mu
 
 1. In the **Organization ID** field, you see the ID associated with your Adobe Experience Platform account, as configured in the [Commerce Services Connector](../landing/saas.md#organizationid). The organization ID is global. Only one organization ID can be associated per Adobe Commerce instance.
 
+1. (Optional) If you already have an AEP Web SDK deployed to your site, enable the checkbox and add the name of your AEP Web SDK. Otherwise, leave these fields blank and the Experience Platform connector deploys one for you.
+
+     >[!NOTE]
+    >
+    >If you specify your own Experience Platform Web SDK, the Experience Platform connector will use the datastream ID associated with that SDK and not any datastream ID specified on this page.
+
+## Data collection
+
+In the **Data collection** section you specify what types of data to collect and send to the Experience Platform edge. By default, storefront events are automatically sent as long as the AEP Web SDK and Organization ID are valid. See the events topic to learn more about [storefront](events.md#storefront-events) and [back office](events.md#beta-order-status-events) events.
+
+1. Select **Back office events** if you want to send order status information, such as if an order was placed, cancelled, refunded, or shipped.
+
 1. [Create](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html#create) a new datastream in the Adobe Experience Platform or select an existing datastream you want to use for collection.
 
 1. In the **Datastream ID** field, paste the ID of that new or existing datastream.
@@ -24,8 +38,6 @@ To connect your Adobe Commerce instance to the Adobe Experience Platform, you mu
     >[!NOTE]
     >
     >The scope of the datastream ID must be set at the website level or higher. At that level, the same datastream ID is used for each website in the hierarchy. You cannot set the datastream ID scope at the storeview level.
-
-1. (Optional) If you do not have an Experience Platform Web SDK deployed to your site, leave this field blank and the Experience Platform connector deploys one for you. Otherwise, add the name of your Experience Platform Web SDK.
 
 ## Field descriptions
 

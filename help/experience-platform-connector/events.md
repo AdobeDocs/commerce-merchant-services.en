@@ -384,9 +384,6 @@ The following table describes the data collected for this event.
 
 |Field|Description|
 |---|---|
-|`MAGEID`|Identifies an Adobe Commerce Account|
-|`websiteCode`|The Adobe Commerce website code|
-|`orderNumber`|Unique identifier assigned by the seller for this purchase or contract. There is no guarantee that the ID is unique.|
 |`orderDate`|The date when the order was placed|
 |`channel`|Indicates where an order was initially placed. Currently, this value will always be `magento`|
 |`productlistitems`|An array of products in the order|
@@ -428,8 +425,7 @@ The following table describes the data collected for this event.
 The following table describes the data collected for this event.
 |Field|Description|
 |---|---|
-|`MAGEID`|Identifies an Adobe Commerce Account|
-|`websiteCode`|The Adobe Commerce website code|
+|`purchaseID`| Unique identifier assigned by the seller for this purchase or contract. There is no guarantee that the ID is unique.|
 |`shipDate`|The date when the order was shipped|
 |`productlistitems`|An array of products in the order|
 |`name`|The display name or human-readable name of the product|
@@ -440,6 +436,8 @@ The following table describes the data collected for this event.
 |`shipping`|Shipping details for one or more products|
 |`shippingMethod`|The method of shipping chosen by the customer, such as standard delivery, expedited delivery, pick up in store, and so on|
 |`shippingAmount`|The amount the customer had to pay for shipping.|
+|`trackingNumber`| |
+|`trackingURL`||
 |`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for the order totals.|
 |`shippingAddress`|Physical shipping address|
 |`street1`|Primary street level information, apartment number, street number, and street name|
@@ -460,13 +458,12 @@ The following table describes the data collected for this event.
 The following table describes the data collected for this event.
 |Field|Description|
 |---|---|
-|`MAGEID`|Identifies an Adobe Commerce Account|
-|`websiteCode`|The Adobe Commerce website code|
 |`cancelDate`|The date when the order was canceled|
+|`purchaseID`| Unique identifier assigned by the seller for this purchase or contract. There is no guarantee that the ID is unique.|
 |`productlistitems`|An array of products in the order|
 |`name`|The display name or human-readable name of the product|
 |`SKU`|Stock Keeping Unit. The unique identifier for the product.|
-|`price`|The total price for the product line item|
+|`priceTotal`|The total price for the product line item|
 |`discountAmount`|Indicates the discount amount applied|
 |`quantity`|The number of product units in the cart|
 |`emailAddress`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
@@ -482,15 +479,16 @@ The following table describes the data collected for this event.
 The following table describes the data collected for this event.
 |Field|Description|
 |---|---|
-|`MAGEID`|Identifies an Adobe Commerce Account|
-|`websiteCode`|The Adobe Commerce website code|
-|`creditMemoIssueDate`|The date when the refund was created|
+|`purchaseID`| Unique identifier assigned by the seller for this purchase or contract. There is no guarantee that the ID is unique.|
+|`emailAddress`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
+|`returnDate`| The date when the refund was created|
+|`returnReason`| A description of why the item is being returned|
+|`shippingAmount`|The total shipping cost for the items in the cart|
 |`productlistitems`|An array of products in the order|
 |`name`|The display name or human-readable name of the product|
 |`SKU`|Stock Keeping Unit. The unique identifier for the product.|
-|`price`|The total price for the product line item|
+|`priceTotal`|The total price for the product line item|
 |`discountAmount`|Indicates the discount amount applied|
 |`quantity`|The number of product units in the cart|
-|`emailAddress`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
-
+|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency for the product|
 +++
