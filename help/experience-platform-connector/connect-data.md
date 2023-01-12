@@ -21,9 +21,9 @@ To connect your Adobe Commerce instance to the Adobe Experience Platform, you mu
 
 1. (Optional) If you already have an AEP Web SDK deployed to your site, enable the checkbox and add the name of your AEP Web SDK. Otherwise, leave these fields blank and the Experience Platform connector deploys one for you.
 
-     >[!NOTE]
+    >[!NOTE]
     >
-    >If you specify your own Experience Platform Web SDK, the Experience Platform connector will use the datastream ID associated with that SDK and not any datastream ID specified on this page.
+    >If you specify your own Experience Platform Web SDK, the Experience Platform connector uses the datastream ID associated with that SDK and not the datastream ID specified on this page (if any).
 
 ## Data collection
 
