@@ -376,7 +376,7 @@ The following table describes the data collected for this event.
 
 |Description| XDM event name|
 |---|---|
-|Triggered when a shopper places an order.|`orderPlaced`|
+|Triggered when a shopper places an order.|`commerce.orderPlaced`|
 
 #### Data collected from orderPlaced
 
@@ -384,111 +384,115 @@ The following table describes the data collected for this event.
 
 |Field|Description|
 |---|---|
-|`orderDate`|The date when the order was placed|
-|`channel`|Indicates where an order was initially placed. Currently, this value will always be `magento`|
-|`productlistitems`|An array of products in the order|
+|`identityMap`|Contains the email address that identifies the customer|
+|`address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
+|`eventType`|`commerce.orderPlaced`|
+|`productListItems`|An array of products in the order|
 |`name`|The display name or human-readable name of the product|
 |`SKU`|Stock Keeping Unit. The unique identifier for the product.|
-|`price`|The total price for the product line item|
-|`discountAmount`|Indicates the discount amount applied|
 |`quantity`|The number of product units in the cart|
+|`priceTotal`|The total price for the product line item|
+|`discountAmount`|Indicates the discount amount applied|
+|`order`|Contains information about the order|
+|`purchaseID`|Unique identifier assigned by the seller for this purchase or contract. There is no guarantee that the ID is unique|
+|`purchaseOrderNumber`|Unique identifier assigned by the purchaser for this purchase or contract|
+|`payments`|The list of payments for this order|
+|`paymentType`|The method of payment for this order. Enumerated, custom values allowed.|
+|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for this payment item|
+|`paymentAmount`|The value of the payment|
 |`shipping`|Shipping details for one or more products|
 |`shippingMethod`|The method of shipping chosen by the customer, such as standard delivery, expedited delivery, pick up in store, and so on|
-|`shippingAmount`|The amount the customer had to pay for shipping.|
-|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for the order totals.|
 |`shippingAddress`|Physical shipping address|
 |`street1`|Primary street level information, apartment number, street number, and street name|
-|`city`|The name of the city|
-|`State`|The name of the State. This is a free-form field.|
-|`postalCode`|The postal code of the location. Postal codes are not available for all countries. In some countries, this will only contain part of the postal code.|
-|`country`|The name of the government-administered territory. Other than `xdm:countryCode`, this is a free-form field that can have the country name in any language.|
+|`shippingAmount`|The amount the customer had to pay for shipping.|
 |`billingAddress`|Billing postal address|
 |`street1`|Primary street level information, apartment number, street number, and street name|
+|`street2`|Additional field for street level information|
 |`city`|The name of the city|
 |`State`|The name of the State. This is a free-form field.|
 |`postalCode`|The postal code of the location. Postal codes are not available for all countries. In some countries, this will only contain part of the postal code.|
 |`country`|The name of the government-administered territory. Other than `xdm:countryCode`, this is a free-form field that can have the country name in any language.|
-|`payment`|The list of payments for this order|
-|`paymentType`|The method of payment for this order. Enumerated, custom values allowed.|
-|`paymentTotal`|The value of the payment|
-|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for this payment item|
-|`emailAddress`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
 
 ### orderShipped
 
 |Description| XDM event name|
 |---|---|
-|Triggered when an order is shipped.|`orderLineItemShipped`|
+|Triggered when an order is shipped.|`commerce.orderLineItemShipped`|
 
 #### Data collected from orderShipped
 
 The following table describes the data collected for this event.
 |Field|Description|
 |---|---|
-|`purchaseID`| Unique identifier assigned by the seller for this purchase or contract. There is no guarantee that the ID is unique.|
-|`shipDate`|The date when the order was shipped|
-|`productlistitems`|An array of products in the order|
+|`identityMap`|Contains the email address that identifies the customer|
+|`address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
+|`eventType`|`commerce.orderLineItemShipped`|
+|`productListItems`|An array of products in the order|
 |`name`|The display name or human-readable name of the product|
 |`SKU`|Stock Keeping Unit. The unique identifier for the product.|
-|`price`|The total price for the product line item|
-|`discountAmount`|Indicates the discount amount applied|
 |`quantity`|The number of product units in the cart|
+|`priceTotal`|The total price for the product line item|
+|`discountAmount`|Indicates the discount amount applied|
+|`order`|Contains information about the order|
+|`purchaseID`|Unique identifier assigned by the seller for this purchase or contract. There is no guarantee that the ID is unique|
+|`purchaseOrderNumber`|Unique identifier assigned by the purchaser for this purchase or contract|
+|`payments`|The list of payments for this order|
+|`paymentType`|The method of payment for this order. Enumerated, custom values allowed.|
+|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for this payment item|
+|`paymentAmount`|The value of the payment|
 |`shipping`|Shipping details for one or more products|
 |`shippingMethod`|The method of shipping chosen by the customer, such as standard delivery, expedited delivery, pick up in store, and so on|
-|`shippingAmount`|The amount the customer had to pay for shipping.|
-|`trackingNumber`| |
-|`trackingURL`||
-|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for the order totals.|
 |`shippingAddress`|Physical shipping address|
 |`street1`|Primary street level information, apartment number, street number, and street name|
+|`shippingAmount`|The amount the customer had to pay for shipping.|
+|`billingAddress`|Billing postal address|
+|`street1`|Primary street level information, apartment number, street number, and street name|
+|`street2`|Additional field for street level information|
 |`city`|The name of the city|
 |`State`|The name of the State. This is a free-form field.|
 |`postalCode`|The postal code of the location. Postal codes are not available for all countries. In some countries, this will only contain part of the postal code.|
 |`country`|The name of the government-administered territory. Other than `xdm:countryCode`, this is a free-form field that can have the country name in any language.|
-|`emailAddress`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
 
 ### orderCancelled
 
 |Description| XDM event name|
 |---|---|
-|Triggered when a shopper cancels an order.|`orderCancelled`|
+|Triggered when a shopper cancels an order.|`commerce.orderCancelled`|
 
 #### Data collected from orderCancelled
 
 The following table describes the data collected for this event.
 |Field|Description|
 |---|---|
-|`cancelDate`|The date when the order was canceled|
-|`purchaseID`| Unique identifier assigned by the seller for this purchase or contract. There is no guarantee that the ID is unique.|
-|`productlistitems`|An array of products in the order|
+|`identityMap`|Contains the email address that identifies the customer|
+|`address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
+|`eventType`|`commerce.orderCancelled`|
+|`productListItems`|An array of products in the order|
 |`name`|The display name or human-readable name of the product|
 |`SKU`|Stock Keeping Unit. The unique identifier for the product.|
+|`quantity`|The number of product units in the cart|
 |`priceTotal`|The total price for the product line item|
 |`discountAmount`|Indicates the discount amount applied|
-|`quantity`|The number of product units in the cart|
-|`emailAddress`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
+|`order`|Contains information about the order|
+|`purchaseID`|Unique identifier assigned by the seller for this purchase or contract. There is no guarantee that the ID is unique|
+|`purchaseOrderNumber`|Unique identifier assigned by the purchaser for this purchase or contract|
 
 ### orderRefunded
 
 |Description| XDM event name|
 |---|---|
-|Triggered when a shopper returns an item in an order.|`orderLineItemReturned`|
+|Triggered when a shopper returns an item in an order.|`commerce.creditMemoIssued`|
 
 #### Data collected from orderRefunded
 
 The following table describes the data collected for this event.
 |Field|Description|
 |---|---|
-|`purchaseID`| Unique identifier assigned by the seller for this purchase or contract. There is no guarantee that the ID is unique.|
-|`emailAddress`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
-|`returnDate`| The date when the refund was created|
-|`returnReason`| A description of why the item is being returned|
-|`shippingAmount`|The total shipping cost for the items in the cart|
-|`productlistitems`|An array of products in the order|
-|`name`|The display name or human-readable name of the product|
-|`SKU`|Stock Keeping Unit. The unique identifier for the product.|
-|`priceTotal`|The total price for the product line item|
-|`discountAmount`|Indicates the discount amount applied|
-|`quantity`|The number of product units in the cart|
-|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency for the product|
+|`identityMap`|Contains the email address that identifies the customer|
+|`address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
+|`eventType`|`commerce.creditMemoIssued`|
+|`productListItems`|An array of products in the order|
+|`order`|Contains information about the order|
+|`purchaseID`|Unique identifier assigned by the seller for this purchase or contract. There is no guarantee that the ID is unique|
+|`purchaseOrderNumber`|Unique identifier assigned by the purchaser for this purchase or contract|
 +++

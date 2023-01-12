@@ -5,7 +5,7 @@ exl-id: 852fc7d2-5a5f-4b09-8949-e9607a928b44
 ---
 # Collect Commerce Data using Adobe Experience Platform Tags
 
-While you can use the Experience Platform connector to publish and subscribe to storefront events, some merchants might already be using a data collection solution, such as the [Adobe Experience Platform tags](https://experienceleague.adobe.com/docs/platform-learn/data-collection/tags/create-a-property.html?lang=en). For those merchants, Adobe Commerce provides a publishing only option in the Experience Platform connector that uses the Adobe Commerce Event SDK.
+While you can use the Experience Platform connector to publish and subscribe to storefront events, some merchants might already be using a data collection solution, such as the [Adobe Experience Platform tags](https://experienceleague.adobe.com/docs/platform-learn/data-collection/tags/create-a-property.html). For those merchants, Adobe Commerce provides a publishing only option in the Experience Platform connector that uses the Adobe Commerce Event SDK.
 
 ![Experience Platform Connector Data Flow](assets/tags-data-flow.png)
 _Experience Platform Connector Data Flow with Tags_
@@ -26,7 +26,7 @@ To collect Commerce event data:
 
 To map Commerce storefront data to Adobe Experience Platform, configure and install the following from within Adobe Experience Platform tags:
 
-1. [Set up a tag property](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html?lang=en) in Adobe Experience Platform Data Collection.
+1. [Set up a tag property](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html) in Adobe Experience Platform Data Collection.
 
 1. Under **Authoring**, select **Extensions** and install and configure the following extensions:
 
@@ -1356,7 +1356,7 @@ The following steps show how to configure a `pageView` event with `identityMap` 
 
 ## Setting consent
 
-Adobe Commerce and Experience Platform connector data collection consent is enabled by default. Opt-out is managed through the [`mg_dnt` cookie](https://docs.magento.com/user-guide/stores/cookie-reference.html). You can follow the steps outlined here if you choose to use `mg_dnt` to manage consent. The [Adobe Experience Platform Web SDK documentation](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html?lang=en) has several additional options for managing consent.
+Adobe Commerce and Experience Platform connector data collection consent is enabled by default. Opt-out is managed through the [`mg_dnt` cookie](https://docs.magento.com/user-guide/stores/cookie-reference.html). You can follow the steps outlined here if you choose to use `mg_dnt` to manage consent. The [Adobe Experience Platform Web SDK documentation](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html) has several additional options for managing consent.
 
 1. Create a **Core Custom Code** data element (`%do not track cookie%`) for the `mg_dnt` cookie:
 
