@@ -30,6 +30,12 @@ _October 12, 2022_
 
 +++
 
+## 2.1.0
+
+_January 17, 2023_
+
+* ![Fixed issue](../assets/fix.svg) - 
+
 ## 2.0.1
 
 _November 10, 2022_
