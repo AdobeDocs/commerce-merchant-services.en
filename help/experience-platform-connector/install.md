@@ -58,4 +58,4 @@ To update to a major version such as from 1.0.0 to 2.0.0, edit the project’s r
 
 ## Uninstall the Experience Platform connector {#uninstall}
 
-To uninstall the Experience Platform connector, refer to [uninstall modules](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-uninstall-mods.html).
+To uninstall the Experience Platform connector, refer to [uninstall modules](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html).

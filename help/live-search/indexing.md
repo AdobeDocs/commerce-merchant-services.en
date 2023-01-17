@@ -13,7 +13,7 @@ Product attribute properties (metadata) determine:
 
 The scope of attribute metadata is `website/store/store view`.
 
-The [!DNL Live Search] API allows a client to sort by any product attribute that has the [storefront property](https://docs.magento.com/user-guide/stores/attributes-product.html) `Use in Search` set to `Yes` in the Adobe Commerce Admin. When enabled, `Search Weight` and `Visible in Advanced Search` can be set for the attribute.
+The [!DNL Live Search] API allows a client to sort by any product attribute that has the [storefront property](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) `Use in Search` set to `Yes` in the Adobe Commerce Admin. When enabled, `Search Weight` and `Visible in Advanced Search` can be set for the attribute.
 
 >[!NOTE]
 >
@@ -65,7 +65,7 @@ Streaming update workflow:
 
 ## Client search
 
-The [!DNL Live Search] API allows a client to sort by any sortable product attribute by setting the [storefront property](https://docs.magento.com/user-guide/catalog/product-attributes.html), *Used for sorting in product listings* to `Yes`. Depending on the theme, this setting causes the attribute to be included as an option in the [Sort by](https://docs.magento.com/user-guide/catalog/navigation.html) pagination control on catalog pages. Up to 300 product attributes can be indexed by [!DNL Live Search], with [storefront properties](https://docs.magento.com/user-guide/stores/attributes-product.html) that are searchable and filterable.
+The [!DNL Live Search] API allows a client to sort by any sortable product attribute by setting the [storefront property](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html), *Used for sorting in product listings* to `Yes`. Depending on the theme, this setting causes the attribute to be included as an option in the [Sort by](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation.html) pagination control on catalog pages. Up to 300 product attributes can be indexed by [!DNL Live Search], with [storefront properties](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) that are searchable and filterable.
 The index metadata is stored in the indexing pipeline and is accessible by the search service.
 
 ![[!DNL Live Search] index metadata API diagram](assets/index-metadata-api.svg)

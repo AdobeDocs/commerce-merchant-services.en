@@ -17,8 +17,8 @@ This guide is intended for administrators of Adobe [!DNL Commerce]. It includes 
 
 | Guide | Description |
 |------ | ----------- |
-| [Adobe Commerce 2.4 User Guide](https://docs.magento.com/user-guide/) | Merchant-focused documentation for both Adobe Commerce and Magento Open Source |
-| [Adobe Commerce 2.4 Developer Guide](https://devdocs.magento.com/) | Developer-focused documentation used to build and customize Adobe Commerce or Magento Open Source |
+| [Adobe Commerce 2.4 User Guide](https://experienceleague.adobe.com/docs/commerce.html) | Merchant-focused documentation for both Adobe Commerce and Magento Open Source |
+| [Adobe Commerce 2.4 Developer Guide](https://developer.adobe.com/commerce/docs) | Developer-focused documentation used to build and customize Adobe Commerce or Magento Open Source |
 
 ## Support
 

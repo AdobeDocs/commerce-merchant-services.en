@@ -10,7 +10,7 @@ To build a rule, the first step is to use the rule editor to define the conditio
 ## Step 1: Add a rule
 
 1. In the Admin, go to **Marketing** > SEO & Search > **Live Search**.
-1. Set the **Scope** to identify the [store view](https://docs.magento.com/user-guide/configuration/scope.html) where the rule applies.
+1. Set the **Scope** to identify the [store view](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) where the rule applies.
 1. Click the **Rules** tab.
 1. Click **Add rule** to launch the rule editor.
 
@@ -89,7 +89,7 @@ events are actions that change the search results when the conditions are met. A
 
 The information that is entered here appears in the [Rule Details](rules-workspace.md) panel.
 
-1. Under *Details*, enter a **Name** for the rule.
+1. Under *Details*, enter a **Name** for the rule. All rule names must be unique.
 1. Enter a brief **Description** of the rule.
 1. Enter the **Start Date** and **End Date** for the rule to be active or choose the dates from the calendar.
 
@@ -148,7 +148,7 @@ The information that is entered here appears in the [Rule Details](rules-workspa
 
 |Field |Description |
 |--- |--- |
-| Name | The name of the rule. |
+| Name | The name of the rule. Rule names must be unique. |
 | Start date | The start date of the rule, if scheduled. |
 | End date | The end date of the rule, if scheduled. |
 | Description | A brief description of the rule. |
