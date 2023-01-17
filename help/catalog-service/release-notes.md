@@ -35,7 +35,7 @@ These features are not yet supported:
 *  Color swatches
 *  Loading the Product Detail Page through the product URL.
 
-The following limitations can be solved by using the GraphQL API:
+The following limitations can be solved by using the Core GraphQL API:
 
 *  Minimum Advertised Price
 *  Tier pricing
