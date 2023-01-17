@@ -13,4 +13,5 @@ hide: yes
     - [products query](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/)
     - [productSearch query](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/product-search/)
     - [refineProduct query](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/refine-product/)
+- [Catalog Service and API Mesh](mesh.md)
 - [Release Notes](release-notes.md)
