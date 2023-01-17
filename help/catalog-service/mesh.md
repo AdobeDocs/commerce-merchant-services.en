@@ -27,7 +27,7 @@ For instance, the API key can be saved within the file:
 
 After running this command, the Catalog Service should be running through the API Mesh. You can run the `aio api-mesh:get` command to view the configuration of your updated mesh.
 
-# Using the API Mesh
+## Using the API Mesh
 
 The API Mesh allows users to consume outside data sources to enhance your Adobe Commerce instance. It can also be used to configure existing Commerce data to enable new functionality.
 

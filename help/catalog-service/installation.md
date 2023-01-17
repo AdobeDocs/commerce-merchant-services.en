@@ -51,24 +51,24 @@ Use this method for installing the Catalog Service extension for a Commerce Clou
 
 1. Open the `<Commerce_root>/composer.json` file in a text editor and update the require section as follows:
 
-```json
-"require": {
-   "magento/module-saas-catalog": "^101.4.0",
-   "magento/module-saas-product-override": "^101.4.0",
-   "magento/module-saas-product-variant": "^101.4.0",
-   "magento/module-bundle-product-data-exporter": "^101.3.1",
-   "magento/module-catalog-data-exporter": "^101.3.1",
-   "magento/module-catalog-inventory-data-exporter": "^101.3.1",
-   "magento/module-catalog-url-rewrite-data-exporter": "^101.3.1",
-   "magento/module-configurable-product-data-exporter": "^101.3.1",
-   "magento/module-data-exporter": "^101.3.1",
-   "magento/module-parent-product-data-exporter": "^101.3.1",
-   "magento/module-product-override-data-exporter": "^101.3.1",
-   "magento/data-services": "^7.0.11",
-   "magento/services-id": "^3.0.1",
-   "magento/services-connector": "1.2.1"
- }
- ```
+    ```json
+    "require": {
+      "magento/module-saas-catalog": "^101.4.0",
+      "magento/module-saas-product-override": "^101.4.0",
+      "magento/module-saas-product-variant": "^101.4.0",
+      "magento/module-bundle-product-data-exporter": "^101.3.1",
+      "magento/module-catalog-data-exporter": "^101.3.1",
+      "magento/module-catalog-inventory-data-exporter": "^101.3.1",
+      "magento/module-catalog-url-rewrite-data-exporter": "^101.3.1",
+      "magento/module-configurable-product-data-exporter": "^101.3.1",
+      "magento/module-data-exporter": "^101.3.1",
+      "magento/module-parent-product-data-exporter": "^101.3.1",
+      "magento/module-product-override-data-exporter": "^101.3.1",
+      "magento/data-services": "^7.0.11",
+      "magento/services-id": "^3.0.1",
+      "magento/services-connector": "1.2.1"
+    }
+    ```
 
 1. Test the new configuration locally and update dependencies:
 
