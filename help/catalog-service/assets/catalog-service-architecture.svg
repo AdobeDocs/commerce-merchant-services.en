@@ -3,139 +3,142 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 790 431" style="enable-background:new 0 0 790 431;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#FFFFFF;stroke:#C4D1E3;stroke-width:2;}
+	.st0{fill:#FFCC99;stroke:#D6B656;stroke-width:2;}
 	.st1{fill:none;stroke:#D6B656;stroke-miterlimit:10;}
 	.st2{fill:#D6B656;stroke:#D6B656;stroke-miterlimit:10;}
 	.st3{font-family:'Helvetica';}
 	.st4{font-size:11px;}
-	.st5{fill:#FFF2CC;stroke:#D6B656;}
+	.st5{fill:#CF9E76;stroke:#FFFFFF;}
 	.st6{font-size:12px;}
 	.st7{fill:none;stroke:#000000;stroke-miterlimit:10;stroke-dasharray:3,3;}
 	.st8{stroke:#000000;stroke-miterlimit:10;}
-	.st9{fill:none;stroke:#000000;stroke-miterlimit:10;}
-	.st10{fill:#DAE8FC;stroke:#6C8EBF;}
-	.st11{enable-background:new    ;}
-	.st12{fill:none;stroke:#FF0000;stroke-miterlimit:10;}
-	.st13{fill:none;}
-	.st14{fill:#FFF2CC;stroke:#D6B656;stroke-width:2;}
+	.st9{enable-background:new    ;}
+	.st10{font-family:'Helvetica-Bold';}
+	.st11{fill:none;stroke:#000000;stroke-miterlimit:10;}
+	.st12{fill:#FFF2CC;stroke:#D6B656;}
+	.st13{fill:#FFF2CC;stroke:#D6B656;stroke-width:2;}
+	.st14{fill:none;}
+	.st15{fill:none;stroke:#FF0000;stroke-miterlimit:10;}
+	.st16{fill:#CC9900;}
+	.st17{font-family:'MyriadPro-Regular';}
+	.st18{fill:#CF9E76;stroke:#FFFFFF;stroke-width:2;}
 </style>
+<path pointer-events="all" class="st0" d="M381,147.5H653c6.9,0,12.5,8.5,12.5,19.1v89c0,10.5-5.6,19.1-12.5,19.1H381
+	c-6.9,0-12.5-8.5-12.5-19.1v-89C368.5,156,374.1,147.5,381,147.5z"/>
+<path pointer-events="stroke" class="st1" d="M245.5,189.9v153.6"/>
+<path pointer-events="all" class="st2" d="M245.5,349.4l-3.5-7l3.5,1.8l3.5-1.8L245.5,349.4z"/>
+<g transform="translate(-0.5 -0.5)">
+	<text transform="matrix(6.123234e-17 -1 1 6.123234e-17 192.5698 275.3145)" class="st3 st4">Tax</text>
+</g>
+<path pointer-events="all" class="st5" d="M137.7,160.5h215.2c2.3,0,4.2,2,4.2,4.5v21c0,2.5-1.9,4.5-4.2,4.5H137.7
+	c-2.3,0-4.2-2-4.2-4.5v-21C133.5,162.5,135.4,160.5,137.7,160.5z"/>
+<g transform="translate(-0.5 -0.5)">
+	<text transform="matrix(0.9315 0 0 1 208.6616 179.5)" class="st3 st6">Core GraphQL</text>
+</g>
+<path pointer-events="stroke" class="st7" d="M512,352.5h9V282"/>
+<path pointer-events="all" class="st8" d="M521,277.1l3.5,7l-3.5-1.8l-3.5,1.8L521,277.1z"/>
+<g transform="translate(-0.5 -0.5)">
+	<text transform="matrix(-3.066193e-07 -1 1 -3.066193e-07 516.7661 343.9221)" class="st3 st6">Indexation</text>
+</g>
+<path pointer-events="all" class="st5" d="M152.5,350.7h486c14.9,0,27,4.6,27,10.2v47.5c0,5.6-12.1,10.2-27,10.2h-486
+	c-14.9,0-27-4.6-27-10.2v-47.5C125.5,355.2,137.6,350.7,152.5,350.7z"/>
+<g transform="translate(-0.5 -0.5)">
+	<text transform="matrix(1 0 0 1 329.6541 380.1501)" class="st9"><tspan x="0" y="0" class="st10 st6">Adobe Commerce</tspan><tspan x="-6" y="14.4" class="st3 st6">(PHP monolith / core)</tspan></text>
+</g>
+<path pointer-events="stroke" class="st1" d="M295.5,191.7v78.8l-0.1,72.9"/>
+<path pointer-events="all" class="st2" d="M295.4,349.4l-3.5-7l3.5,1.8l3.5-1.8L295.4,349.4z"/>
+<g transform="translate(-0.5 -0.5)">
+	<text transform="matrix(6.123234e-17 -1 1 6.123234e-17 142.4297 290.5957)" class="st3 st4">Customer</text>
+</g>
+<path pointer-events="stroke" class="st1" d="M145.5,191.4v83l-0.1,76.1"/>
+<path pointer-events="all" class="st2" d="M145.4,350.4l-3.5-7l3.5,1.8l3.5-1.8L145.4,350.4z"/>
+<g transform="translate(-0.5 -0.5)">
+	<text transform="matrix(6.123234e-17 -1 1 6.123234e-17 292.4297 288.1621)" class="st3 st4">Shipping</text>
+</g>
+<path pointer-events="stroke" class="st1" d="M195.5,190.5v78.8l0.1,74.2"/>
+<path pointer-events="all" class="st2" d="M195.6,349.4l-3.5-7l3.5,1.8l3.5-1.8L195.6,349.4z"/>
+<g transform="translate(-0.5 -0.5)">
+	<text transform="matrix(6.123234e-17 -1 1 6.123234e-17 241.9731 288.4609)" class="st3 st4">Payment</text>
+</g>
+<path pointer-events="stroke" class="st1" d="M345.5,191.1V270l0.1,73.5"/>
+<path pointer-events="all" class="st2" d="M345.6,349.4l-3.5-7l3.5,1.8l3.5-1.8L345.6,349.4z"/>
+<g transform="translate(-0.5 -0.5)">
+	<text transform="matrix(6.123234e-17 -1 1 6.123234e-17 342.5698 288.4609)" class="st3 st4">Products</text>
+</g>
+<path pointer-events="stroke" class="st11" d="M245.4,34.5l0,69.5l0.1,55.7"/>
+<path pointer-events="stroke" class="st11" d="M528.5,36.5v110"/>
+<path pointer-events="stroke" class="st11" d="M393.6,41.1v105.4"/>
+<path pointer-events="all" class="st12" d="M130,0.5h531c2.5,0,4.5,3.3,4.5,7.3v34c0,4-2,7.3-4.5,7.3H130c-2.5,0-4.5-3.3-4.5-7.3
+	v-34C125.5,3.8,127.5,0.5,130,0.5z"/>
+<g transform="translate(-0.5 -0.5)">
+	<text transform="matrix(1 0 0 1 348.1504 17.5)" class="st10 st6">E-Commerce heads</text>
+</g>
 <g>
-	<path pointer-events="all" class="st0" d="M381.8,147.5h268.4c6.8,0,12.3,5.5,12.3,12.3v57.4c0,6.8-5.5,12.3-12.3,12.3H381.8
-		c-6.8,0-12.3-5.5-12.3-12.3v-57.4C369.5,153,375,147.5,381.8,147.5z"/>
-	<path pointer-events="stroke" class="st1" d="M246.5,100.5v243.6"/>
-	<path pointer-events="all" class="st2" d="M246.5,349.4l-3.5-7l3.5,1.8l3.5-1.8L246.5,349.4z"/>
+	<path pointer-events="all" class="st13" d="M385.7,216.1h54c4.1,0,7.5,3.4,7.5,7.5v35c0,4.1-3.4,7.5-7.5,7.5h-54
+		c-4.1,0-7.5-3.4-7.5-7.5v-35C378.2,219.5,381.6,216.1,385.7,216.1z"/>
 	<g transform="translate(-0.5 -0.5)">
-		<text transform="matrix(1 0 0 1 238.9412 218.5)" class="st3 st4">Tax</text>
+		<text transform="matrix(1 0 0 1 394.2506 237.106)" class="st9"><tspan x="0" y="0" class="st3 st4">Catalog </tspan><tspan x="0" y="13.2" class="st3 st4">Service</tspan></text>
 	</g>
-	<path pointer-events="all" class="st5" d="M131,70.5h231c2.5,0,4.5,2,4.5,4.5v21c0,2.5-2,4.5-4.5,4.5H131c-2.5,0-4.5-2-4.5-4.5V75
-		C126.5,72.5,128.5,70.5,131,70.5z"/>
-	<g transform="translate(-0.5 -0.5)">
-		<text transform="matrix(1 0 0 1 207.1484 89.5)" class="st3 st6">Core GraphQL</text>
-	</g>
-	<path pointer-events="stroke" class="st7" d="M366.5,390.5H522V232.4"/>
-	<path pointer-events="all" class="st8" d="M522,227.1l3.5,7l-3.5-1.8l-3.5,1.8L522,227.1z"/>
-	<g transform="translate(-0.5 -0.5)">
-		<text transform="matrix(1 0 0 1 494.8115 302.5)" class="st3 st6">Indexation</text>
-	</g>
-	<path pointer-events="all" class="st5" d="M138.5,350.5h216c6.6,0,12,5.4,12,12v56c0,6.6-5.4,12-12,12h-216c-6.6,0-12-5.4-12-12
-		v-56C126.5,355.9,131.9,350.5,138.5,350.5z"/>
-	<g transform="translate(-0.5 -0.5)">
-		<text transform="matrix(1 0 0 1 198.1455 394.5)" class="st3 st6">Adobe Commerce</text>
-	</g>
-	<path pointer-events="stroke" class="st1" d="M296.5,100.5v125l-0.1,115.7"/>
-	<path pointer-events="all" class="st2" d="M296.4,346.4l-3.5-7l3.5,1.8l3.5-1.8L296.4,346.4z"/>
-	<g transform="translate(-0.5 -0.5)">
-		<text transform="matrix(1 0 0 1 275.6604 205.5)" class="st3 st4">Customer</text>
-	</g>
-	<path pointer-events="stroke" class="st1" d="M146.5,100.5v125l-0.1,114.6"/>
-	<path pointer-events="all" class="st2" d="M146.4,345.4l-3.5-7l3.5,1.8l3.5-1.8L146.4,345.4z"/>
-	<g transform="translate(-0.5 -0.5)">
-		<text transform="matrix(1 0 0 1 125.0935 247.5)" class="st3 st4">Shipping</text>
-	</g>
-	<path pointer-events="stroke" class="st1" d="M196.5,100.5v125l0.1,117.7"/>
-	<path pointer-events="all" class="st2" d="M196.6,348.4l-3.5-7l3.5,1.8l3.5-1.8L196.6,348.4z"/>
-	<g transform="translate(-0.5 -0.5)">
-		<text transform="matrix(1 0 0 1 175.7954 228.5)" class="st3 st4">Payment</text>
-	</g>
-	<path pointer-events="stroke" class="st1" d="M346.5,100.5v125l0.1,116.6"/>
-	<path pointer-events="all" class="st2" d="M346.6,347.4l-3.5-7l3.5,1.8l3.5-1.8L346.6,347.4z"/>
-	<g transform="translate(-0.5 -0.5)">
-		<text transform="matrix(1 0 0 1 322.7954 187.5)" class="st3 st4">Products</text>
-	</g>
-	<path pointer-events="stroke" class="st9" d="M246.4,33.5l0,17l0.1,13.6"/>
-	<path pointer-events="all" class="st8" d="M246.5,69.4l-3.5-7l3.5,1.7l3.5-1.8L246.5,69.4z"/>
-	<path pointer-events="all" class="st5" d="M131,0.5h531c2.5,0,4.5,2,4.5,4.5v21c0,2.5-2,4.5-4.5,4.5H131c-2.5,0-4.5-2-4.5-4.5V5
-		C126.5,2.5,128.5,0.5,131,0.5z"/>
-	<g transform="translate(-0.5 -0.5)">
-		<text transform="matrix(1 0 0 1 349.1504 19.5)" class="st3 st6">Client (Storefront)</text>
-	</g>
-	<path pointer-events="stroke" class="st9" d="M416.6,102.5v12l-0.1,28.6"/>
-	<path pointer-events="all" class="st8" d="M416.5,148.4l-3.5-7l3.5,1.8l3.5-1.7L416.5,148.4z"/>
-	<g transform="translate(-0.5 -0.5)">
-		<text transform="matrix(1 0 0 1 396.7954 122.5)" class="st3 st4">Products</text>
-	</g>
-	<path pointer-events="stroke" class="st9" d="M516.5,30.5v33.6"/>
-	<path pointer-events="all" class="st8" d="M516.5,69.4l-3.5-7l3.5,1.8l3.5-1.8L516.5,69.4z"/>
-	<path pointer-events="all" class="st10" d="M389,150.5h54c4.1,0,7.5,3.4,7.5,7.5v35c0,4.1-3.4,7.5-7.5,7.5h-54
-		c-4.1,0-7.5-3.4-7.5-7.5v-35C381.5,153.9,384.9,150.5,389,150.5z"/>
-	<g transform="translate(-0.5 -0.5)">
-		<text transform="matrix(1 0 0 1 396.5 173.2305)" class="st11"><tspan x="0" y="0" class="st3 st4">Catalog </tspan><tspan x="0" y="13.2" class="st3 st4">Service</tspan></text>
-	</g>
-	<path pointer-events="all" class="st12" d="M106.5,34.5h-5c-3.3,0-5,3.3-5,10v138c0,6.7-1.7,10-5,10H89c-1.7,0-0.8,0,2.5,0H94
+</g>
+<rect x="0.5" y="173" pointer-events="all" class="st14" width="66" height="32"/>
+<g>
+	<path pointer-events="all" class="st15" d="M105.5,34.5h-5c-3.3,0-5,3.3-5,10v138c0,6.7-1.7,10-5,10H88c-1.7,0-0.8,0,2.5,0H93
 		c1.7,0,2.5,3.3,2.5,10v138c0,6.7,1.7,10,5,10h5"/>
-	<rect x="1.5" y="173" pointer-events="all" class="st13" width="66" height="32"/>
 	<g transform="translate(-0.5 -0.5)">
-		<text transform="matrix(1 0 0 1 24.4854 188.5)" class="st11"><tspan x="0" y="0" class="st3 st6">Round-trip </tspan><tspan x="0" y="14.4" class="st3 st6">  Latency</tspan></text>
+		<text transform="matrix(1.961531e-08 -1 1 1.961531e-08 73.7666 211.2482)" class="st3 st6">Latency</text>
 	</g>
-	<path pointer-events="all" class="st14" d="M589,150.5h54c4.1,0,7.5,3.4,7.5,7.5v35c0,4.1-3.4,7.5-7.5,7.5h-54
-		c-4.1,0-7.5-3.4-7.5-7.5v-35C581.5,153.9,584.9,150.5,589,150.5z"/>
+</g>
+<g>
+	<path pointer-events="all" class="st13" d="M588,216.1h54c4.1,0,7.5,3.4,7.5,7.5v35c0,4.1-3.4,7.5-7.5,7.5h-54
+		c-4.1,0-7.5-3.4-7.5-7.5v-35C580.5,219.5,583.9,216.1,588,216.1z"/>
 	<g transform="translate(-0.5 -0.5)">
-		<text transform="matrix(1 0 0 1 602.6621 166.6299)" class="st11"><tspan x="0" y="0" class="st3 st4">Live </tspan><tspan x="0" y="13.2" class="st3 st4">Search </tspan><tspan x="0" y="26.4" class="st3 st4">Service</tspan></text>
+		<text transform="matrix(1 0 0 1 605.4104 237.106)" class="st9"><tspan x="0" y="0" class="st3 st4">Live </tspan><tspan x="-7.3" y="13.2" class="st3 st4">Search</tspan></text>
 	</g>
-	<path pointer-events="all" class="st14" d="M474.5,150.5h83c4.1,0,7.5,3.4,7.5,7.5v35c0,4.1-3.4,7.5-7.5,7.5h-83
-		c-4.1,0-7.5-3.4-7.5-7.5v-35C467,153.9,470.4,150.5,474.5,150.5z"/>
+</g>
+<g>
+	<path pointer-events="all" class="st13" d="M474.1,216.1h83c4.1,0,7.5,3.4,7.5,7.5v35c0,4.1-3.4,7.5-7.5,7.5h-83
+		c-4.1,0-7.5-3.4-7.5-7.5v-35C466.6,219.5,470,216.1,474.1,216.1z"/>
 	<g transform="translate(-0.5 -0.5)">
-		<text transform="matrix(1 0 0 1 471.144 173.2305)" class="st11"><tspan x="0" y="0" class="st3 st4">Recommendations </tspan><tspan x="27.5" y="13.2" class="st3 st4">Service</tspan></text>
+		<text transform="matrix(1 0 0 1 497.1785 237.106)" class="st9"><tspan x="0" y="0" class="st3 st4">Product </tspan><tspan x="-26.9" y="13.2" class="st3 st4">Recommendations</tspan></text>
 	</g>
-	<path pointer-events="stroke" class="st9" d="M515.5,100.5l0,18l0.4,23.6"/>
-	<path pointer-events="all" class="st8" d="M516,147.4l-3.6-6.9l3.5,1.7l3.5-1.8L516,147.4z"/>
-	<g transform="translate(-0.5 -0.5)">
-		<text transform="matrix(1 0 0 1 471.6443 121.5)" class="st3 st4">Recommendations</text>
-	</g>
-	<rect x="499" y="205" pointer-events="all" class="st13" width="43" height="18"/>
-	<g transform="translate(-0.5 -0.5)">
-		<text transform="matrix(1 0 0 1 504.1553 217.5)" class="st3 st6">SaaS </text>
-	</g>
-	<path pointer-events="all" class="st12" d="M686.5,32.5h5c3.3,0,5,3.3,5,10V78c0,6.7,1.7,10,5,10h2.5c1.7,0,0.8,0-2.5,0H699
+</g>
+<g>
+	<path pointer-events="all" class="st15" d="M673.7,26.5h5c3.3,0,5,3.3,5,10V72c0,6.7,1.7,10,5,10h2.5c1.7,0,0.8,0-2.5,0h-2.5
 		c-1.7,0-2.5,3.3-2.5,10v35.5c0,6.7-1.7,10-5,10h-5"/>
-	<rect x="724.5" y="72" pointer-events="all" class="st13" width="66" height="32"/>
+	<rect x="691.7" y="66" pointer-events="all" class="st14" width="66" height="32"/>
 	<g transform="translate(-0.5 -0.5)">
-		<text transform="matrix(1 0 0 1 709.4854 81.5)" class="st11"><tspan x="0" y="0" class="st3 st6">Round-trip </tspan><tspan x="0" y="14.4" class="st3 st6">  Latency</tspan></text>
+		<text transform="matrix(-3.464102e-07 1 -1 -3.464102e-07 704.4741 62.2163)" class="st3 st6">Latency</text>
 	</g>
-	<rect x="583.5" y="297.5" pointer-events="all" class="st5" width="30" height="30"/>
-	<rect x="583.5" y="337.5" pointer-events="all" class="st10" width="30" height="30"/>
-	<rect x="610.5" y="302.5" pointer-events="all" class="st13" width="60" height="20"/>
-	<g transform="translate(-0.5 -0.5)">
-		<text transform="matrix(1 0 0 1 620.4932 316.5)" class="st3 st6">Current</text>
-	</g>
-	<rect x="625" y="342.5" pointer-events="all" class="st13" width="40" height="20"/>
-	<g transform="translate(-0.5 -0.5)">
-		<text transform="matrix(1 0 0 1 633.4971 356.5)" class="st3 st6">New</text>
-	</g>
-	<path pointer-events="all" class="st5" d="M309.8,369.5h45.4c3.5,0,6.3,2.8,6.3,6.3v29.4c0,3.5-2.8,6.3-6.3,6.3h-45.4
-		c-3.5,0-6.3-2.8-6.3-6.3v-29.4C303.5,372.3,306.3,369.5,309.8,369.5z"/>
-	<g transform="translate(-0.5 -0.5)">
-		<text transform="matrix(1 0 0 1 311.8184 387.5)" class="st11"><tspan x="0" y="0" class="st3 st6">Catalog </tspan><tspan x="0" y="14.4" class="st3 st6"> Export</tspan></text>
-	</g>
-	<path pointer-events="stroke" class="st9" d="M616.3,98.7l-0.3,42.4"/>
-	<path pointer-events="all" class="st8" d="M616,146.4l-3.5-7l3.5,1.8l3.5-1.7L616,146.4z"/>
-	<g transform="translate(-0.5 -0.5)">
-		<text transform="matrix(1 0 0 1 599.0735 122.5)" class="st3 st4">Search</text>
-	</g>
-	<path pointer-events="all" class="st10" d="M371,70.5h291c2.5,0,4.5,2,4.5,4.5v21c0,2.5-2,4.5-4.5,4.5H371c-2.5,0-4.5-2-4.5-4.5V75
-		C366.5,72.5,368.5,70.5,371,70.5z"/>
-	<g transform="translate(-0.5 -0.5)">
-		<text transform="matrix(1 0 0 1 418.7803 89.5)" class="st3 st6">Catalog Service GraphQL</text>
-	</g>
+</g>
+<path pointer-events="all" class="st13" d="M418,70.5h221.8c1.9,0,3.4,2,3.4,4.5v21c0,2.5-1.5,4.5-3.4,4.5H418c-1.9,0-3.4-2-3.4-4.5
+	V75C414.5,72.5,416.1,70.5,418,70.5z"/>
+<g transform="translate(-0.5 -0.5)">
+	<text transform="matrix(1 0 0 1 510.3342 89.7275)" class="st3 st6">API Mesh</text>
+</g>
+<path pointer-events="all" class="st13" d="M383.4,159.5h261.4c2.2,0,4,2,4,4.5v21c0,2.5-1.8,4.5-4,4.5H383.4c-2.2,0-4-2-4-4.5v-21
+	C379.4,161.5,381.2,159.5,383.4,159.5z"/>
+<g transform="translate(-0.5 -0.5)">
+	<text transform="matrix(0.8983 0 0 1 446.0123 178.7275)" class="st10 st6">Storefront Services Gateway</text>
+</g>
+<text transform="matrix(1 0 0 1 536.7086 142.9365)" class="st16 st17 st6">SaaS Storefront Services</text>
+<g>
+	<path pointer-events="all" class="st18" d="M152.9,24h85.7c6.6,0,11.9,1.2,11.9,2.8v12.9c0,1.5-5.3,2.8-11.9,2.8h-85.7
+		c-6.6,0-11.9-1.2-11.9-2.8V26.7C141,25.2,146.4,24,152.9,24z"/>
+	<text transform="matrix(1 0 0 1 180.5659 36.6766)" class="st17 st6">LUMA</text>
+</g>
+<g>
+	<path pointer-events="all" class="st18" d="M283.8,24h85.7c6.6,0,11.9,1.2,11.9,2.8v12.9c0,1.5-5.3,2.8-11.9,2.8h-85.7
+		c-6.6,0-11.9-1.2-11.9-2.8V26.7C271.9,25.2,277.3,24,283.8,24z"/>
+	<text transform="matrix(1 0 0 1 298.6902 36.6769)" class="st17 st6">PWA/Venia</text>
+</g>
+<g>
+	<path pointer-events="all" class="st13" d="M414.7,24h85.7c6.6,0,11.9,1.2,11.9,2.8v12.9c0,1.5-5.3,2.8-11.9,2.8h-85.7
+		c-6.6,0-11.9-1.2-11.9-2.8V26.7C402.8,25.2,408.2,24,414.7,24z"/>
+	<text transform="matrix(1 0 0 1 446.1118 36.6767)" class="st17 st6">AEM</text>
+</g>
+<g>
+	<path pointer-events="all" class="st13" d="M545.6,24h85.7c6.6,0,11.9,1.2,11.9,2.8v12.9c0,1.5-5.3,2.8-11.9,2.8h-85.7
+		c-6.6,0-11.9-1.2-11.9-2.8V26.7C533.7,25.2,539,24,545.6,24z"/>
+	<text transform="matrix(1 0 0 1 555.1218 36.6769)" class="st17 st6">Custom head</text>
 </g>
 </svg>
