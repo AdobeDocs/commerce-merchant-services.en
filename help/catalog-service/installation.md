@@ -102,7 +102,8 @@ Use this method for installing the Catalog Service extension for an on-premises 
  "magento/module-product-override-data-exporter": "^101.3.1",
  "magento/data-services": "^7.0.11",
  "magento/services-id": "^3.0.1",
- "magento/services-connector": "1.2.1"
+ "magento/services-connector": "1.2.1",
+ "magento/module-catalog-service-installer": "1.0.1"
 }
 ```
 
