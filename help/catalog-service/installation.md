@@ -152,9 +152,3 @@ Read the [GraphQL documentation](https://developer.adobe.com/commerce/webapi/gra
 The [API Mesh for Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) enables developers to integrate private or third-party APIs and other interfaces with Adobe products using Adobe IO.
 
 See the  [Catalog Service and API Mesh](mesh.md) topic for installation and configuration details.
-
-## [!DNL Catalog Service] demo
-
-Watch this video to learn about [!DNL Catalog Service] installation and testing:
-
->[!VIDEO](https://video.tv.adobe.com/v/3409390?quality=12&learn=on)

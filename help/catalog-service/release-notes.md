@@ -18,8 +18,10 @@ Compatible with Adobe Commerce (EE): 2.4.x
 Compatible with Adobe Commerce for Cloud (ECE): 2.4.x
 Stability: General Availability
 
-![New](../assets/new.svg) Catalog Service now supports Adobe's [API Mesh](https://developer.adobe.com/graphql-mesh-gateway/).
-![Fix](../assets/fix.svg) We have improved API scalability and overall performance.
+![New](../assets/new.svg) Simplified and improved the onboarding experience.
+![New](../assets/new.svg) New customer sandbox endpoints are available for pre-production testing.
+![New](../assets/new.svg) Support added for virtual products.
+![Fix](../assets/fix.svg) API scalability and performance improvements.
 
 ### Known limitations
 
