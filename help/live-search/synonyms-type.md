@@ -47,4 +47,4 @@ Be consistent with the way terminology is used in your catalog. Keep in mind tha
 
 ### Keyword mapping
 
-This technique uses searchable product attributes, rather than synonyms, to create keyword-based associations between products. As a result, a mapped product can appear in the search results of another product. To learn more, see [Search Results](https://docs.magento.com/user-guide/catalog/search-results.html).
+This technique uses searchable product attributes, rather than synonyms, to create keyword-based associations between products. As a result, a mapped product can appear in the search results of another product. To learn more, see [Search Results](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html).

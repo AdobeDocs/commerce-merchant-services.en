@@ -12,7 +12,7 @@ _Recommendations Workspace_
 
 ## Set the scope
 
-Initially the [scope](https://docs.magento.com/user-guide/stores/websites-stores-views.html) of all recommendation settings is set to `Default Store View`. If your Commerce installation includes multiple store views, set **Scope** to the [store view](https://docs.magento.com/user-guide/configuration/scope.html) where your recommendations apply.
+Initially the [scope](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) of all recommendation settings is set to `Default Store View`. If your Commerce installation includes multiple store views, set **Scope** to the [store view](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) where your recommendations apply.
 
 ## Set metrics date range
 

@@ -11,10 +11,28 @@ These release notes describe the initial release of [!DNL Store Fulfillment Serv
 ![Fixed issue](../assets/fix.svg) Fixes and improvements
 ![Known issue](../assets/bug.svg) Known issues
 
-<!-- ## v1.1 -->
-<!--
-![Fixed issue](../assets/fix.svg)-->
-<!-- Simplified the [Check-in experience configuration](check-in-experience-setup.md) for the Store Assist app by adding default car make and model selections. In the previous version, merchants had to manually configure the car make and model selections.-->
+## v1.2.0
+
+Compatible with the following Commerce versions:
+
+* Adobe Commerce (EE): 2.4.x
+* Adobe Commerce for Cloud (ECE): 2.4.x
+* Stability: Stable
+
+This release contains the following updates:
+
+![New](../assets/fix.svg) [!DNL Store Fulfillment] is now [compatible with [!DNL Adobe Commerce] 2.4.0 to 2.4.5](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
+
+
+## v1.1.0
+
+Compatible with the following Commerce versions:
+
+* Adobe Commerce (EE): 2.4.0 - 2.4.4
+* Adobe Commerce for Cloud (ECE): 2.4.0 - 2.4.4
+* Stability: Stable
+
+![New](../assets/fix.svg)<!-- WMTP-731 --> Simplified the [Check-in experience configuration](check-in-experience-setup.md) for the Store Assist app by adding default car make and model selections. In the previous version, merchants had to manually configure the car make and model selections.
 
 ## v1.0.0
 

@@ -53,7 +53,7 @@ _December 22, 2022_
 
 ![Fixed issue](../assets/fix.svg)<!-- Issue PAY-3992 --> Improved invoicing in Payment Services when a payment method is declined.
 
-![Fixed issue](../assets/fix.svg)<!-- Issue PAY-3999 --> Payment Services now correctly displays PayPal smart buttons with [Fire Checkout's](https://marketplace.magento.com/swissup-firecheckout.html){target=_blank} custom template for the checkout page.
+![Fixed issue](../assets/fix.svg)<!-- Issue PAY-3999 --> Payment Services now correctly displays PayPal smart buttons for merchants using [Fire Checkout's](https://marketplace.magento.com/swissup-firecheckout.html){target=_blank} custom template for the checkout page. Previously, the minicart intermittently displayed the buttons.
 
 ## v1.5.1
 

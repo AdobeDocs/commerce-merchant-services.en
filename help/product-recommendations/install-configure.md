@@ -30,7 +30,7 @@ composer require magento/product-recommendations
 composer require magento/module-page-builder-product-recommendations
 ```
 
-By enabling [!DNL Product Recommendations] in Page Builder, you can add an existing, active [recommendation unit](https://docs.magento.com/user-guide/cms/page-builder-add-recommendations.html) to any content created in Page Builder, such as pages, blocks, and dynamic blocks.
+By enabling [!DNL Product Recommendations] in Page Builder, you can add an existing, active [recommendation unit](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) to any content created in Page Builder, such as pages, blocks, and dynamic blocks.
 
    >[!NOTE]
    >
@@ -46,9 +46,9 @@ composer require magento/module-visual-product-recommendations
 
 ## Configure [!DNL Product Recommendations] {#configure}
 
-After you install the `magento/product-recommendations` module, you must configure the [Commerce Services Connector](https://docs.magento.com/user-guide/configuration/services/saas.html) by specifying API Keys and selecting a SaaS Data Space.
+After you install the `magento/product-recommendations` module, you must configure the [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) by specifying API Keys and selecting a SaaS Data Space.
 
-To ensure that catalog export is running correctly, confirm that the [cron](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html) jobs and the [indexers](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html) are running and the `Product Feed` indexer is set to `Update by Schedule`.
+To ensure that catalog export is running correctly, confirm that the [cron](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) jobs and the [indexers](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) are running and the `Product Feed` indexer is set to `Update by Schedule`.
 
 When you successfully link to Commerce Services through API keys and specify the SaaS Data Space, the catalog sync begins. You can then [verify](verify.md) that behavioral data is being sent to your storefront.
 
@@ -98,4 +98,4 @@ composer update --with-dependencies magento/product-recommendations magento/modu
 
 ## Uninstall [!DNL Product Recommendations] {#uninstall}
 
-If necessary, you can [uninstall](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-uninstall-mods.html) the product-recommendations module.
+If necessary, you can [uninstall](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html) the product-recommendations module.

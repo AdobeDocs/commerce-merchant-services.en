@@ -9,4 +9,4 @@ Synonyms expand the search query to include words that shoppers might use that d
 
 >[!IMPORTANT]
 >
->For Adobe Commerce installations with [!DNL Live Search] installed, [!DNL Live Search] Synonyms replaces the standard Adobe Commerce [Search Synonyms](https://docs.magento.com/user-guide/marketing/search-synonyms.html) functionality, although both appear in the *SEO & Search* section of the Marketing menu. If you use [!DNL Live Search], follow the instructions in this section.
+>For Adobe Commerce installations with [!DNL Live Search] installed, [!DNL Live Search] Synonyms replaces the standard Adobe Commerce [Search Synonyms](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html#search-synonyms) functionality, although both appear in the *SEO & Search* section of the Marketing menu. If you use [!DNL Live Search], follow the instructions in this section.

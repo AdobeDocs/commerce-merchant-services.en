@@ -16,7 +16,7 @@ The release notes include:
 * ![New](../assets/new.svg) - New features
 * ![Fix](../assets/fix.svg) - Fixes and improvements
 
-See the developer documentation to [learn about product compatibility](https://devdocs.magento.com/release/availability.html).
+See the developer documentation to [learn about product compatibility](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 
 ## Adobe Commerce 2.3.x and 2.4.x
 
@@ -45,7 +45,7 @@ See the developer documentation to [learn about product compatibility](https://d
 ### 3.3.5 of magento/product-recommendations
 
 * ![New](../assets/new.svg) - Added [B2B support](onboarding.md#b2bsupport) in Product Recommendations
-* ![New](../assets/new.svg) - Added new feeds to [sync catalog data](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-catalog-sync.html) to Commerce Services via the command line
+* ![New](../assets/new.svg) - Added new feeds to [sync catalog data](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) to Commerce Services via the command line
 
 ### 3.3.3 of magento/product-recommendations
 
@@ -73,7 +73,7 @@ See the developer documentation to [learn about product compatibility](https://d
 
 ### 3.2.5 of magento/product-recommendations
 
-* ![New](../assets/new.svg) - Renamed Magento Services to [Commerce Services](https://docs.magento.com/user-guide/system/saas.html) and improved usability in the Admin
+* ![New](../assets/new.svg) - Renamed Magento Services to [Commerce Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) and improved usability in the Admin
 
 ### 3.2.4 of magento/product-recommendations
 
@@ -88,7 +88,7 @@ See the developer documentation to [learn about product compatibility](https://d
 ### 3.2.2 of magento/product-recommendations
 
 * ![New](../assets/new.svg) - Added the ability to [preview recommendation results](create.md) at creation time. This might require that you update your module to the latest version.
-* ![New](../assets/new.svg) - Added the ability to [monitor and manage](https://docs.magento.com/user-guide/system/catalog-sync.html) the catalog sync process from the Admin.
+* ![New](../assets/new.svg) - Added the ability to [monitor and manage](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) the catalog sync process from the Admin.
 * ![New](../assets/new.svg) - Added [filters](filters.md) to control which products are displayed in recommendations.
 * ![New](../assets/new.svg) - Added the [Visual similarity](type.md#visualsim) recommendation type.
 
@@ -98,7 +98,7 @@ See the developer documentation to [learn about product compatibility](https://d
 
 ### 3.1.0 of magento/product-recommendations
 
-* ![New](../assets/new.svg) - Added the ability to [resync](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-catalog-sync.html) your catalog to SaaS services via command line.
+* ![New](../assets/new.svg) - Added the ability to [resync](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) your catalog to SaaS services via command line.
 * ![New](../assets/new.svg) - Added support for database table prefixes
 * ![Fix](../assets/fix.svg) - Removed PHP 7.1 support
 
@@ -147,7 +147,7 @@ This is a major version release. You must [edit](install-configure.md#update) yo
 
 ### 1.0.3 of magento/module-page-builder-product-recommendations for Page Builder
 
-* ![New](../assets/new.svg) - Page Builder support. With the Page Builder integration, you can accurately and granularly place Recommendation units in any arbitrary location on Page Builder-authored content. You can also style the headings and recommendation units themselves. Go to [Page Builder](https://docs.magento.com/user-guide/cms/page-builder-add-recommendations.html) for more information.
+* ![New](../assets/new.svg) - Page Builder support. With the Page Builder integration, you can accurately and granularly place Recommendation units in any arbitrary location on Page Builder-authored content. You can also style the headings and recommendation units themselves. Go to [Page Builder](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) for more information.
 
 ### 2.0.0 of magento/product-recommendations
 
@@ -158,4 +158,4 @@ This is a major version release. You must [edit](install-configure.md#update) yo
 To learn more about [!DNL Product Recommendations] and [!DNL Product Recommendations] development:
 
 * [User Guide](overview.md)
-* [Developer Documentation](https://devdocs.magento.com/recommendations/product-recs.html)
+* [Developer Documentation](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/development-overview.html)
