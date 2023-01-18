@@ -129,7 +129,7 @@ bin/magento cache:clean
 
 ### Configure the service and data export 
 
-After you install Catalog Service, you must configure the [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/fundamentals/install.html?lang=en) by specifying the API keys and selecting a SaaS Data Space.
+After you install Catalog Service, you must configure the [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html#apikey) by specifying the API keys and selecting a SaaS Data Space.
 
 After the SaaS configuration is complete, perform an initial data sync by following the Catalog Sync guide. 
 
