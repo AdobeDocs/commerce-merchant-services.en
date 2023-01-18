@@ -19,25 +19,25 @@ To connect your Adobe Commerce instance to the Adobe Experience Platform, you mu
 
 1. In the **Organization ID** field, you see the ID associated with your Adobe Experience Platform account, as configured in the [Commerce Services Connector](../landing/saas.md#organizationid). The organization ID is global. Only one organization ID can be associated per Adobe Commerce instance.
 
-1. (Optional) If you already have an AEP Web SDK deployed to your site, enable the checkbox and add the name of your AEP Web SDK. Otherwise, leave these fields blank and the Experience Platform connector deploys one for you.
+1. (Optional) If you already have an [AEP Web SDK (alloy)](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html) deployed to your site, enable the checkbox and add the name of your AEP Web SDK. Otherwise, leave these fields blank and the Experience Platform connector deploys one for you.
 
     >[!NOTE]
     >
-    >If you specify your own Experience Platform Web SDK, the Experience Platform connector uses the datastream ID associated with that SDK and not the datastream ID specified on this page (if any).
+    >If you specify your own AEP Web SDK, the Experience Platform connector uses the datastream ID associated with that SDK and not the datastream ID specified on this page (if any).
 
 ## Data collection
 
 In the **Data collection** section you specify what types of data to collect and send to the Experience Platform edge. By default, storefront events are automatically sent as long as the AEP Web SDK and Organization ID are valid. See the events topic to learn more about [storefront](events.md#storefront-events) and [back office](events.md#beta-order-status-events) events.
+
+>[!NOTE]
+>
+>All fields in the **Data collection** section apply to the **Website** scope or higher.
 
 1. Select **Back office events** if you want to send order status information, such as if an order was placed, cancelled, refunded, or shipped.
 
 1. (Skip this steps if you are using your own AEP Web SDK.) [Create](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html#create) a new datastream in the Adobe Experience Platform or select an existing datastream you want to use for collection. Skip this steps if you are using your own AEP Web SDK.
 
 1. (Skip this steps if you are using your own AEP Web SDK.) In the **Datastream ID** field, paste the ID of that new or existing datastream.
-
-    >[!NOTE]
-    >
-    >The scope of the datastream ID must be set at the website level or higher. At that level, the same datastream ID is used for each website in the hierarchy. You cannot set the datastream ID scope at the storeview level.
 
 ## Field descriptions
 

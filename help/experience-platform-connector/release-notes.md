@@ -34,7 +34,7 @@ _October 12, 2022_
 
 _January 17, 2023_
 
-* ![New](../assets/new.svg) - Added beta content about [back office events](events.md#beta-order-status-events). These events contain order status information about an order, such as if an order was placed, cancelled, refunded, or shipped.
+* ![New](../assets/new.svg) - Added beta content for [back office events](events.md#beta-order-status-events). These events contain order status information about an order, such as if an order was placed, cancelled, refunded, or shipped.
 
 ## 2.0.1
 
