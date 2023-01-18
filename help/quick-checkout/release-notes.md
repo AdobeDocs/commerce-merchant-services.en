@@ -59,6 +59,20 @@ _October 5, 2022_
 
 +++
 
+## v1.5.0
+
+_January 18, 2023_
+
+![New](../assets/new.svg)<!-- Issue BOLT-522 --> A new configuration can be enabled/disabled to detect if [shoppers](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/manage-checkout/checkout-options/checkout-adobe-commerce.html) can be automatically logged in Bolt.
+
+![New](../assets/new.svg)<!-- Issue BOLT-523 --> A new configuration can be enabled/disabled that allows merchants to specify if shoppers can be automatically logged in to both networks, or just Bolt network.
+
+![Fixed issue](../assets/fix.svg)<!-- Issue BOLT-542 --> User experience improvements when [saving card or address to a Bolt account](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html) when a shopper provides email.
+
+![Fixed issue](../assets/fix.svg)<!-- Issue BOLT-550 --> User experience improvements in [automatic login](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#configure-service-settings) when a Bolt user provides email.
+
+![Fixed issue](../assets/fix.svg)<!-- Issue BOLT-544 --> Compatibility improvements for [callback URLs](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#check-shopper-valid-account) with [multi-sites](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/multi-sites/ms-overview.html) in Bolt. 
+
 ## v1.4.0
 
 _November 30, 2022_

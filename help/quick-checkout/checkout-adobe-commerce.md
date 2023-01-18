@@ -34,6 +34,19 @@ If the shopper is logged in to Adobe Commerce prior to checkout, the [!DNL Bolt]
 
 If you encounter issues when you place an order as an existing Adobe Commerce user, see the [Troubleshoot Quick Checkout issues](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/quick-checkout-issues.html) article in the Adobe Commerce Help Center.
 
+### Automatic login
+
+It is possible to configure an automatic login for [!DNL Quick Checkout] users. You can enable a configuration to automatically login a user during checkout.
+
+1. On the _Admin_ sidebar, navigate to **Stores** > **Configuration** > **Checkout** to access the general Checkout Admin config page.
+1. In the _Service Settings_ section for [!DNL Quick Checkout], provide all details required to setup automatic login.
+
+See [[!DNL Quick Checkout] configure service settings](../quick-checkout/onboarding.md#configure-service-settings) topic for more information.
+
+>[!NOTE]
+>
+> First time login when **automatic login** is enabled requires consent from the user to authorize it by accepting a pop-up window.
+
 ## New [!DNL Bolt] account
 
 If no [!DNL Bolt] account is found, shoppers continue with their default out-of-the-box Adobe Commerce checkout and the shopper selects all necessary details from their saved information to place the order:

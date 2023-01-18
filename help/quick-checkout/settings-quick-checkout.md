@@ -12,7 +12,7 @@ To access these configuration settings:
 1. On the _Admin_ sidebar, go to **Stores** > _Settings_ > **Configuration**.
 1. In the left panel, expand **Sales** and select **Checkout**.
 
-   ![Quick Checkout](assets/quick-checkout-main-view-admin.png)
+   ![Quick Checkout](assets/configuration-view.png)
 
 Refer to the [Onboarding](../quick-checkout/onboarding.md) topic for more information on how to configure the [!DNL Quick Checkout] for Adobe Commerce.
 
@@ -50,5 +50,7 @@ Refer to the [Onboarding](../quick-checkout/onboarding.md) topic for more inform
 | [!UICONTROL Debug Mode] | website | Enable or disable Debug Mode. Options: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Enable checkout tracking] | website | Define if Adobe Commerce allows checkout tracking information to be shared with Bolt. Enabled by default. If disabled, reporting will be affected. Options: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Next Stage After Login Mode] | website | Change navigation flow after customer is logged in. Options: [!UICONTROL Payment] / [!UICONTROL Shipping] |
+| [!UICONTROL Automatic Login Enabled] | website | Define if [!DNL Quick Checkout] allows for the automatic login during checkout. Enabled by default. Options: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Automatic Login Network] | website | Select the network where the customer logs in automatically. Enabled Bolt by default. Options: [!UICONTROL Bolt + Merchant] / [!UICONTROL Bolt] |
 
 {style="table-layout:auto"}

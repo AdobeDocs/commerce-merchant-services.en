@@ -93,7 +93,7 @@ To connect your payment services provider follow the steps described in the [pro
 
 1. Validate credentials after providing your unique API and [!DNL Publishable keys].
 
-![Quick Checkout](assets/quick-checkout-main-view-react.png)
+![Quick Checkout](assets/quick-checkout-main-view.png)
 
 Refer to the [Settings](../quick-checkout/settings-quick-checkout.md) topic for more information on the configuration options for the [!DNL Quick Checkout] for Adobe Commerce extension.
 
@@ -103,7 +103,7 @@ Refer to the [Settings](../quick-checkout/settings-quick-checkout.md) topic for 
 
 ## Complete Admin configuration
 
-1. On the _Admin_ sidebar, navigate to **Stores** > **Configuration** > **Checkout** to acess the general Checkout Admin config page.
+1. On the _Admin_ sidebar, navigate to **Stores** > **Configuration** > **Checkout** to access the general Checkout Admin config page.
 1. In the _Service Settings_ section, provide all details required to enable the extension.
 1. Set _Payment Action_ to either option:
 
@@ -143,6 +143,7 @@ See the [Site, Store, and View Scope](https://experienceleague.adobe.com/docs/co
    > Disabling this option will affect reporting because Adobe Commerce is not allowed to share checkout tracking information with Bolt.
 
 1. Select the **Next Stage After Login** option to change the navigation flow after the customer has logged in. By default it is set to the **Payments** page.
+1. Define if [!DNL Quick Checkout] allows for the **automatic login** during checkout. By default it is enabled to automatically login to the [!DNL Bolt] network.
 
 ## Get help
 

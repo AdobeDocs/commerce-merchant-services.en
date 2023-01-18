@@ -19,7 +19,7 @@ To allow the user access and visibility to the [!DNL Quick Checkout] Admin panel
 
 1. On the _Admin_ sidebar, go to **[!UICONTROL System]** > Permissions > **[!UICONTROL User Roles]**.
 
-    ![User Roles](assets/user-roles.png)
+    ![User Roles](assets/user-roles-small.png)
 
 1. In the _Roles_ view, click **Add New Role** 
 1. Select the [!DNL Quick Checkout] resources:

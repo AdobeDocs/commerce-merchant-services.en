@@ -8,9 +8,6 @@ exl-id: d91763ed-b4f6-4736-9503-0305edd77e91
 [!DNL Quick Checkout] for Adobe Commerce and Magento Open Source provides an Admin panel view with all the necessary information to set up and use the extension.
 
 1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL Quick Checkout]**:
-
-   ![Menu Quick Checkout](assets/sales-quickcheckout.png)
-
 1. In this view, you can access the _Admin panel_ overview, _Resources_ about [!DNL Quick Checkout], get _Help and Support_, or configure the extension via _Settings_.
 
    ![Menu Quick Checkout](assets/admin-panel-view.png)
