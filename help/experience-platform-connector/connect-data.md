@@ -35,9 +35,13 @@ In the **Data collection** section you specify what types of data to collect and
 
 1. Select **Back office events** if you want to send order status information, such as if an order was placed, cancelled, refunded, or shipped.
 
-1. (Skip this steps if you are using your own AEP Web SDK.) [Create](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html#create) a new datastream in the Adobe Experience Platform or select an existing datastream you want to use for collection. Skip this steps if you are using your own AEP Web SDK.
+    >[!NOTE]
+    >
+    >By default, all back office data is sent to the Experience Platform edge. If a shopper chooses to opt out of data collection, you must explicitly set the  shopper's privacy preference in the Experience Platform. This is different from storefront event where the collector already handles consent based on shopper preferences. [Learn more](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/dataset.html) about setting a shopper's privacy preference in the Experience Platform.
 
-1. (Skip this steps if you are using your own AEP Web SDK.) In the **Datastream ID** field, paste the ID of that new or existing datastream.
+1. (Skip this step if you are using your own AEP Web SDK.) [Create](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html#create) a new datastream in the Adobe Experience Platform or select an existing datastream you want to use for collection.
+
+1. (Skip this step if you are using your own AEP Web SDK.) In the **Datastream ID** field, paste the ID of that new or existing datastream.
 
 ## Field descriptions
 
