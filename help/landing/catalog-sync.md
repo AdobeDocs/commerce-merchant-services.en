@@ -17,7 +17,7 @@ The catalog sync process runs hourly to allow [!DNL Commerce] services to use ca
 
 >[!NOTE]
 >
-> The _Catalog Sync_ dashboard is only available when the Product Recommendations service is installed.
+> The _Catalog Sync_ dashboard is only available when the _Product Recommendations_ modules are installed and reflects data projections related to that feature only. Support for other Commerce Services such as _Live Search_ and _Catalog Service_ are planned for the future.
 
 To access the Catalog Sync dashboard, select **System** > _Data Transfer_ > **Catalog Sync**.
 
