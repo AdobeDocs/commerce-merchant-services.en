@@ -29,9 +29,9 @@ To connect your Adobe Commerce instance to the Adobe Experience Platform, you mu
 
 >[!NOTE]
 >
->For merchants in our beta program, you will see a checkbox to enable back office events. If you would like to participate in the beta program, contact [drios@adobe.com](drios@adobe.com).
+>For merchants in our beta program, you will see a checkbox to enable back office events.  If you would like to participate in the beta program, contact [drios@adobe.com](mailto:drios@adobe.com).
 
-In the **Data collection** section you specify what types of data to collect and send to the Experience Platform edge. By default, storefront events are automatically sent as long as the AEP Web SDK and Organization ID are valid. See the events topic to learn more about [storefront](events.md#storefront-events) and [back office](events.md#beta-order-status-events) events.
+In the **Data collection** section, you specify what types of data to collect and send to the Experience Platform edge. By default, storefront events are automatically sent as long as the AEP Web SDK and Organization ID are valid. See the events topic to learn more about [storefront](events.md#storefront-events) and [back office](events.md#beta-order-status-events) events.
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ In the **Data collection** section you specify what types of data to collect and
     >
     >By default, all back office data is sent to the Experience Platform edge. If a shopper chooses to opt out of data collection, you must explicitly set the  shopper's privacy preference in the Experience Platform. This is different from storefront event where the collector already handles consent based on shopper preferences. [Learn more](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/dataset.html) about setting a shopper's privacy preference in the Experience Platform.
 
-1. (Skip this step if you are using your own AEP Web SDK.) [Create](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html#create) a new datastream in the Adobe Experience Platform or select an existing datastream you want to use for collection.
+1. (Skip this step if you are using your own AEP Web SDK.) [Create](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html#create) a datastream in the Adobe Experience Platform or select an existing datastream you want to use for collection.
 
 1. (Skip this step if you are using your own AEP Web SDK.) In the **Datastream ID** field, paste the ID of that new or existing datastream.
 

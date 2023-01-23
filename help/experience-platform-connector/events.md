@@ -372,7 +372,7 @@ The following table describes the data collected for this event.
 
 >[!NOTE]
 >
->For merchants in our beta program, you will have access to back office events. If you would like to participate in the beta program, contact [drios@adobe.com](drios@adobe.com).
+>For merchants in our beta program, you have access to back office events. If you would like to participate in the beta program, contact [drios@adobe.com](mailto:drios@adobe.com).
 
 +++ The back office events contain information about the status of an order, such as if an order was placed, cancelled, refunded, or shipped. The data these server-side events collect show a 360 view of the shopper order. This can help merchants better target or analyze the entire order status when developing marketing campaigns. For example, you can spot trends in certain product categories that perform well at different times of the year. Such as, winter clothes that sell better during colder months or certain product colors that shoppers are interested in over the years. In addition, order status data can help you calculate lifetime customer value by understanding a shoppers propensity to convert based on previous orders.
 
