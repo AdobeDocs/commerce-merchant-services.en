@@ -11,7 +11,7 @@ In addition to the data the following events collect, you also get [other data](
 
 ## Storefront events
 
-+++ The storefront events collect anonymized behavioral data from your shoppers as they browse your site. The data these events collect can be used to create promotions and campaigns targeted to a specific set of shoppers.
+The storefront events collect anonymized behavioral data from your shoppers as they browse your site. The data these events collect can be used to create promotions and campaigns targeted to a specific set of shoppers.
 
 >[!NOTE]
 >
@@ -209,11 +209,10 @@ The following table describes the data collected for this event.
 |`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for the order totals.|
 |`productImageUrl`|Main image URL of the product|
 |`selectedOptions`|Field used for a configurable product. `attribute` identifies an attribute of the configurable product, such as `size` or `color` and `value` identifies the value of the attribute such as `small` or `black`.|
-+++
+
 
 ## Profile events
 
-+++
 Profile events include account information, such as `signIn`, `signOut`, `createAccount`, and `editAccount`. This data is used to help populate key customer details that are needed to better define segments or execute marketing campaigns, such as if you want to target shoppers who live in New York.
 
 ### signIn
@@ -310,17 +309,16 @@ The following table describes the data collected for this event.
 |`address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
 |`userAccount`|Indicates any loyalty details, preferences, login processes, and other account preferences|
 |`updateProfile`|Indicates if a user has updated their account profile|
-+++
 
 ## Search events
 
-+++ The search events provide data relevant to the shopper's intent. Insight into a shopper's intent helps merchants see how shoppers are searching for items, what they click on, and ultimately purchase or abandon. An example of how you might use this data, is if you want to target existing shoppers who search for your top product, but never purchase the product.
+The search events provide data relevant to the shopper's intent. Insight into a shopper's intent helps merchants see how shoppers are searching for items, what they click on, and ultimately purchase or abandon. An example of how you might use this data, is if you want to target existing shoppers who search for your top product, but never purchase the product.
 
 ### searchRequestSent
 
 |Description| XDM event name|
 |---|---|
-|Triggered by the following events in the “search as you type” popover:<br>Press Enter, Click _View All_<br>Triggered by the following events on search results pages:<br>Select a filter, Change the sort order (_Sort By_), Change the sort direction (ascending or descending), Change the number of results per page (_Show # per page_), Navigate to the next page, Navigate to the previous page, Navigate to a different page|`searchRequest`|
+|Triggered by the following events in the “search as you type” popover:<br><br>Press Enter, Click _View All_<br><br>Triggered by the following events on search results pages:<br><br>Select a filter, Change the sort order (_Sort By_), Change the sort direction (ascending or descending), Change the number of results per page (_Show # per page_), Navigate to the next page, Navigate to the previous page, Navigate to a different page|`searchRequest`|
 
 >[!NOTE]
 >
@@ -366,15 +364,13 @@ The following table describes the data collected for this event.
 |`name`|The display name or human-readable name of the product|
 |`productImageUrl`|Main image URL of the product|
 
-+++
-
 ## (Beta) Back office events
 
 >[!NOTE]
 >
 >For merchants already enrolled in our back office beta program, you have access to back office events. If you would like to participate in the back office beta program, contact [drios@adobe.com](mailto:drios@adobe.com).
 
-+++ The back office events contain information about the status of an order, such as if an order was placed, cancelled, refunded, or shipped. The data these server-side events collect show a 360 view of the shopper order. This can help merchants better target or analyze the entire order status when developing marketing campaigns. For example, you can spot trends in certain product categories that perform well at different times of the year. Such as, winter clothes that sell better during colder months or certain product colors that shoppers are interested in over the years. In addition, order status data can help you calculate lifetime customer value by understanding a shopper's propensity to convert based on previous orders.
+The back office events contain information about the status of an order, such as if an order was placed, cancelled, refunded, or shipped. The data these server-side events collect show a 360 view of the shopper order. This can help merchants better target or analyze the entire order status when developing marketing campaigns. For example, you can spot trends in certain product categories that perform well at different times of the year. Such as, winter clothes that sell better during colder months or certain product colors that shoppers are interested in over the years. In addition, order status data can help you calculate lifetime customer value by understanding a shopper's propensity to convert based on previous orders.
 
 ### orderPlaced
 
@@ -499,4 +495,3 @@ The following table describes the data collected for this event.
 |`order`|Contains information about the order|
 |`purchaseID`|Unique identifier assigned by the seller for this purchase or contract. There is no guarantee that the ID is unique|
 |`purchaseOrderNumber`|Unique identifier assigned by the purchaser for this purchase or contract|
-+++
