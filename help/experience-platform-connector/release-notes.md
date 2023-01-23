@@ -35,7 +35,7 @@ _October 12, 2022_
 _January 17, 2023_
 
 * ![New](../assets/new.svg) - Updated the [Experience Platform connector Admin](connect-data.md) so you can specify your own AEP Web SDK (alloy). Also, added an option for merchants enrolled in our back office beta program to send [back office event data](connect-data.md#data-collection) to the edge. These events contain [order status information](events.md#beta-order-status-events) about an order, such as if an order was placed, cancelled, refunded, or shipped. If you would like to participate in the back office beta program, contact [drios@adobe.com](mailto:drios@adobe.com).
-* ![Fix](../assets/fix.svg) Changed to using `identityMap` instead of `personID` when setting the primary identity for any data pushed to the edge
+* ![Fix](../assets/fix.svg) Changed to using `identityMap` instead of `personID` when setting the primary identity for any data pushed to the edge.
 
 ## 2.0.1
 
