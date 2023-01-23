@@ -18,7 +18,7 @@ One of the [onboarding steps](overview.md#onboarding-steps) to using the Experie
     - Personal Contact Details 
     - Commerce Details
     - Adobe Analytics Experience event Commerce (if you want to send data to Adobe Analytics)
-    - Person Identifier
+    - Identity Map
     
     >[!NOTE]
     >
@@ -26,4 +26,10 @@ One of the [onboarding steps](overview.md#onboarding-steps) to using the Experie
     
     Your XDM schema now contains Commerce-specific field groups so that the data collected from the Commerce storefront [events](events.md) is represented in the XDM.
 
-1. [Create a datastream](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html) and select the XDM schema that contains the Commerce-specific field groups.
+1. [Create a dataset](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html#create-a-dataset) based off the schema you created or updated.
+
+    A dataset is a storage and management construct for a collection of data, typically a table, that contains a schema (columns) and fields (rows). Datasets also contain metadata that describes various aspects of the data they store.
+
+1. [Create a datastream](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html) and select the XDM schema that contains the Commerce-specific field groups and the corresponding dataset.
+
+    The datastream forwards the collected data to the dataset. The data is represented in the dataset based on the selected schema.
