@@ -413,7 +413,7 @@ The following table describes the data collected for this event.
 |`street1`|Primary street level information, apartment number, street number, and street name|
 |`street2`|Additional field for street level information|
 |`city`|The name of the city|
-|`State`|The name of the State. This is a free-form field.|
+|`state`|The name of the state. This is a free-form field.|
 |`postalCode`|The postal code of the location. Postal codes are not available for all countries. In some countries, this will only contain part of the postal code.|
 |`country`|The name of the government-administered territory. Other than `xdm:countryCode`, this is a free-form field that can have the country name in any language.|
 
@@ -453,7 +453,7 @@ The following table describes the data collected for this event.
 |`street1`|Primary street level information, apartment number, street number, and street name|
 |`street2`|Additional field for street level information|
 |`city`|The name of the city|
-|`State`|The name of the State. This is a free-form field.|
+|`state`|The name of the state. This is a free-form field.|
 |`postalCode`|The postal code of the location. Postal codes are not available for all countries. In some countries, this will only contain part of the postal code.|
 |`country`|The name of the government-administered territory. Other than `xdm:countryCode`, this is a free-form field that can have the country name in any language.|
 
