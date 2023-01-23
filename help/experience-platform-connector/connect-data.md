@@ -29,7 +29,7 @@ To connect your Adobe Commerce instance to the Adobe Experience Platform, you mu
 
 >[!NOTE]
 >
->For merchants in our back office beta program, you will see a checkbox to enable back office events. If you would like to participate in the back office beta program, contact [drios@adobe.com](mailto:drios@adobe.com).
+>For merchants already enrolled in our back office beta program, you will see a checkbox to enable back office events. If you would like to participate in the back office beta program, contact [drios@adobe.com](mailto:drios@adobe.com).
 
 ![Beta Experience Platform connector configuration](assets/epc-config-beta.png)
 
@@ -43,7 +43,7 @@ In the **Data collection** section, you specify what types of data to collect an
 
     >[!NOTE]
     >
-    >By default, all back office data is sent to the Experience Platform edge. If a shopper chooses to opt out of data collection, you must explicitly set the  shopper's privacy preference in the Experience Platform. This is different from storefront event where the collector already handles consent based on shopper preferences. [Learn more](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/dataset.html) about setting a shopper's privacy preference in the Experience Platform.
+    >By default, all back office data is sent to the Experience Platform edge. If a shopper chooses to opt out of data collection, you must explicitly set the  shopper's privacy preference in the Experience Platform. This is different from storefront events where the collector already handles consent based on shopper preferences. [Learn more](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/dataset.html) about setting a shopper's privacy preference in the Experience Platform.
 
 1. (Skip this step if you are using your own AEP Web SDK.) [Create](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html#create) a datastream in the Adobe Experience Platform or select an existing datastream you want to use for collection.
 
@@ -58,7 +58,7 @@ In the **Data collection** section, you specify what types of data to collect an
 |Is the AEP Web SDK already deployed to your site|Select this checkbox if you have deployed your own AEP Web SDK to your site|
 |AEP Web SDK Name (Global)| If you already have an Experience Platform Web SDK deployed to your site, specify the name of that SDK in this field. This allows the Storefront Event Collector and Storefront Event SDK to use your Experience Platform Web SDK rather than the version deployed by the Experience Platform connector. If you do not have an Experience Platform Web SDK deployed to your site, leave this field blank and the Experience Platform connector deploys one for you.|
 |Storefront events|Is checked by default as long as the Organization ID and datastream ID are valid. Storefront events collect anonymized behavioral data from your shoppers as they browse your site.|
-|Back Office events| If checked, event payload contains anonymized order status information, such as if an order was placed, cancelled, refunded, or shipped. |
+|Back Office events (Beta)| If checked, event payload contains anonymized order status information, such as if an order was placed, cancelled, refunded, or shipped. |
 | Datastream ID (Website) | ID that allows data to flow from Adobe Experience Platform to other Adobe DX products. This ID must be associated to a specific website within your specific Adobe Commerce instance. If you specify your own Experience Platform Web SDK, do not specify a datastream ID in this field. The Experience Platform connector uses the datastream ID associated with that SDK and ignores any datastream ID specified in this field (if any).|
 
 With the Experience Platform connector extension installed, the link between Adobe Commerce and Adobe Experience Platform created, and the Datastream ID specified, Commerce data begins to flow to the Adobe Experience Platform edge and to other Adobe DX products. 
