@@ -27,6 +27,10 @@ To connect your Adobe Commerce instance to the Adobe Experience Platform, you mu
 
 ## Data collection
 
+>[!NOTE]
+>
+>For merchants in our beta program, you will see a checkbox to enable back office events. If you would like to participate in the beta program, contact [drios@adobe.com](drios@adobe.com).
+
 In the **Data collection** section you specify what types of data to collect and send to the Experience Platform edge. By default, storefront events are automatically sent as long as the AEP Web SDK and Organization ID are valid. See the events topic to learn more about [storefront](events.md#storefront-events) and [back office](events.md#beta-order-status-events) events.
 
 >[!NOTE]

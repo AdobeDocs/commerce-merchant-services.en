@@ -35,7 +35,7 @@ _October 12, 2022_
 _January 17, 2023_
 
 * ![New](../assets/new.svg) - Added beta content for [back office events](events.md#beta-order-status-events). These events contain order status information about an order, such as if an order was placed, cancelled, refunded, or shipped.
-* ![Fix](../assets/fix.svg) Using `identityMap` instead of `personID` when setting the [primary identity](using-tags.md) for any data pushed to the edge
+* ![Fix](../assets/fix.svg) Changed to using `identityMap` instead of `personID` when setting the primary identity for any data pushed to the edge
 
 ## 2.0.1
 
