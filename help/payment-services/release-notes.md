@@ -23,6 +23,10 @@ These release notes describe feature changes and fixes that occurred and were re
 
 +++Hosted service updates
 
+_January 25, 2023_
+
+![Known issue](../assets/bug.svg)<!-- Issue PAY-4102 --> New installations of Payment Services are unable to configure Commerce Services, rendering Payment Services inoperable. To fix this issue, update your Payment Services extension to version 1.5.3.
+
 _September 12, 2022_
 
 ![New](../assets/new.svg)<!-- Issue PAY-3705 --> The `increment_id` is now available for use in reconciling payouts in external ERP systems. It is propagated to the [`custom_id` _and_ `invoice_id`](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/data.html#reconcile-with-erp-system), visible in both the PayPal webhook and the merchant activity detail for a payout.
@@ -46,6 +50,12 @@ _June 28, 2021_
 ![New](../assets/new.svg)<!-- Issue PAY-2761 --> You can now customize the data that displays in the [Order payment status report](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) and the [Payouts report](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) by showing or hiding columns using the Column settings control.
 
 +++
+
+## v1.5.3
+
+_January 25, 2022_
+
+![Fixed issue](../assets/fix.svg)<!-- Issue PAY-4102 --> Released a fix to a backward incompatible known issue. This release locks the service ID extension version to the latest stable version, which reenables new Payment Services installations to configure Commerce Services.
 
 ## v1.5.2
 
