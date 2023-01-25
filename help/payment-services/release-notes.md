@@ -51,6 +51,12 @@ _June 28, 2021_
 
 +++
 
+## v1.5.3
+
+_January 25, 2022_
+
+![Fixed issue](../assets/fix.svg)<!-- Issue PAY-4102 --> Released a fix to a backward incompatible known issue. This release locks the service ID extension version to the latest stable version, which reenables new Payment Services installations to configure Commerce Services.
+
 ## v1.5.2
 
 _December 22, 2022_
