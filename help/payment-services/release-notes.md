@@ -23,6 +23,10 @@ These release notes describe feature changes and fixes that occurred and were re
 
 +++Hosted service updates
 
+_January 25, 2023_
+
+![Known issue](../assets/bug.svg)<!-- Issue PAY-4102 --> New installations of Payment Services are unable to configure Commerce Services, rendering Payment Services inoperable. To fix this issue, update your Payment Services extension to version 1.5.3.
+
 _September 12, 2022_
 
 ![New](../assets/new.svg)<!-- Issue PAY-3705 --> The `increment_id` is now available for use in reconciling payouts in external ERP systems. It is propagated to the [`custom_id` _and_ `invoice_id`](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/data.html#reconcile-with-erp-system), visible in both the PayPal webhook and the merchant activity detail for a payout.
