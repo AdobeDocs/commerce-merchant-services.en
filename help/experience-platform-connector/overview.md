@@ -29,7 +29,6 @@ In order to use the Experience Platform connector, you must have the following:
 1. [Create or update](update-xdm.md) your XDM schema with Commerce-specific field groups.
 1. [Create a dataset](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html#create-a-dataset) based off the schema you created or updated.
 1. [Create a datastream](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html) and select the XDM schema that contains the Commerce-specific field groups.
-1. (Optional) [Upload shopper profiles](profile.md) to Adobe Experience Platform so storefront data can be attributed to specific shoppers to enhance their shopping experience.
 
 ## Audience
 
