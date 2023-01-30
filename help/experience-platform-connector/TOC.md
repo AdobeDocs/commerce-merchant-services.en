@@ -11,7 +11,6 @@ breadcrumb-title: Adobe Experience Platform Connector for Adobe Commerce
    - [Install the Experience Platform Connector](install.md)
    - [Configure the Experience Platform Connector](connect-data.md)
    - [Add Field Groups to XDM Schema](update-xdm.md)
-   - [Upload Shopper Profiles to Adobe Experience Platform](profile.md)
 - Capture Data {#event-forwarding}
    - [Events](events.md)
    - [Custom Events](custom-events.md)
