@@ -24,8 +24,8 @@ Live Search has three areas for administrators:
 
 If you need information or have questions that are not covered in this guide, use the following resources:
 
-[Help center](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket) - See the Live Search-related troubleshooting articles.
-[Support tickets](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket) - Submit a ticket to receive additional help.
+[Help center](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) - See the Live Search-related troubleshooting articles.
+[Support tickets](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) - Submit a ticket to receive additional help.
 
 Before submitting a support ticket, run the following from the command line to check the version of Live Search that is currently installed:
 

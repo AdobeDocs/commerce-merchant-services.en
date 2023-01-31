@@ -32,5 +32,5 @@ This guide does not cover the core capabilities of Adobe Commerce and Magento Op
 
 If you need information or have questions that are not covered in this guide, use the following resources:
 
-* [Help center](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-tickets){target="_blank"}---See the [!DNL Product Recommendations]-related troubleshooting articles.
-* [Support tickets](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket){target="_blank"}---Submit a ticket to receive additional help.
+* [Help center](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-tickets){target="_blank"}---See the [!DNL Product Recommendations]-related troubleshooting articles.
+* [Support tickets](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket){target="_blank"}---Submit a ticket to receive additional help.

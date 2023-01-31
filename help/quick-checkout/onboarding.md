@@ -149,6 +149,6 @@ See the [Site, Store, and View Scope](https://experienceleague.adobe.com/docs/co
 
 The onboarding process is designed to guide you through the required steps for setting up and enabling the [!DNL Express Checkout] functionality.
 
-Contact Adobe Commerce Support through the [Adobe Commerce Help Center](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en) for any assistance.
+Contact Adobe Commerce Support through the [Adobe Commerce Help Center](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html) for any assistance.
 
 See the [test and validate](../quick-checkout/testing.md) topic for more information.

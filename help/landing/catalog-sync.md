@@ -94,7 +94,7 @@ If the sync is not running on a schedule or nothing is synced, see the [Knowledg
 
 ### Sync failed
 
-If the catalog sync has a status of **Failed**, submit a [support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket).
+If the catalog sync has a status of **Failed**, submit a [support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
 
 ## Command-line interface {#resynccmdline}
 
