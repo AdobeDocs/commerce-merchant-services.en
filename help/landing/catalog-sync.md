@@ -90,11 +90,11 @@ When you trigger a data resync, it can take up to an hour for the data to update
 
 ### Sync not running
 
-If the sync is not running on a schedule or nothing is synced, see the [KnowledgeBase](https://support.magento.com/hc/en-us/articles/360042224851).
+If the sync is not running on a schedule or nothing is synced, see the [KnowledgeBase](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html).
 
 ### Sync failed
 
-If the catalog sync has a status of **Failed**, submit a [support ticket](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket).
+If the catalog sync has a status of **Failed**, submit a [support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
 
 ## Command-line interface {#resynccmdline}
 

@@ -145,7 +145,7 @@ Because the application log file can grow quickly, enable logging for the applic
 
 >[!TIP]
 >
->For Adobe Commerce on-premises installations, ask your system administrator to set up log rotation for the `var/log/walmart-bopis.log` file to minimize the size. For Adobe Commerce on-premises installations, see [Log rotation](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html?lang=en#server-settings) in the _Adobe Commerce Installation Guide_. For Adobe Commerce on cloud infrastructure projects, see [View and manage logs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html).
+>For Adobe Commerce on-premises installations, ask your system administrator to set up log rotation for the `var/log/walmart-bopis.log` file to minimize the size. For Adobe Commerce on-premises installations, see [Log rotation](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html#server-settings) in the _Adobe Commerce Installation Guide_. For Adobe Commerce on cloud infrastructure projects, see [View and manage logs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html).
 
 <table>
 <thead>

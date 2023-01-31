@@ -178,7 +178,7 @@ From the Adobe Commerce server, verify that the modules for the Store Fulfillmen
 
 ### Additional Steps
 
-If needed, use the [setup:static-content:deploy](https://devdocs.magento.com/guides/v2.4/reference/cli/magento-commerce.html#setupstatic-contentdeploy){target="_blank"} CLI command to deploy static view files to your production environment.
+If needed, use the [setup:static-content:deploy](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html){target="_blank"} CLI command to deploy static view files to your production environment.
 
 ```terminal
 php bin/magento setup:static-content:deploy -f
@@ -188,4 +188,4 @@ The `-f` option is required if you are using a blank theme.
 
 >[!NOTE]
 >
->For more information, see [Static content deploy best practices in Adobe Commerce](https://support.magento.com/hc/en-us/articles/360031624091) in the Adobe Commerce Help Center. 
+>For more information, see [Static content deploy best practices in Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/static-content-deployment.html) in the Adobe Commerce Help Center. 

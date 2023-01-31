@@ -169,7 +169,7 @@ To verify that the catalog data has been exported from your Adobe Commerce insta
 * `catalog_data_exporter_products`
 * `catalog_data_exporter_product_attributes`
 
-For additional help, refer to [[!DNL Live Search] catalog not synchronized](https://support.magento.com/hc/en-us/articles/4405637804301-Live-search-catalog-not-synchronized) in the Support Knowledge Base.
+For additional help, refer to [[!DNL Live Search] catalog not synchronized](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-catalog-data-sync.html) in the Support Knowledge Base.
 
 ### Future product updates
 

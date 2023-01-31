@@ -38,5 +38,5 @@ If you need information or have questions that are not covered in this guide, us
 
 ![Help resources](assets/help-resources.png)
 
-* [Help center](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html?lang=en)---Search for [!DNL Payment Services]-related troubleshooting articles in the knowledgebase.
-* [Support tickets](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket)---Submit a ticket to receive additional help.
+* [Help center](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html)---Search for [!DNL Payment Services]-related troubleshooting articles in the knowledgebase.
+* [Support tickets](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket)---Submit a ticket to receive additional help.
