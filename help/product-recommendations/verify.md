@@ -5,7 +5,7 @@ exl-id: c8c34db4-9d87-4012-b8f0-e9b1da214305
 ---
 # Verify Event Collection
 
-After you [install and configure](install-configure.md) the `magento/product-recommendations` module, you can verify that the behavioral data is being sent to Adobe Commerce. You can use developer tools available in Chrome, or install the Snowplow Chrome extension. If you need additional help, refer to [Troubleshoot [!DNL Product Recommendations] module](https://support.magento.com/hc/en-us/articles/360042224851) in the Support Knowledge Base.
+After you [install and configure](install-configure.md) the `magento/product-recommendations` module, you can verify that the behavioral data is being sent to Adobe Commerce. You can use developer tools available in Chrome, or install the Snowplow Chrome extension. If you need additional help, refer to [Troubleshoot [!DNL Product Recommendations] module](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html) in the Support Knowledge Base.
 
 ## Verify using developer tools in Chrome
 

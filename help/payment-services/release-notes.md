@@ -153,7 +153,7 @@ _March 31, 2022_
 
 ![Fixed issue](../assets/fix.svg)<!-- Issue PAY-2561 --> Previously removed products do not appear in the cart on the _Review Order_ page.
 
-![Known issue](../assets/bug.svg)<!-- Issue PAY-2842 --> Test credit card transactions [may fail with PayPal](https://support.magento.com/hc/en-us/articles/5201041963917) when processing payments in a sandbox environment.
+![Known issue](../assets/bug.svg)<!-- Issue PAY-2842 --> Test credit card transactions [may fail with PayPal](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-cc-sandbox-failure.html) when processing payments in a sandbox environment.
 
 ## v1.0.0
 
@@ -175,8 +175,8 @@ _November 29, 2021_
 
 ![New](../assets/new.svg)<!-- Issue PAY-1443 --> You can easily [customize the look and feel](payments-options.md) of PayPal smart buttons and credit card fields for the [!DNL Payment Services] extension.
 
-![Known issue](../assets/bug.svg)<!-- Issue PAY-2473 --> Using [incorrect Composer keys](https://support.magento.com/hc/en-us/articles/4406603542541) during installation of the extension prevents the user from [authenticating](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) with the correct `MAGEID`.
+![Known issue](../assets/bug.svg)<!-- Issue PAY-2473 --> Using [incorrect Composer keys](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html) during installation of the extension prevents the user from [authenticating](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) with the correct `MAGEID`.
 
-![Known issue](../assets/bug.svg)<!-- Issue PAY-2474 --> [!DNL Payment Services] reports [may not synchronize immediately](https://support.magento.com/hc/en-us/articles/4406114741517).
+![Known issue](../assets/bug.svg)<!-- Issue PAY-2474 --> [!DNL Payment Services] reports [may not synchronize immediately](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-report-info-delayed.html).
 
-![Known issue](../assets/bug.svg)<!-- Issue PAY-2475 --> Your [PayPal sandbox account](https://support.magento.com/hc/en-us/articles/4406954952461) for [!DNL Payment Services] cannot be verified  if you create that account during onboarding.
+![Known issue](../assets/bug.svg)<!-- Issue PAY-2475 --> Your [PayPal sandbox account](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-paypal-acct.html) for [!DNL Payment Services] cannot be verified  if you create that account during onboarding.

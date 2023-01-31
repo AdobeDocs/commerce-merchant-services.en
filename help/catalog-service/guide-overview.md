@@ -26,6 +26,6 @@ The [onboarding process](https://experienceleague.adobe.com/docs/commerce-mercha
 
 If you need information or have questions that are not covered in this guide, use the following resources:
 
-*  [Help center](https://support.magento.com/hc/en-us/search#q=catalog%20service&sort=relevancy) - See the Catalog Service-related troubleshooting articles.
-*  [Support tickets](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket) - Submit a ticket to receive additional help.
-*  Join the Adobe Commerce engineering team, and SaaS storefront services users in the [#storefront-services](https://magentocommeng.slack.com/archives/C03HVPG8RS4) public Slack channel to be up to date.
+* [Help center](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html) for Troubleshooting articles.
+* [Support tickets](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket) - Submit a ticket to receive additional help.
+* Join the Adobe Commerce engineering team, and SaaS storefront services users in the [#storefront-services](https://magentocommeng.slack.com/archives/C03HVPG8RS4) public Slack channel to be up to date.

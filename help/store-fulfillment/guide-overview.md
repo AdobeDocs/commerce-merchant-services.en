@@ -32,5 +32,5 @@ This guide does not cover the core capabilities of Adobe Commerce.
 
 If you need information or have questions that are not covered in this guide, use the following resources:
 
-* [Help center](https://support.magento.com/hc/en-us){target="_blank"}---See the [!DNL Store Fulfillment]-related troubleshooting articles.
-* [Support tickets](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket){target="_blank"}---Submit a ticket to receive additional help.
+* [Help center](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket){target="_blank"}---See the [!DNL Store Fulfillment]-related troubleshooting articles.
+* [Support tickets](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket){target="_blank"}---Submit a ticket to receive additional help.
