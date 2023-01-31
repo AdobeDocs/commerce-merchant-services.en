@@ -51,6 +51,12 @@ _June 28, 2021_
 
 +++
 
+## v1.5.4
+
+_January 29, 2023_
+
+![Fixed issue](../assets/fix.svg)<!-- Issue PAY-4110 --> Fixed an issue that prevented buyers from placing an order using smart buttons on the product page, mini cart, and cart. Buyers can now complete orders successfully.
+
 ## v1.5.3
 
 _January 25, 2023_
