@@ -11,14 +11,14 @@ The onboarding process for [!DNL Catalog Service] requires access to the command
 
 ### Software requirements
 
--  Adobe Commerce 2.4.x
--  PHP 8.1, 7.4, 7.3
--  Composer: 2.x, 1.x
+- Adobe Commerce 2.4.4 or higher
+- PHP 8.1
+- Composer: 2.x, 1.x
 
 ### Supported platforms
 
--  Adobe Commerce on cloud infrastructure: 2.4.x
--  Adobe Commerce on premises: 2.4.x
+- Adobe Commerce on cloud infrastructure: 2.4.4 or higher
+- Adobe Commerce on premises: 2.4.4 or higher
 
 ## Environments
 
