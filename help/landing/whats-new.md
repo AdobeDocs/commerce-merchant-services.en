@@ -10,6 +10,7 @@ exl-id: dcc613e3-955e-4006-9984-bf05289d3bc1
 The following items are recent changes to the documentation:
 
 |   Service    |    Change   |   Type    |
-|[**Catalog Service**](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/guide-overview.html)|Added the [Catalog Service and API Mesh](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/mesh.html) topic to the Catalog Service guide.|New Topic|
+| -- | -- | -- |
+|[**Catalog Service**](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/guide-overview.html)|Added the [Catalog Service and API Mesh](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/mesh.html) topic to the Catalog Service guide.| New Topic |
 
 This table is updated on first Monday of the month.
