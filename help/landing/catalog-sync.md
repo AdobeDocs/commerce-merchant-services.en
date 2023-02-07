@@ -98,11 +98,11 @@ If the catalog sync has a status of **Failed**, submit a [support ticket](https:
 
 ## Command-line interface {#resynccmdline}
 
-The `saas:resync` command is part of the `magento/saas-export` package. You can install this package using one of the [!DNL Commerce Services] products, such as [[!DNL Product Recommendations]](/help/product-recommendations/install-configure.md) or [[!DNL Live Search]](/help/live-search/install.md).
+The `saas:resync` command is part of the `magento/saas-export` package. You can install this package using one of the [!DNL Commerce Services] products, such as [[!DNL Product Recommendations]](/help/product-recommendations/install-configure.md) or [[!DNL Live Search]](/help/live-search/install.md). 
 
 >[!NOTE]
 >
-> When you trigger a data resync from the command line, it can take up to an hour for the data to update.
+> When running a data sync for the first time, it is important to run the `productattributes` feed first, followed by `productoverrides`, before running the `products` feed.
 
 Command options:
 
@@ -119,11 +119,13 @@ The following table describes the `saas:resync` parameters and descriptions.
 
 The feed name can be one of the following:
 
--  `products`-- Products in your catalog
--  `categories`-- Categories in your catalog
--  `variants`-- Product variations of a configurable product, such as color and size
--  `productattributes`-- Product attributes such as `activity`, `gender`, `tops`, `bottoms`, and so on
--  `productoverrides`-- Customer-specific pricing and catalog visibility rules, such as those based on category permissions
+- `products`-- Products in your catalog
+- `categories`-- Categories in your catalog
+- `variants`-- Product variations of a configurable product, such as color and size
+- `productattributes`-- Product attributes such as `activity`, `gender`, `tops`, `bottoms`, and so on
+- `productoverrides`-- Customer-specific pricing and catalog visibility rules, such as those based on category permissions
+
+When you trigger a data resync from the command line, it may take up to an hour for the data to update.
 
 ### Examples
 

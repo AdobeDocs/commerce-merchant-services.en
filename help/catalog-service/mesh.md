@@ -6,6 +6,8 @@ description: '[!DNL API Mesh] for Adobe Commerce provides a way to integrate mul
 
 The [API Mesh for Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) enables developers to integrate private or third-party APIs and other interfaces with Adobe products using Adobe IO.
 
+![Catalog architecture diagram](assets/catalog-service-architecture-mesh.png)
+
 The first step for using the API Mesh with Catalog Service is to connect API Mesh to your instance. See detailed instructions in [Create a Mesh](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/).
 
 To complete the setup, you will need the [Adobe IO CLI package](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) installed.
