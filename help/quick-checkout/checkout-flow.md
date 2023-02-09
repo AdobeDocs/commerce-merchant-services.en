@@ -14,6 +14,10 @@ A successful [!DNL Quick Checkout] flow consists of the following steps:
 
   ![Checkout](assets/proceed-checkout.png)
 
+   >[!NOTE]
+   >
+   > You can enable automatic login for your merchant. See [Bolt's Enable Automatic Login topic](https://help.bolt.com/products/embedded/direct-api/auto-login/) for more information.
+
 1. When prompted, enter an email address associated with a [!DNL Bolt] account.
 1. Input the One-Time Password (OTP) sent to that [!DNL Bolt] account's email address or phone number.
 

@@ -145,6 +145,10 @@ See the [Site, Store, and View Scope](https://experienceleague.adobe.com/docs/co
 1. Select the **Next Stage After Login** option to change the navigation flow after the customer has logged in. By default it is set to the **Payments** page.
 1. Define if [!DNL Quick Checkout] allows for the **automatic login** during checkout. By default it is enabled to automatically login to the [!DNL Bolt] network.
 
+   >[!NOTE]
+   >
+   > See [Bolt's Enable Automatic Login documentation](https://help.bolt.com/products/embedded/direct-api/auto-login/) for more information.
+
 ## Get help
 
 The onboarding process is designed to guide you through the required steps for setting up and enabling the [!DNL Express Checkout] functionality.

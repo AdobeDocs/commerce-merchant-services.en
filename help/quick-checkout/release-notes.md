@@ -59,6 +59,14 @@ _October 5, 2022_
 
 +++
 
+## v1.6.0
+
+_February 9, 2023_
+
+![Fixed issue](../assets/fix.svg)<!-- Issue BOLT-567 --> User experience improvements when [placing an order](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html) using the [In-store delivery](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/delivery/basic-methods/shipping-in-store-delivery.html) method with the [!DNL Quick Checkout] disabled.
+
+![Fixed issue](../assets/fix.svg)<!-- Issue BOLT-569 --> Improvements in the logout functionality that allows shoppers to [logout from the Bolt Network](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/user-session-lifetime.html).
+
 ## v1.5.0
 
 _January 18, 2023_
