@@ -9,9 +9,20 @@ This guide is intended for administrators of Adobe [!DNL Commerce]. It includes 
 
 [!DNL Catalog Service] has two types of users:
 
-*  Adobe [!DNL Commerce] system administrators install and maintain the service. [!DNL Catalog Service] does not have an Admin UI or features for standard Admin users.
+* Adobe [!DNL Commerce] system administrators install and maintain the service. [!DNL Catalog Service] does not have an Admin UI or features for standard Admin users.
+* Integrators build GraphQL queries and integrate them on a storefront that uses a frontend client.
 
-*  Integrators build GraphQL queries and integrate them on a storefront that uses a frontend client.
+## Installation and Overview videos
+
+These videos covers the Catalog Service [onboarding and installation](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/installation.html) process.
+
+Part 1:
+
+>[!VIDEO](https://video.tv.adobe.com/v/3415599)
+
+Part 2:
+
+>[!VIDEO](https://video.tv.adobe.com/v/3415600)
 
 ## Additional documentation
 
