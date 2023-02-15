@@ -37,4 +37,3 @@ breadcrumb-title: "[!DNL Live Search] Guide"
       - [Manage Rules](rules-manage.md)
    - [Settings](settings.md)
    - [Indexing](indexing.md)
-- [Feedback](feedback.md)

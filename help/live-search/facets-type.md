@@ -22,18 +22,6 @@ Facets that are rendered for the [!DNL Commerce] storefront are processed by the
 
 In contrast, [headless](https://developer.adobe.com/commerce/php/architecture/technical-vision/web-api/) implementations are processed by the API and support additional options. Headless facets can be sorted alphabetically or by count, and can have either single- or multi-select options.
 
-### Select type
-
-For headless implementations, facets can be defined as `single select` or `multi-select` with logical operators that determine the returned product set. For example, `green AND blue` or `green OR blue`.
-
-![Facets - Select type](assets/facets-select-type.png)
-
-| Select type | Description |
-|--- |--- |
-| Single select | A single-select facet offers multiple options, but allows the shopper to choose only one value. |
-| Multi-select (or) | (Headless only) Shoppers can choose more than one option and returned product(s) can match any selected value. Example: `green OR blue` |
-| Multi-select (and) | (Headless only) Shoppers can choose more than one option, and returned products must match all selected values. Example: `green AND blue` |
-
 ### Facet labels
 
 For [!DNL Commerce] storefronts, the facet label is determined by the [*Attribute Properties*](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html). For stores with multiple views, additional labels can be defined under *Manage Labels*. For headless implementations, labels are edited from the [faceting workspace](faceting-workspace.md).

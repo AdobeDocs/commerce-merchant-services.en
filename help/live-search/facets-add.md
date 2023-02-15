@@ -13,17 +13,13 @@ Any filterable product attribute can be used as a facet. The *Add facets* panel 
 
 1. In the Admin, go to **Marketing** > SEO & Search > **[!DNL Live Search]**.
 1. On the *Faceting* tab, click **Add facets**.
-1. In the *Add facets* list, each available attribute has a separate *Add* button. Do one of the following:
-
-   ![Facet added](assets/facets-list-add.png)
+1. In the *Add facets* list, each available attribute has a separate ![Add button](assets/btn-add.png) button. Do one of the following:
 
      * In the *Faceting attributes* list, choose the product attribute that you want to use as a facet and click **Add**.
      * To find a specific product attribute, enter the first few characters of the attribute name in the *Search* box. Then, click **Add**.
 
        To configure price faceting intervals and groupings, refer to [Settings](settings.md). To learn more, go to [Facet Types](facets-type.md).
        The facet is added to the bottom of the *Dynamic Facets* list and the *Publish changes* button becomes available.
-
-   ![Facet added](assets/facet-added.png)
 
 1. If the facet you want to add can't be found, go to **Stores** > Attributes > **Product** and verify that the attribute has the [required properties](facets.md) to be used as a facet. If necessary, update the following storefront properties of the attribute:
 
@@ -41,7 +37,6 @@ Any filterable product attribute can be used as a facet. The *Add facets* panel 
 1. On the menu, click **Edit**. Then, adjust the following properties as needed.
 
      * Label - ([Headless](facets-type.md) only) Enter the facet label that you want to use.
-     * Select type - The *Select type* used for all [!DNL Commerce] storefronts is `single select`. For headless implementations, `multi-select` type can be assigned with a logical operator (`or` or `and`) to determine the set of products returned.
      * Sort type - Facets are sorted alphabetically for all [!DNL Commerce] storefronts. For headless implementations, facets can be sorted either alphabetically or by count. Options: Alphabetical, Count (headless only)
      * Max Value - Enter the maximum number of facet values displayed in the storefront. Valid entries: 0 - 30; Default: 8
 
@@ -63,7 +58,6 @@ Any filterable product attribute can be used as a facet. The *Add facets* panel 
 | Field | Description |
 |--- |--- |
 | Label | ([Headless](facets-type.md) only) The [facet label](facets-type.md) that is visible in the storefront can be edited for consistency with your brand. |
-| Select type | Displays the [selection method](facets-type.md) that is associated with the product attribute. All facets in the [!DNL Commerce] storefronts are `Single select` only. Headless implementations also support `Multi-select` with the logical operators `OR` and `AND`. |
 | Sort Type | The method that is used to [sort](facets-type.md) facets. All [!DNL Commerce] storefronts sort facets alphabetically only. Headless implementations can also sort by `Count`. Options:<br />Alphabetical - Sorts facets alphabetically.<br />Count - (Headless only) Sorts facets based on the number of matches found. |
 | Max Value | The maximum number of values that can be displayed in the storefront for each facet. Facets that represent a range of values are evenly distributed. Valid entries: 0 - 30; Default: 8 |
 

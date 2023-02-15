@@ -19,8 +19,8 @@ To get started using [!DNL Live Search] for Adobe Commerce, complete the onboard
 
 ### Supported platforms
 
-* Adobe Commerce on prem (EE) : 2.4.x
-* Adobe Commerce on Cloud (ECE) : 2.4.x
+* Adobe Commerce on prem (EE) : 2.4.4 and up
+* Adobe Commerce on Cloud (ECE) : 2.4.4 and up
 
 ## Boundaries and thresholds
 

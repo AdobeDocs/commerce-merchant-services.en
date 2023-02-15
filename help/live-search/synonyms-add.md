@@ -29,7 +29,7 @@ Follow the instructions for the [type of synonym](synonyms-type.md) that you wan
 
 1. Enter the **Keyword** term or phrase to be matched.
 1. Enter the **Expansion** term(s) that you want to add as synonyms for the keyword. Separate multiple terms with a comma.
-   In this example, the keyword to match is “pants” and the set of expansion terms are “long pants, trousers, slacks”.
+   In this example, the keyword to match is "pants" and the set of expansion terms are "long pants, trousers, slacks".
 
    ![Two-way synonym example](assets/synonym-add-two-way-example.png)
 
@@ -48,7 +48,7 @@ Follow the instructions for the [type of synonym](synonyms-type.md) that you wan
 
    ![One-way synonym example](assets/synonym-add-one-way-example.png)
 
-   In this example, the keyword is “pants” and the one-way expansion terms “capris, calf-length pants, peddle-pushers” are each a subset of “pants”, but with a specific meaning.
+   In this example, the keyword is "pants" and the one-way expansion terms "capris, calf-length pants, peddle-pushers" are each a subset of "pants", but with a specific meaning.
 
 1. When complete, click **Save**.
    The set of synonyms appears in the list with a one-way arrow pointing from the expansion terms to the keyword to indicate the terms are subsets of the keyword. A plus sign separates each expansion term.
@@ -59,8 +59,6 @@ Follow the instructions for the [type of synonym](synonyms-type.md) that you wan
 
 1. When your synonym(s) are complete, click **Publish changes**.
 1. Wait for up to two hours for your updates to become available in the storefront.
-
-![Publish changes](assets/synonym-publish.png)
 
 ## Field Descriptions
 
