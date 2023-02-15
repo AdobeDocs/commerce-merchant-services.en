@@ -11,6 +11,22 @@ These release notes describe the latest versions of [!DNL Live Search] and inclu
 * ![Fix](../assets/fix.svg) - Fixes and improvements
 * ![Bug](../assets/bug.svg) - Known issues
 
+## [!DNL Live Search] 3.0.1 {#206}
+
+* Compatible with Adobe Commerce (EE): 2.4.4+
+* Compatible with Adobe Commerce for Cloud (ECE): 2.4.4+
+* Stability: Stable
+* Released March 21, 2023
+
+
+
+* ![Fix](../assets/fix.svg) - The "Select Type" selector has been removed when creating facets.
+* ![Bug](../assets/bug.svg) - Ranking by "Recommended for you" is only supported within the Live Search widgets. It is not supported on the default LUMA and PWA search functionality.
+
+Merchants must upgrade the Live Search extension version >= 2.0.5 to access these features.
+
+It is recommended to upgrade and test before pushing to production. Consider upgrading the production environment during off-peak hours after verifying their testing environment results.
+
 ## [!DNL Live Search] 2.0.5 {#205}
 
 * Compatible with Adobe Commerce (EE): 2.4.x
