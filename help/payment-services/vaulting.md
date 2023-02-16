@@ -19,16 +19,16 @@ They can also easily delete their vaulted credit cards from [Stored Payment Meth
 
 ## Enable vaulting
 
-You can enable credit card vaulting for your stores in Payment Services [Settings](settings.md#card-vaulting).
+You can enable credit card vaulting---for customers _and_ merchants in the Admin---for your stores in Payment Services [Settings](settings.md#card-vaulting).
 
 ## Use vaulting in the Admin
 
-If a customer has a previously vaulted credit card, a merchant (or other personnel) can create a subsequent order for that customer in the Admin using their vaulted payment methods.
+If a customer has a previously vaulted credit card, a merchant can create a subsequent order for that customer in the Admin using their vaulted payment methods.
 
 You _cannot_ use vaulted cards in the Admin if:
 
 * A customer is not yet created/does not yet exist in Commerce.
-* A customer exists but has no tokens---in other words, has not completed a previous payment for the store---stored in the system.
+* A customer exists but has no tokens (has not completed a previous payment) stored in the system.
 
 ## Security
 

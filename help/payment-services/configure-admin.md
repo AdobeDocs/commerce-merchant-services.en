@@ -69,8 +69,8 @@ See [Payments options](payments-options.md#paypal-smart-buttons) for more inform
 | [!UICONTROL Title] | store view | Add the text for display as the title for this payment option in the Payment Method view during checkout. Options: [!UICONTROL text field] |
 | [!UICONTROL Payment Action] | website | The [payment action](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html) for the specified payment method. Options: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Show on checkout page] | website | Enable or disable credit card fields on the checkout page. Options: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Vault enabled] | store view | Enable or disable credit card vaulting. Options: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Vault enabled in Admin] | store view | Enable or disable ability for merchant to complete orders for customers in the Admin using a vaulted payment method. Options: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Vault enabled] | store view | Enable or disable (credit card vaulting)(vaulting.md). Options: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Vault enabled in Admin] | store view | Enable or disable ability for [merchant to complete orders for customers in the Admin](vaulting.md) using a vaulted payment method. Options: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Debug Mode] | website | Enable or disable Debug Mode. Options: [!UICONTROL Yes] / [!UICONTROL No] |
 
 ## [!DNL PayPal Smart Buttons]
