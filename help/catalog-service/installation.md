@@ -5,6 +5,16 @@ exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
 ---
 # Onboarding and Installation
 
+See a walkthrough of the Catalog Service process.
+
+Part 1:
+
+>[!VIDEO](https://video.tv.adobe.com/v/3415599)
+
+Part 2:
+
+>[!VIDEO](https://video.tv.adobe.com/v/3415600)
+
 ## Prerequisites
 
 The onboarding process for [!DNL Catalog Service] requires access to the command line of the server. If you are not familiar with working from the command line, ask a developer or system integrator to help.
