@@ -37,7 +37,7 @@ At this time, the [!DNL Live Search] search/category API has the following suppo
 ### Query
 
 * [!DNL Live Search] does not have access to the full taxonomy of the category tree, which makes some layered navigation search scenarios beyond its reach.
-* [!DNL Live Search] uses a unique GraphQL endpoint for queries to support features such as intelligent faceting and search-as-you-type. Although similar to the [Magento GraphQL API](https://developer.adobe.com/commerce/webapi/graphql/), there are a few differences and some fields may not be fully compatible at this time.
+* [!DNL Live Search] uses a unique GraphQL endpoint for queries to support features such as dynamic faceting and search-as-you-type. Although similar to the [Magento GraphQL API](https://developer.adobe.com/commerce/webapi/graphql/), there are a few differences and some fields may not be fully compatible at this time.
 
 To restrict customer groups using Catalog permissions:
 
@@ -67,3 +67,7 @@ To restrict customer groups using Catalog permissions:
 * [Custom price groups](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-group.html)
 * Multiple inventory locations as used by [MCOM](https://experienceleague.adobe.com/docs/commerce-admin/systems/integrations/mcom.html) or other OMS extensions
 * Product prices do not include [value added tax](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/vat.html) (VAT).
+
+## Cookies
+
+Live Search collects user interaction data as part of its base functionality and cookies are used to store this data. When collecting any user information, the user must agree to store cookies. Live Search and Product Recommendations share the same data stream and therefore use the same cookie mechanism. Read more about it in [Handle Cookie Restrictions](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/setting-cookie.html).
