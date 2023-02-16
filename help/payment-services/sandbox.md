@@ -38,7 +38,8 @@ To complete sandbox onboarding:
 
    You are presented with a PayPal window for connecting a PayPal account to start accepting payments.
 
-1. Enter the email of your PayPal business account (not PayPal sandbox account) and your country or region and click **[!UICONTROL Next]**.
+1. Enter the email and password of the PayPal sandbox account you generated in step 3 (not your PayPal business account information) and your country or region.
+1. Click **[!UICONTROL Next]**.
 
    ![PayPal - Connect PayPal account for payments](assets/paypal-connectacct.png)
 

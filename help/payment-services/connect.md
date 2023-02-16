@@ -45,4 +45,4 @@ Now that you have obtained your credentials, you can configure your SaaS project
 
    You are directed to the configuration area in the Admin, **[!UICONTROL Stores]** > _[!UICONTROL Settings]_ > **[!UICONTROL Configuration]** > **[!UICONTROL Commerce Services Connector]**, to configure your Commerce Services Connector.
 
-1. To configure your Commerce Services, follow the steps described in [SaaS configuration](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html#configure-commerce-services).
+1. To configure your Commerce Services, follow the steps described in [SaaS configuration](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html#saasenv).
