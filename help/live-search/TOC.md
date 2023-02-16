@@ -35,5 +35,6 @@ breadcrumb-title: "[!DNL Live Search] Guide"
       - [Rules Workspace](rules-workspace.md)
       - [Add Rules](rules-add.md)
       - [Manage Rules](rules-manage.md)
+   - [Commerce Configuration Settings](configuration.md)
    - [Settings](settings.md)
    - [Indexing](indexing.md)
