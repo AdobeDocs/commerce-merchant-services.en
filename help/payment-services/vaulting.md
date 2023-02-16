@@ -30,6 +30,15 @@ You _cannot_ use vaulted cards in the Admin if:
 * A customer is not yet created/does not yet exist in Commerce.
 * A customer exists but has no tokens (has not completed a previous payment) stored in the system.
 
+To create an order in the Admin for a customer using their vaulted credit card:
+
+1. [Create an order and add products](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html).
+1. In _[!UICONTROL Payment & Shipping Information]_, select **[!UICONTROL Stored Cards]** as the payment method.
+1. Select the desired vaulted credit card payment method.
+1. After completing any other necessary steps for the order, [submit it](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html?lang=en#step-3%3A-submit-the-order).
+
+   ![Use vaulted credit card in Admin for customer](assets/admin-vaultedcard.png)
+
 ## Security
 
 Minimal credit card information is shared with the shopper; they only see the last four digits, expiration date, and brand of their vaulted credit card. Credit card information is stored with the payment provider to satisfy [PCI](security.md#PCI-compliance) compliance standards.
