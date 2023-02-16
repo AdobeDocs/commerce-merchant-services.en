@@ -36,7 +36,7 @@ The Store Fulfillment solution supports and enhances native Adobe Commerce capab
 
 * Fully compatible with the Luma theme
 
-* Provides GraphQL support for headless and Venia storefronts
+* Partial compatibility with PWA and headless storefronts
 
 * Supports the Store Assist app from Walmart Commerce Technologies. This app delivers pickup order information directly to your employee's handheld device in the selected store location. With this information, they can quickly and accurately pick, stage, and handoff items to customers when they arrive at the store.
 
