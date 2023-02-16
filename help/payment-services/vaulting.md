@@ -25,10 +25,7 @@ You can enable credit card vaulting---for customers _and_ merchants in the Admin
 
 If a customer has a previously vaulted credit card, a merchant can create a subsequent order for that customer in the Admin using their vaulted payment methods.
 
-You _cannot_ use vaulted cards in the Admin if:
-
-* A customer is not yet created/does not yet exist in Commerce.
-* A customer exists but has no tokens (has not completed a previous payment) stored in the system.
+You can only use vaulted cards in the Admin if the customer has both an existing account and a valid token stored in the system from a previously completed payment.
 
 To create an order in the Admin for a customer using their vaulted credit card:
 
