@@ -105,6 +105,7 @@ See [Payments options](payments-options.md#credit-card-fields) for more informat
 1. To [set the payment action](production.md#set-payment-services-as-payment-method), toggle **[!UICONTROL Payment action]** to `Authorize` or `Authorize and Capture`.
 1. To enable or disable credit card fields on the checkout page, toggle the **[!UICONTROL Show on checkout page]** selector.
 1. To enable or disable [card vaulting](#card-vaulting), toggle the **[!UICONTROL Vault enabled]** selector.
+1. To enable or disable [vaulted payment methods in the Admin](#card-vaulting) (for merchants to complete orders for customers in the Admin using their vaulted payment method), toggle the **[!UICONTROL Show vaulted methods in Admin]** selector.
 1. To enable or disable debug mode, toggle the **[!UICONTROL Debug Mode]** selector.
 1. Click **[!UICONTROL Save]**.
 
@@ -119,7 +120,8 @@ See [Payments options](payments-options.md#credit-card-fields) for more informat
 | [!UICONTROL Title] | store view | Add the text for display as the title for this payment option in the Payment Method view during checkout. Options: [!UICONTROL text field] |
 | [!UICONTROL Payment Action] | website | The [payment action](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} for the specified payment method. Options: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Show on checkout page] | website | Enable or disable credit card fields to show on checkout page. Options: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Vault enabled] | website | Enable or disable credit card vaulting. Options: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Vault enabled] | store view | Enable or disable credit card vaulting. Options: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Show vaulted payment methods in Admin] | store view | Enable or disable ability for merchant to complete orders for customers in the Admin using a vaulted payment method. Options: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Debug Mode] | website | Enable or disable Debug Mode. Options: [!UICONTROL Yes] / [!UICONTROL No] |
 
 ### Payment buttons
@@ -222,6 +224,8 @@ To ensure that your store is showing the correct configuration, periodically [fl
 ## Card vaulting
 
 You can enable functionality that allows your customers to vault---or "save"---their credit card information in their My Account to use for future purchases.
+
+You can also use card vaulting in the Admin to complete subsequent orders for existing customers.
 
 Enable or disable card vaulting in the [Credit card field settings](#credit-card-fields).
 
