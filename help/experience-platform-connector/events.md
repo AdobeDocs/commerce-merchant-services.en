@@ -15,7 +15,7 @@ The storefront events collect anonymized behavioral data from your shoppers as t
 
 >[!NOTE]
 >
->All storefront events include the `identityMap` field, which is a unique identifier of the person.
+>All events include the [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html) field, which includes the shopper's email address and ECID. By including this profile data in each event, you do not need a separate user account-specific import from Adobe Commerce.
 
 ### addToCart
 
@@ -312,7 +312,9 @@ The following table describes the data collected for this event.
 
 ## Search events
 
-The search events provide data relevant to the shopper's intent. Insight into a shopper's intent helps merchants see how shoppers are searching for items, what they click on, and ultimately purchase or abandon. An example of how you might use this data, is if you want to target existing shoppers who search for your top product, but never purchase the product.
+The search events provide data relevant to the shopper's intent. Insight into a shopper's intent helps merchants see how shoppers are searching for items, what they click on, and ultimately purchase or abandon. An example of how you might use this data is if you want to target existing shoppers who search for your top product, but never purchase the product.
+
+Use the `uniqueIdentifier` field found in both the `searchRequestSent` and `searchResponseReceived` events to cross reference a search request to the corresponding search response.
 
 ### searchRequestSent
 
@@ -331,6 +333,7 @@ The following table describes the data collected for this event.
 |Field|Description|
 |---|---|
 |`searchRequest`|Indicates if a search request was sent|
+|`uniqueIdentifier`| The unique ID for this particular search request|
 |`filter`|Indicates if any filters were applied to limit search results|
 |`attribute` (filter)|The facet of an item used to determine whether to include it in search results|
 |`value`|Attribute values used to determine which items are included in search results|
@@ -357,6 +360,7 @@ The following table describes the data collected for this event.
 |Field|Description|
 |---|---|
 |`searchResponse`|Indicates if a search response has been received|
+|`uniqueIdentifier`| The unique ID for this particular search response|
 |`suggestions`|An array of strings that include the names of products and categories that exist in the catalog that are similar to the search query|
 |`numberOfResults`|The number of products returned|
 |`productListItems`|An array of products in the shopping cart.|
@@ -384,7 +388,6 @@ The following table describes the data collected for this event.
 
 |Field|Description|
 |---|---|
-|`identityMap`|Contains the email address that identifies the customer|
 |`address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
 |`eventType`|`commerce.orderPlaced`|
 |`productListItems`|An array of products in the order|
@@ -424,7 +427,6 @@ The following table describes the data collected for this event.
 The following table describes the data collected for this event.
 |Field|Description|
 |---|---|
-|`identityMap`|Contains the email address that identifies the customer|
 |`address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
 |`eventType`|`commerce.orderLineItemShipped`|
 |`productListItems`|An array of products in the order|
@@ -464,7 +466,6 @@ The following table describes the data collected for this event.
 The following table describes the data collected for this event.
 |Field|Description|
 |---|---|
-|`identityMap`|Contains the email address that identifies the customer|
 |`address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
 |`eventType`|`commerce.orderCancelled`|
 |`productListItems`|An array of products in the order|
@@ -488,7 +489,6 @@ The following table describes the data collected for this event.
 The following table describes the data collected for this event.
 |Field|Description|
 |---|---|
-|`identityMap`|Contains the email address that identifies the customer|
 |`address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
 |`eventType`|`commerce.creditMemoIssued`|
 |`productListItems`|An array of products in the order|
