@@ -19,7 +19,7 @@ They can also easily delete their vaulted credit cards from [Stored Payment Meth
 
 ## Enable vaulting
 
-You can enable credit card vaulting---for customers _and_ merchants in the Admin---for your stores in Payment Services [Settings](settings.md#card-vaulting).
+You can enable credit card vaulting---for customers _and_ merchants in the Admin---for your stores in [!DNL Payment Services] [Settings](settings.md#card-vaulting).
 
 ## Use vaulting in the Admin
 
