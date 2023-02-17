@@ -51,6 +51,14 @@ _June 28, 2021_
 
 +++
 
+## v1.6.0
+
+_February 17, 2023_
+
+![New](../assets/fix.svg)<!-- Issue PAY-3540 --> Added [PCI 3DS compliance feature for merchants transacting in the European Union (EU) and Britain](security.md#3ds). This additional layer of security, which requires buyers to authenticate with their credit card issuer, helps prevent online fraud and is required as part of European Union (EU) compliance regulations.
+
+![New](../assets/fix.svg)<!-- Issue PAY-3609 --> Added the ability to [enable card vaulting in the Admin](vaulting.md##use-vaulting-in-the-admin). This allows merchants to create an order for customers in the Admin using their vaulted payment methods.
+
 ## v1.5.4
 
 _January 29, 2023_
