@@ -19,7 +19,22 @@ They can also easily delete their vaulted credit cards from [Stored Payment Meth
 
 ## Enable vaulting
 
-You can enable credit card vaulting for your stores in Payment Services [Settings](settings.md#card-vaulting).
+You can enable credit card vaulting---for customers _and_ merchants in the Admin---for your stores in [!DNL Payment Services] [Settings](settings.md#card-vaulting).
+
+## Use vaulting in the Admin
+
+If a customer has a previously vaulted credit card, a merchant can create a subsequent order for that customer in the Admin using their vaulted payment methods.
+
+You can only use vaulted cards in the Admin if the customer has both an existing account and a valid token stored in the system from a previously completed payment.
+
+To create an order in the Admin for a customer using their vaulted credit card:
+
+1. [Create an order and add products](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html).
+1. In _[!UICONTROL Payment & Shipping Information]_, select **[!UICONTROL Stored Cards]** as the payment method.
+1. Select the desired vaulted credit card payment method.
+1. After completing any other necessary steps for the order, [submit it](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html?lang=en#step-3%3A-submit-the-order).
+
+   ![Use vaulted credit card in Admin for customer](assets/admin-vaultedcard.png)
 
 ## Security
 
