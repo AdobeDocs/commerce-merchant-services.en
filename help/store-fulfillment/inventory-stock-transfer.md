@@ -10,6 +10,10 @@ exl-id: 669d4dce-4cac-4bde-acc5-26c70a51f7f1
 
 The [!DNL Store Fulfillment] solution uses native Adobe Commerce Inventory Management. By default, the [!DNL Commerce] configuration assigns all web inventory to the default stock, which can not have additional sources assigned. Because a website can only be assigned a single stock, a merchant must configure a new stock and optionally transfer their default source inventory to a source that is assigned to the appropriate scope. Then, the source can be assigned to the new stock.
 
+[!IMPORTANT]
+>
+>Merchants must maintain the default source for all proudcts that makeup group and bundle product types. These products should have an inventory quantity that meets the minimum quantity threshold for in stock items and include a stock status of In Stock.
+
 These configuration changes helps you accomplish three things:
 
 1. [Transfer inventory to source](https://docs.magento.com/user-guide/catalog/inventory-bulk-transfer-inventory.html) to move inventory from the default stock/source to the new stock/source.
