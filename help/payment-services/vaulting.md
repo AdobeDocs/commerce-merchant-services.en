@@ -1,9 +1,9 @@
 ---
-title: Credit card vaulting
+title: Credit Card Vaulting
 description: Shoppers can vault (save) their credit card details for future purchases.
 exl-id: b4060307-ffcd-41cb-9b9d-a2fef02f23bd
 ---
-# Credit card vaulting
+# Credit Card Vaulting
 
 Convert one-time customers into loyal shoppers with credit card vaulting. Shoppers can save---or "vault"---their credit card credentials during checkout to use in a later purchase for the same, or another, store within the same merchant account.
 

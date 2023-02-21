@@ -1,11 +1,11 @@
 ---
-title: Legacy Payment Services configuration
+title: Legacy Payment Services Configuration
 description: After installation, you can configure [!DNL Payment Services] in the Admin at the store configuration.
 role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
 ---
-# Legacy Payment Services configuration
+# Legacy [!DNL Payment Services] Configuration
 
 You can customize [!DNL Payment Services] to your needs with helpful configuration options in the Admin.
 

@@ -1,9 +1,9 @@
 ---
-title: Set up the testing sandbox
+title: Set Up the Testing Sandbox
 description: Use a PayPal sandbox account to use [!DNL Payment Services] in test mode.
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
 ---
-# Set up the testing sandbox
+# Set Up the Testing Sandbox
 
 Before starting sandbox onboarding, you must sign up for a free PayPal Developer's account, and create both merchant (to use for onboarding) and shopper accounts (to use for testing your checkout). You can create multiple Developer accounts, if desired.
 
