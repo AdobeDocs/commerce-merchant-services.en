@@ -59,6 +59,12 @@ _October 5, 2022_
 
 +++
 
+## v1.7.0
+
+_February 22, 2023_
+
+![Fixed issue](../assets/fix.svg)<!-- Issue AC-8002 --> User experience improvements when placing an order using a [Multishipping](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/multishipping-settings.html) method. This functionality enables the display of payment methods during checkout when [!DNL Quick Checkout] is enabled.
+
 ## v1.6.0
 
 _February 9, 2023_
