@@ -3,7 +3,7 @@ title: "Types of Facets"
 description: "[!DNL Live Search] facets are dynamic, and appear in the Filters list when relevant."
 exl-id: 49fb7609-64b3-4ae8-928d-54c99032d919
 ---
-# Types of facets
+# Types of Facets
 
 [!DNL Live Search] uses a variety of facets types and they appear in the *Filters* list only when relevant. The list of available facets changes according to the products returned. The following characteristics affect their presentation and behavior:
 

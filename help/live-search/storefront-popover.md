@@ -19,9 +19,9 @@ To produce highly-targeted results, review the set of [searchable](https://exper
 
 The following attributes are always searchable:
 
-*  `sku`
-*  `name`
-*  `categories`
+* `sku`
+* `name`
+* `categories`
 
 [[!DNL Live Search popover]](assets/storefront-search-as-you-type.png)
 

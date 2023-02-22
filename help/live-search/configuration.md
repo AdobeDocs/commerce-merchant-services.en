@@ -2,7 +2,7 @@
 title: "Commerce Configurations Settings and [!DNL Live Search] "
 description: "Describes the Adobe Commerce configuration settings that [!DNL Live Search] can read."
 ---
-# [!DNL Live Search] and Adobe Commerce configuration settings
+# [!DNL Live Search] and Adobe Commerce Configuration Settings
 
 There are Commerce configuration settings that [!DNL Live Search] supports. This topic lists these configurations values.
 The list of settings that [!DNL Live Search] cannot read is by no means complete but lists configurations that may be of interest.
