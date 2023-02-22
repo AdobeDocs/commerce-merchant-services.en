@@ -23,5 +23,5 @@ We make the distinction between support of the extension itself and support in t
 |Stores -> Configuration -> Catalog -> Storefront -> List Mode|Renders correctly but events are not emitted for some of the page interactions|
 |Stores -> Configuration -> Catalog -> Storefront -> Allow All Products per Page|Not implemented; submits request to search service with no page size and we return default page size of 20|
 |Stores -> Configuration -> Catalog -> Catalog -> Catalog Search -> Maximum Query Length|Not implemented; Search Services accepts up to 255 chars|
-|Stores -> Configuration -> General -> Currency Setup -> Currency Options -> Default Display Currency|Not implemented; Live Search only has access to the base currency|
+|Stores -> Configuration -> General -> Currency Setup -> Currency Options -> Default Display Currency|Not implemented; [!DNL Live Search] only has access to the base currency|
 |Configuration -> Sales -> Tax -> Price Display Settings -> Display Product Prices In Catalog||

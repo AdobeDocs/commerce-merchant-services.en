@@ -1,6 +1,6 @@
 ---
 title: Workspace
-description: The Live Search workspace is used to configure, manage, and monitor search performance.
+description: The [!DNL Live Search] workspace is used to configure, manage, and monitor search performance.
 exl-id: fb85974a-a5f9-4e6c-bd03-451e6457f2d2
 ---
 # Workspace

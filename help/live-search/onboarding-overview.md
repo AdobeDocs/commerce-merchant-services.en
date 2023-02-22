@@ -57,7 +57,7 @@ To restrict customer groups using Catalog permissions:
 
 ### PWA support
 
-* The current beta PWA implementation of [!DNL Live Search] requires more processing time to return search results than Live Search with the native Commerce storefront.
+* The current beta PWA implementation of [!DNL Live Search] requires more processing time to return search results than [!DNL Live Search] with the native Commerce storefront.
 * The beta release of PWA for [!DNL Live Search] does not support [event handling](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/).
 * The following product attributes are not supported by GraphQL when used in relation to the beta release of [PWA](https://developer.adobe.com/commerce/pwa-studio/): `description`, `name`, `short_description`
 
@@ -70,4 +70,4 @@ To restrict customer groups using Catalog permissions:
 
 ## Cookies
 
-Live Search collects user interaction data as part of its base functionality and cookies are used to store this data. When collecting any user information, the user must agree to store cookies. Live Search and Product Recommendations share the same data stream and therefore use the same cookie mechanism. Read more about it in [Handle Cookie Restrictions](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/setting-cookie.html).
+[!DNL Live Search] collects user interaction data as part of its base functionality and cookies are used to store this data. When collecting any user information, the user must agree to store cookies. [!DNL Live Search] and [!DNL Product Recommendations] share the same data stream and therefore use the same cookie mechanism. Read more about it in [Handle Cookie Restrictions](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/setting-cookie.html).

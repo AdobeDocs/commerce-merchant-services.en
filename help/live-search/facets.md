@@ -13,7 +13,7 @@ Faceting is a method of high-performance filtering that uses multiple dimensions
 
 The category and product attribute requirements for faceting are similar to the filterable attributes used for layered navigation. The storefront properties of each attribute must be set to `filterable (with results)`.
 
-Live Search supports up to:
+[!DNL Live Search] supports up to:
 
 * 100 attributes configured as facets
 * 50 sortable attributes

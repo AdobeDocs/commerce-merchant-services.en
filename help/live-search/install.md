@@ -5,7 +5,7 @@ exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 ---
 # Install [!DNL Live Search]
 
-Live Search is installed as an extension from Adobe Marketplace. After the [!DNL Live Search] module (with catalog modules as dependencies) is installed and configured, [!DNL Commerce] begins sharing search and catalog data with SaaS services. At this point, *Admin* users can set up, customize, and manage search facets, synonyms, and merchandising rules.
+[!DNL Live Search] is installed as an extension from Adobe Marketplace. After the [!DNL Live Search] module (with catalog modules as dependencies) is installed and configured, [!DNL Commerce] begins sharing search and catalog data with SaaS services. At this point, *Admin* users can set up, customize, and manage search facets, synonyms, and merchandising rules.
 
 This topic provides instructions to do the following:
 
