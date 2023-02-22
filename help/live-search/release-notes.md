@@ -18,19 +18,44 @@ These release notes describe the latest versions of [!DNL Live Search] and inclu
 * Stability: Stable
 * Released March 21, 2023
 
+### New Features
 
+* New Product Item Card in Rules preview 
+* Added the ability to drag and drop to create Pin events
+* New Pin actions:
+    * Pin to spot - new Pin button to create Pin event in one click
+    * Pin to top - will put the product top of as # 1 Position
+    * Pin to bottom - will make product go bottom of result giving # -1 Position
+    * Unpin event in one click if event is pinned
+* Intelligent Ranking for rules
 
-* ![Fix](../assets/fix.svg) - The "Select Type" selector has been removed when creating facets.
+### Updates
+
+* Configure Rules now automatically sorts positions uniquely
+* Deleting an existing event now updates preview
+* Rules with no events can be saved
+* Remove faceting "Select Type" selector
+* Added new 'Editing' status for unsaved rules
+
+### Fixes
+
+* Fixed server error when there is an unfinished event during save
+* Fixed correctly deleting specific event when there are multiple events
+* Fixed existing rule event not updating when new event has been added
+* Fixed on 2nd "Edit" click from details, live search page requiring reload
+* Synonyms: Fixed a issue when a user clicked out of input, they could not return the focus to the field
+* Other minor bug fixes and performance updates
+
 * ![Bug](../assets/bug.svg) - Ranking by "Recommended for you" is only supported within the Live Search widgets. It is not supported on the default LUMA and PWA search functionality.
 
-Merchants must upgrade the Live Search extension version >= 2.0.5 to access these features.
+Merchants must upgrade the Live Search extension version >= 3.0.1 to access these features.
 
 It is recommended to upgrade and test before pushing to production. Consider upgrading the production environment during off-peak hours after verifying their testing environment results.
 
 ## [!DNL Live Search] 2.0.5 {#205}
 
-* Compatible with Adobe Commerce (EE): 2.4.x
-* Compatible with Adobe Commerce for Cloud (ECE): 2.4.x
+* Compatible with Adobe Commerce (EE): 2.4.4+
+* Compatible with Adobe Commerce for Cloud (ECE): 2.4.4+
 * Stability: Stable
 
 * ![Fix](../assets/fix.svg) - Live Search would throw an error when SDK resources were not available due to network issues. This bug has now been fixed.
@@ -41,8 +66,8 @@ It is recommended to upgrade and test before pushing to production. Consider upg
 
 ## [!DNL Live Search] 2.0.4 {#204}
 
-* Compatible with Adobe Commerce (EE): 2.4.x
-* Compatible with Adobe Commerce for Cloud (ECE): 2.4.x
+* Compatible with Adobe Commerce (EE):2.4.4+
+* Compatible with Adobe Commerce for Cloud (ECE): 2.4.4+
 * Stability: Stable
 
 * ![New](../assets/new.svg) - Live Search now supports filtering by the 'Display Out of Stock Products' setting in the admin. If 'Display Out of Stock Products' is set to false, `inStock = true` is added to the filter.
@@ -57,8 +82,8 @@ We advise users to upgrade and test before pushing to production. Consider upgra
 
 ## [!DNL Live Search] 2.0.3 {#203}
 
-* Compatible with Adobe Commerce (EE): 2.4.x
-* Compatible with Adobe Commerce for Cloud (ECE): 2.4.x
+* Compatible with Adobe Commerce (EE):2.4.4+
+* Compatible with Adobe Commerce for Cloud (ECE): 2.4.4+
 * Stability: Stable
 
 * ![New](../assets/new.svg) - Live Search now supports B2B features by honoring category permissions, shared catalogs, and customer group-specific pricing.
@@ -69,8 +94,8 @@ We advise users to upgrade and test before pushing to production. Consider upgra
 
 ## [!DNL Live Search] 2.0 {#20}
 
-* Compatible with Adobe Commerce (EE): 2.4.x
-* Compatible with Adobe Commerce for Cloud (ECE): 2.4.x
+* Compatible with Adobe Commerce (EE): 2.4.4+
+* Compatible with Adobe Commerce for Cloud (ECE): 2.4.4+
 * Stability: Stable
 
 Existing [!DNL Live Search] installations must be upgraded to [!DNL Live Search] 2.0.0 to take advantage of the following new features, fixes, and improvements:
