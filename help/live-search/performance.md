@@ -22,7 +22,7 @@ The [!DNL Live Search] Performance dashboard provides insight into the search te
 
 >[!NOTE]
 >
->The performance dashboard is updated every 24 hours.
+>The performance dashboard is updated every 12 hours.
 
 
 ## Field descriptions
