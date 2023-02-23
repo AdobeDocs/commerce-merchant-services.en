@@ -1,9 +1,9 @@
 ---
-title: Workspace
+title: [!DNL Product Recommendations] Workspace
 description: Learn how to configure, manage, and monitor product recommendation performance.
 exl-id: 85a06cc3-91b9-484a-96a9-fc85718e6d70
 ---
-# Workspace
+# [!DNL Product Recommendations] Workspace
 
 The [!DNL Product Recommendations] workspace displays a list of previously configured recommendations with metrics that help you track the success of each recommendation. The list can be configured to calculate metrics for the last day, week, or month. You can use the metrics to create actionable insights based on how frequently a recommendation unit is viewed or clicked, or to analyze how well your recommendations perform.
 
