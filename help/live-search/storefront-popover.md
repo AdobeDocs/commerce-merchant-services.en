@@ -9,10 +9,6 @@ When [!DNL Live Search] is [installed](install.md), a [!DNL popover] appears in 
 
 [!DNL Live Search] returns results for a query of two characters or more. For a partial match, the maximum number of characters per word is 20. The number of characters in a "search as you type" query is not configurable.
 
->[!NOTE]
->
->The [!DNL Live Search] [!DNL storefront popover] is available only for stores that use the *Luma* theme, or a customized theme that is based on *Luma*. The *Luma* theme is included in the [!DNL Commerce] sample data. The [!DNL popover] does not support the *Blank* theme. See [Styling [!DNL Popover] Elements](storefront-popover-styling.md) to learn more.
-
 ## Searchable attributes
 
 To produce highly-targeted results, review the set of [searchable](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) (`searchable=true`) product attributes. To ensure relevancy, make attributes searchable only if they contain content that has a clear and concise meaning. Avoid using attributes that contain less precise, lengthy text such as `description`, which although search-enabled by default, can reduce the precision of search results. For example, if a person searches for "shorts" and there are shirts with a description that includes the term "short sleeves", then the shirts will be included in the search results.
@@ -36,3 +32,9 @@ The page size of the [!DNL popover] determines how many lines of autocompleted p
 1. Expand the *Catalog Search* section.
 1. Set the **Autocomplete Limit** to the number of lines that you want to allow in the [!DNL popover].
 1. When complete, click **Save Config**.
+
+## Limitations
+
+* The [!DNL Live Search] [!DNL storefront popover] is available only for stores that use the *Luma* theme, or a customized theme that is based on *Luma*. 
+* The [!DNL popover] does not support the *Blank* theme. See [Styling [!DNL Popover] Elements](storefront-popover-styling.md) to learn more.
+* The [!DNL popover] is not supported on the Quick Order form.
