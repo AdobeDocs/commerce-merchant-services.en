@@ -40,6 +40,11 @@ To integrate Adobe Commerce with Store Fulfillment services, you create a Commer
 >
 >For detailed instructions, see [Integrations](https://docs.magento.com/user-guide/system/integrations.html) in the _Adobe Commerce User Guide_.
 
+>[!IMPORTANT]
+>
+> If restoring environments database with a different environments source data, E.g., production data to staging or vice versa, ensure to not overwrite the integration token details. This can be addressed by excluding the `oauth_token` table when creating your database export. 
+
+
 ## Configure Store Fulfillment account credentials
 
 After you complete the intake form, a Walmart Store Fulfillment account is created for you. You will receive the following credentials when they are available:
