@@ -1,9 +1,9 @@
 ---
-title: Collect data
+title: Collect Data
 description: Learn how events collect data for product recommendations.
 exl-id: b827d88c-327f-4986-8239-8f1921d8383c
 ---
-# Collect data
+# Collect Data
 
 When you install and configure SaaS-based Adobe Commerce features such as [Product Recommendations](install-configure.md) or [Live Search](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html), the modules deploy behavioral data collection to your storefront. This mechanism collects anonymized behavioral data from your shoppers and powers product recommendations. For example, the `view` event is used to compute the `Viewed this, viewed that` recommendation type, and the `place-order` event is used to compute the `Bought this, bought that` recommendation type.
 
