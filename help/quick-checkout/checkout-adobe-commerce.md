@@ -34,7 +34,9 @@ If the shopper is logged in to Adobe Commerce prior to checkout, the [!DNL Bolt]
 
 If you encounter issues when you place an order as an existing Adobe Commerce user, see the [Troubleshoot Quick Checkout issues](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/quick-checkout-issues.html) article in the Adobe Commerce Help Center.
 
-### Automatic login
+## Automatic login
+
+The Automatic Login component detects when a shopper has an active Bolt session and automatically logs the shopper in. This skips the account detection and one-time passcode (OTP) steps because the shopper completed them in a previous session.
 
 It is possible to configure an automatic login for [!DNL Quick Checkout] users. You can enable a configuration to automatically login a user during checkout.
 
