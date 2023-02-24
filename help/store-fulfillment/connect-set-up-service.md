@@ -35,6 +35,8 @@ To integrate Adobe Commerce with Store Fulfillment services, you create a Commer
 
 1. Work with your Account Manager to complete the configuration on the Store Fulfillment side and to authorize the integration.
 
+1. Set Allow OAuth Access Tokens to be used as standalone Bearer tokens to Yes in Stores → Configuration → Services → OAuth → Consumer Settings. Leaving this to No will result in a 401 response: `The consumer isn't authorized to access %resources.`
+
 
 >[!NOTE]
 >
