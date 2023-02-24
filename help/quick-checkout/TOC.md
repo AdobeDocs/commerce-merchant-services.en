@@ -7,7 +7,7 @@ breadcrumb-title: Merchant Services Guide
 # [!DNL Quick Checkout] for Adobe Commerce {#quick-checkout}
 
 - [Introduction to [!DNL Quick Checkout]](overview.md)
-- [Release Notes](release-notes.md)
+- [Release notes](release-notes.md)
 - Onboard [!DNL Quick Checkout] {#getting-started}
   - [Prerequisites](prerequisites.md)
   - [Install](install.md)
@@ -29,4 +29,4 @@ breadcrumb-title: Merchant Services Guide
     - [Adobe Commerce user checkout](checkout-adobe-commerce.md)
   - [Payment methods](payment-methods.md)
 - [User session lifetime](user-session-lifetime.md)
-- [Create an Order in Admin](create-order-admin.md)
+- [Create an order in Admin](create-order-admin.md)

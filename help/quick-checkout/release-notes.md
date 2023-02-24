@@ -59,6 +59,12 @@ _October 5, 2022_
 
 +++
 
+## v1.8.0
+
+_February 24, 2023_
+
+![Fixed issue](../assets/fix.svg)<!-- Issue BOLT-592 --> User experience improvements when placing an order in the [Admin Panel](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/create-order-admin.html) using [Braintree](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/stored-payment-methods.html) as a payment method. This functionality allows customers to place an order with Braintree as a payment method during checkout when [!DNL Quick Checkout] is enabled.
+
 ## v1.7.0
 
 _February 22, 2023_

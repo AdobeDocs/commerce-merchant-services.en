@@ -3,7 +3,7 @@ title: "Checkout flow in Adobe Commerce"
 description: "Overview of the [!DNL Quick Checkout] flow in Adobe Commerce."
 exl-id: 82761627-a0d4-4cb0-aad1-9865fcb550d4
 ---
-# [!DNL Quick Checkout] flow
+# [!DNL Quick Checkout] Flow
 
 This section provides an overview of the typical checkout experience using the [!DNL Quick Checkout] for Adobe Commerce extension.
 

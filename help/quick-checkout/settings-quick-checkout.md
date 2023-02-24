@@ -3,7 +3,7 @@ title: Configure the [!DNL Quick Checkout] for Adobe Commerce extension
 description: Learn the configuration options for the [!DNL Quick Checkout] and how to successfully onboard and setup the extension.
 exl-id: 892e04dc-17d6-45e9-b2ab-c7a0735a75bc
 ---
-# [!DNL Quick Checkout] settings
+# [!DNL Quick Checkout] Settings
 
 [!DNL Quick Checkout] for Adobe Commerce and Magento Open Source provides a configuration view with all the necessary information to set up the extension.
 

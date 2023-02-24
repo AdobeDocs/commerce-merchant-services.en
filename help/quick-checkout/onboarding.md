@@ -3,7 +3,7 @@ title: "Onboard the [!DNL Quick Checkout] for Adobe Commerce extension"
 description: "Learn how the [!DNL Quick Checkout] could benefit your Adobe Commerce instance and how to successfully onboard and setup the extension."
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
 ---
-# [!DNL Quick Checkout] onboarding
+# [!DNL Quick Checkout] Onboarding
 
 To get started using the [!DNL Quick Checkout] for Adobe Commerce extension you must complete a few onboarding steps to connect your instance with our checkout functionality.
 
