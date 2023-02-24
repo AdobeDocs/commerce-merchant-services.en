@@ -1,5 +1,5 @@
 ---
-title: "[!DNL Live Search] Release Notes"
+title: "Live Search Release Notes"
 description: "The latest release information for [!DNL Live Search] from Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 ---
