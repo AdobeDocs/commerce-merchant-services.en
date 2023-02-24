@@ -4,21 +4,21 @@ description: '[!DNL API Mesh] for Adobe Commerce provides a way to integrate mul
 ---
 # [!DNL Catalog Service and API Mesh]
 
-The [API Mesh for Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) enables developers to integrate private or third-party APIs and other interfaces with Adobe products using Adobe IO.
+The [API Mesh for Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) enables developers to integrate private or third-party APIs and other interfaces with Adobe products using Adobe I/O Runtime.
 
 ![Catalog architecture diagram](assets/catalog-service-architecture-mesh.png)
 
 The first step for using the API Mesh with Catalog Service is to connect API Mesh to your instance. See detailed instructions in [Create a Mesh](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/).
 
-To complete the setup, you will need the [Adobe IO CLI package](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) installed.
+To complete the setup, install the [Adobe Developer CLI package](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/).
 
-Once Mesh is configured on Adobe IO, run the following command which adds a `CommerceCatalogServiceGraph` source to your mesh.
+Once Mesh is configured on Adobe I/O Runtime, run the following command which adds a `CommerceCatalogServiceGraph` source to your mesh.
 
 ```bash
 aio api-mesh:source:install "CommerceCatalogServiceGraph" -f variables.json
 ```
 
-where `variables.json` is a separate file that stores commonly used values for Adobe IO.
+Where `variables.json` is a separate file that stores commonly used values for Adobe I/O Runtime.
 For instance, the API key can be saved within the file:
 
 ```json
@@ -34,7 +34,7 @@ After running this command, the Catalog Service should be running through the AP
 The API Mesh allows users to consume outside data sources to enhance your Adobe Commerce instance. It can also be used to configure existing Commerce data to enable new functionality.
 
 In this example, the API Mesh is used to enable tier prices in Adobe Commerce.
-Replace the `name `, `endpoint` and `x-api-key` values.
+Replace the `name `, `endpoint`, and `x-api-key` values.
 
 ```json
 {
