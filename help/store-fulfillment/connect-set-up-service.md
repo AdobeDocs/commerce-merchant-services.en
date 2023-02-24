@@ -7,7 +7,7 @@ exl-id: 74c71c43-305a-4ea7-84f8-95f3ce0a9482
 ---
 # Connect the Store Fulfillment Solution
 
-Establish the connection between Adobe Commerce and Store Fulfillment services by configuring the required authentication credentials and connection data from the Admin.
+Connect Store Fulfillment Services with Adobe Commerce by adding the required authentication credentials and connection data to the Adobe Commerce Admin.
 
 - **[Configure [!DNL Commerce integration settings]](#create-the-commerce-integration)**–Create an Adobe Commerce integration for Store Fulfillment services and generate the access tokens to authenticate incoming requests from the Store Fulfillment servers.
 
@@ -29,7 +29,7 @@ To integrate Adobe Commerce with Store Fulfillment services, you create a Commer
 
 1. Configure [!UICONTROL API Resource Access permissions] for the integration—select `[!UICONTROL All]`
 
-1. Generate the access tokens for authentication by saving and activating the integration. 
+1. Generate the access tokens for authentication by saving and activating the integration.
 
 1. Copy and save the access tokens to a secure, encrypted location.
 
@@ -42,7 +42,7 @@ To integrate Adobe Commerce with Store Fulfillment services, you create a Commer
 
 ## Configure Store Fulfillment account credentials
 
-After you complete the intake form, a Walmart Store Fulfillment account is created for you. You will receive the following credentials when they are available:
+After you complete the intake form, a Walmart Store Fulfillment account is created for you. You receive the following credentials when they are available:
 
 - [!DNL Merchant ID]
 - [!DNL Consumer ID]
@@ -54,7 +54,7 @@ These credentials are required to configure and use Store Fulfillment.
 
   >[!NOTE]
   >
-  >The account creation process can take some time to complete. While you wait for credentials, [review amd configure other settings for the  Store Fulfillment solution](service-config-settings-overview.md).
+  >The account creation process can take some time to complete. While you wait for credentials, [review and configure other settings for the  Store Fulfillment solution](service-config-settings-overview.md).
 
 ### Add credentials to connect to Store Fulfillment
 

@@ -1,11 +1,11 @@
 ---
-title: General configuration
+title: General Configuration
 description: Configure general settings to enable [!DNL Store Fulfillment] for your store. Configure global extension settings, system settings for logging, data synchronization, and security. Provide key data to enable the integration between Adobe Commerce and Store Fulfillment services.
 role: User, Admin
 level: Intermediate
 exl-id: 51dcfc95-3dd6-40d9-bd26-d8409a25f3c8
 ---
-# Store service and sales configuration
+# Store Service and Sales Configuration
 
 Configure [!DNL Store Fulfillment] from the [!DNL Commerce] Admin to enable the extension, specify extension settings, configure the security settings for Store Assist app users, and set options for delivery methods.
 
@@ -86,7 +86,7 @@ Enable the [!DNL Store Fulfillment] solution to add the in-store and curbside pi
 </tbody>
 </table>
 
-## Add Account Credentials
+## Add Account credentials
 
 <table>
 <tr>
@@ -135,7 +135,7 @@ Enable the [!DNL Store Fulfillment] solution to add the in-store and curbside pi
 
 After you configure the [!UICONTROL Account Credentials], select <strong>[!UICONTROL Validate Credentials]</strong> to verify and establish a connection to the store fulfillment service for the first time.
 
-## Configure Logging
+## Configure logging
 
 Logs for store fulfillment services are available in the log file `var/log/walmart-bopis.log`.
 
@@ -370,7 +370,7 @@ Configure the settings for the Store Fulfillment App user account and password s
 </tbody>
 </table>
 
-## Delivery Methods 
+## Delivery Methods
 
 Store Fulfillment works by extending the native Adobe Commerce [!DNL In-Store Delivery] capabilities. After you install the extension, you can configure in-store delivery methods using the following extended settings that are added to the Admin.
 
@@ -386,7 +386,7 @@ Configure these settings from the Admin by selecting <strong>[!UICONTROL Stores 
 >For additional information about configuring in-store delivery options, see [In-Store Delivery](https://docs.magento.com/user-guide/shipping/shipping-in-store-delivery.html) in the _Adobe Commerce User Guide_.
 
 
-### Delivery Methods Configuration
+### Delivery Methods configuration
 
 With the in-store delivery method, the customer can select a source to be used as a pickup location during the checkout.
 
@@ -415,7 +415,7 @@ With the in-store delivery method, the customer can select a source to be used a
 </tbody>
 </table>
 
-### Delivery Method Title Configuration
+### Delivery Method Title configuration
 
 <table>
 <thead>
@@ -495,7 +495,7 @@ With the in-store delivery method, the customer can select a source to be used a
 </tr>
 </tbody></table>
 
-### Stock Availability Titles Configuration
+### Stock Availability Titles configuration
 
 <table>
 <thead>
@@ -525,3 +525,4 @@ With the in-store delivery method, the customer can select a source to be used a
 <td>No</td>
 </tr>
 </tbody></table>
+

@@ -5,9 +5,9 @@ role: User, Admin
 level: Intermediate
 exl-id: f9e05049-5904-4f6c-b45d-9f81fbc76b69
 ---
-# Store Fulfillment requirements for Adobe Commerce
+# Store Fulfillment Requirements for Adobe Commerce
 
-You must meet the following technical and business requirements to install and enable the Store Fulfillment solution for Adobe Commerce.
+The following sections detail the technical and business requirements for installing and enabling the Store Fulfillment solution for Adobe Commerce.
 
 ## Platform and software version requirements
 
@@ -18,7 +18,7 @@ The [!DNL Store Fulfillment] solution is available to Adobe Commerce customers o
 
 The Store Fulfillment solution is compatible with the software versions listed in the *Software Compatibility* table.
 
-**Software Compatibility**
+**Software compatibility**
 
 | **Software**   | **Minimum Version** | **Maximum Version** |
 |----------------|---------------------|---------------------|
@@ -32,17 +32,17 @@ For detailed requirements, review the Adobe Commerce [System requirements](https
 
 ## Store Assist app requirements
 
-The end-to-end process to manage store pickup orders is managed through the Store Assist app installed on mobile devices. These devices—provided by the retailer or by store employees using their personal smart phones—must meet the following requirements:  
+The end-to-end process to manage store pickup orders is managed through the Store Assist app installed on mobile devices. These devices—provided by the retailer or by store employees using their personal smart phones—must meet the following requirements:
 
-**Minimum operating system requirements** 
+**Minimum operating system requirements**
 
-- Android 6           
-- iOS 12            
+- Android 6
+- iOS 12
 
 **Minimum hardware requirements**
 
-- 1GB RAM 
-- 600MB free disk space
+- 1 GB RAM
+- 600 MB free disk space
 
 ## Business requirements
 
@@ -50,7 +50,7 @@ Your business must meet the following minimum criteria to implement the Store Fu
 
 - US-based businesses only
 
-- B2C Retailers, CPG Manufacturers selling D2C, or distributors selling D2C or to small businesses
+- Business to Consumer (B2C) Retailers, Consumer Packaged Goods (CPG) Manufacturers selling directly to consumers (D2C), or distributors selling directly to consumers or small businesses
 
 - At least one physical store or warehouse
 
