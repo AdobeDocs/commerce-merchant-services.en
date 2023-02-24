@@ -7,11 +7,13 @@ exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 
 These release notes describe the latest versions of [!DNL Catalog Service] and include:
 
-* ![New](../assets/new.svg) New features
-* ![Fix](../assets/fix.svg) Fixes and improvements
-* ![Bug](../assets/bug.svg) Known issues
+![New](../assets/new.svg) New features
+![Fix](../assets/fix.svg) Fixes and improvements
+![Bug](../assets/bug.svg) Known issues
 
-## V1.4 Release
+## Curret major version
+
+### V1.4 Release
 
 Release Date: 2023-2-7
 Compatible with Adobe Commerce (EE): 2.4.x
@@ -22,7 +24,7 @@ Stability: General Availability
 ![Fix](../assets/fix.svg) API scalability and performance improvements.
 
 
-### Known limitations
+#### Known limitations
 
 These features are not yet supported:
 
@@ -41,7 +43,7 @@ The following limitations can be solved by using the Core GraphQL API:
 * Downloadable products and gift cards
 * Categories (`categories` and `categoryList`)
 
-## V1.3 Release
+### V1.3 Release
 
 Release Date: 2023-1-17
 Compatible with Adobe Commerce (EE): 2.4.x
@@ -53,7 +55,7 @@ Stability: General Availability
 ![New](../assets/new.svg) Support added for virtual products.
 ![Fix](../assets/fix.svg) API scalability and performance improvements.
 
-### Known limitations
+#### Known limitations
 
 These features are not yet supported:
 
@@ -72,7 +74,7 @@ The following limitations can be solved by using the Core GraphQL API:
 * Downloadable products and gift cards
 * Categories (`categories` and `categoryList`)
 
-## V1.1 Release
+### V1.1 Release
 
 Release Date: 2022-11-18
 Compatible with Adobe Commerce (EE): 2.4.x
@@ -82,7 +84,7 @@ Stability: General Availability
 ![New](../assets/new.svg) Catalog Service now supports Adobe's [API Mesh](https://developer.adobe.com/graphql-mesh-gateway/).
 ![Fix](../assets/fix.svg) We have improved API scalability and overall performance.
 
-### Known limitations
+#### Known limitations
 
 These features are not yet supported:
 
@@ -101,7 +103,7 @@ The following limitations can be solved by using the GraphQL API:
 * Downloadable products and gift cards
 * Categories (`categories` and `categoryList`)
 
-## V1.0 Release
+### V1.0 Release
 
 Release Date: 2022-10-04
 Compatible with Adobe Commerce (EE): 2.4.x
@@ -112,7 +114,7 @@ Stability: General Availability
 ![New](../assets/new.svg) Added B2B visibility overrides. Products are now searchable and can be added to the cart for specific customer groups.
 ![Fix](../assets/fix.svg) Service is now more stable and has improved performance.
 
-### Known limitations
+#### Known limitations
 
 These features are not yet supported:
 
@@ -124,7 +126,11 @@ These features are not yet supported:
 * Support for virtual, downloadable, and gift card product types
 * Minimum Advertised Price (MAP)
 
-## 0.3 Release - Beta+
+## Previous versions
+
++++Beta releases
+
+### 0.3 Release - Beta+
 
 Release Date: 2022-09-12
 Compatible with Adobe Commerce (EE): 2.4.x
@@ -136,7 +142,7 @@ Stability: Beta
 ![Fix](../assets/fix.svg) Improved stability and performance of the service
 ![New](../assets/new.svg) Updates are received when products are deleted from the catalog 
 
-### Known limitations
+#### Known limitations
 
 These features are not yet supported:
 
@@ -145,7 +151,7 @@ These features are not yet supported:
 * No updates are received when variants are deleted from the catalog
 * B2B visibility overrides: products can be searchable, or added to cart for specific customer groups
 
-## Beta Release
+### Beta Release
 
 Release Date: 2022-08-09
 Compatible with Adobe Commerce (EE): 2.4.x
@@ -162,10 +168,12 @@ Stability: Beta
 * Customer group prices and price ranges. They return a fallback default price on shoppers without a customer group.
 * Product types that use B2B customer-specific pricing.
 
-### Known limitations
+#### Known limitations
 
 * Bundle and grouped products are not supported.
 * Tier pricing is not supported.
 * In an array of images, only the first image contains roles.
 * Images for variants are not retrieved.
 * Updates are not received when products or variants are deleted from the catalog.
+
++++
