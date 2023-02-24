@@ -27,7 +27,7 @@ See the developer documentation to [learn about product compatibility](https://e
 ### 4.0.0 of magento/product-recommendations
 
 * ![New](../assets/new.svg) Added [readiness indicators](create.md) to help you visualize the training progress of each recommendation type.
-* ![New](../assets/new.svg) This is a major version release. You must [edit](install-configure.md#update) the root `composer.json` file for your project. This release also requires you to provide two API keys when installing and configuring Product Recommendations: [a production key and a sandbox key](../landing/saas.md).
+* ![New](../assets/new.svg) This is a major version release. [Edit](install-configure.md#update) the root `composer.json` file for your project. This release also requires you to provide two API keys when installing and configuring Product Recommendations: [a production key and a sandbox key](../landing/saas.md).
 
 ### Known limitations
 
@@ -40,7 +40,7 @@ See the developer documentation to [learn about product compatibility](https://e
 ### 3.3.7 of magento/product-recommendations
 
 * ![New](../assets/new.svg) Added PHP 8.1 support
-* ![New](../assets/new.svg) Improved image resizing so that different sized images are handled more consistently in the reference display template
+* ![New](../assets/new.svg) Improved image resizing so that images sizing is handled more consistently in the reference display template
 
 ### 3.3.6 of magento/product-recommendations
 
@@ -142,7 +142,7 @@ See the developer documentation to [learn about product compatibility](https://e
 
 ### 3.0.1 of magento/product-recommendations
 
-This is a major version release. You must [edit](install-configure.md#update) your project's root composer.json file.
+This is a major version release. [Edit](install-configure.md#update) your project's root composer.json file.
 
 * ![New](../assets/new.svg) Fetch [!DNL Product Recommendations] from alternate SaaS Data Spaces. This allows you to use product recommendations computed in your product environment on other, non-production environments. [Switching SaaS Data Spaces](settings.md) further describes this feature.
 
