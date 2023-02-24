@@ -15,7 +15,7 @@ breadcrumb-title: "[!DNL Live Search] Guide"
    - [Quick Tour](quick-tour.md)
    - [Storefront [!DNL Popover]](storefront-popover.md)
    - [Styling [!DNL Popover] Elements](storefront-popover-styling.md)
-   - [Styling Product Listing Page Widget](plp-styling.md)
+   - [Product Listing Page Widget](plp-styling.md)
 - [!DNL Live Search] Admin{#live-search-admin}
    - [Workspace](workspace.md)
    - [Performance](performance.md)

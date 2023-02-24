@@ -1,19 +1,31 @@
 ---
-title: "Styling the Product Listing Page Widget"
-description: "Technical notes about customizing the [!DNL Live Search storefront popover]"
+title: Product Listing Page Widget
+description: "Enabling and styling the [!DNL Live Search Product Listing Page Widget]"
 ---
-# Styling the Product Listing Page Widget
+# Product Listing Page Widget
 
-You can style the Product List Page widget by modifying the supplied classes.
+The [!DNL Live Search Product Listing Page Widget] (PLP) uses the Commerce Services platform to provide a performant, searchable, and facetable product listing page. This topic describes how to enable and style the PLP widget.
 
-## Product list
+## Enabling the PLP wiget
+
+When the [!DNL Live Search] service is installed, the default search functionality is converted to [!DNL Live Search] automatically.
+The PLP widget must be enabled in the admin.
+
+1. Go to **Stores** > Settings > **Configuration** > **[!DNL Live Search]** > **Storefront Features** and set **Enable Product Listing Widgets** to "Yes".
+1. Select **Save Config** to save the setting.
+
+## Styling
+
+You can customize the look and feel of the PLP widget to match your site using [CSS](https://developer.adobe.com/commerce/frontend-core/guide/css/). Below are the CSS classes used on the PLP widget.
+
+### Product list
 
 * `.ds-sdk-product-list`: Outer div
 * `.ds-sdk-product-list__grid`: Inner div
 
 ![Pagination](assets/plp-css-product-list.png)
 
-### Product list pagination
+#### Product list pagination
 
 * `.ds-plp-pagination`
 
@@ -27,7 +39,7 @@ You can style the Product List Page widget by modifying the supplied classes.
 
 ![Pagination current item](assets/plp-css-pagination-item-current.png)
 
-## Widgets
+### Widgets
 
 * `.ds-widgets`: Outer div
 * `.ds-widgets__actions`: Left side inner div
@@ -38,7 +50,7 @@ You can style the Product List Page widget by modifying the supplied classes.
 
 ![Widget results](assets/plp-css-widgets-results.png)
 
-## Searchbar
+### Searchbar
 
 * .`ds-sdk-search-bar`
 
@@ -56,7 +68,7 @@ You can style the Product List Page widget by modifying the supplied classes.
 
 ![Searchbar input](assets/plp-css-search-bar-input.png)
 
-## Sort dropdown
+### Sort dropdown
 
 * `.ds-sdk-sort-dropdown`
 
@@ -82,8 +94,7 @@ You can style the Product List Page widget by modifying the supplied classes.
 
 ![Dropdown active selection](assets/plp-css-dropdown-active.png)
 
-## Facets
-
+### Facets
 
 * `.ds-plp-facets`
 
@@ -137,7 +148,7 @@ You can style the Product List Page widget by modifying the supplied classes.
 
 ![Facets show more](assets/plp-css-input-show-more.png)
 
-## Product item
+### Product item
 
 * `.ds-sdk-product-item`
 * `.ds-sdk-product-item__image`
@@ -151,7 +162,7 @@ You can style the Product List Page widget by modifying the supplied classes.
 
 ![Product](assets/plp-css-product.png)
 
-## Breadcrumb
+### Breadcrumb
 
 * `.ds-sdk-breadcrumbs`
 * `.ds-sdk-breadcrumbs__item`
@@ -162,7 +173,7 @@ You can style the Product List Page widget by modifying the supplied classes.
 
 ![Current breadcrumb](assets/plp-css-breadcrumb-current.png)
 
-## Loading
+### Loading
 
 * `.ds-sdk-loading`
 * `.ds-sdk-loading__spinner`
