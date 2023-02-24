@@ -57,7 +57,7 @@ _February 17, 2023_
 
 [!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.0-2.4.5
 
-[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} v2.4.0 to current
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} versions 2.4.0 --> 2.4.5
 
 ![New](../assets/fix.svg)<!-- Issue PAY-3540 --> Added [PCI 3DS compliance feature for merchants transacting in the European Union (EU) and Britain](security.md#3ds). This additional layer of security, which requires buyers to authenticate with their credit card issuer, helps prevent online fraud and is required as part of European Union (EU) compliance regulations.
 
