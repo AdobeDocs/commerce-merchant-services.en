@@ -1,9 +1,9 @@
 ---
-title: Workspace
+title: Facet Workspace
 description: The [!DNL Live Search] workspace is used to configure, manage, and monitor search performance.
 exl-id: fb85974a-a5f9-4e6c-bd03-451e6457f2d2
 ---
-# Workspace
+# Facet Workspace
 
 The workspace is where you configure, manage, and monitor the performance of [!DNL Live Search]. The menu across the top provides access to the tools in each functional area.  The available features reflect the current menu selection.
 
