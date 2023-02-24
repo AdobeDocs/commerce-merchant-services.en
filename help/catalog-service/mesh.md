@@ -10,7 +10,7 @@ The [API Mesh for Adobe Developer App Builder](https://developer.adobe.com/graph
 
 The first step for using the API Mesh with Catalog Service is to connect API Mesh to your instance. See detailed instructions in [Create a Mesh](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/).
 
-To complete the setup, you install the [Adobe Developer CLI package](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/).
+To complete the setup, install the [Adobe Developer CLI package](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/).
 
 Once Mesh is configured on Adobe I/O Runtime, run the following command which adds a `CommerceCatalogServiceGraph` source to your mesh.
 
