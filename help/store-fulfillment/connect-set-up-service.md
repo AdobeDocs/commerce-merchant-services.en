@@ -9,7 +9,7 @@ exl-id: 74c71c43-305a-4ea7-84f8-95f3ce0a9482
 
 Connect Store Fulfillment Services with Adobe Commerce by adding the required authentication credentials and connection data to the Adobe Commerce Admin.
 
-- **[Configure [!DNL Commerce integration settings]](#create-the-commerce-integration)**–Create an Adobe Commerce integration for Store Fulfillment services and generate the access tokens to authenticate incoming requests from the Store Fulfillment servers.
+- **[Configure [!DNL Commerce integration settings]](#create-an-adobe-commerce-integration)**–Create an Adobe Commerce integration for Store Fulfillment services and generate the access tokens to authenticate incoming requests from the Store Fulfillment servers.
 
 - **[Configure account credentials for Store Fulfillment Services](#configure-store-fulfillment-account-credentials)**–Add your credentials to connect Adobe Commerce to your Store Fulfillment account.
 
@@ -19,7 +19,7 @@ Connect Store Fulfillment Services with Adobe Commerce by adding the required au
 
 ## Create an Adobe Commerce integration
 
-To integrate Adobe Commerce with Store Fulfillment services, you create a Commerce integration and generate access tokens that can be used to authenticate requests from Store Fulfillment servers.
+To integrate Adobe Commerce with Store Fulfillment services, you create a Commerce integration and generate access tokens that can be used to authenticate requests from Store Fulfillment servers. You must also update the Adobe Commerce [!UICONTROL Consumer Settings] options to prevent `The consumer isn't authorized to access %resources.` response errors on requests from Adobe Commerce to [!DNL Store Fulfillment] services.
 
 1. From the Admin, create the Integration for Store Fulfillment.
 
@@ -35,10 +35,16 @@ To integrate Adobe Commerce with Store Fulfillment services, you create a Commer
 
 1. Work with your Account Manager to complete the configuration on the Store Fulfillment side and to authorize the integration.
 
+1. Enable the Adobe Commerce [!UICONTROL Consumer Settings] option to [!UICONTROL Allow OAuth Access Tokens to be used as standalone Bearer tokens].
 
->[!NOTE]
+   - From the Admin, go to **[!UICONTROL Stores]** >  [!UICONTROL Configuration] > **[!UICONTROL Services]** >  **[!UICONTROL OAuth]** > **[!UICONTROL Consumer Settings]**
+
+   - Set the [!UICONTROL Allow OAuth Access Tokens to be used as standalone Bearer tokens] option to **[!UICONTROL Yes]**.
+
+>[!IMPORTANT]
 >
->For detailed instructions, see [Integrations](https://docs.magento.com/user-guide/system/integrations.html) in the _Adobe Commerce User Guide_.
+> The integration token is environment specific. If you restore the database for an environment with the source data from a different environment—for example restoring production data from a staging environment—exclude the `oauth_token` table from the database export so that the integration token details are not overwritten during the restore operation.
+
 
 ## Configure Store Fulfillment account credentials
 
