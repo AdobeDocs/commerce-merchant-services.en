@@ -80,7 +80,7 @@ Enable the [!DNL Store Fulfillment] solution to add the in-store and curbside pi
 <tr>
 <td><strong>[!UICONTROL Enabled]</strong></td>
 <td>Enable or disable the solution. When enabled, configure and use Store Fulfillment capabilities and establish the connection between your Adobe Commerce store and [!DNL Store Fulfillment] services. When disabled, all Store Fulfillment features are disabled, and there is no communication between Adobe Commerce and Store Fulfillment services. Order information cannot be processed or received.</td>
-<td>Global</td>
+<td>Website</td>
 <td>Yes</td>
 </tr>
 </tbody>

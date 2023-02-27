@@ -11,6 +11,10 @@ These release notes describe the initial release of [!DNL Store Fulfillment Serv
 ![Fixed issue](../assets/fix.svg) Fixes and improvements
 ![Known issue](../assets/bug.svg) Known issues
 
+## v1.3.0
+
+<!-- Add release notes when version 1.3.0 is released -->
+
 ## v1.2.0
 
 Compatible with the following Commerce versions:
