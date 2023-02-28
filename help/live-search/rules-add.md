@@ -20,6 +20,10 @@ Conditions are the requirements to trigger an event. A rule can have up to ten c
 
    ![Rule - Build your rule](assets/rules-add-workspace.png)
 
+>[!NOTE]
+>
+>Currently, it is not possible to target rules to a specific customer group.
+
 ### Single condition
 
 1. Under *Build your rule*, select the **Condition** to be met, and follow the instructions to complete the statement.
