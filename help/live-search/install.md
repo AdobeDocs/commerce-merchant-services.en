@@ -75,6 +75,10 @@ In this scenario, storefront operations are interrupted while the [!DNL Live Sea
 
 ## Method 2: Install with Elasticsearch {#method-2}
 
+>[!IMPORTANT]
+>
+>Due to the Elasticsearch 7 end-of-support announcement for August 2023, it is recommended that all Adobe Commerce customers migrate to the OpenSearch 2.x search engine. For information about migrating your search engine during product upgrade, see [Migrating to OpenSearch](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/prepare/opensearch-migration.html) in the _Upgrade Guide_.
+
 This onboarding method is recommended when installing [!DNL Live Search] to:
 
 * An existing production [!DNL Commerce] installation
