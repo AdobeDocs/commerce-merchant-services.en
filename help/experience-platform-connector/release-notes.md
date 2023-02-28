@@ -32,7 +32,7 @@ _October 12, 2022_
 
 ## 2.1.1
 
-_January 27, 2023_
+_February 28, 2023_
 
 * ![New](../assets/new.svg) - Added support for PHP 8.2 for all Experience Platform connector modules
 
