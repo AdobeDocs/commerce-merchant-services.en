@@ -232,7 +232,7 @@ To update to a major version such as from 1.0.0 to 2.0.0, edit the project's roo
 1. **Save** `composer.json`. Then, run the following from the command line:
 
    ```bash
-   composer update magento/live-search –-with-dependencies
+   composer update magento/live-search --with-dependencies
    ```
 
 ## Uninstalling [!DNL Live Search] {#uninstall}
