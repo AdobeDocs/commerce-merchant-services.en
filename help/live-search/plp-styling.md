@@ -14,14 +14,30 @@ The PLP widget must be enabled in the admin.
 1. Go to **Stores** > Settings > **Configuration** > **[!DNL Live Search]** > **Storefront Features** and set **Enable Product Listing Widgets** to "Yes".
 1. Select **Save Config** to save the setting.
 
-## Styling
+## Styling exmaple
 
-You can customize the look and feel of the PLP widget to match your site using [CSS](https://developer.adobe.com/commerce/frontend-core/guide/css/). Below are the CSS classes used on the PLP widget.
+You can customize the look and feel of the PLP widget to match your site using [CSS](https://developer.adobe.com/commerce/frontend-core/guide/css/).
 
 >[!NOTE]
 >
 >Elements with custom classes within a Magento theme will not be inherited. These elements must be targeted by their specific class to match the custom classes:  primary action classes will not work on a widget button.
 >Generic targeted elements within the CSS will be inherited: `button` will apply to widget buttons.
+
+The highlighted divs contain the target class `ds-sdk-product-item__product-name`. 
+
+![Pagination](assets/plp-css-example.png)
+
+Customize the product name by adding a rule to make them uppercase.
+
+```css
+.ds-sdk-product-item__product-name {
+ text-transform: uppercase;
+}
+```
+
+![Pagination](assets/plp-css-example-after.png)
+
+## CSS classes
 
 ### Product list
 
@@ -48,30 +64,9 @@ You can customize the look and feel of the PLP widget to match your site using [
 
 * `.ds-widgets`: Outer div
 * `.ds-widgets__actions`: Left side inner div
+* `.ds-widgets__results`: Right side inner div
 
-![Widgets and action pane](assets/plp-css-widgets.png)
-
-* `.ds-widgets__results`
-
-![Widget results](assets/plp-css-widgets-results.png)
-
-### Searchbar
-
-* .`ds-sdk-search-bar`
-
-![Searchbar](assets/plp-css-search-bar.png)
-
-* .`ds-sdk-search-bar__icon--search`
-
-![Searchbar magnifying gladd](assets/plp-css-search-bar-search.png)
-
-* `.ds-sdk-search-bar__icon--clear`
-
-![Searchbar clear](assets/plp-css-search-bar-clear.png)
-
-* `.ds-sdk-search-bar__input`
-
-![Searchbar input](assets/plp-css-search-bar-input.png)
+![Widget results](assets/plp-css-widgets.png)
 
 ### Sort dropdown
 
@@ -166,17 +161,6 @@ You can customize the look and feel of the PLP widget to match your site using [
     * `.ds-sdk-product-price--discount`
 
 ![Product](assets/plp-css-product.png)
-
-### Breadcrumb
-
-* `.ds-sdk-breadcrumbs`
-* `.ds-sdk-breadcrumbs__item`
-
-![Breadcrumb](assets/plp-css-breadcrumb.png)
-
-* `.ds-sdk-breadcrumbs__item--current`
-
-![Current breadcrumb](assets/plp-css-breadcrumb-current.png)
 
 ### Loading
 
