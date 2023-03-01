@@ -1,9 +1,9 @@
 ---
-title: Payment options
+title: Payment Options
 description: Set the payment options to customize the methods available for your store customers.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 ---
-# Payment options
+# Payment Options
 
 With [!DNL Adobe Commerce] and [!DNL Magento Open Source] [!DNL Payment Services], you have multiple payment options available to you. You can configure these payment options through:
 

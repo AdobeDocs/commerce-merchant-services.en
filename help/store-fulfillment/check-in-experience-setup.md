@@ -1,13 +1,13 @@
 ---
-title: Check-In Experience setup
-description: Configure the Car make and model selections available to curbside pickup customers when they complete the Pickup order form.
+title: Check-In Experience Setup
+description: Configure the car make and model] selections available to curbside pickup customers when they complete the Pickup order form.
 role: User, Admin
 level: Intermediate
 exl-id: 341b96cd-bb83-4d07-965c-b09fab24dc81
 ---
-# Check-In Experience setup
+# Check-In Experience Setup
 
-When customers arrive for curbside pickup, they use the Pickup Order form to check in and provide information about their location, car make, and car model. This information is sent to Store Associates through the Store Assist app so they can quickly deliver curbside pickup orders. 
+When customers arrive for curbside pickup, they use the Pickup Order form to check in and provide information about their location, car make, and car model. This information is sent to Store Associates through the Store Assist app so they can quickly deliver curbside pickup orders.
 
 ![[!DNL Check-In Experience Car Make] and [!DNL Model] settings for curbside pickup](assets/checkin-system-settings-car-options.png)
 

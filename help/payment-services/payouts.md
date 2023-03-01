@@ -1,11 +1,11 @@
 ---
-title: Payouts report
+title: Payouts Report
 description: Use the Payouts report for full transparency into the payment amount, processed volume, and detailed reporting on the transaction level for financial reconciliation.
 role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
 ---
-# Payouts report
+# Payouts Report
 
 [!DNL Payment Services] for [!DNL Adobe Commerce] and [!DNL Magento Open Source] offers you comprehensive reporting so that you can get a clear view of your store's orders and payments.
 

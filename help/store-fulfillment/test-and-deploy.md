@@ -26,12 +26,12 @@ The connection configuration must be completed before you can create any test or
 1. Synchronize Store Fulfillment sources.
 
    - Go to **[!UICONTROL Stores > Sources]**.
-   
+
    - Select **[!UICONTROL Synchronize Store Fulfillment Sources]**.
 
 1. From the store grid, verify that stores been marked as `Synced` before creating test orders.
 
-## Sample Test Plan
+## Sample test plan
 
 Retailers validate the basic functionality of the Store Fulfillment solution during the configuration and test phases of a deployment. This sample test plan provides a starting point for testing. Add additional scenarios based on your requirements.
 
@@ -50,7 +50,7 @@ This sample test plan covers the following functional areas:
 | Frontend Checkout</br>Check-In Form | Check-In Experience                      | Customer, Admin                  |
 | Store Assist App                    | Order</br>Pick</br>Stage</br>and Handoff | Store Associate                  |
 
-### Inventory API Synchronization
+### Inventory API synchronization
 
 This section of the test plan covers inventory and order synchronization to verify that updates to pickup sources and stocks are synchronized correctly between Adobe Commerce and the Store Fulfillment solution.
 
@@ -70,12 +70,12 @@ This section of the test plan covers inventory and order synchronization to veri
 <tr>
 <td><strong>Add pickup stock source</strong></td>
 <td>Save a new pickup stock source.</td>
-<td>The real time sync sends the source details to the Walmart GIF service within 5 minutes.</td>
+<td>The real-time sync sends the source details to the Walmart GIF service within 5 minutes.</td>
 </tr>
 <tr>
 <td><strong>Update existing pickup stock source</strong></td>
 <td>Save updates to an existing pickup stock source.</td>
-<td>The real time sync operation sends the details to the Walmart GIF within 5 minutes</td>
+<td>The real-time sync operation sends the details to the Walmart GIF within 5 minutes</td>
 </tr>
 <tr>
 <td><strong>Pickup stock source</br><code>Is Synced</code> status</strong></td>
@@ -271,7 +271,7 @@ This section of the test plan includes scenarios to test the end-to-end workflow
 <ol>
 <li>Place the order.</li>
 <li>Wait until the order is synced.</li>
-<li>Verify that the invoice was created (if authorize and capture) and invoice email received.</li>
+<li>If the authorize and capture option is configured, verify that the invoice was created and that the customer received the invoice email.</li>
 <li>Pick all the products with Postman.</li>
 <li>Check in.</li>
 <li>Make a dispense.</li>
@@ -367,7 +367,7 @@ This section of the test plan covers the account management for Store Fulfillmen
 </tr>
 </table>
 
-## Adobe Commerce Product Types
+## Adobe Commerce Product types
 
 The test scenarios for Adobe Commerce Product Types verify that customers see the correct product, stock, and delivery method information for different product types:
 
@@ -561,39 +561,39 @@ This section of the test plan covers scenarios for testing order, pick, and hand
 <tr>
 <td>
 <strong>Single order picking—happy path, curbside pickup</strong></td>
-<td>Pick single and multi-quantity items. No nil picks, and curbside pick-up (with staging).
+<td>Pick single and multi-quantity items. No nil picks, and curbside pickup (with staging).
 </td>
 <td>
 </td>
 </tr>
 <tr>
 <td><strong>Multi order picking—happy path, curbside pickup</strong></td>
-<td>Single and multi-quantity items. No nil picks, and curbside pick-up (with staging)</td>
+<td>Single and multi-quantity items. No nil picks, and curbside pickup (with staging)</td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Single order picking—happy path in-store pickup</strong></td>
-<td>Single and multi-quantity items. No nil picks, and instore pick-up (with staging)</td>
+<td>Single and multi-quantity items. No nil picks, and in-store pickup (with staging)</td>
 <td>
 </td>
 </tr>
 <tr>
 <td><strong>Multi order picking—happy path, in-store pickup</strong></td>
-<td>Pick single and multi-quantity items. No nil picks, and curbside pick-up (with staging).</td>
+<td>Pick single and multi-quantity items. No nil picks, and curbside pickup (with staging).</td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Single order picking—not happy path, in-store pickup</strong></td>
-<td>Pick single and multi-quantity items with partial and nilpick and instore pick up (with staging)</td>
+<td>Pick single and multi-quantity items with partial and nilpick and in-store pickup (with staging)</td>
 </td>
 <td></td>
 </tr>
 <td><strong>Multi order picking—not happy path–curbside pickup</strong></td>
-<td>Pick single and multi-quantity items with partial and nilpick and instore pick up (with staging)</td>
+<td>Pick single and multi-quantity items with partial and nilpick and in-store pickup (with staging)</td>
 <td></td>
 </tr>
 <td><strong>Single order picking—not happy path, curbside pickup</strong></td>
-<td>Pick single and multi-quantity items with partial and nilpick and curbside pick up (with staging)</strong></td>
+<td>Pick single and multi-quantity items with partial and nilpick and curbside pickup (with staging)</strong></td>
 </td>
 <td></td>
 </tr>

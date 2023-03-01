@@ -1,9 +1,9 @@
 ---
-title: Connect your instance
+title: Connect Your Instance
 description: Connect your Commerce instance using an API key and a private key, and specify the data space in the configuration.
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
 ---
-# Connect your instance
+# Connect Your Instance
 
 [!DNL Payment Services] is powered by Commerce Services and deployed as SaaS (software as a service). You connect your Commerce instance using an API key and a private key, and specify the data space in the configuration using the [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html). **You set up this connection only once.**
 
@@ -45,4 +45,4 @@ Now that you have obtained your credentials, you can configure your SaaS project
 
    You are directed to the configuration area in the Admin, **[!UICONTROL Stores]** > _[!UICONTROL Settings]_ > **[!UICONTROL Configuration]** > **[!UICONTROL Commerce Services Connector]**, to configure your Commerce Services Connector.
 
-1. To configure your Commerce Services, follow the steps described in [SaaS configuration](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html#configure-commerce-services).
+1. To configure your Commerce Services, follow the steps described in [SaaS configuration](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html#saasenv).

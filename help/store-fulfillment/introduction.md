@@ -12,7 +12,7 @@ Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies is an adva
 ![Store Fulfillment solution Adobe Admin configuration](assets/store-fulfillment-admin-home.png
 )
 
-Store Fulfillment also offers an end-to-end fulfillment workflow that helps merchants reduce costs while increasing conversion rates, average order value, and customer satisfaction rates. This workflow delivers: 
+Store Fulfillment also offers an end-to-end fulfillment workflow that helps merchants reduce costs while increasing conversion rates, average order value, and customer satisfaction rates. This workflow delivers:
 
 * **Omnichannel flexibility**–Turn stores and warehouses into pickup points and fulfillment centers.
 
@@ -36,13 +36,13 @@ The Store Fulfillment solution supports and enhances native Adobe Commerce capab
 
 * Fully compatible with the Luma theme
 
-* Provides GraphQL support for headless and Venia storefronts
+* Partial compatibility with PWA and headless storefronts
 
 * Supports the Store Assist app from Walmart Commerce Technologies. This app delivers pickup order information directly to your employee's handheld device in the selected store location. With this information, they can quickly and accurately pick, stage, and handoff items to customers when they arrive at the store.
 
 ## Store Assist App
 
-The Store Assist App for iOS and Android™ devices interacts with [!DNL Walmart Commerce Technologies] to bring omnichannel fulfillment capabilities to your retail stores.
+The Store Assist App for iOS and Android&trade; devices interacts with [!DNL Walmart Commerce Technologies] to bring omnichannel fulfillment capabilities to your retail stores.
 
 * Send in-store and curbside pickup orders directly to store associates' mobile devices
 
@@ -52,7 +52,7 @@ The Store Assist App for iOS and Android™ devices interacts with [!DNL Walmart
 
 * Automatically synchronize data about your retail store locations and inventory to Adobe Commerce
 
-## Enhanced User Experience
+## Enhanced user experience
 
 Store Fulfillment enhances Adobe Commerce by adding capabilities to deliver improved shopping experiences and streamlined fulfillment workflows.
 
@@ -73,4 +73,5 @@ Store Fulfillment enhances Adobe Commerce by adding capabilities to deliver impr
 >[!TIP]
 >
 > For a quick demo of the Store Fulfillment solution, see the [Store Fulfillment Overview](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/orders/store-fulfillment.html) available in _Adobe Commerce Videos and Tutorials_.
+
 

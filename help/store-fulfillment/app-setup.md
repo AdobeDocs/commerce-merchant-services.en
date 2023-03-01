@@ -5,7 +5,7 @@ role: User, Admin
 level: Intermediate
 exl-id: bcb5b02b-0141-407a-ad55-6e10e8e1aa90
 ---
-# App Setup
+# App setup
 
 Store Assist is a fulfillment-as-a-service (FaaS) platform app powered by Walmart Commerce Technologies. The app provides in-store fulfillment capabilities to handle [!DNL buy online, pick up in store] (BOPIS) orders. With Store Assist, store associates can see which items customers ordered, pick the correct items faster, and set up fulfilled orders for in-store or curbside pickup delivery to customers. 
 
@@ -36,9 +36,9 @@ The Store Assist app requires two types of configuration:
 
   - **Inactivity time**—Specify the amount of time that the app must be inactive before it logs out.
 
-  - **Cancellation from the store**—Specify whether orders can be cancelled from the store and which roles have cancellation permissions 
+  - **Cancellation from the store**—Specify whether orders can be cancelled from the store and which roles have cancellation permissions
 
-  - **Order cleanup window**—Specify how long past the [Estimated Pickup Lead Time](enable-general.md#delivery-method-title-configuration) that a picked order remains in staging before being restocked—for example, three days. The default value is 7 days. If this configuration is turned on, the order is automatically cancelled when this time expires. Items are restocked, and the merchant receives a cancellation email.
+  - **Order cleanup window**—Specify how long past the [Estimated Pickup Lead Time](enable-general.md#delivery-method-title-configuration) that a picked order remains in staging before being restocked—for example, three days. The default value is seven days. If this configuration is turned on, the order is automatically cancelled when this time expires. Items are restocked, and the merchant receives a cancellation email.
 
   - Customize all in app instructions (picking, staging, hand off).
 
@@ -66,4 +66,4 @@ After the Store Assist app has been set up and configured, Store Associates can 
 
   - **Store Assist account credentials**—username and password credentials for their account.
 
-  An Adobe Commerce Administrator can create user account and set permissions for the [!DNL Store Assist app] user accounts for store locations that have [In-Store Pickup](merchant-store-configuration.md#pickup-location-configuration) enabled in the Admin Stores settings.
+  An Adobe Commerce Administrator can create and manage [!DNL Store Assist app] user accounts for all store locations that have [In-Store Pickup](merchant-store-configuration.md#pickup-location-configuration) enabled in the Admin Stores settings.

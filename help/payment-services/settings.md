@@ -81,7 +81,7 @@ You can add a [!UICONTROL Soft Descriptor] to your website(s) or individual stor
 
 ## Configure payment options
 
-Now that you have enabled Payment Services for your website, you can change the default settings for payment functions and storefront display.
+Now that you have enabled [!UICONTROL Payment Services] for your website, you can change the default settings for payment functions and storefront display.
 
 1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 
@@ -103,8 +103,10 @@ See [Payments options](payments-options.md#credit-card-fields) for more informat
 1. Select the store view, in the **[!UICONTROL Scope]** dropdown menu, for which you want to enable a payment method.
 1. To change the name of the payment method displayed during checkout, edit the value in the **[!UICONTROL Checkout title]** field.
 1. To [set the payment action](production.md#set-payment-services-as-payment-method), toggle **[!UICONTROL Payment action]** to `Authorize` or `Authorize and Capture`.
+1. To enable [3DS Secure authentication](security.md#3ds) (`Off` by default) toggle the **[!UICONTROL 3DS Secure authentication]** selector to `Always` or `When required`.
 1. To enable or disable credit card fields on the checkout page, toggle the **[!UICONTROL Show on checkout page]** selector.
 1. To enable or disable [card vaulting](#card-vaulting), toggle the **[!UICONTROL Vault enabled]** selector.
+1. To enable or disable [vaulted payment methods in the Admin](#card-vaulting) (for merchants to complete orders for customers in the Admin using their vaulted payment method), toggle the **[!UICONTROL Show vaulted methods in Admin]** selector.
 1. To enable or disable debug mode, toggle the **[!UICONTROL Debug Mode]** selector.
 1. Click **[!UICONTROL Save]**.
 
@@ -118,8 +120,10 @@ See [Payments options](payments-options.md#credit-card-fields) for more informat
 |---|---|---|
 | [!UICONTROL Title] | store view | Add the text for display as the title for this payment option in the Payment Method view during checkout. Options: [!UICONTROL text field] |
 | [!UICONTROL Payment Action] | website | The [payment action](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} for the specified payment method. Options: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL 3DS Secure authentication] | website | Enable or disable [3DS Secure authentication](security.md#3ds). Options: [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
 | [!UICONTROL Show on checkout page] | website | Enable or disable credit card fields to show on checkout page. Options: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Vault enabled] | website | Enable or disable credit card vaulting. Options: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Vault enabled] | store view | Enable or disable [credit card vaulting](vaulting.md). Options: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Show vaulted payment methods in Admin] | store view | Enable or disable ability for merchant to complete orders for customers in the Admin [using a vaulted payment method](vaulting.md). Options: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Debug Mode] | website | Enable or disable Debug Mode. Options: [!UICONTROL Yes] / [!UICONTROL No] |
 
 ### Payment buttons
@@ -223,14 +227,25 @@ To ensure that your store is showing the correct configuration, periodically [fl
 
 You can enable functionality that allows your customers to vault---or "save"---their credit card information in their My Account to use for future purchases.
 
+You can also use card vaulting in the Admin to complete subsequent orders for existing customers.
+
 Enable or disable card vaulting in the [Credit card field settings](#credit-card-fields).
 
-See [Credit card vaulting](vaulting.md) for more information about vaulting.
+See [Credit card vaulting](vaulting.md) for more information.
+
+## 3DS
+
+3DS protects customers and merchants from fraudulent activity in their stores, and enables compliance with European Union (EU) standards.
+
+Enable or disable 3DS in the [Credit card field settings](#credit-card-fields).
+
+See [3DS in Security](security.md#3ds) for more information.
 
 ## Use multiple PayPal accounts
 
-In Payment Services, you can use multiple PayPal accounts within **one** merchant account on the website level. For instance, if you are operating your store(s) in multiple countries (which use different [currencies](https://docs.magento.com/user-guide/stores/currency.html)) or want to use Adobe Commerce for some parts of your business but not _all_, you can set up your merchant account to use multiple PayPal accounts.
+In [!UICONTROL Payment Services], you can use multiple PayPal accounts within **one** merchant account on the website level. For instance, if you are operating your store(s) in multiple countries (which use different [currencies](https://docs.magento.com/user-guide/stores/currency.html)) or want to use Adobe Commerce for some parts of your business but not _all_, you can set up your merchant account to use multiple PayPal accounts.
 
 See [Site, Store, and View Scope](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) for more information about the hierarchy of websites, stores, and store views.
 
 Your Sales representative can create a new [scope](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) for your merchant account and onboard the additional site with PayPal so that any of the PayPal buttons you configure to appear will show on your site. Contact your Sales representative for assistance with using multiple PayPal accounts for your websites.
+
