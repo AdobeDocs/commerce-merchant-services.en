@@ -97,13 +97,7 @@ Customize the product name by adding a rule to make them uppercase.
 ### Facets
 
 * `.ds-plp-facets`
-
-![Facets](assets/plp-css-facets.png)
-
 * `.ds-plp-facets__header`
-
-![Facets header](assets/plp-css-facets-header.png){width="350"}
-
 * `.ds-plp-facets__header_title`
 * `.ds-plp-facets__header__clear-all`
 
@@ -121,19 +115,14 @@ Customize the product name by adding a rule to make them uppercase.
 
 * `.ds-plp-facets__list`
 
-![Facets list](assets/plp-css-facets-list.png)
+![Facets list](assets/plp-css-facets-list.png){width="350"}
 
 * `.ds-sdk-input`
+* `.ds-sdk-input__label`
+* `.ds-sdk-input__options`
+* `.ds-sdk-input_fieldset_show-more`
 
 ![Input](assets/plp-css-sdk-input.png)
-
-* `.ds-sdk-input__label`
-
-![Input label](assets/plp-css-sdk-input-label.png)
-
-* `.ds-sdk-input__options`
-
-![Input options](assets/plp-css-sdk-input-options.png)
 
 * `.ds-sdk-labelled-input`
 
@@ -143,10 +132,6 @@ Customize the product name by adding a rule to make them uppercase.
 * `.ds-sdk-labelled-input__label`
 
 ![Input label](assets/plp-css-labelled-input-label.png)
-
-* `.ds-sdk-input_fieldset_show-more`
-
-![Facets show more](assets/plp-css-input-show-more.png)
 
 ### Product item
 
