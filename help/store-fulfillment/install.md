@@ -8,7 +8,7 @@ exl-id: 6613268a-7d22-4c54-af89-834921b7f262
 
 # Installation
 
-Complete the initial installation of the [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] extension in a non-production environment with queue manager running and caching configured to allow exception handling. Ensure that your development environment includes development tools to ensure best practices for operating and maintaining your Adobe Commerce instance. 
+Complete the initial installation of the [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] extension in a non-production environment with queue manager running and caching configured to allow exception handling. Ensure that your development environment includes development tools to ensure best practices for operating and maintaining your Adobe Commerce instance.
 
 ## Prerequisites
 
@@ -31,10 +31,10 @@ composer require walmart/magento-bopis-metapackage:1.0.0
 
 - **Experience using Composer and the [!DNL Commerce CLI]**—See [General CLI Installation](https://devdocs.magento.com/extensions/install/){target="_blank"} for information about using these tools to install and manage extensions on the [!DNL Adobe Commerce] platform.
 
-- **Experience installing third-party extensions on Adobe Commerce**—For reference, see the Adobe Commerce documentation.  
-  
+- **Experience installing third-party extensions on Adobe Commerce**—For reference, see the Adobe Commerce documentation.
+
   - [Install an extension for an Adobe Commerce on cloud infrastructure instance](https://devdocs.magento.com/cloud/howtos/install-components.html#install-an-extension).
-  
+
   - [Install an extension for an Adobe Commerce on-premises instance](https://devdocs.magento.com/extensions/install/).
 
 ### Step 1: Download the extension bundle
@@ -51,9 +51,9 @@ Extract the archive file that contains the integration bundle to install the Sto
 
    - Create an `artifacts` directory.
 
-1. Extract the archive file to the new directory. 
+1. Extract the archive file to the new directory.
 
-1. Verify that the extracted files by reviewing the file listing.
+1. Verify that the files were extracted successfully by reviewing the file listing.
 
    ```
    ../var/www/html/artifacts]$ ls -a
@@ -66,14 +66,14 @@ Extract the archive file that contains the integration bundle to install the Sto
 
 ### Step 3: Configure your app using Composer
 
-Use Composer to configure the source directory for the installation and install the Store Fulfillment Services extension. 
+Use Composer to configure the source directory for the installation and install the Store Fulfillment Services extension.
 
 1. Configure the source repository for the Composer installation.
 
    ```bash
    composer config repositories.artifacts artifact artifacts/
    ```
-   
+
 1. Add the Store Fulfillment Services extension to `composer.json`.
 
    ```bash
@@ -188,4 +188,5 @@ The `-f` option is required if you are using a blank theme.
 
 >[!NOTE]
 >
->For more information, see [Static content deploy best practices in Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/static-content-deployment.html) in the Adobe Commerce Help Center. 
+>For more information, see the [Static content deploy best practices in Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/static-content-deployment.html) article in the Adobe Commerce Help Center.
+

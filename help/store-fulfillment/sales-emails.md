@@ -1,14 +1,14 @@
 ---
-title: Sales Emails
+title: Sales Email Templates
 description: Configure the transactional email templates for communicating with customers and store administrators during the fulfillment process for Store Pickup orders.
 role: User, Admin
 level: Intermediate
 exl-id: 688732e3-06f0-4613-a589-2d465597eb28
 ---
 
-# Sales Emails
+# Sales Email Templates
 
-Store Fulfillment offers an extended set of transactional email templates to support order and fulfillment workflows. They offer consistent, automated communication and messaging across channels—notifying customer and store administrators about order status changes, instructions for in-store pickup orders, and more. 
+Store Fulfillment offers an extended set of transactional email templates to support order and fulfillment workflows. They offer consistent, automated communication and messaging across channels—notifying customer and store administrators about order status changes, instructions for in-store pickup orders, and more.
 
 Store Fulfillment email templates are configured with default messaging and settings. Merchant administrators in Adobe Commerce can manage and modify configurations, and select the email templates to communicate with customers in different scenarios. Administrators can configure and customize templates as well.
 
@@ -326,7 +326,7 @@ Configure the Sales Email templates from the Admin: **[!UICONTROL Stores > Confi
 
 >[!NOTE]
 >
->If you allow backorders, you must provide an administrator email address to receive notifications about these orders. Add the address to the following configuration settings: **[!UICONTROL Send Order Delayed Email Copy To]** in the [Order Delay](#order-delayed) template, and [!UICONTROL Ship To Store Email Recipients] in the [Ship to Store](#ship-to-store) template. 
+>If you allow backorders, you must provide an administrator email address to receive notifications about these orders. Add the address to the following configuration settings: **[!UICONTROL Send Order Delayed Email Copy To]** in the [Order Delay](#order-delayed) template, and [!UICONTROL Ship To Store Email Recipients] in the [Ship to Store](#ship-to-store) template.
 
 
 

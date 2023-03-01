@@ -17,6 +17,7 @@ breadcrumb-title: "[!DNL Product Recommendations] Guide"
    - [Settings](settings.md)
    - [Verify](verify.md)
    - [Staging Environment](staging-environment.md)
+   - [Page Builder Integration](page-builder.md)
 - [!DNL Product Recommendations] Admin {#admin}
    - [Workspace](workspace.md)
    - [Create](create.md)

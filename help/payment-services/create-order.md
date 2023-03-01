@@ -1,9 +1,9 @@
 ---
-title: Create an order with [!DNL Payment Services]
+title: Create an Order with [!DNL Payment Services]
 description: The Admin provides the ability to fulfill an order using [!DNL Payment Services] directly from the Admin by a merchant for their customers who need assistance.
 exl-id: 1542a33f-9c01-4c36-bbce-bfa3107fbeb8
 ---
-# Create an order with [!DNL Payment Services]
+# Create an Order with [!DNL Payment Services]
 
 You can customize Payment Services to your needs using [[!DNL Payment Services] settings](settings.md).
 

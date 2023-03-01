@@ -3,7 +3,7 @@ title: "Checkout flow of a Bolt user in Adobe Commerce"
 description: Overview of the [!DNL Quick Checkout] flow for a Bolt user in Adobe Commerce.
 exl-id: 12f58b7e-1f86-4891-b225-9f4be82c2d5d
 ---
-# Guest users
+# Guest Users
 
 The guest checkout experience is different from the Adobe user experience. When a shopper enters an email address into checkout, the [!DNL Quick Checkout] validates it and finds an existing [!DNL Bolt] account.
 

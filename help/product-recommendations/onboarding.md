@@ -28,9 +28,7 @@ The onboarding process for [!DNL Product Recommendations] requires access to the
 
 [!DNL Product Recommendations] can be added to a page as a Page Builder content type. To add Page Builder support to Product Recommendations, refer to [Install and Configure](install-configure.md).
 
-   >[!NOTE]
-   >
-   >[!DNL Page Builder] recommendation units can be created only for the default store view.
+See [[!DNL Page Builder] Integration](page-builder.md) for instructions on how to add [!DNL Product Recommendations] into [!DNL Page Builder] content.
 
 ### B2B support {#b2bsupport}
 
