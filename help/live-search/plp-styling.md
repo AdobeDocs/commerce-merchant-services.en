@@ -102,22 +102,22 @@ Customize the product name by adding a rule to make them uppercase.
 
 * `.ds-plp-facets__header`
 
-![Facets header](assets/plp-css-facets-header.png){width="550"}
+![Facets header](assets/plp-css-facets-header.png){width="350"}
 
 * `.ds-plp-facets__header_title`
 * `.ds-plp-facets__header__clear-all`
 
-![Facets header title](assets/plp-css-facets-title-clear.png){width="550"}
+![Facets header title](assets/plp-css-facets-title-clear.png){width="350"}
 
 * `.ds-plp-facets__pills`
 * `.ds-sdk-pill`
 
-![Facet pills](assets/plp-css-facets-pill.png){width="550"}
+![Facet pills](assets/plp-css-facets-pill.png){width="350"}
 
 * `.ds-sdk-pill__label`
 * `.ds-sdk-pill__cta`
 
-![Facets label](assets/plp-css-pill-label-cta.png){width="550"}
+![Facets label](assets/plp-css-pill-label-cta.png){width="350"}
 
 * `.ds-plp-facets__list`
 
