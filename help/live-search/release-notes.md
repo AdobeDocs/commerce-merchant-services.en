@@ -24,8 +24,8 @@ These release notes describe the latest versions of [!DNL Live Search] and inclu
 * Added the ability to drag and drop to create Pin events
 * New Pin actions:
     * Pin to spot - new Pin button to create Pin event in one click
-    * Pin to top - will put the product top of as # 1 Position
-    * Pin to bottom - will make product go bottom of result giving # -1 Position
+    * Pin to top - puts the product top of as # 1 Position
+    * Pin to bottom - makes the product go bottom of result giving # -1 Position
     * Unpin event in one click if event is pinned
 * Intelligent Ranking for rules
 
@@ -42,8 +42,8 @@ These release notes describe the latest versions of [!DNL Live Search] and inclu
 * Fixed server error when there is an unfinished event during save
 * Fixed correctly deleting specific event when there are multiple events
 * Fixed existing rule event not updating when new event has been added
-* Fixed on 2nd "Edit" click from details, live search page requiring reload
-* Synonyms: Fixed a issue when a user clicked out of input, they could not return the focus to the field
+* Fixed on second "Edit" click from details, live search page requiring reload
+* Synonyms: Fixed an issue when a user clicked out of input, they could not return the focus to the field
 * Other minor bug fixes and performance updates
 
 * ![Bug](../assets/bug.svg) - Ranking by "Recommended for you" is only supported within the Live Search widgets. It is not supported on the default LUMA and PWA search functionality.
@@ -61,6 +61,10 @@ It is recommended to upgrade and test before pushing to production. Consider upg
 Merchants must upgrade the [!DNL Live Search] extension version >= 2.0.5 to access these features.
 
 Users are advised to upgrade and test before pushing to production. Consider upgrading the production environment during off-peak hours after verifying their testing environment results.
+
+## Previous versions
+
++++2.0.4 and prior
 
 ### [!DNL Live Search] 2.0.4 {#204}
 
@@ -106,10 +110,6 @@ Existing [!DNL Live Search] installations must be upgraded to [!DNL Live Search]
 ![Fix](../assets/fix.svg) [Advanced Search](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#advanced-search) link removed from the storefront footer.
 ![Bug](../assets/bug.svg) The following product attributes are not supported by [Commerce GraphQL API](https://developer.adobe.com/commerce/webapi/graphql/) when used in relation to the beta release of PWA: `description`, `name`, `short_description`
 ![Bug](../assets/bug.svg) The beta release of PWA for [!DNL Live Search] does not support [event handling](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/).
-
-## Previous versions
-
-+++1.3.1 and prior
 
 ### [!DNL Live Search] 1.3.1 {#131}
 
@@ -157,7 +157,7 @@ Existing [!DNL Live Search] installations must be upgraded to [!DNL Live Search]
 
 ![Bug](../assets/bug.svg) The [!DNL Live Search] service supports only the [base currency](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html) of the Adobe Commerce installation.
 ![Bug](../assets/bug.svg) When adding a facet, the Product Attributes Feed does not update correctly when set to `Update on Save`. To avoid this problem, go to [Index Management](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) and set Product Attributes Feed to `Update by Schedule`.
-![Bug](../assets/bug.svg) [!DNL Live Search] synonyms are defined per store view, but are currently stored per website and identified with a combination of `environmentId` + `storeViewCode`. As a result, all websites and store views within the Adobe Commerce installation share the same set of synonyms. The most recently created set of synonyms for the store view takes precedence.
+![Bug](../assets/bug.svg) [!DNL Live Search] synonyms are defined per store view, but are currently stored per website and identified with a combination of `environmentId` + `storeViewCode`. As a result, all websites and store views within the Adobe Commerce installation share synonyms. The most recently created set of synonyms for the store view takes precedence.
 ![Bug](../assets/bug.svg) If a synonym term contains multiple words, each word is treated as a separate synonym. For example, if you define "time piece" as a synonym of "watch", both "time" and "piece" are treated as synonyms of watch.
 
 +++
