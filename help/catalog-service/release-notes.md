@@ -13,6 +13,16 @@ These release notes describe the latest versions of [!DNL Catalog Service] and i
 
 ## Curret major version
 
+### V1.5 Release
+
+Release Date: 2023-3-6
+Compatible with Adobe Commerce (EE): 2.4.4+
+Compatible with Adobe Commerce for Cloud (ECE): 2.4.4+
+Stability: General Availability
+
+![New](../assets/new.svg) Added [`categories`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/) GraphQL functionality.
+![Fix](../assets/fix.svg) API scalability and performance improvements.
+
 ### V1.4 Release
 
 Release Date: 2023-2-7
