@@ -18,6 +18,11 @@ The PLP widget must be enabled in the admin.
 
 You can customize the look and feel of the PLP widget to match your site using [CSS](https://developer.adobe.com/commerce/frontend-core/guide/css/). Below are the CSS classes used on the PLP widget.
 
+>[!NOTE]
+>
+>Elements with custom classes within a Magento theme will not be inherited. These elements must be targeted by their specific class to match the custom classes:  primary action classes will not work on a widget button.
+>Generic targeted elements within the CSS will be inherited: `button` will apply to widget buttons.
+
 ### Product list
 
 * `.ds-sdk-product-list`: Outer div
