@@ -51,15 +51,8 @@ _June 28, 2021_
 
 +++
 
+
 //// **TEST COMPATIBILITY STUFF**
-
-## v6.6.6
-
-_February 17, 2023_
-
-[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} versions 2.4.0 --> 2.4.5
-
-![New](../assets/fix.svg)<!-- Issue PAY-3540 --> Added [PCI 3DS compliance feature for merchants transacting in the European Union (EU) and Britain](security.md#3ds). This additional
 
 ## v6.6.6
 
@@ -72,10 +65,16 @@ _February 17, 2023_
 ## v6.6.6
 
 [!BADGE Date]{type=Informative tooltip="Date"} February 17, 2023
-[!BADGE Compatibility]{type=Informative tooltip="Compatibility"}:
-* Adobe Commerce (EE) 2.4.x
-* Adobe Commerce (ECE) 2.4.x
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce (EE and ECE) 2.4.x
+[!BADGE Stability]{type=Informative tooltip="Stability"} General Availability
 
+![New](../assets/fix.svg)<!-- Issue PAY-3540 --> Added [PCI 3DS compliance feature for merchants transacting in the European Union (EU) and Britain](security.md#3ds). This additional
+
+## v6.6.6
+
+_February 17, 2023_
+
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce (EE and ECE) 2.4.x
 [!BADGE Stability]{type=Informative tooltip="Stability"} General Availability
 
 ![New](../assets/fix.svg)<!-- Issue PAY-3540 --> Added [PCI 3DS compliance feature for merchants transacting in the European Union (EU) and Britain](security.md#3ds). This additional
