@@ -44,7 +44,7 @@ Follow the instructions for the [type of synonym](synonyms-type.md) that you wan
 
    ![Add one-way synonym](assets/synonym-add-one-way.png)
 
-1. Enter the **Keyword** and **Expansion** term(s). Separate multiple terms with a comma.
+1. Enter the **Keyword** and **Expansion** terms. Separate multiple terms with a comma.
 
    ![One-way synonym example](assets/synonym-add-one-way-example.png)
 
@@ -57,7 +57,7 @@ Follow the instructions for the [type of synonym](synonyms-type.md) that you wan
 
 ## Step 3: Publish changes
 
-1. When your synonym(s) are complete, click **Publish changes**.
+1. When your synonyms are complete, click **Publish changes**.
 1. Wait for up to two hours for your updates to become available in the storefront.
 
 ## Field Descriptions

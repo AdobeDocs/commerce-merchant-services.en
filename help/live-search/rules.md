@@ -44,23 +44,23 @@ When composing a complex rule, it can help to write it out with indentation to d
 ## Order of precedence with multiple rules
 
 Only one rule is applied to a search term at any one time.
-If multiple rules are found to be applicable to a search phrase, then all these rules are applied. If there is a collision between two rules---`rule 1` that boosts sku1 but `rule 2` hides the same sku---then the most recently applied rule (`rule 2`) will take precedence.
+If multiple rules are found to be applicable to a search phrase, then all these rules are applied. If there is a collision between two rules---`rule 1` that boosts sku1 but `rule 2` hides the same SKU---then the most recently applied rule (`rule 2`) takes precedence.
 
-* Rules are orderd by the "Last Modified" timestamp. The most recently modified rule is applied first, and older rules after that, in timestamp order.
-* The `query is` condition will take precedence over other conditions. If a newer rule contains a `query contains` condition, but an older rule has a `query is` condition, the `query is` rule will be applied.
+* Rules are ordered by the "Last Modified" timestamp. The most recently modified rule is applied first, and older rules after that, in timestamp order.
+* The `query is` condition takes precedence over other conditions. If a newer rule contains a `query contains` condition, but an older rule has a `query is` condition, the `query is` rule is applied.
 
 ### Storefront requests
 
-If an active rule containing a `query is` condition matches the search phrase, it will be applied. If there are multiple matching rules with a `query is` condition, the most recently updated active rule will be applied.
-Otherwise, the most recently updated active rule will be applied.
+If an active rule containing a `query is` condition matches the search phrase, it is applied. If there are multiple matching rules with a `query is` condition, the most recently updated active rule is applied.
+Otherwise, the most recently updated active rule is applied.
 
 ### Preview requests
 
 Request made in the Admin work slightly differently. When previewing in the Admin, all rules are applied, including those expired and scheduled.
 
-* If rule being previewed has a `query is` condition, it will be applied.
-* If rule being previewed does not have a `query is` condition, and a subsequent active, matching rule with a `query is` condition is found, the `query is` rule will be applied.
-* If rule being previewed does not have a `query is` condition, and no other rule with a `query is` condition is found, then the rule being previewed will be applied.
+* If rule being previewed has a `query is` condition, it is applied.
+* If rule being previewed does not have a `query is` condition, and a subsequent active, matching rule with a `query is` condition is found, the `query is` rule is applied.
+* If rule being previewed does not have a `query is` condition, and no other rule with a `query is` condition is found, then the rule being previewed is applied.
 
 ## Category rules and category product assignments
 

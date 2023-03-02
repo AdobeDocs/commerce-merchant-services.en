@@ -4,9 +4,9 @@ description: "Enabling and styling the [!DNL Live Search Product Listing Page Wi
 ---
 # Product Listing Page Widget
 
-The [!DNL Live Search Product Listing Page Widget] (PLP) uses the Commerce Services platform to provide a performant, searchable, and facetable product listing page. This topic describes how to enable and style the PLP widget.
+The [!DNL Live Search Product Listing Page Widget] (PLP) uses the Commerce Services platform to provide a performant, searchable, and facet-able product listing page. This topic describes how to enable and style the PLP widget.
 
-## Enabling the PLP wiget
+## Enabling the PLP widget
 
 When the [!DNL Live Search] service is installed, the default search functionality is converted to [!DNL Live Search] automatically.
 The PLP widget must be enabled in the Admin.
@@ -20,7 +20,7 @@ You can customize the look and feel of the PLP widget to match your site using [
 
 >[!NOTE]
 >
->Elements with custom classes within an Adobe Commerce theme will not be inherited. These elements must be targeted by their specific class to match the custom classes;  primary action classes will not work on a widget button.
+>Elements with custom classes within an Adobe Commerce theme are not inherited. These elements must be targeted by their specific class to match the custom classes;  primary action classes will not work on a widget button.
 >Generic targeted elements within the CSS will be inherited; `button` will apply to widget buttons.
 
 The highlighted divs contain the target class `ds-sdk-product-item__product-name`. 
