@@ -70,9 +70,9 @@ Ranking combines user behaviors and site statistics to determine product ranking
 Store owners can set up the following types of ranking strategies:
 
 * Most purchased: This ranks products by total purchases per SKU.
-* Most added to cart: Ranks in order of total "Add to Cart" activities
+* Most added to cart - Ranks in order of total "Add to Cart" activities
 * Most viewed: Ranks my total views per SKU
-* Recommended for you: This is a combination of
+* Recommended for you - This is a combination of
     * `viewed-viewed` - Shoppers who viewed this SKU also looked at these other SKUs
     * `more-like-this` - Selects other similar SKUs that have a set of similar attributes and descriptions in a `more-like-this` query.
 * Trending: Looks back at page view events over the past 72 hours for background events and 24 hours for foreground events

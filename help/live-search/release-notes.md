@@ -23,9 +23,9 @@ These release notes describe the latest versions of [!DNL Live Search] and inclu
 * New Product Item Card in Rules preview 
 * Added the ability to drag and drop to create Pin events
 * New Pin actions:
-    * Pin to spot - new Pin button to create Pin event in one click
-    * Pin to top - puts the product top of as # 1 Position
-    * Pin to bottom - makes the product go bottom of result giving # -1 Position
+    * Pin to spot - Pin button to create Pin event in one click
+    * Pin to top - Places product at top in #1 Position
+    * Pin to bottom - Places the product at the bottom of the results
     * Unpin event in one click if event is pinned
 * Intelligent Ranking for rules
 
@@ -35,14 +35,14 @@ These release notes describe the latest versions of [!DNL Live Search] and inclu
 * Deleting an existing event now updates preview
 * Rules with no events can be saved
 * Remove faceting "Select Type" selector
-* Added new 'Editing' status for unsaved rules
+* Added new "Editing" status for unsaved rules
 
 ### Fixes
 
 * Fixed server error when there is an unfinished event during save
 * Fixed correctly deleting specific event when there are multiple events
 * Fixed existing rule event not updating when new event has been added
-* Fixed on second "Edit" click from details, live search page requiring reload
+* Fixed on second "Edit" click from details, [!DNL Live Search] page requiring reload
 * Synonyms: Fixed an issue when a user clicked out of input, they could not return the focus to the field
 * Other minor bug fixes and performance updates
 
@@ -157,7 +157,7 @@ Existing [!DNL Live Search] installations must be upgraded to [!DNL Live Search]
 
 ![Bug](../assets/bug.svg) The [!DNL Live Search] service supports only the [base currency](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html) of the Adobe Commerce installation.
 ![Bug](../assets/bug.svg) When adding a facet, the Product Attributes Feed does not update correctly when set to `Update on Save`. To avoid this problem, go to [Index Management](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) and set Product Attributes Feed to `Update by Schedule`.
-![Bug](../assets/bug.svg) [!DNL Live Search] synonyms are defined per store view, but are currently stored per website and identified with a combination of `environmentId` + `storeViewCode`. As a result, all websites and store views within the Adobe Commerce installation share synonyms. The most recently created set of synonyms for the store view takes precedence.
+![Bug](../assets/bug.svg) [!DNL Live Search] synonyms are defined per store view, but are currently stored per website and identified with a combination of `environmentId` and `storeViewCode`. As a result, all websites and store views within the Adobe Commerce installation share synonyms. The most recently created set of synonyms for the store view takes precedence.
 ![Bug](../assets/bug.svg) If a synonym term contains multiple words, each word is treated as a separate synonym. For example, if you define "time piece" as a synonym of "watch", both "time" and "piece" are treated as synonyms of watch.
 
 +++

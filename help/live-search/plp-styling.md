@@ -9,19 +9,19 @@ The [!DNL Live Search Product Listing Page Widget] (PLP) uses the Commerce Servi
 ## Enabling the PLP wiget
 
 When the [!DNL Live Search] service is installed, the default search functionality is converted to [!DNL Live Search] automatically.
-The PLP widget must be enabled in the admin.
+The PLP widget must be enabled in the Admin.
 
 1. Go to **Stores** > Settings > **Configuration** > **[!DNL Live Search]** > **Storefront Features** and set **Enable Product Listing Widgets** to "Yes".
 1. Select **Save Config** to save the setting.
 
-## Styling exmaple
+## Styling example
 
 You can customize the look and feel of the PLP widget to match your site using [CSS](https://developer.adobe.com/commerce/frontend-core/guide/css/).
 
 >[!NOTE]
 >
->Elements with custom classes within a Magento theme will not be inherited. These elements must be targeted by their specific class to match the custom classes:  primary action classes will not work on a widget button.
->Generic targeted elements within the CSS will be inherited: `button` will apply to widget buttons.
+>Elements with custom classes within an Adobe Commerce theme will not be inherited. These elements must be targeted by their specific class to match the custom classes;  primary action classes will not work on a widget button.
+>Generic targeted elements within the CSS will be inherited; `button` will apply to widget buttons.
 
 The highlighted divs contain the target class `ds-sdk-product-item__product-name`. 
 

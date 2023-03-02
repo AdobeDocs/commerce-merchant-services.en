@@ -5,8 +5,6 @@ description: "Describes the Adobe Commerce configuration settings that [!DNL Liv
 # [!DNL Live Search] and Adobe Commerce Configuration Settings
 
 There are Commerce configuration settings that [!DNL Live Search] supports. This topic lists these configurations values.
-The list of settings that [!DNL Live Search] cannot read is by no means complete but lists configurations that may be of interest.
-We make the distinction between support of the extension itself and support in the popover.
 
 ## Supported configuration values
 
@@ -18,10 +16,12 @@ We make the distinction between support of the extension itself and support in t
 
 ## Unsupported configuration values
 
+[!DNL Live Search] cannot read all configuration values. This table lists values that may be of higher interest to developers.
+
 |Magento Configuration Setting|Notes|
 |---|---|
-|Stores -> Configuration -> Catalog -> Storefront -> List Mode|Renders correctly but events are not emitted for some of the page interactions|
-|Stores -> Configuration -> Catalog -> Storefront -> Allow All Products per Page|Not implemented; submits request to search service with no page size and we return default page size of 20|
-|Stores -> Configuration -> Catalog -> Catalog -> Catalog Search -> Maximum Query Length|Not implemented; Search Services accepts up to 255 chars|
+|Stores -> Configuration -> Catalog -> Storefront -> List Mode|Renders correctly but events are not sent for some page interactions|
+|Stores -> Configuration -> Catalog -> Storefront -> Allow All Products per Page|Not implemented; submits request to search service with no page size and [!DNL Live Search] returns a default page size of 20|
+|Stores -> Configuration -> Catalog -> Catalog -> Catalog Search -> Maximum Query Length|Not implemented; Search Services accepts up to 255 characters|
 |Stores -> Configuration -> General -> Currency Setup -> Currency Options -> Default Display Currency|Not implemented; [!DNL Live Search] only has access to the base currency|
 |Configuration -> Sales -> Tax -> Price Display Settings -> Display Product Prices In Catalog||

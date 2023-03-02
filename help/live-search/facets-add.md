@@ -13,7 +13,7 @@ Any filterable product attribute can be used as a facet. The *Add facets* panel 
 
 1. In the Admin, go to **Marketing** > SEO & Search > **[!DNL Live Search]**.
 1. On the *Faceting* tab, click **Add facets**.
-1. In the *Add facets* list, each available attribute has a separate ![Add button](assets/btn-add.png) button. Do one of the following:
+1. In the *Add facets* list, each available attribute has a separate ![Add button](assets/btn-add.png). Complete either of the following:
 
      * In the *Faceting attributes* list, choose the product attribute that you want to use as a facet and click **Add**.
      * To find a specific product attribute, enter the first few characters of the attribute name in the *Search* box. Then, click **Add**.
