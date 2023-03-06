@@ -21,7 +21,7 @@ Compatible with Adobe Commerce for Cloud (ECE): 2.4.4+
 Stability: General Availability
 
 ![New](../assets/new.svg) Added [`categories`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/) GraphQL functionality.
-![Fix](../assets/fix.svg) API scalability and performance improvements.
+![Fix](../assets/fix.svg) Improved performance and API scalability.
 
 ### V1.4 Release
 
