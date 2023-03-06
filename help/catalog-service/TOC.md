@@ -10,6 +10,7 @@ hide: yes
 - [Introduction to [!DNL Catalog Service]](overview.md)
 - [Onboarding and installation](installation.md)
 - GraphQL queries {#graphql}
+    - [categories query](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/)
     - [products query](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/)
     - [productSearch query](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/product-search/)
     - [refineProduct query](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/refine-product/)
