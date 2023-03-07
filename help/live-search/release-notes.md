@@ -29,7 +29,7 @@ These release notes describe the latest versions of [!DNL Live Search] and inclu
     * Pin to top - Places product in the first position
     * Pin to bottom - Places the product at the bottom of the results
     * Unpin an event with one click
-* [Intelligent Ranking for rules](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-admin/rules/rules-add.html)
+* [Intelligent Ranking for rules](https://experienceleague-review.corp.adobe.com/docs/commerce-merchant-services/live-search/live-search-admin/rules/rules-add.html#ranking-type)
 
 ### Updates
 
