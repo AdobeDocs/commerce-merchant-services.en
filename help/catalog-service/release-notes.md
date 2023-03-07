@@ -23,16 +23,6 @@ Stability: General Availability
 ![New](../assets/new.svg) Added [`categories`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/) GraphQL functionality.
 ![Fix](../assets/fix.svg) Improved performance and API scalability.
 
-### V1.4 Release
-
-Release Date: 2023-2-7
-Compatible with Adobe Commerce (EE): 2.4.x
-Compatible with Adobe Commerce for Cloud (ECE): 2.4.x
-Stability: General Availability
-
-![New](../assets/new.svg) Published catalog-service metapackage to simplify installation steps.
-![Fix](../assets/fix.svg) API scalability and performance improvements.
-
 #### Known limitations
 
 These features are not yet supported:
@@ -50,7 +40,16 @@ The following limitations can be solved by using the Core GraphQL API:
 * Minimum Advertised Price
 * Tier pricing
 * Downloadable products and gift cards
-* Categories (`categories` and `categoryList`)
+
+### V1.4 Release
+
+Release Date: 2023-2-7
+Compatible with Adobe Commerce (EE): 2.4.x
+Compatible with Adobe Commerce for Cloud (ECE): 2.4.x
+Stability: General Availability
+
+![New](../assets/new.svg) Published catalog-service metapackage to simplify installation steps.
+![Fix](../assets/fix.svg) API scalability and performance improvements.
 
 ### V1.3 Release
 
