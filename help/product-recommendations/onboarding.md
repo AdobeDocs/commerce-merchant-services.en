@@ -15,14 +15,14 @@ The onboarding process for [!DNL Product Recommendations] requires access to the
 
 ## Requirements
 
-- Adobe Commerce 2.4.x
-- PHP 8.1 / 8.2
-- Composer 2.x
+- Adobe Commerce 2.4.4+
+- PHP 8.1, 8.2
+- Composer 2
 
 ### Supported platforms
 
-- Adobe Commerce on prem (EE) : 2.4.4 and up
-- Adobe Commerce on Cloud (ECE) : 2.4.4 and up
+- Adobe Commerce on premise (EE) : 2.4.4+
+- Adobe Commerce on Cloud (ECE) : 2.4.4+
 
 ### Page Builder support
 

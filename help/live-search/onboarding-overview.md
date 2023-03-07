@@ -13,7 +13,7 @@ To get started using [!DNL Live Search] for Adobe Commerce, complete the onboard
 
 ## Requirements {#requirements}
 
-* [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) 2.4.x
+* [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) 2.4.4+
 * PHP 8.1 / 8.2
 * [!DNL Composer]
 
