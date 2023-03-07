@@ -29,7 +29,7 @@ These release notes describe the latest versions of [!DNL Live Search] and inclu
     * Pin to top - Places product in the first position
     * Pin to bottom - Places the product at the bottom of the results
     * Unpin an event with one click
-* [Intelligent Ranking for rules](https://experienceleague-review.corp.adobe.com/docs/commerce-merchant-services/live-search/live-search-admin/rules/rules-add.html#ranking-type)
+* [Intelligent Ranking for rules](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-admin/rules/rules-add.html#ranking-type)
 
 ### Updates
 
@@ -47,6 +47,7 @@ These release notes describe the latest versions of [!DNL Live Search] and inclu
 * Fixed on second "Edit" click from details, [!DNL Live Search] page requiring reload
 * Synonyms: Fixed an issue when a user clicked out of input, they could not return the focus to the field
 * Other minor bug fixes and performance updates
+
 
 * ![Bug](../assets/bug.svg) - Ranking by "Recommended for you" is only supported within the Live Search widgets. It is not supported with the default LUMA and PWA search functionality.
 
