@@ -33,11 +33,11 @@ This onboarding method is recommended when installing [!DNL Live Search] to a:
 
 In this scenario, storefront operations are interrupted while the [!DNL Live Search] service indexes all products in the catalog. During the installation, [!DNL Live Search] modules are enabled and [!DNL Elasticsearch] modules are disabled.
 
-   >[!TIP]
+   >[!NOTE]
    >
-   >To avoid typing errors, hover over the far right of the code box, click the [!UICONTROL **Copy**] link, and paste it into the command line.
+   >As of March 2023, Live Search only supports version 2.4.4 and higher.
 
-1. Install Adobe Commerce 2.4.x without [!DNL Live Search].
+1. Install Adobe Commerce 2.4.4+ without [!DNL Live Search].
 
 1. To download the `live-search` package, run the following from the command line:
 
