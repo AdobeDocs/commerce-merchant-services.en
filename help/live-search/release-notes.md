@@ -11,23 +11,25 @@ These release notes describe the latest versions of [!DNL Live Search] and inclu
 ![Fix](../assets/fix.svg) Fixes and improvements
 ![Bug](../assets/bug.svg) Known issues
 
-## [!DNL Live Search] 3.0.1 {#206}
+## [!DNL Live Search] 3.0.1 {#301}
 
 * Compatible with Adobe Commerce (EE): 2.4.4+
 * Compatible with Adobe Commerce for Cloud (ECE): 2.4.4+
 * Stability: Stable
-* Released March 21, 2023
+* Released March 14, 2023
 
 ### New Features
 
-* New Product Item Card in Rules preview 
+* Product Item Card in Rules preview 
+* [Product Listing Page widget](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-storefront/plp-styling.html)
+* [Category filtering options](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#facets)
 * Added the ability to drag and drop to create Pin events
 * New Pin actions:
-    * Pin to spot - Pin button to create Pin event in one click
-    * Pin to top - Places product at top in #1 Position
+    * Pin to spot - Pin button to create Pin event with one click
+    * Pin to top - Places product in the first position
     * Pin to bottom - Places the product at the bottom of the results
-    * Unpin event in one click if event is pinned
-* Intelligent Ranking for rules
+    * Unpin an event with one click
+* [Intelligent Ranking for rules](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-admin/rules/rules-add.html)
 
 ### Updates
 
@@ -46,21 +48,11 @@ These release notes describe the latest versions of [!DNL Live Search] and inclu
 * Synonyms: Fixed an issue when a user clicked out of input, they could not return the focus to the field
 * Other minor bug fixes and performance updates
 
-* ![Bug](../assets/bug.svg) - Ranking by "Recommended for you" is only supported within the Live Search widgets. It is not supported on the default LUMA and PWA search functionality.
+* ![Bug](../assets/bug.svg) - Ranking by "Recommended for you" is only supported within the Live Search widgets. It is not supported with the default LUMA and PWA search functionality.
 
 Merchants must upgrade the [!DNL Live Search] extension version >= 3.0.1 to access these features.
 
 It is recommended to upgrade and test before pushing to production. Consider upgrading the production environment during off-peak hours after verifying their testing environment results.
-
-* Compatible with Adobe Commerce (EE): 2.4.4+
-* Compatible with Adobe Commerce for Cloud (ECE): 2.4.4+
-* Stability: Stable
-
-![Fix](../assets/fix.svg) Live Search would throw an error when SDK resources were not available due to network issues. This bug has now been fixed.
-
-Merchants must upgrade the [!DNL Live Search] extension version >= 2.0.5 to access these features.
-
-Users are advised to upgrade and test before pushing to production. Consider upgrading the production environment during off-peak hours after verifying their testing environment results.
 
 ## Previous versions
 

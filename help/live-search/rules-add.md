@@ -69,6 +69,8 @@ Conditions are the requirements to trigger an event. A rule can have up to ten c
 Ranking combines user behaviors and site statistics to determine product ranking.
 Store owners can set up the following types of ranking strategies:
 
+![Rules - Match](assets/rules-ranking-type.png)
+
 * Most purchased: This ranks products by total purchases per SKU.
 * Most added to cart - Ranks in order of total "Add to Cart" activities
 * Most viewed: Ranks my total views per SKU
@@ -78,7 +80,7 @@ Store owners can set up the following types of ranking strategies:
 * Trending: Looks back at page view events over the past 72 hours for background events and 24 hours for foreground events
 * None: Products are ordered by Relevance
 
-1. Select the type of strategy for the rule. The Test Your Rule window will display the expected results.
+1. Select the type of strategy for the rule. The Test Your Rule window displays the expected results.
 
 ## Adding events
 
@@ -95,7 +97,7 @@ The easiest way to pin a product is by drag and drop.
 
    ![Rules - Match](assets/rule-event-pin-product.png)
 
-You may also click the pin icon to pin a product to its current location. Use the ellipsis context menu to "Pin to top" or "Pin to botton".
+You may also click the pin icon to pin a product to its current location. Use the ellipsis context menu to "Pin to top" or "Pin to bottom".
 
 Or events can be set manually:
 
