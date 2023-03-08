@@ -22,9 +22,13 @@ See the developer documentation to [learn about product compatibility](https://e
 
 ### 4.0.1 of magento/product-recommendations
 
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.4 and newer
+
 ![Fix](../assets/fix.svg) Previously, Product Recommendations would show an error when the display currency was switched to a non-default currency. Switching currencies now works properly.
 
 ### 4.0.0 of magento/product-recommendations
+
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.4 and newer
 
 ![New](../assets/new.svg) Added [readiness indicators](create.md) to help you visualize the training progress of each recommendation type.
 ![New](../assets/new.svg) This is a major version release. [Edit](install-configure.md#update) the root `composer.json` file for your project. This release also requires you to provide two API keys when installing and configuring Product Recommendations: [a production key and a sandbox key](../landing/saas.md).
@@ -39,19 +43,27 @@ See the developer documentation to [learn about product compatibility](https://e
 
 ### 3.3.7 of magento/product-recommendations
 
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.x and newer
+
 ![New](../assets/new.svg) Added PHP 8.1 support
 ![New](../assets/new.svg) Improved image resizing so that images sizing is handled more consistently in the reference display template
 
 ### 3.3.6 of magento/product-recommendations
 
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.x and newer
+
 ![New](../assets/new.svg) Optimized [!DNL Product Recommendations] metapackage by explicitly listing the dependencies
 
 ### 3.3.5 of magento/product-recommendations
+
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.x and newer
 
 ![New](../assets/new.svg) Added [B2B support](onboarding.md#b2bsupport) in Product Recommendations
 ![New](../assets/new.svg) Added new feeds to [sync catalog data](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) to Commerce Services via the command line
 
 ### 3.3.3 of magento/product-recommendations
+
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.x and newer
 
 ![New](../assets/new.svg) Added new [recommendation types](type.md): Conversion (view to cart), Conversion (view to purchase), and Recently viewed. These new recommendation types are available in the `magento/product-recommendations` module 3.2.2 and later.
 ![Fix](../assets/fix.svg) Fixed an issue where Fastly's Web Application Firewall (WAF) was incorrectly blocking a cookie
@@ -60,36 +72,52 @@ See the developer documentation to [learn about product compatibility](https://e
 
 ### 3.3.2 of magento/product-recommendations
 
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.x and newer
+
 ![Fix](../assets/fix.svg) Fixed missing dependency for B2B support
 
 ### 3.3.1 of magento/product-recommendations
+
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.x and newer
 
 ![New](../assets/new.svg) Added support for B2B customer group pricing. When you set a [price filter](filters.md) on a recommendation unit, B2B customers who are logged in see the customer group pricing set for the products displayed.
 
 ### 3.3.0 of magento/product-recommendations
 
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.x and newer
+
 ![New](../assets/new.svg) Added support for Adobe Client Data Layer to standardize behavioral data collection across Adobe Commerce features and services. See the [readme](https://github.com/adobe/magento-storefront-event-collector/blob/main/README.md) to learn more.
 
 ### 3.2.6 of magento/product-recommendations
+
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.x and newer
 
 ![Fix](../assets/fix.svg) Fixed a JavaScript modal error
 ![Fix](../assets/fix.svg) Fixed an issue where Fastly's Web Application Firewall (WAF) was incorrectly blocking a cookie
 
 ### 3.2.5 of magento/product-recommendations
 
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.x and newer
+
 ![New](../assets/new.svg) Renamed Magento Services to [Commerce Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) and improved usability in the Admin
 
 ### 3.2.4 of magento/product-recommendations
 
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.x and newer
+
 ![Fix](../assets/fix.svg) Fixed the "Unable to retrieve configurable product options data" error when indexing product attributes
 
 ### 3.2.3 of magento/product-recommendations
+
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.x and newer
 
 ![Fix](../assets/fix.svg) Fixed the "Unable to retrieve configurable product options data" error during Catalog Sync
 ![Fix](../assets/fix.svg) Fixed an issue where the store code was not being set correctly when you enabled the "Add store code to URL" configuration
 ![Fix](../assets/fix.svg) Improved detection of Admin Panel configuration changes to ensure that these changes are reflected in Catalog Sync data
 
 ### 3.2.2 of magento/product-recommendations
+
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.x and newer
 
 ![New](../assets/new.svg) Added the ability to [preview recommendation results](create.md) at creation time. This might require that you update your module to the latest version.
 ![New](../assets/new.svg) Added the ability to [monitor and manage](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) the catalog sync process from the Admin.
@@ -98,9 +126,13 @@ See the developer documentation to [learn about product compatibility](https://e
 
 ### 1.2.1 of magento/module-page-builder-product-recommendations for Page Builder
 
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.x and newer
+
 ![New](../assets/new.svg) Added support for the 3.2.0+ version of the `magento/product-recommendations` module
 
 ### 3.1.0 of magento/product-recommendations
+
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.x and newer
 
 ![New](../assets/new.svg) Added the ability to [resync](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) your catalog to SaaS services via command line.
 ![New](../assets/new.svg) Added support for database table prefixes
@@ -108,39 +140,57 @@ See the developer documentation to [learn about product compatibility](https://e
 
 ### 3.0.8 of magento/product-recommendations
 
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.x and newer
+
 ![Fix](../assets/fix.svg) Fixed an issue where events were sent for data collection before the module was configured, causing invalid traffic
 
 ### 3.0.6 of magento/product-recommendations
+
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.x and newer
 
 ![New](../assets/new.svg) **(Beta)** Includes support for new [Visual similarity](type.md#visualsim) recommendation type.
 
 ### 1.0.0 of magento/module-visual-product-recommendations
 
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.x and newer
+
 ![New](../assets/new.svg) **(Beta)** [Visual similarity](type.md#visualsim). With the _Visual similarity_ recommendation type, you can deploy a recommendation unit to your product detail page that displays products that are visually similar to the product being viewed.
 
 ### 3.0.5 of magento/product-recommendations
+
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.x and newer
 
 ![Fix](../assets/fix.svg) Fixed the "Unable to retrieve product options data" error that could occur during catalog export.
 ![Fix](../assets/fix.svg) The currency symbol in the _Revenue_ column on the _Product Recommendations_ dashboard now correctly reflects the configured base currency.
 
 ### 3.0.4 of magento/product-recommendations
 
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.x and newer
+
 ![Fix](../assets/fix.svg) Added support for Adobe Commerce 2.4.0
 
 ### 3.0.3 of magento/product-recommendations
+
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.x and newer
 
 ![Fix](../assets/fix.svg) Improved symbol implementation in storefront template
 
 ### 1.0.4 of magento/module-page-builder-product-recommendations for Page Builder
 
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.x and newer
+
 ![New](../assets/new.svg) Added Product Recommendation name when editing the Page Builder content type
 
 ### 3.0.2 magento/product-recommendations
+
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.x and newer
 
 ![New](../assets/new.svg) Added a status column on the grid when selecting Recommendation units in Page Builder
 ![Fix](../assets/fix.svg) Fixed an issue with incorrect http/https protocols in product and image URLs
 
 ### 3.0.1 of magento/product-recommendations
+
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.x and newer
 
 This is a major version release. [Edit](install-configure.md#update) your project's root composer.json file.
 
@@ -151,9 +201,13 @@ This is a major version release. [Edit](install-configure.md#update) your projec
 
 ### 1.0.3 of magento/module-page-builder-product-recommendations for Page Builder
 
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.x and newer
+
 ![New](../assets/new.svg) Page Builder support. With the Page Builder integration, you can accurately and granularly place Recommendation units in any arbitrary location on Page Builder-authored content. You can also style the headings and recommendation units themselves. Go to [Page Builder](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) for more information.
 
 ### 2.0.0 of magento/product-recommendations
+
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.x and newer
 
 ![New](../assets/new.svg) General availability release!
 
