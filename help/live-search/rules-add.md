@@ -71,12 +71,10 @@ Store owners can set up the following types of ranking strategies:
 
 ![Rules - Match](assets/rules-ranking-type.png)
 
-* Most purchased: This ranks products by total purchases per SKU.
-* Most added to cart - Ranks in order of total "Add to Cart" activities
-* Most viewed: Ranks my total views per SKU
-* Recommended for you - This is a combination of
-    * `viewed-viewed` - Shoppers who viewed this SKU also looked at these other SKUs
-    * `more-like-this` - Selects other similar SKUs that have a set of similar attributes and descriptions in a `more-like-this` query.
+* Most purchased: This ranks products by total purchases per SKU in the previous 7 days.
+* Most added to cart - Ranks in order of total "Add to Cart" activities in the previous 7 days.
+* Most viewed: Ranks my total views per SKU in the previous 7 days.
+* Recommended for you - Uses the `viewed-viewed` data point - Shoppers who viewed this SKU also looked at these other SKUs
 * Trending: Looks back at page view events over the past 72 hours for background events and 24 hours for foreground events
 * None: Products are ordered by Relevance
 

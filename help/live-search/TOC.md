@@ -39,3 +39,6 @@ breadcrumb-title: "[!DNL Live Search] Guide"
    - [Commerce Configuration Settings](configuration.md)
    - [Settings](settings.md)
    - [Indexing](indexing.md)
+- GraphQL queries {#graphql}
+   - [attributeMetadata](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/attribute-metadata/)
+   - [productSearch](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/)

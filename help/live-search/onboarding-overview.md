@@ -56,9 +56,11 @@ To restrict customer groups using Catalog permissions:
 
 ### PWA support
 
+Live Search support is considered to be in beta because not all of PWA has been tested with [!DNL Live Search]. Basic functionality such as search and product listing page work in Venia but some permutations of Graphql may not work correctly.
+
 * The current beta PWA implementation of [!DNL Live Search] requires more processing time to return search results than [!DNL Live Search] with the native Commerce storefront.
-* The beta release of PWA for [!DNL Live Search] does not support [event handling](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/).
-* The following product attributes are not supported by GraphQL when used in relation to the beta release of [PWA](https://developer.adobe.com/commerce/pwa-studio/): `description`, `name`, `short_description`
+* [!DNL Live Search] in PWA  does not support [event handling](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/).
+* The following product attributes are not supported by GraphQL when used with [PWA](https://developer.adobe.com/commerce/pwa-studio/): `description`, `name`, `short_description`
 
 ### Not currently supported
 
