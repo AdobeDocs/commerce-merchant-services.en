@@ -15,10 +15,9 @@ These release notes describe the latest versions of [!DNL Catalog Service] and i
 
 ### V1.5 Release
 
-Release Date: 2023-3-6
-Compatible with Adobe Commerce (EE): 2.4.4+
-Compatible with Adobe Commerce for Cloud (ECE): 2.4.4+
-Stability: General Availability
+_March 6, 2023_
+
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.4 and newer
 
 ![New](../assets/new.svg) Added [`categories`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/) GraphQL functionality.
 ![Fix](../assets/fix.svg) Improved performance and API scalability.
@@ -43,20 +42,18 @@ The following limitations can be solved by using the Core GraphQL API:
 
 ### V1.4 Release
 
-Release Date: 2023-2-7
-Compatible with Adobe Commerce (EE): 2.4.x
-Compatible with Adobe Commerce for Cloud (ECE): 2.4.x
-Stability: General Availability
+_February 7, 2023_
+
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.x and newer
 
 ![New](../assets/new.svg) Published catalog-service metapackage to simplify installation steps.
 ![Fix](../assets/fix.svg) API scalability and performance improvements.
 
 ### V1.3 Release
 
-Release Date: 2023-1-17
-Compatible with Adobe Commerce (EE): 2.4.x
-Compatible with Adobe Commerce for Cloud (ECE): 2.4.x
-Stability: General Availability
+_January 17, 2023_
+
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.x and newer
 
 ![New](../assets/new.svg) Simplified and improved the onboarding experience.
 ![New](../assets/new.svg) New customer sandbox endpoints are available for pre-production testing.
@@ -65,20 +62,18 @@ Stability: General Availability
 
 ### V1.1 Release
 
-Release Date: 2022-11-18
-Compatible with Adobe Commerce (EE): 2.4.x
-Compatible with Adobe Commerce for Cloud (ECE): 2.4.x
-Stability: General Availability
+_November 18, 2022_
+
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.x and newer
 
 ![New](../assets/new.svg) Catalog Service now supports Adobe's [API Mesh](https://developer.adobe.com/graphql-mesh-gateway/).
 ![Fix](../assets/fix.svg) We have improved API scalability and overall performance.
 
 ### V1.0 Release
 
-Release Date: 2022-10-04
-Compatible with Adobe Commerce (EE): 2.4.x
-Compatible with Adobe Commerce for Cloud (ECE): 2.4.x
-Stability: General Availability
+_October 4, 2022_
+
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.x and newer
 
 ![New](../assets/new.svg) Now support bundled and grouped products.
 ![New](../assets/new.svg) Added B2B visibility overrides. Products are now searchable and can be added to the cart for specific customer groups.
@@ -90,10 +85,9 @@ Stability: General Availability
 
 ### 0.3 Release - Beta+
 
-Release Date: 2022-09-12
-Compatible with Adobe Commerce (EE): 2.4.x
-Compatible with Adobe Commerce for Cloud (ECE): 2.4.x
-Stability: Beta
+_September 12, 2022_
+
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.x and newer
 
 ![New](../assets/new.svg) Images for variants support: product images are returned based on the selected options
 ![New](../assets/new.svg) Roles for prices support: allow only members of specific customer groups to see the price of products
@@ -102,10 +96,9 @@ Stability: Beta
 
 ### Beta Release
 
-Release Date: 2022-08-09
-Compatible with Adobe Commerce (EE): 2.4.x
-Compatible with Adobe Commerce for Cloud (ECE): 2.4.x
-Stability: Beta
+_August 9, 2022_
+
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.x and newer
 
 ![New](../assets/new.svg) The `products` and `refineProduct` queries return the following data:
 
