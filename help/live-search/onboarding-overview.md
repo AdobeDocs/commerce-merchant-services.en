@@ -60,7 +60,7 @@ Live Search support is considered to be in beta because not all of PWA has been 
 
 * The current beta PWA implementation of [!DNL Live Search] requires more processing time to return search results than [!DNL Live Search] with the native Commerce storefront.
 * [!DNL Live Search] in PWA  does not support [event handling](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/).
-* The following product attributes are not supported by GraphQL when used with [PWA](https://developer.adobe.com/commerce/pwa-studio/): `description`, `name`, `short_description`
+* Filtering directly on `description`, `name`, `short_description` is not supported by GraphQL when used with [PWA](https://developer.adobe.com/commerce/pwa-studio/), but they are returned with a more general filter.
 
 ### Not currently supported
 
