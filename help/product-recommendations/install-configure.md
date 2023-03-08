@@ -24,7 +24,7 @@ composer require magento/product-recommendations
 
 ### Add Page Builder support {#pbsupport}
 
-[!DNL Product Recommendations] for Page Builder are an optional module and is installed separately. To use [!DNL Product Recommendations] with Page Builder, install the module by running the following command:
+[!DNL Product Recommendations] for Page Builder is an optional module and is installed separately. To use [!DNL Product Recommendations] with Page Builder, install the module by running the following command:
 
 ```bash
 composer require magento/module-page-builder-product-recommendations
@@ -32,9 +32,7 @@ composer require magento/module-page-builder-product-recommendations
 
 By enabling [!DNL Product Recommendations] in Page Builder, you can add an existing, active [recommendation unit](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) to any content created in Page Builder, such as pages, blocks, and dynamic blocks.
 
-   >[!NOTE]
-   >
-   >[!DNL Page Builder] recommendation units can be created only for the default store view.
+See [Using [!DNL Product Recommendations] with Page Builder Content](page-builder.md) for further instructions.
 
 ### Add Visual similarity recommendation type {#vissimsupport}
 
