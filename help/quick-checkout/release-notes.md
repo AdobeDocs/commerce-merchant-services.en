@@ -63,17 +63,23 @@ _October 5, 2022_
 
 _February 24, 2023_
 
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.0 and newer
+
 ![Fixed issue](../assets/fix.svg)<!-- Issue BOLT-592 --> User experience improvements when placing an order in the [Admin Panel](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/create-order-admin.html) using [Braintree](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/stored-payment-methods.html) as a payment method. This functionality allows customers to place an order with Braintree as a payment method during checkout when [!DNL Quick Checkout] is enabled.
 
 ## v1.7.0
 
 _February 22, 2023_
 
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.0 and newer
+
 ![Fixed issue](../assets/fix.svg)<!-- Issue AC-8002 --> User experience improvements when placing an order using a [Multishipping](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/multishipping-settings.html) method. This functionality enables the display of payment methods during checkout when [!DNL Quick Checkout] is enabled.
 
 ## v1.6.0
 
 _February 9, 2023_
+
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.0 and newer
 
 ![Fixed issue](../assets/fix.svg)<!-- Issue BOLT-567 --> User experience improvements when [placing an order](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html) using the [In-store delivery](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/delivery/basic-methods/shipping-in-store-delivery.html) method with the [!DNL Quick Checkout] disabled.
 
@@ -82,6 +88,8 @@ _February 9, 2023_
 ## v1.5.0
 
 _January 18, 2023_
+
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.0 and newer
 
 ![New](../assets/new.svg)<!-- Issue BOLT-522 --> A new configuration can be enabled/disabled to detect if [shoppers](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/manage-checkout/checkout-options/checkout-adobe-commerce.html) can be automatically logged in Bolt.
 
@@ -97,6 +105,8 @@ _January 18, 2023_
 
 _November 30, 2022_
 
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.0 and newer
+
 ![New](../assets/new.svg)<!-- Issue BOLT-513 --> Now, when an Adobe Commerce customer is logged into the store during the checkout process, and has a Bolt account, an option to log into the shopper's Bolt account is displayed.
 
 ![New](../assets/new.svg)<!-- Issue BOLT-512 --> A new configuration automatically detects if logged-in shoppers can also be logged in Bolt.
@@ -107,6 +117,8 @@ _November 30, 2022_
 
 _November 2, 2022_
 
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.0 and newer
+
 ![New](../assets/new.svg)<!-- Issue BOLT-293 --> Now, [!DNL Quick Checkout] includes the ability to enable a [checkout tracking](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/settings-quick-checkout.html#service-settings) setting that allows Adobe Commerce to share reporting information with Bolt.
 
 ![New](../assets/new.svg)<!-- Issue BOLT-461 --> You can now see a warning message in your [!DNL Quick Checkout] Admin panel if [checkout tracking](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html) configuration is disabled.
@@ -114,6 +126,8 @@ _November 2, 2022_
 ## v1.2.0
 
 _September 8, 2022_
+
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.0 and newer
 
 ![New](../assets/new.svg)<!-- Issue BOLT-341 --> General availability release---[[!DNL Quick Checkout]](https://marketplace.magento.com/magento-quick-checkout.html) is now compatible with Adobe Commerce versions 2.4.5.
 
@@ -137,6 +151,8 @@ _September 8, 2022_
 
 _August 12, 2022_
 
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.0 and newer
+
 ![Fixed issue](../assets/fix.svg)<!-- Issue BOLT-375 --> User experience improvements in [[!DNL Quick Checkout] Admin Panel](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) now include only the parameters that are visible and validated when the extension is enabled.
 
 ![Fixed issue](../assets/fix.svg)<!-- Issue BOLT-349 --> Compatibility improvements for existing shipping addresses with the Bolt wallet.
@@ -144,6 +160,8 @@ _August 12, 2022_
 ## v1.0.0
 
 _August 9, 2022_
+
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.0 and newer
 
 ![New](../assets/new.svg)<!-- Issue BOLT-341 --> General availability release---[[!DNL Quick Checkout]](https://marketplace.magento.com/magento-quick-checkout.html) is now compatible with Adobe Commerce versions 2.4.1 to 2.4.4.
 
