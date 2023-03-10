@@ -51,6 +51,26 @@ _June 28, 2021_
 
 +++
 
+## v2.0.0
+
+_March 10, 2023_
+
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.4 and newer
+
+![New](../assets/new.svg)<!-- Issue PAY-4152 --> Added support for PHP 8.2 and Adobe Commerce 2.4.6. Not compatible with PHP 7.x.
+
+## v1.6.1
+
+_March 10, 2023_
+
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.0-2.4.5-p2
+
+![Fix](../assets/fix.svg)<!-- Issue PAY-4226 --> Fixed an issue that prevented new Payment Services merchants from using checkout in the Admin. Payment Services was previously using the Commerce customer ID, which does not exist for new customers.
+
+![Fix](../assets/fix.svg)<!-- Issue PAY-4205 --> Fixed an issue that caused the specified shipping address state to be replaced by the state in the default tax settings during checkout using the [PayPal option](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#paypal-smart-buttons). Now, customers can have their orders shipped to a state other than the one configured as the default in the merchant's tax settings.
+
+![Fix](../assets/fix.svg)<!-- Issue PAY-4202 --> Fixed an issue preventing customers from using card vaulting to complete a purchase or delete a vaulted payment method for a store [using the `Authorize and Capture` payment action](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/production.html#set-payment-services-as-payment-method). Previously, a "Provider Vault ID not found" error appeared when the customer attempted to use or modify their vaulted credit cards.
+
 ## v1.6.0
 
 _February 17, 2023_
