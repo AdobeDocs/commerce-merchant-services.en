@@ -66,7 +66,6 @@ Replace the `name `, `endpoint`, and `x-api-key` values.
               "Magento-Website-Code": "{context.headers['magento-website-code']}",
               "Magento-Store-Code": "{context.headers['magento-store-code']}",
               "Magento-Environment-Id": "{context.headers['magento-environment-id']}",
-              "x-api-key": "storefront-catalog-apollo",
               "Magento-Customer-Group": "{context.headers['magento-customer-group']}"
             },
             "schemaHeaders": {

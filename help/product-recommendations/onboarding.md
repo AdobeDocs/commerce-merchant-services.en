@@ -15,7 +15,7 @@ The onboarding process for [!DNL Product Recommendations] requires access to the
 
 ## Requirements
 
-- Adobe Commerce 2.3.x, 2.4.4+
+- Adobe Commerce 2.4.4+
 - PHP 8.1, 8.2
 - Composer 2
 

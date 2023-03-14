@@ -13,7 +13,7 @@ You can specify the number of price range groups and how price values are distri
 
 ## Configure price facet groupings
 
-1. In the Admin, go to **Marketing** > *SEO & Search* > **Live Search**.
+1. In the Admin, go to **Marketing** > *SEO & Search* > **[!DNL Live Search]**.
 1. On the **Settings** tab under *Price faceting*, do the following:
    * Enter the **Number of selections**, or price groupings to be available. Up to 50 price groupings can be defined.
    * Enter the **Interval value**, or price range for each group. The maximum value is 10,000.

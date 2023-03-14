@@ -7,9 +7,9 @@ exl-id: 04441e58-ffac-4335-aa26-893988a89720
 
 Product attribute properties (metadata) determine:
 
-*  How an attribute can be used in the catalog
-*  Its appearance and behavior in the store
-*  The data that is included in data transfer operations
+* How an attribute can be used in the catalog
+* Its appearance and behavior in the store
+* The data that is included in data transfer operations
 
 The scope of attribute metadata is `website/store/store view`.
 
@@ -39,22 +39,22 @@ When [!DNL Live Search] is configured and synchronized during onboarding, it can
 
 The following events trigger a full sync and index build:
 
-*  Onboarding [catalog data sync](install.md#synchronize-catalog-data)
-*  Changes to attribute metadata
+* Onboarding [catalog data sync](install.md#synchronize-catalog-data)
+* Changes to attribute metadata
 
 For example, changing the `Use in Search` property of the `color` attribute from `No` to `Yes` changes the attribute metadata to `searchable=true`, and triggers a full sync and reindex. The following attribute metadata trigger a full sync and reindex when changed:
 
-*  `filterableInSearch`
-*  `searchable`
-*  `sortable`
-*  `visibleInSearch`
+* `filterableInSearch`
+* `searchable`
+* `sortable`
+* `visibleInSearch`
 
 ### Streaming product updates
 
 After the initial index is built during [onboarding](install.md#synchronize-catalog-data), the following incremental product updates are continuously synced and reindexed:
 
-*  New products added to the catalog
-*  Changes to product attribute values
+* New products added to the catalog
+* Changes to product attribute values
 
 For example, adding a new swatch value to the `color` attribute is handled as a streaming product update.
 Streaming update workflow:
@@ -80,31 +80,31 @@ The index metadata is stored in the indexing pipeline and is accessible by the s
 
 The order of the fields in this list reflects the typical order of columns in exported product data.
 
-*  `environment_id`
-*  `website_code`
-*  `store_code`
-*  `store_view_code`
-*  `product_id`
-*  `sku`
-*  `name`
-*  `type`
-*  `displayable`
-*  `deleted`
-*  `url`
-*  `currency`
-*  `meta_description`
-*  `meta_keyword`
-*  `meta_title`
-*  `description`
-*  `short_description`
-*  `weight`
-*  `image`
-*  `small_image`
-*  `thumbnail_image`
-*  `prices`
-*  `in_stock`
-*  `low_stock`
+* `environment_id`
+* `website_code`
+* `store_code`
+* `store_view_code`
+* `product_id`
+* `sku`
+* `name`
+* `type`
+* `displayable`
+* `deleted`
+* `url`
+* `currency`
+* `meta_description`
+* `meta_keyword`
+* `meta_title`
+* `description`
+* `short_description`
+* `weight`
+* `image`
+* `small_image`
+* `thumbnail_image`
+* `prices`
+* `in_stock`
+* `low_stock`
 
 The following field is indexed for all configurable products:
 
-*  `childrenSkus`
+* `childrenSkus`
