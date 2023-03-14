@@ -57,7 +57,17 @@ It is recommended to upgrade and test before pushing to production. Consider upg
 
 ## Previous versions
 
-+++2.0.4 and prior
++++2.0.5 and prior
+
+## [!DNL Live Search] 2.0.5 {#205}
+
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.4 and newer
+
+* ![Fix](../assets/fix.svg) - Live Search would throw an error when SDK resources were not available due to network issues. This bug has now been fixed.
+
+Merchants must upgrade the Live Search extension version >= 2.0.5 to access these features.
+
+It is recommended to upgrade and test before pushing to production. Consider upgrading the production environment during off-peak hours after verifying their testing environment results.
 
 ### [!DNL Live Search] 2.0.4 {#204}
 
