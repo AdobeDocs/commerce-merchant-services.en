@@ -65,9 +65,9 @@ Live Search support is considered to be in beta because not all of PWA has been 
 ### Not currently supported
 
 * The [Advanced Search](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#advanced-search) module is disabled when [!DNL Live Search] is installed, and the Advanced Search link in the storefront footer is removed.
-* [Custom price groups](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-group.html)
 * Multiple inventory locations as used by [MCOM](https://experienceleague.adobe.com/docs/commerce-admin/systems/integrations/mcom.html) or other OMS extensions
 * Product prices do not include [value added tax](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/vat.html) (VAT).
+* [Tier Price](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-tier.html) is not supported in the Live Search Popover and Product Listing Page Widget.
 
 ## Cookies
 
