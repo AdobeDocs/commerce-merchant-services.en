@@ -13,11 +13,14 @@ These release notes describe the latest versions of [!DNL Catalog Service] and i
 
 ## Curret major version
 
-### V1.6 Release
+### V1.5 Release
 
-_March 28, 2023_
+_March 6, 2023_
 
 [!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.4 and newer
+
+![New](../assets/new.svg) Added [`categories`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/) GraphQL functionality.
+![Fix](../assets/fix.svg) Improved performance and API scalability.
 
 #### Known limitations
 
@@ -28,6 +31,7 @@ These features are not yet supported:
 * Maximum size for dynamic attributes payload is 9MB.
 * Group product price. Can be calculated with simple product prices.
 * In an image array, only the first image contains roles.
+* Color swatches
 * Loading the Product Detail Page through the product URL.
 
 The following limitations can be solved by using the Core GraphQL API:
@@ -35,15 +39,6 @@ The following limitations can be solved by using the Core GraphQL API:
 * Minimum Advertised Price
 * Tier pricing
 * Downloadable products and gift cards
-
-### V1.5 Release
-
-_March 6, 2023_
-
-[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.4 and newer
-
-![New](../assets/new.svg) Added [`categories`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/) GraphQL functionality.
-![Fix](../assets/fix.svg) Improved performance and API scalability.
 
 ### V1.4 Release
 
