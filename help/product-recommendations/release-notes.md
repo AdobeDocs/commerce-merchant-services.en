@@ -20,6 +20,21 @@ See the developer documentation to [learn about product compatibility](https://e
 
 ## Current major version
 
+### 5.0.0 of magento/product-recommendations
+
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.4 and newer
+
+![New](../assets/new.svg) Updated Product Recommendations to support Adobe Commerce 2.4.6.
+![New](../assets/new.svg) This is a major version release. [Edit](install-configure.md#update) the root `composer.json` file for your project. 
+
+#### Known limitations
+
+* The `websiteCode` value is incorrectly returned if it contains an underscore (_).
+
+### Previous versions
+
++++4.0.1 and prior
+
 ### 4.0.1 of magento/product-recommendations
 
 [!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.4 and newer
@@ -36,10 +51,6 @@ See the developer documentation to [learn about product compatibility](https://e
 #### Known limitations
 
 * The `websiteCode` value is incorrectly returned if it contains an underscore (_).
-
-### Previous versions
-
-+++3.3.7 and prior
 
 ### 3.3.7 of magento/product-recommendations
 

@@ -11,19 +11,19 @@ When you deploy the `magento/product-recommendations` module to production, it s
 
 This may not work with third-party cookie consent solutions. It is the responsibility of each merchant to ensure that data collection does not occur before cookie consent has been given, as is often required by law. If you manage cookie consent with custom code, you can use a do-not-track cookie called `mg_dnt` to restrict data collection.
 
--  Name of the cookie:
+- Name of the cookie:
 
    ```text
    `const DNT_COOKIE = "mg_dnt";`
    ```
 
--  Set the do-not-track cookie to disable data collection:
+- Set the do-not-track cookie to disable data collection:
 
    ```text
    `$.mage.cookies.set(DNT_COOKIE, true);`
    ```
 
--  To clear the cookie when the user has accepted cookies:
+- To clear the cookie when the user has accepted cookies:
 
    ```text
    `$.mage.cookies.clear(DNT_COOKIE);`
