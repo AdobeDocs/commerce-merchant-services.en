@@ -75,7 +75,7 @@ When you [create](create.md) a recommendation, you specify the [location](placem
 
 1. Let's modify this file by specifying a different content block.
 
-    You change the reference block `name` from `main.content` to `product.info.media`.
+    Change the reference block `name` from `main.content` to `product.info.media`.
 
     ```xml
     <?xml version="1.0"?>
