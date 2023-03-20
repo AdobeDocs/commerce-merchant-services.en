@@ -51,7 +51,7 @@ When you [create](create.md) a recommendation, you specify the [location](placem
     >
     >The filenames in the `layout` directory might be different if your store uses third-party extensions.
 
-1. Let's modify the `catalog_product_view.xml` file so that the recommendation unit appears after the product image on the product detail page. Before you customize this XML file, let's take a look at the file and understand the sections you will need to modify:
+1. Modify the `catalog_product_view.xml` file so that the recommendation unit appears after the product image on the product detail page. Before you customize this XML file, take a look at the file and understand the sections you will need to modify:
 
     ```xml
     <?xml version="1.0"?>
@@ -75,7 +75,7 @@ When you [create](create.md) a recommendation, you specify the [location](placem
 
 1. Let's modify this file by specifying a different content block.
 
-    You will change the reference block `name` from `main.content` to `product.info.media`.
+    You change the reference block `name` from `main.content` to `product.info.media`.
 
     ```xml
     <?xml version="1.0"?>
