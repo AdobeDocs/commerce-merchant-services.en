@@ -15,7 +15,7 @@ The storefront events collect anonymized behavioral data from your shoppers as t
 
 >[!NOTE]
 >
->All storefront events include the [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html) field, which includes the shopper's email address and ECID. By including this profile data in each event, you do not need a separate user account-specific import from Adobe Commerce.
+>All storefront events include the [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html) field, which includes the shopper's email address, when available, and ECID. By including this profile data in each event, you do not need a separate user account import from Adobe Commerce.
 
 ### addToCart
 
@@ -210,7 +210,6 @@ The following table describes the data collected for this event.
 |`productImageUrl`|Main image URL of the product|
 |`selectedOptions`|Field used for a configurable product. `attribute` identifies an attribute of the configurable product, such as `size` or `color` and `value` identifies the value of the attribute such as `small` or `black`.|
 
-
 ## Profile events
 
 Profile events include account information, such as `signIn`, `signOut`, `createAccount`, and `editAccount`. This data is used to help populate key customer details that are needed to better define segments or execute marketing campaigns, such as if you want to target shoppers who live in New York.
@@ -372,6 +371,10 @@ The following table describes the data collected for this event.
 
 The back office events contain information about the status of an order, such as if an order was placed, cancelled, refunded, shipped, or completed. The data these server-side events collect show a 360 view of the shopper order. This can help merchants better target or analyze the entire order status when developing marketing campaigns. For example, you can spot trends in certain product categories that perform well at different times of the year. Such as, winter clothes that sell better during colder months or certain product colors that shoppers are interested in over the years. In addition, order status data can help you calculate lifetime customer value by understanding a shopper's propensity to convert based on previous orders.
 
+>[!NOTE]
+>
+>All back office events include the [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html) field, which includes the shopper's email address. By including this profile data in each event, you do not need a separate user account import from Adobe Commerce.
+
 ### orderPlaced
 
 |Description| XDM event name|
@@ -503,9 +506,7 @@ The following table describes the data collected for this event.
 The following table describes the data collected for this event.
 |Field|Description|
 |---|---|
-|`identityMap`|Defines a map containing a set of end user identities, keyed on either namespace integration code or the namespace ID of the identity.|
-|`Email`|Indicates if an email address is used as part of the identity|
-|`id`|The email address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
+|`address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
 |`eventType`|`commerce.backofficeShipmentCompleted`|
 |`productListItems`|An array of products in the order|
 |`name`|The display name or human-readable name of the product|
