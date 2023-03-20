@@ -15,7 +15,7 @@ The storefront events collect anonymized behavioral data from your shoppers as t
 
 >[!NOTE]
 >
->All events include the [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html) field, which includes the shopper's email address and ECID. By including this profile data in each event, you do not need a separate user account-specific import from Adobe Commerce.
+>All storefront events include the [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html) field, which includes the shopper's email address and ECID. By including this profile data in each event, you do not need a separate user account-specific import from Adobe Commerce.
 
 ### addToCart
 
@@ -368,13 +368,9 @@ The following table describes the data collected for this event.
 |`name`|The display name or human-readable name of the product|
 |`productImageUrl`|Main image URL of the product|
 
-## (Beta) Back office events
+## Back office events
 
->[!NOTE]
->
->For merchants already enrolled in our back office beta program, you have access to back office events. If you would like to participate in the back office beta program, contact [drios@adobe.com](mailto:drios@adobe.com).
-
-The back office events contain information about the status of an order, such as if an order was placed, cancelled, refunded, or shipped. The data these server-side events collect show a 360 view of the shopper order. This can help merchants better target or analyze the entire order status when developing marketing campaigns. For example, you can spot trends in certain product categories that perform well at different times of the year. Such as, winter clothes that sell better during colder months or certain product colors that shoppers are interested in over the years. In addition, order status data can help you calculate lifetime customer value by understanding a shopper's propensity to convert based on previous orders.
+The back office events contain information about the status of an order, such as if an order was placed, cancelled, refunded, shipped, or completed. The data these server-side events collect show a 360 view of the shopper order. This can help merchants better target or analyze the entire order status when developing marketing campaigns. For example, you can spot trends in certain product categories that perform well at different times of the year. Such as, winter clothes that sell better during colder months or certain product colors that shoppers are interested in over the years. In addition, order status data can help you calculate lifetime customer value by understanding a shopper's propensity to convert based on previous orders.
 
 ### orderPlaced
 
@@ -495,3 +491,48 @@ The following table describes the data collected for this event.
 |`order`|Contains information about the order|
 |`purchaseID`|Unique identifier assigned by the seller for this purchase or contract. There is no guarantee that the ID is unique|
 |`purchaseOrderNumber`|Unique identifier assigned by the purchaser for this purchase or contract|
+
+### orderCompleted
+
+|Description| XDM event name|
+|---|---|
+|Triggered when a shopper returns an item in an order.|`commerce.creditMemoIssued`|
+
+#### Data collected from orderCompleted
+
+The following table describes the data collected for this event.
+|Field|Description|
+|---|---|
+|`identityMap`|Defines a map containing a set of end user identities, keyed on either namespace integration code or the namespace ID of the identity.|
+|`Email`|Indicates if an email address is used as part of the identity|
+|`id`|The email address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
+|`eventType`|`commerce.backofficeShipmentCompleted`|
+|`productListItems`|An array of products in the order|
+|`name`|The display name or human-readable name of the product|
+|`SKU`|Stock Keeping Unit. The unique identifier for the product.|
+|`quantity`|The number of product units in the cart|
+|`priceTotal`|The total price for the product line item|
+|`discountAmount`|Indicates the discount amount applied|
+|`order`|Contains information about the order|
+|`purchaseID`|Unique identifier assigned by the seller for this purchase or contract. There is no guarantee that the ID is unique|
+|`purchaseOrderNumber`|Unique identifier assigned by the purchaser for this purchase or contract|
+|`taxAmount`|The tax amount paid by the buyer as part of the final payment.|
+|`createdDate`|The time and date when a new order is created in the commerce system. For example, `2022-10-15T20:20:39+00:00`|
+|`payments`|The list of payments for this order|
+|`paymentType`|The method of payment for this order. Enumerated, custom values allowed.|
+|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for this payment item|
+|`paymentAmount`|The value of the payment|
+|`shipping`|Shipping details for one or more products|
+|`shippingMethod`|The method of shipping chosen by the customer, such as standard delivery, expedited delivery, pick up in store, and so on|
+|`shippingAddress`|Physical shipping address|
+|`street1`|Primary street level information, apartment number, street number, and street name|
+|`shippingAmount`|The amount the customer had to pay for shipping.|
+|`personalEmail`|Specifies the personal email address|
+|`address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
+|`billingAddress`|Billing postal address|
+|`street1`|Primary street level information, apartment number, street number, and street name|
+|`street2`|Additional field for street level information|
+|`city`|The name of the city|
+|`state`|The name of the state. This is a free-form field.|
+|`postalCode`|The postal code of the location. Postal codes are not available for all countries. In some countries, this will only contain part of the postal code.|
+|`country`|The name of the government-administered territory. Other than `xdm:countryCode`, this is a free-form field that can have the country name in any language.|
