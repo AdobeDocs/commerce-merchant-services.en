@@ -367,6 +367,86 @@ The following table describes the data collected for this event.
 |`name`|The display name or human-readable name of the product|
 |`productImageUrl`|Main image URL of the product|
 
+## B2B events
+
+The B2B events contain [requisition list](https://experienceleague.adobe.com/docs/commerce-admin/b2b/requisition-lists/requisition-lists.html) information, such as if a requisition list was created, added to, deleted from, or if the list itself was deleted. You can use this information to...
+
+### createRequisitionList
+
+|Description| XDM event name|
+|---|---|
+|Triggered when a shopper creates a new requisition list.|`commerce.requisitionListOpens`|
+
+#### Data collected from createRequisitionList
+
+The following table describes the data collected for this event.
+
+|Field|Description|
+|---|---|
+|`requisitionListOpens`| A value of `1` indicates that a requisition list was opened|
+|`requisitionList`| Includes a unique `ID` for the requisition list, a `name` of the requisition list, and a `description` of the requisition list|
+
+### addToRequisitionList
+
+|Description| XDM event name|
+|---|---|
+|Triggered when a shopper adds an item to a requistion list.|`commerce.requisitionListAdds`|
+
+#### Data collected from addToRequisitionList
+
+The following table describes the data collected for this event.
+
+|Field|Description|
+|---|---|
+|`requisitionListAdds`| A value of `1` indicates that a product was added to the requisition list|
+|`requisitionList`| Includes a unique `ID` for the requisition list, a `name` of the requisition list, and a `description` of the requisition list|
+|`productListItems`|An array of products that were added to the requisition list|
+|`name`|The display name or human-readable name of the product|
+|`SKU`|Stock Keeping Unit. The unique identifier for the product.|
+|`quantity`|The number of product units added|
+|`priceTotal`|The total price for the product line item|
+|`discountAmount`|Indicates the discount amount applied|
+|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for this payment item|
+|`selectedOptions`|Field used for a configurable product. `attribute` identifies an attribute of the configurable product, such as `size` or `color` and `value` identifies the value of the attribute such as `small` or `black`.|
+
+### removeFromRequisitionList
+
+|Description| XDM event name|
+|---|---|
+|Triggered when a shopper removes an item from a requisition list.|`commerce.requisitionListRemovals`|
+
+#### Data collected from removeFromRequisitionList
+
+The following table describes the data collected for this event.
+
+|Field|Description|
+|---|---|
+|`requisitionListRemovals`| A value of `1` indicates that a product was removed from the requisition list|
+|`requisitionList`| Includes a unique `ID` for the requisition list, a `name` of the requisition list, and a `description` of the requisition list|
+|`productListItems`|An array of products that were added to the requisition list|
+|`name`|The display name or human-readable name of the product|
+|`SKU`|Stock Keeping Unit. The unique identifier for the product.|
+|`quantity`|The number of product units added|
+|`priceTotal`|The total price for the product line item|
+|`discountAmount`|Indicates the discount amount applied|
+|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for this payment item|
+|`selectedOptions`|Field used for a configurable product. `attribute` identifies an attribute of the configurable product, such as `size` or `color` and `value` identifies the value of the attribute such as `small` or `black`.|
+
+### deleteRequisitionList
+
+|Description| XDM event name|
+|---|---|
+|Triggered when a shopper deletes a requisition list.|`commerce.requisitionListDeletes`|
+
+#### Data collected from deleteRequisitionList
+
+The following table describes the data collected for this event.
+
+|Field|Description|
+|---|---|
+|`requisitionListDeletes`| A value of `1` indicates that a requisition list was deleted|
+|`requisitionList`| Includes a unique `ID` for the requisition list, a `name` of the requisition list, and a `description` of the requisition list|
+
 ## Back office events
 
 The back office events contain information about the status of an order, such as if an order was placed, cancelled, refunded, shipped, or completed. The data these server-side events collect show a 360 view of the shopper order. This can help merchants better target or analyze the entire order status when developing marketing campaigns. For example, you can spot trends in certain product categories that perform well at different times of the year. Such as, winter clothes that sell better during colder months or certain product colors that shoppers are interested in over the years. In addition, order status data can help you calculate lifetime customer value by understanding a shopper's propensity to convert based on previous orders.
