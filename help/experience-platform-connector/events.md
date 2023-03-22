@@ -369,7 +369,7 @@ The following table describes the data collected for this event.
 
 ## B2B events
 
-The B2B events contain [requisition list](https://experienceleague.adobe.com/docs/commerce-admin/b2b/requisition-lists/requisition-lists.html) information, such as if a requisition list was created, added to, deleted from, or if the list itself was deleted. You can use this information to...
+The B2B events contain [requisition list](https://experienceleague.adobe.com/docs/commerce-admin/b2b/requisition-lists/requisition-lists.html) information, such as if a requisition list was created, added to, or deleted from. You can use this information to...
 
 ### createRequisitionList
 
@@ -431,21 +431,6 @@ The following table describes the data collected for this event.
 |`discountAmount`|Indicates the discount amount applied|
 |`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for this payment item|
 |`selectedOptions`|Field used for a configurable product. `attribute` identifies an attribute of the configurable product, such as `size` or `color` and `value` identifies the value of the attribute such as `small` or `black`.|
-
-### deleteRequisitionList
-
-|Description| XDM event name|
-|---|---|
-|Triggered when a shopper deletes a requisition list.|`commerce.requisitionListDeletes`|
-
-#### Data collected from deleteRequisitionList
-
-The following table describes the data collected for this event.
-
-|Field|Description|
-|---|---|
-|`requisitionListDeletes`| A value of `1` indicates that a requisition list was deleted|
-|`requisitionList`| Includes a unique `ID` for the requisition list, a `name` of the requisition list, and a `description` of the requisition list|
 
 ## Back office events
 
