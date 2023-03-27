@@ -13,10 +13,8 @@ These release notes describe the initial release of [!DNL Store Fulfillment Serv
 
 ## v1.3.0
 
-Release date: 2023-02-27
-Compatible with Adobe Commerce (EE): 2.4.x
-Compatible with Adobe Commerce (ECE): 2.4.x
-Stability: General Availability
+*February 27, 2023*
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"}<br>Adobe Commerce versions 2.4.0 - 2.4.5
 
 This release contains the following update:
 
@@ -24,10 +22,8 @@ This release contains the following update:
 
 ## v1.2.0
 
-Release date: 2022-09-27
-Compatible with Adobe Commerce (EE): 2.4.x
-Compatible with Adobe Commerce (ECE): 2.4.x
-Stability: General Availability
+*September 27, 2022*
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"}<br>Adobe Commerce versions 2.4.0 - 2.4.5
 
 This release contains the following update:
 
@@ -36,18 +32,18 @@ This release contains the following update:
 
 ## v1.1.0
 
-Release date: 2022-07-15
-Compatible with Adobe Commerce (EE): 2.4.0 - 2.4.4
-Compatible with Adobe Commerce (ECE): 2.4.0 - 2.4.4
+*July 15, 2022*
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"}<br>Adobe Commerce versions 2.4.0 - 2.4.4
+
 Stability: General Availability
 
 ![New](../assets/fix.svg)<!-- WMTP-731 --> Simplified the [Check-in experience configuration](check-in-experience-setup.md) for the Store Assist app by adding default car make and model selections. In the previous version, merchants had to manually configure the car make and model selections.
 
 ## v1.0.0
 
-Release date: 2022-03-04
-Compatible with Adobe Commerce (EE): 2.4.0 - 2.4.4
-Compatible with Adobe Commerce (ECE): 2.4.0 - 2.4.4
+*March 4, 2022*
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"}<br>Adobe Commerce versions 2.4.0 - 2.4.4
+
 Stability: General Availability
 
 ## Store Assist app
