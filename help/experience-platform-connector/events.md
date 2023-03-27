@@ -369,7 +369,7 @@ The following table describes the data collected for this event.
 
 ## B2B events
 
-The B2B events contain [requisition list](https://experienceleague.adobe.com/docs/commerce-admin/b2b/requisition-lists/requisition-lists.html) information, such as if a requisition list was created, added to, or deleted from. You can use this information to...
+The B2B events contain [requisition list](https://experienceleague.adobe.com/docs/commerce-admin/b2b/requisition-lists/requisition-lists.html) information, such as if a requisition list was created, added to, or deleted from. By tracking events specific to requisition lists, you can see which items your customers purchase frequently and target campaigns based on that data.
 
 ### createRequisitionList
 
@@ -444,7 +444,7 @@ The back office events contain information about the status of an order, such as
 
 |Description| XDM event name|
 |---|---|
-|Triggered when a shopper places an order.|`commerce.orderPlaced`|
+|Triggered when a shopper places an order.|`commerce.backofficeOrderPlaced`|
 
 #### Data collected from orderPlaced
 
@@ -453,7 +453,7 @@ The following table describes the data collected for this event.
 |Field|Description|
 |---|---|
 |`address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
-|`eventType`|`commerce.orderPlaced`|
+|`eventType`|`commerce.backofficeOrderPlaced`|
 |`productListItems`|An array of products in the order|
 |`name`|The display name or human-readable name of the product|
 |`SKU`|Stock Keeping Unit. The unique identifier for the product.|
@@ -467,6 +467,8 @@ The following table describes the data collected for this event.
 |`paymentType`|The method of payment for this order. Enumerated, custom values allowed.|
 |`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for this payment item|
 |`paymentAmount`|The value of the payment|
+|`taxAmount`|The tax amount paid by the buyer as part of the final payment.|
+|`createdDate`|The time and date when a new order is created in the commerce system. For example, `2022-10-15T20:20:39+00:00`|
 |`shipping`|Shipping details for one or more products|
 |`shippingMethod`|The method of shipping chosen by the customer, such as standard delivery, expedited delivery, pick up in store, and so on|
 |`shippingAddress`|Physical shipping address|
@@ -480,19 +482,19 @@ The following table describes the data collected for this event.
 |`postalCode`|The postal code of the location. Postal codes are not available for all countries. In some countries, this will only contain part of the postal code.|
 |`country`|The name of the government-administered territory. Other than `xdm:countryCode`, this is a free-form field that can have the country name in any language.|
 
-### orderShipped
+### orderItemsShipped
 
 |Description| XDM event name|
 |---|---|
-|Triggered when an order is shipped.|`commerce.orderLineItemShipped`|
+|Triggered when an order is shipped.|`commerce.backofficeordeItemsShipped`|
 
-#### Data collected from orderShipped
+#### Data collected from orderItemsShipped
 
 The following table describes the data collected for this event.
 |Field|Description|
 |---|---|
 |`address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
-|`eventType`|`commerce.orderLineItemShipped`|
+|`eventType`|`commerce.backofficeordeItemsShipped`|
 |`productListItems`|An array of products in the order|
 |`name`|The display name or human-readable name of the product|
 |`SKU`|Stock Keeping Unit. The unique identifier for the product.|
@@ -506,6 +508,9 @@ The following table describes the data collected for this event.
 |`paymentType`|The method of payment for this order. Enumerated, custom values allowed.|
 |`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for this payment item|
 |`paymentAmount`|The value of the payment|
+|`trackingNumber`|The tracking number provided by the shipping carrier for a order item shipment|
+|`trackingURL`|The URL to track the shipping status of an order item|
+|`lastUpdatedDate`|The time when a particular order record is last updated in the commerce system|
 |`shipping`|Shipping details for one or more products|
 |`shippingMethod`|The method of shipping chosen by the customer, such as standard delivery, expedited delivery, pick up in store, and so on|
 |`shippingAddress`|Physical shipping address|
@@ -523,7 +528,7 @@ The following table describes the data collected for this event.
 
 |Description| XDM event name|
 |---|---|
-|Triggered when a shopper cancels an order.|`commerce.orderCancelled`|
+|Triggered when a shopper cancels an order.|`commerce.backofficeOrderCancelled`|
 
 #### Data collected from orderCancelled
 
@@ -531,7 +536,7 @@ The following table describes the data collected for this event.
 |Field|Description|
 |---|---|
 |`address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
-|`eventType`|`commerce.orderCancelled`|
+|`eventType`|`commerce.backofficeOrderCancelled`|
 |`productListItems`|An array of products in the order|
 |`name`|The display name or human-readable name of the product|
 |`SKU`|Stock Keeping Unit. The unique identifier for the product.|
@@ -541,14 +546,16 @@ The following table describes the data collected for this event.
 |`order`|Contains information about the order|
 |`purchaseID`|Unique identifier assigned by the seller for this purchase or contract. There is no guarantee that the ID is unique|
 |`purchaseOrderNumber`|Unique identifier assigned by the purchaser for this purchase or contract|
+|`cancelDate`|The date and time when a shopper cancels an order|
+|`lastUpdatedDate`|The time when a particular order record is last updated in the commerce system|
 
-### orderRefunded
+### creditMemoIssued
 
 |Description| XDM event name|
 |---|---|
-|Triggered when a shopper returns an item in an order.|`commerce.creditMemoIssued`|
+|Triggered when a shopper returns an item in an order.|`commerce.creditMemoIssued"`|
 
-#### Data collected from orderRefunded
+#### Data collected from creditMemoIssued
 
 The following table describes the data collected for this event.
 |Field|Description|
@@ -559,20 +566,21 @@ The following table describes the data collected for this event.
 |`order`|Contains information about the order|
 |`purchaseID`|Unique identifier assigned by the seller for this purchase or contract. There is no guarantee that the ID is unique|
 |`purchaseOrderNumber`|Unique identifier assigned by the purchaser for this purchase or contract|
+|`lastUpdatedDate`|The time when a particular order record is last updated in the commerce system|
 
-### orderCompleted
+### orderShipmentCompleted
 
 |Description| XDM event name|
 |---|---|
-|Triggered when a shopper returns an item in an order.|`commerce.creditMemoIssued`|
+|Triggered when a shopper returns an item in an order.|`commerce.backofficeOrderShipmentCompleted`|
 
-#### Data collected from orderCompleted
+#### Data collected from orderShipmentCompleted
 
 The following table describes the data collected for this event.
 |Field|Description|
 |---|---|
 |`address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
-|`eventType`|`commerce.backofficeShipmentCompleted`|
+|`eventType`|`commerce.backofficeOrderShipmentCompleted`|
 |`productListItems`|An array of products in the order|
 |`name`|The display name or human-readable name of the product|
 |`SKU`|Stock Keeping Unit. The unique identifier for the product.|
