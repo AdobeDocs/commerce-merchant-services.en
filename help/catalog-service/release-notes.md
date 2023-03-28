@@ -11,7 +11,32 @@ These release notes describe the latest versions of [!DNL Catalog Service] and i
 ![Fix](../assets/fix.svg) Fixes and improvements
 ![Bug](../assets/bug.svg) Known issues
 
-## Curret major version
+## Current major version
+
+### V1.6 Release
+
+_March 28, 2023_
+
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.4 and newer
+
+![New](../assets/new.svg) Added swatches to the [`products`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/) query.
+![New](../assets/new.svg) Added the ability to get `entityId` using [API Mesh](mesh.md).
+
+#### Known limitations
+
+These features are not yet supported:
+
+* Bundle products with fixed price
+* No updates are received when variants are deleted from the catalog.
+* Maximum size for dynamic attributes payload is 9 MB.
+* Group product price. Can be calculated with simple product prices.
+* In an image array, only the first image contains roles.
+
+The following limitations can be solved by using the API Mesh and the Core GraphQL API:
+
+* Minimum Advertised Price
+* [Tier pricing](mesh.md)
+* Downloadable products and gift cards
 
 ### V1.5 Release
 
@@ -21,24 +46,6 @@ _March 6, 2023_
 
 ![New](../assets/new.svg) Added [`categories`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/) GraphQL functionality.
 ![Fix](../assets/fix.svg) Improved performance and API scalability.
-
-#### Known limitations
-
-These features are not yet supported:
-
-* Bundle products with fixed price
-* No updates are received when variants are deleted from the catalog.
-* Maximum size for dynamic attributes payload is 9MB.
-* Group product price. Can be calculated with simple product prices.
-* In an image array, only the first image contains roles.
-* Color swatches
-* Loading the Product Detail Page through the product URL.
-
-The following limitations can be solved by using the Core GraphQL API:
-
-* Minimum Advertised Price
-* Tier pricing
-* Downloadable products and gift cards
 
 ### V1.4 Release
 
@@ -67,7 +74,7 @@ _November 18, 2022_
 [!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.x and newer
 
 ![New](../assets/new.svg) Catalog Service now supports Adobe's [API Mesh](https://developer.adobe.com/graphql-mesh-gateway/).
-![Fix](../assets/fix.svg) We have improved API scalability and overall performance.
+![Fix](../assets/fix.svg) Improved API scalability and overall performance.
 
 ### V1.0 Release
 
