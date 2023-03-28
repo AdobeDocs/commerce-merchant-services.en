@@ -384,7 +384,7 @@ The following table describes the data collected for this event.
 |Field|Description|
 |---|---|
 |`requisitionListOpens`| A value of `1` indicates that a requisition list was opened|
-|`requisitionList`| Includes a unique `ID` for the requisition list, a `name` of the requisition list, and a `description` of the requisition list|
+|`requisitionList`| Includes a unique `ID` , `name`, and `description` for the requisition list|
 
 ### addToRequisitionList
 
@@ -399,7 +399,7 @@ The following table describes the data collected for this event.
 |Field|Description|
 |---|---|
 |`requisitionListAdds`| A value of `1` indicates that a product was added to the requisition list|
-|`requisitionList`| Includes a unique `ID` for the requisition list, a `name` of the requisition list, and a `description` of the requisition list|
+|`requisitionList`| Includes a unique `ID`,  `name`,  and `description` for the requisition list|
 |`productListItems`|An array of products that were added to the requisition list|
 |`name`|The display name or human-readable name of the product|
 |`SKU`|Stock Keeping Unit. The unique identifier for the product.|
@@ -422,7 +422,7 @@ The following table describes the data collected for this event.
 |Field|Description|
 |---|---|
 |`requisitionListRemovals`| A value of `1` indicates that a product was removed from the requisition list|
-|`requisitionList`| Includes a unique `ID` for the requisition list, a `name` of the requisition list, and a `description` of the requisition list|
+|`requisitionList`| Includes a unique `ID`,  and a `description` for the requisition list|
 |`productListItems`|An array of products that were added to the requisition list|
 |`name`|The display name or human-readable name of the product|
 |`SKU`|Stock Keeping Unit. The unique identifier for the product.|
@@ -434,11 +434,11 @@ The following table describes the data collected for this event.
 
 ## Back office events
 
-The back office events contain information about the status of an order, such as if an order was placed, cancelled, refunded, shipped, or completed. The data these server-side events collect show a 360 view of the shopper order. This can help merchants better target or analyze the entire order status when developing marketing campaigns. For example, you can spot trends in certain product categories that perform well at different times of the year. Such as, winter clothes that sell better during colder months or certain product colors that shoppers are interested in over the years. In addition, order status data can help you calculate lifetime customer value by understanding a shopper's propensity to convert based on previous orders.
+The back office events contain information about the status of an order, such as if an order was placed, cancelled, refunded, shipped, or completed. The data that these server-side events collect shows a 360 view of the shopper order. This view helps merchants better target or analyze the entire order status when developing marketing campaigns. For example, you can spot trends in certain product categories that perform well at different times of the year. Such as, winter clothes that sell better during colder months or certain product colors that shoppers are interested in over the years. In addition, order status data can help you calculate lifetime customer value by understanding a shopper's propensity to convert based on previous orders.
 
 >[!NOTE]
 >
->All back office events include the [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html) field, which includes the shopper's email address. By including this profile data in each event, you do not need a separate user account import from Adobe Commerce.
+>All back office events include the [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html) field, which provides the shopper's email address. By including this profile data in each event, you do not need a separate user account import from Adobe Commerce.
 
 ### orderPlaced
 
@@ -467,7 +467,7 @@ The following table describes the data collected for this event.
 |`paymentType`|The method of payment for this order. Enumerated, custom values allowed.|
 |`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for this payment item|
 |`paymentAmount`|The value of the payment|
-|`taxAmount`|The tax amount paid by the buyer as part of the final payment.|
+|`taxAmount`|The tax amount paid by the buyer as part of the final payment|
 |`createdDate`|The time and date when a new order is created in the commerce system. For example, `2022-10-15T20:20:39+00:00`|
 |`shipping`|Shipping details for one or more products|
 |`shippingMethod`|The method of shipping chosen by the customer, such as standard delivery, expedited delivery, pick up in store, and so on|
@@ -508,7 +508,7 @@ The following table describes the data collected for this event.
 |`paymentType`|The method of payment for this order. Enumerated, custom values allowed.|
 |`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for this payment item|
 |`paymentAmount`|The value of the payment|
-|`trackingNumber`|The tracking number provided by the shipping carrier for a order item shipment|
+|`trackingNumber`|The tracking number provided by the shipping carrier for an order item shipment|
 |`trackingURL`|The URL to track the shipping status of an order item|
 |`lastUpdatedDate`|The time when a particular order record is last updated in the commerce system|
 |`shipping`|Shipping details for one or more products|
@@ -608,5 +608,5 @@ The following table describes the data collected for this event.
 |`street2`|Additional field for street level information|
 |`city`|The name of the city|
 |`state`|The name of the state. This is a free-form field.|
-|`postalCode`|The postal code of the location. Postal codes are not available for all countries. In some countries, this will only contain part of the postal code.|
+|`postalCode`|The postal code of the location. Postal codes are not available for all countries. In some countries, this data contains only part of the postal code.|
 |`country`|The name of the government-administered territory. Other than `xdm:countryCode`, this is a free-form field that can have the country name in any language.|
