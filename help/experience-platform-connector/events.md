@@ -369,7 +369,9 @@ The following table describes the data collected for this event.
 
 ## B2B events
 
-The B2B events contain [requisition list](https://experienceleague.adobe.com/docs/commerce-admin/b2b/requisition-lists/requisition-lists.html) information, such as if a requisition list was created, added to, or deleted from. By tracking events specific to requisition lists, you can see which items your customers purchase frequently and target campaigns based on that data.
+![B2B for Adobe Commerce](../assets/b2b.svg) For B2B merchants, you must [install](install.md#install-the-b2b-extension) the `experience-platform-connector-b2b` extension to enable these events.
+
+The B2B events contain [requisition list](https://experienceleague.adobe.com/docs/commerce-admin/b2b/requisition-lists/requisition-lists.html) information, such as if a requisition list was created, added to, or deleted from. By tracking events specific to requisition lists, you can see which products your customers purchase frequently and create campaigns based on that data.
 
 ### createRequisitionList
 
@@ -390,7 +392,11 @@ The following table describes the data collected for this event.
 
 |Description| XDM event name|
 |---|---|
-|Triggered when a shopper adds an item to a requistion list.|`commerce.requisitionListAdds`|
+|Triggered when a shopper adds a product to an existing requistion list or while creating a new list.|`commerce.requisitionListAdds`|
+
+>[!NOTE]
+>
+>`addToRequisitionList` is not supported on category view pages or for configurable products. It is supported on product view pages and for simple products.
 
 #### Data collected from addToRequisitionList
 
@@ -407,13 +413,12 @@ The following table describes the data collected for this event.
 |`priceTotal`|The total price for the product line item|
 |`discountAmount`|Indicates the discount amount applied|
 |`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for this payment item|
-|`selectedOptions`|Field used for a configurable product. `attribute` identifies an attribute of the configurable product, such as `size` or `color` and `value` identifies the value of the attribute such as `small` or `black`.|
 
 ### removeFromRequisitionList
 
 |Description| XDM event name|
 |---|---|
-|Triggered when a shopper removes an item from a requisition list.|`commerce.requisitionListRemovals`|
+|Triggered when a shopper removes a product from a requisition list.|`commerce.requisitionListRemovals`|
 
 #### Data collected from removeFromRequisitionList
 
@@ -486,7 +491,7 @@ The following table describes the data collected for this event.
 
 |Description| XDM event name|
 |---|---|
-|Triggered when an order is shipped.|`commerce.backofficeordeItemsShipped`|
+|Triggered when an order is shipped.|`commerce.backofficeOrderItemsShipped`|
 
 #### Data collected from orderItemsShipped
 
@@ -494,7 +499,7 @@ The following table describes the data collected for this event.
 |Field|Description|
 |---|---|
 |`address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
-|`eventType`|`commerce.backofficeordeItemsShipped`|
+|`eventType`|`commerce.backofficeOrderItemsShipped`|
 |`productListItems`|An array of products in the order|
 |`name`|The display name or human-readable name of the product|
 |`SKU`|Stock Keeping Unit. The unique identifier for the product.|
@@ -553,7 +558,7 @@ The following table describes the data collected for this event.
 
 |Description| XDM event name|
 |---|---|
-|Triggered when a shopper returns an item in an order.|`commerce.creditMemoIssued"`|
+|Triggered when a shopper returns an item in an order.|`commerce.backofficeCreditMemoIssued`|
 
 #### Data collected from creditMemoIssued
 
@@ -561,7 +566,7 @@ The following table describes the data collected for this event.
 |Field|Description|
 |---|---|
 |`address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
-|`eventType`|`commerce.creditMemoIssued`|
+|`eventType`|`commerce.backofficeCreditMemoIssued`|
 |`productListItems`|An array of products in the order|
 |`order`|Contains information about the order|
 |`purchaseID`|Unique identifier assigned by the seller for this purchase or contract. There is no guarantee that the ID is unique|
