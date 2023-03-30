@@ -3,7 +3,7 @@ title: "[!DNL Quick Checkout] prerequisites"
 description: "Verify that your system meets the requirements necessary to use the [!DNL Quick Checkout] for Adobe Commerce extension."
 exl-id: fa61aa73-a2b6-4c69-ab42-cede74c15caa
 ---
-# [!DNL Quick Checkout] prerequisites
+# [!DNL Quick Checkout] Prerequisites
 
 The [!DNL Quick Checkout] is compatible with both [!DNL Magento Open Source] and Adobe Commerce. See [Lifecycle Policy](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html){target=_blank} for more information about supported versions.
 

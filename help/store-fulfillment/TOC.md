@@ -9,9 +9,9 @@ index: yes
 
 - [Guide overview](guide-overview.md)
 - [Introduction to [!DNL Store Fulfillment]](introduction.md)
-- [Store Assist Workflows](store-assist-modules.md)
+- [Store Assist workflows](store-assist-modules.md)
 - [Requirements](solution-requirements.md)
-- [Release Notes](release-notes.md)
+- [Release notes](release-notes.md)
 - Onboard Store Fulfillment {#onboarding}
   - [Onboarding overview](onboard.md)
   - [Install the extension](install.md)
@@ -20,11 +20,11 @@ index: yes
 - [Configuration Overview](service-config-settings-overview.md)
 - Store Configuration {#store-configuration}
   - [General configuration](enable-general.md)
-  - [Sales emails](sales-emails.md)
-  - [Merchant Store (sources)](merchant-store-configuration.md)
-  - [Product Stock Management](product-stock.md)
-  - [Inventory Management source transfer](inventory-stock-transfer.md)
-  - [Multiple Website/Scope](multi-site-and-scope-config.md)
+  - [Sales email templates](sales-emails.md)
+  - [Merchant store (sources)](merchant-store-configuration.md)
+  - [Product stock management](product-stock.md)
+  - [Inventory management source transfer](inventory-stock-transfer.md)
+  - [Multiple website/scope](multi-site-and-scope-config.md)
 - System Configuration {#system-configuration}
   - [Background processes](background-processes.md)
   - [Store location and mapping setup](store-location-map-provider-setup.md)
@@ -32,4 +32,3 @@ index: yes
   - [User setup](user-setup.md)
   - [App setup](app-setup.md)
 
-  

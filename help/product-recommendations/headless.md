@@ -36,7 +36,7 @@ You can perform both of these actions using the available SDKs as described in t
     |`impression-render` | recommendation-unit|
     |`view` | recommendation-unit|
     |`rec-click` | recommendation-unit|
-    |`rec-add-to-cart-click` | recommendation-unit (if an add to cart button is present in the recommendations template)|
+    |`rec-add-to-cart-click` | recommendation-unit (if an "Add to cart" button is present in the recommendations template)|
 
 1. When the events are fired, use the [Adobe Commerce Storefront Event Collector](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/) to handle the events and send them to Adobe Sensei.
 

@@ -15,22 +15,20 @@ The onboarding process for [!DNL Product Recommendations] requires access to the
 
 ## Requirements
 
-- Adobe Commerce 2.3.x, 2.4.x
-- PHP 7.3 / 7.4 / 8.1
-- Composer
+- Adobe Commerce 2.4.4+
+- PHP 8.1, 8.2
+- Composer 2
 
 ### Supported platforms
 
-- Adobe Commerce on prem (EE) : 2.4.x
-- Adobe Commerce on Cloud (ECE) : 2.4.x
+- Adobe Commerce on premise (EE) : 2.4.4+
+- Adobe Commerce on Cloud (ECE) : 2.4.4+
 
 ### Page Builder support
 
 [!DNL Product Recommendations] can be added to a page as a Page Builder content type. To add Page Builder support to Product Recommendations, refer to [Install and Configure](install-configure.md).
 
-   >[!NOTE]
-   >
-   >[!DNL Page Builder] recommendation units can be created only for the default store view.
+See [[!DNL Page Builder] Integration](page-builder.md) for instructions on how to add [!DNL Product Recommendations] into [!DNL Page Builder] content.
 
 ### B2B support {#b2bsupport}
 

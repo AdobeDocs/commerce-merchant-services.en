@@ -14,7 +14,7 @@ Deploying [!DNL Product Recommendations] to your storefront and Admin requires t
 
 ## Install [!DNL Product Recommendations] {#install}
 
-Because the [!DNL Product Recommendations] module is a stand-alone metapackage, updates are released more frequently than Adobe Commerce. To make sure you are up-to-date with the latest bug fixes and features, refer to the [release notes](release-notes.md).
+Because the [!DNL Product Recommendations] module is a stand-alone metapackage, updates are released more frequently than Adobe Commerce. To make sure you are up to date with the latest bug fixes and features, refer to the [release notes](release-notes.md).
 
 Install the `magento/product-recommendations` module with Composer:
 
@@ -24,7 +24,7 @@ composer require magento/product-recommendations
 
 ### Add Page Builder support {#pbsupport}
 
-[!DNL Product Recommendations] for Page Builder are an optional module and is installed separately. To use [!DNL Product Recommendations] with Page Builder, install the module by running the following command:
+[!DNL Product Recommendations] for Page Builder is an optional module and is installed separately. To use [!DNL Product Recommendations] with Page Builder, install the module by running the following command:
 
 ```bash
 composer require magento/module-page-builder-product-recommendations
@@ -32,9 +32,7 @@ composer require magento/module-page-builder-product-recommendations
 
 By enabling [!DNL Product Recommendations] in Page Builder, you can add an existing, active [recommendation unit](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) to any content created in Page Builder, such as pages, blocks, and dynamic blocks.
 
-   >[!NOTE]
-   >
-   >[!DNL Page Builder] recommendation units can be created only for the default store view.
+See [Using [!DNL Product Recommendations] with Page Builder Content](page-builder.md) for further instructions.
 
 ### Add Visual similarity recommendation type {#vissimsupport}
 
@@ -94,7 +92,7 @@ composer update --with-dependencies magento/product-recommendations magento/modu
 
 >[!NOTE]
 >
-> In versions 3.x.x of Product Recommendations, you only needed a single API key. In versions 4.x.x and higher, you must provide Production public and private API keys as well as Sandbox public and private API keys. If you do not provide both pairs of API keys, you will not be able to access the Product Recommendations feature in the Admin. Data collection, however, will continue on your storefront and existing recommendations will continue to be shown to your shoppers.
+> In versions 3.x.x of Product Recommendations, you only needed a single API key. In versions 4.x.x and higher, you must provide Production public and private API keys as well as Sandbox public and private API keys. If you do not provide both pairs of API keys, you cannot access the Product Recommendations feature in the Admin. Data collection, however, will continue on your storefront and existing recommendations will continue to be shown to your shoppers.
 
 ## Uninstall [!DNL Product Recommendations] {#uninstall}
 

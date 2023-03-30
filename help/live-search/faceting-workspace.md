@@ -22,8 +22,6 @@ If your Adobe Commerce installation includes multiple store views, set **Scope**
    * Pinned
    * Dynamic
 
-   ![Faceting workspace](assets/facets-filter-by.png)
-
 ## Add a facet
 
 1. Click **Add facets**. 
@@ -34,7 +32,6 @@ If your Adobe Commerce installation includes multiple store views, set **Scope**
 | Column | Description |
 |--- |--- |
 | (first column) | Lists pinned and dynamic facets by the [label](facets-type.md) that is visible to the shopper. |
-| Select type | The [selection method](facets-type.md) that is assigned to the corresponding product attribute. The `single select` type is used for all [!DNL Commerce] storefronts. For headless implementations, `multi-select` type can be assigned with a logical operator (`or` or `and`) to determine the set of products returned. |
 | Sort type | The [sorting order](facets-type.md) of facet values. Facets are sorted alphabetically for all [!DNL Commerce] storefronts. For [headless] implementations, facets can be sorted either alphabetically or by count. Options: Alphabetical, Count (headless only) |
 | Max value | The number of facet values that are available in the storefront as filters, with a maximum of 10. |
 

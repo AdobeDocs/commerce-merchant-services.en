@@ -59,6 +59,10 @@ The pin changes color when clicked and is used to move the facet to either the *
 
 ## Move pinned facet
 
+>[!NOTE]
+>
+>The ordering of pinned facets is only supported in headless implementations. If ordered facets are needed, use the [!DNL Live Search] PLP widget.
+
 The order of pinned facets can be changed by moving the row to a different position. Pinned facets have a *Move* icon (![Move selector](assets/btn-move.png)) at the beginning of the row. Unlike pinned facets, dynamic facets cannot be moved.
 
 1. Find the facet in the *Pinned Facets* section of the list.

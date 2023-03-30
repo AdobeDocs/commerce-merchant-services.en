@@ -18,7 +18,7 @@ When you activate the recommendation unit, Adobe Commerce starts to [collect dat
 
    >[!NOTE]
    >
-   > Page Builder recommendation units can be created only for the default store view. To learn more about creating product recommendations with Page Builder, see [Add Content - Product Recommendations](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html).
+   > Page Builder recommendation units must be created in the default store view, but then can be used anywhere. To learn more about creating product recommendations with Page Builder, see [Add Content - Product Recommendations](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html).
 
 1. Click **Create Recommendation**.
 

@@ -1,9 +1,9 @@
 ---
-title: Test and validate
+title: Test and Validate
 description: Testing and validation help ensure that [!DNL Payment Services] functions work as expected and provide the best payment options for your customers
 exl-id: 95b4615e-73b0-41e8-83e2-e65a0b22f10f
 ---
-# Test and validate
+# Test and Validate
 
 Before you expose [!DNL Payment Services] for [!DNL Adobe Commerce] and [!DNL Magento Open Source] to your shoppers, it is a good idea to test in your sandbox environment _and_ in production. Testing and validation help ensure that [!DNL Payment Services] functions work as expected and provide the best payment options for your store and customers.
 
@@ -22,7 +22,7 @@ When testing and validating your sandbox you must use fake credit card numbers, 
 
 Use PayPal's Credit Card Generator to [generate random credit card information](https://www.paypal.com/us/smarthelp/article/where-can-i-find-test-credit-card-numbers-ts2157) for testing.
 
-To test Apple Pay in sandbox mode, you must have an [Apple Developer Account](https://developer.apple.com/programs/enroll/), complete with fake credit card and billing information.
+To test Apple Pay in sandbox mode, you must have an [Apple sandbox tester account](https://developer.apple.com/apple-pay/sandbox-testing/#create-a-sandbox-tester-account), complete with fake credit card and billing information.
 
 >[!NOTE]
 >

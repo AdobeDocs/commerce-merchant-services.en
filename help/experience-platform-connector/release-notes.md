@@ -42,6 +42,12 @@ _March 30, 2023_
 * ![New](../assets/new.svg) - Bundled the `commerce-data-export` and `saas-export` dependencies with the `experience-platform-connector` extension. Previously, you had to install these dependencies separately. These dependencies, along with merchant configuration, enables server side processing of [back office events](events.md#back-office-events).
 * ![New](../assets/new.svg) - Added new back office event called [`orderShipmentCompleted`](events.md#ordershipmentcompleted).
 
+## 2.1.1
+
+_February 28, 2023_
+
+* ![New](../assets/new.svg) - Added support for PHP 8.2 for all Experience Platform connector modules
+
 ## 2.1.0
 
 _January 17, 2023_

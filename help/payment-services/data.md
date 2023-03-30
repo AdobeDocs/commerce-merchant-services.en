@@ -1,11 +1,11 @@
 ---
-title: Available data
+title: Available Data
 description: Use financial reporting data to reconcile reporting with non-Commerce systems.
 role: User
 level: Intermediate
 exl-id: dbf41ce9-01f9-45d0-b651-e4c499e83822
 ---
-# Available data
+# Available Data
 
 Some order and payouts data is available to you so that you can coordinate Adobe Commerce financial reporting across external systems.
 

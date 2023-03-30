@@ -1,9 +1,9 @@
 ---
-title: Collect data
+title: Collect Data
 description: Learn how events collect data for product recommendations.
 exl-id: b827d88c-327f-4986-8239-8f1921d8383c
 ---
-# Collect data
+# Collect Data
 
 When you install and configure SaaS-based Adobe Commerce features such as [Product Recommendations](install-configure.md) or [Live Search](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html), the modules deploy behavioral data collection to your storefront. This mechanism collects anonymized behavioral data from your shoppers and powers product recommendations. For example, the `view` event is used to compute the `Viewed this, viewed that` recommendation type, and the `place-order` event is used to compute the `Bought this, bought that` recommendation type.
 
@@ -13,9 +13,9 @@ When you install and configure SaaS-based Adobe Commerce features such as [Produ
 
 The following events are not specific to Product Recommendations, but are required to return results:
 
--  `view`
--  `add-to-cart`
--  `place-order`
+- `view`
+- `add-to-cart`
+- `place-order`
 
 The [Adobe Commerce Storefront Event Collector](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/#quick-start) lists all the events deployed to your storefront. From that list, however, there is a subset of events specific to Product Recommendations. These events collect data when shoppers interact with recommendation units on the storefront and power the metrics used to help you analyze how well your recommendations are performing.
 

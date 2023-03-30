@@ -9,9 +9,8 @@ This guide is intended for administrators of Adobe [!DNL Commerce]. It includes 
 
 [!DNL Catalog Service] has two types of users:
 
-*  Adobe [!DNL Commerce] system administrators install and maintain the service. [!DNL Catalog Service] does not have an Admin UI or features for standard Admin users.
-
-*  Integrators build GraphQL queries and integrate them on a storefront that uses a frontend client.
+* Adobe [!DNL Commerce] system administrators install and maintain the service. [!DNL Catalog Service] does not have an Admin UI or features for standard Admin users.
+* Integrators build GraphQL queries and integrate them on a storefront that uses a frontend client.
 
 ## Additional documentation
 

@@ -11,36 +11,40 @@ These release notes describe the initial release of [!DNL Store Fulfillment Serv
 ![Fixed issue](../assets/fix.svg) Fixes and improvements
 ![Known issue](../assets/bug.svg) Known issues
 
+## v1.3.0
+
+*February 27, 2023*
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"}<br>Adobe Commerce versions 2.4.0 - 2.4.5
+
+This release contains the following update:
+
+![New](../assets/fix.svg)<!-- WMTP-795 --> Added the capability to disable the Store Fulfillment solution for a specific site by changing the default scope for the System Configuration setting from website to global.
+
 ## v1.2.0
 
-Compatible with the following Commerce versions:
+*September 27, 2022*
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"}<br>Adobe Commerce versions 2.4.0 - 2.4.5
 
-* Adobe Commerce (EE): 2.4.x
-* Adobe Commerce for Cloud (ECE): 2.4.x
-* Stability: Stable
-
-This release contains the following updates:
+This release contains the following update:
 
 ![New](../assets/fix.svg) [!DNL Store Fulfillment] is now [compatible with [!DNL Adobe Commerce] 2.4.0 to 2.4.5](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 
 
 ## v1.1.0
 
-Compatible with the following Commerce versions:
+*July 15, 2022*
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"}<br>Adobe Commerce versions 2.4.0 - 2.4.4
 
-* Adobe Commerce (EE): 2.4.0 - 2.4.4
-* Adobe Commerce for Cloud (ECE): 2.4.0 - 2.4.4
-* Stability: Stable
+Stability: General Availability
 
 ![New](../assets/fix.svg)<!-- WMTP-731 --> Simplified the [Check-in experience configuration](check-in-experience-setup.md) for the Store Assist app by adding default car make and model selections. In the previous version, merchants had to manually configure the car make and model selections.
 
 ## v1.0.0
 
-Initial release, compatible with the following Commerce versions:
+*March 4, 2022*
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"}<br>Adobe Commerce versions 2.4.0 - 2.4.4
 
-* Adobe Commerce (EE): 2.4.x
-* Adobe Commerce for Cloud (ECE): 2.4.x
-* Stability: Stable
+Stability: General Availability
 
 ## Store Assist app
 
