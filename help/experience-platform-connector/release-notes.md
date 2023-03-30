@@ -23,10 +23,9 @@ These release notes describe feature changes and fixes related to extensions use
 
 +++Supported service updates
 
-_March 31, 2023_
+_March 30, 2023_
 
 * ![New](../assets/new.svg) - Added a new extension called `data-services-b2b` that includes [requisition list events](events.md#b2b-events) for B2B merchants
-* ![New](../assets/new.svg) - Added email address to account context on every page
 * ![New](../assets/new.svg) - Added the `uniqueIdentifier` field to [search](events.md#search-events) events. This new field allows merchants to cross reference which search requests correspond to which search responses.
 
 _October 12, 2022_
@@ -38,7 +37,7 @@ _October 12, 2022_
 
 ## 2.2.0
 
-_March 31, 2023_
+_March 30, 2023_
 
 * ![New](../assets/new.svg) - Bundled the `commerce-data-export` and `saas-export` dependencies with the `experience-platform-connector` extension. Previously, you had to install these dependencies separately. These dependencies, along with merchant configuration, enables server side processing of [back office events](events.md#back-office-events).
 * ![New](../assets/new.svg) - Added new back office event called [`orderShipmentCompleted`](events.md#ordershipmentcompleted).
