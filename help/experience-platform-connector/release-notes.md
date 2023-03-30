@@ -15,7 +15,7 @@ For feature changes and fixes related to extensions used by the Experience Platf
 
 See [Upcoming Releases](https://experienceleague.adobe.com/docs/commerce-operations/release/schedule.html) to learn about release schedules and support.
 
-See [Availability](https://experienceleague.adobe.com/docs/commerce-operations/release/availability.html) to learn about product compatibility.
+See the developer documentation to [learn about product compatibility](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 
 ## Supported service updates
 
@@ -23,12 +23,24 @@ These release notes describe feature changes and fixes related to extensions use
 
 +++Supported service updates
 
+_March 30, 2023_
+
+* ![New](../assets/new.svg) - Added a new extension called `data-services-b2b` that includes [requisition list events](events.md#b2b-events) for B2B merchants
+* ![New](../assets/new.svg) - Added the `uniqueIdentifier` field to [search](events.md#search-events) events. This new field allows merchants to cross reference which search requests correspond to which search responses.
+
 _October 12, 2022_
 
 * ![New](../assets/new.svg) - Added two [storefront events](events.md): `openCart` and `removeFromCart` to the Adobe Commerce Storefront Events SDK and Collector
 * ![New](../assets/new.svg) - Added support for an [AEM storefront](overview.md#aem-support)
 
 +++
+
+## 2.2.0
+
+_March 30, 2023_
+
+* ![New](../assets/new.svg) - Bundled the `commerce-data-export` and `saas-export` dependencies with the `experience-platform-connector` extension. Previously, you had to install these dependencies separately. These dependencies, along with merchant configuration, enables server side processing of [back office events](events.md#back-office-events).
+* ![New](../assets/new.svg) - Added new back office event called [`orderShipmentCompleted`](events.md#ordershipmentcompleted).
 
 ## 2.1.1
 
@@ -40,7 +52,7 @@ _February 28, 2023_
 
 _January 17, 2023_
 
-* ![New](../assets/new.svg) - Updated the [Experience Platform connector Admin](connect-data.md) so you can specify your own AEP Web SDK (alloy). Also, added an option for merchants enrolled in our back office beta program to send [back office event data](connect-data.md#data-collection) to the edge. These events contain [order status information](events.md#beta-order-status-events) about an order, such as if an order was placed, cancelled, refunded, or shipped. If you would like to participate in the back office beta program, contact [drios@adobe.com](mailto:drios@adobe.com).
+* ![New](../assets/new.svg) - Updated the [Experience Platform connector Admin](connect-data.md) so you can specify your own AEP Web SDK (alloy). Also, added an option for merchants enrolled in our back office beta program to send [back office event data](connect-data.md#data-collection) to the edge. These events contain [order status information](events.md#beta-order-status-events) about an order, such as if an order was placed, cancelled, refunded, or shipped.
 * ![Fix](../assets/fix.svg) Changed to using `identityMap` instead of `personID` when setting the primary identity for any data pushed to the edge.
 
 ## 2.0.1

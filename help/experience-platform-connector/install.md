@@ -13,20 +13,32 @@ The Experience Platform connector extension is installed from the command line o
 
 The Experience Platform connector is installed as an extension from [Adobe Marketplace](https://marketplace.magento.com/magento-experience-platform-connector.html).
 
+![B2B for Adobe Commerce](../assets/b2b.svg) For B2B merchants, there is a separate extension you must install. This extension adds support of B2B specific events. [Learn more](#install-the-b2b-extension).
+
 1. To download the `experience-platform-connector` package, run the following from the command line:
 
    ```bash
    composer require magento/experience-platform-connector
    ```
-   
+
    This metapackage contains the following modules and extensions:
 
-   * `module-platform-connector-admin` - Updates the Admin UI so you can select the Datastream ID for a specific Adobe Commerce instance
-   * `module-platform-connector` - Sets the `Organization ID` and `datastreamId` in the Storefront Events SDK
+   * `module-experience-connector-admin` - Updates the Admin UI so you can select the Datastream ID for a specific Adobe Commerce instance
+   * `module-experience-connector` - Sets the `Organization ID` and `datastreamId` in the Storefront Events SDK
    * `data-services` - Provides attribute context for storefront events. For example, when a checkout event occurs, information about how many items were in the cart and product attribute data for those items are included.
    * `services-id` - Connects your Adobe Commerce instance to [Adobe Commerce SaaS](../landing/saas.md) using sandbox and production API keys and to the Adobe Experience Platform to retrieve the IMS Organization ID
 
 1. (Optional) To include [!DNL Live Search] data, which comprises search events, install the [[!DNL Live Search]](../live-search/install.md) extension.
+
+### Install the B2B extension
+
+For B2B merchants, install the following extension to include [requisition list](events.md#b2b-events) event data.
+
+Download the `magento/experience-platform-connector-b2b` extension by running the following from the command line:
+
+   ```bash
+   composer require magento/experience-platform-connector-b2b
+   ```
 
 ## Update the Experience Platform connector {#update}
 
@@ -34,6 +46,12 @@ To update the Experience Platform connector, run the following from the command 
 
 ```bash
 composer update magento/experience-platform-connector --with-dependencies
+```
+
+or, for B2B merchants:
+
+```bash
+composer update magento/experience-platform-connector-b2b --with-dependencies
 ```
 
 To update to a major version such as from 1.0.0 to 2.0.0, edit the project’s root [!DNL Composer] `.json` file as follows:
@@ -54,6 +72,12 @@ To update to a major version such as from 1.0.0 to 2.0.0, edit the project’s r
 
    ```bash
    composer update magento/experience-platform-connector –-with-dependencies
+   ```
+
+or, for B2B merchants:
+
+   ```bash
+   composer update magento/experience-platform-connector-b2b --with-dependencies
    ```
 
 ## Uninstall the Experience Platform connector {#uninstall}

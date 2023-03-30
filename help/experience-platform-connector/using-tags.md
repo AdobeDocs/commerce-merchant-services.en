@@ -554,6 +554,8 @@ Create the following data elements:
     - **value**: Not yet available
     - **Field Group**: `siteSearch` > `sort`. Select **Provide entire object**.
     - **Field Group**: `siteSearch` > `filter`. Select **Provide entire object**.
+    - **Field Group**: `searchRequest` > `id`
+    - **Unique Identifier**: **Value** = `%search request ID%`
     - **Field Group**: `searchRequest` > `value`
     - **value**: **Value** = `1`
 
@@ -649,6 +651,8 @@ Create the following data elements:
     - **Field Group**: `productListItems` > `ProductImageUrl`
     - **ProductImageUrl**: **Value** = `%product image%`
     - **Data element**: `%search result products%`
+    - **Field Group**: `searchResponse` > `id`
+    - **Unique Identifier**: **Value** = `%search response ID%`
     - **Field Group**: `searchResponse` > `value`
     - **value**: **Value** = `1`
 
@@ -1356,7 +1360,7 @@ The following steps show how to configure a `pageView` event with `identityMap` 
 
 ## Setting consent
 
-Adobe Commerce and Experience Platform connector data collection consent is enabled by default. Opt-out is managed through the [`mg_dnt` cookie](https://docs.magento.com/user-guide/stores/cookie-reference.html). You can follow the steps outlined here if you choose to use `mg_dnt` to manage consent. The [Adobe Experience Platform Web SDK documentation](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html) has several additional options for managing consent.
+Adobe Commerce and Experience Platform connector data collection consent is enabled by default. Opt-out is managed through the [`mg_dnt` cookie](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html). You can follow the steps outlined here if you choose to use `mg_dnt` to manage consent. The [Adobe Experience Platform Web SDK documentation](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html) has several additional options for managing consent.
 
 1. Create a **Core Custom Code** data element (`%do not track cookie%`) for the `mg_dnt` cookie:
 
