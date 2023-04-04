@@ -6,6 +6,10 @@ description: 'Learn how to use [!DNL Product Recommendations] units in Page Buil
 
 Product Recommendations can be integrated within any Page Builder content that you deploy on your site.
 
+>[!NOTE]
+>
+> You can have up to 25 recommendation units on a native Page Builder page. Non-native Page Builder pages can have up to 5 recommendation units. See [Create New Recommendation](create.md) for more information.
+
 ## Using Product Recommendations with Page Builder content
 
 1. Create a Recommendation unit in the default store view of a website. They must be created in the default store view even if you plan to use them in different store views.
