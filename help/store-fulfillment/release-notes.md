@@ -14,7 +14,8 @@ These release notes describe the initial release of [!DNL Store Fulfillment Serv
 ## v1.3.0
 
 *February 27, 2023*
-[!BADGE Compatibility]{type=Informative tooltip="Compatibility"}<br>Adobe Commerce versions 2.4.0 - 2.4.5
+
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.0 - 2.4.5
 
 This release contains the following update:
 
@@ -23,7 +24,8 @@ This release contains the following update:
 ## v1.2.0
 
 *September 27, 2022*
-[!BADGE Compatibility]{type=Informative tooltip="Compatibility"}<br>Adobe Commerce versions 2.4.0 - 2.4.5
+
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.0 - 2.4.5
 
 This release contains the following update:
 
@@ -33,7 +35,8 @@ This release contains the following update:
 ## v1.1.0
 
 *July 15, 2022*
-[!BADGE Compatibility]{type=Informative tooltip="Compatibility"}<br>Adobe Commerce versions 2.4.0 - 2.4.4
+
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.0 - 2.4.4
 
 Stability: General Availability
 
@@ -42,7 +45,8 @@ Stability: General Availability
 ## v1.0.0
 
 *March 4, 2022*
-[!BADGE Compatibility]{type=Informative tooltip="Compatibility"}<br>Adobe Commerce versions 2.4.0 - 2.4.4
+
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.0 - 2.4.4
 
 Stability: General Availability
 
