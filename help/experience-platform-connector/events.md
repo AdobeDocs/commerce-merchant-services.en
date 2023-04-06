@@ -230,10 +230,11 @@ The following table describes the data collected for this event.
 
 |Field|Description|
 |---|---|
-|`eventType`|The primary event type for this time-series record, such as: `userAccount.login`|
 |`person`|An individual actor, contact, or owner|
 |`accountID`|Captures the user account ID|
-|`personalEmailID`|Specifies the unique identifier for the personal email|
+|`accountType`|Captures the user account type, such as `Personal` or `Company`, if applicable|
+|`personalEmailID`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
+|`personalEmail`|Captures contact details - an e-mail and associated information|
 |`address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
 |`userAccount`|Indicates any loyalty details, preferences, login processes, and other account preferences|
 |`login`|Indicates if a visitor attempted to log in|
@@ -254,7 +255,6 @@ The following table describes the data collected for this event.
 
 |Field|Description|
 |---|---|
-|`eventType`|The primary event type for this time-series record, such as: `userAccount.logout`|
 |`userAccount`|Indicates any loyalty details, preferences, login processes, and other account preferences|
 |`logout`|Indicates if a visitor attempted to log out|
 
@@ -274,11 +274,11 @@ The following table describes the data collected for this event.
 
 |Field|Description|
 |---|---|
-|`eventType`|The primary event type for this time-series record, such as: `account.createProfile`|
 |`person`|An individual actor, contact, or owner|
 |`accountID`|Captures the user account ID|
 |`accountType`|Captures the user account type, such as `Personal` or `Company`, if applicable|
-|`personalEmailID`|Specifies the unique identifier for the personal email|
+|`personalEmailID`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
+|`personalEmail`|Captures contact details - an e-mail and associated information|
 |`address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
 |`userAccount`|Indicates any loyalty details, preferences, login processes, and other account preferences|
 |`createProfile`|Indicates if a user has created an account profile|
@@ -299,12 +299,11 @@ The following table describes the data collected for this event.
 
 |Field|Description|
 |---|---|
-|`eventType`|The primary event type for this time-series record, such as: `account.updateProfile`|
 |`person`|An individual actor, contact, or owner|
 |`accountID`|Captures the user account ID|
 |`accountType`|Captures the user account type, such as `Personal` or `Company`, if applicable|
-|`personalEmailID`|Specifies the unique identifier for the personal email|
-|`personalEmail`|Specifies the personal email address|
+|`personalEmailID`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
+|`personalEmail`|Captures contact details - an e-mail and associated information|
 |`address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
 |`userAccount`|Indicates any loyalty details, preferences, login processes, and other account preferences|
 |`updateProfile`|Indicates if a user has updated their account profile|
