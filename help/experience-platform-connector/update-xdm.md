@@ -17,7 +17,7 @@ One of the [onboarding steps](overview.md#onboarding-steps) to using the Experie
     - Reference Keys
     - Personal Contact Details 
     - Commerce Details
-    - Adobe Analytics Experience event Commerce (if you want to send data to Adobe Analytics)
+    - Adobe Analytics ExperienceEvent Commerce (if you want to send data to Adobe Analytics)
     - Identity Map
     
     >[!NOTE]
