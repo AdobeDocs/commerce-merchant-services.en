@@ -332,7 +332,7 @@ The following table describes the data collected for this event.
 |Field|Description|
 |---|---|
 |`searchRequest`|Indicates if a search request was sent|
-|`uniqueIdentifier`| The unique ID for this particular search request|
+|`id`| The unique ID for this particular search request|
 |`filter`|Indicates if any filters were applied to limit search results|
 |`attribute` (filter)|The facet of an item used to determine whether to include it in search results|
 |`value`|Attribute values used to determine which items are included in search results|
@@ -359,7 +359,7 @@ The following table describes the data collected for this event.
 |Field|Description|
 |---|---|
 |`searchResponse`|Indicates if a search response has been received|
-|`uniqueIdentifier`| The unique ID for this particular search response|
+|`id`| The unique ID for this particular search response|
 |`suggestions`|An array of strings that include the names of products and categories that exist in the catalog that are similar to the search query|
 |`numberOfResults`|The number of products returned|
 |`productListItems`|An array of products in the shopping cart.|
@@ -385,8 +385,10 @@ The following table describes the data collected for this event.
 
 |Field|Description|
 |---|---|
-|`requisitionListOpens`| A value of `1` indicates that a requisition list was opened|
-|`requisitionList`| Includes a unique `ID` , `name`, and `description` for the requisition list|
+|`requisitionList`|The properties of requisition list created by customer|
+|`ID`|Unique identifier of the requisition list|
+|`name`|Name of the requisition list specified by the customer|
+|`description`|Description of the requisition list specified by the customer|
 
 ### addToRequisitionList
 
@@ -404,8 +406,10 @@ The following table describes the data collected for this event.
 
 |Field|Description|
 |---|---|
-|`requisitionListAdds`| A value of `1` indicates that a product was added to the requisition list|
-|`requisitionList`| Includes a unique `ID`,  `name`,  and `description` for the requisition list|
+|`requisitionList`|The properties of requisition list created by customer|
+|`ID`|Unique identifier of the requisition list|
+|`name`|Name of the requisition list specified by the customer|
+|`description`|Description of the requisition list specified by the customer|
 |`productListItems`|An array of products that were added to the requisition list|
 |`name`|The display name or human-readable name of the product|
 |`SKU`|Stock Keeping Unit. The unique identifier for the product.|
@@ -413,6 +417,7 @@ The following table describes the data collected for this event.
 |`priceTotal`|The total price for the product line item|
 |`discountAmount`|Indicates the discount amount applied|
 |`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for this payment item|
+|`selectedOptions`|Field used for a configurable product. `attribute` identifies an attribute of the configurable product, such as `size` or `color` and `value` identifies the value of the attribute such as `small` or `black`.|
 
 ### removeFromRequisitionList
 
@@ -426,8 +431,10 @@ The following table describes the data collected for this event.
 
 |Field|Description|
 |---|---|
-|`requisitionListRemovals`| A value of `1` indicates that a product was removed from the requisition list|
-|`requisitionList`| Includes a unique `ID`,  and a `description` for the requisition list|
+|`requisitionList`|The properties of requisition list created by customer|
+|`ID`|Unique identifier of the requisition list|
+|`name`|Name of the requisition list specified by the customer|
+|`description`|Description of the requisition list specified by the customer|
 |`productListItems`|An array of products that were added to the requisition list|
 |`name`|The display name or human-readable name of the product|
 |`SKU`|Stock Keeping Unit. The unique identifier for the product.|
