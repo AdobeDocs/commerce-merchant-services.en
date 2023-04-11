@@ -13,6 +13,7 @@ index: yes
 - Payments and checkout {#payments-checkout}
   - [Payment options](payments-options.md)
   - [Credit card vaulting](vaulting.md)
+  - [Checkout](checkout.md)
 - Onboard [!DNL Payment Services] {#get-started}
   - [Onboarding overview](onboard.md)
   - [Install the [!DNL Payment Services] extension](install.md)
