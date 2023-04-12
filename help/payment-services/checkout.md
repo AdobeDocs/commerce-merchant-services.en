@@ -6,15 +6,25 @@ exl-id:
 
 # Checkout
 
+You can configure checkout for Adobe Commerce [!DNL Payment Services] to best suit your shoppers. Functionality such as [order auto-voiding](#order-auto-voided-if-error) and [credit card vaulting](#credit-card-vaulting) ensure your shoppers have a smooth user experience.
+
 ## Order auto-voided if error
 
-If an error occurs during checkout, Payment Services automatically voids/cancels the order. An error message displays in the Admin for a specific order to clarify the issue.
+If an error occurs during checkout, [!DNL Payment Services] automatically voids/cancels the order.
 
-If a shopper gets authorization for an order, but the order was not created during the order creation flow to convert into a capture, the order is auto-voided. This process ensures no credit is reserved on the shopper's credit card and avoids the payment provider fee that occurs when the authorization is voided at the end of the 29 day period.
+An error message displays on the checkout page for the shopper. The message may vary.
+
+![Error while checking](assets/user-checkout-error.png "Error while checking out")
+
+An error message also displays in the Admin for a specific order.
+
+![Error in Admin for order](assets/admin-checkout-error.png "Error in Admin for order")
+
+If a shopper gets authorization for an order, but the order was not created and converted into a `Capture`, the order is auto-voided. This process ensures no credit is reserved on the shopper's credit card and avoids the payment provider fee that occurs when the authorization is voided at the end of the standard 29 day period.
 
    >[!NOTE]
    >
-   >This process only occurs when the customer uses a payment method that is set to `Authorize` mode, not `Authorize and Capture` mode.
+   >Order auto-voiding only occurs when the customer uses a payment method that is set to `Authorize` mode, not `Authorize and Capture` mode.
 
 ## Checkout from product page
 
