@@ -16,7 +16,7 @@ An error message displays on the checkout page for the shopper. The message may 
 
 ![Error while checking](assets/user-checkout-error.png "Error while checking out")
 
-An error message also displays in the Admin for a specific order.
+An error message also displays in the Admin for a specific [order](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/orders.html?lang=en).
 
 ![Error in Admin for order](assets/admin-checkout-error.png "Error in Admin for order")
 
