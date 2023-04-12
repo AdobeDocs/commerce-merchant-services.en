@@ -1,7 +1,6 @@
 ---
 title: Checkout
 description: Customize checkout to fit your customer's needs.
-exl-id:
 ---
 
 # Checkout
@@ -38,4 +37,4 @@ When a customer enters the checkout flow from the product page, the checkout pag
 
 Shoppers can vault---or "save"---their credit card information for future purchases on the website level (any store within the same merchant's account).
 
-See [Credit card vaulting](vaulting.md) for more information.
+See [Credit card vaulting](vaulting.md) for more information
