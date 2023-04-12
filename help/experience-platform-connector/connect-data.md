@@ -7,7 +7,7 @@ exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 
 To connect your Adobe Commerce instance to the Adobe Experience Platform, you must provide an organization ID and a datastream ID.
 
-![Experience Platform connector configuration](assets/epc-config-sf.png)
+![Experience Platform connector configuration](assets/epc-config-dc.png)
 
 ## General
 
@@ -27,19 +27,25 @@ To connect your Adobe Commerce instance to the Adobe Experience Platform, you mu
 
 ## Data collection
 
-In the **Data collection** section, you specify what types of data to collect and send to the Experience Platform edge. By default, storefront events are automatically sent as long as the AEP Web SDK and Organization ID are valid. See the events topic to learn more about [storefront](events.md#storefront-events) and [back office](events.md#back-office-events) events.
+In the **Data collection** section, select storefront and/or back office data to send to the Experience Platform edge. Review the [prerequisites](overview.md#prerequisites) to ensure data collection is successful.
 
-![Experience Platform connector configuration](assets/epc-config-dc.png)
+See the events topic to learn more about [storefront](events.md#storefront-events) and [back office](events.md#back-office-events) events.
 
 >[!NOTE]
 >
 >All fields in the **Data collection** section apply to the **Website** scope or higher.
 
+1. Select **Storefront events** if you want to send storefront behavioral data.
+
+    >[!NOTE]
+    >
+    >The **Storefront events** checkbox is automatically enabled if the AEP Web SDK and Organization ID are valid.
+
 1. Select **Back office events** if you want to send order status information, such as if an order was placed, cancelled, refunded, or shipped.
 
     >[!NOTE]
     >
-    >By default, all back office data is sent to the Experience Platform edge. If a shopper chooses to opt out of data collection, you must explicitly set the  shopper's privacy preference in the Experience Platform. This is different from storefront events where the collector already handles consent based on shopper preferences. [Learn more](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/dataset.html) about setting a shopper's privacy preference in the Experience Platform.
+    >If you select **Back office events**, all back office data is sent to the Experience Platform edge. If a shopper chooses to opt out of data collection, you must explicitly set the shopper's privacy preference in the Experience Platform. This is different from storefront events where the collector already handles consent based on shopper preferences. [Learn more](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/dataset.html) about setting a shopper's privacy preference in the Experience Platform.
 
 1. (Skip this step if you are using your own AEP Web SDK.) [Create](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html#create) a datastream in the Adobe Experience Platform or select an existing datastream you want to use for collection.
 
@@ -67,5 +73,5 @@ With the Experience Platform connector extension installed, the link between Ado
 
 When Commerce data is sent to the Adobe Experience Platform edge, you can build reports like the following:
 
-![Commerce Data in Adobe Experience Manager](assets/aem-data-1.png)
-_Commerce Data in Adobe Experience Manager_
+![Commerce Data in Adobe Experience Platform](assets/aem-data-1.png)
+_Commerce Data in Adobe Experience Platform_

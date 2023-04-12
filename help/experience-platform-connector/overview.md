@@ -5,9 +5,9 @@ exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
 ---
 # Experience Platform connector overview
 
-The Experience Platform connector extension allows Adobe Commerce merchants to send data to the Adobe Experience Platform edge so other Adobe Experience Cloud products, such as Adobe Analytics and Adobe Target, can use that Commerce data. By connecting your Commerce data to other products in the Adobe Experience Cloud, you can perform tasks, such as analyze user behavior on your site, perform AB testing, and create personalized campaigns.
+The Experience Platform connector extension allows Adobe Commerce merchants to send [storefront](events.md#storefront-events) and [back office](events.md#back-office-events) data to the Adobe Experience Platform edge so other Adobe Experience Cloud products, such as Adobe Analytics and Adobe Target, can use that Commerce data. By connecting your Commerce data to other products in the Adobe Experience Cloud, you can perform tasks, such as analyze user behavior on your site, perform AB testing, and create personalized campaigns.
 
-[Storefront events](events.md) capture shopper interactions, such as `View Page`, `View Product`, `Add to Cart`, and so on. Captured data does not include personally identifiable information (PII). All user identifiers, such as cookie IDs and IP addresses, are strictly anonymized. [Learn more](https://www.adobe.com/privacy/experience-cloud.html).
+[Storefront events](events.md#storefront-events) capture shopper interactions, such as `View Page`, `View Product`, `Add to Cart`, [requisition list](events.md#b2b-events) information (for B2B merchants), and so on. [Back Office](events.md#back-office-events) events capture information about the status of an order, such as if an order was placed, canceled, refunded, shipped, or completed. Captured data does not include personally identifiable information (PII). All user identifiers, such as cookie IDs and IP addresses, are strictly anonymized. [Learn more](https://www.adobe.com/privacy/experience-cloud.html).
 
 The Experience Platform connector appears in the Commerce Admin under **System** > Services > **Experience Platform Connector**. 
 
@@ -19,6 +19,7 @@ In order to use the Experience Platform connector, you must have the following:
 
 - Adobe Commerce 2.4.3 or newer
 - Adobe ID and Organization ID
+- [Adobe Client Data Layer (ACDL)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/client-data-layer/overview.html). The ACDL is required to collect storefront event data.
 - Entitlements to other Adobe DX products
 
 ## Onboarding steps

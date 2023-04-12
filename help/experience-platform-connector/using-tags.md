@@ -1314,14 +1314,16 @@ Create the following data elements:
 - **Type**: `commerce.order`
 - **XDM data**: `%place order%`
 
-## Setting identity
+## Set identity in storefront events
 
-Experience Platform connector profiles are joined and generated based on the `identityMap` and the `personalEmail` identity fields in XDM Experience events. 
+Storefront events contain profile information based on the `personalEmail` (for account events) and `identityMap` (for all other storefront events) fields. The Experience Platform connector joins and generates profiles based on these two fields. Each field, however, has different steps to follow to create profiles:
 
-If you have a previous setup that relies on different fields, you can continue to use those. To set Experience Platform connector profile identity fields, you must set the following fields:
+>[!NOTE]
+>
+>If you have a previous setup that relies on different fields, you can continue to use those.
 
-- `personalEmail` - Account events only - follow the steps outlined above for [account events](#createaccount)
-- `identityMap` - All other events. See the following example.
+- `personalEmail` - Applies to account events only. Follow the steps, rules, and actions outlined [above](#createaccount)
+- `identityMap` - Applies to all other storefront events. See the following example.
 
 ### Example
 
@@ -1357,6 +1359,43 @@ The following steps show how to configure a `pageView` event with `identityMap` 
 
     ![Retrieve ECID](assets/rule-retrieve-ecid.png)
     _Retrieve ECID_
+
+## Set identity in back office events
+
+Unlike storefront events that use ECID to identity and link profile information, back office event data is SaaS-based and therefore no ECID is available. For back office events, you need to use email. In this section, you will learn how to link back office event data to an ECID using email.
+
+1. Create an identity map element.
+
+    ![Back office identity map](assets/custom-code-backoffice.png)
+    _Create back office identity map_
+
+1. Select [!UICONTROL Open Editor] and add the following custom code:
+
+```javascript
+const IdentityMap = {
+  "ECID": [
+    {
+      id:  _satellite.getVar('ECID'),
+      primary: true,
+    },
+  ],
+};
+ 
+if (_satellite.getVar('account email')) {
+    IdentityMap.email = [
+        {
+            id: _satellite.getVar('account email'),
+            primary: false,
+        },
+    ];
+}
+return IdentityMap;
+```
+
+1. Add this new element to your XDM schema for each back office event.
+
+    ![Update each back office event](assets/add-element-back-office.png)
+    _Update each back office event_
 
 ## Setting consent
 
