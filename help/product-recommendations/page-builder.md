@@ -1,6 +1,7 @@
 ---
 title: '[!DNL Page Builder] Integration'
-description: 'Learn how to use [!DNL Product Recommendations] units in Page Builder.'
+description: Learn how to use [!DNL Product Recommendations] units in Page Builder.
+exl-id: dd972642-1fb4-426a-ac68-f56bb5fa2ecf
 ---
 # [!DNL Page Builder] Integration
 
@@ -25,4 +26,4 @@ Product Recommendations can be integrated within any Page Builder content that y
 
 1. Make any other edits to the Page Builder content and save your changes. 
 
-At render time, the context and scope of the Page Builder content is respected by the Recommendation unit. 
+At render time, the context and scope of the Page Builder content is respected by the Recommendation unit.
