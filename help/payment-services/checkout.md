@@ -29,7 +29,8 @@ If a shopper gets authorization for an order, but the order was not created and 
 
 When a customer checks out directly from the product page, using the PayPal or [!DNL Pay Later] buttons, only the item represented on the current product page is purchased. Items already residing in the customer's cart are not added to the checkout flow and are not purchased.
 
-If the customer cancels the order, the item in the current product page is added to the customer's cart, joining any other items present in the cart. This function allows the customer to quickly purchase the item they are currently viewing, while also retaining any other items they added to their cart previously when browsing products.
+This function allows the customer to quickly purchase the item they are currently viewing, while retaining items previously added to their cart.
+If the customer cancels the order, the item in the current product page is added to the customer's cart. 
 
 When a customer enters the checkout flow from the product page, the checkout page is simplified---the view only shows order-related data and options.
 
