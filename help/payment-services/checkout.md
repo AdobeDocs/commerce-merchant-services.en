@@ -15,9 +15,9 @@ An error message displays on the checkout page for the shopper. The message may 
 
 ![Error while checking](assets/user-checkout-error.png "Error while checking out")
 
-An error message also displays in the Admin for a specific [order](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/orders.html?lang=en).
+A comment regarding the canceled order also displays in the Admin for a specific [order](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/orders.html?lang=en).
 
-![Error in Admin for order](assets/admin-checkout-error.png "Error in Admin for order")
+![Canceled order comment in Admin for order](assets/admin-checkout-error.png "Canceled order comment in Admin for order")
 
 If a shopper gets authorization for an order, but the order was not created and converted into a `Capture`, the order is auto-voided. This process ensures no credit is reserved on the shopper's credit card and avoids the payment provider fee that occurs when the authorization is voided at the end of the standard 29 day period.
 
