@@ -85,10 +85,3 @@ _August 9, 2022_
 [!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.3 and newer
 
 * ![New](../assets/new.svg) - General availability release
-
-## Documentation
-
-To learn more:
-
-* [Adobe Commerce Developer Documentation](https://developer.adobe.com/commerce/docs/)
-* [Adobe Commerce User Guide](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html)
