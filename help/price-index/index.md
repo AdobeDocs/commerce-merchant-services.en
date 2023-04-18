@@ -112,7 +112,13 @@ The following items are available in Luma currently not supported by SaaS produc
 Using the Commerce price index is optional.
 
 * Once you opt in to using the new pricing feed, you can contact Support to undo it.
-* The Product Recommendations catalog sync dashboard will no longer show new data.
+* The Resync button on the Product Recommendations catalog sync dashboard will not run the new price feeds. It should be run with the `resync` [CLI command](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html#resynccmdline):
+
+    ```bash
+    bin/magento saas:resync --feed=scopesCustomerGroup
+    bin/magento saas:resync --feed=scopesWebsite
+    bin/magento saas:resync --feed=prices
+    ```
 
 ## FAQ
 
