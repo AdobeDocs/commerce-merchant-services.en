@@ -17,21 +17,20 @@ These release notes describe the latest versions of [!DNL Catalog Service] and i
 
 ![New](../assets/new.svg) Catalog Service customers can now take advantage of the new [Commerce price indexer](../price-index/index.md).
 
-### V1.6 Release
+### V1.7 Release
 
-_March 28, 2023_
+_Apriil 12, 2023_
 
 [!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.4 and newer
 
-![New](../assets/new.svg) Added swatches to the [`products`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/) query.
-![New](../assets/new.svg) Added the ability to get `entityId` using [API Mesh](mesh.md).
+![New](../assets/new.svg) Catalog Service now cleans up deleted product variants.
+![Fix](../assets/fix.svg) Infrastructure scalability and performance improvements.
 
 #### Known limitations
 
 These features are not yet supported:
 
 * Bundle products with fixed price
-* No updates are received when variants are deleted from the catalog.
 * Maximum size for dynamic attributes payload is 9 MB.
 * Group product price. Can be calculated with simple product prices.
 * In an image array, only the first image contains roles.
@@ -41,6 +40,15 @@ The following limitations can be solved by using the API Mesh and the Core Graph
 * Minimum Advertised Price
 * [Tier pricing](mesh.md)
 * Downloadable products and gift cards
+
+### V1.6 Release
+
+_March 28, 2023_
+
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.4 and newer
+
+![New](../assets/new.svg) Added swatches to the [`products`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/) query.
+![New](../assets/new.svg) Added the ability to get `entityId` using [API Mesh](mesh.md).
 
 ### V1.5 Release
 
