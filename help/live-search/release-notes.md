@@ -11,6 +11,11 @@ These release notes describe the latest versions of [!DNL Live Search] and inclu
 ![Fix](../assets/fix.svg) Fixes and improvements
 ![Bug](../assets/bug.svg) Known issues
 
+
+ _April 25, 2023_
+
+![New](../assets/new.svg) Live Search customers can now take advantage of the new [Commerce price indexer](../price-index/index.md).
+
 ## [!DNL Live Search] 3.0.1 {#301}
 
  _March 14, 2023_

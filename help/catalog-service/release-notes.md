@@ -13,6 +13,10 @@ These release notes describe the latest versions of [!DNL Catalog Service] and i
 
 ## Current major version
 
+ _April 25, 2023_
+
+![New](../assets/new.svg) Catalog Service customers can now take advantage of the new [Commerce price indexer](../price-index/index.md).
+
 ### V1.6 Release
 
 _March 28, 2023_

@@ -20,6 +20,10 @@ See the developer documentation to [learn about product compatibility](https://e
 
 ## Current major version
 
+ _April 25, 2023_
+
+![New](../assets/new.svg) Product Recommendations customers can now take advantage of the new [Commerce price indexer](../price-index/index.md).
+
 ### 5.0.0 of magento/product-recommendations
 
 [!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.4 and newer

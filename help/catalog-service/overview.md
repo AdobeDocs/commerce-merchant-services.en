@@ -18,6 +18,8 @@ The [!DNL Catalog Service] uses [GraphQL](https://graphql.org/) to request and r
 
 Adobe Commerce has two GraphQL systems. The core GraphQL system provides a wide range of queries (read operations) and mutations (write operations) that allow a shopper to interact with many types of pages, including product, customer account, cart, checkout, and more. However, the queries that return product information are not optimized for speed. The services GraphQL system can only perform queries on products and related information. These queries are more performant than similar core queries.
 
+Catalog Service customers can use the new [Commerce price indexer](../price-index/index.md).
+
 ## Architecture
 
 The following diagram shows the two GraphQL systems:
