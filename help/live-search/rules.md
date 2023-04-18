@@ -65,4 +65,4 @@ Request made in the Admin work slightly differently. When previewing in the Admi
 ## Category rules and category product assignments
 
 [!DNL Live Search] allows you to filter by Categories.
-However, in Adobe Commerce you can create a virtual category with [Category product assignments](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/products-in-category/categories-product-assignments.html). This type of category is built at runtime and does not exist in the category database. Therefore, L[!DNL Live Search] cannot read or use this category type.
+However, in Adobe Commerce you can create a virtual category with [Category product assignments](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/products-in-category/categories-product-assignments.html). This type of category is built at runtime and does not exist in the category database. Therefore, [!DNL Live Search] cannot read or use this category type.
