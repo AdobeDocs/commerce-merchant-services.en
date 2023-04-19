@@ -3,15 +3,38 @@ title: Connect Commerce Data to Adobe Experience Platform
 description: Learn how to connect your Commerce data to the Adobe Experience Platform.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 ---
-# Connect Commerce data to Adobe Experience Platform {#connectaep}
+# Connect Commerce data to Adobe Experience Platform
 
-To connect your Adobe Commerce instance to the Adobe Experience Platform, you must provide an organization ID and a datastream ID.
+When you install the Experience Platform connector, two new configuration pages appear in the **System** menu under **Services** in the Commerce _Admin_.
+
+- Commerce Services Connector
+- Experience Platform Connector
+
+To connect your Adobe Commerce instance to the Adobe Experience platform, you need to configure both connectors, starting with the Commerce Services connector then finishing with the Experience Platform connector.
+
+## Update the Commerce Services connector
+
+If you have previously installed an Adobe Commerce service, you probably have already configured the Commerce Services connector. If not, then you need to complete the following tasks on the [Commerce Services connector](../landing/saas.md) page:
+
+1. Log into your Adobe Commerce account to [retrieve your production and sandbox API keys](../landing/saas.md#credentials).
+1. Select a [SaaS data space](../landing/saas.md#saas-configuration).
+1. Log into your Adobe account to [retrieve your Organization ID](../landing/saas.md#ims-organization-optional).
+
+After you configure the Commerce Services connector, you then configure the Experience Platform connector.
+
+## Update the Experience Platform connector
+
+In this section, you connect your Adobe Commerce instance to the Adobe Experience Platform using your organization ID. You can then specify the type of data, storefront or back office, to send to the Experience Platform edge.
 
 ![Experience Platform connector configuration](assets/epc-config-dc.png)
 
-## General
+### General
 
 1. Sign in to your Adobe account in the [Commerce Services Connector](../landing/saas.md#organizationid) and select your organization ID.
+
+    >[!NOTE]
+    >
+    >If you previously configured the Commerce Services connector you can skip this step as your organization ID has already been selected.
 
 1. In the Admin, go to **System** > Services > **Experience Platform Connector**.
 
@@ -25,9 +48,9 @@ To connect your Adobe Commerce instance to the Adobe Experience Platform, you mu
     >
     >If you specify your own AEP Web SDK, the Experience Platform connector uses the datastream ID associated with that SDK and not the datastream ID specified on this page (if any).
 
-## Data collection
+### Data collection
 
-In the **Data collection** section, select storefront and/or back office data to send to the Experience Platform edge. Review the [prerequisites](overview.md#prerequisites) to ensure data collection is successful.
+In the **Data collection** section, select storefront and/or back office data to send to the Experience Platform edge. Review the [prerequisites](overview.md#prerequisites) to make sure your Adobe Commerce instance contains the required configuration to ensure data collection is successful.
 
 See the events topic to learn more about [storefront](events.md#storefront-events) and [back office](events.md#back-office-events) events.
 
@@ -51,7 +74,7 @@ See the events topic to learn more about [storefront](events.md#storefront-event
 
 1. (Skip this step if you are using your own AEP Web SDK.) In the **Datastream ID** field, paste the ID of that new or existing datastream.
 
-## Field descriptions
+### Field descriptions
 
 | Field | Description |
 |--- |--- |
@@ -63,15 +86,11 @@ See the events topic to learn more about [storefront](events.md#storefront-event
 |Back Office events| If checked, event payload contains anonymized order status information, such as if an order was placed, cancelled, refunded, or shipped. |
 | Datastream ID (Website) | ID that allows data to flow from Adobe Experience Platform to other Adobe DX products. This ID must be associated to a specific website within your specific Adobe Commerce instance. If you specify your own Experience Platform Web SDK, do not specify a datastream ID in this field. The Experience Platform connector uses the datastream ID associated with that SDK and ignores any datastream ID specified in this field (if any).|
 
-With the Experience Platform connector extension installed, the link between Adobe Commerce and Adobe Experience Platform created, and the Datastream ID specified, Commerce data begins to flow to the Adobe Experience Platform edge and to other Adobe DX products. 
-
->[!NOTE]
->
-> The amount of time it takes for data to flow from the edge to other Adobe DX products can vary.
-
 ## Verify data is being sent to Experience Platform
 
-When Commerce data is sent to the Adobe Experience Platform edge, you can build reports like the following:
+After onboarding, storefront data begins to flow to the Experience Platform edge. Back office data, however, takes about 15 minutes for the data to appear at the edge. Subsequent updates will be immediately visible at the edge.
+
+When Commerce data is sent to the Experience Platform edge, you can build reports like the following:
 
 ![Commerce Data in Adobe Experience Platform](assets/aem-data-1.png)
 _Commerce Data in Adobe Experience Platform_
