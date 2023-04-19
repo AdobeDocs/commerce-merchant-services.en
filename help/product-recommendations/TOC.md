@@ -8,6 +8,7 @@ breadcrumb-title: "[!DNL Product Recommendations] Guide"
 - [Guide Overview](guide-overview.md)
 - [Introduction to [!DNL Product Recommendations]](overview.md)
 - [Release Notes](release-notes.md)
+- [SaaS Price Indexer](../price-index/index.md)
 - Get Started {#getting-started}
    - [Onboarding](onboarding.md)
    - [Implementation Workflow](implementation-workflow.md)

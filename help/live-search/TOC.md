@@ -42,3 +42,4 @@ breadcrumb-title: "[!DNL Live Search] Guide"
 - GraphQL queries {#graphql}
    - [attributeMetadata](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/attribute-metadata/)
    - [productSearch](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/)
+- [SaaS Price Indexer](../price-index/index.md)

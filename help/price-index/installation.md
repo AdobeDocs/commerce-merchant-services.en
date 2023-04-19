@@ -1,10 +1,10 @@
 ---
-title: Price Indexer Installation
-description: Installing the Price Indexer
-seo-title: Adobe Commerce Services Price Indexer installation
-seo-description: Installing the Price indexer
+title: SaaS Price Indexer Installation
+description: Installing the SaaS Price Indexer
+seo-title: SaaS Price Indexer installation
+seo-description: Installing the SaaS Price indexer
 ---
-# Price Indexer Installation
+# SaaS Price Indexer Installation
 
 Setting up the price indexer requires installing new modules and running CLI commands. Admins need command-line access to complete this installation.
 
@@ -23,20 +23,20 @@ There are extensions that add the new feeds and supporting code and there is an 
 
 1. Add the following modules to your `composer.json` file:
 
-    For Cloud Environments:
+    For Cloud environments:
 
     ```json
-    "magento/module-saas-price": "102.1.0",
-    "magento/module-saas-scopes": "102.1.0"
+    "magento/module-saas-price": "102.2.0",
+    "magento/module-saas-scopes": "102.2.0"
     ```
 
-    For Enterprise Environments:
+    For Commerce on-premise environments:
 
     ```json
-    "magento/module-saas-price": "102.1.0",
-    "magento/module-saas-scopes": "102.1.0",
-    "magento/module-product-override-price-remover": "102.1.0",
-    "magento/module-bundle-product-override-data-exporter": "102.1.0",
+    "magento/module-saas-price": "102.2.0",
+    "magento/module-saas-scopes": "102.2.0",
+    "magento/module-product-override-price-remover": "102.2.0",
+    "magento/module-bundle-product-override-data-exporter": "102.2.0",
 
     ```
 
@@ -67,7 +67,8 @@ After upgrading, three new feeds are available:
     bin/magento saas:resync --feed=prices
     ```
 
-LUMA users are required to install a module that provides LUMA compatibility.
+The Resync button on the Product Recommendations catalog sync dashboard will not run the new price feeds. Run the above indexers manually, as needed.
+LUMA users can install a module that provides LUMA compatibility and disables the PHP core price indexer.
 
 ```bash
 composer require adobe-commerce/catalog-adapter

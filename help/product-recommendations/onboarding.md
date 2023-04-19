@@ -32,7 +32,7 @@ See [[!DNL Page Builder] Integration](page-builder.md) for instructions on how t
 
 ## Price indexer
 
-Product Recommendations customers can now take advantage of the new [Commerce price indexer](../price-index/index.md).
+Product Recommendations customers can now take advantage of the new [SaaS price indexer](../price-index/index.md).
 
 ### B2B support {#b2bsupport}
 

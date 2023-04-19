@@ -22,7 +22,7 @@ See the developer documentation to [learn about product compatibility](https://e
 
  _April 25, 2023_
 
-![New](../assets/new.svg) Product Recommendations customers can now take advantage of the new [Commerce price indexer](../price-index/index.md).
+![New](../assets/new.svg) Product Recommendations customers can now take advantage of the new [SaaS price indexer](../price-index/index.md).
 
 ### 5.0.0 of magento/product-recommendations
 

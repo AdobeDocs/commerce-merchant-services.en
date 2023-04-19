@@ -19,7 +19,7 @@ The [!DNL Live Search] API allows a client to sort by any product attribute that
 
 >[!NOTE]
 >
-> Commerce customers with [!DNL Live Search] have access to the [Commerce price indexer](../price-index/index.md).
+> Commerce customers with [!DNL Live Search] can take advantage of faster price changes updates and synchornization time on their websites with the [SaaS price indexer](../price-index/index.md).
 
 ## Indexing pipeline
 
