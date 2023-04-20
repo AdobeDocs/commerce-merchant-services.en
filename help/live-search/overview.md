@@ -15,4 +15,4 @@ The Adobe Commerce side of the architecture includes hosting the search *Admin*,
 
 Watch this video to learn about [!DNL Live Search]:
 
->[!VIDEO](https://video.tv.adobe.com/v/337365?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3418679?quality=12)
