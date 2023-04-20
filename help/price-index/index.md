@@ -91,17 +91,17 @@ Enable new feeds and the catalog adapter, disabling the price indexer.
 
 ### LUMA with price index extension dependencies
 
-* A LUMA merchant with any of LS/PREX/CS installed
+* A LUMA merchant who has a supported service installed (Live Search, Product Recommendations, Catalog Service)
 * Selling simple, configurable and grouped products
 * With a third party extension relying on the PHP core price indexer
 
 Enable the new feeds and install the catalog adapter.
 Re-enable the default price indexer. 
-Use new feeds and LUMA compatibility part from the Catalog Adapter metapackage;
+Use new feeds and LUMA compatibility part from the Catalog Adapter metapackage.
 
 ### Headless merchant
 
-* A headless merchants who uses LS/PREX/CS
+* A headless merchant who has a supported service installed (Live Search, Product Recommendations, Catalog Service)
 * Selling simple, configurable and grouped products
 * No reliance on PHP core price indexer
 
@@ -135,11 +135,11 @@ Merchants that can expect the largest improvements are those with:
 
 * Frequent price changes
 * Multiple websites and/or customer groups
-* Large number of unique prices across websites or customer groups.
+* Large number of unique prices across websites or customer groups
 
 ### What are the main benefits?
 
-Considerable reduction in time to process price changes and see them reflected on website.
+With the Commerce Price Indexer, there is a considerable reduction in time to process price changes and see them reflected on your website.
 It uses Adobe's cloud infrastructure. The customer's Adobe Commerce instance is no longer used to process these calculations, freeing up resources for other processes.
 
 ### What speed improvements can I expect from the new indexer?
