@@ -87,7 +87,8 @@ The following items available in Luma are currently not supported by SaaS produc
 Using the SaaS price index is optional.
 
 Once you opt in to using the new pricing feed, you can contact Support to undo it.
-* The Resync button on the Product Recommendations catalog sync dashboard will not run the new price feeds. It should be run with the `resync` [CLI command](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html#resynccmdline).
+
+The Resync button on the Product Recommendations catalog sync dashboard will not run the new price feeds. It should be run with the `resync` [CLI command](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html#resynccmdline).
 
 ## Usage scenarios
 
