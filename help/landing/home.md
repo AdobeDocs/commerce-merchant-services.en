@@ -10,6 +10,8 @@ exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
 
 Adobe provides a collection of Commerce, integration, and data services to help merchants support key components of their business.
 
+## Commerce services
+
 <table>
 <tr>
   <td valign="top" width="200">
@@ -70,6 +72,34 @@ Adobe provides a collection of Commerce, integration, and data services to help 
    </tr>
 </table>
 
-## Connect to services
+## Data services
 
-The [Commerce Services Connector](saas.md) provides the integration for your Adobe Commerce or Magento Open Source instance using an API key and a private key. For data services (Adobe Commerce only), you can also specify the data space in the configuration.
+<table>
+<tr>
+  <td valign="top" width="200">
+      <img alt="[!DNL Experience Platform Connector]" src="assets/live-search.png" width="170px"/></td>
+   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/overview.html"><strong>[!DNL Experience Platform Connector]</strong></a>  
+    <div>Leverage the connection between Adobe Commerce and the Adobe Experience Platform edge to utilize Commerce data for other Adobe Experience Cloud products, such as Adobe Analytics and Adobe Target.</div>
+  </td>
+   </tr>
+<tr>
+   <td valign="top" width="200">
+       <img alt="[!UICONTROL Services Connector]" src="assets/product-recs.png" width="170px"/></td>
+   <td valign="top">
+   <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html"><strong>[!DNL Services Connector]</strong></a>
+    <div>The Commerce Services Connector provides the integration for your Adobe Commerce or Magento Open Source instance using an API key and a private key. For data services (Adobe Commerce only), you can also specify the data space in the configuration.</div>
+  </td>
+   </tr>
+</table>
+
+## Integration services
+
+<table>
+<tr>
+  <td valign="top" width="200">
+      <img alt="[!DNL Catalog Sync]" src="assets/live-search.png" width="170px"/></td>
+   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html"><strong>[!Catalog Sync]</strong></a>  
+    <div>Catalog sync exports product data from the Commerce server to Commerce services on to keep the services up to date. Indexers, triggered by events such as a change to a product price or inventory level, compile catalog data. You can observe and manage this process via the *Catalog Sync* dashboard or the command-line interface.</div>
+  </td>
+   </tr>
+</table>

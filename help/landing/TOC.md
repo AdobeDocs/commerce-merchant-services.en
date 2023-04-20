@@ -18,7 +18,7 @@ title: Services for Adobe Commerce
 - Integration services {#integration-services}
    - [Experience Platform Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/overview.html)
    - [Services Connector](/help/landing/saas.md)
-- Data Services {#data-services}
+- Data services {#data-services}
    - [Catalog Sync](/help/landing/catalog-sync.md)
 - Release information {#release-information}
    - [Release notes](/help/landing/release-notes-all.md)
