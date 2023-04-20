@@ -11,7 +11,9 @@ exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
 Adobe provides a collection of Commerce, integration, and data services to help merchants support key components of their business.
 
 >[!BEGINSHADEBOX "Release Information"]
+
 See [what's new in our documentation](whats-new.md) or [release notes](release-notes-all.md) for each Commerce service.
+
 >[!ENDSHADEBOX]
 
 ## Commerce services
@@ -100,10 +102,10 @@ See [what's new in our documentation](whats-new.md) or [release notes](release-n
 
 <table>
 <tr>
-  <td valign="top" width="200">
+   <td valign="top" width="200">
       <img alt="[!DNL Catalog Sync]" src="assets/live-search.png" width="170px"/></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html"><strong>[!Catalog Sync]</strong></a>  
+   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html"><strong>[!DNL Catalog Sync]</strong></a>  
     <div>Catalog sync exports product data from the Commerce server to Commerce services on to keep the services up to date. Indexers, triggered by events such as a change to a product price or inventory level, compile catalog data. You can observe and manage this process via the *Catalog Sync* dashboard or the command-line interface.</div>
   </td>
-   </tr>
+</tr>
 </table>
