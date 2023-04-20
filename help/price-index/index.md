@@ -6,7 +6,17 @@ seo-description: Price indexing give performance improvements using SaaS infrast
 ---
 # SaaS Price Indexer
 
-The Price Indexer moves price calculations from the PHP core to Adobe's cloud environment. This vastly decreases indexing time for large catalogs and frees up PHP core resources for other tasks. 
+The price indexation feed sought to speed up the time it takes for price changes to get reflected on a customer's website after they have been submitted. It allows merchants with large and complex catalogs, or that have many websites or customer groups, to process price changes more rapidly and continuously. The PHP core price indexer generally took up 80% of the total indexing time.
+
+The biggest bottleneck of the pipeline: computational heavy processes such as indexation and price calculation, have been moved from the PHP core to the Cloud infrastructure. This allows merchants to quickly scale up resources to boost price indexation times, and reflect those changes to websites at much faster speeds. Price changes are updated across websites and customer groups up to 90% faster, depending on catalog composition and the frequency of prices updates.
+
+Merchants that can expect the largest improvements are those with:
+
+* Frequent price changes
+* Multiple websites and/or customer groups
+* Large number of unique prices across websites or customer groups
+
+If you have third party applications that rely on the current price indexer, read the documentation and consult with the extension provider before making any changes. 
 
 The indexer is available for free for customers using Adobe Commerce services.
 
@@ -19,9 +29,9 @@ To get the SaaS price indexer, you need:
 * Adobe Commerce 2.4.4+
 * At least one of the following SaaS services installed:
 
-    * Catalog Service
-    * Live Search
-    * Product Recommendations
+    * [Catalog Service](../catalog-service/overview.md)
+    * [Live Search](../live-search/guide-overview.md)
+    * [Product Recommendations](../product-recommendations/guide-overview.md)
 
 ## Modules
 
@@ -55,7 +65,7 @@ The PHP core price indexer can be re-enabled if needed by a third party extensio
 Depending on factors such as product types, price complexity and catalog size, the SaaS price indexer may be the right solution for your store. Read over the following limitations and determine if this is a good solution for your site.
 
 Currently, for Live Search and Product Recommendations, the new price indexer supports Simple, Virtual, Configurable, and Bundle Dynamic products types.
-Support for Downaloable, Gift Cards, and Bundle Fixed product types is expected in 2023.
+Support for Downloadable, Gift Cards, and Bundle Fixed product types is expected in 2023.
 
 The price indexer supports base prices:
 
@@ -87,7 +97,9 @@ Using the SaaS price index is optional.
 * Only sells simple, configurable and grouped products
 * No third party extensions relying on the PHP core price indexer
 
-Enable new feeds and the catalog adapter, disabling the price indexer.
+1. Enable new feeds.
+1. Install the catalog adapter.
+1. Disable the price indexer.
 
 ### LUMA with price index extension dependencies
 
@@ -95,9 +107,10 @@ Enable new feeds and the catalog adapter, disabling the price indexer.
 * Selling simple, configurable and grouped products
 * With a third party extension relying on the PHP core price indexer
 
-Enable the new feeds and install the catalog adapter.
-Re-enable the default price indexer. 
-Use new feeds and LUMA compatibility part from the Catalog Adapter metapackage.
+1. Enable the new feeds
+1. Install the catalog adapter.
+1. Re-enable the default price indexer. 
+1. Use new feeds and the LUMA compatibility code.
 
 ### Headless merchant
 
@@ -105,7 +118,8 @@ Use new feeds and LUMA compatibility part from the Catalog Adapter metapackage.
 * Selling simple, configurable and grouped products
 * No reliance on PHP core price indexer
 
-Enable new feeds and the catalog adapter, which will disable the price indexer.
+1. Enable new feeds
+1. Install he catalog adapter, which disables the price indexer.
 
 ### LUMA/headless with unsupported product types
 
@@ -113,47 +127,3 @@ Enable new feeds and the catalog adapter, which will disable the price indexer.
 * Selling simple, configurable, grouped, and gift cards
 
 With currently unsupported product types, wait for full product type support.
-
-## FAQ
-
-### What are these improvements and how are they achieved?
-
-The price indexation feed sought to speed up the time it takes for price changes to get reflected on a customer's website after they have been submitted. It allows merchants with large and complex catalogs, or that have many websites or customer groups, to process price changes more rapidly and continuously. The PHP core price indexer generally took up 80% of the total indexing time.
-
-### Where are the speed improvements coming from? How is the process changing compared to the old one?
-
-The biggest bottleneck of the pipeline: computational heavy processes such as indexation and price calculation, have been moved from the PHP core to the Cloud infrastructure. This allows merchants to quickly scale up resources to boost price indexation times, and reflect those changes to websites at much faster speeds.
-
-### What are the requirements?
-
-* Adobe Commerce 2.4.4+
-* Any of the supported SaaS applications must be installed: Live Search, Product Recommendations, and Catalog Service for Adobe Commerce
-
-### Who is this for?
-
-Merchants that can expect the largest improvements are those with:
-
-* Frequent price changes
-* Multiple websites and/or customer groups
-* Large number of unique prices across websites or customer groups
-
-### What are the main benefits?
-
-With the Commerce Price Indexer, there is a considerable reduction in time to process price changes and see them reflected on your website.
-It uses Adobe's cloud infrastructure. The customer's Adobe Commerce instance is no longer used to process these calculations, freeing up resources for other processes.
-
-### What speed improvements can I expect from the new indexer?
-
-Price changes are updated across websites and customer groups up to 90% faster, depending on catalog composition and the frequency of prices updates.
-
-### Is Magento OS supported?
-
-SaaS services are only available to Adobe Commerce customers using a supported SaaS service.
-
-### Do I have to pay for the price index service?
-
-No, it is free to all Adobe Commerce merchants.
-
-### Will extensions or apps that rely on the current price indexer be affected? If so, how?
-
-If you have third party applications that rely on the current price indexer, read the documentation and consult with the extension provider before making any changes. 

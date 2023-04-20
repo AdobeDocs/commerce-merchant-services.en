@@ -10,11 +10,12 @@ Setting up the price indexer requires installing new modules and running CLI com
 
 ## Prerequisites
 
-To use the price indexing service, you must have installed, or install, one of the supported Commerce services:
+* Adobe Commerce 2.4.4+
+* At least one of the following SaaS services installed:
 
-* Catalog Service
-* Live Search
-* Product Recommendations
+    * [Catalog Service](../catalog-service/overview.md)
+    * [Live Search](../live-search/guide-overview.md)
+    * [Product Recommendations](../product-recommendations/guide-overview.md)
 
 ## Install required modules
 
