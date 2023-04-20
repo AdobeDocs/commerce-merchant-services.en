@@ -64,7 +64,7 @@ The PHP core price indexer can be re-enabled if needed by a third party extensio
 
 Depending on factors such as product types, price complexity and catalog size, the SaaS price indexer may be the right solution for your store. Read over the following limitations and determine if this is a good solution for your site.
 
-Currently, for Live Search and Product Recommendations, the new price indexer supports Simple, Virtual, Configurable, and Bundle Dynamic products types.
+Currently, for Live Search and Product Recommendations, the new price indexer supports Simple, Virtual, Configurable, and Bundle Dynamic product types.
 Support for Downloadable, Gift Cards, and Bundle Fixed product types is expected in 2023.
 
 The price indexer supports base prices:
