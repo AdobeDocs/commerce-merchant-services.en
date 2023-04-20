@@ -1,12 +1,12 @@
 ---
-title: SaaS Price Indexer Installation
-description: Installing the SaaS Price Indexer
-seo-title: SaaS Price Indexer installation
-seo-description: Installing the SaaS Price indexer
+title: SaaS Price Indexing Installation
+description: Installing SaaS Price Indexing
+seo-title: SaaS Price Indexing installation
+seo-description: Installing SaaS Price indexing
 ---
-# SaaS Price Indexer Installation
+# SaaS Price Indexing Installation
 
-Setting up the price indexer requires installing new modules and running CLI commands. Admins need command-line access to complete this installation.
+Setting up SaaS price indexing requires installing new modules and running CLI commands. Admins need command-line access to complete this installation.
 
 ## Prerequisites
 
@@ -69,6 +69,8 @@ After upgrading, three new feeds are available:
     ```
 
 The Resync button on the Product Recommendations catalog sync dashboard will not run the new price feeds. Run the above indexers manually, as needed.
+Otherwise, the data gets refreshed in the standard sync process.
+
 LUMA users can install a module that provides LUMA compatibility and disables the PHP core price indexer.
 
 ```bash
