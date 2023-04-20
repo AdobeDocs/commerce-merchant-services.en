@@ -66,6 +66,7 @@ After upgrading, three new feeds are available:
     bin/magento saas:resync --feed=scopesCustomerGroup
     bin/magento saas:resync --feed=scopesWebsite
     bin/magento saas:resync --feed=prices
+    bin/magento saas:resync --feed productattributes
     ```
 
 The Resync button on the Product Recommendations catalog sync dashboard will not run the new price feeds. Run the above indexers manually, as needed.

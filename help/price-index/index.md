@@ -38,13 +38,14 @@ To get the SaaS price indexer, you need:
 The SaaS price indexer uses a set of modules to provide functionality. The list of required modules could be slightly different, depending on the store setup.
 
 These two modules add the new feeds to the Admin. These feeds transfer data required for price calculations to the SaaS indexer and ignores the PHP core price indexer.
+All instances requires the following modules:
 
 ```
 magento/module-saas-price
 magento/module-saas-scopes
 ```
 
-Those with on-premise (EE) installations require the following modules:
+Those with on-premise (EE) installations also require the following modules:
 
 ```
 magento/module-product-override-price-remover
