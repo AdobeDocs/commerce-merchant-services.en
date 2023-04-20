@@ -38,7 +38,6 @@ There are extensions that add the new feeds and supporting code and there is an 
     "magento/module-saas-scopes": "102.2.0",
     "magento/module-product-override-price-remover": "102.2.0",
     "magento/module-bundle-product-override-data-exporter": "102.2.0",
-
     ```
 
 1. Run the upgrade command:
