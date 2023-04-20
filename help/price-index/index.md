@@ -75,7 +75,7 @@ The price indexer supports base prices:
 * Customer group prices 
 * Catalog rule prices
 
-The following items are available in Luma currently not supported by SaaS products.
+The following items available in Luma are currently not supported by SaaS products:
 
 * Tier prices
 * MSRP
