@@ -15,7 +15,7 @@ The Experience Platform connector appears in the Commerce Admin under **System**
 
 ## Prerequisites {#prereqs}
 
-In order to use the Experience Platform connector, you must have the following:
+To use the Experience Platform connector, you must have the following:
 
 - Adobe Commerce 2.4.3 or newer
 - Adobe ID and Organization ID

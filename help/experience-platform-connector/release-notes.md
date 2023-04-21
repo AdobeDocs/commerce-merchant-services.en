@@ -13,7 +13,7 @@ These release notes contain updates to the Experience Platform connector and inc
 
 For feature changes and fixes related to extensions used by the Experience Platform connector, see **Supported service updates**.
 
-See [Upcoming Releases](https://experienceleague.adobe.com/docs/commerce-operations/release/schedule.html) to learn about release schedules and support.
+See [Upcoming Releases](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html) to learn about release schedules and support.
 
 See the developer documentation to [learn about product compatibility](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 
@@ -58,7 +58,7 @@ _January 17, 2023_
 
 [!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.3 and newer
 
-* ![New](../assets/new.svg) - Updated the [Experience Platform connector Admin](connect-data.md) so you can specify your own AEP Web SDK (alloy). Also, added an option for merchants enrolled in our back office beta program to send [back office event data](connect-data.md#data-collection) to the edge. These events contain [order status information](events.md#beta-order-status-events) about an order, such as if an order was placed, cancelled, refunded, or shipped.
+* ![New](../assets/new.svg) - Updated the [Experience Platform connector Admin](connect-data.md) so you can specify your own AEP Web SDK (alloy).
 * ![Fix](../assets/fix.svg) Changed to using `identityMap` instead of `personID` when setting the primary identity for any data pushed to the edge.
 
 ## 2.0.1
