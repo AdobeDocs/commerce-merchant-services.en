@@ -97,6 +97,10 @@ The easiest way to pin a product is by drag and drop.
 
 You may also click the pin icon to pin a product to its current location. Use the ellipsis context menu to "Pin to top" or "Pin to bottom".
 
+>[!NOTE]
+>
+>You can only pin products that are returned in the query.
+
 Or events can be set manually:
 
 1. Under *Events*, choose the **Event** to take place when the associated conditions are met.
