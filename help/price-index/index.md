@@ -6,9 +6,9 @@ seo-description: Price indexing give performance improvements using SaaS infrast
 ---
 # SaaS Price Indexing
 
-SaaS price indexing speeds up the time it takes for price changes to get reflected on a customer's website after they have been submitted. It allows merchants with large, complex catalogs, or with multiple websites or customer groups, to process price changes more rapidly and continuously.
+SaaS price indexing speeds up the time it takes for price changes to get reflected on a customer's website after they have been submitted. This optional modulue allows merchants with large, complex catalogs, or with multiple websites or customer groups, to process price changes more rapidly and continuously.
 
-The biggest bottleneck of the pipeline: computational heavy processes such as indexation and price calculation, have been moved from the PHP core to the Cloud infrastructure. This allows merchants to quickly scale up resources to boost price indexation times, and reflect those changes to websites at much faster speeds.
+The biggest bottleneck of the pipeline: computational heavy processes such as indexation and price calculation, have been moved from the PHP core to the Adobe's Cloud infrastructure. This allows merchants to quickly scale up resources to boost price indexation times, and reflect those changes to websites at much faster speeds.
 
 All merchants who meet the requirements can benefit from these improvements, but those who will see the largest uptick are those customers with: 
 
@@ -38,7 +38,7 @@ To use SaaS price indexing, you need:
 SaaS price indexing uses a set of modules to provide functionality. The list of required modules could be slightly different, depending on the store setup.
 
 These two modules add the new feeds to the Admin. These feeds transfer data required for price calculations to the SaaS indexer and ignores the PHP core price indexer.
-All instances requires the following modules:
+All instances require the following modules:
 
 ```
 magento/module-saas-price
@@ -52,7 +52,7 @@ magento/module-product-override-price-remover
 magento/module-bundle-product-override-data-exporter
 ```
 
-Customers using LUMA and Adobe Commerce Core GraphQL can install a module that provides LUMA compatability and disables the PHP core price indexer:
+Customers using Luma and Adobe Commerce Core GraphQL can install a module that provides Luma compatability and disables the PHP core price indexer:
 
 ```
 adobe-commerce/catalog-adapter
@@ -65,10 +65,8 @@ The PHP core price indexer can be re-enabled if needed by a third party extensio
 
 Depending on factors such as product types, price complexity and catalog size, SaaS price indexing may be the right solution for your store. Read over the following limitations and determine if this is a good solution for your site.
 
-Currently, for Live Search and Product Recommendations, SaaS price indexing supports Simple, Virtual, Configurable, and Bundle Dynamic product types.
-Support for Downloadable, Gift Cards, and Bundle Fixed product types is expected in 2023.
-
-Catalog Service supports all product types.
+Currently, SaaS price indexing supports Simple, Virtual, Configurable, and Bundle Dynamic product types.
+Support for Downloadable, Gift Cards, and Bundle Fixed product types is coming soon.
 
 SaaS price indexing supports base prices:
 
@@ -78,46 +76,41 @@ SaaS price indexing supports base prices:
 * Customer group prices 
 * Catalog rule prices
 
-Using SaaS price indexing is optional.
+Once you opt in to using the new pricing feed, you can contact [Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html) to undo it.
 
-Once you opt in to using the new pricing feed, you can contact Support to undo it.
-
-The Resync button on the Product Recommendations catalog sync dashboard will not run the new price feeds. It should be run with the `resync` [CLI command](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html#resynccmdline). Otherwise, the data gets refreshed in the standard sync process.
+New feeds should be manually synced with the `resync` [CLI command](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html#resynccmdline). Otherwise, the data gets refreshed in the standard sync process. Get more infomation about the [Catalog Service](../landing/catalog-sync.md) process.
 
 ## Usage scenarios
 
-### LUMA with no extention dependencies
+### Luma with no extention dependencies
 
-* A LUMA or Abode Commerce Core GraphQL merchant who has a required service installed (Live Search, Product Recommendations, Catalog Service)
-* Only sells simple, configurable, grouped, virtual, or bundle dynamic products
+* A Luma or Abode Commerce Core GraphQL merchant who has a required service installed (Live Search, Product Recommendations, Catalog Service)
 * No third party extensions relying on the PHP core price indexer
 
 1. Enable new feeds.
 1. Install the catalog adapter.
 
-### LUMA and Abode Commerce Core GraphQl with PHP core price indexer dependencies
+### Luma and Abode Commerce Core GraphQl with PHP core price indexer dependencies
 
-* A LUMA or Abode Commerce Core GraphQL merchant who has a supported service installed (Live Search, Product Recommendations, Catalog Service)
-* Selling simple, configurable, grouped, virtual, or bundle dynamic products
+* A Luma or Abode Commerce Core GraphQL merchant who has a supported service installed (Live Search, Product Recommendations, Catalog Service)
 * With a third party extension relying on the PHP core price indexer
 
 1. Enable the new feeds
 1. Install the catalog adapter.
 1. Re-enable the default price indexer. 
-1. Use new feeds and the LUMA compatibility code in the `catalog-adapter` module.
+1. Use new feeds and the Luma compatibility code in the `catalog-adapter` module.
 
 ### Headless merchant
 
 * A headless merchant who has a supported service installed (Live Search, Product Recommendations, Catalog Service)
-* Selling selling simple, configurable, grouped, virtual, or bundle dynamic products
 * No reliance on PHP core price indexer
 
 1. Enable new feeds
 1. Install the catalog adapter, which disables the PHP core price indexer.
 
-### LUMA/Core GraphQL/Headless with unsupported product types
+### Luma/Core GraphQL/Headless with unsupported product types
 
-* LUMA/Headless merchant
+* Luma/Headless merchant
 * Selling gift cards, downloadable, or bundle fixed products
 
 With currently unsupported product types, wait for full product type support.

@@ -56,7 +56,7 @@ To restrict customer groups using Catalog permissions:
 
 ## Price indexer
 
-Live Search customers can use the [SaaS price indexer](../price-index/index.md).
+Live Search customers can use the new [SaaS price indexer](../price-index/index.md), which provides faster price changes updates and synchornization time.
 
 ### PWA support
 

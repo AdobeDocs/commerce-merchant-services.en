@@ -53,8 +53,8 @@ These release notes describe the latest versions of [!DNL Live Search] and inclu
 * Other minor bug fixes and performance updates
 
 
-* ![Bug](../assets/bug.svg) - Ranking by "Recommended for you" is only supported within the Live Search widgets. It is not supported with the default LUMA and PWA search functionality.
-* ![Bug](../assets/bug.svg) - Custom price attribute facets do not render correctly in LUMA, but the API properly filters on them.
+* ![Bug](../assets/bug.svg) - Ranking by "Recommended for you" is only supported within the Live Search widgets. It is not supported with the default Luma and PWA search functionality.
+* ![Bug](../assets/bug.svg) - Custom price attribute facets do not render correctly in Luma, but the API properly filters on them.
 
 Merchants must upgrade the [!DNL Live Search] extension version >= 3.0.1 to access these features.
 

@@ -32,7 +32,7 @@ See [[!DNL Page Builder] Integration](page-builder.md) for instructions on how t
 
 ## Price indexer
 
-Product Recommendations customers can now take advantage of the new [SaaS price indexer](../price-index/index.md).
+Product Recommendation customers can use the new [SaaS price indexer](../price-index/index.md), which provides faster price changes updates and synchornization time.
 
 ### B2B support {#b2bsupport}
 
