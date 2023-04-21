@@ -99,7 +99,7 @@ You may also click the pin icon to pin a product to its current location. Use th
 
 >[!NOTE]
 >
->Only products that are returned in the query can be pinned.
+>You can only pin products that are returned in the query.
 
 Or events can be set manually:
 
