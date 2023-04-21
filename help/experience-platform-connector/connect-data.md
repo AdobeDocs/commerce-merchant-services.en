@@ -106,7 +106,7 @@ See the events topic to learn more about [storefront](events.md#storefront-event
 
 ## Verify that data is being sent to Experience Platform
 
-After onboarding, storefront data begins to flow to the Experience Platform edge. Back office data, however, takes about 5 minutes for the data to appear at the edge. Subsequent updates are visible immediately at the edge.
+After onboarding, storefront data begins to flow to the Experience Platform edge. Back office data takes about 5 minutes after onboarding for the data to appear at the edge. Subsequent updates are visible at the edge based on the cron schedule.
 
 When Commerce data is sent to the Experience Platform edge, you can build reports like the following:
 
