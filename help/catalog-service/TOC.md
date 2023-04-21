@@ -16,4 +16,3 @@ hide: yes
     - [productSearch query](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/product-search/)
     - [refineProduct query](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/refine-product/)
 - [Release Notes](release-notes.md)
-- [SaaS Price Indexer](../price-index/index.md)
