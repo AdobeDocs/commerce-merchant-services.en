@@ -71,8 +71,14 @@ After upgrading, three new feeds are available:
 The Resync button on the Product Recommendations catalog sync dashboard will not run the new price feeds. Run the above indexers manually, as needed.
 Otherwise, the data gets refreshed in the standard sync process.
 
-LUMA users can install a module that provides LUMA compatibility and disables the PHP core price indexer.
+LUMA and core GraphQL users can install a module that provides LUMA compatibility and disables the PHP core price indexer.
 
 ```bash
 composer require adobe-commerce/catalog-adapter
+```
+
+If needed, the core price indexer can be reenabled with the following command:
+
+```bash
+bin/magento module:disable Magento_PriceIndexerDisabler
 ```

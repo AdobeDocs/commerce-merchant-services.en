@@ -6,7 +6,7 @@ seo-description: Price indexing give performance improvements using SaaS infrast
 ---
 # SaaS Price Indexing
 
-The price indexation feed sought to speed up the time it takes for price changes to get reflected on a customer's website after they have been submitted. It allows merchants with large and complex catalogs, or that have many websites or customer groups, to process price changes more rapidly and continuously. The PHP core price indexing generally took up 80% of the total indexing time.
+SaaS price indexing speeds up the time it takes for price changes to get reflected on a customer's website after they have been submitted. It allows merchants with large, complex catalogs, or with multiple websites or customer groups, to process price changes more rapidly and continuously.
 
 The biggest bottleneck of the pipeline: computational heavy processes such as indexation and price calculation, have been moved from the PHP core to the Cloud infrastructure. This allows merchants to quickly scale up resources to boost price indexation times, and reflect those changes to websites at much faster speeds.
 
@@ -18,7 +18,7 @@ All merchants who meet the requirements can benefit from these improvements, but
 
 If you have third party applications that rely on the current price indexing, read the documentation and consult with the extension provider before making any changes. 
 
-The indexer is available for free for customers using Adobe Commerce services.
+SaaS price indexing is available for free for customers using Adobe Commerce services.
 
 This mini-guide describes how the indexing works and how to enable it.
 
