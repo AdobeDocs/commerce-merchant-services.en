@@ -71,7 +71,8 @@ After upgrading, three new feeds are available:
 The Resync button on the Product Recommendations catalog sync dashboard will not run the new price feeds. Run the above indexers manually, as needed.
 Otherwise, the data gets refreshed in the standard sync process.
 
-LUMA and core GraphQL users can install a module that provides LUMA compatibility and disables the PHP core price indexer.
+LUMA and Adobe Commerce Core GraphQL users can install the `catalog-adapter` module that provides LUMA compatibility and disables the PHP core price indexer.
+To use the `catalog-adapter` module, [!DNL Live Search] must first be installed. Follow the [Install [!DNL Live Search]](../live-search/install.md) instructions before continuing.
 
 ```bash
 composer require adobe-commerce/catalog-adapter

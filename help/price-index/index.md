@@ -16,15 +16,15 @@ All merchants who meet the requirements can benefit from these improvements, but
 * Multiple websites and/or customer groups: Merchants with shared product catalogs across multiple websites (domains/brands) and/or customer groups. 
 * Large number of unique prices across websites or customer groups: Merchants with extensive shared product catalogs that contain unique prices across websites or customer groups, such as B2B merchants with pre-negotiated prices, brands with different pricing strategies.
 
-If you have third party applications that rely on the current price indexing, read the documentation and consult with the extension provider before making any changes. 
+If you have third party applications that rely on the PHP core price indexer, read the documentation and consult with the extension provider before making any changes. 
 
 SaaS price indexing is available for free for customers using Adobe Commerce services.
 
-This mini-guide describes how the indexing works and how to enable it.
+This mini-guide describes how SaaS price indexing works and how to enable it.
 
 ## System requirements
 
-To get SaaS price indexing, you need:
+To use SaaS price indexing, you need:
 
 * Adobe Commerce 2.4.4+
 * At least one of the following SaaS services installed:
@@ -52,7 +52,7 @@ magento/module-product-override-price-remover
 magento/module-bundle-product-override-data-exporter
 ```
 
-Customers using LUMA can install a module that provides LUMA compatability and disables the PHP core price indexer:
+Customers using LUMA and Adobe Commerce Core GraphQL can install a module that provides LUMA compatability and disables the PHP core price indexer:
 
 ```
 adobe-commerce/catalog-adapter
@@ -78,15 +78,6 @@ SaaS price indexing supports base prices:
 * Customer group prices 
 * Catalog rule prices
 
-The following items available in Luma are currently not supported by SaaS products:
-
-* Tier prices
-* MSRP
-* Customizable product options
-* Currency rate
-* Category rules
-* Taxes
-
 Using SaaS price indexing is optional.
 
 Once you opt in to using the new pricing feed, you can contact Support to undo it.
@@ -97,17 +88,16 @@ The Resync button on the Product Recommendations catalog sync dashboard will not
 
 ### LUMA with no extention dependencies
 
-* A LUMA merchant who has a required service installed (Live Search, Product Recommendations, Catalog Service)
+* A LUMA or Abode Commerce Core GraphQL merchant who has a required service installed (Live Search, Product Recommendations, Catalog Service)
 * Only sells simple, configurable, grouped, virtual, or bundle dynamic products
 * No third party extensions relying on the PHP core price indexer
 
 1. Enable new feeds.
 1. Install the catalog adapter.
-1. Disable the core price indexer.
 
-### LUMA with price index extension dependencies
+### LUMA and Abode Commerce Core GraphQl with PHP core price indexer dependencies
 
-* A LUMA merchant who has a supported service installed (Live Search, Product Recommendations, Catalog Service)
+* A LUMA or Abode Commerce Core GraphQL merchant who has a supported service installed (Live Search, Product Recommendations, Catalog Service)
 * Selling simple, configurable, grouped, virtual, or bundle dynamic products
 * With a third party extension relying on the PHP core price indexer
 
@@ -123,11 +113,11 @@ The Resync button on the Product Recommendations catalog sync dashboard will not
 * No reliance on PHP core price indexer
 
 1. Enable new feeds
-1. Install the catalog adapter, which disables the core price indexer.
+1. Install the catalog adapter, which disables the PHP core price indexer.
 
-### LUMA/headless with unsupported product types
+### LUMA/Core GraphQL/Headless with unsupported product types
 
 * LUMA/Headless merchant
-* Selling simple, configurable, grouped, and gift cards
+* Selling gift cards, downloadable, or bundle fixed products
 
 With currently unsupported product types, wait for full product type support.
