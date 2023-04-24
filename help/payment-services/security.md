@@ -35,7 +35,7 @@ If you are a merchant within the EU or Britain where 3DS compliance is required,
 
    >[!NOTE]
    >
-   >These 3DS requirements apply to transactions wherein the business and cardholder's bank are located in the [European Economic Area](https://www.efta.int/eea) (EEA) and the United Kingdom. United States merchants do not require 3DS, but may enable it for their transactions if desired.
+   >The 3DS requirement applies to transactions where the business and cardholder's bank are located in the [European Economic Area](https://www.efta.int/eea) (EEA) and the United Kingdom. United States merchants do not require 3DS, but can enable it for their transactions if desired.
 
 Orders placed for the buyer by the merchant/store personnel are not configured with 3DS compliance measures.
 
