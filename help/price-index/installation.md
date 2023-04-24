@@ -24,15 +24,6 @@ There are extensions that add the new feeds and supporting code and there is an 
 
 1. Add the following modules to your `composer.json` file:
 
-    For Cloud environments:
-
-    ```json
-    "magento/module-saas-price": "102.2.0",
-    "magento/module-saas-scopes": "102.2.0"
-    ```
-
-    For Commerce on-premise environments:
-
     ```json
     "magento/module-saas-price": "102.2.0",
     "magento/module-saas-scopes": "102.2.0",
@@ -77,7 +68,7 @@ To use the `catalog-adapter` module, [!DNL Live Search] must first be installed.
 composer require adobe-commerce/catalog-adapter
 ```
 
-If needed, the core price indexer can be reenabled with the following command:
+If needed, the PHP core price indexer can be reenabled with the following command:
 
 ```bash
 bin/magento module:disable Magento_PriceIndexerDisabler

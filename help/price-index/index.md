@@ -38,14 +38,6 @@ To use SaaS price indexing, you need:
 SaaS price indexing uses a set of modules to provide functionality. The list of required modules could be slightly different, depending on the store setup.
 
 These two modules add the new feeds to the Admin. These feeds transfer data required for price calculations to the SaaS indexer and ignores the PHP core price indexer.
-All instances require the following modules:
-
-```
-magento/module-saas-price
-magento/module-saas-scopes
-```
-
-Those with on-premise (EE) installations also require the following modules:
 
 ```
 magento/module-product-override-price-remover
@@ -65,7 +57,7 @@ The PHP core price indexer can be re-enabled if needed by a third party extensio
 
 Depending on factors such as product types, price complexity and catalog size, SaaS price indexing may be the right solution for your store. Read over the following limitations and determine if this is a good solution for your site.
 
-Currently, SaaS price indexing supports Simple, Virtual, Configurable, and Bundle Dynamic product types.
+Currently, SaaS price indexing supports Simple, Grouped, Virtual, Configurable, and Bundle Dynamic product types.
 Support for Downloadable, Gift Cards, and Bundle Fixed product types is coming soon.
 
 SaaS price indexing supports base prices:
@@ -76,7 +68,7 @@ SaaS price indexing supports base prices:
 * Customer group prices 
 * Catalog rule prices
 
-Once you opt in to using the new pricing feed, you can contact [Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html) to undo it.
+Once you opt in to using the new pricing feed, you can contact [Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html) to help you undo it.
 
 New feeds should be manually synced with the `resync` [CLI command](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html#resynccmdline). Otherwise, the data gets refreshed in the standard sync process. Get more infomation about the [Catalog Service](../landing/catalog-sync.md) process.
 
@@ -88,6 +80,7 @@ New feeds should be manually synced with the `resync` [CLI command](https://expe
 * No third party extensions relying on the PHP core price indexer
 
 1. Enable new feeds.
+1. Selling simple, configurable, grouped, virtual, and bundle dynamic products
 1. Install the catalog adapter.
 
 ### Luma and Abode Commerce Core GraphQl with PHP core price indexer dependencies
@@ -97,7 +90,7 @@ New feeds should be manually synced with the `resync` [CLI command](https://expe
 
 1. Enable the new feeds
 1. Install the catalog adapter.
-1. Re-enable the default price indexer. 
+1. Re-enable the PHP core price indexer. 
 1. Use new feeds and the Luma compatibility code in the `catalog-adapter` module.
 
 ### Headless merchant
