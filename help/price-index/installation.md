@@ -56,7 +56,6 @@ After upgrading, three new feeds are available:
     bin/magento saas:resync --feed=scopesCustomerGroup
     bin/magento saas:resync --feed=scopesWebsite
     bin/magento saas:resync --feed=prices
-    bin/magento saas:resync --feed productattributes
     ```
 
 Run the above indexers manually, as needed. Otherwise, the data gets refreshed in the standard sync process. Read more about the [Catalog Sync](../landing/catalog-sync.md) service.
