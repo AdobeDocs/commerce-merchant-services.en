@@ -6,17 +6,17 @@ seo-description: Price indexing give performance improvements using SaaS infrast
 ---
 # SaaS Price Indexing
 
-SaaS price indexing speeds up the time it takes for price changes to get reflected on a customer's website after they have been submitted. This optional modulue allows merchants with large, complex catalogs, or with multiple websites or customer groups, to process price changes more rapidly and continuously.
+SaaS price indexing speeds up the time that it takes for price changes to get reflected on a customer's website after they have been submitted. This optional module allows merchants with large, complex catalogs, or with multiple websites or customer groups, to process price changes more rapidly and continuously.
 
 The biggest bottleneck of the pipeline: computational heavy processes such as indexation and price calculation, have been moved from the PHP core to the Adobe's Cloud infrastructure. This allows merchants to quickly scale up resources to boost price indexation times, and reflect those changes to websites at much faster speeds.
 
-All merchants who meet the requirements can benefit from these improvements, but those who will see the largest uptick are those customers with: 
+All merchants who meet the requirements can benefit from these improvements, but those who will see the greatest gains are customers with: 
 
 * Constant price changes: Merchants that require repeated changes to their prices to meet strategic goals such as frequent promotions, seasonal discounts, or inventory markdowns.
 * Multiple websites and/or customer groups: Merchants with shared product catalogs across multiple websites (domains/brands) and/or customer groups. 
 * Large number of unique prices across websites or customer groups: Merchants with extensive shared product catalogs that contain unique prices across websites or customer groups, such as B2B merchants with pre-negotiated prices, brands with different pricing strategies.
 
-If you have third party applications that rely on the PHP core price indexer, read the documentation and consult with the extension provider before making any changes. 
+If you have third-party applications that rely on the PHP core price indexer, read the documentation and consult with the extension provider before making any changes. 
 
 SaaS price indexing is available for free for customers using Adobe Commerce services.
 
@@ -44,14 +44,14 @@ magento/module-product-override-price-remover
 magento/module-bundle-product-override-data-exporter
 ```
 
-Customers using Luma and Adobe Commerce Core GraphQL can install a module that provides Luma compatability and disables the PHP core price indexer:
+Customers using Luma and Adobe Commerce Core GraphQL can install a module that provides Luma compatibility and disables the PHP core price indexer:
 
 ```
 adobe-commerce/catalog-adapter
 ```
 
-Note that the `catalog-adapter` is only compatible with 2.4.5. Support for 2.4.4 and 2.4.6 will be released in the near future.
-The PHP core price indexer can be re-enabled if needed by a third party extension or any other reason.
+The `catalog-adapter` is only compatible with 2.4.5. Support for 2.4.4 and 2.4.6 will be released in the near future.
+The PHP core price indexer can be re-enabled if needed by a third-party extension or any other reason.
 
 ## Caveats
 
@@ -70,14 +70,14 @@ SaaS price indexing supports base prices:
 
 Once you opt in to using the new pricing feed, you can contact [Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html) to help you undo it.
 
-New feeds should be manually synced with the `resync` [CLI command](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html#resynccmdline). Otherwise, the data gets refreshed in the standard sync process. Get more infomation about the [Catalog Sync](../landing/catalog-sync.md) process.
+New feeds should be manually synced with the `resync` [CLI command](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html#resynccmdline). Otherwise, the data gets refreshed in the standard sync process. Get more information about the [Catalog Sync](../landing/catalog-sync.md) process.
 
 ## Usage scenarios
 
-### Luma with no extention dependencies
+### Luma with no extension dependencies
 
 * A Luma or Abode Commerce Core GraphQL merchant who has a required service installed (Live Search, Product Recommendations, Catalog Service)
-* No third party extensions relying on the PHP core price indexer
+* No third-party extensions relying on the PHP core price indexer
 * Selling simple, configurable, grouped, virtual, and bundle dynamic products
 
 1. Enable new feeds.
@@ -86,7 +86,7 @@ New feeds should be manually synced with the `resync` [CLI command](https://expe
 ### Luma and Abode Commerce Core GraphQl with PHP core price indexer dependencies
 
 * A Luma or Abode Commerce Core GraphQL merchant who has a supported service installed (Live Search, Product Recommendations, Catalog Service)
-* With a third party extension relying on the PHP core price indexer
+* With a third-party extension relying on the PHP core price indexer
 * Selling simple, configurable, grouped, virtual, and bundle dynamic products
 
 1. Enable the new feeds
