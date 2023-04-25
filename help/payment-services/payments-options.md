@@ -29,6 +29,8 @@ Enable [credit card vaulting](#vaulting) for your stores to allow shoppers to va
 
 You can configure [!UICONTROL Credit Card Fields] in the store configuration or the Payment Services Home. See [Settings](settings.md#credit-card-fields) for more information.
 
+You can also change the layout, width, height, and outer styling of the credit card fields. See [PayPal documentation](https://developer.paypal.com/docs/checkout/advanced/customize/card-field-style/) for more information.
+
 ## [!DNL PayPal Smart Buttons]
 
 [!DNL PayPal Smart Buttons], which use PayPal to complete a purchase, stores your shopper's shipping address, billing addresses, and payment details for later use. Shoppers can use any payment method previously stored or offered by PayPal.

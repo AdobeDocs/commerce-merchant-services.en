@@ -33,6 +33,10 @@ PCI 3-D Secure (3DS) enables buyer authentication with their credit card issuer 
 
 If you are a merchant within the EU or Britain where 3DS compliance is required, you must manually turn on 3DS (it is `Off` by default) in [Settings](settings.md#credit-card-fields).
 
+   >[!NOTE]
+   >
+   >The 3DS requirement applies to transactions where the business and cardholder's bank are located in the [European Economic Area](https://www.efta.int/eea) (EEA) and Britain. United States merchants do not require 3DS, but can enable it for their transactions if desired.
+
 Orders placed for the buyer by the merchant/store personnel are not configured with 3DS compliance measures.
 
 See [3DS in Settings](settings.md#3ds) for more information.
