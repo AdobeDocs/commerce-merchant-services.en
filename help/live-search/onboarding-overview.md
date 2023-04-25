@@ -54,6 +54,10 @@ To restrict customer groups using Catalog permissions:
 
 * [!DNL Live Search] can manage up to 200 synonyms per store view.
 
+## Price indexer
+
+Live Search customers can use the new [SaaS price indexer](../price-index/index.md), which provides faster price change updates and synchronization time.
+
 ### PWA support
 
 Live Search support is considered to be in beta because not all of PWA has been tested with [!DNL Live Search]. Basic functionality such as search and product listing page work in Venia but some permutations of Graphql may not work correctly.
