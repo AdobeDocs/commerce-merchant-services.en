@@ -70,7 +70,7 @@ SaaS price indexing supports base prices:
 
 Once you opt in to using the new pricing feed, you can contact [Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html) to help you undo it.
 
-New feeds should be manually synced with the `resync` [CLI command](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html#resynccmdline). Otherwise, the data gets refreshed in the standard sync process. Get more infomation about the [Catalog Service](../landing/catalog-sync.md) process.
+New feeds should be manually synced with the `resync` [CLI command](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html#resynccmdline). Otherwise, the data gets refreshed in the standard sync process. Get more infomation about the [Catalog Sync](../landing/catalog-sync.md) process.
 
 ## Usage scenarios
 
@@ -78,15 +78,16 @@ New feeds should be manually synced with the `resync` [CLI command](https://expe
 
 * A Luma or Abode Commerce Core GraphQL merchant who has a required service installed (Live Search, Product Recommendations, Catalog Service)
 * No third party extensions relying on the PHP core price indexer
+* Selling simple, configurable, grouped, virtual, and bundle dynamic products
 
 1. Enable new feeds.
-1. Selling simple, configurable, grouped, virtual, and bundle dynamic products
 1. Install the catalog adapter.
 
 ### Luma and Abode Commerce Core GraphQl with PHP core price indexer dependencies
 
 * A Luma or Abode Commerce Core GraphQL merchant who has a supported service installed (Live Search, Product Recommendations, Catalog Service)
 * With a third party extension relying on the PHP core price indexer
+* Selling simple, configurable, grouped, virtual, and bundle dynamic products
 
 1. Enable the new feeds
 1. Install the catalog adapter.
@@ -97,6 +98,7 @@ New feeds should be manually synced with the `resync` [CLI command](https://expe
 
 * A headless merchant who has a supported service installed (Live Search, Product Recommendations, Catalog Service)
 * No reliance on PHP core price indexer
+* Selling simple, configurable, grouped, virtual, and bundle dynamic products
 
 1. Enable new feeds
 1. Install the catalog adapter, which disables the PHP core price indexer.

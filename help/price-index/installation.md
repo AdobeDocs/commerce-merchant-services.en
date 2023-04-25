@@ -60,7 +60,7 @@ After upgrading, three new feeds are available:
 
 Run the above indexers manually, as needed. Otherwise, the data gets refreshed in the standard sync process. Read more about the [Catalog Sync](../landing/catalog-sync.md) service.
 
-Luma and Adobe Commerce Core GraphQL users can install the `catalog-adapter` module that provides Luma compatibility and disables the PHP core price indexer.
+Luma and Adobe Commerce Core GraphQL users can install the `catalog-adapter` module that provides Luma and Core GraphQl compatibility and disables the PHP core price indexer.
 To use the `catalog-adapter` module, [!DNL Live Search] must first be installed. Follow the [Install [!DNL Live Search]](../live-search/install.md) instructions before continuing.
 
 ```bash
