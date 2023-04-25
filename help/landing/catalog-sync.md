@@ -134,7 +134,6 @@ If you are using [SaaS price indexing](../price-index/index.md) and need to resy
 bin/magento saas:resync --feed=scopesCustomerGroup
 bin/magento saas:resync --feed=scopesWebsite
 bin/magento saas:resync --feed=prices
-bin/magento saas:resync --feed productattributes
 ```
 
 ### Examples
