@@ -1334,7 +1334,7 @@ The following steps show how to configure a `pageView` event with `identityMap` 
     ![Configure data element with custom code](assets/set-custom-code-ecid.png)
     _Configure data element with custom code_
 
-1. Add ECID custom code:
+1. Select [!UICONTROL Open Editor] and add the following custom code:
 
     ```javascript
     return alloy("getIdentity").then((result) => {
@@ -1343,6 +1343,12 @@ The following steps show how to configure a `pageView` event with `identityMap` 
             {
                 id: ecid,
                 primary: true
+            }
+            ],
+            email: [
+            {
+                id: email,
+                primary: false
             }
             ]
         };
@@ -1362,7 +1368,7 @@ The following steps show how to configure a `pageView` event with `identityMap` 
 
 ## Set identity in back office events
 
-Unlike storefront events that use ECID to identity and link profile information, back office event data is SaaS-based and therefore no ECID is available. For back office events, you need to use email. In this section, you will learn how to link back office event data to an ECID using email.
+Unlike storefront events that use ECID to identity and link profile information, back office event data is SaaS-based and therefore no ECID is available. For back office events, you need to use email to uniquely identify shoppers. In this section, you will learn how to link back office event data to an ECID using email.
 
 1. Create an identity map element.
 
@@ -1392,10 +1398,10 @@ if (_satellite.getVar('account email')) {
 return IdentityMap;
 ```
 
-1. Add this new element to your XDM schema for each back office event.
+1. Add this new element to each `identityMap` field.
 
-    ![Update each back office event](assets/add-element-back-office.png)
-    _Update each back office event_
+    ![Update each identityMap](assets/add-element-back-office.png)
+    _Update each identityMap_
 
 ## Setting consent
 
