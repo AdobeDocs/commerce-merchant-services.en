@@ -214,16 +214,16 @@ You can configure [!DNL PayPal Smart Buttons] styling [in the Legacy configurati
 
 ## Configure roles
 
-To ensure that Admin users can create and manage orders in the Commerce Admin, you must specify Payment Services user roles.
+To ensure that Admin users can create and manage orders in the Commerce Admin, enable [!DNL Payment Services]-specific resources to user roles.
 
 See [User roles](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-user-roles.html) to learn how to manage roles.
 
 When assigning resources to the role, you must select:
 
-* **Pay with [!DNL Payment Services]**---This role ensures that when you create an order in the Admin the [!DNL Payment Services] credit cards option payment method is available. If you select the **Actions** parent role, this role will also be selected.
-* **[!DNL Payment Services]**---This role includes the **Dashboard** and **SaaS Services Proxy** roles, which must also be selected. They ensure that [!DNL Payment Services] appears in the _Sales_ menu.
+* **Pay with [!DNL Payment Services]**---This resource ensures that when you create an order in the Admin [!DNL Payment Services] credit cards are available as a payment method. If you select the **Actions** parent resource, this resource will also be selected.
+* **[!DNL Payment Services]**---This resource includes the **Dashboard** and **SaaS Services Proxy** resources, which must also be selected. They ensure that [!DNL Payment Services] appears in the _Sales_ menu.
 
-   ![Payment Services roles](assets/roles-payments.png)
+   ![Payment Services resources](assets/roles-payments.png)
 
 ## Flush the cache
 
