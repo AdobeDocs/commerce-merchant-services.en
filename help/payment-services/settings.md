@@ -221,7 +221,7 @@ See [User roles](https://experienceleague.adobe.com/docs/commerce-admin/systems/
 When assigning resources to the role, you must select:
 
 * **Pay with [!DNL Payment Services]**---This role ensures that when you create an order in the Admin the [!DNL Payment Services] credit cards option payment method is available. If you select the **Actions** parent role, this role will also be selected.
-* **[!DNL Payment Services]**---This role includes the **Dashboard** and **SaaS Services Proxy** roles, which must also be selected. THey ensures that [!DNL Payment Services] appears in the _Sales_ menu.
+* **[!DNL Payment Services]**---This role includes the **Dashboard** and **SaaS Services Proxy** roles, which must also be selected. They ensure that [!DNL Payment Services] appears in the _Sales_ menu.
 
    ![Payment Services roles](assets/roles-payments.png)
 
