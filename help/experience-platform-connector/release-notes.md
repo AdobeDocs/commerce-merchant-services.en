@@ -13,7 +13,7 @@ These release notes contain updates to the Experience Platform connector and inc
 
 For feature changes and fixes related to extensions used by the Experience Platform connector, see **Supported service updates**.
 
-See [Upcoming Releases](https://experienceleague.adobe.com/docs/commerce-operations/release/schedule.html) to learn about release schedules and support.
+See [Upcoming Releases](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html) to learn about release schedules and support.
 
 See the developer documentation to [learn about product compatibility](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 
@@ -39,6 +39,8 @@ _October 12, 2022_
 
 _March 30, 2023_
 
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.3 and newer
+
 * ![New](../assets/new.svg) - Bundled the `commerce-data-export` and `saas-export` dependencies with the `experience-platform-connector` extension. Previously, you had to install these dependencies separately. These dependencies, along with merchant configuration, enables server side processing of [back office events](events.md#back-office-events).
 * ![New](../assets/new.svg) - Added new back office event called [`orderShipmentCompleted`](events.md#ordershipmentcompleted).
 
@@ -46,24 +48,32 @@ _March 30, 2023_
 
 _February 28, 2023_
 
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.3 and newer
+
 * ![New](../assets/new.svg) - Added support for PHP 8.2 for all Experience Platform connector modules
 
 ## 2.1.0
 
 _January 17, 2023_
 
-* ![New](../assets/new.svg) - Updated the [Experience Platform connector Admin](connect-data.md) so you can specify your own AEP Web SDK (alloy). Also, added an option for merchants enrolled in our back office beta program to send [back office event data](connect-data.md#data-collection) to the edge. These events contain [order status information](events.md#beta-order-status-events) about an order, such as if an order was placed, cancelled, refunded, or shipped.
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.3 and newer
+
+* ![New](../assets/new.svg) - Updated the [Experience Platform connector Admin](connect-data.md) so you can specify your own AEP Web SDK (alloy).
 * ![Fix](../assets/fix.svg) Changed to using `identityMap` instead of `personID` when setting the primary identity for any data pushed to the edge.
 
 ## 2.0.1
 
 _November 10, 2022_
 
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.3 and newer
+
 * ![Fixed issue](../assets/fix.svg) - Now the Adobe Experience Platform context is set only after the Storefront Event Collector and Storefront Event SDK are successfully loaded.
 
 ## 2.0.0
 
 _October 12, 2022_
+
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.3 and newer
 
 * ![New](../assets/new.svg) - Added ability to specify your own AEP Web SDK when [connecting](connect-data.md) your Adobe Commerce instance to the Experience Platform
 * ![Fix](../assets/fix.svg) - Updated datastream scope requirement so that datastream IDs must be scoped to the website rather than storeview
@@ -72,11 +82,6 @@ _October 12, 2022_
 
 _August 9, 2022_
 
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.3 and newer
+
 * ![New](../assets/new.svg) - General availability release
-
-## Documentation
-
-To learn more:
-
-* [Adobe Commerce Developer Documentation](https://devdocs.magento.com/)
-* [Adobe Commerce User Guide](https://docs.magento.com/user-guide/)

@@ -9,11 +9,12 @@ Before you install the extension, [review the prerequisites](overview.md#prereqs
 
 ## Install the extension
 
-The Experience Platform connector extension is installed from the command line of the server and connects to your Adobe Commerce installation as a [service](../landing/saas.md). When the process is complete, **Experience Platform Connector** appears on the **System** menu under **Services** in the Commerce _Admin_.
+The Experience Platform connector extension is available from the [Adobe Marketplace](https://marketplace.magento.com/magento-experience-platform-connector.html). When you install this extension from the command line of the server, it connects to your Adobe Commerce installation as a [service](../landing/saas.md). When the process is complete, **Experience Platform Connector** and **Commerce Services Connector** appear on the **System** menu under **Services** in the Commerce _Admin_.
 
-The Experience Platform connector is installed as an extension from [Adobe Marketplace](https://marketplace.magento.com/magento-experience-platform-connector.html).
+>[!NOTE]
+>
+>![B2B for Adobe Commerce](../assets/b2b.svg) For B2B merchants, there is a separate extension you must install. This extension adds support for B2B specific events. [Learn more](#install-the-b2b-extension).
 
-![B2B for Adobe Commerce](../assets/b2b.svg) For B2B merchants, there is a separate extension you must install. This extension adds support of B2B specific events. [Learn more](#install-the-b2b-extension).
 
 1. To download the `experience-platform-connector` package, run the following from the command line:
 
@@ -74,7 +75,7 @@ To update to a major version such as from 1.0.0 to 2.0.0, edit the project’s r
    composer update magento/experience-platform-connector –-with-dependencies
    ```
 
-or, for B2B merchants:
+   or, for B2B merchants:
 
    ```bash
    composer update magento/experience-platform-connector-b2b --with-dependencies
