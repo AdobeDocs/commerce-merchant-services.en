@@ -147,14 +147,14 @@ You can enable and configure the PayPal smart buttons payment options:
 1. To change the name of the payment method as shown during checkout, edit the value in the **[!UICONTROL Checkout Title]** field.
 1. To [set the payment action](production.md#set-payment-services-as-payment-method), toggle **[!UICONTROL Payment action]** to `Authorize` or `Authorize and Capture`.
 1. Use the toggle selectors to enable or disable [!DNL PayPal smart button] display features:
-   - **[!UICONTROL Show PayPal buttons on product checkout page]**
-   - **[!UICONTROL Show PayPal buttons on product detail page]**
-   - **[!UICONTROL Show PayPal buttons in mini-cart preview]**
-   - **[!UICONTROL Show PayPal buttons on cart page]**
-   - **[!UICONTROL Show PayPal Pay Later button]**
-   - **[!UICONTROL Show PayPal Pay Later message]**
-   - **[!UICONTROL Show Venmo button]**
-   - **[!UICONTROL Show Apple Pay button]**
+   * **[!UICONTROL Show PayPal buttons on product checkout page]**
+   * **[!UICONTROL Show PayPal buttons on product detail page]**
+   * **[!UICONTROL Show PayPal buttons in mini-cart preview]**
+   * **[!UICONTROL Show PayPal buttons on cart page]**
+   * **[!UICONTROL Show PayPal Pay Later button]**
+   * **[!UICONTROL Show PayPal Pay Later message]**
+   * **[!UICONTROL Show Venmo button]**
+   * **[!UICONTROL Show Apple Pay button]**
 
       >[!NOTE]
       >
