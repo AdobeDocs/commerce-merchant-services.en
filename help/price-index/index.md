@@ -45,7 +45,6 @@ magento/module-saas-price
 magento/module-saas-scopes
 magento/module-product-override-price-remover
 magento/module-bundle-product-override-data-exporter
-
 ```
 
 Customers using Luma and Adobe Commerce Core GraphQL can install a module that provides Luma compatibility and disables the PHP core price indexer:
