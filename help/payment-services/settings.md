@@ -13,17 +13,6 @@ To configure [!DNL Payment Services] for [!DNL Adobe Commerce] and [!DNL Magento
 
 For multi-store or legacy configuration see [Configure in the Admin](configure-admin.md).
 
-## Configure roles
-
-To ensure that Admin users can create and manage orders in the Commerce Admin, you must specify Payment Services user roles.
-
-See [User roles](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-user-roles.html) to learn how to manage roles.
-
-When assigning resources to the role, you must select:
-
-* **Pay with [!DNL Payment Services]**---This role ensures that when you create an order in the Admin the [!DNL Payment Services] credit cards option payment method is available. If you select the **Actions** parent role, this role will also be selected.
-* **[!DNL Payment Services]**---This role includes the **Dashboard** and **SaaS Services Proxy** roles, which must also be selected. THey ensures that [!DNL Payment Services] appears in the _Sales_ menu.
-
 ## Configure General settings
 
 The [!UICONTROL General] settings provide the ability to enable or disable Payment Services as your payment method and add information to customer transactions to mark or prefix a website or store view with custom information.
@@ -222,6 +211,19 @@ You can configure [!DNL PayPal Smart Buttons] styling [in the Legacy configurati
 |[!UICONTROL Responsive Button Height]|Store View|Defines if payment buttons use a default height. Options: [!UICONTROL Yes] / [!UICONTROL No]|
 |[!UICONTROL Height]|Store View|Define height of the payment buttons. Default value: none|
 |[!UICONTROL Label]|Store View|Define label that appears in the payment buttons. Options: [!UICONTROL PayPal] / [!UICONTROL Checkout] / [!UICONTROL Buynow] / [!UICONTROL Pay] / [!UICONTROL Installment]|
+
+## Configure roles
+
+To ensure that Admin users can create and manage orders in the Commerce Admin, you must specify Payment Services user roles.
+
+See [User roles](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-user-roles.html) to learn how to manage roles.
+
+When assigning resources to the role, you must select:
+
+* **Pay with [!DNL Payment Services]**---This role ensures that when you create an order in the Admin the [!DNL Payment Services] credit cards option payment method is available. If you select the **Actions** parent role, this role will also be selected.
+* **[!DNL Payment Services]**---This role includes the **Dashboard** and **SaaS Services Proxy** roles, which must also be selected. THey ensures that [!DNL Payment Services] appears in the _Sales_ menu.
+
+   ![Payment Services roles](assets/roles-payments.png)
 
 ## Flush the cache
 
