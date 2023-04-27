@@ -41,10 +41,11 @@ SaaS price indexing uses a set of modules to provide functionality. The list of 
 These modules add the new feeds to the Admin. These feeds transfer data required for price calculations to the SaaS indexer and ignores the PHP core price indexer.
 
 ```
+magento/module-saas-price
+magento/module-saas-scopes
 magento/module-product-override-price-remover
 magento/module-bundle-product-override-data-exporter
-magento/module-product-override-price-remover
-magento/module-bundle-product-override-data-exporter
+
 ```
 
 Customers using Luma and Adobe Commerce Core GraphQL can install a module that provides Luma compatibility and disables the PHP core price indexer:
