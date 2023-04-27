@@ -17,7 +17,7 @@ For multi-store or legacy configuration see [Configure in the Admin](configure-a
 
 To ensure that Admin users can create and manage orders in the Commerce Admin, you must specify Payment Services user roles.
 
-See [User roles](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-user-roles.html?lang=en) to learn how to manage roles.
+See [User roles](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-user-roles.html) to learn how to manage roles.
 
 When assigning resources to the role, you must select:
 
