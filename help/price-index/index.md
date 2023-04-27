@@ -7,7 +7,7 @@ exl-id: 747c0f3e-dfde-4365-812a-5ab7768342ab
 ---
 # SaaS Price Indexing
 
-SaaS price indexing speeds up the time that it takes for price changes to get reflected on a customer's website after they have been submitted. This optional module allows merchants with large, complex catalogs, or with multiple websites or customer groups, to process price changes more rapidly and continuously.
+SaaS price indexing speeds up the time that it takes for price changes to get reflected on a SaaS customer's website after they have been submitted. This optional module allows merchants with large, complex catalogs, or with multiple websites or customer groups, to process price changes more rapidly and continuously.
 
 The biggest bottleneck of the pipeline: computational heavy processes such as indexation and price calculation, have been moved from the PHP core to the Adobe's Cloud infrastructure. This allows merchants to quickly scale up resources to boost price indexation times, and reflect those changes to websites at much faster speeds.
 

@@ -5,7 +5,9 @@ exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 ---
 # [!DNL Live Search] Release Notes
 
-These release notes describe the latest versions of [!DNL Live Search] and include:
+These release notes describe the latest versions of [!DNL Live Search].
+Support is provided for the current major released version. Release notes for older versions are provided for reference.
+Updates include:
 
 ![New](../assets/new.svg) New features
 ![Fix](../assets/fix.svg) Fixes and improvements

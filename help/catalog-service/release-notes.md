@@ -5,7 +5,9 @@ exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 ---
 # [!DNL Catalog Service] Release Notes
 
-These release notes describe the latest versions of [!DNL Catalog Service] and include:
+These release notes describe the latest versions of [!DNL Catalog Service].
+Support is provided for the current major released version. Release notes for older versions are provided for reference.
+Updates include:
 
 ![New](../assets/new.svg) New features
 ![Fix](../assets/fix.svg) Fixes and improvements
@@ -19,7 +21,7 @@ These release notes describe the latest versions of [!DNL Catalog Service] and i
 
 ### V1.7 Release
 
-_Apriil 12, 2023_
+_April 12, 2023_
 
 [!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.4 and newer
 
