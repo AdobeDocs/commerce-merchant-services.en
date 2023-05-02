@@ -7,15 +7,15 @@ exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 
 With [!DNL Adobe Commerce] and [!DNL Magento Open Source] [!DNL Payment Services], you have multiple payment options available to you. You can configure these payment options through:
 
-* [Home settings](payments-home.md)
-* [Store configuration](configure-admin.md) (recommended for legacy payment options or a multistore setup)
+-  [Home settings](payments-home.md)
+-  [Store configuration](configure-admin.md) (recommended for legacy payment options or a multistore setup)
 
 There are different behaviors for each payment method depending on where you are in the checkout process:
 
-* Product page---The product page for an item
-* Mini cart---Available upon click of the cart icon when a product has been added to the cart
-* Shopping cart---Available upon click of _View and edit cart_ from the mini-cart
-* Checkout view---Available upon click of _Proceed to Checkout_ from mini-cart or shopping cart
+-  Product page---The product page for an item
+-  Mini cart---Available upon click of the cart icon when a product has been added to the cart
+-  Shopping cart---Available upon click of _View and edit cart_ from the mini-cart
+-  Checkout view---Available upon click of _Proceed to Checkout_ from mini-cart or shopping cart
 
 >[!IMPORTANT]
 >
@@ -75,8 +75,8 @@ Offer your customers short-term, interest-free payments, and other financing opt
 
 The [!DNL Pay Later] button is visible from the product page, mini-cart, shopping cart, and checkout views:
 
-* **When a customer selects a product between $30 and $600**, messaging under the PayPal and [!DNL Pay Later] buttons gives the customer more information about the [!DNL Pay in 4] payment option. Customers can click **Learn more** to learn about the "[!DNL Pay in 4]" option _or_ click the "Or see 6 months special financing" text in the popup to learn about and apply for the PayPal Credit option.
-* **When a customer selects a product or products exceeding $98.99**, messaging under the PayPal and [!DNL Pay Later] buttons gives customers more information about the PayPal Credit payment option. Customers can click **Learn more** to learn about and apply for the PayPal Credit option, _or_ click the "Or see Pay in 4" text in the popup to learn about the [!DNL Pay in 4] option.
+-  **When a customer selects a product between $30 and $600**, messaging under the PayPal and [!DNL Pay Later] buttons gives the customer more information about the [!DNL Pay in 4] payment option. Customers can click **Learn more** to learn about the "[!DNL Pay in 4]" option _or_ click the "Or see 6 months special financing" text in the popup to learn about and apply for the PayPal Credit option.
+-  **When a customer selects a product or products exceeding $98.99**, messaging under the PayPal and [!DNL Pay Later] buttons gives customers more information about the PayPal Credit payment option. Customers can click **Learn more** to learn about and apply for the PayPal Credit option, _or_ click the "Or see Pay in 4" text in the popup to learn about the [!DNL Pay in 4] option.
 
    >[!NOTE]
    >
@@ -86,8 +86,8 @@ See [Settings](settings.md#payment-buttons) to learn how to disable/enable the [
 
 There are two payment options with the [!DNL Pay Later] button:
 
-* **Pay in 4**---Customers can pay their order balance in four interest-free payments (every two weeks) after an initial down payment. See the [Pay in 4 documentation](https://www.paypal.com/us/digital-wallet/ways-to-pay/buy-now-pay-later) for more information.
-* **PayPal Credit**---Customers can pay their order balance in full over six months, interest-free. See the [PayPal Credit documentation](https://www.paypal.com/us/webapps/mpp/paypal-credit) for more information.
+-  **Pay in 4**---Customers can pay their order balance in four interest-free payments (every two weeks) after an initial down payment. See the [Pay in 4 documentation](https://www.paypal.com/us/digital-wallet/ways-to-pay/buy-now-pay-later) for more information.
+-  **PayPal Credit**---Customers can pay their order balance in full over six months, interest-free. See the [PayPal Credit documentation](https://www.paypal.com/us/webapps/mpp/paypal-credit) for more information.
 
 ### [!DNL Pay Now] button
 

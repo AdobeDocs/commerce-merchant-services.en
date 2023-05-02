@@ -133,4 +133,3 @@ To enable/disable the [PayPal Pay Later](payments-options.md#pay-later-button) p
 ## Flush the cache
 
  If you change the configuration, [manually flush the cache](/help/payment-services/settings.md#flush-the-cache) so that your store shows the latest configuration settings.
-
