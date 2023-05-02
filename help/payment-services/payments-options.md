@@ -63,9 +63,9 @@ The [!DNL Apple Pay] button is visible from the product page, mini-cart, shoppin
 
 ### Debit or Credit card button
 
-Customers can check out using the [Debit or Credit card](https://venmo.com/) button.
+Customers can check out using the Debit or Credit card button.
 
-The Debit or Credit card button is visible from the checkout view.
+The Debit or Credit card button is visible from the checkout page.
 
 This option can be used to present a Debit or Credit card payment option to your shoppers when you do not have an alternative credit card provider.
 
