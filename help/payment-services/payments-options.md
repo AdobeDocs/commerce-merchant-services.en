@@ -35,7 +35,7 @@ You can also change the layout, width, height, and outer styling of the credit c
 
 [!DNL PayPal Smart Buttons], which use PayPal to complete a purchase, stores your shopper's shipping address, billing addresses, and payment details for later use. Shoppers can use any payment method previously stored or offered by PayPal.
 
-![[!DNL PayPal Smart Buttons] options](assets/buttons-md.png)
+![[!DNL PayPal Smart Buttons] options](assets/buttons-med.png)
 
 You can configure [!UICONTROL PayPal Smart Buttons] in the store configuration or the Payment Services Home.  See [Settings](settings.md#payment-buttons) for more information.
 
@@ -60,6 +60,14 @@ The [!DNL Apple Pay] button is visible from the product page, mini-cart, shoppin
    >[!NOTE]
    >
    > To use Apple Pay contact your Sales representative or Adobe Account Team to enable it for your live stores.
+
+### Debit or Credit card button
+
+Customers can check out using the [Debit or Credit card](https://venmo.com/) button.
+
+The Debit or Credit card button is visible from the checkout view.
+
+This option can be used to present a Debit or Credit card payment option to your shoppers when you do not have an alternative credit card provider.
 
 ### [!DNL Pay Later] button
 
