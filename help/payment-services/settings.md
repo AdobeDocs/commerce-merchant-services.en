@@ -147,7 +147,7 @@ You can enable and configure the PayPal smart buttons payment options:
 
       >[!NOTE]
       >
-      > To use Apple Pay you [must have an Apple sandbox tester account](https://developer.apple.com/apple-pay/sandbox-testing/#create-a-sandbox-tester-account) (complete with fake credit card and billing information) to test it. When you are ready to use Apple Pay in sandbox _or_ production mode, after completing any [testing and validation](test-validate.md#test-in-sandbox-environment), contact your Sales representative to enable it for your live store(s).
+      > To use Apple Pay you [must have an Apple sandbox tester account](https://developer.apple.com/apple-pay/sandbox-testing/#create-a-sandbox-tester-account) (complete with fake credit card and billing information) to test it. When you are ready to use Apple Pay in sandbox _or_ production mode, after completing any [testing and validation](test-validate.md#test-in-sandbox-environment), complete [self-registration with [!DNL Apple Pay]](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) (_Register your live domain_ section only) and [configure it for your stores in [!DNL Payment Services]](settings.md#payment-buttons).
 
       As you toggle on/off visibility to payment buttons or the PayPal Pay Later message, a visual preview of that configuration shows at the bottom of the Settings page.
 
