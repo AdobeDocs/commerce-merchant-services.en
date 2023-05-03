@@ -27,7 +27,7 @@ _April 25, 2023_
 
 _April 19, 2023_
 
-![Fixed issue](../assets/fix.svg)<!-- Issue BOLT-596 --> The [!DNL Quick Checkout] Reports page now correctly shows the the New Accounts chart when parsing dates to the ISO 8601 format.
+![Fixed issue](../assets/fix.svg)<!-- Issue BOLT-596 --> The [!DNL Quick Checkout] Reports page now correctly shows the New Accounts chart when parsing dates to the ISO 8601 format.
 
 _December 14, 2022_
 
