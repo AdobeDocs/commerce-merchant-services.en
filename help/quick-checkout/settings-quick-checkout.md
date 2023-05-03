@@ -12,7 +12,7 @@ To access these configuration settings:
 1. On the _Admin_ sidebar, go to **Stores** > _Settings_ > **Configuration**.
 1. In the left panel, expand **Sales** and select **Checkout**.
 
-   ![Quick Checkout](assets/configuration-view.png)
+   ![Quick Checkout](assets/config-new-logo-view.png)
 
 Refer to the [Onboarding](../quick-checkout/onboarding.md) topic for more information on how to configure the [!DNL Quick Checkout] for Adobe Commerce.
 

@@ -21,6 +21,14 @@ These release notes describe feature changes and fixes that occurred and were re
 
 +++Admin panel updates
 
+_April 25, 2023_
+
+![Fixed issue](../assets/fix.svg)<!-- Issue BOLT-452 --> The [!DNL Quick Checkout] **Take a Tour** button now displays a clickable hand cursor when hovering over it.
+
+_April 19, 2023_
+
+![Fixed issue](../assets/fix.svg)<!-- Issue BOLT-596 --> The [!DNL Quick Checkout] Reports page now correctly shows the the New Accounts chart when parsing dates to the ISO 8601 format.
+
 _December 14, 2022_
 
 ![Fixed issue](../assets/fix.svg)<!-- Issue BOLT-524 --> The [!DNL Quick Checkout] Admin panel now shows the correct total orders and updated reporting information.

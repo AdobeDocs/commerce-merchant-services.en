@@ -21,7 +21,7 @@ A successful [!DNL Quick Checkout] flow consists of the following steps:
 1. When prompted, enter an email address associated with a [!DNL Bolt] account.
 1. Input the One-Time Password (OTP) sent to that [!DNL Bolt] account's email address or phone number.
 
-  ![OTP Pop-up](assets/pop-up.png)
+  ![OTP Pop-up](assets/new-logo-otp-email.png)
 
 1. Once logged in with your [!DNL Bolt] account, checkout details are automatically filled in:
 
