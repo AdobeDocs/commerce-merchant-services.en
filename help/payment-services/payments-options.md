@@ -59,7 +59,7 @@ The [!DNL Apple Pay] button is visible from the product page, mini-cart, shoppin
 
    >[!NOTE]
    >
-   > To use [!DNL Apple Pay] for your stores, complete [self-registration with [!DNL Apple Pay]](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) (_Register your live domain_s section only) and [configure it for your stores in [!DNL Payment Services]](settings.md#payment-buttons).
+   > To use [!DNL Apple Pay] for your stores, complete [self-registration with [!DNL Apple Pay]](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) (_Register your live domain_ section only) and [configure it for your stores in [!DNL Payment Services]](settings.md#payment-buttons).
 
 ### [!DNL Pay Later] button
 
