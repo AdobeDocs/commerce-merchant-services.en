@@ -30,7 +30,7 @@ The onboarding process for [!DNL Product Recommendations] requires access to the
 
 See [[!DNL Page Builder] Integration](page-builder.md) for instructions on how to add [!DNL Product Recommendations] into [!DNL Page Builder] content.
 
-## SaaS price indexing
+### SaaS price indexing
 
 Product Recommendation customers can use [SaaS price indexing](../price-index/index.md), which provides faster price changes updates and synchornization time.
 
