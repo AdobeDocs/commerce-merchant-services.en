@@ -7,7 +7,7 @@ exl-id: 316d0b0c-5938-4e2f-9d0d-747746cf6056
 
 You can integrate [!DNL Product Recommendations] in a headless storefront using either [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/) or a custom frontend technology, such as React or Vue JS.
 
- Custom and headless integrators should refer to these Luma and PWA instructions as a suggested implementation. There are many ways of implementing Product Recommendations into headless solutions and this documentation does not cover all scenarios. Integrators will need to cover eventing, design, and testing for their implementations.
+ Custom and headless integrators should refer to these Luma and PWA instructions as a suggested implementation. There are many ways of implementing Product Recommendations into headless solutions and this documentation does not cover all scenarios. Integrators must cover eventing, design, and testing for their implementations.
 
 [!DNL Product Recommendations] require [behavioral and catalog data](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/development-overview.html) to operate. The catalog data sync process remains unchanged in a headless implementation, but changes are needed for behavioral data collection.
 
