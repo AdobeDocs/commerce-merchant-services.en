@@ -50,6 +50,10 @@ In this section, you connect your Adobe Commerce instance to the Adobe Experienc
 
 ## Data collection
 
+In this section, you specify the type of data you want to send to the Experience Platform edge. There are two types of data: client-side and server-side.
+
+Client-side data is data captured on the storefront. This includes shopper interactions, such as `View Page`, `View Product`, `Add to Cart`, and [requisition list](events.md#b2b-events) information (for B2B merchants). Server-side data, or back office data, is data captured in the Commerce servers. This includes information about the status of an order, such as if an order was placed, canceled, refunded, shipped, or completed. 
+
 In the **Data collection** section, select storefront and/or back office data to send to the Experience Platform edge. To ensure your Adobe Commerce instance can begin data collection, review the [prerequisites](overview.md#prerequisites).
 
 See the events topic to learn more about [storefront](events.md#storefront-events) and [back office](events.md#back-office-events) events.
@@ -104,11 +108,34 @@ See the events topic to learn more about [storefront](events.md#storefront-event
 |Back Office events| If checked, event payload contains anonymized order status information, such as if an order was placed, canceled, refunded, or shipped. |
 | Datastream ID (Website) | ID that allows data to flow from Adobe Experience Platform to other Adobe DX products. This ID must be associated to a specific website within your specific Adobe Commerce instance. If you specify your own Experience Platform Web SDK, do not specify a datastream ID in this field. The Experience Platform connector uses the datastream ID associated with that SDK and ignores any datastream ID specified in this field (if any).|
 
-## Verify that data is being sent to Experience Platform
+>[!NOTE]
+>
+>After onboarding, storefront data begins to flow to the Experience Platform edge. Back office data takes about 5 minutes after onboarding for the data to appear at the edge. Subsequent updates are visible at the edge based on the cron schedule.
 
-After onboarding, storefront data begins to flow to the Experience Platform edge. Back office data takes about 5 minutes after onboarding for the data to appear at the edge. Subsequent updates are visible at the edge based on the cron schedule.
+## Verify that event data appears in Experience Platform edge
 
-When Commerce data is sent to the Experience Platform edge, you can build reports like the following:
+To verify that your storefront and back office event data appears at the edge, run a query that returns data from the [dataset](overview.md#prerequisites) you created.
 
-![Commerce Data in Adobe Experience Platform](assets/aem-data-1.png)
-_Commerce Data in Adobe Experience Platform_
+1. Select **Queries** in the left navigation of Experience Platform and click [!UICONTROL Create Query].
+    
+    ![Query Editor](assets/query-editor.png)
+
+1. When the Query Editor appears, enter a query that selects data from the dataset.
+
+    ![Create query](assets/create-query.png)
+
+    For example, your query might look like the following:
+
+    ```sql
+    SELECT * from `your_dataset_name` ORDER by TIMESTAMP DESC
+    ```
+
+1. After the query runs, the results are displayed in the **Results** tab, next to the **Console** tab. This view shows the tabular output of your query.
+
+    ![Query Editor](assets/query-results.png)
+
+In this example, you see event data from the [`commerce.productListAdds`](events.md#addtocart), [`commerce.productViews`](events.md#productpageview), [`web.webpagedetails.pageViews`](events.md#pageview), and so on. This view allows you to verify that your storefront data arrived at the edge.
+
+<!--## Next steps
+
+Connecting your Commerce instance to the Experience Platform edge is the first step in creating a personalized experience for your shoppers. Once your Commerce data is at the edge, you can take advantage of other Adobe DX products and incorporate those technologies into your Commerce site. Refer to the [tutorials](tutorials.md) section to learn more.-->
