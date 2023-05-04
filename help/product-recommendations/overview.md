@@ -11,7 +11,7 @@ Product recommendations are surfaced on the storefront as units with labels, suc
 
  If your storefront is implemented using PWA Studio, refer to the [PWA documentation](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). If you use a custom frontend technology such as React or Vue JS, learn how to [integrate](headless.md) [!DNL Product Recommendations] into your headless storefront.
 
- >[!NOTE]
+>[!NOTE]
 >
 >There are many ways to develop a headless or custom implementation. This guide describes one way of doing so, using PWA Studio. It does not cover all scenarios or eventualities.
 
