@@ -114,7 +114,7 @@ See the events topic to learn more about [storefront](events.md#storefront-event
 
 ## Verify that event data appears in Experience Platform edge
 
-To verify that your storefront and back office event data appears at the edge, run a query that returns data from the [dataset](overview.md#prerequisites) you created.
+To begin, confirm data is being collected from your Commerce store. Use the [Adobe Experience Platform debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html) to examine your Commerce site. After you confirm data is being collected, you can verify that your storefront and back office event data appears at the edge by runniung a query that returns data from the [dataset you created](overview.md#prerequisites).
 
 1. Select **Queries** in the left navigation of Experience Platform and click [!UICONTROL Create Query].
     
