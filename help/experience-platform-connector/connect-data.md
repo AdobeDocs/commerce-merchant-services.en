@@ -134,7 +134,7 @@ To verify that your storefront and back office event data appears at the edge, r
 
     ![Query Editor](assets/query-results.png)
 
-In this example, you see event data from the [`commerce.productListAdds`](events.md#addtocart), [`commerce.productViews`](events.md#productpageview), [`web.webpagedetails.pageViews`](events.md#pageview), and so on. This view allows you to verify that your storefront data arrived at the edge.
+In this example, you see event data from the [`commerce.productListAdds`](events.md#addtocart), [`commerce.productViews`](events.md#productpageview), [`web.webpagedetails.pageViews`](events.md#pageview), and so on. This view allows you to verify that your Commerce data arrived at the edge.
 
 <!--## Next steps
 
