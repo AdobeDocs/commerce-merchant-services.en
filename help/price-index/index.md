@@ -47,7 +47,7 @@ magento/module-product-override-price-remover
 magento/module-bundle-product-override-data-exporter
 ```
 
-Customers using Luma and Adobe Commerce Core GraphQL can install a module that provides Luma compatibility and disables the PHP core price indexer:
+Customers using Luma and Adobe Commerce Core GraphQL can install a module that provides Luma and Core GraphQL compatibility and disables the PHP core price indexer:
 
 ```
 adobe-commerce/catalog-adapter
@@ -61,17 +61,7 @@ The PHP core price indexer can be re-enabled if needed by a third-party extensio
 Depending on factors such as product types, price complexity and catalog size, SaaS price indexing may be the right solution for your store. Read over the following limitations and determine if this is a good solution for your site.
 
 Currently, SaaS price indexing supports Simple, Grouped, Virtual, Configurable, and Bundle Dynamic product types.
-Support for Downloadable, Gift Cards, and Bundle Fixed product types is coming soon.
-
-SaaS price indexing supports base prices:
-
-* Min/Max regular price
-* Min/Max final price
-* Special prices
-* Customer group prices 
-* Catalog rule prices
-
-Once you opt in to using the new pricing feed, you can contact [Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html) to help you undo it.
+Support for Downloadable, Gift Cards, and Bundle Fixed product types is coming soon.s
 
 New feeds should be manually synced with the `resync` [CLI command](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html#resynccmdline). Otherwise, the data gets refreshed in the standard sync process. Get more information about the [Catalog Sync](../landing/catalog-sync.md) process.
 
