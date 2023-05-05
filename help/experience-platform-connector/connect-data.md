@@ -110,7 +110,7 @@ See the events topic to learn more about [storefront](events.md#storefront-event
 
 >[!NOTE]
 >
->After onboarding, storefront data begins to flow to the Experience Platform edge. Back office data takes about 5 minutes after onboarding for the data to appear at the edge. Subsequent updates are visible at the edge based on the cron schedule.
+>After onboarding, storefront data begins to flow to the Experience Platform edge. Back office data takes about 5 minutes to appear at the edge. Subsequent updates are visible at the edge based on the cron schedule.
 
 ## Confirm that event data is collected
 
