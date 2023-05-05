@@ -38,3 +38,4 @@ The page size of the [!DNL popover] determines how many lines of autocompleted p
 * The [!DNL Live Search] [!DNL storefront popover] is available only for stores that use the *Luma* theme, or a customized theme that is based on *Luma*. 
 * The [!DNL popover] does not support the *Blank* theme. See [Styling [!DNL Popover] Elements](storefront-popover-styling.md) to learn more.
 * The [!DNL popover] is not supported on the Quick Order form.
+* Merchants may customize and extend widgets or storefront elements (For example: integrating color swatches into Live Search results) by using the [Catalog Service](../catalog-service/overview.md) Storefront API but this is out of scope for Adobe's support team.
