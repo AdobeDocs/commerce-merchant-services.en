@@ -10,7 +10,7 @@ When you install the Experience Platform connector, two new configuration pages 
 - Commerce Services Connector
 - Experience Platform Connector
 
-To connect your Adobe Commerce instance to the Adobe Experience platform, you must configure both connectors, starting with the Commerce Services connector then finishing with the Experience Platform connector.
+To connect your Adobe Commerce instance to the Adobe Experience Platform, you must configure both connectors, starting with the Commerce Services connector then finishing with the Experience Platform connector.
 
 ## Update the Commerce Services connector
 
@@ -54,7 +54,7 @@ In this section, you specify the type of data you want to send to the Experience
 
 Client-side data is data captured on the storefront. This includes shopper interactions, such as `View Page`, `View Product`, `Add to Cart`, and [requisition list](events.md#b2b-events) information (for B2B merchants). Server-side data, or back office data, is data captured in the Commerce servers. This includes information about the status of an order, such as if an order was placed, canceled, refunded, shipped, or completed. 
 
-In the **Data collection** section, select storefront and/or back office data to send to the Experience Platform edge. To ensure your Adobe Commerce instance can begin data collection, review the [prerequisites](overview.md#prerequisites).
+In the **Data collection** section, select storefront and/or back office data to send to the Experience Platform edge. To ensure that your Adobe Commerce instance can begin data collection, review the [prerequisites](overview.md#prerequisites).
 
 See the events topic to learn more about [storefront](events.md#storefront-events) and [back office](events.md#back-office-events) events.
 
@@ -114,7 +114,7 @@ See the events topic to learn more about [storefront](events.md#storefront-event
 
 ## Confirm that event data is collected
 
-To confirm that data is being collected from your Commerce store, use the [Adobe Experience Platform debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html) to examine your Commerce site. After you confirm that data is being collected, you can verify that your storefront and back office event data appears at the edge by runniung a query that returns data from the [dataset you created](overview.md#prerequisites).
+To confirm that data is being collected from your Commerce store, use the [Adobe Experience Platform debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html) to examine your Commerce site. After you confirm that data is being collected, you can verify that your storefront and back office event data appears at the edge by running a query that returns data from the [dataset you created](overview.md#prerequisites).
 
 1. Select **Queries** in the left navigation of Experience Platform and click [!UICONTROL Create Query].
     
