@@ -54,7 +54,7 @@ In this section, you specify the type of data you want to send to the Experience
 
 Client-side data is data captured on the storefront. This includes shopper interactions, such as `View Page`, `View Product`, `Add to Cart`, and [requisition list](events.md#b2b-events) information (for B2B merchants). Server-side data, or back office data, is data captured in the Commerce servers. This includes information about the status of an order, such as if an order was placed, canceled, refunded, shipped, or completed. 
 
-In the **Data collection** section, select storefront and/or back office data to send to the Experience Platform edge. To ensure that your Adobe Commerce instance can begin data collection, review the [prerequisites](overview.md#prerequisites).
+In the **Data collection** section, select the type of data you want to send to the Experience Platform edge. To ensure that your Adobe Commerce instance can begin data collection, review the [prerequisites](overview.md#prerequisites).
 
 See the events topic to learn more about [storefront](events.md#storefront-events) and [back office](events.md#back-office-events) events.
 
@@ -137,8 +137,3 @@ To confirm that data is being collected from your Commerce store, use the [Adobe
 In this example, you see event data from the [`commerce.productListAdds`](events.md#addtocart), [`commerce.productViews`](events.md#productpageview), [`web.webpagedetails.pageViews`](events.md#pageview), and so on. This view allows you to verify that your Commerce data arrived at the edge.
 
 If the results are not what you expect, open your dataset and look for any failed batches imports. Learn more about [troubleshooting batch imports](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/troubleshooting.html).
-
-
-<!--## Next steps
-
-Connecting your Commerce instance to the Experience Platform edge is the first step in creating a personalized experience for your shoppers. Once your Commerce data is at the edge, you can take advantage of other Adobe DX products and incorporate those technologies into your Commerce site. Refer to the [tutorials](tutorials.md) section to learn more.-->
