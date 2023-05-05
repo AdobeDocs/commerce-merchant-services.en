@@ -112,15 +112,15 @@ See the events topic to learn more about [storefront](events.md#storefront-event
 >
 >After onboarding, storefront data begins to flow to the Experience Platform edge. Back office data takes about 5 minutes after onboarding for the data to appear at the edge. Subsequent updates are visible at the edge based on the cron schedule.
 
-## Verify that event data appears in Experience Platform edge
+## Confirm that event data is collected
 
-To begin, confirm data is being collected from your Commerce store. Use the [Adobe Experience Platform debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html) to examine your Commerce site. After you confirm data is being collected, you can verify that your storefront and back office event data appears at the edge by runniung a query that returns data from the [dataset you created](overview.md#prerequisites).
+To confirm that data is being collected from your Commerce store, use the [Adobe Experience Platform debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html) to examine your Commerce site. After you confirm that data is being collected, you can verify that your storefront and back office event data appears at the edge by runniung a query that returns data from the [dataset you created](overview.md#prerequisites).
 
 1. Select **Queries** in the left navigation of Experience Platform and click [!UICONTROL Create Query].
     
     ![Query Editor](assets/query-editor.png)
 
-1. When the Query Editor appears, enter a query that selects data from the dataset.
+1. When the Query Editor opens, enter a query that selects data from the dataset.
 
     ![Create query](assets/create-query.png)
 
@@ -135,6 +135,9 @@ To begin, confirm data is being collected from your Commerce store. Use the [Ado
     ![Query Editor](assets/query-results.png)
 
 In this example, you see event data from the [`commerce.productListAdds`](events.md#addtocart), [`commerce.productViews`](events.md#productpageview), [`web.webpagedetails.pageViews`](events.md#pageview), and so on. This view allows you to verify that your Commerce data arrived at the edge.
+
+If the results are not what you expect, open your dataset and look for any failed batches imports. Learn more about [troubleshooting batch imports](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/troubleshooting.html).
+
 
 <!--## Next steps
 
