@@ -11,6 +11,14 @@ SaaS price indexing speeds up the time that it takes for price changes to get re
 
 The biggest bottleneck of the pipeline: computational heavy processes such as indexation and price calculation, have been moved from the PHP core to the Adobe's Cloud infrastructure. This allows merchants to quickly scale up resources to boost price indexation times, and reflect those changes to websites at much faster speeds.
 
+The Core indexing data flow to SaaS services looks like:
+
+![Default data flow](assets/old_way.png)
+
+With SaaS price indexing, the flow is:
+
+![SaaS price indexing data flow](assets/new_way.png)
+
 All merchants who meet the requirements can benefit from these improvements, but those who will see the greatest gains are customers with: 
 
 * Constant price changes: Merchants that require repeated changes to their prices to meet strategic goals such as frequent promotions, seasonal discounts, or inventory markdowns.
