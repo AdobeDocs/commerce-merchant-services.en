@@ -7,7 +7,7 @@ exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
 ---
 # Order Payment Status Report
 
-[!DNL Payment Services] for [!DNL Adobe Commerce] and [!DNL Magento Open Source] offers you comprehensive reporting so that you can get a clear view of your store's orders and payments.
+[!DNL Payment Services] for [!DNL Adobe Commerce] and [!DNL Magento Open Source] offers you comprehensive reporting so that you can get a clear view of your store's transactions, orders, and payments.
 
 ![Financial reports view](assets/reports-justpayouts.png)
 
