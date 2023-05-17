@@ -194,7 +194,7 @@ You can also configure the _[!UICONTROL Button style]_ options of the PayPal sma
 
    As you change configuration options for layout, color, shape, height, and label, a visual preview of that configuration shows at the bottom of the Settings page.
 
-   ![[!DNL PayPal Smart Buttons] options](assets/payment-buttons.png)
+   ![[!DNL PayPal Smart Buttons] options](assets/payment-buttons.png){width="500"}
 
 1. Click **[!UICONTROL Save]**.
 
