@@ -36,7 +36,7 @@ In the Transactions report view, you can select the data source---_[!UICONTROL L
 
 ![Data sources selection](assets/datasource.png)
 
-If _[!UICONTROL Live]_ is the selected data source, you can see report information for your stores that use [!DNL Payment Services] in _[!UICONTROL Live]_ mode. If [!UICONTROL Sandbox]_ is the selected data source, you can see report information for your Sandbox environment.
+If _[!UICONTROL Live]_ is the selected data source, you can see report information for your stores that use [!DNL Payment Services] in _[!UICONTROL Live]_ mode. If [!UICONTROL Sandbox] is the selected data source, you can see report information for your Sandbox environment.
 
 Data source selections work as follows:
 
@@ -75,14 +75,14 @@ The Transactions report shows all available columns of information by default. Y
 You can download a .csv file with all transactions visible in the transactions view grid, whether you are viewing the default 30 days of statuses or a customized timeframe.
 
 1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Transactions]**.
-1. If you want to see statuses for a timeframe other than the last 30 days, [customize the date range timeframe for your statuses](#customize-dates-timeframe).
+1. If you want to see transactions for a timeframe other than the last 30 days, [customize the date range timeframe for your statuses](#customize-dates-timeframe).
 1. Click the _Download_ (![download icon](assets/icon-download.png)) icon.
 
 Your transactions are downloaded in a .csv format.
 
 ## Transactions information
 
-The Order payment status view shows extensive info for each status shown in the grid.
+The Transactions view shows extensive info for each status shown in the grid.
 
 Not all payment methods provide the same granularity of information. For instance, credit card transactions provide response, AVS, and CCV codes in the Transactions report; PayPal Smart buttons do not.
 
@@ -95,7 +95,7 @@ Transactions reports include the following information.
 | [!UICONTROL Provider Transaction ID] | Transaction ID provided by the payment provider; contains only values for successful transactions and is empty for rejected transactions. |
 | [!UICONTROL Transaction Date] | Transaction date timestamp |
 | [!UICONTROL Payment Method] |  Payment method of transaction |
-| [!UICONTROL Result] | The end result of the transaction---*[!UICONTROL OK]* (successful transaction), *[!UICONTROL Rejected by Payment Provider]* (rejected by PayPal), *[!UICONTROL Rejected by Bank]* (rejected by bank that issued card), |
+| [!UICONTROL Result] | The end result of the transaction---*[!UICONTROL OK]* (successful transaction), *[!UICONTROL Rejected by Payment Provider]* (rejected by PayPal), *[!UICONTROL Rejected by Bank]* (rejected by bank that issued card) |
 | [!UICONTROL Response Code] | Error code that provides rejection reason from payment provider or bank; see [list of possible response codes and descriptions](https://developer.paypal.com/docs/api/orders/v2/#definition-processor_response) for more information. |
 | [!UICONTROL AVS Code] | Address Verification Service code; the processor response information for payment requests. See [list of possible codes and descriptions](https://developer.paypal.com/docs/api/orders/v2/#definition-processor_response) for more information. |
 | [!UICONTROL CVV Code] | Card verification value code for credit and debit cards; see [list of possible codes and descriptions](https://developer.paypal.com/docs/api/orders/v2/#definition-processor_response) for more information. |
@@ -107,8 +107,8 @@ Transactions reports include the following information.
 
 The _Response Code_ column shows a specific error or success code related to the transaction. Some common error codes you might see displayed include:
 
-* `RESPONSE_DENIED`---Transaction was denied by PayPal because it was suspected to be fraud.
-* `INTERNAL_SERVER_ERROR`---Transaction was declined by PayPal because of a service error. The transaction can be retried.
+* `RESPONSE_DENIED`---Transaction was declined by PayPal because it was suspected to be fraud.
+* `INTERNAL_SERVER_ERROR`---Transaction was declined by PayPal because of a server error. The transaction can be retried.
 * `INSTRUMENT_DECLINED`---Customer was declined by PayPal per selected payment method. Transaction can be retried with a different payment method.
 * `9500`---Transaction was declined by the associated bank because it was suspected to be fraud.
 * `5120`---Transaction was declined by the associated bank because the customer had insufficient funds for the payment.
