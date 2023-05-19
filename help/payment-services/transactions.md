@@ -12,7 +12,7 @@ level: Intermediate
 
 The Transactions report provides visibility into transaction authorization rates and negative transaction trends so that you can effectively monitor the health of your store and preemptively identify and address any transaction issues.
 
-See individual transactions and their payment methods, result, payment processor codes, and more.
+See individual transactions for orders placed on the storefront and their payment methods, result, payment response codes, and more.
 
 You can download the Transactions report in a .csv file format for use in existing accounting or order management software.
 
@@ -25,6 +25,10 @@ You can download the Transactions report in a .csv file format for use in existi
 On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Transactions]** to see the transactions for your orders.
 
 ![Order payment statuses in the Admin](assets/order-payment-status-report.png) REPLACE
+
+## Security
+
+The information provided in the Transactions report is intended only for merchant use. It should not be shared with customers or other potential fraudsters. Transactions information could be used to bypass security checks or place orders that result in chargebacks.
 
 ## Select data source
 
@@ -80,27 +84,34 @@ Your transactions are downloaded in a .csv format.
 
 The Order payment status view shows extensive info for each status shown in the grid.
 
+Not all payment methods provide the same granularity of information. For instance, credit card transactions provide response, AVS, and CCV codes in the Transactions report; PayPal Smart buttons do not.
+
 ### Column descriptions
 
 Transactions reports include the following information.
 
 | Column | Description |
 | ------------ | -------------------- |
-| [!UICONTROL Provider Transaction ID] | Commerce order ID<br> <br>To see related [order info](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"}, click the ID. |
-| [!UICONTROL Transaction Date] | Order date timestamp |
-| [!UICONTROL Payment Method] | Date timestamp of payment authorization |
-| [!UICONTROL Result] | Current Commerce [order status](https://docs.magento.com/user-guide/sales/order-status.html){target="_blank"} |
-| [!UICONTROL Processor Code] | Invoice status of order---*[!UICONTROL No]*, *[!UICONTROL Partial]*, or *[!UICONTROL Yes]* |
-| [!UICONTROL AVS Code] | Shipping status of order---*[!UICONTROL No]*, *[!UICONTROL Partial]*, or *[!UICONTROL Yes]* |
-| [!UICONTROL CVV Code] | Grand total amount of the order |
-| [!UICONTROL Amount] | Currency type of order |
-| [!UICONTROL Currency] | Status of payment for a specific order |
-| [!UICONTROL Type] | Amount paid on an order |
+| [!UICONTROL Provider Transaction ID] | Transaction ID provided by the payment provider; contains only values for successful transactions and is empty for rejected transactions. |
+| [!UICONTROL Transaction Date] | Transaction date timestamp |
+| [!UICONTROL Payment Method] |  Payment method of transaction |
+| [!UICONTROL Result] | The end result of the transaction---*[!UICONTROL OK]* (successful transaction), *[!UICONTROL Rejected by Payment Provider]* (rejected by PayPal), *[!UICONTROL Rejected by Bank]* (rejected by bank that issued card), |
+| [!UICONTROL Response Code] | Error code that provides rejection reason from payment provider or bank; see [list of possible response codes and descriptions](https://developer.paypal.com/docs/api/orders/v2/#definition-processor_response) for more information. |
+| [!UICONTROL AVS Code] | Address Verification Service code; the processor response information for payment requests. See [list of possible codes and descriptions](https://developer.paypal.com/docs/api/orders/v2/#definition-processor_response) for more information. |
+| [!UICONTROL CVV Code] | Card verification value code for credit and debit cards; see [list of possible codes and descriptions](https://developer.paypal.com/docs/api/orders/v2/#definition-processor_response) for more information. |
+| [!UICONTROL Amount] | Order amount of transaction |
+| [!UICONTROL Currency] | Currency used for order in transaction  |
+| [!UICONTROL Type] | [Payment action](get-started/production.md#set-payment-services-as-payment-method) for transaction---`Authorize` or `Authorize and Capture` |
 
-### Results descriptions
+### Error response codes
 
-| Column | Description |
-| ------------ | -------------------- |
-| [!UICONTROL OK] | Commerce order ID<br> <br>To see related [order info](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"}, click the ID. |
-| [!UICONTROL Rejected by Payment Provider] | Order date timestamp |
-| [!UICONTROL Rejected by Bank] | Date timestamp of payment authorization |
+The _Response Code_ column shows a specific error or success code related to the transaction. Some common error codes you might see displayed include:
+
+* `RESPONSE_DENIED`---Transaction was denied by PayPal because it was suspected to be fraud.
+* `INTERNAL_SERVER_ERROR`---Transaction was declined by PayPal because of a service error. The transaction can be retried.
+* `INSTRUMENT_DECLINED`---Customer was declined by PayPal per selected payment method. Transaction can be retried with a different payment method.
+* `9500`---Transaction was declined by the associated bank because it was suspected to be fraud.
+* `5120`---Transaction was declined by the associated bank because the customer had insufficient funds for the payment.
+* `5650`---Transaction was declined by the associated bank because the bank requires strong customer authentication ([3DS](security.md#3ds)).
+
+Detailed error response codes for failed transactions are available for transactions newer than June 1st, 2023. Partial report data will appear for transactions that occurred before June 1st, 2023.
