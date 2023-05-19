@@ -101,7 +101,7 @@ Transactions reports include the following information.
 | [!UICONTROL CVV Code] | Card verification value code for credit and debit cards; see [list of possible codes and descriptions](https://developer.paypal.com/docs/api/orders/v2/#definition-processor_response) for more information. |
 | [!UICONTROL Amount] | Order amount of transaction |
 | [!UICONTROL Currency] | Currency used for order in transaction  |
-| [!UICONTROL Type] | [Payment action](get-started/production.md#set-payment-services-as-payment-method) for transaction---`Authorize` or `Authorize and Capture` |
+| [!UICONTROL Type] | [Payment action](../payment-services/production.md#set-payment-services-as-payment-method) for transaction---`Authorize` or `Authorize and Capture` |
 
 ### Error response codes
 
