@@ -63,7 +63,7 @@ From the Transactions report view, you can customize the timeframe of the transa
 The Transactions report shows all available columns of information by default. You can, however, customize which columns you see in your report.
 
 1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Transactions]**.
-1. Click the _Column settings_ icon ![column settings icon](assets/column-settings.png){width="150"}.
+1. Click the _Column settings_ icon ![column settings icon](assets/column-settings.png){width="25"}.
 1. To customize which columns you see in the report, check or uncheck columns in the list.
 
    The Transactions report will immediately show any changes you made in the Column settings menu. The column preferences will be saved and will remain in effect if you navigate away from the report view.
@@ -74,7 +74,7 @@ You can download a .csv file with all transactions visible in the transactions v
 
 1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Transactions]**.
 1. If you want to see transactions for a timeframe other than the last 30 days, [customize the date range timeframe for your statuses](#customize-dates-timeframe).
-1. Click the _Download_ ![download icon](assets/icon-download.png){width="150"} icon.
+1. Click the _Download_ ![download icon](assets/icon-download.png){width="25"} icon.
 
 Your transactions are downloaded in a .csv format.
 
