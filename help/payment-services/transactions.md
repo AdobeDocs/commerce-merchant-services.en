@@ -92,7 +92,7 @@ Transactions reports include the following information.
 | ------------ | -------------------- |
 | [!UICONTROL Provider Transaction ID] | Transaction ID provided by the payment provider; contains only values for successful transactions and is empty for rejected transactions. |
 | [!UICONTROL Transaction Date] | Transaction date timestamp |
-| [!UICONTROL Payment Method] |  Payment method of transaction |
+| [!UICONTROL Payment Method] |  Payment method of transaction; available for Payment Services versions 1.6.0 and newer |
 | [!UICONTROL Result] | The end result of the transaction---*[!UICONTROL OK]* (successful transaction), *[!UICONTROL Rejected by Payment Provider]* (rejected by PayPal), *[!UICONTROL Rejected by Bank]* (rejected by bank that issued card) |
 | [!UICONTROL Response Code] | Error code that provides rejection reason from payment provider or bank; see [list of possible response codes and descriptions](https://developer.paypal.com/docs/api/orders/v2/#definition-processor_response) for more information. |
 | [!UICONTROL AVS Code] | Address Verification Service code; the processor response information for payment requests. See [list of possible codes and descriptions](https://developer.paypal.com/docs/api/orders/v2/#definition-processor_response) for more information. |
