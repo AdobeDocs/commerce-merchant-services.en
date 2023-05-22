@@ -14,6 +14,8 @@ The Transactions report provides visibility into transaction authorization rates
 
 See individual transactions for orders placed on the storefront and their payment methods, result, payment response codes, and more.
 
+The information provided in the Transactions report is intended only for merchant use. It should not be shared with customers or other potential fraudsters. Transactions information could be used to bypass security checks or place orders that result in chargebacks.
+
 You can download the Transactions report in a .csv file format for use in existing accounting or order management software.
 
 >[!NOTE]
@@ -26,22 +28,18 @@ On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL Payment Ser
 
 ![Order payment statuses in the Admin](assets/order-payment-status-report.png) REPLACE
 
-## Security
-
-The information provided in the Transactions report is intended only for merchant use. It should not be shared with customers or other potential fraudsters. Transactions information could be used to bypass security checks or place orders that result in chargebacks.
-
 ## Select data source
 
 In the Transactions report view, you can select the data source---_[!UICONTROL Live]_ or _[!UICONTROL Sandbox]_---for which you want to see report results.
 
-![Data sources selection](assets/datasource.png)
+![Data sources selection](assets/datasource.png){width="400"}
 
-If _[!UICONTROL Live]_ is the selected data source, you can see report information for your stores that use [!DNL Payment Services] in _[!UICONTROL Live]_ mode. If [!UICONTROL Sandbox] is the selected data source, you can see report information for your Sandbox environment.
+If _[!UICONTROL Live]_ is the selected data source, you can see report information for your stores that use [!DNL Payment Services] in production mode. If [!UICONTROL Sandbox] is the selected data source, you can see report information for your sandbox mode.
 
 Data source selections work as follows:
 
-* If you do not have any stores that use [!DNL Payment Services] in Live mode, the data source selection defaults to _[!UICONTROL Sandbox]_.
-* If you have any stores (one or multiple) that use [!DNL Payment Services] in Live mode, the data source selection defaults to _[!UICONTROL Live]_.
+* If you do not have any stores that use [!DNL Payment Services] in production mode, the data source selection defaults to _[!UICONTROL Sandbox]_.
+* If you have any stores (one or multiple) that use [!DNL Payment Services] in production mode, the data source selection defaults to _[!UICONTROL Live]_.
 * Report exports always honor the data source selection.
 
 To select the data source for your [!UICONTROL Transactions] report:
@@ -65,7 +63,7 @@ From the Transactions report view, you can customize the timeframe of the transa
 The Transactions report shows all available columns of information by default. You can, however, customize which columns you see in your report.
 
 1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Transactions]**.
-1. Click the _Column settings_ icon (![column settings icon](assets/column-settings.png)).
+1. Click the _Column settings_ icon ![column settings icon](assets/column-settings.png){width="150"}.
 1. To customize which columns you see in the report, check or uncheck columns in the list.
 
    The Transactions report will immediately show any changes you made in the Column settings menu. The column preferences will be saved and will remain in effect if you navigate away from the report view.
@@ -76,13 +74,13 @@ You can download a .csv file with all transactions visible in the transactions v
 
 1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Transactions]**.
 1. If you want to see transactions for a timeframe other than the last 30 days, [customize the date range timeframe for your statuses](#customize-dates-timeframe).
-1. Click the _Download_ (![download icon](assets/icon-download.png)) icon.
+1. Click the _Download_ ![download icon](assets/icon-download.png){width="150"} icon.
 
 Your transactions are downloaded in a .csv format.
 
 ## Transactions information
 
-The Transactions view shows extensive info for each status shown in the grid.
+The Transactions view shows extensive info for each transaction shown in the grid.
 
 Not all payment methods provide the same granularity of information. For instance, credit card transactions provide response, AVS, and CCV codes in the Transactions report; PayPal Smart buttons do not.
 
