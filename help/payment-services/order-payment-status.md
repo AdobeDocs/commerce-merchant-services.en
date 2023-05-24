@@ -28,7 +28,7 @@ The Order payment status data visualization view is available in the Payment Ser
 
 On the _Admin_ sidebar, go to **Sales** > **Payment Services** to see the data visualization [chart of payment statuses](#statuses-information).
 
-![Payout data visualization in the Admin](assets/orderpayment-dataviz.png){zoomable: yes}
+![Payout data visualization in the Admin](assets/orderpayment-dataviz.png){zoomable=yes}
 
 Click **View Report** to navigate to the detailed tabular [Order payment status report view](#order-payment-status-report-view).
 
@@ -108,7 +108,7 @@ To learn how to configure the data export, see [Command-line configuration](conf
 
 In the Order payment status report view, you can select the data source---_[!UICONTROL Live]_ or _[!UICONTROL Sandbox]_---for which you want to see report results.
 
-![Data sources selection](assets/datasource.png){width: 400px}
+![Data sources selection](assets/datasource.png){width=400px}
 
 If _[!UICONTROL Live]_ is the selected data source, you can see report information for your stores that use [!DNL Payment Services] in production mode. If _[!UICONTROL Sandbox]_ is the selected data source, you can see report information for sandbox mode.
 

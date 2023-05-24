@@ -26,7 +26,7 @@ The Payouts data visualization view is available in the Payment Services Home. I
 
 On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** to see the data visualization chart of credits vs. debits and the moving averages over time.
 
-![Payout data visualization in the Admin](assets/payouts-report.png){zoomable: yes}
+![Payout data visualization in the Admin](assets/payouts-report.png){zoomable=yes}
 
 Click **[!UICONTROL View Report]** to navigate to the detailed tabular [Payouts report view](#payouts-report-view).
 
@@ -62,7 +62,7 @@ The Payouts report view is available in the Payouts view of Payment Services. It
 
 On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]** to see the detailed tabular Payouts report view.
 
-![Payout transactions in the Admin](assets/payouts-report-new.png){zoomable: yes}
+![Payout transactions in the Admin](assets/payouts-report-new.png){zoomable=yes}
 
 You can configure this view, per the sections in this topic, to best present the data you desire to see.
 
@@ -78,7 +78,7 @@ You can [download payout transactions](#download-transactions) in a .csv file fo
 
 In the Payouts report view, you can select the data source---_[!UICONTROL Live]_ or _[!UICONTROL Sandbox]_---for which you want to see report results.
 
-![Data sources selection](assets/datasource.png){width: 400px}
+![Data sources selection](assets/datasource.png){width=400px}
 
 If _[!UICONTROL Live]_ is the selected data source, you can see report information for stores in production mode. If _[!UICONTROL Sandbox]_ is the selected data source, you can see report information stores in sandbox mode.
 
