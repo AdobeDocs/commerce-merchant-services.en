@@ -9,8 +9,6 @@ exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
 
 [!DNL Payment Services] for [!DNL Adobe Commerce] and [!DNL Magento Open Source] offers you comprehensive reporting so that you can get a clear view of your store's orders and payments.
 
-![Financial reports view](assets/reports-justpayouts.png)
-
 There are two available Payouts reporting views to enable you to see in-depth information about all of your payouts:
 
 *  **[Payouts data visualization view](#payouts-data-visualization-view)**---Chart available on the Payment Services Home that is a visual representation of aggregated amounts per day from the Payouts report view
@@ -28,7 +26,7 @@ The Payouts data visualization view is available in the Payment Services Home. I
 
 On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** to see the data visualization chart of credits vs. debits and the moving averages over time.
 
-![Payout data visualization in the Admin](assets/payouts-report.png)
+![Payout data visualization in the Admin](assets/payouts-report.png){zoomable: yes}
 
 Click **[!UICONTROL View Report]** to navigate to the detailed tabular [Payouts report view](#payouts-report-view).
 
@@ -64,13 +62,13 @@ The Payouts report view is available in the Payouts view of Payment Services. It
 
 On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]** to see the detailed tabular Payouts report view.
 
-![Payout transactions in the Admin](assets/payouts-report-new.png)
+![Payout transactions in the Admin](assets/payouts-report-new.png){zoomable: yes}
 
 You can configure this view, per the sections in this topic, to best present the data you desire to see.
 
 See linked Commerce order and transaction IDs, transaction amounts, payment method per transaction, and more, all within the Payouts report in the Admin.
 
-You can download payout transactions in a .csv file format for use in existing accounting or order management software.
+You can [download payout transactions](#download-transactions) in a .csv file format for use in existing accounting or order management software.
 
 >[!NOTE]
 >
@@ -80,9 +78,9 @@ You can download payout transactions in a .csv file format for use in existing a
 
 In the Payouts report view, you can select the data source---_[!UICONTROL Live]_ or _[!UICONTROL Sandbox]_---for which you want to see report results.
 
-![Data sources selection](assets/datasource.png)
+![Data sources selection](assets/datasource.png){width: 400px}
 
-If _[!UICONTROL Live]_ is the selected data source, you can see report information for your live stores. If [!UICONTROL Sandbox]_ is the selected data source, you can see report information for your Sandbox environment.
+If _[!UICONTROL Live]_ is the selected data source, you can see report information for stores in production mode. If _[!UICONTROL Sandbox]_ is the selected data source, you can see report information stores in sandbox mode.
 
 Data source selections work as follows:
 

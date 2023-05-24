@@ -9,8 +9,6 @@ exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
 
 [!DNL Payment Services] for [!DNL Adobe Commerce] and [!DNL Magento Open Source] offers you comprehensive reporting so that you can get a clear view of your store's orders and payments.
 
-![Financial reports view](assets/reports-justpayouts.png)
-
 There are two available Order payment status reporting views to enable you to quickly view the payment status of your orders:
 
 *  **[Order payment status visualization view](#order-payment-status-data-visualization-view)**---Chart available on the Payment Services Home that is a visual representation of aggregated payment statuses per day from the Order payment status report view
@@ -30,7 +28,7 @@ The Order payment status data visualization view is available in the Payment Ser
 
 On the _Admin_ sidebar, go to **Sales** > **Payment Services** to see the data visualization [chart of payment statuses](#statuses-information).
 
-![Payout data visualization in the Admin](assets/orderpayment-dataviz.png)
+![Payout data visualization in the Admin](assets/orderpayment-dataviz.png){zoomable: yes}
 
 Click **View Report** to navigate to the detailed tabular [Order payment status report view](#order-payment-status-report-view).
 
@@ -47,7 +45,7 @@ From the Order payment status visualization view, you can customize the timefram
 
 ### Statuses information
 
-The payment statuses for a selected date range are shown on the left of the Order payment status data visualization view. The dates for the selected date range are shown on the bottom of the view. If there were no orders on a particular date, that date will not be appear.
+The payment statuses for a selected date range are shown on the left of the Order payment status data visualization view. The dates for the selected date range are shown on the bottom of the view. If there were no orders on a particular date, that date will not appear.
 
 The Order payment status data visualization view includes the following information.
 
@@ -68,11 +66,11 @@ The Order payment status report view is available in the Order payment status vi
 
 On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Order payment status]** to see the detailed tabular Order payment status report view.
 
-![Order payment status transactions in the Admin](assets/payouts-report-new.png) NEW
+![Order payment status transactions in the Admin](assets/orders-report-data.png)
 
 You can configure this view, per the sections in this topic, to best present the data you desire to see.
 
-You can download payout transactions in a .csv file format for use in existing accounting or order management software.
+You can [download payout transactions](#download-order-payment-statuses) in a .csv file format for use in existing accounting or order management software.
 
 >[!NOTE]
 >
@@ -106,19 +104,13 @@ You can change the index mode---`ON SAVE` or `BY SCHEDULE`---[in the Admin](http
 
 To learn how to configure the data export, see [Command-line configuration](configure-cli.md#configure-data-export).
 
-### Availability
-
-On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Order payment status]** to see the payment statuses for your orders.
-
-![Order payment statuses in the Admin](assets/order-payment-status-report.png)
-
 ### Select data source
 
 In the Order payment status report view, you can select the data source---_[!UICONTROL Live]_ or _[!UICONTROL Sandbox]_---for which you want to see report results.
 
-![Data sources selection](assets/datasource.png)
+![Data sources selection](assets/datasource.png){width: 400px}
 
-If _[!UICONTROL Live]_ is the selected data source, you can see report information for your stores that use [!DNL Payment Services] in _[!UICONTROL Live]_ mode. If [!UICONTROL Sandbox]_ is the selected data source, you can see report information for your Sandbox environment.
+If _[!UICONTROL Live]_ is the selected data source, you can see report information for your stores that use [!DNL Payment Services] in production mode. If _[!UICONTROL Sandbox]_ is the selected data source, you can see report information for sandbox mode.
 
 Data source selections work as follows:
 
