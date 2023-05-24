@@ -21,6 +21,10 @@ These release notes describe feature changes and fixes that occurred and were re
 
 +++Admin panel updates
 
+May 23, 2023_
+
+![Fixed issue](../assets/fix.svg)<!-- Issue BOLT-489 --> Now, the **New Accounts** component in the [!DNL Quick Checkout] reporting page includes Spectrum [Workflow Icons](https://react-spectrum.adobe.com/react-spectrum/workflow-icons.html){target=_blank}.
+
 _April 25, 2023_
 
 ![Fixed issue](../assets/fix.svg)<!-- Issue BOLT-452 --> The [!DNL Quick Checkout] **Take a Tour** button now displays a clickable hand cursor when hovering over it.
