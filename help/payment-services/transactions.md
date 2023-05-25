@@ -1,6 +1,6 @@
 ---
 title: Transactions Report
-description: Use the Transactions report...
+description: Use the Transactions report to get visibility into transaction authorization rates and transaction trends.
 role: User
 level: Intermediate
 ---
@@ -51,7 +51,7 @@ To select the data source for your [!UICONTROL Transactions] report:
 
 ## Customize dates timeframe
 
-From the Transactions report view, you can customize the timeframe of the transactions you want to view by selecting specific dates. By default, 30 days of order payment statuses are shown in the grid.
+From the Transactions report view, you can customize the timeframe of the transactions you want to view by selecting specific dates. By default, 30 days of transactions are shown in the grid.
 
 1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Transactions]**.
 1. Click the **[!UICONTROL Transaction dates]** calendar selector filter.
@@ -70,7 +70,7 @@ The Transactions report shows all available columns of information by default. Y
 
 ## Download transactions
 
-You can download a .csv file with all transactions visible in the transactions view grid, whether you are viewing the default 30 days of statuses or a customized timeframe.
+You can download a .csv file with all transactions visible in the transactions view grid, whether you are viewing the default 30 days of transactions or a customized timeframe.
 
 1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Transactions]**.
 1. If you want to see transactions for a timeframe other than the last 30 days, [customize the date range timeframe for your statuses](#customize-dates-timeframe).
@@ -94,7 +94,7 @@ Transactions reports include the following information.
 | [!UICONTROL Transaction Date] | Transaction date timestamp |
 | [!UICONTROL Payment Method] |  Payment method of transaction; available for Payment Services versions 1.6.0 and newer |
 | [!UICONTROL Result] | The end result of the transaction---*[!UICONTROL OK]* (successful transaction), *[!UICONTROL Rejected by Payment Provider]* (rejected by PayPal), *[!UICONTROL Rejected by Bank]* (rejected by bank that issued card) |
-| [!UICONTROL Response Code] | Error code that provides rejection reason from payment provider or bank; see [list of possible response codes and descriptions](https://developer.paypal.com/docs/api/orders/v2/#definition-processor_response) for more information. |
+| [!UICONTROL Response Code] | Error code that provides rejection reason from payment provider or bank; see list of possible response codes and descriptions for [`Rejected by Bank` status](https://developer.paypal.com/docs/api/orders/v2/#definition-processor_response) and [`Rejected by Payment Provider` status](https://developer.paypal.com/api/rest/reference/orders/v2/errors/). |
 | [!UICONTROL AVS Code] | Address Verification Service code; the processor response information for payment requests. See [list of possible codes and descriptions](https://developer.paypal.com/docs/api/orders/v2/#definition-processor_response) for more information. |
 | [!UICONTROL CVV Code] | Card verification value code for credit and debit cards; see [list of possible codes and descriptions](https://developer.paypal.com/docs/api/orders/v2/#definition-processor_response) for more information. |
 | [!UICONTROL Amount] | Order amount of transaction |
@@ -105,8 +105,8 @@ Transactions reports include the following information.
 
 The _Response Code_ column shows a specific error or success code related to the transaction. Some common error codes you might see displayed include:
 
-* `RESPONSE_DENIED`---Transaction was declined by PayPal because it was suspected to be fraud.
-* `INTERNAL_SERVER_ERROR`---Transaction was declined by PayPal because of a server error. The transaction can be retried.
+* `PAYMENT_DENIED`---Transaction was declined by PayPal because it was suspected to be fraud.
+* `INTERNAL_SERVER_ERROR`---Transaction was declined by PayPal and incurred a PayPal server error. The transaction can be retried.
 * `INSTRUMENT_DECLINED`---Customer was declined by PayPal per selected payment method. Transaction can be retried with a different payment method.
 * `9500`---Transaction was declined by the associated bank because it was suspected to be fraud.
 * `5120`---Transaction was declined by the associated bank because the customer had insufficient funds for the payment.
