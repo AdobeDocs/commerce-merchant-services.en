@@ -17,7 +17,7 @@ You don't have to open multiple views to manually cross reference orders and pay
 
 See payment statuses, invoiced and shipped statuses, refund statuses, dispute statuses, and more, all within this report in the Admin.
 
-You can download Order payment status transactions in a .csv file format for use in existing accounting or order management software.
+You can [download Order payment status transactions](#download-order-payment-statuses) in a .csv file format for use in existing accounting or order management software.
 
 >[!NOTE]
 >

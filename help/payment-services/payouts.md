@@ -18,6 +18,8 @@ There are two available Payouts reporting views to enable you to see in-depth in
 
 The Payouts views show comprehensive payout information at-a-glance, allowing you full transparency into the payment amount, processed volume, and detailed reporting on the transaction level for financial reconciliation.
 
+You can [download payout transactions](#download-transactions) in a .csv file format for use in existing accounting or order management software.
+
 >[!NOTE]
 >
 >Payouts reports only show orders that are captured (payment action is set to [`Authorize and Capture`](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/production.html#set-payment-services-as-payment-method))---or [marked as `Invoiced`](https://docs.magento.com/user-guide/sales/invoice-create.html).
@@ -69,8 +71,6 @@ On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL Payment Ser
 You can configure this view, per the sections in this topic, to best present the data you desire to see.
 
 See linked Commerce order and transaction IDs, transaction amounts, payment method per transaction, and more, all within the Payouts report in the Admin.
-
-You can download payout transactions in a .csv file format for use in existing accounting or order management software.
 
 >[!NOTE]
 >
