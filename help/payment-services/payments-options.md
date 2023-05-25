@@ -87,6 +87,18 @@ The [!DNL Pay Now] button is visible in the PayPal popup window when a customer 
 
 If the final order amount is not yet known (such as when you do not yet have shipping address information) and the customer is in the process of checking out from the product page, mini-cart, or shopping cart, a _Continue_ button is available instead. When a customer clicks _Continue_, after they confirm their payment method, they are directed to an order review page to gather the needed details before completing checkout.
 
+## Use only PayPal branded payment buttons
+
+If you are eager to get your store into production mode you can configure _only_ PayPal branded payment buttons (instead of also using the PayPal credit card payment option).
+
+This allows you to:
+
+* Have a variety of payment options for your customers without applying for credit card approval through PayPal.
+* Use your existing credit card provider for credit card payments, while also utilizing PayPal's other payment options.
+* Use PayPal's branded payment buttons in a region in which PayPal does not support credit cards as a payment option.
+
+In Settings, you can turn off the **[!UICONTROL Show Credit and Debit card button]** option in _[!UICONTROL Payment buttons]_ and 
+
 ## Order recalculation
 
 When a customer enters the checkout flow from the mini-cart, shopping cart, or product page, they are directed to an order review page where they can see the selected shipping address in a PayPal popup window. After the customer selects the shipping method, the order amount is recalculated appropriately and the customer can see shipping costs and taxes.
