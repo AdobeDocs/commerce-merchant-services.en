@@ -14,7 +14,7 @@ The Transactions report provides visibility into transaction authorization rates
 
 See individual transactions for orders placed on the storefront and their payment methods, result, payment response codes, and more.
 
-The information provided in the Transactions report is intended only for merchant use. It should not be shared with customers or other potential fraudsters. Transactions information could be used to bypass security checks or place orders that result in chargebacks.
+The information provided in the Transactions report is intended only for merchant use. Do not share this info with customers or other potential fraudsters. Transactions information could be used to bypass security checks or place orders that result in chargebacks.
 
 You can download the Transactions report in a .csv file format for use in existing accounting or order management software.
 
@@ -64,9 +64,9 @@ The Transactions report shows all available columns of information by default. Y
 
 1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Transactions]**.
 1. Click the _Column settings_ icon ![column settings icon](assets/column-settings.png){width="25"}.
-1. To customize which columns you see in the report, check or uncheck columns in the list.
+1. To customize which columns that you see in the report, check or uncheck columns in the list.
 
-   The Transactions report will immediately show any changes you made in the Column settings menu. The column preferences will be saved and will remain in effect if you navigate away from the report view.
+   The Transactions report immediately shows any changes you made in the Column settings menu. The column preferences are saved and remain in effect if you navigate away from the report view.
 
 ## Download transactions
 
@@ -93,7 +93,7 @@ Transactions reports include the following information.
 | [!UICONTROL Provider Transaction ID] | Transaction ID provided by the payment provider; contains only values for successful transactions and is empty for rejected transactions. |
 | [!UICONTROL Transaction Date] | Transaction date timestamp |
 | [!UICONTROL Payment Method] |  Payment method of transaction; available for Payment Services versions 1.6.0 and newer |
-| [!UICONTROL Result] | The end result of the transaction---*[!UICONTROL OK]* (successful transaction), *[!UICONTROL Rejected by Payment Provider]* (rejected by PayPal), *[!UICONTROL Rejected by Bank]* (rejected by bank that issued card) |
+| [!UICONTROL Result] | The result of the transaction---*[!UICONTROL OK]* (successful transaction), *[!UICONTROL Rejected by Payment Provider]* (rejected by PayPal), *[!UICONTROL Rejected by Bank]* (rejected by bank that issued card) |
 | [!UICONTROL Response Code] | Error code that provides rejection reason from payment provider or bank; see list of possible response codes and descriptions for [`Rejected by Bank` status](https://developer.paypal.com/docs/api/orders/v2/#definition-processor_response) and [`Rejected by Payment Provider` status](https://developer.paypal.com/api/rest/reference/orders/v2/errors/). |
 | [!UICONTROL AVS Code] | Address Verification Service code; the processor response information for payment requests. See [list of possible codes and descriptions](https://developer.paypal.com/docs/api/orders/v2/#definition-processor_response) for more information. |
 | [!UICONTROL CVV Code] | Card verification value code for credit and debit cards; see [list of possible codes and descriptions](https://developer.paypal.com/docs/api/orders/v2/#definition-processor_response) for more information. |
@@ -112,4 +112,4 @@ The _Response Code_ column shows a specific error or success code related to the
 * `5120`---Transaction was declined by the associated bank because the customer had insufficient funds for the payment.
 * `5650`---Transaction was declined by the associated bank because the bank requires strong customer authentication ([3DS](security.md#3ds)).
 
-Detailed error response codes for failed transactions are available for transactions newer than June 1st, 2023. Partial report data will appear for transactions that occurred before June 1st, 2023.
+Detailed error response codes for failed transactions are available for transactions newer than June 1, 2023. Partial report data will appear for transactions that occurred before June 1, 2023.
