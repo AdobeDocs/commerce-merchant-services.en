@@ -63,7 +63,7 @@ Use this method for installing the Catalog Service extension for a Commerce Clou
 
   ```json
   "require": {
-    "magento/catalog-service": "^2.1.0"
+    "magento/catalog-service": "^2.2.0"
   }
   ```
 
@@ -85,7 +85,7 @@ Use this method for installing the Catalog Service extension for an on-premises 
 
   ```json
   "require": {
-      "magento/catalog-service": "^2.1.0"
+      "magento/catalog-service": "^2.2.0"
   }
   ```
 
