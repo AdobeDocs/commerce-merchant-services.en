@@ -11,9 +11,15 @@ There are Commerce configuration settings that [!DNL Live Search] supports. This
 
 |Commerce Configuration Setting|Supported by Popover|Supported by Adapter|
 |---|---|---|
+|Stores -> Configuration -> Catalog -> Catalog -> Catalog Search -> Allow All Products per Paage Length|Yes. Max 500 products|Yes. Max 500 products|
 |Stores -> Configuration -> Catalog -> Catalog -> Catalog Search -> Minimal Query Length|Yes|Yes|
+|Stores -> Configuration -> Catalog -> Catalog -> Catalog Search -> Products per Page on Grid Allowed Values|Yes|Yes|
+|Stores -> Configuration -> Catalog -> Catalog -> Catalog Search -> Products per Page on Grid Default Value|Yes|Yes|
 |Stores -> Configuration -> Catalog -> Inventory -> Display Out of Stock Products|Yes w/ v2.0.4+|Yes w/ v2.0.4+|
+|Stores -> Configuration -> Currency -> Default Display Currency|Yes w/3.1.0+|Yes w/3/1/0+|
 |Stores -> Configuration -> General -> Currency Setup -> Currency Options -> Base Currency|Yes|Yes|
+
+Prices in the Widget Product Listing Page and Popover are now converted to the Default Display Currency using the configured Currency Rates
 
 ## Unsupported configuration values
 
@@ -22,7 +28,5 @@ There are Commerce configuration settings that [!DNL Live Search] supports. This
 |Magento Configuration Setting|Notes|
 |---|---|
 |Stores -> Configuration -> Catalog -> Storefront -> List Mode|Renders correctly but events are not sent for some page interactions|
-|Stores -> Configuration -> Catalog -> Storefront -> Allow All Products per Page|Not implemented; submits request to search service with no page size and [!DNL Live Search] returns a default page size of 20|
 |Stores -> Configuration -> Catalog -> Catalog -> Catalog Search -> Maximum Query Length|Not implemented; Search Services accepts up to 255 characters|
-|Stores -> Configuration -> General -> Currency Setup -> Currency Options -> Default Display Currency|Not implemented; [!DNL Live Search] only has access to the base currency|
 |Configuration -> Sales -> Tax -> Price Display Settings -> Display Product Prices In Catalog||

@@ -60,10 +60,10 @@ Live Search customers can use the new [SaaS price indexer](../price-index/index.
 
 ### PWA support
 
-Live Search support is considered to be in beta because not all of PWA has been tested with [!DNL Live Search]. Basic functionality such as search and product listing page work in Venia but some permutations of Graphql may not work correctly.
+[!DNL Live Search] works with PWA Studio but users may see slight differences compared to other Commerce implementations. Basic functionality such as search and product listing page work in Venia but some permutations of Graphql may not work correctly. There may also be performance differences.
 
-* The current beta PWA implementation of [!DNL Live Search] requires more processing time to return search results than [!DNL Live Search] with the native Commerce storefront.
-* [!DNL Live Search] in PWA  does not support [event handling](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/).
+* The current PWA implementation of [!DNL Live Search] requires more processing time to return search results than [!DNL Live Search] with the native Commerce storefront.
+* [!DNL Live Search] in PWA  does not support [event handling](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/). Intelligent merchandising will not work because of this.
 * Filtering directly on `description`, `name`, `short_description` is not supported by GraphQL when used with [PWA](https://developer.adobe.com/commerce/pwa-studio/), but they are returned with a more general filter.
 
 ### Not currently supported
