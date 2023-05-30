@@ -89,17 +89,17 @@ If the final order amount is not yet known (such as when you do not yet have shi
 
 ## Use only PayPal branded payment buttons
 
-If you are eager to get your store into production mode you can configure _only_ PayPal branded payment buttons (instead of also using the PayPal credit card payment option).
+To quickly get your store into production mode you can configure _only_ PayPal branded payment buttons (VenMo, PayPal, etc.)---instead of also using the PayPal credit card payment option.
 
 This allows you to:
 
-*  Have a variety of payment options for your customers without applying for credit card approval through PayPal.
+*  Provide a variety of payment options for your customers without applying for credit card approval through PayPal.
 *  Use your existing credit card provider for credit card payments, while also utilizing PayPal's other payment options.
 *  Use PayPal's branded payment buttons in a region in which PayPal does not support credit cards as a payment option.
 
-**To use only branded payment buttons**, turn off the **[[!UICONTROL Show Credit and Debit card button]](settings.md#payment-buttons)** option in _Settings_.
+**To use _only_ branded payment buttons**, turn _Off_ the **[[!UICONTROL Show Credit and Debit card button]](settings.md#payment-buttons)** option in _Settings_.
 
-**To use your existing credit card provider, and _not_ the PayPal credit card payment option**, ensure the **[[!UICONTROL Show on checkout page]](settings.md#credit-card-fields)** option in _Settings_ is toggled on.
+**To use your existing credit card provider, and _not_ the PayPal credit card payment option**, turn _On__ the **[[!UICONTROL Show on checkout page]](settings.md#credit-card-fields)** option in _Settings_.
 
 ## Order recalculation
 
