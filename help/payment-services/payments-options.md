@@ -99,7 +99,7 @@ This allows you to:
 
 **To use _only_ branded payment buttons**, turn _Off_ the **[[!UICONTROL Show Credit and Debit card button]](settings.md#payment-buttons)** option in _Settings_.
 
-**To use your existing credit card provider, and _not_ the PayPal credit card payment option**, turn _On__ the **[[!UICONTROL Show on checkout page]](settings.md#credit-card-fields)** option in _Settings_.
+**To use your existing credit card provider, and _not_ the PayPal credit card payment option**, turn _On_ the **[[!UICONTROL Show on checkout page]](settings.md#credit-card-fields)** option in _Settings_.
 
 ## Order recalculation
 
