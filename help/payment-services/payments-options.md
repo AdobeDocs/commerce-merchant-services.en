@@ -97,9 +97,9 @@ This allows you to:
 * Use your existing credit card provider for credit card payments, while also utilizing PayPal's other payment options.
 * Use PayPal's branded payment buttons in a region in which PayPal does not support credit cards as a payment option.
 
-**To use only branded payment buttons**, turn off the [[!UICONTROL Show Credit and Debit card button]](settings.md#payment-buttons) option in _Settings_.
+**To use only branded payment buttons**, turn off the **[[!UICONTROL Show Credit and Debit card button]](settings.md#payment-buttons)** option in _Settings_.
 
-**To use your existing credit card provider, and _not_ the PayPal credit card payment option**, ensure the **[!UICONTROL Show on checkout page]** option in _Settings_ is toggled on.
+**To use your existing credit card provider, and _not_ the PayPal credit card payment option**, ensure the **[[!UICONTROL Show on checkout page]](settings.md#credit-card-fields)** option in _Settings_ is toggled on.
 
 ## Order recalculation
 
