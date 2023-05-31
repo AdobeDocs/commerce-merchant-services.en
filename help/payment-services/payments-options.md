@@ -87,19 +87,28 @@ The [!DNL Pay Now] button is visible in the PayPal popup window when a customer 
 
 If the final order amount is not yet known (such as when you do not yet have shipping address information) and the customer is in the process of checking out from the product page, mini-cart, or shopping cart, a _Continue_ button is available instead. When a customer clicks _Continue_, after they confirm their payment method, they are directed to an order review page to gather the needed details before completing checkout.
 
-## Use only PayPal branded payment buttons
+## Use only PayPal payment buttons
 
-To quickly get your store into production mode you can configure _only_ PayPal branded payment buttons (VenMo, PayPal, etc.)---instead of also using the PayPal credit card payment option.
+To quickly get your store into production mode you can configure _only_ PayPal payment buttons (Venmo, PayPal, etc.)---instead of also using the PayPal credit card payment option.
 
 This allows you to:
 
 *  Provide a variety of payment options for your customers without applying for credit card approval through PayPal.
 *  Use your existing credit card provider for credit card payments, while also utilizing PayPal's other payment options.
-*  Use PayPal's branded payment buttons in a region in which PayPal does not support credit cards as a payment option.
+*  Use PayPal's payment buttons in a region in which PayPal does not support credit cards as a payment option.
 
-**To use _only_ branded payment buttons**, turn _Off_ the **[[!UICONTROL Show Credit and Debit card button]](settings.md#payment-buttons)** option in _Settings_.
+To **capture payments with _only_ PayPal payment buttons (_not_ the PayPal credit card payment option)**:
 
-**To use your existing credit card provider, and _not_ the PayPal credit card payment option**, turn _On_ the **[[!UICONTROL Show on checkout page]](settings.md#credit-card-fields)** option in _Settings_.
+1. Ensure your store is [in production mode](settings.md#enable-payment-services).
+1. [Configure the desired PayPal payment buttons](settings.md#payment-buttons) in Settings.
+1. Turn _Off_ the **[[!UICONTROL Show Credit and Debit card button]](settings.md#payment-buttons)** option in the _[!UICONTROL Payment buttons]_ section.
+
+To **capture payments with your existing credit card provider _and_ PayPal payment buttons**:
+
+1. Ensure your store is [in production mode](settings.md#enable-payment-services).
+1. [Configure the desired PayPal payment buttons](settings.md#) in Settings.
+1. Turn _Off_ the **[[!UICONTROL Show Credit and Debit card button]](settings.md#payment-buttons)** option in the _[!UICONTROL Payment buttons]_ section.
+1. Turn _On_ the **[[!UICONTROL Show on checkout page]](settings.md#credit-card-fields)** option in the _[!UICONTROL Credit card fields]_ section.
 
 ## Order recalculation
 
