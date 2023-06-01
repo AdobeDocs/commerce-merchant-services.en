@@ -108,7 +108,7 @@ To **capture payments with your existing credit card provider _and_ PayPal payme
 1. Ensure your store is [in production mode](settings.md#enable-payment-services).
 1. [Configure the desired PayPal payment buttons](#dnl-paypal-smart-buttons).
 1. Turn _Off_ the **[[!UICONTROL Show Credit and Debit card button]](settings.md#payment-buttons)** option in the _[!UICONTROL Payment buttons]_ section.
-1. Turn _Off_ the **[[!UICONTROL Show on checkout page]](settings.md#credit-card-fields)** option in the _[!UICONTROL Credit card fields]_ section and use your [existing credit card provider account](https://experienceleague-review.corp.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html#payments).
+1. Turn _Off_ the **[[!UICONTROL Show on checkout page]](settings.md#credit-card-fields)** option in the _[!UICONTROL Credit card fields]_ section and use your [existing credit card provider account](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html#payments).
 
 ## Order recalculation
 
