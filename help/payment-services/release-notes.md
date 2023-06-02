@@ -51,6 +51,22 @@ _June 28, 2021_
 
 +++
 
+## v2.1.0
+
+_June 13, 2023_
+
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.7-beta1 and newer
+
+![New](../assets/new.svg)<!-- Issue xxx --> Added support for Adobe Commerce 2.4.7-beta1.
+
+![New](../assets/new.svg)<!-- Issue PAY-4296 --> Added [expanded resources for Admin roles](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#configure-roles) to ensure Admin users can create and manage orders for customers and can see Payment Services in the Sales menu.
+
+![New](../assets/new.svg)<!-- Issue PAY-4236 --> Added [auto-voiding for orders that incur errors during checkout](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/checkout.html#order-auto-voided-if-error).
+
+![New](../assets/new.svg)<!-- Issue PAY-4183 --> Created functionality to [show the credit/debit card payment option button](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#debit-or-credit-card-button) on the checkout page.
+
+![New](../assets/new.svg)<!-- Issue PAY-4050 --> Added a [data visualization view](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#order-payment-status-data-visualization-view), which appears on the Payment Service Home, for the Order payment status report.
+
 ## v2.0.0
 
 _March 10, 2023_
