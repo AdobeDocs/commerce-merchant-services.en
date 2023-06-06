@@ -82,7 +82,7 @@ Store owners can set up the following types of ranking strategies:
 
 >[!NOTE]
 >
->Apostrophes in queries may lead to some minor issues with ranking and relevance in Turkish and some other languages.
+>Apostrophes and quotes in queries may lead to some minor issues with ranking and relevance in some languages.
 
 ## Adding events
 
