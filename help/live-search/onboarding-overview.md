@@ -66,6 +66,26 @@ Live Search customers can use the new [SaaS price indexer](../price-index/index.
 * [!DNL Live Search] in PWA  does not support [event handling](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/). Intelligent merchandising will not work because of this.
 * Filtering directly on `description`, `name`, `short_description` is not supported by GraphQL when used with [PWA](https://developer.adobe.com/commerce/pwa-studio/), but they are returned with a more general filter.
 
+To use [!DNL Live Search] with PWA Studio, integrators must also:
+
+1. Install [livesearch-storefront-utils](https://www.npmjs.com/package/@magento/ds-livesearch-storefront-utils).
+1. Set the `environmentId` in the `storeDetails` object.
+
+    ```javascript
+    const storeDetails: StoreDetailsProps = {
+        environmentId: <Storefront_ID>,
+        websiteCode: "base",
+        storeCode: "main_website_store",
+        storeViewCode: "default",
+        searchUnitId: searchUnitId,
+        config: {
+            minQueryLength: 5,
+            pageSize: 8,
+            currencySymbol: "$",
+            },
+        };
+    ```
+
 ### Not currently supported
 
 * The [Advanced Search](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#advanced-search) module is disabled when [!DNL Live Search] is installed, and the Advanced Search link in the storefront footer is removed.
