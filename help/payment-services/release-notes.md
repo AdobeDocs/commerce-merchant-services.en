@@ -23,6 +23,10 @@ These release notes describe feature changes and fixes that occurred and were re
 
 +++Hosted service updates
 
+_June 9, 2023_
+
+![Fixed issue](../assets/fix.svg)<!-- Issue PAY-4485--> Report data visualization views are now appearing on Payment Services Home when Payment Services is disabled.
+
 _January 25, 2023_
 
 ![Known issue](../assets/bug.svg)<!-- Issue PAY-4102 --> New installations of Payment Services are unable to configure Commerce Services, rendering Payment Services inoperable. To fix this issue, update your Payment Services extension to version 1.5.3.
@@ -70,8 +74,6 @@ _June 9, 2023_
 ![New](../assets/new.svg)<!-- Issue PAY-4050 --> Added a [data visualization view](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#order-payment-status-data-visualization-view), which appears on the Payment Service Home, for the Order payment status report.
 
 ![Fixed issue](../assets/fix.svg)<!-- Issue PAY-4486--> Previously, the PayPal PayLater button did not appear in checkout for UK merchants. That issue is resolved.
-
-![Fixed issue](../assets/fix.svg)<!-- Issue PAY-4485--> Report data visualization views are now appearing on Payment Services Home when Payment Services is disabled.
 
 ## v2.0.0
 
