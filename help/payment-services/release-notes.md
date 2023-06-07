@@ -69,6 +69,12 @@ _June 13, 2023_
 
 ![New](../assets/new.svg)<!-- Issue PAY-4050 --> Added a [data visualization view](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#order-payment-status-data-visualization-view), which appears on the Payment Service Home, for the Order payment status report.
 
+![Fixed issue](../assets/fix.svg)<!-- Issue PAY-4486--> Previously, the PayPal PayLater button did not appear in checkout for UK merchants. That issue is resolved.
+
+![Fixed issue](../assets/fix.svg)<!-- Issue PAY-4485--> Report data visualization views are now appearing on Payment Services Home when Payment Services is disabled.
+
+![Fixed issue](../assets/fix.svg)<!-- Issue PAY-4475--> Error messages are now consistent between the `Authorize` and `Authorize and Capture` payment actions when a bank rejects an order payment.
+
 ## v2.0.0
 
 _March 10, 2023_
