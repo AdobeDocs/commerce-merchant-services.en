@@ -28,7 +28,13 @@ The [Adobe Commerce Storefront Event Collector](https://developer.adobe.com/comm
 
 If your storefront is implemented with PWA Studio, refer to the [PWA documentation](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). If you use a custom frontend technology such as React or Vue JS, refer to the user guide to learn how to integrate Product Recommendations in a [headless](headless.md) environment.
 
+## Caveats
+
 Ad blockers and privacy settings can prevent the `magento/product-recommendations` module from capturing events and might cause the engagement and revenue [metrics](workspace.md) to be underreported.
+
+Eventing does not capture every transaction happening on the merchant's site. Eventing is meant to give the merchant a general idea of events that are happening on the site.
+
+Headless implementations must implement eventing to power the Product Recommendations dashboard.
 
 >[!NOTE]
 >

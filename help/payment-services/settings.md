@@ -136,6 +136,7 @@ You can enable and configure the PayPal smart buttons payment options:
 1. To change the name of the payment method as shown during checkout, edit the value in the **[!UICONTROL Checkout Title]** field.
 1. To [set the payment action](production.md#set-payment-services-as-payment-method), toggle **[!UICONTROL Payment action]** to `Authorize` or `Authorize and Capture`.
 1. Use the toggle selectors to enable or disable [!DNL PayPal smart button] display features:
+
    -  **[!UICONTROL Show PayPal buttons on product checkout page]**
    -  **[!UICONTROL Show PayPal buttons on product detail page]**
    -  **[!UICONTROL Show PayPal buttons in mini-cart preview]**
@@ -148,7 +149,7 @@ You can enable and configure the PayPal smart buttons payment options:
 
       >[!NOTE]
       >
-      > To use Apple Pay you [must have an Apple sandbox tester account](https://developer.apple.com/apple-pay/sandbox-testing/#create-a-sandbox-tester-account) (complete with fake credit card and billing information) to test it. When you are ready to use Apple Pay in sandbox _or_ production mode, after completing any [testing and validation](test-validate.md#test-in-sandbox-environment), contact your Sales representative to enable it for your live store(s).
+      > To use Apple Pay you [must have an Apple sandbox tester account](https://developer.apple.com/apple-pay/sandbox-testing/#create-a-sandbox-tester-account) (complete with fake credit card and billing information) to test it. When you are ready to use Apple Pay in sandbox _or_ production mode, after completing any [testing and validation](test-validate.md#test-in-sandbox-environment), complete [self-registration with [!DNL Apple Pay]](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) (_Register your live domain_ section only) and [configure it for your stores in [!DNL Payment Services]](settings.md#payment-buttons).
 
       As you toggle on/off visibility to payment buttons or the PayPal Pay Later message, a visual preview of that configuration shows at the bottom of the Settings page.
 
@@ -215,6 +216,19 @@ You can configure [!DNL PayPal Smart Buttons] styling [in the Legacy configurati
 |[!UICONTROL Responsive Button Height]|Store View|Defines if payment buttons use a default height. Options: [!UICONTROL Yes] / [!UICONTROL No]|
 |[!UICONTROL Height]|Store View|Define height of the payment buttons. Default value: none|
 |[!UICONTROL Label]|Store View|Define label that appears in the payment buttons. Options: [!UICONTROL PayPal] / [!UICONTROL Checkout] / [!UICONTROL Buynow] / [!UICONTROL Pay] / [!UICONTROL Installment]|
+
+## Configure roles
+
+To ensure that Admin users can create and manage orders in the Commerce Admin, enable [!DNL Payment Services]-specific resources to user roles.
+
+See [User roles](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-user-roles.html) to learn how to manage roles.
+
+When assigning resources to the role, you must select:
+
+* **Pay with [!DNL Payment Services]**---This resource ensures that when you create an order in the Admin, [!DNL Payment Services] credit cards are available as a payment method. If you select the **Actions** parent resource, this resource will also be selected.
+* **[!DNL Payment Services]**---This resource includes the **Dashboard** and **SaaS Services Proxy** resources, which must also be selected. They ensure that [!DNL Payment Services] appears in the _Sales_ menu.
+
+   ![Payment Services resources](assets/roles-payments.png)
 
 ## Flush the cache
 
