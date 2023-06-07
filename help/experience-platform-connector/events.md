@@ -9,23 +9,21 @@ The following lists the Commerce events available when you install the Experienc
 
 In addition to the data the following events collect, you also get [other data](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html) provided by the Adobe Experience Platform Web SDK.
 
+## Storefront events
+
+The storefront events collect anonymized behavioral data from your shoppers as they browse your site. The data these events collect can be used to create promotions and campaigns targeted to a specific set of shoppers.
+
 >[!NOTE]
 >
->All storefront events include the `personID` field, which is a unique identifier of the person.
+>All storefront events include the [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html) field, which includes the shopper's email address, when available, and ECID. By including this profile data in each event, you do not need a separate user account import from Adobe Commerce.
 
-## addToCart
+### addToCart
 
-Triggered when a product is added to the cart or when the quantity of a product in the cart is incremented.
+|Description| XDM event name|
+|---|---|
+|Triggered when a product is added to the cart or when the quantity of a product in the cart is incremented.|`commerce.productListAdds`|
 
-### XDM event name
-
-`commerce.productListAdds`
-
-### Type
-
-Storefront
-
-### Data collected
+#### Data collected from addToCart
 
 The following table describes the data collected for this event.
 
@@ -43,19 +41,13 @@ The following table describes the data collected for this event.
 |`selectedOptions`|Field used for a configurable product. `attribute` identifies an attribute of the configurable product, such as `size` or `color` and `value` identifies the value of the attribute such as `small` or `black`.|
 |`cartID`|The unique ID that identifies the customer’s cart|
 
-## openCart
+### openCart
 
-Triggered when a new cart is created, which is when a product is added to an empty cart.
+|Description| XDM event name|
+|---|---|
+|Triggered when a new cart is created, which is when a product is added to an empty cart.|`commerce.productListOpens`|
 
-### XDM event name
-
-`commerce.productListOpens`
-
-### Type
-
-Storefront
-
-### Data collected
+#### Data collected from openCart
 
 The following table describes the data collected for this event.
 
@@ -73,19 +65,13 @@ The following table describes the data collected for this event.
 |`selectedOptions`|Field used for a configurable product. `attribute` identifies an attribute of the configurable product, such as `size` or `color` and `value` identifies the value of the attribute such as `small` or `black`.|
 |`cartID`|The unique ID that identifies the customer’s cart|
 
-## removeFromCart
+### removeFromCart
 
-Triggered every time a product is removed or every time the quantity of a product in the cart is decremented.
+|Description| XDM event name|
+|---|---|
+|Triggered every time a product is removed or every time the quantity of a product in the cart is decremented.|`commerce.productListRemovals`|
 
-### XDM event name
-
-`commerce.productListRemovals`
-
-### Type
-
-Storefront
-
-### Data collected
+#### Data collected from removeFromCart
 
 The following table describes the data collected for this event.
 
@@ -103,19 +89,13 @@ The following table describes the data collected for this event.
 |`selectedOptions`|Field used for a configurable product. `attribute` identifies an attribute of the configurable product, such as `size` or `color` and `value` identifies the value of the attribute such as `small` or `black`.|
 |`cartID`|The unique ID that identifies the customer’s cart|
 
-## shoppingCartView
+### shoppingCartView
 
-Triggered when any cart page loads.
+|Description| XDM event name|
+|---|---|
+|Triggered when any cart page loads.|`commerce.productListViews`|
 
-### XDM event name
-
-`commerce.productListViews`
-
-### Type
-
-Storefront
-
-### Data collected
+#### Data collected from shoppingCartView
 
 The following table describes the data collected for this event.
 
@@ -133,19 +113,13 @@ The following table describes the data collected for this event.
 |`selectedOptions`|Field used for a configurable product. `attribute` identifies an attribute of the configurable product, such as `size` or `color` and `value` identifies the value of the attribute such as `small` or `black`.|
 |`cartID`|The unique ID that identifies the customer’s cart|
 
-## pageView
+### pageView
 
-Triggered when any page loads.
+|Description| XDM event name|
+|---|---|
+|Triggered when any page loads.|`web.webpagedetails.pageViews`|
 
-### XDM event name
-
-`web.webpagedetails.pageViews`
-
-### Type
-
-Storefront
-
-### Data collected
+#### Data collected from pageView
 
 The following table describes the data collected for this event.
 
@@ -153,19 +127,13 @@ The following table describes the data collected for this event.
 |---|---|
 |`pageViews`|Indicates if a page was loaded. A `value` of `1` indicates that the page was loaded.|
 
-## productPageView
+### productPageView
 
-Triggered when any product page loads.
+|Description| XDM event name|
+|---|---|
+|Triggered when any product page loads.|`commerce.productViews`|
 
-### XDM event name
-
-`commerce.productViews`
-
-### Type
-
-Storefront
-
-### Data collected
+#### Data collected from productPageView
 
 The following table describes the data collected for this event.
 
@@ -181,19 +149,13 @@ The following table describes the data collected for this event.
 |`productImageUrl`|Main image URL of the product|
 |`selectedOptions`|Field used for a configurable product. `attribute` identifies an attribute of the configurable product, such as `size` or `color` and `value` identifies the value of the attribute such as `small` or `black`.|
 
-## startCheckout
+### startCheckout
 
-Triggered when the shopper clicks a checkout button.
+|Description| XDM event name|
+|---|---|
+|Triggered when the shopper clicks a checkout button.|`commerce.checkouts`|
 
-### XDM event name
-
-`commerce.checkouts`
-
-### Type
-
-Storefront
-
-### Data collected
+#### Data collected from startCheckout
 
 The following table describes the data collected for this event.
 
@@ -211,19 +173,13 @@ The following table describes the data collected for this event.
 |`selectedOptions`|Field used for a configurable product. `attribute` identifies an attribute of the configurable product, such as `size` or `color` and `value` identifies the value of the attribute such as `small` or `black`.|
 |`cartID`|The unique ID that identifies the customer’s cart|
 
-## completeCheckout
+### completeCheckout
 
-Triggered when the shopper places an order.
+|Description| XDM event name|
+|---|---|
+|Triggered when the shopper places an order.|`commerce.order`|
 
-### XDM event name
-
-`commerce.order`
-
-### Type
-
-Storefront
-
-### Data collected
+#### Data collected from completeCheckout
 
 The following table describes the data collected for this event.
 
@@ -242,6 +198,8 @@ The following table describes the data collected for this event.
 |`shippingMethod`|The method of shipping chosen by the customer, such as standard delivery, expedited delivery, pick up in store, and so on|
 |`shippingAmount`|The total shipping cost for the items in the cart|
 |`promotionID`|Unique identifier of the promotion, if any|
+|`personalEmail`|Specifies the personal email address|
+|`address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
 |`productListItems`|An array of products in the shopping cart|
 |`SKU`|Stock Keeping Unit. The unique identifier for the product.|
 |`name`|The display name or human-readable name of the product|
@@ -252,161 +210,128 @@ The following table describes the data collected for this event.
 |`productImageUrl`|Main image URL of the product|
 |`selectedOptions`|Field used for a configurable product. `attribute` identifies an attribute of the configurable product, such as `size` or `color` and `value` identifies the value of the attribute such as `small` or `black`.|
 
-## signIn
+## Profile events
 
-Triggered when a shopper attempts to sign in.
+Profile events include account information, such as `signIn`, `signOut`, `createAccount`, and `editAccount`. This data is used to help populate key customer details that are needed to better define segments or execute marketing campaigns, such as if you want to target shoppers who live in New York.
+
+### signIn
+
+|Description| XDM event name|
+|---|---|
+|Triggered when a shopper attempts to sign in.|`userAccount.login`|
 
 >[!NOTE]
 >
-> This event is triggered when the specific action is attempted. It does not indicate that the action was successful. 
+> This event is triggered when the specific action is attempted. It does not indicate that the action was successful.
 
-### XDM event name
-
-`userAccount.login`
-
-### Type
-
-Profile
-
-### Data collected
+#### Data collected from signIn
 
 The following table describes the data collected for this event.
 
 |Field|Description|
 |---|---|
-|`eventType`|The primary event type for this time-series record, such as: `userAccount.login`|
 |`person`|An individual actor, contact, or owner|
 |`accountID`|Captures the user account ID|
-|`personalEmailID`|Specifies the unique identifier for the personal email|
+|`accountType`|Captures the user account type, such as `Personal` or `Company`, if applicable|
+|`personalEmailID`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
+|`personalEmail`|Captures contact details - an e-mail and associated information|
 |`address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
 |`userAccount`|Indicates any loyalty details, preferences, login processes, and other account preferences|
 |`login`|Indicates if a visitor attempted to log in|
 
-## signOut
+### signOut
 
-Triggered when a shopper attempts to sign out.
+|Description| XDM event name|
+|---|---|
+|Triggered when a shopper attempts to sign out.|`userAccount.logout`|
 
 >[!NOTE]
 >
-> This event is triggered when the specific action is attempted. It does not indicate that the action was successful. 
+> This event is triggered when the specific action is attempted. It does not indicate that the action was successful.
 
-### XDM event name
-
-`userAccount.logout`
-
-### Type
-
-Profile
-
-### Data collected
+#### Data collected from signOut
 
 The following table describes the data collected for this event.
 
 |Field|Description|
 |---|---|
-|`eventType`|The primary event type for this time-series record, such as: `userAccount.logout`|
 |`userAccount`|Indicates any loyalty details, preferences, login processes, and other account preferences|
 |`logout`|Indicates if a visitor attempted to log out|
 
-## createAccount
+### createAccount
 
-Triggered when a shopper attempts to create an account.
+|Description| XDM event name|
+|---|---|
+|Triggered when a shopper attempts to create an account.|`userAccount.createProfile`|
 
 >[!NOTE]
 >
-> This event is triggered when the specific action is attempted. It does not indicate that the action was successful. 
+> This event is triggered when the specific action is attempted. It does not indicate that the action was successful.
 
-### XDM event name
-
-`userAccount.createProfile`
-
-### Type
-
-Profile
-
-### Data collected
+#### Data collected from createAccount
 
 The following table describes the data collected for this event.
 
 |Field|Description|
 |---|---|
-|`eventType`|The primary event type for this time-series record, such as: `account.createProfile`|
 |`person`|An individual actor, contact, or owner|
 |`accountID`|Captures the user account ID|
 |`accountType`|Captures the user account type, such as `Personal` or `Company`, if applicable|
-|`personalEmailID`|Specifies the unique identifier for the personal email|
+|`personalEmailID`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
+|`personalEmail`|Captures contact details - an e-mail and associated information|
 |`address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
 |`userAccount`|Indicates any loyalty details, preferences, login processes, and other account preferences|
 |`createProfile`|Indicates if a user has created an account profile|
 
-## editAccount
+### editAccount
 
-Triggered when a shopper attempts to edit an account.
+|Description| XDM event name|
+|---|---|
+|Triggered when a shopper attempts to edit an account.|`userAccount.updateProfile`|
 
 >[!NOTE]
 >
-> This event is triggered when the specific action is attempted. It does not indicate that the action was successful. 
+> This event is triggered when the specific action is attempted. It does not indicate that the action was successful.
 
-### XDM event name
-
-`userAccount.updateProfile`
-
-### Type
-
-Profile
-
-### Data collected
+#### Data collected from editAccount
 
 The following table describes the data collected for this event.
 
 |Field|Description|
 |---|---|
-|`eventType`|The primary event type for this time-series record, such as: `account.updateProfile`|
 |`person`|An individual actor, contact, or owner|
 |`accountID`|Captures the user account ID|
 |`accountType`|Captures the user account type, such as `Personal` or `Company`, if applicable|
-|`personalEmailID`|Specifies the unique identifier for the personal email|
-|`personalEmail`|Specifies the personal email address|
+|`personalEmailID`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
+|`personalEmail`|Captures contact details - an e-mail and associated information|
 |`address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
 |`userAccount`|Indicates any loyalty details, preferences, login processes, and other account preferences|
 |`updateProfile`|Indicates if a user has updated their account profile|
 
-## searchRequestSent
+## Search events
 
-Triggered by the following events in the “search as you type” popover:
+The search events provide data relevant to the shopper's intent. Insight into a shopper's intent helps merchants see how shoppers are searching for items, what they click on, and ultimately purchase or abandon. An example of how you might use this data is if you want to target existing shoppers who search for your top product, but never purchase the product.
 
-- Press Enter
-- Click _View All_
+Use the `uniqueIdentifier` field found in both the `searchRequestSent` and `searchResponseReceived` events to cross reference a search request to the corresponding search response.
 
-Triggered by the following events on search results pages:
+### searchRequestSent
 
-- Select a filter
-- Change the sort order (_Sort By_)
-- Change the sort direction (ascending or descending)
-- Change the number of results per page (_Show # per page_)
-- Navigate to the next page
-- Navigate to the previous page
-- Navigate to a different page
+|Description| XDM event name|
+|---|---|
+|Triggered by the following events in the “search as you type” popover:<br><br>Press Enter, Click _View All_<br><br>Triggered by the following events on search results pages:<br><br>Select a filter, Change the sort order (_Sort By_), Change the sort direction (ascending or descending), Change the number of results per page (_Show # per page_), Navigate to the next page, Navigate to the previous page, Navigate to a different page|`searchRequest`|
 
 >[!NOTE]
 >
 >Search events are not supported on an Adobe Commerce Enterprise Edition with the B2B module installed.
 
-### XDM event name
-
-`searchRequest`
-
-### Type
-
-Search
-
-### Data collected
+#### Data collected from searchRequestSent
 
 The following table describes the data collected for this event.
 
 |Field|Description|
 |---|---|
 |`searchRequest`|Indicates if a search request was sent|
+|`id`| The unique ID for this particular search request|
 |`filter`|Indicates if any filters were applied to limit search results|
 |`attribute` (filter)|The facet of an item used to determine whether to include it in search results|
 |`value`|Attribute values used to determine which items are included in search results|
@@ -416,29 +341,319 @@ The following table describes the data collected for this event.
 |`order`|The order in which to return search results|
 |`query`|The terms searched for|
 
-## searchResponseReceived
+### searchResponseReceived
 
-Triggered when Live Search returns results for the “search as you type” popover or search results page.
+|Description| XDM event name|
+|---|---|
+|Triggered when Live Search returns results for the “search as you type” popover or search results page.|`searchResponse`|
 
 >[!NOTE]
 >
 >Search events are not supported on an Adobe Commerce Enterprise Edition with the B2B module installed.
 
-### XDM event name
-
-`searchResponse`
-
-### Type
-
-Search
-
-### Data collected
+#### Data collected from searchResponseReceived
 
 The following table describes the data collected for this event.
 
 |Field|Description|
 |---|---|
 |`searchResponse`|Indicates if a search response has been received|
+|`id`| The unique ID for this particular search response|
 |`suggestions`|An array of strings that include the names of products and categories that exist in the catalog that are similar to the search query|
 |`numberOfResults`|The number of products returned|
-|`productListItems`|An array of products in the shopping cart. Includes the `SKU`(Stock Keeping Unit) and `name` of the product (display name or human-readable name.)|
+|`productListItems`|An array of products in the shopping cart.|
+|`SKU`|Stock Keeping Unit. The unique identifier for the product.|
+|`name`|The display name or human-readable name of the product|
+|`productImageUrl`|Main image URL of the product|
+
+## B2B events
+
+![B2B for Adobe Commerce](../assets/b2b.svg) For B2B merchants, you must [install](install.md#install-the-b2b-extension) the `experience-platform-connector-b2b` extension to enable these events.
+
+The B2B events contain [requisition list](https://experienceleague.adobe.com/docs/commerce-admin/b2b/requisition-lists/requisition-lists.html) information, such as if a requisition list was created, added to, or deleted from. By tracking events specific to requisition lists, you can see which products your customers purchase frequently and create campaigns based on that data.
+
+### createRequisitionList
+
+|Description| XDM event name|
+|---|---|
+|Triggered when a shopper creates a new requisition list.|`commerce.requisitionListOpens`|
+
+#### Data collected from createRequisitionList
+
+The following table describes the data collected for this event.
+
+|Field|Description|
+|---|---|
+|`requisitionList`|The properties of requisition list created by customer|
+|`ID`|Unique identifier of the requisition list|
+|`name`|Name of the requisition list specified by the customer|
+|`description`|Description of the requisition list specified by the customer|
+
+### addToRequisitionList
+
+|Description| XDM event name|
+|---|---|
+|Triggered when a shopper adds a product to an existing requistion list or while creating a new list.|`commerce.requisitionListAdds`|
+
+>[!NOTE]
+>
+>`addToRequisitionList` is not supported on category view pages or for configurable products. It is supported on product view pages and for simple products.
+
+#### Data collected from addToRequisitionList
+
+The following table describes the data collected for this event.
+
+|Field|Description|
+|---|---|
+|`requisitionList`|The properties of requisition list created by customer|
+|`ID`|Unique identifier of the requisition list|
+|`name`|Name of the requisition list specified by the customer|
+|`description`|Description of the requisition list specified by the customer|
+|`productListItems`|An array of products that were added to the requisition list|
+|`name`|The display name or human-readable name of the product|
+|`SKU`|Stock Keeping Unit. The unique identifier for the product.|
+|`quantity`|The number of product units added|
+|`priceTotal`|The total price for the product line item|
+|`discountAmount`|Indicates the discount amount applied|
+|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for this payment item|
+|`selectedOptions`|Field used for a configurable product. `attribute` identifies an attribute of the configurable product, such as `size` or `color` and `value` identifies the value of the attribute such as `small` or `black`.|
+
+### removeFromRequisitionList
+
+|Description| XDM event name|
+|---|---|
+|Triggered when a shopper removes a product from a requisition list.|`commerce.requisitionListRemovals`|
+
+#### Data collected from removeFromRequisitionList
+
+The following table describes the data collected for this event.
+
+|Field|Description|
+|---|---|
+|`requisitionList`|The properties of requisition list created by customer|
+|`ID`|Unique identifier of the requisition list|
+|`name`|Name of the requisition list specified by the customer|
+|`description`|Description of the requisition list specified by the customer|
+|`productListItems`|An array of products that were added to the requisition list|
+|`name`|The display name or human-readable name of the product|
+|`SKU`|Stock Keeping Unit. The unique identifier for the product.|
+|`quantity`|The number of product units added|
+|`priceTotal`|The total price for the product line item|
+|`discountAmount`|Indicates the discount amount applied|
+|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for this payment item|
+|`selectedOptions`|Field used for a configurable product. `attribute` identifies an attribute of the configurable product, such as `size` or `color` and `value` identifies the value of the attribute such as `small` or `black`.|
+
+## Back office events
+
+The back office events contain information about the status of an order, such as if an order was placed, cancelled, refunded, shipped, or completed. The data that these server-side events collect shows a 360 view of the shopper order. This view helps merchants better target or analyze the entire order status when developing marketing campaigns. For example, you can spot trends in certain product categories that perform well at different times of the year. Such as, winter clothes that sell better during colder months or certain product colors that shoppers are interested in over the years. In addition, order status data can help you calculate lifetime customer value by understanding a shopper's propensity to convert based on previous orders.
+
+>[!NOTE]
+>
+>All back office events include the [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html) field, which provides the shopper's email address. By including this profile data in each event, you do not need a separate user account import from Adobe Commerce.
+
+### orderPlaced
+
+|Description| XDM event name|
+|---|---|
+|Triggered when a shopper places an order.|`commerce.backofficeOrderPlaced`|
+
+#### Data collected from orderPlaced
+
+The following table describes the data collected for this event.
+
+|Field|Description|
+|---|---|
+|`address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
+|`productListItems`|An array of products in the order|
+|`id`|The line item identifier for this product entry. The product itself is identified through the `product` field.|
+|`name`|The display name or human-readable name of the product|
+|`SKU`|Stock Keeping Unit. The unique identifier for the product.|
+|`quantity`|The number of product units in the cart|
+|`priceTotal`|The total price for the product line item|
+|`discountAmount`|Indicates the discount amount applied|
+|`order`|Contains information about the order|
+|`purchaseID`|Unique identifier assigned by the seller for this purchase or contract. There is no guarantee that the ID is unique|
+|`priceTotal`|The total price of this order after all discounts and taxes have been applied|
+|`currencyCode`|The ISO 4217 currency code used for the order totals|
+|`purchaseOrderNumber`|Unique identifier assigned by the purchaser for this purchase or contract|
+|`payments`|The list of payments for this order|
+|`paymentType`|The method of payment for this order. Enumerated, custom values allowed.|
+|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for this payment item|
+|`paymentAmount`|The value of the payment|
+|`taxAmount`|The tax amount paid by the buyer as part of the final payment|
+|`createdDate`|The time and date when a new order is created in the commerce system. For example, `2022-10-15T20:20:39+00:00`|
+|`shipping`|Shipping details for one or more products|
+|`shippingMethod`|The method of shipping chosen by the customer, such as standard delivery, expedited delivery, pick up in store, and so on|
+|`shippingAmount`|The amount the customer had to pay for shipping.|
+|`address`|Physical shipping address|
+|`street1`|Primary street level information, apartment number, street number, and street name|
+|`street2`|Additional field for street level information|
+|`city`|The name of the city|
+|`state`|The name of the state. This is a free-form field.|
+|`postalCode`|The postal code of the location. Postal codes are not available for all countries. In some countries, this will only contain part of the postal code.|
+|`country`|The name of the government-administered territory. Other than `xdm:countryCode`, this is a free-form field that can have the country name in any language.|
+|`billingAddress`|Billing postal address|
+|`street1`|Primary street level information, apartment number, street number, and street name|
+|`street2`|Additional field for street level information|
+|`city`|The name of the city|
+|`state`|The name of the state. This is a free-form field.|
+|`postalCode`|The postal code of the location. Postal codes are not available for all countries. In some countries, this will only contain part of the postal code.|
+|`country`|The name of the government-administered territory. Other than `xdm:countryCode`, this is a free-form field that can have the country name in any language.|
+|`personalEmail`|A personal email address|
+|`address`|The technical address, for example, 'name@domain.com' as commonly defined in RFC2822 and subsequent standards|
+
+### orderItemsShipped
+
+|Description| XDM event name|
+|---|---|
+|Triggered when an order is shipped.|`commerce.backofficeOrderItemsShipped`|
+
+#### Data collected from orderItemsShipped
+
+The following table describes the data collected for this event.
+|Field|Description|
+|---|---|
+|`address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
+|`productListItems`|An array of products in the order|
+|`id`|The line item identifier for this product entry. The product itself is identified through the `product` field.|
+|`name`|The display name or human-readable name of the product|
+|`SKU`|Stock Keeping Unit. The unique identifier for the product.|
+|`quantity`|The number of product units in the cart|
+|`priceTotal`|The total price for the product line item|
+|`discountAmount`|Indicates the discount amount applied|
+|`order`|Contains information about the order|
+|`purchaseID`|Unique identifier assigned by the seller for this purchase or contract. There is no guarantee that the ID is unique|
+|`priceTotal`|The total price of this order after all discounts and taxes have been applied|
+|`currencyCode`|The ISO 4217 currency code used for the order totals|
+|`purchaseOrderNumber`|Unique identifier assigned by the purchaser for this purchase or contract|
+|`payments`|The list of payments for this order|
+|`paymentType`|The method of payment for this order. Enumerated, custom values allowed.|
+|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for this payment item|
+|`paymentAmount`|The value of the payment|
+|`lastUpdatedDate`|The time when a particular order record is last updated in the commerce system|
+|`shipping`|Shipping details for one or more products|
+|`shippingMethod`|The method of shipping chosen by the customer, such as standard delivery, expedited delivery, pick up in store, and so on|
+|`trackingNumber`|The tracking number provided by the shipping carrier for an order item shipment|
+|`trackingURL`|The URL to track the shipping status of an order item|
+|`shipDate`|The date when one or more items from an order is shipped|
+|`address`|Physical shipping address|
+|`street1`|Primary street level information, apartment number, street number, and street name|
+|`street2`|Additional field for street level information|
+|`city`|The name of the city|
+|`state`|The name of the state. This is a free-form field.|
+|`postalCode`|The postal code of the location. Postal codes are not available for all countries. In some countries, this will only contain part of the postal code.|
+|`country`|The name of the government-administered territory. Other than `xdm:countryCode`, this is a free-form field that can have the country name in any language.|
+|`shippingAmount`|The amount the customer had to pay for shipping.|
+|`billingAddress`|Billing postal address|
+|`street1`|Primary street level information, apartment number, street number, and street name|
+|`street2`|Additional field for street level information|
+|`city`|The name of the city|
+|`state`|The name of the state. This is a free-form field.|
+|`postalCode`|The postal code of the location. Postal codes are not available for all countries. In some countries, this will only contain part of the postal code.|
+|`country`|The name of the government-administered territory. Other than `xdm:countryCode`, this is a free-form field that can have the country name in any language.|
+|`personalEmail`|A personal email address|
+|`address`|The technical address, for example, 'name@domain.com' as commonly defined in RFC2822 and subsequent standards|
+
+### orderCancelled
+
+|Description| XDM event name|
+|---|---|
+|Triggered when a shopper cancels an order.|`commerce.backofficeOrderCancelled`|
+
+#### Data collected from orderCancelled
+
+The following table describes the data collected for this event.
+|Field|Description|
+|---|---|
+|`address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
+|`productListItems`|An array of products in the order|
+|`id`|The line item identifier for this product entry. The product itself is identified through the `product` field.|
+|`name`|The display name or human-readable name of the product|
+|`SKU`|Stock Keeping Unit. The unique identifier for the product.|
+|`quantity`|The number of product units in the cart|
+|`priceTotal`|The total price for the product line item|
+|`discountAmount`|Indicates the discount amount applied|
+|`order`|Contains information about the order|
+|`purchaseID`|Unique identifier assigned by the seller for this purchase or contract. There is no guarantee that the ID is unique|
+|`purchaseOrderNumber`|Unique identifier assigned by the purchaser for this purchase or contract|
+|`cancelDate`|The date and time when a shopper cancels an order|
+|`lastUpdatedDate`|The time when a particular order record is last updated in the commerce system|
+|`personalEmail`|A personal email address|
+|`address`|The technical address, for example, 'name@domain.com' as commonly defined in RFC2822 and subsequent standards|
+
+### creditMemoIssued
+
+|Description| XDM event name|
+|---|---|
+|Triggered when a shopper returns an item in an order.|`commerce.backofficeCreditMemoIssued`|
+
+#### Data collected from creditMemoIssued
+
+The following table describes the data collected for this event.
+|Field|Description|
+|---|---|
+|`address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
+|`productListItems`|An array of products in the order|
+|`id`|The line item identifier for this product entry. The product itself is identified through the `product` field.|
+|`name`|The display name or human-readable name of the product|
+|`SKU`|Stock Keeping Unit. The unique identifier for the product.|
+|`quantity`|The number of product units in the cart|
+|`priceTotal`|The total price for the product line item|
+|`discountAmount`|Indicates the discount amount applied|
+|`order`|Contains information about the order|
+|`purchaseID`|Unique identifier assigned by the seller for this purchase or contract. There is no guarantee that the ID is unique|
+|`purchaseOrderNumber`|Unique identifier assigned by the purchaser for this purchase or contract|
+|`lastUpdatedDate`|The time when a particular order record is last updated in the commerce system|
+|`personalEmail`|A personal email address|
+|`address`|The technical address, for example, 'name@domain.com' as commonly defined in RFC2822 and subsequent standards|
+
+### orderShipmentCompleted
+
+|Description| XDM event name|
+|---|---|
+|Triggered when a shopper returns an item in an order.|`commerce.backofficeOrderShipmentCompleted`|
+
+#### Data collected from orderShipmentCompleted
+
+The following table describes the data collected for this event.
+|Field|Description|
+|---|---|
+|`address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
+|`productListItems`|An array of products in the order|
+|`id`|The line item identifier for this product entry. The product itself is identified through the `product` field.|
+|`name`|The display name or human-readable name of the product|
+|`SKU`|Stock Keeping Unit. The unique identifier for the product.|
+|`quantity`|The number of product units in the cart|
+|`priceTotal`|The total price for the product line item|
+|`discountAmount`|Indicates the discount amount applied|
+|`order`|Contains information about the order|
+|`purchaseID`|Unique identifier assigned by the seller for this purchase or contract. There is no guarantee that the ID is unique|
+|`priceTotal`|The total price of this order after all discounts and taxes have been applied|
+|`currencyCode`|The ISO 4217 currency code used for the order totals|
+|`purchaseOrderNumber`|Unique identifier assigned by the purchaser for this purchase or contract|
+|`taxAmount`|The tax amount paid by the buyer as part of the final payment.|
+|`createdDate`|The time and date when a new order is created in the commerce system. For example, `2022-10-15T20:20:39+00:00`|
+|`payments`|The list of payments for this order|
+|`paymentType`|The method of payment for this order. Enumerated, custom values allowed.|
+|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for this payment item|
+|`paymentAmount`|The value of the payment|
+|`shipping`|Shipping details for one or more products|
+|`shippingMethod`|The method of shipping chosen by the customer, such as standard delivery, expedited delivery, pick up in store, and so on|
+|`address`|Physical shipping address|
+|`street1`|Primary street level information, apartment number, street number, and street name|
+|`street2`|Additional field for street level information|
+|`city`|The name of the city|
+|`state`|The name of the state. This is a free-form field.|
+|`postalCode`|The postal code of the location. Postal codes are not available for all countries. In some countries, this will only contain part of the postal code.|
+|`country`|The name of the government-administered territory. Other than `xdm:countryCode`, this is a free-form field that can have the country name in any language.|
+|`shippingAmount`|The amount the customer had to pay for shipping.|
+|`address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
+|`billingAddress`|Billing postal address|
+|`street1`|Primary street level information, apartment number, street number, and street name|
+|`street2`|Additional field for street level information|
+|`city`|The name of the city|
+|`state`|The name of the state. This is a free-form field.|
+|`postalCode`|The postal code of the location. Postal codes are not available for all countries. In some countries, this data contains only part of the postal code.|
+|`country`|The name of the government-administered territory. Other than `xdm:countryCode`, this is a free-form field that can have the country name in any language.|
+|`personalEmail`|A personal email address|
+|`address`|The technical address, for example, 'name@domain.com' as commonly defined in RFC2822 and subsequent standards|

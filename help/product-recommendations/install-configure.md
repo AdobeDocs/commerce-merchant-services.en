@@ -14,7 +14,7 @@ Deploying [!DNL Product Recommendations] to your storefront and Admin requires t
 
 ## Install [!DNL Product Recommendations] {#install}
 
-Because the [!DNL Product Recommendations] module is a stand-alone metapackage, updates are released more frequently than Adobe Commerce. To make sure you are up-to-date with the latest bug fixes and features, refer to the [release notes](release-notes.md).
+Because the [!DNL Product Recommendations] module is a stand-alone metapackage, updates are released more frequently than Adobe Commerce. To make sure you are up to date with the latest bug fixes and features, refer to the [release notes](release-notes.md).
 
 Install the `magento/product-recommendations` module with Composer:
 
@@ -24,17 +24,15 @@ composer require magento/product-recommendations
 
 ### Add Page Builder support {#pbsupport}
 
-[!DNL Product Recommendations] for Page Builder are an optional module and is installed separately. To use [!DNL Product Recommendations] with Page Builder, install the module by running the following command:
+[!DNL Product Recommendations] for Page Builder is an optional module and is installed separately. To use [!DNL Product Recommendations] with Page Builder, install the module by running the following command:
 
 ```bash
 composer require magento/module-page-builder-product-recommendations
 ```
 
-By enabling [!DNL Product Recommendations] in Page Builder, you can add an existing, active [recommendation unit](https://docs.magento.com/user-guide/cms/page-builder-add-recommendations.html) to any content created in Page Builder, such as pages, blocks, and dynamic blocks.
+By enabling [!DNL Product Recommendations] in Page Builder, you can add an existing, active [recommendation unit](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) to any content created in Page Builder, such as pages, blocks, and dynamic blocks.
 
-   >[!NOTE]
-   >
-   >[!DNL Page Builder] recommendation units can be created only for the default store view.
+See [Using [!DNL Product Recommendations] with Page Builder Content](page-builder.md) for further instructions.
 
 ### Add Visual similarity recommendation type {#vissimsupport}
 
@@ -46,9 +44,9 @@ composer require magento/module-visual-product-recommendations
 
 ## Configure [!DNL Product Recommendations] {#configure}
 
-After you install the `magento/product-recommendations` module, you must configure the [Commerce Services Connector](https://docs.magento.com/user-guide/configuration/services/saas.html) by specifying API Keys and selecting a SaaS Data Space.
+After you install the `magento/product-recommendations` module, you must configure the [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) by specifying API Keys and selecting a SaaS Data Space.
 
-To ensure that catalog export is running correctly, confirm that the [cron](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html) jobs and the [indexers](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html) are running and the `Product Feed` indexer is set to `Update by Schedule`.
+To ensure that catalog export is running correctly, confirm that the [cron](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) jobs and the [indexers](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) are running and the `Product Feed` indexer is set to `Update by Schedule`.
 
 When you successfully link to Commerce Services through API keys and specify the SaaS Data Space, the catalog sync begins. You can then [verify](verify.md) that behavioral data is being sent to your storefront.
 
@@ -94,8 +92,8 @@ composer update --with-dependencies magento/product-recommendations magento/modu
 
 >[!NOTE]
 >
-> In versions 3.x.x of Product Recommendations, you only needed a single API key. In versions 4.x.x and higher, you must provide Production public and private API keys as well as Sandbox public and private API keys. If you do not provide both pairs of API keys, you will not be able to access the Product Recommendations feature in the Admin. Data collection, however, will continue on your storefront and existing recommendations will continue to be shown to your shoppers.
+> In versions 3.x.x of Product Recommendations, you only needed a single API key. In versions 4.x.x and higher, you must provide Production public and private API keys as well as Sandbox public and private API keys. If you do not provide both pairs of API keys, you cannot access the Product Recommendations feature in the Admin. Data collection, however, will continue on your storefront and existing recommendations will continue to be shown to your shoppers.
 
 ## Uninstall [!DNL Product Recommendations] {#uninstall}
 
-If necessary, you can [uninstall](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-uninstall-mods.html) the product-recommendations module.
+If necessary, you can [uninstall](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html) the product-recommendations module.

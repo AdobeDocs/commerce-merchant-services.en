@@ -3,7 +3,7 @@ title: "Onboard the [!DNL Quick Checkout] for Adobe Commerce extension"
 description: "Learn how the [!DNL Quick Checkout] could benefit your Adobe Commerce instance and how to successfully onboard and setup the extension."
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
 ---
-# [!DNL Quick Checkout] onboarding
+# [!DNL Quick Checkout] Onboarding
 
 To get started using the [!DNL Quick Checkout] for Adobe Commerce extension you must complete a few onboarding steps to connect your instance with our checkout functionality.
 
@@ -95,13 +95,15 @@ To connect your payment services provider follow the steps described in the [pro
 
 ![Quick Checkout](assets/quick-checkout-main-view.png)
 
+Refer to the [Settings](../quick-checkout/settings-quick-checkout.md) topic for more information on the configuration options for the [!DNL Quick Checkout] for Adobe Commerce extension.
+
 >[!CAUTION]
 >
 > You must provide unique API and [!DNL Publishable] keys before enabling the extension otherwise customers will see a payment form and will not be able to place an order.
 
 ## Complete Admin configuration
 
-1. On the _Admin_ sidebar, navigate to **Stores** > **Configuration** > **Checkout** to acess the general Checkout Admin config page.
+1. On the _Admin_ sidebar, navigate to **Stores** > **Configuration** > **Checkout** to access the general Checkout Admin config page.
 1. In the _Service Settings_ section, provide all details required to enable the extension.
 1. Set _Payment Action_ to either option:
 
@@ -124,16 +126,33 @@ To check if the shopper has a [!DNL Bolt] account:
 1. Switch the scope to **Main Website**.
 1. Click the **Configure Callback URL** button. This enables [!DNL Bolt] to determine if the shopper has an account. If they do, the OTP pop-up appears.
 
->[!CAUTION]
->
-> Switching the scope to the **Main Website** ensures that the proper URL is set. Each website could have multiple domains.
+   >[!CAUTION]
+   >
+   > Switching the scope to the **Main Website** ensures that the proper URL is set. Each website could have multiple domains.
 
 See the [Site, Store, and View Scope](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings){target="_blank"} topic for more information about scopes in Adobe Commerce.
+
+## Configure Service Settings
+
+![Quick Checkout](assets/service-settings.png)
+
+1. Set **Enable Checkout Tracking** to `Yes`.
+
+   >[!CAUTION]
+   >
+   > Disabling this option will affect reporting because Adobe Commerce is not allowed to share checkout tracking information with Bolt.
+
+1. Select the **Next Stage After Login** option to change the navigation flow after the customer has logged in. By default it is set to the **Payments** page.
+1. Define if [!DNL Quick Checkout] allows for the **automatic login** during checkout. By default it is enabled to automatically login to the [!DNL Bolt] network.
+
+   >[!NOTE]
+   >
+   > See [Bolt's Enable Automatic Login documentation](https://help.bolt.com/products/embedded/direct-api/auto-login/) for more information.
 
 ## Get help
 
 The onboarding process is designed to guide you through the required steps for setting up and enabling the [!DNL Express Checkout] functionality.
 
-Contact Adobe Commerce Support through the [Adobe Commerce Help Center](https://support.magento.com/hc/en-us/articles/360000913794-Adobe-Commerce-Help-Center-User-Guide) for any assistance.
+Contact Adobe Commerce Support through the [Adobe Commerce Help Center](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html) for any assistance.
 
 See the [test and validate](../quick-checkout/testing.md) topic for more information.

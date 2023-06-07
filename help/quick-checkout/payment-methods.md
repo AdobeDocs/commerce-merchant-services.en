@@ -3,7 +3,7 @@ title: "Payment methods"
 description: "Overview of the compatible payment methods with the [!DNL Quick Checkout] for Adobe Commerce extension."
 exl-id: 7d151477-5932-4ec0-b729-dbda6b49e6da
 ---
-# [!DNL Quick Checkout] compatible payment methods
+# [!DNL Quick Checkout] Compatible Payment Methods
 
 Once the merchant configures [!DNL Quick Checkout]:
 
@@ -14,4 +14,4 @@ The merchant can enable [!DNL Bolt] as a payment method even if the shopper is n
 
 See the [[!DNL Bolt] Payment Methods](https://help.bolt.com/shoppers/guides/checkout/update-payment-method) page for more information on updating a payment method with [!DNL Bolt].
 
-[!DNL Bolt] is compatible with different payment providers in Adobe Commerce, see [[!DNL Bolt] payment processors](https://help.bolt.com/merchants/guides/merchant-setup/checkout/processor-guides/).
+[!DNL Bolt] is compatible with different payment providers in Adobe Commerce, see [[!DNL Bolt] payment processors](https://help.bolt.com/connectors/payment-processors/).

@@ -7,8 +7,14 @@ exl-id: 316d0b0c-5938-4e2f-9d0d-747746cf6056
 
 You can integrate [!DNL Product Recommendations] in a headless storefront using either [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/) or a custom frontend technology, such as React or Vue JS.
 
-[!DNL Product Recommendations] require [behavioral and catalog data](https://devdocs.magento.com/recommendations/product-recs.html#typesofdata) to operate. The catalog data sync process remains unchanged in a headless implementation, but changes are needed for behavioral data collection.
+ Custom and headless integrators should refer to these Luma and PWA instructions as a suggested implementation. There are many ways of implementing Product Recommendations into headless solutions and this documentation does not cover all scenarios. Integrators must cover eventing, design, and testing for their implementations.
 
+[!DNL Product Recommendations] require [behavioral and catalog data](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/development-overview.html) to operate. The catalog data sync process remains unchanged in a headless implementation, but changes are needed for behavioral data collection.
+
+ >[!NOTE]
+ >
+ >Headless instances must implement eventing to power the Product Recommendations dashboard.
+ 
 To integrate [!DNL Product Recommendations] in a headless storefront, you must:
 
 1. Send behavioral data to Adobe Sensei to analyze and compute Product Recommendation results. You can also send additional data to enable product recommendation [metrics reporting](workspace.md).
@@ -19,7 +25,7 @@ You can perform both of these actions using the available SDKs as described in t
 
 1. [Install](install-configure.md) the [!DNL Product Recommendations] module.
 
-1. Install and use the [Adobe Commerce Storefront Event SDK](https://devdocs.magento.com/shared-services/storefront-events-sdk.html) to fire the [behavioral events](https://devdocs.magento.com/recommendations/events.html).
+1. Install and use the [Adobe Commerce Storefront Event SDK](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/) to fire the [behavioral events](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/events.html).
 
     The minimum required events to return [!DNL Product Recommendations] results:
 
@@ -36,10 +42,10 @@ You can perform both of these actions using the available SDKs as described in t
     |`impression-render` | recommendation-unit|
     |`view` | recommendation-unit|
     |`rec-click` | recommendation-unit|
-    |`rec-add-to-cart-click` | recommendation-unit (if an add to cart button is present in the recommendations template)|
+    |`rec-add-to-cart-click` | recommendation-unit (if an "Add to cart" button is present in the recommendations template)|
 
-1. When the events are fired, use the [Adobe Commerce Storefront Event Collector](https://devdocs.magento.com/shared-services/storefront-event-collector.html) to handle the events and send them to Adobe Sensei.
+1. When the events are fired, use the [Adobe Commerce Storefront Event Collector](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/) to handle the events and send them to Adobe Sensei.
 
 1. After the behavioral data is collected, you can [create](create.md) [!DNL Product Recommendations] in the Admin.
 
-1. Use the [Recommendations SDK](https://devdocs.magento.com/recommendations/recs-api.html) to fetch the recommendation units on the storefront. The SDK returns necessary product data to render recommendation units on a page.
+1. Use the [Recommendations SDK](https://developer.adobe.com/commerce/services/product-recommendations/) to fetch the recommendation units on the storefront. The SDK returns necessary product data to render recommendation units on a page.

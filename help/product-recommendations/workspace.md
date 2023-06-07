@@ -1,9 +1,9 @@
 ---
-title: Workspace
+title: '[!DNL Product Recommendations] Workspace'
 description: Learn how to configure, manage, and monitor product recommendation performance.
 exl-id: 85a06cc3-91b9-484a-96a9-fc85718e6d70
 ---
-# Workspace
+# [!DNL Product Recommendations] Workspace
 
 The [!DNL Product Recommendations] workspace displays a list of previously configured recommendations with metrics that help you track the success of each recommendation. The list can be configured to calculate metrics for the last day, week, or month. You can use the metrics to create actionable insights based on how frequently a recommendation unit is viewed or clicked, or to analyze how well your recommendations perform.
 
@@ -12,7 +12,7 @@ _Recommendations Workspace_
 
 ## Set the scope
 
-Initially the [scope](https://docs.magento.com/user-guide/stores/websites-stores-views.html) of all recommendation settings is set to `Default Store View`. If your Commerce installation includes multiple store views, set **Scope** to the [store view](https://docs.magento.com/user-guide/configuration/scope.html) where your recommendations apply.
+Initially the [scope](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) of all recommendation settings is set to `Default Store View`. If your Commerce installation includes multiple store views, set **Scope** to the [store view](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) where your recommendations apply.
 
 ## Set metrics date range
 

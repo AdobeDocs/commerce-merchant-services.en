@@ -5,7 +5,7 @@ role: User, Admin
 level: Intermediate
 exl-id: c432791a-94a0-457d-9ed9-8937846ce4f4
 ---
-# Configuration Overview for Store Fulfillment
+# Configuration overview for Store Fulfillment
 
 In the Adobe Commerce Admin, the configuration settings for Store Fulfillment Services by Walmart Commerce Technologies are categorized by type.
 

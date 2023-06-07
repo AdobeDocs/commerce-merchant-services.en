@@ -3,7 +3,7 @@ title: "Checkout flow in Adobe Commerce"
 description: "Overview of the [!DNL Quick Checkout] flow in Adobe Commerce."
 exl-id: 82761627-a0d4-4cb0-aad1-9865fcb550d4
 ---
-# [!DNL Quick Checkout] flow
+# [!DNL Quick Checkout] Flow
 
 This section provides an overview of the typical checkout experience using the [!DNL Quick Checkout] for Adobe Commerce extension.
 
@@ -14,10 +14,14 @@ A successful [!DNL Quick Checkout] flow consists of the following steps:
 
   ![Checkout](assets/proceed-checkout.png)
 
+   >[!NOTE]
+   >
+   > You can enable automatic login for your merchant. See [Bolt's Enable Automatic Login topic](https://help.bolt.com/products/embedded/direct-api/auto-login/) for more information.
+
 1. When prompted, enter an email address associated with a [!DNL Bolt] account.
 1. Input the One-Time Password (OTP) sent to that [!DNL Bolt] account's email address or phone number.
 
-  ![OTP Pop-up](assets/pop-up.png)
+  ![OTP Pop-up](assets/new-logo-otp-email.png)
 
 1. Once logged in with your [!DNL Bolt] account, checkout details are automatically filled in:
 
@@ -41,4 +45,4 @@ The [!DNL Quick Checkout] allows for multiple use cases during a checkout flow:
 
 ## Get help
 
-Contact Adobe Commerce Support through the [Adobe Commerce Help Center](https://support.magento.com/hc/en-us/articles/360000913794-Adobe-Commerce-Help-Center-User-Guide) for any assistance.
+Contact Adobe Commerce Support through the [Adobe Commerce Help Center](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html) for any assistance.

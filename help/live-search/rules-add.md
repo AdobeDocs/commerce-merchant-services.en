@@ -7,20 +7,22 @@ exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
 
 To build a rule, the first step is to use the rule editor to define the conditions in the shopper's query text that trigger the associated events. Then, complete the rule details, test the results, and publish the rule.
 
-## Step 1: Add a rule
+## Add a rule
 
-1. In the Admin, go to **Marketing** > SEO & Search > **Live Search**.
-1. Set the **Scope** to identify the [store view](https://docs.magento.com/user-guide/configuration/scope.html) where the rule applies.
+1. In the Admin, go to **Marketing** > SEO & Search > **[!DNL Live Search]**.
+1. Set the **Scope** to identify the [store view](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) where the rule applies.
 1. Click the **Rules** tab.
 1. Click **Add rule** to launch the rule editor.
 
-   ![Rules workspace](assets/rules-workspace-add-rule.png)
-
-## Step 2: Describe the conditions
+## Conditions
 
 Conditions are the requirements to trigger an event. A rule can have up to ten conditions and 25 events.
 
    ![Rule - Build your rule](assets/rules-add-workspace.png)
+
+>[!NOTE]
+>
+>Currently, it is not possible to target rules to a specific customer group.
 
 ### Single condition
 
@@ -37,9 +39,6 @@ Conditions are the requirements to trigger an event. A rule can have up to ten c
 
 1. To test other queries, change the query text in the *Test your rule* search box and press **Return**.
    Initially, the test pane renders the query from the Conditions search box. But now it is rendering the query from the test query box. The test pane renders only one query at a time.
-
-   ![Rule - update test](assets/rule-update-test.png)
-
 1. If you like the result, update the text in the *Conditions* search box. Then, click anywhere on the page to update the results in the test pane.
 1. To build a simple rule with one condition, go to Step 3: [Add events](#events).
 
@@ -51,8 +50,6 @@ Conditions are the requirements to trigger an event. A rule can have up to ten c
    ![Rules - Search query contains](assets/rules-search-query-contains-and.png)
 
 1. Select the second condition and enter the required query text.
-
-   ![Rule conditions](assets/rules-add-condition.png)
 
 1. To change the logic of the rule, change the **Match** setting to determine how closely the shopper's search criteria must match the query condition. Set **Match** to one of the following:
 
@@ -67,29 +64,56 @@ Conditions are the requirements to trigger an event. A rule can have up to ten c
 
 1. To add another condition, click **Add condition** and repeat the process.
 
-## Step 3: Add events
+## Ranking type
 
-events are actions that change the search results when the conditions are met. A single rule can have up to 25 events.
+Ranking combines user behaviors and site statistics to determine product ranking.
+Store owners can set up the following types of ranking strategies:
+
+![Rules - Match](assets/rules-ranking-type.png)
+
+* Most purchased: This ranks products by total purchases per SKU in the previous 7 days.
+* Most added to cart - Ranks in order of total "Add to Cart" activities in the previous 7 days.
+* Most viewed: Ranks my total views per SKU in the previous 7 days.
+* Recommended for you - Uses the `viewed-viewed` data point - Shoppers who viewed this SKU also looked at these other SKUs
+* Trending: Looks back at page view events over the past 72 hours for background events and 24 hours for foreground events
+* None: Products are ordered by Relevance
+
+1. Select the type of strategy for the rule. The Test Your Rule window displays the expected results.
+
+## Adding events
+
+Events are actions that modify the search results when defined conditions are met. A single rule can have up to 25 events.
+
+* Boost - Moves a product higher in the search results.
+* Bury - Moves a SKU lower in the search results.
+* Pin a product - Product is displayed in the selected "Position" on the page.
+* Hide a product - Excludes a SKU from the search results.
+
+The easiest way to pin a product is by drag and drop.
+
+1. Click and drag a product in the Test pane. Drag and drop it at the desired position. The Product and Postion fields are automatically populated in the Events pane.
+
+   ![Rules - Match](assets/rule-event-pin-product.png)
+
+You may also click the pin icon to pin a product to its current location. Use the ellipsis context menu to "Pin to top" or "Pin to bottom".
+
+>[!NOTE]
+>
+>You can only pin products that are returned in the query.
+
+Or events can be set manually:
 
 1. Under *Events*, choose the **Event** to take place when the associated conditions are met.
 
-   For example, choose `Pin a product`. Then, enter the name of the product that you want to pin. If you need help, you can find the name in the test pane.
-   Then, enter the *Position* where the pinned product is to appear. The product is moved to the new position in the test pane, and is marked with a *Pinned* preview badge.
-   
-   ![Rules - Match](assets/rule-event-pin-product.png)
+   For example, choose `Hide a product`. Then, enter the name of the product that you want to hide. Products are suggested as you type.
 
 1. For multiple events, choose any other events that you want to trigger when conditions are met.
 
-   * Boost - Select Boost. Then, enter the product name or SKU that you want to move higher in the search results. In the test pane, each boosted product has a *Boosted* preview badge.
-   * Bury - Moves a SKU lower in the search results. Each SKU is marked with a *Buried* preview badge in the test pane.
-   * Pin a product - Enter the product name or SKU. Then, select the Position in the search results where the product should appear. The product is marked with a *Pinned* preview badge in the test pane.
-   * Hide a product - Excludes a SKU from the search results.
-
-## Step 4: Complete the details
+## Additional details
 
 The information that is entered here appears in the [Rule Details](rules-workspace.md) panel.
 
-1. Under *Details*, enter a **Name** for the rule.
+1. Under *Details*, enter a **Name** for the rule. All rule names must be unique.
 1. Enter a brief **Description** of the rule.
 1. Enter the **Start Date** and **End Date** for the rule to be active or choose the dates from the calendar.
 
@@ -97,13 +121,10 @@ The information that is entered here appears in the [Rule Details](rules-workspa
 
    ![Rule - Complete](assets/rule-add-details.png)
 
-## Step 5: Test the rule
+## Finalizing the rule
 
 1. Examine the results of the rule in the test pane.
 1. If the rule has multiple queries, test each one that might be affected by the rule.
-
-## Step 6: Save and publish
-
 1. When complete, click **Save and publish**.
 
    The rule is added to the list in the rules workspace. 
@@ -148,7 +169,7 @@ The information that is entered here appears in the [Rule Details](rules-workspa
 
 |Field |Description |
 |--- |--- |
-| Name | The name of the rule. |
+| Name | The name of the rule. Rule names must be unique. |
 | Start date | The start date of the rule, if scheduled. |
 | End date | The end date of the rule, if scheduled. |
 | Description | A brief description of the rule. |

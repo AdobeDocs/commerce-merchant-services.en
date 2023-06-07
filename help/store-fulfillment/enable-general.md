@@ -1,27 +1,29 @@
 ---
-title: General configuration
+title: General Configuration
 description: Configure general settings to enable [!DNL Store Fulfillment] for your store. Configure global extension settings, system settings for logging, data synchronization, and security. Provide key data to enable the integration between Adobe Commerce and Store Fulfillment services.
 role: User, Admin
 level: Intermediate
 exl-id: 51dcfc95-3dd6-40d9-bd26-d8409a25f3c8
 ---
-# Store service and sales configuration
+# Store Service and Sales Configuration
 
-Configure[!DNL Store Fulfillment] to enable the extension, specify extension settings, configure the security settings for Store Assist app users, and set options for delivery methods.
+Configure [!DNL Store Fulfillment] from the [!DNL Commerce] Admin to enable the extension, specify extension settings, configure the security settings for Store Assist app users, and set options for delivery methods.
 
 >[!IMPORTANT]
 >
 >The Store Fulfillment service configuration applies only after you connect your Adobe Commerce instance and the [!DNL Store Fulfillment] app. See [Connect Store Fulfillment](connect-set-up-service.md).
 
-Configure the Store Fulfillment services settings from the Admin Store Configuration menu in Adobe Commerce.
+## Manage Store Fulfillment services settings
 
-Access the settings to enable the extension, configure global settings, and specify security options for Store Assist app user connections and accounts by selecting **[!UICONTROL Stores > Configuration > Services > Store Fulfillment by Walmart Commerce Technologies]**.
+Manage settings for Store Fulfillment services from the [!DNL Commerce Admin Store Configuration] menu.
 
-![Admin Store services configuration for Store Fulfillment](assets/store-services-admin-sf-config.png)
+- Enable the extension, configure global settings, and specify security options for Store Assist app user connections and accounts by selecting **[!UICONTROL Stores > Configuration > Services > Store Fulfillment by Walmart Commerce Technologies]**.
 
-Access the settings to configure delivery methods by selecting **[!UICONTROL Store > Configuration > Sales > Delivery Methods > In-Store Pickup]**.
+  ![Admin Store services configuration for Store Fulfillment](assets/store-services-admin-sf-config.png)
 
-![Admin Store sales configuration for Store Fulfillment](assets/store-sales-admin-sf-deliver-config.png)
+- Configure delivery methods by selecting **[!UICONTROL Store > Configuration > Sales > Delivery Methods > In-Store Pickup]**.
+
+  ![Admin Store sales configuration for Store Fulfillment](assets/store-sales-admin-sf-deliver-config.png)
 
 ## Basic settings
 
@@ -43,13 +45,13 @@ Access the settings to configure delivery methods by selecting **[!UICONTROL Sto
 </tr>
 <tr>
 <td><strong>[!UICONTROL Search Radius]</strong></td>
-<td>The radius, in kilometers, to use when a shopper searches for a store pickup location in the storefront checkout. The search results return only stores located within specified search radius.</td>
+<td>The radius, in kilometers, to use when a shopper searches for a store pickup location in the storefront checkout. The search results return only stores located within the specified search radius.</td>
 <td>Website</td>
 <td>No</td>
 </tr>
 <tr>
 <td><strong>[!UICONTROL Displayed error message]</strong></td>
-<td>A message that displays when a customer selects in-store pickup, but the delivery method is not available. You can customize the default text if needed.
+<td>Message that displays when a customer selects in-store pickup for an item that is not available for in-store pickup. You can customize the default text if needed.
 </td>
 <td>Store View</td>
 <td>No</td>
@@ -77,14 +79,14 @@ Enable the [!DNL Store Fulfillment] solution to add the in-store and curbside pi
  <tbody>
 <tr>
 <td><strong>[!UICONTROL Enabled]</strong></td>
-<td>Enable or disable the solution. When enabled, configure and use Store Fulfillment capabilities and establish the connection between your Adobe Commerce store and Store Fulfillment services. When disabled, all Store Fulfillment features are disabled and there is no communication between Adobe Commerce and Store Fulfillment services. Order information cannot be processed or received.</td>
-<td>Global</td>
+<td>Enable or disable the solution. When enabled, configure and use Store Fulfillment capabilities and establish the connection between your Adobe Commerce store and [!DNL Store Fulfillment] services. When disabled, all Store Fulfillment features are disabled, and there is no communication between Adobe Commerce and Store Fulfillment services. Order information cannot be processed or received.</td>
+<td>Website</td>
 <td>Yes</td>
 </tr>
 </tbody>
 </table>
 
-## Add Account Credentials
+## Add Account credentials
 
 <table>
 <tr>
@@ -92,52 +94,58 @@ Enable the [!DNL Store Fulfillment] solution to add the in-store and curbside pi
 <td><strong>Description</strong></td>
 <td><strong>Scope</strong></td>
 <td><strong>Required</strong></td>
-    </tr>
+</tr>
 <tr>
 <td><strong>[!UICONTROL Environment]</strong></td>
-<td>Select either <i>Sandbox</i> or <i>Production</i><br></br> Sandbox communicates with the fulfillment services in a test.&lt;/br&gt;Production communicates with a live environment. Use <strong>only</strong> in production.<br></br>You are given a set of credentials for each environment and are able to manage both sets in the same installation. <br></br>Save credentials before validating the connection.</td>
+<td>Select either <i>[!UICONTROL Sandbox]</i> or <i>[!UICONTROL Production]</i><br></br>Selecting [!UICONTROL Sandbox] enables communication with fulfillment services in a test environment.<br></br>Selecting [!UICONTROL Production] enables communication with fulfillment services in a live environment.<br></br>You are given a set of credentials for each environment and can manage both sets in the same installation. <br></br>Save the credentials before validating the connection.</td>
 <td>Global</td>
 <td>Yes</td>
-    </tr>
+</tr>
 <tr>
 <td><strong>[!UICONTROL API Server URL]</strong></td>
-<td>The URL to the Walmart Store Fulfillment API endpoint. This must be the fully qualified URL that is provided to you during your onboarding process. Store Fulfillment customers receive both a Sandbox and Production URL. Please ensure to copy/paste the full URL, including trailing slash "/".</td>
+<td>The URL to the Walmart Store Fulfillment API endpoint. This must be the fully qualified URL that is provided during the onboarding process. Store Fulfillment customers receive both a Sandbox and Production URL. When adding the values, ensure that you copy and paste the full URL, including trailing slash "/".</td>
 <td>Global</td>
 <td>Yes</td>
-    </tr>
+</tr>
 <tr>
 <td><strong>[!UICONTROL Token Auth Server URL]</strong></td>
-<td>The URL to the Walmart Store Fulfillment Authentication endpoint. The value must be the fully qualified URL that is provided to you during your onboarding process. You receive both a Sandbox and Production URL. Please ensure to copy/paste the full URL, including trailing slash `/`".</td>
+<td>The URL to the Walmart Store Fulfillment Authentication endpoint. The value must be the fully qualified URL that is provided during the onboarding process. You receive both a Sandbox and Production URL. When adding the values, ensure that you copy and paste the full URL, including trailing slash "/".</td>
 <td>Global</td>
 <td>Yes</td>
-    </tr>
+</tr>
 <tr>
 <td><strong>[!UICONTROL Merchant Id]</strong></td>
-<td>Your unique merchant (tenant) ID provided to you during your onboarding process. Your ID is used to route your orders and ensures that your merchant stores are receiving them.</td>
+<td>Your unique merchant (tenant) ID provided during the onboarding process. This ID is used to route orders to ensure that your merchant stores receive them.</td>
 <td>Global</td>
 <td>Yes</td>
-    </tr>
+</tr>
 <tr>
 <td><strong>[!UICONTROL Consumer Id]</strong></td>
-<td>Your unique integration ID. This is provided to you during your onboarding process. It does not change. It is used to authenticate all communication with the fulfillment services.</td>
+<td>The unique integration ID provided during the onboarding process. This ID is used to authenticate all communication between Adobe Commerce and store fulfillment services</td>
 <td>Global</td>
 <td>Yes</td>
-    </tr>
+</tr>
 <tr>
 <td><strong>[!UICONTROL Consumer Secret]</strong></td>
-<td>Your unique integration key. This is provided to you during your onboarding process. It is used to authenticate all communication with the fulfillment services.</td>
+<td>The unique integration key provided during the onboarding process. This key is used to authenticate all communication between Adobe Commerce and store fulfillment service.</td>
 <td>Global</td>
 <td>Yes</td>
-    </tr>
+</tr>
 </table>
 
-After you've configured the Account Credentials, select <strong>[!UICONTROL Validate Credentials]</strong> to verify and establish a connection to the fulfillment web service for the first time.
+After you configure the [!UICONTROL Account Credentials], select <strong>[!UICONTROL Validate Credentials]</strong> to verify and establish a connection to the store fulfillment service for the first time.
 
-## Configure Logging
+## Configure logging
 
-When logging is enabled, your log file can quickly expand. To prevent response time issues in production environments, be careful about enabling logging, and enable only for a short time when needed. 
+Logs for store fulfillment services are available in the log file `var/log/walmart-bopis.log`.
 
-Ask the system administrator to configure your environments to allow exception handling so that API-related exceptions can be captured through the firewall or cache. You can also ask your system administrator to set up log rotation on this file to minimize size.
+Ask the system administrator to configure your environments to allow exception handling so that API-related exceptions can be captured through the firewall or cache.
+
+Because the application log file can grow quickly, enable logging for the application only for a short time when needed–for example when troubleshooting store fulfillment issues for a [!DNL Commerce] order. This configuration prevents response time issues in production environments caused by large log files.
+
+>[!TIP]
+>
+>For Adobe Commerce on-premises installations, ask your system administrator to set up log rotation for the `var/log/walmart-bopis.log` file to minimize the size. For Adobe Commerce on-premises installations, see [Log rotation](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html#server-settings) in the _Adobe Commerce Installation Guide_. For Adobe Commerce on cloud infrastructure projects, see [View and manage logs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html).
 
 <table>
 <thead>
@@ -151,7 +159,7 @@ Ask the system administrator to configure your environments to allow exception h
 <tbody>
 <tr>
 <td><strong>[!UICONTROL Debug Mode]</strong></td>
-<td>Debug Mode is used to increase the logged activity within the integration. When disabled, no debug information is logged. When enabled, all debug information is logged.&lt;/br&gt; All logged data can be found in file: `var/log/walmart-bopis.log`</td>
+<td>Debug Mode is used to increase the logged activity within the integration. When disabled, no debug information is logged. When enabled, all debug information is logged <br></br>All logged data can be found in the file: <pre>var/log/walmart-bopis.log</pre>
 <td>Global</td>
 <td>No</td>
 </tr>
@@ -160,7 +168,7 @@ Ask the system administrator to configure your environments to allow exception h
 
 ## Manage Order synchronization
 
-Configure the settings to manage error handling for order  synchronization, catalog attributes to use for barcode scanning during order picking, and configure order batch sizes for the store fulfillment queue.
+Configure the settings to manage error handling for order synchronization, catalog attributes to use for barcode scanning during order picking, and configure order batch sizes for the store fulfillment queue.
 
 You can view details about order synchronization operations from the Store Fulfillment Queue Management dashboard in the Admin (
 <strong>[!UICONTROL System > Tools > Store Fulfillment Queue]</strong>).
@@ -316,7 +324,7 @@ Configure the settings for the Store Fulfillment App user account and password s
 </tr>
 <tr>
 <td><strong>[!UICONTROL Force Password Change]</strong></td>
-<td>Determines if a user password change is required.<br></br>`Yes`: Require the user to change their password after account setup.&lt;/br&gt;`No`: Recommends that user change password after account setup.</td>
+<td><em>[!UICONTROL Yes]</em>: Require the user to change their password after account setup.<br></br><em>[!UICONTROL No]</em>: Recommends that user change password after account setup.</td>
 <td>Global</td>
 <td>No</td>
 </tr>
@@ -329,57 +337,23 @@ Configure the settings for the Store Fulfillment App user account and password s
 </tbody>
 </table>
 
-### Two-factor authentication
+## Delivery Methods
 
-<table>
-<thead>
-<tr>
-<td><strong>Field</strong></td>
-<td><strong>Description</strong></td>
-<td><strong>Scope</strong></td>
-<td><strong>Required</strong></td>
-</tr>
- </thead>
- <tbody>
-<tr>
-<td><strong>[!UICONTROL APP User 2FA]</strong></td>
-<td>Enable or disable two-factor authentication for store associates. When enabled, the store associate is prompted to provide a one-time password generated by an authentication provider.</td>
-<td>Global</td>
-<td>No</td>
-</tr>
-<tr>
-<td><strong>[!UICONTROL APP 2FA Policy]</strong></td>
-<td>Sets the enforcement policy for two-factor authentication.<br></br><strong>[!UICONTROL Optional]</strong>: The store associate can bypass two-factor authentication if no provider is set.<br></br><strong>[!UICONTROL Mandatory]</strong>: The store associate is required to complete two-factor authentication.</td>
-<td>Global</td>
-<td>No</td>
-</tr>
-<tr>
-<td><strong>[!UICONTROL 2FA Providers]</strong></td>
-<td>Select one or more authentication provider services to offer store associates. To set up two-factor authentication and authenticate, store associates must install the authentication app from one of the available providers installed on their mobile devices.</td>
-<td>Global</td>
-<td>No</td>
-</tr>
-</tbody>
-</table>
-
-## Delivery Methods 
-
-Store Fulfillment works by extending the native Adobe Commerce [!DNL In-Store Delivery] capabilities. 
-After you install the extension, additional Admin configuration options are available for in-store delivery methods. Configure these additional options from the Admin by selecting <strong>[!UICONTROL Stores > Configuration > Sales > Delivery Methods > In-Store Pickup]</strong>.
-
-In the Store Fulfillment settings, you can configure the following delivery methods for In-Store Pickup orders.
+Store Fulfillment works by extending the native Adobe Commerce [!DNL In-Store Delivery] capabilities. After you install the extension, you can configure in-store delivery methods using the following extended settings that are added to the Admin.
 
 - **In-store pick up**—Offer options for in-store delivery during the checkout process
 This is the most common delivery scenario for BOPIS orders.
 
-- **Curbside pick up**–Offer options for customers  to park at a store location and have their order delivered to them by a  store associate.
+- **[!UICONTROL Curbside pick up]**–Offer options for customers to park at a store location and have their order delivered to them by a store associate.
+
+Configure these settings from the Admin by selecting <strong>[!UICONTROL Stores > Configuration > Sales > Delivery Methods > In-Store Pickup]</strong>.
 
 >[!NOTE]
 >
->For additional information about configuring in-store delivery options, see [In-Store Delivery](https://docs.magento.com/user-guide/shipping/shipping-in-store-delivery.html) in the Adobe Commerce User Guide.
+>For additional information about configuring in-store delivery options, see [In-Store Delivery](https://docs.magento.com/user-guide/shipping/shipping-in-store-delivery.html) in the _Adobe Commerce User Guide_.
 
 
-### Delivery Methods Configuration
+### Delivery Methods configuration
 
 With the in-store delivery method, the customer can select a source to be used as a pickup location during the checkout.
 
@@ -408,7 +382,7 @@ With the in-store delivery method, the customer can select a source to be used a
 </tbody>
 </table>
 
-### Delivery Method Title Configuration
+### Delivery Method Title configuration
 
 <table>
 <thead>
@@ -421,7 +395,7 @@ With the in-store delivery method, the customer can select a source to be used a
 </thead>
 <tbody><tr>
 <td><strong>Home Delivery Title</strong></td>
-<td>Specifies the title to display for the Home Delivery option in the product, cart, and checkout areas. Home delivery refers to the standard shipping capabilities of Adobe Commerce—from a warehouse, by a carrier, or direct to the customer-provided shipping address.</br></br>This label does not affect the selected shipping carrier or their available shipping method labels.</td>
+<td>Specifies the title to display for the Home Delivery option in the product, cart, and checkout areas. Home delivery refers to the standard shipping capabilities of Adobe Commerce—from a warehouse, by a carrier, or direct to the customer-provided shipping address. </br></br>This label does not affect the shipping method labels for the selected shipping carrier.</td>
 <td>Store View</td>
 <td>No</td>
 </tr>
@@ -433,7 +407,7 @@ With the in-store delivery method, the customer can select a source to be used a
 </tr>
 <tr>
 <td><strong>Store Pickup Title</strong></td>
-<td>When a customer is presented with delivery options and in-store pickup is available, this label is shown.</br></br>You can customize this label, which displays in the product, cart, and checkout areas.</td>
+<td>When a customer is presented with delivery options and in-store pickup is available, this label is shown. </br></br>You can customize this label, which displays in the product, cart, and checkout areas.</td>
 <td>Store View</td>
 <td>No</td>
 </tr>
@@ -457,25 +431,25 @@ With the in-store delivery method, the customer can select a source to be used a
 </tr>
 <tr>
 <td><strong>In-Store Pickup Instructions</strong></td>
-<td>When an order is ready for pickup at your retail stores, the customer is notified by e-mail. If the customer selected [!DNL In-Store Pickup] during checkout, you can customize the pickup instructions here.</br></br>This is a global setting that applies to all retail store locations. You can also customize the instructions at the retail store location level.</td>
+<td>When an order is ready for pickup at your retail stores, the customer is notified by e-mail. If the customer selected [!DNL In-Store Pickup] during checkout, you can customize the pickup instructions here. </br></br>This is a global setting that applies to all retail store locations. You can also customize the instructions at the retail store location level.</td>
 <td>Store View</td>
 <td>No</td>
 </tr>
 <tr>
 <td><strong>Curbside Pickup Instructions</strong></td>
-<td>Specifies customized order pick up instructions to include in customer email notifications for curbside pickup orders.</br></br>This is a global setting that applies to all retail store locations. You can also customize the instructions at the retail store location level.</td>
+<td>Specifies customized order pickup instructions to include in customer email notifications for curbside pickup orders. </br></br>This is a global setting that applies to all retail store locations. You can also customize the instructions at the retail store location level.</td>
 <td>Store View</td>
 <td>No</td>
 </tr>
 <tr>
 <td><strong>Estimated Pickup Lead Time</strong></td>
-<td>The number of minutes required before an order is received, fulfilled, and ready to be picked up. This information is shown to the customer when selecting a retail store location for Store Pickup delivery option.</br></br>This is a global setting and applies to all retail store locations. You can also customize the lead time at the retail store location level.</td>
+<td>The number of minutes required before an order is received, fulfilled, and ready to be picked up. This information is shown to the customer when selecting a retail store location for Store Pickup delivery option. This is a global setting and applies to all retail store locations. You can also customize the lead time at the retail store location level.</td>
 <td>Store View</td>
 <td>No</td>
 </tr>
 <tr>
 <td><strong>Estimated Pickup Time Label</strong></td>
-<td>Displays the estimated time until an order is available for customer pickup. This information is shown to customers when they select a retail store location for Store Pickup delivery option.</br></br>When customizing this label, you can use the code <code>%1</code> to insert your <strong>Estimated Pickup Lead Time</strong>.For example:</br></br><code>Ready for Pickup in %1 minutes.</code></br></br>This is a global setting that applies to all retail store locations. You can also customize the lead time at the retail store location level.</td>
+<td>Displays the estimated time until an order is available for customer pickup. This information is shown to customers when they select a retail store location for the [!DNL In-Store Pickup] delivery option. </br></br>When customizing this label, you can use the code <code>%1</code> to insert your <strong>Estimated Pickup Lead Time</strong>. For example:</br></br><code>Ready for Pickup in %1 minutes.</code></br></br>This is a global setting that applies to all retail store locations. You can also customize the lead time at the retail store location level.</td>
 <td>Store View</td>
 <td>No</td>
 <tr>
@@ -488,7 +462,7 @@ With the in-store delivery method, the customer can select a source to be used a
 </tr>
 </tbody></table>
 
-### Stock Availability Titles Configuration
+### Stock Availability Titles configuration
 
 <table>
 <thead>
@@ -500,8 +474,8 @@ With the in-store delivery method, the customer can select a source to be used a
 </tr>
 </thead>
 <tbody><tr>
-<td><strong>n-Stock</strong></td>
-<td>When a customer is using the retail store locator, inventory availability for onr ot motr current items is shown for each location.</br></br>You can customize the "in-stock" status label here.</td>
+<td><strong>In-Stock</strong></td>
+<td>When a customer is using the retail store locator, inventory availability for the current items is shown for each location. </br></br>You can customize the <em>[!UICONTROL in-stock]</em> status label here.</td>
 <td>Store View</td>
 <td>No</td>
 </tr>
@@ -513,8 +487,9 @@ With the in-store delivery method, the customer can select a source to be used a
 </tr>
 <tr>
 <td><strong>Partially In-Stock</strong></td>
-<td>When a customer is using the retail store locator, inventory availability for any current items ia shown for each location.</br></br>You can customize the "partially in-stock" status label here.</td>
+<td>When a customer is using the retail store locator, inventory availability for any current items ia shown for each location. </br></br>You can customize the <em>[!UICONTROL partially in-stock]</em> status label here.</td>
 <td>Store View</td>
 <td>No</td>
 </tr>
 </tbody></table>
+

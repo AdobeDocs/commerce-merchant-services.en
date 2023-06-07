@@ -5,9 +5,15 @@ exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
 ---
 # Onboarding and Installation
 
-Partners and customers are welcome to start using the [!DNL Catalog Service] for Adobe Commerce Beta version released on Aug 9, 2022. To participate, you must read and agree to our [Adobe Commerce Beta program terms](https://experiencecloudpanel.adobe.com/h/s/6eGskQlHvLSHztsNmKCWMy).
+See a walkthrough of the Catalog Service process.
 
-Once you have signed the agreement, reach out to our team on the [#storefront-services](https://magentocommeng.slack.com/archives/C03HVPG8RS4) public Slack channel. We will provide all information and the next steps needed to work with the [!DNL Catalog Service] Beta version.
+Part 1:
+
+>[!VIDEO](https://video.tv.adobe.com/v/3415599)
+
+Part 2:
+
+>[!VIDEO](https://video.tv.adobe.com/v/3415600)
 
 ## Prerequisites
 
@@ -15,103 +21,118 @@ The onboarding process for [!DNL Catalog Service] requires access to the command
 
 ### Software requirements
 
--  Adobe Commerce 2.4.x
--  PHP 8.1, 7.4, 7.3
--  Composer: 2.x, 1.x
+- Adobe Commerce 2.4.4+
+- PHP 8.1, 8.2
+- Composer: 2.x
 
 ### Supported platforms
 
--  Adobe Commerce on cloud infrastructure: 2.4.x
--  Adobe Commerce on premises: 2.4.x
+- Adobe Commerce on cloud infrastructure: 2.4.4+
+- Adobe Commerce on premises: 2.4.4+
 
-## Install the extension
+## Environments
 
-You can install the [!DNL Catalog Service] extension for both Adobe Commerce on cloud infrastructure and on-premises instances.
+Catalog Service has two environments available for onboarding:
 
-The [!DNL Catalog Service] is installed with Composer keys, which are linked to the Commerce account [mageid](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-personal/#field-descriptions) provided in the signup process. Composer uses these keys during the initial installation of [!DNL Adobe Commerce], or in situations in which the Composer keys were not previously saved to the `auth.json` file.
+- Sandbox (https://catalog-service-sandbox.adobe.io/graphql) - used for testing and validation before going live
+- Production (https://catalog-service.adobe.io/graphql)- used for live traffic for Commerce merchants and websites
 
-See [Get your authentication keys](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) for more information about obtaining Composer keys.
+## Installation and configuration
 
-### Adobe Commerce on cloud infrastructure
+To get started with Catalog Service for Adobe Commerce ,the following steps are required:
 
-Use this method for installing the [!DNL Catalog Service] extension for a Commerce Cloud instance.
+- Install the data export extensions
+- Configure the service and data export
+- Access the service
 
-1. Open the `<Commerce_root>/composer.json` file in a text editor and update the `require` section as follows:
+### Install the data export extensions
 
-   ```json
-   "require": {
-    "magento/composer-root-update-plugin": "^2.0.2",
-    "magento/magento-cloud-metapackage": ">=2.4.5 <2.4.6",
-    "magento/saas-export": "^101.4.0",
-    "magento/commerce-data-export": "^101.3.1",
-    "magento/commerce-data-export-ee": "^101.3.1",
-    "magento/services-id": "^3.0.1",
-    "magento/services-connector": "1.2.1"
-    }
-   ```
+The onboarding process for Catalog Service requires access to the command line of the server.
 
-   <!-- What if the customer already has other services installed, and some of these lines are already present? Do they need to delete the duplications? What if the version numbers are different? -->
+The Catalog Service extension can be installed on both Adobe Commerce cloud infrastructure and on-premises instances.
+
+The Catalog Service is installed with Composer keys, which are linked to the Commerce account [mageid](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-personal/#field-descriptions) provided during the signup process. Composer uses these keys during the initial installation of Adobe Commerce, or in situations in which the Composer keys were not previously saved to an external `auth.json` file.
+
+See [Get your authentication keys](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html) for more information about obtaining Composer keys.
+
+#### Adobe Commerce on cloud infrastructure
+
+Use this method for installing the Catalog Service extension for a Commerce Cloud instance.
+
+1. Open the `<Commerce_root>/composer.json` file in a text editor and update the require section as follows:
+
+  ```json
+  "require": {
+    "magento/catalog-service": "^2.2.0"
+  }
+  ```
 
 1. Test the new configuration locally and update dependencies:
 
-   ```bash
-   composer update
-   ```
+```bash
+composer update
+```
 
-   The command updates all dependencies.
+The command updates all dependencies.
 
 1. Commit and push your changes for `composer.json` and `composer.lock`.
 
-### On-premises
+#### On-premises
 
-Use this method for installing the [!DNL Catalog Service] extension for an on-premises instance.
+Use this method for installing the Catalog Service extension for an on-premises instance.
 
-1. Open the `<Commerce_root>/composer.json` file in a text editor and update the `require` section as follows:
+1. Open the `<Commerce_root>/composer.json` file in a text editor and update the require section as follows:
 
-   ```json
-   "require": {
-     "magento/magento-cloud-metapackage": ">=2.4.3 <2.4.4",
-     "magento/composer-root-update-plugin": "~1.1",
-     "magento/saas-export": "^101.3.1",
-     "magento/commerce-data-export": "^101.2.4",    
-     "magento/commerce-data-export-ee": "^101.2.4",
-     "magento/services-id": "^3.0.0",
-     "magento/services-connector": "1.2.1"
-   }
-   ```
+  ```json
+  "require": {
+      "magento/catalog-service": "^2.2.0"
+  }
+  ```
 
 1. Update dependencies and install the extension:
 
-   ```bash
-   composer update
-   ```
+```bash
+composer update
+```
 
-   The command updates all dependencies.
+The command updates all dependencies.
 
 1. Upgrade Adobe Commerce:
 
-   ```bash
-   bin/magento setup:upgrade
-   ```
+```bash
+bin/magento setup:upgrade
+```
 
 1. Clear the cache:
 
-   ```bash
-   bin/magento cache:clean
-   ```
+```bash
+bin/magento cache:clean
+```
 
-## Configure catalog export
+### Configure the service and data export 
 
-After you install [!DNL Catalog Service], you must configure the [Commerce Services Connector](../landing/saas.md) by specifying API Keys and selecting a SaaS Data Space.
+After you install Catalog Service, you must configure the [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html#apikey) by specifying the API keys and selecting a SaaS Data Space.
+
+After the SaaS configuration is complete, perform an initial data sync by following the [Catalog Sync](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) guide. 
 
 To ensure that the catalog export is running correctly:
 
--  Confirm that [cron jobs](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) are running. 
--  Verify the [indexers](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) are running.
--  Ensure that the `Catalog Attributes Feed`, `Product Feed`, `Product Overrides Feed`, and `Product Variant Feed` indexers are set to `Update by Schedule`.
+- Confirm that cron jobs are running.
+- Verify the indexers are running.
+- Ensure that the `Catalog Attributes Feed, Product Feed, Product Overrides Feed`, and `Product Variant Feed` indexers are set to "Update by Schedule".
 
-## [!DNL Catalog Service] demo
+The initial sync could take from a few minutes to hours depending on the catalog size. After the initial sync, the Catalog exports product data from the Commerce server to Commerce services on an ongoing basis to keep the services up to date.
 
-Watch this video to learn about [!DNL Catalog Service] installation and testing:
+### Access the service
 
->[!VIDEO](https://video.tv.adobe.com/v/3409390?quality=12&learn=on)
+The Catalog Service API is accessible using POST commands over HTTPS.
+
+To obtain the api-key, go to the Commerce Service Connector area in the admin and copy the public API key.
+
+Read the [GraphQL documentation](https://developer.adobe.com/commerce/webapi/graphql/) to understand how to query and send the headers that are needed for generating API requests. 
+
+## Catalog Service and API Mesh
+
+The [API Mesh for Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) enables developers to integrate private or third-party APIs and other interfaces with Adobe products using Adobe IO.
+
+See the  [Catalog Service and API Mesh](mesh.md) topic for installation and configuration details.

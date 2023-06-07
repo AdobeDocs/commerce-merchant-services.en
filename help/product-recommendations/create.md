@@ -14,11 +14,11 @@ When you activate the recommendation unit, Adobe Commerce starts to [collect dat
 
 1. On the _Admin_ sidebar, go to **Marketing** > _Promotions_ > **Product Recommendations** to display the _Product Recommendations_ workspace.
 
-1. Specify the [Store View](https://docs.magento.com/user-guide/configuration/scope.html) where you want the recommendations to display.
+1. Specify the [Store View](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) where you want the recommendations to display.
 
    >[!NOTE]
    >
-   > Page Builder recommendation units can be created only for the default store view. To learn more about creating product recommendations with Page Builder, see [Add Content - Product Recommendations](https://docs.magento.com/user-guide/cms/page-builder-add-recommendations.html).
+   > Page Builder recommendation units must be created in the default store view, but then can be used anywhere. To learn more about creating product recommendations with Page Builder, see [Add Content - Product Recommendations](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html).
 
 1. Click **Create Recommendation**.
 
@@ -31,7 +31,7 @@ When you activate the recommendation unit, Adobe Commerce starts to [collect dat
    - Product Detail
    - Cart
    - Confirmation
-   - [Page Builder](https://docs.magento.com/user-guide/cms/page-builder-add-recommendations.html)
+   - [Page Builder](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html)
 
    You can create up to five active recommendation units for each page type, and up to 25 for Page Builder. The page type is grayed out When the limit is reached.
 

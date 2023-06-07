@@ -30,7 +30,7 @@ To fetch recommendations from your production environment, you must make sure th
 
 1. Deploy the `magento/product-recommendations` module to a non-production environment where the catalog data is similar to your production catalog.
 
-1. Use one of the non-production Data Space IDs for [configuration](https://docs.magento.com/user-guide/configuration/services/saas.html) in the Admin.
+1. Use one of the non-production Data Space IDs for [configuration](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) in the Admin.
 
 1. Generate the data yourself by clicking around your storefront to mimic the behavior of actual shoppers (or create an automation script). Through your testing, you generate behavioral events on your non-production environment. Those events are used to produce the product affinities that power recommendations. For testing, [!DNL Commerce] suggests that you interact with the following recommendation types:
 

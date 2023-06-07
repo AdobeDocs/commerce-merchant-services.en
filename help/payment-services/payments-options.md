@@ -1,9 +1,9 @@
 ---
-title: Payment options
+title: Payment Options
 description: Set the payment options to customize the methods available for your store customers.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 ---
-# Payment options
+# Payment Options
 
 With [!DNL Adobe Commerce] and [!DNL Magento Open Source] [!DNL Payment Services], you have multiple payment options available to you. You can configure these payment options through:
 
@@ -25,7 +25,11 @@ There are different behaviors for each payment method depending on where you are
 
 [!UICONTROL Credit Card Fields] provide a simple and secure checkout for credit card or debit card payment methods. When a shopper checks out using credit card fields, they enter their name, billing address, and credit or debit card information, to place their order. Their customer information is securely used during the purchase session to seamlessly guide them through the checkout flow.
 
+Enable [credit card vaulting](#vaulting) for your stores to allow shoppers to vault (save) their credit card information for a fast checkout later.
+
 You can configure [!UICONTROL Credit Card Fields] in the store configuration or the Payment Services Home. See [Settings](settings.md#credit-card-fields) for more information.
+
+You can also change the layout, width, height, and outer styling of the credit card fields. See [PayPal documentation](https://developer.paypal.com/docs/checkout/advanced/customize/card-field-style/) for more information.
 
 ## [!DNL PayPal Smart Buttons]
 
@@ -55,7 +59,7 @@ The [!DNL Apple Pay] button is visible from the product page, mini-cart, shoppin
 
    >[!NOTE]
    >
-   > To use Apple Pay you contact your Sales representative to enable it for your live store(s).
+   > To use [!DNL Apple Pay] for your stores, complete [self-registration with [!DNL Apple Pay]](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) (_Register your live domain_ section only) and [configure it for your stores in [!DNL Payment Services]](settings.md#payment-buttons).
 
 ### [!DNL Pay Later] button
 
@@ -98,6 +102,12 @@ When a customer checks out directly from the product page, using the PayPal or [
 If the customer cancels the order, the item in the current product page is added to the customer's cart, joining any other items present in the cart. This function allows the customer to quickly purchase the item they are currently viewing, while also retaining any other items they added to their cart previously when browsing products.
 
 When a customer enters the checkout flow from the product page, the checkout page is simplified---the view only shows order-related data and options.
+
+## Credit card vaulting
+
+Shoppers can vault---or "save"---their credit card information for future purchases on the website level (any store within the same merchant's account).
+
+See [Credit card vaulting](vaulting.md) for more information.
 
 ## Security
 

@@ -1,11 +1,11 @@
 ---
-title: User setup
+title: User Setup
 description: Setup enhanced Inventory Management sources as merchant stores to support the Store Fulfillment solution for Adobe Commerce.
 role: User, Admin
 level: Intermediate
 exl-id: eb735bef-c339-4d0b-b3e7-10328915725b
 ---
-# User setup
+# User Setup
 
 Store Assist app Users are managed in Adobe Commerce. However, these users do not interact with Adobe Commerce directly. The user management is configured in Adobe Commerce to enable secure connections between Adobe Commerce and the app.
 

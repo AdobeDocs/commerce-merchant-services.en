@@ -7,17 +7,19 @@ exl-id: 04441e58-ffac-4335-aa26-893988a89720
 
 Product attribute properties (metadata) determine:
 
-*  How an attribute can be used in the catalog
-*  Its appearance and behavior in the store
-*  The data that is included in data transfer operations
+* How an attribute can be used in the catalog
+* Its appearance and behavior in the store
+* The data that is included in data transfer operations
 
 The scope of attribute metadata is `website/store/store view`.
 
-The [!DNL Live Search] API allows a client to sort by any product attribute that has the [storefront property](https://docs.magento.com/user-guide/stores/attributes-product.html) `Use in Search` set to `Yes` in the Adobe Commerce Admin. When enabled, `Search Weight` and `Visible in Advanced Search` can be set for the attribute.
+The [!DNL Live Search] API allows a client to sort by any product attribute that has the [storefront property](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) `Use in Search` set to `Yes` in the Adobe Commerce Admin. When enabled, `Search Weight` and `Visible in Advanced Search` can be set for the attribute.
+
+[!DNL Live Search] does not index deleted products or those set to `Not Visible Individually`.
 
 >[!NOTE]
 >
->[!DNL Live Search] does not index deleted products or those set to `Not Visible Individually`.
+> Commerce customers with [!DNL Live Search] can take advantage of faster price changes updates and synchornization time on their websites with the [SaaS price indexer](../price-index/index.md).
 
 ## Indexing pipeline
 
@@ -39,22 +41,22 @@ When [!DNL Live Search] is configured and synchronized during onboarding, it can
 
 The following events trigger a full sync and index build:
 
-*  Onboarding [catalog data sync](install.md#synchronize-catalog-data)
-*  Changes to attribute metadata
+* Onboarding [catalog data sync](install.md#synchronize-catalog-data)
+* Changes to attribute metadata
 
 For example, changing the `Use in Search` property of the `color` attribute from `No` to `Yes` changes the attribute metadata to `searchable=true`, and triggers a full sync and reindex. The following attribute metadata trigger a full sync and reindex when changed:
 
-*  `filterableInSearch`
-*  `searchable`
-*  `sortable`
-*  `visibleInSearch`
+* `filterableInSearch`
+* `searchable`
+* `sortable`
+* `visibleInSearch`
 
 ### Streaming product updates
 
 After the initial index is built during [onboarding](install.md#synchronize-catalog-data), the following incremental product updates are continuously synced and reindexed:
 
-*  New products added to the catalog
-*  Changes to product attribute values
+* New products added to the catalog
+* Changes to product attribute values
 
 For example, adding a new swatch value to the `color` attribute is handled as a streaming product update.
 Streaming update workflow:
@@ -65,7 +67,7 @@ Streaming update workflow:
 
 ## Client search
 
-The [!DNL Live Search] API allows a client to sort by any sortable product attribute by setting the [storefront property](https://docs.magento.com/user-guide/catalog/product-attributes.html), *Used for sorting in product listings* to `Yes`. Depending on the theme, this setting causes the attribute to be included as an option in the [Sort by](https://docs.magento.com/user-guide/catalog/navigation.html) pagination control on catalog pages. Up to 300 product attributes can be indexed by [!DNL Live Search], with [storefront properties](https://docs.magento.com/user-guide/stores/attributes-product.html) that are searchable and filterable.
+The [!DNL Live Search] API allows a client to sort by any sortable product attribute by setting the [storefront property](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html), *Used for sorting in product listings* to `Yes`. Depending on the theme, this setting causes the attribute to be included as an option in the [Sort by](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation.html) pagination control on catalog pages. Up to 300 product attributes can be indexed by [!DNL Live Search], with [storefront properties](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) that are searchable and filterable.
 The index metadata is stored in the indexing pipeline and is accessible by the search service.
 
 ![[!DNL Live Search] index metadata API diagram](assets/index-metadata-api.svg)
@@ -80,31 +82,31 @@ The index metadata is stored in the indexing pipeline and is accessible by the s
 
 The order of the fields in this list reflects the typical order of columns in exported product data.
 
-*  `environment_id`
-*  `website_code`
-*  `store_code`
-*  `store_view_code`
-*  `product_id`
-*  `sku`
-*  `name`
-*  `type`
-*  `displayable`
-*  `deleted`
-*  `url`
-*  `currency`
-*  `meta_description`
-*  `meta_keyword`
-*  `meta_title`
-*  `description`
-*  `short_description`
-*  `weight`
-*  `image`
-*  `small_image`
-*  `thumbnail_image`
-*  `prices`
-*  `in_stock`
-*  `low_stock`
+* `environment_id`
+* `website_code`
+* `store_code`
+* `store_view_code`
+* `product_id`
+* `sku`
+* `name`
+* `type`
+* `displayable`
+* `deleted`
+* `url`
+* `currency`
+* `meta_description`
+* `meta_keyword`
+* `meta_title`
+* `description`
+* `short_description`
+* `weight`
+* `image`
+* `small_image`
+* `thumbnail_image`
+* `prices`
+* `in_stock`
+* `low_stock`
 
 The following field is indexed for all configurable products:
 
-*  `childrenSkus`
+* `childrenSkus`

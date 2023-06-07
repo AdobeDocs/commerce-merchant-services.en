@@ -1,5 +1,5 @@
 ---
-title: Onboarding Overview for Store Fulfillment services
+title: Onboarding Overview for Store Fulfillment Services
 description: '[!DNL Live Search] onboarding flow, system requirements, boundaries, and limitations.'
 role: User, Admin
 level: Intermediate
@@ -15,7 +15,7 @@ Get started with [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce 
 
 - **Store Fulfillment account**–During the enablement process, an Account Manager creates your Store Fulfillment account and provides you with the account information and credentials. These credentials are required to enable the connection between Adobe Commerce and the Store Fulfillment solution.
 
-- **Store Assist app**—Provides store associates with an end-to-end store fulfillment workflow to manage BOPIS orders from mobile devices. Store Associates can download and install Walmart’s [!DNL Store Assist] for iOS and Android™ devices. The app onboarding process is managed by the Walmart Commerce Technologies Client Center as a separate process. However, [some app configuration settings](user-setup.md) are completed from the Adobe Commerce Admin.
+- **Store Assist app**—Provides store associates with an end-to-end store fulfillment workflow to manage BOPIS orders from mobile devices. Store Associates can download and install Walmart's [!DNL Store Assist] for iOS and Android&trade; devices. The app onboarding process is managed by the Walmart Commerce Technologies Client Center as a separate process. However, [some app configuration settings](user-setup.md) are completed from the Adobe Commerce Admin.
 
   | Store Assist App - Get Started view                                                                         | Store Assist App — Modules view                                                               |
   |-------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
@@ -28,7 +28,7 @@ Get started with [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce 
 - **Initiate the provisioning request for Store Fulfillment**–Complete the intake form provided by your Account Manager to provide the information required to begin the provisioning process.
 
 - **Get your Store Fulfillment account credentials**–After your Store Fulfillment account is created for you, you receive the credentials required to integrate the Store Fulfillment solution with Adobe Commerce.
-   
+
 - **[Download the source code to install the [!DNL Store Fulfillment] extension](install.md)**
 
 ## Onboarding steps
@@ -43,6 +43,6 @@ Get started with [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce 
 
 1. [Create users and roles for the Store Assist app](user-setup.md).
 
-1. [Download Walmart’s [!DNL Store Assist] app to your desired device. The app is available on both the Apple app (iOS) and Google Play (Android™)](app-setup.md) stores.
+1. [Download Walmart's [!DNL Store Assist] app to your desired device. The app is available on both the Apple app (iOS) and Google Play (Android&trade;)](app-setup.md) stores.
 
 After you have successfully installed, configured, completed onboarding, and have access to the [!DNL Store Assist] app, you can [begin creating orders and testing](test-and-deploy.md).

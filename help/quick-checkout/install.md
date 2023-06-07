@@ -94,7 +94,7 @@ When we release a new version of the [!DNL Quick Checkout], you can easily upgra
 
 You may see errors when attempting to install the [!DNL Quick Checkout] extension.
 
-If you encounter any issues during the [!DNL Quick Checkout] installation process, see [Troubleshoot Quick Checkout issues](https://support.magento.com/hc/en-us/articles/6909450342541) in the Adobe Commerce Help Center.
+If you encounter any issues during the [!DNL Quick Checkout] installation process, see [Troubleshoot Quick Checkout issues](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/quick-checkout-issues.html) in the Adobe Commerce Help Center.
 
 ## Prerequisites
 

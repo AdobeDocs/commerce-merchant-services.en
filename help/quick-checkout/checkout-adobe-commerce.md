@@ -17,7 +17,7 @@ If a [!DNL Bolt] account is found during checkout, shoppers can continue with th
 
 1. Input the One-Time Password (OTP) sent to that [!DNL Bolt] account's email address or mobile, depending on [user's preferences in the [!DNL Bolt] account](https://help.bolt.com/shoppers/account/account-settings/#how-to-set-preferred-login-method){target=_blank}.
 
-  ![OTP Pop-up](assets/pop-up.png)
+  ![OTP Pop-up](assets/new-logo-otp-email.png)
 
 1. Once logged in with your [!DNL Bolt] account, the details are automatically added:
 
@@ -30,9 +30,24 @@ If a [!DNL Bolt] account is found during checkout, shoppers can continue with th
 >
 > The Bolt OTP pop-up only appears when the shopper is on the checkout page. The shopper can opt out from logging in to Bolt by closing that pop-up window.
 
-If the shopper is logged in to Adobe Commerce prior to checkout, the [!DNL Bolt] OTP pop-up will not appear during checkout.
+If the shopper is logged in to Adobe Commerce prior to checkout, the [!DNL Bolt] OTP pop-up will not appear during checkout, but a message appears suggesting the shopper to log in to access their Bolt Wallet.
 
-If you encounter issues when you place an order as an existing Adobe Commerce user, see the [Troubleshoot Quick Checkout issues](https://support.magento.com/hc/en-us/articles/6909450342541) article in the Adobe Commerce Help Center.
+If you encounter issues when you place an order as an existing Adobe Commerce user, see the [Troubleshoot Quick Checkout issues](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/quick-checkout-issues.html) article in the Adobe Commerce Help Center.
+
+## Automatic login
+
+The Automatic Login component detects when a shopper has an active Bolt session and automatically logs the shopper in. This skips the account detection and one-time passcode (OTP) steps because the shopper completed them in a previous session.
+
+It is possible to configure an automatic login for [!DNL Quick Checkout] users. You can enable a configuration to automatically login a user during checkout.
+
+1. On the _Admin_ sidebar, navigate to **Stores** > **Configuration** > **Checkout** to access the general Checkout Admin config page.
+1. In the _Service Settings_ section for [!DNL Quick Checkout], provide all details required to setup automatic login.
+
+See [[!DNL Quick Checkout] configure service settings](../quick-checkout/onboarding.md#configure-service-settings) topic for more information.
+
+>[!NOTE]
+>
+> First time login when **automatic login** is enabled requires consent from the user to authorize it by accepting a pop-up window.
 
 ## New [!DNL Bolt] account
 

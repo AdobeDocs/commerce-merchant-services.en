@@ -1,5 +1,5 @@
 ---
-title: System Configuration overview
+title: System Configuration Overview
 description: Learn about the Admin configuration settings categories available for the Store Fulfillment solution and how they are configured.
 role: User, Admin
 level: Intermediate
@@ -31,4 +31,5 @@ In the configuration reference for each type, the configuration details are disp
 
 - **Required** value indicates whether a value must be set on the field
 
-For technical reference, you can also find the internal configuration path for each field. 
+For technical reference, you can also find the internal configuration path for each field.
+

@@ -1,9 +1,9 @@
 ---
-title: Enable [!DNL Payment Services] for production
+title: Enable [!DNL Payment Services] for Production
 description: Complete the onboarding process by enabling [!DNL Payment Services] for production.
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
 ---
-# Enable [!DNL Payment Services] for production
+# Enable [!DNL Payment Services] for Production
 
 You can put the service into production and complete the [onboarding process](onboard.md), per the steps in this topic, after you:
 

@@ -26,17 +26,14 @@ The parent component of the `.livesearch.popover-container` is `.search-autocomp
 .search-autocomplete          /* not visible */
 ```
 
-For more information about styling storefront elements, refer to [Cascading style sheets (CSS)](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/css-topics/css-overview.html) in the [Frontend Developer Guide](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/bk-frontend-dev-guide.html).
+For more information about styling storefront elements, refer to [Cascading style sheets (CSS)](https://developer.adobe.com/commerce/frontend-core/guide/css/) in the [Frontend Developer Guide](https://developer.adobe.com/commerce/frontend-core/guide/).
 
 ## Class selectors
 
-The following class selectors can be used to style the container, suggestion, and product elements in the [!DNL popover].
+The following class selectors can be used to style the container and product elements in the [!DNL popover].
 
 *  `.livesearch.popover-container`
 *  `.livesearch.view-all-footer`
-*  `.livesearch.suggestions-container`
-*  `.livesearch.suggestions-header`
-*  `.livesearch.suggestion`
 *  `.livesearch.products-container`
 *  `.livesearch.product-result`
 *  `.livesearch.product-name`
@@ -44,42 +41,35 @@ The following class selectors can be used to style the container, suggestion, an
 
 ### Container Class Selectors
 
-`.livesearch.popover-container`
+#### .livesearch.popover-container
 
 ![[!DNL Popover] container](assets/livesearch-popover-container.png)
 
-`.livesearch.view-all-footer`
+#### .livesearch.view-all-footer
 
 ![View all footer](assets/livesearch-view-all-footer.png)
 
-### Suggestion Class Selectors
-
-`.livesearch.suggestions-container`
-![Suggestions container](assets/livesearch-suggestions-container.png)
-
-`.livesearch.suggestions-header`
-![Suggestions header](assets/livesearch-suggestions-header.png)
-
-`.livesearch.suggestion`
-![Suggestion](assets/livesearch-suggestion.png)
-
 ### Product Class Selectors
 
-`.livesearch.products-container`
+#### .livesearch.products-container
+
 ![Product container](assets/livesearch-product-container.png)
 
-`.livesearch.product-result`
+#### .livesearch.product-result
+
 ![Product result](assets/livesearch-product-result.png)
 
-`.livesearch.product-name`
+#### .livesearch.product-name
+
 ![Product name](assets/livesearch-product-name.png)
 
-`.livesearch.product-price`
+#### .livesearch.product-price
+
 ![Product price](assets/livesearch-product-price.png)
 
 ## Working with a modified theme {#working-with-modified-theme}
 
-The [!DNL storefront popover] can be used with a customized [theme](https://devdocs.magento.com/guides/v2.3/frontend-dev-guide/themes/theme-overview.html) that inherits the required files from *Luma*. The `top.search` block in the `header-wrapper` of the `Magento_Search` module must not be modified.
+The [!DNL storefront popover] can be used with a customized [theme](https://developer.adobe.com/commerce/frontend-core/guide/themes/) that inherits the required files from *Luma*. The `top.search` block in the `header-wrapper` of the `Magento_Search` module must not be modified.
 
 ```html
 <referenceContainer name="header-wrapper">
@@ -93,7 +83,7 @@ The [!DNL storefront popover] can be used with a customized [theme](https://devd
 
 ## Disabling the [!DNL popover]
 
-To disable the [!DNL popover] and restore the standard [Quick Search](https://docs.magento.com/user-guide/catalog/search-quick.html) functionality, enter the following command:
+To disable the [!DNL popover] and restore the standard [Quick Search](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) functionality, enter the following command:
 
 ```bash
 bin/magento module:disable Magento_LiveSearchStorefrontPopover

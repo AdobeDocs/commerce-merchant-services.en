@@ -36,7 +36,7 @@ The logical operators `AND` and `OR` are used to join multiple conditions. If us
 
 ### Category
 
-Filters based on a product's category use direct category assignments and their subcategories. For example, enabling an exclusion condition for category `Gear` excludes products assigned to `Gear` and all of its subcategories such as `Gear/Bags` or `Gear/Fitness Equipment`. For B2B merchants, the Category filter adheres to any [customer-specific product categories](https://docs.magento.com/user-guide/catalog/category-permissions.html) you have configured.
+Filters based on a product's category use direct category assignments and their subcategories. For example, enabling an exclusion condition for category `Gear` excludes products assigned to `Gear` and all of its subcategories such as `Gear/Bags` or `Gear/Fitness Equipment`. For B2B merchants, the Category filter adheres to any [customer-specific product categories](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html) you have configured.
 
 Adobe Commerce recommends you use the following category filter configuration when you deploy recommendations to your page types:
 
@@ -62,11 +62,11 @@ Filters products based on visibility, such as: _Catalog_, _Search_, or both.
 
 ### Price
 
-A filter based on the product price uses the final price to perform the comparison. The final price includes any discounts or special pricing available to anonymous shoppers. For B2B merchants, the price displayed reflects the [customer-specific group pricing](https://docs.magento.com/user-guide/catalog/pricing-advanced.html#customer-group-price) you have configured.
+A filter based on the product price uses the final price to perform the comparison. The final price includes any discounts or special pricing available to anonymous shoppers. For B2B merchants, the price displayed reflects the [customer-specific group pricing](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html) you have configured.
 
 ### Stock status
 
 The following exclusion filters can be used to filter out products based on stock status:
 
 - Out of stock - (Exclusion only) Excludes products that are out of stock.
-- Low in stock - (Exclusion only) Excludes products that are low in stock. Low stock status is based on the _Only X left Threshold_ value in [Inventory configuration](https://docs.magento.com/user-guide/configuration/catalog/inventory.html).
+- Low in stock - (Exclusion only) Excludes products that are low in stock. Low stock status is based on the _Only X left Threshold_ value in [Inventory configuration](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/inventory.html).

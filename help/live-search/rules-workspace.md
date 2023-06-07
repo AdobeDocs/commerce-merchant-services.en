@@ -17,27 +17,21 @@ The rules workspace lists the current selection of rules and their status, and p
 
 ## Set the scope
 
-If your Adobe Commerce installation includes multiple store views, set **Scope** to the [store view](https://docs.magento.com/user-guide/configuration/scope.html) where your rules apply.
+If your Adobe Commerce installation includes multiple store views, set **Scope** to the [store view](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) where your rules apply.
 
 ## Show/hide columns
 
 1. In the upper-right corner, click **Show/hide** ![Column selector](assets/btn-show-hide-columns.png) columns.
    The visible columns have a blue check mark in the options menu. The rule name is the only column that cannot be hidden.
 
-   ![Rules workspace](assets/rules-workspace-show-hide-columns.png)
-
 1. In the menu, do either of the following:
 
    * To show a hidden column, click any column name without a check mark.
    * To hide a visible column, click any column name with a check mark.
 
-   ![Rules workspace](assets/rules-workspace-all-columns.png)
-
 ## Filter rules by status
 
 1. If your store has many rules, you can filter the rules by status to shorten the list. By default, the Rules list displays all rules.
-
-   ![Rules - filter by status](assets/rules-workspace-filter-status.png)
 
 1. To list only rules with a specific status setting, set **Status** to one of the following:
 
@@ -45,8 +39,6 @@ If your Adobe Commerce installation includes multiple store views, set **Scope**
    * Active
    * Inactive
    * Scheduled
-
-   ![Rules - filter by status](assets/rules-workspace-filter-status-active.png)
 
 ## Search rules by name
 

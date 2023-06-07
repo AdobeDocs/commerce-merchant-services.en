@@ -1,11 +1,11 @@
 ---
-title: '[!DNL Product Recommendations] Guide overview'
+title: '[!DNL Product Recommendations] Guide Overview'
 description: Comprehensive information about [!DNL Product Recommendations] for Adobe Commerce administrators, including installation and onboarding
 seo-title: Adobe Commerce [!DNL Product Recommendations] Guide
 seo-description: Describes how to use [!DNL Product Recommendations] with Adobe Commerce.
 exl-id: 7f5105ba-e764-4cb5-9b95-75810e934b47
 ---
-# [!DNL Product Recommendations] Guide overview
+# [!DNL Product Recommendations] Guide Overview
 
 This guide is intended for administrators of Adobe Commerce. It includes detailed information about installation and onboarding of [!DNL Product Recommendations], as well as configuration and management of the services. It assumes a basic understanding of the core [!DNL Commerce] configuration and functionality.
 
@@ -25,12 +25,12 @@ This guide does not cover the core capabilities of Adobe Commerce and Magento Op
 
 | Guide | Description |
 |------ | ----------- |
-| [Adobe Commerce 2.4 User Guide](https://docs.magento.com/user-guide/) | Merchant-focused documentation for both Adobe Commerce and Magento Open Source |
-| [Adobe Commerce 2.4 Developer Guide](https://devdocs.magento.com/) | Developer-focused documentation used to build and customize Adobe Commerce or Magento Open Source |
+| [Adobe Commerce 2.4 User Guide](https://experienceleague.adobe.com/docs/commerce.html) | Merchant-focused documentation for both Adobe Commerce and Magento Open Source |
+| [Adobe Commerce 2.4 Developer Guide](https://developer.adobe.com/commerce/docs) | Developer-focused documentation used to build and customize Adobe Commerce or Magento Open Source |
 
 ## Support
 
 If you need information or have questions that are not covered in this guide, use the following resources:
 
-* [Help center](https://support.magento.com/hc/en-us){target="_blank"}---See the [!DNL Product Recommendations]-related troubleshooting articles.
-* [Support tickets](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket){target="_blank"}---Submit a ticket to receive additional help.
+* [Help center](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-tickets){target="_blank"}---See the [!DNL Product Recommendations]-related troubleshooting articles.
+* [Support tickets](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket){target="_blank"}---Submit a ticket to receive additional help.

@@ -1,16 +1,13 @@
 ---
-title: "[!DNL Quick Checkout] for Adobe Commerce Admin panel"
-description: "Learn how the [!DNL Quick Checkout] Admin panel could help how to successfully onboard, setup and visualize the extension."
+title: '[!DNL Quick Checkout] for Adobe Commerce Admin Panel'
+description: Learn how the [!DNL Quick Checkout] Admin Panel could help how to successfully onboard, setup and visualize the extension.
+exl-id: d91763ed-b4f6-4736-9503-0305edd77e91
 ---
-
-# Introduction to the [!DNL Quick Checkout] Admin panel
+# Introduction to the [!DNL Quick Checkout] Admin Panel
 
 [!DNL Quick Checkout] for Adobe Commerce and Magento Open Source provides an Admin panel view with all the necessary information to set up and use the extension.
 
 1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL Quick Checkout]**:
-
-   ![Menu Quick Checkout](assets/sales-quickcheckout.png)
-
 1. In this view, you can access the _Admin panel_ overview, _Resources_ about [!DNL Quick Checkout], get _Help and Support_, or configure the extension via _Settings_.
 
    ![Menu Quick Checkout](assets/admin-panel-view.png)
@@ -24,7 +21,7 @@ Refer to the [Onboarding](../quick-checkout/onboarding.md) topic for more inform
 | Field | Description |
 |---|---|
 | [!UICONTROL Overview] | The Overview tab shows all the resources for using [!DNL Quick Checkout]. |
-| [!UICONTROL Reports] | The Reports tab shows comprehensive [!DNL Quick Checkout] reporting information. |
+| [!UICONTROL Reports] | The Reports tab shows comprehensive [!DNL Quick Checkout] information. |
 
 ## Help and Support
 
@@ -33,7 +30,7 @@ Refer to the [Onboarding](../quick-checkout/onboarding.md) topic for more inform
 | [!UICONTROL Troubleshooting guide] | The Adobe Commerce Help Center contains [!DNL Quick Checkout] troubleshooting articles. |
 | [!UICONTROL Feedback] | Provide feedback to the team. |
 
-## Ressources
+## Resources
 
 | Field | Description |
 |---|---|

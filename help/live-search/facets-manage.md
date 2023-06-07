@@ -30,7 +30,7 @@ Refer to [Settings](settings.md) to configure price faceting intervals and group
 
 1. To edit the facet label, do one of the following:
 
-     * For a [!DNL Commerce] storefront, edit the [attribute label](https://docs.magento.com/user-guide/stores/attributes-product.html).
+     * For a [!DNL Commerce] storefront, edit the [attribute label](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html).
      * For a headless implementation, click the value in the first column and edit the text as needed.
 
      ![Edit label](assets/facet-edit-label.png)
@@ -58,6 +58,10 @@ The pin changes color when clicked and is used to move the facet to either the *
       ![Pinned and dynamic facets](assets/facets-pinned-unpinned.png)
 
 ## Move pinned facet
+
+>[!NOTE]
+>
+>The ordering of pinned facets is only supported in headless implementations. If ordered facets are needed, use the [!DNL Live Search] PLP widget.
 
 The order of pinned facets can be changed by moving the row to a different position. Pinned facets have a *Move* icon (![Move selector](assets/btn-move.png)) at the beginning of the row. Unlike pinned facets, dynamic facets cannot be moved.
 

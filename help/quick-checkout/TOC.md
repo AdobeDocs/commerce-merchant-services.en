@@ -7,14 +7,17 @@ breadcrumb-title: Merchant Services Guide
 # [!DNL Quick Checkout] for Adobe Commerce {#quick-checkout}
 
 - [Introduction to [!DNL Quick Checkout]](overview.md)
-- [Release Notes](release-notes.md)
+- [Release notes](release-notes.md)
 - Onboard [!DNL Quick Checkout] {#getting-started}
   - [Prerequisites](prerequisites.md)
   - [Install](install.md)
   - [Onboarding](onboarding.md)
+  - [Settings](settings-quick-checkout.md)
   - [!DNL Quick Checkout] Admin panel {#quick-checkout-admin-panel}
     - [Configure Admin panel](admin-panel.md)
     - [User setup](user-roles-setup.md)
+  - [!DNL Quick Checkout] reporting {#quick-checkout-reporting}
+    - [Reports](reports.md)
 - Test and Validate {#test-validate}
   - [Testing](testing.md)
   - [Developer information](developer.md)
@@ -26,4 +29,4 @@ breadcrumb-title: Merchant Services Guide
     - [Adobe Commerce user checkout](checkout-adobe-commerce.md)
   - [Payment methods](payment-methods.md)
 - [User session lifetime](user-session-lifetime.md)
-- [Create an Order in Admin](create-order-admin.md)
+- [Create an order in Admin](create-order-admin.md)

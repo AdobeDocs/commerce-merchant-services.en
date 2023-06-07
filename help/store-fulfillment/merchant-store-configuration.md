@@ -1,19 +1,19 @@
 ---
-title: Merchant Store Configuration
+title: Merchant Stores Configuration
 description: Setup enhanced Inventory Management sources as merchant stores.
 role: User, Admin
 level: Intermediate
 exl-id: 7c3444d0-5ecb-4ac1-aa81-e48eea290f5d
 ---
-# Merchant Stores (Source) Configuration 
+# Merchant Stores (Source) Configuration
 
 This solution enhances the native Inventory Management capabilities by extending stock sources with operations-oriented features for merchants.
 
 - Add geographic coordinates for the store location
 - Designate the source as a [!DNL Store Pickup Location] and specify available shipping capabilities (Ship to Store, Ship from Store)
-- Specify available pickup options (in-store or curbside), customized pickup instructions, and other information to communicate pickup details and instructions to customers 
+- Specify available pickup options (in-store or curbside), customized pickup instructions, and other information to communicate pickup details and instructions to customers
 
-The terms _source_ and _merchant store location_ are used interchangeably. All records are inventory sources, but sources can also be merchant store locations, depending on the configuration settings. 
+The terms _source_ and _merchant store location_ are used interchangeably. All records are inventory sources, but sources can also be merchant store locations, depending on the configuration settings.
 
 Manage Merchant Stores configuration from the Admin: **[!UICONTROL Stores > Inventory > Sources >  Edit Source]**.
 
@@ -108,7 +108,7 @@ Manage Merchant Stores configuration from the Admin: **[!UICONTROL Stores > Inve
 
 {style="table-layout:auto"}
 
-## Pickup Location Configuration
+## Pickup Location configuration
 
 | **Field**                                                                                     | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             | **Scope** | **Required** |
 |-----------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------|

@@ -11,7 +11,7 @@ exl-id: e4d8d789-fcf6-4aaa-bc4e-42ce21c6dd6c
 
 ![[!DNL Payment Services] extension Admin view](assets/admin-view.png)
 
-Whether you are a small business, mid-market contender, or large enterprise, this payments solution helps you reduce operational overhead, increase revenue, and give you useful tools to improve the entire shopper experience. 
+Whether you are a small business, mid-market contender, or large enterprise, this payments solution helps you reduce operational overhead, increase revenue, and give you useful tools to improve the entire shopper experience.
 
 [!DNL Payment Services] is:
 
@@ -33,6 +33,7 @@ Whether you are a small business, mid-market contender, or large enterprise, thi
 * [**Payment options**](payments-options.md)---Set the payment options to customize the methods available for your store (or multistore) customers.
 * **Cash flow management financial reporting**---Synchronize [payment details](order-payment-status.md) with orders to get full transparency to the processed volume, payment balance, and detailed [transaction-level reporting](payouts.md) for financial reconciliation.
 * **Transparent pricing**---Pricing is clear and upfront; what you see is what you get.
+* **Efficient checkout experience**---Remove any barriers to a fast and simple checkout, and create loyal customers, with [card vaulting](https://experienceleague-review.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html) and [Instant Purchase](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html) (enabled by default for Adobe Commerce) features.
 
 ## Availability
 

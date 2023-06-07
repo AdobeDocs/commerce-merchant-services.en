@@ -5,7 +5,7 @@ exl-id: c8c34db4-9d87-4012-b8f0-e9b1da214305
 ---
 # Verify Event Collection
 
-After you [install and configure](install-configure.md) the `magento/product-recommendations` module, you can verify that the behavioral data is being sent to Adobe Commerce. You can use developer tools available in Chrome, or install the Snowplow Chrome extension. If you need additional help, refer to [Troubleshoot [!DNL Product Recommendations] module](https://support.magento.com/hc/en-us/articles/360042224851) in the Support Knowledge Base.
+After you [install and configure](install-configure.md) the `magento/product-recommendations` module, you can verify that the behavioral data is being sent to Adobe Commerce. You can use developer tools available in Chrome, or install the Snowplow Chrome extension. If you need additional help, refer to [Troubleshoot [!DNL Product Recommendations] module](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html) in the Support Knowledge Base.
 
 ## Verify using developer tools in Chrome
 
@@ -45,7 +45,7 @@ Install the [Snowplow Analytics Debugger extension for Chrome](https://chrome.go
 
 1. Scroll down until you see **Context Data _n_**. Look for the storefront instance in the **Schema**.
 
-1. Verify that the [SaaS Data Space ID](https://docs.magento.com/user-guide/configuration/services/saas.html) is set correctly.
+1. Verify that the [SaaS Data Space ID](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) is set correctly.
 
 ![Snowplow filter](assets/snowplow-filter.png)
 _Snowplow Filter_
@@ -56,8 +56,8 @@ _Snowplow Filter_
 
 ## Verify that events are firing correctly
 
-To verify that the events used for metrics are firing correctly, look for the `impression-render`, `view`, and `rec-click` events in the Snowplow Analytics Debugger. See the [full list of events](https://devdocs.magento.com/recommendations/events.html).
+To verify that the events used for metrics are firing correctly, look for the `impression-render`, `view`, and `rec-click` events in the Snowplow Analytics Debugger. See the [full list of events](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/events.html).
 
 >[!NOTE]
 >
-> If [Cookie Restriction Mode](https://docs.magento.com/user-guide/stores/compliance-cookie-restriction-mode.html) is enabled, Adobe Commerce does not collect behavioral data until the shopper consents. If Cookie Restriction Mode is disabled, behavioral data is collected by default.
+> If [Cookie Restriction Mode](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) is enabled, Adobe Commerce does not collect behavioral data until the shopper consents. If Cookie Restriction Mode is disabled, behavioral data is collected by default.

@@ -5,7 +5,7 @@ exl-id: 852fc7d2-5a5f-4b09-8949-e9607a928b44
 ---
 # Collect Commerce Data using Adobe Experience Platform Tags
 
-While you can use the Experience Platform connector to publish and subscribe to storefront events, some merchants might already be using a data collection solution, such as the [Adobe Experience Platform tags](https://experienceleague.adobe.com/docs/platform-learn/data-collection/tags/create-a-property.html?lang=en). For those merchants, Adobe Commerce provides a publishing only option in the Experience Platform connector that uses the Adobe Commerce Event SDK.
+While you can use the Experience Platform connector to publish and subscribe to storefront events, some merchants might already be using a data collection solution, such as the [Adobe Experience Platform tags](https://experienceleague.adobe.com/docs/platform-learn/data-collection/tags/create-a-property.html). For those merchants, Adobe Commerce provides a publishing only option in the Experience Platform connector that uses the Adobe Commerce Event SDK.
 
 ![Experience Platform Connector Data Flow](assets/tags-data-flow.png)
 _Experience Platform Connector Data Flow with Tags_
@@ -26,7 +26,7 @@ To collect Commerce event data:
 
 To map Commerce storefront data to Adobe Experience Platform, configure and install the following from within Adobe Experience Platform tags:
 
-1. [Set up a tag property](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html?lang=en) in Adobe Experience Platform Data Collection.
+1. [Set up a tag property](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html) in Adobe Experience Platform Data Collection.
 
 1. Under **Authoring**, select **Extensions** and install and configure the following extensions:
 
@@ -118,12 +118,13 @@ For each of the following events, map the Adobe Commerce events to your XDM by f
 - [`searchRequestSent`](#searchrequestsent)
 - [`searchResponseReceived`](#searchresponsereceived)
 - [`addToCart`](#addtocart)
+- [`openCart`](#opencart)
 - [`viewCart`](#viewcart)
 - [`removeFromCart`](#removefromcart)
 - [`initiateCheckout`](#initiatecheckout)
 - [`placeOrder`](#placeorder)
 
-### signOut {#signout}
+### signOut
 
 Triggered when a shopper attempts to sign out.
 
@@ -153,7 +154,7 @@ Create the following data element:
 - **Type**: `userAccount.logout`
 - **XDM data**: `%sign-out%`
 
-### signIn {#signin}
+### signIn
 
 Triggered when a shopper attempts to sign in.
 
@@ -212,7 +213,7 @@ Create the following data elements:
 - **Type**: `userAccount.login`
 - **XDM data**: `%sign in%`
 
-### createAccount {#createaccount}
+### createAccount
 
 Triggered when a shopper attempts to create an account.
 
@@ -271,7 +272,7 @@ Create the following data elements:
 - **Type**: `userAccount.createProfile`
 - **XDM data**: `%create account%`
 
-### editAccount {#editaccount}
+### editAccount
 
 Triggered when a shopper attempts to edit an account.
 
@@ -330,7 +331,7 @@ Create the following data elements:
 - **Type**: `userAccount.updateProfile`
 - **XDM data**: `%edit account%`
 
-### pageView {#pageview}
+### pageView
 
 Triggered when any page loads.
 
@@ -359,7 +360,7 @@ Create the following data elements:
 - **Type**: `web.webPageDetails.pageViews`
 - **XDM data**: `%page view%`
 
-### productView {#productview}
+### productView
 
 Triggered when any product page loads.
 
@@ -464,7 +465,7 @@ Create the following data elements:
 - **Type**: `commerce.productViews`
 - **XDM data**: `%product view%`
 
-### searchRequestSent {#searchrequestsent}
+### searchRequestSent
 
 Triggered by events in the “search as you type” popover and by events on search results pages.
 
@@ -553,6 +554,8 @@ Create the following data elements:
     - **value**: Not yet available
     - **Field Group**: `siteSearch` > `sort`. Select **Provide entire object**.
     - **Field Group**: `siteSearch` > `filter`. Select **Provide entire object**.
+    - **Field Group**: `searchRequest` > `id`
+    - **Unique Identifier**: **Value** = `%search request ID%`
     - **Field Group**: `searchRequest` > `value`
     - **value**: **Value** = `1`
 
@@ -570,7 +573,7 @@ Create the following data elements:
 - **Type**: `searchRequest`
 - **XDM data**: `%search request%`
 
-### searchResponseReceived {#searchresponsereceived}
+### searchResponseReceived
 
 Triggered when Live Search returns results for the “search as you type” popover or search results page.
 
@@ -648,6 +651,8 @@ Create the following data elements:
     - **Field Group**: `productListItems` > `ProductImageUrl`
     - **ProductImageUrl**: **Value** = `%product image%`
     - **Data element**: `%search result products%`
+    - **Field Group**: `searchResponse` > `id`
+    - **Unique Identifier**: **Value** = `%search response ID%`
     - **Field Group**: `searchResponse` > `value`
     - **value**: **Value** = `1`
 
@@ -665,7 +670,7 @@ Create the following data elements:
 - **Type**: `searchResponse`
 - **XDM data**: `%search response%`
 
-### addToCart {#addtocart}
+### addToCart
 
 Triggered when a product is added to a cart or every time the quantity of a product in the cart is incremented.
 
@@ -779,7 +784,40 @@ Create the following data elements:
 - **Type**: `commerce.productListAdds`
 - **XDM data**: `%add to cart%`
 
-### viewCart {#viewcart}
+### openCart
+
+Triggered when a new cart is created, which happens when a product is added to an empty cart.
+
+#### Data Elements
+
+Create the following data element:
+
+1. Open cart:
+
+    - **Name**: `open cart`
+    - **Extension**: `Adobe Experience Platform Web SDK`
+    - **Data Element Type**: `XDM object`
+    - **Field Group**: `commerce` > `productListOpens` > `value`
+    - **value**: **Value** = `1`
+    - **Field Group**: `commerce` > `cart` > `cartID`
+    - **Cart ID**: **Value** = `%cart id%`
+    - **Field Group**: `productListItems`. For `productListItems`, multiple items can be precomputed. Select **productListItems** > **Provide entire array**.
+
+#### Rules 
+
+- **Name**: `open cart`
+- **Extension**: `Adobe Client Data Layer`
+- **Event Type**: `Data Pushed`
+- **Specific event**: `open-cart`
+
+##### Actions
+
+- **Extension**: `Adobe Experience Platform Web SDK`
+- **Action Type**: `Send event`
+- **Type**: `commerce.productListOpens`
+- **XDM data**: `%open cart%`
+
+### viewCart
 
 Triggered when any cart page loads.
 
@@ -882,7 +920,7 @@ Create the following data elements:
 - **Type**: `commerce.productListViews`
 - **XDM data**: `%view cart%`
 
-### removeFromCart {#removefromcart}
+### removeFromCart
 
 Triggered when a product is removed from a cart or every time the quantity of a product in the cart is decremented.
 
@@ -987,7 +1025,7 @@ Create the following data elements:
 - **Type**: `commerce.productListRemovals`
 - **XDM data**: `%remove from cart%`
 
-### initiateCheckout {#initiatecheckout}
+### initiateCheckout
 
 Triggered when the shopper clicks a checkout button.
 
@@ -1090,13 +1128,20 @@ Create the following data elements:
 - **Type**: `commerce.checkouts`
 - **XDM data**: `%initiate checkout%`
 
-### placeOrder {#placeorder}
+### placeOrder
 
 Triggered when the shopper places an order.
 
 #### Data Elements
 
 Create the following data elements:
+
+1. Account email:
+
+    - **Name**: `account email`
+    - **Extension**: `Adobe Client Data Layer`
+    - **Data Element Type**: `Data Layer Computed State`
+    - **[Optional] path**: `accountContext.emailAddress`
 
 1. Storefront:
 
@@ -1251,6 +1296,9 @@ Create the following data elements:
     - **Promotion ID**: **Value** = `%promotion id%`
     - **Field Group**: `commerce` > `purchases` > `value`
     - **value**: **Value** = `1`
+    - **Personal Email Address**: **Value** = `%account email%`
+    - **Field Group**: `personalEmail` > `address`
+    - **Address**: **Value** = `%account email%`
 
 #### Rules 
 
@@ -1266,45 +1314,98 @@ Create the following data elements:
 - **Type**: `commerce.order`
 - **XDM data**: `%place order%`
 
-## Setting identity
+## Set identity in storefront events
 
-Experience Platform connector profiles are joined and generated based on the `personID` and the `personalEmail` identity fields in XDM Experience events. 
+Storefront events contain profile information based on the `personalEmail` (for account events) and `identityMap` (for all other storefront events) fields. The Experience Platform connector joins and generates profiles based on these two fields. Each field, however, has different steps to follow to create profiles:
 
-If you have a previous setup that relies on different fields, you can continue to use those. To set Experience Platform connector profile identity fields, you must set the following fields:
+>[!NOTE]
+>
+>If you have a previous setup that relies on different fields, you can continue to use those.
 
-- `personalEmail` - Account events only - follow the steps outlined above for account events
-- `personID` - All other events:
-    
-  - If you are already capturing `ECID` in tags, you can set `personID` in all of your Adobe Experience Platform Web SDK rules to `%ECID%`.
-  - To capture `ECID` in tags, you must add a **Custom Code** action to your send event rules following the [Tags documentation](https://experienceleague.adobe.com/docs/experience-platform/edge/extension/accessing-the-ecid.html). See the example below.
+- `personalEmail` - Applies to account events only. Follow the steps, rules, and actions outlined [above](#createaccount)
+- `identityMap` - Applies to all other storefront events. See the following example.
 
 ### Example
 
-The following images show how to configure a `pageView` event with `personID` in Experience Platform connector:
+The following steps show how to configure a `pageView` event with `identityMap` in Experience Platform connector:
 
 1. Configure data element with custom code for ECID:
 
     ![Configure data element with custom code](assets/set-custom-code-ecid.png)
     _Configure data element with custom code_
 
-1. Add ECID custom code:
+1. Select [!UICONTROL Open Editor] and add the following custom code:
 
-    ![Code to set ECID in data element](assets/code-to-set-ecid.png)
-    _Code to set ECID in data element_
+    ```javascript
+    return alloy("getIdentity").then((result) => {
+        var identityMap = {
+            ECID: [
+            {
+                id: ecid,
+                primary: true
+            }
+            ],
+            email: [
+            {
+                id: email,
+                primary: false
+            }
+            ]
+        };
+      _satelite.setVar("identityMap", identityMap);
+    });
+    ```
 
-1. Update XDM schema with personID set as ECID:
+1. Update XDM schema with `identityMap` set as ECID:
 
-    ![Set personID as ECID](assets/set-personid-as-ecid.png)
-    _Set personID as ECID_
+    ![Set identityMap as ECID](assets/identity-map-data-element.png)
+    _Set identityMap as ECID_
 
 1. Define rule actions that retrieve ECID:
 
     ![Retrieve ECID](assets/rule-retrieve-ecid.png)
     _Retrieve ECID_
 
+## Set identity in back office events
+
+Unlike storefront events that use ECID to identity and link profile information, back office event data is SaaS-based and therefore no ECID is available. For back office events, you need to use email to uniquely identify shoppers. In this section, you will learn how to link back office event data to an ECID using email.
+
+1. Create an identity map element.
+
+    ![Back office identity map](assets/custom-code-backoffice.png)
+    _Create back office identity map_
+
+1. Select [!UICONTROL Open Editor] and add the following custom code:
+
+```javascript
+const IdentityMap = {
+  "ECID": [
+    {
+      id:  _satellite.getVar('ECID'),
+      primary: true,
+    },
+  ],
+};
+ 
+if (_satellite.getVar('account email')) {
+    IdentityMap.email = [
+        {
+            id: _satellite.getVar('account email'),
+            primary: false,
+        },
+    ];
+}
+return IdentityMap;
+```
+
+1. Add this new element to each `identityMap` field.
+
+    ![Update each identityMap](assets/add-element-back-office.png)
+    _Update each identityMap_
+
 ## Setting consent
 
-Adobe Commerce and Experience Platform connector data collection consent is enabled by default. Opt-out is managed through the [`mg_dnt` cookie](https://docs.magento.com/user-guide/stores/cookie-reference.html). You can follow the steps outlined here if you choose to use `mg_dnt` to manage consent. The [Adobe Experience Platform Web SDK documentation](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html?lang=en) has several additional options for managing consent.
+Adobe Commerce and Experience Platform connector data collection consent is enabled by default. Opt-out is managed through the [`mg_dnt` cookie](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html). You can follow the steps outlined here if you choose to use `mg_dnt` to manage consent. The [Adobe Experience Platform Web SDK documentation](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html) has several additional options for managing consent.
 
 1. Create a **Core Custom Code** data element (`%do not track cookie%`) for the `mg_dnt` cookie:
 
