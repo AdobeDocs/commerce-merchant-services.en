@@ -144,7 +144,7 @@ You can enable and configure the PayPal smart buttons payment options:
    -  **[!UICONTROL Show PayPal Pay Later message]**
    -  **[!UICONTROL Show Venmo button]**
    -  **[!UICONTROL Show Apple Pay button]**
-   -  **[!UICONTROL Show Credit and Debit Card button]**
+   -  **[!UICONTROL Show PayPal Credit and Debit Card button]**
 
       >[!NOTE]
       >
@@ -173,7 +173,7 @@ You can enable and configure the PayPal smart buttons payment options:
 | [!UICONTROL Show PayPal Pay Later Message] | website | Enable or disable the Pay Later messaging in the shopping cart, product page, mini-cart, and during the checkout flow. Options: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Show Venmo button] | store view | Enable or disable the Venmo payment option where payment buttons are displayed. Options: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Show Apple Pay button] | store view | Enable or disable the Apple Pay payment option where payment buttons are displayed. Options: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Show Credit and Debit card button] | store view | Enable or disable the Credit and Debit card payment option where payment buttons are displayed. Options: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Show PayPal Credit and Debit card button] | store view | Enable or disable the Credit and Debit card payment option where payment buttons are displayed. Options: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Debug Mode] | website | Enable or disable Debug Mode. Options: [!UICONTROL Yes] / [!UICONTROL No] |
 
 ### Button style
