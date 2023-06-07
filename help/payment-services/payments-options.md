@@ -29,6 +29,8 @@ Enable [credit card vaulting](#vaulting) for your stores to allow shoppers to va
 
 You can configure [!UICONTROL Credit Card Fields] in the store configuration or the Payment Services Home. See [Settings](settings.md#credit-card-fields) for more information.
 
+You can also change the layout, width, height, and outer styling of the credit card fields. See [PayPal documentation](https://developer.paypal.com/docs/checkout/advanced/customize/card-field-style/) for more information.
+
 ## [!DNL PayPal Smart Buttons]
 
 [!DNL PayPal Smart Buttons], which use PayPal to complete a purchase, stores your shopper's shipping address, billing addresses, and payment details for later use. Shoppers can use any payment method previously stored or offered by PayPal.
@@ -57,7 +59,7 @@ The [!DNL Apple Pay] button is visible from the product page, mini-cart, shoppin
 
    >[!NOTE]
    >
-   > To use Apple Pay contact your Sales representative or Adobe Account Team to enable it for your live stores.
+   > To use [!DNL Apple Pay] for your stores, complete [self-registration with [!DNL Apple Pay]](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) (_Register your live domain_ section only) and [configure it for your stores in [!DNL Payment Services]](settings.md#payment-buttons).
 
 ### [!DNL Pay Later] button
 

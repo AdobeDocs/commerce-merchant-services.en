@@ -22,7 +22,10 @@ When testing and validating your sandbox you must use fake credit card numbers, 
 
 Use PayPal's Credit Card Generator to [generate random credit card information](https://www.paypal.com/us/smarthelp/article/where-can-i-find-test-credit-card-numbers-ts2157) for testing.
 
-To test Apple Pay in sandbox mode, you must have an [Apple sandbox tester account](https://developer.apple.com/apple-pay/sandbox-testing/#create-a-sandbox-tester-account), complete with fake credit card and billing information.
+To test Apple Pay in sandbox mode:
+
+*  Create an [Apple sandbox tester account](https://developer.apple.com/apple-pay/sandbox-testing/#create-a-sandbox-tester-account), complete with fake credit card and billing information.
+*  [Register your sandbox domains](https://developer.paypal.com/docs/checkout/apm/apple-pay/#link-registeryoursandboxdomains).
 
 >[!NOTE]
 >
@@ -41,6 +44,4 @@ Complete your production testing with real credit cards and PayPal accounts, tes
 
 You should also verify the information that appears on the bank statements for the payment methods you use in production testing are correct and expected (including the description of your business).
 
->[!NOTE]
->
->To complete production testing for Apple Pay you must contact sales to enable Apple Pay for your production environment.
+To test Apple Pay in production mode, you must [register your production domains](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain).

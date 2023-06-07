@@ -62,6 +62,7 @@ If you must initiate a resync of your catalog before the hourly scheduled sync o
 
    [!DNL Commerce] syncs your catalog during the next scheduled sync window. Depending on the size of your catalog, this operation can take a long time.
 
+
 ## Synced catalog products
 
 The **Synced catalog products** table displays the following information.
@@ -126,6 +127,14 @@ The feed name can be one of the following:
 - `productoverrides`-- Customer-specific pricing and catalog visibility rules, such as those based on category permissions
 
 When you trigger a data resync from the command line, it may take up to an hour for the data to update.
+
+If you are using [SaaS price indexing](../price-index/index.md) and need to resync, run the following command:
+
+```bash
+bin/magento saas:resync --feed=scopesCustomerGroup
+bin/magento saas:resync --feed=scopesWebsite
+bin/magento saas:resync --feed=prices
+```
 
 ### Examples
 

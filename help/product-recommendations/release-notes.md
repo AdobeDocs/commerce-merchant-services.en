@@ -11,14 +11,20 @@ The release notes contain updates to the following [!DNL Product Recommendations
 * Page Builder support in [!DNL Product Recommendations] (optional) module: `magento/module-page-builder-product-recommendations`
 * Visual similarity recommendation type support for [!DNL Product Recommendations] (optional) module: `magento/module-visual-product-recommendations`
 
+Support is provided for the current major released version. Release notes for older versions are provided for reference.
 The release notes include:
 
 ![New](../assets/new.svg) New features
 ![Fix](../assets/fix.svg) Fixes and improvements
+![Bug](../assets/bug.svg) Known issues
 
 See the developer documentation to [learn about product compatibility](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 
 ## Current major version
+
+ _April 25, 2023_
+
+![New](../assets/new.svg) Product Recommendations customers can now take advantage of [SaaS price indexing](../price-index/index.md).
 
 ### 5.0.0 of magento/product-recommendations
 

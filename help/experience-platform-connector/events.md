@@ -230,10 +230,11 @@ The following table describes the data collected for this event.
 
 |Field|Description|
 |---|---|
-|`eventType`|The primary event type for this time-series record, such as: `userAccount.login`|
 |`person`|An individual actor, contact, or owner|
 |`accountID`|Captures the user account ID|
-|`personalEmailID`|Specifies the unique identifier for the personal email|
+|`accountType`|Captures the user account type, such as `Personal` or `Company`, if applicable|
+|`personalEmailID`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
+|`personalEmail`|Captures contact details - an e-mail and associated information|
 |`address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
 |`userAccount`|Indicates any loyalty details, preferences, login processes, and other account preferences|
 |`login`|Indicates if a visitor attempted to log in|
@@ -254,7 +255,6 @@ The following table describes the data collected for this event.
 
 |Field|Description|
 |---|---|
-|`eventType`|The primary event type for this time-series record, such as: `userAccount.logout`|
 |`userAccount`|Indicates any loyalty details, preferences, login processes, and other account preferences|
 |`logout`|Indicates if a visitor attempted to log out|
 
@@ -274,11 +274,11 @@ The following table describes the data collected for this event.
 
 |Field|Description|
 |---|---|
-|`eventType`|The primary event type for this time-series record, such as: `account.createProfile`|
 |`person`|An individual actor, contact, or owner|
 |`accountID`|Captures the user account ID|
 |`accountType`|Captures the user account type, such as `Personal` or `Company`, if applicable|
-|`personalEmailID`|Specifies the unique identifier for the personal email|
+|`personalEmailID`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
+|`personalEmail`|Captures contact details - an e-mail and associated information|
 |`address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
 |`userAccount`|Indicates any loyalty details, preferences, login processes, and other account preferences|
 |`createProfile`|Indicates if a user has created an account profile|
@@ -299,12 +299,11 @@ The following table describes the data collected for this event.
 
 |Field|Description|
 |---|---|
-|`eventType`|The primary event type for this time-series record, such as: `account.updateProfile`|
 |`person`|An individual actor, contact, or owner|
 |`accountID`|Captures the user account ID|
 |`accountType`|Captures the user account type, such as `Personal` or `Company`, if applicable|
-|`personalEmailID`|Specifies the unique identifier for the personal email|
-|`personalEmail`|Specifies the personal email address|
+|`personalEmailID`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
+|`personalEmail`|Captures contact details - an e-mail and associated information|
 |`address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
 |`userAccount`|Indicates any loyalty details, preferences, login processes, and other account preferences|
 |`updateProfile`|Indicates if a user has updated their account profile|
@@ -465,8 +464,8 @@ The following table describes the data collected for this event.
 |Field|Description|
 |---|---|
 |`address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
-|`eventType`|`commerce.backofficeOrderPlaced`|
 |`productListItems`|An array of products in the order|
+|`id`|The line item identifier for this product entry. The product itself is identified through the `product` field.|
 |`name`|The display name or human-readable name of the product|
 |`SKU`|Stock Keeping Unit. The unique identifier for the product.|
 |`quantity`|The number of product units in the cart|
@@ -474,6 +473,8 @@ The following table describes the data collected for this event.
 |`discountAmount`|Indicates the discount amount applied|
 |`order`|Contains information about the order|
 |`purchaseID`|Unique identifier assigned by the seller for this purchase or contract. There is no guarantee that the ID is unique|
+|`priceTotal`|The total price of this order after all discounts and taxes have been applied|
+|`currencyCode`|The ISO 4217 currency code used for the order totals|
 |`purchaseOrderNumber`|Unique identifier assigned by the purchaser for this purchase or contract|
 |`payments`|The list of payments for this order|
 |`paymentType`|The method of payment for this order. Enumerated, custom values allowed.|
@@ -483,9 +484,14 @@ The following table describes the data collected for this event.
 |`createdDate`|The time and date when a new order is created in the commerce system. For example, `2022-10-15T20:20:39+00:00`|
 |`shipping`|Shipping details for one or more products|
 |`shippingMethod`|The method of shipping chosen by the customer, such as standard delivery, expedited delivery, pick up in store, and so on|
-|`shippingAddress`|Physical shipping address|
-|`street1`|Primary street level information, apartment number, street number, and street name|
 |`shippingAmount`|The amount the customer had to pay for shipping.|
+|`address`|Physical shipping address|
+|`street1`|Primary street level information, apartment number, street number, and street name|
+|`street2`|Additional field for street level information|
+|`city`|The name of the city|
+|`state`|The name of the state. This is a free-form field.|
+|`postalCode`|The postal code of the location. Postal codes are not available for all countries. In some countries, this will only contain part of the postal code.|
+|`country`|The name of the government-administered territory. Other than `xdm:countryCode`, this is a free-form field that can have the country name in any language.|
 |`billingAddress`|Billing postal address|
 |`street1`|Primary street level information, apartment number, street number, and street name|
 |`street2`|Additional field for street level information|
@@ -493,6 +499,8 @@ The following table describes the data collected for this event.
 |`state`|The name of the state. This is a free-form field.|
 |`postalCode`|The postal code of the location. Postal codes are not available for all countries. In some countries, this will only contain part of the postal code.|
 |`country`|The name of the government-administered territory. Other than `xdm:countryCode`, this is a free-form field that can have the country name in any language.|
+|`personalEmail`|A personal email address|
+|`address`|The technical address, for example, 'name@domain.com' as commonly defined in RFC2822 and subsequent standards|
 
 ### orderItemsShipped
 
@@ -506,8 +514,8 @@ The following table describes the data collected for this event.
 |Field|Description|
 |---|---|
 |`address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
-|`eventType`|`commerce.backofficeOrderItemsShipped`|
 |`productListItems`|An array of products in the order|
+|`id`|The line item identifier for this product entry. The product itself is identified through the `product` field.|
 |`name`|The display name or human-readable name of the product|
 |`SKU`|Stock Keeping Unit. The unique identifier for the product.|
 |`quantity`|The number of product units in the cart|
@@ -515,18 +523,26 @@ The following table describes the data collected for this event.
 |`discountAmount`|Indicates the discount amount applied|
 |`order`|Contains information about the order|
 |`purchaseID`|Unique identifier assigned by the seller for this purchase or contract. There is no guarantee that the ID is unique|
+|`priceTotal`|The total price of this order after all discounts and taxes have been applied|
+|`currencyCode`|The ISO 4217 currency code used for the order totals|
 |`purchaseOrderNumber`|Unique identifier assigned by the purchaser for this purchase or contract|
 |`payments`|The list of payments for this order|
 |`paymentType`|The method of payment for this order. Enumerated, custom values allowed.|
 |`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for this payment item|
 |`paymentAmount`|The value of the payment|
-|`trackingNumber`|The tracking number provided by the shipping carrier for an order item shipment|
-|`trackingURL`|The URL to track the shipping status of an order item|
 |`lastUpdatedDate`|The time when a particular order record is last updated in the commerce system|
 |`shipping`|Shipping details for one or more products|
 |`shippingMethod`|The method of shipping chosen by the customer, such as standard delivery, expedited delivery, pick up in store, and so on|
-|`shippingAddress`|Physical shipping address|
+|`trackingNumber`|The tracking number provided by the shipping carrier for an order item shipment|
+|`trackingURL`|The URL to track the shipping status of an order item|
+|`shipDate`|The date when one or more items from an order is shipped|
+|`address`|Physical shipping address|
 |`street1`|Primary street level information, apartment number, street number, and street name|
+|`street2`|Additional field for street level information|
+|`city`|The name of the city|
+|`state`|The name of the state. This is a free-form field.|
+|`postalCode`|The postal code of the location. Postal codes are not available for all countries. In some countries, this will only contain part of the postal code.|
+|`country`|The name of the government-administered territory. Other than `xdm:countryCode`, this is a free-form field that can have the country name in any language.|
 |`shippingAmount`|The amount the customer had to pay for shipping.|
 |`billingAddress`|Billing postal address|
 |`street1`|Primary street level information, apartment number, street number, and street name|
@@ -535,6 +551,8 @@ The following table describes the data collected for this event.
 |`state`|The name of the state. This is a free-form field.|
 |`postalCode`|The postal code of the location. Postal codes are not available for all countries. In some countries, this will only contain part of the postal code.|
 |`country`|The name of the government-administered territory. Other than `xdm:countryCode`, this is a free-form field that can have the country name in any language.|
+|`personalEmail`|A personal email address|
+|`address`|The technical address, for example, 'name@domain.com' as commonly defined in RFC2822 and subsequent standards|
 
 ### orderCancelled
 
@@ -548,8 +566,8 @@ The following table describes the data collected for this event.
 |Field|Description|
 |---|---|
 |`address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
-|`eventType`|`commerce.backofficeOrderCancelled`|
 |`productListItems`|An array of products in the order|
+|`id`|The line item identifier for this product entry. The product itself is identified through the `product` field.|
 |`name`|The display name or human-readable name of the product|
 |`SKU`|Stock Keeping Unit. The unique identifier for the product.|
 |`quantity`|The number of product units in the cart|
@@ -560,6 +578,8 @@ The following table describes the data collected for this event.
 |`purchaseOrderNumber`|Unique identifier assigned by the purchaser for this purchase or contract|
 |`cancelDate`|The date and time when a shopper cancels an order|
 |`lastUpdatedDate`|The time when a particular order record is last updated in the commerce system|
+|`personalEmail`|A personal email address|
+|`address`|The technical address, for example, 'name@domain.com' as commonly defined in RFC2822 and subsequent standards|
 
 ### creditMemoIssued
 
@@ -573,12 +593,19 @@ The following table describes the data collected for this event.
 |Field|Description|
 |---|---|
 |`address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
-|`eventType`|`commerce.backofficeCreditMemoIssued`|
 |`productListItems`|An array of products in the order|
+|`id`|The line item identifier for this product entry. The product itself is identified through the `product` field.|
+|`name`|The display name or human-readable name of the product|
+|`SKU`|Stock Keeping Unit. The unique identifier for the product.|
+|`quantity`|The number of product units in the cart|
+|`priceTotal`|The total price for the product line item|
+|`discountAmount`|Indicates the discount amount applied|
 |`order`|Contains information about the order|
 |`purchaseID`|Unique identifier assigned by the seller for this purchase or contract. There is no guarantee that the ID is unique|
 |`purchaseOrderNumber`|Unique identifier assigned by the purchaser for this purchase or contract|
 |`lastUpdatedDate`|The time when a particular order record is last updated in the commerce system|
+|`personalEmail`|A personal email address|
+|`address`|The technical address, for example, 'name@domain.com' as commonly defined in RFC2822 and subsequent standards|
 
 ### orderShipmentCompleted
 
@@ -592,8 +619,8 @@ The following table describes the data collected for this event.
 |Field|Description|
 |---|---|
 |`address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
-|`eventType`|`commerce.backofficeOrderShipmentCompleted`|
 |`productListItems`|An array of products in the order|
+|`id`|The line item identifier for this product entry. The product itself is identified through the `product` field.|
 |`name`|The display name or human-readable name of the product|
 |`SKU`|Stock Keeping Unit. The unique identifier for the product.|
 |`quantity`|The number of product units in the cart|
@@ -601,6 +628,8 @@ The following table describes the data collected for this event.
 |`discountAmount`|Indicates the discount amount applied|
 |`order`|Contains information about the order|
 |`purchaseID`|Unique identifier assigned by the seller for this purchase or contract. There is no guarantee that the ID is unique|
+|`priceTotal`|The total price of this order after all discounts and taxes have been applied|
+|`currencyCode`|The ISO 4217 currency code used for the order totals|
 |`purchaseOrderNumber`|Unique identifier assigned by the purchaser for this purchase or contract|
 |`taxAmount`|The tax amount paid by the buyer as part of the final payment.|
 |`createdDate`|The time and date when a new order is created in the commerce system. For example, `2022-10-15T20:20:39+00:00`|
@@ -610,10 +639,14 @@ The following table describes the data collected for this event.
 |`paymentAmount`|The value of the payment|
 |`shipping`|Shipping details for one or more products|
 |`shippingMethod`|The method of shipping chosen by the customer, such as standard delivery, expedited delivery, pick up in store, and so on|
-|`shippingAddress`|Physical shipping address|
+|`address`|Physical shipping address|
 |`street1`|Primary street level information, apartment number, street number, and street name|
+|`street2`|Additional field for street level information|
+|`city`|The name of the city|
+|`state`|The name of the state. This is a free-form field.|
+|`postalCode`|The postal code of the location. Postal codes are not available for all countries. In some countries, this will only contain part of the postal code.|
+|`country`|The name of the government-administered territory. Other than `xdm:countryCode`, this is a free-form field that can have the country name in any language.|
 |`shippingAmount`|The amount the customer had to pay for shipping.|
-|`personalEmail`|Specifies the personal email address|
 |`address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
 |`billingAddress`|Billing postal address|
 |`street1`|Primary street level information, apartment number, street number, and street name|
@@ -622,3 +655,5 @@ The following table describes the data collected for this event.
 |`state`|The name of the state. This is a free-form field.|
 |`postalCode`|The postal code of the location. Postal codes are not available for all countries. In some countries, this data contains only part of the postal code.|
 |`country`|The name of the government-administered territory. Other than `xdm:countryCode`, this is a free-form field that can have the country name in any language.|
+|`personalEmail`|A personal email address|
+|`address`|The technical address, for example, 'name@domain.com' as commonly defined in RFC2822 and subsequent standards|

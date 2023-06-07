@@ -15,4 +15,6 @@ The Adobe Commerce side of the architecture includes hosting the search *Admin*,
 
 Watch this video to learn about [!DNL Live Search]:
 
->[!VIDEO](https://video.tv.adobe.com/v/337365?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3418679?quality=12&learn=on)
+
+For a more in-depth video of how to use and configure Live Search, see the [Full Demonstration on [!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/marketing/live-search-full-demonstration.html) topic.

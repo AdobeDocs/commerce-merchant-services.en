@@ -30,6 +30,14 @@ The onboarding process for [!DNL Product Recommendations] requires access to the
 
 See [[!DNL Page Builder] Integration](page-builder.md) for instructions on how to add [!DNL Product Recommendations] into [!DNL Page Builder] content.
 
+### SaaS price indexing
+
+Product Recommendation customers can use [SaaS price indexing](../price-index/index.md), which provides faster price changes updates and synchornization time.
+
 ### B2B support {#b2bsupport}
 
 B2B storefronts often require complex logic that dictates product visibility and pricing for each shopper or customer group. [!DNL Product Recommendations] now [support](release-notes.md) this functionality by honoring [category permissions](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html), [shared catalogs](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/catalog-shared.html), and [customer group-specific pricing](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html). For example, if you have hidden certain categories from your retail customer segment, then a shopper in that segment would not be shown recommendations for products in those categories. Also, when you define a shared catalog for specific customer groups and companies, those shoppers see recommendations only for products they can access. All recommended products reflect correct customer group-specific price based on each shopper's customer group.
+
+>[!NOTE]
+>
+>Merchants may customize and extend widgets or storefront elements by using the [Catalog Service](../catalog-service/overview.md) Storefront API but any customization is out of scope for Adobe's support team.

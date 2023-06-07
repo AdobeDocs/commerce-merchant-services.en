@@ -27,11 +27,14 @@ Other variables that can impact the time needed to train:
 
 - Higher traffic volume contributes to faster learning
 - Some recommendation types train faster than others
-- Adobe Commerce recomputes behavioral data every four hours. While you can technically deploy your recommendation units at that time, know that the recommendations become more accurate the longer they are used on your site.
+- Adobe Commerce recomputes behavioral data every four hours. Recommendations become more accurate the longer they are used on your site.
 
 To help you visualize the training progress of each recommendation type, the [create recommendation](create.md) page displays readiness indicators.
 
 While data is collected on production and machine learning models are trained, you can implement the [remaining tasks](implementation-workflow.md) necessary to deploy recommendations to your storefront. By the time you have finished testing and configuring recommendations, the machine learning models have collected and computed enough data to build relevant recommendations thus allowing you to deploy the recommendations to your storefront.
+
+If there is insufficient traffic (views, products bought, trending) for the majority of SKUs, there may not be enough data to complete the learning process. This may cause the readiness indicator in the Admin to look as if it were stuck.
+The readiness indicators are meant to provide merchants with another data point in choosing what recommendations type is better for their store. The numbers are a guide and may never reach 100%.
 
 ## Backup recommendations {#backuprecs}
 
