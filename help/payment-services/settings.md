@@ -136,14 +136,16 @@ You can enable and configure the PayPal smart buttons payment options:
 1. To change the name of the payment method as shown during checkout, edit the value in the **[!UICONTROL Checkout Title]** field.
 1. To [set the payment action](production.md#set-payment-services-as-payment-method), toggle **[!UICONTROL Payment action]** to `Authorize` or `Authorize and Capture`.
 1. Use the toggle selectors to enable or disable [!DNL PayPal smart button] display features:
-   - **[!UICONTROL Show PayPal buttons on product checkout page]**
-   - **[!UICONTROL Show PayPal buttons on product detail page]**
-   - **[!UICONTROL Show PayPal buttons in mini-cart preview]**
-   - **[!UICONTROL Show PayPal buttons on cart page]**
-   - **[!UICONTROL Show PayPal Pay Later button]**
-   - **[!UICONTROL Show PayPal Pay Later message]**
-   - **[!UICONTROL Show Venmo button]**
-   - **[!UICONTROL Show Apple Pay button]**
+
+   -  **[!UICONTROL Show PayPal buttons on product checkout page]**
+   -  **[!UICONTROL Show PayPal buttons on product detail page]**
+   -  **[!UICONTROL Show PayPal buttons in mini-cart preview]**
+   -  **[!UICONTROL Show PayPal buttons on cart page]**
+   -  **[!UICONTROL Show PayPal Pay Later button]**
+   -  **[!UICONTROL Show PayPal Pay Later message]**
+   -  **[!UICONTROL Show Venmo button]**
+   -  **[!UICONTROL Show Apple Pay button]**
+   -  **[!UICONTROL Show PayPal Credit and Debit Card button]**
 
       >[!NOTE]
       >
@@ -172,6 +174,7 @@ You can enable and configure the PayPal smart buttons payment options:
 | [!UICONTROL Show PayPal Pay Later Message] | website | Enable or disable the Pay Later messaging in the shopping cart, product page, mini-cart, and during the checkout flow. Options: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Show Venmo button] | store view | Enable or disable the Venmo payment option where payment buttons are displayed. Options: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Show Apple Pay button] | store view | Enable or disable the Apple Pay payment option where payment buttons are displayed. Options: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Show PayPal Credit and Debit card button] | store view | Enable or disable the Credit and Debit card payment option where payment buttons are displayed. Options: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Debug Mode] | website | Enable or disable Debug Mode. Options: [!UICONTROL Yes] / [!UICONTROL No] |
 
 ### Button style
@@ -192,6 +195,8 @@ You can also configure the _[!UICONTROL Button style]_ options of the PayPal sma
 
    As you change configuration options for layout, color, shape, height, and label, a visual preview of that configuration shows at the bottom of the Settings page.
 
+   ![[!DNL PayPal Smart Buttons] options](assets/payment-buttons.png){width="500"}
+
 1. Click **[!UICONTROL Save]**.
 
    If you try to navigate away from this view without saving your changes, a modal appears that prompts you to discard changes, keep editing, or save changes.
@@ -211,6 +216,19 @@ You can configure [!DNL PayPal Smart Buttons] styling [in the Legacy configurati
 |[!UICONTROL Responsive Button Height]|Store View|Defines if payment buttons use a default height. Options: [!UICONTROL Yes] / [!UICONTROL No]|
 |[!UICONTROL Height]|Store View|Define height of the payment buttons. Default value: none|
 |[!UICONTROL Label]|Store View|Define label that appears in the payment buttons. Options: [!UICONTROL PayPal] / [!UICONTROL Checkout] / [!UICONTROL Buynow] / [!UICONTROL Pay] / [!UICONTROL Installment]|
+
+## Configure roles
+
+To ensure that Admin users can create and manage orders in the Commerce Admin, enable [!DNL Payment Services]-specific resources to user roles.
+
+See [User roles](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-user-roles.html) to learn how to manage roles.
+
+When assigning resources to the role, you must select:
+
+* **Pay with [!DNL Payment Services]**---This resource ensures that when you create an order in the Admin, [!DNL Payment Services] credit cards are available as a payment method. If you select the **Actions** parent resource, this resource will also be selected.
+* **[!DNL Payment Services]**---This resource includes the **Dashboard** and **SaaS Services Proxy** resources, which must also be selected. They ensure that [!DNL Payment Services] appears in the _Sales_ menu.
+
+   ![Payment Services resources](assets/roles-payments.png)
 
 ## Flush the cache
 
