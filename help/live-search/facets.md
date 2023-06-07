@@ -15,7 +15,7 @@ The category and product attribute requirements for faceting are similar to the 
 
 [!DNL Live Search] supports up to:
 
-* 200 attributes configured as facets
+* 100 attributes configured as facets
 * 50 sortable attributes
 * 200 filterable attributes
 * 200 searchable attributes

@@ -35,7 +35,7 @@ You can also change the layout, width, height, and outer styling of the credit c
 
 [!DNL PayPal Smart Buttons], which use PayPal to complete a purchase, stores your shopper's shipping address, billing addresses, and payment details for later use. Shoppers can use any payment method previously stored or offered by PayPal.
 
-![[!DNL PayPal Smart Buttons] options](assets/buttons-md.png)
+![[!DNL PayPal Smart Buttons] options](assets/payment-buttons.png){width="500"}
 
 You can configure [!UICONTROL PayPal Smart Buttons] in the store configuration or the Payment Services Home.  See [Settings](settings.md#payment-buttons) for more information.
 
@@ -60,6 +60,14 @@ The [!DNL Apple Pay] button is visible from the product page, mini-cart, shoppin
    >[!NOTE]
    >
    > To use [!DNL Apple Pay] for your stores, complete [self-registration with [!DNL Apple Pay]](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) (_Register your live domain_ section only) and [configure it for your stores in [!DNL Payment Services]](settings.md#payment-buttons).
+
+### PayPal Debit or Credit card button
+
+Customers can check out using the PayPal Debit or Credit card button.
+
+The PayPal Debit or Credit card button is visible from the checkout page.
+
+This option can be used to present a PayPal Debit or Credit card payment option to your shoppers when you do not have an alternative credit card provider.
 
 ### [!DNL Pay Later] button
 
@@ -117,14 +125,6 @@ When a customer enters the checkout flow from the mini-cart, shopping cart, or p
 When a customer enters the checkout flow from the checkout page, the system is already aware of the shipping address and final calculated amount, and totals are appropriately represented.
 
 Tax holidays, shipping costs, and sales tax can vary widely from location to location. After [!DNL Payment Services] receives the shipping address and rate, it quickly recalculates all applicable costs and display them appropriately during the last stages of checkout.
-
-## Checkout from product page
-
-When a customer checks out directly from the product page, using the PayPal or [!DNL Pay Later] buttons, only the item represented in the current product page is purchased. Items already residing in the customer's cart is not added to the checkout flow and is not purchased.
-
-If the customer cancels the order, the item in the current product page is added to the customer's cart, joining any other items present in the cart. This function allows the customer to quickly purchase the item they are currently viewing, while also retaining any other items they added to their cart previously when browsing products.
-
-When a customer enters the checkout flow from the product page, the checkout page is simplified---the view only shows order-related data and options.
 
 ## Credit card vaulting
 
