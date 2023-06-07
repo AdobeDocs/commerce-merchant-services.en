@@ -9,8 +9,6 @@ exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
 
 [!DNL Payment Services] for [!DNL Adobe Commerce] and [!DNL Magento Open Source] offers you comprehensive reporting so that you can get a clear view of your store's orders and payments.
 
-![Financial reports view](assets/reports-justpayouts.png)
-
 There are two available Payouts reporting views to enable you to see in-depth information about all of your payouts:
 
 *  **[Payouts data visualization view](#payouts-data-visualization-view)**---Chart available on the Payment Services Home that is a visual representation of aggregated amounts per day from the Payouts report view
@@ -28,7 +26,7 @@ The Payouts data visualization view is available in the Payment Services Home. I
 
 On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** to see the data visualization chart of credits vs. debits and the moving averages over time.
 
-![Payout data visualization in the Admin](assets/payouts-report.png)
+![Payout data visualization in the Admin](assets/payouts-report.png){zoomable=yes}
 
 Click **[!UICONTROL View Report]** to navigate to the detailed tabular [Payouts report view](#payouts-report-view).
 
@@ -64,13 +62,13 @@ The Payouts report view is available in the Payouts view of Payment Services. It
 
 On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]** to see the detailed tabular Payouts report view.
 
-![Payout transactions in the Admin](assets/payouts-report-new.png)
+![Payout transactions in the Admin](assets/payouts-report-new.png){zoomable=yes}
 
 You can configure this view, per the sections in this topic, to best present the data you desire to see.
 
 See linked Commerce order and transaction IDs, transaction amounts, payment method per transaction, and more, all within the Payouts report in the Admin.
 
-You can download payout transactions in a .csv file format for use in existing accounting or order management software.
+You can [download payout transactions](#download-transactions) in a .csv file format for use in existing accounting or order management software.
 
 >[!NOTE]
 >
@@ -80,9 +78,9 @@ You can download payout transactions in a .csv file format for use in existing a
 
 In the Payouts report view, you can select the data source---_[!UICONTROL Live]_ or _[!UICONTROL Sandbox]_---for which you want to see report results.
 
-![Data sources selection](assets/datasource.png)
+![Data sources selection](assets/datasource.png){width=400px}
 
-If _[!UICONTROL Live]_ is the selected data source, you can see report information for your live stores. If [!UICONTROL Sandbox]_ is the selected data source, you can see report information for your Sandbox environment.
+If _[!UICONTROL Live]_ is the selected data source, you can see report information for stores in production mode. If _[!UICONTROL Sandbox]_ is the selected data source, you can see report information stores in sandbox mode.
 
 Data source selections work as follows:
 
@@ -148,27 +146,27 @@ Payout reports include the following information.
 | [!UICONTROL Code] | Transaction code that indicates either Credit (*CR*) or Debit (*DR*) |
 | [!UICONTROL Reference ID] | Original transaction ID for which this event is related |
 | [!UICONTROL Invoice] | Invoice ID (one per order) of the transaction |
-| [!UICONTROL Commerce order] | Commerce order ID <br> <br>To see related [order info](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"}, click the ID. |
-| [!UICONTROL Commerce trans] | Commerce transaction ID <br> <br>To see related [transaction info](https://docs.magento.com/user-guide/sales/transactions.html){target="_blank"}, click the ID. |
-| [!UICONTROL Pay method] | Credit card type---*[!UICONTROL BANK]*, *[!UICONTROL PAYPAL]*, *[!UICONTROL APPLE_PAY]*, *[!UICONTROL CREDIT_CARD]*---and associated card provider (such as *Visa* or *MasterCard*) |
-| [!UICONTROL Trans amt] | Amount of the transaction |
-| [!UICONTROL Cur] | Currency unit for transaction amount |
-| [!UICONTROL Pending] | Amount yet to be disbursed |
-| [!UICONTROL Cur] | Currency unit for the pending amount |
-| [!UICONTROL Seller amt] | Amount of funds transferred to or from a customer <br> <br>Funds moving out of the seller account show a dash (-) prefix. |
-| [!UICONTROL Cur] | Currency unit for the seller amount |
-| [!UICONTROL Partner fee] | Partner fees associated with the transaction <br> <br>Funds moving out of the partner fee account show a dash (-) prefix. |
-| [!UICONTROL Cur] | Currency unit for the partner fee |
-| [!UICONTROL Prov fees] | Fees associated with the transaction <br> <br>Funds moving out of the provider's fee account show a dash (-) prefix. |
-| [!UICONTROL Cur] | Currency unit for the provider fee |
-| [!UICONTROL Fee %] | Percentage of the transaction amount charged as a fee |
-| [!UICONTROL Fixed fee] | Fixed provider fee amount |
-| [!UICONTROL Chbk fee] | Chargeback fee associated with the transaction <br> <br>A dash (-) prefix indicates that the chargeback fee was reversed. |
-| [!UICONTROL Cur] | Currency unit for the chargeback fee |
-| [!UICONTROL Hold amt] | Amount put on hold or released from hold <br> <br>A dash (-) prefix indicates that on-hold funds are being released. |
-| [!UICONTROL Cur] | Currency unit for the hold amount |
-| [!UICONTROL Recoup amt] | Amount recouped from the recoup account <br> <br>Funds moving out of the recoup account show a dash (-) prefix. |
-| [!UICONTROL Cur] | Currency unit for the recoup amount |
+| [!UICONTROL Commerce order] | Commerce order ID <br> <br>To see related [order info](https://docs.magento.com/user-guide/sales/orders.html), click the ID. |
+| [!UICONTROL Commerce trans] | Commerce transaction ID |
+| [!UICONTROL Pay method] | Credit card type---*[!UICONTROL BANK]*, *[!UICONTROL PAYPAL]*, *[!UICONTROL CREDIT_CARD]*---and associated card provider (such as *Visa* or *MasterCard*) |
+| [!UICONTROL TRANS AMT] | Amount of the transaction |
+| [!UICONTROL CUR] | Currency unit for transaction amount |
+| [!UICONTROL PENDING] | Amount yet to be disbursed |
+| [!UICONTROL CUR] | Currency unit for the pending amount |
+| [!UICONTROL SELLER AMT] | Amount of funds transferred to or from a customer <br> <br>Funds moving out of the seller account show a dash (-) prefix. |
+| [!UICONTROL CUR] | Currency unit for the seller amount |
+| [!UICONTROL PARTNER FEE] | Partner fees associated with the transaction <br> <br>Funds moving out of the partner fee account show a dash (-) prefix. |
+| [!UICONTROL CUR] | Currency unit for the partner fee |
+| [!UICONTROL PROV FEES] | Fees associated with the transaction <br> <br>Funds moving out of the provider's fee account show a dash (-) prefix. |
+| [!UICONTROL CUR] | Currency unit for the provider fee |
+| [!UICONTROL FEE %] | Percentage of the transaction amount charged as a fee |
+| [!UICONTROL FIXED FEE] | Fixed provider fee amount |
+| [!UICONTROL CHBK FEE] | Chargeback fee associated with the transaction <br> <br>A dash (-) prefix indicates that the chargeback fee was reversed. |
+| [!UICONTROL CUR] | Currency unit for the chargeback fee |
+| [!UICONTROL HOLD AMT] | Amount put on hold or released from hold <br> <br>A dash (-) prefix indicates that on-hold funds are being released. |
+| [!UICONTROL CUR] | Currency unit for the hold amount |
+| [!UICONTROL RECOUP AMT] | Amount recouped from the recoup account <br> <br>Funds moving out of the recoup account show a dash (-) prefix. |
+| [!UICONTROL CUR] | Currency unit for the recoup amount |
 
 ### Transaction types
 
