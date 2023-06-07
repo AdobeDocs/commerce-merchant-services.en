@@ -73,8 +73,6 @@ _June 13, 2023_
 
 ![Fixed issue](../assets/fix.svg)<!-- Issue PAY-4485--> Report data visualization views are now appearing on Payment Services Home when Payment Services is disabled.
 
-![Fixed issue](../assets/fix.svg)<!-- Issue PAY-4475--> Error messages are now consistent between the `Authorize` and `Authorize and Capture` payment actions when a bank rejects an order payment.
-
 ## v2.0.0
 
 _March 10, 2023_
