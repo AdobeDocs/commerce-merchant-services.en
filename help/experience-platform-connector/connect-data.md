@@ -30,17 +30,11 @@ In this section, you connect your Adobe Commerce instance to the Adobe Experienc
 
 ## General
 
-1. Sign in to your Adobe account in the [Commerce Services Connector](../landing/saas.md#organizationid) and select your organization ID.
-
-    >[!NOTE]
-    >
-    >If you previously configured the Commerce Services connector, you can skip this step as your organization ID has already been selected.
-
 1. In the Admin, go to **System** > Services > **Experience Platform Connector**.
 
-1. In the **Scope** drop-down, set the context to **Website**.
+1. On the **Settings** tab under **General**, verify the ID associated with your Adobe Experience Platform account, as configured in the [Commerce Services Connector](../landing/saas.md#organizationid). The organization ID is global. Only one organization ID can be associated per Adobe Commerce instance.
 
-1. In the **Organization ID** field, verify the ID associated with your Adobe Experience Platform account, as configured in the [Commerce Services Connector](../landing/saas.md#organizationid). The organization ID is global. Only one organization ID can be associated per Adobe Commerce instance.
+1. In the **Scope** drop-down, set the context to **Website**.
 
 1. (Optional) If you already have an [AEP Web SDK (alloy)](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html) deployed to your site, enable the checkbox and add the name of your AEP Web SDK. Otherwise, leave these fields blank and the Experience Platform connector deploys one for you.
 
@@ -120,28 +114,54 @@ See the events topic to learn more about [storefront](events.md#storefront-event
 
 Adobe Commerce collects up to five years of historical order data and status. You can use the Experience Platform connector to send that historical data to the Experience Platform to enrich your customer profiles based on those past orders. The data is stored in a dataset within Experience Platform.
 
-While Commerce already collects the historical order data, you need to install and configure your Commerce instance so that data can be sent to Experience Platform.
+While Commerce already collects the historical order data, there are several tasks you need to complete to send that data to Experience Platform. The following sections guide you through the process.
 
 ### Install historical order beta
 
-To enable historical order data collection, you need to install the following from the command line:
+To enable historical order data collection for beta, you need to update the project’s root [!DNL Composer] `.json` file as follows:
 
-```bash
-magento/experience-platform-connector: "^3.0.0-beta1"
-```
+1. Open the root `composer.json` file and search for `magento/experience-platform-connector`.
 
-for B2B merchants, run the following command:
+1. In the `require` section, update the version number as follows:
 
-```bash
-they don't run this command but rather update their composer file
-magento/experience-platform-connector-b2b: "^2.0.0-beta1"
-```
+   ```json
+   "require": {
+      ...
+      "magento/experience-platform-connector": "^3.0.0-beta1",
+      ...
+    }
+   ```
+
+1. For B2B merchants, update the `.json` file as follows:
+
+    ```json
+    "require": {
+      ...
+      "magento/experience-platform-connector-b2b": "^2.0.0-beta1"
+      ...
+    }
+    ```
+
+1. **Save** `composer.json`. Then, run the following from the command line:
+
+   ```bash
+   composer update magento/experience-platform-connector –-with-dependencies
+   ```
+
+   or, for B2B merchants:
+
+   ```bash
+   composer update magento/experience-platform-connector-b2b --with-dependencies
+   ```
 
 ### Configure historical order beta
 
-To ensure your customers order history can be sent to Experience Platform, you must specify credentials that link your Commerce instance to Experience Platform.
+To ensure your customers order history can be sent to Experience Platform, you must specify credentials that link your Commerce instance to Experience Platform. If you have already installed and enabled the [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) module, you already specified the credentials needed and you can skip this step. If you have not already installed and enabled the Audience Activation module, complete the following steps:
 
-Note if you have already installed and enabled the Audience Activation module, you already specified the credentials needed and you can skip this step. If you have not already installed and enabled the Audience Activation module, complete the following steps:
+>[!NOTE]
+>
+>In this section, you will enter credentials from the developer console. Make sure that your developer console project has the correct [roles and permissions configured](
+https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html#assign-api-to-a-role).
 
 1. On the _Admin_ sidebar, go to **[!UICONTROL Stores]** > _[!UICONTROL Settings]_ > **[!UICONTROL Configuration]**.
 
@@ -149,55 +169,64 @@ Note if you have already installed and enabled the Audience Activation module, y
 
 1. Enter the configuration credentials found in the [developer console](https://developer.adobe.com/console/home).
 
-    ![Experience Platform Connector Admin Configuration](./assets/rtcdp-admin-config.png){width="700" zoomable="yes"}
+    ![Experience Platform Connector Admin Configuration](./assets/epc-admin-config.png){width="700" zoomable="yes"}
 
 1. Click **Save Config**.
 
-1. Verify that the following features are enabled in your Commerce instance:
+### Set up the Order Sync service
 
-    1. To sync orders, you need to configure the [Message Queue Framework](https://developer.adobe.com/commerce/php/development/components/message-queues/).
-    1. Provision Rabbitmq according to [this guide](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/rabbitmq.html).
-    1. Enable message queues consumers by cron job in `.magento.env.yaml` using `CRON_CONSUMERS_RUNNER` environment variable.
+With the developer credentials entered, you then set up the order sync service. The order sync service uses the [Message Queue Framework](https://developer.adobe.com/commerce/php/development/components/message-queues/) and RabbitMQ. After you complete these steps, order status data can sync to SaaS, which is required before it can be sent to Experience Platform.
 
-       ```yaml
+1. [Enable](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/rabbitmq.html) RabbitMQ.
+
+    >[!NOTE]
+    >
+    >If you are using Commerce version 2.4.7 or later, RabbitMQ is already set up. You will, however, need to enable consumers.
+
+1. Enable message queue consumers by cron job in `.magento.env.yaml` using `CRON_CONSUMERS_RUNNER` environment variable.
+
+    ```yaml
        stage:
          deploy:
            CRON_CONSUMERS_RUNNER:
              cron_run: true
-       ```
+    ```
 
-1. Add the dev console details in configuration
-1. Goto EPC --> Order History ->  Add Dataset and date range, date range validation?
-1. Dataset creation  on AEP
-same as AEP , create schema and then the dataset. Merchant should use the same dataset as the one used in storefront and backoffice events
-Document how to get dataset ID in AEP
-1. Order Sync setup:
+    >[!NOTE]
+    >
+    >See the [deploy variables documentation](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#cron_consumers_runner) to learn about all the available configuration options.
 
-2.4.7 - Rabbit MQ is included by default, but any earlier version should configure Rabbit MQ - https://devdocs.magento.com/guides/v2.3/rest/bulk-endpoints.html
-Consumers will need to enabled
+1. Install the `saas-order-sync` package from the command line:
+
+   ```bash
+   composer require magento/module-saas-order-sync
+   ```
+    
+    With the order sync service enabled, you can then specify the historical order date range in the Experience Platform connector page.
+
+### Specify order history date range
+
+In this section, you will specify the date range for the historical orders you want to send to Experience Platform.
+
+![Sync Order History](./assets/order-history-sync.png){width="700" zoomable="yes"}
+
+1. In the Admin, go to **System** > Services > **Experience Platform Connector**.
+
+1. Select the **Order History** tab.
+
+1. Under **Order History Sync**, enter the **Dataset ID**. This should be the same dataset associated with the datastream you specified in the [data collection](#data-collection) section above.
+
+    1. To access the dataset ID, open the Experience Platform UI and select **Datasets** in the left-navigation to open the **Datasets** dashboard. The dashboard lists all available datasets for your organization. Details are displayed for each listed dataset, including its name, the schema the dataset adheres to, and status of the most recent ingestion run.
+    1. Open the dataset associated with your datastream.
+    1. In the right-hand pane, you will see details about the dataset. Copy the dataset ID.
+
+    ![Copy Dataset ID](./assets/retrieve-dataset-id.png){width="700" zoomable="yes"}
 
 Historical order data is batched data as opposed to storefront and back office data that is streaming data. Batched data takes about 45 minutes to arrive in Experience Platform.
-
-Document historical orders behavior and use cases.
-Clarify in the docs that for batch exports, the data takes 45 minutes before it arrives in a data lake. Update this topic and clarify that:
-
-1. Batched data takes longer. 45 minutes to arrive in data lake
-
-Does batch data use same data stream?
-
-1. It doesn't go to the edge but to the data lake. You still can query the dataset to confirm data is being sent.
-
-1. Maybe also discuss difference between streaming data and batch data.
-
-Need to review error strings/success strings
-Need to tell users how to view errors in log files
 
 >[!NOTE]
 >
 >For beta, if you trigger a sync multiple times on the same or overlapping time range, you will see duplicate events in the dataset.
-
-
-If user does not have audience activation, they will need to configure the EPC in the configuration page of the admin. If they already have audience activation, when they upgrade epc for order history, their previously configured tokens will remain intact and no further configuration is necessary.
 
 ## Confirm that event data is collected
 
