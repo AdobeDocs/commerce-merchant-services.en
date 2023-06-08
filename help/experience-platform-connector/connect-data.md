@@ -24,7 +24,7 @@ After you configure the Commerce Services connector, you then configure the Expe
 
 ## Update the Experience Platform connector
 
-In this section, you connect your Adobe Commerce instance to the Adobe Experience Platform using your organization ID. You can then specify the type of data - storefront or back office - to send to the Experience Platform edge.
+In this section, you connect your Adobe Commerce instance to the Adobe Experience Platform using your organization ID. You can then specify the type of data - storefront and back office - to send to the Experience Platform edge.
 
 ![Experience Platform connector configuration](assets/epc-config-dc.png)
 
@@ -54,7 +54,7 @@ In this section, you specify the type of data you want to send to the Experience
 
 Client-side data is data captured on the storefront. This includes shopper interactions, such as `View Page`, `View Product`, `Add to Cart`, and [requisition list](events.md#b2b-events) information (for B2B merchants). Server-side data, or back office data, is data captured in the Commerce servers. This includes information about the status of an order, such as if an order was placed, canceled, refunded, shipped, or completed. 
 
-In the **Data collection** section, select the type of data you want to send to the Experience Platform edge. To ensure that your Adobe Commerce instance can begin data collection, review the [prerequisites](overview.md#prerequisites).
+To ensure that your Adobe Commerce instance can begin data collection, review the [prerequisites](overview.md#prerequisites).
 
 See the events topic to learn more about [storefront](events.md#storefront-events) and [back office](events.md#back-office-events) events.
 
@@ -110,7 +110,94 @@ See the events topic to learn more about [storefront](events.md#storefront-event
 
 >[!NOTE]
 >
->After onboarding, storefront data begins to flow to the Experience Platform edge. Back office data takes about 5 minutes to appear at the edge. Subsequent updates are visible at the edge based on the cron schedule.
+>After onboarding, storefront data begins to flow to the Experience Platform edge. Back office data takes about five minutes to appear at the edge. Subsequent updates are visible at the edge based on the cron schedule.
+
+## (Beta) Send historical order data
+
+>[!NOTE]
+>
+>This feature is available for beta users only. You can join the beta by sending an email to the following address: [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
+
+Adobe Commerce collects up to five years of historical order data and status. You can use the Experience Platform connector to send that historical data to the Experience Platform to enrich your customer profiles based on those past orders. The data is stored in a dataset within Experience Platform.
+
+While Commerce already collects the historical order data, you need to install and configure your Commerce instance so that data can be sent to Experience Platform.
+
+### Install historical order beta
+
+To enable historical order data collection, you need to install the following from the command line:
+
+```bash
+magento/experience-platform-connector: "^3.0.0-beta1"
+```
+
+for B2B merchants, run the following command:
+
+```bash
+they don't run this command but rather update their composer file
+magento/experience-platform-connector-b2b: "^2.0.0-beta1"
+```
+
+### Configure historical order beta
+
+To ensure your customers order history can be sent to Experience Platform, you must specify credentials that link your Commerce instance to Experience Platform.
+
+Note if you have already installed and enabled the Audience Activation module, you already specified the credentials needed and you can skip this step. If you have not already installed and enabled the Audience Activation module, complete the following steps:
+
+1. On the _Admin_ sidebar, go to **[!UICONTROL Stores]** > _[!UICONTROL Settings]_ > **[!UICONTROL Configuration]**.
+
+1. Expand **[!UICONTROL Services]** and select **[!UICONTROL Experience Platform Connector]**. 
+
+1. Enter the configuration credentials found in the [developer console](https://developer.adobe.com/console/home).
+
+    ![Experience Platform Connector Admin Configuration](./assets/rtcdp-admin-config.png){width="700" zoomable="yes"}
+
+1. Click **Save Config**.
+
+1. Verify that the following features are enabled in your Commerce instance:
+
+    1. To sync orders, you need to configure the [Message Queue Framework](https://developer.adobe.com/commerce/php/development/components/message-queues/).
+    1. Provision Rabbitmq according to [this guide](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/rabbitmq.html).
+    1. Enable message queues consumers by cron job in `.magento.env.yaml` using `CRON_CONSUMERS_RUNNER` environment variable.
+
+       ```yaml
+       stage:
+         deploy:
+           CRON_CONSUMERS_RUNNER:
+             cron_run: true
+       ```
+
+1. Add the dev console details in configuration
+1. Goto EPC --> Order History ->  Add Dataset and date range, date range validation?
+1. Dataset creation  on AEP
+same as AEP , create schema and then the dataset. Merchant should use the same dataset as the one used in storefront and backoffice events
+Document how to get dataset ID in AEP
+1. Order Sync setup:
+
+2.4.7 - Rabbit MQ is included by default, but any earlier version should configure Rabbit MQ - https://devdocs.magento.com/guides/v2.3/rest/bulk-endpoints.html
+Consumers will need to enabled
+
+Historical order data is batched data as opposed to storefront and back office data that is streaming data. Batched data takes about 45 minutes to arrive in Experience Platform.
+
+Document historical orders behavior and use cases.
+Clarify in the docs that for batch exports, the data takes 45 minutes before it arrives in a data lake. Update this topic and clarify that:
+
+1. Batched data takes longer. 45 minutes to arrive in data lake
+
+Does batch data use same data stream?
+
+1. It doesn't go to the edge but to the data lake. You still can query the dataset to confirm data is being sent.
+
+1. Maybe also discuss difference between streaming data and batch data.
+
+Need to review error strings/success strings
+Need to tell users how to view errors in log files
+
+>[!NOTE]
+>
+>For beta, if you trigger a sync multiple times on the same or overlapping time range, you will see duplicate events in the dataset.
+
+
+If user does not have audience activation, they will need to configure the EPC in the configuration page of the admin. If they already have audience activation, when they upgrade epc for order history, their previously configured tokens will remain intact and no further configuration is necessary.
 
 ## Confirm that event data is collected
 
