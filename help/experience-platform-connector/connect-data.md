@@ -106,8 +106,6 @@ See the events topic to learn more about [storefront](events.md#storefront-event
 >
 >After onboarding, storefront data begins to flow to the Experience Platform edge. Back office data takes about five minutes to appear at the edge. Subsequent updates are visible at the edge based on the cron schedule.
 
-[!BEGINSHADEBOX]
-
 ## (Beta) Send historical order data
 
 >[!NOTE]
@@ -230,8 +228,6 @@ In this section, you specify the date range for the historical orders you want t
     >[!NOTE]
     >
     >For beta, if you trigger a sync multiple times on the same or overlapping time range, you see duplicate events in the dataset.
-
-[!ENDSHADEBOX]
 
 ## Confirm that event data is collected
 
