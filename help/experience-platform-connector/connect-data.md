@@ -208,7 +208,7 @@ With the developer credentials entered, you then set up the order sync service. 
 
 In this section, you will specify the date range for the historical orders you want to send to Experience Platform.
 
-![Sync Order History](./assets/order-history-sync.png){width="700" zoomable="yes"}
+![Sync Order History](./assets/order-history.png){width="700" zoomable="yes"}
 
 1. In the Admin, go to **System** > Services > **Experience Platform Connector**.
 
@@ -222,11 +222,13 @@ In this section, you will specify the date range for the historical orders you w
 
     ![Copy Dataset ID](./assets/retrieve-dataset-id.png){width="700" zoomable="yes"}
 
-Historical order data is batched data as opposed to storefront and back office data that is streaming data. Batched data takes about 45 minutes to arrive in Experience Platform.
+1. In the **From** and **To** fields specify the data range for the historical order data you want to send. You cannot select a date range that exceeds 5 years.
 
->[!NOTE]
->
->For beta, if you trigger a sync multiple times on the same or overlapping time range, you will see duplicate events in the dataset.
+1. Select [!UICONTROL Start Sync] to trigger the sync to begin. Historical order data is batched data as opposed to storefront and back office data that is streaming data. Batched data takes about 45 minutes to arrive in Experience Platform.
+
+    >[!NOTE]
+    >
+    >For beta, if you trigger a sync multiple times on the same or overlapping time range, you will see duplicate events in the dataset.
 
 ## Confirm that event data is collected
 
