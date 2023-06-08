@@ -114,11 +114,11 @@ See the events topic to learn more about [storefront](events.md#storefront-event
 
 Adobe Commerce collects up to five years of historical order data and status. You can use the Experience Platform connector to send that historical data to the Experience Platform to enrich your customer profiles based on those past orders. The data is stored in a dataset within Experience Platform.
 
-While Commerce already collects the historical order data, there are several tasks you need to complete to send that data to Experience Platform. The following sections guide you through the process.
+While Commerce already collects the historical order data, there are several tasks you must complete to send that data to Experience Platform. The following sections guide you through the process.
 
 ### Install historical order beta
 
-To enable historical order data collection for beta, you need to update the project’s root [!DNL Composer] `.json` file as follows:
+To enable historical order data collection for beta, you must update the project’s root [!DNL Composer] `.json` file as follows:
 
 1. Open the root `composer.json` file and search for `magento/experience-platform-connector`.
 
@@ -156,12 +156,11 @@ To enable historical order data collection for beta, you need to update the proj
 
 ### Configure historical order beta
 
-To ensure your customers order history can be sent to Experience Platform, you must specify credentials that link your Commerce instance to Experience Platform. If you have already installed and enabled the [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) module, you already specified the credentials needed and you can skip this step. If you have not already installed and enabled the Audience Activation module, complete the following steps:
+To ensure that your customers order history can be sent to Experience Platform, you must specify credentials that link your Commerce instance to Experience Platform. If you have already installed and enabled the [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) module, you already specified the credentials needed and you can skip this step. If you have not already installed and enabled the Audience Activation module, complete the following steps:
 
 >[!NOTE]
 >
->In this section, you will enter credentials from the developer console. Make sure that your developer console project has the correct [roles and permissions configured](
-https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html#assign-api-to-a-role).
+>In this section, you enter credentials from the developer console. Make sure that your developer console project has the correct [roles and permissions configured](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html#assign-api-to-a-role).
 
 1. On the _Admin_ sidebar, go to **[!UICONTROL Stores]** > _[!UICONTROL Settings]_ > **[!UICONTROL Configuration]**.
 
@@ -181,7 +180,7 @@ With the developer credentials entered, you then set up the order sync service. 
 
     >[!NOTE]
     >
-    >If you are using Commerce version 2.4.7 or later, RabbitMQ is already set up. You will, however, need to enable consumers.
+    >If you are using Commerce version 2.4.7 or later, RabbitMQ is already set up. You will, however, must enable consumers.
 
 1. Enable message queue consumers by cron job in `.magento.env.yaml` using `CRON_CONSUMERS_RUNNER` environment variable.
 
@@ -206,7 +205,7 @@ With the developer credentials entered, you then set up the order sync service. 
 
 ### Specify order history date range
 
-In this section, you will specify the date range for the historical orders you want to send to Experience Platform.
+In this section, you specify the date range for the historical orders you want to send to Experience Platform.
 
 ![Sync Order History](./assets/order-history.png){width="700" zoomable="yes"}
 
@@ -218,17 +217,17 @@ In this section, you will specify the date range for the historical orders you w
 
     1. To access the dataset ID, open the Experience Platform UI and select **Datasets** in the left-navigation to open the **Datasets** dashboard. The dashboard lists all available datasets for your organization. Details are displayed for each listed dataset, including its name, the schema the dataset adheres to, and status of the most recent ingestion run.
     1. Open the dataset associated with your datastream.
-    1. In the right-hand pane, you will see details about the dataset. Copy the dataset ID.
+    1. In the right-hand pane, you see details about the dataset. Copy the dataset ID.
 
     ![Copy Dataset ID](./assets/retrieve-dataset-id.png){width="700" zoomable="yes"}
 
-1. In the **From** and **To** fields specify the data range for the historical order data you want to send. You cannot select a date range that exceeds 5 years.
+1. In the **From** and **To** fields specify the data range for the historical order data you want to send. You cannot select a date range that exceeds five years.
 
 1. Select [!UICONTROL Start Sync] to trigger the sync to begin. Historical order data is batched data as opposed to storefront and back office data that is streaming data. Batched data takes about 45 minutes to arrive in Experience Platform.
 
     >[!NOTE]
     >
-    >For beta, if you trigger a sync multiple times on the same or overlapping time range, you will see duplicate events in the dataset.
+    >For beta, if you trigger a sync multiple times on the same or overlapping time range, you see duplicate events in the dataset.
 
 ## Confirm that event data is collected
 
