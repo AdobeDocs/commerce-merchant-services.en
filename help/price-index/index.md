@@ -68,8 +68,8 @@ The PHP core price indexer can be re-enabled if needed by a third-party extensio
 
 Depending on factors such as product types, price complexity and catalog size, SaaS price indexing may be the right solution for your store. Read over the following limitations and determine if this is a good solution for your site.
 
-Currently, SaaS price indexing supports Simple, Grouped, Virtual, Configurable, and Bundle Dynamic product types.
-Support for Downloadable, Gift Cards, and Bundle Fixed product types is coming soon.s
+Currently, SaaS price indexing supports Simple, Grouped, Virtual, Configurable, and [Bundle Dynamic](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/types/product-create-bundle.html) product types.
+Support for Downloadable, Gift Cards, and Bundle Fixed product types is coming soon.
 
 New feeds should be manually synced with the `resync` [CLI command](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html#resynccmdline). Otherwise, the data gets refreshed in the standard sync process. Get more information about the [Catalog Sync](../landing/catalog-sync.md) process.
 
