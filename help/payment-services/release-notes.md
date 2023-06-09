@@ -23,6 +23,16 @@ These release notes describe feature changes and fixes that occurred and were re
 
 +++Hosted service updates
 
+_June 9, 2023_
+
+![New](../assets/new.svg)<!-- Issue PAY-4288 --> Now, merchants can [configure _only_ PayPal payment buttons](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#use-only-paypal-payment-buttons)---and _not_ use the PayPal credit card payment option---to provide a variety of payment options without applying for PayPal credit card approval.
+
+![New](../assets/new.svg)<!-- Issue PAY-4050 --> Added a [data visualization view](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#order-payment-status-data-visualization-view), which appears on the Payment Service Home, for the Order payment status report.
+
+![Fixed issue](../assets/fix.svg)<!-- Issue PAY-4486--> Previously, the PayPal PayLater button did not appear in checkout for UK merchants. That issue is resolved.
+
+![Fixed issue](../assets/fix.svg)<!-- Issue PAY-4485--> Report data visualization views are now appearing on Payment Services Home when Payment Services is disabled.
+
 _January 25, 2023_
 
 ![Known issue](../assets/bug.svg)<!-- Issue PAY-4102 --> New installations of Payment Services are unable to configure Commerce Services, rendering Payment Services inoperable. To fix this issue, update your Payment Services extension to version 1.5.3.
@@ -50,6 +60,22 @@ _June 28, 2021_
 ![New](../assets/new.svg)<!-- Issue PAY-2761 --> You can now customize the data that displays in the [Order payment status report](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) and the [Payouts report](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) by showing or hiding columns using the Column settings control.
 
 +++
+
+## v2.1.0
+
+_June 9, 2023_
+
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.4 and newer
+
+![New](../assets/new.svg)<!-- Issue xxx --> Added support for Adobe Commerce 2.4.7-beta1.
+
+![New](../assets/new.svg)<!-- Issue xxx --> Added [availability in the following countries and associated currencies](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html#availability): Australia, France, United Kingdom.
+
+![New](../assets/new.svg)<!-- Issue PAY-4296 --> Added [expanded resources for Admin roles](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#configure-roles) to ensure Admin users can create and manage orders for customers and can see Payment Services in the Sales menu.
+
+![New](../assets/new.svg)<!-- Issue PAY-4236 --> Added [auto-voiding for orders that incur errors during checkout](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/checkout.html#order-auto-voided-if-error).
+
+![New](../assets/new.svg)<!-- Issue PAY-4183 --> Created functionality to [show the credit/debit card payment option button](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#debit-or-credit-card-button) on the checkout page.
 
 ## v2.0.0
 

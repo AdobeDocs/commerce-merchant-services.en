@@ -39,14 +39,19 @@ Whether you are a small business, mid-market contender, or large enterprise, thi
 
 [!DNL Payment Services] is available for [!DNL Adobe Commerce] and [!DNL Magento Open Source]. The [!DNL Payment Services] extension is now compatible with [!DNL Adobe Commerce] versions 2.4.x.
 
-See [Lifecycle policy](https://devdocs.magento.com/release/lifecycle-policy.html){target="_blank"} and the [[!DNL Payment Services] release notes](release-notes.md) pages for more release and version-specific information.s
+Currently, [!DNL Payment Services] is available in the following countries:
 
-## Accepted credit cards and currencies
+* United States (US)
+* Canada (CA)
+* Australia (AUS)
+* France (FR)
+* United Kingdom (UK)
 
-Currently, [!DNL Payment Services] are only available in:
+See [Lifecycle policy](https://devdocs.magento.com/release/lifecycle-policy.html){target="_blank"} and the [[!DNL Payment Services] release notes](release-notes.md) pages for more release and version-specific information.
 
-* United States (US) and accepts United States Dollars (USD) currency.
-* Canada (CA) and accepts Canadian Dollars (CAD) currency.
+### Accepted credit cards and currencies
+
+[!DNL Payment Services] accepts the currencies of the countries [in which it is available](#availability).
 
 See the [PayPal currency availability](https://developer.paypal.com/docs/platforms/checkout/reference/country-availability-advanced-cards/) documentation for more information.
 
