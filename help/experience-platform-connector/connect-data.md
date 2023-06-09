@@ -174,13 +174,13 @@ To ensure that your customers order history can be sent to Experience Platform, 
 
 ### Set up the Order Sync service
 
-With the developer credentials entered, you then set up the order sync service. The order sync service uses the [Message Queue Framework](https://developer.adobe.com/commerce/php/development/components/message-queues/) and RabbitMQ. After you complete these steps, order status data can sync to SaaS, which is required before it can be sent to Experience Platform.
+After you enter developer credentials you can set up the order sync service. The order sync service uses the [Message Queue Framework](https://developer.adobe.com/commerce/php/development/components/message-queues/) and RabbitMQ. After you complete these steps, order status data can sync to SaaS, which is required before it is sent to Experience Platform.
 
 1. [Enable](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/rabbitmq.html) RabbitMQ.
 
     >[!NOTE]
     >
-    >If you are using Commerce version 2.4.7 or later, RabbitMQ is already set up. You will, however, must enable consumers.
+    >RabbitMQ is already set up for Commerce versions 2.4.7 and newer, but you must enable consumers.
 
 1. Enable message queue consumers by cron job in `.magento.env.yaml` using `CRON_CONSUMERS_RUNNER` environment variable.
 

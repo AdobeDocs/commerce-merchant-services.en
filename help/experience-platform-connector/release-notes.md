@@ -25,7 +25,7 @@ These release notes describe feature changes and fixes related to extensions use
 
 _June 10, 2023_
 
-* ![Fix](../assets/fix.svg) - Fixed an issue when `orderId` was not passing in the context due to prefixes in the Commerce order identifier
+* ![Fix](../assets/fix.svg) - Fixed an issue when `orderId` was not passing in the context due to prefixes in the Commerce order identifier.
 * ![Fix](../assets/fix.svg) - Updated Content Security Policy configurations.
 
 _March 30, 2023_
