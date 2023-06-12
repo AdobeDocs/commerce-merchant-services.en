@@ -25,7 +25,7 @@ Prices in the Widget Product Listing Page and Popover are now converted to the D
 
 [!DNL Live Search] cannot read all configuration values. This table lists values that may be of higher interest to developers.
 
-|Magento Configuration Setting|Notes|
+|Commerce Configuration Setting|Notes|
 |---|---|
 |Stores > Configuration > Catalog > Storefront > List Mode|Renders correctly but events are not sent for some page interactions|
 |Stores > Configuration > Catalog > Catalog > Catalog Search > Maximum Query Length|Not implemented; Search Services accepts up to 255 characters|
