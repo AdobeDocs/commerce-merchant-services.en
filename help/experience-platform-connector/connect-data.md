@@ -170,6 +170,10 @@ To ensure that your customers order history can be sent to Experience Platform, 
 
     ![Experience Platform Connector Admin Configuration](./assets/epc-admin-config.png){width="700" zoomable="yes"}
 
+    >[!NOTE]
+    >
+    >For beta, Commerce uses JSON Web Tokens (JWT) credentials in the developer console. Post beta, Commerce will use OAuth 2.0 in the developer console.
+
 1. Click **Save Config**.
 
 ### Set up the Order Sync service
@@ -195,13 +199,7 @@ After you enter developer credentials you can set up the order sync service. The
     >
     >See the [deploy variables documentation](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#cron_consumers_runner) to learn about all the available configuration options.
 
-1. Install the `saas-order-sync` package from the command line:
-
-   ```bash
-   composer require magento/module-saas-order-sync
-   ```
-    
-    With the order sync service enabled, you can then specify the historical order date range in the Experience Platform connector page.
+With the order sync service enabled, you can then specify the historical order date range in the Experience Platform connector page.
 
 ### Specify order history date range
 
