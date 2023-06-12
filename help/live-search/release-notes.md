@@ -14,6 +14,11 @@ Updates include:
 ![Bug](../assets/bug.svg) Known issues
 
 
+_June 13, 2023_
+
+![New](../assets/new.svg) Live Search now supports 5 more [configuration values](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-admin/configuration.html).
+![Fix](../assets/fix.svg) Fixed an issue where some characters such as quotes or apostrophes caused ranking issues. Reindexing will solve these issues.
+
  _April 25, 2023_
 
 ![New](../assets/new.svg) Live Search customers can now take advantage of the new [SaaS price indexer](../price-index/index.md).
