@@ -57,7 +57,7 @@ composer update magento/experience-platform-connector-b2b --with-dependencies
 
 To update to a major version such as from 1.0.0 to 2.0.0, edit the project’s root [!DNL Composer] `.json` file as follows:
 
-1. Open the root `composer.json` file and search for `magento/platform-connector`.
+1. Open the root `composer.json` file and search for `magento/experience-platform-connector`.
 
 1. In the `require` section, update the version number as follows:
 
