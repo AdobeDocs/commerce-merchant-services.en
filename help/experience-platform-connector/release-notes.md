@@ -40,6 +40,14 @@ _October 12, 2022_
 
 +++
 
+## 3.0.0-beta1
+
+_June 13, 2023_
+
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.3 and newer
+
+* ![New](../assets/new.svg) - (Beta) Added ability to [send historical order](connect-data.md#beta-send-historical-order-data) data and status to the Experience Platform.
+
 ## 2.2.0
 
 _March 30, 2023_
