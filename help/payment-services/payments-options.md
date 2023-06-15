@@ -101,7 +101,7 @@ To quickly get your store into production mode you can configure _only_ PayPal p
 
 This allows you to:
 
-*  Provide a variety of payment options for your customers without applying for credit card approval through PayPal.
+*  Provide a variety of payment options for your customers, including Venmo and PayPal payment buttons, with the option to turn off PayPal hosted card fields and use an existing credit card provider.
 *  Use your existing credit card provider for credit card payments, while also utilizing PayPal's other payment options.
 *  Use PayPal's payment buttons in a region in which PayPal does not support credit cards as a payment option.
 
