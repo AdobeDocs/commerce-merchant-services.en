@@ -40,6 +40,16 @@ _October 12, 2022_
 
 +++
 
+## 3.0.0-beta2
+
+_June 13, 2023_
+
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.3 and newer
+
+* ![New](../assets/new.svg) - Added ability to [turn off sending storefront events](connect-data.md#data-collection) to the Experience Platform.
+* ![Fix](../assets/fix.svg) - Updated Content Security Policy configurations.
+
+
 ## 3.0.0-beta1
 
 _June 13, 2023_
