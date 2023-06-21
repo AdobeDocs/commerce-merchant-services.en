@@ -73,7 +73,7 @@ _February 28, 2023_
 
 [!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.3 and newer
 
-* ![New](../assets/new.svg) - Added support for PHP 8.2 for all Experience Platform connector modules
+* ![New](../assets/new.svg) - Added support for PHP 8.2 for all Experience Platform connector extensions.
 
 ## 2.1.0
 

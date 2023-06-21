@@ -39,7 +39,7 @@ The following table describes the data collected for this event.
 |`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency for the product|
 |`productImageUrl`|Main image URL of the product|
 |`selectedOptions`|Field used for a configurable product. `attribute` identifies an attribute of the configurable product, such as `size` or `color` and `value` identifies the value of the attribute such as `small` or `black`.|
-|`cartID`|The unique ID that identifies the customer’s cart|
+|`cartID`|The unique ID that identifies the customer's cart|
 
 ### openCart
 
@@ -63,7 +63,7 @@ The following table describes the data collected for this event.
 |`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency for the product|
 |`productImageUrl`|Main image URL of the product|
 |`selectedOptions`|Field used for a configurable product. `attribute` identifies an attribute of the configurable product, such as `size` or `color` and `value` identifies the value of the attribute such as `small` or `black`.|
-|`cartID`|The unique ID that identifies the customer’s cart|
+|`cartID`|The unique ID that identifies the customer's cart|
 
 ### removeFromCart
 
@@ -87,7 +87,7 @@ The following table describes the data collected for this event.
 |`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency for the product|
 |`productImageUrl`|Main image URL of the product|
 |`selectedOptions`|Field used for a configurable product. `attribute` identifies an attribute of the configurable product, such as `size` or `color` and `value` identifies the value of the attribute such as `small` or `black`.|
-|`cartID`|The unique ID that identifies the customer’s cart|
+|`cartID`|The unique ID that identifies the customer's cart|
 
 ### shoppingCartView
 
@@ -111,7 +111,7 @@ The following table describes the data collected for this event.
 |`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency for the product|
 |`productImageUrl`|Main image URL of the product|
 |`selectedOptions`|Field used for a configurable product. `attribute` identifies an attribute of the configurable product, such as `size` or `color` and `value` identifies the value of the attribute such as `small` or `black`.|
-|`cartID`|The unique ID that identifies the customer’s cart|
+|`cartID`|The unique ID that identifies the customer's cart|
 
 ### pageView
 
@@ -171,7 +171,7 @@ The following table describes the data collected for this event.
 |`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency for the product|
 |`productImageUrl`|Main image URL of the product|
 |`selectedOptions`|Field used for a configurable product. `attribute` identifies an attribute of the configurable product, such as `size` or `color` and `value` identifies the value of the attribute such as `small` or `black`.|
-|`cartID`|The unique ID that identifies the customer’s cart|
+|`cartID`|The unique ID that identifies the customer's cart|
 
 ### completeCheckout
 
@@ -318,11 +318,11 @@ Use the `uniqueIdentifier` field found in both the `searchRequestSent` and `sear
 
 |Description| XDM event name|
 |---|---|
-|Triggered by the following events in the “search as you type” popover:<br><br>Press Enter, Click _View All_<br><br>Triggered by the following events on search results pages:<br><br>Select a filter, Change the sort order (_Sort By_), Change the sort direction (ascending or descending), Change the number of results per page (_Show # per page_), Navigate to the next page, Navigate to the previous page, Navigate to a different page|`searchRequest`|
+|Triggered by the following events in the "search as you type" popover:<br><br>Press Enter, Click _View All_<br><br>Triggered by the following events on search results pages:<br><br>Select a filter, Change the sort order (_Sort By_), Change the sort direction (ascending or descending), Change the number of results per page (_Show # per page_), Navigate to the next page, Navigate to the previous page, Navigate to a different page|`searchRequest`|
 
 >[!NOTE]
 >
->Search events are not supported on an Adobe Commerce Enterprise Edition with the B2B module installed.
+>Search events are not supported on an Adobe Commerce Enterprise Edition with the B2B extension installed.
 
 #### Data collected from searchRequestSent
 
@@ -345,11 +345,11 @@ The following table describes the data collected for this event.
 
 |Description| XDM event name|
 |---|---|
-|Triggered when Live Search returns results for the “search as you type” popover or search results page.|`searchResponse`|
+|Triggered when Live Search returns results for the "search as you type" popover or search results page.|`searchResponse`|
 
 >[!NOTE]
 >
->Search events are not supported on an Adobe Commerce Enterprise Edition with the B2B module installed.
+>Search events are not supported on an Adobe Commerce Enterprise Edition with the B2B extension installed.
 
 #### Data collected from searchResponseReceived
 
