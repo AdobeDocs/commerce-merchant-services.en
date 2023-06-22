@@ -40,7 +40,7 @@ _October 12, 2022_
 
 +++
 
-## 3.0.0-beta2
+## 2.3.0
 
 _June 27, 2023_
 
@@ -48,15 +48,16 @@ _June 27, 2023_
 
 * ![New](../assets/new.svg) - Added ability to [turn off sending storefront events](connect-data.md#data-collection) to the Experience Platform.
 * ![Fix](../assets/fix.svg) - Updated Content Security Policy configurations.
+* ![Fix](../assets/fix.svg) - Fixed support for back office events on Commerce 2.4.7 version.
 
 
-## 3.0.0-beta1
+## 3.0.0-beta1 (internal only)
 
 _June 13, 2023_
 
 [!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.3 and newer
 
-* ![New](../assets/new.svg) - (Beta) Added ability to [send historical order](connect-data.md#beta-send-historical-order-data) data and status to the Experience Platform.
+* ![New](../assets/new.svg) - (Beta) Added ability to [send historical order](connect-data.md#beta-send-historical-order-data) data and status to the Experience Platform. This feature is available for beta users only. You can join the beta by sending an email to the following address: [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
 
 ## 2.2.0
 
