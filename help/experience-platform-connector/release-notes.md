@@ -30,13 +30,13 @@ _June 10, 2023_
 
 _March 30, 2023_
 
-* ![New](../assets/new.svg) - Added a new extension called `data-services-b2b` that includes [requisition list events](events.md#b2b-events) for B2B merchants
+* ![New](../assets/new.svg) - Added a new extension called `data-services-b2b` that includes [requisition list events](events.md#b2b-events) for B2B merchants.
 * ![New](../assets/new.svg) - Added the `uniqueIdentifier` field to [search](events.md#search-events) events. This new field allows merchants to cross reference which search requests correspond to which search responses.
 
 _October 12, 2022_
 
-* ![New](../assets/new.svg) - Added two [storefront events](events.md): `openCart` and `removeFromCart` to the Adobe Commerce Storefront Events SDK and Collector
-* ![New](../assets/new.svg) - Added support for an [AEM storefront](overview.md#aem-support)
+* ![New](../assets/new.svg) - Added two [storefront events](events.md): `openCart` and `removeFromCart` to the Adobe Commerce Storefront Events SDK and Collector.
+* ![New](../assets/new.svg) - Added support for an [AEM storefront](overview.md#aem-support).
 
 +++
 
@@ -99,8 +99,8 @@ _October 12, 2022_
 
 [!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.3 and newer
 
-* ![New](../assets/new.svg) - Added ability to specify your own AEP Web SDK when [connecting](connect-data.md) your Adobe Commerce instance to the Experience Platform
-* ![Fix](../assets/fix.svg) - Updated datastream scope requirement so that datastream IDs must be scoped to the website rather than storeview
+* ![New](../assets/new.svg) - Added ability to specify your own AEP Web SDK when [connecting](connect-data.md) your Adobe Commerce instance to the Experience Platform.
+* ![Fix](../assets/fix.svg) - Updated datastream scope requirement so that datastream IDs must be scoped to the website rather than storeview.
 
 ## 1.0.0
 
@@ -108,4 +108,4 @@ _August 9, 2022_
 
 [!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.3 and newer
 
-* ![New](../assets/new.svg) - General availability release
+* ![New](../assets/new.svg) - General availability release.
