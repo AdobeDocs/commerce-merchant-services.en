@@ -24,7 +24,7 @@ You can download the Transactions report in a .csv file format for use in existi
 
 ## Availability
 
-On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Transactions]** to see the transactions for your orders.
+On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Transactions]** > **[!UICONTROL View Report]** to see the transactions for your orders.
 
 ![Order payment statuses in the Admin](assets/order-payment-status-report.png) REPLACE
 
@@ -53,7 +53,7 @@ To select the data source for your [!UICONTROL Transactions] report:
 
 From the Transactions report view, you can customize the timeframe of the transactions you want to view by selecting specific dates. By default, 30 days of transactions are shown in the grid.
 
-1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Transactions]**.
+1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Transactions]** > **[!UICONTROL View Report]**.
 1. Click the **[!UICONTROL Transaction dates]** calendar selector filter.
 1. Choose the applicable date range.
 1. View the transactions for your specified dates in the grid.
@@ -62,21 +62,22 @@ From the Transactions report view, you can customize the timeframe of the transa
 
 The Transactions report shows all available columns of information by default. You can, however, customize which columns you see in your report.
 
-1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Transactions]**.
+1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Transactions]** > **[!UICONTROL View Report]**.
 1. Click the _Column settings_ icon ![column settings icon](assets/column-settings.png){width="25"}.
 1. To customize which columns that you see in the report, check or uncheck columns in the list.
 
    The Transactions report immediately shows any changes you made in the Column settings menu. The column preferences are saved and remain in effect if you navigate away from the report view.
 
-## Download transactions
+## Update report data
 
-You can download a .csv file with all transactions visible in the transactions view grid, whether you are viewing the default 30 days of transactions or a customized timeframe.
+The Transactions report view shows a _[!UICONTROL Last updated]_ timestamp that shows the last time that the report information was updated. By default, Transactions report data is auto-refreshed every three hours.
 
-1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Transactions]**.
-1. If you want to see transactions for a timeframe other than the last 30 days, [customize the date range timeframe for your statuses](#customize-dates-timeframe).
-1. Click the _Download_ ![download icon](assets/icon-download.png){width="25"} icon.
+You can also manually force a refresh of the report data to see the most up-to-date report information.
 
-Your transactions are downloaded in a .csv format.
+1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Transactions]** > **[!UICONTROL View Report]**.
+1. Click the _Refresh_ icon (![refresh icon](assets/refresh-button-med.png)).
+
+   The Transactions report data is refreshed, an *[!UICONTROL Update complete]* confirmation appears, and the latest information is present in the grid.
 
 ## Transactions information
 
@@ -90,7 +91,8 @@ Transactions reports include the following information.
 
 | Column | Description |
 | ------------ | -------------------- |
-| [!UICONTROL Provider Transaction ID] | Transaction ID provided by the payment provider; contains only values for successful transactions and is empty for rejected transactions. |
+| [!UICONTROL Order ID] | Commerce order ID (contains only values for successful transactions and is empty for rejected transactions)<br> <br>To see related [order info](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"}, click the ID. |
+| [!UICONTROL Provider Transaction ID] | Transaction ID provided by the payment provider; contains only values for successful transactions and contains a dash for rejected transactions. |
 | [!UICONTROL Transaction Date] | Transaction date timestamp |
 | [!UICONTROL Payment Method] |  Payment method of transaction; available for Payment Services versions 1.6.0 and newer |
 | [!UICONTROL Result] | The result of the transaction---*[!UICONTROL OK]* (successful transaction), *[!UICONTROL Rejected by Payment Provider]* (rejected by PayPal), *[!UICONTROL Rejected by Bank]* (rejected by bank that issued card) |
@@ -113,3 +115,13 @@ The _Response Code_ column shows a specific error or success code related to the
 * `5650`---Transaction was declined by the associated bank because the bank requires strong customer authentication ([3DS](security.md#3ds)).
 
 Detailed error response codes for failed transactions are available for transactions newer than June 1, 2023. Partial report data will appear for transactions that occurred before June 1, 2023.
+
+## Download transactions
+
+You can download a .csv file with all transactions visible in the transactions view grid, whether you are viewing the default 30 days of transactions or a customized timeframe.
+
+1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Transactions]**.
+1. If you want to see transactions for a timeframe other than the last 30 days, [customize the date range timeframe for your statuses](#customize-dates-timeframe).
+1. Click the _Download_ ![download icon](assets/icon-download.png){width="25"} icon.
+
+Your transactions are downloaded in a .csv format.

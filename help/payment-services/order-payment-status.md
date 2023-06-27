@@ -7,7 +7,7 @@ exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
 ---
 # Order Payment Status Report
 
-[!DNL Payment Services] for [!DNL Adobe Commerce] and [!DNL Magento Open Source] offers you comprehensive reporting so that you can get a clear view of your store's transactions, orders, and payments.
+[!DNL Payment Services] for [!DNL Adobe Commerce] and [!DNL Magento Open Source] offers you comprehensive reporting so that you can get a clear view of your store's [transactions](transactions.md), orders, and payments.
 
 ![Financial reports view](assets/reports-justpayouts.png)
 
@@ -17,7 +17,7 @@ You don't have to open multiple views to manually cross reference orders and pay
 
 See payment statuses, invoiced and shipped statuses, refund statuses, dispute statuses, and more, all within this report in the Admin.
 
-You can [download Order payment status transactions](#download-order-payment-statuses) in a .csv file format for use in existing accounting or order management software.
+You can [download Order payment statuses](#download-order-payment-statuses) in a .csv file format for use in existing accounting or order management software.
 
 >[!NOTE]
 >
@@ -82,10 +82,20 @@ To select the data source for your [!UICONTROL Order Payment Status] report:
 
 From the Order payment status report view, you can customize the timeframe of the statuses you want to view by selecting specific dates. By default, 30 days of order payment statuses are shown in the grid.
 
-1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
+1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]** > **[!UICONTROL View Report]**.
 1. Click the **[!UICONTROL Order dates]** calendar selector filter.
 1. Choose the applicable date range.
 1. View the order payment statuses for your specified dates in the grid.
+
+## Filter report info
+
+From the Order payment status report view, you can filter the statuses results you want to view by selecting filter criteria.
+
+1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]** > **[!UICONTROL View Report]**.
+1. Click the **[!UICONTROL Filter]** icon selector.
+1. Toggle _Pay Status_ to see report results for only selected order payment statuses.
+1. Enter a _Min Order Amount_ or _Max Order Amount_ to see report results within that order amount range.
+1. Click **[!UICONTROL Hide filters]** to hide the filter.
 
 ## Show and hide columns
 
@@ -99,9 +109,7 @@ The Order Payment Status report shows all available columns of information by de
 
 ## View statuses
 
-The Order payment status report view shows comprehensive transaction status and pay status information for each Payment Services order.
-
-### Transaction status
+The Order payment status report view shows comprehensive pay status information for each Payment Services order.
 
 By default, 30 days of order payment statuses are shown in the grid.
 
