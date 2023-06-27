@@ -101,6 +101,16 @@ You can also manually force a refresh of the report data to see the most up-to-d
 
    The Transactions report data is refreshed, an *[!UICONTROL Update complete]* confirmation appears, and the latest information is present in the grid.
 
+### Download transactions
+
+You can download a .csv file with all transactions visible in the transactions view grid, whether you are viewing the default 30 days of transactions or a customized timeframe.
+
+1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Transactions]**.
+1. If you want to see transactions for a timeframe other than the last 30 days, [customize the date range timeframe for your statuses](#customize-dates-timeframe).
+1. Click the _Download_ ![download icon](assets/icon-download.png){width="25"} icon.
+
+Your transactions are downloaded in a .csv format.
+
 ### Column descriptions
 
 Transactions reports include the following information.
@@ -132,12 +142,3 @@ The _Response Code_ column shows a specific error or success code related to the
 
 Detailed error response codes for failed transactions are available for transactions newer than June 1, 2023. Partial report data will appear for transactions that occurred before June 1, 2023.
 
-### Download transactions
-
-You can download a .csv file with all transactions visible in the transactions view grid, whether you are viewing the default 30 days of transactions or a customized timeframe.
-
-1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Transactions]**.
-1. If you want to see transactions for a timeframe other than the last 30 days, [customize the date range timeframe for your statuses](#customize-dates-timeframe).
-1. Click the _Download_ ![download icon](assets/icon-download.png){width="25"} icon.
-
-Your transactions are downloaded in a .csv format.

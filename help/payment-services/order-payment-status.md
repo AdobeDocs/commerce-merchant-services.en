@@ -134,7 +134,7 @@ From the Order payment status report view, you can customize the timeframe of th
 1. Choose the applicable date range.
 1. View the order payment statuses for your specified dates in the grid.
 
-## Filter report info
+### Filter report info
 
 From the Order payment status report view, you can filter the statuses results you want to view by selecting filter criteria.
 
@@ -144,7 +144,7 @@ From the Order payment status report view, you can filter the statuses results y
 1. Enter a _Min Order Amount_ or _Max Order Amount_ to see report results within that order amount range.
 1. Click **[!UICONTROL Hide filters]** to hide the filter.
 
-## Show and hide columns
+### Show and hide columns
 
 The Order Payment Status report shows all available columns of information by default. You can, however, customize which columns you see in your report.
 
