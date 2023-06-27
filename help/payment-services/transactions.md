@@ -22,19 +22,29 @@ You can download the Transactions report in a .csv file format for use in existi
 >
 >You cannot view financial reports if you have not [onboarded and activated Live mode](production.md#enable-live-payments) for [!DNL Payment Services].
 
-## Availability
+## Transactions report view
 
-On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Transactions]** > **[!UICONTROL View Report]** to see the transactions for your orders.
+The Transactions report view is available in the Transactions view of Payment Services. It includes all available information about transactions for your store(s).
 
-![Order payment statuses in the Admin](assets/order-payment-status-report.png) REPLACE
+On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Transactions]_ > **[!UICONTROL View Report]** to see the detailed tabular Transactions report view.
 
-## Select data source
+![Transactions in the Admin](assets/payouts-report-new.png){zoomable=yes} REPLACE
 
-In the Transactions report view, you can select the data source---_[!UICONTROL Live]_ or _[!UICONTROL Sandbox]_---for which you want to see report results.
+You can configure this view, per the sections in this topic, to best present the data you desire to see.
+
+See linked Commerce order and provider transaction IDs, transaction amounts, payment method per transaction, and more, all within this report.
+
+Not all payment methods provide the same granularity of information. For instance, credit card transactions provide response, AVS, and CCV codes in the Transactions report; PayPal Smart buttons do not.
+
+You can [download transactions](#download-transactions) in a .csv file format for use in existing accounting or order management software.
+
+### Select data source
+
+In the Transactions report view, you can select the data source---**[!UICONTROL Live]** or **[!UICONTROL Sandbox]**---for which you want to see report results.
 
 ![Data sources selection](assets/datasource.png){width="400"}
 
-If _[!UICONTROL Live]_ is the selected data source, you can see report information for your stores that use [!DNL Payment Services] in production mode. If [!UICONTROL Sandbox] is the selected data source, you can see report information for your sandbox mode.
+If _[!UICONTROL Live]_ is the selected data source, you can see report information for your stores that use [!DNL Payment Services] in production mode. If _[!UICONTROL Sandbox]_ is the selected data source, you can see report information for your sandbox mode.
 
 Data source selections work as follows:
 
@@ -44,46 +54,52 @@ Data source selections work as follows:
 
 To select the data source for your [!UICONTROL Transactions] report:
 
-1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Transactions]**.
-1. Click **[!UICONTROL Data source]** and select _[!UICONTROL Live]_ or _[!UICONTROL Sandbox]_.
+1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_ > **[!UICONTROL View Report]**.
+1. Click **[!UICONTROL Data source]** and select **[!UICONTROL Live]** or **[!UICONTROL Sandbox]**.
 
    The report results regenerate based on the data source selected.
 
-## Customize dates timeframe
+### Customize dates timeframe
 
 From the Transactions report view, you can customize the timeframe of the transactions you want to view by selecting specific dates. By default, 30 days of transactions are shown in the grid.
 
-1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Transactions]** > **[!UICONTROL View Report]**.
+1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_ > **[!UICONTROL View Report]**.
 1. Click the **[!UICONTROL Transaction dates]** calendar selector filter.
 1. Choose the applicable date range.
 1. View the transactions for your specified dates in the grid.
 
-## Show and hide columns
+### Filter report info
+
+From the Transactions report view, you can filter the statuses results you want to view by selecting filter criteria.
+
+1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_ > **[!UICONTROL View Report]**.
+1. Click the **[!UICONTROL Filter]** selector.
+1. Toggle the _[!UICONTROL Transaction Result]_ options to see report results for only selected order transactions.
+1. Toggle the _[!UICONTROL Payment Method]_ options to see report results for only selected payment methods.
+1. Enter a _Min Order Amount_ or _Max Order Amount_ to see report results within that order amount range.
+1. Enter an _[!UICONTROL Order ID]_ to search for a specific transaction.
+1. Click **[!UICONTROL Hide filters]** to hide the filter.
+
+### Show and hide columns
 
 The Transactions report shows all available columns of information by default. You can, however, customize which columns you see in your report.
 
-1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Transactions]** > **[!UICONTROL View Report]**.
-1. Click the _Column settings_ icon ![column settings icon](assets/column-settings.png){width="25"}.
+1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_ > **[!UICONTROL View Report]**.
+1. Click the **[!UICONTROL Column settings]** icon ![column settings icon](assets/column-settings.png){width="25"}.
 1. To customize which columns that you see in the report, check or uncheck columns in the list.
 
    The Transactions report immediately shows any changes you made in the Column settings menu. The column preferences are saved and remain in effect if you navigate away from the report view.
 
-## Update report data
+### Update report data
 
 The Transactions report view shows a _[!UICONTROL Last updated]_ timestamp that shows the last time that the report information was updated. By default, Transactions report data is auto-refreshed every three hours.
 
 You can also manually force a refresh of the report data to see the most up-to-date report information.
 
-1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Transactions]** > **[!UICONTROL View Report]**.
+1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_ > **[!UICONTROL View Report]**.
 1. Click the _Refresh_ icon (![refresh icon](assets/refresh-button-med.png)).
 
    The Transactions report data is refreshed, an *[!UICONTROL Update complete]* confirmation appears, and the latest information is present in the grid.
-
-## Transactions information
-
-The Transactions view shows extensive info for each transaction shown in the grid.
-
-Not all payment methods provide the same granularity of information. For instance, credit card transactions provide response, AVS, and CCV codes in the Transactions report; PayPal Smart buttons do not.
 
 ### Column descriptions
 
@@ -116,7 +132,7 @@ The _Response Code_ column shows a specific error or success code related to the
 
 Detailed error response codes for failed transactions are available for transactions newer than June 1, 2023. Partial report data will appear for transactions that occurred before June 1, 2023.
 
-## Download transactions
+### Download transactions
 
 You can download a .csv file with all transactions visible in the transactions view grid, whether you are viewing the default 30 days of transactions or a customized timeframe.
 

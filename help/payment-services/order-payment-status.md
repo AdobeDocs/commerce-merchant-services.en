@@ -11,8 +11,8 @@ exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
 
 There are two available Order payment status reporting views to enable you to quickly view the payment status of your orders:
 
-*  **[Order payment status visualization view](#order-payment-status-data-visualization-view)**---Chart available on the Payment Services Home that is a visual representation of aggregated payment statuses per day from the Order payment status report view
-*  **[Order payment status report view](#order-payment-status-report-view)**---Report available in Order payment status that shows detailed payment, invoiced, shipped, refund, and dispute statues for all transactions
+* **[Order payment status visualization view](#order-payment-status-data-visualization-view)**---Chart available on the Payment Services Home that is a visual representation of aggregated payment statuses per day from the Order payment status report view
+* **[Order payment status report view](#order-payment-status-report-view)**---Report available in Order payment status that shows detailed payment, invoiced, shipped, refund, and dispute statues for all transactions
 
 The Order payment status views help you easily understand where a specific order is within the order to cash process flow. These reports allow you to quickly view orders---based on their payment status and payment date---and identify any potential issues.
 
@@ -64,7 +64,7 @@ The Order payment status data visualization view includes the following informat
 
 The Order payment status report view is available in the Home view of Payment Services. It includes detailed statuses---payment, invoiced, shipped, refund, dispute, and more---for all transactions.
 
-On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Orders]** > **[!UICONTROL View Report]** to see the detailed tabular Order payment status report view.
+On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Orders]_ > **[!UICONTROL View Report]** to see the detailed tabular Order payment status report view.
 
 ![Order payment status transactions in the Admin](assets/orders-report-data.png)
 
@@ -129,7 +129,7 @@ To select the data source for your [!UICONTROL Order Payment Status] report:
 
 From the Order payment status report view, you can customize the timeframe of the statuses you want to view by selecting specific dates. By default, 30 days of order payment statuses are shown in the grid.
 
-1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]** > **[!UICONTROL Orders]** > **[!UICONTROL View Report]**.
+1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_ > **[!UICONTROL View Report]**.
 1. Click the _[!UICONTROL Order dates]_ calendar selector filter.
 1. Choose the applicable date range.
 1. View the order payment statuses for your specified dates in the grid.
@@ -138,7 +138,7 @@ From the Order payment status report view, you can customize the timeframe of th
 
 From the Order payment status report view, you can filter the statuses results you want to view by selecting filter criteria.
 
-1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Orders]** > **[!UICONTROL View Report]**.
+1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_ > **[!UICONTROL View Report]**.
 1. Click the **[!UICONTROL Filter]** selector.
 1. Toggle the _Pay Status_ options to see report results for only selected order payment statuses.
 1. Enter a _Min Order Amount_ or _Max Order Amount_ to see report results within that order amount range.
@@ -148,7 +148,7 @@ From the Order payment status report view, you can filter the statuses results y
 
 The Order Payment Status report shows all available columns of information by default. You can, however, customize which columns you see in your report.
 
-1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Orders]** > **[!UICONTROL View Report]**.
+1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_ > **[!UICONTROL View Report]**.
 1. Click the _Column settings_ icon (![column settings icon](assets/column-settings.png)).
 1. To customize which columns you see in the report, check or uncheck columns in the list.
 
@@ -178,7 +178,7 @@ The Order payment status report view shows a _[!UICONTROL Last updated]_ timesta
 
 You can also manually force a refresh of the Order payment status report data to see the most up-to-date report information.
 
-1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Orders]** > **[!UICONTROL View Report]**.
+1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_ > **[!UICONTROL View Report]**.
 1. Click the _Refresh_ icon (![refresh icon](assets/refresh-button-med.png)).
 
    The Order payment status report data is refreshed, an *[!UICONTROL Update complete]* confirmation appears, and the latest information is present in the grid.
@@ -187,7 +187,7 @@ You can also manually force a refresh of the Order payment status report data to
 
 You can view any disputes on your store's orders, and navigate to the PayPal Resolution Center to take action on them, from within the Order payment status report.
 
-1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]** > **[!UICONTROL Orders]** > **[!UICONTROL View Report]**.
+1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_ > **[!UICONTROL View Report]**.
 1. Navigate to the **[!UICONTROL Disputes column]**.
 1. View any disputes for a specific order and see [the dispute status](#order-payment-status-information).
 1. Click the dispute ID link (beginning with _PP-D-_) to go to the [PayPal Resolution Center](https://www.paypal.com/us/smarthelp/article/what-is-the-resolution-center-faq3327).
@@ -199,13 +199,13 @@ You can view any disputes on your store's orders, and navigate to the PayPal Res
 
 You can download a .csv file with all statuses visible in the Order payment status view grid, whether you are viewing the default 30 days of statuses or a customized timeframe.
 
-1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]** > **[!UICONTROL Orders]** > **[!UICONTROL View Report]**.
+1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_ > **[!UICONTROL View Report]**.
 1. If you want to see statuses for a timeframe other than the last 30 days, [customize the date range timeframe for your statuses](#customize-dates-timeframe).
 1. Click the _Download_ (![download icon](assets/icon-download.png)) icon.
 
 Your order payment statuses are downloaded in a .csv format.
 
-#### Statuses information
+### Column descriptions
 
 Order payment status reports include the following information.
 
