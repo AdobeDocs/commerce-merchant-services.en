@@ -105,4 +105,4 @@ To connect your Adobe Commerce instance to the Adobe Experience Platform, sign i
 
 ## Catalog sync
 
-When your [!DNL Commerce] instance successfully connects to [!DNL Commerce Services], the catalog sync process exports product data from your [!DNL Commerce] server to [!DNL Commerce Services]. [Learn more](catalog-sync.md) about the catalog sync process.
+When your [!DNL Commerce] instance successfully connects to [!DNL Commerce Services], the catalog sync process exports product data from your [!DNL Commerce] server to [!DNL Commerce Services]. Currently, only Product Recommendations uses the catalog sync service. [Learn more](catalog-sync.md) about the catalog sync process.

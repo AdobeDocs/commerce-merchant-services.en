@@ -80,6 +80,10 @@ Store owners can set up the following types of ranking strategies:
 
 1. Select the type of strategy for the rule. The Test Your Rule window displays the expected results.
 
+>[!NOTE]
+>
+>Apostrophes and quotes in queries may lead to some minor issues with ranking and relevance in some languages.
+
 ## Adding events
 
 Events are actions that modify the search results when defined conditions are met. A single rule can have up to 25 events.

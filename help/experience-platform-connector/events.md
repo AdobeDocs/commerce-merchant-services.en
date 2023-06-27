@@ -11,7 +11,7 @@ In addition to the data the following events collect, you also get [other data](
 
 ## Storefront events
 
-The storefront events collect anonymized behavioral data from your shoppers as they browse your site. The data these events collect can be used to create promotions and campaigns targeted to a specific set of shoppers.
+The storefront events collect anonymized behavioral data from your shoppers as they browse your site. You can use the data these events collect to create promotions and campaigns targeted to a specific set of shoppers. Storefront event data includes simple and configurable products only.
 
 >[!NOTE]
 >

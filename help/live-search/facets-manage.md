@@ -57,6 +57,10 @@ The pin changes color when clicked and is used to move the facet to either the *
 
       ![Pinned and dynamic facets](assets/facets-pinned-unpinned.png)
 
+>[!NOTE]
+>
+>Pinned facet ordering may be inconsistent if there are two labels with the same name.
+
 ## Move pinned facet
 
 >[!NOTE]

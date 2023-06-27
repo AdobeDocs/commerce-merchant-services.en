@@ -9,13 +9,12 @@ exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
 
 [!DNL Payment Services] for [!DNL Adobe Commerce] and [!DNL Magento Open Source] offers you comprehensive reporting so that you can get a clear view of your store's [transactions](transactions.md), orders, and payments.
 
-![Financial reports view](assets/reports-justpayouts.png)
+There are two available Order payment status reporting views to enable you to quickly view the payment status of your orders:
 
-The Order payment status report helps you easily understand where a specific order is within the order to cash process flow. This report allows you to quickly view the payment status of your orders and identify any potential issues.
+*  **[Order payment status visualization view](#order-payment-status-data-visualization-view)**---Chart available on the Payment Services Home that is a visual representation of aggregated payment statuses per day from the Order payment status report view
+*  **[Order payment status report view](#order-payment-status-report-view)**---Report available in Order payment status that shows detailed payment, invoiced, shipped, refund, and dispute statues for all transactions
 
-You don't have to open multiple views to manually cross reference orders and payments. [!DNL Payment Services] for [!DNL Adobe Commerce] and [!DNL Magento Open Source] enables you to get a bird's-eye-view of your orders and payments---all within the Order payment status report.
-
-See payment statuses, invoiced and shipped statuses, refund statuses, dispute statuses, and more, all within this report in the Admin.
+The Order payment status views help you easily understand where a specific order is within the order to cash process flow. These reports allow you to quickly view orders---based on their payment status and payment date---and identify any potential issues.
 
 You can [download Order payment statuses](#download-order-payment-statuses) in a .csv file format for use in existing accounting or order management software.
 
@@ -23,9 +22,63 @@ You can [download Order payment statuses](#download-order-payment-statuses) in a
 >
 >You cannot view financial reports if you have not [onboarded and activated Live mode](production.md#enable-live-payments) for [!DNL Payment Services].
 
-## Data used in the report
+## Order payment status data visualization view
 
-The [!DNL Payment Services] module uses order data, and combine it with aggregated payment data from other sources (including PayPal), to provide meaningful and highly useful reports.
+The Order payment status data visualization view is available in the Payment Services Home. It is a visual representation of the aggregated payment statuses per day from the detailed tabular [Order payment status report view](#order-payment-status-report-view).
+
+On the _Admin_ sidebar, go to **Sales** > **Payment Services** to see the data visualization [chart of payment statuses](#statuses-information).
+
+![Payout data visualization in the Admin](assets/orderpayment-dataviz.png){zoomable=yes}
+
+Click **View Report** to navigate to the detailed tabular [Order payment status report view](#order-payment-status-report-view).
+
+### Customize statuses timeframe
+
+By default, 30 days of payment statuses are shown.
+
+From the Order payment status visualization view, you can customize the timeframe for the payment statuses you want to view by selecting a date range:
+
+1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**. The Order payment status data visualization view is visible in the Order payment status section.
+1. Click the **[!UICONTROL Range]** selector filter.
+1. Choose the applicable date range---30 days, 15 days, or 7 days.
+1. View the statuses info for your specified dates.
+
+### Statuses information
+
+The payment statuses for a selected date range are shown on the left of the Order payment status data visualization view. The dates for the selected date range are shown on the bottom of the view. If there were no orders on a particular date, that date will not appear.
+
+The Order payment status data visualization view includes the following information.
+
+| Data | Description |
+| ------------ | -------------------- |
+| [!UICONTROL Orders] | Amount range for orders in specified time frame; data on the Y axis (left) |
+| Date range | Date range for the specified time frame; data on the X axis (bottom) |
+| Authorized | Order authorized |
+| Capture requested | Capture requested for order |
+| Capture confirmed | Order capture completed |
+| Partial capture | Order partially captured |
+| Capture failed | Order capture failed |
+| Voided | Order voided |
+
+## Order payment status report view
+
+The Order payment status report view is available in the Order payment status view of Payment Services. It includes detailed statuses---payment, invoiced, shipped, refund, dispute, and more---for all transactions. The [Order payment status data visualization view](#order-payment-status-data-visualization-view) in Payment Services Home is a visual representation of aggregated payment statuses per day from the Order payment status report view.
+
+On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Order payment status]** to see the detailed tabular Order payment status report view.
+
+![Order payment status transactions in the Admin](assets/orders-report-data.png)
+
+You can configure this view, per the sections in this topic, to best present the data you desire to see.
+
+You can [download payout transactions](#download-order-payment-statuses) in a .csv file format for use in existing accounting or order management software.
+
+>[!NOTE]
+>
+>The data shown in this table is sorted in descending order (`DESC`) by default using the `TRANS DATE`. The `TRANS DATE` is the date and time when the transaction was initiated.
+
+### Data used in the report
+
+The [!DNL Payment Services] module uses order data, and combines it with aggregated payment data from other sources (including PayPal), to provide meaningful and highly useful reports.
 
 Order data is exported and persisted in the payment service. When you [change or add order statuses](https://docs.magento.com/user-guide/sales/order-status-custom.html){target="_blank"} or [edit a store view](https://docs.magento.com/user-guide/stores/stores-all-view-edit.html){target="_blank"}, [store](https://docs.magento.com/user-guide/stores/store-information.html){target="_blank"}, or website name, that data is combined with payment data and the Order payment status report is populated with the combined info.
 
@@ -43,7 +96,7 @@ The only data that is exported and collated for reporting purposes is data used 
 >
 >The data shown in this table is sorted in descending order (`DESC`) by default using the `ORDER DATE`. The `ORDER DATE` is the date timestamp when the order was created.
 
-### Configure data export
+#### Configure data export
 
 Even though, by default, reindexing happens in `ON SAVE` mode, it is recommended that you index in `BY SCHEDULE` mode. The `BY SCHEDULE` index runs on a cron schedule of one minute, and any changed data appears in your Order status report within two minutes of any data change. This scheduled reindexing helps you reduce any strain on your store, especially if you have a large volume of incoming orders, because it happens on a schedule (not as each order is placed).
 
@@ -51,19 +104,13 @@ You can change the index mode---`ON SAVE` or `BY SCHEDULE`---[in the Admin](http
 
 To learn how to configure the data export, see [Command-line configuration](configure-cli.md#configure-data-export).
 
-## Availability
-
-On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Order payment status]** to see the payment statuses for your orders.
-
-![Order payment statuses in the Admin](assets/order-payment-status-report.png)
-
-## Select data source
+### Select data source
 
 In the Order payment status report view, you can select the data source---_[!UICONTROL Live]_ or _[!UICONTROL Sandbox]_---for which you want to see report results.
 
-![Data sources selection](assets/datasource.png)
+![Data sources selection](assets/datasource.png){width=400px}
 
-If _[!UICONTROL Live]_ is the selected data source, you can see report information for your stores that use [!DNL Payment Services] in _[!UICONTROL Live]_ mode. If [!UICONTROL Sandbox]_ is the selected data source, you can see report information for your Sandbox environment.
+If _[!UICONTROL Live]_ is the selected data source, you can see report information for your stores that use [!DNL Payment Services] in production mode. If _[!UICONTROL Sandbox]_ is the selected data source, you can see report information for sandbox mode.
 
 Data source selections work as follows:
 
@@ -78,7 +125,7 @@ To select the data source for your [!UICONTROL Order Payment Status] report:
 
    The report results regenerate based on the data source selected.
 
-## Customize dates timeframe
+### Customize dates timeframe
 
 From the Order payment status report view, you can customize the timeframe of the statuses you want to view by selecting specific dates. By default, 30 days of order payment statuses are shown in the grid.
 
@@ -107,7 +154,7 @@ The Order Payment Status report shows all available columns of information by de
 
    The Order payment status report will immediately show any changes you made in the Column settings menu. The column preferences will be saved and will remain in effect if you navigate away from the report view.
 
-## View statuses
+### View statuses
 
 The Order payment status report view shows comprehensive pay status information for each Payment Services order.
 
@@ -117,15 +164,15 @@ Scroll to the left and right to view [order payment status information](#column-
 
 The number of rows returned in a search, or shown in the default 30 days of order payment statuses, are shown above the Order payment status view grid alongside the Order dates calendar selector filter.
 
-### Pay status
+#### Pay status
 
 The Pay status column shows the current status for any payment. A `Capture failed` payment shows a red alert status and a `Voided` payment shows a gray alert status.
 
-### Refund status
+#### Refund status
 
 The Refund status column shows the current status for any refund. A `Capture failed` payment shows a red alert status and a `Voided` payment shows a gray alert status.
 
-## Update report data
+### Update report data
 
 The Order payment status report view shows a _[!UICONTROL Last updated]_ timestamp that shows the last time that the report information was updated. By default, Order payment status report data is auto-refreshed every three hours.
 
@@ -136,7 +183,7 @@ You can also manually force a refresh of the Order payment status report data to
 
    The Order payment status report data is refreshed, an *[!UICONTROL Update complete]* confirmation appears, and the latest information is present in the grid.
 
-## View disputes
+### View disputes
 
 You can view any disputes on your store's orders, and navigate to the PayPal Resolution Center to take action on them, from within the Order payment status report.
 
@@ -148,7 +195,7 @@ You can view any disputes on your store's orders, and navigate to the PayPal Res
 
    To sort order disputes by status, click the Disputes column header.
 
-## Download order payment statuses
+### Download order payment statuses
 
 You can download a .csv file with all statuses visible in the Order payment status view grid, whether you are viewing the default 30 days of statuses or a customized timeframe.
 
@@ -173,11 +220,7 @@ These order payment status timeframes are currently available in [!DNL Payment S
 | Custom range | Available from the Order payment status dates selector, this can be filtered to show a custom date range. |
 -->
 
-## Order payment status information
-
-The Order payment status view shows extensive info for each status shown in the grid.
-
-### Column descriptions
+#### Statuses information
 
 Order payment status reports include the following information.
 

@@ -14,4 +14,4 @@ The merchant can enable [!DNL Bolt] as a payment method even if the shopper is n
 
 See the [[!DNL Bolt] Payment Methods](https://help.bolt.com/shoppers/guides/checkout/update-payment-method) page for more information on updating a payment method with [!DNL Bolt].
 
-[!DNL Bolt] is compatible with different payment providers in Adobe Commerce, see [[!DNL Bolt] payment processors](https://help.bolt.com/merchants/guides/merchant-setup/checkout/processor-guides/).
+[!DNL Bolt] is compatible with different payment providers in Adobe Commerce, see [[!DNL Bolt] payment processors](https://help.bolt.com/connectors/payment-processors/).
