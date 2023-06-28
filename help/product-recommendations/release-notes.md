@@ -21,10 +21,6 @@ The release notes include:
 See the developer documentation to [learn about product compatibility](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 
 ## Current major version
-
- _June 13th, 2023_
-
- ![New](../assets/new.svg) Introduced the [`recommendations`](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations/) GraphQL API.
  
  _April 25, 2023_
 
