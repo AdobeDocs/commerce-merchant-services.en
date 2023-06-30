@@ -49,6 +49,7 @@ _June 27, 2023_
 * ![New](../assets/new.svg) - Added ability to [turn off sending storefront events](connect-data.md#data-collection) to the Experience Platform.
 * ![Fix](../assets/fix.svg) - Updated Content Security Policy configurations.
 * ![Fix](../assets/fix.svg) - Fixed support for back office events on Commerce 2.4.7 version.
+* ![New](../assets/new.svg) - Added a notification message about cache invalidation when you save changes to the Experience Platform Connector form.
 
 
 ## 3.0.0-beta1 (internal only)
