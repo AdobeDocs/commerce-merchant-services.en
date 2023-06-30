@@ -118,7 +118,7 @@ While Commerce already collects the historical order data, there are several tas
 
 ### Install historical order beta
 
-To enable historical order data collection for beta, you must update the project’s root [!DNL Composer] `.json` file as follows:
+To enable historical order data collection for beta, you must update the project's root [!DNL Composer] `.json` file as follows:
 
 1. Open the root `composer.json` file and search for `magento/experience-platform-connector`.
 
@@ -252,3 +252,7 @@ To confirm that data is being collected from your Commerce store, use the [Adobe
 In this example, you see event data from the [`commerce.productListAdds`](events.md#addtocart), [`commerce.productViews`](events.md#productpageview), [`web.webpagedetails.pageViews`](events.md#pageview), and so on. This view allows you to verify that your Commerce data arrived at the edge.
 
 If the results are not what you expect, open your dataset and look for any failed batches imports. Learn more about [troubleshooting batch imports](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/troubleshooting.html).
+
+## Next steps
+
+When Commerce data is sent to the Experience Platform edge, other Adobe Experience Cloud products, such as Adobe Journey Optimizer, can use that data. For example, you can configure Journey Optimizer to listen to certain events, and based on that event data, trigger an email for a first time user or if there is an abandoned cart. Learn how you can extend your Commerce platform by creating campaigns in Journey Optimizer.
