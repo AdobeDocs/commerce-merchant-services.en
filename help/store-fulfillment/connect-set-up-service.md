@@ -27,7 +27,10 @@ To integrate Adobe Commerce with Store Fulfillment services, you create a Commer
    - Enter your email address
    - Enter your Admin account password
 
-1. Configure [!UICONTROL API Resource Access permissions] for the integration—select `[!UICONTROL All]`
+1. Configure API Resource Access permissions for the integration with the following:
+
+   - Sales > BOPIS Order update
+   - System > Store Fulfillment App Permissions
 
 1. Generate the access tokens for authentication by saving and activating the integration.
 
