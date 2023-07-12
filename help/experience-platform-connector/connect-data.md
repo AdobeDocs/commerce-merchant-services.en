@@ -118,7 +118,7 @@ While Commerce already collects the historical order data, there are several tas
 
 ### Install historical order beta
 
-To enable historical order data collection for beta, you must update the project’s root [!DNL Composer] `.json` file as follows:
+To enable historical order data collection for beta, you must update the project's root [!DNL Composer] `.json` file as follows:
 
 1. Open the root `composer.json` file and search for `magento/experience-platform-connector`.
 
@@ -156,7 +156,7 @@ To enable historical order data collection for beta, you must update the project
 
 ### Configure historical order beta
 
-To ensure that your customers order history can be sent to Experience Platform, you must specify credentials that link your Commerce instance to Experience Platform. If you have already installed and enabled the [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) module, you already specified the credentials needed and you can skip this step. If you have not already installed and enabled the Audience Activation module, complete the following steps:
+To ensure that your customers order history can be sent to Experience Platform, you must specify credentials that link your Commerce instance to Experience Platform. If you have already installed and enabled the [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) extension, you already specified the credentials needed and you can skip this step. If you have not already installed and enabled the Audience Activation extension, complete the following steps:
 
 >[!NOTE]
 >

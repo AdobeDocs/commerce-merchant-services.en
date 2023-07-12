@@ -1,13 +1,13 @@
 ---
 title: Create Custom Events
-description: Learn how to create custom events connect your Adobe Commerce data to other Adobe DX products.
+description: Learn how to create custom events to connect your Adobe Commerce data to other Adobe DX products.
 exl-id: 5a754106-c66a-4280-9896-6d065df8a841
 ---
 # Create Custom Events
 
 You can extend the [eventing platform](events.md) by creating your own storefront events to collect data unique to your industry. When you create and configure a custom event, it is sent to the [Adobe Commerce Events Collector](https://github.com/adobe/commerce-events/tree/main/packages/commerce-events-collectors).
 
-## Handle Custom Events
+## Handle custom events
 
 Custom events are supported for the Adobe Experience Platform only. Custom data is not forwarded to Adobe Commerce dashboards and metrics trackers.
 
@@ -39,7 +39,7 @@ In Experience Platform Edge:
 >
 > Using custom events may affect default Adobe Analytics reports.
 
-## Handle Event Overrides (custom attributes)
+## Handle event overrides (custom attributes)
 
 Attribute overrides for standard events are supported for the Experience Platform only. Custom data is not forwarded to Commerce dashboards and metrics trackers.
 
