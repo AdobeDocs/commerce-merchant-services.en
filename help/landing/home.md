@@ -5,6 +5,7 @@ seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce and Magento Open Source merchants support key components of their business.
 breadcrumb-title: Documentation
 exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
+recommendations: noCatalog
 ---
 # Adobe Commerce Services Guides
 
@@ -13,6 +14,7 @@ Adobe provides a collection of Commerce, integration, and data services to help 
 >[!BEGINSHADEBOX "Release information"]
 
 See [what's new in our documentation](whats-new.md) or [release notes](release-notes-all.md) for each Commerce service.
+
 >[!ENDSHADEBOX]
 
 ## Commerce services
