@@ -2,6 +2,7 @@
 title: "Install [!DNL Live Search]"
 description: "Learn how to install, update, and uninstall [!DNL Live Search] from Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
+role: Admin, Developer
 ---
 # Install [!DNL Live Search]
 

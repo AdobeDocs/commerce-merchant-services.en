@@ -2,6 +2,7 @@
 title: '[!DNL Page Builder] Integration'
 description: Learn how to use [!DNL Product Recommendations] units in Page Builder.
 exl-id: dd972642-1fb4-426a-ac68-f56bb5fa2ecf
+feature: Services, Recommendations, Page Builder
 ---
 # [!DNL Page Builder] Integration
 

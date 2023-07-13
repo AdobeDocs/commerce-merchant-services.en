@@ -2,6 +2,7 @@
 title: 'Commerce Configurations Settings and [!DNL Live Search] '
 description: Describes the Adobe Commerce configuration settings that [!DNL Live Search] can read.
 exl-id: a4e9e2dd-e912-4ced-a44a-091ac5334e50
+features: Services, Search, Configuration
 ---
 # [!DNL Live Search] and Adobe Commerce Configuration Settings
 

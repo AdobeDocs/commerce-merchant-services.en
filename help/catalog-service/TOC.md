@@ -3,6 +3,8 @@ user-guide-title: "[!DNL Catalog Service] Guide"
 user-guide-description: "This guide provides detailed instructions for using [!DNL Catalog Service] for Adobe Commerce."
 breadcrumb-title: "[!DNL Catalog Service] Guide"
 hide: yes
+role: Admin
+feature: Services, Catalog Service
 ---
 # [!DNL Catalog Service] for Adobe Commerce {#catalog-service}
 
