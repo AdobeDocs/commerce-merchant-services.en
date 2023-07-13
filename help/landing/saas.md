@@ -2,6 +2,8 @@
 title: Commerce Services Connector
 description: Learn how to integrate your Adobe Commerce or Magento Open Source instance to services using production and sandbox API keys.
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
+feature: Services, Saas
+role: Admin, User
 ---
 # [!DNL Commerce Services Connector]
 
