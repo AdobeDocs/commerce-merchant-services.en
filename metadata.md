@@ -7,7 +7,7 @@ mini-toc-levels: 2
 git-repo: https://github.com/AdobeDocs/commerce-merchant-services.en
 index: y
 role: User
-feature-set: Commerce, SaaS
+feature-set: Commerce
 ---
 
 # Metadata for internal use
