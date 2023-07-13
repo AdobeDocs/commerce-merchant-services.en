@@ -2,6 +2,7 @@
 title: Collect Data
 description: Learn how events collect data for product recommendations.
 exl-id: b827d88c-327f-4986-8239-8f1921d8383c
+feature: Services, Recommendations, Eventing
 ---
 # Collect Data
 

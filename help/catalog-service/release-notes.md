@@ -2,6 +2,7 @@
 title: '[!DNL Catalog Service] Release Notes'
 description: The latest release information for [!DNL Catalog Service] for Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
+feature: Services, Catalog Service, Release Notes
 ---
 # [!DNL Catalog Service] Release Notes
 

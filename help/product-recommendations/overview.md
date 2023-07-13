@@ -2,6 +2,7 @@
 title: Introduction to [!DNL Product Recommendations]
 description: '[!DNL Product Recommendations] are a powerful marketing tool that you can use to increase conversions, boost revenue, and stimulate shopper engagement.'
 exl-id: 818ac876-58c9-4c68-975e-53da59ed6b52
+recommendations: noCatalog
 ---
 # Introduction to [!DNL Product Recommendations]
 
