@@ -471,6 +471,11 @@ The following table describes the data collected for this event.
 |`quantity`|The number of product units in the cart|
 |`priceTotal`|The total price for the product line item|
 |`discountAmount`|Indicates the discount amount applied|
+|`commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
+|`environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
+|`storeCode`|The unique store code. You can have many stores per website.|
+|`storeViewCode`|The unique store view code. You can have many store views per store.|
+|`websiteCode`|The unique website code. You can have many websites in an environment.|
 |`order`|Contains information about the order|
 |`purchaseID`|Unique identifier assigned by the seller for this purchase or contract. There is no guarantee that the ID is unique|
 |`priceTotal`|The total price of this order after all discounts and taxes have been applied|
@@ -521,6 +526,11 @@ The following table describes the data collected for this event.
 |`quantity`|The number of product units in the cart|
 |`priceTotal`|The total price for the product line item|
 |`discountAmount`|Indicates the discount amount applied|
+|`commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
+|`environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
+|`storeCode`|The unique store code. You can have many stores per website.|
+|`storeViewCode`|The unique store view code. You can have many store views per store.|
+|`websiteCode`|The unique website code. You can have many websites in an environment.|
 |`order`|Contains information about the order|
 |`purchaseID`|Unique identifier assigned by the seller for this purchase or contract. There is no guarantee that the ID is unique|
 |`priceTotal`|The total price of this order after all discounts and taxes have been applied|
@@ -573,6 +583,11 @@ The following table describes the data collected for this event.
 |`quantity`|The number of product units in the cart|
 |`priceTotal`|The total price for the product line item|
 |`discountAmount`|Indicates the discount amount applied|
+|`commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
+|`environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
+|`storeCode`|The unique store code. You can have many stores per website.|
+|`storeViewCode`|The unique store view code. You can have many store views per store.|
+|`websiteCode`|The unique website code. You can have many websites in an environment.|
 |`order`|Contains information about the order|
 |`purchaseID`|Unique identifier assigned by the seller for this purchase or contract. There is no guarantee that the ID is unique|
 |`purchaseOrderNumber`|Unique identifier assigned by the purchaser for this purchase or contract|
