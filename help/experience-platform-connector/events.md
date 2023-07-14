@@ -471,7 +471,7 @@ The following table describes the data collected for this event.
 |`quantity`|The number of product units in the cart|
 |`priceTotal`|The total price for the product line item|
 |`discountAmount`|Indicates the discount amount applied|
-|`commerceScope`|Indicates where an event occurred (store view, store, website, and so on)|
+|`commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
 |`environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
 |`storeCode`|The unique store code. You can have many stores per website.|
 |`storeViewCode`|The unique store view code. You can have many store views per store.|
@@ -526,7 +526,7 @@ The following table describes the data collected for this event.
 |`quantity`|The number of product units in the cart|
 |`priceTotal`|The total price for the product line item|
 |`discountAmount`|Indicates the discount amount applied|
-|`commerceScope`|Indicates where an event occurred (store view, store, website, and so on)|
+|`commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
 |`environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
 |`storeCode`|The unique store code. You can have many stores per website.|
 |`storeViewCode`|The unique store view code. You can have many store views per store.|
@@ -583,7 +583,7 @@ The following table describes the data collected for this event.
 |`quantity`|The number of product units in the cart|
 |`priceTotal`|The total price for the product line item|
 |`discountAmount`|Indicates the discount amount applied|
-|`commerceScope`|Indicates where an event occurred (store view, store, website, and so on)|
+|`commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
 |`environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
 |`storeCode`|The unique store code. You can have many stores per website.|
 |`storeViewCode`|The unique store view code. You can have many store views per store.|
