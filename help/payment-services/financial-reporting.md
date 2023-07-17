@@ -2,7 +2,7 @@
 title: Financial reporting
 description: "[!DNL Payment Services] offers comprehensive reporting so that you can get a clear view of your store's orders and payments."
 role: User
-feature: Payments, Checkout, 
+feature: Payments, Checkout
 level: Intermediate
 ---
 # Financial reporting
