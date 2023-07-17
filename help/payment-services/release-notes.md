@@ -23,6 +23,10 @@ These release notes describe feature changes and fixes that occurred and were re
 
 +++Hosted service updates
 
+_July 12, 2023_
+
+![Fixed issue](../assets/fix.svg)<!-- Issue PAY-4587 --> An issue introduced in the Payment Services 2.1.0 release that prevented authorization voids placed by previous extension versions is now resolved. Merchants using any version of Payment Services can void authorizations.
+
 _June 9, 2023_
 
 ![New](../assets/new.svg)<!-- Issue PAY-4288 --> Now, merchants can [configure _only_ PayPal payment buttons](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#use-only-paypal-payment-buttons)---and _not_ use the PayPal credit card payment option. This allows merchants to provide a variety of payment options, including Venmo and PayPal payment buttons, and use an existing credit card provider instead of the PayPal credit card payment option.
