@@ -2,6 +2,7 @@
 title: Install [!DNL Payment Services]
 description: Install the Payments Services extension.
 exl-id: babaa91a-9376-4acb-b934-a89f9df52016
+feature: Payments, Checkout, Install, Upgrade
 ---
 # Install [!DNL Payment Services]
 

@@ -4,6 +4,7 @@ description: Use the Payouts report for full transparency into the payment amoun
 role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
+feature: Payments, Checkout
 ---
 # Payouts Report
 
