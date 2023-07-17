@@ -2,6 +2,7 @@
 title: Credit Card Vaulting
 description: Shoppers can vault (save) their credit card details for future purchases.
 exl-id: b4060307-ffcd-41cb-9b9d-a2fef02f23bd
+feature: Payments, Checkout
 ---
 # Credit Card Vaulting
 

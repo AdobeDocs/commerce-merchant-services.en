@@ -4,6 +4,7 @@ description: After installation, you can configure [!DNL Payment Services] in th
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
+feature: Payments, Checkout, Configuration
 ---
 # Settings
 

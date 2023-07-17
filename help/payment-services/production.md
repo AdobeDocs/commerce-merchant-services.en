@@ -2,6 +2,7 @@
 title: Enable [!DNL Payment Services] for Production
 description: Complete the onboarding process by enabling [!DNL Payment Services] for production.
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
+feature: Payments, Checkout, Configuration, Install
 ---
 # Enable [!DNL Payment Services] for Production
 

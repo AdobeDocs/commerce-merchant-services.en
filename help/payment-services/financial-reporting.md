@@ -2,7 +2,7 @@
 title: Financial reporting
 description: "[!DNL Payment Services] offers comprehensive reporting so that you can get a clear view of your store's orders and payments."
 role: User
-feature: Payments
+feature: Payments, Checkout
 level: Intermediate
 ---
 # Financial reporting
@@ -11,4 +11,4 @@ level: Intermediate
 
 ![Financial reports view](assets/reports-view.png )
 
-The cash flow management reports---Payouts and Order payment status---synchronize payment details with order info to give you full transparency of processed volume, payment balance, and detailed reporting on a transaction level for financial reconciliation.
+The cash flow management reports---Payouts, Transactions, and Order payment status---synchronize payment details with order info to give you full transparency of processed volume, payment balance, and detailed reporting on a transaction level for financial reconciliation.

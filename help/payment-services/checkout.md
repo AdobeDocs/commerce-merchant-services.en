@@ -1,6 +1,7 @@
 ---
 title: Checkout
 description: Customize checkout to fit your customer's needs.
+feature: Payments, Checkout
 ---
 
 # Checkout
