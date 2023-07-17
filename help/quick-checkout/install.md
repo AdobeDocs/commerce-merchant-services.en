@@ -2,6 +2,7 @@
 title: "Install [!DNL Quick Checkout] for Adobe Commerce extension"
 description: "Follow these steps to install [!DNL Quick Checkout] in your Adobe Commerce project."
 exl-id: e1dabc9a-0ab0-4f8d-98d3-7a32abbedcb8
+feature: Checkout, Services, Install
 ---
 # Install [!DNL Quick Checkout]
 

@@ -2,6 +2,8 @@
 title: "[!DNL Quick Checkout] for Adobe Commerce Developer Information"
 description: "[!DNL Quick Checkout] developer information."
 exl-id: 8926eda4-b4de-4938-a86c-b095616f61f6
+feature: Checkout, Services
+role: Developer
 ---
 # [!DNL Quick Checkout] Developer Information
 

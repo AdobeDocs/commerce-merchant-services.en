@@ -2,6 +2,7 @@
 title: '[!DNL Quick Checkout] for Adobe Commerce Admin Panel'
 description: Learn how the [!DNL Quick Checkout] Admin Panel could help how to successfully onboard, setup and visualize the extension.
 exl-id: d91763ed-b4f6-4736-9503-0305edd77e91
+feature: Checkout, Services
 ---
 # Introduction to the [!DNL Quick Checkout] Admin Panel
 

@@ -2,6 +2,7 @@
 title: User session lifetime
 description: The Admin provides the ability to configure the cookie lifetime of your Adobe Commerce user for the [!DNL Quick Checkout] extension.
 exl-id: 32cf5d70-9a50-49ca-8b40-5f04bc1e24b7
+feature: Checkout, Services
 ---
 # User Session Lifetime
 

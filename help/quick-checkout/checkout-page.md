@@ -2,6 +2,7 @@
 title: "Checkout page"
 description: "Overview of the checkout page in Adobe Commerce."
 exl-id: afe3a93d-8aba-428e-ac9d-0be8d23ceb47
+feature: Checkout, Services, Storefront
 ---
 # Checkout Page in Adobe Commerce
 

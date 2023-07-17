@@ -2,6 +2,7 @@
 title: '[!DNL Quick Checkout] reporting'
 description: '[!DNL Quick Checkout] offers comprehensive reporting information.'
 exl-id: 91c687f4-9953-4c2f-b240-73430603e6a1
+feature: Checkout, Services
 ---
 # Reports
 

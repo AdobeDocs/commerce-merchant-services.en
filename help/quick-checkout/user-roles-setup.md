@@ -2,6 +2,7 @@
 title: '[!DNL Quick Checkout] user setup'
 description: Set up user roles and permissions to show the [!DNL Quick Checkout] Admin panel.
 exl-id: 76393840-8312-41bb-8447-412849815169
+feature: Checkout, Services
 ---
 # [!DNL Quick Checkout] User Setup
 

@@ -2,6 +2,8 @@
 user-guide-title: "[!DNL Quick Checkout] for Adobe Commerce"
 user-guide-description: "Learn how the [!DNL Quick Checkout] could benefit your Adobe Commerce instance and how to successfully onboard and set up the extension."
 breadcrumb-title: Merchant Services Guide
+role: Admin, Leader, User
+feature: Checkout, Services
 ---
 
 # [!DNL Quick Checkout] for Adobe Commerce {#quick-checkout}

@@ -2,6 +2,7 @@
 title: '[!DNL Quick Checkout] Release Notes'
 description: Review the release notes for information about all [!DNL Quick Checkout] releases.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
+feature: Release Notes, Services, Checkout
 ---
 # Release Notes
 

@@ -2,6 +2,7 @@
 title: "Checkout flow for an Adobe Commerce user"
 description: "Overview of the [!DNL Quick Checkout] flow for an Adobe Commerce user."
 exl-id: 085e393b-15f6-4d5a-a04d-927b1f95b74e
+feature: Checkout, Services, Storefront
 ---
 # An existing Adobe Commerce user: How it works
 
