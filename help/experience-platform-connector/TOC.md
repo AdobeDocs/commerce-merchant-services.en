@@ -2,6 +2,9 @@
 user-guide-title: Adobe Experience Platform Connector for Adobe Commerce
 user-guide-description: This guide provides detailed instructions for using Adobe Experience Platform Connector for Adobe Commerce.
 breadcrumb-title: Adobe Experience Platform Connector for Adobe Commerce
+role: Admin
+feature: Personalization, Integration
+recommendations: noDisplay
 ---
 # Adobe Experience Platform Connector for Adobe Commerce {#experience-platform-connector}
 
