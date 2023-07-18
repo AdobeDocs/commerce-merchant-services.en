@@ -187,6 +187,8 @@ If everything works correctly, congratulations! [!DNL Live Search] is installed,
 
 If you encounter problems in the storefront, check the `var/log/system.log` file for API communication failures or errors on the services side.
 
+If you need to allow Live Search through a firewall, add `commerce.adobe.io` to the allow list.
+
 ## Checking the installed version
 
 Before updating Live Search, run the following from the command line to check the version of Live Search that is currently installed:

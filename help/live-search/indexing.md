@@ -67,7 +67,7 @@ Streaming update workflow:
 
 ## Client search
 
-The [!DNL Live Search] API allows a client to sort by any sortable product attribute by setting the [storefront property](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html), *Used for sorting in product listings* to `Yes`. Depending on the theme, this setting causes the attribute to be included as an option in the [Sort by](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation.html) pagination control on catalog pages. Up to 300 product attributes can be indexed by [!DNL Live Search], with [storefront properties](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) that are searchable and filterable.
+The [!DNL Live Search] API allows a client to sort by any sortable product attribute by setting the [storefront property](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html), *Used for sorting in product listings* to `Yes`. Depending on the theme, this setting causes the attribute to be included as an option in the [Sort by](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation.html) pagination control on catalog pages. Up to 200 product attributes can be indexed by [!DNL Live Search], with [storefront properties](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) that are searchable and filterable.
 The index metadata is stored in the indexing pipeline and is accessible by the search service.
 
 ![[!DNL Live Search] index metadata API diagram](assets/index-metadata-api.svg)
