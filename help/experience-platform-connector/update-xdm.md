@@ -2,6 +2,8 @@
 title: Add Field Groups to XDM Schema
 description: Learn how to add Adobe Commerce-specific field groups to an XDM schema.
 exl-id: 4401bbe7-1ccc-4349-a998-9e9ee9db590f
+role: Admin, Developer
+feature: Personalization, Integration
 ---
 # Add field groups to XDM schema
 

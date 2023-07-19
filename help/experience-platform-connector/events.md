@@ -2,6 +2,8 @@
 title: Events
 description: Learn what data each event captures.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
+role: Admin, Developer
+feature: Personalization, Integration, Eventing
 ---
 # Experience Platform Connector Events
 

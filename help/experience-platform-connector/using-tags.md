@@ -2,6 +2,8 @@
 title: Collect Commerce Data using Adobe Experience Platform Tags
 description: Learn how to collect Commerce data using Adobe Experience Platform tags.
 exl-id: 852fc7d2-5a5f-4b09-8949-e9607a928b44
+role: Admin, Developer
+feature: Personalization, Integration
 ---
 # Collect Commerce Data using Adobe Experience Platform Tags
 
@@ -467,7 +469,7 @@ Create the following data elements:
 
 ### searchRequestSent
 
-Triggered by events in the “search as you type” popover and by events on search results pages.
+Triggered by events in the "search as you type" popover and by events on search results pages.
 
 #### Data Elements
 
@@ -575,7 +577,7 @@ Create the following data elements:
 
 ### searchResponseReceived
 
-Triggered when Live Search returns results for the “search as you type” popover or search results page.
+Triggered when Live Search returns results for the "search as you type" popover or search results page.
 
 #### Data Elements
 

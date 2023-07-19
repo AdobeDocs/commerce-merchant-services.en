@@ -2,6 +2,7 @@
 title: Release Notes
 description: The latest release information for Adobe Experience Platform connector from Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
+feature: Personalization, Integration, Release Notes
 ---
 # Release Notes
 
