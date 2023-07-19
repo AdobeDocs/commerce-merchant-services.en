@@ -33,9 +33,20 @@ The page size of the [!DNL popover] determines how many lines of autocompleted p
 1. Set the **Autocomplete Limit** to the number of lines that you want to allow in the [!DNL popover].
 1. When complete, click **Save Config**.
 
+## Catalog Service
+
+The [Catalog Service for Adobe Commerce](../catalog-service/overview.md) extension provides rich view-model catalog data to quickly and fully render product-related storefront experiences. Catalog Service can be used in conjunction with Live Search to provide functionality that is not currently supported by the native extension:
+
+* Color swatches
+* Extended attributes
+* Other product information can be brought in
+
+ Merchants may customize and extend widgets or storefront elements by using Catalog Service, but this is out of scope for Adobe's support team.
+
 ## Limitations
 
-* The [!DNL Live Search] [!DNL storefront popover] is available only for stores that use the *Luma* theme, or a customized theme that is based on *Luma*. 
+* The [!DNL Live Search] [!DNL storefront popover] is available only for stores that use the *Luma* theme, or a customized theme that is based on *Luma*. Breadcrumbs on the search results page will not have *Lume* styling.
 * The [!DNL popover] does not support the *Blank* theme. See [Styling [!DNL Popover] Elements](storefront-popover-styling.md) to learn more.
 * The [!DNL popover] is not supported on the Quick Order form.
-* Merchants may customize and extend widgets or storefront elements (For example: integrating color swatches into Live Search results) by using the [Catalog Service](../catalog-service/overview.md) Storefront API but this is out of scope for Adobe's support team.
+* Wishlists and product comparisons are not supported.
+* Only the base currency is supported.

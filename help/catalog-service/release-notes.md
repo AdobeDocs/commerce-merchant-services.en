@@ -16,13 +16,13 @@ Updates include:
 
 ## Current major version
 
-### V1.10 Release
+### V1.11 Release
 
-_June 27, 2023_
+_July 18, 2023_
 
 [!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.4 and newer
 
-![New](../assets/new.svg) Catalog Service can now display related products in the Product Detail Page widget.
+![New](../assets/new.svg) Catalog Service now supports the [`recommendations`](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations/) GraphQL query for Product Recommendations.
 
 #### Known limitations
 
@@ -38,6 +38,14 @@ The following limitations can be solved by using the API Mesh and the Core Graph
 * Minimum Advertised Price
 * [Tier pricing](mesh.md)
 * Downloadable products and gift cards
+
+### V1.10 Release
+
+_June 27, 2023_
+
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.4 and newer
+
+![New](../assets/new.svg) Catalog Service can now display related products in the Product Detail Page widget.
 
 ### V1.7 Release
 

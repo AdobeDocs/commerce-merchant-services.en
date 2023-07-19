@@ -23,6 +23,10 @@ See the developer documentation to [learn about product compatibility](https://e
 
 ## Current major version
  
+ _July 18, 2023_
+
+![New](../assets/new.svg) Product Recommendations now has a GraphQL [`recommendations`](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations/) query.
+
  _April 25, 2023_
 
 ![New](../assets/new.svg) Product Recommendations customers can now take advantage of [SaaS price indexing](../price-index/index.md).
