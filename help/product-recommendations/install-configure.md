@@ -97,7 +97,7 @@ composer update --with-dependencies magento/product-recommendations magento/modu
 
 ## Firewalls
 
-If you need to let Product Recommendations through a firewall, add `commerce.adobe.io` to the allow list.
+To let Product Recommendations through a firewall, add `commerce.adobe.io` to the allow list.
 
 ## Uninstall [!DNL Product Recommendations] {#uninstall}
 

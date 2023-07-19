@@ -131,7 +131,7 @@ To obtain the api-key, go to the Commerce Service Connector area in the admin an
 
 Read the [GraphQL documentation](https://developer.adobe.com/commerce/webapi/graphql/) to understand how to query and send the headers that are needed for generating API requests. 
 
-If you need to allow Catalog Service through a firewall, add `commerce.adobe.io` to the allow list.
+To allow Catalog Service through a firewall, add `commerce.adobe.io` to the allow list.
 
 ## Catalog Service and API Mesh
 
