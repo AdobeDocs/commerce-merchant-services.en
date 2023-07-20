@@ -14,7 +14,7 @@ There are Commerce configuration settings that [!DNL Live Search] supports. This
 |---|---|---|
 |Stores > Configuration > Catalog > Catalog > Catalog Search > Allow All Products per Paage Length|Yes. Max 500 products|Yes. Max 500 products|
 |Stores > Configuration > Catalog > Catalog > Catalog Search > Minimal Query Length|Yes|Yes|
-|Stores > Configuration > Catalog > Catalog > Catalog Search > Products per Page on Grid Allowed Values |Yes|Yes|
+|Stores > Configuration > Catalog > Catalog > Catalog Search > Products per Page on Grid Allowed Values|Yes|Yes|
 |Stores > Configuration > Catalog > Catalog > Catalog Search > Products per Page on Grid Default Value|Yes. Max 500 products|Yes. Max 500 products|
 |Stores > Configuration > Catalog > Inventory > Display Out of Stock Products|Yes w/ v2.0.4+|Yes w/ v2.0.4+|
 |Stores > Configuration > Currency > Default Display Currency|Yes w/3.1.0+|Yes w/3.1.0+|
