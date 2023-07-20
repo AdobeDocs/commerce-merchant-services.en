@@ -54,7 +54,9 @@ See [Lifecycle policy](https://experienceleague.adobe.com/docs/commerce-operatio
 
 [!DNL Payment Services] accepts the currencies of the countries [in which it is available](#availability).
 
-See the [PayPal payment method availability documentation](https://developer.paypal.com/docs/checkout/payment-methods/) for more information.
+To see which currencies PayPal supports, see [Supported currencies documentation](https://developer.paypal.com/docs/reports/reference/paypal-supported-currencies/).
+
+To see which payment methods PayPal supports, see their [Payment methods documentation](https://developer.paypal.com/docs/checkout/payment-methods/).
 
 ## Get started
 
