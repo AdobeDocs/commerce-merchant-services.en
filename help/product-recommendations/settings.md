@@ -9,6 +9,10 @@ When you [configure a SaaS data space](https://experienceleague.adobe.com/docs/c
 
 Non-production environments for testing or staging usually don't have the quantity or quality of storefront behavioral data to serve realistic product recommendations. Actual shopper behavior at scale can be captured only in a production environment. To solve this problem, Adobe Commerce allows you to use product recommendations from your production environment with other, non-production SaaS data spaces. Using actual storefront data in a non-production environment allows you to preview the recommendations your shoppers see and experiment with different recommendation types and placement locations. Recommendations from a different SaaS data space can be previewed by shoppers, but not clicked.
 
+>[!NOTE]
+>
+>When using Product Recommendations through REST, the `alternateEnvironmentId` parameter can be used to specify other dataspaces. When using Product Recommendations through GraphQL, this parameter is not available.
+
 ## Choose the recommendations source
 
 To change the source of your product recommendations data, choose the SaaS data space with the behavioral data that you want to use. Before you begin, make sure that:
