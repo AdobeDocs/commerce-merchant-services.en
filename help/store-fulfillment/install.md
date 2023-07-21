@@ -1,8 +1,9 @@
 ---
 title: Installation
 description: "Install the [!DNL Store Fulfillment solution] for an Adobe Commerce storefront using Composer for PHP."
-role: User, Admin
+role: Admin, Developer
 level: Intermediate
+feature: Shipping/Delivery, Install
 exl-id: 6613268a-7d22-4c54-af89-834921b7f262
 ---
 

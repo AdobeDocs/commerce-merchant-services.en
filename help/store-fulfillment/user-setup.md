@@ -1,8 +1,9 @@
 ---
 title: User Setup
 description: Setup enhanced Inventory Management sources as merchant stores to support the Store Fulfillment solution for Adobe Commerce.
-role: User, Admin
+role: Admin, Developer
 level: Intermediate
+feature: Shipping/Delivery, User Account, Tools and External Services
 exl-id: eb735bef-c339-4d0b-b3e7-10328915725b
 ---
 # User Setup

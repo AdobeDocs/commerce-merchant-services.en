@@ -1,8 +1,9 @@
 ---
 title: Store Fulfillment Requirements
 description: Requirements for provisioning and onboarding the [!DNL Store Fulfillment solution].
-role: User, Admin
+role: Leader, Admin, Developer
 level: Intermediate
+feature: Shipping/Delivery, Install
 exl-id: f9e05049-5904-4f6c-b45d-9f81fbc76b69
 ---
 # Store Fulfillment Requirements for Adobe Commerce
@@ -28,7 +29,7 @@ The Store Fulfillment solution is compatible with the software versions listed i
 | MySQL          | 5.7                 | 8.0                 |
 | PHP            | 7.4                 | 8.1                 |
 
-For detailed requirements, review the Adobe Commerce [System requirements](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) in the *Adobe Commerce Installationg Guide*.
+For detailed requirements, review the Adobe Commerce [System requirements](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) in the *Adobe Commerce Installation Guide*.
 
 ## Store Assist app requirements
 

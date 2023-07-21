@@ -1,8 +1,9 @@
 ---
 title: Inventory Management Source Transfer
 description: "Configure stocks for the [!DNL Store Fulfillment solution] with Adobe Commerce Inventory Management. Set up a new stock and transfer inventory out of default stock so that you can assign it to sources configured to enable Store Pickup capabilities required by the Store Fulfillment solution."
-role: User, Admin
+role: Admin
 level: Intermediate
+feature: Shipping/Delivery, Inventory, Configuration
 exl-id: 669d4dce-4cac-4bde-acc5-26c70a51f7f1
 ---
 
@@ -20,7 +21,7 @@ These configuration changes help you accomplish three things:
 
 1.  [Bulk assign sources](https://docs.magento.com/user-guide/catalog/inventory-bulk-assign-sources.html) to add the new sources for all your products.
 
-1.  [Complete bulk updates for product attributes](https://docs.magento.com/user-guide/stores/bulk-product-attribute-update.html) to add the `Allow Store Pickup` and `Allow Home Delivery` attributes to existing products. When the solution is installed, the attributes have the optimal *default* values. However, these attributes are not applied to existing products until you complete the bulk updates process.
+1.  [Complete bulk updates for product attributes](https://docs.magento.com/user-guide/stores/bulk-product-attribute-update.html) to add the `Allow Store Pickup` and `Allow Home Delivery` attributes to existing products. When the solution is installed, the attributes have the optimal *default* values. However, these attributes are not applied to existing products until you complete the bulk updaContes process.
 
 Inventory is deducted from the selected source (retail store location or ecommerce warehouse). Sources used as ecommerce warehouses must be assigned to the same stock as the store pickup location and prioritized before the retail locations. For additional information, see [Prioritizing Sources for a Stock](https://docs.magento.com/user-guide/catalog/inventory-stock-priority.html).
 

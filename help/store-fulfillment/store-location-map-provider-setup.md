@@ -1,8 +1,9 @@
 ---
 title: Store Location and Mapping System Configuration
 description: Configure a distance provider to support store location mapping in the storefront UI. The Store Fulfillment solutions requires a distance provider to enable retail store search and other mapping and scheduling capabilities for the end-to-end fulfillment workflow.
-role: User, Admin
+role: Admin
 level: Intermediate
+feature: Shipping/Delivery, Integration, Tools and External Services, Configuration
 exl-id: d09c4652-e2eb-49dc-8c42-2aa9b6be5d6b
 ---
 # Store Location and Mapping Setup

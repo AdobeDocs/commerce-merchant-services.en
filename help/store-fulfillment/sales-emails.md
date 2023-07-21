@@ -1,8 +1,9 @@
 ---
 title: Sales Email Templates
 description: Configure the transactional email templates for communicating with customers and store administrators during the fulfillment process for Store Pickup orders.
-role: User, Admin
+role: Admin
 level: Intermediate
+feature: Shipping/Delivery, Communications, Configuration
 exl-id: 688732e3-06f0-4613-a589-2d465597eb28
 ---
 

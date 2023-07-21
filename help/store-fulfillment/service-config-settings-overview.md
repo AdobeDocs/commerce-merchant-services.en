@@ -1,8 +1,9 @@
 ---
 title: Configuration Overview for Store Fulfillment
 description: Learn about the types of Admin configuration settings available to customize the extended fulfillment capabilities provided by the Store Fulfillment solution, and link to instructions for completing the configuration.
-role: User, Admin
+role: Admin
 level: Intermediate
+feature: Shipping/Delivery, Configuration
 exl-id: c432791a-94a0-457d-9ed9-8937846ce4f4
 ---
 # Configuration overview for Store Fulfillment

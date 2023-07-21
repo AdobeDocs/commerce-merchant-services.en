@@ -1,7 +1,7 @@
 ---
 title: "Introduction to [!DNL Store Fulfillment]"
 description: "Learn how [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] supports buy online, pick up in store (BOPIS) for customers. Use the Store Assist mobile to streamline BOPIS fulfillment and order processing for store associates and Commerce customers."
-role: User
+role: Leader, Admin, Developer, User
 level: Intermediate
 exl-id: d2f90af8-3eba-499d-84de-4b70ecc7166c
 ---
@@ -42,7 +42,7 @@ The Store Fulfillment solution supports and enhances native Adobe Commerce capab
 
 ## Store Assist App
 
-The Store Assist App for iOS and Android&trade; devices interacts with [!DNL Walmart Commerce Technologies] to bring omnichannel fulfillment capabilities to your retail stores.
+The Store Assist App for iOS and Android devices interacts with [!DNL Walmart Commerce Technologies] to bring omnichannel fulfillment capabilities to your retail stores.
 
 * Send in-store and curbside pickup orders directly to store associates' mobile devices
 

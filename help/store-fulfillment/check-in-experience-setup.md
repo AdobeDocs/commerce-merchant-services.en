@@ -1,7 +1,7 @@
 ---
 title: Check-In Experience Setup
 description: Configure the car make and model] selections available to curbside pickup customers when they complete the Pickup order form.
-role: User, Admin
+role: Admin
 level: Intermediate
 exl-id: 341b96cd-bb83-4d07-965c-b09fab24dc81
 ---

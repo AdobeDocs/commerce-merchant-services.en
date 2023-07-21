@@ -1,7 +1,8 @@
 ---
 title: System Configuration Overview
 description: Learn about the Admin configuration settings categories available for the Store Fulfillment solution and how they are configured.
-role: User, Admin
+role: Admin
+feature: Shipping/Delivery, System, Configuration
 level: Intermediate
 ---
 # System Configuration Overview

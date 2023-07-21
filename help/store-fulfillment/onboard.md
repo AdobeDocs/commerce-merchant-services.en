@@ -1,8 +1,9 @@
 ---
 title: Onboarding Overview for Store Fulfillment Services
 description: '[!DNL Live Search] onboarding flow, system requirements, boundaries, and limitations.'
-role: User, Admin
+role: Admin, Leader
 level: Intermediate
+feature: Shipping/Delivery, Install
 exl-id: f8e403ac-9bbd-4ea2-b209-9b1a8d1e32a2
 ---
 # Onboarding Overview for Store Fulfillment

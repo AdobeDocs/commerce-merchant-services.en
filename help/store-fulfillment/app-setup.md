@@ -1,13 +1,14 @@
 ---
 title: App Setup
 description: Set up the [!DNL Store Assist] app to manage end-to-end store fulfillment workflows and processes for buy online, pick up in store orders.
-role: User, Admin
 level: Intermediate
+role: Admin
+feature: Shipping/Delivery, Configuration, Tools and External Services
 exl-id: bcb5b02b-0141-407a-ad55-6e10e8e1aa90
 ---
 # App setup
 
-Store Assist is a fulfillment-as-a-service (FaaS) platform app powered by Walmart Commerce Technologies. The app provides in-store fulfillment capabilities to handle [!DNL buy online, pick up in store] (BOPIS) orders. With Store Assist, store associates can see which items customers ordered, pick the correct items faster, and set up fulfilled orders for in-store or curbside pickup delivery to customers. 
+Store Assist is a fulfillment-as-a-service (FaaS) platform app powered by Walmart Commerce Technologies. The app provides in-store fulfillment capabilities to handle [!DNL buy online, pick up in store] (BOPIS) orders. With Store Assist, store associates can see which items customers ordered, pick the correct items faster, and set up fulfilled orders for in-store or curbside pickup delivery to customers.
 
 The Store Assist app receives all order and customer information—from order details to pick up times-and makes the data available to store associates online, through mobile devices. The app includes [!UICONTROL Pick], [!UICONTROL Stage], [!UICONTROL Handoff], and [!UICONTROL Orders] modules to help Store Associates with fulfillment activities like the following:
 
@@ -18,7 +19,7 @@ The Store Assist app receives all order and customer information—from order de
 
 >[!NOTE]
 >
->See [Store Assist fulfillment workflows](store-assist-modules.md) to learn more about the Store Assist app.
+>Learn more about the Store Assist app by reviewing the [Store Assist fulfillment workflows](store-assist-modules.md) topic.
 
 ## Configure the Store Assist App
 
@@ -36,9 +37,9 @@ The Store Assist app requires two types of configuration:
 
   - **Inactivity time**—Specify the amount of time that the app must be inactive before it logs out.
 
-  - **Cancellation from the store**—Specify whether orders can be cancelled from the store and which roles have cancellation permissions
+  - **Cancellation from the store**—Specify whether orders can be cancel from the store and which roles have cancellation permissions
 
-  - **Order cleanup window**—Specify how long past the [Estimated Pickup Lead Time](enable-general.md#delivery-method-title-configuration) that a picked order remains in staging before being restocked—for example, three days. The default value is seven days. If this configuration is turned on, the order is automatically cancelled when this time expires. Items are restocked, and the merchant receives a cancellation email.
+  - **Order cleanup window**—Specify how long past the [Estimated Pickup Lead Time](enable-general.md#delivery-method-title-configuration) that a picked order remains in staging before being restocked—for example, three days. The default value is seven days. If this configuration is turned on, the order is automatically cancel when this time expires. Items are restocked, and the merchant receives a cancellation email.
 
   - Customize all in app instructions (picking, staging, hand off).
 

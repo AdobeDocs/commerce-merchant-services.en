@@ -1,8 +1,9 @@
 ---
 title: Connect the Store Fulfillment Solution
-description: Establish the connections between Adobe Commerce and the Store Fulfillment solution by creating and authorizing an Adobe Commerce integration and adding the Store Fulfillment account credentials to the Adobe Commerce service configuration.
-role: User, Admin
+description: Establish the connections between Adobe Commerce and the Store Fulfillment solution. Create and authorize an Adobe Commerce integration, and add the Store Fulfillment account credentials to the Adobe Commerce service configuration.
+role: Admin, Developer
 level: Intermediate
+feature: Shipping/Delivery, Install, Configuration, User Account, Tools and External Services
 exl-id: 74c71c43-305a-4ea7-84f8-95f3ce0a9482
 ---
 # Connect the Store Fulfillment Solution

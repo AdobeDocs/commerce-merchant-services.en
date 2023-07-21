@@ -1,8 +1,9 @@
 ---
 title: Merchant Stores Configuration
 description: Setup enhanced Inventory Management sources as merchant stores.
-role: User, Admin
-level: Intermediate
+role: Admin
+level: Experienced
+feature: Shipping/Delivery, Inventory, Configuration
 exl-id: 7c3444d0-5ecb-4ac1-aa81-e48eea290f5d
 ---
 # Merchant Stores (Source) Configuration

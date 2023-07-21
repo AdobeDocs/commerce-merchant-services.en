@@ -1,8 +1,9 @@
 ---
 title: Multiple Website and Scope Configuration
 description: Configure stocks and delivery methods for multiple websites and store scopes.
-role: User, Admin
-level: Intermediate
+role: Admin
+level: Experienced
+feature: Shipping/Delivery, Inventory, Configuration
 exl-id: 8939046e-1c26-4380-83be-ff8e074e591d
 ---
 # Multiple Website and Scope Configuration
