@@ -29,7 +29,7 @@ You can enable [!DNL Payment Services] for your store, and enable either sandbox
    >
    >Your _[!UICONTROL Sandbox Merchant ID]_ and _[!UICONTROL Production Merchant ID]_ are auto-generated and present in their respectable fields when you have finished onboarding for the sandbox and/or production. Do not remove or change these IDs.
 
-1.For **Soft Descriptor** (custom values which show on customer transaction bank statements to delineate between stores/brands/catalogs) add your custom text (up to 22 characters) in the text field, replacing `Custom descriptor` or the existing value.
+1. For **Soft Descriptor** (custom values which show on customer transaction bank statements to delineate between stores/brands/catalogs) add your custom text (up to 22 characters) in the text field, replacing `Custom descriptor` or the existing value.
 1. Click **[!UICONTROL Save Config]** to save your changes.
 1. Navigate to **[!UICONTROL System]** > **[!UICONTROL Cache Management]**, and then click **[!UICONTROL Flush Cache]** to refresh all invalid caches.
 
@@ -65,16 +65,38 @@ See [Payments options](payments-options.md#paypal-smart-buttons) for more inform
 1. Click **[!UICONTROL Save Config]** to save your changes.
 1. Navigate to **[!UICONTROL System]** > **[!UICONTROL Cache Management]**, and then click **[!UICONTROL Flush Cache]** to refresh all invalid caches.
 
+## [!UICONTROL Apple Pay]
+
+The [!UICONTROL Apple Pay] payment option allows the merchant to offer Apple Pay to their shoppers, who can use Touch ID on their devices to make purchases
+
+See [Payments options](payments-options.md#apple-pay-button) for more information.
+
+### Configure Apple Pay
+
+1. On the _Admin_ sidebar, go to **[!UICONTROL Stores]** > _[!UICONTROL Settings]_ > **[!UICONTROL Configuration]**.
+1. In the left panel, expand **[!UICONTROL Sales]** and choose **[!UICONTROL Payment Methods]**.
+1. Expand the _[!UICONTROL Recommended Solutions]_ section.
+1. In the _[!UICONTROL Payment Services]_ section, expand the _[!UICONTROL Apple Pay]_ section.
+1. For **[!UICONTROL Title]**, enter text (if needed) to change the name of the payment method as shown during checkout.
+1. To [set the payment action](production.md#set-payment-services-as-payment-method), select **[!UICONTROL Authorize]** or **[!UICONTROL Authorize and Capture]**.
+1. To show [!DNL Apple Pay] on the checkout page, select `Yes` for the **[!UICONTROL Show buttons on checkout page]**.
+1. To show [!DNL Apple Pay] on the product detail page, select `Yes` for the **[!UICONTROL Show buttons on product detail page]**.
+1. To show [!DNL Apple Pay] in the mini cart preview, select `Yes` for **[!UICONTROL Show buttons in mini cart preview]**.
+1. To show [!DNL Apple Pay] on the cart page, select `Yes` for the **[!UICONTROL Show buttons on cart page]**.
+1. To enable debug mode, select `Yes` for the **[!UICONTROL Debug Mode]** (`No` disables it).
+1. To save your changes, click **[!UICONTROL Save Config]** .
+1. Navigate to **[!UICONTROL System]** > **[!UICONTROL Cache Management]**, and then click **[!UICONTROL Flush Cache]** to refresh all invalid caches.
+
 #### Configuration options
 
 | Field | Scope | Description |
 |---|---|---|
 | [!UICONTROL Title] | store view | Add the text for display as the title for this payment option in the Payment Method view during checkout. Options: [!UICONTROL text field] |
 | [!UICONTROL Payment Action] | website | The [payment action](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html) for the specified payment method. Options: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
-| [!UICONTROL Show on checkout page] | website | Enable or disable credit card fields on the checkout page. Options: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Vault enabled] | store view | Enable or disable [credit card vaulting](vaulting.md). Options: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Vault enabled in Admin] | store view | Enable or disable ability for [merchant to complete orders for customers in the Admin](vaulting.md) using a vaulted payment method. Options: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL 3DS Secure authentication] | website | Enable or disable [3DS Secure authentication](security.md#3ds). Options: [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
+| [!UICONTROL Show on checkout page] | website | Enable or disable [!DNL Apple Pay] fields on the checkout page. Options: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Show buttons on product detail page] | store view | Enable or disable [!DNL Apple Pay] on the product detail page. Options: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Show buttons in mini-cart preview] | store view | Enable or disable [!DNL Apple Pay] in the mini-cart preview. Options: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Show buttons on cart page] | store view | Enable or disable [!DNL Apple Pay] in on the cart page. Options: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Debug Mode] | website | Enable or disable Debug Mode. Options: [!UICONTROL Yes] / [!UICONTROL No] |
 
 ## [!DNL PayPal Smart Buttons]
@@ -97,7 +119,7 @@ You can enable and configure the PayPal Smart Buttons payment options within the
 1. To show PayPal Smart Buttons on the checkout page, select `Yes` for the **[!UICONTROL Show buttons on checkout page]**.
 1. 1. To show PayPal Smart Buttons on the product detail page, select `Yes` for the **[!UICONTROL Show buttons on product detail page]**.
 1. To show PayPal Smart Buttons in the mini cart preview, select `Yes` for **[!UICONTROL Show buttons in mini cart preview]**.
-1. To show PayPal Smart Buttons on the cart page, select `Yes` for the **[!UICONTROL Show buttons on checkout page]**.
+1. To show PayPal Smart Buttons on the cart page, select `Yes` for the **[!UICONTROL Show buttons on cart page]**.
 1. To enable Venmo as a payment option, select `Yes` for **[!UICONTROL Venmo Enabled]**.
 1. To enable credit and debit cards as a payment option (PayPal Smart button), select `Yes` for **[!UICONTROL Credit and Debit Card Enabled]**.
 1. To enable/disable the [PayPal Pay Later](payments-options.md#pay-later-button) payment option, select `Yes`/`No` for **[!UICONTROL PayPal Pay Later Enabled]**.
