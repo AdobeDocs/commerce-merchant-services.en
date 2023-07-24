@@ -33,7 +33,7 @@ You can also change the layout, width, height, and outer styling of the credit c
 
 ## [!DNL Apple Pay] button
 
-Customers can use Touch ID on their devices to use [[!DNL Apple Pay]](https://www.apple.com/apple-pay/), which utilizes credit and debit card payment credentials stored on their iOS or macOS device.
+Customers can use [[!DNL Apple Pay]](https://www.apple.com/apple-pay/), which utilizes credit and debit card payment credentials stored on an iOS or macOS device, to make purchases.
 
 The [!DNL Apple Pay] button is visible from the product page, mini-cart, shopping cart, and checkout views.
 
