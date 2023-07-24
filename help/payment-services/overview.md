@@ -48,13 +48,15 @@ Currently, [!DNL Payment Services] is available in the following countries:
 * France (FR)
 * United Kingdom (UK)
 
-See [Lifecycle policy](https://devdocs.magento.com/release/lifecycle-policy.html){target="_blank"} and the [[!DNL Payment Services] release notes](release-notes.md) pages for more release and version-specific information.
+See [Lifecycle policy](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html) and the [[!DNL Payment Services] release notes](release-notes.md) pages for more release and version-specific information.
 
 ### Accepted credit cards and currencies
 
 [!DNL Payment Services] accepts the currencies of the countries [in which it is available](#availability).
 
-See the [PayPal currency availability](https://developer.paypal.com/docs/platforms/checkout/reference/country-availability-advanced-cards/) documentation for more information.
+To see which currencies PayPal supports, see [Supported currencies documentation](https://developer.paypal.com/docs/reports/reference/paypal-supported-currencies/).
+
+To see which payment methods PayPal supports, see their [Payment methods documentation](https://developer.paypal.com/docs/checkout/payment-methods/).
 
 ## Get started
 

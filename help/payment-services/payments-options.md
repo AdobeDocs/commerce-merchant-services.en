@@ -40,6 +40,8 @@ You can also change the layout, width, height, and outer styling of the credit c
 
 You can configure [!UICONTROL PayPal Smart Buttons] in the store configuration or the Payment Services Home.  See [Settings](settings.md#payment-buttons) for more information.
 
+See PayPal's [Payment methods documentation](https://developer.paypal.com/docs/checkout/payment-methods/) to learn in which countries each payment method is currently available.
+
 ### [!DNL PayPal] button
 
 Customers can check out with ease and confidence using the PayPal button.
@@ -74,21 +76,11 @@ This option can be used to present a PayPal Debit or Credit card payment option 
 
 Offer your customers short-term, interest-free payments, and other financing options so that they can buy now and pay later with the [!DNL Pay Later] button.
 
-The [!DNL Pay Later] button is visible from the product page, mini-cart, shopping cart, and checkout views:
+The [!DNL Pay Later] button is visible from the product page, mini-cart, shopping cart, and checkout views.
 
-*  **When a customer selects a product between $30 and $600**, messaging under the PayPal and [!DNL Pay Later] buttons gives the customer more information about the [!DNL Pay in 4] payment option. Customers can click **Learn more** to learn about the "[!DNL Pay in 4]" option _or_ click the "Or see 6 months special financing" text in the popup to learn about and apply for the PayPal Credit option.
-*  **When a customer selects a product or products exceeding $98.99**, messaging under the PayPal and [!DNL Pay Later] buttons gives customers more information about the PayPal Credit payment option. Customers can click **Learn more** to learn about and apply for the PayPal Credit option, _or_ click the "Or see Pay in 4" text in the popup to learn about the [!DNL Pay in 4] option.
-
-   >[!NOTE]
-   >
-   >The amounts listed above are subject to change.
+See information about the Pay Later offers in [PayPal's Pay Later offers documentation](https://developer.paypal.com/docs/checkout/pay-later/us/). Use the **Country or region** dropdown to select a region of interest.
 
 See [Settings](settings.md#payment-buttons) to learn how to disable/enable the [!DNL Pay Later] messaging.
-
-There are two payment options with the [!DNL Pay Later] button:
-
-*  **Pay in 4**---Customers can pay their order balance in four interest-free payments (every two weeks) after an initial down payment. See the [Pay in 4 documentation](https://www.paypal.com/us/digital-wallet/ways-to-pay/buy-now-pay-later) for more information.
-*  **PayPal Credit**---Customers can pay their order balance in full over six months, interest-free. See the [PayPal Credit documentation](https://www.paypal.com/us/webapps/mpp/paypal-credit) for more information.
 
 ### [!DNL Pay Now] button
 
