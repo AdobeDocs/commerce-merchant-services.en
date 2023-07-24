@@ -1,6 +1,6 @@
 ---
-title: [!DNL Feed Ingestion Service] 
-description: Learn about the [!DNL Feed Ingestion Service] for Adobe Commerce
+title: Feed Ingestion Service]
+description: Learn about the Feed Ingestion Service for Adobe Commerce
 ---
 
 # Feed Ingestion Service
