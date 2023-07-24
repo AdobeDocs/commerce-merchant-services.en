@@ -136,7 +136,7 @@ Create the following data element:
 
 1. Sign out:
 
-    - **Name**: `Sign out`
+    - **Name**: `sign out`
     - **Extension**: `Adobe Experience Platform Web SDK`
     - **Data Element Type**: `XDM object`
     - **Field Group**: `userAccount` > `logout`
