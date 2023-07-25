@@ -38,3 +38,4 @@ recommendations: noDisplay
   - [Refunds](refunds.md)
   - [Voids](voids.md)
 - [Security and compliance](security.md)
+  - [Signifyd fraud protection](fraud-protection.md)
