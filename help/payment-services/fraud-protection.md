@@ -3,7 +3,6 @@ title: Signifyd Fraud Protection
 description: Enable automated fraud protection for [!DNL Payment Services] with Signifyd.
 role: Admin, User
 level: Intermediate
-exl-id:
 feature: Payments, Checkout, Configuration, Security
 ---
 
