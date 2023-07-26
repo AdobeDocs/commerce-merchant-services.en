@@ -170,4 +170,4 @@ To learn more:
 
 * [Adobe Commerce Developer Documentation](https://developer.adobe.com/commerce/docs)
 * [Adobe Commerce User Guide](https://experienceleague.adobe.com/docs/commerce.html)
-* [[!DNL Live Search] on Marketplace](https://marketplace.magento.com/magento-live-search.html)
+* [[!DNL Live Search] on Marketplace](https://commercemarketplace.adobe.com/magento-live-search.html)
