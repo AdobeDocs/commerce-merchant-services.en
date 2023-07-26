@@ -37,6 +37,6 @@ recommendations: noDisplay
 - Manage payments {#manage}
   - [Refunds](refunds.md)
   - [Voids](voids.md)
-- Security {#security}
-  - [Security and compliance](security-compliance.md)
+- Security {#security-compliance}
+  - [Security and compliance](security.md)
   - [Signifyd fraud protection](fraud-protection.md)
