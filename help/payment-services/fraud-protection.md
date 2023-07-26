@@ -33,7 +33,7 @@ When onboarding with Signifyd you must:
   * When using [!DNL Payment Services] in _Live_ mode, Signifyd must be in Test mode.
   * When using [!DNL Payment Services] in _Sandbox_ mode, Signifyd must be in Production mode.
 
-### Configuration
+## Configuration
 
 Because Signifyd takes some action on your orders, it is necessary to configure the extension to behave appropriately based on the payment action you set for [!DNL Payment Services].
 
@@ -47,4 +47,4 @@ To configure order behavior in Signifyd (once installed) in the Admin:
    * If your [!DNL Payment Services] [payment action](../payment-services/production.md#set-payment-services-as-payment-method) is set to `Authorize and Capture`, select either **[!UICONTROL Do nothing]** or **[!UICONTROL Create credit memo]**.
    * If your [!DNL Payment Services] [payment action](../payment-services/production.md#set-payment-services-as-payment-method) is set to `Authorize`, select either **[!UICONTROL Do nothing]** or **[!UICONTROL Cancel order]**.
 
-   See [Signifyd documentation](https://community.signifyd.com/support/s/article/magento-2-extension-install-guide?language=en_US#howmagento2works) for more information.
+   See [Signifyd documentation](https://community.signifyd.com/support/s/article/magento-2-extension-install-guide?language=en_US#howmagento2works) to learn more about the order workflows.
