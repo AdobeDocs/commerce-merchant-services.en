@@ -21,8 +21,12 @@ The release notes include:
 
 See the developer documentation to [learn about product compatibility](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 
-## Current major version
- 
+## Hosted service updates
+
+These notes describe updates that were published outside of a versioned release or improvements to the hosted service.
+
++++Hosted service updates
+
  _July 18, 2023_
 
 ![New](../assets/new.svg) Product Recommendations now has a GraphQL [`recommendations`](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations/) query.
@@ -30,6 +34,10 @@ See the developer documentation to [learn about product compatibility](https://e
  _April 25, 2023_
 
 ![New](../assets/new.svg) Product Recommendations customers can now take advantage of [SaaS price indexing](../price-index/index.md).
+
++++
+
+## Current major version
 
 ### 5.0.0 of magento/product-recommendations
 

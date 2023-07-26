@@ -14,6 +14,11 @@ Updates include:
 ![Fix](../assets/fix.svg) Fixes and improvements
 ![Bug](../assets/bug.svg) Known issues
 
+## Hosted service updates
+
+These notes describe updates that were published outside of a versioned release or improvements to the hosted service.
+
++++Hosted service updates
 
 _June 13, 2023_
 
@@ -23,6 +28,8 @@ _June 13, 2023_
  _April 25, 2023_
 
 ![New](../assets/new.svg) Live Search customers can now take advantage of the new [SaaS price indexer](../price-index/index.md).
+
++++
 
 ## [!DNL Live Search] 3.0.1 {#301}
 
