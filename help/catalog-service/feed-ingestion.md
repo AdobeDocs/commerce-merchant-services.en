@@ -32,7 +32,7 @@ By bypassing the core Commerce application and moving data directly to the Comme
 
 The Feed Ingestion Service is designed for:
 
-* Mid-Enterprise customers
+* Mid-Enterprise customers with headless implementations
 * Customers with large, complex catalogs
 * Catalogs with 100 million+ eSKUs
 * Catalogs with multiple daily catalog updates
