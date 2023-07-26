@@ -133,14 +133,6 @@ You can enable and configure the PayPal Smart Buttons payment options within the
 1. To enable credit and debit cards as a payment option (PayPal Smart button), select `Yes` for **[!UICONTROL Credit and Debit Card Enabled]**.
 1. To enable/disable the [PayPal Pay Later](payments-options.md#pay-later-button) payment option, select `Yes`/`No` for **[!UICONTROL PayPal Pay Later Enabled]**.
 1. To enable debug mode, select `Yes` for the **[!UICONTROL Debug Mode]** (`No` disables it).
-1. Style PayPal Smart buttons:
-   - To set the layout, select `Vertical` or `Horizontal` for **[!UICONTROL Layout]**.
-   - To set the color, select from the available colors in **[!UICONTROL Color]**.
-   - To set the shape, select `Rectangular` or `Pill` for **[!UICONTROL Shape]**.
-   - To use the default height, select `Yes` or `No` for **[!UICONTROL Use Default Height]**.
-   - To set the custom height, add desired pixel height for **[!UICONTROL Height]**.
-   - To set the label, select from the available labels for **[!UICONTROL Label]**.
-   - To set the tagline, select `Yes` or `No` for **[!UICONTROL Tagline]**.
 1. To save your changes, click **[!UICONTROL Save Config]** .
 1. Navigate to **[!UICONTROL System]** > **[!UICONTROL Cache Management]**, and then click **[!UICONTROL Flush Cache]** to refresh all invalid caches.
 
@@ -160,16 +152,33 @@ You can enable and configure the PayPal Smart Buttons payment options within the
 | [!UICONTROL PayPal Pay Later Enabled] | store view | Enable or disable PayPal Pay Later payment option appearance where payment buttons are displayed. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Debug Mode] | website | Enable or disable Debug Mode. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 
-### [!DNL PayPal Smart Buttons] Styling configuration options
+## Button style
+
+You can also configure the _[!UICONTROL Button style]_ options of the payment buttons:
+
+1. On the _Admin_ sidebar, go to **[!UICONTROL Stores]** > _[!UICONTROL Settings]_ > **[!UICONTROL Configuration]**.
+1. In the left panel, expand **[!UICONTROL Sales]** and choose **[!UICONTROL Payment Methods]**.
+1. Expand the _[!UICONTROL Recommended Solutions]_ section.
+1. In the _[!UICONTROL [!DNL Payment Services]]_ section, expand the _[!UICONTROL PayPal Smart Button Styling]_ section.
+1. To set the layout, select `Vertical` or `Horizontal` for **[!UICONTROL Layout]**
+1. To set the color, select from the available colors in **[!UICONTROL Color]**.
+1. To set the shape, select `Rectangular` or `Pill` for **[!UICONTROL Shape]**.
+1. To use the default height, select `Yes` or `No` for **[!UICONTROL Use Default Height]**.
+1. To set the custom height, add desired pixel height for **[!UICONTROL Height]**.
+1. To set the tagline, select `Yes` or `No` for **[!UICONTROL Tagline]**.
+1. To save your changes, click **[!UICONTROL Save Config]** .
+1. Navigate to **[!UICONTROL System]** > **[!UICONTROL Cache Management]**, and then click **[!UICONTROL Flush Cache]** to refresh all invalid caches.
+
+### Configuration options
 
 |Field|Scope|Description|
 |--- |--- |--- |
-|[!UICONTROL Layout]|Store View|Define style of layout for Paypal Smart Buttons. Options: [!UICONTROL Vertical] / [!UICONTROL Horizontal]|
-|[!UICONTROL Color]|Store View|Define color of the Paypal Smart Buttons. Options: [!UICONTROL Blue] / [!UICONTROL Gold] / [!UICONTROL Silver] / [!UICONTROL White] / [!UICONTROL Black]|
-|[!UICONTROL Shape]|Store View|Define shape of the Paypal Smart Buttons. Options: [!UICONTROL Rectangular] / [!UICONTROL Pill]|
+|[!UICONTROL Layout]|Store View|Define style of layout for Paypal Smart Buttons. Options: `[!UICONTROL Vertical]` / `[!UICONTROL Horizontal]`|
+|[!UICONTROL Color]|Store View|Define color of the Paypal Smart Buttons. Options: [!UICONTROL Blue] / `[!UICONTROL Gold]` / `[!UICONTROL Silver]` / `[!UICONTROL White]` / `[!UICONTROL Black]`|
+|[!UICONTROL Shape]|Store View|Define shape of the Paypal Smart Buttons. Options: `[!UICONTROL Rectangular]` / `[!UICONTROL Pill]`|
 |[!UICONTROL Use Default Height]|Store View|Defines if PayPal Smart Buttons use a default height. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]`|
 |[!UICONTROL Height]|Store View|Define height of the PayPal Smart Buttons. Default value: none|
-|[!UICONTROL Label]|Store View|Define label that appears in the PayPal Smart Buttons. Options: [!UICONTROL PayPal] / [!UICONTROL Checkout] / [!UICONTROL Buynow] / [!UICONTROL Pay] / [!UICONTROL Installment]|
+|[!UICONTROL Label]|Store View|Define label that appears in the PayPal Smart Buttons. Options: `[!UICONTROL PayPal]` / `[!UICONTROL Checkout]` / `[!UICONTROL Buynow]` / `[!UICONTROL Pay]` / `[!UICONTROL Installment]`|
 |[!UICONTROL Tagline]|Store View|Enables tagline. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]`|
 
 ## Flush the cache
