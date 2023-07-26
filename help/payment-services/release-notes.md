@@ -132,7 +132,7 @@ _December 22, 2022_
 
 ![Fixed issue](../assets/fix.svg)<!-- Issue PAY-3992 --> Improved invoicing in Payment Services when a payment method is declined.
 
-![Fixed issue](../assets/fix.svg)<!-- Issue PAY-3999 --> Payment Services now correctly displays PayPal smart buttons for merchants using [Fire Checkout's](https://marketplace.magento.com/swissup-firecheckout.html){target=_blank} custom template for the checkout page. Previously, the minicart intermittently displayed the buttons.
+![Fixed issue](../assets/fix.svg)<!-- Issue PAY-3999 --> Payment Services now correctly displays PayPal smart buttons for merchants using [Fire Checkout's](https://commercemarketplace.adobe.com/swissup-firecheckout.html){target=_blank} custom template for the checkout page. Previously, the minicart intermittently displayed the buttons.
 
 ## v1.5.1
 
@@ -246,7 +246,7 @@ _November 29, 2021_
 
 [!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.0 and newer
 
-![New](../assets/new.svg)<!-- Issue PAY-2127 --> General availability release---[[!DNL Payment Services]](https://marketplace.magento.com/magento-payment-services.html) is now compatible with [!DNL Adobe Commerce] and [!DNL Magento Open Source] versions 2.4.0 to 2.4.3-p1.
+![New](../assets/new.svg)<!-- Issue PAY-2127 --> General availability release---[[!DNL Payment Services]](https://commercemarketplace.adobe.com/magento-payment-services.html) is now compatible with [!DNL Adobe Commerce] and [!DNL Magento Open Source] versions 2.4.0 to 2.4.3-p1.
 
 ![New](../assets/new.svg)<!-- Issue PAY-124 --> The [!DNL Payment Services] extension for [!DNL Adobe Commerce] and [!DNL Magento Open Source] can be installed either for [[!DNL Adobe Commerce] on cloud infrastructure](install.md#adobe-commerce-on-cloud-infrastructure) or [On-premises](install.md#on-premises) instances. These methods require the use of a Command Line Interface.
 

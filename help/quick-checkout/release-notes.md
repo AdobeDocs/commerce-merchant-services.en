@@ -78,7 +78,7 @@ _February 24, 2023_
 
 [!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.0 and newer
 
-![New](../assets/new.svg)<!-- Issue BOLT-520 --> General availability release---[[!DNL Quick Checkout]](https://marketplace.magento.com/magento-quick-checkout.html) is now pre-installed in Adobe Commerce Cloud versions 2.4.6 and newer.
+![New](../assets/new.svg)<!-- Issue BOLT-520 --> General availability release---[[!DNL Quick Checkout]](https://commercemarketplace.adobe.com/magento-quick-checkout.html) is now pre-installed in Adobe Commerce Cloud versions 2.4.6 and newer.
 
 ![Fixed issue](../assets/fix.svg)<!-- Issue BOLT-592 --> User experience improvements when placing an order in the [Admin Panel](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/create-order-admin.html) using [Braintree](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/stored-payment-methods.html) as a payment method. This functionality allows customers to place an order with Braintree as a payment method during checkout when [!DNL Quick Checkout] is enabled.
 
@@ -144,7 +144,7 @@ _September 8, 2022_
 
 [!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.0 and newer
 
-![New](../assets/new.svg)<!-- Issue BOLT-341 --> General availability release---[[!DNL Quick Checkout]](https://marketplace.magento.com/magento-quick-checkout.html) is now compatible with Adobe Commerce versions 2.4.5.
+![New](../assets/new.svg)<!-- Issue BOLT-341 --> General availability release---[[!DNL Quick Checkout]](https://commercemarketplace.adobe.com/magento-quick-checkout.html) is now compatible with Adobe Commerce versions 2.4.5.
 
 ![New](../assets/new.svg)<!-- Issue BOLT-328 --> [!DNL Quick Checkout] for Adobe Commerce and Magento Open Source provides an [Admin panel view](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/admin-panel.html) with all the necessary information to set up and use the extension.
 
@@ -178,7 +178,7 @@ _August 9, 2022_
 
 [!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.0 and newer
 
-![New](../assets/new.svg)<!-- Issue BOLT-341 --> General availability release---[[!DNL Quick Checkout]](https://marketplace.magento.com/magento-quick-checkout.html) is now compatible with Adobe Commerce versions 2.4.1 to 2.4.4.
+![New](../assets/new.svg)<!-- Issue BOLT-341 --> General availability release---[[!DNL Quick Checkout]](https://commercemarketplace.adobe.com/magento-quick-checkout.html) is now compatible with Adobe Commerce versions 2.4.1 to 2.4.4.
 
 ![New](../assets/new.svg)<!-- Issue BOLT-340 --> The [!DNL Quick Checkout] for Adobe Commerce can be installed either for Adobe Commerce [on cloud infrastructure](install.md#adobe-commerce-on-cloud-infrastructure) or [on-premises](install.md#on-premises) instances. These methods require the use of a command-line interface.
 
