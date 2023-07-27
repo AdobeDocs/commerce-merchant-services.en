@@ -1,5 +1,5 @@
 ---
-title: Feed Ingestion Service]
+title: Feed Ingestion Service
 description: Learn about the Feed Ingestion Service for Adobe Commerce
 ---
 
@@ -9,11 +9,11 @@ description: Learn about the Feed Ingestion Service for Adobe Commerce
 >
 >The Feed Ingestion Service is currently in private beta. It is not yet available for general use.
 
-The Feed Ingestion Service decreases the time it takes to process product changes (price updates, adding new attributes) by bypassing the Adobe Commerce instance and moving catalog data from a third-party ERP directly to Adobe Commerce services.
+The Feed Ingestion Service decreases the time it takes to process product changes (price updates, adding new attributes) by bypassing the Adobe Commerce instance and moving catalog data from a third-party Enterprise Resource Planning (ERP) directly to Adobe Commerce services.
 
 This service is for customers that store and manage their product catalog in a system external to the core Adobe Commerce application.
 
-Customers with large, complex catalogs, or catalogs that get frequent updates are concerned that the new data could take longer than desired to be reflected on the live store. Since the Catalog Service knows what data it needs to process these updates, there is no need to send the data through the core Commerce product, only to be forwarded to Catalog Service. Removing this intermediate step is where the efficiency gains are found.
+Customers with large, complex catalogs, or catalogs that get frequent updates are concerned that the new data could take longer than desired to appear in the live store. Since the Catalog Service knows what data it needs to process these updates, there is no need to send the data through the core Commerce product, only to be forwarded to Catalog Service. Removing this intermediate step is where efficiency gains are found.
 
 ## Feed ingestion flows
 
@@ -26,16 +26,16 @@ Depending on the Adobe Commerce configuration, data storage and data flows can t
 
 ![Feed ingestion service](assets/feed-ingestion.png)
 
-By bypassing the core Commerce application and moving data directly to the Commerce services, product updates can be reflected on the store much more quickly. Core catalog data, such as SKUs, are sent to the core Commerce application for separate processing.
+By bypassing the core Commerce application and moving data directly to the Commerce services, product updates are reflected in the store quicker. Core catalog data, such as SKUs, are sent to the core Commerce application for separate processing.
 
 ## Join the beta
 
 The Feed Ingestion Service is designed for:
 
-* Mid-Enterprise customers with headless implementations
+* Mid-enterprise customers with headless implementations
 * Customers with large, complex catalogs
 * Catalogs with 100 million+ eSKUs
 * Catalogs with multiple daily catalog updates
-* Customers not using the Adobe Commerce admin to manage catalog data, instead using an ERP or third-party system to manage catalog data.
+* Customers not using the Adobe Commerce Admin to manage catalog data, instead using an ERP or third-party system to manage catalog data
 
 If you are interested in joining the beta program, contact the team at XXXXX@adobe.com.
