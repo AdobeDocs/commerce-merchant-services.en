@@ -34,8 +34,6 @@ The Feed Ingestion Service is designed for:
 
 * Mid-enterprise customers with headless implementations
 * Customers with large, complex catalogs
-* Catalogs with 100 million+ eSKUs
-* Catalogs with multiple daily catalog updates
 * Customers not using the Adobe Commerce Admin to manage catalog data, instead using an ERP or third-party system to manage catalog data
 
 If you are interested in joining the beta program, contact the team at XXXXX@adobe.com.
