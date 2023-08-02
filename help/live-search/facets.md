@@ -9,6 +9,8 @@ Faceting is a method of high-performance filtering that uses multiple dimensions
 
 ![Filtered search results](assets/storefront-search-results-run.png)
 
+Any defined facet may be used as a URL parameter and results will be filtered based on the parameter values: `http://yourstore.com?brand=acme&color=red`.
+
 ## Faceting requirements
 
 The category and product attribute requirements for faceting are similar to the filterable attributes used for layered navigation. The storefront properties of each attribute must be set to `filterable (with results)`.
