@@ -14,6 +14,7 @@ recommendations: noDisplay
    - [Install the Experience Platform Connector](install.md)
    - [Configure the Experience Platform Connector](connect-data.md)
    - [Add Field Groups to XDM Schema](update-xdm.md)
+   - [Integrate the Adobe Experience Platform Mobile SDK with Commerce](mobile-sdk-epc.md)
 - Capture Data {#event-forwarding}
    - [Events](events.md)
    - [Custom Events](custom-events.md)
