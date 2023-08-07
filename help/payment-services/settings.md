@@ -138,7 +138,7 @@ You can enable and configure the PayPal smart buttons payment options:
 1. Select the store view, in the **[!UICONTROL Scope]** dropdown menu, for which you want to enable a payment method.
 1. To change the name of the payment method as shown during checkout, edit the value in the **[!UICONTROL Checkout Title]** field.
 1. To [set the payment action](production.md#set-payment-services-as-payment-method), toggle **[!UICONTROL Payment action]** to `Authorize` or `Authorize and Capture`.
-1. To prioritize a payment method, provide a `Numeric Only` value in the **[!UICONTROL Sort order]** field.
+1. To prioritize a payment method on the checkout page, provide a `Numeric Only` value in the **[!UICONTROL Sort order]** field.
 1. Use the toggle selectors to enable or disable [!DNL PayPal smart button] display features:
 
    -  **[!UICONTROL Show PayPal buttons on product checkout page]**
