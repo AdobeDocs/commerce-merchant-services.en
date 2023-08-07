@@ -104,7 +104,7 @@ See [Payments options](payments-options.md#credit-card-fields) for more informat
 1. Select the store view, in the **[!UICONTROL Scope]** dropdown menu, for which you want to enable a payment method.
 1. To change the name of the payment method displayed during checkout, edit the value in the **[!UICONTROL Checkout title]** field.
 1. To [set the payment action](production.md#set-payment-services-as-payment-method), toggle **[!UICONTROL Payment action]** to `Authorize` or `Authorize and Capture`.
-1. To prioritize a payment method, provide a `Numeric Only` value in the **[!UICONTROL Sort order]** field.
+1. To prioritize a payment method on the checkout page, provide a `Numeric Only` value in the **[!UICONTROL Sort order]** field.
 1. To enable [3DS Secure authentication](security.md#3ds) (`Off` by default) toggle the **[!UICONTROL 3DS Secure authentication]** selector to `Always` or `When required`.
 1. To enable or disable credit card fields on the checkout page, toggle the **[!UICONTROL Show on checkout page]** selector.
 1. To enable or disable [card vaulting](#card-vaulting), toggle the **[!UICONTROL Vault enabled]** selector.
