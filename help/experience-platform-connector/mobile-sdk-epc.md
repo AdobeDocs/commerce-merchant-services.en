@@ -10,9 +10,9 @@ feature: Personalization, Integration, Eventing
 >
 >The Adobe Experience Platform Mobile SDK for iOS supports iOS 11 or later.
 
-Merchants can integrate the [Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/) with their Commerce mobile app and send their Commerce [event data](events.md) to the Experience Platform edge.
+Integrating the [Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/) with the Commerce mobile app allows merchants to send Commerce  [event data](events.md) to the Experience Platform edge.
 
-With Commerce event data at the edge, other Adobe Experience Cloud applications can use that data. For example, you can use the data to build audiences in Real-Time CDP then [use those audiences](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) to personalize your Commerce mobile app.
+When Commerce event data is available at the edge, it can be accessed by other Adobe Experience Cloud applications. For example, you can use the data to build audiences in Real-Time CDP then [use those audiences](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) to personalize your Commerce mobile app.
 
 ## Configuration
 
@@ -32,7 +32,7 @@ To get started using the Adobe Experience Platform Mobile SDK with Commerce, ins
 
 After you complete the SDK configuration for the Experience platform, add the SDK configuration to Commerce.
 
-1. To send Commerce event data to the Experience Platform via the SDK, you must provide an XDM schema in the application code. This schema must match the schema you [created](https://developer.adobe.com/client-sdks/documentation/getting-started/set-up-schemas-and-datasets/) when you configured the mobile SDK in the Experience Platform.
+1. To send Commerce event data to the Experience Platform via the SDK, you must provide an XDM schema in the application code. This schema must match the schema [configured](https://developer.adobe.com/client-sdks/documentation/getting-started/set-up-schemas-and-datasets/) for the SDK in the Experience Platform.
 
 The following example shows how to track the `web.webpagedetails.pageViews` event and set the `identityMap` using the email field.
 
@@ -61,15 +61,22 @@ The following example shows how to track the `web.webpagedetails.pageViews` even
     Identity.updateIdentities(with: identityMap)
     ```
 
-1. Connect to the Commerce Cloud environment. In your project's build settings, add the URL to the Commerce GraphQL endpoint. Such as:
+1. Connect to the Commerce Cloud environment.
+
+    In your project's build settings, add the URL to the Commerce GraphQL endpoint. Such as:
 
     - Debug: http://_debug_.commercesite.cloud/graphql/
     - Release: http://_release_.commercesite.cloud/graphql/
     
 1. To retrieve data from the Commerce GraphQL endpoints, first generate the necessary files and directories in your project using the [Apollo Code Generator](https://www.apollographql.com/docs/ios/).
 
-    1. [Install](https://www.apollographql.com/docs/ios/get-started#1-install-the-apollo-frameworks) Apollo iOS into your project.
-    1. [Initialize](https://www.apollographql.com/docs/ios/code-generation/codegen-cli/#initialize) the Apollo Codegen CLI to create a `apollo-codegen-configuration.json` file. To generate the necessary GraphQL files and directories in your project, replace the contents of this file with the following:
+    1. From your project directory, [install](https://www.apollographql.com/docs/ios/get-started#1-install-the-apollo-frameworks) Apollo iOS.
+    
+    1. [Initialize](https://www.apollographql.com/docs/ios/code-generation/codegen-cli/#initialize) the Apollo Codegen CLI.
+    
+        This creates an `apollo-codegen-configuration.json` file.
+        
+    1. Generate the necessary GraphQL files and directories in your project by replacing the contents the `apollo-codegen-configuration.json` file with the following:
 
         ```json
         {
@@ -117,9 +124,13 @@ The following example shows how to track the `web.webpagedetails.pageViews` even
         }
         ```
         
-    1. [Fetch](https://www.apollographql.com/docs/ios/code-generation/codegen-cli/#fetch-schema) the Commerce GraphQL schema. Ensure that the path is to the `./apollo-codegen-config.json` file, which contains the reference to the Commerce GraphQL schema.
+    1. [Fetch](https://www.apollographql.com/docs/ios/code-generation/codegen-cli/#fetch-schema) the Commerce GraphQL schema.
+    
+        Ensure that the path is to the `./apollo-codegen-config.json` file, which contains the reference to the Commerce GraphQL schema.
 
-    1. [Generate](https://www.apollographql.com/docs/ios/code-generation/codegen-cli/#generate) the source code. Ensure that the path is to the `./apollo-codegen-config.json` file, which contains the configuration information to generate the necessary files and directories.
+    1. [Generate](https://www.apollographql.com/docs/ios/code-generation/codegen-cli/#generate) the source code.
+    
+        Ensure that the path is to the `./apollo-codegen-config.json` file, which contains the configuration information to generate the necessary files and directories.
 
     1. Inside the newly created **GraphQLGenerated** folder, add or edit GraphQL types. For example, you can add a `DynamicBlocks.graphql` type with the following content:
 
