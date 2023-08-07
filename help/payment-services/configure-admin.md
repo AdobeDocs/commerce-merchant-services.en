@@ -94,7 +94,7 @@ You can enable and configure the PayPal Smart Buttons payment options within the
 1. In the _[!UICONTROL Payment Services]_ section, expand the _[!UICONTROL PayPal Smart Buttons]_ section.
 1. To change the name of the payment method as shown during checkout, edit the _[!UICONTROL Title]_ field.
 1. To [set the payment action](production.md#set-payment-services-as-payment-method), select **[!UICONTROL Authorize]** or **[!UICONTROL Authorize and Capture]**.
-1. To prioritize a payment method, provide a `Numeric Only` value in the **[!UICONTROL Sort order]** field.
+1. To prioritize a payment method on the checkout page, provide a `Numeric Only` value in the **[!UICONTROL Sort order]** field.
 1. To enable/disable the [Pay Later messaging](payments-options.md#pay-later-button), select `Yes`/`No` for **[!UICONTROL Display Pay Later Message]**.
 1. To show PayPal Smart Buttons on the checkout page, select `Yes` for the **[!UICONTROL Show buttons on checkout page]**.
 1. To show PayPal Smart Buttons in the mini cart preview, select `Yes` for **[!UICONTROL Show buttons in mini cart preview]**.
