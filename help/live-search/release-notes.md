@@ -14,15 +14,49 @@ Updates include:
 ![Fix](../assets/fix.svg) Fixes and improvements
 ![Bug](../assets/bug.svg) Known issues
 
+## Hosted service updates
+
+These notes describe updates that were published outside of a versioned release or improvements to the hosted service.
+
++++Hosted service updates
 
 _June 13, 2023_
 
-![New](../assets/new.svg) Live Search now supports 5 more [configuration values](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-admin/configuration.html).
 ![Fix](../assets/fix.svg) Fixed an issue where some characters such as quotes or apostrophes caused ranking issues. Reindexing will solve these issues.
 
  _April 25, 2023_
 
 ![New](../assets/new.svg) Live Search customers can now take advantage of the new [SaaS price indexer](../price-index/index.md).
+
++++
+
+## [!DNL Live Search] 3.0.2 {#302}
+
+ _August 7, 2023_
+
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.4 and newer
+
+### New Features
+
+The following values have been added to the `storeDetails` object:
+
+* "Allow All Products per Page"
+* Currency rate
+* "Products per Page on Grid Allowed Values"
+* "Products per Page on Grid Default Value"
+* Store language
+
+### Updates
+
+* Catalog Service modules have been added to the metapackage to support advanced data retrieval.
+
+Merchants must upgrade the [!DNL Live Search] extension version >= 3.0.2 to access these features.
+
+It is recommended to upgrade and test before pushing to production. Consider upgrading the production environment during off-peak hours after verifying their testing environment results.
+
+## Previous versions
+
++++3.0.1 and prior
 
 ## [!DNL Live Search] 3.0.1 {#301}
 
@@ -67,10 +101,6 @@ _June 13, 2023_
 Merchants must upgrade the [!DNL Live Search] extension version >= 3.0.1 to access these features.
 
 It is recommended to upgrade and test before pushing to production. Consider upgrading the production environment during off-peak hours after verifying their testing environment results.
-
-## Previous versions
-
-+++2.0.5 and prior
 
 ## [!DNL Live Search] 2.0.5 {#205}
 
