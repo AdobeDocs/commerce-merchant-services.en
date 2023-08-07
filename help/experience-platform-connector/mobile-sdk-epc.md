@@ -16,11 +16,11 @@ With Commerce event data at the edge, other Adobe Experience Cloud applications 
 
 ## Configuration
 
-To get started using the Adobe Experience Platform Mobile SDK with Commerce, you must install and configure the SDK in the Experience Platform then finalize your configuration in Commerce.
+To get started using the Adobe Experience Platform Mobile SDK with Commerce, install and configure the SDK in the Experience Platform. Then, finalize your configuration in Commerce.
 
 ### Experience Platform
 
-1. To familiarize yourself with the mobile app capabilities, go through the [Adobe Experience Cloud in mobile apps tutorial](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html).
+1. Learn about mobile app capabilities by reviewing the [Adobe Experience Cloud in mobile apps tutorial](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html).
 
 1. [Install and configure](https://developer.adobe.com/client-sdks/documentation/getting-started/) the SDK in Experience Platform.
 
@@ -30,11 +30,11 @@ To get started using the Adobe Experience Platform Mobile SDK with Commerce, you
 
 ### Commerce
 
-After you complete the above steps, you then configure the SDK in Commerce.
+After you complete the SDK configuration for the Experience platform, add the SDK configuration to Commerce.
 
 1. To send Commerce event data to the Experience Platform via the SDK, you must provide an XDM schema in the application code. This schema must match the schema you [created](https://developer.adobe.com/client-sdks/documentation/getting-started/set-up-schemas-and-datasets/) when you configured the mobile SDK in the Experience Platform.
 
-The following example shows how you can track the `web.webpagedetails.pageViews` event and set the `identityMap` using the email field.
+The following example shows how to track the `web.webpagedetails.pageViews` event and set the `identityMap` using the email field.
 
     ```swift
     let stateName = "luma: content: ios: us: en: home"
@@ -66,7 +66,7 @@ The following example shows how you can track the `web.webpagedetails.pageViews`
     - Debug: http://_debug_.commercesite.cloud/graphql/
     - Release: http://_release_.commercesite.cloud/graphql/
     
-1. To retrieve data from the Commerce GraphQL endpoints, you first must generate the necessary files and directories in your project using the [Apollo Code Generator](https://www.apollographql.com/docs/ios/).
+1. To retrieve data from the Commerce GraphQL endpoints, first generate the necessary files and directories in your project using the [Apollo Code Generator](https://www.apollographql.com/docs/ios/).
 
     1. [Install](https://www.apollographql.com/docs/ios/get-started#1-install-the-apollo-frameworks) Apollo iOS into your project.
     1. [Initialize](https://www.apollographql.com/docs/ios/code-generation/codegen-cli/#initialize) the Apollo Codegen CLI to create a `apollo-codegen-configuration.json` file. To generate the necessary GraphQL files and directories in your project, replace the contents of this file with the following:
@@ -138,4 +138,4 @@ The following example shows how you can track the `web.webpagedetails.pageViews`
 
     You have now integrated the Adobe Experience Platform Mobile SDK with your Commerce mobile app. Event data flows from your app to the Experience Platform edge.
 
-To learn how you can retrieve Real-Time CDP audiences in your mobile Commerce app to inform cart price rules and dynamic blocks, see [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html).
+To learn how to retrieve Real-Time CDP audiences from your mobile Commerce app to inform cart price rules and dynamic blocks, see [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html).
