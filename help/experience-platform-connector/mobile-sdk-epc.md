@@ -34,9 +34,9 @@ After you complete the SDK configuration for the Experience platform, add the SD
 
 1. To send Commerce event data to the Experience Platform via the SDK, you must provide an XDM schema in the application code. This schema must match the schema [configured](https://developer.adobe.com/client-sdks/documentation/getting-started/set-up-schemas-and-datasets/) for the SDK in the Experience Platform.
 
-The following example shows how to track the `web.webpagedetails.pageViews` event and set the `identityMap` using the email field.
+    The following example shows how to track the `web.webpagedetails.pageViews` event and set the `identityMap` using the email field.
 
-    ```javascript
+    ```swift
     let stateName = "luma: content: ios: us: en: home"
     var xdmData: [String: Any] = [
         "eventType": "web.webpagedetails.pageViews",
@@ -52,10 +52,11 @@ The following example shows how to track the `web.webpagedetails.pageViews` even
 
     let experienceEvent = ExperienceEvent(xdm: xdmData)
     Edge.sendEvent(experienceEvent: experienceEvent)
-    
+        
     // Adobe Experience Platform - Update Identity
+
     let emailLabel = "mobileuser@example.com"
-    
+
     let identityMap: IdentityMap = IdentityMap()
     identityMap.add(item: IdentityItem(id: emailLabel), withNamespace: "Email")
     Identity.updateIdentities(with: identityMap)
@@ -76,7 +77,7 @@ The following example shows how to track the `web.webpagedetails.pageViews` even
     
         This creates an `apollo-codegen-configuration.json` file.
         
-    1. Generate the necessary GraphQL files and directories in your project by replacing the contents the `apollo-codegen-configuration.json` file with the following:
+    1. Generate the necessary GraphQL files and directories in your project by replacing the contents of the `apollo-codegen-configuration.json` file with the following:
 
         ```json
         {
