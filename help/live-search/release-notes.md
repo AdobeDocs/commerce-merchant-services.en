@@ -50,6 +50,10 @@ The following values have been added to the `storeDetails` object:
 
 * Catalog Service modules have been added to the metapackage to support advanced data retrieval.
 
+### Fixes
+
+* The My Account page navigation no longer disappears when using the Product Listing Page widget.
+
 Merchants must upgrade the [!DNL Live Search] extension version >= 3.0.2 to access these features.
 
 It is recommended to upgrade and test before pushing to production. Consider upgrading the production environment during off-peak hours after verifying their testing environment results.
