@@ -36,7 +36,7 @@ After you complete the SDK configuration for the Experience platform, add the SD
 
 The following example shows how to track the `web.webpagedetails.pageViews` event and set the `identityMap` using the email field.
 
-    ```swift
+    ```javascript
     let stateName = "luma: content: ios: us: en: home"
     var xdmData: [String: Any] = [
         "eventType": "web.webpagedetails.pageViews",
