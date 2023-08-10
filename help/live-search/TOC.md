@@ -44,3 +44,4 @@ feature: Services, Search
 - GraphQL queries {#graphql}
    - [attributeMetadata](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/attribute-metadata/)
    - [productSearch](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/)
+- [Limitations](limits.md) 
