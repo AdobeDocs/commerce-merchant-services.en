@@ -1,7 +1,7 @@
 ---
 title: '[!DNL Store Fulfillment by Walmart Commerce Technologies] Release Notes'
 description: "Review the release notes for information about all [!DNL Store Fulfillment by Walmart Commerce Technologies] releases."
-role: Admin, User, Leader
+role: Admin, User, Leader, Developer
 feature: Shipping/Delivery, Release Notes
 exl-id: 04dcec10-fff8-483d-a2c1-4b58e063e0f0
 ---
@@ -23,7 +23,7 @@ This release contains the following updates:
 
 ![New](../assets/fix.svg)  [!DNL Store Fulfillment] is now [compatible with Adobe Commerce 2.4.0 to 2.4.6](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html), including the 2.4.6-p1, 2.4.5-p3, and 2.4.4-p4 security patch releases.
 
-![New](../assets/new.svg)<!-- WMTP-918 -->  Added support for the [Asynchronous sending](sales-emails.md) configuration option for Sales Emails. Merchants that upgrade to version 1.5.0 have the option to send emails immediately (default) or asynchronously.
+![New](../assets/new.svg)<!-- WMTP-918 --> Added support for the [Asynchronous sending](sales-emails.md) configuration option for Sales Emails. Merchants that upgrade to version 1.5.0 have the option to send emails immediately (default) or asynchronously.
 
 ![New](../assets/new.svg)<!-- WMTP-916--> Updated the [Sources configuration](merchant-store-configuration.md) to support international phone number formats.
 
@@ -39,19 +39,19 @@ This release contains the following updates:
 
 ![Fixed issue](../assets/fix.svg)<!-- WMTP- 932 --> Fixed a checkout issue that allowed customers to select the home delivery method for items that are not eligible for home delivery.
 
-![Fixed issue](../assets/fix.svg)<!-- WMTP-915--> Fixed a failure caused by a missing Check-in error code.
-
-![Fixed issue](../assets/fix.svg)<!-- WMTP-932 --> Fixed a bug related to partial reject during dispense operations.
-
 ![Fixed issue](../assets/fix.svg) Installation updates
 
 - <!-- WMTP-880--> Fixed an issue that caused an incorrect website code to be returned when installing the Store Fulfillment extension.
 
 - <!-- WMTP-878--> Fixed an issue for SKU integers that required the data type to be casted to string type during installation.
 
+![Fixed issue](../assets/fix.svg)<!-- WMTP-915--> Fixed a failure caused by a missing Check-in error code.
+
+![Fixed issue](../assets/fix.svg)<!-- WMTP-932 --> Fixed a bug related to partial reject during dispense operations.
+
 ![New](../assets/new.svg)<!-- WMTP-953 --> Updated the Cancel API endpoint to consume the status parameter as an optional object.
 
-![New](../assets/new.svg)<!-- WMTP-960 --> Improved logging details for the Dispense endpoint.
+![New](../assets/new.svg)<!-- WMTP-960 --> Improved logging details for the Dispense API endpoint.
 
 ## v1.4.0
 
