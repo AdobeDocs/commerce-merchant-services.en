@@ -12,11 +12,11 @@ You can enable automated fraud protection for [!DNL Payment Services] with the [
 
 Adobe Commerce supports Signifyd versions 5.4.0 and newer. [!DNL Payment Services] supports pre-auth and post-auth Signifyd flows.
 
-## Limitations
+## Integration limitations
 
-Currently, the following limitations apply to Signifyd with [!DNL Payment Services]:
+Currently, the following limitations apply to the integration between Signifyd and [!DNL Payment Services]:
 
-* Signifyd supports only [credit card fields](../payment-services/payments-options.md#credit-card-fields) (not PayPal payment buttons or Apple Pay). You may configure Signifyd to consume orders placed with PayPal payment buttons or Apple Pay, but we cannot guarantee that Signifyd is able to identify fraud in those payment options.
+* The Signifyd/[!DNL Payment Services] integration supports only [credit card fields](../payment-services/payments-options.md#credit-card-fields) (not PayPal payment buttons or Apple Pay). [!DNL Payment Services] sends order data received via PayPal payment buttons and Apple Pay to Signifyd, but the integration only provides details for orders placed via credit card fields. We cannot guarantee that Signifyd will identify fraud in those payment options.
 * Signifyd does not support orders placed in the Admin by a merchant for a shopper.
 * Signifyd does not support orders placed with [vaulted credit cards](../payment-services/vaulting.md).
 
@@ -26,12 +26,13 @@ You must communicate directly with Signifyd to onboard the extension for use wit
 
 When onboarding with Signifyd you must:
 
-* Contact Signifyd to set up a new account.
-* [Allowlist credit card fields](https://github.com/signifyd/magento2/blob/main/docs/RESTRICT-PAYMENTS.md) to ensure Signifyd does not trigger for other payment options it does not currently support.
-* Confirm with Signifyd that PayPal will not reject orders, via the merchant's fraud protection setting in Paypal, that could be approved by Signifyd.
-* Enable the Signifyd extension to be compatible with [!DNL Payment Services]:
-  * When using [!DNL Payment Services] in _Live_ mode, Signifyd must be in Test mode.
-  * When using [!DNL Payment Services] in _Sandbox_ mode, Signifyd must be in Production mode.
+1. Contact Signifyd to set up a new account.
+1. By default, Signifyd payment methods are [allowlisted](https://github.com/signifyd/magento2/blob/main/docs/RESTRICT-PAYMENTS.md) to ensure Signifyd does not trigger for other payment options it does not currently support. If you want to ban a particular payment method, you must make changes.
+1. Confirm with Signifyd that PayPal will not reject orders, via the merchant's fraud protection setting in Paypal, that could be approved by Signifyd.
+1. Enable the Signifyd extension to be compatible with [!DNL Payment Services]:
+
+  * When using [!DNL Payment Services] in _Live_ mode, Signifyd must be in Production mode.
+  * When using [!DNL Payment Services] in _Sandbox_ mode, Signifyd must be in Test mode.
 
 ## Configuration
 
