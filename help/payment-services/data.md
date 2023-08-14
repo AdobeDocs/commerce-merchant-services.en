@@ -73,5 +73,5 @@ The `invoice_id` and `custom_id` are displayed near the bottom of the merchant a
 
 See PayPal's REST APIs documentation for more information:
 
-*  [`purchase_unit`, in which `custom_id` and `invoice_id` reside](https://developer.paypal.com/docs/api/orders/v2/#definition-purchase_unit:~:text=Read%20only.-,purchase_unit,-Collapse)
-*  [Show order details](https://developer.paypal.com/docs/api/orders/v2/#orders_get)
+* [`purchase_unit`, in which `custom_id` and `invoice_id` reside](https://developer.paypal.com/docs/api/orders/v2/#definition-purchase_unit:~:text=Read%20only.-,purchase_unit,-Collapse)
+* [Show order details](https://developer.paypal.com/docs/api/orders/v2/#orders_get)

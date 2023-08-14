@@ -47,7 +47,7 @@ Some other distinctions between the two are listed below.
 
 | Search Adapter | Widget PLP |
 | --- | --- |
-| - Respects Magento Currency Picker settings in Magento storefront and can convert from Base Currency to other enabled currencies.<br>- Respects Default Display Currency per store view<br>- Add to Cart button<br>- Swatches; color, image, and text; this includes both facets and product tiles<br>- Wishlist<br>- Compare products<br>- Ignores most Live Search -> Faceting settings (e.g. name, select type, sort type)<br>- Respects Catalog -> Categories settings<br>- Not able to filter on Categories for most searches | - Only aware of Base Currency configuration<br>- No Add to Cart button<br>- No swatches<br>- No wishlist<br>- No compare products<br>- Respects Live Search -> Faceting settings<br>- Ignores most of Catalog -> Categories settings<br>- Able to filter on Categories for most searches<br>- Quicker results<br>- Eventing |
+| - Respects Magento Currency Picker settings in Magento storefront and can convert from Base Currency to other enabled currencies.<br>- Respects Default Display Currency per store view<br>- Add to Cart button<br>- Swatches; color, image, and text; this includes both facets and product tiles<br>- Wishlist<br>- Compare products<br>- Ignores most Live Search -> Faceting settings (e.g. name, select type, sort type)<br>- Respects Catalog -> Categories settings<br>- Not able to filter on Categories for most searches | - No Add to Cart button<br>- No swatches<br>- No wishlist<br>- No compare products<br>- Respects Live Search -> Faceting settings<br>- Ignores most of Catalog -> Categories settings<br>- Able to filter on Categories for most searches<br>- Quicker results |
 
 To enable the widget:
 

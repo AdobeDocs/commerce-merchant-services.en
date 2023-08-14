@@ -12,8 +12,8 @@ feature: Payments, Checkout
 
 There are two available Payouts reporting views to enable you to see in-depth information about all of your payouts:
 
-*  **[Payouts data visualization view](#payouts-data-visualization-view)**---Chart available on the Payment Services Home that is a visual representation of aggregated amounts per day from the Payouts report view
-*  **[Payouts report view](#payouts-report-view)**---Report available in Payouts that shows detailed payout information for all transactions
+* **[Payouts data visualization view](#payouts-data-visualization-view)**---Chart available on the Payment Services Home that is a visual representation of aggregated amounts per day from the Payouts report view
+* **[Payouts report view](#payouts-report-view)**---Report available in Payouts that shows detailed payout information for all transactions
 
 The Payouts views show comprehensive payout information at-a-glance, allowing you full transparency into the payment amount, processed volume, and detailed reporting on the transaction level for financial reconciliation.
 
@@ -85,9 +85,9 @@ If _[!UICONTROL Live]_ is the selected data source, you can see report informati
 
 Data source selections work as follows:
 
-*  If you do not have any stores that are in Live mode, the data source selection defaults to _[!UICONTROL Sandbox]_.
-*  If you have any stores (one or multiple) in Live mode, the data source selection defaults to _[!UICONTROL Live]_.
-*  Report exports always honor the data source selection.
+* If you do not have any stores that are in Live mode, the data source selection defaults to _[!UICONTROL Sandbox]_.
+* If you have any stores (one or multiple) in Live mode, the data source selection defaults to _[!UICONTROL Live]_.
+* Report exports always honor the data source selection.
 
 To select the data source for your Order Payment Status report:
 

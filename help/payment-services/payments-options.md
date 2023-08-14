@@ -8,15 +8,15 @@ feature: Payments, Checkout, Configuration
 
 With [!DNL Adobe Commerce] and [!DNL Magento Open Source] [!DNL Payment Services], you have multiple payment options available to you. You can configure these payment options through:
 
-*  [Home settings](payments-home.md)
-*  [Store configuration](configure-admin.md) (recommended for legacy payment options or a multistore setup)
+* [Home settings](payments-home.md)
+* [Store configuration](configure-admin.md) (recommended for legacy payment options or a multistore setup)
 
 There are different behaviors for each payment method depending on where you are in the checkout process:
 
-*  Product page---The product page for an item
-*  Mini cart---Available upon click of the cart icon when a product has been added to the cart
-*  Shopping cart---Available upon click of _View and edit cart_ from the mini-cart
-*  Checkout view---Available upon click of _Proceed to Checkout_ from mini-cart or shopping cart
+* Product page---The product page for an item
+* Mini cart---Available upon click of the cart icon when a product has been added to the cart
+* Shopping cart---Available upon click of _View and edit cart_ from the mini-cart
+* Checkout view---Available upon click of _Proceed to Checkout_ from mini-cart or shopping cart
 
 >[!IMPORTANT]
 >
@@ -94,9 +94,9 @@ To quickly get your store into production mode you can configure _only_ PayPal p
 
 This allows you to:
 
-*  Provide a variety of payment options for your customers, including Venmo and PayPal payment buttons, with the option to turn off PayPal hosted card fields and use an existing credit card provider.
-*  Use your existing credit card provider for credit card payments, while also utilizing PayPal's other payment options.
-*  Use PayPal's payment buttons in a region in which PayPal does not support credit cards as a payment option.
+* Provide a variety of payment options for your customers, including Venmo and PayPal payment buttons, with the option to turn off PayPal hosted card fields and use an existing credit card provider.
+* Use your existing credit card provider for credit card payments, while also utilizing PayPal's other payment options.
+* Use PayPal's payment buttons in a region in which PayPal does not support credit cards as a payment option.
 
 To **capture payments with _only_ PayPal payment buttons (_not_ the PayPal credit card payment option)**:
 
