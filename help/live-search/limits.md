@@ -27,14 +27,6 @@ description: "Learn about limitations in [!DNL Live Search]."
 
 - [!DNL Live Search] can manage up to 200 synonyms per store view.
 
-## Elasticsearch and Live Search
-
-Elasticsearch is the default Commerce search engine. This gives the user flexibility and configurability, which comes at a cost of CPU resources, configuration and maintenance.
-
-Live Search offers a fast, highly relevant product catalog search experience out of the box with carefully curated capabilities which is maintained by Adobe. This also offloads computational work from the Commerce instance to the Adobe servers.
-
-Merchants should weigh the pros and cons.
-
 ## Widget and Adapter
 
 The [!DNL Live Search] service can be implemented a two ways: The [!DNL Live Search] Search Adapter or the widget.
