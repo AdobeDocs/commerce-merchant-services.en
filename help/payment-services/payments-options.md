@@ -70,7 +70,7 @@ Customers can check out using the PayPal Debit or Credit card button.
 
 The PayPal Debit or Credit card button is visible from the checkout page.
 
-This option can be used to present a PayPal Debit or Credit card payment option to your shoppers when you do not have an alternative credit card provider.
+This option can be used to present a debit or credit card payment option to your shoppers via a PayPal-hosted button as an alternative to a credit card integration.
 
 ### [!DNL Pay Later] button
 
