@@ -58,6 +58,10 @@ Merchants must upgrade the [!DNL Live Search] extension version >= 3.0.2 to acce
 
 It is recommended to upgrade and test before pushing to production. Consider upgrading the production environment during off-peak hours after verifying their testing environment results.
 
+### Limitations
+
+Using the Live Search Product Listing Page widget will cause Google Tag Manager to fail. Use the default Search Adapater if Google Tag Manager is needed.
+
 ## Previous versions
 
 +++3.0.1 and prior
