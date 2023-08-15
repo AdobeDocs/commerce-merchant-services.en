@@ -17,7 +17,7 @@ These release notes describe the initial release of [!DNL Store Fulfillment Serv
 
 *August [Add date], 2023*
 
-[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Compatible with [released versions of Adobe Commerce 2.4.0 - 2.4.6](https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html).
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Compatible with [released versions of Adobe Commerce 2.4.4 - 2.4.6](https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html).
 
 This release contains the following updates:
 
@@ -57,16 +57,16 @@ This release contains the following updates:
 
 *April 13, 2023*
 
-[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.0 - 2.4.6
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.4 - 2.4.6
 
-![New](../assets/fix.svg) [!DNL Store Fulfillment] is now [compatible with [!DNL Adobe Commerce] 2.4.0 to 2.4.6](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
+![New](../assets/fix.svg) [!DNL Store Fulfillment] is now [compatible with [!DNL Adobe Commerce] 2.4.4 to 2.4.6](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 
 
 ## v1.3.0
 
 *February 27, 2023*
 
-[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.0 - 2.4.5
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.4 - 2.4.5
 
 This release contains the following update:
 
@@ -76,18 +76,18 @@ This release contains the following update:
 
 *September 27, 2022*
 
-[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.0 - 2.4.5
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.4 - 2.4.5
 
 This release contains the following update:
 
-![New](../assets/fix.svg) [!DNL Store Fulfillment] is now [compatible with [!DNL Adobe Commerce] 2.4.0 to 2.4.5](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
+![New](../assets/fix.svg) [!DNL Store Fulfillment] is now [compatible with [!DNL Adobe Commerce] 2.4.4 to 2.4.5](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 
 
 ## v1.1.0
 
 *July 15, 2022*
 
-[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.0 - 2.4.4
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.4 - 2.4.4
 
 Stability: General Availability
 
@@ -97,7 +97,7 @@ Stability: General Availability
 
 *March 4, 2022*
 
-[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.0 - 2.4.4
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.4 - 2.4.4
 
 Stability: General Availability
 
