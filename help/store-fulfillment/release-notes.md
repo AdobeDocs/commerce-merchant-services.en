@@ -1,7 +1,7 @@
 ---
 title: '[!DNL Store Fulfillment by Walmart Commerce Technologies] Release Notes'
 description: "Review the release notes for information about all [!DNL Store Fulfillment by Walmart Commerce Technologies] releases."
-role: Admin, User, Leader
+role: Admin, User, Leader, Developer
 feature: Shipping/Delivery, Release Notes
 exl-id: 04dcec10-fff8-483d-a2c1-4b58e063e0f0
 ---
@@ -91,7 +91,7 @@ This release contains the following update:
 
 Stability: General Availability
 
-![New](../assets/fix.svg)<!-- WMTP-731 --> Simplified the [Check-in experience configuration](check-in-experience-setup.md) for the Store Assist app by adding default car make and model selections. In the previous version, merchants had to manually configure the car make and model selections.
+![New](../assets/new.svg)<!-- WMTP-731 --> Simplified the [Check-in experience configuration](check-in-experience-setup.md) for the Store Assist app by adding default car make and model selections. In the previous version, merchants had to manually configure the car make and model selections.
 
 ## v1.0.0
 
