@@ -17,11 +17,11 @@ These release notes describe the initial release of [!DNL Store Fulfillment Serv
 
 *August [Add date], 2023*
 
-[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Compatible with [released versions of Adobe Commerce 2.4.4 - 2.4.6](https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html).
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Compatible with [Adobe Commerce 2.4.4 to 2.4.6](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html), including the 2.4.6-p1, 2.4.5-p3, and 2.4.4-p4 security patch releases.
 
 This release contains the following updates:
 
-![New](../assets/fix.svg)  [!DNL Store Fulfillment] is now [compatible with Adobe Commerce 2.4.0 to 2.4.6](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html), including the 2.4.6-p1, 2.4.5-p3, and 2.4.4-p4 security patch releases.
+![New](../assets/fix.svg) Updated the extension to support [Adobe Commerce security patch releases](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/overview.html) 2.4.6-p1, 2.4.5-p3, and 2.4.4-p4.
 
 ![New](../assets/new.svg)<!-- WMTP-918 --> Added support for the [Asynchronous sending](sales-emails.md) configuration option for Sales Emails. Merchants that upgrade to version 1.5.0 have the option to send emails immediately (default) or asynchronously.
 
