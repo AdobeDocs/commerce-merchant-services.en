@@ -13,6 +13,46 @@ These release notes describe the initial release of [!DNL Store Fulfillment Serv
 ![Fixed issue](../assets/fix.svg) Fixes and improvements
 ![Known issue](../assets/bug.svg) Known issues
 
+## v1.5.0
+
+*August [Add date], 2023*
+
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Compatible with [Adobe Commerce 2.4.4 to 2.4.6](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html), including the 2.4.6-p1, 2.4.5-p3, and 2.4.4-p4 security patch releases.
+
+This release contains the following updates:
+
+![New](../assets/fix.svg) Updated the extension to support [Adobe Commerce security patch releases](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/overview.html) 2.4.6-p1, 2.4.5-p3, and 2.4.4-p4.
+
+![New](../assets/new.svg)<!-- WMTP-918 --> Added support for the [Asynchronous sending](sales-emails.md) configuration option for Sales Emails. Merchants that upgrade to version 1.5.0 have the option to send emails immediately (default) or asynchronously.
+
+![New](../assets/new.svg)<!-- WMTP-916--> Updated the [Sources configuration](merchant-store-configuration.md) to support international phone number formats.
+
+![New](../assets/new.svg) Added logic to prevent refund amounts from exceeding the remaining or invoiced amount.
+
+![New](../assets/new.svg)<!-- WMTP-882 --> Replaced `google.map.LatLng` object with JSON literals to support compatibility with older versions of Google Maps.
+
+![Fixed issue](../assets/fix.svg)<!-- WMTP- --> Updated the script that creates the `[!DNL Available for Store Pickup]` and `[!DNL Available for Home Delivery]` product attributes to prevent attribute category conflict.
+
+![Fixed issue](../assets/fix.svg)<!-- WMTP-915 --> Fixed a compatibility issue that caused an endless loop when loading and saving some entities.
+
+![Fixed issue](../assets/fix.svg)<!-- WMTP-921 --> Fixed an issue that prevented [!DNL Ship to Store] quote validation from triggering when an item is added to the cart from a product detail page (PDP).
+
+![Fixed issue](../assets/fix.svg)<!-- WMTP- 932 --> Fixed a checkout issue that allowed customers to select the home delivery method for items that are not eligible for home delivery.
+
+![Fixed issue](../assets/fix.svg) Installation updates
+
+- <!-- WMTP-880--> Fixed an issue that caused an incorrect website code to be returned when installing the Store Fulfillment extension.
+
+- <!-- WMTP-878--> Fixed an issue for SKU integers that required the data type to be casted to string type during installation.
+
+![Fixed issue](../assets/fix.svg)<!-- WMTP-915--> Fixed a failure caused by a missing Check-in error code.
+
+![Fixed issue](../assets/fix.svg)<!-- WMTP-932 --> Fixed a bug related to partial reject during dispense operations.
+
+![New](../assets/new.svg)<!-- WMTP-953 --> Updated the Cancel API endpoint to consume the status parameter as an optional object.
+
+![New](../assets/new.svg)<!-- WMTP-960 --> Improved logging details for the Dispense API endpoint.
+
 ## v1.4.0
 
 *April 13, 2023*

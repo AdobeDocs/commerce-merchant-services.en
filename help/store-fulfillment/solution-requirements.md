@@ -1,66 +1,64 @@
 ---
-title: Store Fulfillment Requirements
-description: Requirements for provisioning and onboarding the [!DNL Store Fulfillment solution].
-role: Leader, Admin, Developer
+title: Store Assist Fulfillment Workflows
+description: Learn about the Pick, Stage, Hand-Off, and Orders modules available in the Store Assist App. These modules enable the end-to-end store fulfillment workflow for BOPIS orders. Store Associates use these modules to manage and deliver store pickup orders to customers.
+role: Leader, Admin, User
 level: Intermediate
-feature: Shipping/Delivery, Install
-exl-id: f9e05049-5904-4f6c-b45d-9f81fbc76b69
+feature: Shipping/Delivery, Tools and External Services, Customer Service
+exl-id: a8414f19-5489-41e9-84d6-39d2e61c2b08
 ---
-# Store Fulfillment Requirements for Adobe Commerce
+# Store Assist Fulfillment Workflows
 
-The following sections detail the technical and business requirements for installing and enabling the Store Fulfillment solution for Adobe Commerce.
+The Store Assist app provides Store Associates with four modules to manage the in-store fulfillment process for buy online, pick up in store orders:
 
-## Platform and software version requirements
+- **[Pick](#pick-module)**—Get full visibility into all ordered items and the tools to make sure that the right items and right quantities are picked. Store associates can pick one or multiple orders simultaneously for greater efficiency.
 
-The [!DNL Store Fulfillment] solution is available to Adobe Commerce customers on the following platforms.
+- **[Stage](#stage-module)**—Enter the location where orders are placed while customers are traveling to the store so that Store Associates can find and handoff orders more quickly.
 
-- Adobe Commerce on cloud infrastructure (ECE)
-- Adobe Commerce on premises (EE)
+- **[Hand Off](#hand-off-module)**—Get real-time notifications after customers arrive at the store to minimize their wait time and handoff orders seamlessly.
 
-The Store Fulfillment solution is compatible with the software versions listed in the *Software Compatibility* table.
+- **[Orders](#orders-module)**—View a list of all orders placed for a store so that everyone knows the number of orders and status of each order. 
 
-**Software compatibility**
+>[!NOTE]
+>
+>Before Store Associates can use the Store Assist app, an Administrator must complete the [app setup process](app-setup.md).
 
-| **Software**   | **Minimum Version** | **Maximum Version** |
-|----------------|---------------------|---------------------|
-| Adobe Commerce | 2.4.0               | 2.4.5               |
-| Composer       | 1.x                 | 2.x                 |
-| MariaDB        | 10.2                | 10.4                |
-| MySQL          | 5.7                 | 8.0                 |
-| PHP            | 7.4                 | 8.1                 |
+## Pick module
 
-For detailed requirements, review the Adobe Commerce [System requirements](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) in the *Adobe Commerce Installation Guide*.
+The Pick module helps store associates find and scan the items ordered by the customer and bag them for pickup. You can see how many orders are overdue and start picking them right away. You can also choose other orders to pick first. Orders are sorted by delivery due time with overdue orders first. Store associates can select which orders they want to pick in whichever order your operations require.
 
-## Store Assist app requirements
+Your associates can also choose to pick one order at a time or multiple orders at the same time.
 
-The end-to-end process to manage store pickup orders is managed through the Store Assist app installed on mobile devices. These devices—provided by the retailer or by store employees using their personal smart phones—must meet the following requirements:
+When picking, store associates see a list of all items to pick for each order, their quantities, price, and the product description from your catalog. A progress bar is shown to help them navigate within the Store Assist while picking orders.
 
-**Minimum operating system requirements**
+Once your associates start picking and select the items to pick, they are presented with all the relevant item information, such as: size, color, quantity, price, description, fit, and SKU/UPC. Associates have two actions available when picking orders:
 
-- Android 6
-- iOS 12
+- Indicate that the item cannot be found, and trigger a refund.
+- Scan the barcode on the item. The purpose of scanning is to verify they picked the correct item. In cases the camera cannot read the barcode, store associates must manually input the SKU of the item they have picked.
 
-**Minimum hardware requirements**
+If associates cannot find an item, they can skip it and return to it later.  The refund mentioned above is issued only once they complete their pick walk stage the order.
 
-- 1 GB RAM
-- 600 MB free disk space
+## Stage module
 
-## Business requirements
+The Stage module shows where the bagged order is placed until the customer arrives to pick it up. Setting this location is a key step to prevent lost orders when store associates finish their shift before the customer arrives, or if you have many orders. In either case, this is designed to help you quickly find the right order with all the relevant information about it.
 
-Your business must meet the following minimum criteria to implement the Store Fulfillment solution:
+You can use a free form text bar to indicate where the order is placed: under the counter, in the back room, or in location B3 – all based on your operations.
 
-- US-based businesses only
+You can also easily update the staging location in the app, if your associates needed to put it somewhere else.
 
-- Business to Consumer (B2C) Retailers, Consumer Packaged Goods (CPG) Manufacturers selling directly to consumers (D2C), or distributors selling directly to consumers or small businesses
+## Hand Off module
 
-- At least one physical store or warehouse
+The [!UICONTROL Hand Off] module shows which customers have checked in to pick up their orders, and where their orders are staged and wait for them. Customers can pick up orders either in the store or in the parking lot outside/curbside. The information about their exact location is presented in this module once they have checked in.
 
-- Manage your product inventory with Inventory Management for Adobe Commerce (aka MSI)
+Once you select on an order that is ready for customer handoff. Everyone can see the  order information including any items that were not found, customer waiting location, wait time, where the order is staged, and customer phone number if available.
 
-- Ability to syndicate merchant inventory
+The customer might have chosen an alternate person to pick up the order. In this case, you see the name and contact information for the person who is supposed to pick the order.
 
-- Store Wi-Fi availability at all locations that support the Store Fulfillment solution: 3 Mbps minimum Internet speed
+Upon handing the order to the customer, the Store Associate must either accept the order or reject certain items. Once the customer is satisfied, they must sign for the order on your associate's device, if a signature your company requires a signature.
 
-- Store and warehouse associates have access to iOS or Android mobile devices during their shifts, either personal or provided by the merchant
+If customers arrive without checking in, your associates can check them in manually.
 
-- Products managed by using the Store Fulfillment solution must have product attributes that include either a SKU or UPC product code
+## Orders module
+
+The Orders module displays all existing orders and their status. When a customer calls to check on their order, Store Associates can find the information quickly by looking up the number or searching from the Orders module.
+
+Store Associates can also cancel orders from the Orders page in the Store Assist app.
