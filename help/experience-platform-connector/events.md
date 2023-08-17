@@ -42,6 +42,7 @@ The following table describes the data collected for this event.
 |`productImageUrl`|Main image URL of the product|
 |`selectedOptions`|Field used for a configurable product. `attribute` identifies an attribute of the configurable product, such as `size` or `color` and `value` identifies the value of the attribute such as `small` or `black`.|
 |`cartID`|The unique ID that identifies the customer's cart|
+|`commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
 
 ### openCart
 
@@ -66,6 +67,7 @@ The following table describes the data collected for this event.
 |`productImageUrl`|Main image URL of the product|
 |`selectedOptions`|Field used for a configurable product. `attribute` identifies an attribute of the configurable product, such as `size` or `color` and `value` identifies the value of the attribute such as `small` or `black`.|
 |`cartID`|The unique ID that identifies the customer's cart|
+|`commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
 
 ### removeFromCart
 
@@ -90,6 +92,7 @@ The following table describes the data collected for this event.
 |`productImageUrl`|Main image URL of the product|
 |`selectedOptions`|Field used for a configurable product. `attribute` identifies an attribute of the configurable product, such as `size` or `color` and `value` identifies the value of the attribute such as `small` or `black`.|
 |`cartID`|The unique ID that identifies the customer's cart|
+|`commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
 
 ### shoppingCartView
 
@@ -114,6 +117,7 @@ The following table describes the data collected for this event.
 |`productImageUrl`|Main image URL of the product|
 |`selectedOptions`|Field used for a configurable product. `attribute` identifies an attribute of the configurable product, such as `size` or `color` and `value` identifies the value of the attribute such as `small` or `black`.|
 |`cartID`|The unique ID that identifies the customer's cart|
+|`commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
 
 ### pageView
 
@@ -128,6 +132,7 @@ The following table describes the data collected for this event.
 |Field|Description|
 |---|---|
 |`pageViews`|Indicates if a page was loaded. A `value` of `1` indicates that the page was loaded.|
+|`commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
 
 ### productPageView
 
@@ -150,6 +155,7 @@ The following table describes the data collected for this event.
 |`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency for the product|
 |`productImageUrl`|Main image URL of the product|
 |`selectedOptions`|Field used for a configurable product. `attribute` identifies an attribute of the configurable product, such as `size` or `color` and `value` identifies the value of the attribute such as `small` or `black`.|
+|`commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
 
 ### startCheckout
 
@@ -174,6 +180,7 @@ The following table describes the data collected for this event.
 |`productImageUrl`|Main image URL of the product|
 |`selectedOptions`|Field used for a configurable product. `attribute` identifies an attribute of the configurable product, such as `size` or `color` and `value` identifies the value of the attribute such as `small` or `black`.|
 |`cartID`|The unique ID that identifies the customer's cart|
+|`commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
 
 ### completeCheckout
 
@@ -212,6 +219,7 @@ The following table describes the data collected for this event.
 |`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for the order totals.|
 |`productImageUrl`|Main image URL of the product|
 |`selectedOptions`|Field used for a configurable product. `attribute` identifies an attribute of the configurable product, such as `size` or `color` and `value` identifies the value of the attribute such as `small` or `black`.|
+|`commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
 
 ## Profile events
 
@@ -241,6 +249,7 @@ The following table describes the data collected for this event.
 |`address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
 |`userAccount`|Indicates any loyalty details, preferences, login processes, and other account preferences|
 |`login`|Indicates if a visitor attempted to log in|
+|`commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
 
 ### signOut
 
@@ -260,6 +269,7 @@ The following table describes the data collected for this event.
 |---|---|
 |`userAccount`|Indicates any loyalty details, preferences, login processes, and other account preferences|
 |`logout`|Indicates if a visitor attempted to log out|
+|`commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
 
 ### createAccount
 
@@ -285,6 +295,7 @@ The following table describes the data collected for this event.
 |`address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
 |`userAccount`|Indicates any loyalty details, preferences, login processes, and other account preferences|
 |`createProfile`|Indicates if a user has created an account profile|
+|`commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
 
 ### editAccount
 
@@ -310,6 +321,7 @@ The following table describes the data collected for this event.
 |`address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
 |`userAccount`|Indicates any loyalty details, preferences, login processes, and other account preferences|
 |`updateProfile`|Indicates if a user has updated their account profile|
+|`commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
 
 ## Search events
 
@@ -343,6 +355,7 @@ The following table describes the data collected for this event.
 |`attribute` (sort)|An attribute used to sort items in search results|
 |`order`|The order in which to return search results|
 |`query`|The terms searched for|
+|`commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
 
 ### searchResponseReceived
 
@@ -368,6 +381,7 @@ The following table describes the data collected for this event.
 |`SKU`|Stock Keeping Unit. The unique identifier for the product.|
 |`name`|The display name or human-readable name of the product|
 |`productImageUrl`|Main image URL of the product|
+|`commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
 
 ## B2B events
 
@@ -391,6 +405,7 @@ The following table describes the data collected for this event.
 |`ID`|Unique identifier of the requisition list|
 |`name`|Name of the requisition list specified by the customer|
 |`description`|Description of the requisition list specified by the customer|
+|`commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
 
 ### addToRequisitionList
 
@@ -420,6 +435,7 @@ The following table describes the data collected for this event.
 |`discountAmount`|Indicates the discount amount applied|
 |`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for this payment item|
 |`selectedOptions`|Field used for a configurable product. `attribute` identifies an attribute of the configurable product, such as `size` or `color` and `value` identifies the value of the attribute such as `small` or `black`.|
+|`commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
 
 ### removeFromRequisitionList
 
@@ -445,6 +461,7 @@ The following table describes the data collected for this event.
 |`discountAmount`|Indicates the discount amount applied|
 |`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for this payment item|
 |`selectedOptions`|Field used for a configurable product. `attribute` identifies an attribute of the configurable product, such as `size` or `color` and `value` identifies the value of the attribute such as `small` or `black`.|
+|`commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
 
 ## Back office events
 
