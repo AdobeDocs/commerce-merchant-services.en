@@ -12,6 +12,8 @@ You can enable automated fraud protection for [!DNL Payment Services] with the [
 
 Adobe Commerce supports Signifyd versions 5.4.0 and newer. [!DNL Payment Services] supports pre-auth and post-auth Signifyd flows.
 
+See [Signifyd documentation](https://community.signifyd.com/support/s/article/magento-2-extension-install-guide?language=en_US#downloadandinstallingmagento2extension) to learn about installing and configuring the extension.
+
 ## Integration limitations
 
 Currently, the following limitations apply to the integration between Signifyd and [!DNL Payment Services]:
@@ -38,14 +40,16 @@ When onboarding with Signifyd you must:
 
 Because Signifyd takes some action on your orders, it is necessary to configure the extension to behave appropriately based on the payment action you set for [!DNL Payment Services].
 
-To configure order behavior in Signifyd (once installed) in the Admin:
+These configuration options are not compatible with Payment Services and the Signifyd integration:
 
-1. On the _Admin_ sidebar, go to **[!UICONTROL Stores]** > **[!UICONTROL [!DNL Payment Services]]**.
-1. Click **[!UICONTROL Order Workflow]**.
-1. For _Approved Guarantees_:
-   * If your [!DNL Payment Services] [payment action](../payment-services/production.md#set-payment-services-as-payment-method) is set to `Authorize and Capture`, select either **[!UICONTROL Do nothing]** or **[!UICONTROL Unhold order]**.
-1. For _Declined Guarantees_:
-   * If your [!DNL Payment Services] [payment action](../payment-services/production.md#set-payment-services-as-payment-method) is set to `Authorize and Capture`, select either **[!UICONTROL Do nothing]** or **[!UICONTROL Create credit memo]**.
-   * If your [!DNL Payment Services] [payment action](../payment-services/production.md#set-payment-services-as-payment-method) is set to `Authorize`, select either **[!UICONTROL Do nothing]** or **[!UICONTROL Cancel order]**.
+* When [!DNL Payment Services] is configured with the `Authorize` payment action _and_ Signifyd is in `PostAuth` mode with the _[!UICONTROL Decline Guarantees]_ option set to **Create credit memo**.
 
-   See [Signifyd documentation](https://community.signifyd.com/support/s/article/magento-2-extension-install-guide?language=en_US#howmagento2works) to learn more about the order workflows.
+   Reason: [!DNL Payment Services] creates an authorization transaction that Signify then attempts to refund.
+
+* [!DNL Payment Services] is configured with the `Authorize and Capture` payment action _and_ Signifyd is is `PostAuth` mode with the _[!UICONTROL Decline Guarantees]_ option set to **Cancel order**.
+
+   Reason: [!DNL Payment Services] creates a capture transaction that Signifyd then attempts to void.
+
+See Signifyd documentation for information about [configuring the extension](https://community.signifyd.com/support/s/article/magento-2-extension-install-guide?language=en_US#configuringmagento2extension).
+
+See Signifyd documentation to [learn more about the order workflows](https://community.signifyd.com/support/s/article/magento-2-extension-install-guide?language=en_US#howmagento2works).
