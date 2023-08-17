@@ -32,9 +32,8 @@ When onboarding with Signifyd you must:
 1. By default, Signifyd payment methods are [allowlisted](https://github.com/signifyd/magento2/blob/main/docs/RESTRICT-PAYMENTS.md) to ensure Signifyd does not trigger for other payment options it does not currently support. If you want to ban a particular payment method, you must make changes.
 1. Confirm with Signifyd that PayPal will not reject orders, via the merchant's fraud protection setting in Paypal, that could be approved by Signifyd.
 1. Enable the Signifyd extension to be compatible with [!DNL Payment Services]:
-
-  * When using [!DNL Payment Services] in _Live_ mode, Signifyd must be in Production mode.
-  * When using [!DNL Payment Services] in _Sandbox_ mode, Signifyd must be in Test mode.
+     * When using [!DNL Payment Services] in _Live_ mode, Signifyd must be in Production mode.
+     * When using [!DNL Payment Services] in _Sandbox_ mode, Signifyd must be in Test mode.
 
 ## Configuration
 
@@ -46,9 +45,11 @@ These configuration options are not compatible with Payment Services and the Sig
 
    Reason: [!DNL Payment Services] creates an authorization transaction that Signify then attempts to refund.
 
+
 * [!DNL Payment Services] is configured with the `Authorize and Capture` payment action _and_ Signifyd is is `PostAuth` mode with the _[!UICONTROL Decline Guarantees]_ option set to **Cancel order**.
 
    Reason: [!DNL Payment Services] creates a capture transaction that Signifyd then attempts to void.
+
 
 See Signifyd documentation for information about [configuring the extension](https://community.signifyd.com/support/s/article/magento-2-extension-install-guide?language=en_US#configuringmagento2extension).
 
