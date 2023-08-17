@@ -28,7 +28,7 @@ Configure the Sales Email templates from the Admin: **[!UICONTROL Stores > Confi
 </thead>
 <tbody><tr>
 <td><strong>Asynchronous Sending</strong></td>
-<td>Disable this feature. Asynchronous email sending is not supported. For the fastest communication and response time for Store Pickup, send emails immediately instead of batching them. </td>
+<td>Set this to Disabled for the fastest communication and response time for Store Pickup, this will send emails immediately. Enabling this setting moves processes that handle checkout and order processing email notifications to the background to be processed.</td>
 <td>Store View</td>
 <td>No</td>
 </tr>
