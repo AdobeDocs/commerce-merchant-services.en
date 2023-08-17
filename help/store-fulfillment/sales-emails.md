@@ -28,7 +28,7 @@ Configure the Sales Email templates from the Admin: **[!UICONTROL Stores > Confi
 </thead>
 <tbody><tr>
 <td><strong>Asynchronous Sending</strong></td>
-<td>Set this to Disabled for the fastest communication and response time for Store Pickup, this will send emails immediately. Enabling this setting moves processes that handle checkout and order processing email notifications to the background to be processed.</td>
+<td>Determines whether sales emails are sent asynchronously. Options: <br/>**`Disable`** - (Default) Sales emails are sent when triggered by an event. For the fastest communication and response time for Store Pickup, use the default setting. <br/>**`Enable`** - Enabling this option moves processes that handle checkout and order processing email notifications to the background to be sent at predetermined, regular intervals.</td>
 <td>Store View</td>
 <td>No</td>
 </tr>
