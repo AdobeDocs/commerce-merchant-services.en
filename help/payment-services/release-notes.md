@@ -68,9 +68,13 @@ _August 22, 2023_
 
 [!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.4 and newer
 
-![New](../assets/new.svg)<!-- PAY-4638 --> Added an [integration with Signifyd](https://experienceleague.com/docs/commerce-merchant-services/payment-services/security-compliance/fraud-protection.html), which provides automated fraud protection services for credit card/debit card payment options.
+![New](../assets/new.svg)<!-- PAY-4638 --> Added an [integration with Signifyd](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/security-compliance/fraud-protection.html), which provides automated fraud protection services for credit card/debit card payment options.
 
-![New](../assets/new.svg)<!-- PAY-3981 --> Promoted Apple Pay to a separate tender, outside of the PayPal payment buttons, to increase shopper visibility of the payment option and to allow merchants to control the placement and styling of Apple Pay.
+![New](../assets/new.svg)<!-- PAY-3981 --> [Promoted Apple Pay to a separate payment option](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html?lang=en#apple-pay-button), outside of the PayPal payment buttons, to increase shopper visibility of the payment option and to allow merchants to control the placement and styling of Apple Pay.
+
+![New](../assets/new.svg)<!-- PAY-4002 --> Improved the user experience of credit card fields checkout, including styling enhancements such as new card icons, to help improve payment options visibility and increase conversions.
+
+![New](../assets/new.svg)<!-- PAY-4002 --> Added functionality to allow merchants to [sort the order of their payment options](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#payment-buttons) to prioritize certain payment options. This functionality encourages a higher checkout conversation rate.
 
 ## v2.1.0
 
