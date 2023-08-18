@@ -62,6 +62,16 @@ _June 28, 2021_
 
 +++
 
+## v2.2.0
+
+_August 22, 2023_
+
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.4 and newer
+
+![New](../assets/new.svg)<!-- PAY-4638 --> Added an [integration with Signifyd](https://experienceleague.com/docs/commerce-merchant-services/payment-services/security-compliance/fraud-protection.html), which provides automated fraud protection services for credit card/debit card payment options.
+
+![New](../assets/new.svg)<!-- PAY-3981 --> Promoted Apple Pay to a separate tender, outside of the PayPal payment buttons, to increase shopper visibility of the payment option and to allow merchants to control the placement and styling of Apple Pay.
+
 ## v2.1.0
 
 _June 9, 2023_
