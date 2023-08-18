@@ -17,19 +17,13 @@ The [!DNL Store Fulfillment] solution is available to Adobe Commerce customers o
 - Adobe Commerce on cloud infrastructure (ECE)
 - Adobe Commerce on premises (EE)
 
-The Store Fulfillment solution is compatible with the software versions listed in the *Software Compatibility* table.
+Before installing or upgrading, review the release notes and Adobe Commerce system requirements to get the most current information about version compatibility, updates, or changes that might affect installation or upgrade requirements.
 
-**Software compatibility**
+- [Store Fulfillment Release Notes](release-notes.md)
 
-| **Software**   | **Minimum Version** | **Maximum Version** |
-|----------------|---------------------|---------------------|
-| Adobe Commerce | 2.4.4               | 2.4.6-p1            |
-| Composer       | 2.1                 | 2.2                 |
-| MariaDB        | 10.4                | 10.6                |
-| MySQL          | 8.0                 | 8.0                 |
-| PHP            | 8.1                 | 8.2                 |
+- [Adobe Commerce Release Notes](https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html) in the *Adobe Commerce Release Information*.
 
-For detailed requirements, review the Adobe Commerce [System requirements](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) in the *Adobe Commerce Installation Guide*.
+- [Adobe Commerce System Requirements](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) in the *Adobe Commerce Installation Guide*.
 
 ## Store Assist app requirements
 
