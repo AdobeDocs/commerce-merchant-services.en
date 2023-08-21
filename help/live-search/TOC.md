@@ -19,7 +19,7 @@ feature: Services, Search
    - [Storefront [!DNL Popover]](storefront-popover.md)
    - [Styling [!DNL Popover] Elements](storefront-popover-styling.md)
 - [!DNL Live Search] Admin{#live-search-admin}
-   - [Category Merchandising](category_merch.md)
+   - [Category Merchandising](category-merch.md)
    - [Commerce Configuration Settings](configuration.md)
    - Facets {#facets}
       - [Overview](facets.md)
