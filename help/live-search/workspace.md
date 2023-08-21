@@ -20,6 +20,7 @@ Initially the [scope](https://experienceleague.adobe.com/docs/commerce-admin/sta
 | [Performance](performance.md) | Dashboard provides insight into product search performance. | 
 | [Faceting](facets.md) | High-performance filtering that uses multiple dimensions of attribute values to refine search criteria. |
 | [Synonyms](synonyms.md) | Extend the reach of search to include words shoppers might use to find products that differ from those in your catalog. |
-| [Rules](rules.md) | Shape the search experience with logical rules that trigger scheduled actions. Boost, bury, pin, or hide products to calibrate search results to support your business goals. |
+| [Search Rules](rules.md) | Shape the search experience with logical rules that trigger scheduled actions. Boost, bury, pin, or hide products to calibrate search results to support your business goals. |
+| [Category Merchandising](category_merch.md) | Apply rule and Intelligent Merchandising on the Category level. |
 | [GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/) | Developers who are logged into the Admin of your store can compose and test queries with actual catalog data. To learn more, go to [GraphQL Overview](https://developer.adobe.com/commerce/webapi/graphql/) in the [!DNL Live Search] developer documentation. |
 | [Settings](settings.md) | Determine how price facet values are grouped by price range in the storefront. |

@@ -11,7 +11,7 @@ To build a rule, the first step is to use the rule editor to define the conditio
 
 1. In the Admin, go to **Marketing** > SEO & Search > **[!DNL Live Search]**.
 1. Set the **Scope** to identify the [store view](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) where the rule applies.
-1. Click the **Rules** tab.
+1. Click the **Search Rules** tab.
 1. Click **Add rule** to launch the rule editor.
 
 ## Conditions
@@ -64,9 +64,9 @@ Conditions are the requirements to trigger an event. A rule can have up to ten c
 
 1. To add another condition, click **Add condition** and repeat the process.
 
-## Ranking type
+## Intelligent ranking
 
-Ranking combines user behaviors and site statistics to determine product ranking.
+Intelligent ranking combines user behaviors and site statistics to determine product ranking.
 Store owners can set up the following types of ranking strategies:
 
 ![Rules - Match](assets/rules-ranking-type.png)
@@ -84,9 +84,9 @@ Store owners can set up the following types of ranking strategies:
 >
 >Apostrophes and quotes in queries may lead to some minor issues with ranking and relevance in some languages.
 
-## Adding events
+## Manual Ranking
 
-Events are actions that modify the search results when defined conditions are met. A single rule can have up to 25 events.
+Manual Ranking (formerly referred to as 'Events') are actions that modify the search results when defined conditions are met. A single rule can have up to 25 events.
 
 * Boost - Moves a product higher in the search results.
 * Bury - Moves a SKU lower in the search results.
@@ -160,7 +160,7 @@ The information that is entered here appears in the [Rule Details](rules-workspa
 | Any | Changes all logical operators in the rule to `OR` and returns the set of matching products. |
 | All | Changes all logical operators in the rule to `AND` and returns the set of matching products. |
 
-### Events
+### Manual Ranking
 
 |Event |Description |
 |--- |--- |

@@ -30,6 +30,49 @@ _June 13, 2023_
 
 +++
 
+## [!DNL Live Search] 3.0.3 {#302}
+
+ _Sept 2, 2023_
+
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.4 and newer
+
+### New Features
+
+* New Category Merchandising tab has been added. Users can now add Rules (Drag&Drop, Pin/hide/bury, Intelligent Ranking) per category
+* Users can add a single category rule with intelligent or manual ranking
+* Users can now add Intelligent Ranking rules to subcategories
+* Detailed information is provided when deleting subcategories with intelligent ranking
+* Added the ability to delete rules for inherited ranking strategies
+* Added the ability to delete rules for a single category
+* Users can now search by category name when adding a rule
+* With the Category Tree View, users can now view which category has rules applied.
+* Category Preview only shows the selected category. 
+
+### Updates
+
+* The 'Rule' tab is renamed to 'Search Rules'
+* When ranking by 'trending', you can now choose between:
+    * 3 days - default
+    * 14 days
+    * 30 days.
+* 'Events' (Boost/Pin/Bury/Hide) has been renamed to 'Manual Ranking'
+* 'Ranking Type' has been renamed to 'Intelligent ranking'
+* The Live Search admin now uses Sentry to monitor and track performance
+* Updated all the dependencies to latest versions
+* Updated `react-spectrum` from v2 to v3
+
+### Fixes
+
+* Minor bug fixes
+
+Merchants must upgrade the [!DNL Live Search] extension version >= 3.0.2 to access these features.
+
+It is recommended to upgrade and test before pushing to production. Consider upgrading the production environment during off-peak hours after verifying their testing environment results.
+
+## Previous versions
+
++++3.0.2 and prior
+
 ## [!DNL Live Search] 3.0.2 {#302}
 
  _August 7, 2023_
@@ -53,14 +96,6 @@ The following values have been added to the `storeDetails` object:
 ### Fixes
 
 * The **My Account** page navigation no longer disappears when using the Product Listing Page widget.
-
-Merchants must upgrade the [!DNL Live Search] extension version >= 3.0.2 to access these features.
-
-It is recommended to upgrade and test before pushing to production. Consider upgrading the production environment during off-peak hours after verifying their testing environment results.
-
-## Previous versions
-
-+++3.0.1 and prior
 
 ## [!DNL Live Search] 3.0.1 {#301}
 
