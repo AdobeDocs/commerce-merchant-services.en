@@ -30,7 +30,7 @@ _June 13, 2023_
 
 +++
 
-## [!DNL Live Search] 3.0.3 {#302}
+## [!DNL Live Search] 3.0.3 {#303}
 
  _Sept 2, 2023_
 
