@@ -64,7 +64,7 @@ _June 28, 2021_
 
 ## v2.2.0
 
-_August 31, 2023_
+_August 30, 2023_
 
 [!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.4 and newer
 
