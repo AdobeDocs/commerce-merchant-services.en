@@ -55,3 +55,10 @@ With PayPal Smart Buttons, no PCI-regulated data is passed across your services.
 For security reasons, PayPal does not pass the billing address during checkout---country, email, and name is the only billing information used. You can optionally enable your site's PayPal checkout to return the complete billing address by contacting PayPal and completing a vetting process.
 
 PayPal also has integrated fraud protection that uses machine learning to help you fight fraud. See PayPal's [Seller Protection documentation](https://www.paypal.com/us/webapps/mpp/security/seller-protection) for more information.
+
+## Fraud protection
+
+You can enable automated fraud protection for Payment Services with the [Signifyd extension](https://commercemarketplace.adobe.com/signifyd-module-connect.html).
+
+See [Signifyd fraud protection](fraud-protection.md) for more information.
+

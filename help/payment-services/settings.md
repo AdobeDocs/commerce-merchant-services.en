@@ -176,15 +176,15 @@ You can enable and configure the PayPal smart buttons payment options:
 1. To prioritize a payment method on the checkout page, provide a `Numeric Only` value in the **[!UICONTROL Sort order]** field.
 1. Use the toggle selectors to enable or disable [!DNL PayPal smart button] display features:
 
-   -  **[!UICONTROL Show PayPal buttons on product checkout page]**
-   -  **[!UICONTROL Show PayPal buttons on product detail page]**
-   -  **[!UICONTROL Show PayPal buttons in mini-cart preview]**
-   -  **[!UICONTROL Show PayPal buttons on cart page]**
-   -  **[!UICONTROL Show PayPal Pay Later button]**
-   -  **[!UICONTROL Show PayPal Pay Later message]**
-   -  **[!UICONTROL Show Venmo button]**
-   -  **[!UICONTROL Show Apple Pay button]**
-   -  **[!UICONTROL Show PayPal Credit and Debit Card button]**
+   - **[!UICONTROL Show PayPal buttons on product checkout page]**
+   - **[!UICONTROL Show PayPal buttons on product detail page]**
+   - **[!UICONTROL Show PayPal buttons in mini-cart preview]**
+   - **[!UICONTROL Show PayPal buttons on cart page]**
+   - **[!UICONTROL Show PayPal Pay Later button]**
+   - **[!UICONTROL Show PayPal Pay Later message]**
+   - **[!UICONTROL Show Venmo button]**
+   - **[!UICONTROL Show Apple Pay button]**
+   - **[!UICONTROL Show PayPal Credit and Debit Card button]**
 
       >[!NOTE]
       >
