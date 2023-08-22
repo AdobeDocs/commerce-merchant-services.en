@@ -40,9 +40,15 @@ The following table describes the data collected for this event.
 |`discountAmount`|Indicates the discount amount applied|
 |`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency for the product|
 |`productImageUrl`|Main image URL of the product|
-|`selectedOptions`|Field used for a configurable product. `attribute` identifies an attribute of the configurable product, such as `size` or `color` and `value` identifies the value of the attribute such as `small` or `black`.|
+|`selectedOptions`|Field used for a configurable product.|
+|`attribute`|Identifies an attribute of the configurable product, such as `size` or `color`|
+|`value`|Identifies the value of the attribute such as `small` or `black`.|
 |`cartID`|The unique ID that identifies the customer's cart|
 |`commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
+|`environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
+|`storeCode`|The unique store code. You can have many stores per website.|
+|`storeViewCode`|The unique store view code. You can have many store views per store.|
+|`websiteCode`|The unique website code. You can have many websites in an environment.|
 
 ### openCart
 
@@ -65,9 +71,15 @@ The following table describes the data collected for this event.
 |`discountAmount`|Indicates the discount amount applied|
 |`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency for the product|
 |`productImageUrl`|Main image URL of the product|
-|`selectedOptions`|Field used for a configurable product. `attribute` identifies an attribute of the configurable product, such as `size` or `color` and `value` identifies the value of the attribute such as `small` or `black`.|
+|`selectedOptions`|Field used for a configurable product.|
+|`attribute`|Identifies an attribute of the configurable product, such as `size` or `color`|
+|`value`|Identifies the value of the attribute such as `small` or `black`.|
 |`cartID`|The unique ID that identifies the customer's cart|
 |`commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
+|`environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
+|`storeCode`|The unique store code. You can have many stores per website.|
+|`storeViewCode`|The unique store view code. You can have many store views per store.|
+|`websiteCode`|The unique website code. You can have many websites in an environment.|
 
 ### removeFromCart
 
@@ -90,9 +102,15 @@ The following table describes the data collected for this event.
 |`discountAmount`|Indicates the discount amount applied|
 |`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency for the product|
 |`productImageUrl`|Main image URL of the product|
-|`selectedOptions`|Field used for a configurable product. `attribute` identifies an attribute of the configurable product, such as `size` or `color` and `value` identifies the value of the attribute such as `small` or `black`.|
+|`selectedOptions`|Field used for a configurable product.|
+|`attribute`|Identifies an attribute of the configurable product, such as `size` or `color`|
+|`value`|Identifies the value of the attribute such as `small` or `black`.|
 |`cartID`|The unique ID that identifies the customer's cart|
 |`commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
+|`environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
+|`storeCode`|The unique store code. You can have many stores per website.|
+|`storeViewCode`|The unique store view code. You can have many store views per store.|
+|`websiteCode`|The unique website code. You can have many websites in an environment.|
 
 ### shoppingCartView
 
@@ -115,9 +133,15 @@ The following table describes the data collected for this event.
 |`discountAmount`|Indicates the discount amount applied|
 |`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency for the product|
 |`productImageUrl`|Main image URL of the product|
-|`selectedOptions`|Field used for a configurable product. `attribute` identifies an attribute of the configurable product, such as `size` or `color` and `value` identifies the value of the attribute such as `small` or `black`.|
+|`selectedOptions`|Field used for a configurable product.|
+|`attribute`|Identifies an attribute of the configurable product, such as `size` or `color`|
+|`value`|Identifies the value of the attribute such as `small` or `black`.|
 |`cartID`|The unique ID that identifies the customer's cart|
 |`commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
+|`environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
+|`storeCode`|The unique store code. You can have many stores per website.|
+|`storeViewCode`|The unique store view code. You can have many store views per store.|
+|`websiteCode`|The unique website code. You can have many websites in an environment.|
 
 ### pageView
 
@@ -133,6 +157,10 @@ The following table describes the data collected for this event.
 |---|---|
 |`pageViews`|Indicates if a page was loaded. A `value` of `1` indicates that the page was loaded.|
 |`commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
+|`environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
+|`storeCode`|The unique store code. You can have many stores per website.|
+|`storeViewCode`|The unique store view code. You can have many store views per store.|
+|`websiteCode`|The unique website code. You can have many websites in an environment.|
 
 ### productPageView
 
@@ -154,8 +182,14 @@ The following table describes the data collected for this event.
 |`discountAmount`|Indicates the discount amount applied|
 |`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency for the product|
 |`productImageUrl`|Main image URL of the product|
-|`selectedOptions`|Field used for a configurable product. `attribute` identifies an attribute of the configurable product, such as `size` or `color` and `value` identifies the value of the attribute such as `small` or `black`.|
+|`selectedOptions`|Field used for a configurable product.|
+|`attribute`|Identifies an attribute of the configurable product, such as `size` or `color`|
+|`value`|Identifies the value of the attribute such as `small` or `black`.|
 |`commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
+|`environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
+|`storeCode`|The unique store code. You can have many stores per website.|
+|`storeViewCode`|The unique store view code. You can have many store views per store.|
+|`websiteCode`|The unique website code. You can have many websites in an environment.|
 
 ### startCheckout
 
@@ -178,9 +212,15 @@ The following table describes the data collected for this event.
 |`discountAmount`|Indicates the discount amount applied|
 |`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency for the product|
 |`productImageUrl`|Main image URL of the product|
-|`selectedOptions`|Field used for a configurable product. `attribute` identifies an attribute of the configurable product, such as `size` or `color` and `value` identifies the value of the attribute such as `small` or `black`.|
+|`selectedOptions`|Field used for a configurable product.|
+|`attribute`|Identifies an attribute of the configurable product, such as `size` or `color`|
+|`value`|Identifies the value of the attribute such as `small` or `black`.|
 |`cartID`|The unique ID that identifies the customer's cart|
 |`commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
+|`environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
+|`storeCode`|The unique store code. You can have many stores per website.|
+|`storeViewCode`|The unique store view code. You can have many store views per store.|
+|`websiteCode`|The unique website code. You can have many websites in an environment.|
 
 ### completeCheckout
 
@@ -206,7 +246,7 @@ The following table describes the data collected for this event.
 |`shipping`|Shipping details for one or more products.|
 |`shippingMethod`|The method of shipping chosen by the customer, such as standard delivery, expedited delivery, pick up in store, and so on|
 |`shippingAmount`|The total shipping cost for the items in the cart|
-|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for this payment item|
+|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for this shipping cost|
 |`promotionID`|Unique identifier of the promotion, if any|
 |`personalEmail`|Specifies the personal email address|
 |`address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
@@ -218,8 +258,14 @@ The following table describes the data collected for this event.
 |`discountAmount`|Indicates the discount amount applied|
 |`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for the order totals.|
 |`productImageUrl`|Main image URL of the product|
-|`selectedOptions`|Field used for a configurable product. `attribute` identifies an attribute of the configurable product, such as `size` or `color` and `value` identifies the value of the attribute such as `small` or `black`.|
+|`selectedOptions`|Field used for a configurable product.|
+|`attribute`|Identifies an attribute of the configurable product, such as `size` or `color`|
+|`value`|Identifies the value of the attribute such as `small` or `black`.|
 |`commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
+|`environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
+|`storeCode`|The unique store code. You can have many stores per website.|
+|`storeViewCode`|The unique store view code. You can have many store views per store.|
+|`websiteCode`|The unique website code. You can have many websites in an environment.|
 
 ## Profile events
 
@@ -250,6 +296,10 @@ The following table describes the data collected for this event.
 |`userAccount`|Indicates any loyalty details, preferences, login processes, and other account preferences|
 |`login`|Indicates if a visitor attempted to log in|
 |`commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
+|`environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
+|`storeCode`|The unique store code. You can have many stores per website.|
+|`storeViewCode`|The unique store view code. You can have many store views per store.|
+|`websiteCode`|The unique website code. You can have many websites in an environment.|
 
 ### signOut
 
@@ -270,6 +320,10 @@ The following table describes the data collected for this event.
 |`userAccount`|Indicates any loyalty details, preferences, login processes, and other account preferences|
 |`logout`|Indicates if a visitor attempted to log out|
 |`commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
+|`environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
+|`storeCode`|The unique store code. You can have many stores per website.|
+|`storeViewCode`|The unique store view code. You can have many store views per store.|
+|`websiteCode`|The unique website code. You can have many websites in an environment.|
 
 ### createAccount
 
@@ -296,6 +350,10 @@ The following table describes the data collected for this event.
 |`userAccount`|Indicates any loyalty details, preferences, login processes, and other account preferences|
 |`createProfile`|Indicates if a user has created an account profile|
 |`commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
+|`environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
+|`storeCode`|The unique store code. You can have many stores per website.|
+|`storeViewCode`|The unique store view code. You can have many store views per store.|
+|`websiteCode`|The unique website code. You can have many websites in an environment.|
 
 ### editAccount
 
@@ -322,6 +380,10 @@ The following table describes the data collected for this event.
 |`userAccount`|Indicates any loyalty details, preferences, login processes, and other account preferences|
 |`updateProfile`|Indicates if a user has updated their account profile|
 |`commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
+|`environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
+|`storeCode`|The unique store code. You can have many stores per website.|
+|`storeViewCode`|The unique store view code. You can have many store views per store.|
+|`websiteCode`|The unique website code. You can have many websites in an environment.|
 
 ## Search events
 
@@ -356,6 +418,10 @@ The following table describes the data collected for this event.
 |`order`|The order in which to return search results|
 |`query`|The terms searched for|
 |`commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
+|`environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
+|`storeCode`|The unique store code. You can have many stores per website.|
+|`storeViewCode`|The unique store view code. You can have many store views per store.|
+|`websiteCode`|The unique website code. You can have many websites in an environment.|
 
 ### searchResponseReceived
 
@@ -382,6 +448,10 @@ The following table describes the data collected for this event.
 |`name`|The display name or human-readable name of the product|
 |`productImageUrl`|Main image URL of the product|
 |`commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
+|`environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
+|`storeCode`|The unique store code. You can have many stores per website.|
+|`storeViewCode`|The unique store view code. You can have many store views per store.|
+|`websiteCode`|The unique website code. You can have many websites in an environment.|
 
 ## B2B events
 
@@ -406,6 +476,10 @@ The following table describes the data collected for this event.
 |`name`|Name of the requisition list specified by the customer|
 |`description`|Description of the requisition list specified by the customer|
 |`commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
+|`environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
+|`storeCode`|The unique store code. You can have many stores per website.|
+|`storeViewCode`|The unique store view code. You can have many store views per store.|
+|`websiteCode`|The unique website code. You can have many websites in an environment.|
 
 ### addToRequisitionList
 
@@ -433,9 +507,15 @@ The following table describes the data collected for this event.
 |`quantity`|The number of product units added|
 |`priceTotal`|The total price for the product line item|
 |`discountAmount`|Indicates the discount amount applied|
-|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for this payment item|
-|`selectedOptions`|Field used for a configurable product. `attribute` identifies an attribute of the configurable product, such as `size` or `color` and `value` identifies the value of the attribute such as `small` or `black`.|
+|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for this shipping cost|
+|`selectedOptions`|Field used for a configurable product.|
+|`attribute`|Identifies an attribute of the configurable product, such as `size` or `color`|
+|`value`|Identifies the value of the attribute such as `small` or `black`.|
 |`commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
+|`environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
+|`storeCode`|The unique store code. You can have many stores per website.|
+|`storeViewCode`|The unique store view code. You can have many store views per store.|
+|`websiteCode`|The unique website code. You can have many websites in an environment.|
 
 ### removeFromRequisitionList
 
@@ -459,9 +539,15 @@ The following table describes the data collected for this event.
 |`quantity`|The number of product units added|
 |`priceTotal`|The total price for the product line item|
 |`discountAmount`|Indicates the discount amount applied|
-|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for this payment item|
-|`selectedOptions`|Field used for a configurable product. `attribute` identifies an attribute of the configurable product, such as `size` or `color` and `value` identifies the value of the attribute such as `small` or `black`.|
+|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for this shipping cost|
+|`selectedOptions`|Field used for a configurable product.|
+|`attribute`|Identifies an attribute of the configurable product, such as `size` or `color`|
+|`value`|Identifies the value of the attribute such as `small` or `black`.|
 |`commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
+|`environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
+|`storeCode`|The unique store code. You can have many stores per website.|
+|`storeViewCode`|The unique store view code. You can have many store views per store.|
+|`websiteCode`|The unique website code. You can have many websites in an environment.|
 
 ## Back office events
 
@@ -493,7 +579,9 @@ The following table describes the data collected for this event.
 |`discountAmount`|Indicates the discount amount applied to the item|
 |`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for the order totals|
 |`productImageUrl`|Main image URL of the product|
-|`selectedOptions`|Field used for a configurable product. `attribute` identifies an attribute of the configurable product, such as `size` or `color` and `value` identifies the value of the attribute such as `small` or `black`.|
+|`selectedOptions`|Field used for a configurable product.|
+|`attribute`|Identifies an attribute of the configurable product, such as `size` or `color`|
+|`value`|Identifies the value of the attribute such as `small` or `black`.|
 |`commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
 |`environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
 |`storeCode`|The unique store code. You can have many stores per website.|
@@ -506,7 +594,7 @@ The following table describes the data collected for this event.
 |`purchaseOrderNumber`|Unique identifier assigned by the purchaser for this purchase or contract|
 |`payments`|The list of payments for this order|
 |`paymentType`|The method of payment for this order. Enumerated, custom values allowed.|
-|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for this payment item|
+|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for this shipping cost|
 |`paymentAmount`|The value of the payment|
 |`taxAmount`|The tax amount paid by the buyer as part of the final payment|
 |`discountAmount`|Indicates the discount amount applied to the whole order|
@@ -514,7 +602,7 @@ The following table describes the data collected for this event.
 |`shipping`|Shipping details for one or more products|
 |`shippingMethod`|The method of shipping chosen by the customer, such as standard delivery, expedited delivery, pick up in store, and so on|
 |`shippingAmount`|The amount the customer had to pay for shipping.|
-|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for this payment item|
+|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for this shipping cost|
 |`address`|Physical shipping address|
 |`street1`|Primary street level information, apartment number, street number, and street name|
 |`street2`|Additional field for street level information|
@@ -553,7 +641,9 @@ The following table describes the data collected for this event.
 |`discountAmount`|Indicates the discount amount applied|
 |`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for the order totals|
 |`productImageUrl`|Main image URL of the product|
-|`selectedOptions`|Field used for a configurable product. `attribute` identifies an attribute of the configurable product, such as `size` or `color` and `value` identifies the value of the attribute such as `small` or `black`.|
+|`selectedOptions`|Field used for a configurable product.|
+|`attribute`|Identifies an attribute of the configurable product, such as `size` or `color`|
+|`value`|Identifies the value of the attribute such as `small` or `black`.|
 |`commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
 |`environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
 |`storeCode`|The unique store code. You can have many stores per website.|
@@ -566,12 +656,12 @@ The following table describes the data collected for this event.
 |`purchaseOrderNumber`|Unique identifier assigned by the purchaser for this purchase or contract|
 |`payments`|The list of payments for this order|
 |`paymentType`|The method of payment for this order. Enumerated, custom values allowed.|
-|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for this payment item|
+|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for this shipping cost|
 |`paymentAmount`|The value of the payment|
 |`lastUpdatedDate`|The time when a particular order record is last updated in the commerce system|
 |`shipping`|Shipping details for one or more products|
 |`shippingMethod`|The method of shipping chosen by the customer, such as standard delivery, expedited delivery, pick up in store, and so on|
-|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for this payment item|
+|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for this shipping cost|
 |`trackingNumber`|The tracking number provided by the shipping carrier for an order item shipment|
 |`trackingURL`|The URL to track the shipping status of an order item|
 |`shipDate`|The date when one or more items from an order is shipped|
@@ -583,7 +673,7 @@ The following table describes the data collected for this event.
 |`postalCode`|The postal code of the location. Postal codes are not available for all countries. In some countries, this will only contain part of the postal code.|
 |`country`|The name of the government-administered territory. Other than `xdm:countryCode`, this is a free-form field that can have the country name in any language.|
 |`shippingAmount`|The amount the customer had to pay for shipping.|
-|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for this payment item|
+|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for this shipping cost|
 |`billingAddress`|Billing postal address|
 |`street1`|Primary street level information, apartment number, street number, and street name|
 |`street2`|Additional field for street level information|
@@ -615,7 +705,9 @@ The following table describes the data collected for this event.
 |`discountAmount`|Indicates the discount amount applied|
 |`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for the order totals|
 |`productImageUrl`|Main image URL of the product|
-|`selectedOptions`|Field used for a configurable product. `attribute` identifies an attribute of the configurable product, such as `size` or `color` and `value` identifies the value of the attribute such as `small` or `black`.|
+|`selectedOptions`|Field used for a configurable product.|
+|`attribute`|Identifies an attribute of the configurable product, such as `size` or `color`|
+|`value`|Identifies the value of the attribute such as `small` or `black`.|
 |`commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
 |`environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
 |`storeCode`|The unique store code. You can have many stores per website.|
@@ -650,7 +742,9 @@ The following table describes the data collected for this event.
 |`discountAmount`|Indicates the discount amount applied|
 |`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for the order totals|
 |`productImageUrl`|Main image URL of the product|
-|`selectedOptions`|Field used for a configurable product. `attribute` identifies an attribute of the configurable product, such as `size` or `color` and `value` identifies the value of the attribute such as `small` or `black`.|
+|`selectedOptions`|Field used for a configurable product.|
+|`attribute`|Identifies an attribute of the configurable product, such as `size` or `color`|
+|`value`|Identifies the value of the attribute such as `small` or `black`.|
 |`order`|Contains information about the order|
 |`purchaseID`|Unique identifier assigned by the seller for this purchase or contract. There is no guarantee that the ID is unique|
 |`purchaseOrderNumber`|Unique identifier assigned by the purchaser for this purchase or contract|
@@ -687,7 +781,9 @@ The following table describes the data collected for this event.
 |`discountAmount`|Indicates the discount amount applied|
 |`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for the order totals|
 |`productImageUrl`|Main image URL of the product|
-|`selectedOptions`|Field used for a configurable product. `attribute` identifies an attribute of the configurable product, such as `size` or `color` and `value` identifies the value of the attribute such as `small` or `black`.|
+|`selectedOptions`|Field used for a configurable product.|
+|`attribute`|Identifies an attribute of the configurable product, such as `size` or `color`|
+|`value`|Identifies the value of the attribute such as `small` or `black`.|
 |`order`|Contains information about the order|
 |`purchaseID`|Unique identifier assigned by the seller for this purchase or contract. There is no guarantee that the ID is unique|
 |`priceTotal`|The total price of this order after all discounts and taxes have been applied|
@@ -697,7 +793,7 @@ The following table describes the data collected for this event.
 |`createdDate`|The time and date when a new order is created in the commerce system. For example, `2022-10-15T20:20:39+00:00`|
 |`payments`|The list of payments for this order|
 |`paymentType`|The method of payment for this order. Enumerated, custom values allowed.|
-|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for this payment item|
+|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for this shipping cost|
 |`paymentAmount`|The value of the payment|
 |`shipping`|Shipping details for one or more products|
 |`shippingMethod`|The method of shipping chosen by the customer, such as standard delivery, expedited delivery, pick up in store, and so on|
@@ -709,7 +805,7 @@ The following table describes the data collected for this event.
 |`postalCode`|The postal code of the location. Postal codes are not available for all countries. In some countries, this will only contain part of the postal code.|
 |`country`|The name of the government-administered territory. Other than `xdm:countryCode`, this is a free-form field that can have the country name in any language.|
 |`shippingAmount`|The amount the customer had to pay for shipping.|
-|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for this payment item|
+|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for this shipping cost|
 |`address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
 |`billingAddress`|Billing postal address|
 |`street1`|Primary street level information, apartment number, street number, and street name|

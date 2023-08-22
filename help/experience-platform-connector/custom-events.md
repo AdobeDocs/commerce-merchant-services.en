@@ -11,9 +11,13 @@ You can extend the [eventing platform](events.md) by creating your own storefron
 
 ## Handle custom events
 
-Custom events are supported for the Adobe Experience Platform only. Custom data is not forwarded to Adobe Commerce dashboards and metrics trackers.
+Custom events are supported for the Adobe Experience Platform only. Custom data will not be forwarded to Adobe Commerce dashboards and metrics trackers.
 
-For any `custom` event, the collector adds a `personId` (`ecid`) to `customContext` and wraps an `xdm` object around it before forwarding to the Edge.
+For any `custom` event, the collector:
+
+- Adds`identityMap` with `ECID` as a primary identity
+- Includes `email` in `identityMap` as a secondary identity _if_ `personalEmail.address` is set in the event
+- Wraps the full event inside an `xdm` object before forwarding to the Edge
 
 Example:
 
@@ -21,7 +25,11 @@ Custom event published through Adobe Commerce Events SDK:
 
 ```javascript
 mse.publish.custom({
-    customContext: { customStrAttr: "cheetah", customNumAttr: 128 },
+    commerce: {
+        saveForLaters: {
+            value: 1,
+        },
+    },
 });
 ```
 
@@ -29,11 +37,27 @@ In Experience Platform Edge:
 
 ```javascript
 {
-    xdm: {
-        personId: 'ecid1234',
-        customStrAttr: 'cheetah',
-        customNumAttr: 128
+  xdm: {
+    identityMap: {
+      ECID: [
+        {
+          id: 'ecid1234',
+          primary: true
+        }
+      ],
+      email: [
+        {
+          id: "runs@safari.ke",
+          primary: false
+        }
+      ]
+    },
+    commerce: {
+        saveForLaters: {
+            value: 1
+        }
     }
+  }
 }
 ```
 
@@ -45,7 +69,11 @@ In Experience Platform Edge:
 
 Attribute overrides for standard events are supported for the Experience Platform only. Custom data is not forwarded to Commerce dashboards and metrics trackers.
 
-For any event with a set `customContext`, the collector overrides `personId` and Adobe Analytics counters, and forwards all other attributes set in `customContext`.
+For any event with a set `customContext`, the collector overrides joins fields set in the relevant contexts with fields in `customContext`. The use case for overrides is when a developer wants to reuse and extend contexts set by other parts of the page in already supported events.
+
+>[!NOTE]
+>
+>When overriding custom events, event forwarding to Experience Platform should be turned off for that event type to avoid double counting.
 
 Examples:
 
@@ -53,7 +81,17 @@ Product view with overrides published though Adobe Commerce Events SDK:
 
 ```javascript
 mse.publish.productPageView({
-    customContext: { customCode: "okapi" },
+    productListItems: [
+        {
+            productCategories: [
+                {
+                    categoryID: "cat_15",
+                    categoryName: "summer pants",
+                    categoryPath: "pants/mens/summer",
+                },
+            ],
+        },
+    ],
 });
 ```
 
@@ -61,41 +99,31 @@ In Experience Platform Edge:
 
 ```javascript
 {
-    xdm: {
-        eventType: 'commerce.productViews',
-        personId: 'ecid1234',
-        customCode: 'okapi',
-        commerce: {
-            productViews: {
-                value : 1
-            }
+  xdm: {
+    eventType: 'commerce.productViews',
+    identityMap: {
+      ECID: [
+        {
+          id: 'ecid1234',
+          primary: true,
         }
-    }
-}
-```
-
-Product view with Adobe Commerce overrides published though Adobe Commerce Events SDK:
-
-```javascript
-mse.publish.productPageView({
-    customContext: { commerce: { customCode: "mongoose" } },
-});
-```
-
-In Experience Platform Edge:
-
-```javascript
-{
-    xdm: {
-        eventType: 'commerce.productViews',
-        personId: 'ecid1234',
-        commerce: {
-            customCode: 'mongoose',
-            productViews: {
-                value : 1
-            }
-        }
-    }
+      ]
+    },
+    commerce: {
+      productViews: {
+        value : 1,
+      }
+    },
+    productListItems: [{
+        SKU: "1234",
+        name: "leora summer pants",
+        productCategories: [{
+            categoryID: "cat_15",
+            categoryName: "summer pants",
+            categoryPath: "pants/mens/summer",
+        }],
+    }],
+  }
 }
 ```
 
