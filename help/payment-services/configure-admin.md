@@ -145,7 +145,6 @@ You can enable and configure the PayPal Smart Buttons payment options within the
 |---|---|---|
 | [!UICONTROL Title] | store view | Add the text to be displayed as the title for this payment option in the Payment Method view during checkout. Options: text field |
 | [!UICONTROL Payment Action] | website | The [payment action](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} for the specified payment method. Options: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
-<<<<<<< HEAD
 | [!UICONTROL Display Pay Later Message] | website | Enable or disable the Pay Later messaging in the shopping cart, product page, mini-cart, and during the checkout flow. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Show buttons on checkout page] | store view | Enable or disable [!DNL PayPal Smart Buttons] on the checkout page. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Show buttons on product detail page] | store view | Enable or disable [!DNL PayPal Smart Buttons] on the product detail page. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
@@ -176,20 +175,6 @@ You can also configure the _[!UICONTROL Button style]_ options of the payment bu
 You can also configure payment button styling [in Settings](settings.md#button-style) from Payment Services Home.
 
 ### Configuration options
-=======
-| [!UICONTROL Sort order] | store view | The sorting order for the specified payment method on the checkout page. `Numeric Only` value |
-| [!UICONTROL Display Pay Later Message] | website | Enable or disable the Pay Later messaging in the shopping cart, product page, mini-cart, and during the checkout flow. Options: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Show buttons on checkout page] | store view | Enable or disable [!DNL PayPal Smart Buttons] on the checkout page. Options: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Show buttons on product detail page] | store view | Enable or disable [!DNL PayPal Smart Buttons] on the product detail page. Options: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Show buttons in mini-cart preview] | store view | Enable or disable [!DNL PayPal Smart Buttons] in the mini-cart preview. Options: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Venmo Enabled] | store view | Enable or disable the Venmo payment option where payment buttons are displayed. Options: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Apple Pay Enabled] | store view | Enable or disable the Apple Pay payment option where payment buttons are displayed. Options: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL PayPal Credit and Debit Card Enabled] | store view | Enable or disable the PayPal Credit and Debit card options where payment buttons are displayed. Options: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL PayPal Pay Later Enabled] | store view | Enable or disable PayPal Pay Later payment option appearance where payment buttons are displayed. Options: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Debug Mode] | website | Enable or disable Debug Mode. Options: [!UICONTROL Yes] / [!UICONTROL No] |
-
-### [!DNL PayPal Smart Buttons] Styling options
->>>>>>> origin/PAY-4665-del
 
 |Field|Scope|Description|
 |--- |--- |--- |
