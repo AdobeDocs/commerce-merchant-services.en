@@ -11,11 +11,11 @@ You can extend the [eventing platform](events.md) by creating your own storefron
 
 ## Handle custom events
 
-Custom events are supported for the Adobe Experience Platform only. Custom data will not be forwarded to Adobe Commerce dashboards and metrics trackers.
+Custom events are supported for the Adobe Experience Platform only. Custom data is not forwarded to Adobe Commerce dashboards and metrics trackers.
 
 For any `custom` event, the collector:
 
-- Adds`identityMap` with `ECID` as a primary identity
+- Adds `identityMap` with `ECID` as a primary identity
 - Includes `email` in `identityMap` as a secondary identity _if_ `personalEmail.address` is set in the event
 - Wraps the full event inside an `xdm` object before forwarding to the Edge
 
@@ -69,7 +69,7 @@ In Experience Platform Edge:
 
 Attribute overrides for standard events are supported for the Experience Platform only. Custom data is not forwarded to Commerce dashboards and metrics trackers.
 
-For any event with a set `customContext`, the collector overrides joins fields set in the relevant contexts with fields in `customContext`. The use case for overrides is when a developer wants to reuse and extend contexts set by other parts of the page in already supported events.
+For any event with `customContext`, the collector overrides joins fields set in the relevant contexts with fields in `customContext`. The use case for overrides is when a developer wants to reuse and extend contexts set by other parts of the page in already supported events.
 
 >[!NOTE]
 >
