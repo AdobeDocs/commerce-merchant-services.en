@@ -38,7 +38,7 @@ The following table describes the data collected for this event.
 |`priceTotal`|The total price for the product line item|
 |`quantity`|The number of product units added to the cart|
 |`discountAmount`|Indicates the discount amount applied|
-|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency for the product|
+|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used, such as `USD` or `EUR`|
 |`productImageUrl`|Main image URL of the product|
 |`selectedOptions`|Field used for a configurable product.|
 |`attribute`|Identifies an attribute of the configurable product, such as `size` or `color`|
@@ -69,7 +69,7 @@ The following table describes the data collected for this event.
 |`priceTotal`|The total price for the product line item|
 |`quantity`|The number of product units added to the cart|
 |`discountAmount`|Indicates the discount amount applied|
-|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency for the product|
+|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used, such as `USD` or `EUR`|
 |`productImageUrl`|Main image URL of the product|
 |`selectedOptions`|Field used for a configurable product.|
 |`attribute`|Identifies an attribute of the configurable product, such as `size` or `color`|
@@ -100,7 +100,7 @@ The following table describes the data collected for this event.
 |`priceTotal`|The total price for the product line item|
 |`quantity`|The number of product units removed from the cart|
 |`discountAmount`|Indicates the discount amount applied|
-|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency for the product|
+|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used, such as `USD` or `EUR`|
 |`productImageUrl`|Main image URL of the product|
 |`selectedOptions`|Field used for a configurable product.|
 |`attribute`|Identifies an attribute of the configurable product, such as `size` or `color`|
@@ -131,7 +131,7 @@ The following table describes the data collected for this event.
 |`priceTotal`|The total price for the product line item|
 |`quantity`|The number of product units in the cart|
 |`discountAmount`|Indicates the discount amount applied|
-|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency for the product|
+|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used, such as `USD` or `EUR`|
 |`productImageUrl`|Main image URL of the product|
 |`selectedOptions`|Field used for a configurable product.|
 |`attribute`|Identifies an attribute of the configurable product, such as `size` or `color`|
@@ -180,7 +180,7 @@ The following table describes the data collected for this event.
 |`name`|The display name or human-readable name of the product|
 |`priceTotal`|The total price for the product line item|
 |`discountAmount`|Indicates the discount amount applied|
-|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency for the product|
+|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used, such as `USD` or `EUR`|
 |`productImageUrl`|Main image URL of the product|
 |`selectedOptions`|Field used for a configurable product.|
 |`attribute`|Identifies an attribute of the configurable product, such as `size` or `color`|
@@ -210,7 +210,7 @@ The following table describes the data collected for this event.
 |`priceTotal`|The total price for the product line item|
 |`quantity`|The number of product units in the cart|
 |`discountAmount`|Indicates the discount amount applied|
-|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency for the product|
+|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used, such as `USD` or `EUR`|
 |`productImageUrl`|Main image URL of the product|
 |`selectedOptions`|Field used for a configurable product.|
 |`attribute`|Identifies an attribute of the configurable product, such as `size` or `color`|
@@ -239,14 +239,14 @@ The following table describes the data collected for this event.
 |`purchaseID`|Unique identifier assigned by the seller for this purchase or contract. There is no guarantee that the ID is unique.|
 |`orderType`|Indicates the type of order that was placed, such as Checkout or Instant Purchase|
 |`payments`|The list of payments for this order|
-|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for this payment item. For example, `USD` or `EUR`.|
+|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used, such as `USD` or `EUR`|
 |`paymentAmount`|The value of the payment|
 |`paymentType`|The method of payment for this order. Options are: `cash`, `credit_card`, `debit_card`, `gift_card`, `check`, `paypal`, `wire_transfer`, `credit_card_reference`, `other`|
 |`transactionID`|The unique transaction identifier for this payment item|
 |`shipping`|Shipping details for one or more products.|
 |`shippingMethod`|The method of shipping chosen by the customer, such as standard delivery, expedited delivery, pick up in store, and so on|
 |`shippingAmount`|The total shipping cost for the items in the cart|
-|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for this shipping cost|
+|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used, such as `USD` or `EUR`|
 |`promotionID`|Unique identifier of the promotion, if any|
 |`personalEmail`|Specifies the personal email address|
 |`address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
@@ -256,7 +256,7 @@ The following table describes the data collected for this event.
 |`priceTotal`|The total price for the product line item|
 |`quantity`|The number of product units in the cart|
 |`discountAmount`|Indicates the discount amount applied|
-|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for the order totals.|
+|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used, such as `USD` or `EUR`|
 |`productImageUrl`|Main image URL of the product|
 |`selectedOptions`|Field used for a configurable product.|
 |`attribute`|Identifies an attribute of the configurable product, such as `size` or `color`|
@@ -507,7 +507,7 @@ The following table describes the data collected for this event.
 |`quantity`|The number of product units added|
 |`priceTotal`|The total price for the product line item|
 |`discountAmount`|Indicates the discount amount applied|
-|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for this shipping cost|
+|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used, such as `USD` or `EUR`|
 |`selectedOptions`|Field used for a configurable product.|
 |`attribute`|Identifies an attribute of the configurable product, such as `size` or `color`|
 |`value`|Identifies the value of the attribute such as `small` or `black`.|
@@ -539,7 +539,7 @@ The following table describes the data collected for this event.
 |`quantity`|The number of product units added|
 |`priceTotal`|The total price for the product line item|
 |`discountAmount`|Indicates the discount amount applied|
-|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for this shipping cost|
+|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used, such as `USD` or `EUR`|
 |`selectedOptions`|Field used for a configurable product.|
 |`attribute`|Identifies an attribute of the configurable product, such as `size` or `color`|
 |`value`|Identifies the value of the attribute such as `small` or `black`.|
@@ -577,7 +577,7 @@ The following table describes the data collected for this event.
 |`quantity`|The number of product units in the cart|
 |`priceTotal`|The total price for the product line item|
 |`discountAmount`|Indicates the discount amount applied to the item|
-|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for the order totals|
+|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used, such as `USD` or `EUR`|
 |`productImageUrl`|Main image URL of the product|
 |`selectedOptions`|Field used for a configurable product.|
 |`attribute`|Identifies an attribute of the configurable product, such as `size` or `color`|
@@ -590,11 +590,11 @@ The following table describes the data collected for this event.
 |`order`|Contains information about the order|
 |`purchaseID`|Unique identifier assigned by the seller for this purchase or contract. There is no guarantee that the ID is unique|
 |`priceTotal`|The total price of this order after all discounts and taxes have been applied|
-|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for the order totals|
+|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used, such as `USD` or `EUR`|
 |`purchaseOrderNumber`|Unique identifier assigned by the purchaser for this purchase or contract|
 |`payments`|The list of payments for this order|
 |`paymentType`|The method of payment for this order. Enumerated, custom values allowed.|
-|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for this shipping cost|
+|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used, such as `USD` or `EUR`|
 |`paymentAmount`|The value of the payment|
 |`taxAmount`|The tax amount paid by the buyer as part of the final payment|
 |`discountAmount`|Indicates the discount amount applied to the whole order|
@@ -602,7 +602,7 @@ The following table describes the data collected for this event.
 |`shipping`|Shipping details for one or more products|
 |`shippingMethod`|The method of shipping chosen by the customer, such as standard delivery, expedited delivery, pick up in store, and so on|
 |`shippingAmount`|The amount the customer had to pay for shipping.|
-|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for this shipping cost|
+|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used, such as `USD` or `EUR`|
 |`address`|Physical shipping address|
 |`street1`|Primary street level information, apartment number, street number, and street name|
 |`street2`|Additional field for street level information|
@@ -639,7 +639,7 @@ The following table describes the data collected for this event.
 |`quantity`|The number of product units in the cart|
 |`priceTotal`|The total price for the product line item|
 |`discountAmount`|Indicates the discount amount applied|
-|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for the order totals|
+|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used, such as `USD` or `EUR`|
 |`productImageUrl`|Main image URL of the product|
 |`selectedOptions`|Field used for a configurable product.|
 |`attribute`|Identifies an attribute of the configurable product, such as `size` or `color`|
@@ -652,16 +652,16 @@ The following table describes the data collected for this event.
 |`order`|Contains information about the order|
 |`purchaseID`|Unique identifier assigned by the seller for this purchase or contract. There is no guarantee that the ID is unique|
 |`priceTotal`|The total price of this order after all discounts and taxes have been applied|
-|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for the order totals|
+|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used, such as `USD` or `EUR`|
 |`purchaseOrderNumber`|Unique identifier assigned by the purchaser for this purchase or contract|
 |`payments`|The list of payments for this order|
 |`paymentType`|The method of payment for this order. Enumerated, custom values allowed.|
-|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for this shipping cost|
+|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used, such as `USD` or `EUR`|
 |`paymentAmount`|The value of the payment|
 |`lastUpdatedDate`|The time when a particular order record is last updated in the commerce system|
 |`shipping`|Shipping details for one or more products|
 |`shippingMethod`|The method of shipping chosen by the customer, such as standard delivery, expedited delivery, pick up in store, and so on|
-|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for this shipping cost|
+|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used, such as `USD` or `EUR`|
 |`trackingNumber`|The tracking number provided by the shipping carrier for an order item shipment|
 |`trackingURL`|The URL to track the shipping status of an order item|
 |`shipDate`|The date when one or more items from an order is shipped|
@@ -673,7 +673,7 @@ The following table describes the data collected for this event.
 |`postalCode`|The postal code of the location. Postal codes are not available for all countries. In some countries, this will only contain part of the postal code.|
 |`country`|The name of the government-administered territory. Other than `xdm:countryCode`, this is a free-form field that can have the country name in any language.|
 |`shippingAmount`|The amount the customer had to pay for shipping.|
-|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for this shipping cost|
+|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used, such as `USD` or `EUR`|
 |`billingAddress`|Billing postal address|
 |`street1`|Primary street level information, apartment number, street number, and street name|
 |`street2`|Additional field for street level information|
@@ -703,7 +703,7 @@ The following table describes the data collected for this event.
 |`quantity`|The number of product units in the cart|
 |`priceTotal`|The total price for the product line item|
 |`discountAmount`|Indicates the discount amount applied|
-|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for the order totals|
+|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used, such as `USD` or `EUR`|
 |`productImageUrl`|Main image URL of the product|
 |`selectedOptions`|Field used for a configurable product.|
 |`attribute`|Identifies an attribute of the configurable product, such as `size` or `color`|
@@ -740,7 +740,7 @@ The following table describes the data collected for this event.
 |`quantity`|The number of product units in the cart|
 |`priceTotal`|The total price for the product line item|
 |`discountAmount`|Indicates the discount amount applied|
-|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for the order totals|
+|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used, such as `USD` or `EUR`|
 |`productImageUrl`|Main image URL of the product|
 |`selectedOptions`|Field used for a configurable product.|
 |`attribute`|Identifies an attribute of the configurable product, such as `size` or `color`|
@@ -751,14 +751,14 @@ The following table describes the data collected for this event.
 |`lastUpdatedDate`|The time when a particular order record is last updated in the commerce system|
 |`priceTotal`|The total price for the product line item|
 |`discountAmount`|Indicates the discount amount applied|
-|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for the order totals|
+|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used, such as `USD` or `EUR`|
 |`taxAmount`|The tax amount paid by the buyer as part of the final payment.|
 |`refunds`|The list of refunds for this order|
 |`refundPaymentType`|The method of payment for this order. Enumerated, custom values allowed.|
 |`refundAmount`|The value of the refund.|
-|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for the order totals|
+|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used, such as `USD` or `EUR`|
 |`personalEmail`|A personal email address|
-|`address`|The technical address, for example, 'name@domain.com' as commonly defined in RFC2822 and subsequent standards|
+|`address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
 
 ### orderShipmentCompleted
 
@@ -779,7 +779,7 @@ The following table describes the data collected for this event.
 |`quantity`|The number of product units in the cart|
 |`priceTotal`|The total price for the product line item|
 |`discountAmount`|Indicates the discount amount applied|
-|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for the order totals|
+|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used, such as `USD` or `EUR`|
 |`productImageUrl`|Main image URL of the product|
 |`selectedOptions`|Field used for a configurable product.|
 |`attribute`|Identifies an attribute of the configurable product, such as `size` or `color`|
@@ -787,13 +787,13 @@ The following table describes the data collected for this event.
 |`order`|Contains information about the order|
 |`purchaseID`|Unique identifier assigned by the seller for this purchase or contract. There is no guarantee that the ID is unique|
 |`priceTotal`|The total price of this order after all discounts and taxes have been applied|
-|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for the order totals|
+|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used, such as `USD` or `EUR`|
 |`purchaseOrderNumber`|Unique identifier assigned by the purchaser for this purchase or contract|
 |`taxAmount`|The tax amount paid by the buyer as part of the final payment.|
 |`createdDate`|The time and date when a new order is created in the commerce system. For example, `2022-10-15T20:20:39+00:00`|
 |`payments`|The list of payments for this order|
 |`paymentType`|The method of payment for this order. Enumerated, custom values allowed.|
-|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for this shipping cost|
+|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used, such as `USD` or `EUR`|
 |`paymentAmount`|The value of the payment|
 |`shipping`|Shipping details for one or more products|
 |`shippingMethod`|The method of shipping chosen by the customer, such as standard delivery, expedited delivery, pick up in store, and so on|
@@ -805,7 +805,7 @@ The following table describes the data collected for this event.
 |`postalCode`|The postal code of the location. Postal codes are not available for all countries. In some countries, this will only contain part of the postal code.|
 |`country`|The name of the government-administered territory. Other than `xdm:countryCode`, this is a free-form field that can have the country name in any language.|
 |`shippingAmount`|The amount the customer had to pay for shipping.|
-|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for this shipping cost|
+|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used, such as `USD` or `EUR`|
 |`address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
 |`billingAddress`|Billing postal address|
 |`street1`|Primary street level information, apartment number, street number, and street name|
