@@ -80,6 +80,8 @@ _August 30, 2023_
 
 ![New](../assets/new.svg)<!-- PAY-4002 --> Added functionality to allow merchants to [sort the order of their payment options](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#payment-buttons) to prioritize certain payment options. This functionality encourages a higher checkout conversation rate.
 
+![New](../assets/new.svg)<!-- PAY-4035 --> Added a new [Transactions report](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/transactions.html) to the Payment Service's Admin home to provide visibility to transaction authorization rates and negative transaction trends so merchants can effectively monitor the health of their stores and identify any transaction issues.
+
 ## v2.1.0
 
 _June 9, 2023_
