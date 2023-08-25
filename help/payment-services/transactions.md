@@ -42,7 +42,7 @@ You can [download transactions](#download-transactions) in a .csv file format fo
 
 In the Transactions report view, you can select the data source---**[!UICONTROL Live]** or **[!UICONTROL Sandbox]**---for which you want to see report results.
 
-![Data sources selection](assets/datasource.png){width="400"}
+![Data sources selection](assets/datasource.png){width="300" zoomable="yes"}
 
 If _[!UICONTROL Live]_ is the selected data source, you can see report information for your stores that use [!DNL Payment Services] in production mode. If _[!UICONTROL Sandbox]_ is the selected data source, you can see report information for your sandbox mode.
 
