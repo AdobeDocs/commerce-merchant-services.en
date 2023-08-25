@@ -8,7 +8,7 @@ level: Intermediate
 
 [!DNL Payment Services] for [!DNL Adobe Commerce] and [!DNL Magento Open Source] offers you comprehensive reporting so that you can get a clear view of your store's transactions, orders, and payments.
 
-![Transactions report](assets/transactions-report.png){zoomable: yes}
+![Transactions report](assets/transactions-report.png){width="600" zoomable="yes"}
 
 The Transactions report provides visibility into transaction authorization rates and negative transaction trends so that you can effectively monitor the health of your store and preemptively identify and address any transaction issues.
 
@@ -28,7 +28,7 @@ The Transactions report view is available in the Transactions view of Payment Se
 
 On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Transactions]_ > **[!UICONTROL View Report]** to see the detailed tabular Transactions report view.
 
-![Transactions report view](assets/transactions-report-detail.png){zoomable: yes}
+![Transactions report view](assets/transactions-report-detail.png){width="600" zoomable="yes"}
 
 You can configure this view, per the sections in this topic, to best present the data you desire to see.
 
