@@ -31,6 +31,7 @@ recommendations: noDisplay
 - [Test and validate](test-validate.md)
 - [Create an order](create-order.md)
 - Financial reporting {#reporting}
+  - [Transactions report](transactions.md)
   - [Order payment status report](order-payment-status.md)
   - [Payouts report](payouts.md)
   - [Available data](data.md)
