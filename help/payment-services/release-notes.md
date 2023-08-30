@@ -24,6 +24,10 @@ These release notes describe feature changes and fixes that occurred and were re
 
 +++Hosted service updates
 
+_July 12, 2023_
+
+![Fixed issue](../assets/fix.svg)<!-- Issue PAY-4587 --> An issue introduced in the Payment Services 2.1.0 release that prevented authorization voids placed by previous extension versions is now resolved. Merchants using any version of Payment Services can void authorizations.
+
 _June 9, 2023_
 
 ![New](../assets/new.svg)<!-- Issue PAY-4288 --> Now, merchants can [configure _only_ PayPal payment buttons](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#use-only-paypal-payment-buttons)---and _not_ use the PayPal credit card payment option. This allows merchants to provide a variety of payment options, including Venmo and PayPal payment buttons, and use an existing credit card provider instead of the PayPal credit card payment option.
@@ -61,6 +65,22 @@ _June 28, 2021_
 ![New](../assets/new.svg)<!-- Issue PAY-2761 --> You can now customize the data that displays in the [Order payment status report](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) and the [Payouts report](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) by showing or hiding columns using the Column settings control.
 
 +++
+
+## v2.2.0
+
+_August 30, 2023_
+
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.4 and newer
+
+![New](../assets/new.svg)<!-- PAY-4638 --> Added an [integration with Signifyd](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/security-compliance/fraud-protection.html), which provides automated fraud protection services.
+
+![New](../assets/new.svg)<!-- PAY-3981 --> [Promoted Apple Pay to a separate payment option](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html?lang=en#apple-pay-button), outside of the PayPal payment buttons, to increase shopper visibility of the payment option and to allow merchants to control the placement and styling of Apple Pay.
+
+![New](../assets/new.svg)<!-- PAY-4002 --> Improved the user experience of credit card fields checkout, including styling enhancements such as adding payment icons, to lower shopper cognitive load and increase conversions.
+
+![New](../assets/new.svg)<!-- PAY-4002 --> Added functionality to allow merchants to [sort the order of their payment options](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#payment-buttons) to prioritize certain payment options. This functionality encourages a higher checkout conversation rate.
+
+![New](../assets/new.svg)<!-- PAY-4035 --> Added a new [Transactions report](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/transactions.html) to the Payment Service's Admin home to provide visibility to transaction authorization rates and negative transaction trends so merchants can effectively monitor the health of their stores and identify any transaction issues.
 
 ## v2.1.0
 
