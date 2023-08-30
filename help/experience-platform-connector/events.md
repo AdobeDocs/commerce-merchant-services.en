@@ -487,10 +487,6 @@ The following table describes the data collected for this event.
 |---|---|
 |Triggered when a shopper adds a product to an existing requistion list or while creating a new list.|`commerce.requisitionListAdds`|
 
->[!NOTE]
->
->`addToRequisitionList` is not supported on category view pages or for configurable products. It is supported on product view pages and for simple products.
-
 #### Data collected from addToRequisitionList
 
 The following table describes the data collected for this event.
