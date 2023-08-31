@@ -32,10 +32,6 @@ In the core GraphQL system, the PWA sends a request to the Commerce application,
 [!DNL Catalog Service] is a Storefront Services Gateway. The service accesses a separate database that contains product details and related information, such as product attributes, variants, prices, and categories. The service keeps the database in sync with the Adobe Commerce through indexation.
 Because the service bypasses direct communication with the application, it is able to reduce the latency of the request and response cycle.
 
->[!NOTE]
->
->The gateway is for future integration with Product Recommendations. In this release, you can access the [!DNL Catalog Service GraphQL] and the [!DNL Live Search] queries from the same endpoint if you have a valid license key for both products.
-
 The core and service GraphQL systems do not directly communicate with each other. You access each system from a different URL, and calls require different header information. The two GraphQL systems are designed to be used together. The [!DNL Catalog Service] GraphQL system augments the core system to make product storefront experiences faster.
 
 You can optionally implement [API Mesh for Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/) to integrate the two Adobe Commerce GraphQL systems with private and third-party APIs and other software interfaces using Adobe Developer. The mesh can be configured to ensure calls routed to each endpoint contain the correct authorization information in the headers.
