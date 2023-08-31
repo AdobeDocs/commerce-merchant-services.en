@@ -16,7 +16,7 @@ For feature changes and fixes related to extensions used by the Experience Platf
 
 See [Upcoming Releases](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html) to learn about release schedules and support.
 
-See the developer documentation to [learn about product compatibility](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
+See the developer documentation to [learn which Commerce versions support this module](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 
 ## Supported service updates
 
@@ -45,7 +45,7 @@ _October 12, 2022_
 
 _June 27, 2023_
 
-[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.3 and newer
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.3 and newer
 
 * ![New](../assets/new.svg) - Added ability to [turn off sending storefront events](connect-data.md#data-collection) to the Experience Platform.
 * ![Fix](../assets/fix.svg) - Updated Content Security Policy configurations.
@@ -57,7 +57,7 @@ _June 27, 2023_
 
 _June 13, 2023_
 
-[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.3 and newer
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.3 and newer
 
 * ![New](../assets/new.svg) - (Beta) Added ability to [send historical order](connect-data.md#beta-send-historical-order-data) data and status to the Experience Platform. This feature is available for beta users only. You can join the beta by sending an email to the following address: `dataconnection@adobe.com`.
 
@@ -65,7 +65,7 @@ _June 13, 2023_
 
 _March 30, 2023_
 
-[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.3 and newer
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.3 and newer
 
 * ![New](../assets/new.svg) - Bundled the `commerce-data-export` and `saas-export` dependencies with the `experience-platform-connector` extension. Previously, you had to install these dependencies separately. These dependencies, along with merchant configuration, enables server side processing of [back office events](events.md#back-office-events).
 * ![New](../assets/new.svg) - Added new back office event called [`orderShipmentCompleted`](events.md#ordershipmentcompleted).
@@ -74,7 +74,7 @@ _March 30, 2023_
 
 _February 28, 2023_
 
-[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.3 and newer
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.3 and newer
 
 * ![New](../assets/new.svg) - Added support for PHP 8.2 for all Experience Platform connector extensions.
 
@@ -82,7 +82,7 @@ _February 28, 2023_
 
 _January 17, 2023_
 
-[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.3 and newer
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.3 and newer
 
 * ![New](../assets/new.svg) - Updated the [Experience Platform connector Admin](connect-data.md) so you can specify your own AEP Web SDK (alloy).
 * ![Fix](../assets/fix.svg) Changed to using `identityMap` instead of `personID` when setting the primary identity for any data pushed to the edge.
@@ -91,7 +91,7 @@ _January 17, 2023_
 
 _November 10, 2022_
 
-[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.3 and newer
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.3 and newer
 
 * ![Fixed issue](../assets/fix.svg) - Now the Adobe Experience Platform context is set only after the Storefront Event Collector and Storefront Event SDK are successfully loaded.
 
@@ -99,7 +99,7 @@ _November 10, 2022_
 
 _October 12, 2022_
 
-[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.3 and newer
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.3 and newer
 
 * ![New](../assets/new.svg) - Added ability to specify your own AEP Web SDK when [connecting](connect-data.md) your Adobe Commerce instance to the Experience Platform.
 * ![Fix](../assets/fix.svg) - Updated datastream scope requirement so that datastream IDs must be scoped to the website rather than storeview.
@@ -108,6 +108,6 @@ _October 12, 2022_
 
 _August 9, 2022_
 
-[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.3 and newer
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.3 and newer
 
 * ![New](../assets/new.svg) - General availability release.
