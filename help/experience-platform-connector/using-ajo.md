@@ -1,4 +1,9 @@
+---
+title: Add Field Groups to XDM Schema
+description: Learn how to add Adobe Commerce-specific field groups to an XDM schema.
 
+---
+# Add field groups to XDM schema
 
 
 As part of this lesson, we will:  
