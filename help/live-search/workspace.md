@@ -7,7 +7,7 @@ exl-id: fb85974a-a5f9-4e6c-bd03-451e6457f2d2
 
 The workspace is where you configure, manage, and monitor the performance of [!DNL Live Search]. The menu across the top provides access to the tools in each functional area.  The available features reflect the current menu selection.
 
-![Faceting workspace](assets/faceting-workspace.png)
+![Faceting workspace](assets/workspace.png)
 
 ## Set the scope
 

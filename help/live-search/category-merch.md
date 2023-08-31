@@ -50,7 +50,7 @@ Generally, a category or subcategory can only have a single Intelligent ranking 
 
 If you apply an Intelligent ranking to a category and turn on the **Apply intelligent ranking to subcategories** option, any Intelligent ranking already applied to the subcategories are overwritten.
 
-![Overwritten subcateory list](assets/category_overwite_subs.png)
+![Overwritten subcateory list](assets/category_overwite_subs.png){width="700"}
 
 If you click the "View All" link, a dialog opens with details of the changes to be made.
 
@@ -65,7 +65,7 @@ If you remove an Intelligent ranking from a category, and you have the subcatego
 
 A modal dialog appears explaining which inherited subcategories are affected by any changes you make to a higher-level category.
 
-![Ranking changes modal dialog](assets/category_overwrite_modal.png)
+![Ranking changes modal dialog](assets/category_overwrite_modal.png){width="1200"}
 
 ## Build a category rule
 
