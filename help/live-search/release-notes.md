@@ -157,7 +157,7 @@ Existing [!DNL Live Search] installations must be upgraded to [!DNL Live Search]
 ![New](../assets/new.svg) [!DNL Live Search] now supports PHP 8.1 for installations running Adobe Commerce 2.4.4.
 ![New](../assets/new.svg) The `Magento_ElasticsearchCatalogPermissionsGraphQl` module is added to the list of modules that are disabled during the installation.
 ![New](../assets/new.svg) The number of available lines in the [[!DNL storefront popover]](quick-tour.md) can be configured from the *Admin*.
-![New](../assets/new.svg) Beta [PWA](https://developer.adobe.com/commerce/pwa-studio/) Supported for [!DNL Live Search].
+![New](../assets/new.svg) Beta [PWA](https://developer.adobe.com/commerce/pwa-studio/) supported for [!DNL Live Search].
 ![New](../assets/new.svg) The [!DNL Live Search] installation process is updated with advanced process changes.
 ![Fix](../assets/fix.svg) [Advanced Search](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#advanced-search) link removed from the storefront footer.
 ![Bug](../assets/bug.svg) The following product attributes are not supported by [Commerce GraphQL API](https://developer.adobe.com/commerce/webapi/graphql/) when used in relation to the beta release of PWA: `description`, `name`, `short_description`
