@@ -19,7 +19,7 @@ The release notes include:
 ![Fix](../assets/fix.svg) Fixes and improvements
 ![Bug](../assets/bug.svg) Known issues
 
-See the developer documentation to [learn about product Supported](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
+See the developer documentation to [learn about product support](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 
 ## Hosted service updates
 
