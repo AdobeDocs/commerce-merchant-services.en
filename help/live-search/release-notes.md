@@ -38,7 +38,7 @@ _June 13, 2023_
 
 ### Updates
 
-* Search endpoint has been updated to version 1.
+* The Product Listing widget has been updated to use the [Catalog Service API](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/product-search/).
 
 ## Previous versions
 
