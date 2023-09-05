@@ -111,7 +111,7 @@ See the events topic to learn more about [storefront](events.md#storefront-event
 
 >[!NOTE]
 >
->This feature is available for beta users only. You can join the beta by sending an email to the following address: [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
+>This feature is available for beta users only. You can join the beta by sending an email to the following address: `dataconnection@adobe.com`.
 
 Adobe Commerce collects up to five years of historical order data and status. You can use the Experience Platform connector to send that historical data to the Experience Platform to enrich your customer profiles based on those past orders. The data is stored in a dataset within Experience Platform.
 
