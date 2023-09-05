@@ -13,7 +13,7 @@ Setting up SaaS price indexing requires installing new modules and running CLI c
 ## Prerequisites
 
 * Adobe Commerce 2.4.4+
-* At least one of the following SaaS services installed:
+* At least one of the following SaaS services is installed:
 
     * [Catalog Service](../catalog-service/overview.md)
     * [Live Search](../live-search/guide-overview.md)
@@ -22,15 +22,15 @@ Setting up SaaS price indexing requires installing new modules and running CLI c
 ## Install required modules
 
 Depending on your setup, the installation process might be slightly different.
-There are extensions that add the new feeds and supporting code and there is an extension that removes the default prices feed.
+There are extensions that add the new feeds and the supporting code.
 
 1. Add the following modules to your `composer.json` file:
 
     ```json
-    "magento/module-saas-price": "102.2.0",
-    "magento/module-saas-scopes": "102.2.0",
-    "magento/module-product-override-price-remover": "102.2.0",
-    "magento/module-bundle-product-override-data-exporter": "102.2.0",
+    "magento/module-saas-price": "^103.0",
+    "magento/module-saas-scopes": "^103.0",
+    "magento/module-bundle-product-override-data-exporter": "^103.0",
+    "magento/module-gift-card-product-data-exporter": "^103.0",
     ```
 
 1. Run the upgrade command:
@@ -65,7 +65,7 @@ Run the above indexers manually, as needed. Otherwise, the data gets refreshed i
 Luma and Adobe Commerce Core GraphQL users can install the `catalog-adapter` module that provides Luma and Core GraphQl compatibility and disables the PHP core price indexer.
 To use the `catalog-adapter` module, [!DNL Live Search] and [!DNL Catalog Service] must first be installed and configured. Follow the [Install [!DNL Live Search]](../live-search/install.md) and [Catalog Service Installation](../catalog-service/installation.md) instructions before continuing.
 
-To configure Live Search and Catalog Adapter, follow [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html?lang=en) instructions.
+To configure Live Search and Catalog Adapter, follow the [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html?lang=en) instructions.
 
 ```bash
 composer require adobe-commerce/catalog-adapter

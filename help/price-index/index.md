@@ -53,6 +53,8 @@ magento/module-saas-price
 magento/module-saas-scopes
 magento/module-product-override-price-remover
 magento/module-bundle-product-override-data-exporter
+magento/module-bundle-product-override-data-exporter
+magento/module-gift-card-product-data-exporter
 ```
 
 Customers using Luma and Adobe Commerce Core GraphQL can install a module that provides Luma and Core GraphQL compatibility and disables the PHP core price indexer:
@@ -67,9 +69,6 @@ The PHP core price indexer can be re-enabled if needed by a third-party extensio
 ## Caveats
 
 Depending on factors such as product types, price complexity and catalog size, SaaS price indexing may be the right solution for your store. Read over the following limitations and determine if this is a good solution for your site.
-
-Currently, SaaS price indexing supports Simple, Grouped, Virtual, Configurable, and [Bundle Dynamic](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/types/product-create-bundle.html) product types.
-Support for Downloadable, Gift Cards, and Bundle Fixed product types is coming soon.
 
 New feeds should be manually synced with the `resync` [CLI command](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html#resynccmdline). Otherwise, the data gets refreshed in the standard sync process. Get more information about the [Catalog Sync](../landing/catalog-sync.md) process.
 
@@ -104,9 +103,65 @@ New feeds should be manually synced with the `resync` [CLI command](https://expe
 1. Enable new feeds
 1. Install the catalog adapter, which disables the PHP core price indexer.
 
-### Luma/Core GraphQL/Headless with unsupported product types
+## Custom prices
 
-* Luma/Headless merchant
-* Selling gift cards, downloadable, or bundle fixed products
+Th SaaS Price Indexer supports custom product prices such as special price, group price, catalog rule price and others.
 
-With currently unsupported product types, wait for full product type support.
+For example: there is a custom product type  "custom_type" and a product with SKU "Custom Type Product".
+
+By default, the Commerce Data Export extension sends the following price feed to the price indexer:
+
+```json
+{
+    "sku": "Custom Type Product",
+    "type": "SIMPLE", // must be "SIMPLE" regardless of the real product type
+    "customerGroupCode": "0",
+    "websiteCode": "base",
+    "regular": 123, // the regular base price found in catalog_product_entity_decimal table
+    "discounts":    // list of discounts: special_price, group, catalog_rule
+    [
+        {
+            "code": "catalog_rule",
+            "price": 102.09
+        }
+    ],
+    "deleted": false,
+    "updatedAt": "2023-07-31T13:07:54+00:00"
+}
+```
+
+If "Custom Product Type" uses a unique formula to calculate product price, system integrators can override the price and discount fields by extending the Commerce Data Export extension. 
+
+1. Create a plugin on the `Magento\ProductPriceDataExporter\Model\Provider\ProductPrice` class.
+
+`di.xml` file:
+
+```xml
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\ProductPriceDataExporter\Model\Provider\ProductPrice">
+        <plugin name="custom_type_price_feed" type="YourModule\CustomProductType\Plugin\UpdatePriceFromFeed" disabled="false" />
+    </type>
+</config>
+```
+
+1. Create a method with the custom formula:
+
+```php
+class UpdatePriceFromFeed
+{
+    /**
+    * @param ProductPrice $subject
+    * @param array $result
+    * @param array $values
+    *
+    * @return array
+    */
+    public function afterGet(ProductPrice $subject, array $result, array $values) : array
+    {
+        // Get all custom products, prices and discounts per website and customer groups
+        // Override the output $result with your data for the corresponding products
+        return $result;
+    }
+}
+```
