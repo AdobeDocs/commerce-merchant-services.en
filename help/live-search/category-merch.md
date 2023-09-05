@@ -37,14 +37,14 @@ Intelligent ranking methods are:
 * Trending: Looks back at page view events over the past 72 hours for background events and 24 hours for foreground events
 * None: Products are ordered by Relevance
 
-**Manual ranking** allows users to define their own conditions and events to rank or pin products.
+**Manual ranking** allows users to define their own product rankings or to pin products.
 
 ## Inherited ranking
 
 As a store owner, you might want to be able to select all of Women's wear categories to be sorted by "trending". This includes the subcategories "Women's pants", "Women's shirts", and "Women's accessories". Men's categories should not be affected. You can use inherited rankings to achieve this.
 
 When selecting an Intelligent ranking method for a category or subcategory that has subcategories, you can turn on the **Apply intelligent rankings to subcategories** option. This applies the ranking method to all subcategories.
-These subcategories now inherit that rule from the main category, as noted by the "Yes" in the Inherited Ranking column. In the Action column, the only available option for a subcategory is **Add rule**.
+These subcategories now inherit that rule from the main category, as noted by the "Yes" in the Inherited Ranking column. In the Action column, the only available options are **Edit Rule**, and **View Details**. The **Delete** option is disabled for subcategories inheritance. Deleting subcategory inheritance requires undoing inheritance from the parent category.
 
 Generally, a category or subcategory can only have a single Intelligent ranking applied at any one time. Categories may have additional Manual rankings applied as well.
 
