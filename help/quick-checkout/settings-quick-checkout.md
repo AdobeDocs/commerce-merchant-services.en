@@ -13,13 +13,13 @@ To access these configuration settings:
 1. On the _Admin_ sidebar, go to **Stores** > _Settings_ > **Configuration**.
 1. In the left panel, expand **Sales** and select **Checkout**.
 
-   ![Quick Checkout](assets/config-new-logo-view.png)
+   ![Quick Checkout](assets/config-new-logo-view.png){width="800" zoomable="yes"}
 
 Refer to the [Onboarding](../quick-checkout/onboarding.md) topic for more information on how to configure the [!DNL Quick Checkout] for Adobe Commerce.
 
 ## Enable extension
 
-![Quick Checkout](assets/enable-method.png)
+![Quick Checkout](assets/enable-method.png){width="500" zoomable="yes"}
 
 | Field | Scope | Description |
 |---|---|---|
@@ -30,7 +30,7 @@ Refer to the [Onboarding](../quick-checkout/onboarding.md) topic for more inform
 
 ## Account credentials
 
-![Quick Checkout](assets/account-creds.png)
+![Quick Checkout](assets/account-creds.png){width="500" zoomable="yes"}
 
 | Field | Scope | Description |
 |---|---|---|
@@ -42,7 +42,7 @@ Refer to the [Onboarding](../quick-checkout/onboarding.md) topic for more inform
 
 ## Service settings
 
-![Quick Checkout](assets/service-settings.png)
+![Quick Checkout](assets/service-settings.png){width="500" zoomable="yes"}
 
 | Field | Scope | Description |
 |---|---|---|

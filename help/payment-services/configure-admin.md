@@ -19,7 +19,7 @@ You can enable [!DNL Payment Services] for your store, and enable either sandbox
 1. On the _Admin_ sidebar, go to **[!UICONTROL Stores]** > _[!UICONTROL Settings]_ > **[!UICONTROL Configuration]**.
 1. In the left panel, expand **[!UICONTROL Sales]** and choose **[!UICONTROL Payment Methods]**.
 
-   ![Methods view](assets/methods-view.png)
+   ![Methods view](assets/methods-view.png){width="400" zoomable="yes"}
 
 1. Expand the _[!UICONTROL Recommended Solutions]_ section.
 1. In the _[!UICONTROL [!DNL Payment Services]]_ section, expand the _[!UICONTROL General Configuration]_ section.

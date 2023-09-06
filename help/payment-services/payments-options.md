@@ -48,7 +48,7 @@ You can configure [!UICONTROL Apple Pay] in the store configuration or the Payme
 
 [!DNL PayPal Smart Buttons], which use PayPal to complete a purchase, stores your shopper's shipping address, billing addresses, and payment details for later use. Shoppers can use any payment method previously stored or offered by PayPal.
 
-![[!DNL PayPal Smart Buttons] options](assets/payment-buttons.png){width="500"}
+![[!DNL PayPal Smart Buttons] options](assets/payment-buttons.png){width="400" zoomable="yes"}
 
 You can configure [!UICONTROL PayPal Smart Buttons] in the store configuration or the Payment Services Home.  See [Settings](settings.md#payment-buttons) for more information.
 

@@ -9,7 +9,7 @@ feature: Payments, Checkout, Install, Upgrade
 
 Downloading and installing the [!DNL Payment Services] extension for [!DNL Adobe Commerce] and [!DNL Magento Open Source] is a prerequisite step for using [!DNL Payment Services].
 
-![[!DNL Payment Services] extension Admin view](assets/admin-view.png)
+![[!DNL Payment Services] extension Admin view](assets/admin-view.png){width="300" zoomable="yes"}
 
 ## Download the extension
 

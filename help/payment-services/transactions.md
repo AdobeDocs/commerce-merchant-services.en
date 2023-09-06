@@ -8,7 +8,7 @@ level: Intermediate
 
 [!DNL Payment Services] for [!DNL Adobe Commerce] and [!DNL Magento Open Source] offers you comprehensive reporting so that you can get a clear view of your store's transactions, orders, and payments.
 
-![Transactions report](assets/transactions-report.png){width="600" zoomable="yes"}
+![Transactions report](assets/transactions-report.png){width="700" zoomable="yes"}
 
 The Transactions report provides visibility into transaction authorization rates and negative transaction trends so that you can effectively monitor the health of your store and preemptively identify and address any transaction issues.
 
@@ -85,7 +85,7 @@ From the Transactions report view, you can filter the statuses results you want 
 The Transactions report shows all available columns of information by default. You can, however, customize which columns you see in your report.
 
 1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_ > **[!UICONTROL View Report]**.
-1. Click the **[!UICONTROL Column settings]** icon ![column settings icon](assets/column-settings.png){width="25"}.
+1. Click the **[!UICONTROL Column settings]** icon ![column settings icon](assets/column-settings.png){width="20" zoomable="yes"}.
 1. To customize which columns that you see in the report, check or uncheck columns in the list.
 
    The Transactions report immediately shows any changes you made in the Column settings menu. The column preferences are saved and remain in effect if you navigate away from the report view.
@@ -97,7 +97,7 @@ The Transactions report view shows a _[!UICONTROL Last updated]_ timestamp that 
 You can also manually force a refresh of the report data to see the most up-to-date report information.
 
 1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_ > **[!UICONTROL View Report]**.
-1. Click the _Refresh_ icon (![refresh icon](assets/refresh-button-med.png)).
+1. Click the _Refresh_ icon (![refresh icon](assets/refresh-button-med.png){width="20" zoomable="yes"}).
 
    The Transactions report data is refreshed, an *[!UICONTROL Update complete]* confirmation appears, and the latest information is present in the grid.
 
@@ -107,7 +107,7 @@ You can download a .csv file with all transactions visible in the transactions v
 
 1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Transactions]**.
 1. If you want to see transactions for a timeframe other than the last 30 days, [customize the date range timeframe for your statuses](#customize-dates-timeframe).
-1. Click the _Download_ ![download icon](assets/icon-download.png){width="25"} icon.
+1. Click the _Download_ ![download icon](assets/icon-download.png){width="20" zoomable="yes"} icon.
 
 Your transactions are downloaded in a .csv format.
 

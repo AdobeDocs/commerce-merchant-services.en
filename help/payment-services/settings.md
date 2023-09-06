@@ -24,7 +24,7 @@ You can enable [!DNL Payment Services] for your website, and enable either sandb
 
 1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 
-   ![Home view](assets/payment-services-menu-small.png)
+   ![Home view](assets/payment-services-menu-small.png){width="400" zoomable="yes"}
 
 1. Click **[!UICONTROL Settings]**. See [Introduction to [!DNL Payment Services] Home](payments-home.md) for more information.
 
@@ -51,9 +51,6 @@ You can now proceed to changing the default settings for [payment options](#conf
 You can add a [!UICONTROL Soft Descriptor] to your website(s) or individual store view(s) configuration. Soft descriptors show on customer transaction bank statements. If you have multiple stores/brands/catalogs, for instance, you can easily delineate between those by adding custom text to the [!UICONTROL Soft Descriptor] field.
 
 1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
-
-   ![Home view](assets/payment-services-menu-small.png)
-
 1. Click **[!UICONTROL Settings]**. See [Introduction to [!DNL Payment Services] Home](payments-home.md) for more information.
 1. Select the website or store view, in the **[!UICONTROL Scope]** dropdown menu, for which you want to create a soft descriptor. For initial setup, leave this as **[!UICONTROL Default]** to set the default value.
 1. Add your custom text (up to 22 characters) in the text field, replacing `Custom descriptor`.
@@ -85,9 +82,6 @@ You can add a [!UICONTROL Soft Descriptor] to your website(s) or individual stor
 Now that you have enabled [!UICONTROL Payment Services] for your website, you can change the default settings for payment functions and storefront display.
 
 1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
-
-   ![Home view](assets/payment-services-menu-small.png)
-
 1. Click **[!UICONTROL Settings]**. See [Introduction to [!DNL Payment Services] Home](payments-home.md) for more information.
 1. Configure payment options for [credit cards](#credit-card-fields), [payment buttons](#payment-buttons), and [button style](#button-style), per the following sections.
 
@@ -98,9 +92,6 @@ The _[!UICONTROL Credit Card Fields]_ settings provide a simple and secure check
 See [Payments options](payments-options.md#credit-card-fields) for more information.
 
 1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
-
-   ![Home view](assets/payment-services-menu-small.png)
-
 1. Select the store view, in the **[!UICONTROL Scope]** dropdown menu, for which you want to enable a payment method.
 1. In the **[!UICONTROL Credit card fields]** section, edit the value in the **[!UICONTROL Checkout title]** field to change the name of the payment method displayed during checkout.
 1. To [set the payment action](production.md#set-payment-services-as-payment-method), toggle **[!UICONTROL Payment action]** to `Authorize` or `Authorize and Capture`.
@@ -235,7 +226,7 @@ You can also configure the _[!UICONTROL Button style]_ options of the payment bu
 
    As you change configuration options for layout, color, shape, height, and label, a visual preview of that configuration shows at the bottom of the Settings page.
 
-   ![[!DNL PayPal Smart Buttons] options](assets/payment-buttons.png){width="500"}
+   ![[!DNL PayPal Smart Buttons] options](assets/payment-buttons.png){width="400" zoomable="yes"}
 
 1. Click **[!UICONTROL Save]**.
 
@@ -268,7 +259,7 @@ When assigning resources to the role, you must select:
 - **Pay with [!DNL Payment Services]**---This resource ensures that when you create an order in the Admin, [!DNL Payment Services] credit cards are available as a payment method. If you select the **Actions** parent resource, this resource will also be selected.
 - **[!DNL Payment Services]**---This resource includes the **Dashboard** and **SaaS Services Proxy** resources, which must also be selected. They ensure that [!DNL Payment Services] appears in the _Sales_ menu.
 
-   ![Payment Services resources](assets/roles-payments.png)
+   ![Payment Services resources](assets/roles-payments.png){width="400" zoomable="yes"}
 
 ## Flush the cache
 
