@@ -13,11 +13,15 @@ These release notes describe the initial release of [!DNL Store Fulfillment Serv
 ![Fixed issue](../assets/fix.svg) Fixes and improvements
 ![Known issue](../assets/bug.svg) Known issues
 
+See [Upcoming Releases](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html) to learn about release schedules and support.
+
+See [Product Availability](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html) to learn which Adobe Commerce versions support this extension.
+
 ## v1.5.0
 
 *August 3, 2023*
 
-[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Compatible with [Adobe Commerce 2.4.4 to 2.4.6](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html), including the 2.4.6-p1, 2.4.5-p3, and 2.4.4-p4 security patch releases.
+[!BADGE Supported]{type=Informative tooltip="Supported"} [Adobe Commerce 2.4.4 to 2.4.6](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html), including the 2.4.6-p1, 2.4.5-p3, and 2.4.4-p4 security patch releases
 
 This release contains the following updates:
 
@@ -57,7 +61,7 @@ This release contains the following updates:
 
 *April 13, 2023*
 
-[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.4 - 2.4.6
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 - 2.4.6
 
 ![New](../assets/fix.svg) [!DNL Store Fulfillment] is now [compatible with [!DNL Adobe Commerce] 2.4.4 to 2.4.6](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 
@@ -66,7 +70,7 @@ This release contains the following updates:
 
 *February 27, 2023*
 
-[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.4 - 2.4.5
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 - 2.4.5
 
 This release contains the following update:
 
@@ -76,7 +80,7 @@ This release contains the following update:
 
 *September 27, 2022*
 
-[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.4 - 2.4.5
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 - 2.4.5
 
 This release contains the following update:
 
@@ -87,7 +91,7 @@ This release contains the following update:
 
 *July 15, 2022*
 
-[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.4 - 2.4.4
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 - 2.4.4
 
 Stability: General Availability
 
@@ -97,7 +101,7 @@ Stability: General Availability
 
 *March 4, 2022*
 
-[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.4 - 2.4.4
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 - 2.4.4
 
 Stability: General Availability
 
