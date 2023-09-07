@@ -10,6 +10,10 @@ Category Merchandising allows store owners to apply [!DNL Live Search] Intellige
 
 The feature is accessed through the Category Merchandising tab on the [!DNL Live Search] area of the admin.
 
+>[!NOTE]
+>
+>Category Merchandising is available with [!DNL Live Search] 3.0.0 or higher. 
+
 ![Categry Merchandising](assets/category_workspace.png)
 
 The Category Merchandising tab shows defined category rules, with columns for:
