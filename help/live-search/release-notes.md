@@ -67,6 +67,12 @@ _June 13, 2023_
 
 Merchants must upgrade the [!DNL Live Search] extension version >= 3.1.1 to access these features.
 
+After installing version 3.1.1, these new indexers must be enabled:
+
+* Product Prices Feed
+* Scopes website data feed
+* Scopes customer groups data feed
+
 It is recommended to upgrade and test before pushing to production. Consider upgrading the production environment during off-peak hours after verifying their testing environment results.
 
 ## Previous versions
