@@ -10,7 +10,7 @@ feature: Payments, Checkout
 
 [!DNL Payment Services] for [!DNL Adobe Commerce] and [!DNL Magento Open Source] is your turnkey self-service solution, including sandbox testing and a simple setup, for providing robust and secure payment processing for your Commerce websites.
 
-![[!DNL Payment Services] extension Admin view](assets/admin-view.png)
+![[!DNL Payment Services] extension Admin view](assets/admin-view.png){width="300" zoomable="yes"}
 
 Whether you are a small business, mid-market contender, or large enterprise, this payments solution helps you reduce operational overhead, increase revenue, and give you useful tools to improve the entire shopper experience.
 
@@ -32,7 +32,7 @@ Whether you are a small business, mid-market contender, or large enterprise, thi
 
 * [**Onboarding**](onboard.md)---The process guides you through commercial signup, technical configuration, entitlements, sandbox environment configuration, and live payment enablement.
 * [**Payment options**](payments-options.md)---Set the payment options to customize the methods available for your store (or multistore) customers.
-* **Cash flow management financial reporting**---Synchronize [payment details](order-payment-status.md) with orders to get full transparency to the processed volume, payment balance, and detailed [transaction-level reporting](payouts.md) for financial reconciliation.
+* **Cash flow management financial reporting**---Synchronize [payment details](order-payment-status.md) with orders to get full transparency to the processed volume, payment balance, [payouts](payouts.md), and detailed [transaction-level reporting](transactions.md) for financial reconciliation and the utmost in transaction visibility.
 * **Transparent pricing**---Pricing is clear and upfront; what you see is what you get.
 * **Efficient checkout experience**---Remove any barriers to a fast and simple checkout, and create loyal customers, with [card vaulting](https://experienceleague-review.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html) and [Instant Purchase](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html) (enabled by default for Adobe Commerce) features.
 

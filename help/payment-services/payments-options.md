@@ -32,11 +32,23 @@ You can configure [!UICONTROL Credit Card Fields] in the store configuration or 
 
 You can also change the layout, width, height, and outer styling of the credit card fields. See [PayPal documentation](https://developer.paypal.com/docs/checkout/advanced/customize/card-field-style/) for more information.
 
+## [!DNL Apple Pay] button
+
+Customers can use [[!DNL Apple Pay]](https://www.apple.com/apple-pay/), which utilizes credit and debit card payment credentials stored on an iOS or macOS device, to make purchases.
+
+The [!DNL Apple Pay] button is visible from the product page, mini-cart, shopping cart, and checkout views.
+
+   >[!NOTE]
+   >
+   > To use [!DNL Apple Pay] for your stores, complete [self-registration with [!DNL Apple Pay]](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) (_Register your live domain_ section only) and [configure it for your stores in [!DNL Payment Services]](settings.md#payment-buttons).
+
+You can configure [!UICONTROL Apple Pay] in the store configuration or the Payment Services Home. See [Settings](settings.md#apple-pay) for more information.
+
 ## [!DNL PayPal Smart Buttons]
 
 [!DNL PayPal Smart Buttons], which use PayPal to complete a purchase, stores your shopper's shipping address, billing addresses, and payment details for later use. Shoppers can use any payment method previously stored or offered by PayPal.
 
-![[!DNL PayPal Smart Buttons] options](assets/payment-buttons.png){width="500"}
+![[!DNL PayPal Smart Buttons] options](assets/payment-buttons.png){width="400" zoomable="yes"}
 
 You can configure [!UICONTROL PayPal Smart Buttons] in the store configuration or the Payment Services Home.  See [Settings](settings.md#payment-buttons) for more information.
 
@@ -54,23 +66,13 @@ Customers can check out using the [Venmo](https://venmo.com/) button.
 
 The [!DNL Venmo] button is visible from the product page, mini-cart, shopping cart, and checkout views.
 
-### [!DNL Apple Pay] button
-
-Customers can use Touch ID on their devices to use [[!DNL Apple Pay]](https://www.apple.com/apple-pay/), which utilizes credit and debit card payment credentials stored on their iOS or macOS device.
-
-The [!DNL Apple Pay] button is visible from the product page, mini-cart, shopping cart, and checkout views.
-
-   >[!NOTE]
-   >
-   > To use [!DNL Apple Pay] for your stores, complete [self-registration with [!DNL Apple Pay]](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) (_Register your live domain_ section only) and [configure it for your stores in [!DNL Payment Services]](settings.md#payment-buttons).
-
 ### PayPal Debit or Credit card button
 
 Customers can check out using the PayPal Debit or Credit card button.
 
 The PayPal Debit or Credit card button is visible from the checkout page.
 
-This option can be used to present a PayPal Debit or Credit card payment option to your shoppers when you do not have an alternative credit card provider.
+This option can be used to present a debit or credit card payment option to your shoppers with a PayPal-hosted button as an alternative to a credit card integration.
 
 ### [!DNL Pay Later] button
 

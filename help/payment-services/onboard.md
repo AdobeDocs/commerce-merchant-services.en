@@ -12,7 +12,7 @@ To get started using [!DNL Payment Services] for [!DNL Adobe Commerce] and [!DNL
 
 ## Onboarding flow
 
-![Onboarding flow](assets/onboarding-diagram.svg)
+![Onboarding flow](assets/onboarding-diagram.svg){width="600" zoomable="yes"}
 
 This onboarding flow diagram shows the general process for onboarding [!DNL Payment Services].
 

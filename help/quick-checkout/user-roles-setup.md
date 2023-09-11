@@ -12,7 +12,7 @@ To access the [!DNL Quick Checkout] Admin panel:
 
 1. On the _Admin_ sidebar, navigate to **[!UICONTROL Sales]** > **[!UICONTROL Quick Checkout]**.
 
-    ![Menu Quick Checkout](assets/overview-admin-panel.png)
+    ![Menu Quick Checkout](assets/overview-admin-panel.png){width="600" zoomable="yes"}
 
 Refer to the [onboarding](../quick-checkout/onboarding.md) topic for more information on how to configure the [!DNL Quick Checkout] for Adobe Commerce.
 
@@ -20,12 +20,12 @@ To allow the user access and visibility to the [!DNL Quick Checkout] Admin panel
 
 1. On the _Admin_ sidebar, go to **[!UICONTROL System]** > Permissions > **[!UICONTROL User Roles]**.
 
-    ![User Roles](assets/user-roles-small.png)
+    ![User Roles](assets/user-roles-small.png){width="300" zoomable="yes"}
 
 1. In the _Roles_ view, click **Add New Role** 
 1. Select the [!DNL Quick Checkout] resources:
 
-   ![Quick Checkout roles and permissions](assets/role-resource-quick-checkout.png)
+   ![Quick Checkout roles and permissions](assets/role-resource-quick-checkout.png){width="300" zoomable="yes"}
 
 1. Click **Save Role**.
 

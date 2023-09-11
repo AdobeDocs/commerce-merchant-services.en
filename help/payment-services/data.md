@@ -20,7 +20,7 @@ The IDs are easily accessible in both the merchant activity detail for a payout 
 
 The `invoice_id` and `custom_id` are displayed near the bottom of the merchant activity detail for a payout:
 
-![`custom_id` in merchant activity detail](assets/merchant-activity-ids.png)
+![`custom_id` in merchant activity detail](assets/merchant-activity-ids.png){width="600" zoomable="yes"}
 
 `custom_id` and `invoice_id` in the details in PayPal's webhook:
 

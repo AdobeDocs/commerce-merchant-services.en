@@ -26,7 +26,7 @@ To complete sandbox onboarding:
    1. In the _[!UICONTROL Sandbox Accounts]_ section, click the three dots in the _[!UICONTROL Manage accounts]_ column for the sandbox account you created.
    1. Click **[!UICONTROL View/edit account]**.
 
-      ![PayPal - View/edit sandbox account](assets/onboarding-viewedit-sandbox.png)
+      ![PayPal - View/edit sandbox account](assets/onboarding-viewedit-sandbox.png){width="300" zoomable="yes"}
 
    1. Copy and save the Email ID and System-Generated Password for future use.
 
@@ -42,7 +42,7 @@ To complete sandbox onboarding:
 1. Enter the email and password of the PayPal sandbox account you generated in step 3 (not your PayPal business account information) and your country or region.
 1. Click **[!UICONTROL Next]**.
 
-   ![PayPal - Connect PayPal account for payments](assets/paypal-connectacct.png)
+   ![PayPal - Connect PayPal account for payments](assets/paypal-connectacct.png){width="300" zoomable="yes"}
 
 1. Continue to follow the PayPal flow, using your previously saved sandbox account credentials.
 1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.

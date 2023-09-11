@@ -12,7 +12,7 @@ The Store Assist app provides Store Associates with four modules to manage the i
 
 - **[Pick](#pick-module)**—Get full visibility into all ordered items and the tools to make sure that the right items and right quantities are picked. Store associates can pick one or multiple orders simultaneously for greater efficiency.
 
-- **[Stage](#stage-module)**—Enter a location where the orders are placed while customers are traveling to the store so Store Associates can find them easily for order handoff.
+- **[Stage](#stage-module)**—Enter the location where orders are placed while customers are traveling to the store so that Store Associates can find and handoff orders more quickly.
 
 - **[Hand Off](#hand-off-module)**—Get real-time notifications after customers arrive at the store to minimize their wait time and handoff orders seamlessly.
 

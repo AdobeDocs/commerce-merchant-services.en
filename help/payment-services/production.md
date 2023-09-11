@@ -72,7 +72,7 @@ To enable live onboarding, you must request payments entitlement from Adobe:
 1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. Click **[!UICONTROL Get Live Payments]** in your [!DNL Payment Services] Home.
 
-   ![Request entitlements](assets/request-entitlements.png)
+   ![Request entitlements](assets/request-entitlements.png){width="500" zoomable="yes"}
 
 1. Complete the form.
 1. A member of the sales team will contact you.
