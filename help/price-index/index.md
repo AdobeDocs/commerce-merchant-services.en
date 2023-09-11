@@ -66,7 +66,7 @@ adobe-commerce/catalog-adapter
 The `catalog-adapter` is only compatible with 2.4.5. Support for 2.4.4 and 2.4.6 will be released in the near future.
 The PHP core price indexer can be re-enabled if needed by a third-party extension or any other reason.
 
-## Caveats
+## Usage
 
 Depending on factors such as product types, price complexity and catalog size, SaaS price indexing may be the right solution for your store. Read over the following limitations and determine if this is a good solution for your site.
 
@@ -105,7 +105,7 @@ New feeds should be manually synced with the `resync` [CLI command](https://expe
 
 ## Custom prices
 
-Th SaaS Price Indexer supports custom product prices such as special price, group price, catalog rule price and others.
+The SaaS price indexer supports custom product type price features that are available in the Adobe Commerce core edition, such as special price, group price, and catalog rule price.
 
 For example: there is a custom product type  "custom_type" and a product with SKU "Custom Type Product".
 
