@@ -1,30 +1,88 @@
 ---
-title: Add Field Groups to XDM Schema
-description: Learn how to add Adobe Commerce-specific field groups to an XDM schema.
+title: Use Adobe Journey Optimizer to Send an Abandoned Cart Email
+description: Learn how to use Adobe Journey Optimizer to send an abandoned cart email.
 
 ---
-# Add field groups to XDM schema
+# Use Adobe Journey Optimizer to Send an Abandoned Cart Email
 
+[Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/get-started.html) helps you personalize the commerce experience for your shoppers. For example, you can use Journey Optimizer to create and deliver scheduled marketing campaigns, such as weekly promotions for a retail store; or, you can generate an abandoned cart email if a customer added a product to a cart but then did not complete the checkout process.
 
-As part of this lesson, we will:  
+In this tutorial, you will learn how to listen to a `checkout` event generated from your Commerce instance and respond to that event in Journey Optimizer to build an abandoned cart email.
 
-Create a simple checkout abandonment journey 
-
-Create a checkout abandonment email content with personalization 
-
-Test your journey and receive real-time emails  
-
-create a simple journey to do checkout abandonment with an email sending and we will test the E2E flow in real-time. This means that you will be able to browse the CitiSignal commerce website and based on your behavior, you will receive a real time checkout abandonment email.  
+>[!IMPORTANT]
+>
+>For demonstration purposes, make sure you are using your Commerce sandbox environment as you go through this tutorial. This ensures that the storefront and back office event data you send to Experience Platform does not dilute your production event data.
 
 ## Prerequisits
 
-You are provisioned to use AJO
-You have configured EPC
-You can confirmed your data is arriving at the edge
+Before you begin working on this tutorial, you must ensure the following:
 
-## View your data in AJO
+- You are provisioned to use Adobe Journey Optimizer
+- You have [configured](connect-data.md) the Experience Platform Connector
+- You have [confirmed](connect-data.md#confirm-that-event-data-is-collected) your Commerce event data is arriving at the Experience Platform edge
 
-### Identify the Commerce-specific events
+### Step 1: Create a user in your Commerce sandbox environment
+
+You need to create a user in your test environment and confirm that user account information appears in Experience Platform. Make sure the email you specified is valid as that is used later in this tutorial to send the abandoned cart email.
+
+1. Sign in or create an account in your test environment.
+
+    With the Experience Platform Connector installed and configured, this account information is sent to the Experience Platform as a profile.
+
+    ![Sign in to your test account](assets/check-event-profile.png)
+
+1. Confirm your user account information in the Profile section of Experience Platform.
+1. Confirm the checkout event appears in the Experience Platform unified profile
+
+Go to Profiles in the Adobe Experience Platform. Click on Detail in the profile. You will now see the profile that you created. 
+
+
+With the Experience Platform Connector configured, storefront and back office event data from your Commerce site are already being sent to the Experience Platform. Go to Profiles in the Adobe Experience Platform. Click on Detail in the profile. You will now see the profile that you created. 
+
+    1. 
+
+
+### Step 2: Create an abandoned cart email in Journey Optimizer
+
+Before we begin creating an abandoned cart email, you will need to add items to the cart.
+
+1. Open your Commerce test environment.
+1. Add a product to the cart.
+
+    This action triggered the `addToCart` event. However, because you did not initiate a checkout, your cart is essentially abandoned.
+
+1. Confirm the events are flowing to Journey Optimizer.
+
+    1. Launch Adobe Journey Optimizer.
+    1. Select **Profiles**.
+    1. Set [!UICONTROL Identity namespace] to `Email`.
+    1. Set [!UICONTROL Identity value] to your email address.
+
+    For example:
+
+    ![Details in Journey Optimizer](assets/check-event-profile.png)
+
+    Under your profile, you can see the list of events with the details by clicking on the **Events** tab.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 Let's focus on the following checkout event:
 
