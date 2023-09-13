@@ -18,7 +18,7 @@ Updates include:
 
 ### V1.12 Release
 
-_September 13, 2023_
+_September 19, 2023_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
