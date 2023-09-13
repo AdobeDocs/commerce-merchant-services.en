@@ -39,12 +39,12 @@ These notes describe updates that were published outside of a versioned release 
 
 ## Current major version
 
-### 5.0.0 of magento/product-recommendations
+### 5.0.1 of magento/product-recommendations
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
-![New](../assets/new.svg) Updated Product Recommendations to support Adobe Commerce 2.4.6.
-![New](../assets/new.svg) This is a major version release. [Edit](install-configure.md#update) the root `composer.json` file for your project. 
+![New](../assets/new.svg) Added new modules to support the [Saas Price Indexer](../price-index/index.md).
+![New](../assets/new.svg) Added new data export modules to support exporting more product types including bundled products and gift cards.
 
 #### Known limitations
 
@@ -52,7 +52,14 @@ These notes describe updates that were published outside of a versioned release 
 
 ### Previous versions
 
-+++4.0.1 and prior
++++5.0.0 and prior
+
+### 5.0.0 of magento/product-recommendations
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+![New](../assets/new.svg) Updated Product Recommendations to support Adobe Commerce 2.4.6.
+![New](../assets/new.svg) This is a major version release. [Edit](install-configure.md#update) the root `composer.json` file for your project. 
 
 ### 4.0.1 of magento/product-recommendations
 
