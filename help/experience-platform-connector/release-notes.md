@@ -27,6 +27,7 @@ These release notes describe feature changes and fixes related to extensions use
 _October 10, 2023_
 
 * ![Fix](../assets/fix.svg) - Fixed an issue where currency configuration changes were not reflected in the events after refreshing the cache.
+* ![Fix](../assets/fix.svg) - Fixed error when order confirmation message does not appear if async order placement is enabled.
 
 _June 10, 2023_
 
