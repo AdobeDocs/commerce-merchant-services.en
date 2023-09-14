@@ -255,7 +255,7 @@ The following table describes the data collected for this event.
 |`commerce.shipping.currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used, such as `USD` or `EUR`.|
 |`commerce.promotionID`|Unique identifier of the promotion, if any.|
 |`commerce.personalEmail`|A personal email address.|
-|`commerce.personalEmail.address`|The technical address, for example, 'name@domain.com' as commonly defined in RFC2822 and subsequent standards.|
+|`commerce.personalEmail.address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards.|
 |`productListItems`|An array of products that were added to the requisition list.|
 |`productListItems.SKU`|Stock Keeping Unit. The unique identifier for the product.|
 |`productListItems.name`|The display name or human-readable name of the product.|
@@ -394,7 +394,7 @@ The following table describes the data collected for this event.
 
 The search events provide data relevant to the shopper's intent. Insight into a shopper's intent helps merchants see how shoppers are searching for items, what they click on, and ultimately purchase or abandon. An example of how you might use this data is if you want to target existing shoppers who search for your top product, but never purchase the product.
 
-Use the `uniqueIdentifier` field found in both the `searchRequestSent` and `searchResponseReceived` events to cross reference a search request to the corresponding search response.
+Use the `searchRequest.id` and `searchResponse.id` fields found in both the `searchRequestSent` and `searchResponseReceived` events to cross reference a search request to the corresponding search response.
 
 ### searchRequestSent
 
@@ -413,13 +413,13 @@ The following table describes the data collected for this event.
 |Field|Description|
 |---|---|
 |`searchRequest`|Indicates if a search request was sent.|
-|`searchRequest.id`| The unique ID for this particular search request.|
-|`searchRequest.value`|.|
-|`siteSearch`|.|
+|`searchRequest.id`|The unique ID for this particular search request.|
+|`searchRequest.value`|The quantifiable value of the request.|
+|`siteSearch`|Contains information about the search.|
 |`siteSearch.filter`|Indicates if any filters were applied to limit search results.|
 |`siteSearch.filter.attribute` (filter)|The facet of an item used to determine whether to include it in search results.|
-|`siteSearch.filter.isRange`|When true, values indicate endpoints of an acceptable range of values.||
-|`siteSearch.filter.value`|Attribute values used to determine which items are included in search results.|
+|`siteSearch.filter.isRange`|When true, values indicate endpoints of an acceptable range of values.|
+|`siteSearch.filter.value`|Attribute value used to determine which items are included in search results.|
 |`siteSearch.sort`|Indicates how search results should be sorted.|
 |`siteSearch.sort.attribute` (sort)|An attribute used to sort items in search results.|
 |`siteSearch.sort.order`|The order in which to return search results.|
@@ -447,9 +447,10 @@ The following table describes the data collected for this event.
 |Field|Description|
 |---|---|
 |`searchResponse`|Indicates if a search response has been received.|
-|`searchResponse.id`| The unique ID for this particular search response.|
-|`suggestions`|An array of strings that include the names of products and categories that exist in the catalog that are similar to the search query.|
-|`numberOfResults`|The number of products returned.|
+|`searchResponse.id`|The unique ID for this particular search response.|
+|`searchResponse.value`|The quantifiable value of the response.|
+|`siteSearch.numberOfResults`|The number of products returned.|
+|`siteSearch.suggestions`|An array of strings that include the names of products and categories that exist in the catalog that are similar to the search query.|
 |`productListItems`|An array of products that were added to the requisition list.|
 |`productListItems.SKU`|Stock Keeping Unit. The unique identifier for the product.|
 |`productListItems.name`|The display name or human-readable name of the product.|
@@ -587,7 +588,7 @@ The following table describes the data collected for this event.
 |`commerce.shipping.shippingAmount`|The amount the customer had to pay for shipping.|
 |`commerce.promotionID`|Unique identifier of the promotion, if any.|
 |`commerce.personalEmail`|A personal email address.|
-|`commerce.personalEmail.address`|The technical address, for example, 'name@domain.com' as commonly defined in RFC2822 and subsequent standards.|
+|`commerce.personalEmail.address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards.|
 |`productListItems`|An array of products in the order.|
 |`productListItems.SKU`|Stock Keeping Unit. The unique identifier for the product.|
 |`productListItems.name`|The display name or human-readable name of the product.|
@@ -598,10 +599,10 @@ The following table describes the data collected for this event.
 |`productListItems.selectedOptions`|Field used for a configurable product.|
 |`productListItems.selectedOptions.attribute`|Identifies an attribute of the configurable product, such as `size` or `color`.|
 |`productListItems.selectedOptions.value`|Identifies the value of the attribute such as `small` or `black`.|
-|`productListItems.categories`|.|
-|`productListItems.categories.id`|.|
-|`productListItems.categories.name`|.|
-|`productListItems.categories.path`|.|
+|`productListItems.categories`|Contains information about the category of a product.|
+|`productListItems.categories.id`|The unique identifier of the category.|
+|`productListItems.categories.name`|The name of the category.|
+|`productListItems.categories.path`|The path to the category.|
 |`productListItems.productImageUrl`|Main image URL of the product.|
 |`commerce.commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
 |`commerce.commerceScope.environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
@@ -620,7 +621,7 @@ The following table describes the data collected for this event.
 
 |Description| XDM event name|
 |---|---|
-|Triggered when a shopper places an order.|`commerce.backofficeOrderInvoiced`|
+|Triggered when a merchant submits an invoice to request payment.|`commerce.backofficeOrderInvoiced`|
 
 #### Data collected from orderInvoiced
 
@@ -631,7 +632,7 @@ The following table describes the data collected for this event.
 |`commerce.order`|Contains information about the order.|
 |`commerce.order.purchaseID`|Unique identifier assigned by the seller for this purchase or contract. There is no guarantee that the ID is unique.|
 |`commerce.order.payments`|The list of payments for this order.|
-|`commerce.order.payments.paymentTransactionID`|.|
+|`commerce.order.payments.paymentTransactionID`|Unique identifier for this payment transaction.|
 |`commerce.order.payments.paymentAmount`|The value of the payment.|
 |`commerce.order.payments.paymentType`|The method of payment for this order. Enumerated, custom values allowed.|
 |`commerce.order.payments.currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used, such as `USD` or `EUR`.|
@@ -640,7 +641,7 @@ The following table describes the data collected for this event.
 |`commerce.shipping.shippingAmount`|The amount the customer had to pay for shipping.|
 |`commerce.promotionID`|Unique identifier of the promotion, if any.|
 |`commerce.personalEmail`|A personal email address.|
-|`commerce.personalEmail.address`|The technical address, for example, 'name@domain.com' as commonly defined in RFC2822 and subsequent standards.|
+|`commerce.personalEmail.address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards.|
 |`productListItems`|An array of products in the order.|
 |`productListItems.SKU`|Stock Keeping Unit. The unique identifier for the product.|
 |`productListItems.name`|The display name or human-readable name of the product.|
@@ -651,11 +652,10 @@ The following table describes the data collected for this event.
 |`productListItems.selectedOptions`|Field used for a configurable product.|
 |`productListItems.selectedOptions.attribute`|Identifies an attribute of the configurable product, such as `size` or `color`.|
 |`productListItems.selectedOptions.value`|Identifies the value of the attribute such as `small` or `black`.|
-|`productListItems.categories`|.|
-|`productListItems.categories.id`|.|
-|`productListItems.categories.name`|.|
-|`productListItems.categories.path`|.|
-|`productListItems.qtyInvoiced`|.|
+|`productListItems.categories`|Contains information about the category of a product.|
+|`productListItems.categories.id`|The unique identifier of the category.|
+|`productListItems.categories.name`|The name of the category.|
+|`productListItems.categories.path`|The path to the category.|
 
 ### orderItemsShipped
 
@@ -672,7 +672,7 @@ The following table describes the data collected for this event.
 |`commerce.order`|Contains information about the order.|
 |`commerce.order.purchaseID`|Unique identifier assigned by the seller for this purchase or contract. There is no guarantee that the ID is unique.|
 |`commerce.order.payments`|The list of payments for this order.|
-|`commerce.order.payments.paymentTransactionID`|.|
+|`commerce.order.payments.paymentTransactionID`|Unique identifier for this payment transaction.|
 |`commerce.order.payments.paymentAmount`|The value of the payment.|
 |`commerce.order.payments.paymentType`|The method of payment for this order. Enumerated, custom values allowed.|
 |`commerce.order.payments.currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used, such as `USD` or `EUR`.|
@@ -690,7 +690,7 @@ The following table describes the data collected for this event.
 |`commerce.shipping.shipDate`|The date when one or more items from an order is shipped.|
 |`commerce.promotionID`|Unique identifier of the promotion, if any.|
 |`commerce.personalEmail`|A personal email address.|
-|`commerce.personalEmail.address`|The technical address, for example, 'name@domain.com' as commonly defined in RFC2822 and subsequent standards.|
+|`commerce.personalEmail.address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards.|
 |`productListItems`|An array of products in the order.|
 |`productListItems.SKU`|Stock Keeping Unit. The unique identifier for the product.|
 |`productListItems.name`|The display name or human-readable name of the product.|
@@ -701,10 +701,10 @@ The following table describes the data collected for this event.
 |`productListItems.selectedOptions`|Field used for a configurable product.|
 |`productListItems.selectedOptions.attribute`|Identifies an attribute of the configurable product, such as `size` or `color`.|
 |`productListItems.selectedOptions.value`|Identifies the value of the attribute such as `small` or `black`.|
-|`productListItems.categories`|.|
-|`productListItems.categories.id`|.|
-|`productListItems.categories.name`|.|
-|`productListItems.categories.path`|.|
+|`productListItems.categories`|Contains information about the category of a product.|
+|`productListItems.categories.id`|The unique identifier of the category.|
+|`productListItems.categories.name`|The name of the category.|
+|`productListItems.categories.path`|The path to the category.|
 |`commerce.commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
 |`commerce.commerceScope.environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
 |`commerce.commerceScope.storeCode`|The unique store code. You can have many stores per website.|
@@ -740,7 +740,7 @@ The following table describes the data collected for this event.
 |`commerce.shipping.shippingAmount`|The amount the customer had to pay for shipping.|
 |`commerce.promotionID`|Unique identifier of the promotion, if any.|
 |`commerce.personalEmail`|A personal email address.|
-|`commerce.personalEmail.address`|The technical address, for example, 'name@domain.com' as commonly defined in RFC2822 and subsequent standards.|
+|`commerce.personalEmail.address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards.|
 |`productListItems`|An array of products in the order.|
 |`productListItems.SKU`|Stock Keeping Unit. The unique identifier for the product.|
 |`productListItems.name`|The display name or human-readable name of the product.|
@@ -751,10 +751,10 @@ The following table describes the data collected for this event.
 |`productListItems.selectedOptions`|Field used for a configurable product.|
 |`productListItems.selectedOptions.attribute`|Identifies an attribute of the configurable product, such as `size` or `color`.|
 |`productListItems.selectedOptions.value`|Identifies the value of the attribute such as `small` or `black`.|
-|`productListItems.categories`|.|
-|`productListItems.categories.id`|.|
-|`productListItems.categories.name`|.|
-|`productListItems.categories.path`|.|
+|`productListItems.categories`|Contains information about the category of a product.|
+|`productListItems.categories.id`|The unique identifier of the category.|
+|`productListItems.categories.name`|The name of the category.|
+|`productListItems.categories.path`|The path to the category.|
 |`commerce.commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
 |`commerce.commerceScope.environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
 |`commerce.commerceScope.storeCode`|The unique store code. You can have many stores per website.|
@@ -765,9 +765,9 @@ The following table describes the data collected for this event.
 
 |Description| XDM event name|
 |---|---|
-|Triggered when a shopper returns an item in an order.|`commerce.backofficeCreditMemoIssued`|
+|Triggered when a shopper is refunded for a returned item.|`commerce.backofficeCreditMemoIssued`|
 
-#### Data collected from creditMemoIssued
+#### Data collected from orderLineItemRefunded
 
 The following table describes the data collected for this event.
 
@@ -785,7 +785,7 @@ The following table describes the data collected for this event.
 |`commerce.refunds.refundCurrencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used, such as `USD` or `EUR`.|
 |`commerce.promotionID`|Unique identifier of the promotion, if any.|
 |`commerce.personalEmail`|A personal email address.|
-|`commerce.personalEmail.address`|The technical address, for example, 'name@domain.com' as commonly defined in RFC2822 and subsequent standards.|
+|`commerce.personalEmail.address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards.|
 |`productListItems`|An array of products in the order.|
 |`productListItems.SKU`|Stock Keeping Unit. The unique identifier for the product.|
 |`productListItems.name`|The display name or human-readable name of the product.|
@@ -796,16 +796,16 @@ The following table describes the data collected for this event.
 |`productListItems.selectedOptions`|Field used for a configurable product.|
 |`productListItems.selectedOptions.attribute`|Identifies an attribute of the configurable product, such as `size` or `color`.|
 |`productListItems.selectedOptions.value`|Identifies the value of the attribute such as `small` or `black`.|
-|`productListItems.categories`|.|
-|`productListItems.categories.id`|.|
-|`productListItems.categories.name`|.|
-|`productListItems.categories.path`|.|
+|`productListItems.categories`|Contains information about the category of a product.|
+|`productListItems.categories.id`|The unique identifier of the category.|
+|`productListItems.categories.name`|The name of the category.|
+|`productListItems.categories.path`|The path to the category.|
 
 ### orderItemsReturnInitiated
 
 |Description| XDM event name|
 |---|---|
-|Triggered when a shopper places an order.|`commerce.backofficeOrderItemsReturnInitiated`|
+|Triggered when a shopper requests to return an item.|`commerce.backofficeOrderItemsReturnInitiated`|
 
 #### Data collected from orderItemsReturnInitiated
 
@@ -815,9 +815,9 @@ The following table describes the data collected for this event.
 |---|---|
 |`commerce.order`|Contains information about the order.|
 |`commerce.order.purchaseID`|Unique identifier assigned by the seller for this purchase or contract. There is no guarantee that the ID is unique.|
-|`commerce.order.returns`|.|
-|`commerce.order.returns.returnID`|.|
-|`commerce.order.returns.returnStatus`|.|
+|`commerce.order.returns`|The RMA (Return Merchandise Authorization) information for this order.|
+|`commerce.order.returns.returnID`|The unique identifier for this RMA (Return Merchandise Authorization).|
+|`commerce.order.returns.returnStatus`|The current status of the RMA (Return Merchandise Authorization), such as Pending, Closed, and so on.|
 |`commerce.shipping`|Shipping details for one or more products.|
 |`commerce.shipping.shippingMethod`|The method of shipping chosen by the customer, such as standard delivery, expedited delivery, pick up in store, and so on.|
 |`commerce.shipping.shippingAmount`|The amount the customer had to pay for shipping.|
@@ -827,7 +827,7 @@ The following table describes the data collected for this event.
 |`commerce.commerceScope.storeViewCode`|The unique store view code. You can have many store views per store.|
 |`commerce.commerceScope.websiteCode`|The unique website code. You can have many websites in an environment.|
 |`commerce.personalEmail`|A personal email address.|
-|`commerce.personalEmail.address`|The technical address, for example, 'name@domain.com' as commonly defined in RFC2822 and subsequent standards.|
+|`commerce.personalEmail.address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards.|
 |`productListItems`|An array of products in the order.|
 |`productListItems.SKU`|Stock Keeping Unit. The unique identifier for the product.|
 |`productListItems.name`|The display name or human-readable name of the product.|
@@ -835,25 +835,25 @@ The following table describes the data collected for this event.
 |`productListItems.selectedOptions`|Field used for a configurable product.|
 |`productListItems.selectedOptions.attribute`|Identifies an attribute of the configurable product, such as `size` or `color`.|
 |`productListItems.selectedOptions.value`|Identifies the value of the attribute such as `small` or `black`.|
-|`productListItems.categories`|.|
-|`productListItems.categories.id`|.|
-|`productListItems.categories.name`|.|
-|`productListItems.categories.path`|.|
-|`productListItems.returnItem`|.|
-|`productListItems.returnItem.returnStatus`|.|
-|`productListItems.returnItem.returnReason`|.|
-|`productListItems.returnItem.returnItemCondition`|.|
-|`productListItems.returnItem.returnResolution`|.|
-|`productListItems.returnItem.returnQuantityRequested`|.|
-|`productListItems.returnItem.returnQuantityAuthorized`|.|
-|`productListItems.returnItem.eturnQuantityReceived`|.|
-|`productListItems.returnItem.returnQuantityApproved`|.|
+|`productListItems.categories`|Contains information about the category of a product.|
+|`productListItems.categories.id`|The unique identifier of the category.|
+|`productListItems.categories.name`|The name of the category.|
+|`productListItems.categories.path`|The path to the category.|
+|`productListItems.returnItem`|The RMA (Return Merchandise Authorization) information for this item.|
+|`productListItems.returnItem.returnStatus`|The status of the returned item, such as Pending, Approved, and so on.|
+|`productListItems.returnItem.returnReason`|The reason why a return is requested for this item.|
+|`productListItems.returnItem.returnItemCondition`|The condition of the item that the return is requested for.|
+|`productListItems.returnItem.returnResolution`|The requested resolution of the item being returned, such as Refund, Exchange, and so on.|
+|`productListItems.returnItem.returnQuantityRequested`|The number of this item that the shopper requested to return.|
+|`productListItems.returnItem.returnQuantityAuthorized`|The number of this item that is authorized to be returned.|
+|`productListItems.returnItem.eturnQuantityReceived`|The number of returned items received.|
+|`productListItems.returnItem.returnQuantityApproved`|The number of this item with return fully complete and approved.|
 
 ### orderItemReturnCompleted
 
 |Description| XDM event name|
 |---|---|
-|Triggered when a shopper places an order.|`commerce.backofficeOrderItemsReturnCompleted`|
+|Triggered when an item a shopper requested to return is completed.|`commerce.backofficeOrderItemsReturnCompleted`|
 
 #### Data collected from orderItemReturnCompleted
 
@@ -863,9 +863,9 @@ The following table describes the data collected for this event.
 |---|---|
 |`commerce.order`|Contains information about the order.|
 |`commerce.order.purchaseID`|Unique identifier assigned by the seller for this purchase or contract. There is no guarantee that the ID is unique.|
-|`commerce.order.returns`|.|
-|`commerce.order.returns.returnID`|.|
-|`commerce.order.returns.returnStatus`|.|
+|`commerce.order.returns`|The RMA (Return Merchandise Authorization) information for this order.|
+|`commerce.order.returns.returnID`|The unique identifier for this RMA (Return Merchandise Authorization).|
+|`commerce.order.returns.returnStatus`|The current status of the RMA (Return Merchandise Authorization), such as Pending, Closed, and so on.|
 |`commerce.commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
 |`commerce.commerceScope.environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
 |`commerce.commerceScope.storeCode`|The unique store code. You can have many stores per website.|
@@ -875,32 +875,32 @@ The following table describes the data collected for this event.
 |`commerce.shipping.shippingMethod`|The method of shipping chosen by the customer, such as standard delivery, expedited delivery, pick up in store, and so on.|
 |`commerce.shipping.shippingAmount`|The amount the customer had to pay for shipping.|
 |`commerce.personalEmail`|A personal email address.|
-|`commerce.personalEmail.address`|The technical address, for example, 'name@domain.com' as commonly defined in RFC2822 and subsequent standards.|
+|`commerce.personalEmail.address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards.|
 |`productListItems`|An array of products in the order.|
 |`productListItems.SKU`|Stock Keeping Unit. The unique identifier for the product.|
 |`productListItems.name`|The display name or human-readable name of the product.|
 |`productListItems.selectedOptions`|Field used for a configurable product.|
 |`productListItems.selectedOptions.attribute`|Identifies an attribute of the configurable product, such as `size` or `color`.|
 |`productListItems.selectedOptions.value`|Identifies the value of the attribute such as `small` or `black`.|
-|`productListItems.categories`|.|
-|`productListItems.categories.id`|.|
-|`productListItems.categories.name`|.|
-|`productListItems.categories.path`|.|
-|`productListItems.returnItem`|.|
-|`productListItems.returnItem.returnStatus`|.|
-|`productListItems.returnItem.returnReason`|.|
-|`productListItems.returnItem.returnItemCondition`|.|
-|`productListItems.returnItem.returnResolution`|.|
-|`productListItems.returnItem.returnQuantityRequested`|.|
-|`productListItems.returnItem.returnQuantityAuthorized`|.|
-|`productListItems.returnItem.eturnQuantityReceived`|.|
-|`productListItems.returnItem.returnQuantityApproved`|.|
+|`productListItems.categories`|Contains information about the category of a product.|
+|`productListItems.categories.id`|The unique identifier of the category.|
+|`productListItems.categories.name`|The name of the category.|
+|`productListItems.categories.path`|The path to the category.|
+|`productListItems.returnItem`|The RMA (Return Merchandise Authorization) information for this item.|
+|`productListItems.returnItem.returnStatus`|The status of the returned item, such as Pending, Approved, and so on.|
+|`productListItems.returnItem.returnReason`|The reason why a return is requested for this item.|
+|`productListItems.returnItem.returnItemCondition`|The condition of the item that the return is requested for.|
+|`productListItems.returnItem.returnResolution`|The requested resolution of the item being returned, such as Refund, Exchange, and so on.|
+|`productListItems.returnItem.returnQuantityRequested`|The number of this item that the shopper requested to return.|
+|`productListItems.returnItem.returnQuantityAuthorized`|The number of this item that is authorized to be returned.|
+|`productListItems.returnItem.eturnQuantityReceived`|The number of returned items received.|
+|`productListItems.returnItem.returnQuantityApproved`|The number of this item with return fully complete and approved.|
 
 ### orderShipmentCompleted
 
 |Description| XDM event name|
 |---|---|
-|Triggered when a shopper returns an item in an order.|`commerce.backofficeOrderShipmentCompleted`|
+|Triggered when a shipment is completed.|`commerce.backofficeOrderShipmentCompleted`|
 
 #### Data collected from orderShipmentCompleted
 
@@ -922,7 +922,7 @@ The following table describes the data collected for this event.
 |`commerce.shipping.shippingAmount`|The amount the customer had to pay for shipping.|
 |`commerce.promotionID`|Unique identifier of the promotion, if any.|
 |`commerce.personalEmail`|A personal email address.|
-|`commerce.personalEmail.address`|The technical address, for example, 'name@domain.com' as commonly defined in RFC2822 and subsequent standards.|
+|`commerce.personalEmail.address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards.|
 |`productListItems`|An array of products in the order.|
 |`productListItems.SKU`|Stock Keeping Unit. The unique identifier for the product.|
 |`productListItems.name`|The display name or human-readable name of the product.|
@@ -933,10 +933,10 @@ The following table describes the data collected for this event.
 |`productListItems.selectedOptions`|Field used for a configurable product.|
 |`productListItems.selectedOptions.attribute`|Identifies an attribute of the configurable product, such as `size` or `color`.|
 |`productListItems.selectedOptions.value`|Identifies the value of the attribute such as `small` or `black`.|
-|`productListItems.categories`|.|
-|`productListItems.categories.id`|.|
-|`productListItems.categories.name`|.|
-|`productListItems.categories.path`|.|
+|`productListItems.categories`|Contains information about the category of a product.|
+|`productListItems.categories.id`|The unique identifier of the category.|
+|`productListItems.categories.name`|The name of the category.|
+|`productListItems.categories.path`|The path to the category.|
 |`commerce.billing.address`|Billing postal address.|
 |`commerce.billing.address.street1`|Primary street level information, apartment number, street number, and street name|
 |`commerce.billing.address.street2`|Additional field for street level information.|
