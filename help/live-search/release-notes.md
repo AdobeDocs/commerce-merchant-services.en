@@ -38,7 +38,7 @@ _June 13, 2023_
 
 ### New Features
 
-* New Category Merchandising tab has been added. Users can now add Rules (Drag&Drop, Pin/hide/bury, Intelligent Ranking) per category
+* New Category Merchandising tab has been added. Users can now add Intelligent Rankings and Manual Rankings (pin, boost, bury, hide) per category
 * Users can add a single category rule with intelligent or manual ranking
 * Users can now add Intelligent Ranking rules to subcategories
 * Detailed information is provided when deleting subcategories with intelligent ranking
@@ -50,7 +50,7 @@ _June 13, 2023_
 
 ### Updates
 
-* The 'Rule' tab is renamed to 'Search Rules'
+* The 'Rules' tab is renamed to 'Search Rules'
 * When ranking by 'trending', you can now choose between:
     * 3 days - default
     * 14 days
@@ -73,7 +73,7 @@ After installing version 3.1.1, these new indexers must be enabled:
 * Scopes website data feed
 * Scopes customer groups data feed
 
-It is recommended to upgrade and test before pushing to production. Consider upgrading the production environment during off-peak hours after verifying their testing environment results.
+It is recommended to upgrade and test in QA or Staging before pushing changes to production. 
 
 ## Previous versions
 

@@ -8,7 +8,7 @@ gourl: ls_catalog_merchandising
 
 Category Merchandising allows store owners to apply [!DNL Live Search] Intelligent ranking [rules](rules.md) to product categories and subcategories.
 
-The feature is accessed through the Category Merchandising tab on the [!DNL Live Search] area of the admin.
+The feature is accessed through the Category Merchandising tab on the [!DNL Live Search] area of the admin panel.
 
 >[!NOTE]
 >
@@ -31,26 +31,26 @@ You can search for a category or subcategory in the "Search by category" field.
 Category Merchandising uses the same ranking types as with [individual products](rules-workspace.md).
 There are two types of ranking: Intelligent and Manual.
 
-**Intelligent ranking** uses historical data and [Adobe Sensei](https://www.adobe.com/sensei.html) to do the ranking. 
+**Intelligent ranking** leverages storefront behavioral data analysis by [Adobe Sensei](https://www.adobe.com/sensei.html) to sort all products within chosen categories by a certain algorithm. Once an Intelligent ranking is chosen, the specific order of products is expected to change over time as the underlying data is reanalyzed by Adobe Sensei on an ongoing basis. For example, top trending products will automatically change over time as shopper preferences change. 
 Intelligent ranking methods are:
 
-* Most purchased: This ranks products by total purchases per SKU in the previous seven days.
-* Most added to cart - Ranks in order of total "Add to Cart" activities in the previous seven days.
-* Most viewed: Ranks my total views per SKU in the previous seven days.
-* Recommended for you - Uses the viewed-viewed data point - Shoppers who viewed this SKU also looked at these other SKUs
-* Trending: Looks back at page view events over the past 72 hours for background events and 24 hours for foreground events
-* None: Products are ordered by Relevance
+* Most purchased: ranks products by how frequently they were purchased by shoppers in the previous seven days.
+* Most added to cart: ranks products by how frequently they were added to cart by shoppers in the previous seven days.
+* Most viewed: ranks products by how frequently they were viewed by shoppers in the previous seven days.
+* Recommended for you: based on each shopper's previous and current on-site behavior, ranks products by how likely the shopper is to interact with each one.
+* Trending: ranks products by recent upswings in popularity based on views.
+* None: ranks products by their default order.
 
-**Manual ranking** allows users to define their own product rankings or to pin products.
+**Manual ranking** allows users to override the automatic product sort order by defining manual pin, boost, bury, and hide rules. 
 
 ## Inherited ranking
 
-As a store owner, you might want to be able to select all of Women's wear categories to be sorted by "trending". This includes the subcategories "Women's pants", "Women's shirts", and "Women's accessories". Men's categories should not be affected. You can use inherited rankings to achieve this.
+As a merchandiser, you might want to be able to select all of Women's wear categories to be sorted by "trending". This includes the subcategories "Women's pants", "Women's shirts", and "Women's accessories". Men's categories should not be affected. You can use inherited rankings to achieve this.
 
 When selecting an Intelligent ranking method for a category or subcategory that has subcategories, you can turn on the **Apply intelligent rankings to subcategories** option. This applies the ranking method to all subcategories.
-These subcategories now inherit that rule from the main category, as noted by the "Yes" in the Inherited Ranking column. In the Action column, the only available options are **Edit Rule**, and **View Details**. The **Delete** option is disabled for subcategories inheritance. Deleting subcategory inheritance requires undoing inheritance from the parent category.
+These subcategories now inherit that rule from the parent category, as noted by the "Yes" in the Inherited Ranking column. In the Action column, the only available options are **Edit Rule**, and **View Details**. The **Delete** option is disabled for inherited rules on subcategories. Deleting subcategory inheritance requires undoing inheritance from the parent category.
 
-Generally, a category or subcategory can only have a single Intelligent ranking applied at any one time. Categories may have additional Manual rankings applied as well.
+Any category or subcategory can have only a single Intelligent ranking applied at any one time. They may have additional Manual rankings applied as well.
 
 If you apply an Intelligent ranking to a category and turn on the **Apply intelligent ranking to subcategories** option, any Intelligent ranking already applied to the subcategories are overwritten.
 
@@ -60,7 +60,7 @@ If you click the "View All" link, a dialog opens with details of the changes to 
 
 ![Ranking changes details](assets/category_overwrite.png)
 
-When adding an Intelligent ranking to a product that has an inherited Intelligent ranking, the inheritance is severed and the new Intelligent ranking is applied to that product. 
+When adding an Intelligent ranking directly to a category that has an inherited Intelligent ranking, the inheritance is severed and the new Intelligent ranking is applied to that category. 
 
 When deleting the Intelligent ranking from the product, the inheritance is reestablished.
 In both scenarios, any Manual rankings are maintained.
@@ -71,7 +71,7 @@ A modal dialog appears explaining which inherited subcategories are affected by 
 
 ![Ranking changes modal dialog](assets/category_overwrite_modal.png){width="1200"}
 
-## Build a category rule
+## Create a category rule
 
 1. Click the **Add Rule** button.
 1. In the "Select Category" window, click through the categories and subcategories.
@@ -106,16 +106,16 @@ To delete a category rule:
 
 ## Manual ranking
 
-Manual ranking allows you to fine-tune where specific products appear within the Intelligent ranking results.
+Manual ranking allows you override the product order determined by Intelligent Ranking rules (if any) and manually control where products appear within the results.
 
 Events are actions that modify the search results when defined conditions are met. A manual ranking can have up to 25 events.
 
 * Boost - Moves a product higher in the search results.
-* Bury - Moves a SKU lower in the search results.
-* Pin a product - Product is displayed in the selected "Position" on the page.
-* Hide a product - Excludes a SKU from the search results.
+* Bury - Moves a product lower in the search results.
+* Pin a product - Moves a product to a specific position in results.
+* Hide a product - Excludes a product from the search results.
 
-To do manual ranking:
+Create a manual ranking:
 
 1. Set up an Intelligent ranking rule for a category as described above. The results of the query will appear in the Preview Category Page window. This uses your actual Live Search data to preview the results.
 
