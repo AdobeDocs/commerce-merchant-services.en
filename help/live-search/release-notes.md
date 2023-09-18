@@ -57,7 +57,6 @@ _June 13, 2023_
     * 30 days.
 * 'Events' (Boost/Pin/Bury/Hide) has been renamed to 'Manual Ranking'
 * 'Ranking Type' has been renamed to 'Intelligent ranking'
-* The Live Search admin now uses Sentry to monitor and track performance
 * Updated all the dependencies to latest versions
 * Updated `react-spectrum` from v2 to v3
 

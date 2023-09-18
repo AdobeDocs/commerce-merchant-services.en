@@ -12,7 +12,7 @@ The feature is accessed through the Category Merchandising tab on the [!DNL Live
 
 >[!NOTE]
 >
->Category Merchandising is available with [!DNL Live Search] 3.0.0 or higher. 
+>Category Merchandising is available with [!DNL Live Search] [3.0.0 or higher](release-notes.md). 
 
 ![Categry Merchandising](assets/category_workspace.png)
 
@@ -62,10 +62,10 @@ If you click the "View All" link, a dialog opens with details of the changes to 
 
 When adding an Intelligent ranking directly to a category that has an inherited Intelligent ranking, the inheritance is severed and the new Intelligent ranking is applied to that category. 
 
-When deleting the Intelligent ranking from the product, the inheritance is reestablished.
+When deleting the Intelligent ranking from the category, the inheritance is reestablished.
 In both scenarios, any Manual rankings are maintained.
 
-If you remove an Intelligent ranking from a category, and you have the subcategory inheritance selected, only the inherited Intelligent rankings are removed from the subcategories. Manual rankings remain.
+If you remove an Intelligent ranking from a category, and you have the subcategory inheritance selected, only the inherited Intelligent rankings are removed from the subcategories. Manual rankings are not subject to inheritance and will remain.
 
 A modal dialog appears explaining which inherited subcategories are affected by any changes you make to a higher-level category.
 
