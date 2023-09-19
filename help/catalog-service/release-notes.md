@@ -40,6 +40,10 @@ The following limitations can be solved by using the API Mesh and the Core Graph
 * [Tier pricing](mesh.md)
 * Downloadable products and gift cards
 
+## Previous versions
+
++++ Previous versions
+
 ### V1.11 Release
 
 _July 18, 2023_
@@ -121,10 +125,6 @@ _October 4, 2022_
 ![New](../assets/new.svg) Now support bundled and grouped products.
 ![New](../assets/new.svg) Added B2B visibility overrides. Products are now searchable and can be added to the cart for specific customer groups.
 ![Fix](../assets/fix.svg) Service is now more stable and has improved performance.
-
-## Previous versions
-
-+++Beta releases
 
 ### 0.3 Release - Beta+
 
