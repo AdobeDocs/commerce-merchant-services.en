@@ -30,14 +30,16 @@ The onboarding process for [!DNL Catalog Service] requires access to the command
 - Adobe Commerce on cloud infrastructure: 2.4.4+
 - Adobe Commerce on premises: 2.4.4+
 
-## Environments
+## Endpoints
 
-Catalog Service has two environments available for onboarding:
+Catalog Service has two endpoints available for onboarding:
 
 - Sandbox (https://catalog-service-sandbox.adobe.io/graphql) - used for testing and validation before going live
 - Production (https://catalog-service.adobe.io/graphql)- used for live traffic for Commerce merchants and websites
 
-Load testing should only be performed in the Sandbox environment. It is recommended that a [Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) be opened when load testing so the Services team can anticipate the additional server traffic.
+All test instances of Commerce should use the Sanbox endpoint.
+
+Load testing should only be performed on the Sandbox endpoint. It is recommended that a [Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) be opened when load testing so the Services team can anticipate the additional server traffic.
 
 ## Installation and configuration
 

@@ -121,20 +121,36 @@ The following table describes the `saas:resync` parameters and descriptions.
 
 The feed name can be one of the following:
 
-- `products`-- Products in your catalog
 - `categories`-- Categories in your catalog
-- `variants`-- Product variations of a configurable product, such as color and size
+- `categoryPermissions` - Permissions for each of the categories
+- `products`-- Products in your catalog
 - `productattributes`-- Product attributes such as `activity`, `gender`, `tops`, `bottoms`, and so on
 - `productoverrides`-- Customer-specific pricing and catalog visibility rules, such as those based on category permissions
+- `variants`-- Product variations of a configurable product, such as color and size
 
 When you trigger a data resync from the command line, it may take up to an hour for the data to update.
+
+### Syncing SaaS price indexing
 
 If you are using [SaaS price indexing](../price-index/index.md) and need to resync, run the following command:
 
 ```bash
-bin/magento saas:resync --feed=scopesCustomerGroup
-bin/magento saas:resync --feed=scopesWebsite
-bin/magento saas:resync --feed=prices
+bin/magento saas:resync --feed scopesCustomerGroup
+bin/magento saas:resync --feed scopesWebsite
+bin/magento saas:resync --feed prices
+```
+
+### Syncing Catalog Service
+
+To do a resync for Catalog Service, it is important to run the commands in this order:
+
+```bash
+bin/magento saas:resync --feed productattributes
+bin/magento saas:resync --feed products
+bin/magento saas:resync --feed productoverrides
+bin/magento saas:resync --feed variants
+bin/magento saas:resync --feed categories
+bin/magento saas:resync --feed categoryPermissions 
 ```
 
 ### Examples

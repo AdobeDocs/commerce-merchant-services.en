@@ -16,13 +16,14 @@ Updates include:
 
 ## Current major version
 
-### V1.11 Release
+### V1.12 Release
 
-_July 18, 2023_
+_September 19, 2023_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
-![New](../assets/new.svg) Catalog Service now supports the [`recommendations`](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations/) GraphQL query for Product Recommendations.
+![New](../assets/new.svg) Catalog Service now uses [SaaS price indexing](../price-index/index.md).
+![Fix](../assets/fix.svg) This release contains bug fixes and improvements on the service side.
 
 #### Known limitations
 
@@ -39,13 +40,25 @@ The following limitations can be solved by using the API Mesh and the Core Graph
 * [Tier pricing](mesh.md)
 * Downloadable products and gift cards
 
+## Previous versions
+
++++ Previous versions
+
+### V1.11 Release
+
+_July 18, 2023_
+
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.4 and newer
+
+![New](../assets/new.svg) Catalog Service now supports the [`recommendations`](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations/) GraphQL query for Product Recommendations.
+
 ### V1.10 Release
 
 _June 27, 2023_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
-![New](../assets/new.svg) Catalog Service can now display related products in the Product Detail Page widget.
+![New](../assets/new.svg) Catalog Service API now supports "related products".
 
 ### V1.7 Release
 
@@ -112,10 +125,6 @@ _October 4, 2022_
 ![New](../assets/new.svg) Now support bundled and grouped products.
 ![New](../assets/new.svg) Added B2B visibility overrides. Products are now searchable and can be added to the cart for specific customer groups.
 ![Fix](../assets/fix.svg) Service is now more stable and has improved performance.
-
-## Previous versions
-
-+++Beta releases
 
 ### 0.3 Release - Beta+
 
