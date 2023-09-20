@@ -8,7 +8,7 @@ feature: Catalog Management, Data Import/Export, Catalog Service
 
 Adobe Commerce and Magento Open Source use indexers to compile catalog data into tables. The process is automatically triggered by [events](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html#events-that-trigger-full-reindexing) such as a change to a product price or inventory level.
 
-The catalog sync process runs hourly to allow [!DNL Commerce] services to use catalog data. Catalog sync exports product data from the [!DNL Commerce] server to [!DNL Commerce] services on an ongoing basis to keep the services up to date. For example, [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) needs current catalog information to accurately return recommendations with correct names, pricing, and availability. You can use the _Catalog Sync_ dashboard to observe and manage the synchronization process or the [command-line interface](#resynccmdline) to trigger catalog sync and reindex product data for consumption by [!DNL Commerce] services.
+Catalog sync exports product data from the [!DNL Adobe Commerce] instance to [!DNL Commerce Service] on an ongoing basis to keep the services up to date. For example, [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) needs current catalog information to accurately return recommendations with correct names, pricing, and availability. You can use the _Catalog Sync_ dashboard to observe and manage the synchronization process or the [command-line interface](#resynccmdline) to trigger catalog sync and reindex product data for consumption by [!DNL Commerce Services].
 
 >[!NOTE]
 >
@@ -100,7 +100,7 @@ If the catalog sync has a status of **Failed**, submit a [support ticket](https:
 
 ## Command-line interface {#resynccmdline}
 
-The `saas:resync` command is part of the `magento/saas-export` package. You can install this package using one of the [!DNL Commerce Services] products, such as [[!DNL Product Recommendations]](/help/product-recommendations/install-configure.md) or [[!DNL Live Search]](/help/live-search/install.md). 
+The `saas:resync` command is part of the `magento/saas-export` package and available out of the box with one of the [!DNL Commerce Services] products, such as [[!DNL Product Recommendations]](/help/product-recommendations/install-configure.md) or [[!DNL Live Search]](/help/live-search/install.md). 
 
 >[!NOTE]
 >
@@ -109,7 +109,7 @@ The `saas:resync` command is part of the `magento/saas-export` package. You can 
 Command options:
 
 ```bash
-bin/magento saas:resync --feed <feed name> [no-reindex]
+bin/magento saas:resync --feed <feed name> [no-reindex|cleanup-feed]
 ```
 
 The following table describes the `saas:resync` parameters and descriptions.
@@ -118,51 +118,81 @@ The following table describes the `saas:resync` parameters and descriptions.
 |---| ---| ---|
 |`feed`| Specifies which entity to resync, such as `products`|Yes|
 |`no-reindex`| Resubmits the existing catalog data to [!DNL Commerce Services] without reindexing. When this parameter is not specified, the command runs a full reindex before syncing data.|No|
+|`cleanup-feed`| Force to cleanup feed indexer table before sync. Availalbe starting from `103.0.0` version.|No|
 
 The feed name can be one of the following:
 
-- `categories`-- Categories in your catalog
-- `categoryPermissions` - Permissions for each of the categories
 - `products`-- Products in your catalog
 - `productattributes`-- Product attributes such as `activity`, `gender`, `tops`, `bottoms`, and so on
-- `productoverrides`-- Customer-specific pricing and catalog visibility rules, such as those based on category permissions
 - `variants`-- Product variations of a configurable product, such as color and size
+- `prices` -- Product prices (starting from `103.0.0` version)
+- `scopesCustomerGroup` -- Customer Groups (starting from `103.0.0` version)
+- `scopesWebsite` -- Websites with Store Views (starting from `103.0.0` version)
+- `categories`-- Categories in your catalog
+- `categoryPermissions` - Permissions for each of the categories
+- `productoverrides`-- Customer-specific pricing and catalog visibility rules, such as those based on category permissions
 
-When you trigger a data resync from the command line, it may take up to an hour for the data to update.
+Depends on installed [Commerce Services ](../landing/saas.md) you may have different set of feeds available for `saas:resync` command.
 
-### Syncing SaaS price indexing
+It's not recommended to run `saas:resync` command on regular basis. Usually you need to run command manually in 2 scenarios:
+- initial sync
+- [SaaS Data Space ID](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) was changed
 
-If you are using [SaaS price indexing](../price-index/index.md) and need to resync, run the following command:
+### Initial Sync
+When you trigger a `saas:resync` from the command line, depending on your Catalog size, it may take from a few minutes to a few hours for the data to update.
 
-```bash
-bin/magento saas:resync --feed scopesCustomerGroup
-bin/magento saas:resync --feed scopesWebsite
-bin/magento saas:resync --feed prices
-```
-
-### Syncing Catalog Service
-
-To do a resync for Catalog Service, it is important to run the commands in this order:
+For initial sync it's highly recommended to run commands in the following order for all feeds available to you:
 
 ```bash
 bin/magento saas:resync --feed productattributes
 bin/magento saas:resync --feed products
+bin/magento saas:resync --feed scopesCustomerGroup
+bin/magento saas:resync --feed scopesWebsite
+bin/magento saas:resync --feed prices
 bin/magento saas:resync --feed productoverrides
 bin/magento saas:resync --feed variants
 bin/magento saas:resync --feed categories
 bin/magento saas:resync --feed categoryPermissions 
 ```
 
-### Examples
+### Troubleshooting
 
-The following example reindexes the product data from the [!DNL Commerce] catalog and resyncs it to Commerce services:
+In case you don't see expected data in [!DNL Commerce Service] it would be good to check is any problem happened with your data during travelling from [!DNL Adobe Commerce] instance to [!DNL Commerce Service]
+
+There are 2 log files (by default available in `var/log/` directory) you want to check in first place:
+- `commerce-data-export-errors.log` - if error happened during _collecting_ data phase
+- `saas-export-errors.log` - if error happened during _transmitting_ data phase
+
+#### Check feed payload
+It may be useful to see the feed payload that has been sent to [!DNL Commerce Service]. You can do it by passing the environment variable `EXPORTER_EXTENDED_LOG=1`, for example (note, there is `no-reindex` provided - only the already collected data will be sent):
 
 ```bash
-bin/magento saas:resync --feed products
+EXPORTER_EXTENDED_LOG=1 bin/magento saas:resync --feed=products --no-reindex
 ```
+Payload will be available in - `var/log/saas-export.log` file
 
-If you do not want to run a full reindex of the products, you can instead sync the product data that has already been generated:
+#### Preserve payload in feed index table
+
+Starting from `103.0.0` version of `magento/saas-export` package some feeds (products, prices) persist just minimal required data in index table in order to reduce overall table size.
+
+It's not recommended to preserve payload data in index table on production, but it may be useful to enable it on developer instance. You can do it by passing the environment variable `PERSIST_EXPORTED_FEED=1`, for example:
 
 ```bash
-bin/magento saas:resync --feed products --no-reindex
+# reindex data only
+PERSIST_EXPORTED_FEED=1 bin/magento indexer:reindex catalog_data_exporter_products
+# reindex and send data to Commerce Service
+PERSIST_EXPORTED_FEED=1 bin/magento saas:resync --feed=products
 ```
+
+#### Profiling
+If you noticed, the reindex process of specific feed takes an unreasonably high time, you may run profiler to collect additional data, that can be useful for Support Team.  You can do it by passing the environment variable `EXPORTER_PROFILER=1`, for example:
+
+```bash
+EXPORTER_PROFILER=1 bin/magento indexer:reindex catalog_data_exporter_products
+```
+Profiler data will be stored in `var/log/commerce-data-export.log` in format:
+`<Provider class name>, <# of processed entities>, <execution time im ms>, <memory consumption in Mb>`
+
+
+#### Submit support request
+If you see errors, not related to configuration or 3rd party extensions, please submit [support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) with much information as possible.
