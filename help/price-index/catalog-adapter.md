@@ -3,7 +3,6 @@ title: Catalog Adapter Extension
 description: Using Catalog Adapter to render prices from Commerce Services
 seo-title: Catalog Adapter Extension
 seo-description: Using Catalog Adapter to render prices from Commerce Services
-exl-id: TBD
 ---
 
 # Catalog Adapter
