@@ -34,7 +34,7 @@ _June 13, 2023_
 
  _Sept 15, 2023_
 
-[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.4 and newer
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
 ### New Features
 

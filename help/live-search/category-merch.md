@@ -8,11 +8,11 @@ gourl: ls_catalog_merchandising
 
 Category Merchandising allows store owners to apply [!DNL Live Search] Intelligent ranking [rules](rules.md) to product categories and subcategories.
 
-The feature is accessed through the Category Merchandising tab on the [!DNL Live Search] area of the admin panel.
+The feature is accessed in the admin at **Marketing** > SEO & Search > **[!DNL Live Search]** > **Category Merchandising**.
 
 >[!NOTE]
 >
->Category Merchandising is available with [!DNL Live Search] [3.0.0 or higher](release-notes.md). 
+>Category Merchandising is available with [!DNL Live Search] [3.0.0 or higher](release-notes.md). If you see the Category Merchandising tab but it is not populated with data, update the [!DNL Live Search] module.
 
 ![Categry Merchandising](assets/category_workspace.png)
 
@@ -68,11 +68,13 @@ In both scenarios, any Manual rankings are maintained.
 
 If you remove an Intelligent ranking from a category, and the subcategory inheritance is selected, only the inherited Intelligent rankings are removed from the subcategories. Manual rankings are not subject to inheritance and will remain.
 
-A modal dialog appears explaining which inherited subcategories are affected by any changes you make to a higher-level category.
+A dialog appears explaining which inherited subcategories are affected by any changes you make to a higher-level category.
 
 ![Ranking changes modal dialog](assets/category_overwrite_modal.png){width="1200"}
 
 ## Create a category rule
+
+To create a category rule:
 
 1. Click the **Add Rule** button.
 1. In the _Select Category_ view, click through the categories and subcategories.
@@ -85,7 +87,7 @@ A modal dialog appears explaining which inherited subcategories are affected by 
    The Category Preview Page shows the actual results of the selected ranking, using your Live Search data.
 1. Click **Save and Publish** to save the rule.
 
-![Select the Intelligent ranking method](assets/category_ranking.png)
+  ![Select the Intelligent ranking method](assets/category_ranking.png)
 
 The [!DNL Live Search] service processes the rule and activates it on the store when finished.
 
@@ -111,10 +113,10 @@ Manual ranking lets you override the product order determined by Intelligent Ran
 
 Events are actions that modify the search results when defined conditions are met. A manual ranking can have up to 25 events.
 
-* Boost - Moves a product higher in the search results.
-* Bury - Moves a product lower in the search results.
-* Pin a product - Moves a product to a specific position in results.
-* Hide a product - Excludes a product from the search results.
+* Boost: Moves a product higher in the search results.
+* Bury: Moves a product lower in the search results.
+* Pin a product: Moves a product to a specific position in results.
+* Hide a product: Excludes a product from the search results.
 
 Create a manual ranking:
 
