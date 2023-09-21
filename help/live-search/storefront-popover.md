@@ -49,7 +49,7 @@ For those with headless implementations, it is possible to install the Live Sear
 
 ## Limitations
 
-* The [!DNL Live Search] [!DNL storefront popover] is available only for stores that use the *Luma* theme, or a customized theme that is based on *Luma*. Breadcrumbs on the search results page will not have *Lume* styling.
+* The [!DNL Live Search] [!DNL storefront popover] is available only for stores that use the *Luma* theme, or a customized theme that is based on *Luma*. Breadcrumbs on the search results page will not have *Luma* styling.
 * The [!DNL popover] does not support the *Blank* theme. See [Styling [!DNL Popover] Elements](storefront-popover-styling.md) to learn more.
 * The [!DNL popover] is not supported on the Quick Order form.
 * Wishlists and product comparisons are not supported.
