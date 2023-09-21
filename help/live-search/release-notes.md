@@ -52,9 +52,9 @@ _June 13, 2023_
 
 * The 'Rules' tab is renamed to 'Search Rules'
 * When ranking by 'trending', you can now choose between:
-    * 3 days - default
+    * 3 days (default)
     * 14 days
-    * 30 days.
+    * 30 days
 * 'Events' (Boost/Pin/Bury/Hide) has been renamed to 'Manual Ranking'
 * 'Ranking Type' has been renamed to 'Intelligent ranking'
 

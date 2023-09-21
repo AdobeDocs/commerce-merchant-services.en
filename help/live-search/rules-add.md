@@ -86,7 +86,7 @@ Store owners can set up the following types of ranking strategies:
 
 ## Manual Ranking
 
-Manual Ranking (formerly referred to as 'Events') are actions that modify the search results when defined conditions are met. A single rule can have up to 25 events.
+Manual Ranking (formerly referred to as Events) are actions that modify the search results when defined conditions are met. A single rule can have up to 25 events.
 
 * Boost - Moves a product higher in the search results.
 * Bury - Moves a SKU lower in the search results.

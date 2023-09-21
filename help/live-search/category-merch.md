@@ -16,7 +16,7 @@ The feature is accessed through the Category Merchandising tab on the [!DNL Live
 
 ![Categry Merchandising](assets/category_workspace.png)
 
-The Category Merchandising tab shows defined category rules, with columns for:
+The Category Merchandising view shows defined category rules, with columns for:
 
 * Category
 * Ranking Strategy
@@ -45,27 +45,28 @@ Intelligent ranking methods are:
 
 ## Inherited ranking
 
-As a merchandiser, you might want to be able to select all of Women's wear categories to be sorted by "trending". This includes the subcategories "Women's pants", "Women's shirts", and "Women's accessories". Men's categories should not be affected. You can use inherited rankings to achieve this.
+As a merchandiser, you might want to be able to select all of women's wear categories to be sorted by "trending". This includes the subcategories "Women's pants", "Women's shirts", and "Women's accessories". Men's categories should not be affected. You can use inherited rankings to achieve this.
 
 When selecting an Intelligent ranking method for a category or subcategory that has subcategories, you can turn on the **Apply intelligent rankings to subcategories** option. This applies the ranking method to all subcategories.
-These subcategories now inherit that rule from the parent category, as noted by the "Yes" in the Inherited Ranking column. In the Action column, the only available options are **Edit Rule**, and **View Details**. The **Delete** option is disabled for inherited rules on subcategories. Deleting subcategory inheritance requires undoing inheritance from the parent category.
 
-Any category or subcategory can have only a single Intelligent ranking applied at any one time. They may have additional Manual rankings applied as well.
+These subcategories now inherit that rule from the parent category ("Yes" in the Inherited Ranking column). In the Action column, the only available options are **Edit Rule**, and **View Details**. The **Delete** option is disabled for inherited rules on subcategories. Deleting subcategory inheritance requires undoing inheritance from the parent category.
+
+Any category or subcategory can have only one Intelligent ranking applied at any one time. They may have additional Manual rankings applied as well.
 
 If you apply an Intelligent ranking to a category and turn on the **Apply intelligent ranking to subcategories** option, any Intelligent ranking already applied to the subcategories are overwritten.
 
-![Overwritten subcateory list](assets/category_overwite_subs.png){width="700"}
+![Overwritten subcategory list](assets/category_overwite_subs.png){width="700"}
 
-If you click the "View All" link, a dialog opens with details of the changes to be made.
+If you click **View All**, a dialog opens with details of the proposed changes.
 
 ![Ranking changes details](assets/category_overwrite.png)
 
-When adding an Intelligent ranking directly to a category that has an inherited Intelligent ranking, the inheritance is severed and the new Intelligent ranking is applied to that category. 
+When adding an Intelligent ranking directly to a category that has an inherited Intelligent ranking, the inheritance is overridden by the new Intelligent ranking. 
 
-When deleting the Intelligent ranking from the category, the inheritance is reestablished.
+When deleting the Intelligent ranking from the category, the inheritance is re-established.
 In both scenarios, any Manual rankings are maintained.
 
-If you remove an Intelligent ranking from a category, and you have the subcategory inheritance selected, only the inherited Intelligent rankings are removed from the subcategories. Manual rankings are not subject to inheritance and will remain.
+If you remove an Intelligent ranking from a category, and the subcategory inheritance is selected, only the inherited Intelligent rankings are removed from the subcategories. Manual rankings are not subject to inheritance and will remain.
 
 A modal dialog appears explaining which inherited subcategories are affected by any changes you make to a higher-level category.
 
@@ -74,15 +75,15 @@ A modal dialog appears explaining which inherited subcategories are affected by 
 ## Create a category rule
 
 1. Click the **Add Rule** button.
-1. In the "Select Category" window, click through the categories and subcategories.
-1. Click the checkbox to select the category you wish to rank.
-1. Click the **Apply** button.
+1. In the _Select Category_ view, click through the categories and subcategories.
+1. Select the checkbox to select the category you wish to rank.
+1. Click **Apply**.
 
-![Select a category](assets/category_select.png)
+    ![Select a category](assets/category_select.png)
 
-1. In the "Add Category rule" window, select the Intelligent ranking method you wish to apply to the category.
+1. In the _Add Category rule_ view, select the Intelligent ranking method you wish to apply to the category.
    The Category Preview Page shows the actual results of the selected ranking, using your Live Search data.
-1. Click the "Save and Publish" button to save the rule.
+1. Click **Save and Publish** to save the rule.
 
 ![Select the Intelligent ranking method](assets/category_ranking.png)
 
@@ -93,20 +94,20 @@ The [!DNL Live Search] service processes the rule and activates it on the store 
 To modify an existing rule:
 
 1. Click the **...** in the Action column and choose **Edit**.
-1. In the Edit Category rule window, make any required changes and click **Save and Publish**.
+1. In the Edit Category rule view, make any required changes and click **Save and Publish**.
 
 The changes are reflected on the store when [!DNL Live Search] has processed the change.
 
-## Delete a category rule.
+## Delete a category rule
 
 To delete a category rule:
 
 1. Click the **...** in the Action column and choose **Delete**.
-1. In the "Delete rule" modal, select **Delete** to remove the rule or **Cancel** to cancel the action.
+1. In the _Delete rule_ modal, select **Delete** to remove the rule or **Cancel** to cancel the action.
 
 ## Manual ranking
 
-Manual ranking allows you override the product order determined by Intelligent Ranking rules (if any) and manually control where products appear within the results.
+Manual ranking lets you override the product order determined by Intelligent Ranking rules (if any) and manually control where products appear within the results.
 
 Events are actions that modify the search results when defined conditions are met. A manual ranking can have up to 25 events.
 
@@ -117,9 +118,9 @@ Events are actions that modify the search results when defined conditions are me
 
 Create a manual ranking:
 
-1. Set up an Intelligent ranking rule for a category as described above. The results of the query will appear in the Preview Category Page window. This uses your actual Live Search data to preview the results.
+1. Set up an Intelligent ranking rule for a category as described above. The results of the query will appear in the Preview Category Page view. This uses your actual Live Search data to preview the results.
 
-1. Click and drag a product in the Preview Category Page window. Drag and drop it at the desired position. The Product and Postion fields are automatically populated in the Events pane.
+1. Click and drag a product in the Preview Category Page view. Drag and drop it at the desired position. The Product and Position fields are automatically populated in the Events pane.
   
   You may also click the pin icon to pin a product to its current location. Use the ellipsis context menu to "Pin to top" or "Pin to bottom".
 
