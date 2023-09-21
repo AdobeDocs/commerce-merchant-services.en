@@ -38,29 +38,26 @@ _June 13, 2023_
 
 ### New Features
 
-* New Category Merchandising tab has been added. Users can now add Intelligent Rankings and Manual Rankings (pin, boost, bury, hide) per category
-* Users can add a single category rule with intelligent or manual ranking
-* Users can now add Intelligent Ranking rules to subcategories
-* Detailed information is provided when deleting subcategories with intelligent ranking
-* Added the ability to delete rules for inherited ranking strategies
-* Added the ability to delete rules for a single category
-* Users can now search by category name when adding a rule
-* With the Category Tree View, users can now view which category has rules applied.
-* Category Preview only shows the selected category. 
+![New](../assets/new.svg) New Category Merchandising tab has been added. Users can now add Intelligent Rankings and Manual Rankings (pin, boost, bury, hide) per category
+![New](../assets/new.svg) Users can add a single category rule with intelligent or manual ranking
+![New](../assets/new.svg) Users can now add Intelligent Ranking rules to subcategories
+![New](../assets/new.svg) Detailed information is provided when deleting subcategories with intelligent ranking
+![New](../assets/new.svg) Added the ability to delete rules for inherited ranking strategies
+![New](../assets/new.svg) Added the ability to delete rules for a single category
+![New](../assets/new.svg) Users can now search by category name when adding a rule
+![New](../assets/new.svg) With the Category Tree View, users can now view which category has rules applied.
+![New](../assets/new.svg) Category Preview only shows the selected category. 
 
 ### Updates
 
-* The 'Rules' tab is renamed to 'Search Rules'
-* When ranking by 'trending', you can now choose between:
+![Fix](../assets/fix.svg) The 'Rules' tab is renamed to 'Search Rules'
+![Fix](../assets/fix.svg) When ranking by 'trending', you can now choose between:
     * 3 days (default)
     * 14 days
     * 30 days
-* 'Events' (Boost/Pin/Bury/Hide) has been renamed to 'Manual Ranking'
-* 'Ranking Type' has been renamed to 'Intelligent ranking'
-
-### Fixes
-
-* Minor bug fixes
+![Fix](../assets/fix.svg) 'Events' (Boost/Pin/Bury/Hide) has been renamed to 'Manual Ranking'
+![Fix](../assets/fix.svg) 'Ranking Type' has been renamed to 'Intelligent ranking'
+![Fix](../assets/fix.svg) Minor bug fixes
 
 Merchants must upgrade the [!DNL Live Search] extension version >= 3.1.1 to access these features.
 
@@ -84,7 +81,7 @@ It is recommended to upgrade and test in QA or Staging before pushing changes to
 
 ### Updates
 
-* The Product Listing widget has been updated to use the [Catalog Service API](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/product-search/).
+![Fix](../assets/fix.svg) The Product Listing widget has been updated to use the [Catalog Service API](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/product-search/).
 
 ## [!DNL Live Search] 3.0.2 {#302}
 
@@ -94,7 +91,7 @@ It is recommended to upgrade and test in QA or Staging before pushing changes to
 
 ### New Features
 
-The following values have been added to the `storeDetails` object:
+![New](../assets/new.svg) The following values have been added to the `storeDetails` object:
 
 * "Allow All Products per Page"
 * Currency rate
@@ -104,11 +101,8 @@ The following values have been added to the `storeDetails` object:
 
 ### Updates
 
-* Catalog Service modules have been added to the metapackage to support advanced data retrieval.
-
-### Fixes
-
-* The **My Account** page navigation no longer disappears when using the Product Listing Page widget.
+![Fix](../assets/fix.svg) Catalog Service modules have been added to the metapackage to support advanced data retrieval.
+![Fix](../assets/fix.svg) The **My Account** page navigation no longer disappears when using the Product Listing Page widget.
 
 Merchants must upgrade the [!DNL Live Search] extension version >= 3.0.2 to access these features.
 
@@ -116,11 +110,7 @@ It is recommended to upgrade and test before pushing to production. Consider upg
 
 ### Limitations
 
-Using the Live Search Product Listing Page widget will cause Google Tag Manager to fail. Use the default Search Adapater if Google Tag Manager is needed.
-
-## Previous versions
-
-+++3.0.1 and prior
+Using the Live Search Product Listing Page widget will cause Google Tag Manager to fail. Use the default Search Adapter if Google Tag Manager is needed.
 
 ## [!DNL Live Search] 3.0.1 {#301}
 
@@ -130,37 +120,37 @@ Using the Live Search Product Listing Page widget will cause Google Tag Manager 
 
 ### New Features
 
-* Product Item Card in Rules preview 
-* [Product Listing Page widget](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-storefront/plp-styling.html)
-* [Category filtering options](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#facets)
-* Added the ability to drag and drop to create Pin events
-* New Pin actions:
+![New](../assets/new.svg) Product Item Card in Rules preview 
+![New](../assets/new.svg) [Product Listing Page widget](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-storefront/plp-styling.html)
+![New](../assets/new.svg) [Category filtering options](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#facets)
+![New](../assets/new.svg) Added the ability to drag and drop to create Pin events
+![New](../assets/new.svg) New Pin actions:
     * Pin to spot - Pin button to create Pin event with one click
     * Pin to top - Places product in the first position
     * Pin to bottom - Places the product at the bottom of the results
     * Unpin an event with one click
-* [Intelligent Ranking for rules](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-admin/rules/rules-add.html#ranking-type)
+![New](../assets/new.svg) [Intelligent Ranking for rules](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-admin/rules/rules-add.html#ranking-type)
 
 ### Updates
 
-* Configure Rules now automatically sorts positions uniquely
-* Deleting an existing event now updates preview
-* Rules with no events can be saved
-* Remove faceting "Select Type" selector
-* Added new "Editing" status for unsaved rules
+![Fix](../assets/fix.svg) Configure Rules now automatically sorts positions uniquely
+![Fix](../assets/fix.svg) Deleting an existing event now updates preview
+![Fix](../assets/fix.svg) Rules with no events can be saved
+![Fix](../assets/fix.svg) Remove faceting "Select Type" selector
+![Fix](../assets/fix.svg) Added new "Editing" status for unsaved rules
 
 ### Fixes
 
-* Fixed server error when there is an unfinished event during save
-* Fixed correctly deleting specific event when there are multiple events
-* Fixed existing rule event not updating when new event has been added
-* Fixed on second "Edit" click from details, [!DNL Live Search] page requiring reload
-* Synonyms: Fixed an issue when a user clicked out of input, they could not return the focus to the field
-* Other minor bug fixes and performance updates
+![Fix](../assets/fix.svg) Fixed server error when there is an unfinished event during save
+![Fix](../assets/fix.svg) Fixed correctly deleting specific event when there are multiple events
+![Fix](../assets/fix.svg) Fixed existing rule event not updating when new event has been added
+![Fix](../assets/fix.svg) Fixed on second "Edit" click from details, [!DNL Live Search] page requiring reload
+![Fix](../assets/fix.svg) Synonyms: Fixed an issue when a user clicked out of input, they could not return the focus to the field
+![Fix](../assets/fix.svg) Other minor bug fixes and performance updates
 
 
-* ![Bug](../assets/bug.svg) - Ranking by "Recommended for you" is only supported within the Live Search widgets. It is not supported with the default Luma and PWA search functionality.
-* ![Bug](../assets/bug.svg) - Custom price attribute facets do not render correctly in Luma, but the API properly filters on them.
+![Bug](../assets/bug.svg) - Ranking by "Recommended for you" is only supported within the Live Search widgets. It is not supported with the default Luma and PWA search functionality.
+![Bug](../assets/bug.svg) - Custom price attribute facets do not render correctly in Luma, but the API properly filters on them.
 
 Merchants must upgrade the [!DNL Live Search] extension version >= 3.0.1 to access these features.
 
@@ -170,7 +160,7 @@ It is recommended to upgrade and test before pushing to production. Consider upg
 
 [!BADGE Supported]{type="Informative" tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
-* ![Fix](../assets/fix.svg) - Live Search would throw an error when SDK resources were not available due to network issues. This bug is fixed.
+![Fix](../assets/fix.svg) - Live Search would throw an error when SDK resources were not available due to network issues. This bug is fixed.
 
 Merchants must upgrade the Live Search extension version >= 2.0.5 to access these features.
 

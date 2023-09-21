@@ -37,7 +37,7 @@ Catalog Service has two endpoints available for onboarding:
 - Sandbox (https://catalog-service-sandbox.adobe.io/graphql) - used for testing and validation before going live
 - Production (https://catalog-service.adobe.io/graphql)- used for live traffic for Commerce merchants and websites
 
-All test instances of Commerce should use the Sanbox endpoint.
+All test instances of Commerce should use the Sandbox endpoint.
 
 Load testing should only be performed on the Sandbox endpoint. It is recommended that a [Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) be opened when load testing so the Services team can anticipate the additional server traffic.
 
