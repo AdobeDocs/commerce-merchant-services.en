@@ -8,27 +8,30 @@ exl-id: TBD
 
 # Catalog Adapter
 
-`Catalog Adapter` allows to disable Adobe Commerce Product Price indexer and to use prices on Storefront provided from [Catalog Service](../catalog-service/overview.md).
-Adobe Commerce Product Price indexer is disabled by default and cannot be turned on with these extension modules installed. Only by removing or disabling extension modules behaviour with product price indexer enabled can be reverted.
+The `Catalog Adapter` extension disables the default Adobe Commerce Product Price indexer and instead uses prices provided from the [Catalog Service](../catalog-service/overview.md).
+The Adobe Commerce Product Price indexer is disabled and cannot be turned on with these extension modules installed. Only by removing or disabling this extension can the default product price indexer be reenabled.
 
 ## Requirements
 
 * Adobe Commerce 2.4.4+
-* Commerce Services:
+* One of the following Commerce Services installed:
 
     * [Catalog Service](../catalog-service/overview.md)
     * [Live Search](../live-search/guide-overview.md)
 
 ## Installation
---------------
+
 To use the `catalog-adapter` module, [!DNL Live Search] and [!DNL Catalog Service] must first be installed and configured. Follow the [Install [!DNL Live Search]](../live-search/install.md) and [Catalog Service Installation](../catalog-service/installation.md) instructions before continuing.
+
+Once those services are installed, run the following command:
 
 ```bash
 composer require adobe-commerce/catalog-adapter
 ```
 
-## Enable Adobe Commerce Product Price indexer
-If you have third-party applications that rely on the Adobe Commerce Product Price indexer, it can be re-enabled with the following commands
+## Renable the Adobe Commerce Product Price indexer
+
+If you have third-party applications that rely on the default Adobe Commerce Product Price indexer, it can be re-enabled with the following commands:
 
 ```bash
 # re-enable Product Price indexer
@@ -39,8 +42,8 @@ bin/magento index:reindex catalog_product_price
 
 ## Disable Product Price indexer for Headless Storefront scenario
 
-If you have Headless Commerce, you may need only disable Adobe Commerce Product Price indexer to reduce load on your Adobe Commerce instance.
-It can be done by installing `magento/module-price-indexer-disabler`:
+If you have a headless Commerce instance, you may need to disable the Adobe Commerce Product Price indexer to reduce load on your Adobe Commerce instance.
+This is done by installing the `magento/module-price-indexer-disabler` module:
 
 ```bash
 composer require magento/module-price-indexer-disabler
@@ -48,26 +51,26 @@ composer require magento/module-price-indexer-disabler
 
 ## Usage scenarios
 
-Let's see in what scenarios you may need `Catalog Adapter` and what steps you should do
+The following are some common `Catalog Adapter` scenarios.
 
 ### No dependencies on Adobe Commerce Product Price indexer
 
-* A Luma or Adobe Commerce Core GraphQL merchant who has a required service installed (Live Search, Product Recommendations, Catalog Service)
+* You are a Luma or Adobe Commerce Core GraphQL merchant who has a required service installed (Live Search, Product Recommendations, Catalog Service)
 * No third-party extensions relying on the Adobe Commerce Product Price indexer
 
 1. Install the catalog adapter.
 
 ### With dependencies on Adobe Commerce Product Price indexer
 
-* A Luma or Adobe Commerce Core GraphQL merchant who has a supported service installed (Live Search, Product Recommendations, Catalog Service)
-* With a third-party extension relying on the Adobe Commerce Product Price indexer
+* You are a Luma or Adobe Commerce Core GraphQL merchant who has a supported service installed (Live Search, Product Recommendations, Catalog Service)
+* You use a third-party extension relying on the Adobe Commerce Product Price indexer
 
 1. Install the catalog adapter.
-1. Re-enable the Adobe Commerce Product Price indexer.
+1. Re-enable the default Adobe Commerce Product Price indexer.
 
-### Headless Commerce
+### Headless Commerce instances
 
-* A merchant with Headless Commerce with supported service installed (Live Search, Product Recommendations, Catalog Service)
-* No reliance on Adobe Commerce Product Price indexer
+* A merchant with a headless Commerce instance with the required services installed (Live Search, Product Recommendations, Catalog Service)
+* No reliance on the default Adobe Commerce Product Price indexer
 
-1. Install "price disabler" from catalog adapter package
+1. Install "price disabler" from the catalog adapter package
