@@ -30,6 +30,52 @@ _June 13, 2023_
 
 +++
 
+## [!DNL Live Search] 3.1.1 {#311}
+
+ _Sept 15, 2023_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+### New Features
+
+* New Category Merchandising tab has been added. Users can now add Intelligent Rankings and Manual Rankings (pin, boost, bury, hide) per category
+* Users can add a single category rule with intelligent or manual ranking
+* Users can now add Intelligent Ranking rules to subcategories
+* Detailed information is provided when deleting subcategories with intelligent ranking
+* Added the ability to delete rules for inherited ranking strategies
+* Added the ability to delete rules for a single category
+* Users can now search by category name when adding a rule
+* With the Category Tree View, users can now view which category has rules applied.
+* Category Preview only shows the selected category. 
+
+### Updates
+
+* The 'Rules' tab is renamed to 'Search Rules'
+* When ranking by 'trending', you can now choose between:
+    * 3 days (default)
+    * 14 days
+    * 30 days
+* 'Events' (Boost/Pin/Bury/Hide) has been renamed to 'Manual Ranking'
+* 'Ranking Type' has been renamed to 'Intelligent ranking'
+
+### Fixes
+
+* Minor bug fixes
+
+Merchants must upgrade the [!DNL Live Search] extension version >= 3.1.1 to access these features.
+
+After installing version 3.1.1, these new indexers must be enabled:
+
+* Product Prices Feed
+* Scopes website data feed
+* Scopes customer groups data feed
+
+It is recommended to upgrade and test in QA or Staging before pushing changes to production. 
+
+## Previous versions
+
++++3.1.0 and prior
+
 ## [!DNL Live Search] 3.1.0 {#310}
 
  _Sept 1, 2023_
@@ -39,10 +85,6 @@ _June 13, 2023_
 ### Updates
 
 * The Product Listing widget has been updated to use the [Catalog Service API](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/product-search/).
-
-## Previous versions
-
-+++3.0.2 and prior
 
 ## [!DNL Live Search] 3.0.2 {#302}
 

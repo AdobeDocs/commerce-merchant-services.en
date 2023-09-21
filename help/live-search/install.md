@@ -67,6 +67,9 @@ In this scenario, storefront operations are interrupted while the [!DNL Live Sea
    * Product Feed
    * Product Variant Feed
    * Catalog Attributes Feed
+   * Product Prices Feed
+   * Scopes Website Data feed
+   * Scopes Customer Groups Data feed
 
 1. Configure your [API keys](#configure-api-keys) and verify that your catalog data is [synchronized](#synchronize-catalog-data) with [!DNL Live Search] services.
 
@@ -115,6 +118,9 @@ In this scenario, [!DNL Elasticsearch] temporarily manages search requests from 
    * Product Feed
    * Product Variant Feed
    * Catalog Attributes Feed
+   * Product Prices Feed
+   * Scopes website data feed
+   * Scopes customer groups data feed
 
 1. Configure your [API keys](#configure-api-keys) and verify that your catalog data is [synchronized](#synchronize-catalog-data) with [!DNL Live Search] services.
 
@@ -205,7 +211,7 @@ To update [!DNL Live Search], run the following from the command line:
 composer update magento/live-search --with-dependencies
 ```
 
-To update to a major version such as from 2.0.0 to 3.0.1, edit the project's root [!DNL Composer] `.json` file as follows:
+To update to a major version such as from 2.0.0 to 3.1.1, edit the project's root [!DNL Composer] `.json` file as follows:
 
 1. If your currently installed `magento/live-search` version is `2.0.3` or below, and you are upgrading to version `3.0.0` or higher, run the following command before the upgrade:
 

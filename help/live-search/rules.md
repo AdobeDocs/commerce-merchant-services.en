@@ -1,9 +1,9 @@
 ---
-title: "Rules"
+title: "Search Rules"
 description: "[!DNL Live Search] rules combine logic with actions to shape the shopping experience."
 exl-id: d06a3040-6987-4813-90ae-2f7b3ad0b232
 ---
-# Rules
+# Search Rules
 
 [!DNL Live Search] rules combine logic with actions to shape a shopper's search experience in your store. You can use rules to boost, bury, pin, or hide products to calibrate search results in real time to support your business goals.
 
@@ -17,7 +17,7 @@ You can combine multiple conditions and actions, and schedule a rule to be activ
 
 ## Requirements
 
-A simple rule can have a single condition and a single event, while a complex rule can have up to ten conditions that trigger up to 25 events.
+A simple search rule can have a single condition and a single event, while a complex rule can have up to ten conditions that trigger up to 25 events.
 Rules can have:
 
 * Up to ten conditions
@@ -43,7 +43,7 @@ When composing a complex rule, it can help to write it out with indentation to d
 
 ## Order of precedence with multiple rules
 
-Only one rule is applied to a search term at any one time.
+Only one search rule is applied to a search term at any one time.
 If multiple rules are found to be applicable to a search phrase, then all these rules are applied. If there is a collision between two rules---`rule 1` that boosts sku1 but `rule 2` hides the same SKU---then the most recently applied rule (`rule 2`) takes precedence.
 
 * Rules are ordered by the "Last Modified" timestamp. The most recently modified rule is applied first, and older rules after that, in timestamp order.

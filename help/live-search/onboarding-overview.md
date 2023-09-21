@@ -23,6 +23,10 @@ To get started using [!DNL Live Search] for Adobe Commerce, complete the onboard
 * Adobe Commerce on-prem (EE) : 2.4.4+
 * Adobe Commerce on Cloud (ECE) : 2.4.4+
 
+## Endpoint
+
+[!DNL Live Search] communicates through the endpoint at `https://catalog-service.adobe.io/graphql`.
+
 ## Boundaries and thresholds
 
 Currently, the [!DNL Live Search] search/category API has the following supported limits and static boundaries:
