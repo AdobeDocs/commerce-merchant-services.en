@@ -1,7 +1,8 @@
 ---
 title: Use Adobe Journey Optimizer to Send an Abandoned Cart Email
 description: Learn how to use Adobe Journey Optimizer to send an abandoned cart email.
-
+role: Admin, Developer
+feature: Personalization, Integration
 ---
 # Use Adobe Journey Optimizer to Send an Abandoned Cart Email
 
@@ -23,33 +24,27 @@ Before you begin working on this tutorial, you must ensure the following:
 
 ### Step 1: Create a user in your Commerce sandbox environment
 
-You need to create a user in your test environment and confirm that user account information appears in Experience Platform. Make sure the email you specified is valid as that is used later in this tutorial to send the abandoned cart email.
+You need to create a user in your sandbox environment and confirm that user account information appears in Experience Platform. Make sure the email you specified is valid as that is used later in this tutorial to send the abandoned cart email.
 
-1. Sign in or create an account in your test environment.
+1. Sign in or create an account in your Commerce sandbox environment.
 
     With the Experience Platform Connector installed and configured, this account information is sent to the Experience Platform as a profile.
 
     ![Sign in to your test account](assets/check-event-profile.png)
 
 1. Confirm your user account information in the Profile section of Experience Platform.
-1. Confirm the checkout event appears in the Experience Platform unified profile
 
-Go to Profiles in the Adobe Experience Platform. Click on Detail in the profile. You will now see the profile that you created. 
+    ???? With the Experience Platform Connector configured, storefront and back office event data from your Commerce site are already being sent to the Experience Platform. Go to Profiles in the Adobe Experience Platform. Click on Detail in the profile. You will now see the profile that you created. 
 
+### Step 2: Trigger the checkout event
 
-With the Experience Platform Connector configured, storefront and back office event data from your Commerce site are already being sent to the Experience Platform. Go to Profiles in the Adobe Experience Platform. Click on Detail in the profile. You will now see the profile that you created. 
+Before you can create an abandoned cart email, you need to add an item to the cart and begin the checkout process to trigger the `commerce.checkouts` event.
 
-    1. 
-
-
-### Step 2: Create an abandoned cart email in Journey Optimizer
-
-Before we begin creating an abandoned cart email, you will need to add items to the cart.
-
-1. Open your Commerce test environment.
+1. Open your Commerce sandbox environment.
 1. Add a product to the cart.
+1. Click the [!UICONTROL Checkout] button.
 
-    This action triggered the `addToCart` event. However, because you did not initiate a checkout, your cart is essentially abandoned.
+    This action triggers the `commerce.checkouts` event. However, because you did not complete the checkout, your cart is essentially abandoned.
 
 1. Confirm the events are flowing to Journey Optimizer.
 
@@ -58,295 +53,122 @@ Before we begin creating an abandoned cart email, you will need to add items to 
     1. Set [!UICONTROL Identity namespace] to `Email`.
     1. Set [!UICONTROL Identity value] to your email address.
 
-    For example:
+        For example:
 
-    ![Details in Journey Optimizer](assets/check-event-profile.png)
+        ![Profiles in Journey Optimizer](assets/check-event-profile.png)
 
-    Under your profile, you can see the list of events with the details by clicking on the **Events** tab.
+    1. Select your profile, then select the [!UICONTROL Events] tab.
 
+        ![Check event details](assets/check-event-details.png)
 
+        Look for the `commerce.checkouts` event and examine the event payload:
 
+            ```json
+            "personID": "84281643067178465783746543501073369488", 
+            "eventType": "commerce.checkouts", 
+            "_id": "4b41703f-e42e-485b-8d63-7001e3580856-0", 
+            "commerce": { 
+                "cart": {}, 
+                "checkouts": { 
+                    "value": 1 
+                } 
+            ```
 
+        Notice there is a `checkouts` value of `1`, which indicates that the checkout process has begun. In the next section, you will configure a checkout event in Journey Optimizer to listen for that `commerce.checkouts` event from Commerce.
 
+### Step 3: Configure events in Journey Optimizer
 
+In this section, you will configure two events in Journey Optimizer: one event listens for the `commerce.checkouts` event from Commerce, and the other is a basic timeout event that waits for a specific amount of time to pass before triggering an abandoned cart email.
 
+#### Create listener event
 
+1. Log into Journey Optimizer.
 
+1. Click on **Configurations** under the **Administration** section of the left pane. 
 
+1. In the **Events** tile, click **[!UICONTROL Manage]**.
 
+    ![Journey Optimizer Event Configuration](assets/ajo-config.png)
 
+1. On the **Events** page, click the **[!UICONTROL Create Event]** button.
 
+1. In the right rail configuration, setup your event as follows:
 
+    1. Set the **Name** to: `firstname_lastname_checkout`.
+    1. Set **Type** to **Unitary**.
+    1. Set **Event id type** to **Rule based**.
+    1. Set **Schema** to your Commerce [schema](update-xdm.md).
+    1. Select **Fields** and in the **Fields** page that appears, select the fields that are useful for this event. For example, select all fields under the **Product list items**, **Commerce**, **eventType**, and **Web**.
+    1. Click the **[!UICONTROL OK]** button to save the selected fields.
+    1. Click into the **Event id condition** field and create a condition of `eventType` is equal to `commerce.checkouts` AND `personalEmail.address` is equal to the email address you used when you created the profile in the previous section.
 
+        ![Journey Optimizer Set Condition](assets/ajo-set-condition.png)
 
+    1. Click **[!UICONTROL Save]** to save your event.
 
+#### Create timeout event
 
+1. Create a new event in Journey Optimizer as you did before.
 
+1. In the right rail configuration, setup your event as follows:
 
+    1. Set the **Name** to: `firstname_lastname_timeout`.
+    1. Set **Type** to **Unitary**.
+    1. Set **Event id type** to **Rule based**.
+    1. Set **Schema** to your Commerce [schema](update-xdm.md).
+    1. Set the **Schema**, **Fields**, and **Event id condition** to the same as above.
+    1. Click **[!UICONTROL Save]** to save your event.
 
-Let's focus on the following checkout event:
+With these two events configured, you can now build an abandoned cart journey. 
 
-`commerce.checkout`
+### Step 4: Build a checkout journey
 
-## Configure a Checkout Event in Journey  
+???? In this section, you will create an abandoned cart journey that sends an email after a specified amount of time has passed.
 
-In this exercise, we will configure journeys so that it can listen to the right checkout events in real-time. 
+1. Go to Journeys from the left menu and click on Create Journey 
+1. Set the name of your journey by prefixing it with your firstname_lastname checkout journey and click ok.  
+1. In the left rail under section **EVENTS**, search for the checkout event you previously created: `firstname_lastname_checkout` and drag and drop it on the canvas.  
 
-Log into Adobe Jouney Optimizer 
+>[!NOTE]
+>
+>Double-clicking on the event automatically adds it to the canvas. 
 
-Click on Configurations under the administration section of the left menu. 
+1. Search for the timeout event and add it to the canvas. 
+1. Double-click the timeout event.
 
-Then click on Manage Events.
+    1. In the **Timeout** section, add a checkmark to the **Define the event time** checkbox.
+    1. In the **Wait for** field enter `1` and `Minute`.
+    1. Place a checkmark in the **Set a timeout path**.
+    
+    With this timeout configuration, a shopper that performs a checkout but does not complete the order within one minute triggers this timeout branch. In an actual production environment, you would set this for a longer period of time, like 24 hours.
 
-You will see the list of already available events that journeys can listen to. We have pre-created some events for you like the order event. But in this exercise, we will create a new event for Checkout 
+1. In the left rail under **ACTIONS**, add the **Email** action to the timeout branch. Your journey should look like the following:
 
-Click on Create Event 
+    ![Journey Optimizer Canvas](assets/ajo-canvas.png)
 
-You can now setup your event through the right rail as following: 
+#### Create an abandoned cart email
 
-    Name: set the name by prefixing it with your name: firstname_lastname_Checkout_Event 
+In this section, you create an abandoned cart email that is sent when an abandoned cart is detected.
 
-    Type: Leave to Unitary event (= one per profile) 
+1. In the journey you created above, double-click the **Email** icon on the canvas.
 
-    Event ID type: Leave it to Rule based (= filter down events to be listed to thanks to a rule) 
+1. Follow the [steps](https://experienceleague.adobe.com/docs/journey-optimizer/using/personalized-dynamic-content/personalization/personalization-use-cases/personalization-use-case-helper-functions.html#configure-email) in the Journey Optimizer guide to create the abandoned cart email.
 
-    Schema: Select the schema named CitiSignal - Commerce EE v.1 
+???? ADD text that ties this section with the next.
 
-Fields: you need to select the fields that are useful for this event.   
+### Step 5: Trigger the checkout event
 
-    Select all fields under Product List Items except _experience 
-
-    Select all fields under Commerce and eventType 
-
-    Select all fields under Web 
-
-    Click on OK 
-
-Event ID condition: Click on the Edit button next to the condition and create a condition eventType is commerce.checkouts AND personID = XXXX where XXXX = your ECID 
-
-    To do so, you can: 
-
-    drag and drop the eventType from the left rail and set it to commerce.checkout 
-
-    drag and drop the person ID and paste your ECID (see below how to get that).
-
-## Build a simple Checkout Journey  
-
-Go to Journeys from the left menu and click on Create Journey 
-Set the name of your journey by prefixing it with your firstname_lastname checkout journey and click ok.  
-In the left rail under section EVENTS, Search for the Event you have previously created firstname_lastname_checkout_event and drag and drop it.  
-
-Note: double clicking on the event will automatically add it to the canvas. 
-
-Search for Event CitiSignal_OrderEvent and add it. 
-
-Set the timeout branch to 1 min. This means that a website visitor doing a checkout and not doing an order within 1 minute will land in this timeout branch. In real life this can be set to a longer period like 24hours. 
-
-In the left rail, Go to section ACTIONS and add the "Email action in the timeout branch. 
-Your journey should look like this now 
-
-Build a Checkout  abandonment email 
-
- 
-
-You can now click on the Email action 
-
-set a name for the action Checkout abandonment email 
-
-Choose a category Transactional 
-
-Choose an email surface Transactionals that will select the branding settings to be used 
-
- 
-
- 
-
- 
-
- 
-
-Click on Edit content 
-
- 
-
-Set the email subject line:  for example: Are you still interested? 
-
- 
-
-Click on Open Email Designer or Edit Email body  
-
- 
-
- 
-
- 
-
- 
-
-Click on tab Saved templates and select the Checkout Abandonment Template 
-
- 
-
-We have prepared the email template for you. 
-
- 
-
- 
-
- 
-
-You can preview the template before selecting it with Use this template 
-
- 
-
- 
-
-You are now in the email editor and we are going to add personalization to this email content. 
-
- 
-
- 
-
- 
-
-First let's add the first name to the email.  
-
-You can select the following block and click on the personalization icon  
-
-Une image contenant texte, capture d'écran, moniteur, intérieur
-
-Description générée automatiquement 
-
- 
-
-Search for "first name" and click on the + icon to add it and click on Save 
-
-Une image contenant texte
-
-Description générée automatiquement 
-
- 
-
-Your content should look like this now. 
-
- 
-
- 
-
- 
-
-We are now going to set the list of products in the abandoned cart. This section is more advanced. We have pre-created the personalization for you as part of the template you have selected.  
-
-let's select the following block and click on the code icon 
-
-Une image contenant texte
-
-Description générée automatiquement 
-
- 
-
-We can see here the HTML of that block with dynamic personalization that is included. In our case, we need to modify the event ID that is highlighted below. This is because you will be using personalization information coming from your own event created in exercise 5.2. 
-
- 
-
- 
-
- 
-
- 
-
-Note: if you are trying to save the content without changing the event ID, you will get an error 
-
- 
-
- 
-
- 
-
- 
-
-To get your event id, do the following: 
-
-Go to Contextual attributes in the left rail  
-
-Browse through Journey Orchestration > Events > firstname_lastname_checkout event> productListItems 
-
-You will now see the product attributes. Add the Name by clicking on the + icon 
-
-This inserts a personalization token that has the right Event ID 
-
-Now copy and replace that id into the #each. You can now delete the the token added in previous step. 
-
-Une image contenant texte
-
-Description générée automatiquement 
-
-
-You can click on Save. Your email is now ready 
-
-Note for advanced users: 
-
-This personalization editor allows you to tailor your content and make it very dynamic. 
-
-You have access to all of the checkout event data 
-
-You can use any profile attributes 
-
-You can do conditional content based on a segment or a rule 
-
-You can access Helper functions that allow to do date formatting, string operations, math, loops… 
-
-
-Exercise 4.3 – Test your journey in real-time 
-
- 
-
-You are now ready to test this journey. Enable test mode.  
+???? 
+1. You are now ready to test this journey. Enable test mode.
 
 Next to it, you can see an icon that will be orange if you have warnings or red if you have errors. In the latter case, test option will be greyed out. You have to fix the error first. You can learn more by clicking on that icon. 
 
- 
+1. Now let's test this journey in real-time. Open another browser tab and Go to the CitiSignal website . 
+1. Add a product to your cart  
+1. Go to checkout.
+1. From the checkout page, you can now abandon. This means you can go back to the main page or close your tab.
+1. The journey will now be triggered. You can check that by going to your browser tab where you have your journey.
 
- 
+    You should see a green arrow showing where your user went through. 
 
- 
-
-Now let's test this journey in real-time. Open another browser tab and Go to the CitiSignal website . 
-
- 
-
-Add a product to your cart  
-
- 
-
-Une image contenant texte
-
-Description générée automatiquement 
-
- 
-
-Go to the checkout 
-
- 
-
-Une image contenant texte
-
-Description générée automatiquement 
-
-From the checkout page, you can now abandon. This means you can go back to the main page or close your tab. 
-
-Une image contenant table
-
-Description générée automatiquement 
-
- 
-
-The journey will now be triggered. You can check that by going to your browser tab where you have your journey. 
-
-You should see a green arrow showing where your user went through. 
-
-Now check your inbox. You should have received an email. 
-
- 
-
- 
+1. Now check your inbox. You should have received an email.

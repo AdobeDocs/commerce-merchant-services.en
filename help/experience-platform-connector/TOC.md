@@ -15,3 +15,5 @@ breadcrumb-title: Adobe Experience Platform Connector for Adobe Commerce
    - [Events](events.md)
    - [Custom Events](custom-events.md)
    - [Use Adobe Experience Platform Tags](using-tags.md)
+- Tutorials {#tutorials}
+   - [Use Adobe Journey Optimizer to Send an Abandoned Cart Email](using-ajo.md)
