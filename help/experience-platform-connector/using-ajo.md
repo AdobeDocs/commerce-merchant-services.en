@@ -48,16 +48,16 @@ Before you can create an abandoned cart email, you need to add an item to the ca
 
 1. Confirm the events are flowing to Journey Optimizer.
 
-    1. Launch Adobe Journey Optimizer.
+    1. Launch [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/user-interface.html).
     1. Select **Profiles**.
-    1. Set [!UICONTROL Identity namespace] to `Email`.
-    1. Set [!UICONTROL Identity value] to your email address.
+    1. Set **[!UICONTROL Identity namespace]** to `Email`.
+    1. Set **[!UICONTROL Identity value]** to your email address.
 
         For example:
 
         ![Profiles in Journey Optimizer](assets/check-event-profile.png)
 
-    1. Select your profile, then select the [!UICONTROL Events] tab.
+    1. Select your profile, then select the **[!UICONTROL Events]** tab.
 
         ![Check event details](assets/check-event-details.png)
 
@@ -82,7 +82,7 @@ In this section, you will configure two events in Journey Optimizer: one event l
 
 #### Create listener event
 
-1. Log into Journey Optimizer.
+1. Launch [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/user-interface.html).
 
 1. Click on **Configurations** under the **Administration** section of the left pane. 
 
