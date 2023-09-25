@@ -62,7 +62,7 @@ In this scenario, storefront operations are interrupted while the [!DNL Live Sea
    >
    > While the data is indexed and synchronized, the search and category browse operations are not available in the storefront. Depending on the size of your catalog, the process can take at least an hour from the time `cron` runs to synchronize your data to [!DNL Live Search] services.
 
-1. Verify that the following [indexers](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) are set to `Update by Schedule`:
+1. Verify that the following [indexers](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) are set to "Update by Schedule":
 
    * Product Feed
    * Product Variant Feed
@@ -113,7 +113,7 @@ In this scenario, [!DNL Elasticsearch] temporarily manages search requests from 
 
    [!DNL Elasticsearch] continues to manage search requests from the storefront while the [!DNL Live Search] service synchronizes catalog data and indexes products in the background.
 
-1. Verify that the following [indexers](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) are set to `Update by Schedule`:
+1. Verify that the following [indexers](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) are set to "Update by Schedule":
 
    * Product Feed
    * Product Variant Feed
@@ -230,7 +230,7 @@ To update to a major version such as from 2.0.0 to 3.1.1, edit the project's roo
 1. In the `require` section, update the version number as follows:
 
    ```json
-   "require": {
+   `require`: {
       ...
       "magento/live-search": "^3.0",
       ...
@@ -253,14 +253,25 @@ To uninstall [!DNL Live Search], refer to [Uninstall modules](https://experience
 |--- |--- |
 | `module-live-search` | Allows merchants to configure their search settings for faceting, synonyms, query rules, etc., and provides access to a read-only GraphQL playground to test queries from the *Admin*. |
 | `module-live-search-adapter` | Routes search requests from the storefront to the [!DNL Live Search] service and renders the results in the storefront. <br />- Category browse - Routes requests from the storefront [top navigation](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-top.html) to the search service.<br />- Global search - Routes requests from the [quick search](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) box in the upper-right of the storefront to the [!DNL Live Search] service. |
-| `module-live-search-storefront-popover` | A "search as you type" popover replaces the standard quick search and returns data and thumbnails of top search results. |
+| `module-live-search-storefront-popover` | A `search as you type` popover replaces the standard quick search and returns data and thumbnails of top search results. |
 
 ## [!DNL Live Search] dependencies {#dependencies}
 
-The following [!DNL Live Search] dependencies are captured by [!DNL Composer]:
-
-| Dependency | Description|
-|--- |--- |
-| Export modules | The following modules collect and sync catalog data:<br />`module-sass-catalog`<br />`module-sass-product-override`<br />`module-bundle-product-data-exporter`<br />`module-catalog-data-exporter`<br />`module-catalog-inventory-data-exporter`<br />`module-catalog-url-rewrite-data-exporter`<br />`module-configurable-product-data-exporter`<br />`module-data-exporter`<br />`module-parent-product-data-exporter`<br />`module-product-override-data-exporter` |
-| `data-services` | Required to configure your connection to Commerce Services. |
-| `services-id` | Required to configure your connection to Commerce Services. |
+The following [!DNL Live Search] dependencies are captured by [!DNL Composer].
+  
+* `magento/module-saas-catalog`
+* `magento/module-saas-category`
+* `magento/module-saas-category-permissions`
+* `magento/module-saas-product-override`
+* `magento/module-saas-product-variant`
+* `magento/module-saas-price`
+* `magento/module-saas-scopes`
+* `magento/module-bundle-product-data-exporter`
+* `magento/module-catalog-inventory-data-exporter`
+* `magento/module-catalog-url-rewrite-data-exporter`
+* `magento/module-configurable-product-data-exporter`
+* `magento/module-parent-product-data-exporter`
+* `magento/module-gift-card-product-data-exporter`
+* `magento/module-bundle-product-override-data-exporter`
+* `data-services`:  Required to configure your connection to Commerce Services.
+* `services-id`:  Required to configure your connection to Commerce Services.
