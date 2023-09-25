@@ -273,5 +273,5 @@ The following [!DNL Live Search] dependencies are captured by [!DNL Composer].
 * `magento/module-parent-product-data-exporter`
 * `magento/module-gift-card-product-data-exporter`
 * `magento/module-bundle-product-override-data-exporter`
-* `data-services`:  Required to configure your connection to Commerce Services.
-* `services-id`:  Required to configure your connection to Commerce Services.
+* `data-services`
+* `services-id`
