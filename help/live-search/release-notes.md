@@ -1,5 +1,5 @@
 ---
-title: '[!DNL Live Search] Release Notes'
+title: "[!DNL Live Search] Release Notes"
 description: "The latest release information for [!DNL Live Search] from Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
@@ -130,6 +130,7 @@ Using the Live Search Product Listing Page widget will cause Google Tag Manager 
     * Pin to bottom - Places the product at the bottom of the results
     * Unpin an event with one click
 ![New](../assets/new.svg) [Intelligent Ranking for rules](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-admin/rules/rules-add.html#ranking-type)
+![New](../assets/new.svg) [!DNL Live Search] now supports Multi-Source Inventory (MSI). Requires the `commerce-data-export` 102.2.0+ module to be [installed](install.md#update). This can be checked with `composer update magento/live-search --with-dependencies` command.
 
 ### Updates
 
