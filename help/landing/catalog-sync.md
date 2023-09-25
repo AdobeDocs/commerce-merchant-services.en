@@ -178,14 +178,11 @@ Payload is available in `var/log/saas-export.log`.
 
 #### Preserve payload in feed index table
 
-To reduce the overall table size, some feeds (products, prices) keep only the minimum required data in the index table.
+Stating from `magento/module-data-exporter:103.0.0` some feeds  (e.g. for product feed, price feed) keep only the minimum required data in the index table.
 
 Preserving payload data in the index table is not recommended on production, but it may be useful on a developer instance. This is done by passing the `PERSIST_EXPORTED_FEED=1` environment variable:
 
 ```bash
-# reindex data only
-PERSIST_EXPORTED_FEED=1 bin/magento indexer:reindex catalog_data_exporter_products
-# reindex and send data to Commerce Service
 PERSIST_EXPORTED_FEED=1 bin/magento saas:resync --feed=products
 ```
 
