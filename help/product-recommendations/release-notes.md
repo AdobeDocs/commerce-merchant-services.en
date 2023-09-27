@@ -60,6 +60,7 @@ These notes describe updates that were published outside of a versioned release 
 
 ![New](../assets/new.svg) Updated Product Recommendations to support Adobe Commerce 2.4.6.
 ![New](../assets/new.svg) This is a major version release. [Edit](install-configure.md#update) the root `composer.json` file for your project. 
+![New](../assets/new.svg) [!DNL Product Recommendations] now supports full [Inventory Management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/introduction.html) capabilities in Commerce (formerly knows as Multi-Source Inventory, or MSI). To enable full support, you must [update](install-configure.md#update) the dependency module `commerce-data-export` to version 102.2.0+.
 
 ### 4.0.1 of magento/product-recommendations
 
@@ -73,7 +74,6 @@ These notes describe updates that were published outside of a versioned release 
 
 ![New](../assets/new.svg) Added [readiness indicators](create.md) to help you visualize the training progress of each recommendation type.
 ![New](../assets/new.svg) This is a major version release. [Edit](install-configure.md#update) the root `composer.json` file for your project. This release also requires you to provide two API keys when installing and configuring Product Recommendations: [a production key and a sandbox key](../landing/saas.md).
-![New](../assets/new.svg) [!DNL Product Recommendations] now supports full [Inventory Management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/introduction.html) capabilities in Commerce (formerly knows as Multi-Source Inventory, or MSI). To enable full support, you must [update](install-configure.md#update) the dependency module `commerce-data-export` to version 102.2.0+.
 
 #### Known limitations
 
