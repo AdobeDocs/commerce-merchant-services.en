@@ -31,8 +31,14 @@ The following table describes the data collected for this event.
 
 |Field|Description|
 |---|---|
-|`productListAdds`|Indicates if a product was added to a shopping cart. A value of `1` indicates that a product was added.|
-|`productListItems`|An array of products that were added to the requisition list.|
+|`commerce.productListAdds`|Indicates if a product was added to a shopping cart. A value of `1` indicates that a product was added.|
+|`commerce.cart.cartID`|The unique ID that identifies the customer's cart.|
+|`commerce.commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
+|`commerce.commerceScope.environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
+|`commerce.commerceScope.storeCode`|The unique store code. You can have many stores per website.|
+|`commerce.commerceScope.storeViewCode`|The unique store view code. You can have many store views per store.|
+|`commerce.commerceScope.websiteCode`|The unique website code. You can have many websites in an environment.|
+|`productListItems`|An array of products that were added to the shopping cart.|
 |`productListItems.SKU`|Stock Keeping Unit. The unique identifier for the product.|
 |`productListItems.name`|The display name or human-readable name of the product.|
 |`productListItems.priceTotal`|The total price for the product line item.|
@@ -43,12 +49,6 @@ The following table describes the data collected for this event.
 |`productListItems.selectedOptions`|Field used for a configurable product.|
 |`productListItems.selectedOptions.attribute`|Identifies an attribute of the configurable product, such as `size` or `color`.|
 |`productListItems.selectedOptions.value`|Identifies the value of the attribute such as `small` or `black`.|
-|`commerce.cart.cartID`|The unique ID that identifies the customer's cart.|
-|`commerce.commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
-|`commerce.commerceScope.environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
-|`commerce.commerceScope.storeCode`|The unique store code. You can have many stores per website.|
-|`commerce.commerceScope.storeViewCode`|The unique store view code. You can have many store views per store.|
-|`commerce.commerceScope.websiteCode`|The unique website code. You can have many websites in an environment.|
 
 ### openCart
 
@@ -62,8 +62,14 @@ The following table describes the data collected for this event.
 
 |Field|Description|
 |---|---|
-|`productListOpens`|Indicates if a cart was created. A value of `1` indicates that a cart was created.|
-|`productListItems`|An array of products that were added to the requisition list.|
+|`commerce.productListOpens`|Indicates if a cart was created. A value of `1` indicates that a cart was created.|
+|`commerce.cart.cartID`|The unique ID that identifies the customer's cart.|
+|`commerce.commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
+|`commerce.commerceScope.environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
+|`commerce.commerceScope.storeCode`|The unique store code. You can have many stores per website.|
+|`commerce.commerceScope.storeViewCode`|The unique store view code. You can have many store views per store.|
+|`commerce.commerceScope.websiteCode`|The unique website code. You can have many websites in an environment.|
+|`productListItems`|An array of products that were added to the shopping cart.|
 |`productListItems.SKU`|Stock Keeping Unit. The unique identifier for the product.|
 |`productListItems.name`|The display name or human-readable name of the product.|
 |`productListItems.priceTotal`|The total price for the product line item.|
@@ -74,12 +80,6 @@ The following table describes the data collected for this event.
 |`productListItems.selectedOptions`|Field used for a configurable product.|
 |`productListItems.selectedOptions.attribute`|Identifies an attribute of the configurable product, such as `size` or `color`.|
 |`productListItems.selectedOptions.value`|Identifies the value of the attribute such as `small` or `black`.|
-|`commerce.cart.cartID`|The unique ID that identifies the customer's cart.|
-|`commerce.commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
-|`commerce.commerceScope.environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
-|`commerce.commerceScope.storeCode`|The unique store code. You can have many stores per website.|
-|`commerce.commerceScope.storeViewCode`|The unique store view code. You can have many store views per store.|
-|`commerce.commerceScope.websiteCode`|The unique website code. You can have many websites in an environment.|
 
 ### removeFromCart
 
@@ -93,8 +93,14 @@ The following table describes the data collected for this event.
 
 |Field|Description|
 |---|---|
-|`productListRemovals`|Indicates if a product was removed from the cart. A value of `1` indicates that a product was removed from the cart.|
-|`productListItems`|An array of products that were added to the requisition list.|
+|`commerce.productListRemovals`|Indicates if a product was removed from the cart. A value of `1` indicates that a product was removed from the cart.|
+|`commerce.cart.cartID`|The unique ID that identifies the customer's cart.|
+|`commerce.commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
+|`commerce.commerceScope.environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
+|`commerce.commerceScope.storeCode`|The unique store code. You can have many stores per website.|
+|`commerce.commerceScope.storeViewCode`|The unique store view code. You can have many store views per store.|
+|`commerce.commerceScope.websiteCode`|The unique website code. You can have many websites in an environment.|
+|`productListItems`|An array of products that were added to the shopping cart.|
 |`productListItems.SKU`|Stock Keeping Unit. The unique identifier for the product.|
 |`productListItems.name`|The display name or human-readable name of the product.|
 |`productListItems.priceTotal`|The total price for the product line item.|
@@ -105,12 +111,6 @@ The following table describes the data collected for this event.
 |`productListItems.selectedOptions`|Field used for a configurable product.|
 |`productListItems.selectedOptions.attribute`|Identifies an attribute of the configurable product, such as `size` or `color`.|
 |`productListItems.selectedOptions.value`|Identifies the value of the attribute such as `small` or `black`.|
-|`commerce.cart.cartID`|The unique ID that identifies the customer's cart.|
-|`commerce.commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
-|`commerce.commerceScope.environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
-|`commerce.commerceScope.storeCode`|The unique store code. You can have many stores per website.|
-|`commerce.commerceScope.storeViewCode`|The unique store view code. You can have many store views per store.|
-|`commerce.commerceScope.websiteCode`|The unique website code. You can have many websites in an environment.|
 
 ### shoppingCartView
 
@@ -124,8 +124,14 @@ The following table describes the data collected for this event.
 
 |Field|Description|
 |---|---|
-|`productListViews`|Indicates if a product list was viewed.|
-|`productListItems`|An array of products that were added to the requisition list.|
+|`commerce.productListViews`|Indicates if a product list was viewed.|
+|`commerce.cart.cartID`|The unique ID that identifies the customer's cart.|
+|`commerce.commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
+|`commerce.commerceScope.environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
+|`commerce.commerceScope.storeCode`|The unique store code. You can have many stores per website.|
+|`commerce.commerceScope.storeViewCode`|The unique store view code. You can have many store views per store.|
+|`commerce.commerceScope.websiteCode`|The unique website code. You can have many websites in an environment.|
+|`productListItems`|An array of products that were added to the shopping cart.|
 |`productListItems.SKU`|Stock Keeping Unit. The unique identifier for the product.|
 |`productListItems.name`|The display name or human-readable name of the product.|
 |`productListItems.priceTotal`|The total price for the product line item.|
@@ -136,12 +142,6 @@ The following table describes the data collected for this event.
 |`productListItems.selectedOptions`|Field used for a configurable product.|
 |`productListItems.selectedOptions.attribute`|Identifies an attribute of the configurable product, such as `size` or `color`.|
 |`productListItems.selectedOptions.value`|Identifies the value of the attribute such as `small` or `black`.|
-|`commerce.cart.cartID`|The unique ID that identifies the customer's cart.|
-|`commerce.commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
-|`commerce.commerceScope.environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
-|`commerce.commerceScope.storeCode`|The unique store code. You can have many stores per website.|
-|`commerce.commerceScope.storeViewCode`|The unique store view code. You can have many store views per store.|
-|`commerce.commerceScope.websiteCode`|The unique website code. You can have many websites in an environment.|
 
 ### pageView
 
@@ -177,8 +177,13 @@ The following table describes the data collected for this event.
 
 |Field|Description|
 |---|---|
-|`productViews`|Indicates if the product was viewed.|
-|`productListItems`|An array of products that were added to the requisition list.|
+|`commerce.productViews`|Indicates if the product was viewed.|
+|`commerce.commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
+|`commerce.commerceScope.environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
+|`commerce.commerceScope.storeCode`|The unique store code. You can have many stores per website.|
+|`commerce.commerceScope.storeViewCode`|The unique store view code. You can have many store views per store.|
+|`commerce.commerceScope.websiteCode`|The unique website code. You can have many websites in an environment.|
+|`productListItems`|An array of products that were added to the shopping cart.|
 |`productListItems.SKU`|Stock Keeping Unit. The unique identifier for the product.|
 |`productListItems.name`|The display name or human-readable name of the product.|
 |`productListItems.priceTotal`|The total price for the product line item.|
@@ -189,11 +194,6 @@ The following table describes the data collected for this event.
 |`productListItems.selectedOptions`|Field used for a configurable product.|
 |`productListItems.selectedOptions.attribute`|Identifies an attribute of the configurable product, such as `size` or `color`.|
 |`productListItems.selectedOptions.value`|Identifies the value of the attribute such as `small` or `black`.|
-|`commerce.commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
-|`commerce.commerceScope.environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
-|`commerce.commerceScope.storeCode`|The unique store code. You can have many stores per website.|
-|`commerce.commerceScope.storeViewCode`|The unique store view code. You can have many store views per store.|
-|`commerce.commerceScope.websiteCode`|The unique website code. You can have many websites in an environment.|
 
 ### startCheckout
 
@@ -207,8 +207,14 @@ The following table describes the data collected for this event.
 
 |Field|Description|
 |---|---|
-|`checkouts`|Indicates if an action occurred during the checkout process.|
-|`productListItems`|An array of products that were added to the requisition list.|
+|`commerce.checkouts`|Indicates if an action occurred during the checkout process.|
+|`commerce.cart.cartID`|The unique ID that identifies the customer's cart.|
+|`commerce.commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
+|`commerce.commerceScope.environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
+|`commerce.commerceScope.storeCode`|The unique store code. You can have many stores per website.|
+|`commerce.commerceScope.storeViewCode`|The unique store view code. You can have many store views per store.|
+|`commerce.commerceScope.websiteCode`|The unique website code. You can have many websites in an environment.|
+|`productListItems`|An array of products that were added to the shopping cart.|
 |`productListItems.SKU`|Stock Keeping Unit. The unique identifier for the product.|
 |`productListItems.name`|The display name or human-readable name of the product.|
 |`productListItems.priceTotal`|The total price for the product line item.|
@@ -219,12 +225,6 @@ The following table describes the data collected for this event.
 |`productListItems.selectedOptions`|Field used for a configurable product.|
 |`productListItems.selectedOptions.attribute`|Identifies an attribute of the configurable product, such as `size` or `color`.|
 |`productListItems.selectedOptions.value`|Identifies the value of the attribute such as `small` or `black`.|
-|`commerce.cart.cartID`|The unique ID that identifies the customer's cart.|
-|`commerce.commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
-|`commerce.commerceScope.environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
-|`commerce.commerceScope.storeCode`|The unique store code. You can have many stores per website.|
-|`commerce.commerceScope.storeViewCode`|The unique store view code. You can have many store views per store.|
-|`commerce.commerceScope.websiteCode`|The unique website code. You can have many websites in an environment.|
 
 ### completeCheckout
 
@@ -253,10 +253,14 @@ The following table describes the data collected for this event.
 |`commerce.shipping.shippingMethod`|The method of shipping chosen by the customer, such as standard delivery, expedited delivery, pick up in store, and so on.|
 |`commerce.shipping.shippingAmount`|The amount the customer had to pay for shipping.||`shipping`|Shipping details for one or more products.|
 |`commerce.shipping.currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used, such as `USD` or `EUR`.|
-|`commerce.promotionID`|Unique identifier of the promotion, if any.|
-|`commerce.personalEmail`|A personal email address.|
-|`commerce.personalEmail.address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards.|
-|`productListItems`|An array of products that were added to the requisition list.|
+|`commerce.commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
+|`commerce.commerceScope.environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
+|`commerce.commerceScope.storeCode`|The unique store code. You can have many stores per website.|
+|`commerce.commerceScope.storeViewCode`|The unique store view code. You can have many store views per store.|
+|`commerce.commerceScope.websiteCode`|The unique website code. You can have many websites in an environment.|
+|`personalEmail`|A personal email address.|
+|`personalEmail.address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards.|
+|`productListItems`|An array of products that were added to the shopping cart.|
 |`productListItems.SKU`|Stock Keeping Unit. The unique identifier for the product.|
 |`productListItems.name`|The display name or human-readable name of the product.|
 |`productListItems.priceTotal`|The total price for the product line item.|
@@ -266,11 +270,6 @@ The following table describes the data collected for this event.
 |`productListItems.selectedOptions`|Field used for a configurable product.|
 |`productListItems.selectedOptions.attribute`|Identifies an attribute of the configurable product, such as `size` or `color`.|
 |`productListItems.selectedOptions.value`|Identifies the value of the attribute such as `small` or `black`.|
-|`commerce.commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
-|`commerce.commerceScope.environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
-|`commerce.commerceScope.storeCode`|The unique store code. You can have many stores per website.|
-|`commerce.commerceScope.storeViewCode`|The unique store view code. You can have many store views per store.|
-|`commerce.commerceScope.websiteCode`|The unique website code. You can have many websites in an environment.|
 
 ## Profile events
 
@@ -451,7 +450,7 @@ The following table describes the data collected for this event.
 |`searchResponse.value`|The quantifiable value of the response.|
 |`siteSearch.numberOfResults`|The number of products returned.|
 |`siteSearch.suggestions`|An array of strings that include the names of products and categories that exist in the catalog that are similar to the search query.|
-|`productListItems`|An array of products that were added to the requisition list.|
+|`productListItems`|An array of products that were added to the shopping cart.|
 |`productListItems.SKU`|Stock Keeping Unit. The unique identifier for the product.|
 |`productListItems.name`|The display name or human-readable name of the product.|
 |`productListItems.productImageUrl`|Main image URL of the product.|
@@ -505,6 +504,11 @@ The following table describes the data collected for this event.
 |`commerce.requisitionList.ID`|Unique identifier of the requisition list.|
 |`commerce.requisitionList.name`|Name of the requisition list specified by the customer.|
 |`commerce.requisitionList.description`|Description of the requisition list specified by the customer.|
+|`commerce.commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
+|`commerce.commerceScope.environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
+|`commerce.commerceScope.storeCode`|The unique store code. You can have many stores per website.|
+|`commerce.commerceScope.storeViewCode`|The unique store view code. You can have many store views per store.|
+|`commerce.commerceScope.websiteCode`|The unique website code. You can have many websites in an environment.|
 |`productListItems`|An array of products that were added to the requisition list.|
 |`productListItems.SKU`|Stock Keeping Unit. The unique identifier for the product.|
 |`productListItems.name`|The display name or human-readable name of the product.|
@@ -515,11 +519,6 @@ The following table describes the data collected for this event.
 |`productListItems.selectedOptions`|Field used for a configurable product.|
 |`productListItems.selectedOptions.attribute`|Identifies an attribute of the configurable product, such as `size` or `color`.|
 |`productListItems.selectedOptions.value`|Identifies the value of the attribute such as `small` or `black`.|
-|`commerce.commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
-|`commerce.commerceScope.environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
-|`commerce.commerceScope.storeCode`|The unique store code. You can have many stores per website.|
-|`commerce.commerceScope.storeViewCode`|The unique store view code. You can have many store views per store.|
-|`commerce.commerceScope.websiteCode`|The unique website code. You can have many websites in an environment.|
 
 ### removeFromRequisitionList
 
@@ -537,6 +536,11 @@ The following table describes the data collected for this event.
 |`commerce.requisitionList.ID`|Unique identifier of the requisition list.|
 |`commerce.requisitionList.name`|Name of the requisition list specified by the customer.|
 |`commerce.requisitionList.description`|Description of the requisition list specified by the customer.|
+|`commerce.commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
+|`commerce.commerceScope.environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
+|`commerce.commerceScope.storeCode`|The unique store code. You can have many stores per website.|
+|`commerce.commerceScope.storeViewCode`|The unique store view code. You can have many store views per store.|
+|`commerce.commerceScope.websiteCode`|The unique website code. You can have many websites in an environment.|
 |`productListItems`|An array of products that were added to the requisition list.|
 |`productListItems.SKU`|Stock Keeping Unit. The unique identifier for the product.|
 |`productListItems.name`|The display name or human-readable name of the product.|
@@ -547,11 +551,6 @@ The following table describes the data collected for this event.
 |`productListItems.selectedOptions`|Field used for a configurable product.|
 |`productListItems.selectedOptions.attribute`|Identifies an attribute of the configurable product, such as `size` or `color`.|
 |`productListItems.selectedOptions.value`|Identifies the value of the attribute such as `small` or `black`.|
-|`commerce.commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
-|`commerce.commerceScope.environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
-|`commerce.commerceScope.storeCode`|The unique store code. You can have many stores per website.|
-|`commerce.commerceScope.storeViewCode`|The unique store view code. You can have many store views per store.|
-|`commerce.commerceScope.websiteCode`|The unique website code. You can have many websites in an environment.|
 
 ## Back office events
 
@@ -586,9 +585,20 @@ The following table describes the data collected for this event.
 |`commerce.shipping`|Shipping details for one or more products.|
 |`commerce.shipping.shippingMethod`|The method of shipping chosen by the customer, such as standard delivery, expedited delivery, pick up in store, and so on.|
 |`commerce.shipping.shippingAmount`|The amount the customer had to pay for shipping.|
-|`commerce.promotionID`|Unique identifier of the promotion, if any.|
-|`commerce.personalEmail`|A personal email address.|
-|`commerce.personalEmail.address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards.|
+|`commerce.commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
+|`commerce.commerceScope.environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
+|`commerce.commerceScope.storeCode`|The unique store code. You can have many stores per website.|
+|`commerce.commerceScope.storeViewCode`|The unique store view code. You can have many store views per store.|
+|`commerce.commerceScope.websiteCode`|The unique website code. You can have many websites in an environment.|
+|`commerce.billing.address`|Billing postal address.|
+|`commerce.billing.address.street1`|Primary street level information, apartment number, street number, and street name|
+|`commerce.billing.address.street2`|Additional field for street level information.|
+|`commerce.billing.address.city`|The name of the city.|
+|`commerce.billing.address.state`|The name of the state. This is a free-form field.|
+|`commerce.billing.address.postalCode`|The postal code of the location. Postal codes are not available for all countries. In some countries, this will only contain part of the postal code.|
+|`commerce.billing.address.country`|The name of the government-administered territory. Other than `xdm:countryCode`, this is a free-form field that can have the country name in any language.|
+|`personalEmail`|A personal email address.|
+|`personalEmail.address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards.|
 |`productListItems`|An array of products in the order.|
 |`productListItems.SKU`|Stock Keeping Unit. The unique identifier for the product.|
 |`productListItems.name`|The display name or human-readable name of the product.|
@@ -604,18 +614,6 @@ The following table describes the data collected for this event.
 |`productListItems.categories.name`|The name of the category.|
 |`productListItems.categories.path`|The path to the category.|
 |`productListItems.productImageUrl`|Main image URL of the product.|
-|`commerce.commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
-|`commerce.commerceScope.environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
-|`commerce.commerceScope.storeCode`|The unique store code. You can have many stores per website.|
-|`commerce.commerceScope.storeViewCode`|The unique store view code. You can have many store views per store.|
-|`commerce.commerceScope.websiteCode`|The unique website code. You can have many websites in an environment.|
-|`commerce.billing.address`|Billing postal address.|
-|`commerce.billing.address.street1`|Primary street level information, apartment number, street number, and street name|
-|`commerce.billing.address.street2`|Additional field for street level information.|
-|`commerce.billing.address.city`|The name of the city.|
-|`commerce.billing.address.state`|The name of the state. This is a free-form field.|
-|`commerce.billing.address.postalCode`|The postal code of the location. Postal codes are not available for all countries. In some countries, this will only contain part of the postal code.|
-|`commerce.billing.address.country`|The name of the government-administered territory. Other than `xdm:countryCode`, this is a free-form field that can have the country name in any language.|
 
 ### orderInvoiced
 
@@ -639,9 +637,8 @@ The following table describes the data collected for this event.
 |`commerce.shipping`|Shipping details for one or more products.|
 |`commerce.shipping.shippingMethod`|The method of shipping chosen by the customer, such as standard delivery, expedited delivery, pick up in store, and so on.|
 |`commerce.shipping.shippingAmount`|The amount the customer had to pay for shipping.|
-|`commerce.promotionID`|Unique identifier of the promotion, if any.|
-|`commerce.personalEmail`|A personal email address.|
-|`commerce.personalEmail.address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards.|
+|`personalEmail`|A personal email address.|
+|`personalEmail.address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards.|
 |`productListItems`|An array of products in the order.|
 |`productListItems.SKU`|Stock Keeping Unit. The unique identifier for the product.|
 |`productListItems.name`|The display name or human-readable name of the product.|
@@ -688,9 +685,20 @@ The following table describes the data collected for this event.
 |`commerce.shipping.trackingNumber`|The tracking number provided by the shipping carrier for an order item shipment.|
 |`commerce.shipping.trackingURL`|The URL to track the shipping status of an order item.|
 |`commerce.shipping.shipDate`|The date when one or more items from an order is shipped.|
-|`commerce.promotionID`|Unique identifier of the promotion, if any.|
-|`commerce.personalEmail`|A personal email address.|
-|`commerce.personalEmail.address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards.|
+|`commerce.commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
+|`commerce.commerceScope.environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
+|`commerce.commerceScope.storeCode`|The unique store code. You can have many stores per website.|
+|`commerce.commerceScope.storeViewCode`|The unique store view code. You can have many store views per store.|
+|`commerce.commerceScope.websiteCode`|The unique website code. You can have many websites in an environment.|
+|`commerce.billing.address`|Billing postal address.|
+|`commerce.billing.address.street1`|Primary street level information, apartment number, street number, and street name|
+|`commerce.billing.address.street2`|Additional field for street level information.|
+|`commerce.billing.address.city`|The name of the city.|
+|`commerce.billing.address.state`|The name of the state. This is a free-form field.|
+|`commerce.billing.address.postalCode`|The postal code of the location. Postal codes are not available for all countries. In some countries, this will only contain part of the postal code.|
+|`commerce.billing.address.country`|The name of the government-administered territory. Other than `xdm:countryCode`, this is a free-form field that can have the country name in any language.|
+|`personalEmail`|A personal email address.|
+|`personalEmail.address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards.|
 |`productListItems`|An array of products in the order.|
 |`productListItems.SKU`|Stock Keeping Unit. The unique identifier for the product.|
 |`productListItems.name`|The display name or human-readable name of the product.|
@@ -705,18 +713,6 @@ The following table describes the data collected for this event.
 |`productListItems.categories.id`|The unique identifier of the category.|
 |`productListItems.categories.name`|The name of the category.|
 |`productListItems.categories.path`|The path to the category.|
-|`commerce.commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
-|`commerce.commerceScope.environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
-|`commerce.commerceScope.storeCode`|The unique store code. You can have many stores per website.|
-|`commerce.commerceScope.storeViewCode`|The unique store view code. You can have many store views per store.|
-|`commerce.commerceScope.websiteCode`|The unique website code. You can have many websites in an environment.|
-|`commerce.billing.address`|Billing postal address.|
-|`commerce.billing.address.street1`|Primary street level information, apartment number, street number, and street name|
-|`commerce.billing.address.street2`|Additional field for street level information.|
-|`commerce.billing.address.city`|The name of the city.|
-|`commerce.billing.address.state`|The name of the state. This is a free-form field.|
-|`commerce.billing.address.postalCode`|The postal code of the location. Postal codes are not available for all countries. In some countries, this will only contain part of the postal code.|
-|`commerce.billing.address.country`|The name of the government-administered territory. Other than `xdm:countryCode`, this is a free-form field that can have the country name in any language.|
 
 ### orderCancelled
 
@@ -738,9 +734,13 @@ The following table describes the data collected for this event.
 |`commerce.shipping`|Shipping details for one or more products.|
 |`commerce.shipping.shippingMethod`|The method of shipping chosen by the customer, such as standard delivery, expedited delivery, pick up in store, and so on.|
 |`commerce.shipping.shippingAmount`|The amount the customer had to pay for shipping.|
-|`commerce.promotionID`|Unique identifier of the promotion, if any.|
-|`commerce.personalEmail`|A personal email address.|
-|`commerce.personalEmail.address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards.|
+|`commerce.commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
+|`commerce.commerceScope.environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
+|`commerce.commerceScope.storeCode`|The unique store code. You can have many stores per website.|
+|`commerce.commerceScope.storeViewCode`|The unique store view code. You can have many store views per store.|
+|`commerce.commerceScope.websiteCode`|The unique website code. You can have many websites in an environment.|
+|`personalEmail`|A personal email address.|
+|`personalEmail.address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards.|
 |`productListItems`|An array of products in the order.|
 |`productListItems.SKU`|Stock Keeping Unit. The unique identifier for the product.|
 |`productListItems.name`|The display name or human-readable name of the product.|
@@ -755,11 +755,6 @@ The following table describes the data collected for this event.
 |`productListItems.categories.id`|The unique identifier of the category.|
 |`productListItems.categories.name`|The name of the category.|
 |`productListItems.categories.path`|The path to the category.|
-|`commerce.commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
-|`commerce.commerceScope.environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
-|`commerce.commerceScope.storeCode`|The unique store code. You can have many stores per website.|
-|`commerce.commerceScope.storeViewCode`|The unique store view code. You can have many store views per store.|
-|`commerce.commerceScope.websiteCode`|The unique website code. You can have many websites in an environment.|
 
 ### orderLineItemRefunded
 
@@ -783,9 +778,8 @@ The following table describes the data collected for this event.
 |`commerce.refunds.refundAmount`|The value of the refund.|
 |`commerce.refunds.refundType`|The method of payment for this order. Enumerated, custom values allowed.|
 |`commerce.refunds.refundCurrencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used, such as `USD` or `EUR`.|
-|`commerce.promotionID`|Unique identifier of the promotion, if any.|
-|`commerce.personalEmail`|A personal email address.|
-|`commerce.personalEmail.address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards.|
+|`personalEmail`|A personal email address.|
+|`personalEmail.address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards.|
 |`productListItems`|An array of products in the order.|
 |`productListItems.SKU`|Stock Keeping Unit. The unique identifier for the product.|
 |`productListItems.name`|The display name or human-readable name of the product.|
@@ -826,8 +820,8 @@ The following table describes the data collected for this event.
 |`commerce.commerceScope.storeCode`|The unique store code. You can have many stores per website.|
 |`commerce.commerceScope.storeViewCode`|The unique store view code. You can have many store views per store.|
 |`commerce.commerceScope.websiteCode`|The unique website code. You can have many websites in an environment.|
-|`commerce.personalEmail`|A personal email address.|
-|`commerce.personalEmail.address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards.|
+|`personalEmail`|A personal email address.|
+|`personalEmail.address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards.|
 |`productListItems`|An array of products in the order.|
 |`productListItems.SKU`|Stock Keeping Unit. The unique identifier for the product.|
 |`productListItems.name`|The display name or human-readable name of the product.|
@@ -874,8 +868,8 @@ The following table describes the data collected for this event.
 |`commerce.shipping`|Shipping details for one or more products.|
 |`commerce.shipping.shippingMethod`|The method of shipping chosen by the customer, such as standard delivery, expedited delivery, pick up in store, and so on.|
 |`commerce.shipping.shippingAmount`|The amount the customer had to pay for shipping.|
-|`commerce.personalEmail`|A personal email address.|
-|`commerce.personalEmail.address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards.|
+|`personalEmail`|A personal email address.|
+|`personalEmail.address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards.|
 |`productListItems`|An array of products in the order.|
 |`productListItems.SKU`|Stock Keeping Unit. The unique identifier for the product.|
 |`productListItems.name`|The display name or human-readable name of the product.|
@@ -920,9 +914,15 @@ The following table describes the data collected for this event.
 |`commerce.shipping`|Shipping details for one or more products.|
 |`commerce.shipping.shippingMethod`|The method of shipping chosen by the customer, such as standard delivery, expedited delivery, pick up in store, and so on.|
 |`commerce.shipping.shippingAmount`|The amount the customer had to pay for shipping.|
-|`commerce.promotionID`|Unique identifier of the promotion, if any.|
-|`commerce.personalEmail`|A personal email address.|
-|`commerce.personalEmail.address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards.|
+|`commerce.billing.address`|Billing postal address.|
+|`commerce.billing.address.street1`|Primary street level information, apartment number, street number, and street name|
+|`commerce.billing.address.street2`|Additional field for street level information.|
+|`commerce.billing.address.city`|The name of the city.|
+|`commerce.billing.address.state`|The name of the state. This is a free-form field.|
+|`commerce.billing.address.postalCode`|The postal code of the location. Postal codes are not available for all countries. In some countries, this will only contain part of the postal code.|
+|`commerce.billing.address.country`|The name of the government-administered territory. Other than `xdm:countryCode`, this is a free-form field that can have the country name in any language.|
+|`personalEmail`|A personal email address.|
+|`personalEmail.address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards.|
 |`productListItems`|An array of products in the order.|
 |`productListItems.SKU`|Stock Keeping Unit. The unique identifier for the product.|
 |`productListItems.name`|The display name or human-readable name of the product.|
@@ -937,10 +937,3 @@ The following table describes the data collected for this event.
 |`productListItems.categories.id`|The unique identifier of the category.|
 |`productListItems.categories.name`|The name of the category.|
 |`productListItems.categories.path`|The path to the category.|
-|`commerce.billing.address`|Billing postal address.|
-|`commerce.billing.address.street1`|Primary street level information, apartment number, street number, and street name|
-|`commerce.billing.address.street2`|Additional field for street level information.|
-|`commerce.billing.address.city`|The name of the city.|
-|`commerce.billing.address.state`|The name of the state. This is a free-form field.|
-|`commerce.billing.address.postalCode`|The postal code of the location. Postal codes are not available for all countries. In some countries, this will only contain part of the postal code.|
-|`commerce.billing.address.country`|The name of the government-administered territory. Other than `xdm:countryCode`, this is a free-form field that can have the country name in any language.|
