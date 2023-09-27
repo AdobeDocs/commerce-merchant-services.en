@@ -74,7 +74,7 @@ Before you can create an abandoned cart email, you need to add an item to the ca
                 } 
             ```
 
-        Notice there is a `checkouts` value of `1`, which indicates that the checkout process has begun. In the next section, you will configure a checkout event in Journey Optimizer to listen for that `commerce.checkouts` event from Commerce.
+        Notice there is a `checkouts` value of `1`, which indicates that the checkout process has begun. In the next section, you will configure events in Journey Optimizer to listen for and respond to that `commerce.checkouts` event from Commerce.
 
 ### Step 3: Configure events in Journey Optimizer
 
@@ -156,19 +156,20 @@ In this section, you create an abandoned cart email that is sent when an abandon
 
 ???? ADD text that ties this section with the next.
 
-### Step 5: Trigger the checkout event
+### Step 5: Trigger the checkout event in real-time
 
-???? 
-1. You are now ready to test this journey. Enable test mode.
+You are now ready to test this journey.
 
-Next to it, you can see an icon that will be orange if you have warnings or red if you have errors. In the latter case, test option will be greyed out. You have to fix the error first. You can learn more by clicking on that icon. 
+1. In Journey Optimizer, enable test mode.
 
-1. Now let's test this journey in real-time. Open another browser tab and Go to the CitiSignal website . 
-1. Add a product to your cart  
-1. Go to checkout.
-1. From the checkout page, you can now abandon. This means you can go back to the main page or close your tab.
-1. The journey will now be triggered. You can check that by going to your browser tab where you have your journey.
+    Next to it, you can see an icon that will be orange if you have warnings or red if you have errors. In the latter case, test option will be greyed out. You have to fix the error first. You can learn more by clicking on that icon. 
 
-    You should see a green arrow showing where your user went through. 
+1. To test this journey in real-time, open another browser tab and Go to your sandbox Commerce website.
 
-1. Now check your inbox. You should have received an email.
+    1. Add a product to your cart  
+    1. Go to checkout.
+    1. From the checkout page, abandon the cart by going back to the main page or closing your tab.
+    
+        The journey will now be triggered. You can check that by going to your browser tab where you have your journey. You should see a green arrow showing where your user went through. 
+
+1. Check your inbox. You should have received an email.
