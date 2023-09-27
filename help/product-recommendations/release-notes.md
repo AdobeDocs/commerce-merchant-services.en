@@ -73,6 +73,7 @@ These notes describe updates that were published outside of a versioned release 
 
 ![New](../assets/new.svg) Added [readiness indicators](create.md) to help you visualize the training progress of each recommendation type.
 ![New](../assets/new.svg) This is a major version release. [Edit](install-configure.md#update) the root `composer.json` file for your project. This release also requires you to provide two API keys when installing and configuring Product Recommendations: [a production key and a sandbox key](../landing/saas.md).
+![New](../assets/new.svg) [!DNL Product Recommendations] now supports Multi-Source Inventory (MSI). To use MSI, you must [install](install-configure.md#update) the `commerce-data-export` 102.2.0+ module.
 
 #### Known limitations
 

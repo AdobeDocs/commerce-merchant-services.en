@@ -130,7 +130,7 @@ Using the Live Search Product Listing Page widget will cause Google Tag Manager 
     * Pin to bottom - Places the product at the bottom of the results
     * Unpin an event with one click
 ![New](../assets/new.svg) [Intelligent Ranking for rules](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-admin/rules/rules-add.html#ranking-type)
-![New](../assets/new.svg) [!DNL Live Search] now supports Multi-Source Inventory (MSI). To use MSI, you must [install](install.md#update) the `commerce-data-export` 102.2.0+ module. Check your version using the following command: `composer update magento/live-search --with-dependencies`.
+![New](../assets/new.svg) [!DNL Live Search] now supports Multi-Source Inventory (MSI). To use MSI, you must [install](install.md#update) the `commerce-data-export` 102.2.0+ module.
 
 ### Updates
 
