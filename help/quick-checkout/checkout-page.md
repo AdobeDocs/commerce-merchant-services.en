@@ -16,6 +16,11 @@ For more information on the Adobe Commerce standard checkout page, refer to the 
 
 Out-of-the-box, the checkout consists of two steps:
 
+>[!NOTE]
+>
+> If after entering an email address at the checkout page the customer is recognized as previously registered, the sign-in prompt will be displayed only if the Stores > Configuration > Sales > Checkout > Enable Guest Checkout Login field in the Admin is set to Yes. However, doing this can expose customer information to unauthenticated users.
+
+
 - Shipping Information
 - Review and Payment Information
 
