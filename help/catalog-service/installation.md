@@ -43,7 +43,7 @@ Load testing should only be performed on the Sandbox endpoint. It is recommended
 
 ## Installation and configuration
 
-To get started with Catalog Service for Adobe Commerce ,the following steps are required:
+To get started with Catalog Service for Adobe Commerce , the following steps are required:
 
 - Install the data export extensions
 - Configure the service and data export
@@ -55,7 +55,7 @@ The onboarding process for Catalog Service requires access to the command line o
 
 The Catalog Service extension can be installed on both Adobe Commerce cloud infrastructure and on-premises instances.
 
-The Catalog Service is installed with Composer keys, which are linked to the Commerce account [mageid](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-personal/#field-descriptions) provided during the signup process. Composer uses these keys during the initial installation of Adobe Commerce, or in situations in which the Composer keys were not previously saved to an external `auth.json` file.
+The Catalog Service is installed with Composer keys, which are linked to the Commerce account [mageid](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-information/) provided during the signup process. Composer uses these keys during the initial installation of Adobe Commerce, or in situations in which the Composer keys were not previously saved to an external `auth.json` file.
 
 See [Get your authentication keys](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html) for more information about obtaining Composer keys.
 
@@ -67,7 +67,7 @@ Use this method for installing the Catalog Service extension for a Commerce Clou
 
   ```json
   "require": {
-    "magento/catalog-service": "^2.2.0"
+    "magento/catalog-service": "^3.0.0"
   }
   ```
 
@@ -89,7 +89,7 @@ Use this method for installing the Catalog Service extension for an on-premises 
 
   ```json
   "require": {
-      "magento/catalog-service": "^2.2.0"
+      "magento/catalog-service": "^3.0.0"
   }
   ```
 
@@ -122,7 +122,7 @@ After the SaaS configuration is complete, perform an initial data sync by follow
 To ensure that the catalog export is running correctly:
 
 - Confirm that cron jobs are running.
-- Verify the indexers are running.
+- Verify that the indexers are running.
 - Ensure that the `Catalog Attributes Feed, Product Feed, Product Overrides Feed`, and `Product Variant Feed` indexers are set to "Update by Schedule".
 
 The initial sync could take from a few minutes to hours depending on the catalog size. After the initial sync, the Catalog exports product data from the Commerce server to Commerce services on an ongoing basis to keep the services up to date.
@@ -135,7 +135,7 @@ To obtain the api-key, go to the Commerce Service Connector area in the admin an
 
 Read the [GraphQL documentation](https://developer.adobe.com/commerce/webapi/graphql/) to understand how to query and send the headers that are needed for generating API requests. 
 
-To allow Catalog Service through a firewall, add `commerce.adobe.io` to the allow list.
+To allow Catalog Service through a firewall, add `commerce.adobe.io` to the allowlist.
 
 ## Catalog Service and API Mesh
 
