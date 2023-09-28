@@ -29,6 +29,7 @@ _October 10, 2023_
 ![Fix](../assets/fix.svg) - Fixed an issue where currency configuration changes were not reflected in the events after refreshing the cache.
 ![Fix](../assets/fix.svg) - Fixed error when order confirmation message does not appear if async order placement is enabled.
 ![New](../assets/new.svg) - Added data to [addToRequisitionList](events.md#addtorequisitionlist) event for simple products on Category view page.
+![New](../assets/new.svg) - Added support for OAuth 2.0 when you [configure](connect-data.md#connect-commerce-data-to-adobe-experience-platform) the Experience Platform connector.
 
 _June 10, 2023_
 
@@ -46,6 +47,15 @@ _October 12, 2022_
 ![New](../assets/new.svg) - Added support for an [AEM storefront](overview.md#aem-support).
 
 +++
+
+## 3.0.0
+
+_October 10, 2023_
+
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.3 and newer
+
+![New](../assets/new.svg) - General availability to [send historical order](connect-data.md#send-historical-order-data) data and status to the Experience Platform.
+![New](../assets/new.svg) - Added new order status events: [Order Invoiced](events.md#orderinvoiced), [Order Item Return Initiated](events.md#orderitemsreturninitiated), and [Order Item Return Completed](events.md#orderitemreturncompleted).
 
 ## 2.3.0
 

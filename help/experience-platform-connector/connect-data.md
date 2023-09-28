@@ -107,19 +107,15 @@ See the events topic to learn more about [storefront](events.md#storefront-event
 >
 >After onboarding, storefront data begins to flow to the Experience Platform edge. Back office data takes about five minutes to appear at the edge. Subsequent updates are visible at the edge based on the cron schedule.
 
-## (Beta) Send historical order data
+## Send historical order data
 
->[!NOTE]
->
->This feature is available for beta users only. You can join the beta by sending an email to the following address: `dataconnection@adobe.com`.
-
-Adobe Commerce collects up to five years of historical order data and status. You can use the Experience Platform connector to send that historical data to the Experience Platform to enrich your customer profiles based on those past orders. The data is stored in a dataset within Experience Platform.
+Adobe Commerce collects up to five years of [historical order data and status](events.md#back-office-events). You can use the Experience Platform connector to send that historical data to the Experience Platform to enrich your customer profiles based on those past orders. The data is stored in a dataset within Experience Platform.
 
 While Commerce already collects the historical order data, there are several tasks you must complete to send that data to Experience Platform. The following sections guide you through the process.
 
-### Install historical order beta
+### Install historical order
 
-To enable historical order data collection for beta, you must update the project's root [!DNL Composer] `.json` file as follows:
+To enable historical order data collection, you must update the project's root [!DNL Composer] `.json` file as follows:
 
 1. Open the root `composer.json` file and search for `magento/experience-platform-connector`.
 
@@ -128,7 +124,7 @@ To enable historical order data collection for beta, you must update the project
    ```json
    "require": {
       ...
-      "magento/experience-platform-connector": "^3.0.0-beta1",
+      "magento/experience-platform-connector": "^3.0.0",
       ...
     }
    ```
@@ -138,7 +134,7 @@ To enable historical order data collection for beta, you must update the project
     ```json
     "require": {
       ...
-      "magento/experience-platform-connector-b2b": "^2.0.0-beta1"
+      "magento/experience-platform-connector-b2b": "^2.0.0"
       ...
     }
     ```
@@ -155,7 +151,7 @@ To enable historical order data collection for beta, you must update the project
    composer update magento/experience-platform-connector-b2b --with-dependencies
    ```
 
-### Configure historical order beta
+### Configure historical order
 
 To ensure that your customers order history can be sent to Experience Platform, you must specify credentials that link your Commerce instance to Experience Platform. If you have already installed and enabled the [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) extension, you already specified the credentials needed and you can skip this step. If you have not already installed and enabled the Audience Activation extension, complete the following steps:
 
@@ -170,10 +166,6 @@ To ensure that your customers order history can be sent to Experience Platform, 
 1. Enter the configuration credentials found in the [developer console](https://developer.adobe.com/console/home).
 
     ![Experience Platform Connector Admin Configuration](./assets/epc-admin-config.png){width="700" zoomable="yes"}
-
-    >[!NOTE]
-    >
-    >For beta, Commerce uses JSON Web Tokens (JWT) credentials in the developer console. Post beta, Commerce will use OAuth 2.0 in the developer console.
 
 1. Click **Save Config**.
 
@@ -223,10 +215,6 @@ In this section, you specify the date range for the historical orders you want t
 1. In the **From** and **To** fields specify the data range for the historical order data you want to send. You cannot select a date range that exceeds five years.
 
 1. Select [!UICONTROL Start Sync] to trigger the sync to begin. Historical order data is batched data as opposed to storefront and back office data that is streaming data. Batched data takes about 45 minutes to arrive in Experience Platform.
-
-    >[!NOTE]
-    >
-    >For beta, if you trigger a sync multiple times on the same or overlapping time range, you see duplicate events in the dataset.
 
 ## Confirm that event data is collected
 
