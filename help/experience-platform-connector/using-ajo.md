@@ -75,7 +75,7 @@ Before you can create an abandoned cart email, you must add an item to the cart 
                     "value": 1 
                 } 
             ```
-
+            
         Notice there is a `checkouts` value of `1`, which indicates that the checkout process has begun. In the next section, you will configure events in Journey Optimizer to listen for and respond to that `commerce.checkouts` event from Commerce.
 
 ### Step 3: Configure events in Journey Optimizer
