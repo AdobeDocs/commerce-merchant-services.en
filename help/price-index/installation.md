@@ -65,7 +65,7 @@ Run the above indexers manually, as needed. Otherwise, the data gets refreshed i
 Luma and Adobe Commerce Core GraphQL users can install the `catalog-adapter` module that provides Luma and Core GraphQl compatibility and disables the PHP core price indexer.
 To use the `catalog-adapter` module, [!DNL Live Search] and [!DNL Catalog Service] must first be installed and configured. Follow the [Install [!DNL Live Search]](../live-search/install.md) and [Catalog Service Installation](../catalog-service/installation.md) instructions before continuing.
 
-To configure Live Search and Catalog Adapter, follow the [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html?lang=en) instructions.
+To configure Live Search and Catalog Adapter, follow the [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) instructions.
 
 ```bash
 composer require adobe-commerce/catalog-adapter

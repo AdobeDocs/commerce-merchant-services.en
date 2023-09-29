@@ -105,9 +105,9 @@ New feeds should be manually synced with the `resync` [CLI command](https://expe
 
 ## Custom prices
 
-The SaaS price indexer supports custom product type price features that are available in the Adobe Commerce core edition, such as special price, group price, and catalog rule price.
+The SaaS price indexer supports custom product type price features that are available in the Adobe Commerce, such as special price, group price, and catalog rule price.
 
-For example: there is a custom product type  "custom_type" and a product with SKU "Custom Type Product".
+For example: there is a custom product type  `custom_type`` and a product with the SKU "Custom Type Product".
 
 By default, the Commerce Data Export extension sends the following price feed to the price indexer:
 
