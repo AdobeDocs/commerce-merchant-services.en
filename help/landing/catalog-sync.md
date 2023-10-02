@@ -1,14 +1,15 @@
 ---
 title: Catalog Sync
-description: Learn how to export product data from the [!DNL Commerce] server to [!DNL Commerce Services] on an ongoing basis to keep the services up to date.
+description: Learn how to export product data from the [!DNL Commerce] server to [!DNL Commerce Services].
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
 feature: Catalog Management, Data Import/Export, Catalog Service
 ---
+
 # Catalog Sync
 
-Adobe Commerce and Magento Open Source use indexers to compile catalog data into tables. The process is automatically triggered by [events](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html#events-that-trigger-full-reindexing) such as a change to a product price or inventory level.
+Adobe Commerce uses indexers to compile catalog data into tables. The process is automatically triggered by [events](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html#events-that-trigger-full-reindexing) such as a change to a product price or inventory level.
 
-The Catalog Sync service moves product data from an [!DNL Adobe Commerce] instance to the [!DNL Commerce Services] platform on an ongoing basis to keep the services up to date. For example, [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) requires current catalog information to accurately return recommendations with correct names, pricing, and availability. Use the _Catalog Sync_ dashboard to observe and manage the synchronization process or the [command-line interface](#resynccmdline) to trigger a catalog sync and to reindex product data for consumption by [!DNL Commerce Services].
+The Catalog Sync service moves product data from an [!DNL Adobe Commerce] instance to the [!DNL Commerce Services] platform on an ongoing basis to keep the data up to date. For example, [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) requires current catalog information to accurately return recommendations with correct names, pricing, and availability. Use the _Catalog Sync_ dashboard to observe and manage the synchronization process or the [command-line interface](#resynccmdline) to trigger a catalog sync and to reindex product data for consumption by [!DNL Commerce Services].
 
 >[!NOTE]
 >
@@ -39,9 +40,7 @@ Reports a sync status of:
 - **Failed** - Displays the date and time that the sync was attempted
 - **In Progress** - Displays the date and time of the last successful sync
 
->[!NOTE]
->
-> The catalog sync process automatically runs every hour. However, if you are not seeing expected products on the storefront, or if the products do not reflect recent changes you made, you can resolve [catalog sync issues](#resolvesync).
+The catalog sync process automatically runs every hour. If you are not seeing expected products on the storefront, or if the products do not reflect recent changes you made, you can resolve [catalog sync issues](#resolvesync).
 
 ### Products synced
 
@@ -49,7 +48,7 @@ Displays the total number of products synced from your [!DNL Commerce] catalog. 
 
 ## Resync {#resync}
 
-If you must initiate a resync of your catalog before the hourly scheduled sync occurs, you can force a resync.
+If you need to initiate a resync of your catalog before the hourly scheduled sync occurs, you can force a resync.
 
 >[!NOTE]
 >
@@ -72,7 +71,7 @@ The **Synced catalog products** table displays the following information.
 |---|---|
 |ID | Unique identifier of the product|
 |Name | Storefront name of the product|
-|Type | Identifies the product type, such as simple, configurable, downloadable, and so on|
+|Type | Identifies the product type, such as simple, configurable, or downloadable|
 |Last Exported | Date the product was last successfully exported from your catalog|
 |Last Modified | Date the product was last modified in your catalog|
 |SKU | Displays the stock-keeping unit for the product|
@@ -81,7 +80,7 @@ The **Synced catalog products** table displays the following information.
 
 ## Resolve catalog sync issues {#resolvesync}
 
-When you trigger a data resync, it may take up to an hour for the data to update and be reflected in UI components, such as recommendation units. If you still notice discrepancies between your catalog and what appears on the storefront, or if the catalog sync failed, refer to the following:
+When you trigger a data resync, it may take up to an hour for the data to update and be reflected in UI components such as recommendation units. If you still see discrepancies between your catalog and data on the storefront, or if the catalog sync failed, refer to the following:
 
 ### Data discrepancy
 
@@ -104,7 +103,7 @@ The `saas:resync` command is part of the `magento/saas-export` package and is av
 
 >[!NOTE]
 >
-> When running a data sync for the first time, it is important to run the `productattributes` feed first, followed by `productoverrides`, before running the `products` feed.
+> When running a data sync for the first time, run the `productattributes` feed first, followed by `productoverrides`, before running the `products` feed.
 
 Command options:
 
@@ -174,11 +173,11 @@ It may be useful to see the feed payload that has been sent to the [!DNL Commerc
 EXPORTER_EXTENDED_LOG=1 bin/magento saas:resync --feed=products --no-reindex
 ```
 
-Payload is available in `var/log/saas-export.log`.
+The payload is available in `var/log/saas-export.log`.
 
 #### Preserve payload in feed index table
 
-Stating from `magento/module-data-exporter:103.0.0` some feeds  (e.g. for product feed, price feed) keep only the minimum required data in the index table.
+Stating from `magento/module-data-exporter:103.0.0` some feeds: product feed, price feeds, keep only the minimum required data in the index table.
 
 Preserving payload data in the index table is not recommended on production, but it may be useful on a developer instance. This is done by passing the `PERSIST_EXPORTED_FEED=1` environment variable:
 
@@ -188,7 +187,7 @@ PERSIST_EXPORTED_FEED=1 bin/magento saas:resync --feed=products
 
 #### Profiling
 
-If you noticed, the reindex process of specific feed takes an unreasonably amount of time, run the profiler to collect additional data that might be useful for the Support Team. To do so, pass the `EXPORTER_PROFILER=1`environment variable:
+If the reindex process of specific feed takes an unreasonably amount of time, run the profiler to collect additional data that might be useful for the Support Team. To do so, pass the `EXPORTER_PROFILER=1`environment variable:
 
 ```bash
 EXPORTER_PROFILER=1 bin/magento indexer:reindex catalog_data_exporter_products
