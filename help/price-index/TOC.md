@@ -9,5 +9,6 @@ feature: Services, Price Indexer
 # Saas Price Indexer {#price-indexer}
 
 - [Guide Overview](index.md)
+- [Catalog Adapter](catalog-adapter.md)
 - [Installation](installation.md)
 
