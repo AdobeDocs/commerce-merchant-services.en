@@ -66,7 +66,7 @@ If you have a custom product type that uses a specific formula to calculate fina
            <plugin name="custom_type_price_feed" type="YourModule\CustomProductType\Plugin\UpdatePriceFromFeed" />
        </type>
    </config>
-```
+   ```
 
 1. Create a method with the custom formula:
 
