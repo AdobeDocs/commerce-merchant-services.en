@@ -66,6 +66,14 @@ _June 28, 2021_
 
 +++
 
+## v2.2.1
+
+_September 27, 2023_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+![Fixed issue](../assets/fix.svg)<!-- Issue PAY-4870 --> Fixed an issue that incorrectly populated the new header attribute correctly in Storefront when sending the extension version with the latest release. Previously, with the `1.3.0` release of the Commerce Services connector, you could not extend the `User-Agent header` from the Payment Services extension.
+
 ## v2.2.0
 
 _August 30, 2023_

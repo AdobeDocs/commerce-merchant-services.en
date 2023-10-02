@@ -39,7 +39,7 @@ This guide does not cover the core capabilities of [!DNL Adobe Commerce] and [!D
 
 If you need information or have questions that are not covered in this guide, use the following resources available from your Home:
 
-![Help resources](assets/help-resources.png)
+![Help resources](assets/help-resources.png){width="600" zoomable="yes"}
 
 * [Help center](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html)---Search for [!DNL Payment Services]-related troubleshooting articles in the knowledgebase.
 * [Support tickets](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket)---Submit a ticket to receive additional help.

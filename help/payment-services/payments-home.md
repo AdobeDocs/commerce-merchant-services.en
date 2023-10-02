@@ -12,7 +12,7 @@ feature: Payments, Checkout
 
 1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**:
 
-   ![Home view](assets/home-view.png)
+   ![Home view](assets/home-view.png){width="700" zoomable="yes"}
 
 1. In this Home view, you can access _Home_ view, _Learn_ about [!DNL Payment Services], configure the extension _Settings_, or get _Help_.
 

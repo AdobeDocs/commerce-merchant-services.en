@@ -29,7 +29,7 @@ The Payouts data visualization view is available in the Payment Services Home. I
 
 On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** to see the data visualization chart of credits vs. debits and the moving averages over time.
 
-![Payout data visualization in the Admin](assets/payouts-report.png){zoomable=yes}
+![Payout data visualization in the Admin](assets/payouts-report.png){width="800" zoomable="yes"}
 
 Click **[!UICONTROL View Report]** to navigate to the detailed tabular [Payouts report view](#payouts-report-view).
 
@@ -65,7 +65,7 @@ The Payouts report view is available in the Payouts view of Payment Services. It
 
 On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_ > **[!UICONTROL View Report]** to see the detailed tabular Payouts report view.
 
-![Payout transactions in the Admin](assets/payouts-report-new.png){zoomable=yes}
+![Payout transactions in the Admin](assets/payouts-report-new.png){width="800" zoomable="yes"}
 
 You can configure this view, per the sections in this topic, to best present the data you desire to see.
 
@@ -81,7 +81,7 @@ You can [download payout transactions](#download-transactions) in a .csv file fo
 
 In the Payouts report view, you can select the data source---**[!UICONTROL Live]** or **[!UICONTROL Sandbox]**---for which you want to see report results.
 
-![Data sources selection](assets/datasource.png){width=400px}
+![Data sources selection](assets/datasource.png){width="300" zoomable="yes"}
 
 If _[!UICONTROL Live]_ is the selected data source, you can see report information for stores in production mode. If _[!UICONTROL Sandbox]_ is the selected data source, you can see report information stores in sandbox mode.
 
@@ -120,7 +120,7 @@ From the Payouts report view, you can customize the timeframe for the payout tra
 The Payouts report view shows most available columns of information by default. You can, however, customize which columns you see in the report.
 
 1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Payouts]_ > **[!UICONTROL View Report]**.
-1. Click the _Column settings_ icon (![column settings icon](assets/column-settings.png)).
+1. Click the _Column settings_ icon (![column settings icon](assets/column-settings.png){width="20" zoomable="yes"}).
 1. To customize which columns you see in the report, check or uncheck columns in the list.
 
    The Payouts report view will immediately show any changes you made in the Column settings menu. The column preferences will be saved and will remain in effect if you navigate away from the report view.
@@ -131,7 +131,7 @@ You can download a .csv file containing all the transactions visible in the Payo
 
 1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_ > **[!UICONTROL View Report]**.
 1. [Customize the date range timeframe for your transactions](#customize-transactions-timeframe).
-1. Click the _Download_ (![](assets/icon-download.png)) icon.
+1. Click the _Download_ (![](assets/icon-download.png){width="20" zoomable="yes"}) icon.
 
 Your payout transactions are downloaded in a .csv format.
 

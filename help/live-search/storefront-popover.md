@@ -43,10 +43,13 @@ The [Catalog Service for Adobe Commerce](../catalog-service/overview.md) extensi
 
  Merchants may customize and extend widgets or storefront elements by using Catalog Service, but this is out of scope for Adobe's support team.
 
+## Headless implementations
+
+For those with headless implementations, it is possible to install the Live Search popover with an [npm package](https://www.npmjs.com/package/@magento/ds-livesearch-storefront-utils).
+
 ## Limitations
 
-* The [!DNL Live Search] [!DNL storefront popover] is available only for stores that use the *Luma* theme, or a customized theme that is based on *Luma*. Breadcrumbs on the search results page will not have *Lume* styling.
+* The [!DNL Live Search] [!DNL storefront popover] is available only for stores that use the *Luma* theme, or a customized theme that is based on *Luma*. Breadcrumbs on the search results page will not have *Luma* styling.
 * The [!DNL popover] does not support the *Blank* theme. See [Styling [!DNL Popover] Elements](storefront-popover-styling.md) to learn more.
 * The [!DNL popover] is not supported on the Quick Order form.
 * Wishlists and product comparisons are not supported.
-* Only the base currency is supported.

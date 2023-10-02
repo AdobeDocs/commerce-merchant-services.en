@@ -9,9 +9,11 @@ description: Learn about the Feed Ingestion Service for Adobe Commerce
 >
 >The Feed Ingestion Service is currently in private beta. It is not yet available for general use.
 
+The Feed Ingestion Service allows customers with large and/or complex catalogs to send data to Adobe Commerce services directly.
+
 The Feed Ingestion Service decreases the time it takes to process product changes (price updates, adding new attributes) by bypassing the Adobe Commerce instance and moving catalog data from a third-party Enterprise Resource Planning (ERP) directly to Adobe Commerce services.
 
-This service is for customers that store and manage their product catalog in a system external to the core Adobe Commerce application.
+This service is for customers that store and manage their product catalog in a system external to the core Adobe Commerce application. It is provided as an API, so that customers can integrate it into their existing systems, providing added flexibility in how it is deployed.
 
 Customers with large, complex catalogs, or catalogs that get frequent updates are concerned that the new data could take longer than desired to appear in the live store. Since the Catalog Service knows what data it needs to process these updates, there is no need to send the data through the core Commerce product, only to be forwarded to Catalog Service. Removing this intermediate step is where efficiency gains are found.
 

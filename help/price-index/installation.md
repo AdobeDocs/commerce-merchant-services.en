@@ -1,14 +1,15 @@
 ---
-title: SaaS Price Indexing Installation
-description: Installing SaaS Price Indexing
+title: SaaS Price Indexing Manual Installation
+description: Installing SaaS Price Indexing for older version
 seo-title: SaaS Price Indexing installation
 seo-description: Installing SaaS Price indexing
 exl-id: a607e852-aa04-4be3-9576-a6bf45f8751f
 role: Admin, Developer
 ---
-# SaaS Price Indexing Installation
+# SaaS Price Indexing Manual Installation
 
-Setting up SaaS price indexing requires installing new modules and running CLI commands. Admins need command-line access to complete this installation.
+SaaS Price Indexing is available out of the box for supported [latest version](index.md#Requirements) of Commerce Services.
+If you don't have the latest version and want to enable SaaS Price Indexing for your Adobe Commerce instance, please use this mini-guide.
 
 ## Prerequisites
 
@@ -62,17 +63,12 @@ After upgrading, three new feeds are available:
 
 Run the above indexers manually, as needed. Otherwise, the data gets refreshed in the standard sync process. Read more about the [Catalog Sync](../landing/catalog-sync.md) service.
 
-Luma and Adobe Commerce Core GraphQL users can install the `catalog-adapter` module that provides Luma and Core GraphQl compatibility and disables the PHP core price indexer.
-To use the `catalog-adapter` module, [!DNL Live Search] and [!DNL Catalog Service] must first be installed and configured. Follow the [Install [!DNL Live Search]](../live-search/install.md) and [Catalog Service Installation](../catalog-service/installation.md) instructions before continuing.
 
 To configure Live Search and Catalog Adapter, follow the [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) instructions.
 
-```bash
-composer require adobe-commerce/catalog-adapter
-```
+## Caveats
 
-If needed, the PHP core price indexer can be reenabled with the following command:
+Before `103.0.0` version, SaaS price indexing supported Simple, Grouped, Virtual, Configurable, and Bundle Dynamic product types.
+Support for Downloadable, Gift Cards, and Bundle Fixed product types is available starting from `magento/module-saas-price:103.0.0` version and available out of the box for supported Commerce Services.
 
-```bash
-bin/magento module:disable Magento_PriceIndexerDisabler
-```
+New feeds should be manually synced with the `resync` [CLI command](../landing/catalog-sync.md#resynccmdline). Otherwise, the data gets refreshed in the standard sync process. Get more information about the [Catalog Sync](../landing/catalog-sync.md) process.

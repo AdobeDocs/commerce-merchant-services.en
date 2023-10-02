@@ -14,11 +14,11 @@ If an error occurs during checkout, [!DNL Payment Services] automatically voids/
 
 An error message displays on the checkout page for the shopper. The message may vary.
 
-![Error while checking](assets/user-checkout-error.png "Error while checking out")
+![Error while checking](assets/user-checkout-error.png "Error while checking out"){width="600" zoomable="yes"}
 
 A comment regarding the canceled order also displays in the Admin for a specific [order](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/orders.html?lang=en).
 
-![Canceled order comment in Admin for order](assets/admin-checkout-error.png "Canceled order comment in Admin for order")
+![Canceled order comment in Admin for order](assets/admin-checkout-error.png "Canceled order comment in Admin for order"){width="600" zoomable="yes"}
 
 If a shopper gets authorization for an order, but the order was not created and converted into a `Capture`, the order is auto-voided. This process ensures no credit is reserved on the shopper's credit card and avoids the payment provider fee that occurs when the authorization is voided at the end of the standard 29 day period.
 

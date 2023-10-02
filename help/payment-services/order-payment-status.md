@@ -29,7 +29,7 @@ The Order payment status data visualization view is available in the Payment Ser
 
 On the _Admin_ sidebar, go to **Sales** > **Payment Services** > _Orders_ to see the data visualization [chart of payment statuses](#statuses-information).
 
-![Payout data visualization in the Admin](assets/orderpayment-dataviz.png){zoomable=yes}
+![Payout data visualization in the Admin](assets/orderpayment-dataviz.png){width="800" zoomable="yes"}
 
 Click **[!UICONTROL View Report]** to navigate to the detailed tabular [Order payment status report view](#order-payment-status-report-view).
 
@@ -67,7 +67,7 @@ The Order payment status report view is available in the Home view of Payment Se
 
 On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Orders]_ > **[!UICONTROL View Report]** to see the detailed tabular Order payment status report view.
 
-![Order payment status transactions in the Admin](assets/orders-report-data.png)
+![Order payment status transactions in the Admin](assets/orders-report-data.png){width="800" zoomable="yes"}
 
 You can configure this view, per the sections in this topic, to best present the data you desire to see.
 
@@ -109,7 +109,7 @@ To learn how to configure the data export, see [Command-line configuration](conf
 
 In the Order payment status report view, you can select the data source---**[!UICONTROL Live]** _ or **[!UICONTROL Sandbox]**---for which you want to see report results.
 
-![Data sources selection](assets/datasource.png){width=400px}
+![Data sources selection](assets/datasource.png){width="300" zoomable="yes"}
 
 If _[!UICONTROL Live]_ is the selected data source, you can see report information for your stores that use [!DNL Payment Services] in production mode. If _[!UICONTROL Sandbox]_ is the selected data source, you can see report information for sandbox mode.
 
@@ -150,7 +150,7 @@ From the Order payment status report view, you can filter the statuses results y
 The Order Payment Status report shows all available columns of information by default. You can, however, customize which columns you see in your report.
 
 1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_ > **[!UICONTROL View Report]**.
-1. Click the _Column settings_ icon (![column settings icon](assets/column-settings.png)).
+1. Click the _Column settings_ icon (![column settings icon](assets/column-settings.png){width="20" zoomable="yes"}).
 1. To customize which columns you see in the report, check or uncheck columns in the list.
 
    The Order payment status report will immediately show any changes you made in the Column settings menu. The column preferences will be saved and will remain in effect if you navigate away from the report view.
@@ -180,7 +180,7 @@ The Order payment status report view shows a _[!UICONTROL Last updated]_ timesta
 You can also manually force a refresh of the Order payment status report data to see the most up-to-date report information.
 
 1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_ > **[!UICONTROL View Report]**.
-1. Click the _Refresh_ icon (![refresh icon](assets/refresh-button-med.png)).
+1. Click the _Refresh_ icon (![refresh icon](assets/refresh-button-med.png){width="20" zoomable="yes"}).
 
    The Order payment status report data is refreshed, an *[!UICONTROL Update complete]* confirmation appears, and the latest information is present in the grid.
 
@@ -202,7 +202,7 @@ You can download a .csv file with all statuses visible in the Order payment stat
 
 1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_ > **[!UICONTROL View Report]**.
 1. If you want to see statuses for a timeframe other than the last 30 days, [customize the date range timeframe for your statuses](#customize-dates-timeframe).
-1. Click the _Download_ (![download icon](assets/icon-download.png)) icon.
+1. Click the _Download_ (![download icon](assets/icon-download.png){width="20" zoomable="yes"}) icon.
 
 Your order payment statuses are downloaded in a .csv format.
 
