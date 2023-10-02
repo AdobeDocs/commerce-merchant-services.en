@@ -28,8 +28,12 @@ _October 10, 2023_
 
 ![Fix](../assets/fix.svg) - Fixed an issue where currency configuration changes were not reflected in the events after refreshing the cache.
 ![Fix](../assets/fix.svg) - Fixed error when order confirmation message does not appear if async order placement is enabled.
-![New](../assets/new.svg) - Added data to [addToRequisitionList](events.md#addtorequisitionlist) event for simple products on Category view page.
+![New](../assets/new.svg) - Added data to [addToRequisitionList](events.md#addtorequisitionlist) event for simple products on the Category view page.
 ![New](../assets/new.svg) - Added support for OAuth 2.0 when you [configure](connect-data.md#connect-commerce-data-to-adobe-experience-platform) the Experience Platform connector.
+![Fix](../assets/fix.svg) - Fixed an issue to `selectedOptions` data to [addToRequisitionList](events.md#addtorequisitionlist) event when products are added from order view page.
+![New](../assets/new.svg) - Added product data to [addToRequisitionList](events.md#addtorequisitionlist) event when products are added to the requisition list from the Category view page.
+![New](../assets/new.svg) - Added [addToRequisitionList](events.md#addtorequisitionlist) event when configurable products are added to the requisition list from the Product view page.
+![New](../assets/new.svg) - Added [addToRequisitionList](events.md#addtorequisitionlist) and [removeFromRequisitionList](events.md#removefromrequisitionlist) events when product quantity is increased and/or decreased from a requisition list.
 
 _June 10, 2023_
 
