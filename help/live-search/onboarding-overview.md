@@ -58,11 +58,19 @@ To restrict customer groups using Catalog permissions:
 
 * [!DNL Live Search] can manage up to 200 synonyms per store view.
 
+## Category Merchandising
+
+Category Merchandising allows you to configure [!DNL Live Search] to work on the product category level.
+
+This video is an introduction to Category Merchandising.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3424617)
+
 ## Price indexer
 
 Live Search customers can use the new [SaaS price indexer](../price-index/index.md), which provides faster price change updates and synchronization time.
 
-### PWA support
+## PWA support
 
 [!DNL Live Search] works with PWA Studio but users may see slight differences compared to other Commerce implementations. Basic functionality such as search and product listing page work in Venia but some permutations of Graphql may not work correctly. There may also be performance differences.
 
@@ -90,7 +98,7 @@ To use [!DNL Live Search] with PWA Studio, integrators must also:
         };
     ```
 
-### Not currently supported
+## Not currently supported
 
 * The [Advanced Search](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#advanced-search) module is disabled when [!DNL Live Search] is installed, and the Advanced Search link in the storefront footer is removed.
 * Product prices do not include [value added tax](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/vat.html) (VAT).
