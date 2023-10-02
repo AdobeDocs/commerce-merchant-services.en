@@ -14,7 +14,7 @@ If you don't have the latest version and want to enable SaaS Price Indexing for 
 ## Prerequisites
 
 * Adobe Commerce 2.4.4+
-* At least one of the following SaaS services installed:
+* At least one of the following SaaS services is installed:
 
     * [Catalog Service](../catalog-service/overview.md)
     * [Live Search](../live-search/guide-overview.md)
@@ -23,15 +23,15 @@ If you don't have the latest version and want to enable SaaS Price Indexing for 
 ## Install required modules
 
 Depending on your setup, the installation process might be slightly different.
-There are extensions that add the new feeds and supporting code and there is an extension that removes the default prices feed.
+There are extensions that add the new feeds and the supporting code.
 
 1. Add the following modules to your `composer.json` file:
 
     ```json
-    "magento/module-saas-price": "^102.2.0",
-    "magento/module-saas-scopes": ^"102.2.0",
-    "magento/module-product-override-price-remover": "^102.2.0",
-    "magento/module-bundle-product-override-data-exporter": "^102.2.0",
+    "magento/module-saas-price": "^103.0",
+    "magento/module-saas-scopes": "^103.0",
+    "magento/module-bundle-product-override-data-exporter": "^103.0",
+    "magento/module-gift-card-product-data-exporter": "^103.0",
     ```
 
 1. Run the upgrade command:
@@ -64,7 +64,7 @@ After upgrading, three new feeds are available:
 Run the above indexers manually, as needed. Otherwise, the data gets refreshed in the standard sync process. Read more about the [Catalog Sync](../landing/catalog-sync.md) service.
 
 
-Luma and Adobe Commerce Core GraphQL users can install the [`Catalog Adapter`](catalog-adapter.md) extension that provides Luma and Core GraphQl compatibility and disables the Adobe Commerce Product Price indexer.
+To configure Live Search and Catalog Adapter, follow the [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) instructions.
 
 ## Caveats
 

@@ -45,10 +45,13 @@ Luma and Adobe Commerce Core GraphQL users can install the [`catalog-adapter`](c
 
 After upgrading your Adobe Commerce instance with SaaS price indexing support, sync the new feeds: 
 
-```bash
-bin/magento saas:resync --feed=scopesCustomerGroup
-bin/magento saas:resync --feed=scopesWebsite
-bin/magento saas:resync --feed=prices
+```
+magento/module-saas-price
+magento/module-saas-scopes
+magento/module-product-override-price-remover
+magento/module-bundle-product-override-data-exporter
+magento/module-bundle-product-override-data-exporter
+magento/module-gift-card-product-data-exporter
 ```
 
 ## Prices for custom product types
@@ -57,7 +60,7 @@ Price calculations are supported for custom product types such as base price, sp
 
 If you have a custom product type that uses a specific formula to calculate final price, you can extend the behaviour of the product price feed.
 
-1. Create a plugin on the `Magento\ProductPriceDataExporter\Model\Provider\ProductPrice` class.
+## Usage
 
    ```xml
    <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -68,22 +71,98 @@ If you have a custom product type that uses a specific formula to calculate fina
    </config>
    ```
 
+New feeds should be manually synced with the `resync` [CLI command](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html#resynccmdline). Otherwise, the data gets refreshed in the standard sync process. Get more information about the [Catalog Sync](../landing/catalog-sync.md) process.
+
+## Usage scenarios
+
+### Luma with no extension dependencies
+
+* A Luma or Adobe Commerce Core GraphQL merchant who has a required service installed (Live Search, Product Recommendations, Catalog Service)
+* No third-party extensions relying on the PHP core price indexer
+* Selling simple, configurable, grouped, virtual, and bundle dynamic products
+
+1. Enable new feeds.
+1. Install the catalog adapter.
+
+### Luma and Adobe Commerce Core GraphQl with PHP core price indexer dependencies
+
+* A Luma or Adobe Commerce Core GraphQL merchant who has a supported service installed (Live Search, Product Recommendations, Catalog Service)
+* With a third-party extension relying on the PHP core price indexer
+* Selling simple, configurable, grouped, virtual, and bundle dynamic products
+
+1. Enable the new feeds
+1. Install the catalog adapter.
+1. Re-enable the PHP core price indexer. 
+1. Use new feeds and the Luma compatibility code in the `catalog-adapter` module.
+
+### Headless merchant
+
+* A headless merchant who has a supported service installed (Live Search, Product Recommendations, Catalog Service)
+* No reliance on PHP core price indexer
+* Selling simple, configurable, grouped, virtual, and bundle dynamic products
+
+1. Enable new feeds
+1. Install the catalog adapter, which disables the PHP core price indexer.
+
+## Custom prices
+
+The SaaS price indexer supports custom product type price features that are available in the Adobe Commerce, such as special price, group price, and catalog rule price.
+
+For example: there is a custom product type  `custom_type` and a product with the SKU "Custom Type Product".
+
+By default, the Commerce Data Export extension sends the following price feed to the price indexer:
+
+```json
+{
+    "sku": "Custom Type Product",
+    "type": "SIMPLE", // must be "SIMPLE" regardless of the real product type
+    "customerGroupCode": "0",
+    "websiteCode": "base",
+    "regular": 123, // the regular base price found in catalog_product_entity_decimal table
+    "discounts":    // list of discounts: special_price, group, catalog_rule
+    [
+        {
+            "code": "catalog_rule",
+            "price": 102.09
+        }
+    ],
+    "deleted": false,
+    "updatedAt": "2023-07-31T13:07:54+00:00"
+}
+```
+
+If "Custom Product Type" uses a unique formula to calculate product price, system integrators can override the price and discount fields by extending the Commerce Data Export extension. 
+
+1. Create a plugin on the `Magento\ProductPriceDataExporter\Model\Provider\ProductPrice` class.
+
+`di.xml` file:
+
+```xml
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\ProductPriceDataExporter\Model\Provider\ProductPrice">
+        <plugin name="custom_type_price_feed" type="YourModule\CustomProductType\Plugin\UpdatePriceFromFeed" disabled="false" />
+    </type>
+</config>
+```
+
 1. Create a method with the custom formula:
 
-   ```php
-   class UpdatePriceFromFeed
-   {
-       /**
-       * @param ProductPrice $subject
-       * @param array $result
-       * @param array $values
-       *
-       * @return array
-       */
-       public function afterGet(ProductPrice $subject, array $result, array $values) : array
-       {
-           // Override the output $result with your data for the corresponding products (see original method for details) 
-           return $result;
-       }
-   }
-   ```
+```php
+class UpdatePriceFromFeed
+{
+    /**
+    * @param ProductPrice $subject
+    * @param array $result
+    * @param array $values
+    *
+    * @return array
+    */
+    public function afterGet(ProductPrice $subject, array $result, array $values) : array
+    {
+        // Get all custom products, prices and discounts per website and customer groups
+        // Override the output $result with your data for the corresponding products
+        return $result;
+    }
+}
+```
