@@ -4,8 +4,8 @@ description: Enable automated fraud protection for [!DNL Payment Services] with 
 role: Admin, User
 level: Intermediate
 feature: Payments, Checkout, Configuration, Security
+exl-id: 440296bb-a6ff-408b-8195-3027916e4f84
 ---
-
 # Signifyd fraud protection
 
 You can enable automated fraud protection for [!DNL Payment Services] with the [Signifyd extension](https://commercemarketplace.adobe.com/signifyd-module-connect.html).

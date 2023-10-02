@@ -1,9 +1,9 @@
 ---
-title: "Category Merchandising"
-description: "Use [!DNL Live Search] Category Merchandising for a faster shopping experience."
+title: Category Merchandising
+description: Use [!DNL Live Search] Category Merchandising for a faster shopping experience.
 gourl: ls_catalog_merchandising
+exl-id: 24f159c1-b175-47c1-aca1-8bada118b4b4
 ---
-
 # Category Merchandising
 
 Category Merchandising allows store owners to apply [!DNL Live Search] Intelligent ranking [rules](rules.md) to product categories and subcategories.

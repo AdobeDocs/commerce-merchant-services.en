@@ -3,6 +3,7 @@ title: Transactions Report
 description: Use the Transactions report to get visibility into transaction authorization rates and transaction trends.
 role: User
 level: Intermediate
+exl-id: dd1d80f9-5983-4181-91aa-971522eb56fa
 ---
 # Transactions Report
 
@@ -141,4 +142,3 @@ The _Response Code_ column shows a specific error or success code related to the
 * `5650`---Transaction was declined by the associated bank because the bank requires strong customer authentication ([3DS](security.md#3ds)).
 
 Detailed error response codes for failed transactions are available for transactions newer than June 1, 2023. Partial report data will appear for transactions that occurred before June 1, 2023.
-

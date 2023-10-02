@@ -1,8 +1,8 @@
 ---
 title: Feed Ingestion Service
 description: Learn about the Feed Ingestion Service for Adobe Commerce
+exl-id: bb5aec74-faca-42ec-9fdb-3261677d451e
 ---
-
 # Feed Ingestion Service
 
 >[!NOTE]

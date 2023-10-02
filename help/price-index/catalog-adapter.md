@@ -3,8 +3,8 @@ title: Catalog Adapter Extension
 description: Using Catalog Adapter to render prices from Commerce Services
 seo-title: Catalog Adapter Extension
 seo-description: Using Catalog Adapter to render prices from Commerce Services
+exl-id: 2c9120eb-aa51-48e9-b6a4-fffe25fc31f2
 ---
-
 # Catalog Adapter
 
 The `Catalog Adapter` extension disables the default Adobe Commerce Product Price indexer and instead uses prices provided from the [Catalog Service](../catalog-service/overview.md).

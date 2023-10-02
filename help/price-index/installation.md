@@ -3,7 +3,7 @@ title: SaaS Price Indexing Manual Installation
 description: Installing SaaS Price Indexing for older version
 seo-title: SaaS Price Indexing installation
 seo-description: Installing SaaS Price indexing
-exl-id: a607e852-aa04-4be3-9576-a6bf45f8751f
+exl-id: 4577111a-64a4-4e20-b970-3abfa6758247
 role: Admin, Developer
 ---
 # SaaS Price Indexing Manual Installation
