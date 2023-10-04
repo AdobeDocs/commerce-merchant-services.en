@@ -41,6 +41,8 @@ These notes describe updates that were published outside of a versioned release 
 
 ### 5.0.1 of magento/product-recommendations
 
+ _September 15, 2023_
+
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
 ![New](../assets/new.svg) Added new modules to support the [Saas Price Indexer](../price-index/index.md).
@@ -55,6 +57,8 @@ These notes describe updates that were published outside of a versioned release 
 +++5.0.0 and prior
 
 ### 5.0.0 of magento/product-recommendations
+
+_March 20,2023_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
