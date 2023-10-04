@@ -5,11 +5,9 @@ exl-id: a0b63116-4b8f-490c-a54e-e21f1b02b634
 ---
 # Settings
 
-Use the *Settings* tab to configure the price facet ranges and intervals and the default language for the index. 
+Use the *Settings* tab to configure the price facet ranges and intervals. 
 
 Price faceting specifies the number of price range groups and how price values are distributed among them.
-
-Language settings tell the [!DNL Live Search] service which language to expect when writing the index.
 
 ![Settings](assets/settings.png)
 
