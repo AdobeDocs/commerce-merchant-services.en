@@ -17,7 +17,6 @@ The Experience Platform connector extension is available from the [Adobe Marketp
 >
 >![B2B for Adobe Commerce](../assets/b2b.svg) For B2B merchants, there is a separate extension you must install. This extension adds support for B2B specific events. [Learn more](#install-the-b2b-extension).
 
-
 1. To download the `experience-platform-connector` package, run the following from the command line:
 
    ```bash
@@ -26,12 +25,45 @@ The Experience Platform connector extension is available from the [Adobe Marketp
 
    This metapackage contains the following modules and extensions:
 
-   * `module-experience-connector-admin` - Updates the Admin UI so you can select the Datastream ID for a specific Adobe Commerce instance
-   * `module-experience-connector` - Sets the `Organization ID` and `datastreamId` in the Storefront Events SDK
+   * `module-experience-connector-admin` - Updates the Admin UI so you can select the Datastream ID for a specific Adobe Commerce instance.
+   * `module-experience-connector` - Sets the `Organization ID` and `datastreamId` in the Storefront Events SDK.
    * `data-services` - Provides attribute context for storefront events. For example, when a checkout event occurs, information about how many items were in the cart and product attribute data for those items are included.
-   * `services-id` - Connects your Adobe Commerce instance to [Adobe Commerce SaaS](../landing/saas.md) using sandbox and production API keys and to the Adobe Experience Platform to retrieve the IMS Organization ID
+   * `services-id` - Connects your Adobe Commerce i.nstance to [Adobe Commerce SaaS](../landing/saas.md) using sandbox and production API keys and to the Adobe Experience Platform to retrieve the IMS Organization ID
+   * `orders-connector` - Connects the order status service to your Adobe Commerce instance.
 
-1. (Optional) To include [!DNL Live Search] data, which comprises search events, install the [[!DNL Live Search]](../live-search/install.md) extension.
+1. (Optional) To include [!DNL Live Search] data, which comprises [search events](events.md#search-events), install the [[!DNL Live Search]](../live-search/install.md) extension.
+
+### Configure the orders connector
+
+After you install the `experience-platform-connector`, you need to finalize installation of the `orders-connector` module based on the deployment type: on-premises or Adobe Commerce on Cloud infrastructure.
+
+#### On-premises
+
+In on-premises environments, you need to manually enable code generation and Adobe Commerce Events:
+
+   ```bash
+   bin/magento events:generate:module
+   bin/magento module:enable Magento_AdobeCommerceEvents
+   bin/magento setup:upgrade
+   bin/magento setup:di:compile
+   bin/magento config:set adobe_io_events/eventing/enabled 1
+   ```
+
+#### On cloud
+
+In Adobe Commerce on Cloud infrastructure, enable the `ENABLE_EVENTING` global variable in `.magento.env.yaml`. [Learn more](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-global.html#enable_eventing).
+
+   ```bash
+   stage:
+      global:
+         ENABLE_EVENTING: true
+   ```
+
+Commit and push updated files to the Cloud environment. When deployment is finished, enable sending events with the following command:
+
+   ```bash
+   bin/magento config:set adobe_io_events/eventing/enabled 1
+   ```
 
 ### Install the B2B extension
 
