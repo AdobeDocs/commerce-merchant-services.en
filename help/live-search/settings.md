@@ -31,12 +31,3 @@ You can specify the number of price range groups and how price values are distri
 |--- |--- |
 | Number of selections | Specifies the number of price range groupings that can be used as search filters in the storefront. Default value: 8, Maximum value: 50 |
 | Interval value | Specifies the price range interval for each group. For example, five selections with an interval value of 20 creates five groupings of 0-20, 20-40, 40-60, 60-80, and >80. Default value: 5, Maximum value: 10,000 |
-
-<!-- ## Language
-
-The Language setting tells [!DNL Live Search] which language to expect when reading the catalog and writing the index. 
-
-Languages have different sets of rules for grammar: how words are separated, verb tenses and synonyms, for example.
-The Language setting ensures that the correct set of rules are applied to the indexing mechanism.
-
-The Language settings should be set to the primary language of the catalog. -->
