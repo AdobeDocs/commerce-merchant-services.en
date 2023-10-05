@@ -6,17 +6,17 @@ feature: Personalization, Integration
 ---
 # Use Adobe Journey Optimizer to Send an Abandoned Cart Email
 
-[Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/get-started.html) helps you personalize the commerce experience for your shoppers. For example, you can use Journey Optimizer to create and deliver scheduled marketing campaigns, such as weekly promotions for a retail store; or, you can generate an abandoned cart email if a customer added a product to a cart but then did not complete the checkout process.
+[Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/get-started.html) helps you personalize the commerce experience for your shoppers. For example, you can use Journey Optimizer to create and deliver scheduled marketing campaigns, such as weekly promotions for a retail store, or generate an abandoned cart email if a customer added a product to a cart but then did not complete the checkout process.
 
-In this tutorial, you will learn how to listen to a `checkout` event generated from your Commerce instance and respond to that event in Journey Optimizer to build an abandoned cart email.
+By following these steps, you will learn how to listen to a `checkout` event generated from your Commerce instance and respond to that event in Journey Optimizer to build an abandoned cart email.
 
 >[!IMPORTANT]
 >
->For demonstration purposes, make sure you are using your Commerce sandbox environment as you go through this tutorial. This ensures that the storefront and back office event data you send to Experience Platform does not dilute your production event data.
+>For demonstration purposes, make sure you are using your Commerce sandbox environment. This ensures that the storefront and back office event data you send to Experience Platform does not dilute your production event data.
 
 ## Prerequisites
 
-Before you begin working on this tutorial, you must ensure the following:
+Before you begin with these steps, you must ensure the following:
 
 - You are provisioned to use Adobe Journey Optimizer
 - You have [configured](connect-data.md) the Experience Platform Connector
@@ -24,7 +24,7 @@ Before you begin working on this tutorial, you must ensure the following:
 
 ### Step 1: Create a user in your Commerce sandbox environment
 
-Create a user in your sandbox environment and confirm that user account information appears in Experience Platform. Make sure the email you specified is valid as that is used later in this tutorial to send the abandoned cart email.
+Create a user in your sandbox environment and confirm that user account information appears in Experience Platform. Ensure the email you specified is valid as that is used later in this tutorial to send the abandoned cart email.
 
 1. Sign in or create an account in your Commerce sandbox environment.
 
@@ -34,7 +34,7 @@ Create a user in your sandbox environment and confirm that user account informat
 
 1. Confirm that your user account information appears in the **Profile** section of Experience Platform.
 
-    Go to **Profiles** in the Adobe Experience Platform. Click **Detail** in the profile. You now see the profile that you created.
+    Go to **Profiles** in the Adobe Experience Platform. Click **Detail** in the profile to see the profile you created.
 
     ![Confirm profile](assets/check-event-profile.png){width="700" zoomable="yes"}
 
@@ -44,7 +44,7 @@ Before you can create an abandoned cart email, you must add an item to the cart 
 
 1. Open your Commerce sandbox environment.
 1. Add a product to the cart.
-1. Click the [!UICONTROL Checkout] button.
+1. Click **[!UICONTROL Checkout]**.
 
     This action triggers the `commerce.checkouts` event. However, because you did not complete the checkout, your cart is abandoned.
 
@@ -101,7 +101,7 @@ In this section, you configure two events in Journey Optimizer: one event listen
     1. Set **Event id type** to **Rule based**.
     1. Set **Schema** to your Commerce [schema](update-xdm.md).
     1. Select **Fields** and in the **Fields** page that appears, select the fields that are useful for this event. For example, select all fields under the **Product list items**, **Commerce**, **eventType**, and **Web**.
-    1. Click the **[!UICONTROL OK]** button to save the selected fields.
+    1. Click **[!UICONTROL OK]** to save the selected fields.
     1. Click into the **Event id condition** field and create a condition of `eventType` is equal to `commerce.checkouts` AND `personalEmail.address` is equal to the email address you used when you created the profile in the previous section.
 
         ![Journey Optimizer Set Condition](assets/ajo-set-condition.png){width="700" zoomable="yes"}
@@ -125,7 +125,7 @@ With these two events configured, you can now create a journey that sends an aba
 
 ### Step 4: Build a checkout journey
 
-In this section, you will create a journey that listens for the `commerce.checkouts` event then sends an abandoned cart email after a specified amount of time has passed.
+Create a journey that listens for the `commerce.checkouts` event and then sends an abandoned cart email after a specified amount of time has passed.
 
 1. In Journey Optimizer, select **Journeys** under **JOURNEY MANAGEMENT**.
 1. Click **[!UICONTROL Create Journey]**.
@@ -152,7 +152,7 @@ In this section, you will create a journey that listens for the `commerce.checko
 
 #### Create an abandoned cart email
 
-In this section, you create an abandoned cart email that is sent when an abandoned cart is detected.
+Create an abandoned cart email that is sent when an abandoned cart is detected.
 
 1. In the journey you created above, double-click the **Email** icon on the canvas.
 
@@ -164,13 +164,13 @@ You now have a journey in Journey Optimizer that listens for the `commerce.check
 
 In this section, you test the event in real time.
 
-1. In Journey Optimizer, enable test mode.
+1. In Journey Optimizer, toggle on Test mode.
 
     ![Enable test mode](assets/ajo-enable-test.png){width="700" zoomable="yes"}
 
 1. To test this journey in real time, open another browser tab and go to your sandbox Commerce website.
 
-    1. Add a product to your cart  
+    1. Add a product to your cart.
     1. Go to the checkout page.
     1. From the checkout page, abandon the cart by going back to the main page or closing your tab.
     
