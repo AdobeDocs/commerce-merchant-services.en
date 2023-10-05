@@ -102,10 +102,10 @@ See the events topic to learn more about [storefront](events.md#storefront-event
 |Is the AEP Web SDK already deployed to your site|Select this checkbox if you have deployed your own AEP Web SDK to your site|
 |AEP Web SDK Name (global)| If you already have an Experience Platform Web SDK deployed to your site, specify the name of that SDK in this field. This allows the Storefront Event Collector and Storefront Event SDK to use your Experience Platform Web SDK rather than the version deployed by the Experience Platform connector. If you do not have an Experience Platform Web SDK deployed to your site, leave this field blank and the Experience Platform connector deploys one for you.|
 |Storefront events|Is checked by default as long as the Organization ID and datastream ID are valid. Storefront events collect anonymized behavioral data from your shoppers as they browse your site.|
-|Back Office events| If checked, event payload contains anonymized order status information, such as if an order was placed, canceled, refunded, or shipped. |
+|Back office events| If checked, event payload contains anonymized order status information, such as if an order was placed, canceled, refunded, or shipped. |
 |Datastream ID (website) | ID that allows data to flow from Adobe Experience Platform to other Adobe DX products. This ID must be associated to a specific website within your specific Adobe Commerce instance. If you specify your own Experience Platform Web SDK, do not specify a datastream ID in this field. The Experience Platform connector uses the datastream ID associated with that SDK and ignores any datastream ID specified in this field (if any).|
 order was placed, canceled, refunded, or shipped. |
-|Dataset ID (website) | ID of the dataset that contains your Commerce data.|
+|Dataset ID (website) | ID of the dataset that contains your Commerce data. This field is required unless you have deselected the **Storefront events** or **Back office events** checkboxes. Additionally, if you are using your own Experience Platform Web SDK and therefore did not specify a datastream ID, you still must add the dataset ID associated with your datastream. Otherwise, you cannot save this form.|
 
 >[!NOTE]
 >
@@ -167,19 +167,9 @@ To create the project, follow the steps outlined in the [Authenticate and access
 
 As you go through the tutorial, ensure your project has the following:
 
-- Access to the following [product profiles](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html#select-product-profiles): **Default production all access**.
+- Access to the following [product profiles](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html#select-product-profiles): **Default production all access** and **AEP Default all access**.
 - The correct [roles and permissions configured](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html#assign-api-to-a-role).
-- If you decided to use JSON Web Tokens (JWT) as your server-to server authentication method, you must also upload a private key. 
-
-
-
-
-Client on Oauth-Server-to-Server. Note the "credential name" (screenshot attached)
-An admin now has to give the credential key access to make the api call
-Login to Experience Platform -> Permissions -> Roles -> Default Production All Access -> API credentials
-Find the credential name added and add that under APi credentials (screenshot attached)
-
-
+- If you decided to use JSON Web Tokens (JWT) as your server-to server authentication method, you must also upload a private key.
 
 The result of this step creates a configuration file that you use in the next step.
 
@@ -238,7 +228,7 @@ Specify the date range for the historical orders you want to send to Experience 
 
 1. Select the **Order History** tab.
 
-1. Under **Order History Sync**, enable the **Copy Dataset ID from Settings** checkbox. This ensures you are using the same dataset specified in the **Settings** tab.
+1. Under **Order History Sync**, the **Copy Dataset ID from Settings** checkbox is already enabled. This ensures you are using the same dataset specified in the **Settings** tab.
 
 1. In the **From** and **To** fields, specify the date range for the historical order data you want to send. You cannot select a date range that exceeds five years.
 
@@ -247,10 +237,10 @@ Specify the date range for the historical orders you want to send to Experience 
 | Field | Description |
 |--- |--- |
 | Copy Dataset ID from Settings | Copies the dataset ID you entered on the **Settings** tab.|
-| Dataset ID | ID of the dataset that contains your Commerce data. |
+|Dataset ID (website) | ID of the dataset that contains your Commerce data. This field is required unless you have deselected the **Storefront events** or **Back office events** checkboxes. Additionally, if you are using your own Experience Platform Web SDK and therefore did not specify a datastream ID, you still must add the dataset ID associated with your datastream. Otherwise, you cannot save this form.|
 | From | Date from which you want to begin collecting order history data.|
 | To |  Date from which you want to end collecting order history data.|
-| Start Sync | Begins the process of syncing the order history data to the Experience Platform edge.|
+| Start Sync | Begins the process of syncing the order history data to the Experience Platform edge. This button is diabled if the **[!UICONTROL Dataset ID]** field is blank or the dataset ID is invalid.|
 
 ### Historical order demo
 

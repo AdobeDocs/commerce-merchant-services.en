@@ -479,6 +479,7 @@ The following table describes the data collected for this event.
 |Field|Description|
 |---|---|
 |`commerce.requisitionList`|The properties of requisition list created by customer.|
+|`commerce.requisitionListOpens`|Indicates initialization of a new requisition list.|
 |`commerce.requisitionList.ID`|Unique identifier of the requisition list.|
 |`commerce.requisitionList.name`|Name of the requisition list specified by the customer.|
 |`commerce.requisitionList.description`|Description of the requisition list specified by the customer.|
@@ -501,6 +502,7 @@ The following table describes the data collected for this event.
 |Field|Description|
 |---|---|
 |`commerce.requisitionList`|The properties of requisition list created by customer.|
+|`commerce.requisitionListAdds`|Indicates addition of one or more products to a requisition list.|
 |`commerce.requisitionList.ID`|Unique identifier of the requisition list.|
 |`commerce.requisitionList.name`|Name of the requisition list specified by the customer.|
 |`commerce.requisitionList.description`|Description of the requisition list specified by the customer.|
@@ -533,6 +535,7 @@ The following table describes the data collected for this event.
 |Field|Description|
 |---|---|
 |`commerce.requisitionList`|The properties of requisition list created by customer.|
+|`commerce.requsitionListRemovals`|Indicates removal of one or more products from a requisition list.|
 |`commerce.requisitionList.ID`|Unique identifier of the requisition list.|
 |`commerce.requisitionList.name`|Name of the requisition list specified by the customer.|
 |`commerce.requisitionList.description`|Description of the requisition list specified by the customer.|
@@ -582,9 +585,11 @@ The following table describes the data collected for this event.
 |`commerce.order.taxAmount`|The tax amount paid by the buyer as part of the final payment.|
 |`commerce.order.discountAmount`|Indicates the discount amount applied to the whole order.|
 |`commerce.order.createdDate`|The time and date when a new order is created in the commerce system. For example, `2022-10-15T20:20:39+00:00`.|
+|`commerce.order.currencyCode`|The ISO 4217 currency code used for the order totals.|
 |`commerce.shipping`|Shipping details for one or more products.|
 |`commerce.shipping.shippingMethod`|The method of shipping chosen by the customer, such as standard delivery, expedited delivery, pick up in store, and so on.|
 |`commerce.shipping.shippingAmount`|The amount the customer had to pay for shipping.|
+|`commerce.shipping.currencyCode`|The ISO 4217 currency code used for the shipping total.|
 |`commerce.commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
 |`commerce.commerceScope.environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
 |`commerce.commerceScope.storeCode`|The unique store code. You can have many stores per website.|
@@ -600,6 +605,7 @@ The following table describes the data collected for this event.
 |`personalEmail`|A personal email address.|
 |`personalEmail.address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards.|
 |`productListItems`|An array of products in the order.|
+|`productListItems.id`|The line item identifier for this product entry.|
 |`productListItems.SKU`|Stock Keeping Unit. The unique identifier for the product.|
 |`productListItems.name`|The display name or human-readable name of the product.|
 |`productListItems.priceTotal`|The total price for the product line item.|
@@ -629,26 +635,30 @@ The following table describes the data collected for this event.
 |---|---|
 |`commerce.order`|Contains information about the order.|
 |`commerce.order.purchaseID`|Unique identifier assigned by the seller for this purchase or contract. There is no guarantee that the ID is unique.|
+|`commerce.order.priceTotal`|The total price of this order after all discounts and taxes have been applied.|
+|`commerce.order.currencyCode`|The ISO 4217 currency code used for the order totals.|
+|`commerce.order.purchaseOrderNumber`|Unique identifier assigned by the purchaser for this purchase or contract.|
 |`commerce.order.payments`|The list of payments for this order.|
-|`commerce.order.payments.paymentTransactionID`|Unique identifier for this payment transaction.|
-|`commerce.order.payments.paymentAmount`|The value of the payment.|
-|`commerce.order.payments.paymentType`|The method of payment for this order. Enumerated, custom values allowed.|
 |`commerce.order.payments.currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used, such as `USD` or `EUR`.|
+|`commerce.order.payments.paymentType`|The method of payment for this order. Enumerated, custom values allowed.|
+|`commerce.order.payments.paymentAmount`|The value of the payment.|
 |`commerce.shipping`|Shipping details for one or more products.|
 |`commerce.shipping.shippingMethod`|The method of shipping chosen by the customer, such as standard delivery, expedited delivery, pick up in store, and so on.|
 |`commerce.shipping.shippingAmount`|The amount the customer had to pay for shipping.|
+|`commerce.commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
+|`commerce.commerceScope.environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
+|`commerce.commerceScope.storeCode`|The unique store code. You can have many stores per website.|
+|`commerce.commerceScope.storeViewCode`|The unique store view code. You can have many store views per store.|
+|`commerce.commerceScope.websiteCode`|The unique website code. You can have many websites in an environment.|
 |`personalEmail`|A personal email address.|
 |`personalEmail.address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards.|
 |`productListItems`|An array of products in the order.|
+|`productListItems.id`|The line item identifier for this product entry.|
 |`productListItems.SKU`|Stock Keeping Unit. The unique identifier for the product.|
 |`productListItems.name`|The display name or human-readable name of the product.|
 |`productListItems.priceTotal`|The total price for the product line item.|
 |`productListItems.quantity`|The number of product units in the cart.|
 |`productListItems.discountAmount`|Indicates the discount amount applied.|
-|`productListItems.currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used, such as `USD` or `EUR`.|
-|`productListItems.selectedOptions`|Field used for a configurable product.|
-|`productListItems.selectedOptions.attribute`|Identifies an attribute of the configurable product, such as `size` or `color`.|
-|`productListItems.selectedOptions.value`|Identifies the value of the attribute such as `small` or `black`.|
 |`productListItems.categories`|Contains information about the category of a product.|
 |`productListItems.categories.id`|The unique identifier of the category.|
 |`productListItems.categories.name`|The name of the category.|
@@ -734,6 +744,7 @@ The following table describes the data collected for this event.
 |`commerce.shipping`|Shipping details for one or more products.|
 |`commerce.shipping.shippingMethod`|The method of shipping chosen by the customer, such as standard delivery, expedited delivery, pick up in store, and so on.|
 |`commerce.shipping.shippingAmount`|The amount the customer had to pay for shipping.|
+|`commerce.shipping.currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used, such as `USD` or `EUR`.|
 |`commerce.commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
 |`commerce.commerceScope.environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
 |`commerce.commerceScope.storeCode`|The unique store code. You can have many stores per website.|
@@ -914,6 +925,14 @@ The following table describes the data collected for this event.
 |`commerce.shipping`|Shipping details for one or more products.|
 |`commerce.shipping.shippingMethod`|The method of shipping chosen by the customer, such as standard delivery, expedited delivery, pick up in store, and so on.|
 |`commerce.shipping.shippingAmount`|The amount the customer had to pay for shipping.|
+|`commerce.shipping.shipDate`|The date when one or more items from an order is shipped.|
+|`commerce.shipping.address`|The shipping address.|
+|`commerce.shipping.address.street1`|Primary street level information, apartment number, street number, and street name.|
+|`commerce.shipping.address.street2`|Optional street information second line.|
+|`commerce.shipping.address.city`|The name of the city.|
+|`commerce.shipping.address.state`|The name of the State. This is a free-form field.|
+|`commerce.shipping.address.postalCode`|The postal code of the location. Postal codes are not available for all countries. In some countries, this will only contain part of the postal code.|
+|`commerce.shipping.address.country`|The name of the government-administered territory. Other than `xdm:countryCode`, this is a free-form field that can have the country name in any language.|
 |`commerce.billing.address`|Billing postal address.|
 |`commerce.billing.address.street1`|Primary street level information, apartment number, street number, and street name|
 |`commerce.billing.address.street2`|Additional field for street level information.|
