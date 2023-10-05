@@ -28,14 +28,14 @@ The Experience Platform connector extension is available from the [Adobe Marketp
    * `module-experience-connector-admin` - Updates the Admin UI so you can select the Datastream ID for a specific Adobe Commerce instance.
    * `module-experience-connector` - Sets the `Organization ID` and `datastreamId` in the Storefront Events SDK.
    * `data-services` - Provides attribute context for storefront events. For example, when a checkout event occurs, information about how many items were in the cart and product attribute data for those items are included.
-   * `services-id` - Connects your Adobe Commerce i.nstance to [Adobe Commerce SaaS](../landing/saas.md) using sandbox and production API keys and to the Adobe Experience Platform to retrieve the IMS Organization ID
+   * `services-id` - Connects your Adobe Commerce instance to [Adobe Commerce SaaS](../landing/saas.md) using sandbox and production API keys and to the Adobe Experience Platform to retrieve the IMS Organization ID
    * `orders-connector` - Connects the order status service to your Adobe Commerce instance.
 
 1. (Optional) To include [!DNL Live Search] data, which comprises [search events](events.md#search-events), install the [[!DNL Live Search]](../live-search/install.md) extension.
 
 ### Configure the orders connector
 
-After you install the `experience-platform-connector`, you need to finalize installation of the `orders-connector` module based on the deployment type: on-premises or Adobe Commerce on Cloud infrastructure.
+After you install the `experience-platform-connector`, you must finalize installation of the `orders-connector` module based on the deployment type: on-premises or Adobe Commerce on Cloud infrastructure.
 
 #### On-premises
 
