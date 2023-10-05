@@ -24,7 +24,7 @@ Before you begin with these steps, you must ensure the following:
 
 ## Step 1: Create a user in your Commerce sandbox environment
 
-Create a user in your sandbox environment and confirm that user account information appears in Experience Platform. Ensure the email you specified is valid as that is used later in this tutorial to send the abandoned cart email.
+Create a user in your sandbox environment and confirm that user account information appears in Experience Platform. Ensure the email you specified is valid as that is used later in this section to send the abandoned cart email.
 
 1. Sign in or create an account in your Commerce sandbox environment.
 
