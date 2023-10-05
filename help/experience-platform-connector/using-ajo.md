@@ -1,5 +1,5 @@
 ---
-title: Use Adobe Journey Optimizer to Send an Abandoned Cart Email
+title: Use Adobe Journey Optimizer to send an abandoned cart email
 description: Learn how to use Adobe Journey Optimizer to send an abandoned cart email.
 role: Admin, Developer
 feature: Personalization, Integration
@@ -133,9 +133,9 @@ Create a journey that listens for the `commerce.checkouts` event and then sends 
 1. Click **[!UICONTROL OK]** to save the journey.  
 1. In the left rail under the **EVENTS** section, search for the checkout event you previously created: `firstname_lastname_checkout` and drag and drop it on the canvas.  
 
->[!NOTE]
->
->Double-clicking the event automatically adds it to the canvas. 
+    >[!NOTE]
+    >
+    >Double-clicking the event automatically adds it to the canvas. 
 
 1. Search for the timeout event and add it to the canvas. 
 1. Double-click the timeout event.
