@@ -65,7 +65,7 @@ See the events topic to learn more about [storefront](events.md#storefront-event
     >
     >If you select **Back office events**, all back office data is sent to the Experience Platform edge. If a shopper chooses to opt out of data collection, you must explicitly set the shopper's privacy preference in the Experience Platform. This is different from storefront events where the collector already handles consent based on shopper preferences. [Learn more](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/dataset.html) about setting a shopper's privacy preference in the Experience Platform.
 
-1. (Skip this step if you are using your own AEP Web SDK.) [Create](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html#create) a datastream in the Adobe Experience Platform or select an existing datastream you want to use for collection. Enter that datastream ID in the **Datastream ID** field.
+1. (Skip this step if you are using your own AEP Web SDK.) [Create](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html#create) a datastream in the Adobe Experience Platform or select an existing datastream you want to use for collection. Enter that datastream ID in the **Datastream ID** field.
 
 1. Enter the **Dataset ID** that you want to contain your Commerce data. To find the dataset ID:
 
@@ -100,12 +100,11 @@ See the events topic to learn more about [storefront](events.md#storefront-event
 | Scope | Specific website where you want the configuration settings to apply. |
 | Organization ID (global)| ID that belongs to the organization that purchased the Adobe DX product. This ID links your Adobe Commerce instance to Adobe Experience Platform. |
 |Is the AEP Web SDK already deployed to your site|Select this checkbox if you have deployed your own AEP Web SDK to your site|
-|AEP Web SDK Name (global)| If you already have an Experience Platform Web SDK deployed to your site, specify the name of that SDK in this field. This allows the Storefront Event Collector and Storefront Event SDK to use your Experience Platform Web SDK rather than the version deployed by the Experience Platform connector. If you do not have an Experience Platform Web SDK deployed to your site, leave this field blank and the Experience Platform connector deploys one for you.|
+|AEP Web SDK Name (global)| If you already have an Experience Platform Web SDK deployed to your site, specify the name of that SDK in this field. This allows the Storefront Event Collector and Storefront Event SDK to use your Experience Platform Web SDK rather than the version deployed by the Experience Platform connector. If you do not have an Experience Platform Web SDK deployed to your site, leave this field blank, and the Experience Platform connector deploys one for you.|
 |Storefront events|Is checked by default as long as the Organization ID and datastream ID are valid. Storefront events collect anonymized behavioral data from your shoppers as they browse your site.|
 |Back office events| If checked, event payload contains anonymized order status information, such as if an order was placed, canceled, refunded, or shipped. |
 |Datastream ID (website) | ID that allows data to flow from Adobe Experience Platform to other Adobe DX products. This ID must be associated to a specific website within your specific Adobe Commerce instance. If you specify your own Experience Platform Web SDK, do not specify a datastream ID in this field. The Experience Platform connector uses the datastream ID associated with that SDK and ignores any datastream ID specified in this field (if any).|
-order was placed, canceled, refunded, or shipped. |
-|Dataset ID (website) | ID of the dataset that contains your Commerce data. This field is required unless you have deselected the **Storefront events** or **Back office events** checkboxes. Additionally, if you are using your own Experience Platform Web SDK and therefore did not specify a datastream ID, you still must add the dataset ID associated with your datastream. Otherwise, you cannot save this form.|
+|Dataset ID (website) | ID of the dataset that contains your Commerce data. This field is required unless you have deselected the **Storefront events** or **Back office events** checkboxes. Also, if you are using your own Experience Platform Web SDK and therefore did not specify a datastream ID, you must still add the dataset ID associated with your datastream. Otherwise, you cannot save this form.|
 
 >[!NOTE]
 >
@@ -165,21 +164,21 @@ Create a project in the Adobe Developer Console that authenticates Commerce so i
 
 To create the project, follow the steps outlined in the [Authenticate and access Experience Platform APIs](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html) tutorial.
 
-As you go through the tutorial, ensure your project has the following:
+As you go through the tutorial, ensure that your project has the following:
 
 - Access to the following [product profiles](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html#select-product-profiles): **Default production all access** and **AEP Default all access**.
-- The correct [roles and permissions configured](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html#assign-api-to-a-role).
-- If you decided to use JSON Web Tokens (JWT) as your server-to server authentication method, you must also upload a private key.
+- The correct [roles and permissions are configured](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html#assign-api-to-a-role).
+- If you decided to use JSON Web Tokens (JWT) as your server-to-server authentication method, you must also upload a private key.
 
 The result of this step creates a configuration file that you use in the next step.
 
 ### Step 3: Download configuration file
 
-Download the [workspace configuration file](https://developer.adobe.com/commerce/extensibility/events/project-setup/#download-the-workspace-configuration-file). You need to copy and paste the contents of this file into the **Service Account/Credential details** page of the Commerce Admin.
+Download the [workspace configuration file](https://developer.adobe.com/commerce/extensibility/events/project-setup/#download-the-workspace-configuration-file). Copy and paste the contents of this file into the **Service Account/Credential details** page of the Commerce Admin.
 
 1. In the Commerce Admin, navigate to **Stores** > Settings > **Configuration** > **Services** > **Experience Platform Connector**.
 
-1. Select the server-to-server authorization method you implemented from the **Adobe I/O Authorization Type** menu. Adobe recommends using OAuth. JWT has been deprecated.[Learn more](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/).
+1. Select the server-to-server authorization method that you implemented from the **Adobe I/O Authorization Type** menu. Adobe recommends using OAuth. JWT has been deprecated. [Learn more](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/).
 
 1. (JWT only) Copy and paste the contents of your `private.key` file into the **Client Secret** field. Use the following command to copy the contents.
 
@@ -190,6 +189,8 @@ Download the [workspace configuration file](https://developer.adobe.com/commerce
    See [Service Account (JWT) Authentication](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/) for more information about the `private.key` file.
 
 1. Copy the contents of the `<workspace-name>.json` file into the **Service Account/Credential details** field.
+
+    ![Experience Platform Connector Admin Configuration](./assets/epc-admin-config.png){width="700" zoomable="yes"}
 
 1. Click **Save Config**.
 
@@ -220,7 +221,7 @@ With the order sync service enabled, you can then specify the historical order d
 
 ### Step 5: Specify order history date range
 
-Specify the date range for the historical orders you want to send to Experience Platform.
+Specify the date range for the historical orders that you want to send to Experience Platform.
 
 ![Sync Order History](./assets/order-history.png){width="700" zoomable="yes"}
 
@@ -237,10 +238,10 @@ Specify the date range for the historical orders you want to send to Experience 
 | Field | Description |
 |--- |--- |
 | Copy Dataset ID from Settings | Copies the dataset ID you entered on the **Settings** tab.|
-|Dataset ID (website) | ID of the dataset that contains your Commerce data. This field is required unless you have deselected the **Storefront events** or **Back office events** checkboxes. Additionally, if you are using your own Experience Platform Web SDK and therefore did not specify a datastream ID, you still must add the dataset ID associated with your datastream. Otherwise, you cannot save this form.|
+|Dataset ID (website) | ID of the dataset that contains your Commerce data. This field is required unless you have deselected the **Storefront events** or **Back office events** checkboxes. Also, if you are using your own Experience Platform Web SDK and therefore did not specify a datastream ID, you must still add the dataset ID associated with your datastream. Otherwise, you cannot save this form.|
 | From | Date from which you want to begin collecting order history data.|
 | To |  Date from which you want to end collecting order history data.|
-| Start Sync | Begins the process of syncing the order history data to the Experience Platform edge. This button is diabled if the **[!UICONTROL Dataset ID]** field is blank or the dataset ID is invalid.|
+| Start Sync | Begins the process of syncing the order history data to the Experience Platform edge. This button is disabled if the **[!UICONTROL Dataset ID]** field is blank or the dataset ID is invalid.|
 
 ### Historical order demo
 
