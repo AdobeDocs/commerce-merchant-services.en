@@ -478,8 +478,8 @@ The following table describes the data collected for this event.
 
 |Field|Description|
 |---|---|
-|`commerce.requisitionList`|The properties of requisition list created by customer.|
 |`commerce.requisitionListOpens`|Indicates initialization of a new requisition list.|
+|`commerce.requisitionList`|The properties of requisition list created by customer.|
 |`commerce.requisitionList.ID`|Unique identifier of the requisition list.|
 |`commerce.requisitionList.name`|Name of the requisition list specified by the customer.|
 |`commerce.requisitionList.description`|Description of the requisition list specified by the customer.|
@@ -501,8 +501,8 @@ The following table describes the data collected for this event.
 
 |Field|Description|
 |---|---|
-|`commerce.requisitionList`|The properties of requisition list created by customer.|
 |`commerce.requisitionListAdds`|Indicates addition of one or more products to a requisition list.|
+|`commerce.requisitionList`|The properties of requisition list created by customer.|
 |`commerce.requisitionList.ID`|Unique identifier of the requisition list.|
 |`commerce.requisitionList.name`|Name of the requisition list specified by the customer.|
 |`commerce.requisitionList.description`|Description of the requisition list specified by the customer.|
@@ -534,8 +534,8 @@ The following table describes the data collected for this event.
 
 |Field|Description|
 |---|---|
-|`commerce.requisitionList`|The properties of requisition list created by customer.|
 |`commerce.requsitionListRemovals`|Indicates removal of one or more products from a requisition list.|
+|`commerce.requisitionList`|The properties of requisition list created by customer.|
 |`commerce.requisitionList.ID`|Unique identifier of the requisition list.|
 |`commerce.requisitionList.name`|Name of the requisition list specified by the customer.|
 |`commerce.requisitionList.description`|Description of the requisition list specified by the customer.|
@@ -690,7 +690,13 @@ The following table describes the data collected for this event.
 |`commerce.shipping`|Shipping details for one or more products.|
 |`commerce.shipping.shippingMethod`|The method of shipping chosen by the customer, such as standard delivery, expedited delivery, pick up in store, and so on.|
 |`commerce.shipping.shippingAmount`|The amount the customer had to pay for shipping.|
-|`commerce.shipping.address`|Physical shipping address.|
+|`commerce.shipping.address`|The physical shipping address.|
+|`commerce.shipping.address.street1`|Primary street level information, apartment number, street number, and street name.|
+|`commerce.shipping.address.street2`|Optional street information second line.|
+|`commerce.shipping.address.city`|The name of the city.|
+|`commerce.shipping.address.state`|The name of the State. This is a free-form field.|
+|`commerce.shipping.address.postalCode`|The postal code of the location. Postal codes are not available for all countries. In some countries, this will only contain part of the postal code.|
+|`commerce.shipping.address.country`|The name of the government-administered territory. Other than `xdm:countryCode`, this is a free-form field that can have the country name in any language.|
 |`commerce.shipping.currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used, such as `USD` or `EUR`.|
 |`commerce.shipping.trackingNumber`|The tracking number provided by the shipping carrier for an order item shipment.|
 |`commerce.shipping.trackingURL`|The URL to track the shipping status of an order item.|
@@ -741,10 +747,6 @@ The following table describes the data collected for this event.
 |`commerce.order.purchaseOrderNumber`|Unique identifier assigned by the purchaser for this purchase or contract.|
 |`commerce.order.cancelDate`|The date and time when a shopper cancels an order.|
 |`commerce.order.lastUpdatedDate`|The time when a particular order record is last updated in the commerce system.|
-|`commerce.shipping`|Shipping details for one or more products.|
-|`commerce.shipping.shippingMethod`|The method of shipping chosen by the customer, such as standard delivery, expedited delivery, pick up in store, and so on.|
-|`commerce.shipping.shippingAmount`|The amount the customer had to pay for shipping.|
-|`commerce.shipping.currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used, such as `USD` or `EUR`.|
 |`commerce.commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
 |`commerce.commerceScope.environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
 |`commerce.commerceScope.storeCode`|The unique store code. You can have many stores per website.|
@@ -752,20 +754,6 @@ The following table describes the data collected for this event.
 |`commerce.commerceScope.websiteCode`|The unique website code. You can have many websites in an environment.|
 |`personalEmail`|A personal email address.|
 |`personalEmail.address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards.|
-|`productListItems`|An array of products in the order.|
-|`productListItems.SKU`|Stock Keeping Unit. The unique identifier for the product.|
-|`productListItems.name`|The display name or human-readable name of the product.|
-|`productListItems.priceTotal`|The total price for the product line item.|
-|`productListItems.quantity`|The number of product units in the cart.|
-|`productListItems.discountAmount`|Indicates the discount amount applied.|
-|`productListItems.currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used, such as `USD` or `EUR`.|
-|`productListItems.selectedOptions`|Field used for a configurable product.|
-|`productListItems.selectedOptions.attribute`|Identifies an attribute of the configurable product, such as `size` or `color`.|
-|`productListItems.selectedOptions.value`|Identifies the value of the attribute such as `small` or `black`.|
-|`productListItems.categories`|Contains information about the category of a product.|
-|`productListItems.categories.id`|The unique identifier of the category.|
-|`productListItems.categories.name`|The name of the category.|
-|`productListItems.categories.path`|The path to the category.|
 
 ### orderLineItemRefunded
 
@@ -781,14 +769,13 @@ The following table describes the data collected for this event.
 |---|---|
 |`commerce.order`|Contains information about the order.|
 |`commerce.order.purchaseID`|Unique identifier assigned by the seller for this purchase or contract. There is no guarantee that the ID is unique.|
-|`commerce.order.taxAmount`|The tax amount paid by the buyer as part of the final payment.|
 |`commerce.order.lastUpdatedDate`|The time when a particular order record is last updated in the commerce system.|
 |`commerce.order.purchaseOrderNumber`|Unique identifier assigned by the purchaser for this purchase or contract.|
 |`commerce.refunds`|The list of refunds for this order.|
-|`commerce.refunds.refundTransactionID`|Unique identifier for this refund.|
+|`commerce.refunds.transactionID`|Unique identifier for this refund.|
 |`commerce.refunds.refundAmount`|The value of the refund.|
-|`commerce.refunds.refundType`|The method of payment for this order. Enumerated, custom values allowed.|
-|`commerce.refunds.refundCurrencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used, such as `USD` or `EUR`.|
+|`commerce.refunds.refundPaymentType`|The method of payment for this order. Enumerated, custom values allowed.|
+|`commerce.refunds.currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used, such as `USD` or `EUR`.|
 |`personalEmail`|A personal email address.|
 |`personalEmail.address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards.|
 |`productListItems`|An array of products in the order.|
@@ -823,9 +810,6 @@ The following table describes the data collected for this event.
 |`commerce.order.returns`|The RMA (Return Merchandise Authorization) information for this order.|
 |`commerce.order.returns.returnID`|The unique identifier for this RMA (Return Merchandise Authorization).|
 |`commerce.order.returns.returnStatus`|The current status of the RMA (Return Merchandise Authorization), such as Pending, Closed, and so on.|
-|`commerce.shipping`|Shipping details for one or more products.|
-|`commerce.shipping.shippingMethod`|The method of shipping chosen by the customer, such as standard delivery, expedited delivery, pick up in store, and so on.|
-|`commerce.shipping.shippingAmount`|The amount the customer had to pay for shipping.|
 |`commerce.commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
 |`commerce.commerceScope.environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
 |`commerce.commerceScope.storeCode`|The unique store code. You can have many stores per website.|
@@ -876,9 +860,6 @@ The following table describes the data collected for this event.
 |`commerce.commerceScope.storeCode`|The unique store code. You can have many stores per website.|
 |`commerce.commerceScope.storeViewCode`|The unique store view code. You can have many store views per store.|
 |`commerce.commerceScope.websiteCode`|The unique website code. You can have many websites in an environment.|
-|`commerce.shipping`|Shipping details for one or more products.|
-|`commerce.shipping.shippingMethod`|The method of shipping chosen by the customer, such as standard delivery, expedited delivery, pick up in store, and so on.|
-|`commerce.shipping.shippingAmount`|The amount the customer had to pay for shipping.|
 |`personalEmail`|A personal email address.|
 |`personalEmail.address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards.|
 |`productListItems`|An array of products in the order.|
@@ -926,7 +907,7 @@ The following table describes the data collected for this event.
 |`commerce.shipping.shippingMethod`|The method of shipping chosen by the customer, such as standard delivery, expedited delivery, pick up in store, and so on.|
 |`commerce.shipping.shippingAmount`|The amount the customer had to pay for shipping.|
 |`commerce.shipping.shipDate`|The date when one or more items from an order is shipped.|
-|`commerce.shipping.address`|The shipping address.|
+|`commerce.shipping.address`|The physical shipping address.|
 |`commerce.shipping.address.street1`|Primary street level information, apartment number, street number, and street name.|
 |`commerce.shipping.address.street2`|Optional street information second line.|
 |`commerce.shipping.address.city`|The name of the city.|

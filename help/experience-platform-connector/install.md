@@ -28,7 +28,7 @@ The Experience Platform connector extension is available from the [Adobe Marketp
    * `module-experience-connector-admin` - Updates the Admin UI so you can select the Datastream ID for a specific Adobe Commerce instance.
    * `module-experience-connector` - Sets the `Organization ID` and `datastreamId` in the Storefront Events SDK.
    * `data-services` - Provides attribute context for storefront events. For example, when a checkout event occurs, information about how many items were in the cart and product attribute data for those items are included.
-   * `services-id` - Connects your Adobe Commerce instance to [Adobe Commerce SaaS](../landing/saas.md) using sandbox and production API keys and to the Adobe Experience Platform to retrieve the IMS Organization ID
+   * `services-id` - Connects your Adobe Commerce instance to [Adobe Commerce SaaS](../landing/saas.md) using sandbox and production API keys and to the Adobe Experience Platform to retrieve the IMS Organization ID.
    * `orders-connector` - Connects the order status service to your Adobe Commerce instance.
 
 1. (Optional) To include [!DNL Live Search] data, which comprises [search events](events.md#search-events), install the [[!DNL Live Search]](../live-search/install.md) extension.
@@ -49,7 +49,7 @@ In on-premises environments, you need to manually enable code generation and Ado
    bin/magento config:set adobe_io_events/eventing/enabled 1
    ```
 
-#### On cloud
+#### On Cloud infrastructure
 
 In Adobe Commerce on Cloud infrastructure, enable the `ENABLE_EVENTING` global variable in `.magento.env.yaml`. [Learn more](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-global.html#enable_eventing).
 

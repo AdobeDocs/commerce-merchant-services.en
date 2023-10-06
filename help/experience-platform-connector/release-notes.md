@@ -27,7 +27,7 @@ These release notes describe feature changes and fixes related to extensions use
 _October 10, 2023_
 
 ![Fix](../assets/fix.svg) - Fixed an issue where currency configuration changes were not reflected in the events after refreshing the cache.
-![Fix](../assets/fix.svg) - Fixed error when order confirmation message does not appear if async order placement is enabled.
+![Fix](../assets/fix.svg) - Fixed error when order confirmation message does not appear if asynchronous order placement is enabled.
 ![New](../assets/new.svg) - Added data to [addToRequisitionList](events.md#addtorequisitionlist) event for simple products on the Category view page.
 ![New](../assets/new.svg) - Added support for OAuth 2.0 when you [configure](connect-data.md#connect-commerce-data-to-adobe-experience-platform) the Experience Platform connector.
 ![Fix](../assets/fix.svg) - Fixed an issue in the `selectedOptions` data in the [addToRequisitionList](events.md#addtorequisitionlist) event when products are added from the Order confirmation page.
