@@ -38,49 +38,36 @@ Create a user in your sandbox environment and confirm that user account informat
 
     ![Confirm profile](assets/check-event-profile.png){width="700" zoomable="yes"}
 
-## Step 2: Trigger the checkout event
+## Step 2: View events in Journey Optimizer
 
-Before you can create an abandoned cart email, you must add an item to the cart and begin the checkout process to trigger the `commerce.checkouts` event.
+In your Commerce sandbox environment, view product pages, add items to a cart, and various other activities a shopper would perform. These activities trigger events on your storefront. You can now confirm that these events are flowing to Journey Optimizer.
 
-1. Open your Commerce sandbox environment.
-1. Add a product to the cart.
-1. Click **[!UICONTROL Checkout]**.
+1. Launch [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/user-interface.html).
+1. Select **Profiles**.
+1. Set **[!UICONTROL Identity namespace]** to `Email`.
+1. Set the **[!UICONTROL Identity value]** to your email address.
+1. Select your profile, then select the **[!UICONTROL Events]** tab.
 
-    This action triggers the `commerce.checkouts` event. However, because you did not complete the checkout, your cart is abandoned.
+    ![Check event details](assets/check-event-details.png){width="700" zoomable="yes"}
 
-1. Confirm that the events are flowing to Journey Optimizer.
+    Look for the `commerce.checkouts` event and examine the event payload:
 
-    1. Launch [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/user-interface.html).
-    1. Select **Profiles**.
-    1. Set **[!UICONTROL Identity namespace]** to `Email`.
-    1. Set the **[!UICONTROL Identity value]** to your email address.
-
-        For example:
-
-        ![Profiles in Journey Optimizer](assets/check-event-profile.png){width="700" zoomable="yes"}
-
-    1. Select your profile, then select the **[!UICONTROL Events]** tab.
-
-        ![Check event details](assets/check-event-details.png){width="700" zoomable="yes"}
-
-        Look for the `commerce.checkouts` event and examine the event payload:
-
-            ```json
-            "personID": "84281643067178465783746543501073369488", 
-            "eventType": "commerce.checkouts", 
-            "_id": "4b41703f-e42e-485b-8d63-7001e3580856-0", 
-            "commerce": { 
-                "cart": {}, 
-                "checkouts": { 
-                    "value": 1 
-                } 
-            ```
+        ```json
+        "personID": "84281643067178465783746543501073369488", 
+        "eventType": "commerce.checkouts", 
+        "_id": "4b41703f-e42e-485b-8d63-7001e3580856-0", 
+        "commerce": { 
+            "cart": {}, 
+            "checkouts": { 
+                "value": 1 
+            } 
+        ```
             
-        Notice there is a `checkouts` value of `1`, which indicates that the checkout process has begun. In the next section, you will configure events in Journey Optimizer to listen for and respond to that `commerce.checkouts` event from Commerce.
+    As you can see, the full event payload contains rich event data. In the next section, you will configure events in Journey Optimizer to listen for and respond to the `commerce.checkouts` event generated from your Commerce storefront.
 
 ## Step 3: Configure events in Journey Optimizer
 
-In this section, you configure two events in Journey Optimizer: one event listens for the `commerce.checkouts` event from Commerce, and the other is a basic timeout event that waits for a specific amount of time to pass before triggering an abandoned cart email.
+Configure two events in Journey Optimizer: one event listens for the `commerce.checkouts` event from Commerce, and the other is a basic timeout event that waits for a specific amount of time to pass before triggering an abandoned cart email.
 
 ### Create a listener event
 
@@ -105,6 +92,7 @@ In this section, you configure two events in Journey Optimizer: one event listen
     1. Click into the **Event id condition** field and create a condition of `eventType` is equal to `commerce.checkouts` AND `personalEmail.address` is equal to the email address you used when you created the profile in the previous section.
 
         ![Journey Optimizer Set Condition](assets/ajo-set-condition.png){width="700" zoomable="yes"}
+    
     1. Click **[!UICONTROL OK]**.
     1. Click **[!UICONTROL Save]** to save your event.
 
@@ -121,7 +109,7 @@ In this section, you configure two events in Journey Optimizer: one event listen
     1. Set the **Schema**, **Fields**, and **Event id condition** to the same as above.
     1. Click **[!UICONTROL Save]** to save your event.
 
-With these two events configured, you can now create a journey that sends an abandoned cart email.
+With these two events configured, create a journey that sends an abandoned cart email.
 
 ## Step 4: Build a checkout journey
 
