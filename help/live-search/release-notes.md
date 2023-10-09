@@ -50,6 +50,7 @@ _June 13, 2023_
 
 ### Updates
 
+![Fix](../assets/fix.svg) The table size of the Products and Price feeds have been greatly reduced. Tables `catalog_data_exporter_products` and `catalog_data_exporter_product_prices`
 ![Fix](../assets/fix.svg) The 'Rules' tab is renamed to 'Search Rules'
 ![Fix](../assets/fix.svg) When ranking by 'trending', you can now choose between:
     * 3 days (default)

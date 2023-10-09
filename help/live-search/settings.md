@@ -9,7 +9,7 @@ Use the *Settings* tab to configure the price facet ranges and intervals and the
 
 Price faceting specifies the number of price range groups and how price values are distributed among them.
 
-Language settings tell the [!DNL Live Search] service which language to expect when writing the index.
+The Language setting tells the [!DNL Live Search] service which language to expect when writing the index.
 
 ![Settings](assets/settings.png)
 

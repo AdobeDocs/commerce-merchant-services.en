@@ -47,6 +47,7 @@ These notes describe updates that were published outside of a versioned release 
 
 ![New](../assets/new.svg) Added new modules to support the [Saas Price Indexer](../price-index/index.md).
 ![New](../assets/new.svg) Added new data export modules to support exporting more product types including bundled products and gift cards.
+![Fix](../assets/fix.svg) The table size of the Products and Price feeds have been greatly reduced. Tables `catalog_data_exporter_products` and `catalog_data_exporter_product_prices`
 
 #### Known limitations
 
