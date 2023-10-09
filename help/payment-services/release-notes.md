@@ -24,6 +24,10 @@ These release notes describe feature changes and fixes that occurred and were re
 
 +++Hosted service updates
 
+October 10, 2023_
+
+![New issue](../assets/fix.svg)<!-- Issue PAY-4888 --> Now, merchants can filter credit and debit card transactions by the last four digits of the card number in the [Transactions report](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/transactions.html).
+
 _July 12, 2023_
 
 ![Fixed issue](../assets/fix.svg)<!-- Issue PAY-4587 --> An issue introduced in the Payment Services 2.1.0 release that prevented authorization voids placed by previous extension versions is now resolved. Merchants using any version of Payment Services can void authorizations.
