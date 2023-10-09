@@ -37,4 +37,4 @@ Merchandising [rules](rules.md) shape the shopping experience with if-then state
 
 ## Search terms support
 
-[!DNL Live Search] supports Commerce [search term redirects](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html). For example, users can search for a term such as "Shipping Rates" and be taken right to the the shipping rates page.
+[!DNL Live Search] supports Commerce [search term redirects](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html). For example, users can search for a term such as "Shipping Rates" and be taken directly to the the shipping rates page.

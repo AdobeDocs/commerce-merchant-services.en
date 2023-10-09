@@ -39,7 +39,7 @@ The Language setting tells [!DNL Live Search] which language to expect when read
 Languages have different sets of rules for grammar: how words are separated, verb tenses and synonyms, for example.
 The Language setting ensures that the correct set of rules are applied to the indexing mechanism.
 
-The Language settings should be set to the primary language of the catalog. When changing the language of the index, it may take from 5 to 60 minutes to reflect the change on the storefront, depending on the size and complexity of the catalog.
+Set the Language setting to the primary language of the catalog. When changing the language of the index, it can take from 5 to 60 minutes to reflect the change on the storefront, depending on the size and complexity of the catalog.
 
 |Language|Code|
 |----|----|
