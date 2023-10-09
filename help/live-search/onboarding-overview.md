@@ -8,10 +8,6 @@ recommendations: noCatalog
 
 To get started using [!DNL Live Search] for Adobe Commerce, complete the onboarding process to install the extension, configure your API keys, and synchronize your catalog.
 
-## Onboarding flow
-
-![[!DNL Live Search] onboarding diagram](assets/onboarding-flow.svg)
-
 ## Requirements {#requirements}
 
 * [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) 2.4.4+
@@ -101,7 +97,6 @@ To use [!DNL Live Search] with PWA Studio, integrators must also:
 ## Not currently supported
 
 * The [Advanced Search](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#advanced-search) module is disabled when [!DNL Live Search] is installed, and the Advanced Search link in the storefront footer is removed.
-* Product prices do not include [value added tax](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/vat.html) (VAT).
 * [Tier Price](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-tier.html) is not supported in the Live Search Popover and Product Listing Page Widget.
 
 ## Cookies
