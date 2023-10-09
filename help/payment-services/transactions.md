@@ -29,7 +29,7 @@ The Transactions report view is available in the Transactions view of Payment Se
 
 On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Transactions]_ > **[!UICONTROL View Report]** to see the detailed tabular Transactions report view.
 
-![Transactions report view](assets/transaction-reports-detail.png){width="600" zoomable="yes"}
+![Transactions report view](assets/transactions-report-detail.png){width="600" zoomable="yes"}
 
 You can configure this view, per the sections in this topic, to best present the data you desire to see.
 
@@ -124,13 +124,13 @@ Transactions reports include the following information.
 | [!UICONTROL Transaction Date] | Transaction date timestamp |
 | [!UICONTROL Payment Method] |  Payment method of transaction with detailed information about brand and card type. See [card types](https://developer.paypal.com/docs/api/orders/v2/#definition-card_type) for more information; available for Payment Services versions 1.6.0 and newer |
 | [!UICONTROL Result] | The result of the transaction---*[!UICONTROL OK]* (successful transaction), *[!UICONTROL Rejected by Payment Provider]* (rejected by PayPal), *[!UICONTROL Rejected by Bank]* (rejected by bank that issued card) |
+| [!UICONTROL Card Last Four Digits] | Last four digits of the credit or debit cards used for the transaction  |
 | [!UICONTROL Response Code] | Error code that provides rejection reason from payment provider or bank; see list of possible response codes and descriptions for [`Rejected by Bank` status](https://developer.paypal.com/docs/api/orders/v2/#definition-processor_response) and [`Rejected by Payment Provider` status](https://developer.paypal.com/api/rest/reference/orders/v2/errors/). |
 | [!UICONTROL AVS Code] | Address Verification Service code; the processor response information for payment requests. See [list of possible codes and descriptions](https://developer.paypal.com/docs/api/orders/v2/#definition-processor_response) for more information. |
 | [!UICONTROL CVV Code] | Card verification value code for credit and debit cards; see [list of possible codes and descriptions](https://developer.paypal.com/docs/api/orders/v2/#definition-processor_response) for more information. |
 | [!UICONTROL Amount] | Order amount of transaction |
 | [!UICONTROL Currency] | Currency used for order in transaction  |
 | [!UICONTROL Type] | [Payment action](../payment-services/production.md#set-payment-services-as-payment-method) for transaction---`Authorize` or `Authorize and Capture` |
-| [!UICONTROL Card Last Four Digits] | Last four digits of the credit or debit cards used for order in transaction  |
 
 ### Error response codes
 

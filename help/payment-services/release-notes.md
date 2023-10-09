@@ -24,7 +24,7 @@ These release notes describe feature changes and fixes that occurred and were re
 
 +++Hosted service updates
 
-October 10, 2023_
+_October 10, 2023_
 
 ![New issue](../assets/fix.svg)<!-- Issue PAY-4888 --> Now, merchants can filter credit and debit card transactions by the last four digits of the card number in the [Transactions report](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/transactions.html).
 
