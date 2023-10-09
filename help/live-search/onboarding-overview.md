@@ -62,6 +62,12 @@ This video is an introduction to Category Merchandising.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424617)
 
+## Inventory Management
+
+[!DNL Live Search] supports [Inventory Management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/introduction.html) capabilities in Commerce (formerly knows as Multi-Source Inventory, or MSI). To enable full support, you must [update](install.md#update) the dependency module `commerce-data-export` to version 102.2.0+.
+
+[!DNL Live Search] returns a boolean noting whether a product is available within Inventory Management, but does not contain information about which source has the stock.
+
 ## Price indexer
 
 Live Search customers can use the new [SaaS price indexer](../price-index/index.md), which provides faster price change updates and synchronization time.
