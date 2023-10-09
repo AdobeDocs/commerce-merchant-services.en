@@ -7,7 +7,7 @@ exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
 
 Faceting is a method of high-performance filtering that uses multiple dimensions of attribute values as search criteria. Faceted search is similar, but considerably "smarter" than the standard [layered navigation](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html). The list of available filters is determined by the [filterable attributes](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html#filterable-attributes) of products returned in the search results. 
 
-[!DNL Live Search] uses the `productSearch` query which returns faceting and other data that is specific to [!DNL Live Search]. Refer to [`productSearch` query](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) for code examples.
+[!DNL Live Search] uses the `productSearch` query, which returns faceting and other data that is specific to [!DNL Live Search]. Refer to [`productSearch` query](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) in the developer documentation for code examples.
 
 ![Filtered search results](assets/storefront-search-results-run.png)
 
@@ -32,7 +32,7 @@ The category and product attribute requirements for faceting are similar to the 
 
 ## Facet aggregation
 
-Facet aggregation is performed as follows: if the storefront has three facets (categories, color and price) and the shopper filters on all three (color = blue, price is from $10.00-50.00, categories = `promotions`).
+Facet aggregation is performed as follows: if the storefront has three facets (categories, color, and price) and the shopper filters on all three (color = blue, price is from $10.00-50.00, categories = `promotions`).
 
 * `categories` aggregation - Aggregates `categories`, then applies the `color` and `price` filters, but not the `categories` filter.
 * `color` aggregation - Aggregates `color`, then applies  the`price` and `categories` filters, but not the `color` filter.
