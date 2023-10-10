@@ -112,9 +112,13 @@ See the events topic to learn more about [storefront](events.md#storefront-event
 
 ## Send historical order data
 
-Adobe Commerce collects up to five years of [historical order data and status](events.md#back-office-events). You can use the Experience Platform connector to send that historical data to the Experience Platform to enrich your customer profiles based on those past orders. The data is stored in a dataset within Experience Platform.
+Adobe Commerce collects up to five years of [historical order data and status](events.md#back-office-events). You can use the Experience Platform connector to send that historical data to the Experience Platform to enrich your customer profiles and personalize the customer experiences based on those past orders. The data is stored in a dataset within Experience Platform.
 
 While Commerce already collects the historical order data, there are several steps you must complete to send that data to Experience Platform.
+
+Watch this video to learn more about historical orders then complete the following steps to implement historical order collection and configuration.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3424672)
 
 ### Step 1: Install historical order data collection
 
@@ -242,12 +246,6 @@ Specify the date range for the historical orders that you want to send to Experi
 | From | Date from which you want to begin collecting order history data.|
 | To |  Date from which you want to end collecting order history data.|
 | Start Sync | Begins the process of syncing the order history data to the Experience Platform edge. This button is disabled if the **[!UICONTROL Dataset ID]** field is blank or the dataset ID is invalid.|
-
-### Historical order demo
-
-Watch this video to learn more about historical orders:
-
->[!VIDEO](https://video.tv.adobe.com/v/3424672)
 
 ## Confirm that event data is collected
 
