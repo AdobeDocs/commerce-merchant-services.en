@@ -2,6 +2,7 @@
 title: '[!DNL Quick Checkout] for Adobe Commerce Admin Panel'
 description: Learn how the [!DNL Quick Checkout] Admin Panel could help how to successfully onboard, setup and visualize the extension.
 exl-id: d91763ed-b4f6-4736-9503-0305edd77e91
+feature: Checkout, Services
 ---
 # Introduction to the [!DNL Quick Checkout] Admin Panel
 
@@ -10,7 +11,7 @@ exl-id: d91763ed-b4f6-4736-9503-0305edd77e91
 1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL Quick Checkout]**:
 1. In this view, you can access the _Admin panel_ overview, _Resources_ about [!DNL Quick Checkout], get _Help and Support_, or configure the extension via _Settings_.
 
-   ![Menu Quick Checkout](assets/admin-panel-view.png)
+   ![Menu Quick Checkout](assets/admin-panel-view.png){width="600" zoomable="yes"}
 
 Check that user has the proper roles and permissions granted in order for the [!DNL Quick Checkout] Admin panel to show. See the [User roles and permissions](../quick-checkout/user-roles-setup.md) topic for more information.
 

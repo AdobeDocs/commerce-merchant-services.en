@@ -2,6 +2,7 @@
 title: Enable [!DNL Payment Services] for Production
 description: Complete the onboarding process by enabling [!DNL Payment Services] for production.
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
+feature: Payments, Checkout, Configuration, Install
 ---
 # Enable [!DNL Payment Services] for Production
 
@@ -71,7 +72,7 @@ To enable live onboarding, you must request payments entitlement from Adobe:
 1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. Click **[!UICONTROL Get Live Payments]** in your [!DNL Payment Services] Home.
 
-   ![Request entitlements](assets/request-entitlements.png)
+   ![Request entitlements](assets/request-entitlements.png){width="500" zoomable="yes"}
 
 1. Complete the form.
 1. A member of the sales team will contact you.

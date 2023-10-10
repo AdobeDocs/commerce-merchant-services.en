@@ -32,12 +32,12 @@ For more information about styling storefront elements, refer to [Cascading styl
 
 The following class selectors can be used to style the container and product elements in the [!DNL popover].
 
-*  `.livesearch.popover-container`
-*  `.livesearch.view-all-footer`
-*  `.livesearch.products-container`
-*  `.livesearch.product-result`
-*  `.livesearch.product-name`
-*  `.livesearch.product-price`
+* `.livesearch.popover-container`
+* `.livesearch.view-all-footer`
+* `.livesearch.products-container`
+* `.livesearch.product-result`
+* `.livesearch.product-name`
+* `.livesearch.product-price`
 
 ### Container Class Selectors
 

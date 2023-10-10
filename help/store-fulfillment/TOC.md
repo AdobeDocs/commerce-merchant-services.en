@@ -3,6 +3,10 @@ user-guide-title: "[!DNL Store FulFillment Guide]"
 user-guide-description: Detailed information about installing, configuring, and using Store Fulfillment for Adobe Commerce stores.
 breadcrumb-title: Store Fulfillment for Adobe Commerce
 index: yes
+feature: Shipping/Delivery
+role: Admin, User
+recommendations: noDisplay
+
 ---
 
 # Store Fulfillment for Commerce {#store-fulfillment}

@@ -37,7 +37,7 @@ To construct a dynamic query, the search service needs to know which attributes 
 
 ### Full index
 
-When [!DNL Live Search] is configured and synchronized during onboarding, it can take up to eight hours to build the initial index. The process begins after `cron` submits the feed and finishes running.
+When [!DNL Live Search] is configured and synchronized during onboarding, it can take up to 30 minutes to build the initial index. Large catalogs can take longer to index. The process begins after `cron` submits the feed and finishes running.
 
 The following events trigger a full sync and index build:
 
@@ -67,7 +67,7 @@ Streaming update workflow:
 
 ## Client search
 
-The [!DNL Live Search] API allows a client to sort by any sortable product attribute by setting the [storefront property](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html), *Used for sorting in product listings* to `Yes`. Depending on the theme, this setting causes the attribute to be included as an option in the [Sort by](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation.html) pagination control on catalog pages. Up to 300 product attributes can be indexed by [!DNL Live Search], with [storefront properties](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) that are searchable and filterable.
+The [!DNL Live Search] API allows a client to sort by any sortable product attribute by setting the [storefront property](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html), *Used for sorting in product listings* to `Yes`. Depending on the theme, this setting causes the attribute to be included as an option in the [Sort by](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation.html) pagination control on catalog pages. Up to 200 product attributes can be indexed by [!DNL Live Search], with [storefront properties](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) that are searchable and filterable.
 The index metadata is stored in the indexing pipeline and is accessible by the search service.
 
 ![[!DNL Live Search] index metadata API diagram](assets/index-metadata-api.svg)

@@ -2,6 +2,7 @@
 title: '[!DNL Catalog Service] Release Notes'
 description: The latest release information for [!DNL Catalog Service] for Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
+feature: Services, Catalog Service, Release Notes
 ---
 # [!DNL Catalog Service] Release Notes
 
@@ -15,18 +16,14 @@ Updates include:
 
 ## Current major version
 
- _April 25, 2023_
+### V1.12 Release
 
-![New](../assets/new.svg) Catalog Service customers can now take advantage of the new [SaaS price indexer](../price-index/index.md).
+_September 19, 2023_
 
-### V1.7 Release
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
-_April 12, 2023_
-
-[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.4 and newer
-
-![New](../assets/new.svg) Catalog Service now cleans up deleted product variants.
-![Fix](../assets/fix.svg) Infrastructure scalability and performance improvements.
+![New](../assets/new.svg) Catalog Service now uses [SaaS price indexing](../price-index/index.md).
+![Fix](../assets/fix.svg) This release contains bug fixes and improvements on the service side.
 
 #### Known limitations
 
@@ -43,11 +40,40 @@ The following limitations can be solved by using the API Mesh and the Core Graph
 * [Tier pricing](mesh.md)
 * Downloadable products and gift cards
 
+## Previous versions
+
++++ Previous versions
+
+### V1.11 Release
+
+_July 18, 2023_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+![New](../assets/new.svg) Catalog Service now supports the [`recommendations`](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations/) GraphQL query for Product Recommendations.
+
+### V1.10 Release
+
+_June 27, 2023_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+![New](../assets/new.svg) Catalog Service API now supports "related products".
+
+### V1.7 Release
+
+_April 12, 2023_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+![New](../assets/new.svg) Catalog Service now cleans up deleted product variants.
+![Fix](../assets/fix.svg) Infrastructure scalability and performance improvements.
+
 ### V1.6 Release
 
 _March 28, 2023_
 
-[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.4 and newer
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
 ![New](../assets/new.svg) Added swatches to the [`products`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/) query.
 ![New](../assets/new.svg) Added the ability to get `entityId` using [API Mesh](mesh.md).
@@ -56,7 +82,7 @@ _March 28, 2023_
 
 _March 6, 2023_
 
-[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.4 and newer
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
 ![New](../assets/new.svg) Added [`categories`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/) GraphQL functionality.
 ![Fix](../assets/fix.svg) Improved performance and API scalability.
@@ -65,7 +91,7 @@ _March 6, 2023_
 
 _February 7, 2023_
 
-[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.x and newer
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.x and newer
 
 ![New](../assets/new.svg) Published catalog-service metapackage to simplify installation steps.
 ![Fix](../assets/fix.svg) API scalability and performance improvements.
@@ -74,7 +100,7 @@ _February 7, 2023_
 
 _January 17, 2023_
 
-[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.x and newer
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.x and newer
 
 ![New](../assets/new.svg) Simplified and improved the onboarding experience.
 ![New](../assets/new.svg) New customer sandbox endpoints are available for pre-production testing.
@@ -85,7 +111,7 @@ _January 17, 2023_
 
 _November 18, 2022_
 
-[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.x and newer
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.x and newer
 
 ![New](../assets/new.svg) Catalog Service now supports Adobe's [API Mesh](https://developer.adobe.com/graphql-mesh-gateway/).
 ![Fix](../assets/fix.svg) Improved API scalability and overall performance.
@@ -94,21 +120,17 @@ _November 18, 2022_
 
 _October 4, 2022_
 
-[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.x and newer
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.x and newer
 
 ![New](../assets/new.svg) Now support bundled and grouped products.
 ![New](../assets/new.svg) Added B2B visibility overrides. Products are now searchable and can be added to the cart for specific customer groups.
 ![Fix](../assets/fix.svg) Service is now more stable and has improved performance.
 
-## Previous versions
-
-+++Beta releases
-
 ### 0.3 Release - Beta+
 
 _September 12, 2022_
 
-[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.x and newer
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.x and newer
 
 ![New](../assets/new.svg) Images for variants support: product images are returned based on the selected options
 ![New](../assets/new.svg) Roles for prices support: allow only members of specific customer groups to see the price of products
@@ -119,7 +141,7 @@ _September 12, 2022_
 
 _August 9, 2022_
 
-[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.x and newer
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.x and newer
 
 ![New](../assets/new.svg) The `products` and `refineProduct` queries return the following data:
 

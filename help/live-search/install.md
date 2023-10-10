@@ -2,6 +2,7 @@
 title: "Install [!DNL Live Search]"
 description: "Learn how to install, update, and uninstall [!DNL Live Search] from Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
+role: Admin, Developer
 ---
 # Install [!DNL Live Search]
 
@@ -61,11 +62,14 @@ In this scenario, storefront operations are interrupted while the [!DNL Live Sea
    >
    > While the data is indexed and synchronized, the search and category browse operations are not available in the storefront. Depending on the size of your catalog, the process can take at least an hour from the time `cron` runs to synchronize your data to [!DNL Live Search] services.
 
-1. Verify that the following [indexers](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) are set to `Update by Schedule`:
+1. Verify that the following [indexers](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) are set to "Update by Schedule":
 
    * Product Feed
    * Product Variant Feed
    * Catalog Attributes Feed
+   * Product Prices Feed
+   * Scopes Website Data feed
+   * Scopes Customer Groups Data feed
 
 1. Configure your [API keys](#configure-api-keys) and verify that your catalog data is [synchronized](#synchronize-catalog-data) with [!DNL Live Search] services.
 
@@ -109,11 +113,14 @@ In this scenario, [!DNL Elasticsearch] temporarily manages search requests from 
 
    [!DNL Elasticsearch] continues to manage search requests from the storefront while the [!DNL Live Search] service synchronizes catalog data and indexes products in the background.
 
-1. Verify that the following [indexers](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) are set to `Update by Schedule`:
+1. Verify that the following [indexers](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) are set to "Update by Schedule":
 
    * Product Feed
    * Product Variant Feed
    * Catalog Attributes Feed
+   * Product Prices Feed
+   * Scopes website data feed
+   * Scopes customer groups data feed
 
 1. Configure your [API keys](#configure-api-keys) and verify that your catalog data is [synchronized](#synchronize-catalog-data) with [!DNL Live Search] services.
 
@@ -157,7 +164,7 @@ The developer or SI configures the SaaS data space as described in the *Commerce
 
 ## Synchronize catalog data {#synchronize-catalog-data}
 
-[!DNL Live Search] requires synchronized product data for search operations, and synchronized attribute data to configure facets. The initial synchronization between the product catalog and the catalog service begins when [!DNL Live Search] is first connected. Depending on the installation method and size of the catalog, it can take up to eight hours for the data to be exported and indexed by [!DNL Live Search]. The list of data that is synchronized and shared with the catalog service can be found in the schema, which is defined in:
+[!DNL Live Search] requires synchronized product data for search operations, and synchronized attribute data to configure facets. The initial synchronization between the product catalog and the catalog service begins when [!DNL Live Search] is first connected. Depending on the installation method and size of the catalog, it can take up to 30 minutes for the data to be exported and indexed by [!DNL Live Search]. The list of data that is synchronized and shared with the catalog service can be found in the schema, which is defined in:
 
 `vendor/magento/module-catalog-data-exporter/etc/et_schema.xml`
 
@@ -186,6 +193,8 @@ If everything works correctly, congratulations! [!DNL Live Search] is installed,
 
 If you encounter problems in the storefront, check the `var/log/system.log` file for API communication failures or errors on the services side.
 
+To allow Live Search through a firewall, add `commerce.adobe.io` to the allow list.
+
 ## Checking the installed version
 
 Before updating Live Search, run the following from the command line to check the version of Live Search that is currently installed:
@@ -202,7 +211,7 @@ To update [!DNL Live Search], run the following from the command line:
 composer update magento/live-search --with-dependencies
 ```
 
-To update to a major version such as from 2.0.0 to 3.0.1, edit the project's root [!DNL Composer] `.json` file as follows:
+To update to a major version such as from 2.0.0 to 3.1.1, edit the project's root [!DNL Composer] `.json` file as follows:
 
 1. If your currently installed `magento/live-search` version is `2.0.3` or below, and you are upgrading to version `3.0.0` or higher, run the following command before the upgrade:
 
@@ -248,10 +257,21 @@ To uninstall [!DNL Live Search], refer to [Uninstall modules](https://experience
 
 ## [!DNL Live Search] dependencies {#dependencies}
 
-The following [!DNL Live Search] dependencies are captured by [!DNL Composer]:
-
-| Dependency | Description|
-|--- |--- |
-| Export modules | The following modules collect and sync catalog data:<br />`module-sass-catalog`<br />`module-sass-product-override`<br />`module-bundle-product-data-exporter`<br />`module-catalog-data-exporter`<br />`module-catalog-inventory-data-exporter`<br />`module-catalog-url-rewrite-data-exporter`<br />`module-configurable-product-data-exporter`<br />`module-data-exporter`<br />`module-parent-product-data-exporter`<br />`module-product-override-data-exporter` |
-| `data-services` | Required to configure your connection to Commerce Services. |
-| `services-id` | Required to configure your connection to Commerce Services. |
+The following [!DNL Live Search] dependencies are captured by [!DNL Composer].
+  
+* `magento/module-saas-catalog`
+* `magento/module-saas-category`
+* `magento/module-saas-category-permissions`
+* `magento/module-saas-product-override`
+* `magento/module-saas-product-variant`
+* `magento/module-saas-price`
+* `magento/module-saas-scopes`
+* `magento/module-bundle-product-data-exporter`
+* `magento/module-catalog-inventory-data-exporter`
+* `magento/module-catalog-url-rewrite-data-exporter`
+* `magento/module-configurable-product-data-exporter`
+* `magento/module-parent-product-data-exporter`
+* `magento/module-gift-card-product-data-exporter`
+* `magento/module-bundle-product-override-data-exporter`
+* `data-services`
+* `services-id`

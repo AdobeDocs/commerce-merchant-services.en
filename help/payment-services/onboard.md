@@ -4,6 +4,7 @@ description: Connect your instance with [!DNL Payment Services] functionality by
 role: User
 level: Intermediate
 exl-id: 1ee8c660-0941-4378-a1d7-ae45de3de211
+feature: Payments, Checkout, Integration
 ---
 # Onboard [!DNL Payment Services]
 
@@ -11,7 +12,7 @@ To get started using [!DNL Payment Services] for [!DNL Adobe Commerce] and [!DNL
 
 ## Onboarding flow
 
-![Onboarding flow](assets/onboarding-diagram.svg)
+![Onboarding flow](assets/onboarding-diagram.svg){width="600" zoomable="yes"}
 
 This onboarding flow diagram shows the general process for onboarding [!DNL Payment Services].
 

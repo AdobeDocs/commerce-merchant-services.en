@@ -1,13 +1,13 @@
 ---
 title: General Configuration
 description: Configure general settings to enable [!DNL Store Fulfillment] for your store. Configure global extension settings, system settings for logging, data synchronization, and security. Provide key data to enable the integration between Adobe Commerce and Store Fulfillment services.
-role: User, Admin
+role: Admin
 level: Intermediate
 exl-id: 51dcfc95-3dd6-40d9-bd26-d8409a25f3c8
 ---
 # Store Service and Sales Configuration
 
-Configure [!DNL Store Fulfillment] from the [!DNL Commerce] Admin to enable the extension, specify extension settings, configure the security settings for Store Assist app users, and set options for delivery methods.
+Enable [!DNL Store Fulfillment] extension from the [!DNL Commerce] Admin by configuring extension settings, the security settings for Store Assist app users, and the delivery method options.
 
 >[!IMPORTANT]
 >
@@ -103,7 +103,7 @@ Enable the [!DNL Store Fulfillment] solution to add the in-store and curbside pi
 </tr>
 <tr>
 <td><strong>[!UICONTROL API Server URL]</strong></td>
-<td>The URL to the Walmart Store Fulfillment API endpoint. This must be the fully qualified URL that is provided during the onboarding process. Store Fulfillment customers receive both a Sandbox and Production URL. When adding the values, ensure that you copy and paste the full URL, including trailing slash "/".</td>
+<td>The URL to the Walmart Store Fulfillment API endpoint. The value must be the fully qualified URL that is provided during the onboarding process. Store Fulfillment customers receive both a Sandbox and Production URL. When adding the values, ensure that you copy and paste the full URL, including trailing slash "/".</td>
 <td>Global</td>
 <td>Yes</td>
 </tr>
@@ -184,7 +184,7 @@ You can view details about order synchronization operations from the Store Fulfi
 </tr>
 <tr>
 <td><strong>[!UICONTROL Retry Critical Error]</strong></td>
-<td>Specifies the retry attempts for a record synchronization operation after a critical error occurs.<br></br>Critical errors occur anytime the integration fails to get a positive response from the fulfillment service. This can occur when the service is down or when there is an error in the order data being sent.<br></br>When the retry threshold is reached, the item remains in a queue but is not processed again. View all items with errors from <strong>[!UICONTROL System &gt; Tools &gt; Store Fulfillment Queue]</strong> Management in the Admin. To troubleshoot consistently failing items, contact your Account Manager.</td>
+<td>Specifies the retry attempts for a record synchronization operation after a critical error occurs.<br></br>Critical errors occur anytime the integration fails to get a positive response from the fulfillment service. These issues occur when the service is down, or when there is an error in the order data being sent.<br></br>When the retry threshold is reached, the item remains in a queue but is not processed again. View all items with errors from <strong>[!UICONTROL System &gt; Tools &gt; Store Fulfillment Queue]</strong> Management in the Admin. To troubleshoot consistently failing items, contact your Account Manager.</td>
 <td>Global</td>
 <td>No</td>
 </tr>
@@ -222,7 +222,7 @@ You can view details about order synchronization operations from the Store Fulfi
 <tbody>
 <tr>
 <td><strong>[!UICONTROL Barcode Source]</strong></td>
-<td>The catalog attribute that stores the scannable code for corresponding items in your merchant locations.<br></br>If you have only one existing merchant location, it is likely that you use UPC codes, while your e-commerce channel identifies products by SKU. If this is your scenario, select the catalog attribute that contains the UPC code.<br></br>This setting ensures that orders sent to your stores list items with the correct identifier so that store associates can accurately scan items during the picking process.<br></br>If you are unsure, check with your fulfillment associates in the Shipping and Picking department to determine which attribute should be sent. You might need to add the appropriate attribute to the Adobe Commerce product attribute set if the attribute is not currently included in the database.</td>
+<td>The catalog attribute that stores the scannable code for corresponding items in your merchant locations.<br></br>If you have only one existing merchant location, it is likely that you use UPC codes, while your e-commerce channel identifies products by SKU. In this scenario, select the catalog attribute that contains the UPC code.<br></br>This setting ensures that orders sent to your stores list items with the correct identifier so that store associates can accurately scan items during the picking process.<br></br>If you are unsure, check with your fulfillment associates in the Shipping and Picking department to determine which attribute should be sent. If the attribute is not currently included in the database, you can add the attribute to the Adobe Commerce product attribute set.</td>
 <td>Website</td>
 <td>Yes</td>
 </tr>
@@ -234,7 +234,7 @@ You can view details about order synchronization operations from the Store Fulfi
 </tr>
 <tr>
 <td><strong>[!UICONTROL Max Number of Items]</strong></td>
-<td>The maximum number of items to send from the store fulfillment queue at one time.<br></br>BOPIS orders are sent to the fulfillment service in batches, at regular intervals. This setting allows you to control the size of the batch.<br></br>The default value is 100 items. Depending on your order volume and capacity, you might need to adjust this value up or down.</td>
+<td>The maximum number of items to send from the store fulfillment queue at one time.<br></br>BOPIS orders are sent to the fulfillment service in batches, at regular intervals. This setting allows you to control the size of the batch.<br></br>The default value is 100 items. Depending on your order volume and capacity, you can adjust the maximum value up or down.</td>
 <td>Global</td>
 <td>No</td>
 </tr>
@@ -259,7 +259,7 @@ Configure the Store Fulfillment shipping options that determine the availability
 <tbody>
 <tr>
 <td><strong>[!UICONTROL Enable Ship To Store]</strong></td>
-<td>The ship-to-store setting is based on your existing ship-to-store capabilities. If you use Inventory Management, or if you can accept and fulfill orders at merchant locations with no inventory via store-to-store inventory transfers, set this option to `Yes`.<br></br>If you cannot support the ship-to-store option or do not wish to offer it, set to `No`. When disabled, items in your catalog with zero inventory for a merchant store, or items that are below that location's [!DNL Out of Stock Threshold], are not offered with in-store pickup options.<br></br>This is a global setting that can be adjusted per merchant location.</td>
+<td>The ship-to-store setting is based on your existing ship-to-store capabilities. If you use Inventory Management, or if you can accept and fulfill orders at merchant locations with no inventory via store-to-store inventory transfers, set this option to `Yes`.<br></br>If you cannot support the ship-to-store option or do not wish to offer it, set to `No`. When disabled, items in your catalog with zero inventory for a merchant store, or items that are below the [!DNL Out of Stock Threshold] for that location, are not offered with in-store pickup options.<br></br>You can adjust the value of this setting per merchant location.</td>
 <td>Global</td>
 <td>No</td>
 </tr>
@@ -280,7 +280,7 @@ Configure the Store Fulfillment shipping options that determine the availability
 <tbody>
 <tr>
 <td><strong>[!UICONTROL Enable Ship From Store]</strong></td>
-<td>Enables or disables the Home Delivery option in your merchant stores. When enabled, your merchant store locations are considered in aggregate with other assigned sources in the stock associated to your website.<br></br>In standard Inventory Management services, the [!DNL Ship from Store] is option is inherent and cannot be disabled. With the Store Fulfillment solution, you can turn it on or off.<br></br>This is a global setting. You can also adjust this setting per merchant location and product.</td>
+<td>Enables or disables the Home Delivery option in your merchant stores. When enabled, your merchant store locations are considered in aggregate with other assigned sources in the stock associated to your website.<br></br>In standard Inventory Management services, the [!DNL Ship from Store] is option is inherent and cannot be disabled. With the Store Fulfillment solution, you can turn it on or off.<br></br>You can adjust this setting per merchant location and product.</td>
 <td>Global</td>
 <td>No</td>
 </tr>
@@ -342,7 +342,7 @@ Configure the settings for the Store Fulfillment App user account and password s
 Store Fulfillment works by extending the native Adobe Commerce [!DNL In-Store Delivery] capabilities. After you install the extension, you can configure in-store delivery methods using the following extended settings that are added to the Admin.
 
 - **In-store pick up**—Offer options for in-store delivery during the checkout process
-This is the most common delivery scenario for BOPIS orders.
+These settings configure the most common delivery scenarios for BOPIS orders.
 
 - **[!UICONTROL Curbside pick up]**–Offer options for customers to park at a store location and have their order delivered to them by a store associate.
 
@@ -431,25 +431,25 @@ With the in-store delivery method, the customer can select a source to be used a
 </tr>
 <tr>
 <td><strong>In-Store Pickup Instructions</strong></td>
-<td>When an order is ready for pickup at your retail stores, the customer is notified by e-mail. If the customer selected [!DNL In-Store Pickup] during checkout, you can customize the pickup instructions here. </br></br>This is a global setting that applies to all retail store locations. You can also customize the instructions at the retail store location level.</td>
+<td>When an order is ready for pickup at your retail stores, the customer is notified by e-mail. If the customer selected [!DNL In-Store Pickup] during checkout, you can customize the pickup instructions here. </br></br>These instructions are set globally and apply to all retail store locations. You can also customize the instructions at the retail store location level.</td>
 <td>Store View</td>
 <td>No</td>
 </tr>
 <tr>
 <td><strong>Curbside Pickup Instructions</strong></td>
-<td>Specifies customized order pickup instructions to include in customer email notifications for curbside pickup orders. </br></br>This is a global setting that applies to all retail store locations. You can also customize the instructions at the retail store location level.</td>
+<td>Specifies customized order pickup instructions to include in customer email notifications for curbside pickup orders. </br></br>These instructions are set globally and apply to all retail store locations. You can also customize the instructions at the retail store location level.</td>
 <td>Store View</td>
 <td>No</td>
 </tr>
 <tr>
 <td><strong>Estimated Pickup Lead Time</strong></td>
-<td>The number of minutes required before an order is received, fulfilled, and ready to be picked up. This information is shown to the customer when selecting a retail store location for Store Pickup delivery option. This is a global setting and applies to all retail store locations. You can also customize the lead time at the retail store location level.</td>
+<td>The number of minutes required before an order is received, fulfilled, and ready to be picked up. This information is shown to the customer when selecting a retail store location for Store Pickup delivery option. This setting applies to all retail store locations. You can also customize the lead time at the retail store location level.</td>
 <td>Store View</td>
 <td>No</td>
 </tr>
 <tr>
 <td><strong>Estimated Pickup Time Label</strong></td>
-<td>Displays the estimated time until an order is available for customer pickup. This information is shown to customers when they select a retail store location for the [!DNL In-Store Pickup] delivery option. </br></br>When customizing this label, you can use the code <code>%1</code> to insert your <strong>Estimated Pickup Lead Time</strong>. For example:</br></br><code>Ready for Pickup in %1 minutes.</code></br></br>This is a global setting that applies to all retail store locations. You can also customize the lead time at the retail store location level.</td>
+<td>Displays the estimated time until an order is available for customer pickup. This information is shown to customers when they select a retail store location for the [!DNL In-Store Pickup] delivery option. </br></br>When customizing this label, you can use the code <code>%1</code> to insert your <strong>Estimated Pickup Lead Time</strong>. For example:</br></br><code>Ready for Pickup in %1 minutes.</code></br></br>This setting applies to all retail store locations. You can also customize the lead time at the retail store location level.</td>
 <td>Store View</td>
 <td>No</td>
 <tr>

@@ -2,6 +2,7 @@
 title: "Checkout flow for an Adobe Commerce user"
 description: "Overview of the [!DNL Quick Checkout] flow for an Adobe Commerce user."
 exl-id: 085e393b-15f6-4d5a-a04d-927b1f95b74e
+feature: Checkout, Services, Storefront
 ---
 # An existing Adobe Commerce user: How it works
 
@@ -17,7 +18,7 @@ If a [!DNL Bolt] account is found during checkout, shoppers can continue with th
 
 1. Input the One-Time Password (OTP) sent to that [!DNL Bolt] account's email address or mobile, depending on [user's preferences in the [!DNL Bolt] account](https://help.bolt.com/shoppers/account/account-settings/#how-to-set-preferred-login-method){target=_blank}.
 
-  ![OTP Pop-up](assets/new-logo-otp-email.png)
+  ![OTP Pop-up](assets/new-logo-otp-email.png){width="300" zoomable="yes"}
 
 1. Once logged in with your [!DNL Bolt] account, the details are automatically added:
 
@@ -58,4 +59,4 @@ If no [!DNL Bolt] account is found, shoppers continue with their default out-of-
 - Review payment method
 - The option to register in [!DNL Bolt] for faster checkouts before placing the order appears. The shopper can agree to the terms and conditions to create their [!DNL Bolt] account.
 
-  ![Remember [!DNL Bolt]](assets/checkbox-remember-bolt.png)
+  ![Remember [!DNL Bolt]](assets/checkbox-remember-bolt.png){width="300" zoomable="yes"}

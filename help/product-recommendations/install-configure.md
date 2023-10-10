@@ -2,6 +2,7 @@
 title: Install and Configure
 description: Learn how to install, update, and uninstall [!DNL Product Recommendations].
 exl-id: fa599f72-1064-41da-ac54-2b3a3c16a1fe
+role: Admin, Developer
 ---
 # Install and Configure
 
@@ -93,6 +94,10 @@ composer update --with-dependencies magento/product-recommendations magento/modu
 >[!NOTE]
 >
 > In versions 3.x.x of Product Recommendations, you only needed a single API key. In versions 4.x.x and higher, you must provide Production public and private API keys as well as Sandbox public and private API keys. If you do not provide both pairs of API keys, you cannot access the Product Recommendations feature in the Admin. Data collection, however, will continue on your storefront and existing recommendations will continue to be shown to your shoppers.
+
+## Firewalls
+
+To let Product Recommendations through a firewall, add `commerce.adobe.io` to the allow list.
 
 ## Uninstall [!DNL Product Recommendations] {#uninstall}
 

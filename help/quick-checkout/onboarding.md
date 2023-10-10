@@ -2,12 +2,13 @@
 title: "Onboard the [!DNL Quick Checkout] for Adobe Commerce extension"
 description: "Learn how the [!DNL Quick Checkout] could benefit your Adobe Commerce instance and how to successfully onboard and setup the extension."
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
+feature: Checkout, Services
 ---
 # [!DNL Quick Checkout] Onboarding
 
 To get started using the [!DNL Quick Checkout] for Adobe Commerce extension you must complete a few onboarding steps to connect your instance with our checkout functionality.
 
-![Quick Checkout](assets/overview-admin-panel.png)
+![Quick Checkout](assets/overview-admin-panel.png){width="800" zoomable="yes"}
 
 1. [Get extension](#get-extension).
 1. [Create a production or sandbox merchant account with [!DNL Bolt]](#create-account-with-bolt). Provide all required information to verify your identity.
@@ -22,7 +23,7 @@ If Gainsight is enabled, it triggers the **Take the tour** button in your [!DNL 
 
 1. On the _Admin_ sidebar, go to **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > Advanced:
 
-    ![Quick Checkout](assets/gainsight-admin.png)
+    ![Quick Checkout](assets/gainsight-admin.png){width="500" zoomable="yes"}
 
 If Gainsight is not enabled, continue with the onboarding steps.
 
@@ -62,7 +63,7 @@ To use the [!DNL Quick Checkout] you require [!DNL Bolt] unique keys and [!DNL s
 - [!DNL Publishable key]: A key used by your front end to interact with [!DNL Bolt] APIs.
 - [!DNL Signing secret]: Used for signature verification on requests received from [!DNL Bolt].
 
-  ![Quick Checkout](assets/account-credentials.png)
+  ![Quick Checkout](assets/account-credentials.png){width="500" zoomable="yes"}
 
 See the [[!DNL Bolt] environment details](https://help.bolt.com/developers/references/environment-details/#about-keys){target="_blank"} page to learn about keys and signing secret from [!DNL Bolt] for the [!DNL Quick Checkout] extension.
 
@@ -80,7 +81,7 @@ To connect your payment services provider follow the steps described in the [pro
 1. In the left panel, expand **Sales** and select **Checkout**.
 1. In the [!DNL Quick Checkout] view, set **Enable** to `Yes`.
 
-  ![Quick Checkout](assets/quick-checkout-view-no-enable.png)
+  ![Quick Checkout](assets/quick-checkout-view-no-enable.png){width="500" zoomable="yes"}
 
   >[!CAUTION]
   >
@@ -93,7 +94,7 @@ To connect your payment services provider follow the steps described in the [pro
 
 1. Validate credentials after providing your unique API and [!DNL Publishable keys].
 
-![Quick Checkout](assets/quick-checkout-main-view.png)
+![Quick Checkout](assets/quick-checkout-main-view.png){width="500" zoomable="yes"}
 
 Refer to the [Settings](../quick-checkout/settings-quick-checkout.md) topic for more information on the configuration options for the [!DNL Quick Checkout] for Adobe Commerce extension.
 
@@ -134,7 +135,7 @@ See the [Site, Store, and View Scope](https://experienceleague.adobe.com/docs/co
 
 ## Configure Service Settings
 
-![Quick Checkout](assets/service-settings.png)
+![Quick Checkout](assets/service-settings.png){width="500" zoomable="yes"}
 
 1. Set **Enable Checkout Tracking** to `Yes`.
 

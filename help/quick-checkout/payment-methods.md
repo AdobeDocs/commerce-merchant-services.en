@@ -2,6 +2,7 @@
 title: "Payment methods"
 description: "Overview of the compatible payment methods with the [!DNL Quick Checkout] for Adobe Commerce extension."
 exl-id: 7d151477-5932-4ec0-b729-dbda6b49e6da
+feature: Checkout, Services
 ---
 # [!DNL Quick Checkout] Compatible Payment Methods
 

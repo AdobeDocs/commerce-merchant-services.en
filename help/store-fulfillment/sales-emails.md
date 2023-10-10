@@ -1,8 +1,9 @@
 ---
 title: Sales Email Templates
 description: Configure the transactional email templates for communicating with customers and store administrators during the fulfillment process for Store Pickup orders.
-role: User, Admin
+role: Admin
 level: Intermediate
+feature: Shipping/Delivery, Communications, Configuration
 exl-id: 688732e3-06f0-4613-a589-2d465597eb28
 ---
 
@@ -27,7 +28,7 @@ Configure the Sales Email templates from the Admin: **[!UICONTROL Stores > Confi
 </thead>
 <tbody><tr>
 <td><strong>Asynchronous Sending</strong></td>
-<td>Disable this feature. Asynchronous email sending is not supported. For the fastest communication and response time for Store Pickup, send emails immediately instead of batching them. </td>
+<td>Determines whether sales emails are sent asynchronously. Options: <br/>**`Disable`** - (Default) Sales emails are sent when triggered by an event. For the fastest communication and response time for Store Pickup, use the default setting. <br/>**`Enable`** - Enabling this option moves processes that handle checkout and order processing email notifications to the background to be sent at predetermined, regular intervals.</td>
 <td>Store View</td>
 <td>No</td>
 </tr>

@@ -2,6 +2,8 @@
 user-guide-title: "[!DNL Live Search] Guide"
 user-guide-description: "This guide provides detailed instructions for using [!DNL Live Search] from Adobe Commerce."
 breadcrumb-title: "[!DNL Live Search] Guide"
+role: Admin
+feature: Services, Search
 ---
 # [!DNL Live Search] for Commerce {#live-search}
 
@@ -17,8 +19,8 @@ breadcrumb-title: "[!DNL Live Search] Guide"
    - [Storefront [!DNL Popover]](storefront-popover.md)
    - [Styling [!DNL Popover] Elements](storefront-popover-styling.md)
 - [!DNL Live Search] Admin{#live-search-admin}
-   - [Workspace](workspace.md)
-   - [Performance](performance.md)
+   - [Category Merchandising](category-merch.md)
+   - [Commerce Configuration Settings](configuration.md)
    - Facets {#facets}
       - [Overview](facets.md)
       - [Faceting Workspace](faceting-workspace.md)
@@ -26,19 +28,20 @@ breadcrumb-title: "[!DNL Live Search] Guide"
       - [Add Facets](facets-add.md)
       - [Manage Facets](facets-manage.md)
       - [Technical Notes](facet-technical-notes.md)
-   - Synonyms {#synonyms}
-      - [Overview](synonyms.md)
-      - [Types of Synonyms](synonyms-type.md)
-      - [Add Synonyms](synonyms-add.md)
-      - [Manage Synonyms](synonyms-manage.md)
+   - [Indexing](indexing.md)
+   - [Performance](performance.md)
    - Rules {#rules}
       - [Overview](rules.md)
       - [Rules Workspace](rules-workspace.md)
       - [Add Rules](rules-add.md)
       - [Manage Rules](rules-manage.md)
-   - [Commerce Configuration Settings](configuration.md)
    - [Settings](settings.md)
-   - [Indexing](indexing.md)
+   - Synonyms {#synonyms}
+      - [Overview](synonyms.md)
+      - [Types of Synonyms](synonyms-type.md)
+      - [Add Synonyms](synonyms-add.md)
+      - [Manage Synonyms](synonyms-manage.md)
+   - [Workspace](workspace.md)
 - GraphQL queries {#graphql}
    - [attributeMetadata](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/attribute-metadata/)
    - [productSearch](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/)

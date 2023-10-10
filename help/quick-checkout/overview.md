@@ -2,10 +2,11 @@
 title: "[!DNL Quick Checkout] for Adobe Commerce"
 description: "Learn how the [!DNL Quick Checkout] could benefit your Adobe Commerce instance and how to successfully onboard and setup the extension."
 exl-id: 6f205568-18af-4f2f-827c-b46f04e0a10a
+feature: Checkout, Services
 ---
 # [!DNL Quick Checkout] for Adobe Commerce
 
-The [!DNL Quick Checkout] for Adobe Commerce extension powers a seamless checkout experience designed to convert one-time guest shoppers into loyal account holders. Shoppers expect a fast shopping experience. And yet, friction in the checkout still remains a top reason why shoppers don’t complete their purchase. When you streamline your checkout and improve your conversion rate, you are free to focus on truly impactful things.
+The [!DNL Quick Checkout] for Adobe Commerce extension powers a seamless checkout experience designed to convert one-time guest shoppers into loyal account holders. Shoppers expect a fast shopping experience. And yet, friction in the checkout still remains a top reason why shoppers don't complete their purchase. When you streamline your checkout and improve your conversion rate, you are free to focus on truly impactful things.
 
 The guide provides an overview of the typical checkout experience for Adobe Commerce and how the [!DNL Quick Checkout] benefits as well as best practices to follow along that journey.
 

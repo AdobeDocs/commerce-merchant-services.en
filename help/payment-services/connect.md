@@ -2,6 +2,7 @@
 title: Connect Your Instance
 description: Connect your Commerce instance using an API key and a private key, and specify the data space in the configuration.
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
+feature: Payments, Checkout, Configuration, Saas
 ---
 # Connect Your Instance
 

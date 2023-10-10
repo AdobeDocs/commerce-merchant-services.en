@@ -1,8 +1,9 @@
 ---
 title: Installation
 description: "Install the [!DNL Store Fulfillment solution] for an Adobe Commerce storefront using Composer for PHP."
-role: User, Admin
+role: Admin, Developer
 level: Intermediate
+feature: Shipping/Delivery, Install
 exl-id: 6613268a-7d22-4c54-af89-834921b7f262
 ---
 
@@ -10,9 +11,13 @@ exl-id: 6613268a-7d22-4c54-af89-834921b7f262
 
 Complete the initial installation of the [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] extension in a non-production environment with queue manager running and caching configured to allow exception handling. Ensure that your development environment includes development tools to ensure best practices for operating and maintaining your Adobe Commerce instance.
 
+>[!TIP]
+>
+>Upgrade the Store Fulfillment extension for Adobe Commerce on premises by following the [upgrade instructions](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/modules/upgrade.html) in the _Adobe Commerce Upgrade Guide_. For Adobe Commerce on cloud infrastructure, see [Upgrade an extension](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/extensions.html#upgrade-an-extension) in the *Commerce on Cloud Infrastructure Guide*.
+
 ## Prerequisites
 
-Review the [requirements](solution-requirements.md) for the Store Fulfillment solution and gather required information before you install the [!DNL Store Fulfillment] extension for Adobe Commerce.
+Review the [requirements](solution-requirements.md) for the Store Fulfillment solution and gather required information before you install or upgrade the [!DNL Store Fulfillment] extension for Adobe Commerce.
 
 If you have installed a pre-release or beta version of the Store Fulfillment for Adobe Commerce extension, use the following command to remove it before installing the current version.
 
@@ -189,4 +194,5 @@ The `-f` option is required if you are using a blank theme.
 >[!NOTE]
 >
 >For more information, see the [Static content deploy best practices in Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/static-content-deployment.html) article in the Adobe Commerce Help Center.
+
 

@@ -2,6 +2,7 @@
 title: "Checkout flow in Adobe Commerce"
 description: "Overview of the [!DNL Quick Checkout] flow in Adobe Commerce."
 exl-id: 82761627-a0d4-4cb0-aad1-9865fcb550d4
+feature: Checkout, Services, Storefront
 ---
 # [!DNL Quick Checkout] Flow
 
@@ -12,7 +13,7 @@ A successful [!DNL Quick Checkout] flow consists of the following steps:
 1. Open your storefront and add items in your cart.
 1. Proceed to checkout.
 
-  ![Checkout](assets/proceed-checkout.png)
+  ![Checkout](assets/proceed-checkout.png){width="200" zoomable="yes"}
 
    >[!NOTE]
    >
@@ -21,7 +22,7 @@ A successful [!DNL Quick Checkout] flow consists of the following steps:
 1. When prompted, enter an email address associated with a [!DNL Bolt] account.
 1. Input the One-Time Password (OTP) sent to that [!DNL Bolt] account's email address or phone number.
 
-  ![OTP Pop-up](assets/new-logo-otp-email.png)
+  ![OTP Pop-up](assets/new-logo-otp-email.png){width="300" zoomable="yes"}
 
 1. Once logged in with your [!DNL Bolt] account, checkout details are automatically filled in:
 

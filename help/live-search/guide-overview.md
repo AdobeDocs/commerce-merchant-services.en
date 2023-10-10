@@ -2,6 +2,7 @@
 title: "[!DNL Live Search] Guide Overview"
 description: "[!DNL Live Search] from Adobe Commerce delivers a lightning fast, super-relevant, and intuitive search experience."
 exl-id: 11e2ed97-ce80-4826-b914-71688dd29e4b
+recommendations: noCatalog
 ---
 # [!DNL Live Search] Guide Overview
 

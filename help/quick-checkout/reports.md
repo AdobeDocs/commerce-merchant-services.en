@@ -2,12 +2,13 @@
 title: '[!DNL Quick Checkout] reporting'
 description: '[!DNL Quick Checkout] offers comprehensive reporting information.'
 exl-id: 91c687f4-9953-4c2f-b240-73430603e6a1
+feature: Checkout, Services
 ---
 # Reports
 
 [!DNL Quick Checkout] for Adobe Commerce and Magento Open Source offers you comprehensive reporting so that you can get detailed information of your store's checkout experience statistics.
 
-![Reports view](assets/reports-view-big-checkout.png)
+![Reports view](assets/reports-view-big-checkout.png){width="600" zoomable="yes"}
 
 >[!WARNING]
 >
@@ -17,7 +18,7 @@ exl-id: 91c687f4-9953-4c2f-b240-73430603e6a1
 
 The charts in the Overview section show detailed information about your store's checkout performance, including the average checkout time, new accounts created during checkout or checkout abandonment.
 
-![Reports overview](assets/overview-report-checkout.png)
+![Reports overview](assets/overview-report-checkout.png){width="600" zoomable="yes"}
 
 | Chart | Description |
 |---|---|
@@ -31,7 +32,7 @@ The charts in the Overview section show detailed information about your store's 
 
 The charts in the Trends section show your checkout experience trends filterd by account type, or new accounts created during checkout.
 
-![Reports trends](assets/trends-report-checkout.png)
+![Reports trends](assets/trends-report-checkout.png){width="600" zoomable="yes"}
 
 | Chart | Description |
 |---|---|
@@ -43,7 +44,7 @@ The charts in the Trends section show your checkout experience trends filterd by
 
 You can filter the results shown by date, or existing presets, like **Last 30 days**.
 
-![Filter view](assets/filter-view.png)
+![Filter view](assets/filter-view.png){width="300" zoomable="yes"}
 
 | Field | Description |
 |---|---|

@@ -4,6 +4,7 @@ description: Introduction to the [!DNL Payment Services] Home.
 role: Admin, User
 level: Intermediate
 exl-id: d7a4c87f-33cb-446a-b442-3cdf05b518a2
+feature: Payments, Checkout
 ---
 # Introduction to the [!DNL Payment Services] Home
 
@@ -11,7 +12,7 @@ exl-id: d7a4c87f-33cb-446a-b442-3cdf05b518a2
 
 1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**:
 
-   ![Home view](assets/home-view.png)
+   ![Home view](assets/home-view.png){width="700" zoomable="yes"}
 
 1. In this Home view, you can access _Home_ view, _Learn_ about [!DNL Payment Services], configure the extension _Settings_, or get _Help_.
 

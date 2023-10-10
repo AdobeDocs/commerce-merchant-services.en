@@ -1,19 +1,20 @@
 ---
 title: Store Assist Fulfillment Workflows
 description: Learn about the Pick, Stage, Hand-Off, and Orders modules available in the Store Assist App. These modules enable the end-to-end store fulfillment workflow for BOPIS orders. Store Associates use these modules to manage and deliver store pickup orders to customers.
-role: User
+role: Leader, Admin, User
 level: Intermediate
+feature: Shipping/Delivery, Tools and External Services, Customer Service
 exl-id: a8414f19-5489-41e9-84d6-39d2e61c2b08
 ---
 # Store Assist Fulfillment Workflows
 
-The Store Assist app provides Store Associates with four modules to manage the in-store fulfillment process for buy online, pick up in store orders: 
+The Store Assist app provides Store Associates with four modules to manage the in-store fulfillment process for buy online, pick up in store orders:
 
 - **[Pick](#pick-module)**—Get full visibility into all ordered items and the tools to make sure that the right items and right quantities are picked. Store associates can pick one or multiple orders simultaneously for greater efficiency.
 
-- **[Stage](#stage-module)**—Enter a location where the orders are placed while customers are traveling to the store so Store Associates can find them easily for order handoff.
+- **[Stage](#stage-module)**—Enter the location where orders are placed while customers are traveling to the store so that Store Associates can find and handoff orders more quickly.
 
-- **[Hand Off](#hand-off-module)**—Get real-time notifications after customers arrive at the store to minimize their wait time and handoff orders seamlessly 
+- **[Hand Off](#hand-off-module)**—Get real-time notifications after customers arrive at the store to minimize their wait time and handoff orders seamlessly.
 
 - **[Orders](#orders-module)**—View a list of all orders placed for a store so that everyone knows the number of orders and status of each order. 
 

@@ -3,6 +3,7 @@ title: Test and Deploy Store Fulfillment
 description: Test plan to verify the Store Fulfillment functionality. Tests cover the Inventory Sync API, the end-to-end fulfillment workflow for canceled orders, Store Fulfillment app user management, and the Customer Check-In experience.
 role: User, Admin
 level: Intermediate
+feature: Shipping/Delivery, User Account, Roles/Permissions
 exl-id: 77285a66-5161-407b-94cd-b3f412d7949d
 ---
 # Test and Deploy Store Fulfillment for Adobe Commerce

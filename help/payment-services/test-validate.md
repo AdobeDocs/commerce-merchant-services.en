@@ -2,6 +2,7 @@
 title: Test and Validate
 description: Testing and validation help ensure that [!DNL Payment Services] functions work as expected and provide the best payment options for your customers
 exl-id: 95b4615e-73b0-41e8-83e2-e65a0b22f10f
+feature: Payments, Checkout
 ---
 # Test and Validate
 
@@ -24,8 +25,8 @@ Use PayPal's Credit Card Generator to [generate random credit card information](
 
 To test Apple Pay in sandbox mode:
 
-*  Create an [Apple sandbox tester account](https://developer.apple.com/apple-pay/sandbox-testing/#create-a-sandbox-tester-account), complete with fake credit card and billing information.
-*  [Register your sandbox domains](https://developer.paypal.com/docs/checkout/apm/apple-pay/#link-registeryoursandboxdomains).
+* Create an [Apple sandbox tester account](https://developer.apple.com/apple-pay/sandbox-testing/#create-a-sandbox-tester-account), complete with fake credit card and billing information.
+* [Register your sandbox domains](https://developer.paypal.com/docs/checkout/apm/apple-pay/#link-registeryoursandboxdomains).
 
 >[!NOTE]
 >
@@ -37,8 +38,8 @@ It is highly recommended that you test [!DNL Payment Services] in production, wi
 
 You can test [!DNL Payment Services] in production in one of two ways:
 
-*  Choose a time when you know that no orders will be placed by shoppers.
-*  Use a webstore which is temporarily inaccessible to shoppers, but is accessible to you for testing.
+* Choose a time when you know that no orders will be placed by shoppers.
+* Use a webstore which is temporarily inaccessible to shoppers, but is accessible to you for testing.
 
 Complete your production testing with real credit cards and PayPal accounts, testing the entire lifecycle of a payment, including capture and refund. Completing the entire checkout and payment flow during testing gives you the clearest picture of how your [!DNL Payment Services] functionality will work when live shoppers are using it.
 

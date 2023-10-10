@@ -4,12 +4,13 @@ description: Learn how to install and use [!DNL Payment Services] as a turnkey, 
 role: User
 level: Intermediate
 exl-id: e4d8d789-fcf6-4aaa-bc4e-42ce21c6dd6c
+feature: Payments, Checkout
 ---
 # Introduction to [!DNL Payment Services]
 
 [!DNL Payment Services] for [!DNL Adobe Commerce] and [!DNL Magento Open Source] is your turnkey self-service solution, including sandbox testing and a simple setup, for providing robust and secure payment processing for your Commerce websites.
 
-![[!DNL Payment Services] extension Admin view](assets/admin-view.png)
+![[!DNL Payment Services] extension Admin view](assets/admin-view.png){width="300" zoomable="yes"}
 
 Whether you are a small business, mid-market contender, or large enterprise, this payments solution helps you reduce operational overhead, increase revenue, and give you useful tools to improve the entire shopper experience.
 
@@ -31,7 +32,7 @@ Whether you are a small business, mid-market contender, or large enterprise, thi
 
 * [**Onboarding**](onboard.md)---The process guides you through commercial signup, technical configuration, entitlements, sandbox environment configuration, and live payment enablement.
 * [**Payment options**](payments-options.md)---Set the payment options to customize the methods available for your store (or multistore) customers.
-* **Cash flow management financial reporting**---Synchronize [payment details](order-payment-status.md) with orders to get full transparency to the processed volume, payment balance, and detailed [transaction-level reporting](payouts.md) for financial reconciliation.
+* **Cash flow management financial reporting**---Synchronize [payment details](order-payment-status.md) with orders to get full transparency to the processed volume, payment balance, [payouts](payouts.md), and detailed [transaction-level reporting](transactions.md) for financial reconciliation and the utmost in transaction visibility.
 * **Transparent pricing**---Pricing is clear and upfront; what you see is what you get.
 * **Efficient checkout experience**---Remove any barriers to a fast and simple checkout, and create loyal customers, with [card vaulting](https://experienceleague-review.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html) and [Instant Purchase](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html) (enabled by default for Adobe Commerce) features.
 
@@ -47,13 +48,15 @@ Currently, [!DNL Payment Services] is available in the following countries:
 * France (FR)
 * United Kingdom (UK)
 
-See [Lifecycle policy](https://devdocs.magento.com/release/lifecycle-policy.html){target="_blank"} and the [[!DNL Payment Services] release notes](release-notes.md) pages for more release and version-specific information.
+See [Lifecycle policy](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html) and the [[!DNL Payment Services] release notes](release-notes.md) pages for more release and version-specific information.
 
 ### Accepted credit cards and currencies
 
 [!DNL Payment Services] accepts the currencies of the countries [in which it is available](#availability).
 
-See the [PayPal currency availability](https://developer.paypal.com/docs/platforms/checkout/reference/country-availability-advanced-cards/) documentation for more information.
+To see which currencies PayPal supports, see [Supported currencies documentation](https://developer.paypal.com/docs/reports/reference/paypal-supported-currencies/).
+
+To see which payment methods PayPal supports, see their [Payment methods documentation](https://developer.paypal.com/docs/checkout/payment-methods/).
 
 ## Get started
 

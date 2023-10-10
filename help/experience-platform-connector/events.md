@@ -2,6 +2,8 @@
 title: Events
 description: Learn what data each event captures.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
+role: Admin, Developer
+feature: Personalization, Integration, Eventing
 ---
 # Experience Platform Connector Events
 
@@ -29,17 +31,24 @@ The following table describes the data collected for this event.
 
 |Field|Description|
 |---|---|
-|`productListAdds`|Indicates if a product was added to a shopping cart. A value of `1` indicates that a product was added.|
-|`productListItems`|An array of products added to the shopping cart|
-|`SKU`|Stock Keeping Unit. The unique identifier for the product.|
-|`name`|The display name or human-readable name of the product|
-|`priceTotal`|The total price for the product line item|
-|`quantity`|The number of product units added to the cart|
-|`discountAmount`|Indicates the discount amount applied|
-|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency for the product|
-|`productImageUrl`|Main image URL of the product|
-|`selectedOptions`|Field used for a configurable product. `attribute` identifies an attribute of the configurable product, such as `size` or `color` and `value` identifies the value of the attribute such as `small` or `black`.|
-|`cartID`|The unique ID that identifies the customer’s cart|
+|`commerce.productListAdds`|Indicates if a product was added to a shopping cart. A value of `1` indicates that a product was added.|
+|`commerce.cart.cartID`|The unique ID that identifies the customer's cart.|
+|`commerce.commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
+|`commerce.commerceScope.environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
+|`commerce.commerceScope.storeCode`|The unique store code. You can have many stores per website.|
+|`commerce.commerceScope.storeViewCode`|The unique store view code. You can have many store views per store.|
+|`commerce.commerceScope.websiteCode`|The unique website code. You can have many websites in an environment.|
+|`productListItems`|An array of products that were added to the shopping cart.|
+|`productListItems.SKU`|Stock Keeping Unit. The unique identifier for the product.|
+|`productListItems.name`|The display name or human-readable name of the product.|
+|`productListItems.priceTotal`|The total price for the product line item.|
+|`productListItems.quantity`|The number of product units in the cart.|
+|`productListItems.discountAmount`|Indicates the discount amount applied.|
+|`productListItems.currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used, such as `USD` or `EUR`.|
+|`productListItems.productImageUrl`|Main image URL of the product.|
+|`productListItems.selectedOptions`|Field used for a configurable product.|
+|`productListItems.selectedOptions.attribute`|Identifies an attribute of the configurable product, such as `size` or `color`.|
+|`productListItems.selectedOptions.value`|Identifies the value of the attribute such as `small` or `black`.|
 
 ### openCart
 
@@ -53,17 +62,24 @@ The following table describes the data collected for this event.
 
 |Field|Description|
 |---|---|
-|`productListOpens`|Indicates if a cart was created. A value of `1` indicates that a cart was created.|
-|`productListItems`|An array of products added to the shopping cart|
-|`SKU`|Stock Keeping Unit. The unique identifier for the product.|
-|`name`|The display name or human-readable name of the product|
-|`priceTotal`|The total price for the product line item|
-|`quantity`|The number of product units added to the cart|
-|`discountAmount`|Indicates the discount amount applied|
-|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency for the product|
-|`productImageUrl`|Main image URL of the product|
-|`selectedOptions`|Field used for a configurable product. `attribute` identifies an attribute of the configurable product, such as `size` or `color` and `value` identifies the value of the attribute such as `small` or `black`.|
-|`cartID`|The unique ID that identifies the customer’s cart|
+|`commerce.productListOpens`|Indicates if a cart was created. A value of `1` indicates that a cart was created.|
+|`commerce.cart.cartID`|The unique ID that identifies the customer's cart.|
+|`commerce.commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
+|`commerce.commerceScope.environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
+|`commerce.commerceScope.storeCode`|The unique store code. You can have many stores per website.|
+|`commerce.commerceScope.storeViewCode`|The unique store view code. You can have many store views per store.|
+|`commerce.commerceScope.websiteCode`|The unique website code. You can have many websites in an environment.|
+|`productListItems`|An array of products that were added to the shopping cart.|
+|`productListItems.SKU`|Stock Keeping Unit. The unique identifier for the product.|
+|`productListItems.name`|The display name or human-readable name of the product.|
+|`productListItems.priceTotal`|The total price for the product line item.|
+|`productListItems.quantity`|The number of product units in the cart.|
+|`productListItems.discountAmount`|Indicates the discount amount applied.|
+|`productListItems.currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used, such as `USD` or `EUR`.|
+|`productListItems.productImageUrl`|Main image URL of the product.|
+|`productListItems.selectedOptions`|Field used for a configurable product.|
+|`productListItems.selectedOptions.attribute`|Identifies an attribute of the configurable product, such as `size` or `color`.|
+|`productListItems.selectedOptions.value`|Identifies the value of the attribute such as `small` or `black`.|
 
 ### removeFromCart
 
@@ -77,17 +93,24 @@ The following table describes the data collected for this event.
 
 |Field|Description|
 |---|---|
-|`productListRemovals`|Indicates if a product was removed from the cart. A value of `1` indicates that a product was removed from the cart.|
-|`productListItems`|An array of products removed from the shopping cart|
-|`SKU`|Stock Keeping Unit. The unique identifier for the product.|
-|`name`|The display name or human-readable name of the product|
-|`priceTotal`|The total price for the product line item|
-|`quantity`|The number of product units removed from the cart|
-|`discountAmount`|Indicates the discount amount applied|
-|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency for the product|
-|`productImageUrl`|Main image URL of the product|
-|`selectedOptions`|Field used for a configurable product. `attribute` identifies an attribute of the configurable product, such as `size` or `color` and `value` identifies the value of the attribute such as `small` or `black`.|
-|`cartID`|The unique ID that identifies the customer’s cart|
+|`commerce.productListRemovals`|Indicates if a product was removed from the cart. A value of `1` indicates that a product was removed from the cart.|
+|`commerce.cart.cartID`|The unique ID that identifies the customer's cart.|
+|`commerce.commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
+|`commerce.commerceScope.environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
+|`commerce.commerceScope.storeCode`|The unique store code. You can have many stores per website.|
+|`commerce.commerceScope.storeViewCode`|The unique store view code. You can have many store views per store.|
+|`commerce.commerceScope.websiteCode`|The unique website code. You can have many websites in an environment.|
+|`productListItems`|An array of products that were added to the shopping cart.|
+|`productListItems.SKU`|Stock Keeping Unit. The unique identifier for the product.|
+|`productListItems.name`|The display name or human-readable name of the product.|
+|`productListItems.priceTotal`|The total price for the product line item.|
+|`productListItems.quantity`|The number of product units in the cart.|
+|`productListItems.discountAmount`|Indicates the discount amount applied.|
+|`productListItems.currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used, such as `USD` or `EUR`.|
+|`productListItems.productImageUrl`|Main image URL of the product.|
+|`productListItems.selectedOptions`|Field used for a configurable product.|
+|`productListItems.selectedOptions.attribute`|Identifies an attribute of the configurable product, such as `size` or `color`.|
+|`productListItems.selectedOptions.value`|Identifies the value of the attribute such as `small` or `black`.|
 
 ### shoppingCartView
 
@@ -101,17 +124,24 @@ The following table describes the data collected for this event.
 
 |Field|Description|
 |---|---|
-|`productListViews`|Indicates if a product list was viewed|
-|`productListItems`|An array of products in the shopping cart|
-|`SKU`|Stock Keeping Unit. The unique identifier for the product.|
-|`name`|The display name or human-readable name of the product|
-|`priceTotal`|The total price for the product line item|
-|`quantity`|The number of product units in the cart|
-|`discountAmount`|Indicates the discount amount applied|
-|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency for the product|
-|`productImageUrl`|Main image URL of the product|
-|`selectedOptions`|Field used for a configurable product. `attribute` identifies an attribute of the configurable product, such as `size` or `color` and `value` identifies the value of the attribute such as `small` or `black`.|
-|`cartID`|The unique ID that identifies the customer’s cart|
+|`commerce.productListViews`|Indicates if a product list was viewed.|
+|`commerce.cart.cartID`|The unique ID that identifies the customer's cart.|
+|`commerce.commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
+|`commerce.commerceScope.environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
+|`commerce.commerceScope.storeCode`|The unique store code. You can have many stores per website.|
+|`commerce.commerceScope.storeViewCode`|The unique store view code. You can have many store views per store.|
+|`commerce.commerceScope.websiteCode`|The unique website code. You can have many websites in an environment.|
+|`productListItems`|An array of products that were added to the shopping cart.|
+|`productListItems.SKU`|Stock Keeping Unit. The unique identifier for the product.|
+|`productListItems.name`|The display name or human-readable name of the product.|
+|`productListItems.priceTotal`|The total price for the product line item.|
+|`productListItems.quantity`|The number of product units in the cart.|
+|`productListItems.discountAmount`|Indicates the discount amount applied.|
+|`productListItems.currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used, such as `USD` or `EUR`.|
+|`productListItems.productImageUrl`|Main image URL of the product.|
+|`productListItems.selectedOptions`|Field used for a configurable product.|
+|`productListItems.selectedOptions.attribute`|Identifies an attribute of the configurable product, such as `size` or `color`.|
+|`productListItems.selectedOptions.value`|Identifies the value of the attribute such as `small` or `black`.|
 
 ### pageView
 
@@ -125,7 +155,15 @@ The following table describes the data collected for this event.
 
 |Field|Description|
 |---|---|
-|`pageViews`|Indicates if a page was loaded. A `value` of `1` indicates that the page was loaded.|
+|`web.webPageDetails.pageViews`|Indicates if a page was loaded. A `value` of `1` indicates that the page was loaded.|
+|`web.webPageDetails.URL`|The normative or usual URL of the web page. This can be the actual URL used to reach the page, which would be recorded using `Web Link`.|
+|`web.webPageDetails.name`|The normative name of the web page. This name is not necessarily the page title or directly associate with page content, but is used to organize a site's pages for classification purposes.|
+|`web.webReferrer.URL`|The URL of the webpage a shopper visited before clicking a link to your site.|
+|`commerce.commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
+|`commerce.commerceScope.environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
+|`commerce.commerceScope.storeCode`|The unique store code. You can have many stores per website.|
+|`commerce.commerceScope.storeViewCode`|The unique store view code. You can have many store views per store.|
+|`commerce.commerceScope.websiteCode`|The unique website code. You can have many websites in an environment.|
 
 ### productPageView
 
@@ -139,15 +177,23 @@ The following table describes the data collected for this event.
 
 |Field|Description|
 |---|---|
-|`productViews`|Indicates if the product was viewed|
-|`productListItems`|An array of products in the shopping cart|
-|`SKU`|Stock Keeping Unit. The unique identifier for the product.|
-|`name`|The display name or human-readable name of the product|
-|`priceTotal`|The total price for the product line item|
-|`discountAmount`|Indicates the discount amount applied|
-|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency for the product|
-|`productImageUrl`|Main image URL of the product|
-|`selectedOptions`|Field used for a configurable product. `attribute` identifies an attribute of the configurable product, such as `size` or `color` and `value` identifies the value of the attribute such as `small` or `black`.|
+|`commerce.productViews`|Indicates if the product was viewed.|
+|`commerce.commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
+|`commerce.commerceScope.environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
+|`commerce.commerceScope.storeCode`|The unique store code. You can have many stores per website.|
+|`commerce.commerceScope.storeViewCode`|The unique store view code. You can have many store views per store.|
+|`commerce.commerceScope.websiteCode`|The unique website code. You can have many websites in an environment.|
+|`productListItems`|An array of products that were added to the shopping cart.|
+|`productListItems.SKU`|Stock Keeping Unit. The unique identifier for the product.|
+|`productListItems.name`|The display name or human-readable name of the product.|
+|`productListItems.priceTotal`|The total price for the product line item.|
+|`productListItems.quantity`|The number of product units in the cart.|
+|`productListItems.discountAmount`|Indicates the discount amount applied.|
+|`productListItems.currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used, such as `USD` or `EUR`.|
+|`productListItems.productImageUrl`|Main image URL of the product.|
+|`productListItems.selectedOptions`|Field used for a configurable product.|
+|`productListItems.selectedOptions.attribute`|Identifies an attribute of the configurable product, such as `size` or `color`.|
+|`productListItems.selectedOptions.value`|Identifies the value of the attribute such as `small` or `black`.|
 
 ### startCheckout
 
@@ -161,17 +207,24 @@ The following table describes the data collected for this event.
 
 |Field|Description|
 |---|---|
-|`checkouts`|Indicates if an action occurred during the checkout process|
-|`productListItems`|An array of products in the shopping cart|
-|`SKU`|Stock Keeping Unit. The unique identifier for the product.|
-|`name`|The display name or human-readable name of the product|
-|`priceTotal`|The total price for the product line item|
-|`quantity`|The number of product units in the cart|
-|`discountAmount`|Indicates the discount amount applied|
-|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency for the product|
-|`productImageUrl`|Main image URL of the product|
-|`selectedOptions`|Field used for a configurable product. `attribute` identifies an attribute of the configurable product, such as `size` or `color` and `value` identifies the value of the attribute such as `small` or `black`.|
-|`cartID`|The unique ID that identifies the customer’s cart|
+|`commerce.checkouts`|Indicates if an action occurred during the checkout process.|
+|`commerce.cart.cartID`|The unique ID that identifies the customer's cart.|
+|`commerce.commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
+|`commerce.commerceScope.environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
+|`commerce.commerceScope.storeCode`|The unique store code. You can have many stores per website.|
+|`commerce.commerceScope.storeViewCode`|The unique store view code. You can have many store views per store.|
+|`commerce.commerceScope.websiteCode`|The unique website code. You can have many websites in an environment.|
+|`productListItems`|An array of products that were added to the shopping cart.|
+|`productListItems.SKU`|Stock Keeping Unit. The unique identifier for the product.|
+|`productListItems.name`|The display name or human-readable name of the product.|
+|`productListItems.priceTotal`|The total price for the product line item.|
+|`productListItems.quantity`|The number of product units in the cart.|
+|`productListItems.discountAmount`|Indicates the discount amount applied.|
+|`productListItems.currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used, such as `USD` or `EUR`.|
+|`productListItems.productImageUrl`|Main image URL of the product.|
+|`productListItems.selectedOptions`|Field used for a configurable product.|
+|`productListItems.selectedOptions.attribute`|Identifies an attribute of the configurable product, such as `size` or `color`.|
+|`productListItems.selectedOptions.value`|Identifies the value of the attribute such as `small` or `black`.|
 
 ### completeCheckout
 
@@ -185,30 +238,38 @@ The following table describes the data collected for this event.
 
 |Field|Description|
 |---|---|
-|`purchases`|Indicates if an order has been accepted|
-|`order`|Contains information about the placed order for one or more products|
-|`purchaseID`|Unique identifier assigned by the seller for this purchase or contract. There is no guarantee that the ID is unique.|
-|`orderType`|Indicates the type of order that was placed, such as Checkout or Instant Purchase|
-|`payments`|The list of payments for this order|
-|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for this payment item. For example, `USD` or `EUR`.|
-|`paymentAmount`|The value of the payment|
-|`paymentType`|The method of payment for this order. Options are: `cash`, `credit_card`, `debit_card`, `gift_card`, `check`, `paypal`, `wire_transfer`, `credit_card_reference`, `other`|
-|`transactionID`|The unique transaction identifier for this payment item|
-|`shipping`|Shipping details for one or more products.|
-|`shippingMethod`|The method of shipping chosen by the customer, such as standard delivery, expedited delivery, pick up in store, and so on|
-|`shippingAmount`|The total shipping cost for the items in the cart|
-|`promotionID`|Unique identifier of the promotion, if any|
-|`personalEmail`|Specifies the personal email address|
-|`address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
-|`productListItems`|An array of products in the shopping cart|
-|`SKU`|Stock Keeping Unit. The unique identifier for the product.|
-|`name`|The display name or human-readable name of the product|
-|`priceTotal`|The total price for the product line item|
-|`quantity`|The number of product units in the cart|
-|`discountAmount`|Indicates the discount amount applied|
-|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for the order totals.|
-|`productImageUrl`|Main image URL of the product|
-|`selectedOptions`|Field used for a configurable product. `attribute` identifies an attribute of the configurable product, such as `size` or `color` and `value` identifies the value of the attribute such as `small` or `black`.|
+|`commerce.purchases`|Indicates if an order has been accepted.|
+|`commerce.order`|Contains information about the placed order for one or more products.|
+|`commerce.order.purchaseID`|Unique identifier assigned by the seller for this purchase or contract. There is no guarantee that the ID is unique.|
+|`commerce.order.payments`|The list of payments for this order.|
+|`commerce.order.payments.paymentTransactionID`|Unique identifier for this payment transaction.|
+|`commerce.order.payments.paymentAmount`|The value of the payment.|
+|`commerce.order.payments.paymentType`|The method of payment for this order. Options are: `cash`, `credit_card`, `debit_card`, `gift_card`, `check`, `paypal`, `wire_transfer`, `credit_card_reference`, `other`.|
+|`commerce.order.payments.currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used, such as `USD` or `EUR`.|
+|`commerce.order.taxAmount`|The tax amount paid by the buyer as part of the final payment.|
+|`commerce.order.discountAmount`|Indicates the discount amount applied to the whole order.|
+|`commerce.order.createdDate`|The time and date when a new order is created in the commerce system. For example, `2022-10-15T20:20:39+00:00`.|
+|`commerce.shipping`|Shipping details for one or more products.|
+|`commerce.shipping.shippingMethod`|The method of shipping chosen by the customer, such as standard delivery, expedited delivery, pick up in store, and so on.|
+|`commerce.shipping.shippingAmount`|The amount the customer had to pay for shipping.||`shipping`|Shipping details for one or more products.|
+|`commerce.shipping.currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used, such as `USD` or `EUR`.|
+|`commerce.commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
+|`commerce.commerceScope.environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
+|`commerce.commerceScope.storeCode`|The unique store code. You can have many stores per website.|
+|`commerce.commerceScope.storeViewCode`|The unique store view code. You can have many store views per store.|
+|`commerce.commerceScope.websiteCode`|The unique website code. You can have many websites in an environment.|
+|`personalEmail`|A personal email address.|
+|`personalEmail.address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards.|
+|`productListItems`|An array of products that were added to the shopping cart.|
+|`productListItems.SKU`|Stock Keeping Unit. The unique identifier for the product.|
+|`productListItems.name`|The display name or human-readable name of the product.|
+|`productListItems.priceTotal`|The total price for the product line item.|
+|`productListItems.quantity`|The number of product units in the cart.|
+|`productListItems.discountAmount`|Indicates the discount amount applied.|
+|`productListItems.productImageUrl`|Main image URL of the product.|
+|`productListItems.selectedOptions`|Field used for a configurable product.|
+|`productListItems.selectedOptions.attribute`|Identifies an attribute of the configurable product, such as `size` or `color`.|
+|`productListItems.selectedOptions.value`|Identifies the value of the attribute such as `small` or `black`.|
 
 ## Profile events
 
@@ -230,14 +291,19 @@ The following table describes the data collected for this event.
 
 |Field|Description|
 |---|---|
-|`person`|An individual actor, contact, or owner|
-|`accountID`|Captures the user account ID|
-|`accountType`|Captures the user account type, such as `Personal` or `Company`, if applicable|
-|`personalEmailID`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
-|`personalEmail`|Captures contact details - an e-mail and associated information|
-|`address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
-|`userAccount`|Indicates any loyalty details, preferences, login processes, and other account preferences|
-|`login`|Indicates if a visitor attempted to log in|
+|`person`|An individual actor, contact, or owner.|
+|`person.accountID`|Captures the user account ID.|
+|`person.accountType`|Captures the user account type, such as `Personal` or `Company`, if applicable.|
+|`person.personalEmailID`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards.|
+|`personalEmail`|Captures contact details - an e-mail and associated information.|
+|`personalEmail.address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards.|
+|`userAccount`|Indicates any loyalty details, preferences, login processes, and other account preferences.|
+|`userAccount.login`|Indicates if a visitor attempted to log in.|
+|`commerce.commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
+|`commerce.commerceScope.environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
+|`commerce.commerceScope.storeCode`|The unique store code. You can have many stores per website.|
+|`commerce.commerceScope.storeViewCode`|The unique store view code. You can have many store views per store.|
+|`commerce.commerceScope.websiteCode`|The unique website code. You can have many websites in an environment.|
 
 ### signOut
 
@@ -255,8 +321,13 @@ The following table describes the data collected for this event.
 
 |Field|Description|
 |---|---|
-|`userAccount`|Indicates any loyalty details, preferences, login processes, and other account preferences|
-|`logout`|Indicates if a visitor attempted to log out|
+|`userAccount`|Indicates any loyalty details, preferences, login processes, and other account preferences.|
+|`userAccount.logout`|Indicates if a visitor attempted to log out.|
+|`commerce.commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
+|`commerce.commerceScope.environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
+|`commerce.commerceScope.storeCode`|The unique store code. You can have many stores per website.|
+|`commerce.commerceScope.storeViewCode`|The unique store view code. You can have many store views per store.|
+|`commerce.commerceScope.websiteCode`|The unique website code. You can have many websites in an environment.|
 
 ### createAccount
 
@@ -274,14 +345,19 @@ The following table describes the data collected for this event.
 
 |Field|Description|
 |---|---|
-|`person`|An individual actor, contact, or owner|
-|`accountID`|Captures the user account ID|
-|`accountType`|Captures the user account type, such as `Personal` or `Company`, if applicable|
-|`personalEmailID`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
-|`personalEmail`|Captures contact details - an e-mail and associated information|
-|`address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
-|`userAccount`|Indicates any loyalty details, preferences, login processes, and other account preferences|
-|`createProfile`|Indicates if a user has created an account profile|
+|`person`|An individual actor, contact, or owner.|
+|`person.accountID`|Captures the user account ID.|
+|`person.accountType`|Captures the user account type, such as `Personal` or `Company`, if applicable.|
+|`person.personalEmailID`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards.|
+|`personalEmail`|Captures contact details - an e-mail and associated information.|
+|`personalEmail.address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards.|
+|`userAccount`|Indicates any loyalty details, preferences, login processes, and other account preferences.|
+|`userAccount.updateProfile`|Indicates if a user has updated their account profile.|
+|`commerce.commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
+|`commerce.commerceScope.environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
+|`commerce.commerceScope.storeCode`|The unique store code. You can have many stores per website.|
+|`commerce.commerceScope.storeViewCode`|The unique store view code. You can have many store views per store.|
+|`commerce.commerceScope.websiteCode`|The unique website code. You can have many websites in an environment.|
 
 ### editAccount
 
@@ -299,30 +375,35 @@ The following table describes the data collected for this event.
 
 |Field|Description|
 |---|---|
-|`person`|An individual actor, contact, or owner|
-|`accountID`|Captures the user account ID|
-|`accountType`|Captures the user account type, such as `Personal` or `Company`, if applicable|
-|`personalEmailID`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
-|`personalEmail`|Captures contact details - an e-mail and associated information|
-|`address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
-|`userAccount`|Indicates any loyalty details, preferences, login processes, and other account preferences|
-|`updateProfile`|Indicates if a user has updated their account profile|
+|`person`|An individual actor, contact, or owner.|
+|`person.accountID`|Captures the user account ID.|
+|`person.accountType`|Captures the user account type, such as `Personal` or `Company`, if applicable.|
+|`person.personalEmailID`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards.|
+|`personalEmail`|Captures contact details - an e-mail and associated information.|
+|`personalEmail.address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards.|
+|`userAccount`|Indicates any loyalty details, preferences, login processes, and other account preferences.|
+|`userAccount.updateProfile`|Indicates if a user has updated their account profile.|
+|`commerce.commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
+|`commerce.commerceScope.environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
+|`commerce.commerceScope.storeCode`|The unique store code. You can have many stores per website.|
+|`commerce.commerceScope.storeViewCode`|The unique store view code. You can have many store views per store.|
+|`commerce.commerceScope.websiteCode`|The unique website code. You can have many websites in an environment.|
 
 ## Search events
 
 The search events provide data relevant to the shopper's intent. Insight into a shopper's intent helps merchants see how shoppers are searching for items, what they click on, and ultimately purchase or abandon. An example of how you might use this data is if you want to target existing shoppers who search for your top product, but never purchase the product.
 
-Use the `uniqueIdentifier` field found in both the `searchRequestSent` and `searchResponseReceived` events to cross reference a search request to the corresponding search response.
+Use the `searchRequest.id` and `searchResponse.id` fields found in both the `searchRequestSent` and `searchResponseReceived` events to cross reference a search request to the corresponding search response.
 
 ### searchRequestSent
 
 |Description| XDM event name|
 |---|---|
-|Triggered by the following events in the “search as you type” popover:<br><br>Press Enter, Click _View All_<br><br>Triggered by the following events on search results pages:<br><br>Select a filter, Change the sort order (_Sort By_), Change the sort direction (ascending or descending), Change the number of results per page (_Show # per page_), Navigate to the next page, Navigate to the previous page, Navigate to a different page|`searchRequest`|
+|Triggered by the following events in the "search as you type" popover:<br><br>Press Enter, Click _View All_<br><br>Triggered by the following events on search results pages:<br><br>Select a filter, Change the sort order (_Sort By_), Change the sort direction (ascending or descending), Change the number of results per page (_Show # per page_), Navigate to the next page, Navigate to the previous page, Navigate to a different page|`searchRequest`|
 
 >[!NOTE]
 >
->Search events are not supported on an Adobe Commerce Enterprise Edition with the B2B module installed.
+>Search events are not supported on an Adobe Commerce Enterprise Edition with the B2B extension installed.
 
 #### Data collected from searchRequestSent
 
@@ -330,26 +411,33 @@ The following table describes the data collected for this event.
 
 |Field|Description|
 |---|---|
-|`searchRequest`|Indicates if a search request was sent|
-|`id`| The unique ID for this particular search request|
-|`filter`|Indicates if any filters were applied to limit search results|
-|`attribute` (filter)|The facet of an item used to determine whether to include it in search results|
-|`value`|Attribute values used to determine which items are included in search results|
-|`isRange`|When true, values indicate endpoints of an acceptable range of values|
-|`sort`|Indicates how search results should be sorted|
-|`attribute` (sort)|An attribute used to sort items in search results|
-|`order`|The order in which to return search results|
-|`query`|The terms searched for|
+|`searchRequest`|Indicates if a search request was sent.|
+|`searchRequest.id`|The unique ID for this particular search request.|
+|`searchRequest.value`|The quantifiable value of the request.|
+|`siteSearch`|Contains information about the search.|
+|`siteSearch.filter`|Indicates if any filters were applied to limit search results.|
+|`siteSearch.filter.attribute` (filter)|The facet of an item used to determine whether to include it in search results.|
+|`siteSearch.filter.isRange`|When true, values indicate endpoints of an acceptable range of values.|
+|`siteSearch.filter.value`|Attribute value used to determine which items are included in search results.|
+|`siteSearch.sort`|Indicates how search results should be sorted.|
+|`siteSearch.sort.attribute` (sort)|An attribute used to sort items in search results.|
+|`siteSearch.sort.order`|The order in which to return search results.|
+|`siteSearch.query`|The terms searched for.|
+|`commerce.commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
+|`commerce.commerceScope.environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
+|`commerce.commerceScope.storeCode`|The unique store code. You can have many stores per website.|
+|`commerce.commerceScope.storeViewCode`|The unique store view code. You can have many store views per store.|
+|`commerce.commerceScope.websiteCode`|The unique website code. You can have many websites in an environment.|
 
 ### searchResponseReceived
 
 |Description| XDM event name|
 |---|---|
-|Triggered when Live Search returns results for the “search as you type” popover or search results page.|`searchResponse`|
+|Triggered when Live Search returns results for the "search as you type" popover or search results page.|`searchResponse`|
 
 >[!NOTE]
 >
->Search events are not supported on an Adobe Commerce Enterprise Edition with the B2B module installed.
+>Search events are not supported on an Adobe Commerce Enterprise Edition with the B2B extension installed.
 
 #### Data collected from searchResponseReceived
 
@@ -357,14 +445,20 @@ The following table describes the data collected for this event.
 
 |Field|Description|
 |---|---|
-|`searchResponse`|Indicates if a search response has been received|
-|`id`| The unique ID for this particular search response|
-|`suggestions`|An array of strings that include the names of products and categories that exist in the catalog that are similar to the search query|
-|`numberOfResults`|The number of products returned|
-|`productListItems`|An array of products in the shopping cart.|
-|`SKU`|Stock Keeping Unit. The unique identifier for the product.|
-|`name`|The display name or human-readable name of the product|
-|`productImageUrl`|Main image URL of the product|
+|`searchResponse`|Indicates if a search response has been received.|
+|`searchResponse.id`|The unique ID for this particular search response.|
+|`searchResponse.value`|The quantifiable value of the response.|
+|`siteSearch.numberOfResults`|The number of products returned.|
+|`siteSearch.suggestions`|An array of strings that include the names of products and categories that exist in the catalog that are similar to the search query.|
+|`productListItems`|An array of products that were added to the shopping cart.|
+|`productListItems.SKU`|Stock Keeping Unit. The unique identifier for the product.|
+|`productListItems.name`|The display name or human-readable name of the product.|
+|`productListItems.productImageUrl`|Main image URL of the product.|
+|`commerce.commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
+|`commerce.commerceScope.environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
+|`commerce.commerceScope.storeCode`|The unique store code. You can have many stores per website.|
+|`commerce.commerceScope.storeViewCode`|The unique store view code. You can have many store views per store.|
+|`commerce.commerceScope.websiteCode`|The unique website code. You can have many websites in an environment.|
 
 ## B2B events
 
@@ -384,10 +478,16 @@ The following table describes the data collected for this event.
 
 |Field|Description|
 |---|---|
-|`requisitionList`|The properties of requisition list created by customer|
-|`ID`|Unique identifier of the requisition list|
-|`name`|Name of the requisition list specified by the customer|
-|`description`|Description of the requisition list specified by the customer|
+|`commerce.requisitionListOpens`|Indicates initialization of a new requisition list.|
+|`commerce.requisitionList`|The properties of requisition list created by customer.|
+|`commerce.requisitionList.ID`|Unique identifier of the requisition list.|
+|`commerce.requisitionList.name`|Name of the requisition list specified by the customer.|
+|`commerce.requisitionList.description`|Description of the requisition list specified by the customer.|
+|`commerce.commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
+|`commerce.commerceScope.environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
+|`commerce.commerceScope.storeCode`|The unique store code. You can have many stores per website.|
+|`commerce.commerceScope.storeViewCode`|The unique store view code. You can have many store views per store.|
+|`commerce.commerceScope.websiteCode`|The unique website code. You can have many websites in an environment.|
 
 ### addToRequisitionList
 
@@ -395,28 +495,32 @@ The following table describes the data collected for this event.
 |---|---|
 |Triggered when a shopper adds a product to an existing requistion list or while creating a new list.|`commerce.requisitionListAdds`|
 
->[!NOTE]
->
->`addToRequisitionList` is not supported on category view pages or for configurable products. It is supported on product view pages and for simple products.
-
 #### Data collected from addToRequisitionList
 
 The following table describes the data collected for this event.
 
 |Field|Description|
 |---|---|
-|`requisitionList`|The properties of requisition list created by customer|
-|`ID`|Unique identifier of the requisition list|
-|`name`|Name of the requisition list specified by the customer|
-|`description`|Description of the requisition list specified by the customer|
-|`productListItems`|An array of products that were added to the requisition list|
-|`name`|The display name or human-readable name of the product|
-|`SKU`|Stock Keeping Unit. The unique identifier for the product.|
-|`quantity`|The number of product units added|
-|`priceTotal`|The total price for the product line item|
-|`discountAmount`|Indicates the discount amount applied|
-|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for this payment item|
-|`selectedOptions`|Field used for a configurable product. `attribute` identifies an attribute of the configurable product, such as `size` or `color` and `value` identifies the value of the attribute such as `small` or `black`.|
+|`commerce.requisitionListAdds`|Indicates addition of one or more products to a requisition list.|
+|`commerce.requisitionList`|The properties of requisition list created by customer.|
+|`commerce.requisitionList.ID`|Unique identifier of the requisition list.|
+|`commerce.requisitionList.name`|Name of the requisition list specified by the customer.|
+|`commerce.requisitionList.description`|Description of the requisition list specified by the customer.|
+|`commerce.commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
+|`commerce.commerceScope.environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
+|`commerce.commerceScope.storeCode`|The unique store code. You can have many stores per website.|
+|`commerce.commerceScope.storeViewCode`|The unique store view code. You can have many store views per store.|
+|`commerce.commerceScope.websiteCode`|The unique website code. You can have many websites in an environment.|
+|`productListItems`|An array of products that were added to the requisition list.|
+|`productListItems.SKU`|Stock Keeping Unit. The unique identifier for the product.|
+|`productListItems.name`|The display name or human-readable name of the product.|
+|`productListItems.priceTotal`|The total price for the product line item.|
+|`productListItems.quantity`|The number of product units in the cart.|
+|`productListItems.discountAmount`|Indicates the discount amount applied.|
+|`productListItems.currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used, such as `USD` or `EUR`.|
+|`productListItems.selectedOptions`|Field used for a configurable product.|
+|`productListItems.selectedOptions.attribute`|Identifies an attribute of the configurable product, such as `size` or `color`.|
+|`productListItems.selectedOptions.value`|Identifies the value of the attribute such as `small` or `black`.|
 
 ### removeFromRequisitionList
 
@@ -430,18 +534,26 @@ The following table describes the data collected for this event.
 
 |Field|Description|
 |---|---|
-|`requisitionList`|The properties of requisition list created by customer|
-|`ID`|Unique identifier of the requisition list|
-|`name`|Name of the requisition list specified by the customer|
-|`description`|Description of the requisition list specified by the customer|
-|`productListItems`|An array of products that were added to the requisition list|
-|`name`|The display name or human-readable name of the product|
-|`SKU`|Stock Keeping Unit. The unique identifier for the product.|
-|`quantity`|The number of product units added|
-|`priceTotal`|The total price for the product line item|
-|`discountAmount`|Indicates the discount amount applied|
-|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for this payment item|
-|`selectedOptions`|Field used for a configurable product. `attribute` identifies an attribute of the configurable product, such as `size` or `color` and `value` identifies the value of the attribute such as `small` or `black`.|
+|`commerce.requsitionListRemovals`|Indicates removal of one or more products from a requisition list.|
+|`commerce.requisitionList`|The properties of requisition list created by customer.|
+|`commerce.requisitionList.ID`|Unique identifier of the requisition list.|
+|`commerce.requisitionList.name`|Name of the requisition list specified by the customer.|
+|`commerce.requisitionList.description`|Description of the requisition list specified by the customer.|
+|`commerce.commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
+|`commerce.commerceScope.environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
+|`commerce.commerceScope.storeCode`|The unique store code. You can have many stores per website.|
+|`commerce.commerceScope.storeViewCode`|The unique store view code. You can have many store views per store.|
+|`commerce.commerceScope.websiteCode`|The unique website code. You can have many websites in an environment.|
+|`productListItems`|An array of products that were added to the requisition list.|
+|`productListItems.SKU`|Stock Keeping Unit. The unique identifier for the product.|
+|`productListItems.name`|The display name or human-readable name of the product.|
+|`productListItems.priceTotal`|The total price for the product line item.|
+|`productListItems.quantity`|The number of product units in the cart.|
+|`productListItems.discountAmount`|Indicates the discount amount applied.|
+|`productListItems.currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used, such as `USD` or `EUR`.|
+|`productListItems.selectedOptions`|Field used for a configurable product.|
+|`productListItems.selectedOptions.attribute`|Identifies an attribute of the configurable product, such as `size` or `color`.|
+|`productListItems.selectedOptions.value`|Identifies the value of the attribute such as `small` or `black`.|
 
 ## Back office events
 
@@ -463,44 +575,94 @@ The following table describes the data collected for this event.
 
 |Field|Description|
 |---|---|
-|`address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
-|`productListItems`|An array of products in the order|
-|`id`|The line item identifier for this product entry. The product itself is identified through the `product` field.|
-|`name`|The display name or human-readable name of the product|
-|`SKU`|Stock Keeping Unit. The unique identifier for the product.|
-|`quantity`|The number of product units in the cart|
-|`priceTotal`|The total price for the product line item|
-|`discountAmount`|Indicates the discount amount applied|
-|`order`|Contains information about the order|
-|`purchaseID`|Unique identifier assigned by the seller for this purchase or contract. There is no guarantee that the ID is unique|
-|`priceTotal`|The total price of this order after all discounts and taxes have been applied|
-|`currencyCode`|The ISO 4217 currency code used for the order totals|
-|`purchaseOrderNumber`|Unique identifier assigned by the purchaser for this purchase or contract|
-|`payments`|The list of payments for this order|
-|`paymentType`|The method of payment for this order. Enumerated, custom values allowed.|
-|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for this payment item|
-|`paymentAmount`|The value of the payment|
-|`taxAmount`|The tax amount paid by the buyer as part of the final payment|
-|`createdDate`|The time and date when a new order is created in the commerce system. For example, `2022-10-15T20:20:39+00:00`|
-|`shipping`|Shipping details for one or more products|
-|`shippingMethod`|The method of shipping chosen by the customer, such as standard delivery, expedited delivery, pick up in store, and so on|
-|`shippingAmount`|The amount the customer had to pay for shipping.|
-|`address`|Physical shipping address|
-|`street1`|Primary street level information, apartment number, street number, and street name|
-|`street2`|Additional field for street level information|
-|`city`|The name of the city|
-|`state`|The name of the state. This is a free-form field.|
-|`postalCode`|The postal code of the location. Postal codes are not available for all countries. In some countries, this will only contain part of the postal code.|
-|`country`|The name of the government-administered territory. Other than `xdm:countryCode`, this is a free-form field that can have the country name in any language.|
-|`billingAddress`|Billing postal address|
-|`street1`|Primary street level information, apartment number, street number, and street name|
-|`street2`|Additional field for street level information|
-|`city`|The name of the city|
-|`state`|The name of the state. This is a free-form field.|
-|`postalCode`|The postal code of the location. Postal codes are not available for all countries. In some countries, this will only contain part of the postal code.|
-|`country`|The name of the government-administered territory. Other than `xdm:countryCode`, this is a free-form field that can have the country name in any language.|
-|`personalEmail`|A personal email address|
-|`address`|The technical address, for example, 'name@domain.com' as commonly defined in RFC2822 and subsequent standards|
+|`commerce.order`|Contains information about the order.|
+|`commerce.order.purchaseID`|Unique identifier assigned by the seller for this purchase or contract. There is no guarantee that the ID is unique.|
+|`commerce.order.payments`|The list of payments for this order.|
+|`commerce.order.payments.paymentTransactionID`|Unique identifier for this payment transaction.|
+|`commerce.order.payments.paymentAmount`|The value of the payment.|
+|`commerce.order.payments.paymentType`|The method of payment for this order. Enumerated, custom values allowed.|
+|`commerce.order.payments.currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used, such as `USD` or `EUR`.|
+|`commerce.order.taxAmount`|The tax amount paid by the buyer as part of the final payment.|
+|`commerce.order.discountAmount`|Indicates the discount amount applied to the whole order.|
+|`commerce.order.createdDate`|The time and date when a new order is created in the commerce system. For example, `2022-10-15T20:20:39+00:00`.|
+|`commerce.order.currencyCode`|The ISO 4217 currency code used for the order totals.|
+|`commerce.shipping`|Shipping details for one or more products.|
+|`commerce.shipping.shippingMethod`|The method of shipping chosen by the customer, such as standard delivery, expedited delivery, pick up in store, and so on.|
+|`commerce.shipping.shippingAmount`|The amount the customer had to pay for shipping.|
+|`commerce.shipping.currencyCode`|The ISO 4217 currency code used for the shipping total.|
+|`commerce.commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
+|`commerce.commerceScope.environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
+|`commerce.commerceScope.storeCode`|The unique store code. You can have many stores per website.|
+|`commerce.commerceScope.storeViewCode`|The unique store view code. You can have many store views per store.|
+|`commerce.commerceScope.websiteCode`|The unique website code. You can have many websites in an environment.|
+|`commerce.billing.address`|Billing postal address.|
+|`commerce.billing.address.street1`|Primary street level information, apartment number, street number, and street name|
+|`commerce.billing.address.street2`|Additional field for street level information.|
+|`commerce.billing.address.city`|The name of the city.|
+|`commerce.billing.address.state`|The name of the state. This is a free-form field.|
+|`commerce.billing.address.postalCode`|The postal code of the location. Postal codes are not available for all countries. In some countries, this will only contain part of the postal code.|
+|`commerce.billing.address.country`|The name of the government-administered territory. Other than `xdm:countryCode`, this is a free-form field that can have the country name in any language.|
+|`personalEmail`|A personal email address.|
+|`personalEmail.address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards.|
+|`productListItems`|An array of products in the order.|
+|`productListItems.id`|The line item identifier for this product entry.|
+|`productListItems.SKU`|Stock Keeping Unit. The unique identifier for the product.|
+|`productListItems.name`|The display name or human-readable name of the product.|
+|`productListItems.priceTotal`|The total price for the product line item.|
+|`productListItems.quantity`|The number of product units in the cart.|
+|`productListItems.discountAmount`|Indicates the discount amount applied.|
+|`productListItems.currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used, such as `USD` or `EUR`.|
+|`productListItems.selectedOptions`|Field used for a configurable product.|
+|`productListItems.selectedOptions.attribute`|Identifies an attribute of the configurable product, such as `size` or `color`.|
+|`productListItems.selectedOptions.value`|Identifies the value of the attribute such as `small` or `black`.|
+|`productListItems.categories`|Contains information about the category of a product.|
+|`productListItems.categories.id`|The unique identifier of the category.|
+|`productListItems.categories.name`|The name of the category.|
+|`productListItems.categories.path`|The path to the category.|
+|`productListItems.productImageUrl`|Main image URL of the product.|
+
+### orderInvoiced
+
+|Description| XDM event name|
+|---|---|
+|Triggered when a merchant submits an invoice to request payment.|`commerce.backofficeOrderInvoiced`|
+
+#### Data collected from orderInvoiced
+
+The following table describes the data collected for this event.
+
+|Field|Description|
+|---|---|
+|`commerce.order`|Contains information about the order.|
+|`commerce.order.purchaseID`|Unique identifier assigned by the seller for this purchase or contract. There is no guarantee that the ID is unique.|
+|`commerce.order.priceTotal`|The total price of this order after all discounts and taxes have been applied.|
+|`commerce.order.currencyCode`|The ISO 4217 currency code used for the order totals.|
+|`commerce.order.purchaseOrderNumber`|Unique identifier assigned by the purchaser for this purchase or contract.|
+|`commerce.order.payments`|The list of payments for this order.|
+|`commerce.order.payments.currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used, such as `USD` or `EUR`.|
+|`commerce.order.payments.paymentType`|The method of payment for this order. Enumerated, custom values allowed.|
+|`commerce.order.payments.paymentAmount`|The value of the payment.|
+|`commerce.shipping`|Shipping details for one or more products.|
+|`commerce.shipping.shippingMethod`|The method of shipping chosen by the customer, such as standard delivery, expedited delivery, pick up in store, and so on.|
+|`commerce.shipping.shippingAmount`|The amount the customer had to pay for shipping.|
+|`commerce.commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
+|`commerce.commerceScope.environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
+|`commerce.commerceScope.storeCode`|The unique store code. You can have many stores per website.|
+|`commerce.commerceScope.storeViewCode`|The unique store view code. You can have many store views per store.|
+|`commerce.commerceScope.websiteCode`|The unique website code. You can have many websites in an environment.|
+|`personalEmail`|A personal email address.|
+|`personalEmail.address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards.|
+|`productListItems`|An array of products in the order.|
+|`productListItems.id`|The line item identifier for this product entry.|
+|`productListItems.SKU`|Stock Keeping Unit. The unique identifier for the product.|
+|`productListItems.name`|The display name or human-readable name of the product.|
+|`productListItems.priceTotal`|The total price for the product line item.|
+|`productListItems.quantity`|The number of product units in the cart.|
+|`productListItems.discountAmount`|Indicates the discount amount applied.|
+|`productListItems.categories`|Contains information about the category of a product.|
+|`productListItems.categories.id`|The unique identifier of the category.|
+|`productListItems.categories.name`|The name of the category.|
+|`productListItems.categories.path`|The path to the category.|
 
 ### orderItemsShipped
 
@@ -511,48 +673,62 @@ The following table describes the data collected for this event.
 #### Data collected from orderItemsShipped
 
 The following table describes the data collected for this event.
+
 |Field|Description|
 |---|---|
-|`address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
-|`productListItems`|An array of products in the order|
-|`id`|The line item identifier for this product entry. The product itself is identified through the `product` field.|
-|`name`|The display name or human-readable name of the product|
-|`SKU`|Stock Keeping Unit. The unique identifier for the product.|
-|`quantity`|The number of product units in the cart|
-|`priceTotal`|The total price for the product line item|
-|`discountAmount`|Indicates the discount amount applied|
-|`order`|Contains information about the order|
-|`purchaseID`|Unique identifier assigned by the seller for this purchase or contract. There is no guarantee that the ID is unique|
-|`priceTotal`|The total price of this order after all discounts and taxes have been applied|
-|`currencyCode`|The ISO 4217 currency code used for the order totals|
-|`purchaseOrderNumber`|Unique identifier assigned by the purchaser for this purchase or contract|
-|`payments`|The list of payments for this order|
-|`paymentType`|The method of payment for this order. Enumerated, custom values allowed.|
-|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for this payment item|
-|`paymentAmount`|The value of the payment|
-|`lastUpdatedDate`|The time when a particular order record is last updated in the commerce system|
-|`shipping`|Shipping details for one or more products|
-|`shippingMethod`|The method of shipping chosen by the customer, such as standard delivery, expedited delivery, pick up in store, and so on|
-|`trackingNumber`|The tracking number provided by the shipping carrier for an order item shipment|
-|`trackingURL`|The URL to track the shipping status of an order item|
-|`shipDate`|The date when one or more items from an order is shipped|
-|`address`|Physical shipping address|
-|`street1`|Primary street level information, apartment number, street number, and street name|
-|`street2`|Additional field for street level information|
-|`city`|The name of the city|
-|`state`|The name of the state. This is a free-form field.|
-|`postalCode`|The postal code of the location. Postal codes are not available for all countries. In some countries, this will only contain part of the postal code.|
-|`country`|The name of the government-administered territory. Other than `xdm:countryCode`, this is a free-form field that can have the country name in any language.|
-|`shippingAmount`|The amount the customer had to pay for shipping.|
-|`billingAddress`|Billing postal address|
-|`street1`|Primary street level information, apartment number, street number, and street name|
-|`street2`|Additional field for street level information|
-|`city`|The name of the city|
-|`state`|The name of the state. This is a free-form field.|
-|`postalCode`|The postal code of the location. Postal codes are not available for all countries. In some countries, this will only contain part of the postal code.|
-|`country`|The name of the government-administered territory. Other than `xdm:countryCode`, this is a free-form field that can have the country name in any language.|
-|`personalEmail`|A personal email address|
-|`address`|The technical address, for example, 'name@domain.com' as commonly defined in RFC2822 and subsequent standards|
+|`commerce.order`|Contains information about the order.|
+|`commerce.order.purchaseID`|Unique identifier assigned by the seller for this purchase or contract. There is no guarantee that the ID is unique.|
+|`commerce.order.payments`|The list of payments for this order.|
+|`commerce.order.payments.paymentTransactionID`|Unique identifier for this payment transaction.|
+|`commerce.order.payments.paymentAmount`|The value of the payment.|
+|`commerce.order.payments.paymentType`|The method of payment for this order. Enumerated, custom values allowed.|
+|`commerce.order.payments.currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used, such as `USD` or `EUR`.|
+|`commerce.order.priceTotal`|The total price of this order after all discounts and taxes have been applied.|
+|`commerce.order.purchaseOrderNumber`|Unique identifier assigned by the purchaser for this purchase or contract.|
+|`commerce.order.currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used, such as `USD` or `EUR`.|
+|`commerce.order.lastUpdatedDate`|The time when a particular order record is last updated in the commerce system.|
+|`commerce.shipping`|Shipping details for one or more products.|
+|`commerce.shipping.shippingMethod`|The method of shipping chosen by the customer, such as standard delivery, expedited delivery, pick up in store, and so on.|
+|`commerce.shipping.shippingAmount`|The amount the customer had to pay for shipping.|
+|`commerce.shipping.address`|The physical shipping address.|
+|`commerce.shipping.address.street1`|Primary street level information, apartment number, street number, and street name.|
+|`commerce.shipping.address.street2`|Optional street information second line.|
+|`commerce.shipping.address.city`|The name of the city.|
+|`commerce.shipping.address.state`|The name of the State. This is a free-form field.|
+|`commerce.shipping.address.postalCode`|The postal code of the location. Postal codes are not available for all countries. In some countries, this will only contain part of the postal code.|
+|`commerce.shipping.address.country`|The name of the government-administered territory. Other than `xdm:countryCode`, this is a free-form field that can have the country name in any language.|
+|`commerce.shipping.currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used, such as `USD` or `EUR`.|
+|`commerce.shipping.trackingNumber`|The tracking number provided by the shipping carrier for an order item shipment.|
+|`commerce.shipping.trackingURL`|The URL to track the shipping status of an order item.|
+|`commerce.shipping.shipDate`|The date when one or more items from an order is shipped.|
+|`commerce.commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
+|`commerce.commerceScope.environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
+|`commerce.commerceScope.storeCode`|The unique store code. You can have many stores per website.|
+|`commerce.commerceScope.storeViewCode`|The unique store view code. You can have many store views per store.|
+|`commerce.commerceScope.websiteCode`|The unique website code. You can have many websites in an environment.|
+|`commerce.billing.address`|Billing postal address.|
+|`commerce.billing.address.street1`|Primary street level information, apartment number, street number, and street name|
+|`commerce.billing.address.street2`|Additional field for street level information.|
+|`commerce.billing.address.city`|The name of the city.|
+|`commerce.billing.address.state`|The name of the state. This is a free-form field.|
+|`commerce.billing.address.postalCode`|The postal code of the location. Postal codes are not available for all countries. In some countries, this will only contain part of the postal code.|
+|`commerce.billing.address.country`|The name of the government-administered territory. Other than `xdm:countryCode`, this is a free-form field that can have the country name in any language.|
+|`personalEmail`|A personal email address.|
+|`personalEmail.address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards.|
+|`productListItems`|An array of products in the order.|
+|`productListItems.SKU`|Stock Keeping Unit. The unique identifier for the product.|
+|`productListItems.name`|The display name or human-readable name of the product.|
+|`productListItems.priceTotal`|The total price for the product line item.|
+|`productListItems.quantity`|The number of product units in the cart.|
+|`productListItems.discountAmount`|Indicates the discount amount applied.|
+|`productListItems.currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used, such as `USD` or `EUR`.|
+|`productListItems.selectedOptions`|Field used for a configurable product.|
+|`productListItems.selectedOptions.attribute`|Identifies an attribute of the configurable product, such as `size` or `color`.|
+|`productListItems.selectedOptions.value`|Identifies the value of the attribute such as `small` or `black`.|
+|`productListItems.categories`|Contains information about the category of a product.|
+|`productListItems.categories.id`|The unique identifier of the category.|
+|`productListItems.categories.name`|The name of the category.|
+|`productListItems.categories.path`|The path to the category.|
 
 ### orderCancelled
 
@@ -563,97 +739,201 @@ The following table describes the data collected for this event.
 #### Data collected from orderCancelled
 
 The following table describes the data collected for this event.
+
 |Field|Description|
 |---|---|
-|`address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
-|`productListItems`|An array of products in the order|
-|`id`|The line item identifier for this product entry. The product itself is identified through the `product` field.|
-|`name`|The display name or human-readable name of the product|
-|`SKU`|Stock Keeping Unit. The unique identifier for the product.|
-|`quantity`|The number of product units in the cart|
-|`priceTotal`|The total price for the product line item|
-|`discountAmount`|Indicates the discount amount applied|
-|`order`|Contains information about the order|
-|`purchaseID`|Unique identifier assigned by the seller for this purchase or contract. There is no guarantee that the ID is unique|
-|`purchaseOrderNumber`|Unique identifier assigned by the purchaser for this purchase or contract|
-|`cancelDate`|The date and time when a shopper cancels an order|
-|`lastUpdatedDate`|The time when a particular order record is last updated in the commerce system|
-|`personalEmail`|A personal email address|
-|`address`|The technical address, for example, 'name@domain.com' as commonly defined in RFC2822 and subsequent standards|
+|`commerce.order`|Contains information about the order.|
+|`commerce.order.purchaseID`|Unique identifier assigned by the seller for this purchase or contract. There is no guarantee that the ID is unique.|
+|`commerce.order.purchaseOrderNumber`|Unique identifier assigned by the purchaser for this purchase or contract.|
+|`commerce.order.cancelDate`|The date and time when a shopper cancels an order.|
+|`commerce.order.lastUpdatedDate`|The time when a particular order record is last updated in the commerce system.|
+|`commerce.commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
+|`commerce.commerceScope.environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
+|`commerce.commerceScope.storeCode`|The unique store code. You can have many stores per website.|
+|`commerce.commerceScope.storeViewCode`|The unique store view code. You can have many store views per store.|
+|`commerce.commerceScope.websiteCode`|The unique website code. You can have many websites in an environment.|
+|`personalEmail`|A personal email address.|
+|`personalEmail.address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards.|
 
-### creditMemoIssued
+### orderLineItemRefunded
 
 |Description| XDM event name|
 |---|---|
-|Triggered when a shopper returns an item in an order.|`commerce.backofficeCreditMemoIssued`|
+|Triggered when a shopper is refunded for a returned item.|`commerce.backofficeCreditMemoIssued`|
 
-#### Data collected from creditMemoIssued
+#### Data collected from orderLineItemRefunded
 
 The following table describes the data collected for this event.
+
 |Field|Description|
 |---|---|
-|`address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
-|`productListItems`|An array of products in the order|
-|`id`|The line item identifier for this product entry. The product itself is identified through the `product` field.|
-|`name`|The display name or human-readable name of the product|
-|`SKU`|Stock Keeping Unit. The unique identifier for the product.|
-|`quantity`|The number of product units in the cart|
-|`priceTotal`|The total price for the product line item|
-|`discountAmount`|Indicates the discount amount applied|
-|`order`|Contains information about the order|
-|`purchaseID`|Unique identifier assigned by the seller for this purchase or contract. There is no guarantee that the ID is unique|
-|`purchaseOrderNumber`|Unique identifier assigned by the purchaser for this purchase or contract|
-|`lastUpdatedDate`|The time when a particular order record is last updated in the commerce system|
-|`personalEmail`|A personal email address|
-|`address`|The technical address, for example, 'name@domain.com' as commonly defined in RFC2822 and subsequent standards|
+|`commerce.order`|Contains information about the order.|
+|`commerce.order.purchaseID`|Unique identifier assigned by the seller for this purchase or contract. There is no guarantee that the ID is unique.|
+|`commerce.order.lastUpdatedDate`|The time when a particular order record is last updated in the commerce system.|
+|`commerce.order.purchaseOrderNumber`|Unique identifier assigned by the purchaser for this purchase or contract.|
+|`commerce.refunds`|The list of refunds for this order.|
+|`commerce.refunds.transactionID`|Unique identifier for this refund.|
+|`commerce.refunds.refundAmount`|The value of the refund.|
+|`commerce.refunds.refundPaymentType`|The method of payment for this order. Enumerated, custom values allowed.|
+|`commerce.refunds.currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used, such as `USD` or `EUR`.|
+|`personalEmail`|A personal email address.|
+|`personalEmail.address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards.|
+|`productListItems`|An array of products in the order.|
+|`productListItems.SKU`|Stock Keeping Unit. The unique identifier for the product.|
+|`productListItems.name`|The display name or human-readable name of the product.|
+|`productListItems.priceTotal`|The total price for the product line item.|
+|`productListItems.quantity`|The number of product units in the cart.|
+|`productListItems.discountAmount`|Indicates the discount amount applied.|
+|`productListItems.currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used, such as `USD` or `EUR`.|
+|`productListItems.selectedOptions`|Field used for a configurable product.|
+|`productListItems.selectedOptions.attribute`|Identifies an attribute of the configurable product, such as `size` or `color`.|
+|`productListItems.selectedOptions.value`|Identifies the value of the attribute such as `small` or `black`.|
+|`productListItems.categories`|Contains information about the category of a product.|
+|`productListItems.categories.id`|The unique identifier of the category.|
+|`productListItems.categories.name`|The name of the category.|
+|`productListItems.categories.path`|The path to the category.|
+
+### orderItemsReturnInitiated
+
+|Description| XDM event name|
+|---|---|
+|Triggered when a shopper requests to return an item.|`commerce.backofficeOrderItemsReturnInitiated`|
+
+#### Data collected from orderItemsReturnInitiated
+
+The following table describes the data collected for this event.
+
+|Field|Description|
+|---|---|
+|`commerce.order`|Contains information about the order.|
+|`commerce.order.purchaseID`|Unique identifier assigned by the seller for this purchase or contract. There is no guarantee that the ID is unique.|
+|`commerce.order.returns`|The RMA (Return Merchandise Authorization) information for this order.|
+|`commerce.order.returns.returnID`|The unique identifier for this RMA (Return Merchandise Authorization).|
+|`commerce.order.returns.returnStatus`|The current status of the RMA (Return Merchandise Authorization), such as Pending, Closed, and so on.|
+|`commerce.commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
+|`commerce.commerceScope.environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
+|`commerce.commerceScope.storeCode`|The unique store code. You can have many stores per website.|
+|`commerce.commerceScope.storeViewCode`|The unique store view code. You can have many store views per store.|
+|`commerce.commerceScope.websiteCode`|The unique website code. You can have many websites in an environment.|
+|`personalEmail`|A personal email address.|
+|`personalEmail.address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards.|
+|`productListItems`|An array of products in the order.|
+|`productListItems.SKU`|Stock Keeping Unit. The unique identifier for the product.|
+|`productListItems.name`|The display name or human-readable name of the product.|
+|`productListItems.quantity`|The number of product units in the cart.|
+|`productListItems.selectedOptions`|Field used for a configurable product.|
+|`productListItems.selectedOptions.attribute`|Identifies an attribute of the configurable product, such as `size` or `color`.|
+|`productListItems.selectedOptions.value`|Identifies the value of the attribute such as `small` or `black`.|
+|`productListItems.categories`|Contains information about the category of a product.|
+|`productListItems.categories.id`|The unique identifier of the category.|
+|`productListItems.categories.name`|The name of the category.|
+|`productListItems.categories.path`|The path to the category.|
+|`productListItems.returnItem`|The RMA (Return Merchandise Authorization) information for this item.|
+|`productListItems.returnItem.returnStatus`|The status of the returned item, such as Pending, Approved, and so on.|
+|`productListItems.returnItem.returnReason`|The reason why a return is requested for this item.|
+|`productListItems.returnItem.returnItemCondition`|The condition of the item that the return is requested for.|
+|`productListItems.returnItem.returnResolution`|The requested resolution of the item being returned, such as Refund, Exchange, and so on.|
+|`productListItems.returnItem.returnQuantityRequested`|The number of this item that the shopper requested to return.|
+|`productListItems.returnItem.returnQuantityAuthorized`|The number of this item that is authorized to be returned.|
+|`productListItems.returnItem.eturnQuantityReceived`|The number of returned items received.|
+|`productListItems.returnItem.returnQuantityApproved`|The number of this item with return fully complete and approved.|
+
+### orderItemReturnCompleted
+
+|Description| XDM event name|
+|---|---|
+|Triggered when an item a shopper requested to return is completed.|`commerce.backofficeOrderItemsReturnCompleted`|
+
+#### Data collected from orderItemReturnCompleted
+
+The following table describes the data collected for this event.
+
+|Field|Description|
+|---|---|
+|`commerce.order`|Contains information about the order.|
+|`commerce.order.purchaseID`|Unique identifier assigned by the seller for this purchase or contract. There is no guarantee that the ID is unique.|
+|`commerce.order.returns`|The RMA (Return Merchandise Authorization) information for this order.|
+|`commerce.order.returns.returnID`|The unique identifier for this RMA (Return Merchandise Authorization).|
+|`commerce.order.returns.returnStatus`|The current status of the RMA (Return Merchandise Authorization), such as Pending, Closed, and so on.|
+|`commerce.commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
+|`commerce.commerceScope.environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
+|`commerce.commerceScope.storeCode`|The unique store code. You can have many stores per website.|
+|`commerce.commerceScope.storeViewCode`|The unique store view code. You can have many store views per store.|
+|`commerce.commerceScope.websiteCode`|The unique website code. You can have many websites in an environment.|
+|`personalEmail`|A personal email address.|
+|`personalEmail.address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards.|
+|`productListItems`|An array of products in the order.|
+|`productListItems.SKU`|Stock Keeping Unit. The unique identifier for the product.|
+|`productListItems.name`|The display name or human-readable name of the product.|
+|`productListItems.selectedOptions`|Field used for a configurable product.|
+|`productListItems.selectedOptions.attribute`|Identifies an attribute of the configurable product, such as `size` or `color`.|
+|`productListItems.selectedOptions.value`|Identifies the value of the attribute such as `small` or `black`.|
+|`productListItems.categories`|Contains information about the category of a product.|
+|`productListItems.categories.id`|The unique identifier of the category.|
+|`productListItems.categories.name`|The name of the category.|
+|`productListItems.categories.path`|The path to the category.|
+|`productListItems.returnItem`|The RMA (Return Merchandise Authorization) information for this item.|
+|`productListItems.returnItem.returnStatus`|The status of the returned item, such as Pending, Approved, and so on.|
+|`productListItems.returnItem.returnReason`|The reason why a return is requested for this item.|
+|`productListItems.returnItem.returnItemCondition`|The condition of the item that the return is requested for.|
+|`productListItems.returnItem.returnResolution`|The requested resolution of the item being returned, such as Refund, Exchange, and so on.|
+|`productListItems.returnItem.returnQuantityRequested`|The number of this item that the shopper requested to return.|
+|`productListItems.returnItem.returnQuantityAuthorized`|The number of this item that is authorized to be returned.|
+|`productListItems.returnItem.eturnQuantityReceived`|The number of returned items received.|
+|`productListItems.returnItem.returnQuantityApproved`|The number of this item with return fully complete and approved.|
 
 ### orderShipmentCompleted
 
 |Description| XDM event name|
 |---|---|
-|Triggered when a shopper returns an item in an order.|`commerce.backofficeOrderShipmentCompleted`|
+|Triggered when a shipment is completed.|`commerce.backofficeOrderShipmentCompleted`|
 
 #### Data collected from orderShipmentCompleted
 
 The following table describes the data collected for this event.
+
 |Field|Description|
 |---|---|
-|`address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
-|`productListItems`|An array of products in the order|
-|`id`|The line item identifier for this product entry. The product itself is identified through the `product` field.|
-|`name`|The display name or human-readable name of the product|
-|`SKU`|Stock Keeping Unit. The unique identifier for the product.|
-|`quantity`|The number of product units in the cart|
-|`priceTotal`|The total price for the product line item|
-|`discountAmount`|Indicates the discount amount applied|
-|`order`|Contains information about the order|
-|`purchaseID`|Unique identifier assigned by the seller for this purchase or contract. There is no guarantee that the ID is unique|
-|`priceTotal`|The total price of this order after all discounts and taxes have been applied|
-|`currencyCode`|The ISO 4217 currency code used for the order totals|
-|`purchaseOrderNumber`|Unique identifier assigned by the purchaser for this purchase or contract|
-|`taxAmount`|The tax amount paid by the buyer as part of the final payment.|
-|`createdDate`|The time and date when a new order is created in the commerce system. For example, `2022-10-15T20:20:39+00:00`|
-|`payments`|The list of payments for this order|
-|`paymentType`|The method of payment for this order. Enumerated, custom values allowed.|
-|`currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used for this payment item|
-|`paymentAmount`|The value of the payment|
-|`shipping`|Shipping details for one or more products|
-|`shippingMethod`|The method of shipping chosen by the customer, such as standard delivery, expedited delivery, pick up in store, and so on|
-|`address`|Physical shipping address|
-|`street1`|Primary street level information, apartment number, street number, and street name|
-|`street2`|Additional field for street level information|
-|`city`|The name of the city|
-|`state`|The name of the state. This is a free-form field.|
-|`postalCode`|The postal code of the location. Postal codes are not available for all countries. In some countries, this will only contain part of the postal code.|
-|`country`|The name of the government-administered territory. Other than `xdm:countryCode`, this is a free-form field that can have the country name in any language.|
-|`shippingAmount`|The amount the customer had to pay for shipping.|
-|`address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards|
-|`billingAddress`|Billing postal address|
-|`street1`|Primary street level information, apartment number, street number, and street name|
-|`street2`|Additional field for street level information|
-|`city`|The name of the city|
-|`state`|The name of the state. This is a free-form field.|
-|`postalCode`|The postal code of the location. Postal codes are not available for all countries. In some countries, this data contains only part of the postal code.|
-|`country`|The name of the government-administered territory. Other than `xdm:countryCode`, this is a free-form field that can have the country name in any language.|
-|`personalEmail`|A personal email address|
-|`address`|The technical address, for example, 'name@domain.com' as commonly defined in RFC2822 and subsequent standards|
+|`commerce.order`|Contains information about the order.|
+|`commerce.order.purchaseID`|Unique identifier assigned by the seller for this purchase or contract. There is no guarantee that the ID is unique.|
+|`commerce.order.payments`|The list of payments for this order.|
+|`commerce.order.payments.paymentTransactionID`|Unique identifier for this payment transaction.|
+|`commerce.order.payments.paymentAmount`|The value of the payment.|
+|`commerce.order.payments.paymentType`|The method of payment for this order. Enumerated, custom values allowed.|
+|`commerce.order.payments.currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used, such as `USD` or `EUR`.|
+|`commerce.order.taxAmount`|The tax amount paid by the buyer as part of the final payment.|
+|`commerce.order.createdDate`|The time and date when a new order is created in the commerce system. For example, `2022-10-15T20:20:39+00:00`.|
+|`commerce.shipping`|Shipping details for one or more products.|
+|`commerce.shipping.shippingMethod`|The method of shipping chosen by the customer, such as standard delivery, expedited delivery, pick up in store, and so on.|
+|`commerce.shipping.shippingAmount`|The amount the customer had to pay for shipping.|
+|`commerce.shipping.shipDate`|The date when one or more items from an order is shipped.|
+|`commerce.shipping.address`|The physical shipping address.|
+|`commerce.shipping.address.street1`|Primary street level information, apartment number, street number, and street name.|
+|`commerce.shipping.address.street2`|Optional street information second line.|
+|`commerce.shipping.address.city`|The name of the city.|
+|`commerce.shipping.address.state`|The name of the State. This is a free-form field.|
+|`commerce.shipping.address.postalCode`|The postal code of the location. Postal codes are not available for all countries. In some countries, this will only contain part of the postal code.|
+|`commerce.shipping.address.country`|The name of the government-administered territory. Other than `xdm:countryCode`, this is a free-form field that can have the country name in any language.|
+|`commerce.billing.address`|Billing postal address.|
+|`commerce.billing.address.street1`|Primary street level information, apartment number, street number, and street name|
+|`commerce.billing.address.street2`|Additional field for street level information.|
+|`commerce.billing.address.city`|The name of the city.|
+|`commerce.billing.address.state`|The name of the state. This is a free-form field.|
+|`commerce.billing.address.postalCode`|The postal code of the location. Postal codes are not available for all countries. In some countries, this will only contain part of the postal code.|
+|`commerce.billing.address.country`|The name of the government-administered territory. Other than `xdm:countryCode`, this is a free-form field that can have the country name in any language.|
+|`personalEmail`|A personal email address.|
+|`personalEmail.address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards.|
+|`productListItems`|An array of products in the order.|
+|`productListItems.SKU`|Stock Keeping Unit. The unique identifier for the product.|
+|`productListItems.name`|The display name or human-readable name of the product.|
+|`productListItems.priceTotal`|The total price for the product line item.|
+|`productListItems.quantity`|The number of product units in the cart.|
+|`productListItems.discountAmount`|Indicates the discount amount applied.|
+|`productListItems.currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used, such as `USD` or `EUR`.|
+|`productListItems.selectedOptions`|Field used for a configurable product.|
+|`productListItems.selectedOptions.attribute`|Identifies an attribute of the configurable product, such as `size` or `color`.|
+|`productListItems.selectedOptions.value`|Identifies the value of the attribute such as `small` or `black`.|
+|`productListItems.categories`|Contains information about the category of a product.|
+|`productListItems.categories.id`|The unique identifier of the category.|
+|`productListItems.categories.name`|The name of the category.|
+|`productListItems.categories.path`|The path to the category.|

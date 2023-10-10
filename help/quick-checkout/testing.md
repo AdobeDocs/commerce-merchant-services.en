@@ -2,6 +2,7 @@
 title: "Testing the [!DNL Quick Checkout] for Adobe Commerce extension"
 description: "Testing and validating ensures that the [!DNL Quick Checkout] extension works as expected."
 exl-id: 308f39e1-e2f6-40d8-b876-0f9013effed3
+feature: Checkout, Services
 ---
 
 # Test the [!DNL Quick Checkout] extension

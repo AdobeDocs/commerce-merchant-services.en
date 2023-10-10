@@ -1,7 +1,7 @@
 ---
 title: Background Process Configuration
 description: "Configure the schedules for [!DNL Store Fulfillment] background processes used in synchronizing data with the fulfillment services."
-role: User, Admin
+role: Admin, Developer
 level: Intermediate
 exl-id: 742ae59e-77a0-4db6-b156-2992d4403be7
 ---
@@ -16,4 +16,4 @@ Background processes are managed using the standard Adobe Commerce [Scheduled Ta
 
 From the Admin, go to **[!UICONTROL Stores > Configuration > Advanced > System > Cron (Scheduled Tasks) > Cron configuration options for group:store_fulfillment]**.
 
-Review the default configuration for Store Fulfillment services. Depending on your order processing volume and resource availability, you might need to adjust these settings.
+Review the default configuration for Store Fulfillment services. You can customize these settings based on your order processing volume and resource availability.

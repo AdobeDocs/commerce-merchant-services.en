@@ -3,6 +3,9 @@ user-guide-title: "[!DNL Payment Services] Guide"
 user-guide-description: "This guide provides detailed information about installing and configuring [!DNL Payment Services] for your [!DNL Adobe Commerce] or [!DNL Magento Open Source] store."
 breadcrumb-title: "[!DNL Payment Services] Guide"
 index: yes
+role: Admin, Leader, User
+feature: Payments, Checkout
+recommendations: noDisplay
 ---
 
 # [!DNL Payment Services] for Commerce {#payment-services}
@@ -28,10 +31,13 @@ index: yes
 - [Test and validate](test-validate.md)
 - [Create an order](create-order.md)
 - Financial reporting {#reporting}
+  - [Transactions report](transactions.md)
   - [Order payment status report](order-payment-status.md)
   - [Payouts report](payouts.md)
   - [Available data](data.md)
 - Manage payments {#manage}
   - [Refunds](refunds.md)
   - [Voids](voids.md)
-- [Security and compliance](security.md)
+- Security {#security-compliance}
+  - [Security and compliance](security.md)
+  - [Signifyd fraud protection](fraud-protection.md)
