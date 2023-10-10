@@ -59,15 +59,21 @@ See the events topic to learn more about [storefront](events.md#storefront-event
 
 1. Select **Storefront events** if you want to send storefront behavioral data.
 
-    >[!NOTE]
-    >
-    >The **Storefront events** checkbox is automatically enabled if the AEP Web SDK and Organization ID are valid.
-
 1. Select **Back office events** if you want to send order status information, such as if an order was placed, canceled, refunded, or shipped.
 
     >[!NOTE]
     >
     >If you select **Back office events**, all back office data is sent to the Experience Platform edge. If a shopper chooses to opt out of data collection, you must explicitly set the shopper's privacy preference in the Experience Platform. This is different from storefront events where the collector already handles consent based on shopper preferences. [Learn more](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/dataset.html) about setting a shopper's privacy preference in the Experience Platform.
+
+1. (Skip this step if you are using your own AEP Web SDK.) [Create](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html#create) a datastream in the Adobe Experience Platform or select an existing datastream you want to use for collection. Enter that datastream ID in the **Datastream ID** field.
+
+1. Enter the **Dataset ID** that you want to contain your Commerce data. To find the dataset ID:
+
+    1. Open the Experience Platform UI and select **Datasets** in the left-navigation to open the **Datasets** dashboard. The dashboard lists all available datasets for your organization. Details are displayed for each listed dataset, including its name, the schema the dataset adheres to, and status of the most recent ingestion run.
+    1. Open the dataset associated with your datastream.
+    1. In the right-hand pane, view the details about the dataset. Copy the dataset ID.
+
+    ![Copy Dataset ID](./assets/retrieve-dataset-id.png){width="700" zoomable="yes"}
 
 1. To ensure back office event data updates based on a schedule according to a [cron](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cron.html) job, you must change the `Sales Orders Feed` index to `Update by Schedule`.
 
@@ -87,39 +93,32 @@ See the events topic to learn more about [storefront](events.md#storefront-event
         bin/magento saas:resync --feed orders
         ```
 
-1. (Skip this step if you are using your own AEP Web SDK.) [Create](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html#create) a datastream in the Adobe Experience Platform or select an existing datastream you want to use for collection.
-
-1. (Skip this step if you are using your own AEP Web SDK.) In the **Datastream ID** field, paste the ID of that new or existing datastream.
-
 ## Field descriptions
 
 | Field | Description |
 |--- |--- |
 | Scope | Specific website where you want the configuration settings to apply. |
-| Organization ID (Global)| ID that belongs to the organization that purchased the Adobe DX product. This ID links your Adobe Commerce instance to Adobe Experience Platform. |
+| Organization ID (global)| ID that belongs to the organization that purchased the Adobe DX product. This ID links your Adobe Commerce instance to Adobe Experience Platform. |
 |Is the AEP Web SDK already deployed to your site|Select this checkbox if you have deployed your own AEP Web SDK to your site|
-|AEP Web SDK Name (Global)| If you already have an Experience Platform Web SDK deployed to your site, specify the name of that SDK in this field. This allows the Storefront Event Collector and Storefront Event SDK to use your Experience Platform Web SDK rather than the version deployed by the Experience Platform connector. If you do not have an Experience Platform Web SDK deployed to your site, leave this field blank and the Experience Platform connector deploys one for you.|
+|AEP Web SDK Name (global)| If you already have an Experience Platform Web SDK deployed to your site, specify the name of that SDK in this field. This allows the Storefront Event Collector and Storefront Event SDK to use your Experience Platform Web SDK rather than the version deployed by the Experience Platform connector. If you do not have an Experience Platform Web SDK deployed to your site, leave this field blank, and the Experience Platform connector deploys one for you.|
 |Storefront events|Is checked by default as long as the Organization ID and datastream ID are valid. Storefront events collect anonymized behavioral data from your shoppers as they browse your site.|
-|Back Office events| If checked, event payload contains anonymized order status information, such as if an order was placed, canceled, refunded, or shipped. |
-| Datastream ID (Website) | ID that allows data to flow from Adobe Experience Platform to other Adobe DX products. This ID must be associated to a specific website within your specific Adobe Commerce instance. If you specify your own Experience Platform Web SDK, do not specify a datastream ID in this field. The Experience Platform connector uses the datastream ID associated with that SDK and ignores any datastream ID specified in this field (if any).|
+|Back office events| If checked, event payload contains anonymized order status information, such as if an order was placed, canceled, refunded, or shipped. |
+|Datastream ID (website) | ID that allows data to flow from Adobe Experience Platform to other Adobe DX products. This ID must be associated to a specific website within your specific Adobe Commerce instance. If you specify your own Experience Platform Web SDK, do not specify a datastream ID in this field. The Experience Platform connector uses the datastream ID associated with that SDK and ignores any datastream ID specified in this field (if any).|
+|Dataset ID (website) | ID of the dataset that contains your Commerce data. This field is required unless you have deselected the **Storefront events** or **Back office events** checkboxes. Also, if you are using your own Experience Platform Web SDK and therefore did not specify a datastream ID, you must still add the dataset ID associated with your datastream. Otherwise, you cannot save this form.|
 
 >[!NOTE]
 >
 >After onboarding, storefront data begins to flow to the Experience Platform edge. Back office data takes about five minutes to appear at the edge. Subsequent updates are visible at the edge based on the cron schedule.
 
-## (Beta) Send historical order data
+## Send historical order data
 
->[!NOTE]
->
->This feature is available for beta users only. You can join the beta by sending an email to the following address: `dataconnection@adobe.com`.
+Adobe Commerce collects up to five years of [historical order data and status](events.md#back-office-events). You can use the Experience Platform connector to send that historical data to the Experience Platform to enrich your customer profiles based on those past orders. The data is stored in a dataset within Experience Platform.
 
-Adobe Commerce collects up to five years of historical order data and status. You can use the Experience Platform connector to send that historical data to the Experience Platform to enrich your customer profiles based on those past orders. The data is stored in a dataset within Experience Platform.
+While Commerce already collects the historical order data, there are several steps you must complete to send that data to Experience Platform.
 
-While Commerce already collects the historical order data, there are several tasks you must complete to send that data to Experience Platform. The following sections guide you through the process.
+### Step 1: Install historical order data collection
 
-### Install historical order beta
-
-To enable historical order data collection for beta, you must update the project's root [!DNL Composer] `.json` file as follows:
+To enable historical order data collection, you must update the project's root [!DNL Composer] `.json` file as follows:
 
 1. Open the root `composer.json` file and search for `magento/experience-platform-connector`.
 
@@ -128,7 +127,7 @@ To enable historical order data collection for beta, you must update the project
    ```json
    "require": {
       ...
-      "magento/experience-platform-connector": "^3.0.0-beta1",
+      "magento/experience-platform-connector": "^3.0.0",
       ...
     }
    ```
@@ -138,7 +137,7 @@ To enable historical order data collection for beta, you must update the project
     ```json
     "require": {
       ...
-      "magento/experience-platform-connector-b2b": "^2.0.0-beta1"
+      "magento/experience-platform-connector-b2b": "^2.0.0"
       ...
     }
     ```
@@ -155,31 +154,49 @@ To enable historical order data collection for beta, you must update the project
    composer update magento/experience-platform-connector-b2b --with-dependencies
    ```
 
-### Configure historical order beta
-
-To ensure that your customers order history can be sent to Experience Platform, you must specify credentials that link your Commerce instance to Experience Platform. If you have already installed and enabled the [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) extension, you already specified the credentials needed and you can skip this step. If you have not already installed and enabled the Audience Activation extension, complete the following steps:
+### Step 2: Create a project in Adobe Developer Console
 
 >[!NOTE]
 >
->In this section, you enter credentials from the developer console. Make sure that your developer console project has the correct [roles and permissions configured](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html#assign-api-to-a-role).
+>If you have already installed and enabled the [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) extension, you already completed steps 2 and 3.
 
-1. On the _Admin_ sidebar, go to **[!UICONTROL Stores]** > _[!UICONTROL Settings]_ > **[!UICONTROL Configuration]**.
+Create a project in the Adobe Developer Console that authenticates Commerce so it can make Experience Platform API calls.
 
-1. Expand **[!UICONTROL Services]** and select **[!UICONTROL Experience Platform Connector]**. 
+To create the project, follow the steps outlined in the [Authenticate and access Experience Platform APIs](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html) tutorial.
 
-1. Enter the configuration credentials found in the [developer console](https://developer.adobe.com/console/home).
+As you go through the tutorial, ensure that your project has the following:
+
+- Access to the following [product profiles](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html#select-product-profiles): **Default production all access** and **AEP Default all access**.
+- The correct [roles and permissions are configured](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html#assign-api-to-a-role).
+- If you decided to use JSON Web Tokens (JWT) as your server-to-server authentication method, you must also upload a private key.
+
+The result of this step creates a configuration file that you use in the next step.
+
+### Step 3: Download configuration file
+
+Download the [workspace configuration file](https://developer.adobe.com/commerce/extensibility/events/project-setup/#download-the-workspace-configuration-file). Copy and paste the contents of this file into the **Service Account/Credential details** page of the Commerce Admin.
+
+1. In the Commerce Admin, navigate to **Stores** > Settings > **Configuration** > **Services** > **Experience Platform Connector**.
+
+1. Select the server-to-server authorization method that you implemented from the **Adobe I/O Authorization Type** menu. Adobe recommends using OAuth. JWT has been deprecated. [Learn more](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/).
+
+1. (JWT only) Copy and paste the contents of your `private.key` file into the **Client Secret** field. Use the following command to copy the contents.
+
+   ```bash
+   cat config/private.key | pbcopy
+   ```
+
+   See [Service Account (JWT) Authentication](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/) for more information about the `private.key` file.
+
+1. Copy the contents of the `<workspace-name>.json` file into the **Service Account/Credential details** field.
 
     ![Experience Platform Connector Admin Configuration](./assets/epc-admin-config.png){width="700" zoomable="yes"}
 
-    >[!NOTE]
-    >
-    >For beta, Commerce uses JSON Web Tokens (JWT) credentials in the developer console. Post beta, Commerce will use OAuth 2.0 in the developer console.
-
 1. Click **Save Config**.
 
-### Set up the Order Sync service
+### Step 4: Set up the Order Sync service
 
-After you enter developer credentials you can set up the order sync service. The order sync service uses the [Message Queue Framework](https://developer.adobe.com/commerce/php/development/components/message-queues/) and RabbitMQ. After you complete these steps, order status data can sync to SaaS, which is required before it is sent to Experience Platform.
+After you enter the developer credentials, set up the order sync service. The order sync service uses the [Message Queue Framework](https://developer.adobe.com/commerce/php/development/components/message-queues/) and RabbitMQ. After you complete these steps, order status data can sync to SaaS, which is required before it is sent to Experience Platform.
 
 1. [Enable](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/rabbitmq.html) RabbitMQ.
 
@@ -202,9 +219,9 @@ After you enter developer credentials you can set up the order sync service. The
 
 With the order sync service enabled, you can then specify the historical order date range in the Experience Platform connector page.
 
-### Specify order history date range
+### Step 5: Specify order history date range
 
-In this section, you specify the date range for the historical orders you want to send to Experience Platform.
+Specify the date range for the historical orders that you want to send to Experience Platform.
 
 ![Sync Order History](./assets/order-history.png){width="700" zoomable="yes"}
 
@@ -212,21 +229,25 @@ In this section, you specify the date range for the historical orders you want t
 
 1. Select the **Order History** tab.
 
-1. Under **Order History Sync**, enter the **Dataset ID**. This should be the same dataset associated with the datastream you specified in the [data collection](#data-collection) section above.
+1. Under **Order History Sync**, the **Copy Dataset ID from Settings** checkbox is already enabled. This ensures you are using the same dataset specified in the **Settings** tab.
 
-    1. To access the dataset ID, open the Experience Platform UI and select **Datasets** in the left-navigation to open the **Datasets** dashboard. The dashboard lists all available datasets for your organization. Details are displayed for each listed dataset, including its name, the schema the dataset adheres to, and status of the most recent ingestion run.
-    1. Open the dataset associated with your datastream.
-    1. In the right-hand pane, you see details about the dataset. Copy the dataset ID.
+1. In the **From** and **To** fields, specify the date range for the historical order data you want to send. You cannot select a date range that exceeds five years.
 
-    ![Copy Dataset ID](./assets/retrieve-dataset-id.png){width="700" zoomable="yes"}
+1. Select **[!UICONTROL Start Sync]** to trigger the sync to begin. Historical order data is batched data as opposed to storefront and back office data that is streaming data. Batched data takes about 45 minutes to arrive in Experience Platform.
 
-1. In the **From** and **To** fields specify the data range for the historical order data you want to send. You cannot select a date range that exceeds five years.
+| Field | Description |
+|--- |--- |
+| Copy Dataset ID from Settings | Copies the dataset ID you entered on the **Settings** tab.|
+|Dataset ID (website) | ID of the dataset that contains your Commerce data. This field is required unless you have deselected the **Storefront events** or **Back office events** checkboxes. Also, if you are using your own Experience Platform Web SDK and therefore did not specify a datastream ID, you must still add the dataset ID associated with your datastream. Otherwise, you cannot save this form.|
+| From | Date from which you want to begin collecting order history data.|
+| To |  Date from which you want to end collecting order history data.|
+| Start Sync | Begins the process of syncing the order history data to the Experience Platform edge. This button is disabled if the **[!UICONTROL Dataset ID]** field is blank or the dataset ID is invalid.|
 
-1. Select [!UICONTROL Start Sync] to trigger the sync to begin. Historical order data is batched data as opposed to storefront and back office data that is streaming data. Batched data takes about 45 minutes to arrive in Experience Platform.
+### Historical order demo
 
-    >[!NOTE]
-    >
-    >For beta, if you trigger a sync multiple times on the same or overlapping time range, you see duplicate events in the dataset.
+Watch this video to learn more about historical orders:
+
+>[!VIDEO](https://video.tv.adobe.com/v/3424672)
 
 ## Confirm that event data is collected
 
