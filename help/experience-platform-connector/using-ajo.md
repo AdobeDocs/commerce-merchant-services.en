@@ -81,7 +81,7 @@ Configure two events in Journey Optimizer: one event listens for the `commerce.c
 
 1. On the **[!UICONTROL Events]** page, click **[!UICONTROL Create Event]**.
 
-1. In the right rail configuration, set up your event as follows:
+1. In the right navigation, set up your event as follows:
 
     1. Set the **[!UICONTROL Name]** to: `firstname_lastname_checkout`.
     1. Set **[!UICONTROL Type]** to **[!UICONTROL Unitary]**.
@@ -103,7 +103,7 @@ Configure two events in Journey Optimizer: one event listens for the `commerce.c
 
 1. Create an event in Journey Optimizer as you did before.
 
-1. In the right rail configuration, set up your event as follows:
+1. In the right navigation, set up your event as follows:
 
     1. Set the **[!UICONTROL Name]** to: `firstname_lastname_timeout`.
     1. Set **[!UICONTROL Type]** to **[!UICONTROL Unitary]**.
@@ -122,7 +122,7 @@ Create a journey that listens for the `commerce.checkouts` event and then sends 
 1. Click **[!UICONTROL Create Journey]**.
 1. Specify the name of your journey.
 1. Click **[!UICONTROL OK]** to save the journey.  
-1. In the left rail under the **[!UICONTROL EVENTS]** section, search for the checkout event you previously created: `firstname_lastname_checkout` and drag and drop it on the canvas.  
+1. In the left navigation under the **[!UICONTROL EVENTS]** section, search for the checkout event you previously created: `firstname_lastname_checkout` and drag and drop it on the canvas.  
 
     >[!TIP]
     >
@@ -137,7 +137,7 @@ Create a journey that listens for the `commerce.checkouts` event and then sends 
     
     With this timeout configuration, a shopper that performs a checkout but does not complete the order within one minute triggers this timeout branch. In an actual production environment, you would set this for a longer period, like 24 hours.
 
-1. In the left rail under **[!UICONTROL ACTIONS]**, add the **[!UICONTROL Email]** action to the timeout branch. Your journey should look like the following:
+1. In the left navigation under **[!UICONTROL ACTIONS]**, add the **[!UICONTROL Email]** action to the timeout branch. Your journey should look like the following:
 
     ![Journey Optimizer Canvas](assets/ajo-canvas.png){width="700" zoomable="yes"}
 
