@@ -272,3 +272,7 @@ To confirm that data is being collected from your Commerce store, use the [Adobe
 In this example, you see event data from the [`commerce.productListAdds`](events.md#addtocart), [`commerce.productViews`](events.md#productpageview), [`web.webpagedetails.pageViews`](events.md#pageview), and so on. This view allows you to verify that your Commerce data arrived at the edge.
 
 If the results are not what you expect, open your dataset and look for any failed batches imports. Learn more about [troubleshooting batch imports](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/troubleshooting.html).
+
+## Next steps
+
+When Commerce data is sent to the Experience Platform edge, other Adobe Experience Cloud products, such as Adobe Journey Optimizer, can use that data. For example, you can configure Journey Optimizer to listen to certain events, and based on that event data, trigger an email for a first time user or if there is an abandoned cart. Learn how you can extend your Commerce platform by [creating customer journeys](using-ajo.md) in Journey Optimizer.
