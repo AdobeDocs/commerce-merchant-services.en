@@ -34,10 +34,6 @@ This onboarding method is recommended when installing [!DNL Live Search] to a:
 
 In this scenario, storefront operations are interrupted while the [!DNL Live Search] service indexes all products in the catalog. During the installation, [!DNL Live Search] modules are enabled and [!DNL Elasticsearch] modules are disabled.
 
-   >[!NOTE]
-   >
-   >As of March 2023, Live Search only supports version 2.4.4 and higher.
-
 1. Install Adobe Commerce 2.4.4+ without [!DNL Live Search].
 
 1. To download the `live-search` package, run the following from the command line:
@@ -45,8 +41,6 @@ In this scenario, storefront operations are interrupted while the [!DNL Live Sea
    ```bash
    composer require magento/live-search
    ```
-
-   For more information, refer to the list of [!DNL Live Search] [dependencies](#dependencies) that are captured by [!DNL Composer].
 
 1. Run the following commands to disable [!DNL Elasticsearch] and related modules, and install [!DNL Live Search]:
 
@@ -98,8 +92,6 @@ In this scenario, [!DNL Elasticsearch] temporarily manages search requests from 
    ```bash
    composer require magento/live-search
    ```
-
-   For more information, refer to the list of [!DNL Live Search] [dependencies](#live-search-dependencies) that are captured by [!DNL Composer].
 
 1. Run the following command to temporarily disable the [!DNL Live Search] modules that serve storefront search results.
 

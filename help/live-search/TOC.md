@@ -27,7 +27,6 @@ feature: Services, Search
       - [Types of Facets](facets-type.md)
       - [Add Facets](facets-add.md)
       - [Manage Facets](facets-manage.md)
-      - [Technical Notes](facet-technical-notes.md)
    - [Indexing](indexing.md)
    - [Performance](performance.md)
    - Rules {#rules}
