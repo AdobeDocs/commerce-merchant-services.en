@@ -8,11 +8,11 @@ feature: Personalization, Integration
 
 [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/get-started.html) helps you personalize the commerce experience for your shoppers. For example, you can use Journey Optimizer to create and deliver scheduled marketing campaigns, such as weekly promotions for a retail store, or generate an abandoned cart email if a customer added a product to a cart but then did not complete the checkout process.
 
-By following these steps, you will learn how to listen to a `checkout` event generated from your Commerce instance and respond to that event in Journey Optimizer to build an abandoned cart email.
+By following these steps, you can learn how to listen to a `checkout` event generated from your Commerce instance and respond to that event in Journey Optimizer to build an abandoned cart email.
 
 >[!IMPORTANT]
 >
->For demonstration purposes, make sure you are using your Commerce sandbox environment. This ensures that the storefront and back office event data you send to Experience Platform does not dilute your production event data.
+>For demonstration purposes, make sure that you are using your Commerce sandbox environment. This ensures that the storefront and back office event data you send to Experience Platform does not dilute your production event data.
 
 ## Prerequisites
 
@@ -79,7 +79,7 @@ Configure two events in Journey Optimizer: one event listens for the `commerce.c
 
     ![Journey Optimizer Event Configuration](assets/ajo-config.png){width="700" zoomable="yes"}
 
-1. On the **[!UICONTROL Events]** page, click the **[!UICONTROL Create Event]** button.
+1. On the **[!UICONTROL Events]** page, click **[!UICONTROL Create Event]**.
 
 1. In the right rail configuration, set up your event as follows:
 
@@ -87,9 +87,12 @@ Configure two events in Journey Optimizer: one event listens for the `commerce.c
     1. Set **[!UICONTROL Type]** to **[!UICONTROL Unitary]**.
     1. Set **[!UICONTROL Event id typ]e** to **[!UICONTROL Rule based]**.
     1. Set **[!UICONTROL Schema]** to your Commerce [schema](update-xdm.md).
-    1. Select **[!UICONTROL Fields]** and in the **[!UICONTROL Fields]** page that appears, select the fields that are useful for this event. For example, select all fields under the **[!UICONTROL Product list items]**, **[!UICONTROL Commerce]**, **[!UICONTROL eventType]**, and **[!UICONTROL Web]**.
+    1. Select **[!UICONTROL Fields]** and in the **[!UICONTROL Fields]** page that appears, select the fields that are useful for this event. 
+    
+       For example, select all fields under the **[!UICONTROL Product list items]**, **[!UICONTROL Commerce]**, **[!UICONTROL eventType]**, and **[!UICONTROL Web]**.
+       
     1. Click **[!UICONTROL OK]** to save the selected fields.
-    1. Click into the **[!UICONTROL Event id condition]** field and create a condition of `eventType` is equal to `commerce.checkouts` AND `personalEmail.address` is equal to the email address you used when you created the profile in the previous section.
+    1. Click inside of the **[!UICONTROL Event id condition]** field and create a condition of `eventType` is equal to `commerce.checkouts` AND `personalEmail.address` is equal to the email address you used when you created the profile in the previous section.
 
         ![Journey Optimizer Set Condition](assets/ajo-set-condition.png){width="700" zoomable="yes"}
     
@@ -121,16 +124,16 @@ Create a journey that listens for the `commerce.checkouts` event and then sends 
 1. Click **[!UICONTROL OK]** to save the journey.  
 1. In the left rail under the **[!UICONTROL EVENTS]** section, search for the checkout event you previously created: `firstname_lastname_checkout` and drag and drop it on the canvas.  
 
-    >[!NOTE]
+    >[!TIP]
     >
     >Double-clicking the event automatically adds it to the canvas. 
 
 1. Search for the timeout event and add it to the canvas. 
 1. Double-click the timeout event.
 
-    1. In the **[!UICONTROL Timeout]** section, add a checkmark to the **[!UICONTROL Define the event time]** checkbox.
+    1. In the **[!UICONTROL Timeout]** section, select the **[!UICONTROL Define the event time]** checkbox.
     1. In the **[!UICONTROL Wait for]** field enter `1` and `Minute`.
-    1. Place a checkmark in the **[!UICONTROL Set a timeout path]**.
+    1. Select the **[!UICONTROL Set a timeout path]** checkbox.
     
     With this timeout configuration, a shopper that performs a checkout but does not complete the order within one minute triggers this timeout branch. In an actual production environment, you would set this for a longer period, like 24 hours.
 
@@ -164,4 +167,4 @@ In this section, you test the event in real time.
     
         The journey is now triggered. To confirm, open the tab that has your journey in Journey Optimizer. You should see a green arrow that shows the path that your user went through.
 
-1. Check your inbox. You should have received an email.
+1. Check your inbox for the email.
