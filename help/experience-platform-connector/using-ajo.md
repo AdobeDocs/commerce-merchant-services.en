@@ -16,11 +16,11 @@ By following these steps, you can learn how to listen to a `checkout` event gene
 
 ## Prerequisites
 
-Before you begin with these steps, you must ensure the following:
+Before you begin with these steps, ensure:
 
 - You are provisioned to use Adobe Journey Optimizer
-- You have [configured](connect-data.md) the Experience Platform Connector
-- You have [confirmed](connect-data.md#confirm-that-event-data-is-collected) your Commerce event data is arriving at the Experience Platform edge
+- You [configured](connect-data.md) the Experience Platform Connector
+- You [confirmed](connect-data.md#confirm-that-event-data-is-collected) your Commerce event data is arriving at the Experience Platform edge
 
 ## Step 1: Create a user in your Commerce sandbox environment
 
