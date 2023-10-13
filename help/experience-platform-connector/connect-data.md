@@ -116,53 +116,15 @@ Adobe Commerce collects up to five years of [historical order data and status](e
 
 While Commerce already collects the historical order data, there are several steps you must complete to send that data to Experience Platform.
 
-Watch this video to learn more about historical orders then complete the following steps to implement historical order collection and configuration.
+Watch this video to learn more about historical orders then complete the following steps to implement historical order collection.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424672)
 
-### Step 1: Install historical order data collection
-
-To enable historical order data collection, you must update the project's root [!DNL Composer] `.json` file as follows:
-
-1. Open the root `composer.json` file and search for `magento/experience-platform-connector`.
-
-1. In the `require` section, update the version number as follows:
-
-   ```json
-   "require": {
-      ...
-      "magento/experience-platform-connector": "^3.0.0",
-      ...
-    }
-   ```
-
-1. For B2B merchants, update the `.json` file as follows:
-
-    ```json
-    "require": {
-      ...
-      "magento/experience-platform-connector-b2b": "^2.0.0"
-      ...
-    }
-    ```
-
-1. **Save** `composer.json`. Then, run the following from the command line:
-
-   ```bash
-   composer update magento/experience-platform-connector –-with-dependencies
-   ```
-
-   or, for B2B merchants:
-
-   ```bash
-   composer update magento/experience-platform-connector-b2b --with-dependencies
-   ```
-
-### Step 2: Create a project in Adobe Developer Console
+### Step 1: Create a project in Adobe Developer Console
 
 >[!NOTE]
 >
->If you have already installed and enabled the [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) extension, you already completed steps 2 and 3.
+>If you have already installed and enabled the [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) extension, you already completed steps 1 and 2 and can skip to step 3.
 
 Create a project in the Adobe Developer Console that authenticates Commerce so it can make Experience Platform API calls.
 
@@ -176,7 +138,7 @@ As you go through the tutorial, ensure that your project has the following:
 
 The result of this step creates a configuration file that you use in the next step.
 
-### Step 3: Download configuration file
+### Step 2: Download configuration file
 
 Download the [workspace configuration file](https://developer.adobe.com/commerce/extensibility/events/project-setup/#download-the-workspace-configuration-file). Copy and paste the contents of this file into the **Service Account/Credential details** page of the Commerce Admin.
 
@@ -198,7 +160,7 @@ Download the [workspace configuration file](https://developer.adobe.com/commerce
 
 1. Click **Save Config**.
 
-### Step 4: Set up the Order Sync service
+### Step 3: Set up the Order Sync service
 
 After you enter the developer credentials, set up the order sync service. The order sync service uses the [Message Queue Framework](https://developer.adobe.com/commerce/php/development/components/message-queues/) and RabbitMQ. After you complete these steps, order status data can sync to SaaS, which is required before it is sent to Experience Platform.
 
@@ -223,7 +185,7 @@ After you enter the developer credentials, set up the order sync service. The or
 
 With the order sync service enabled, you can then specify the historical order date range in the Experience Platform connector page.
 
-### Step 5: Specify order history date range
+### Step 4: Specify order history date range
 
 Specify the date range for the historical orders that you want to send to Experience Platform.
 

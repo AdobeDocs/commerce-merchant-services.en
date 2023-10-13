@@ -58,6 +58,8 @@ _October 10, 2023_
 
 [!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.4 and newer
 
+This is a major version release. [Edit](install.md#update-the-experience-platform-connector) your project's root composer.json file.
+
 ![New](../assets/new.svg) - General availability to [send historical order](connect-data.md#send-historical-order-data) data and status to the Experience Platform.
 ![New](../assets/new.svg) - Added support for OAuth 2.0 when you [configure](connect-data.md#connect-commerce-data-to-adobe-experience-platform) the Experience Platform connector.
 ![New](../assets/new.svg) - Ended support for Adobe Commerce 2.4.3.

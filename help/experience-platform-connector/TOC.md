@@ -11,8 +11,8 @@ recommendations: noDisplay
 - [Guide Overview](overview.md)
 - [Release Notes](release-notes.md)
 - Fundamentals {#fundamentals}
-   - [Install the Experience Platform Connector](install.md)
-   - [Configure the Experience Platform Connector](connect-data.md)
+   - [Install the Adobe Experience Platform connector extension](install.md)
+   - [Connect Commerce Data to the Adobe Experience Platform](connect-data.md)
    - [Add Field Groups to XDM Schema](update-xdm.md)
    - [Integrate the Adobe Experience Platform Mobile SDK with Commerce](mobile-sdk-epc.md)
 - Capture Data {#event-forwarding}
