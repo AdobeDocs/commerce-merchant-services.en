@@ -18,9 +18,7 @@ See [Signifyd documentation](https://community.signifyd.com/support/s/article/ma
 
 Currently, the following limitations apply to the integration between Signifyd and [!DNL Payment Services]:
 
-* The Signifyd/[!DNL Payment Services] integration supports only [credit card fields](../payment-services/payments-options.md#credit-card-fields) (not PayPal payment buttons or Apple Pay). [!DNL Payment Services] sends order data received via PayPal payment buttons and Apple Pay to Signifyd, but the integration only provides details for orders placed via credit card fields.
-* Signifyd does not support orders placed in the Admin by a merchant for a shopper.
-* Signifyd does not support orders placed with [vaulted credit cards](../payment-services/vaulting.md).
+* The Signifyd/[!DNL Payment Services] integration share credit card transaction data, enhancing the analysis of these orders. For other payment methods like PayPal and Apple Pay, [!DNL Payment Services] sends all other order data to Signifyd, as Signifyd can evaluate and decide on transactions made through any payment method, including PayPal and Apple Pay, ensuring comprehensive coverage.
 
 ## Onboarding
 
