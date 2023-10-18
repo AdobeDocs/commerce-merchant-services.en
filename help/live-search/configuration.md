@@ -12,7 +12,7 @@ There are Commerce configuration settings that [!DNL Live Search] supports. This
 
 |Commerce Configuration Setting|Supported by Popover|Supported by Adapter|
 |---|---|---|
-|Stores > Configuration > Catalog > Catalog > Catalog Search > Allow All Products per Paage Length|Yes. Max 500 products|Yes. Max 500 products|
+|Stores > Configuration > Catalog > Catalog > Catalog Search > Allow All Products per Page Length|Yes. Max 500 products|Yes. Max 500 products|
 |Stores > Configuration > Catalog > Catalog > Catalog Search > Minimal Query Length|Yes|Yes|
 |Stores > Configuration > Catalog > Catalog > Catalog Search > Products per Page on Grid Allowed Values|Yes|Yes|
 |Stores > Configuration > Catalog > Catalog > Catalog Search > Products per Page on Grid Default Value|Yes. Max 500 products|Yes. Max 500 products|
@@ -20,7 +20,11 @@ There are Commerce configuration settings that [!DNL Live Search] supports. This
 |Stores > Configuration > Currency > Default Display Currency|Yes w/3.1.0+|Yes w/3.1.0+|
 |Stores > Configuration > General > Currency Setup > Currency Options > Base Currency|Yes|Yes|
 
-Prices in the Widget Product Listing Page and Popover are now converted to the Default Display Currency using the configured Currency Rates
+Prices in the Widget Product Listing Page and Popover are now converted to the Default Display Currency using the configured Currency Rates.
+
+## Search terms
+
+[!DNL Live Search] supports [search term redirects](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html) on implementations where Adobe Commerce handles the routing: Luma and other php-based themes.
 
 ## Unsupported configuration values
 

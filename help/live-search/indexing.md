@@ -24,7 +24,7 @@ The [!DNL Live Search] API allows a client to sort by any product attribute that
 ## Indexing pipeline
 
 The client calls the search service from the storefront to retrieve (filterable, sortable) index metadata. Only searchable product attributes with the *Use in Layered Navigation* property set to `Filterable (with results)` and *Use for Sorting in Product Listing* set to `Yes` can be called by the search service.
-To construct a dynamic query, the search service needs to know which attributes are searchable and their weight. [!DNL Live Search] honors Adobe Commerce search weights (1-10, where 10 is the highest priority). The list of data that is synced and shared with the catalog service can be found in the schema, which is defined in:
+To construct a dynamic query, the search service needs to know which attributes are searchable and their [weight](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html#weighted-search). [!DNL Live Search] honors Adobe Commerce search weights (1-10, where 10 is the highest priority). The list of data that is synced and shared with the catalog service can be found in the schema, which is defined in:
 
 `vendor/magento/module-catalog-data-exporter/etc/et_schema.xml`
 

@@ -1,11 +1,11 @@
 ---
-title: "Search Rules Workspace"
-description: "Learn your way around the [!DNL Live Search] rules workspace."
+title: "Search Merchandising Workspace"
+description: "Learn your way around the Search Merchandising workspace."
 exl-id: a52839fb-2264-4443-83c3-9eaa2ccb6996
 ---
-# Search Rules Workspace
+# Search Merchandising Workspace
 
-The Search Rules workspace lists the current selection of rules and their status, and provides access to tools you need to create and manage rules. From the workspace you can:
+The Search Merchandising workspace lists the current selection of rules and their status, and provides access to tools you need to create and manage rules. From the workspace you can:
 
 * Search for rules
 * View rule details
@@ -13,7 +13,7 @@ The Search Rules workspace lists the current selection of rules and their status
 * Delete rules
 * Access the rule editor
 
-![Rules workspace](assets/rules-workspace.png)
+![Search Merchandising workspace](assets/rules-workspace.png)
 
 ## Set the scope
 
@@ -51,7 +51,7 @@ Search finds the matching rule(s) as you type. The string of matching characters
 
 The details panel shows the rule name, status, conditions and events, start and end date, description, and date last edited. Rules can be enabled, edited, and deleted from the details panel.
 
-1. On the *Search Rules* tab, find the rule in the grid that you want to view and click **More** (…).
+1. On the *Search Merchandising* tab, find the rule in the grid that you want to view and click **More** (…).
 1. Click **View details**.
    You can do any of the following from the View details panel:
 

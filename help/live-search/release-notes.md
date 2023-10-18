@@ -20,13 +20,18 @@ These notes describe updates that were published outside of a versioned release 
 
 +++Hosted service updates
 
+_October 12, 2023_
+
+![New](../assets/new.svg) Commerce administrators can now specify the language of the index for [!DNL Live Search]. See [Settings](settings.md).
+![Fix](../assets/fix.svg) The "Search Rules" tab has been renamed to "Search Merchandising".
+
 _June 13, 2023_
 
 ![Fix](../assets/fix.svg) Fixed an issue where some characters such as quotes or apostrophes caused ranking issues. Reindexing will solve these issues.
 
  _April 25, 2023_
 
-![New](../assets/new.svg) Live Search customers can now take advantage of the new [SaaS price indexer](../price-index/index.md).
+![New](../assets/new.svg) [!DNL Live Search] customers can now take advantage of the new [SaaS price indexer](../price-index/index.md).
 
 +++
 

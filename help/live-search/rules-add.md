@@ -1,6 +1,6 @@
 ---
 title: "Add Rules"
-description: "Learn how to create [!DNL Live Search] rules."
+description: "Learn how to create Search Merchandising rules."
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
 ---
 # Add Rules
@@ -11,7 +11,7 @@ To build a rule, the first step is to use the rule editor to define the conditio
 
 1. In the Admin, go to **Marketing** > SEO & Search > **[!DNL Live Search]**.
 1. Set the **Scope** to identify the [store view](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) where the rule applies.
-1. Click the **Search Rules** tab.
+1. Click the **Search Merchandising** tab.
 1. Click **Add rule** to launch the rule editor.
 
 ## Conditions

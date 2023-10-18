@@ -19,7 +19,6 @@ feature: Services, Search
    - [Storefront [!DNL Popover]](storefront-popover.md)
    - [Styling [!DNL Popover] Elements](storefront-popover-styling.md)
 - [!DNL Live Search] Admin{#live-search-admin}
-   - [Category Merchandising](category-merch.md)
    - [Commerce Configuration Settings](configuration.md)
    - Facets {#facets}
       - [Overview](facets.md)
@@ -29,9 +28,10 @@ feature: Services, Search
       - [Manage Facets](facets-manage.md)
    - [Indexing](indexing.md)
    - [Performance](performance.md)
-   - Rules {#rules}
+   - [Category Merchandising](category-merch.md)
+   - Search Merchandising {#rules}
       - [Overview](rules.md)
-      - [Rules Workspace](rules-workspace.md)
+      - [Search Merchandising Workspace](rules-workspace.md)
       - [Add Rules](rules-add.md)
       - [Manage Rules](rules-manage.md)
    - [Settings](settings.md)
