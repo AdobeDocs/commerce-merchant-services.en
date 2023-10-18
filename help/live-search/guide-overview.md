@@ -6,7 +6,7 @@ recommendations: noCatalog
 ---
 # [!DNL Live Search] Guide Overview
 
-[!DNL Live Search] from Adobe Commerce delivers a lightning fast, super-relevant, and intuitive search experience for Adobe Commerce at no additional charge. [!DNL Live Search] powered by [Adobe Sensei](https://www.adobe.com/sensei.html) uses artificial intelligence and machine-learning algorithms to perform a deep analysis of aggregated visitor data. This data, when combined with your Adobe Commerce catalog, results in highly engaging, relevant, and personalized shopping experiences. With a focus on speed, relevance and ease of use, [!DNL Live Search] is a game changer for shoppers and merchants alike.
+[!DNL Live Search] for Adobe Commerce delivers a fast, relevant, and intuitive search experience at no additional cost. [!DNL Live Search] powered by [Adobe Sensei](https://www.adobe.com/sensei.html) uses artificial intelligence and machine-learning algorithms to perform a deep analysis of aggregated visitor data. This data, when combined with your Adobe Commerce catalog, results in a relevant and personalized shopping experiences. 
 
 [!DNL Live Search] has three areas for administrators:
 
@@ -16,10 +16,10 @@ recommendations: noCatalog
 
 ## Additional documentation
 
-| Guide | Description|
-|--- |--- |
-| Adobe Commerce 2.4 User Guide | Merchant-focused documentation for both Adobe Commerce and Magento Open Source |
-| Adobe Commerce 2.4 Developer Guide | Developer-focused documentation used to build and customize Adobe Commerce or Magento Open Source |
+| Guide | Description |
+|------ | ----------- |
+| [Adobe Commerce 2.4 User Guide](https://experienceleague.adobe.com/docs/commerce.html) | Merchant-focused documentation for both Adobe Commerce and Magento Open Source |
+| [Adobe Commerce 2.4 Developer Guide](https://developer.adobe.com/commerce/docs) | Developer-focused documentation used to build and customize Adobe Commerce or Magento Open Source |
 
 ## Support
 
