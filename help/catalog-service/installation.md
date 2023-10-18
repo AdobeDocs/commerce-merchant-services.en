@@ -67,7 +67,7 @@ Use this method for installing the [!DNL Catalog Service] extension for a Commer
 
   ```json
   "require": {
-    "magento/catalog-service": "^3.0.0"
+    "magento/catalog-service": "^3.0.1"
   }
   ```
 
@@ -89,7 +89,7 @@ Use this method for installing the [!DNL Catalog Service] extension for an on-pr
 
   ```json
   "require": {
-      "magento/catalog-service": "^3.0.0"
+      "magento/catalog-service": "^3.0.1"
   }
   ```
 
