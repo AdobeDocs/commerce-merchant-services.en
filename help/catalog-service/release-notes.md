@@ -16,14 +16,15 @@ Updates include:
 
 ## Current major version
 
-### V1.12 Release
+### V1.13 Release
 
-_September 19, 2023_
+_October 12, 2023_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
-![New](../assets/new.svg) Catalog Service now uses [SaaS price indexing](../price-index/index.md).
-![Fix](../assets/fix.svg) This release contains bug fixes and improvements on the service side.
+![New](../assets/new.svg) Catalog Service supports the `inStock` flag for product variants.
+![New](../assets/new.svg) `urlKey` and `externalId` have been added to the GraphQL schema.
+![New](../assets/new.svg) Catalog Service is now compatible with the cleanup API.
 
 #### Known limitations
 
@@ -43,6 +44,15 @@ The following limitations can be solved by using the API Mesh and the Core Graph
 ## Previous versions
 
 +++ Previous versions
+
+### V1.12 Release
+
+_September 19, 2023_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+![New](../assets/new.svg) Catalog Service now uses [SaaS price indexing](../price-index/index.md).
+![Fix](../assets/fix.svg) This release contains bug fixes and improvements on the service side.
 
 ### V1.11 Release
 
