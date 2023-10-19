@@ -12,13 +12,9 @@ You can enable automated fraud protection for [!DNL Payment Services] with the [
 
 Adobe Commerce supports Signifyd versions 5.4.0 and newer. [!DNL Payment Services] supports pre-auth and post-auth Signifyd flows.
 
+The Signifyd/[!DNL Payment Services] integration provides coverage for credit cards, debit cards, vaulted cards, checkout through the Admin, and PayPal and Apple Pay payment methods. The integration shares credit card transaction data from Payment Services to Signifyd, which enhances the analysis of orders for merchants. To ensure comprehensive coverage of orders, Signifyd evaluates the shared information and decides if transactions are risky.
+
 See [Signifyd documentation](https://community.signifyd.com/support/s/article/magento-2-extension-install-guide?language=en_US#downloadandinstallingmagento2extension) to learn about installing and configuring the extension.
-
-## Integration limitations
-
-Currently, the following limitations apply to the integration between Signifyd and [!DNL Payment Services]:
-
-* The Signifyd/[!DNL Payment Services] integration share credit card transaction data, enhancing the analysis of these orders. For other payment methods like PayPal and Apple Pay, [!DNL Payment Services] sends all other order data to Signifyd, as Signifyd can evaluate and decide on transactions made through any payment method, including PayPal and Apple Pay, ensuring comprehensive coverage.
 
 ## Onboarding
 
