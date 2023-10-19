@@ -76,7 +76,7 @@ From the Transactions report view, you can filter the statuses results you want 
 1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_ > **[!UICONTROL View Report]**.
 1. Click the **[!UICONTROL Filter]** selector.
 1. Toggle the _[!UICONTROL Transaction Result]_ options to see report results for only selected order transactions.
-1. Select the _[!UICONTROL Card Type]_ to see report results for only that selected type of card. A tooltip is shown when the payment processor is unable to identify the card type.
+1. Select the _[!UICONTROL Card Type]_ to see report results for the selected card type. A tooltip with more information is shown when the payment processor is unable to identify the card type.
 1. Select the _[!UICONTROL Card Brand]_ to see report results for only that selected card brand. A tooltip is shown when the payment processor is unable to identify the card brand.
 1. Toggle the _[!UICONTROL Payment Method]_ options to see report results for only selected payment methods.
 1. Enter a _Min Order Amount_ or _Max Order Amount_ to see report results within that order amount range.
