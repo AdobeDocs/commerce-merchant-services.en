@@ -24,7 +24,6 @@ _October 12, 2023_
 
 ![New](../assets/new.svg) Catalog Service supports the `inStock` flag for product variants.
 ![New](../assets/new.svg) `urlKey` and `externalId` have been added to the GraphQL schema.
-![New](../assets/new.svg) Catalog Service is now compatible with the cleanup API.
 
 #### Known limitations
 
