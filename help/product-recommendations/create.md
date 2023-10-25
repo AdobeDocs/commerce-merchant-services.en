@@ -26,12 +26,12 @@ When you activate the recommendation unit, Adobe Commerce starts to [collect dat
 
 1. In the _Select page type_ section, select the page where you want the recommendation to appear from the following options:
 
-   - Home Page
-   - Category
-   - Product Detail
-   - Cart
-   - Confirmation
-   - [Page Builder](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html)
+   * Home Page
+   * Category
+   * Product Detail
+   * Cart
+   * Confirmation
+   * [Page Builder](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html)
 
    You can create up to five active recommendation units for each page type, and up to 25 for Page Builder. The page type is grayed out When the limit is reached.
 
@@ -39,21 +39,6 @@ When you activate the recommendation unit, Adobe Commerce starts to [collect dat
    _Recommendation name and page placement_
 
 1. In the _Select Recommendation type_ section, specify the [type of recommendation](type.md) you want to appear on the selected page. For some pages, the [placement](placement.md) of recommendations is limited to certain types.
-
-   Some recommendation types use behavioral data from your shoppers to [train machine learning models](behavioral-data.md) to build personalized recommendations. To help you visualize the training progress of each recommendation type, this section displays a measure of readiness for each type. These readiness indicators are calculated based on a couple factors:
-  
-     - Sufficient result set size: Are there enough results being returned in most scenarios to avoid using [backup recommendations](behavioral-data.md#backuprecs)? 
-  
-     - Sufficient result set variety: Do the products being returned represent a variety of products from your catalog? The goal with this factor is to avoid having a minority of products being the only items recommended across the site. 
-  
-    Based on the above factors, a readiness value is calculated and displayed. A recommendation type is considered ready to deploy when its readiness value is 75% or higher. A recommendation type is considered partially ready when its readiness is at least 50%. A recommendation type is considered not ready to deploy when its readiness value is less than 50%.
-
-    >[!NOTE]
-    >
-    >The indicator may never reach 100%.
-
-   ![Recommendation type](assets/create-recommendation-select-type.png)
-   _Recommendation type_
 
 1. In the _Storefront display label_ section, enter the [label](placement.md#recommendation-labels) that is visible to your shoppers, such as "Top sellers".
 
@@ -63,8 +48,8 @@ When you activate the recommendation unit, Adobe Commerce starts to [collect dat
 
 1. In the _Select placement_ section, specify the location where the recommendation unit is to appear on the page.
 
-   - At the bottom of main content
-   - At the top of main content
+   * At the bottom of main content
+   * At the top of main content
 
 1. (Optional) To change the order of the recommendations, select, and move the rows in the _Choose position_ table.
 
@@ -80,9 +65,50 @@ When you activate the recommendation unit, Adobe Commerce starts to [collect dat
 
 1. When complete, click one of the following:
 
-   - **Save as draft** to edit the recommendation unit later. You cannot modify the page type or recommendation type for a recommendation unit in a draft state.
+   * **Save as draft** to edit the recommendation unit later. You cannot modify the page type or recommendation type for a recommendation unit in a draft state.
 
-   - **Activate** to enable the recommendation unit on your storefront.
+   * **Activate** to enable the recommendation unit on your storefront.
+
+## Readiness indicators
+
+Some recommendation types use behavioral data from your shoppers to [train machine learning models](behavioral-data.md) to build personalized recommendations. 
+
+Requires only catalog data. No behavioral data is needed for these:
+
+* _Most Like This_
+* _Recently Viewed_
+* _Visual Similarity_
+
+Based on last six months of storefront behavioral data:
+
+* _Viewed this, viewed that_
+* _Viewed this, bought that_
+* _Bought this, bought that_
+* _Recommended for you_
+
+Popularity-based recommendation types use the last seven days of storefront behavioral data:
+
+* Most Viewed
+* Most Purchased
+* Added to Cart
+* Trending
+
+Readiness indicator values are expected to fluctuate due to factors such as the overall size of the catalog, volume of product interaction events (views, adds to cart, purchases), and percentage of skus that register those events within a certain time window, as listed above. For example, during peak holiday season traffic, the readiness indicators might show higher values than in times of normal volume.
+
+To help you visualize the training progress of each recommendation type, the _Select Recommendation type_ section displays a measure of readiness for each type. These readiness indicators are calculated based on a couple factors:
+
+* Sufficient result set size: Are there enough results being returned in most scenarios to avoid using [backup recommendations](behavioral-data.md#backuprecs)? 
+
+* Sufficient result set variety: Do the products being returned represent a variety of products from your catalog? The goal with this factor is to avoid having a minority of products being the only items recommended across the site. 
+
+Based on the above factors, a readiness value is calculated and displayed. A recommendation type is considered ready to deploy when its readiness value is 75% or higher. A recommendation type is considered partially ready when its readiness is at least 50%. A recommendation type is considered not ready to deploy when its readiness value is less than 50%. These are general guidelines but each individual case can differ based on the nature of collected data as outlined above. 
+
+![Recommendation type](assets/create-recommendation-select-type.png)
+_Recommendation type_
+
+>[!NOTE]
+>
+>Indicators may never reach 100%.
 
 ## Preview Recommendations {#preview}
 
