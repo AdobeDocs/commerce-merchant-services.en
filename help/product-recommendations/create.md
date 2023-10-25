@@ -101,7 +101,7 @@ To help you visualize the training progress of each recommendation type, the _Se
 
 * Sufficient result set variety: Do the products being returned represent a variety of products from your catalog? The goal with this factor is to avoid having a minority of products being the only items recommended across the site. 
 
-Based on the above factors, a readiness value is calculated and displayed. A recommendation type is considered ready to deploy when its readiness value is 75% or higher. A recommendation type is considered partially ready when its readiness is at least 50%. A recommendation type is considered not ready to deploy when its readiness value is less than 50%.
+Based on the above factors, a readiness value is calculated and displayed. A recommendation type is considered ready to deploy when its readiness value is 75% or higher. A recommendation type is considered partially ready when its readiness is at least 50%. A recommendation type is considered not ready to deploy when its readiness value is less than 50%. These are general guidelines but each individual case can differ based on the nature of collected data as outlined above. 
 
 ![Recommendation type](assets/create-recommendation-select-type.png)
 _Recommendation type_
