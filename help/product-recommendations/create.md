@@ -93,7 +93,7 @@ Popularity-based recommendation types use the last seven days of storefront beha
 * Added to Cart
 * Trending
 
-Readiness indicators are expected to fluctuate and they depend on factors such as the volume of click events, size of the catalog, and shopper behavior. For example, during peak holiday season traffic, the readiness indicators might show higher values than in times of normal volume.
+Readiness indicator values are expected to fluctuate due to factors such as the overall size of the catalog, volume of product interaction events (views, adds to cart, purchases), and percentage of skus that register those events within a certain time window, as listed above. For example, during peak holiday season traffic, the readiness indicators might show higher values than in times of normal volume.
 
 To help you visualize the training progress of each recommendation type, the _Select Recommendation type_ section displays a measure of readiness for each type. These readiness indicators are calculated based on a couple factors:
 
