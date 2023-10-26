@@ -28,10 +28,10 @@ There are extensions that add the new feeds and the supporting code.
 1. Add the following modules to your `composer.json` file:
 
     ```json
-    "magento/module-saas-price": "^103.0",
-    "magento/module-saas-scopes": "^103.0",
-    "magento/module-bundle-product-override-data-exporter": "^103.0",
-    "magento/module-gift-card-product-data-exporter": "^103.0",
+    "magento/module-saas-price": "^102.2.0",
+    "magento/module-saas-scopes": ^"102.2.0",
+    "magento/module-product-override-price-remover": "^102.2.0",
+    "magento/module-bundle-product-override-data-exporter": "^102.2.0",
     ```
 
 1. Run the upgrade command:

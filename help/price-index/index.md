@@ -46,12 +46,9 @@ Luma and Adobe Commerce Core GraphQL users can install the [`catalog-adapter`](c
 After upgrading your Adobe Commerce instance with SaaS price indexing support, sync the new feeds: 
 
 ```
-magento/module-saas-price
-magento/module-saas-scopes
-magento/module-product-override-price-remover
-magento/module-bundle-product-override-data-exporter
-magento/module-bundle-product-override-data-exporter
-magento/module-gift-card-product-data-exporter
+bin/magento saas:resync --feed=scopesCustomerGroup
+bin/magento saas:resync --feed=scopesWebsite
+bin/magento saas:resync --feed=prices
 ```
 
 ## Prices for custom product types
