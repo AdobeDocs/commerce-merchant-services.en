@@ -51,7 +51,8 @@ _June 13, 2023_
 ![New](../assets/new.svg) Added the ability to delete rules for a single category
 ![New](../assets/new.svg) Users can now search by category name when adding a rule
 ![New](../assets/new.svg) With the Category Tree View, users can now view which category has rules applied.
-![New](../assets/new.svg) Category Preview only shows the selected category. 
+![New](../assets/new.svg) Category Preview only shows the selected category.
+![New](../assets/new.svg) AEM CIF [Popover widget](https://github.com/adobe/aem-cif-guides-venia/pull/319) and [PLP widget](https://github.com/adobe/aem-cif-guides-venia/pull/320) components allow AEM sites to take advantage of [!DNL Live Search].
 
 ### Updates
 
