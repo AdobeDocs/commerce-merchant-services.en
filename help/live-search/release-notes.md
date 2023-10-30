@@ -20,6 +20,10 @@ These notes describe updates that were published outside of a versioned release 
 
 +++Hosted service updates
 
+_October 27, 2023_
+
+![New](../assets/new.svg) The [!DNL Live Search] PLP widget now supports color swatches.
+
 _October 12, 2023_
 
 ![New](../assets/new.svg) Commerce administrators can now specify the language of the index for [!DNL Live Search]. See [Settings](settings.md).
