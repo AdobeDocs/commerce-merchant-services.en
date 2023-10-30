@@ -18,7 +18,9 @@ Updates include:
 
 These notes describe updates that were published outside of a versioned release or improvements to the hosted service.
 
-+++Hosted service updates
+_October 27, 2023_
+
+![New](../assets/new.svg) The [!DNL Live Search] PLP widget now supports color swatches.
 
 _October 12, 2023_
 
@@ -32,8 +34,6 @@ _June 13, 2023_
  _April 25, 2023_
 
 ![New](../assets/new.svg) [!DNL Live Search] customers can now take advantage of the new [SaaS price indexer](../price-index/index.md).
-
-+++
 
 ## [!DNL Live Search] 3.1.1 {#311}
 
