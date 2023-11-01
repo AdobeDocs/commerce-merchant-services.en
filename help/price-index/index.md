@@ -20,7 +20,7 @@ With SaaS price indexing, the flow is:
 
 ![SaaS price indexing data flow](assets/new_way.png)
 
-All merchants can benefit from these improvements, but those who will see the greatest gains are customers with: 
+All merchants using Commerce Services can benefit from these improvements, but those who will see the greatest gains are customers with: 
 
 * Constant price changes: Merchants that require repeated changes to their prices to meet strategic goals such as frequent promotions, seasonal discounts, or inventory markdowns.
 * Multiple websites and/or customer groups: Merchants with shared product catalogs across multiple websites (domains/brands) and/or customer groups. 
@@ -40,6 +40,8 @@ This mini-guide describes how SaaS price indexing works and how to enable it.
     * [Product Recommendations](../product-recommendations/guide-overview.md)
 
 Luma and Adobe Commerce Core GraphQL users can install the [`catalog-adapter`](catalog-adapter.md) extension that provides Luma and Core GraphQl compatibility and disables the Adobe Commerce Product Price indexer.
+
+The Saas Price Indexer only works with prices displayed through Commerce Services: Live Search, Catalog Service and Product Recommendations.
 
 ## Usage
 

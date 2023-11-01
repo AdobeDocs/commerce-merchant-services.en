@@ -9,7 +9,9 @@ role: Admin, Developer
 # SaaS Price Indexing Manual Installation
 
 SaaS Price Indexing is available out of the box for supported [latest version](index.md#Requirements) of Commerce Services.
-If you don't have the latest version and want to enable SaaS Price Indexing for your Adobe Commerce instance, please use this mini-guide.
+If you do not have the latest version and want to enable SaaS Price Indexing for your Adobe Commerce instance, please use this mini-guide.
+
+The Saas Price Indexer only works with prices displayed through Commerce Services: Live Search, Catalog Service and Product Recommendations.
 
 ## Prerequisites
 
