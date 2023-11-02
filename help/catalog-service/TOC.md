@@ -14,8 +14,8 @@ feature: Services, Catalog Service
 - [Catalog Service and API Mesh](mesh.md)
 - [Feed Ingestion Service (Beta)](feed-ingestion.md) 
 - GraphQL queries {#graphql}
-    - [categories query](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/)
-    - [products query](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/)
-    - [productSearch query](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/product-search/)
-    - [refineProduct query](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/refine-product/)
+    - [categories query](https://developer.adobe.com/commerce/services/graphql/catalog-service/categories/)
+    - [products query](https://developer.adobe.com/commerce/services/graphql/catalog-service/queries/products/)
+    - [productSearch query](https://developer.adobe.com/commerce/services/graphql/catalog-service/queries/product-search/)
+    - [refineProduct query](https://developer.adobe.com/commerce/services/graphql/catalog-service/queries/refine-product/)
 - [Release Notes](release-notes.md)

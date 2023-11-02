@@ -29,7 +29,7 @@ These notes describe updates that were published outside of a versioned release 
 
  _July 18, 2023_
 
-![New](../assets/new.svg) Product Recommendations now has a GraphQL [`recommendations`](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations/) query.
+![New](../assets/new.svg) Product Recommendations now has a GraphQL [`recommendations`](https://developer.adobe.com/commerce/services/graphql/recommendations/recommendations/) query.
 
  _April 25, 2023_
 
