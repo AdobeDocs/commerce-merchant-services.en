@@ -1,10 +1,10 @@
 ---
-title: 'Display taxes with [!DNL Catalog Service and API Mesh]'
+title: 'Display taxed prices with the API Mesh'
 description: 'USe [!DNL API Mesh] for Adobe Commerce and Catalog Service to display prices including taxes.'
 role: Admin, Developer
 feature: Services, API Mesh, Catalog Service
 ---
-# Display taxes with [!DNL Catalog Service and API Mesh]
+# Display taxed prices with the API Mesh
 
 The [API Mesh](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) enables developers to integrate private or third-party APIs and other interfaces with Adobe products using Adobe I/O Runtime.
 
