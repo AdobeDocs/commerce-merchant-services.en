@@ -133,7 +133,7 @@ The [!DNL Catalog Service] API is accessible using POST commands over HTTPS.
 
 To obtain the api-key, go to the Commerce Service Connector area in the admin and copy the public API key.
 
-Read the [GraphQL documentation](https://developer.adobe.com/commerce/webapi/graphql/) to understand how to query and send the headers that are needed for generating API requests. 
+Read the [GraphQL documentation](https://developer.adobe.com/commerce/services/graphql/) to understand how to query and send the headers that are needed for generating API requests. 
 
 To allow [!DNL Catalog Service] through a firewall, add `commerce.adobe.io` to the allowlist.
 
