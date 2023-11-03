@@ -15,7 +15,7 @@ feature: Services, Catalog Service
 - [Feed Ingestion Service (Beta)](feed-ingestion.md) 
 - GraphQL queries {#graphql}
     - [categories query](https://developer.adobe.com/commerce/services/graphql/catalog-service/categories/)
-    - [products query](https://developer.adobe.com/commerce/services/graphql/catalog-service/queries/products/)
-    - [productSearch query](https://developer.adobe.com/commerce/services/graphql/catalog-service/queries/product-search/)
-    - [refineProduct query](https://developer.adobe.com/commerce/services/graphql/catalog-service/queries/refine-product/)
+    - [products query](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/)
+    - [productSearch query](https://developer.adobe.com/commerce/services/graphql/catalog-service/product-search/)
+    - [refineProduct query](https://developer.adobe.com/commerce/services/graphql/catalog-service/refine-product/)
 - [Release Notes](release-notes.md)
