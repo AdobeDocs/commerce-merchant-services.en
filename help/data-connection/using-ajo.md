@@ -20,7 +20,7 @@ By following these steps, you can learn how to listen to a `checkout` event gene
 Before you begin with these steps, ensure:
 
 - You are provisioned to use Adobe Journey Optimizer
-- You [configured](connect-data.md) the Experience Platform Connector
+- You [configured](connect-data.md) the Data Connection extension
 - You [confirmed](connect-data.md#confirm-that-event-data-is-collected) your Commerce event data is arriving at the Experience Platform edge
 
 ## Step 1: Create a user in your Commerce sandbox environment
@@ -31,7 +31,7 @@ Create a user in your sandbox environment and confirm that user account informat
 
     ![Sign in to your test account](assets/sign-in-account.png){width="700" zoomable="yes"}
     
-    With the Experience Platform Connector installed and configured, this account information is sent to the Experience Platform as a profile.
+    With the Data Connection extension installed and configured, this account information is sent to the Experience Platform as a profile.
 
 1. Confirm that your user account information appears in the **[!UICONTROL Profile]** section of Experience Platform.
 

@@ -7,12 +7,12 @@ feature: Personalization, Integration
 ---
 # Collect Commerce Data using Adobe Experience Platform Tags
 
-While you can use the Experience Platform connector to publish and subscribe to storefront events, some merchants might already be using a data collection solution, such as the [Adobe Experience Platform tags](https://experienceleague.adobe.com/docs/platform-learn/data-collection/tags/create-a-property.html). For those merchants, Adobe Commerce provides a publishing only option in the Experience Platform connector that uses the Adobe Commerce Event SDK.
+While you can use the Data Connection extension to publish and subscribe to storefront events, some merchants might already be using a data collection solution, such as the [Adobe Experience Platform tags](https://experienceleague.adobe.com/docs/platform-learn/data-collection/tags/create-a-property.html). For those merchants, Adobe Commerce provides a publishing only option in the Data Connection extension that uses the Adobe Commerce Event SDK.
 
-![Experience Platform Connector Data Flow](assets/tags-data-flow.png)
-_Experience Platform Connector Data Flow with Tags_
+![Data Connection Extension Data Flow](assets/tags-data-flow.png)
+_Data Connection Extension Data Flow with Tags_
 
-In this topic, you will learn how to map the storefront event values provided by the Experience Platform connector to the Adobe Experience Platform tags solution you are already using.
+In this topic, you will learn how to map the storefront event values provided by the Data Connection extension to the Adobe Experience Platform tags solution you are already using.
 
 ## Collect event data from Adobe Commerce
 
@@ -1318,7 +1318,7 @@ Create the following data elements:
 
 ## Set identity in storefront events
 
-Storefront events contain profile information based on the `personalEmail` (for account events) and `identityMap` (for all other storefront events) fields. The Experience Platform connector joins and generates profiles based on these two fields. Each field, however, has different steps to follow to create profiles:
+Storefront events contain profile information based on the `personalEmail` (for account events) and `identityMap` (for all other storefront events) fields. The Data Connection extension joins and generates profiles based on these two fields. Each field, however, has different steps to follow to create profiles:
 
 >[!NOTE]
 >
@@ -1329,7 +1329,7 @@ Storefront events contain profile information based on the `personalEmail` (for 
 
 ### Example
 
-The following steps show how to configure a `pageView` event with `identityMap` in Experience Platform connector:
+The following steps show how to configure a `pageView` event with `identityMap` in Data Connection extension:
 
 1. Configure data element with custom code for ECID:
 
@@ -1407,7 +1407,7 @@ return IdentityMap;
 
 ## Setting consent
 
-Adobe Commerce and Experience Platform connector data collection consent is enabled by default. Opt-out is managed through the [`mg_dnt` cookie](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html). You can follow the steps outlined here if you choose to use `mg_dnt` to manage consent. The [Adobe Experience Platform Web SDK documentation](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html) has several additional options for managing consent.
+When you install the Data Connection extension in Adobe Commerce, data collection consent is enabled by default. Opt-out is managed through the [`mg_dnt` cookie](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html). You can follow the steps outlined here if you choose to use `mg_dnt` to manage consent. The [Adobe Experience Platform Web SDK documentation](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html) has several additional options for managing consent.
 
 1. Create a **Core Custom Code** data element (`%do not track cookie%`) for the `mg_dnt` cookie:
 
@@ -1428,4 +1428,4 @@ Adobe Commerce and Experience Platform connector data collection consent is enab
 
 - Not following steps to turn off Experience Platform collection results in events being double-counted
 - Not setting up mappings/events as described in this topic can affect Adobe Analytics boards
-- You cannot set up Target through the Experience Platform connector if data collection is disabled
+- You cannot set up Target through the Data Connection extension if data collection is disabled

@@ -1,12 +1,12 @@
 ---
-user-guide-title: Data Connection for Adobe Commerce
-user-guide-description: This guide provides detailed instructions for using Data Connection for Adobe Commerce.
-breadcrumb-title: Data Connection for Adobe Commerce
+user-guide-title: Data Connection extension for Adobe Commerce
+user-guide-description: This guide provides detailed instructions for using the Data Connection extension for Adobe Commerce.
+breadcrumb-title: Data Connection extension for Adobe Commerce
 role: Admin
 feature: Personalization, Integration
 recommendations: noDisplay
 ---
-# Data Connection for Adobe Commerce {#data-connection}
+# Data Connection extension for Adobe Commerce {#data-connection}
 
 - [Guide Overview](overview.md)
 - [Release Notes](release-notes.md)

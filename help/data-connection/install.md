@@ -1,26 +1,26 @@
 ---
-title: Install Adobe Experience Platform Connector
-description: Learn how to install, update, and uninstall the Adobe Experience Platform Connector from Adobe Commerce.
+title: Install Data Connection
+description: Learn how to install, update, and uninstall the Data Connection extension from Adobe Commerce.
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
 role: Admin, Developer
 feature: Install
 ---
-# Install Adobe Experience Platform connector
+# Install Data Connection
 
 Before you install the extension, [review the prerequisites](overview.md#prereqs).
 
 ## Install the extension
 
-The Experience Platform connector extension is available from the [Adobe Marketplace](https://commercemarketplace.adobe.com/magento-experience-platform-connector.html). When you install this extension from the command line of the server, it connects to your Adobe Commerce installation as a [service](../landing/saas.md). When the process is complete, **Experience Platform Connector** and **Commerce Services Connector** appear on the **System** menu under **Services** in the Commerce _Admin_.
+The Data Connection extension is available from the [Adobe Marketplace](https://commercemarketplace.adobe.com/magento-experience-platform-connector.html). When you install this extension from the command line of the server, it connects to your Adobe Commerce installation as a [service](../landing/saas.md). When the process is complete, **Data Connection** and **Commerce Services Connector** appear on the **System** menu under **Services** in the Commerce _Admin_.
 
 >[!NOTE]
 >
 >![B2B for Adobe Commerce](../assets/b2b.svg) For B2B merchants, there is a separate extension you must install. This extension adds support for B2B specific events. [Learn more](#install-the-b2b-extension).
 
-1. To download the `experience-platform-connector` package, run the following from the command line:
+1. To download the `data-connection` package, run the following from the command line:
 
    ```bash
-   composer require magento/experience-platform-connector
+   composer require magento/data-connection
    ```
 
    This metapackage contains the following modules and extensions:
@@ -35,7 +35,7 @@ The Experience Platform connector extension is available from the [Adobe Marketp
 
 ### Configure the orders connector
 
-After you install the `experience-platform-connector`, you must finalize installation of the `orders-connector` module based on the deployment type: on-premises or Adobe Commerce on Cloud infrastructure.
+After you install the `data-connection` extension, you must finalize installation of the `orders-connector` module based on the deployment type: on-premises or Adobe Commerce on Cloud infrastructure.
 
 #### On-premises
 
@@ -69,36 +69,36 @@ Commit and push updated files to the Cloud environment. When deployment is finis
 
 For B2B merchants, install the following extension to include [requisition list](events.md#b2b-events) event data.
 
-Download the `magento/experience-platform-connector-b2b` extension by running the following from the command line:
+Download the `magento/data-connection-b2b` extension by running the following from the command line:
 
    ```bash
-   composer require magento/experience-platform-connector-b2b
+   composer require magento/data-connection-b2b
    ```
 
-## Update the Experience Platform connector {#update}
+## Update the Data Connection extension {#update}
 
-To update the Experience Platform connector, run the following from the command line:
+To update the Data Connection extension, run the following from the command line:
 
 ```bash
-composer update magento/experience-platform-connector --with-dependencies
+composer update magento/data-connection --with-dependencies
 ```
 
 or, for B2B merchants:
 
 ```bash
-composer update magento/experience-platform-connector-b2b --with-dependencies
+composer update magento/data-connection-b2b --with-dependencies
 ```
 
 To update to a major version such as from 2.0.0 to 3.0.0, edit the project's root [!DNL Composer] `.json` file as follows:
 
-1. Open the root `composer.json` file and search for `magento/experience-platform-connector`.
+1. Open the root `composer.json` file and search for `magento/data-connection`.
 
 1. In the `require` section, update the version number as follows:
 
    ```json
    "require": {
       ...
-      "magento/experience-platform-connector": "^3.0",
+      "magento/data-connection": "^3.0",
       ...
     }
    ```
@@ -106,15 +106,15 @@ To update to a major version such as from 2.0.0 to 3.0.0, edit the project's roo
 1. **Save** `composer.json`. Then, run the following from the command line:
 
    ```bash
-   composer update magento/experience-platform-connector –-with-dependencies
+   composer update magento/data-connection –-with-dependencies
    ```
 
    or, for B2B merchants:
 
    ```bash
-   composer update magento/experience-platform-connector-b2b --with-dependencies
+   composer update magento/data-connection-b2b --with-dependencies
    ```
 
-## Uninstall the Experience Platform connector {#uninstall}
+## Uninstall the Data Connection extension {#uninstall}
 
-To uninstall the Experience Platform connector, refer to [uninstall modules](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html).
+To uninstall the Data Connection extension, refer to [uninstall modules](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html).
