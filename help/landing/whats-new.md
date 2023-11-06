@@ -8,7 +8,7 @@ recommendations: noDisplay
 ---
 # What's new in Commerce Services documentation
 
-The following items are recent changes to the documentation:
+The following items are recent notable changes to the documentation:
 
 |   Service    |    Change   |   Type    |
 | -- | -- | -- |
