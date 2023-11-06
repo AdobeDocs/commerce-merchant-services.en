@@ -1,12 +1,12 @@
 ---
 title: 'Display taxed prices with the API Mesh'
-description: 'USe [!DNL API Mesh] for Adobe Commerce and Catalog Service to display prices including taxes.'
+description: 'Use [!DNL API Mesh] for Adobe Commerce and Catalog Service to display prices including taxes.'
 role: Admin, Developer
 feature: Services, API Mesh, Catalog Service
 ---
-# Display taxed prices with the API Mesh
+# Display taxed prices with API Mesh for Adobe Developer App Builder
 
-The [API Mesh](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) enables developers to integrate private or third-party APIs and other interfaces with Adobe products using Adobe I/O Runtime.
+[API Mesh](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) enables developers to integrate private or third-party APIs and other interfaces with Adobe products using Adobe I/O Runtime.
 
 In this topic, the API Mesh is used to display product prices on a Product Detail Page with taxes figured in.
 
@@ -16,14 +16,13 @@ If not already done, connect the API Mesh with Catalog Service to your instance.
 
 To complete the setup, install the [Adobe Developer CLI package](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/).
 
-Once API Mesh is configured on Adobe I/O Runtime, run the following command which adds a `CommerceCatalogServiceGraph` source to your mesh.
+After API Mesh is configured on Adobe I/O Runtime, add a `CommerceCatalogServiceGraph` source to your mesh by running the following command.
 
 ```bash
 aio api-mesh:source:install "CommerceCatalogServiceGraph" -f variables.json
 ```
 
-Where `variables.json` is a separate file that stores commonly used values for Adobe I/O Runtime.
-For instance, the API key can be saved within the file:
+Where `variables.json` is a separate file that stores values for your installation. For this command, your Catalog Service API key is required:
 
 ```json
 {
@@ -31,7 +30,7 @@ For instance, the API key can be saved within the file:
 }
 ```
 
-After running this command, the Catalog Service should be running through the API Mesh. You can run the `aio api-mesh:get` command to view the configuration of your updated mesh.
+After running this command, your mesh is now connected to your Catalog Service. Run the `aio api-mesh:get` command to view the configuration of your mesh.
 
 ## Set up tax rates
 
@@ -40,11 +39,11 @@ You must have taxes configured for them to display on the Product Detail Page.
 1. [Set up tax rates](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/tax-rules.html).
 1. Enable taxes to be [displayed in the catalog](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/display-settings.html#step-1%3A-configure-catalog-prices-display-settings), and set it to either `Including and Excluding Tax` or `Including Tax`.
 
-Verify it is working by checking a Product Detail Page.
+Verify that the API mesh with Catalog Service is working by checking a Product Detail Page.
 
 ![Taxes displayed on Product Detail Page](assets/display-tax.png)
 
-## Configure the API Mesh
+## Configure API Mesh
 
 In this `mesh.json` file, the API Mesh is used to connect to the Adobe Commerce instance.
 Replace the `name `, `endpoint`, and `x-api-key` values.
@@ -128,7 +127,10 @@ This does a couple things:
 
 ### GraphQL query
 
-Sending a GQL query:
+You can retrieve the new `priceWithTaxes` data provided by API mesh using GraphQL.
+
+Query example:
+
 
 ```json
 query {
@@ -191,7 +193,7 @@ query {
 }
 ```
 
-results in a response:
+Query response:
 
 ```json
 {
