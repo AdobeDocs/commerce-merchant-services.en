@@ -8,13 +8,11 @@ feature: Services, API Mesh, Catalog Service
 
 [API Mesh](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) enables developers to integrate private or third-party APIs and other interfaces with Adobe products using Adobe I/O Runtime.
 
-In this topic, the API Mesh is used to display product prices on a Product Detail Page with taxes figured in.
+In this topic, API Mesh is used to display product prices on a Product Detail Page with taxes figured in.
 
 ## Connect to API Mesh
 
-If not already done, connect the API Mesh with Catalog Service to your instance. See detailed instructions in [Create a Mesh](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/).
-
-To complete the setup, install the [Adobe Developer CLI package](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/).
+If not already done, connect the API Mesh with Catalog Service to your instance. See detailed instructions in the [Getting Started](https://developer.adobe.com/graphql-mesh-gateway/gateway/getting-started/) topic in the API Mesh developer guide.
 
 After API Mesh is configured on Adobe I/O Runtime, add a `CommerceCatalogServiceGraph` source to your mesh by running the following command.
 
@@ -39,14 +37,13 @@ You must have taxes configured for them to display on the Product Detail Page.
 1. [Set up tax rates](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/tax-rules.html).
 1. Enable taxes to be [displayed in the catalog](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/display-settings.html#step-1%3A-configure-catalog-prices-display-settings), and set it to either `Including and Excluding Tax` or `Including Tax`.
 
-Verify that the API mesh with Catalog Service is working by checking a Product Detail Page.
+Verify that API mesh with Catalog Service is working by checking a Product Detail Page.
 
 ![Taxes displayed on Product Detail Page](assets/display-tax.png)
 
 ## Configure API Mesh
 
-In this `mesh.json` file, the API Mesh is used to connect to the Adobe Commerce instance.
-Replace the `name `, `endpoint`, and `x-api-key` values.
+In the `mesh.json` file, replace the `name `, `endpoint`, and `x-api-key` values.
 
 ```json
 {
@@ -119,7 +116,7 @@ Replace the `name `, `endpoint`, and `x-api-key` values.
   }
 ```
 
-This does a couple things:
+This `mesh.json` configuration file performs the following functions:
 
 * The `transform` block prepends 'Core_' to any queries and types coming from the Commerce core application. This prevents possible naming clashes with Catalog Service.
 * Extends the `ComplexProductView` and `SimpleProductView`types with a new field called `priceWithTaxes`. 
@@ -127,12 +124,11 @@ This does a couple things:
 
 ### GraphQL query
 
-You can retrieve the new `priceWithTaxes` data provided by API mesh using GraphQL.
+You can retrieve the new `priceWithTaxes` data using GraphQL.
 
 Query example:
 
-
-```json
+```graphql
 query {
     products(skus:[MH07]) {
         __typename
