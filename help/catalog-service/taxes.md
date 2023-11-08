@@ -10,25 +10,6 @@ feature: Services, API Mesh, Catalog Service
 
 In this topic, API Mesh is used to display product prices on a Product Detail Page with taxes figured in.
 
-## Connect to API Mesh
-
-If not already done, connect the API Mesh with Catalog Service to your instance. See detailed instructions in the [Getting Started](https://developer.adobe.com/graphql-mesh-gateway/gateway/getting-started/) topic in the API Mesh developer guide.
-
-After API Mesh is configured on Adobe I/O Runtime, add a `CommerceCatalogServiceGraph` source to your mesh by running the following command.
-
-```bash
-aio api-mesh:source:install "CommerceCatalogServiceGraph" -f variables.json
-```
-
-Where `variables.json` is a separate file that stores values for your installation. For this command, your Catalog Service API key is required:
-
-```json
-{
-    "CATALOG_SERVICE_API_KEY":"your_api_key"
-}
-```
-
-After running this command, your mesh is now connected to your Catalog Service. Run the `aio api-mesh:get` command to view the configuration of your mesh.
 
 ## Set up tax rates
 
@@ -42,6 +23,8 @@ Verify that API mesh with Catalog Service is working by checking a Product Detai
 ![Taxes displayed on Product Detail Page](assets/display-tax.png)
 
 ## Configure API Mesh
+
+If not already done, connect the API Mesh with Catalog Service to your instance. See detailed instructions in the [Getting Started](https://developer.adobe.com/graphql-mesh-gateway/gateway/getting-started/) topic in the API Mesh developer guide.
 
 In the `mesh.json` file, replace the `name `, `endpoint`, and `x-api-key` values.
 
@@ -121,6 +104,8 @@ This `mesh.json` configuration file performs the following functions:
 * The `transform` block prepends 'Core_' to any queries and types coming from the Commerce core application. This prevents possible naming clashes with Catalog Service.
 * Extends the `ComplexProductView` and `SimpleProductView`types with a new field called `priceWithTaxes`. 
 * Adds a custom resolver for the new field.
+
+Create the mesh with the [create command](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/#create-a-mesh-1) with the `mesh.json` file.
 
 ### GraphQL query
 
