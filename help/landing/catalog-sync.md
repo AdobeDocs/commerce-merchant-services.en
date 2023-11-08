@@ -28,9 +28,9 @@ With the **Catalog Sync** dashboard you can:
 - View the sync status (**In Progress**, **Success**, **Failed**)
 - View the total number of products synced
 - Search synced products to view their current state
-- Search store catalog by name, SKU, etc
+- Search store catalog by name, SKU, etc.
 - View synced product details in JSON to help diagnose a sync discrepancy
-- Reinitiate the sync process
+- Re-initiate the sync process
 
 ### Last sync
 
@@ -61,7 +61,6 @@ If you need to initiate a resync of your catalog before the hourly scheduled syn
 1. In the _Resync Data_ section, click [!UICONTROL Resync].
 
    [!DNL Commerce] syncs your catalog during the next scheduled sync window. Depending on the size of your catalog, this operation can take a long time.
-
 
 ## Synced catalog products
 
@@ -160,7 +159,7 @@ bin/magento saas:resync --feed categoryPermissions
 
 If you do not see expected data in [!DNL Commerce Service], check if a problem occurred during the sync from the [!DNL Adobe Commerce] instance to the [!DNL Commerce Service] platform.
 
-There are 2 log files in the `var/log/` directory:
+There are two log files in the `var/log/` directory:
 
 - `commerce-data-export-errors.log` - if an error happened during _collecting_ phase
 - `saas-export-errors.log` - if an error happened during _transmitting_ phase
@@ -187,7 +186,7 @@ PERSIST_EXPORTED_FEED=1 bin/magento saas:resync --feed=products
 
 #### Profiling
 
-If the reindex process of specific feed takes an unreasonably amount of time, run the profiler to collect additional data that might be useful for the Support Team. To do so, pass the `EXPORTER_PROFILER=1`environment variable:
+If the reindex process of specific feed takes an unreasonable amount of time, run the profiler to collect additional data that might be useful for the Support Team. To do so, pass the `EXPORTER_PROFILER=1`environment variable:
 
 ```bash
 EXPORTER_PROFILER=1 bin/magento indexer:reindex catalog_data_exporter_products
@@ -199,4 +198,4 @@ Profiler data is stored in `var/log/commerce-data-export.log` with the format:
 
 #### Submit a support request
 
-If you see errors not related to configuration or 3rd party extensions, submit a [support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) with as much information as possible.
+If you see errors not related to configuration or third party extensions, submit a [support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) with as much information as possible.

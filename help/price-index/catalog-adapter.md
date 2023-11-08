@@ -3,11 +3,11 @@ title: Catalog Adapter Extension
 description: Using Catalog Adapter to render prices from Commerce Services
 seo-title: Catalog Adapter Extension
 seo-description: Using Catalog Adapter to render prices from Commerce Services
-exl-id: 2c9120eb-aa51-48e9-b6a4-fffe25fc31f2
 ---
+
 # Catalog Adapter
 
-The Catalog Adapter extension disables the default Adobe Commerce Product Price indexer and instead uses prices provided from the [Catalog Service](../catalog-service/overview.md).
+The `Catalog Adapter` extension disables the default Adobe Commerce Product Price indexer and instead uses prices provided from the [Catalog Service](../catalog-service/overview.md).
 The Adobe Commerce Product Price indexer is disabled and cannot be turned on with these extension modules installed. Only by removing or disabling this extension can the default product price indexer be reenabled.
 
 ## Requirements
@@ -28,18 +28,18 @@ Once those services are installed, run the following command:
 composer require adobe-commerce/catalog-adapter
 ```
 
-## Renable the Adobe Commerce Product Price indexer
+## Re-enable the Adobe Commerce Product Price indexer
 
 If you have third-party applications that rely on the default Adobe Commerce Product Price indexer, it can be re-enabled with the following commands:
 
 ```bash
 # re-enable Product Price indexer
 bin/magento module:disable Magento_PriceIndexerDisabler
-# reindex Product Price indexer 
+# re-index Product Price indexer 
 bin/magento index:reindex catalog_product_price
 ```
 
-## Disable Product Price indexer for headless storefronts
+## Disable Product Price indexer for Headless Storefront scenario
 
 If you have a headless Commerce instance, you may need to disable the Adobe Commerce Product Price indexer to reduce load on your Adobe Commerce instance.
 This is done by installing the `magento/module-price-indexer-disabler` module:
@@ -50,7 +50,7 @@ composer require magento/module-price-indexer-disabler
 
 ## Usage scenarios
 
-The following are some common Catalog Adapter scenarios.
+The following are some common `Catalog Adapter` scenarios.
 
 ### No dependencies on Adobe Commerce Product Price indexer
 
@@ -72,4 +72,4 @@ The following are some common Catalog Adapter scenarios.
 * A merchant with a headless Commerce instance with the required services installed (Live Search, Product Recommendations, Catalog Service)
 * No reliance on the default Adobe Commerce Product Price indexer
 
-1. Install `magento/module-price-indexer-disabler` from the catalog adapter package.
+1. Install the `magento/module-price-indexer-disabler` module from the catalog adapter package.

@@ -3,20 +3,18 @@ title: SaaS Price Indexing Manual Installation
 description: Installing SaaS Price Indexing for older version
 seo-title: SaaS Price Indexing installation
 seo-description: Installing SaaS Price indexing
-exl-id: 4577111a-64a4-4e20-b970-3abfa6758247
+exl-id: a607e852-aa04-4be3-9576-a6bf45f8751f
 role: Admin, Developer
 ---
 # SaaS Price Indexing Manual Installation
 
 SaaS Price Indexing is available out of the box for supported [latest version](index.md#Requirements) of Commerce Services.
-If you do not have the latest version and want to enable SaaS Price Indexing for your Adobe Commerce instance, please use this mini-guide.
-
-The Saas Price Indexer only works with prices displayed through Commerce Services: Live Search, Catalog Service and Product Recommendations.
+If you do not have the latest version and want to enable SaaS Price Indexing for your Adobe Commerce instance, use this guide.
 
 ## Prerequisites
 
 * Adobe Commerce 2.4.4+
-* At least one of the following SaaS services is installed:
+* At least one of the following SaaS services installed:
 
     * [Catalog Service](../catalog-service/overview.md)
     * [Live Search](../live-search/guide-overview.md)
@@ -24,7 +22,7 @@ The Saas Price Indexer only works with prices displayed through Commerce Service
 ## Install required modules
 
 Depending on your setup, the installation process might be slightly different.
-These extensions add the new feeds and supporting code.
+There are extensions that add the new feeds and supporting code and there is an extension that removes the default prices feed.
 
 1. Add the following modules to your `composer.json` file:
 
@@ -47,7 +45,6 @@ After upgrading, three new feeds are available:
 * `scopesCustomerGroup` - responsible for delivering Customer Groups to the service 
 * `scopesWebsite` - responsible for delivering Websites, Store Groups and Store Views to the service
 
-
 1. Configure the new feeds to be set to "Update on Schedule" mode:
 
     ```bash
@@ -64,8 +61,7 @@ After upgrading, three new feeds are available:
 
 Run the above indexers manually, as needed. Otherwise, the data gets refreshed in the standard sync process. Read more about the [Catalog Sync](../landing/catalog-sync.md) service.
 
-
-To configure Live Search and Catalog Adapter, follow the [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) instructions.
+Luma and Adobe Commerce Core GraphQL users can install the [`Catalog Adapter`](catalog-adapter.md) extension that provides Luma and Core GraphQl compatibility and disables the Adobe Commerce Product Price indexer.
 
 ## Caveats
 
