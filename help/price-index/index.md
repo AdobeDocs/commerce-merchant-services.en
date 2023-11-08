@@ -2,15 +2,13 @@
 title: SaaS Price Indexing
 description: Using the SaaS Price Indexing to improve performance
 seo-title: Adobe SaaS Price Indexing
-seo-description: Price indexing give performance improvements using SaaS infrastructure
+seo-description: Price indexing provides performance improvements using SaaS infrastructure
 exl-id: 5b92d6ea-cfd6-4976-a430-1a3aeaed51fd
 ---
 # SaaS Price Indexing
 
-SaaS price indexing speeds up the time that it takes for price changes to get reflected on [Commerce Services ](../landing/saas.md) after they have been submitted. This allows merchants with large, complex catalogs, or with multiple websites or customer groups, to continually process price changes.
-If you have a headless storefront or use the [catalog-adapter](./catalog-adapter.md) extension, customers can disable the Adobe Commerce core price indexer.
-
-Computational heavy processes such as indexation and price calculation have been moved from the Commerce core to Adobe's Cloud infrastructure. This allows merchants to quickly scale up resources to boost price indexation times, and reflect those changes faster.
+SaaS Price Indexing moves computational heavy processes such as indexation and price calculation from the Commerce PHP core to Adobe's Cloud infrastructure. This allows merchants with large, complex catalogs, or with multiple websites or customer groups, to continually process price changes.
+If you have a headless storefront or use the [catalog-adapter](./catalog-adapter.md) extension, customers can disable the Adobe Commerce core price indexer. This allows merchants to quickly scale up resources to boost price indexation times, and reflect those changes faster.
 
 The Core indexing data flow to SaaS services looks like:
 
@@ -28,7 +26,7 @@ All merchants using Commerce Services can benefit from these improvements, but t
 
 SaaS price indexing is available for free for customers using Adobe Commerce services and supports price calculation for all built-in Adobe Commerce product types.
 
-This mini-guide describes how SaaS price indexing works and how to enable it.
+This guide describes how SaaS price indexing works and how to enable it.
 
 ## Requirements
 
@@ -37,7 +35,6 @@ This mini-guide describes how SaaS price indexing works and how to enable it.
 
     * [Catalog Service](../catalog-service/overview.md) 
     * [Live Search](../live-search/guide-overview.md)
-    * [Product Recommendations](../product-recommendations/guide-overview.md)
 
 Luma and Adobe Commerce Core GraphQL users can install the [`catalog-adapter`](catalog-adapter.md) extension that provides Luma and Core GraphQl compatibility and disables the Adobe Commerce Product Price indexer.
 

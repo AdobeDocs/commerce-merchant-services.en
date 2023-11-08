@@ -20,12 +20,11 @@ The Saas Price Indexer only works with prices displayed through Commerce Service
 
     * [Catalog Service](../catalog-service/overview.md)
     * [Live Search](../live-search/guide-overview.md)
-    * [Product Recommendations](../product-recommendations/guide-overview.md)
 
 ## Install required modules
 
 Depending on your setup, the installation process might be slightly different.
-There are extensions that add the new feeds and the supporting code.
+These extensions add the new feeds and supporting code.
 
 1. Add the following modules to your `composer.json` file:
 
