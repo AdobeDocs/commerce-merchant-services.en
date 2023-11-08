@@ -37,13 +37,13 @@ You must have taxes configured for them to display on the Product Detail Page.
 1. [Set up tax rates](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/tax-rules.html).
 1. Enable taxes to be [displayed in the catalog](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/display-settings.html#step-1%3A-configure-catalog-prices-display-settings), and set it to either `Including and Excluding Tax` or `Including Tax`.
 
-Verify that API mesh with Catalog Service is working by checking a Product Detail Page.
+Verify that the Catalog Service is working by checking a Product Detail Page.
 
 ![Taxes displayed on Product Detail Page](assets/display-tax.png)
 
 ## Configure API Mesh
 
-In the `mesh.json` file, replace the `name `, `endpoint`, and `x-api-key` values.
+Create a file named `mesh.json` using the following template. You will need to replace the `name `, `endpoint`, and `x-api-key` values.
 
 ```json
 {
@@ -116,10 +116,10 @@ In the `mesh.json` file, replace the `name `, `endpoint`, and `x-api-key` values
   }
 ```
 
-This `mesh.json` configuration file performs the following functions:
+This `mesh.json` configuration file:
 
-* The `transform` block prepends 'Core_' to any queries and types coming from the Commerce core application. This prevents possible naming clashes with Catalog Service.
-* Extends the `ComplexProductView` and `SimpleProductView`types with a new field called `priceWithTaxes`. 
+* Transforms the Commerce core application to require 'Core_' prepended to any of its queries or types. This prevents possible naming conflicts with the Catalog Service.
+* Extends the `ComplexProductView` and `SimpleProductView` types with a new field called `priceWithTaxes`. 
 * Adds a custom resolver for the new field.
 
 ### GraphQL query
