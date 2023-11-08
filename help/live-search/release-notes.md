@@ -35,6 +35,31 @@ _June 13, 2023_
 
 ![New](../assets/new.svg) [!DNL Live Search] customers can now take advantage of the new [SaaS price indexer](../price-index/index.md).
 
+## [!DNL Live Search] 4.0.0 {#400}
+
+ _Nov 13, 2023_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+### Updates
+
+![Fix](../assets/fix.svg) [!DNL Live Search] widgets are now enabled by default for new installations.
+![Fix](../assets/fix.svg) Minor bug fixes
+
+Merchants must upgrade the [!DNL Live Search] extension version >= 4.0.0 to access these features.
+
+After installing version 3.1.1 or higher, these new indexers must be enabled:
+
+* Product Prices Feed
+* Scopes website data feed
+* Scopes customer groups data feed
+
+It is recommended to upgrade and test in QA or Staging before pushing changes to production. 
+
+## Previous versions
+
++++3.1.0 and prior
+
 ## [!DNL Live Search] 3.1.1 {#311}
 
  _Sept 15, 2023_
@@ -65,20 +90,6 @@ _June 13, 2023_
 ![Fix](../assets/fix.svg) 'Events' (Boost/Pin/Bury/Hide) has been renamed to 'Manual Ranking'
 ![Fix](../assets/fix.svg) 'Ranking Type' has been renamed to 'Intelligent ranking'
 ![Fix](../assets/fix.svg) Minor bug fixes
-
-Merchants must upgrade the [!DNL Live Search] extension version >= 3.1.1 to access these features.
-
-After installing version 3.1.1, these new indexers must be enabled:
-
-* Product Prices Feed
-* Scopes website data feed
-* Scopes customer groups data feed
-
-It is recommended to upgrade and test in QA or Staging before pushing changes to production. 
-
-## Previous versions
-
-+++3.1.0 and prior
 
 ## [!DNL Live Search] 3.1.0 {#310}
 

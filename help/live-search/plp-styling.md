@@ -10,9 +10,12 @@ The [!DNL Live Search Product Listing Page Widget] (PLP) uses the Commerce Servi
 ## Enabling the PLP widget
 
 When the [!DNL Live Search] service is installed, the default search functionality is converted to [!DNL Live Search] automatically.
-The PLP widget must be enabled in the Admin.
 
-1. Go to **Stores** > Settings > **Configuration** > **[!DNL Live Search]** > **Storefront Features** and set **Enable Product Listing Widgets** to "Yes".
+The [!DNL Live Search] PLP widget is enabled by default for new installations. If you are upgrading [!DNL Live Search] and the PLP widget has already been turned off, it will remain so.
+
+To disable the PLP widget:
+
+1. Go to **Stores** > Settings > **Configuration** > **[!DNL Live Search]** > **Storefront Features** and set **Enable Product Listing Widgets** to "No".
 1. Select **Save Config** to save the setting.
 
 ## Styling example
