@@ -10,7 +10,6 @@ feature: Services, API Mesh, Catalog Service
 
 In this topic, API Mesh is used to display product prices on a Product Detail Page with taxes figured in.
 
-
 ## Set up tax rates
 
 You must have taxes configured for them to display on the Product Detail Page.
