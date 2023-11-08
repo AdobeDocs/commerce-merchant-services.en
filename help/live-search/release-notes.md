@@ -46,7 +46,7 @@ _June 13, 2023_
 ![Fix](../assets/fix.svg) [!DNL Live Search] widgets are now enabled by default for new installations.
 ![Fix](../assets/fix.svg) Minor bug fixes
 
-Merchants must upgrade the [!DNL Live Search] extension version >= 4.0.0 to access these features.
+Merchants must upgrade the [!DNL Live Search] extension to version >= 4.0.0 to access these features.
 
 After installing version 3.1.1 or higher, these new indexers must be enabled:
 
@@ -58,7 +58,7 @@ It is recommended to upgrade and test in QA or Staging before pushing changes to
 
 ## Previous versions
 
-+++3.1.0 and prior
++++3.1.1 and prior
 
 ## [!DNL Live Search] 3.1.1 {#311}
 
