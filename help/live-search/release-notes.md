@@ -43,7 +43,7 @@ _June 13, 2023_
 
 ### Updates
 
-![Fix](../assets/fix.svg) [!DNL Live Search] widgets are now enabled by default for new installations.
+![Fix](../assets/fix.svg) The [!DNL Live Search] PLP widget is now enabled by default for new installations.
 ![Fix](../assets/fix.svg) Minor bug fixes
 
 Merchants must upgrade the [!DNL Live Search] extension to version >= 4.0.0 to access these features.
