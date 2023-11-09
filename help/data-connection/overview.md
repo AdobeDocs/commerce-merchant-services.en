@@ -6,6 +6,10 @@ recommendations: noCatalog
 ---
 # Data Connection overview
 
+>[!IMPORTANT]
+>
+>The Experience Platform connector has been renamed to Data Connection.
+
 The Data Connection extension allows Adobe Commerce merchants to send [storefront](events.md#storefront-events) and [back office](events.md#back-office-events) data to the Adobe Experience Platform edge so other Adobe Experience Cloud products, such as Adobe Analytics and Adobe Journey Optimizer, can use that Commerce data. By connecting your Commerce data to other products in the Adobe Experience Cloud, you can perform tasks, such as analyze user behavior on your site, perform AB testing, and create personalized campaigns.
 
 [Storefront events](events.md#storefront-events) capture shopper interactions, such as `View Page`, `View Product`, `Add to Cart`, and [requisition list](events.md#b2b-events) information (for B2B merchants). [Back Office](events.md#back-office-events) events capture information about the status of an order, such as if an order was placed, canceled, refunded, shipped, or completed. Captured data does not include personally identifiable information (PII). All user identifiers, such as cookie IDs and IP addresses, are strictly anonymized. [Learn more](https://www.adobe.com/privacy/experience-cloud.html).
