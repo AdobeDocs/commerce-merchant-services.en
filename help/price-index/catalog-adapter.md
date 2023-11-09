@@ -13,10 +13,11 @@ The Adobe Commerce Product Price indexer is disabled and cannot be turned on wit
 ## Requirements
 
 * Adobe Commerce 2.4.4+
-* One of the following Commerce Services installed:
+* Have both of the following Commerce Services installed:
 
     * [Catalog Service](../catalog-service/overview.md)
     * [Live Search](../live-search/guide-overview.md)
+    * [Product Recommendations](../product-recommendations/guide-overview.md)
 
 ## Installation
 

@@ -18,6 +18,7 @@ If you do not have the latest version and want to enable SaaS Price Indexing for
 
     * [Catalog Service](../catalog-service/overview.md)
     * [Live Search](../live-search/guide-overview.md)
+    * [Product Recommendations](../product-recommendations/guide-overview.md)
 
 ## Install required modules
 
