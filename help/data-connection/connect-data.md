@@ -27,8 +27,6 @@ After you configure the Commerce Services connector, you then configure the Data
 
 In this section, you connect your Adobe Commerce instance to the Adobe Experience Platform using your organization ID. You can then specify the type of data - storefront and back office - to send to the Experience Platform edge.
 
-![Data Connection configuration](assets/epc-config-dc.png)
-
 ## General
 
 1. In the Admin, go to **System** > Services > **Data Connection**.
@@ -188,8 +186,6 @@ With the order sync service enabled, you can then specify the historical order d
 ### Step 4: Specify order history date range
 
 Specify the date range for the historical orders that you want to send to Experience Platform.
-
-![Sync Order History](./assets/order-history.png){width="700" zoomable="yes"}
 
 1. In the Admin, go to **System** > Services > **Data Connection**.
 
