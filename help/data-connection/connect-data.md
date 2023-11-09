@@ -71,8 +71,6 @@ See the events topic to learn more about [storefront](events.md#storefront-event
     1. Open the dataset associated with your datastream.
     1. In the right-hand pane, view the details about the dataset. Copy the dataset ID.
 
-    ![Copy Dataset ID](./assets/retrieve-dataset-id.png){width="700" zoomable="yes"}
-
 1. To ensure back office event data updates based on a schedule according to a [cron](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cron.html) job, you must change the `Sales Orders Feed` index to `Update by Schedule`.
 
     1. On the _Admin_ sidebar, go to **[!UICONTROL System]** > _[!UICONTROL Tools]_ > **[!UICONTROL Index Management]**.
