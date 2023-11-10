@@ -79,7 +79,7 @@ See [what's new in our documentation](whats-new.md) or [release notes](release-n
    </tr>
 </table>
 
-## Data services
+## Integration services
 
 <table>
 <tr>
@@ -99,7 +99,7 @@ See [what's new in our documentation](whats-new.md) or [release notes](release-n
    </tr>
 </table>
 
-## Integration services
+## Data services
 
 <table>
 <tr>
