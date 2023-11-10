@@ -28,6 +28,12 @@ These release notes describe feature changes and fixes related to extensions use
 
 +++Supported service updates
 
+_November 14, 2023_
+
+![Fix](../assets/fix.svg) - Fixed an issue where an error message incorrectly appeared when you placed an order that had multiple shipping addresses.
+![Fix](../assets/fix.svg) - Fixed an issue in the [productPageView](events.md#productpageview) event where the `productListItems.priceTotal` event field was not converting the price after switching the currency on the store view.
+![Fix](../assets/fix.svg) - Fixed an issue in the `productListItems` event field where the currency code was not updating when the merchant switched the store view.
+
 _October 10, 2023_
 
 ![New](../assets/new.svg) - Added new order status events: [Order Invoiced](events.md#orderinvoiced), [Order Item Return Initiated](events.md#orderitemsreturninitiated), and [Order Item Return Completed](events.md#orderitemreturncompleted).
