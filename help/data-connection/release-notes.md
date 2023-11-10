@@ -10,7 +10,7 @@ feature: Personalization, Integration, Release Notes
 >
 >The Experience Platform connector has been renamed to Data Connection.
 
-These release notes contain updates to the Data Connection extension and includes:
+These release notes contain updates to the Data Connection extension and include:
 
 ![New](../assets/new.svg) - New features
 ![Fix](../assets/fix.svg) - Fixes and improvements
