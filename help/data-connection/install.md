@@ -33,6 +33,8 @@ The [!DNL Data Connection] extension is available from the [Adobe Marketplace](h
 
 1. (Optional) To include [!DNL Live Search] data, which comprises [search events](events.md#search-events), install the [[!DNL Live Search]](../live-search/install.md) extension.
 
+1. (Optional) To include B2B data, which comprises [requisition events](events.md#b2b-events), install the [B2B extension](#install-the-b2b-extension).
+
 ### Configure the orders connector
 
 After you install the `experience-platform-connector` extension, you must finalize installation of the `orders-connector` module based on the deployment type: on-premises or Adobe Commerce on Cloud infrastructure.
@@ -109,7 +111,7 @@ To update to a major version such as from 2.0.0 to 3.0.0, edit the project's roo
    composer update magento/experience-platform-connector –-with-dependencies
    ```
 
-   or, for B2B merchants:
+   Or, for B2B merchants:
 
    ```bash
    composer update magento/experience-platform-connector-b2b --with-dependencies
