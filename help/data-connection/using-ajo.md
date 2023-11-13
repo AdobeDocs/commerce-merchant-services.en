@@ -88,10 +88,7 @@ Configure two events in Journey Optimizer: one event listens for the `commerce.c
     1. Set **[!UICONTROL Type]** to **[!UICONTROL Unitary]**.
     1. Set **[!UICONTROL Event id typ]e** to **[!UICONTROL Rule based]**.
     1. Set **[!UICONTROL Schema]** to your Commerce [schema](update-xdm.md).
-    1. Select **[!UICONTROL Fields]** and in the **[!UICONTROL Fields]** page that appears, select the fields that are useful for this event. 
-    
-       For example, select all fields under the **[!UICONTROL Product list items]**, **[!UICONTROL Commerce]**, **[!UICONTROL eventType]**, and **[!UICONTROL Web]**.
-       
+    1. Select **[!UICONTROL Fields]** and in the **[!UICONTROL Fields]** page that appears, select the fields that are useful for this event. For example, select all fields under the **[!UICONTROL Product list items]**, **[!UICONTROL Commerce]**, **[!UICONTROL eventType]**, and **[!UICONTROL Web]**.
     1. Click **[!UICONTROL OK]** to save the selected fields.
     1. Click inside the **[!UICONTROL Event id condition]** field and create a condition of `eventType` is equal to `commerce.checkouts` AND `personalEmail.address` is equal to the email address you used when you created the profile in the previous section.
 

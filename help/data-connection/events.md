@@ -462,7 +462,7 @@ The following table describes the data collected for this event.
 
 ## B2B events
 
-![B2B for Adobe Commerce](../assets/b2b.svg) For B2B merchants, you must [install](install.md#install-the-b2b-extension) the `data-connection-b2b` extension to enable these events.
+![B2B for Adobe Commerce](../assets/b2b.svg) For B2B merchants, you must [install](install.md#install-the-b2b-extension) the `experience-platform-connector-b2b` extension to enable these events.
 
 The B2B events contain [requisition list](https://experienceleague.adobe.com/docs/commerce-admin/b2b/requisition-lists/requisition-lists.html) information, such as if a requisition list was created, added to, or deleted from. By tracking events specific to requisition lists, you can see which products your customers purchase frequently and create campaigns based on that data.
 
