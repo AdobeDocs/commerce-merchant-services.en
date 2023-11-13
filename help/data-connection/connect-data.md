@@ -6,12 +6,12 @@ feature: Personalization, Integration, Configuration
 ---
 # Connect Commerce data to Adobe Experience Platform
 
-When you install the Data Connection extension, two new configuration pages appear in the **System** menu under **Services** in the Commerce _Admin_.
+When you install the [!DNL Data Connection] extension, two new configuration pages appear in the **System** menu under **Services** in the Commerce _Admin_.
 
 - Commerce Services Connector
-- Data Connection
+- [!DNL Data Connection]
 
-To connect your Adobe Commerce instance to the Adobe Experience Platform, you must configure both connectors, starting with the Commerce Services connector then finishing with the Data Connection extension.
+To connect your Adobe Commerce instance to the Adobe Experience Platform, you must configure both connectors, starting with the Commerce Services connector then finishing with the [!DNL Data Connection] extension.
 
 ## Update the Commerce Services connector
 
@@ -21,25 +21,25 @@ If you have previously installed an Adobe Commerce service, you probably have al
 1. Select a [SaaS data space](../landing/saas.md#saas-configuration).
 1. Log in to your Adobe account to [retrieve your Organization ID](../landing/saas.md#ims-organization-optional).
 
-After you configure the Commerce Services connector, you then configure the Data Connection extension.
+After you configure the Commerce Services connector, you then configure the [!DNL Data Connection] extension.
 
-## Update the Data Connection extension
+## Update the [!DNL Data Connection] extension
 
 In this section, you connect your Adobe Commerce instance to the Adobe Experience Platform using your organization ID. You can then specify the type of data - storefront and back office - to send to the Experience Platform edge.
 
 ## General
 
-1. In the Admin, go to **System** > Services > **Data Connection**.
+1. In the Admin, go to **System** > Services > **[!DNL Data Connection]**.
 
 1. On the **Settings** tab under **General**, verify the ID associated with your Adobe Experience Platform account, as configured in the [Commerce Services Connector](../landing/saas.md#organizationid). The organization ID is global. Only one organization ID can be associated per Adobe Commerce instance.
 
 1. In the **Scope** drop-down, set the context to **Website**.
 
-1. (Optional) If you already have an [AEP Web SDK (alloy)](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html) deployed to your site, enable the checkbox and add the name of your AEP Web SDK. Otherwise, leave these fields blank and the Data Connection extension deploys one for you.
+1. (Optional) If you already have an [AEP Web SDK (alloy)](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html) deployed to your site, enable the checkbox and add the name of your AEP Web SDK. Otherwise, leave these fields blank and the [!DNL Data Connection] extension deploys one for you.
 
     >[!NOTE]
     >
-    >If you specify your own AEP Web SDK, the Data Connection extension uses the datastream ID associated with that SDK and not the datastream ID specified on this page (if any).
+    >If you specify your own AEP Web SDK, the [!DNL Data Connection] extension uses the datastream ID associated with that SDK and not the datastream ID specified on this page (if any).
 
 ## Data collection
 
@@ -96,10 +96,10 @@ See the events topic to learn more about [storefront](events.md#storefront-event
 | Scope | Specific website where you want the configuration settings to apply. |
 | Organization ID (global)| ID that belongs to the organization that purchased the Adobe DX product. This ID links your Adobe Commerce instance to Adobe Experience Platform. |
 |Is the AEP Web SDK already deployed to your site|Select this checkbox if you have deployed your own AEP Web SDK to your site|
-|AEP Web SDK Name (global)| If you already have an Experience Platform Web SDK deployed to your site, specify the name of that SDK in this field. This allows the Storefront Event Collector and Storefront Event SDK to use your Experience Platform Web SDK rather than the version deployed by the Data Connection extension. If you do not have an Experience Platform Web SDK deployed to your site, leave this field blank, and the Data Connection extension deploys one for you.|
+|AEP Web SDK Name (global)| If you already have an Experience Platform Web SDK deployed to your site, specify the name of that SDK in this field. This allows the Storefront Event Collector and Storefront Event SDK to use your Experience Platform Web SDK rather than the version deployed by the [!DNL Data Connection] extension. If you do not have an Experience Platform Web SDK deployed to your site, leave this field blank, and the [!DNL Data Connection] extension deploys one for you.|
 |Storefront events|Is checked by default as long as the Organization ID and datastream ID are valid. Storefront events collect anonymized behavioral data from your shoppers as they browse your site.|
 |Back office events| If checked, event payload contains anonymized order status information, such as if an order was placed, canceled, refunded, or shipped. |
-|Datastream ID (website) | ID that allows data to flow from Adobe Experience Platform to other Adobe DX products. This ID must be associated to a specific website within your specific Adobe Commerce instance. If you specify your own Experience Platform Web SDK, do not specify a datastream ID in this field. The Data Connection extension uses the datastream ID associated with that SDK and ignores any datastream ID specified in this field (if any).|
+|Datastream ID (website) | ID that allows data to flow from Adobe Experience Platform to other Adobe DX products. This ID must be associated to a specific website within your specific Adobe Commerce instance. If you specify your own Experience Platform Web SDK, do not specify a datastream ID in this field. The [!DNL Data Connection] extension uses the datastream ID associated with that SDK and ignores any datastream ID specified in this field (if any).|
 |Dataset ID (website) | ID of the dataset that contains your Commerce data. This field is required unless you have deselected the **Storefront events** or **Back office events** checkboxes. Also, if you are using your own Experience Platform Web SDK and therefore did not specify a datastream ID, you must still add the dataset ID associated with your datastream. Otherwise, you cannot save this form.|
 
 >[!NOTE]
@@ -108,7 +108,7 @@ See the events topic to learn more about [storefront](events.md#storefront-event
 
 ## Send historical order data
 
-Adobe Commerce collects up to five years of [historical order data and status](events.md#back-office-events). You can use the Data Connection extension to send that historical data to the Experience Platform to enrich your customer profiles and personalize the customer experiences based on those past orders. The data is stored in a dataset within Experience Platform.
+Adobe Commerce collects up to five years of [historical order data and status](events.md#back-office-events). You can use the [!DNL Data Connection] extension to send that historical data to the Experience Platform to enrich your customer profiles and personalize the customer experiences based on those past orders. The data is stored in a dataset within Experience Platform.
 
 While Commerce already collects the historical order data, there are several steps you must complete to send that data to Experience Platform.
 
@@ -138,9 +138,9 @@ The result of this step creates a configuration file that you use in the next st
 
 Download the [workspace configuration file](https://developer.adobe.com/commerce/extensibility/events/project-setup/#download-the-workspace-configuration-file). Copy and paste the contents of this file into the **Service Account/Credential details** page of the Commerce Admin.
 
-1. In the Commerce Admin, navigate to **Stores** > Settings > **Configuration** > **Services** > **Data Connection**.
+1. In the Commerce Admin, navigate to **Stores** > Settings > **Configuration** > **Services** > **[!DNL Data Connection]**.
 
-1. Select the server-to-server authorization method that you implemented from the **Adobe I/O Authorization Type** menu. Adobe recommends using OAuth. JWT has been deprecated. [Learn more](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/).
+1. Select the server-to-server authorization method that you implemented from the **Adobe Developer Authorization Type** menu. Adobe recommends using OAuth. JWT has been deprecated. [Learn more](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/).
 
 1. (JWT only) Copy and paste the contents of your `private.key` file into the **Client Secret** field. Use the following command to copy the contents.
 
@@ -152,7 +152,7 @@ Download the [workspace configuration file](https://developer.adobe.com/commerce
 
 1. Copy the contents of the `<workspace-name>.json` file into the **Service Account/Credential details** field.
 
-    ![Data Connection Admin Configuration](./assets/epc-admin-config.png){width="700" zoomable="yes"}
+    ![[!DNL Data Connection] Admin Configuration](./assets/epc-admin-config.png){width="700" zoomable="yes"}
 
 1. Click **Save Config**.
 
@@ -179,13 +179,13 @@ After you enter the developer credentials, set up the order sync service. The or
     >
     >See the [deploy variables documentation](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#cron_consumers_runner) to learn about all the available configuration options.
 
-With the order sync service enabled, you can then specify the historical order date range in the **[!UICONTROL Data Connection]** page.
+With the order sync service enabled, you can then specify the historical order date range in the **[!UICONTROL [!DNL Data Connection]]** page.
 
 ### Step 4: Specify order history date range
 
 Specify the date range for the historical orders that you want to send to Experience Platform.
 
-1. In the Admin, go to **System** > Services > **Data Connection**.
+1. In the Admin, go to **System** > Services > **[!DNL Data Connection]**.
 
 1. Select the **Order History** tab.
 
@@ -231,4 +231,4 @@ If the results are not what you expect, open your dataset and look for any faile
 
 ## Next steps
 
-When Commerce data is sent to the Experience Platform edge, other Adobe Experience Cloud products, such as Adobe Journey Optimizer, can use that data. For example, you can configure Journey Optimizer to listen to certain events, and based on that event data, trigger an email for a first time user or if there is an abandoned cart. Learn how you can extend your Commerce platform by [creating customer journeys](using-ajo.md) in Journey Optimizer.
+When Commerce data is sent to the Experience Platform edge, other Adobe Experience Cloud products, such as Adobe Journey Optimizer, can use that data. For example, you can configure Journey Optimizer to listen to certain events, and based on that event data, trigger an email for a first-time user or if there is an abandoned cart. Learn how you can extend your Commerce platform by [creating customer journeys](using-ajo.md) in Journey Optimizer.

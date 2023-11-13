@@ -7,18 +7,22 @@ feature: Personalization, Integration
 ---
 # Collect Commerce Data using Adobe Experience Platform Tags
 
+<<<<<<< HEAD
 While you can use the Data Connection extension to publish and subscribe to storefront events, some merchants might already be using a data collection solution, such as [Adobe Experience Platform tags](https://experienceleague.adobe.com/docs/platform-learn/data-collection/tags/create-a-property.html). For those merchants, Adobe Commerce provides a publishing only option in the Data Connection extension that uses the Adobe Commerce Event SDK.
+=======
+While you can use the [!DNL Data Connection] extension to publish and subscribe to storefront events, some merchants might already be using a data collection solution, such as the [Adobe Experience Platform tags](https://experienceleague.adobe.com/docs/platform-learn/data-collection/tags/create-a-property.html). For those merchants, Adobe Commerce provides a publishing only option in the [!DNL Data Connection] extension that uses the Adobe Commerce Event SDK.
+>>>>>>> d7ba0c9 (Running acrolinx)
 
-![Data Connection Extension Data Flow](assets/tags-data-flow.png)
-_Data Connection Extension Data Flow with Tags_
+![[!DNL Data Connection] Extension Data Flow](assets/tags-data-flow.png)
+_[!DNL Data Connection] Extension Data Flow with Tags_
 
-In this topic, you will learn how to map the storefront event values provided by the Data Connection extension to the Adobe Experience Platform tags solution you are already using.
+In this topic, you will learn how to map the storefront event values provided by the [!DNL Data Connection] extension to the Adobe Experience Platform tags solution you are already using.
 
 ## Collect event data from Adobe Commerce
 
 To collect Commerce event data:
 
-- Install the [Adobe Commerce Events SDK](https://github.com/adobe/commerce-events/tree/main/packages/commerce-events-sdk). For PHP storefronts, see the [install](install.md) topic. For PWA Studio storefronts, see the [PWA Studio guide](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/aep/).
+- Install the [Adobe Commerce Events SDK](https://github.com/adobe/commerce-events/tree/main/packages/storefront-events-sdk). For PHP storefronts, see the [install](install.md) topic. For PWA Studio storefronts, see the [PWA Studio guide](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/aep/).
 
     >[!NOTE]
     >
@@ -32,7 +36,7 @@ To map Commerce storefront data to Adobe Experience Platform, configure and inst
 
 1. Under **Authoring**, select **Extensions** and install and configure the following extensions:
 
-   - [Adobe Client Data Layer](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/client-data-layer/overview.html)
+   - [Adobe Client Data Layer](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/client-data-layer/overview.html)
 
    - [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html)
 
@@ -1318,7 +1322,7 @@ Create the following data elements:
 
 ## Set identity in storefront events
 
-Storefront events contain profile information based on the `personalEmail` (for account events) and `identityMap` (for all other storefront events) fields. The Data Connection extension joins and generates profiles based on these two fields. Each field, however, has different steps to follow to create profiles:
+Storefront events contain profile information based on the `personalEmail` (for account events) and `identityMap` (for all other storefront events) fields. The [!DNL Data Connection] extension joins and generates profiles based on these two fields. Each field, however, has different steps to follow to create profiles:
 
 >[!NOTE]
 >
@@ -1329,7 +1333,7 @@ Storefront events contain profile information based on the `personalEmail` (for 
 
 ### Example
 
-The following steps show how to configure a `pageView` event with `identityMap` in Data Connection extension:
+The following steps show how to configure a `pageView` event with `identityMap` in [!DNL Data Connection] extension:
 
 1. Configure data element with custom code for ECID:
 
@@ -1370,7 +1374,7 @@ The following steps show how to configure a `pageView` event with `identityMap` 
 
 ## Set identity in back office events
 
-Unlike storefront events that use ECID to identity and link profile information, back office event data is SaaS-based and therefore no ECID is available. For back office events, you need to use email to uniquely identify shoppers. In this section, you will learn how to link back office event data to an ECID using email.
+Unlike storefront events that use ECID to identity and link profile information, back office event data is SaaS-based and therefore no ECID is available. For back office events, you must use email to uniquely identify shoppers. In this section, you will learn how to link back office event data to an ECID using email.
 
 1. Create an identity map element.
 
@@ -1407,7 +1411,7 @@ return IdentityMap;
 
 ## Setting consent
 
-When you install the Data Connection extension in Adobe Commerce, data collection consent is enabled by default. Opt-out is managed through the [`mg_dnt` cookie](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html). You can follow the steps outlined here if you choose to use `mg_dnt` to manage consent. The [Adobe Experience Platform Web SDK documentation](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html) has several additional options for managing consent.
+When you install the [!DNL Data Connection] extension in Adobe Commerce, data collection consent is enabled by default. Opt-out is managed through the [`mg_dnt` cookie](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html). You can follow the steps outlined here if you choose to use `mg_dnt` to manage consent. The [Adobe Experience Platform Web SDK documentation](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html) has several additional options for managing consent.
 
 1. Create a **Core Custom Code** data element (`%do not track cookie%`) for the `mg_dnt` cookie:
 
@@ -1428,4 +1432,4 @@ When you install the Data Connection extension in Adobe Commerce, data collectio
 
 - Not following steps to turn off Experience Platform collection results in events being double-counted
 - Not setting up mappings/events as described in this topic can affect Adobe Analytics boards
-- You cannot set up Target through the Data Connection extension if data collection is disabled
+- You cannot set up Target through the [!DNL Data Connection] extension if data collection is disabled

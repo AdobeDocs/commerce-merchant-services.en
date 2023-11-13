@@ -1,17 +1,17 @@
 ---
-title: Install Data Connection
-description: Learn how to install, update, and uninstall the Data Connection extension from Adobe Commerce.
+title: Install [!DNL Data Connection]
+description: Learn how to install, update, and uninstall the [!DNL Data Connection] extension from Adobe Commerce.
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
 role: Admin, Developer
 feature: Install
 ---
-# Install Data Connection
+# Install [!DNL Data Connection]
 
 Before you install the extension, [review the prerequisites](overview.md#prereqs).
 
 ## Install the extension
 
-The Data Connection extension is available from the [Adobe Marketplace](https://commercemarketplace.adobe.com/magento-experience-platform-connector.html). When you install this extension from the command line of the server, it connects to your Adobe Commerce installation as a [service](../landing/saas.md). When the process is complete, **Data Connection** and **Commerce Services Connector** appear on the **System** menu under **Services** in the Commerce _Admin_.
+The [!DNL Data Connection] extension is available from the [Adobe Marketplace](https://commercemarketplace.adobe.com/magento-experience-platform-connector.html). When you install this extension from the command line of the server, it connects to your Adobe Commerce installation as a [service](../landing/saas.md). When the process is complete, **[!DNL Data Connection]** and **Commerce Services Connector** appear on the **System** menu under **Services** in the Commerce _Admin_.
 
 >[!NOTE]
 >
@@ -39,7 +39,7 @@ After you install the `data-connection` extension, you must finalize installatio
 
 #### On-premises
 
-In on-premises environments, you need to manually enable code generation and Adobe Commerce Events:
+In on-premises environments, you must manually enable code generation and Adobe Commerce Events:
 
    ```bash
    bin/magento events:generate:module
@@ -75,15 +75,15 @@ Download the `magento/data-connection-b2b` extension by running the following fr
    composer require magento/data-connection-b2b
    ```
 
-## Update the Data Connection extension {#update}
+## Update the [!DNL Data Connection] extension {#update}
 
-To update the Data Connection extension, run the following from the command line:
+To update the [!DNL Data Connection] extension, run the following from the command line:
 
 ```bash
 composer update magento/data-connection --with-dependencies
 ```
 
-or, for B2B merchants:
+Or, for B2B merchants:
 
 ```bash
 composer update magento/data-connection-b2b --with-dependencies
@@ -115,6 +115,6 @@ To update to a major version such as from 2.0.0 to 3.0.0, edit the project's roo
    composer update magento/data-connection-b2b --with-dependencies
    ```
 
-## Uninstall the Data Connection extension {#uninstall}
+## Uninstall the [!DNL Data Connection] extension {#uninstall}
 
-To uninstall the Data Connection extension, refer to [uninstall modules](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html).
+To uninstall the [!DNL Data Connection] extension, refer to [uninstall modules](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html).

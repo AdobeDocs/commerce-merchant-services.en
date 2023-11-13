@@ -5,9 +5,9 @@ exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
 ---
-# Data Connection Events
+# [!DNL Data Connection] Events
 
-The following lists the Commerce events available when you install the Data Connection extension. The data these events collect is sent to the Adobe Experience Platform edge. You can also create [custom events](custom-events.md) to collect additional data not provided out of the box.
+The following lists the Commerce events available when you install the [!DNL Data Connection] extension. The data these events collect is sent to the Adobe Experience Platform edge. You can also create [custom events](custom-events.md) to collect additional data not provided out of the box.
 
 In addition to the data the following events collect, you also get [other data](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html) provided by the Adobe Experience Platform Web SDK.
 
@@ -157,7 +157,7 @@ The following table describes the data collected for this event.
 |---|---|
 |`web.webPageDetails.pageViews`|Indicates if a page was loaded. A `value` of `1` indicates that the page was loaded.|
 |`web.webPageDetails.URL`|The normative or usual URL of the web page. This can be the actual URL used to reach the page, which would be recorded using `Web Link`.|
-|`web.webPageDetails.name`|The normative name of the web page. This name is not necessarily the page title or directly associate with page content, but is used to organize a site's pages for classification purposes.|
+|`web.webPageDetails.name`|The normative name of the web page. This name is not necessarily the page title or directly associated with page content, but is used to organize a site's pages for classification purposes.|
 |`web.webReferrer.URL`|The URL of the webpage a shopper visited before clicking a link to your site.|
 |`commerce.commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
 |`commerce.commerceScope.environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
@@ -391,9 +391,9 @@ The following table describes the data collected for this event.
 
 ## Search events
 
-The search events provide data relevant to the shopper's intent. Insight into a shopper's intent helps merchants see how shoppers are searching for items, what they click on, and ultimately purchase or abandon. An example of how you might use this data is if you want to target existing shoppers who search for your top product, but never purchase the product.
+The search events provide data relevant to the shopper's intent. Insight into a shopper's intent helps merchants see how shoppers are searching for items, what they click, and ultimately purchase or abandon. An example of how you might use this data is if you want to target existing shoppers who search for your top product, but never purchase the product.
 
-Use the `searchRequest.id` and `searchResponse.id` fields found in both the `searchRequestSent` and `searchResponseReceived` events to cross reference a search request to the corresponding search response.
+Use the `searchRequest.id` and `searchResponse.id` fields found in both the `searchRequestSent` and `searchResponseReceived` events to cross-reference a search request to the corresponding search response.
 
 ### searchRequestSent
 
@@ -470,7 +470,7 @@ The B2B events contain [requisition list](https://experienceleague.adobe.com/doc
 
 |Description| XDM event name|
 |---|---|
-|Triggered when a shopper creates a new requisition list.|`commerce.requisitionListOpens`|
+|Triggered when a shopper creates a requisition list.|`commerce.requisitionListOpens`|
 
 #### Data collected from createRequisitionList
 
@@ -493,7 +493,7 @@ The following table describes the data collected for this event.
 
 |Description| XDM event name|
 |---|---|
-|Triggered when a shopper adds a product to an existing requistion list or while creating a new list.|`commerce.requisitionListAdds`|
+|Triggered when a shopper adds a product to an existing requisition list or while creating a list.|`commerce.requisitionListAdds`|
 
 #### Data collected from addToRequisitionList
 
@@ -557,7 +557,7 @@ The following table describes the data collected for this event.
 
 ## Back office events
 
-The back office events contain information about the status of an order, such as if an order was placed, cancelled, refunded, shipped, or completed. The data that these server-side events collect shows a 360 view of the shopper order. This view helps merchants better target or analyze the entire order status when developing marketing campaigns. For example, you can spot trends in certain product categories that perform well at different times of the year. Such as, winter clothes that sell better during colder months or certain product colors that shoppers are interested in over the years. In addition, order status data can help you calculate lifetime customer value by understanding a shopper's propensity to convert based on previous orders.
+The back office events contain information about the status of an order, such as if an order was placed, canceled, refunded, shipped, or completed. The data that these server-side events collect shows a 360 view of the shopper order. This view helps merchants better target or analyze the entire order status when developing marketing campaigns. For example, you can spot trends in certain product categories that perform well at different times of the year. Such as, winter clothes that sell better during colder months or certain product colors that shoppers are interested in over the years. In addition, order status data can help you calculate lifetime customer value by understanding a shopper's propensity to convert based on previous orders.
 
 >[!NOTE]
 >
@@ -580,7 +580,7 @@ The following table describes the data collected for this event.
 |`commerce.order.payments`|The list of payments for this order.|
 |`commerce.order.payments.paymentTransactionID`|Unique identifier for this payment transaction.|
 |`commerce.order.payments.paymentAmount`|The value of the payment.|
-|`commerce.order.payments.paymentType`|The method of payment for this order. Enumerated, custom values allowed.|
+|`commerce.order.payments.paymentType`|The method of payment for this order. Counted, custom values allowed.|
 |`commerce.order.payments.currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used, such as `USD` or `EUR`.|
 |`commerce.order.taxAmount`|The tax amount paid by the buyer as part of the final payment.|
 |`commerce.order.discountAmount`|Indicates the discount amount applied to the whole order.|
@@ -640,7 +640,7 @@ The following table describes the data collected for this event.
 |`commerce.order.purchaseOrderNumber`|Unique identifier assigned by the purchaser for this purchase or contract.|
 |`commerce.order.payments`|The list of payments for this order.|
 |`commerce.order.payments.currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used, such as `USD` or `EUR`.|
-|`commerce.order.payments.paymentType`|The method of payment for this order. Enumerated, custom values allowed.|
+|`commerce.order.payments.paymentType`|The method of payment for this order. Counted, custom values allowed.|
 |`commerce.order.payments.paymentAmount`|The value of the payment.|
 |`commerce.shipping`|Shipping details for one or more products.|
 |`commerce.shipping.shippingMethod`|The method of shipping chosen by the customer, such as standard delivery, expedited delivery, pick up in store, and so on.|
@@ -681,7 +681,7 @@ The following table describes the data collected for this event.
 |`commerce.order.payments`|The list of payments for this order.|
 |`commerce.order.payments.paymentTransactionID`|Unique identifier for this payment transaction.|
 |`commerce.order.payments.paymentAmount`|The value of the payment.|
-|`commerce.order.payments.paymentType`|The method of payment for this order. Enumerated, custom values allowed.|
+|`commerce.order.payments.paymentType`|The method of payment for this order. Counted, custom values allowed.|
 |`commerce.order.payments.currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used, such as `USD` or `EUR`.|
 |`commerce.order.priceTotal`|The total price of this order after all discounts and taxes have been applied.|
 |`commerce.order.purchaseOrderNumber`|Unique identifier assigned by the purchaser for this purchase or contract.|
@@ -774,7 +774,7 @@ The following table describes the data collected for this event.
 |`commerce.refunds`|The list of refunds for this order.|
 |`commerce.refunds.transactionID`|Unique identifier for this refund.|
 |`commerce.refunds.refundAmount`|The value of the refund.|
-|`commerce.refunds.refundPaymentType`|The method of payment for this order. Enumerated, custom values allowed.|
+|`commerce.refunds.refundPaymentType`|The method of payment for this order. Counted, custom values allowed.|
 |`commerce.refunds.currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used, such as `USD` or `EUR`.|
 |`personalEmail`|A personal email address.|
 |`personalEmail.address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards.|
@@ -809,7 +809,7 @@ The following table describes the data collected for this event.
 |`commerce.order.purchaseID`|Unique identifier assigned by the seller for this purchase or contract. There is no guarantee that the ID is unique.|
 |`commerce.order.returns`|The RMA (Return Merchandise Authorization) information for this order.|
 |`commerce.order.returns.returnID`|The unique identifier for this RMA (Return Merchandise Authorization).|
-|`commerce.order.returns.returnStatus`|The current status of the RMA (Return Merchandise Authorization), such as Pending, Closed, and so on.|
+|`commerce.order.returns.returnStatus`|The status of the RMA (Return Merchandise Authorization), such as Pending, Closed, and so on.|
 |`commerce.commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
 |`commerce.commerceScope.environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
 |`commerce.commerceScope.storeCode`|The unique store code. You can have many stores per website.|
@@ -854,7 +854,7 @@ The following table describes the data collected for this event.
 |`commerce.order.purchaseID`|Unique identifier assigned by the seller for this purchase or contract. There is no guarantee that the ID is unique.|
 |`commerce.order.returns`|The RMA (Return Merchandise Authorization) information for this order.|
 |`commerce.order.returns.returnID`|The unique identifier for this RMA (Return Merchandise Authorization).|
-|`commerce.order.returns.returnStatus`|The current status of the RMA (Return Merchandise Authorization), such as Pending, Closed, and so on.|
+|`commerce.order.returns.returnStatus`|The status of the RMA (Return Merchandise Authorization), such as Pending, Closed, and so on.|
 |`commerce.commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
 |`commerce.commerceScope.environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
 |`commerce.commerceScope.storeCode`|The unique store code. You can have many stores per website.|
@@ -899,7 +899,7 @@ The following table describes the data collected for this event.
 |`commerce.order.payments`|The list of payments for this order.|
 |`commerce.order.payments.paymentTransactionID`|Unique identifier for this payment transaction.|
 |`commerce.order.payments.paymentAmount`|The value of the payment.|
-|`commerce.order.payments.paymentType`|The method of payment for this order. Enumerated, custom values allowed.|
+|`commerce.order.payments.paymentType`|The method of payment for this order. Counted, custom values allowed.|
 |`commerce.order.payments.currencyCode`|The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code used, such as `USD` or `EUR`.|
 |`commerce.order.taxAmount`|The tax amount paid by the buyer as part of the final payment.|
 |`commerce.order.createdDate`|The time and date when a new order is created in the commerce system. For example, `2022-10-15T20:20:39+00:00`.|

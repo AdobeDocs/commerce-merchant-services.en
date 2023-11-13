@@ -1,6 +1,6 @@
 ---
 title: Release Notes
-description: The latest release information for the Data Connection extension from Adobe Commerce.
+description: The latest release information for the [!DNL Data Connection] extension from Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
 ---
@@ -8,15 +8,15 @@ feature: Personalization, Integration, Release Notes
 
 >[!IMPORTANT]
 >
->The Experience Platform connector has been renamed to Data Connection.
+>The Experience Platform connector has been renamed to [!DNL Data Connection].
 
-These release notes contain updates to the Data Connection extension and include:
+These release notes contain updates to the [!DNL Data Connection] extension and includes:
 
 ![New](../assets/new.svg) - New features
 ![Fix](../assets/fix.svg) - Fixes and improvements
 ![Bug](../assets/bug.svg) - Known issues
 
-For feature changes and fixes related to extensions used by the Data Connection extension, see **Supported service updates**.
+For feature changes and fixes related to extensions used by the [!DNL Data Connection] extension, see **Supported service updates**.
 
 See [Upcoming Releases](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html) to learn about release schedules and support.
 
@@ -24,7 +24,7 @@ See the developer documentation to [learn which Commerce versions support this m
 
 ## Supported service updates
 
-These release notes describe feature changes and fixes related to extensions used by the Data Connection extension.
+These release notes describe feature changes and fixes related to extensions used by the [!DNL Data Connection] extension.
 
 +++Supported service updates
 
@@ -52,7 +52,7 @@ _June 10, 2023_
 
 _March 30, 2023_
 
-![New](../assets/new.svg) - Added a new extension called `data-services-b2b` that includes [requisition list events](events.md#b2b-events) for B2B merchants.
+![New](../assets/new.svg) - Added an extension called `data-services-b2b` that includes [requisition list events](events.md#b2b-events) for B2B merchants.
 ![New](../assets/new.svg) - Added the `uniqueIdentifier` field to [search](events.md#search-events) events. This new field allows merchants to cross-reference search requests and search responses.
 
 _October 12, 2022_
@@ -68,7 +68,7 @@ _November 14, 2023_
 
 [!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.4 and newer
 
-![New](../assets/new.svg) - The Experience Platform connector has been renamed to Data Connection.
+![New](../assets/new.svg) - The Experience Platform connector has been renamed to [!DNL Data Connection].
 
 ## 3.0.0
 
@@ -79,7 +79,7 @@ _October 10, 2023_
 This is a major version release. [Edit](install.md#update-the-data-connection) your project's root composer.json file.
 
 ![New](../assets/new.svg) - General availability to [send historical order](connect-data.md#send-historical-order-data) data and status to the Experience Platform.
-![New](../assets/new.svg) - Added support for OAuth 2.0 when you [configure](connect-data.md#connect-commerce-data-to-adobe-experience-platform) the Data Connection extension.
+![New](../assets/new.svg) - Added support for OAuth 2.0 when you [configure](connect-data.md#connect-commerce-data-to-adobe-experience-platform) the [!DNL Data Connection] extension.
 ![New](../assets/new.svg) - Ended support for Adobe Commerce 2.4.3.
 
 ## 2.3.0
@@ -91,7 +91,7 @@ _June 27, 2023_
 ![New](../assets/new.svg) - Added ability to [turn off sending storefront events](connect-data.md#data-collection) to the Experience Platform.
 ![Fix](../assets/fix.svg) - Updated Content Security Policy configurations.
 ![Fix](../assets/fix.svg) - Fixed support for back office events on Commerce 2.4.7 version.
-![New](../assets/new.svg) - Added a notification message about cache invalidation when you save changes to the Data Connection extension form.
+![New](../assets/new.svg) - Added a notification message about cache invalidation when you save changes to the [!DNL Data Connection] extension form.
 
 
 ## 3.0.0-beta1 (internal only)
@@ -108,7 +108,7 @@ _March 30, 2023_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.3 and newer
 
-![New](../assets/new.svg) - Bundled the `commerce-data-export` and `saas-export` dependencies with the `data-connection` extension. Previously, you had to install these dependencies separately. These dependencies, along with merchant configuration, enables server side processing of [back office events](events.md#back-office-events).
+![New](../assets/new.svg) - Bundled the `commerce-data-export` and `saas-export` dependencies with the `data-connection` extension. Previously, you had to install these dependencies separately. These dependencies, along with merchant configuration, enables server-side processing of [back office events](events.md#back-office-events).
 ![New](../assets/new.svg) - Added new back office event called [`orderShipmentCompleted`](events.md#ordershipmentcompleted).
 
 ## 2.1.1
@@ -117,7 +117,7 @@ _February 28, 2023_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.3 and newer
 
-![New](../assets/new.svg) - Added support for PHP 8.2 for all Data Connection extension extensions.
+![New](../assets/new.svg) - Added support for PHP 8.2 for all [!DNL Data Connection] extensions.
 
 ## 2.1.0
 
@@ -125,7 +125,7 @@ _January 17, 2023_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.3 and newer
 
-![New](../assets/new.svg) - Updated the [Data Connection extension Admin](connect-data.md) so you can specify your own AEP Web SDK (alloy).
+![New](../assets/new.svg) - Updated the [[!DNL Data Connection] extension Admin](connect-data.md) so you can specify your own AEP Web SDK (alloy).
 ![Fix](../assets/fix.svg) Changed to using `identityMap` instead of `personID` when setting the primary identity for any data pushed to the edge.
 
 ## 2.0.1
