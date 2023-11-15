@@ -24,8 +24,8 @@ You can customize the look and feel of the PLP widget to match your site using [
 
 >[!NOTE]
 >
->Elements with custom classes within an Adobe Commerce theme are not inherited. These elements must be targeted by their specific class to match the custom classes;  primary action classes will not work on a widget button.
->Generic targeted elements within the CSS will be inherited; `button` will apply to widget buttons.
+>Elements with custom classes within an Adobe Commerce theme are not inherited. These elements must be targeted by their specific class to match the custom classes; primary action classes will not work on a widget button.
+>Generic targeted elements within the CSS are inherited; `button` applies to widget buttons.
 
 The highlighted divs contain the target class `ds-sdk-product-item__product-name`. 
 
@@ -123,7 +123,8 @@ Customize the product name by adding a rule to make them uppercase.
 
 * `.ds-sdk-input`
 * `.ds-sdk-input__label`
-* `.ds-sdk-input__options`
+* `.ds-sdk-product-item__product-swatch-group`
+* `ds-sdk-product-item__product-swatch-item`
 * `.ds-sdk-input_fieldset_show-more`
 
 ![Input](assets/plp-css-sdk-input.png)

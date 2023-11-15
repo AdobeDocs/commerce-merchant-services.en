@@ -5,6 +5,8 @@ exl-id: 04441e58-ffac-4335-aa26-893988a89720
 ---
 # Indexing
 
+The [!DNL Live Search] indexing process reads through the catalog for product attributes and builds an index so that products can be searched, filtered and presented rapidly.
+
 Product attribute properties (metadata) determine:
 
 * How an attribute can be used in the catalog
@@ -19,7 +21,7 @@ The [!DNL Live Search] API allows a client to sort by any product attribute that
 
 >[!NOTE]
 >
-> Commerce customers with [!DNL Live Search] can take advantage of faster price changes updates and synchornization time on their websites with the [SaaS price indexer](../price-index/index.md).
+> Commerce customers with [!DNL Live Search] can take advantage of faster price changes updates and synchronization time on their websites with the [SaaS price indexer](../price-index/index.md).
 
 ## Indexing pipeline
 

@@ -28,6 +28,7 @@ feature: Services, Search
       - [Manage Facets](facets-manage.md)
    - [Indexing](indexing.md)
    - [Performance](performance.md)
+   - [GraphQL](graphql.md)
    - [Category Merchandising](category-merch.md)
    - Search Merchandising {#rules}
       - [Overview](rules.md)
