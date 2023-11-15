@@ -28,7 +28,7 @@ These release notes describe feature changes and fixes related to extensions use
 
 +++Supported service updates
 
-_November 14, 2023_
+_November 16, 2023_
 
 ![Fix](../assets/fix.svg) - Fixed an issue where an error message incorrectly appeared when you placed an order that had multiple shipping addresses.
 ![Fix](../assets/fix.svg) - Fixed an issue in the [productPageView](events.md#productpageview) event where the `productListItems.priceTotal` event field was not converting the price after switching the currency on the store view.
@@ -64,11 +64,13 @@ _October 12, 2022_
 
 ## 3.1.0
 
-_November 14, 2023_
+_November 16, 2023_
 
 [!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.4 and newer
 
 ![New](../assets/new.svg) - The Experience Platform connector has been renamed to [!DNL Data Connection].
+![Fix](../assets/new.svg) - Added ability to log error response if Adobe IMS cannot generate the access token.
+![Fix](../assets/new.svg) - Added a notification message if you attempt to sync Historical Orders but have not specified account credentials.
 
 ## 3.0.0
 
