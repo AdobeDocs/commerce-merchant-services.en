@@ -24,6 +24,7 @@ _October 12, 2023_
 
 ![New](../assets/new.svg) Catalog Service supports the `inStock` flag for product variants.
 ![New](../assets/new.svg) `urlKey` and `externalId` have been added to the GraphQL schema.
+![New](../assets/new.svg) Downloadable products and gift cards are now supported.
 
 #### Known limitations
 
@@ -38,7 +39,6 @@ The following limitations can be solved by using the API Mesh and the Core Graph
 
 * Minimum Advertised Price
 * [Tier pricing](mesh.md)
-* Downloadable products and gift cards
 
 ## Previous versions
 
