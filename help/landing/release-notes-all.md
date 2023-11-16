@@ -29,7 +29,7 @@ Use the following table to find release notes and important information related 
       <td><strong>Integration services</strong>
         <p>Learn about the latest improvements to the integration services that enable our Commerce Services to connect with other services and Adobe extensions and products.</p>
           <ul>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/release-notes.html">Experience Platform Connector</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/release-notes.html">[!DNL Data Connection]</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html">Services Connector</a></li>
           </ul>
       </td>

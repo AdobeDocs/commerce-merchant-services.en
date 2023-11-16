@@ -1,21 +1,21 @@
 ---
-title: Install Adobe Experience Platform Connector
-description: Learn how to install, update, and uninstall the Adobe Experience Platform Connector from Adobe Commerce.
+title: Install [!DNL Data Connection]
+description: Learn how to install, update, and uninstall the [!DNL Data Connection] extension from Adobe Commerce.
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
 role: Admin, Developer
 feature: Install
 ---
-# Install Adobe Experience Platform connector
+# Install [!DNL Data Connection]
 
 Before you install the extension, [review the prerequisites](overview.md#prereqs).
 
 ## Install the extension
 
-The Experience Platform connector extension is available from the [Adobe Marketplace](https://commercemarketplace.adobe.com/magento-experience-platform-connector.html). When you install this extension from the command line of the server, it connects to your Adobe Commerce installation as a [service](../landing/saas.md). When the process is complete, **Experience Platform Connector** and **Commerce Services Connector** appear on the **System** menu under **Services** in the Commerce _Admin_.
+The [!DNL Data Connection] extension is available from the [Adobe Marketplace](https://commercemarketplace.adobe.com/magento-experience-platform-connector.html). When you install this extension from the command line of the server, it connects to your Adobe Commerce installation as a [service](../landing/saas.md). When the process is complete, **[!DNL Data Connection]** and **Commerce Services Connector** appear on the **System** menu under **Services** in the Commerce _Admin_.
 
->[!NOTE]
+>[!IMPORTANT]
 >
->![B2B for Adobe Commerce](../assets/b2b.svg) For B2B merchants, there is a separate extension you must install. This extension adds support for B2B specific events. [Learn more](#install-the-b2b-extension).
+>While the name of the extension has changed from Experience Platform connector to [!DNL Data Connection], the package name remains `experience-platform-connector` to support backward compatibility.
 
 1. To download the `experience-platform-connector` package, run the following from the command line:
 
@@ -33,13 +33,15 @@ The Experience Platform connector extension is available from the [Adobe Marketp
 
 1. (Optional) To include [!DNL Live Search] data, which comprises [search events](events.md#search-events), install the [[!DNL Live Search]](../live-search/install.md) extension.
 
+1. (Optional) To include B2B data, which comprises [requisition events](events.md#b2b-events), install the [B2B extension](#install-the-b2b-extension).
+
 ### Configure the orders connector
 
-After you install the `experience-platform-connector`, you must finalize installation of the `orders-connector` module based on the deployment type: on-premises or Adobe Commerce on Cloud infrastructure.
+After you install the `experience-platform-connector` extension, you must finalize installation of the `orders-connector` module based on the deployment type: on-premises or Adobe Commerce on Cloud infrastructure.
 
 #### On-premises
 
-In on-premises environments, you need to manually enable code generation and Adobe Commerce Events:
+In on-premises environments, you must manually enable code generation and Adobe Commerce Events:
 
    ```bash
    bin/magento events:generate:module
@@ -75,15 +77,15 @@ Download the `magento/experience-platform-connector-b2b` extension by running th
    composer require magento/experience-platform-connector-b2b
    ```
 
-## Update the Experience Platform connector {#update}
+## Update the [!DNL Data Connection] extension {#update}
 
-To update the Experience Platform connector, run the following from the command line:
+To update the [!DNL Data Connection] extension, run the following from the command line:
 
 ```bash
 composer update magento/experience-platform-connector --with-dependencies
 ```
 
-or, for B2B merchants:
+Or, for B2B merchants:
 
 ```bash
 composer update magento/experience-platform-connector-b2b --with-dependencies
@@ -109,12 +111,12 @@ To update to a major version such as from 2.0.0 to 3.0.0, edit the project's roo
    composer update magento/experience-platform-connector –-with-dependencies
    ```
 
-   or, for B2B merchants:
+   Or, for B2B merchants:
 
    ```bash
    composer update magento/experience-platform-connector-b2b --with-dependencies
    ```
 
-## Uninstall the Experience Platform connector {#uninstall}
+## Uninstall the [!DNL Data Connection] extension {#uninstall}
 
-To uninstall the Experience Platform connector, refer to [uninstall modules](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html).
+To uninstall the [!DNL Data Connection] extension, refer to [uninstall modules](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html).

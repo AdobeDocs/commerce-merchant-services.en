@@ -79,13 +79,13 @@ See [what's new in our documentation](whats-new.md) or [release notes](release-n
    </tr>
 </table>
 
-## Data services
+## Integration services
 
 <table>
 <tr>
   <td valign="top" width="200">
-      <img alt="[!DNL Experience Platform Connector]" src="assets/live-search.png" width="170px"/></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/overview.html"><strong>[!DNL Experience Platform Connector]</strong></a>  
+      <img alt="[!DNL Data Connection]" src="assets/live-search.png" width="170px"/></td>
+   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/overview.html"><strong>[!DNL Data Connection]</strong></a>  
     <div>Leverage the connection between Adobe Commerce and the Adobe Experience Platform edge to utilize Commerce data for other Adobe Experience Cloud products, such as Adobe Analytics and Adobe Target.</div>
   </td>
    </tr>
@@ -99,7 +99,7 @@ See [what's new in our documentation](whats-new.md) or [release notes](release-n
    </tr>
 </table>
 
-## Integration services
+## Data services
 
 <table>
 <tr>

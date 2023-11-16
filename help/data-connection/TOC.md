@@ -1,17 +1,17 @@
 ---
-user-guide-title: Adobe Experience Platform Connector for Adobe Commerce
-user-guide-description: This guide provides detailed instructions for using Adobe Experience Platform Connector for Adobe Commerce.
-breadcrumb-title: Adobe Experience Platform Connector for Adobe Commerce
+user-guide-title: "[!DNL Data Connection] extension for Adobe Commerce"
+user-guide-description: "This guide provides detailed instructions for using the [!DNL Data Connection] extension for Adobe Commerce."
+breadcrumb-title: "[!DNL Data Connection] extension for Adobe Commerce"
 role: Admin
 feature: Personalization, Integration
 recommendations: noDisplay
 ---
-# Adobe Experience Platform Connector for Adobe Commerce {#experience-platform-connector}
+# [!DNL Data Connection] extension for Adobe Commerce {#data-connection}
 
 - [Guide Overview](overview.md)
 - [Release Notes](release-notes.md)
 - Fundamentals {#fundamentals}
-   - [Install the Adobe Experience Platform connector extension](install.md)
+   - [Install the [!DNL Data Connection] extension](install.md)
    - [Connect Commerce Data to the Adobe Experience Platform](connect-data.md)
    - [Add Field Groups to XDM Schema](update-xdm.md)
    - [Integrate the Adobe Experience Platform Mobile SDK with Commerce](mobile-sdk-epc.md)

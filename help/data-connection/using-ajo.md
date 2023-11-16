@@ -20,18 +20,18 @@ By following these steps, you can learn how to listen to a `checkout` event gene
 Before you begin with these steps, ensure:
 
 - You are provisioned to use Adobe Journey Optimizer
-- You [configured](connect-data.md) the Experience Platform Connector
-- You [confirmed](connect-data.md#confirm-that-event-data-is-collected) your Commerce event data is arriving at the Experience Platform edge
+- You [configured](connect-data.md) the [!DNL Data Connection] extension
+- You [confirmed](connect-data.md#confirm-that-event-data-is-collected) that your Commerce event data is arriving at the Experience Platform edge
 
 ## Step 1: Create a user in your Commerce sandbox environment
 
-Create a user in your sandbox environment and confirm that user account information appears in Experience Platform. Ensure the email you specified is valid as that is used later in this section to send the abandoned cart email.
+Create a user in your sandbox environment and confirm that that user account information appears in Experience Platform. Ensure the email you specified is valid as that is used later in this section to send the abandoned cart email.
 
 1. Sign in or create an account in your Commerce sandbox environment.
 
     ![Sign in to your test account](assets/sign-in-account.png){width="700" zoomable="yes"}
     
-    With the Experience Platform Connector installed and configured, this account information is sent to the Experience Platform as a profile.
+    With the [!DNL Data Connection] extension installed and configured, this account information is sent to the Experience Platform as a profile.
 
 1. Confirm that your user account information appears in the **[!UICONTROL Profile]** section of Experience Platform.
 
@@ -88,12 +88,9 @@ Configure two events in Journey Optimizer: one event listens for the `commerce.c
     1. Set **[!UICONTROL Type]** to **[!UICONTROL Unitary]**.
     1. Set **[!UICONTROL Event id typ]e** to **[!UICONTROL Rule based]**.
     1. Set **[!UICONTROL Schema]** to your Commerce [schema](update-xdm.md).
-    1. Select **[!UICONTROL Fields]** and in the **[!UICONTROL Fields]** page that appears, select the fields that are useful for this event. 
-    
-       For example, select all fields under the **[!UICONTROL Product list items]**, **[!UICONTROL Commerce]**, **[!UICONTROL eventType]**, and **[!UICONTROL Web]**.
-       
+    1. Select **[!UICONTROL Fields]** and in the **[!UICONTROL Fields]** page that appears, select the fields that are useful for this event. For example, select all fields under the **[!UICONTROL Product list items]**, **[!UICONTROL Commerce]**, **[!UICONTROL eventType]**, and **[!UICONTROL Web]**.
     1. Click **[!UICONTROL OK]** to save the selected fields.
-    1. Click inside of the **[!UICONTROL Event id condition]** field and create a condition of `eventType` is equal to `commerce.checkouts` AND `personalEmail.address` is equal to the email address you used when you created the profile in the previous section.
+    1. Click inside the **[!UICONTROL Event id condition]** field and create a condition of `eventType` is equal to `commerce.checkouts` AND `personalEmail.address` is equal to the email address you used when you created the profile in the previous section.
 
         ![Journey Optimizer Set Condition](assets/ajo-set-condition.png){width="700" zoomable="yes"}
     
