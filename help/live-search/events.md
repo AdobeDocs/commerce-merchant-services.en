@@ -27,7 +27,6 @@ This table describes the events used by [!DNL Live Search] strategies.
 | Conversion: View to cart | Product Recs | page view<br>product view | Product detail page |
 | Conversion: View to cart | Product Recs | page view<br>add to cart | Product detail page<br>Product listing page<br>Cart<br>Wishlist |
 
-
 >[!NOTE]
 >
 >Data collection for the purposes of [!DNL Live Search] does not include personally identifiable information (PII). All user identifiers, such as cookie IDs and IP addresses, are strictly anonymized. [Learn more](https://www.adobe.com/privacy/experience-cloud.html).
