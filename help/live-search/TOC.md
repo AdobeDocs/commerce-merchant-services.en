@@ -42,6 +42,7 @@ feature: Services, Search
       - [Add Synonyms](synonyms-add.md)
       - [Manage Synonyms](synonyms-manage.md)
    - [Workspace](workspace.md)
+- [Events](events.md)
 - GraphQL queries {#graphql}
    - [attributeMetadata](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/attribute-metadata/)
    - [productSearch](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/)
