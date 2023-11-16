@@ -1,5 +1,5 @@
 ---
-title: [!DNL Live Search] Events
+title: '[!DNL Live Search] Events'
 description: Learn how events collect data for [!DNL Live Search].
 feature: Services, Eventing
 ---
