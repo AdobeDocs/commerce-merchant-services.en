@@ -5,6 +5,8 @@ exl-id: 04441e58-ffac-4335-aa26-893988a89720
 ---
 # Indexing
 
+The [!DNL Live Search] indexing process reads through the catalog for product attributes and builds an index so that products can be searched, filtered and presented rapidly.
+
 Product attribute properties (metadata) determine:
 
 * How an attribute can be used in the catalog

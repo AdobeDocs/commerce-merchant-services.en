@@ -54,6 +54,22 @@ To restrict customer groups using Catalog permissions:
 
 * [!DNL Live Search] can manage up to 200 synonyms per store view.
 
+## Language support
+
+[!DNL Live Search] widgets support the following languages:
+
+* en_US (default) 
+* de_DE
+* es_MX
+* fr_FR
+* it_IT
+* ja_JA
+* nl_NL
+* no_NO
+* pt_PT
+
+If the widget detects that the Commerce Admin language setting (_Stores_ > Settings > _Configuration_ > _General_ > Country Options) matches a supported language, it defaults to that language. Otherwise, the widgets default to English.  
+
 ## Category Merchandising
 
 Category Merchandising allows you to configure [!DNL Live Search] to work on the product category level.

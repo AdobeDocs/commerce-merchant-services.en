@@ -6,7 +6,7 @@ recommendations: noCatalog
 ---
 # Introduction to [!DNL Live Search]
 
-[!DNL Live Search] is a service for Adobe Commerce that replaces the standard search capabilities. The [!DNL Live Search] module is installed with Composer and connects your [!DNL Commerce] installation to the [!DNL Live Search] [service](../landing/saas.md). When it is configured, the default search text field is replaced with the [!DNL Live Search] text field.
+[!DNL Live Search] is a service for Adobe Commerce that replaces the standard search capabilities. The [!DNL Live Search] module is installed with Composer and connects your [!DNL Commerce] installation to the [!DNL Live Search] [service](../landing/saas.md). When it is configured, the default search text field is replaced with the [!DNL Live Search] text field. [!DNL Live Search] also installs the Product Listing Page (PLP) widget which provides robust filtering capabilities when browsing search results.
 
 [!DNL Live Search] appears on the *Marketing* menu under *SEO & Search* in the [!DNL Commerce] *Admin*.
 
@@ -20,7 +20,7 @@ The Adobe Commerce side of the architecture includes hosting the search *Admin*,
 * [Product Listing Page widget](plp-styling.md) provides a searchable product listing page with facets and synonym support.
 * AEM CIF components: The [Popover widget](https://github.com/adobe/aem-cif-guides-venia/pull/319) and the [PLP Widget](https://github.com/adobe/aem-cif-guides-venia/pull/320) allow AEM sites to take advantage of [!DNL Live Search].
 * [[!DNL Live Search] Admin](workspace.md) is where rules, facets, and synonyms are configured.
-* The Search Adapter is the default implementation of [!DNL Live Search].
+* The Search Adapter is the default implementation of [!DNL Live Search]. Recommended for headless and custom implementations.
 
 ## [!DNL Live Search] demo
 
