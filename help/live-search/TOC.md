@@ -44,5 +44,5 @@ feature: Services, Search
    - [Workspace](workspace.md)
 - [Events](events.md)
 - GraphQL queries {#graphql}
-   - [attributeMetadata](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/attribute-metadata/)
-   - [productSearch](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/)
+   - [attributeMetadata](https://developer.adobe.com/commerce/services/graphql/live-search/attribute-metadata/)
+   - [productSearch](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/)

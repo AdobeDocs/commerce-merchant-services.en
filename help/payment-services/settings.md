@@ -124,7 +124,7 @@ See [Payments options](payments-options.md#credit-card-fields) for more informat
 
 The [!UICONTROL Apple Pay] button payment option allows you to provide an [!UICONTROL Apple Pay] payment button in your store's checkout.
 
-See [Payments options](payments-options.md#apple-pay-buttob) for more information.
+You can only use Apple Pay if you complete [Apple Pay self-registration via Paypal](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) and then [configure Apple Pay](settings.md/#payment-buttons) for your stores. See [Payments options](payments-options.md#apple-pay-button) for more information.
 
 You can enable and configure the [!UICONTROL Apple Pay] button payment option:
 
