@@ -28,7 +28,7 @@ The category and product attribute requirements for faceting are similar to the 
 >
 > If there are more than 200 filterable attributes defined, it is not deterministic which 200 will actually be indexed.
 
-If you have a large number of attributes to contend with, consider combining attributes into a single 'meta-attribute'. For instance, if you selling shoes, rather than filtering by "Running", "Hiking", and "Dress" as separate attributes, combine these into an "Activity" attribute and set "Running", "Hiking", and "Dress" as attribute values.
+If you have a large number of attributes to contend with, consider combining attributes into a single 'meta-attribute'. For instance, shoes generally have numeric sizes, while shirts are commonly sized "S/M/L/XL". These two types of sizes can be combined into a single searchable attribute.
 
 | Setting | Description |
 |--- |--- |
