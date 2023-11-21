@@ -78,6 +78,15 @@ This video is an introduction to Category Merchandising.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424617)
 
+## Widget code repository
+
+The Product Listing Page widget and the Search Popover widget are both available for download from their github repository.
+
+This allows developers to fully customize the functionality and styling. These users host the code themselves while still taking advantage of the [!DNL Live Search] service.
+
+* [PLP widget](https://github.com/adobe/storefront-product-listing-page)
+* [Search bar](https://github.com/adobe/storefront-search-as-you-type)
+
 ## Inventory Management
 
 [!DNL Live Search] supports [Inventory Management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/introduction.html) capabilities in Commerce (formerly knows as Multi-Source Inventory, or MSI). To enable full support, you must [update](install.md#update) the dependency module `commerce-data-export` to version 102.2.0+.

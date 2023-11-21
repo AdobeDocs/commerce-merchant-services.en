@@ -24,6 +24,12 @@ The category and product attribute requirements for faceting are similar to the 
 * 200 filterable attributes
 * 200 searchable attributes
 
+>[!NOTE]
+>
+> If there are more than 200 filterable attributes defined, it is not deterministic which 200 will actually be indexed.
+
+If you have a large number of attributes to contend with, consider combining attributes into a single 'meta-attribute'. For example, shoes generally have numeric sizes, while shirts are commonly sized "S/M/L/XL". These two types of sizes can be combined into a single searchable attribute.
+
 | Setting | Description |
 |--- |--- |
 | [Category display settings](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/create/categories-display-settings.html) | Anchor - `Yes` |
