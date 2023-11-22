@@ -31,6 +31,10 @@ After you [configure your Commerce Services](connect.md#configure-commerce-servi
    | `Authorize`  |  Approves the purchase and puts a hold on the funds. The amount is not withdrawn until it is "captured" by the merchant. |
    | `Authorize and Capture`  | Approves the purchase and the merchant "captures" the funds. |
 
+   >[!IMPORTANT]
+   >
+   >[!DNL Payment Services] supports partial captures. A merchant can partially capture (invoice) parts of an order. For example, you could capture each item individually, or one item now and the rest later.
+
 1. Click **[!UICONTROL Save]**.
 1. Click **[!UICONTROL Go to Payment Services]** to be directed back to the [!DNL Payment Services] Home.
 1. [Clear your cache](https://docs.magento.com/user-guide/system/cache-management.html){target="_blank"}.
