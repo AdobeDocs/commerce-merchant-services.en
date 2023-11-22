@@ -2,6 +2,7 @@
 title: '[!DNL Live Search] Events'
 description: Learn how events collect data for [!DNL Live Search].
 feature: Services, Eventing
+exl-id: b0c72212-9be0-432d-bb8d-e4c639225df3
 ---
 # [!DNL Live Search] Events
 

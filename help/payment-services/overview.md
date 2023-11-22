@@ -52,7 +52,7 @@ See [Lifecycle policy](https://experienceleague.adobe.com/docs/commerce-operatio
 
 ### Accepted credit cards and currencies
 
-[!DNL Payment Services] accepts the currencies of the countries [in which it is available](#availability).
+[!DNL Payment Services] accepts the currencies of the countries [in which it is available](#availability). See [Currency configuration](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html) for more information.
 
 To see which currencies PayPal supports, see [Supported currencies documentation](https://developer.paypal.com/docs/reports/reference/paypal-supported-currencies/).
 
