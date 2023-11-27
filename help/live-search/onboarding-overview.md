@@ -1,5 +1,5 @@
 ---
-title: "Onboarding Overview"
+title: "Technical Overview"
 description: "[!DNL Live Search] onboarding flow, system requirements, boundaries, and limitations"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
