@@ -10,5 +10,4 @@ feature: Services, Price Indexer
 
 - [Guide Overview](index.md)
 - [Catalog Adapter](catalog-adapter.md)
-- [Installation](installation.md)
 
