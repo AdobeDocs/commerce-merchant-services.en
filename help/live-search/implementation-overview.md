@@ -5,16 +5,16 @@ recommendations: noCatalog
 ---
 # Implementation Overview
 
-[!DNL Live Search] for Adobe Commerce is a SaaS that provides performant, filterable and sortable search results for your online store.
+[!DNL Live Search] for Adobe Commerce is a SaaS product that provides performant, filterable, and sortable search results for your online store.
 This topic provides a high-level overview of how to install and configure [!DNL Live Search] for Adobe Commerce.
 
 ## [!DNL Live Search] components
 
 [!DNL Live Search] consists of two components:
 
-* Search Field/Popover - installing [!DNL Live Search] replaces the default search text field with a [!DNL Live Search] text field, which is delivered through the service in Javascript. Typing into this search field sends the query to the [!DNL Live Search] SaaS infrastructure and the results are returned within the [!DNL Live Search] popover widget, showing live results under the search text field.
+* Search Field/Popover - installing [!DNL Live Search] replaces the default search text field with a [!DNL Live Search] text field, which is delivered through the service in JavaScript. Typing into this search field sends the query to the [!DNL Live Search] SaaS infrastructure and the results are returned within the [!DNL Live Search] popover widget, showing live results under the search text field.
 * Product Listing Page (PLP) widget - When you click Enter to send the final search query, the search results are returned within the PLP widget, which is build and served from the Adobe SaaS infrastructure to your storefront. The PLP widget allows for filtering/faceting, depending on your store configuration.
-* [!DNL Live Search] admin - Where you can define facets, synonyms and other [!DNL Live Search] features
+* [!DNL Live Search] admin - Where you can define facets, synonyms, and other [!DNL Live Search] features
 
 ## Workflow overview
 
@@ -34,7 +34,7 @@ Getting your product data configured correctly ensures good search results for y
 
 #### Categories
 
-Product returned in [!DNL Live Search] must be assigned a [category](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/categories.html). In Luma, for example, products are put into categories such as "Men", "Women", and "Gear". Sub-categories are also set up for "Tops", "Bottoms", and "Watches". This allows for better granularity when filtering.
+Product returned in [!DNL Live Search] must be assigned a [category](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/categories.html). In Luma, for example, products are put into categories such as "Men", "Women", and "Gear". Subcategories are also set up for "Tops", "Bottoms", and "Watches". This allows for better granularity when filtering.
 
 #### Searchable and filterable fields
 
@@ -48,7 +48,7 @@ Each of these attributes can be defined as "searchable" in the admin. When set a
 
 ## [!DNL Live Search] workspace
 
-The [!DNL Live Search] [workspace](workspace.md) is the area in the admin where you configure [!DNL Live Search] features such as synonyms, facets and Category Merchandising.
+The [!DNL Live Search] [workspace](workspace.md) is the area in the admin where you configure [!DNL Live Search] features such as synonyms, facets, and Category Merchandising.
 
 ## Customizing widgets
 
@@ -57,7 +57,7 @@ Most store owners will want to ensure that the [!DNL Live Search] widgets confor
 The popover and PLP widgets can be styled by defining custom CSS rules as needed. See [Styling Popover Elements](storefront-popover-styling.md) and [Product Listing Page Widget](plp-styling.md).
 
 If you wish to extend the functionality of the widgets, the source code for each is available in a public repo.
-In this scenario, you can customize the javascript for your own needs and then host your custom code on your site. This custom script communicates with the [!DNL Live Search] service and returns the results like normal, allowing you to control the functionality of the widget.
+In this scenario, you can customize the JavaScript for your own needs and then host your custom code on your site. This custom script communicates with the [!DNL Live Search] service and returns the results like normal, allowing you to control the functionality of the widget.
 
 * [PLP widget repo](https://github.com/adobe/storefront-product-listing-page)
 * [Search bar repo](https://github.com/adobe/storefront-search-as-you-type)
