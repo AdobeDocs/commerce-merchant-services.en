@@ -4,7 +4,7 @@ description: "[!DNL Live Search] onboarding flow, system requirements, boundarie
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
 ---
-# Onboarding Overview
+# Technical Overview
 
 To get started using [!DNL Live Search] for Adobe Commerce, complete the onboarding process to install the extension, configure your API keys, and synchronize your catalog.
 
@@ -46,7 +46,8 @@ To restrict customer groups using Catalog permissions:
 
 ### Rules
 
-* Maximum number of rules per store view is 50.
+* Maximum number of search merchandising rules per store view is 50.
+* Category merchandising can have one rule per category.
 * Maximum number of conditions per rule is 10.
 * Maximum number of events per rule is 25.
 
