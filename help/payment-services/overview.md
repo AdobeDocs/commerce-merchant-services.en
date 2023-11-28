@@ -40,7 +40,7 @@ Whether you are a small business, mid-market contender, or large enterprise, thi
 
 [!DNL Payment Services] is available for [!DNL Adobe Commerce] and [!DNL Magento Open Source]. The [!DNL Payment Services] extension is now compatible with [!DNL Adobe Commerce] versions 2.4.x.
 
-Currently, [!DNL Payment Services] is available in the following countries:
+Currently, [!DNL Payment Services] is available to merchants in the following countries:
 
 * United States (US)
 * Canada (CA)
