@@ -11,7 +11,6 @@ feature: Services, Search
 - [Introduction to [!DNL Live Search]](overview.md)
 - [Release Notes](release-notes.md)
 - Onboard Live Search {#onboard}
-   - [Installation Overview](implementation-overview.md)
    - [Technical Overview](onboarding-overview.md)
    - [Install [!DNL Live Search]](install.md)
 - [!DNL Live Search] Storefront {#live-search-storefront}
