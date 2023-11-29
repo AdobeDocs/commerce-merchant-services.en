@@ -36,7 +36,7 @@ The Adobe Commerce side of the architecture includes hosting the search *Admin*,
 
 Getting your product data configured correctly ensures good search results for your customers. There are a couple setup steps required.
 
-#### 4. Set categories
+#### Set categories
 
 Product returned in [!DNL Live Search] must be assigned a [category](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/categories.html). In Luma, for example, products are put into categories such as "Men", "Women", and "Gear". Subcategories are also set up for "Tops", "Bottoms", and "Watches". This allows for better granularity when filtering.
 

@@ -8,13 +8,13 @@ recommendations: noCatalog
 
 [!DNL Live Search] for Adobe Commerce delivers a fast, relevant, and intuitive search experience at no additional cost. [!DNL Live Search] powered by [Adobe Sensei](https://www.adobe.com/sensei.html) uses artificial intelligence and machine-learning algorithms to perform a deep analysis of aggregated visitor data. This data, when combined with your Adobe Commerce catalog, results in a relevant and personalized shopping experiences. 
 
-[!DNL Live Search] has three areas for administrators:
+## Learn more
 
-* Storefront: Use CSS styling to customize the [!DNL storefront popover].
-* Admin: Use this area to access the configuration and setup.
-* Command-line interface: Use this tool to execute installation and backend configuration tasks.
+* Discover the basics in the [Introduction to [!DNL Live Search]](overview.md)
+* Get a [Technical Overview](onboarding-overview.md) of [!DNL Live Search]
+* Read the [Installation Guide](install.md) to get started with [!DNL Live Search]
 
-## Additional documentation
+## Commerce documentation
 
 | Guide | Description |
 |------ | ----------- |
