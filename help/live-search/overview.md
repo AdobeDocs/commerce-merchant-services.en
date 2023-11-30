@@ -14,7 +14,7 @@ The Adobe Commerce side of the architecture includes hosting the search *Admin*,
 
 ## Live Search components
 
-* [!DNL Live Search] [popover](storefront-popover.md) is the box that opens under the search field that contains the search results.
+* [!DNL Live Search] [popover widget](storefront-popover.md) is the box that opens under the search field that contains the search results.
 * [Product Listing Page widget](plp-styling.md) provides a searchable product listing page with facets and synonym support.
 * AEM CIF components: The [Popover widget](https://github.com/adobe/aem-cif-guides-venia/pull/319) and the [PLP Widget](https://github.com/adobe/aem-cif-guides-venia/pull/320) allow AEM sites to take advantage of [!DNL Live Search].
 * [[!DNL Live Search] Admin](workspace.md) is where rules, facets, and synonyms are configured.
@@ -67,7 +67,6 @@ In this scenario, you can customize the JavaScript for your own needs and then h
 * [Search bar repo](https://github.com/adobe/storefront-search-as-you-type)
 
 Get more details about [!DNL Live Search] in the [Technical Overview](technical-overview.md).
-
 
 ## [!DNL Live Search] demo
 
