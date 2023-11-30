@@ -11,7 +11,7 @@ recommendations: noCatalog
 ## Learn more
 
 * Discover the basics in the [Introduction to [!DNL Live Search]](overview.md)
-* Get a [Technical Overview](onboarding-overview.md) of [!DNL Live Search]
+* Get a [Technical Overview](technical-overview.md) of [!DNL Live Search]
 * Read the [Installation Guide](install.md) to get started with [!DNL Live Search]
 
 ## Commerce documentation

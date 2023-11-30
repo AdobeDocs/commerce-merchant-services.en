@@ -66,7 +66,7 @@ In this scenario, you can customize the JavaScript for your own needs and then h
 * [PLP widget repo](https://github.com/adobe/storefront-product-listing-page)
 * [Search bar repo](https://github.com/adobe/storefront-search-as-you-type)
 
-Get more details about [!DNL Live Search] in the [Technical Overview](onboarding-overview.md).
+Get more details about [!DNL Live Search] in the [Technical Overview](technical-overview.md).
 
 
 ## [!DNL Live Search] demo
