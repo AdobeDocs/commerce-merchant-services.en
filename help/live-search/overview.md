@@ -25,17 +25,17 @@ The Adobe Commerce side of the architecture includes hosting the search *Admin*,
 
 ### 1. Installation
 
-[!DNL Live Search] is [installed](install.md) into your Adobe Commerce instance through Composer. This installs the required modules that connect to the service and configures the Commerce instance to override the default search field. It also installs Commerce admin options for configuring the service.
+[!DNL Live Search] is [installed](install.md) into your Adobe Commerce instance through [Composer](https://getcomposer.org/). This installs the required modules that connect to the service and configures the Commerce instance to override the default search field. It also installs Commerce admin options for configuring the service.
 
 ### 2. Sync data
 
-[!DNL Live Search] moves catalog data to Adobe's SaaS infrastructure. The data is indexed and search results are delivered from this index directly to the storefront. Depending on the size and complexity, this can take from 30 minutes to a couple hours.
+[!DNL Live Search] moves catalog data to Adobe's SaaS infrastructure. The data is indexed and search results are delivered from this index directly to the storefront. Depending on the size and complexity, indexing can take from 30 minutes to a couple hours.
 
 ### 3. Configure data
 
-Getting your product data configured correctly ensures good search results for your customers. There are a couple setup steps required.
+Getting your product data configured correctly ensures good search results for your customers. There are a couple setup steps required: assigning categories and configuring attributes.
 
-#### Set categories
+#### Assign categories
 
 Product returned in [!DNL Live Search] must be assigned a [category](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/categories.html). In Luma, for example, products are put into categories such as "Men", "Women", and "Gear". Subcategories are also set up for "Tops", "Bottoms", and "Watches". This allows for better granularity when filtering.
 
