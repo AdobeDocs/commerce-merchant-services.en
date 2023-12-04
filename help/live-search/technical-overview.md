@@ -23,6 +23,10 @@ This topic reviews technical requirements and tips for installing and optimizing
 
 [!DNL Live Search] communicates through the endpoint at `https://catalog-service.adobe.io/graphql`.
 
+>[!NOTE]
+>
+>As [!DNL Live Search] does not have access to the complete product database, [!DNL Live Search] GraphQL and Commerce core GraphQL will not have complete parity.
+
 ## Boundaries and thresholds
 
 Currently, the [!DNL Live Search] search/category API has the following supported limits and static boundaries:

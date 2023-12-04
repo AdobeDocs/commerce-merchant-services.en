@@ -43,7 +43,7 @@ Product returned in [!DNL Live Search] must be assigned a [category](https://exp
 
 Products are assigned [attributes](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) that can be used for searching and filtering. Attributes are things such as "Color", "Size", "Material Type". With these attributes, users can look for "green tops". Each product may have many attributes defined in the Commerce admin.
 
-Each of these attributes can be defined as "searchable" in the admin. When set as "searchable", those attributes are available to be searched by [!DNL Live Search].
+Each of these attributes can be defined as ["searchable"](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html) in the admin. When set as "searchable", those attributes are available to be searched by [!DNL Live Search].
 
 [Facets](facets.md) are product attributes that are defined in [!DNL Live Search] to be filterable. Any filterable attribute may be set as a facet in [!DNL Live Search] but there are limits to how many facets can be searched at one time.
 
