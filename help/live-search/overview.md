@@ -53,6 +53,10 @@ Each of these attributes can be defined as ["searchable"](https://experienceleag
 
 The [!DNL Live Search] [workspace](workspace.md) is the area in the admin where you configure [!DNL Live Search] features such as synonyms, facets, and Category Merchandising.
 
+## Events
+
+[!DNL Live Search] uses [events](events.md) to calculate [Intelligent Merchandising](category-merch.md) and [performance](performance.md) dashboards. Eventing is provided with default implementations. Eventing for headless storefronts should be manually enabled.
+
 ## Customizing widgets
 
 Most store owners will want to ensure that the [!DNL Live Search] widgets conform to their store look and feel.
