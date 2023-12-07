@@ -76,7 +76,7 @@ _December 7, 2023_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
-![New](../assets/new.svg)<!-- PAY-5047 --> The credit/debit card brand or payment method type is now available on the order confirmation page on the storefront, in the order confirmation email sent to the shopper, and in the [order details view](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-processing.html#view-an-order) in the Commerce Admin (visible to both the shopper and merchant).
+![New](../assets/new.svg)<!-- PAY-5047 --> The credit/debit card brand or payment method type is now available on the customer order page on the storefront, in the order confirmation email sent to the shopper, and in the [order details view](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-processing.html#view-an-order) in the Commerce Admin.
 
 ## v2.3.0
 
