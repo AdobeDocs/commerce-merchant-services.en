@@ -49,7 +49,7 @@ In this scenario, storefront operations are interrupted while the [!DNL Live Sea
 1. Run the following commands to disable [!DNL OpenSearch] and related modules, and install [!DNL Live Search]:
 
    ```bash
-   bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch7 Magento_OpenSearch Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch Magento_ElasticsearchCatalogPermissionsGraphQl
+   bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch7 Magento_OpenSearch Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch Magento_ElasticsearchCatalogPermissionsGraphQl Magento_LiveSearchProductListing
    ```
 
    ```bash
