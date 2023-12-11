@@ -18,7 +18,7 @@ The Adobe Commerce side of the architecture includes hosting the search *Admin*,
 
 * [!DNL Live Search] [popover](storefront-popover.md) is the box that opens under the search field that contains the search results.
 * [Product Listing Page widget](plp-styling.md) provides a searchable product listing page with facets and synonym support.
-* AEM CIF components: The [Popover widget](https://github.com/adobe/aem-cif-guides-venia/pull/319) and the [PLP Widget](https://github.com/adobe/aem-cif-guides-venia/pull/320) allow AEM sites to take advantage of [!DNL Live Search].
+* AEM CIF components: The [Popover widget](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/live-search-popover.html?lang=en) and the [PLP Widget](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/live-search-plp.html) allow AEM sites to take advantage of [!DNL Live Search].
 * [[!DNL Live Search] Admin](workspace.md) is where rules, facets, and synonyms are configured.
 * The Search Adapter is the default implementation of [!DNL Live Search].
 
