@@ -25,7 +25,7 @@ The Adobe Commerce side of the architecture includes hosting the search *Admin*,
 
 ### 1. Installation
 
-[!DNL Live Search] is [installed](install.md) into your Adobe Commerce instance through [Composer](https://getcomposer.org/). This installs the required modules that connect to the service and configures the Commerce instance to override the default search field. It also installs Commerce admin options for configuring the service.
+[!DNL Live Search] is [installed](install.md) into your Adobe Commerce instance through [Composer](https://getcomposer.org/). This installs the required modules that connect to the service and configures the Commerce instance to override the default search field. It also installs Commerce Admin options for configuring the service.
 
 ### 2. Sync data
 
@@ -51,7 +51,7 @@ Each of these attributes can be defined as ["searchable"](https://experienceleag
 
 ## [!DNL Live Search] workspace
 
-The [!DNL Live Search] [workspace](workspace.md) is the area in the admin where you configure [!DNL Live Search] features such as synonyms, facets, and Category Merchandising.
+The [!DNL Live Search] [workspace](workspace.md) is the area in the Amin where you configure [!DNL Live Search] features such as synonyms, facets, and Category Merchandising.
 
 ## Events
 
