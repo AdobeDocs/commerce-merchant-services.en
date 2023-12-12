@@ -11,7 +11,7 @@ feature: Services, Search
 - [Introduction to [!DNL Live Search]](overview.md)
 - [Release Notes](release-notes.md)
 - Onboard Live Search {#onboard}
-   - [Onboarding Overview](onboarding-overview.md)
+   - [Technical Overview](technical-overview.md)
    - [Install [!DNL Live Search]](install.md)
 - [!DNL Live Search] Storefront {#live-search-storefront}
    - [Product Listing Page Widget](plp-styling.md)
@@ -28,6 +28,7 @@ feature: Services, Search
       - [Manage Facets](facets-manage.md)
    - [Indexing](indexing.md)
    - [Performance](performance.md)
+   - [GraphQL](graphql.md)
    - [Category Merchandising](category-merch.md)
    - Search Merchandising {#rules}
       - [Overview](rules.md)
@@ -41,6 +42,7 @@ feature: Services, Search
       - [Add Synonyms](synonyms-add.md)
       - [Manage Synonyms](synonyms-manage.md)
    - [Workspace](workspace.md)
+- [Events](events.md)
 - GraphQL queries {#graphql}
-   - [attributeMetadata](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/attribute-metadata/)
-   - [productSearch](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/)
+   - [attributeMetadata](https://developer.adobe.com/commerce/services/graphql/live-search/attribute-metadata/)
+   - [productSearch](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/)

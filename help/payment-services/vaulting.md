@@ -18,6 +18,10 @@ They can also easily delete their vaulted credit cards from [Stored Payment Meth
 
 ![Stored Payment Methods in My Account](assets/stored-payment-methods.png){width="400" zoomable="yes"}
 
+>[!WARNING]
+>
+>PayPal can currently store a maximum of five vaulted cards.
+
 ## Enable vaulting
 
 You can enable credit card vaulting---for customers _and_ merchants in the Admin---for your stores in [!DNL Payment Services] [Settings](settings.md#card-vaulting).

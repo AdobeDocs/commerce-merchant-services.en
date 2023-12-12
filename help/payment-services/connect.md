@@ -31,11 +31,16 @@ See a [list of available Commerce Services that use the API](https://docs.magent
 To learn how to generate an API key for either sandbox or production environments, see [Credentials](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html#apikey).
 
 >[!IMPORTANT]
+>
 >It is recommended that you do not regenerate an API key pair *and* change the SaaS identifier and/or data space on an active production instance. You will lose data for your instance if they are modified.
 
 ## Configure Commerce Services
 
 The same API key can be used across instances, but each instance must have its own [SaaS Data Space](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html#saasenv).
+
+>[!NOTE]
+>
+>Merchants must use the same keys generated for the MageID for their Payment entitlements.
 
 Now that you have obtained your credentials, you can configure your SaaS project and Saas Data Space.
 

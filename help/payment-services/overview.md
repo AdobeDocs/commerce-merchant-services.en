@@ -34,13 +34,13 @@ Whether you are a small business, mid-market contender, or large enterprise, thi
 * [**Payment options**](payments-options.md)---Set the payment options to customize the methods available for your store (or multistore) customers.
 * **Cash flow management financial reporting**---Synchronize [payment details](order-payment-status.md) with orders to get full transparency to the processed volume, payment balance, [payouts](payouts.md), and detailed [transaction-level reporting](transactions.md) for financial reconciliation and the utmost in transaction visibility.
 * **Transparent pricing**---Pricing is clear and upfront; what you see is what you get.
-* **Efficient checkout experience**---Remove any barriers to a fast and simple checkout, and create loyal customers, with [card vaulting](https://experienceleague-review.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html) and [Instant Purchase](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html) (enabled by default for Adobe Commerce) features.
+* **Efficient checkout experience**---Remove any barriers to a fast and simple checkout, and create loyal customers, with [card vaulting](vaulting.md) and [Instant Purchase](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html) (enabled by default for Adobe Commerce) features.
 
 ## Availability
 
 [!DNL Payment Services] is available for [!DNL Adobe Commerce] and [!DNL Magento Open Source]. The [!DNL Payment Services] extension is now compatible with [!DNL Adobe Commerce] versions 2.4.x.
 
-Currently, [!DNL Payment Services] is available in the following countries:
+Currently, [!DNL Payment Services] is available to merchants in the following countries:
 
 * United States (US)
 * Canada (CA)
@@ -52,7 +52,7 @@ See [Lifecycle policy](https://experienceleague.adobe.com/docs/commerce-operatio
 
 ### Accepted credit cards and currencies
 
-[!DNL Payment Services] accepts the currencies of the countries [in which it is available](#availability).
+[!DNL Payment Services] accepts the currencies of the countries [in which it is available](#availability). See [Currency configuration](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html) for more information.
 
 To see which currencies PayPal supports, see [Supported currencies documentation](https://developer.paypal.com/docs/reports/reference/paypal-supported-currencies/).
 

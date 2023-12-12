@@ -22,5 +22,5 @@ Initially the [scope](https://experienceleague.adobe.com/docs/commerce-admin/sta
 | [Synonyms](synonyms.md) | Extend the reach of search to include words shoppers might use to find products that differ from those in your catalog. |
 | [Search Merchandising](rules.md) | Shape the search experience with logical rules that trigger scheduled actions. Boost, bury, pin, or hide products to calibrate search results to support your business goals. |
 | [Category Merchandising](category-merch.md) | Apply rules and Intelligent Merchandising on the Category level. |
-| [GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/) | Developers who are logged into the Admin of your store can compose and test queries with actual catalog data. To learn more, go to [GraphQL Overview](https://developer.adobe.com/commerce/webapi/graphql/) in the [!DNL Live Search] developer documentation. |
+| [GraphQL](graphql.md) | Developers who are logged into the Admin of your store can compose and test queries with actual catalog data. To learn more, go to [GraphQL Overview](https://developer.adobe.com/commerce/webapi/graphql/) in the [!DNL Live Search] developer documentation. |
 | [Settings](settings.md) | Determine how price facet values are grouped by price range in the storefront and set the indexing language. |

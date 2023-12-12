@@ -70,6 +70,22 @@ _June 28, 2021_
 
 +++
 
+## v2.3.1
+
+_December 7, 2023_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+![New](../assets/new.svg)<!-- PAY-5047 --> The credit/debit card brand or payment method type is now available on the customer order page on the storefront, in the order confirmation email sent to the shopper, and in the [order details view](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-processing.html#view-an-order) in the Commerce Admin.
+
+## v2.3.0
+
+_December 1, 2023_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+![New](../assets/new.svg)<!-- PAY-4381 --> [Payment Services now supports GraphQL integration](https://developer.adobe.com/commerce/webapi/graphql/payment-services/). With GraphQL support for PayPal payment buttons, hosted fields, and Apple Pay, Payment Services now supports a headless Commerce setup.
+
 ## v2.2.1
 
 _September 27, 2023_

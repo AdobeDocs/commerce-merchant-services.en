@@ -10,9 +10,12 @@ The [!DNL Live Search Product Listing Page Widget] (PLP) uses the Commerce Servi
 ## Enabling the PLP widget
 
 When the [!DNL Live Search] service is installed, the default search functionality is converted to [!DNL Live Search] automatically.
-The PLP widget must be enabled in the Admin.
 
-1. Go to **Stores** > Settings > **Configuration** > **[!DNL Live Search]** > **Storefront Features** and set **Enable Product Listing Widgets** to "Yes".
+The [!DNL Live Search] PLP widget is enabled by default for new installations. If you are upgrading [!DNL Live Search] and the PLP widget has already been turned off, it will remain so.
+
+To disable the PLP widget:
+
+1. Go to **Stores** > Settings > **Configuration** > **[!DNL Live Search]** > **Storefront Features** and set **Enable Product Listing Widgets** to "No".
 1. Select **Save Config** to save the setting.
 
 ## Styling example
@@ -21,8 +24,8 @@ You can customize the look and feel of the PLP widget to match your site using [
 
 >[!NOTE]
 >
->Elements with custom classes within an Adobe Commerce theme are not inherited. These elements must be targeted by their specific class to match the custom classes;  primary action classes will not work on a widget button.
->Generic targeted elements within the CSS will be inherited; `button` will apply to widget buttons.
+>Elements with custom classes within an Adobe Commerce theme are not inherited. These elements must be targeted by their specific class to match the custom classes; primary action classes will not work on a widget button.
+>Generic targeted elements within the CSS are inherited; `button` applies to widget buttons.
 
 The highlighted divs contain the target class `ds-sdk-product-item__product-name`. 
 
@@ -120,7 +123,8 @@ Customize the product name by adding a rule to make them uppercase.
 
 * `.ds-sdk-input`
 * `.ds-sdk-input__label`
-* `.ds-sdk-input__options`
+* `.ds-sdk-product-item__product-swatch-group`
+* `ds-sdk-product-item__product-swatch-item`
 * `.ds-sdk-input_fieldset_show-more`
 
 ![Input](assets/plp-css-sdk-input.png)

@@ -42,7 +42,6 @@ The page size of the [!DNL popover] determines how many lines of autocompleted p
 
 The [Catalog Service for Adobe Commerce](../catalog-service/overview.md) extension provides rich view-model catalog data to quickly and fully render product-related storefront experiences. Catalog Service can be used in conjunction with Live Search to provide functionality that is not currently supported by the native extension:
 
-* Color swatches
 * Extended attributes
 * Other product information can be brought in
 

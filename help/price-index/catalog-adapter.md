@@ -13,7 +13,7 @@ The Adobe Commerce Product Price indexer is disabled and cannot be turned on wit
 ## Requirements
 
 * Adobe Commerce 2.4.4+
-* One of the following Commerce Services installed:
+* Have both of the following Commerce Services installed:
 
     * [Catalog Service](../catalog-service/overview.md)
     * [Live Search](../live-search/guide-overview.md)
@@ -28,14 +28,14 @@ Once those services are installed, run the following command:
 composer require adobe-commerce/catalog-adapter
 ```
 
-## Renable the Adobe Commerce Product Price indexer
+## Re-enable the Adobe Commerce Product Price indexer
 
 If you have third-party applications that rely on the default Adobe Commerce Product Price indexer, it can be re-enabled with the following commands:
 
 ```bash
 # re-enable Product Price indexer
 bin/magento module:disable Magento_PriceIndexerDisabler
-# reindex Product Price indexer 
+# re-index Product Price indexer 
 bin/magento index:reindex catalog_product_price
 ```
 
@@ -72,4 +72,4 @@ The following are some common `Catalog Adapter` scenarios.
 * A merchant with a headless Commerce instance with the required services installed (Live Search, Product Recommendations, Catalog Service)
 * No reliance on the default Adobe Commerce Product Price indexer
 
-1. Install "price disabler" from the catalog adapter package
+1. Install the `magento/module-price-indexer-disabler` module from the catalog adapter package.

@@ -1,12 +1,12 @@
 ---
-title: "Onboarding Overview"
+title: "Technical Overview"
 description: "[!DNL Live Search] onboarding flow, system requirements, boundaries, and limitations"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
 ---
-# Onboarding Overview
+# Technical Overview
 
-To get started using [!DNL Live Search] for Adobe Commerce, complete the onboarding process to install the extension, configure your API keys, and synchronize your catalog.
+This topic reviews technical requirements and tips for installing and optimizing [!DNL Live Search] for Adobe Commerce.
 
 ## Requirements {#requirements}
 
@@ -23,13 +23,17 @@ To get started using [!DNL Live Search] for Adobe Commerce, complete the onboard
 
 [!DNL Live Search] communicates through the endpoint at `https://catalog-service.adobe.io/graphql`.
 
+>[!NOTE]
+>
+>As [!DNL Live Search] does not have access to the complete product database, [!DNL Live Search] GraphQL and Commerce core GraphQL will not have complete parity.
+
 ## Boundaries and thresholds
 
 Currently, the [!DNL Live Search] search/category API has the following supported limits and static boundaries:
 
 ### Indexing
 
-* Indexes up to 300 product attributes per store view.
+* [Indexes](indexing.md) up to 300 product attributes per store view.
 * Indexes only products from the Adobe Commerce database.
 * CMS pages are not indexed.
 
@@ -46,21 +50,47 @@ To restrict customer groups using Catalog permissions:
 
 ### Rules
 
-* Maximum number of rules per store view is 50.
+* Maximum number of search merchandising [rules](rules.md) per store view is 50.
+* Category merchandising can have one rule per category.
 * Maximum number of conditions per rule is 10.
 * Maximum number of events per rule is 25.
 
 ### Synonyms
 
-* [!DNL Live Search] can manage up to 200 synonyms per store view.
+* [!DNL Live Search] can manage up to 200 [synonyms](synonyms.md) per store view.
+
+## Language support
+
+[!DNL Live Search] widgets support the following languages:
+
+* en_US (default) 
+* de_DE
+* es_MX
+* fr_FR
+* it_IT
+* ja_JA
+* nl_NL
+* no_NO
+* pt_PT
+
+If the widget detects that the Commerce Admin language setting (_Stores_ > Settings > _Configuration_ > _General_ > Country Options) matches a supported language, it defaults to that language. Otherwise, the widgets default to English.  
 
 ## Category Merchandising
 
-Category Merchandising allows you to configure [!DNL Live Search] to work on the product category level.
+[Category Merchandising](category-merch.md) allows you to configure [!DNL Live Search] to work on the product category level.
 
 This video is an introduction to Category Merchandising.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424617)
+
+## Widget code repository
+
+The Product Listing Page widget and the Search Popover widget are both available for download from their github repository.
+
+This allows developers to fully customize the functionality and styling. These users host the code themselves while still taking advantage of the [!DNL Live Search] service.
+
+* [PLP widget](https://github.com/adobe/storefront-product-listing-page)
+* [Search bar](https://github.com/adobe/storefront-search-as-you-type)
 
 ## Inventory Management
 
@@ -103,7 +133,7 @@ To use [!DNL Live Search] with PWA Studio, integrators must also:
 ## Not currently supported
 
 * The [Advanced Search](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#advanced-search) module is disabled when [!DNL Live Search] is installed, and the Advanced Search link in the storefront footer is removed.
-* [Tier Price](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-tier.html) is not supported in the Live Search Popover and Product Listing Page Widget.
+* [Tier Pricing](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-tier.html) and [Special Pricing](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-special.html) are not supported in the [!DNL Live Search] Popover and Product Listing Page Widget.
 
 ## Cookies
 

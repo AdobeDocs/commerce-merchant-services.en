@@ -24,6 +24,10 @@ The onboarding process for [!DNL Product Recommendations] requires access to the
 - Adobe Commerce on premise (EE) : 2.4.4+
 - Adobe Commerce on Cloud (ECE) : 2.4.4+
 
+## Endpoint
+
+[!DNL Product Recommendations] communicates through the endpoint at `https://catalog-service.adobe.io/graphql`.
+
 ### Page Builder support
 
 [!DNL Product Recommendations] can be added to a page as a Page Builder content type. To add Page Builder support to Product Recommendations, refer to [Install and Configure](install-configure.md).

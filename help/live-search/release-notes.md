@@ -35,13 +35,47 @@ _June 13, 2023_
 
 ![New](../assets/new.svg) [!DNL Live Search] customers can now take advantage of the new [SaaS price indexer](../price-index/index.md).
 
+## [!DNL Live Search] 4.0.0 {#400}
+
+ _Nov 13, 2023_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+### New Features
+
+![New](../assets/new.svg) [!DNL Live Search] now supports color swatches in the PLP widget.
+![New](../assets/new.svg) [!DNL Live Search] now displays the category name rather than the category Id.
+![New](../assets/new.svg) [!DNL Live Search] now supports strikethrough prices in the PLP widget.
+![New](../assets/new.svg) Introduced the "Hide Filters" button to hide the filters panel.
+
+
+### Updates
+
+![Fix](../assets/fix.svg) The [!DNL Live Search] PLP widget is now enabled by default for new installations.
+![Fix](../assets/fix.svg) Reconfigured CSS styles to better isolate widget classes.
+![Fix](../assets/fix.svg) Minor bug fixes
+
+Merchants must upgrade the [!DNL Live Search] extension to version >= 4.0.0 to access these features.
+
+After installing version 3.1.1 or higher, enable the new indexers: 
+
+* Product Prices Feed
+* Scopes website data feed
+* Scopes customer groups data feed
+
+After upgrading, test the updated configuration in QA or Staging before pushing the changes to production. 
+
+## Previous versions
+
++++3.1.1 and prior
+
 ## [!DNL Live Search] 3.1.1 {#311}
 
  _Sept 15, 2023_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
-### New Features
+
 
 ![New](../assets/new.svg) New Category Merchandising tab has been added. Users can now add Intelligent Rankings and Manual Rankings (pin, boost, bury, hide) per category
 ![New](../assets/new.svg) Users can add a single category rule with intelligent or manual ranking
@@ -66,20 +100,6 @@ _June 13, 2023_
 ![Fix](../assets/fix.svg) 'Ranking Type' has been renamed to 'Intelligent ranking'
 ![Fix](../assets/fix.svg) Minor bug fixes
 
-Merchants must upgrade the [!DNL Live Search] extension version >= 3.1.1 to access these features.
-
-After installing version 3.1.1, these new indexers must be enabled:
-
-* Product Prices Feed
-* Scopes website data feed
-* Scopes customer groups data feed
-
-It is recommended to upgrade and test in QA or Staging before pushing changes to production. 
-
-## Previous versions
-
-+++3.1.0 and prior
-
 ## [!DNL Live Search] 3.1.0 {#310}
 
  _Sept 1, 2023_
@@ -88,7 +108,7 @@ It is recommended to upgrade and test in QA or Staging before pushing changes to
 
 ### Updates
 
-![Fix](../assets/fix.svg) The Product Listing widget has been updated to use the [Catalog Service API](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/product-search/).
+![Fix](../assets/fix.svg) The Product Listing widget has been updated to use the [Catalog Service API](https://developer.adobe.com/commerce/services/graphql/catalog-service/product-search/).
 
 ## [!DNL Live Search] 3.0.2 {#302}
 
@@ -129,7 +149,7 @@ Using the Live Search Product Listing Page widget will cause Google Tag Manager 
 
 ![New](../assets/new.svg) Product Item Card in Rules preview 
 ![New](../assets/new.svg) [Product Listing Page widget](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-storefront/plp-styling.html)
-![New](../assets/new.svg) [Category filtering options](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#facets)
+![New](../assets/new.svg) [Category filtering options](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#facets)
 ![New](../assets/new.svg) Added the ability to drag and drop to create Pin events
 ![New](../assets/new.svg) New Pin actions:
     * Pin to spot - Pin button to create Pin event with one click
@@ -180,7 +200,7 @@ It is recommended to upgrade and test before pushing to production. Consider upg
 
 ![New](../assets/new.svg) Live Search now supports filtering by the 'Display Out of Stock Products' setting in the admin. If 'Display Out of Stock Products' is set to false, `inStock = true` is added to the filter.
 ![Fix](../assets/fix.svg) To improve performance, the 'Suggestions' block has been removed from the Live Search popup. The data is still passed through GraphQL, in case you want to replace the feature.
-![Fix](../assets/fix.svg) `categories` and `categoryPath` have replaced `categoryIds` for category filtering. Read more in the [productSearch](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) topic.
+![Fix](../assets/fix.svg) `categories` and `categoryPath` have replaced `categoryIds` for category filtering. Read more in the [productSearch](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/) topic.
 ![Fix](../assets/fix.svg) Previously, a user tied to a B2B company would receive an incorrect Customer Group Code when doing searches. Live Search now returns the correct value.
 ![Fix](../assets/fix.svg) Previously, when searching for a term that does not exist, Live Search would return an error. That bug is now fixed.
 
@@ -210,7 +230,7 @@ Existing [!DNL Live Search] installations must be upgraded to [!DNL Live Search]
 ![New](../assets/new.svg) Beta [PWA](https://developer.adobe.com/commerce/pwa-studio/) supported for [!DNL Live Search].
 ![New](../assets/new.svg) The [!DNL Live Search] installation process is updated with advanced process changes.
 ![Fix](../assets/fix.svg) [Advanced Search](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#advanced-search) link removed from the storefront footer.
-![Bug](../assets/bug.svg) The following product attributes are not supported by [Commerce GraphQL API](https://developer.adobe.com/commerce/webapi/graphql/) when used in relation to the beta release of PWA: `description`, `name`, `short_description`
+![Bug](../assets/bug.svg) The following product attributes are not supported by [Commerce GraphQL API](https://developer.adobe.com/commerce/services/graphql/live-search/) when used in relation to the beta release of PWA: `description`, `name`, `short_description`
 ![Bug](../assets/bug.svg) The beta release of PWA for [!DNL Live Search] does not support [event handling](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/).
 
 ### [!DNL Live Search] 1.3.1 {#131}

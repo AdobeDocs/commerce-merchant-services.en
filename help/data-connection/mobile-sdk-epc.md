@@ -11,7 +11,7 @@ exl-id: d1340b15-e7de-42b5-ad64-d4c31f0db029
 >
 >The Adobe Experience Platform Mobile SDK for iOS supports iOS 11 or later.
 
-Integrating the [Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/) with the Commerce mobile app allows merchants to send Commerce  [event data](events.md) to the Experience Platform edge.
+Integrating the [Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/home/) with the Commerce mobile app allows merchants to send Commerce  [event data](events.md) to the Experience Platform edge.
 
 When Commerce event data is available at the edge, it can be accessed by other Adobe Experience Cloud applications. For example, you can use the data to build audiences in Real-Time CDP then [use those audiences](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) to personalize your Commerce mobile app.
 
@@ -33,7 +33,7 @@ To get started using the Adobe Experience Platform Mobile SDK with Commerce, ins
 
 After you complete the SDK configuration for the Experience platform, add the SDK configuration to Commerce.
 
-1. To send Commerce event data to the Experience Platform via the SDK, you must provide an XDM schema in the application code. This schema must match the schema [configured](https://developer.adobe.com/client-sdks/documentation/getting-started/set-up-schemas-and-datasets/) for the SDK in the Experience Platform.
+1. To send Commerce event data to the Experience Platform via the SDK, you must provide an XDM schema in the application code. This schema must match the schema [configured](https://developer.adobe.com/client-sdks/home/getting-started/set-up-schemas-and-datasets/) for the SDK in the Experience Platform.
 
     The following example shows how to track the `web.webpagedetails.pageViews` event and set the `identityMap` using the email field.
 
