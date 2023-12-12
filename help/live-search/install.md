@@ -75,7 +75,21 @@ In this scenario, storefront operations are interrupted while the [!DNL Live Sea
 
    You should be able to add facets after `cron` runs the attribute feeds and exports attribute metadata.
 
-1. Wait at least an hour after `cron` runs to synchronize data. Then, [verify](#verify-export) that the data was exported.
+1. Run the following command in this order:
+
+   ```bash
+   bin/magento saas:resync --feed productattributes
+   bin/magento saas:resync --feed products
+   bin/magento saas:resync --feed scopesCustomerGroup
+   bin/magento saas:resync --feed scopesWebsite
+   bin/magento saas:resync --feed prices
+   bin/magento saas:resync --feed productoverrides
+   bin/magento saas:resync --feed variants
+   bin/magento saas:resync --feed categories
+   bin/magento saas:resync --feed categoryPermissions
+   ```
+
+1. [Verify](#verify-export) that the data was exported.
 
 1. [Test](#test-the-connection) the connection from the storefront.
 
@@ -120,7 +134,21 @@ In this scenario, [!DNL OpenSearch] temporarily manages search requests from the
 
    You should be able to add facets after `cron` runs the product and attribute feeds and exports attribute metadata to [!DNL Live Search] services.
 
-1. Wait at least an hour for the data to be indexed and synchronized. Then, use the [GraphQL playground](https://developer.adobe.com/commerce/services/graphql/live-search/) with the default query to verify the following:
+1. Run the following command in this order:
+
+   ```bash
+   bin/magento saas:resync --feed productattributes
+   bin/magento saas:resync --feed products
+   bin/magento saas:resync --feed scopesCustomerGroup
+   bin/magento saas:resync --feed scopesWebsite
+   bin/magento saas:resync --feed prices
+   bin/magento saas:resync --feed productoverrides
+   bin/magento saas:resync --feed variants
+   bin/magento saas:resync --feed categories
+   bin/magento saas:resync --feed categoryPermissions
+   ```
+
+1. After the sync is complete, use the [GraphQL playground](https://developer.adobe.com/commerce/services/graphql/live-search/) with the default query to verify the following:
 
    * The returned product count is close to what you expect for the store view.
    * Facet(s) are returned.

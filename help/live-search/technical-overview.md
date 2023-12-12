@@ -73,7 +73,9 @@ To restrict customer groups using Catalog permissions:
 * no_NO
 * pt_PT
 
-If the widget detects that the Commerce Admin language setting (_Stores_ > Settings > _Configuration_ > _General_ > Country Options) matches a supported language, it defaults to that language. Otherwise, the widgets default to English.  
+If the widget detects that the Commerce Admin language setting (_Stores_ > Settings > _Configuration_ > _General_ > Country Options) matches a supported language, it defaults to that language. Otherwise, the widgets default to English.
+
+Admins can also set the language of the [search index](settings.md#language), to help ensure better search results.
 
 ## Category Merchandising
 
