@@ -451,7 +451,14 @@ With the in-store delivery method, the customer can select a source to be used a
 <td><strong>Estimated Pickup Time Label</strong></td>
 <td>Displays the estimated time until an order is available for customer pickup. This information is shown to customers when they select a retail store location for the [!DNL In-Store Pickup] delivery option. </br></br>When customizing this label, you can use the code <code>%1</code> to insert your <strong>Estimated Pickup Lead Time</strong>. For example:</br></br><code>Ready for Pickup in %1 minutes.</code></br></br>This setting applies to all retail store locations. You can also customize the lead time at the retail store location level.</td>
 <td>Store View</td>
+<td>No</td> 
+</tr>
+<tr>
+<td><strong>Estimated Ship-to-store Lead Time</strong></td>
+<td>Used to display number of hours required for items to be shipped from the warehouse to a store.</td>
+<td>Store View</td>
 <td>No</td>
+</tr>
 <tr>
 <td><strong>Pickup Time Disclaimer</strong></td>
 <td>The content displayed on the product page in the tooltip that lists store hours, holidays, unexpected closures, and so on</td>
