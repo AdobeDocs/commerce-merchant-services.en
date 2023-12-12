@@ -455,7 +455,7 @@ With the in-store delivery method, the customer can select a source to be used a
 </tr>
 <tr>
 <td><strong>Estimated Ship-to-store Lead Time</strong></td>
-<td>Used to display number of hours required for items to be shipped from the warehouse to a store.</td>
+<td>Displays the number of hours required for items to be shipped from the warehouse to a store.</td>
 <td>Store View</td>
 <td>No</td>
 </tr>
