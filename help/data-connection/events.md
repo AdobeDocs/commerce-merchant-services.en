@@ -230,7 +230,7 @@ The following table describes the data collected for this event.
 
 |Description| XDM event name|
 |---|---|
-|Triggered when the shopper places an order.|`commerce.order`|
+|Triggered when the shopper places an order.|`commerce.purchases`|
 
 #### Data collected from completeCheckout
 
@@ -554,6 +554,27 @@ The following table describes the data collected for this event.
 |`productListItems.selectedOptions`|Field used for a configurable product.|
 |`productListItems.selectedOptions.attribute`|Identifies an attribute of the configurable product, such as `size` or `color`.|
 |`productListItems.selectedOptions.value`|Identifies the value of the attribute such as `small` or `black`.|
+
+### deleteRequisitionList
+
+|Description| XDM event name|
+|---|---|
+|Triggered when a shopper deletes a requisition list.|`commerce.requisitionListDeletes`|
+
+#### Data collected from deleteRequisitionList
+
+The following table describes the data collected for this event.
+
+|Field|Description|
+|---|---|
+|`commerce.requisitionListDeletes`|Indicates that a requisition list was deleted.|
+|`commerce.requisitionList`|The properties of requisition list created by customer.|
+|`commerce.requisitionList.ID`|Unique identifier of the requisition list.|
+|`commerce.requisitionList.name`|Name of the requisition list specified by the customer.|
+|`commerce.requisitionList.description`|Description of the requisition list specified by the customer.|
+|`person.accountID`|Captures the user account ID.|
+|`person.accountType`|Captures the user account type, such as `Personal` or `Company`, if applicable.|
+|`person.personalEmailID`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards.|
 
 ## Back office events
 
