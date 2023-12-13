@@ -27,6 +27,8 @@ This release contains the following updates:
 
 ![New](../assets/new.svg) Added a safeguard to prevents users from picking up and dispensing a quantity greater than the order
 
+![New](../assets/new.svg) Added configuration for Estimated Ship-to-store Lead Time
+
 ![Fixed issue](../assets/fix.svg) Code quality improvements:
 
 - <!-- WMTP-941--> Fixed an issue that flagged return statements by PHPStan.
