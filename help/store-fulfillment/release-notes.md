@@ -23,73 +23,73 @@ See [Product Availability](https://experienceleague.adobe.com/docs/commerce-oper
 
 This release contains the following updates:
 
-![New](../assets/new.svg)<!-- WMTP-1000 --> Added configuration to modify password parameters
+![New](../assets/new.svg)<!-- WMTP-1000 --> Added configuration to modify password parameters.
 
-![New](../assets/new.svg) Added a safeguard to prevents users from picking up and dispensing a quantity greater than the order
+![New](../assets/new.svg) Added a safeguard to prevents users from picking up and dispensing a quantity greater than the order.
 
-![New](../assets/new.svg) Added configuration for Estimated Ship-to-store Lead Time
+![New](../assets/new.svg) Added configuration for Estimated Ship-to-store Lead Time.
 
 ![Fixed issue](../assets/fix.svg) Code quality improvements:
 
 - <!-- WMTP-941--> Fixed an issue that flagged return statements by PHPStan.
 - <!-- WMTP-944--> Added proper PHP docs to help with auto-completion.
-- <!-- WMTP-943--> Fixed an issue for incorrect return types
-- <!-- WMTP-945--> Fixed an issue to correct classes
-- <!-- WMTP-905--> Fixed an issue to resolve missing or unknown classes
-- <!-- WMTP-939--> Fixed an issue that validated unsused property
-- <!-- WMTP-946--> Fixed an issue that verified if methods exists
-- <!-- WMTP-926--> Fixed an issue to resolve an exception that was thrown in the same function
-- <!-- WMTP-925--> Changed use of function parse_url()
-- <!-- WMTP-925--> Removed direct use of $_SERVER Superglobal
-- <!-- WMTP-922--> Use context specific Exception
+- <!-- WMTP-943--> Fixed an issue for incorrect return types.
+- <!-- WMTP-945--> Fixed an issue to correct classes.
+- <!-- WMTP-905--> Fixed an issue to resolve missing or unknown classes.
+- <!-- WMTP-939--> Fixed an issue that validated unsused property.
+- <!-- WMTP-946--> Fixed an issue that verified if methods exists.
+- <!-- WMTP-926--> Fixed an issue to resolve an exception that was thrown in the same function.
+- <!-- WMTP-925--> Changed use of function parse_url().
+- <!-- WMTP-925--> Removed direct use of $_SERVER Superglobal.
+- <!-- WMTP-922--> Use context specific Exceptions.
 
 ![Fixed issue](../assets/fix.svg) Improved Security:
 
-- <!-- WMTP-903--> Refactored code that defined some extension attributes on the quote address that was being injected using the resource model and DB queries alteration
-- <!-- WMTP-970--> Use binding for select to prevent SQL injection
-- <!-- WMTP-969--> Remove direct DB queries
+- <!-- WMTP-903--> Refactored code that defined some extension attributes on the quote address that was being injected using the resource model and database queries alteration.
+- <!-- WMTP-970--> Use binding for select to prevent SQL injection.
+- <!-- WMTP-969--> Remove direct database queries.
 
-![Fixed issue](../assets/fix.svg) <!-- WMTP-906--> Improved performance for Product View & Login
+![Fixed issue](../assets/fix.svg) <!-- WMTP-906--> Improved performance for product view & login.
 
-![Fixed issue](../assets/fix.svg) <!-- WMTP-976--> Modified the Cancellation endpoint to process cancellation acknowledgement
+![Fixed issue](../assets/fix.svg) <!-- WMTP-976--> Modified the cancellation endpoint to process cancellation acknowledgement.
 
-![Fixed issue](../assets/fix.svg) <!-- WMTP-971--> Fixed an issue where the value of the string for QR code for TFA is twice encoded in base64.
+![Fixed issue](../assets/fix.svg) <!-- WMTP-971--> Fixed an issue where the value of the string for QR code for Two-Factor Authentication is twice encoded in base64.
 
-![Fixed issue](../assets/fix.svg) <!-- WMTP-974--> Fixed an issue for creating cancellation in Magento when creating one click cancellation
+![Fixed issue](../assets/fix.svg) <!-- WMTP-974--> Fixed an issue for creating cancellation in Magento when creating one click cancellation.
 
-![Fixed issue](../assets/fix.svg) <!-- WMTP-975--> Fixed an issue for wrong email format for partial nil-pick
+![Fixed issue](../assets/fix.svg) <!-- WMTP-975--> Fixed an issue for wrong email format for partial nil-pick.
 
-![Fixed issue](../assets/fix.svg) <!-- WMTP-1004--> Fixed an issue that prevented creating an order from the admin
+![Fixed issue](../assets/fix.svg) <!-- WMTP-1004--> Fixed an issue that prevented creating an order from the admin.
 
-![Fixed issue](../assets/fix.svg) <!-- WMTP-994--> Fixed an issue that for order line item extension attributes to be loaded correctly and correct picking process to occur
+![Fixed issue](../assets/fix.svg) <!-- WMTP-994--> Fixed an issue that for order line item extension attributes to be loaded correctly and correct picking process to occur.
 
-![Fixed issue](../assets/fix.svg) <!-- WMTP-972--> Fixed an issue for source configuration screen to react for the global level configuration only
+![Fixed issue](../assets/fix.svg) <!-- WMTP-972--> Fixed an issue for source configuration screen to react for the global level configuration only.
 
-![Fixed issue](../assets/fix.svg) <!-- WMTP-994--> Resolved MFTF test reports
+![Fixed issue](../assets/fix.svg) <!-- WMTP-994--> Resolved MFTF test reports.
 
-![Fixed issue](../assets/fix.svg) <!-- WMTP-999--> Fixed an issue for an error when switching storeviews
+![Fixed issue](../assets/fix.svg) <!-- WMTP-999--> Fixed an issue for an error when switching storeviews.
 
-![Fixed issue](../assets/fix.svg) <!-- WMTP-994--> Fixed an issue where order line item extension attributes are not getting loaded
+![Fixed issue](../assets/fix.svg) <!-- WMTP-994--> Fixed an issue where order line item extension attributes are not getting loaded.
 
-![Fixed issue](../assets/fix.svg) <!-- WMTP-983--> Fixed an issue that prevented customer to save and select preferred source
+![Fixed issue](../assets/fix.svg) <!-- WMTP-983--> Fixed an issue that prevented customer to save and select preferred source.
 
-![Fixed issue](../assets/fix.svg) <!-- WMTP-979--> Fixed an issue to set country dialing code as a set field in the source configuration form
+![Fixed issue](../assets/fix.svg) <!-- WMTP-979--> Fixed an issue to set country dialing code as a set field in the source configuration form.
 
-![Fixed issue](../assets/fix.svg) <!-- WMTP-952--> Fixed an issue to show alerts when a Ship-to-store product gets removed in the minicart
+![Fixed issue](../assets/fix.svg) <!-- WMTP-952--> Fixed an issue to show alerts when a Ship-to-store product gets removed in the minicart.
 
-![Fixed issue](../assets/fix.svg) <!-- WMTP-979--> Fixed an issue to correctly log admin connection test failures
+![Fixed issue](../assets/fix.svg) <!-- WMTP-979--> Fixed an issue to correctly log admin connection test failures.
 
-![Fixed issue](../assets/fix.svg) Fixed an issue for the order delayed email getting wrongfully sent out for every instore pickup order
+![Fixed issue](../assets/fix.svg) Fixed an issue for the order delayed email getting wrongfully sent out for every instore pickup order.
 
-![Fixed issue](../assets/fix.svg) Fixed an issue that broke admin orders by the quote stock validator
+![Fixed issue](../assets/fix.svg) Fixed an issue that broke admin orders by the quote stock validator.
 
-![Fixed issue](../assets/fix.svg) Fixed an issue where partial dispensation was sometimes wrongfully reporting emails as dispensed in full
+![Fixed issue](../assets/fix.svg) Fixed an issue where partial dispensation was sometimes wrongfully reporting emails as dispensed in full.
 
-![Fixed issue](../assets/fix.svg) Improved emails for partially cancelled orders to use in-transit and ready-for-pickup order line items
+![Fixed issue](../assets/fix.svg) Improved emails for partially cancelled orders to use in-transit and ready-for-pickup order line items.
 
-![Fixed issue](../assets/fix.svg) Displaying quantity in transit and ready for pickup on the customer order details page
+![Fixed issue](../assets/fix.svg) Displaying quantity in transit and ready for pickup on the customer order details page.
 
-![Fixed issue](../assets/fix.svg) Improved notification history for orders that have been partially cancelled
+![Fixed issue](../assets/fix.svg) Improved notification history for orders that have been partially cancelled.
 
 ## v1.5.0
 
