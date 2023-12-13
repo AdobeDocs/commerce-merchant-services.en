@@ -479,7 +479,7 @@ The following table describes the data collected for this event.
 |Field|Description|
 |---|---|
 |`commerce.requisitionListOpens`|Indicates initialization of a new requisition list.|
-|`commerce.requisitionList`|The properties of the requisition list created by customer.|
+|`commerce.requisitionList`|The properties of the requisition list created by the customer.|
 |`commerce.requisitionList.ID`|Unique identifier of the requisition list.|
 |`commerce.requisitionList.name`|Name of the requisition list specified by the customer.|
 |`commerce.requisitionList.description`|Description of the requisition list specified by the customer.|
@@ -502,7 +502,7 @@ The following table describes the data collected for this event.
 |Field|Description|
 |---|---|
 |`commerce.requisitionListAdds`|Indicates addition of one or more products to a requisition list.|
-|`commerce.requisitionList`|The properties of the requisition list created by customer.|
+|`commerce.requisitionList`|The properties of the requisition list created by the customer.|
 |`commerce.requisitionList.ID`|Unique identifier of the requisition list.|
 |`commerce.requisitionList.name`|Name of the requisition list specified by the customer.|
 |`commerce.requisitionList.description`|Description of the requisition list specified by the customer.|
@@ -535,7 +535,7 @@ The following table describes the data collected for this event.
 |Field|Description|
 |---|---|
 |`commerce.requsitionListRemovals`|Indicates removal of one or more products from a requisition list.|
-|`commerce.requisitionList`|The properties of the requisition list created by customer.|
+|`commerce.requisitionList`|The properties of the requisition list created by the customer.|
 |`commerce.requisitionList.ID`|Unique identifier of the requisition list.|
 |`commerce.requisitionList.name`|Name of the requisition list specified by the customer.|
 |`commerce.requisitionList.description`|Description of the requisition list specified by the customer.|
@@ -568,7 +568,7 @@ The following table describes the data collected for this event.
 |Field|Description|
 |---|---|
 |`commerce.requisitionListDeletes`|Indicates that a requisition list was deleted.|
-|`commerce.requisitionList`|The properties of the requisition list created by customer.|
+|`commerce.requisitionList`|The properties of the requisition list created by the customer.|
 |`commerce.requisitionList.ID`|Unique identifier of the requisition list.|
 |`commerce.requisitionList.name`|Name of the requisition list specified by the customer.|
 |`commerce.requisitionList.description`|Description of the requisition list specified by the customer.|
