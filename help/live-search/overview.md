@@ -1,6 +1,6 @@
 ---
 title: Introduction to [!DNL Live Search]
-description: "[!DNL Live Search] from Adobe Commerce delivers a lightning fast, super-relevant, and intuitive search experience."
+description: "[!DNL Live Search] from Adobe Commerce delivers a fast, relevant, and intuitive search experience."
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
 recommendations: noCatalog
 ---
@@ -64,7 +64,7 @@ Most store owners will want to ensure that the [!DNL Live Search] widgets confor
 The popover and PLP widgets can be styled by defining custom CSS rules as needed. See [Styling Popover Elements](storefront-popover-styling.md) and [Product Listing Page Widget](plp-styling.md).
 
 If you wish to extend the functionality of the widgets, the source code for each is available in a public repo.
-In this scenario, you can customize the JavaScript for your own needs and then host your custom code on your site. This custom script communicates with the [!DNL Live Search] service and returns the results like normal, allowing you to control the functionality of the widget.
+In this scenario, you can customize the JavaScript for your own needs and then host your custom code on your CDN. This custom script communicates with the [!DNL Live Search] service and returns the results like normal, allowing you to control the functionality of the widget.
 
 * [PLP widget repo](https://github.com/adobe/storefront-product-listing-page)
 * [Search bar repo](https://github.com/adobe/storefront-search-as-you-type)
@@ -77,4 +77,4 @@ Watch this video to learn about [!DNL Live Search]:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418679?quality=12&learn=on)
 
-For a more in-depth video of how to use and configure Live Search, see the [Full Demonstration on [!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/marketing/live-search-full-demonstration.html) topic.
+For a more in-depth video of how to use and configure Live Search, see the [Full Demonstration on [!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration.html) topic.
