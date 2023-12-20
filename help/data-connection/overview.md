@@ -71,38 +71,6 @@ To use the [!DNL Data Connection] extension, you must have the following:
 * [Adobe Client Data Layer (ACDL)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/client-data-layer/overview.html). The ACDL is required to collect storefront event data.
 * Entitlements to other Adobe DX products.
 
-<!-->
-What about B2B
-Data Connection provides the following event data:
-- Create Requisition
-- Quote Accepted
-- And so on...
-
-
-
-I think some options would be to link or define certain terms that the user might need to understand like:  Adobe Experience Platform edge as well as a link to the marketplace where the connector is.
-
-So I think the thing that I always struggle with is that for someone that is new to the concept, it doesn't always connect the dots.   What I like to get to with the documentation is
-
-What does Commerce have
-where is it
-how do I get it out
-where does it go
-what happens to it there
-how do I use it
-
-In this sense, commerce has valuable data, I presume it's in specific parts of commerce, or specific tables
-
-I need to do a simple implementation of the data connector (how to), is adobe is going to maintain this for me, do I need to keep it up to date
-
-It extracts commerce data and sends it to Edge network, where it can just pass automatically to other Adobe products (?), or it needs to be transformed (?), or it's already in "this schema" that is used between all products, so no effort necessary, other products can then just grab that data and ingest it and it will live at the edge(?), or in that new product(?) and a sample use case might be X.
-
-Also, we say no PII, but what's the point then, I thought there was some aspect of Jim is interested in this category of products, he's clicked on these 19 items in the past 30 days, he bought X, we should segment him as a Car Junkie and include him in the 'Grand Prix' campaign (edited) 
-
-I imagine you have specific parameters on how/what you write - but to me breaking it down to layman's terms and being more comprehensive would help the non-technical audience (who are our buyers and influencers).   Some of the stuff I mentioned I think could be links so if I need to understand it, I can open that, and if I don't I just keep reading.
--->
-
-
 ## Onboarding steps
 
 At a high level, enabling the [!DNL Data Connection] extension involves the following steps: 
