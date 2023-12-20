@@ -13,6 +13,8 @@ Before you install the extension, [review the prerequisites](overview.md#prereqs
 
 The [!DNL Data Connection] extension is available from the [Adobe Marketplace](https://commercemarketplace.adobe.com/magento-experience-platform-connector.html). When you install this extension from the command line of the server, it connects to your Adobe Commerce installation as a [service](../landing/saas.md). When the process is complete, **[!DNL Data Connection]** and **Commerce Services Connector** appear on the **System** menu under **Services** in the Commerce _Admin_.
 
+![[!DNL Data Connection] extension Admin view](assets/epc-adminui.png)
+
 >[!IMPORTANT]
 >
 >While the name of the extension has changed from Experience Platform connector to [!DNL Data Connection], the package name remains `experience-platform-connector` to support backward compatibility.
