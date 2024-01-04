@@ -91,6 +91,25 @@ This release contains the following updates:
 
 ![Fixed issue](../assets/fix.svg) Improved notification history for orders that have been partially cancelled.
 
+![Fixed issue](../assets/fix.svg) <!-- WMTP-1007--> Fixed an issue where multiple picking could result in incorrect quantities for order items.
+
+- A credit memo refunding the customer will be automatically issued, with limitations:
+-   Only for logged in users.
+-   Store credit needs to be enabled with auto-credit turned on.
+-   Only works for Adobe Commerce, no Magento Open Source support.
+-   Otherwise, a warning will be issed in the admin and the order will put placed in Payment Review state, requiring manual intervention for refunding.
+
+![Fixed issue](../assets/fix.svg) <!-- WMTP-1006--> Fixed an issue where extension is disabled, out of stock products can still be purchased.
+
+![Fixed issue](../assets/fix.svg) Fixed an issue where nil-picked order items are still considered in transit and an Order Canceled email is not sent.
+
+![Fixed issue](../assets/fix.svg) Fixed an issue where an order is canceled, that status at dispense is not changing but shows as “Ready for Pickup” in admin.
+
+![Fixed issue](../assets/fix.svg) Fixed an issue where order sync failure was caused by a failed quantity check for child items.
+
+![Fixed issue](../assets/fix.svg) <!-- WMTP-1012--> Fixed an issue to show alternate pick up person details.
+
+
 ## v1.5.0
 
 *August 3, 2023*
