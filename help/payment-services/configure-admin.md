@@ -80,7 +80,7 @@ See [Payments options](payments-options.md#paypal-smart-buttons) for more inform
 
 ## [!UICONTROL Apple Pay]
 
-The [!UICONTROL Apple Pay] payment option allows the merchant to offer Apple Pay to their shoppers, who can use Touch ID on their devices to make purchases
+The [!UICONTROL Apple Pay] payment option allows the merchant to offer Apple Pay to their shoppers, who can use Touch ID on their devices to make purchases from the Safari browser.
 
 See [Payments options](payments-options.md#apple-pay-button) for more information.
 
