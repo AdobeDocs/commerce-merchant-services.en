@@ -23,9 +23,22 @@ This topic reviews technical requirements and tips for installing and optimizing
 
 [!DNL Live Search] communicates through the endpoint at `https://catalog-service.adobe.io/graphql`.
 
->[!NOTE]
->
->As [!DNL Live Search] does not have access to the complete product database, [!DNL Live Search] GraphQL and Commerce core GraphQL will not have complete parity.
+As [!DNL Live Search] does not have access to the complete product database, [!DNL Live Search] GraphQL and Commerce core GraphQL will not have complete parity.
+
+It is recommended to call the SaaS API's directly - specifically the Catalog Service endpoint.
+
+* Gain performance and reduce processor load by bypassing the Commerce database/Graphql process
+* Take advantage of the [!DNL Catalog Service] federation to call [!DNL Live Search], [!DNL Catalog Service], and [!DNL Product Recommendations] from a single endpoint.
+
+For some use cases, it maybe better to call [!DNL Catalog Service] for product details and similar cases. See [refineProduct](https://developer.adobe.com/commerce/services/graphql/catalog-service/refine-product/) for more information.
+
+If you have a custom headless implementation, check out the [!DNL Live Search] reference implementations:
+
+* [PLP widget](https://github.com/adobe/storefront-product-listing-page)
+* [Live Search field](https://github.com/adobe/storefront-search-as-you-type)
+
+If you do not use the default components, such as Search Adapter or widgets on Luma, or AEM CIF Widgets, be aware that eventing (clickstream data that feeds Adobe Sensei for Intelligent Merchandising and performance metrics) will not work out of the box and requires custom development to implement headless eventing.
+The latest version of [!DNL Live Search] already uses [!DNL Catalog Service] and the installs [!DNL Catalog Service] modules.
 
 ## Boundaries and thresholds
 
@@ -63,15 +76,42 @@ To restrict customer groups using Catalog permissions:
 
 [!DNL Live Search] widgets support the following languages:
 
-* en_US (default) 
-* de_DE
-* es_MX
-* fr_FR
-* it_IT
-* ja_JA
-* nl_NL
-* no_NO
-* pt_PT
+|||||
+|--- |--- |--- |--- |
+|Language|Region| Language Code |Magento Locale|
+|Bulgarian|Bulgaria|bg_BG|bg_BG|
+|Catalan|Spain|ca_ES|ca_ES|
+|Czech|Czech Republic|cs_CZ|cs_CZ|
+|Danish|Denmark|da_DK|da_DK|
+|German|Germany|de_DE|de_DE|
+|Greek|Greece|el_GR|el_GR|
+|English|United Kingdom|en_GB|en_GB|
+|English|United States|en_US|en_US|
+|Spanish|Spain|es_ES|es_ES|
+|Estonian|Estonia|et_EE|et_EE|
+|Basque|Spain|eu_ES|eu_ES|
+|Persian|Iran|fa_IR|fa_IR|
+|Finnish|Finland|fi_FI|fi_FI|
+|French|France|fr_FR|fr_FR|
+|Galician|Spain|gl_ES|gl_ES|
+|Hindi|India|hi_IN|hi_IN|
+|Hungarian|Hungary|hu_HU|hu_HU|
+|Indonesian|Indonesia|id_ID|id_ID|
+|Italian|Italy|it_IT|it_IT|
+|Korean|South Korea|ko_KR|ko_KR|
+|Lithuanian|Lithuania|lt_LT|lt_LT|
+|Latvian|Latvia|lv_LV|lv_LV|
+|Norwegian|Norway Bokmal|nb_NO|nb_NO|
+|Dutch|Netherlands|nl_NL|nl_NL|
+|Portuguese|Brazil|pt_BR|pt_BR|
+|Portuguese|Portugal|pt_PT|pt_PT|
+|Romanian|Romania|ro_RO|ro_RO|
+|Russian|Russia|ru_RU|ru_RU|
+|Swedish|Sweden|sv_SE|sv_SE|
+|Thai|Thailand|th_TH|th_TH|
+|Turkish|Turkey|tr_TR|tr_TR|
+|Chinese|China|zh_CN|zh_Hans_CN|
+|Chinese|Taiwan|zh_TW|zh_Hant_TW|
 
 If the widget detects that the Commerce Admin language setting (_Stores_ > Settings > _Configuration_ > _General_ > Country Options) matches a supported language, it defaults to that language. Otherwise, the widgets default to English.
 
@@ -103,6 +143,17 @@ This allows developers to fully customize the functionality and styling. These u
 ## Price indexer
 
 Live Search customers can use the new [SaaS price indexer](../price-index/index.md), which provides faster price change updates and synchronization time.
+
+## Price support
+
+Live Search widgets support most but not all of the price types supported by Adobe Commerce.
+
+Currently, basic prices are supported. Advanced prices that are not supported are:
+
+* Cost
+* Minimum Advertised Price
+
+Look at [API Mesh](../catalog-service/mesh.md) for more complex price calculations.
 
 ## PWA support
 
