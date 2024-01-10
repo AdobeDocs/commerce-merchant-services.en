@@ -10,7 +10,7 @@ recommendations: noCatalog
 >
 >The Experience Platform connector has been renamed to [!DNL Data Connection].
 
-The [!DNL Data Connection] extension connects your Adobe Commerce instance to the Adobe Experience Platform edge.
+The [!DNL Data Connection] extension connects your Adobe Commerce web instance to the Adobe Experience Platform edge. For mobile developers, review this article then learn how to [integrate](./mobile-sdk-epc.md) the Adobe Experience Platform Mobile SDK with Commerce.
 
 Your Commerce store contains a wealth of data. Information about how your shoppers browse, view, and ultimately purchase the products on your site can reveal opportunities to create a more personalized shopping experience. While that data can inform native Commerce features such as cart price rules and dynamic blocks, the data remains siloed in your Commerce instance. 
 
@@ -24,11 +24,11 @@ In the above image, your storefront and back office data is sent to the Experien
 
 |Application|Purpose|
 |---|---|
-|Adobe [!DNL Real-Time CDP]| Profile management and segmentation service|
-|Customer [!DNL Journey Analytics]|Deep analysis of the full Commerce journey|
-|Adobe [!DNL Analytics]|Deep analysis of customer behavior and campaign performance|
-|Adobe [!DNL Journey Optimizer]|Campaign orchestration across channels|
-|Adobe [!DNL Target]|A/B and Multivariate Testing and experience personalization|
+|[Adobe [!DNL Real-Time CDP]](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/overview.html)| Profile management and segmentation service|
+|[Customer [!DNL Journey Analytics]](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html)|Deep analysis of the full Commerce journey|
+|[Adobe [!DNL Analytics]](https://experienceleague.adobe.com/docs/analytics/analyze/admin-overview/analytics-overview.html)|Deep analysis of customer behavior and campaign performance|
+|[Adobe [!DNL Journey Optimizer]](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/get-started.html)|Campaign orchestration across channels|
+|[Adobe [!DNL Target]](https://experienceleague.adobe.com/docs/target/using/introduction/intro.html)|A/B and Multivariate Testing and experience personalization|
 
 ## Pull Experience Platform data back into Commerce
 
@@ -42,21 +42,21 @@ After you set up the connection between Commerce to Experience Platform and Expe
 
 ## Concepts
 
-Sharing data between these two systems requires that you understand several concepts. This guide ties together those concepts so you can build a robust data sharing system to achieve your personalization goals.
-
-To understand the pieces involved in connecting your Commerce store to the Experience Platform, there are a few concepts to learn.
+Sharing data between these two systems requires that you understand several concepts.
 
 * **Data** - The data that gets shared with the Experience Platform is data collected from browser events on your storefront, and back office events on the server. Storefront events are captured from shoppers' interactions on the site and include events such as [addToCart](events.md#addtocart), [pageView](events.md#pageview), [createAccount](events.md#createaccount), [editAccount](events.md#editaccount), [startCheckout](events.md#startcheckout), [completeCheckout](events.md#completecheckout), [signIn](events.md#signin), [signOut](events.md#signout), and so on. See [storefront events](events.md#storefront-events) for the full list of storefront events. Server-side, or back office events, include [order status](events.md#back-office-events) information, such as [orderPlaced](events.md#orderplaced), [orderReturned](events.md#orderitemreturncompleted), [orderShipped](events.md#ordershipmentcompleted), [orderCancelled](events.md#ordercancelled), and so on. See [back office events](events.md#back-office-events) for the full list of back office events.
 
-* **Experience Platform and edge network** - The Experience Platform is the data warehouse for most Adobe DX products. Data sent to the Experience Platform is then propagated to the Adobe DX products through the Experience Platform edge network. For example, you can launch Journey Optimizer and retrieve your specific Commerce event data from the edge and build an abandoned cart email in Journey Optimizer. Journey Optimizer can then send that email if there are any abandoned carts in your Commerce store.
+* **Experience Platform and edge network** - The Data Warehouse for most Adobe DX products. Data sent to the Experience Platform is then propagated to the Adobe DX products through the Experience Platform edge network. For example, you can launch Journey Optimizer and retrieve your specific Commerce event data from the edge and build an abandoned cart email in Journey Optimizer. Journey Optimizer can then send that email if there are any abandoned carts in your Commerce store.
 
 * **Schema** - The schema is what describes the structure of the data that is being sent. Before Experience Platform can ingest your Commerce data, you must compose a schema to describe the data's structure and provide constraints to the type of data that can be contained within each field. Schemas consist of a base class and zero or more schema field groups. The schema uses the XDM structure, which all Adobe DX products can read. So when you send your data to the Experience Platform you can be sure that your data is understood across all DX products. Learn more about [schemas](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html).
 
-* **Dataset** - A dataset is a storage and management construct for a collection of data, typically a table, that contains a schema (columns) and fields (rows). Datasets also contain metadata that describes various aspects of the data they store. All data that is successfully ingested into Adobe Experience Platform is contained within datasets. Learn more about [datasets](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html).
+* **Dataset** - A storage and management construct for a collection of data, typically a table that contains a schema (columns) and fields (rows). Datasets also contain metadata that describes various aspects of the data they store. All data that is successfully ingested into Adobe Experience Platform is contained within datasets. Learn more about [datasets](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html).
 
-* **Datastream** - A datastream represents the server-side configuration when implementing the Adobe Experience Platform Web and Mobile SDKs. While the configure command in the SDK controls things that must be handled on the client (such as the edgeDomain), datastreams handle all other configurations for the SDK. When a request is sent to the Adobe Experience Platform Edge Network, the edgeConfigId is used to reference the datastream. This allows you to update the server-side configuration without having to make code changes on your website. Learn more about [datastreams](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html).
+* **Datastream** - ID that allows data to flow from Adobe Experience Platform to other Adobe DX products. This ID must be associated to a specific website within your specific Adobe Commerce instance. When you create this datastream, specify the XDM schema you created above. Learn more about [datastreams](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html).
 
-* **Supported architecture** - The [!DNL Data Connection] extension is available on the following storefronts:
+## Supported architecture
+
+The [!DNL Data Connection] extension is available on the following architectures:
 
 * PHP/Luma
 * [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/aep/)
@@ -85,9 +85,13 @@ At a high level, enabling the [!DNL Data Connection] extension involves the foll
 
 The remainder of this guide walks you through all of these steps in more detail so you can get to up to speed and begin using the power of Adobe DX products in your Commerce store.
 
+>[!NOTE]
+>
+>For mobile developers, learn how to [integrate](./mobile-sdk-epc.md) the Adobe Experience Platform Mobile SDK with Commerce.
+
 ## Audience
 
-This guide is designed for the Adobe Commerce merchant who wants to enrich and personalize their Commerce store so enhance the shopping experience for their customers.
+This guide is designed for the Adobe Commerce merchant who wants to enrich and personalize their Commerce store to enhance the shopping experience for their customers.
 
 ## Support
 
