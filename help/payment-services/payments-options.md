@@ -26,7 +26,7 @@ There are different behaviors for each payment method depending on where you are
 
 [!UICONTROL Credit Card Fields] provide a simple and secure checkout for credit card or debit card payment methods. When a shopper checks out using credit card fields, they enter their name, billing address, and credit or debit card information, to place their order. Their customer information is securely used during the purchase session to seamlessly guide them through the checkout flow.
 
-![Credit card fields in checkout](assets/credit-card-fields.png){width="600" zoomable="yes"}
+![Credit card fields in checkout](assets/credit-card-fields.png){width="500" zoomable="yes"}
 
 Enable [credit card vaulting](#vaulting) for your stores to allow shoppers to vault (save) their credit card information for a fast checkout later.
 
@@ -40,7 +40,7 @@ Customers can use [[!DNL Apple Pay]](https://www.apple.com/apple-pay/), which ut
 
 [!DNL Apple Pay] is only available in the Safari browser.
 
-![Apple Pay button in the minicart](assets/apple-pay-button.png){width="400" zoomable="yes"}
+![Apple Pay button in the minicart](assets/apple-pay-button.png){width="500" zoomable="yes"}
 
 The [!DNL Apple Pay] button is visible from the product page, mini-cart, shopping cart, and checkout views.
 
@@ -54,7 +54,7 @@ You can configure [!UICONTROL Apple Pay] in the store configuration or the Payme
 
 [!DNL PayPal Smart Buttons], which use PayPal to complete a purchase, stores your shopper's shipping address, billing addresses, and payment details for later use. Shoppers can use any payment method previously stored or offered by PayPal.
 
-![PayPal button](assets/paypal-button.png){width="400" zoomable="yes"}
+![PayPal button](assets/paypal-button.png){width="350" zoomable="yes"}
 
 You can configure [!UICONTROL PayPal Smart Buttons] in the store configuration or the Payment Services Home.  See [Settings](settings.md#payment-buttons) for more information.
 
