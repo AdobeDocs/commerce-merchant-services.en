@@ -110,7 +110,7 @@ In this scenario, [!DNL OpenSearch] temporarily manages search requests from the
 1. Run the following command to temporarily disable the [!DNL Live Search] modules that serve storefront search results.
 
    ```bash
-   bin/magento module:disable Magento_LiveSearchAdapter Magento_LiveSearchStorefrontPopover
+   bin/magento module:disable Magento_LiveSearchAdapter Magento_LiveSearchStorefrontPopover Magento_LiveSearchProductListing 
    ```
 
    ```bash
@@ -156,7 +156,7 @@ In this scenario, [!DNL OpenSearch] temporarily manages search requests from the
 1. Run the following commands to enable [!DNL Live Search] modules, disable [!DNL OpenSearch], and run `setup`.
 
    ```bash
-   bin/magento module:enable Magento_LiveSearchAdapter Magento_LiveSearchStorefrontPopover
+   bin/magento module:enable Magento_LiveSearchAdapter Magento_LiveSearchStorefrontPopover  Magento_LiveSearchProductListing 
    ```
 
    ```bash

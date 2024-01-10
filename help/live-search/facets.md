@@ -15,7 +15,7 @@ Any defined facet may be used as a URL parameter and results will be filtered ba
 
 ## Faceting requirements
 
-The category and product attribute requirements for faceting are similar to the filterable attributes used for layered navigation. The storefront properties of each attribute must be set to `filterable (with results)`.
+The category and product attribute requirements for faceting are similar to the filterable attributes used for layered navigation. Each storefront properties of an attribute must have the "Use in Search Results Layered Navigation" value set to "Yes".
 
 [!DNL Live Search] supports up to:
 
