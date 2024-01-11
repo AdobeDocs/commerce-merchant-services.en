@@ -26,6 +26,8 @@ There are different behaviors for each payment method depending on where you are
 
 [!UICONTROL Credit Card Fields] provide a simple and secure checkout for credit card or debit card payment methods. When a shopper checks out using credit card fields, they enter their name, billing address, and credit or debit card information, to place their order. Their customer information is securely used during the purchase session to seamlessly guide them through the checkout flow.
 
+![Credit card fields in checkout](assets/credit-card-fields.png){width="500" zoomable="yes"}
+
 Enable [credit card vaulting](#vaulting) for your stores to allow shoppers to vault (save) their credit card information for a fast checkout later.
 
 You can configure [!UICONTROL Credit Card Fields] in the store configuration or the Payment Services Home. See [Settings](settings.md#credit-card-fields) for more information.
@@ -35,6 +37,10 @@ You can also change the layout, width, height, and outer styling of the credit c
 ## [!DNL Apple Pay] button
 
 Customers can use [[!DNL Apple Pay]](https://www.apple.com/apple-pay/), which utilizes credit and debit card payment credentials stored on an iOS or macOS device, to make purchases.
+
+[!DNL Apple Pay] is only available in the Safari browser.
+
+![Apple Pay button in the minicart](assets/apple-pay-button.png){width="500" zoomable="yes"}
 
 The [!DNL Apple Pay] button is visible from the product page, mini-cart, shopping cart, and checkout views.
 
@@ -48,7 +54,7 @@ You can configure [!UICONTROL Apple Pay] in the store configuration or the Payme
 
 [!DNL PayPal Smart Buttons], which use PayPal to complete a purchase, stores your shopper's shipping address, billing addresses, and payment details for later use. Shoppers can use any payment method previously stored or offered by PayPal.
 
-![[!DNL PayPal Smart Buttons] options](assets/payment-buttons.png){width="400" zoomable="yes"}
+![PayPal button](assets/paypal-button.png){width="350" zoomable="yes"}
 
 You can configure [!UICONTROL PayPal Smart Buttons] in the store configuration or the Payment Services Home.  See [Settings](settings.md#payment-buttons) for more information.
 
@@ -83,12 +89,6 @@ The [!DNL Pay Later] button is visible from the product page, mini-cart, shoppin
 See information about the Pay Later offers in [PayPal's Pay Later offers documentation](https://developer.paypal.com/docs/checkout/pay-later/us/). Use the **Country or region** dropdown to select a region of interest.
 
 See [Settings](settings.md#payment-buttons) to learn how to disable/enable the [!DNL Pay Later] messaging.
-
-### [!DNL Pay Now] button
-
-The [!DNL Pay Now] button is visible in the PayPal popup window when a customer clicks a payment button on the payments screen.
-
-If the final order amount is not yet known (such as when you do not yet have shipping address information) and the customer is in the process of checking out from the product page, mini-cart, or shopping cart, a _Continue_ button is available instead. When a customer clicks _Continue_, after they confirm their payment method, they are directed to an order review page to gather the needed details before completing checkout.
 
 ## Use only PayPal payment buttons
 

@@ -122,7 +122,7 @@ See [Payments options](payments-options.md#credit-card-fields) for more informat
 
 ### Apple Pay
 
-The [!UICONTROL Apple Pay] button payment option allows you to provide an [!UICONTROL Apple Pay] payment button in your store's checkout.
+The [!UICONTROL Apple Pay] button payment option allows you to provide an [!UICONTROL Apple Pay] payment button in your store's checkout from the Safari browser.
 
 You can only use Apple Pay if you complete [Apple Pay self-registration via Paypal](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) and then [configure Apple Pay](settings.md/#payment-buttons) for your stores. See [Payments options](payments-options.md#apple-pay-button) for more information.
 
@@ -224,7 +224,7 @@ You can also configure the _[!UICONTROL Button style]_ options of the payment bu
 1. To enable button height selector, toggle the **[!UICONTROL Responsive button height]** selector.
 1. To modify the **[!UICONTROL Label]**, select the desired label option.
 
-   As you change configuration options for layout, color, shape, height, and label, a visual preview of that configuration shows at the bottom of the Settings page.
+   As you change configuration options for layout, color, shape, height, and label, a visual preview of that configuration shows at the bottom of the Settings page. In the image below, the **[!UICONTROL Shape]** is set to _Rectangle_ and the **[!UICONTROL Label]** is set to _PayPal (recommended)_.
 
    ![[!DNL PayPal Smart Buttons] options](assets/payment-buttons.png){width="400" zoomable="yes"}
 
