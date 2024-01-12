@@ -29,6 +29,14 @@ This release contains the following updates:
 
 ![New](../assets/new.svg) Added configuration for Estimated Ship-to-store Lead Time.
 
+![New](../assets/new.svg)  <!-- WMTP-987--> Added new inventory transit workflow.
+
+-  <!-- WMTP-987--> Added new in-transit status to the Ready-for-pickup email.
+
+![New](../assets/new.svg)  <!-- WMTP-988--> Added support for multiple dispense.
+
+- <!-- WMTP-989--> Dispensed email template sshould include remaining dispense items list.
+
 ![Fixed issue](../assets/fix.svg) Code quality improvements:
 
 - <!-- WMTP-941--> Fixed an issue that flagged return statements by PHPStan.
@@ -108,7 +116,6 @@ This release contains the following updates:
 ![Fixed issue](../assets/fix.svg) Fixed an issue where order sync failure was caused by a failed quantity check for child items.
 
 ![Fixed issue](../assets/fix.svg) <!-- WMTP-1012--> Fixed an issue to show alternate pick up person details.
-
 
 ## v1.5.0
 
