@@ -155,6 +155,8 @@ Currently, basic prices are supported. Advanced prices that are not supported ar
 
 Look at [API Mesh](../catalog-service/mesh.md) for more complex price calculations.
 
+The price format supports the locale configuration setting within the Commerce instance: *Stores* > Settings > *Configuration* > General > *General* > Local Options > Locale.
+
 ## PWA support
 
 [!DNL Live Search] works with PWA Studio but users may see slight differences compared to other Commerce implementations. Basic functionality such as search and product listing page work in Venia but some permutations of Graphql may not work correctly. There may also be performance differences.

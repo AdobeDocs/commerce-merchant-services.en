@@ -67,6 +67,10 @@ The following class selectors can be used to style the container and product ele
 
 ![Product price](assets/livesearch-product-price.png)
 
+#### .livesearch product-link
+
+![Product result](assets/livesearch-product-link.png)
+
 ## Working with a modified theme {#working-with-modified-theme}
 
 The [!DNL storefront popover] can be used with a customized [theme](https://developer.adobe.com/commerce/frontend-core/guide/themes/) that inherits the required files from *Luma*. The `top.search` block in the `header-wrapper` of the `Magento_Search` module must not be modified.
