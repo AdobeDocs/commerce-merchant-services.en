@@ -28,6 +28,14 @@ One of the [onboarding steps](overview.md#onboarding-steps) for using the [!DNL 
     
     Your XDM schema now contains Commerce-specific field groups so that the data collected from the Commerce [events](events.md) is represented in the XDM.
 
+1. **Beta** (Optional) For merchants who need to pass custom back office event data from their Commerce instance to the Experience Platform, you can use custom attributes. This feature is currently in beta. If you want to include custom attributes in your back office event data, send an email to the following address: [dataconnection@adobe.com](mailto:dataconnection@adobe.com). In your request, include the following:
+
+    - Your [Adobe Org ID](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html#concept_EA8AEE5B02CF46ACBDAD6A8508646255). For example `organization_id@AdobeOrg`.
+    - List of Order level custom attributes.
+    - List of Order item level attributes.
+
+    The Adobe Commerce team will contact you with more information and next steps.
+
 1. [Create a dataset](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html#create-a-dataset) based off the schema you created or updated.
 
     A dataset is a storage and management construct for a collection of data, typically a table, that contains a schema (columns) and fields (rows). Datasets also contain metadata that describes various aspects of the data they store.

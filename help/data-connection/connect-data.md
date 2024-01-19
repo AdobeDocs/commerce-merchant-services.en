@@ -71,6 +71,20 @@ See the events topic to learn more about [storefront](events.md#storefront-event
     1. Open the dataset associated with your datastream.
     1. In the right-hand pane, view the details about the dataset. Copy the dataset ID.
 
+1. Enter the **Profile Dataset ID** Hey. I just remembered a caveat/limitation for the "Customer Profiles" work which would be nice to call out in the docs. Here is the full context:
+Two types of data are sent to AEP: Profile Event and Profile record
+While the event is available in AEP immediately, AEP takes up to 10 minutes to fully create the profile in AEP. (the way it happens is, AEP immediately creates a skeleton profile the moment it receives the request from Commerce, but it takes upto 10 minutes to fully complete the profile data).
+Further explanation: This might affect use cases in AJO, example: AEP journeys are typically triggered by an event. So if a profile event is immediately available in AEP, and the AJO journey is triggered, the AJO journey will not have immediate access to the profile data. AJO journeys can work around this, by adding a "wait" action on their journeys - this would prompt the journey to wait until the profile is created.
+I thought i'd give you the full context and let you phrase it in the way you see most appropriate. We could call out that: profile events are available immediately but a 10 minute wait period for the profile record. And a very brief description of how AEP applications like AJO can support this with the help of a Wait Activity. (edited) 
+experienceleague.adobe.comexperienceleague.adobe.com
+Wait activity | Adobe Journey Optimizer
+Learn about the wait activity
+
+
+Alex Jose
+  2:54 PM
+The wait activity literally tells AJO: Wait for X amount of time OR wait until X is done.
+
 1. To ensure back office event data updates based on a schedule according to a [cron](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cron.html) job, you must change the `Sales Orders Feed` index to `Update by Schedule`.
 
     1. On the _Admin_ sidebar, go to **[!UICONTROL System]** > _[!UICONTROL Tools]_ > **[!UICONTROL Index Management]**.
