@@ -35,9 +35,33 @@ The [!DNL Data Connection] extension is available from the [Adobe Marketplace](h
 
 1. (Optional) To include B2B data, which comprises [requisition events](events.md#b2b-events), install the [B2B extension](#install-the-b2b-extension).
 
-### Configure the orders connector
+### Install the Adobe I/O Events
 
-After you install the `experience-platform-connector` extension, you must finalize installation of the `orders-connector` module based on the deployment type: on-premises or Adobe Commerce on Cloud infrastructure.
+After you install the `experience-platform-connector` extension, you must install the Adobe I/O Events for Adobe Commerce.
+
+The following steps apply to both Adobe Commerce on cloud infrastructure and on-premises installations.
+
+1. If you are running Commerce 2.4.4 or 2.4.5, use the following command to load the eventing modules:
+
+   ```bash
+   composer require magento/commerce-eventing=^1.0 --no-update
+   ```
+
+   Commerce 2.4.6 and later loads these modules automatically.
+
+1. Update the project dependencies.
+
+   ```bash
+   composer update
+   ```
+
+1. Enable the new modules:
+
+   ```bash
+   bin/magento module:enable Magento_AdobeCommerceEventsClient Magento_AdobeCommerceEventsGenerator Magento_AdobeIoEventsClient Magento_AdobeCommerceOutOfProcessExtensibility
+   ```
+
+Finalize installation based on the deployment type: on-premises or Adobe Commerce on Cloud infrastructure.
 
 #### On-premises
 
