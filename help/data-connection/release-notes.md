@@ -28,7 +28,7 @@ These release notes describe feature changes and fixes related to extensions use
 
 +++Supported service updates
 
-_January 11, 2024_
+_January 24, 2024_
 
 ![New](../assets/new.svg) - Updated the `data-services-b2b` extension to include a new requisition event called [deleteRequisitionList](events.md#deleterequisitionlist) for B2B merchants.
 
