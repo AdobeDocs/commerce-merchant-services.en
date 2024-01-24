@@ -127,7 +127,7 @@ This video is an introduction to Category Merchandising.
 
 ## Widget code repository
 
-The Product Listing Page widget and the Search Popover widget are both available for download from their github repository.
+The Product Listing Page widget and the Live Search field widget are both available for download from their github repository.
 
 This allows developers to fully customize the functionality and styling. These users host the code themselves while still taking advantage of the [!DNL Live Search] service.
 
@@ -188,7 +188,7 @@ To use [!DNL Live Search] with PWA Studio, integrators must also:
 ## Not currently supported
 
 * The [Advanced Search](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#advanced-search) module is disabled when [!DNL Live Search] is installed, and the Advanced Search link in the storefront footer is removed.
-* [Tier Pricing](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-tier.html) and [Special Pricing](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-special.html) are not supported in the [!DNL Live Search] Popover and Product Listing Page Widget.
+* [Tier Pricing](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-tier.html) and [Special Pricing](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-special.html) are not supported in the [!DNL Live Search] field and Product Listing Page Widget.
 
 ## Cookies
 
