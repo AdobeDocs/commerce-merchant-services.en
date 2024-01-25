@@ -138,3 +138,7 @@ To allow [!DNL Catalog Service] through a firewall, add `commerce.adobe.io` to t
 The [API Mesh for Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) enables developers to integrate private or third-party APIs and other interfaces with Adobe products using Adobe IO.
 
 See the  [[!DNL Catalog Service] and API Mesh](mesh.md) topic for installation and configuration details.
+
+## Data Management Dashboard
+
+Users can refer to the [Data Management Dashboard](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) for more data about [!DNL Catalog Service] data syncing.
