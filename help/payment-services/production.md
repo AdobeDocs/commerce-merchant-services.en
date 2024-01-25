@@ -24,7 +24,7 @@ After you [configure your Commerce Services](connect.md#configure-commerce-servi
    You are directed to the settings area in the Home view with the relevant options expanded (**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_), where you can enable the [!DNL Payment Services] options as your [payment method](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html){target="_blank"}.
 
 1. In _[!UICONTROL General Configuration]_, set **[!UICONTROL Enable]** to `Yes`.
-1. Set **[!UICONTROL Payment Action]**, for both _[!UICONTROL Credit Card Fields]_ and _[!UICONTROL PayPal Smart Buttons]_, to one of the following:
+1. Set **[!UICONTROL Payment Action]**, for both _[!UICONTROL Credit Card Fields]_ and _[!UICONTROL PayPal payment buttons]_, to one of the following:
 
    |Setting|Description|
    |---|---|
@@ -41,7 +41,7 @@ After you [configure your Commerce Services](connect.md#configure-commerce-servi
 
    Clearing should be done after every configuration change.
 
-See [Configure Payment Services](settings.md) for more information about configuring Credit Card Fields and PayPal Smart Buttons.
+See [Configure Payment Services](settings.md) for more information about configuring Credit Card Fields and PayPal payment buttons.
 
 ## Complete merchant onboarding
 

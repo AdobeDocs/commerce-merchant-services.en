@@ -110,28 +110,28 @@ See [Payments options](payments-options.md#apple-pay-button) for more informatio
 | [!UICONTROL Show buttons on cart page] | store view | Enable or disable [!DNL Apple Pay] in on the cart page. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Debug Mode] | website | Enable or disable Debug Mode. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 
-## [!DNL PayPal Smart Buttons]
+## [!DNL PayPal Payment Buttons]
 
-The [!DNL PayPal Smart Buttons] payment options provide a simple, fast, and secure checkout process for your customer.
+The [!DNL PayPal Payment Buttons] payment options provide a simple, fast, and secure checkout process for your customer.
 
 See [Payments options](payments-options.md#paypal-smart-buttons) for more information.
 
-Configure [!DNL PayPal Smart Buttons]
+Configure [!DNL PayPal Payment Buttons]
 
-You can enable and configure the PayPal Smart Buttons payment options within the Admin:
+You can enable and configure the PayPal payment buttons payment options within the Admin:
 
 1. On the _Admin_ sidebar, go to **[!UICONTROL Stores]** > _[!UICONTROL Settings]_ > **[!UICONTROL Configuration]**.
 1. In the left panel, expand **[!UICONTROL Sales]** and choose **[!UICONTROL Payment Methods]**.
 1. Expand the _[!UICONTROL Recommended Solutions]_ section.
-1. In the _[!UICONTROL Payment Services]_ section, expand the _[!UICONTROL PayPal Smart Buttons]_ section.
+1. In the _[!UICONTROL Payment Services]_ section, expand the _[!UICONTROL PayPal payment buttons]_ section.
 1. To change the name of the payment method as shown during checkout, edit the _[!UICONTROL Title]_ field.
 1. To [set the payment action](production.md#set-payment-services-as-payment-method), select **[!UICONTROL Authorize]** or **[!UICONTROL Authorize and Capture]**.
 1. To prioritize a payment method on the checkout page, provide a `Numeric Only` value in the **[!UICONTROL Sort order]** field.
 1. To enable/disable the [Pay Later messaging](payments-options.md#pay-later-button), select `Yes`/`No` for **[!UICONTROL Display Pay Later Message]**.
-1. To show PayPal Smart Buttons on the checkout page, select `Yes` for the **[!UICONTROL Show buttons on checkout page]**.
-1. To show PayPal Smart Buttons on the product detail page, select `Yes` for the **[!UICONTROL Show buttons on product detail page]**.
-1. To show PayPal Smart Buttons in the mini cart preview, select `Yes` for **[!UICONTROL Show buttons in mini cart preview]**.
-1. To show PayPal Smart Buttons on the cart page, select `Yes` for the **[!UICONTROL Show buttons on cart page]**.
+1. To show PayPal payment buttons on the checkout page, select `Yes` for the **[!UICONTROL Show buttons on checkout page]**.
+1. To show PayPal payment buttons on the product detail page, select `Yes` for the **[!UICONTROL Show buttons on product detail page]**.
+1. To show PayPal payment buttons in the mini cart preview, select `Yes` for **[!UICONTROL Show buttons in mini cart preview]**.
+1. To show PayPal payment buttons on the cart page, select `Yes` for the **[!UICONTROL Show buttons on cart page]**.
 1. To enable Venmo as a payment option, select `Yes` for **[!UICONTROL Venmo Enabled]**.
 1. To enable credit and debit cards as a payment option (PayPal Smart button), select `Yes` for **[!UICONTROL Credit and Debit Card Enabled]**.
 1. To enable/disable the [PayPal Pay Later](payments-options.md#pay-later-button) payment option, select `Yes`/`No` for **[!UICONTROL PayPal Pay Later Enabled]**.
@@ -146,10 +146,10 @@ You can enable and configure the PayPal Smart Buttons payment options within the
 | [!UICONTROL Title] | store view | Add the text to be displayed as the title for this payment option in the Payment Method view during checkout. Options: text field |
 | [!UICONTROL Payment Action] | website | The [payment action](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} for the specified payment method. Options: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Display Pay Later Message] | website | Enable or disable the Pay Later messaging in the shopping cart, product page, mini-cart, and during the checkout flow. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
-| [!UICONTROL Show buttons on checkout page] | store view | Enable or disable [!DNL PayPal Smart Buttons] on the checkout page. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
-| [!UICONTROL Show buttons on product detail page] | store view | Enable or disable [!DNL PayPal Smart Buttons] on the product detail page. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
-| [!UICONTROL Show buttons in mini-cart preview] | store view | Enable or disable [!DNL PayPal Smart Buttons] in the mini-cart preview. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
-| [!UICONTROL Show buttons on cart page] | store view | Enable or disable [!DNL PayPal Smart Buttons] in on the cart page. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL Show buttons on checkout page] | store view | Enable or disable [!DNL PayPal Payment Buttons] on the checkout page. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL Show buttons on product detail page] | store view | Enable or disable [!DNL PayPal Payment Buttons] on the product detail page. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL Show buttons in mini-cart preview] | store view | Enable or disable [!DNL PayPal Payment Buttons] in the mini-cart preview. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL Show buttons on cart page] | store view | Enable or disable [!DNL PayPal Payment Buttons] in on the cart page. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Venmo Enabled] | store view | Enable or disable the Venmo payment option where payment buttons are displayed. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Credit and Debit Card Enabled] | store view | Enable or disable the Credit and Debit card options where payment buttons are displayed. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL PayPal Pay Later Enabled] | store view | Enable or disable PayPal Pay Later payment option appearance where payment buttons are displayed. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
@@ -178,12 +178,12 @@ You can also configure payment button styling [in Settings](settings.md#button-s
 
 |Field|Scope|Description|
 |--- |--- |--- |
-|[!UICONTROL Layout]|Store View|Define style of layout for Paypal Smart Buttons. Options: `[!UICONTROL Vertical]` / `[!UICONTROL Horizontal]`|
-|[!UICONTROL Color]|Store View|Define color of the Paypal Smart Buttons. Options: [!UICONTROL Blue] / `[!UICONTROL Gold]` / `[!UICONTROL Silver]` / `[!UICONTROL White]` / `[!UICONTROL Black]`|
-|[!UICONTROL Shape]|Store View|Define shape of the Paypal Smart Buttons. Options: `[!UICONTROL Rectangular]` / `[!UICONTROL Pill]`|
-|[!UICONTROL Use Default Height]|Store View|Defines if PayPal Smart Buttons use a default height. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]`|
-|[!UICONTROL Height]|Store View|Define height of the PayPal Smart Buttons. Default value: none|
-|[!UICONTROL Label]|Store View|Define label that appears in the PayPal Smart Buttons. Options: `[!UICONTROL PayPal]` / `[!UICONTROL Checkout]` / `[!UICONTROL Buynow]` / `[!UICONTROL Pay]` / `[!UICONTROL Installment]`|
+|[!UICONTROL Layout]|Store View|Define style of layout for Paypal payment buttons. Options: `[!UICONTROL Vertical]` / `[!UICONTROL Horizontal]`|
+|[!UICONTROL Color]|Store View|Define color of the Paypal payment buttons. Options: [!UICONTROL Blue] / `[!UICONTROL Gold]` / `[!UICONTROL Silver]` / `[!UICONTROL White]` / `[!UICONTROL Black]`|
+|[!UICONTROL Shape]|Store View|Define shape of the Paypal payment buttons. Options: `[!UICONTROL Rectangular]` / `[!UICONTROL Pill]`|
+|[!UICONTROL Use Default Height]|Store View|Defines if PayPal payment buttons use a default height. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]`|
+|[!UICONTROL Height]|Store View|Define height of the PayPal payment buttons. Default value: none|
+|[!UICONTROL Label]|Store View|Define label that appears in the PayPal payment buttons. Options: `[!UICONTROL PayPal]` / `[!UICONTROL Checkout]` / `[!UICONTROL Buynow]` / `[!UICONTROL Pay]` / `[!UICONTROL Installment]`|
 |[!UICONTROL Tagline]|Store View|Enables tagline. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]`|
 
 ## Flush the cache

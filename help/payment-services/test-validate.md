@@ -12,7 +12,7 @@ Before you expose [!DNL Payment Services] for [!DNL Adobe Commerce] and [!DNL Ma
 
 Testing [!DNL Payment Services] in a sandbox environment is an important validation step, even though it is a simulated environment connected only to the PayPal sandbox, not to real banks and merchants.
 
-1. Complete a successful checkout from your store, either with [Credit Card Fields](payments-options.md#credit-card-fields) or any of the [PayPal Smart Buttons](payments-options.md#paypal-smart-buttons). See [Testing credentials](#testing-credentials) for more information about using fake credit cards for testing.
+1. Complete a successful checkout from your store, either with [Credit Card Fields](payments-options.md#credit-card-fields) or any of the [PayPal payment buttons](payments-options.md#paypal-smart-buttons). See [Testing credentials](#testing-credentials) for more information about using fake credit cards for testing.
 1. Capture (when your payment action is [set to `Authorize and Capture`](onboard.md#set-payment-services-as-payment-method)), [refund](refunds.md), or [void](voids.md) the just-completed order. You can also simply [create an invoice](https://docs.magento.com/user-guide/sales/invoice-create.html){target="_blank"} for an order, if your payment action is set to `Authorize` instead of `Authorize and Capture`.
 1. Within 24-48 hours, view the transaction and other information in the [Payouts report](payouts.md).
 1. See details of the order in the [Order payment status report](order-payment-status.md).

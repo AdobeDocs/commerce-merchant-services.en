@@ -58,13 +58,13 @@ The [!DNL Apple Pay] button is visible from the product page, mini-cart, shoppin
 
 You can configure [!UICONTROL Apple Pay] in the store configuration or the Payment Services Home. See [Settings](settings.md#apple-pay) for more information.
 
-## [!DNL PayPal Smart Buttons]
+## [!DNL PayPal Payment Buttons]
 
-[!DNL PayPal Smart Buttons], which use PayPal to complete a purchase, stores your shopper's shipping address, billing addresses, and payment details for later use. Shoppers can use any payment method previously stored or offered by PayPal.
+[!DNL PayPal Payment Buttons], which use PayPal to complete a purchase, stores your shopper's shipping address, billing addresses, and payment details for later use. Shoppers can use any payment method previously stored or offered by PayPal.
 
 ![PayPal button](assets/paypal-button.png){width="350" zoomable="yes"}
 
-You can configure [!UICONTROL PayPal Smart Buttons] in the store configuration or the [!DNL Payment Services] Home.  See [Settings](settings.md#payment-buttons) for more information.
+You can configure [!UICONTROL PayPal payment buttons] in the store configuration or the [!DNL Payment Services] Home.  See [Settings](settings.md#payment-buttons) for more information.
 
 See PayPal's [Payment methods documentation](https://developer.paypal.com/docs/checkout/payment-methods/) to learn in which countries each payment method is currently available.
 
