@@ -6,21 +6,29 @@ feature: Payments, Checkout, Configuration
 ---
 # Payment Options
 
-With [!DNL Adobe Commerce] and [!DNL Magento Open Source] [!DNL Payment Services], you have multiple payment options available to you. You can configure these payment options through:
+With [!DNL Adobe Commerce] and [!DNL Magento Open Source] [!DNL Payment Services], you have multiple payment options available to you.
 
-* [Home settings](payments-home.md)
-* [Store configuration](configure-admin.md) (recommended for legacy payment options or a multistore setup)
+You can configure these payment options in [Home settings](payments-home.md) or [Store configuration](configure-admin.md) (recommended for legacy payment options or a multi-store setup).
 
 There are different behaviors for each payment method depending on where you are in the checkout process:
 
 * Product page---The product page for an item
-* Mini cart---Available upon click of the cart icon when a product has been added to the cart
+* Mini cart---Available upon click of the cart icon when a product has been added to the carts
 * Shopping cart---Available upon click of _View and edit cart_ from the mini-cart
 * Checkout view---Available upon click of _Proceed to Checkout_ from mini-cart or shopping cart
 
 >[!IMPORTANT]
 >
->Payment Services onboarding must be completed before payments can be processed.
+>[!DNL Payment Services] onboarding must be completed before payments can be processed.
+
+## Standard vs. Advanced Payments Experience
+
+[!DNL Payment Services] provides **Advanced** (fully supported) and **Standard** (Express Checkout) payment options and onboarding flows, depending on the country in which you operate.
+
+* **Advanced** - All available [payments options](../payment-services/payments-options.md) are available for current [fully supported countries](../payment-services/overview.md#availability). During onboarding to enable live payments, select the [Advanced onboarding option](../payment-services/production.md#advanced-onboarding).
+* **Standard** - A subset of payments options (Express Checkout)---PayPal credit and debit cards---is available for other available supported countries. [Credit card fields](#credit-card-fields) and [Apple Pay](#apple-pay-button) are not available for this onboarding option. During onboarding to enable live payments, select the [Standard onboarding option](../payment-services/production.md#standard-onboarding).
+
+See [Enable [!DNL Payment Services] for production](../payment-services/production.md#complete-merchant-onboarding) for for information about completing Advanced and Standard onboarding.
 
 ## [!UICONTROL Credit Card Fields]
 
@@ -30,7 +38,7 @@ There are different behaviors for each payment method depending on where you are
 
 Enable [credit card vaulting](#vaulting) for your stores to allow shoppers to vault (save) their credit card information for a fast checkout later.
 
-You can configure [!UICONTROL Credit Card Fields] in the store configuration or the Payment Services Home. See [Settings](settings.md#credit-card-fields) for more information.
+You can configure [!UICONTROL Credit Card Fields] in the store configuration or the [!DNL Payment Services] Home. See [Settings](settings.md#credit-card-fields) for more information.
 
 You can also change the layout, width, height, and outer styling of the credit card fields. See [PayPal documentation](https://developer.paypal.com/docs/checkout/advanced/customize/card-field-style/) for more information.
 
@@ -56,7 +64,7 @@ You can configure [!UICONTROL Apple Pay] in the store configuration or the Payme
 
 ![PayPal button](assets/paypal-button.png){width="350" zoomable="yes"}
 
-You can configure [!UICONTROL PayPal Smart Buttons] in the store configuration or the Payment Services Home.  See [Settings](settings.md#payment-buttons) for more information.
+You can configure [!UICONTROL PayPal Smart Buttons] in the store configuration or the [!DNL Payment Services] Home.  See [Settings](settings.md#payment-buttons) for more information.
 
 See PayPal's [Payment methods documentation](https://developer.paypal.com/docs/checkout/payment-methods/) to learn in which countries each payment method is currently available.
 
