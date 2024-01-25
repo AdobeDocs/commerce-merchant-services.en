@@ -10,7 +10,7 @@ recommendations: noCatalog
 >
 >The Experience Platform connector has been renamed to [!DNL Data Connection].
 
-The [!DNL Data Connection] extension connects your Adobe Commerce web instance to the Adobe Experience Platform edge. For mobile developers, review this article then learn how to [integrate](./mobile-sdk-epc.md) the Adobe Experience Platform Mobile SDK with Commerce.
+The [!DNL Data Connection] extension connects your Adobe Commerce web instance to the Adobe Experience Platform edge. Learn how to [integrate](./mobile-sdk-epc.md) the Adobe Experience Platform Mobile SDK with Commerce.
 
 Your Commerce store contains a wealth of data. Information about how your shoppers browse, view, and ultimately purchase the products on your site can reveal opportunities to create a more personalized shopping experience. While that data can inform native Commerce features such as cart price rules and dynamic blocks, the data remains siloed in your Commerce instance. 
 
@@ -46,7 +46,7 @@ Sharing data between these two systems requires that you understand several conc
 
 * **Data** - The data that gets shared with the Experience Platform is data collected from browser events on your storefront, and back office events on the server. Storefront events are captured from shoppers' interactions on the site and include events such as [addToCart](events.md#addtocart), [pageView](events.md#pageview), [createAccount](events.md#createaccount), [editAccount](events.md#editaccount), [startCheckout](events.md#startcheckout), [completeCheckout](events.md#completecheckout), [signIn](events.md#signin), [signOut](events.md#signout), and so on. See [storefront events](events.md#storefront-events) for the full list of storefront events. Server-side, or back office events, include [order status](events.md#back-office-events) information, such as [orderPlaced](events.md#orderplaced), [orderReturned](events.md#orderitemreturncompleted), [orderShipped](events.md#ordershipmentcompleted), [orderCancelled](events.md#ordercancelled), and so on. See [back office events](events.md#back-office-events) for the full list of back office events.
 
-* **Experience Platform and edge network** - The Data Warehouse for most Adobe DX products. Data sent to the Experience Platform is then propagated to the Adobe DX products through the Experience Platform edge network. For example, you can launch Journey Optimizer and retrieve your specific Commerce event data from the edge and build an abandoned cart email in Journey Optimizer. Journey Optimizer can then send that email if there are any abandoned carts in your Commerce store.
+* **Experience Platform and edge network** - The data warehouse for most Adobe DX products. Data sent to the Experience Platform is then propagated to the Adobe DX products through the Experience Platform edge network. For example, you can launch Journey Optimizer, retrieve your specific Commerce event data from the edge, and build an abandoned cart email in Journey Optimizer. Journey Optimizer can then send that email if there are any abandoned carts in your Commerce store.
 
 * **Schema** - The schema is what describes the structure of the data that is being sent. Before Experience Platform can ingest your Commerce data, you must compose a schema to describe the data's structure and provide constraints to the type of data that can be contained within each field. Schemas consist of a base class and zero or more schema field groups. The schema uses the XDM structure, which all Adobe DX products can read. So when you send your data to the Experience Platform you can be sure that your data is understood across all DX products. Learn more about [schemas](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html).
 
@@ -66,9 +66,9 @@ The [!DNL Data Connection] extension is available on the following architectures
 
 To use the [!DNL Data Connection] extension, you must have the following:
 
-* Adobe Commerce 2.4.4 or higher.
-* Adobe ID and Organization ID.
-* [Adobe Client Data Layer (ACDL)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/client-data-layer/overview.html). The ACDL is required to collect storefront event data.
+* Adobe Commerce 2.4.4 or newer
+* Adobe ID and Organization ID
+* [Adobe Client Data Layer (ACDL)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/client-data-layer/overview.html), which is required to collect storefront event data
 * Entitlements to other Adobe DX products.
 
 ## Onboarding steps
