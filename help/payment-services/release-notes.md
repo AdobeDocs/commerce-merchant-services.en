@@ -70,6 +70,14 @@ _June 28, 2021_
 
 +++
 
+## v2.3.2
+
+_January 26, 2024_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+![Fix](../assets/fix.svg)<!-- PAY-5183 --> Fixed REST/GraphQL performance issues. Now, the credit card button renders when fetched through the API.
+
 ## v2.3.1
 
 _December 7, 2023_
