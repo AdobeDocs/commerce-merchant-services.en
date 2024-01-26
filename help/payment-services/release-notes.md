@@ -162,7 +162,7 @@ _January 29, 2023_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.0 and newer
 
-![Fixed issue](../assets/fix.svg)<!-- Issue PAY-4110 --> Fixed an issue that prevented buyers from placing an order using smart buttons on the product page, mini cart, and cart. Buyers can now complete orders successfully.
+![Fixed issue](../assets/fix.svg)<!-- Issue PAY-4110 --> Fixed an issue that prevented buyers from placing an order using payment buttons on the product page, mini cart, and cart. Buyers can now complete orders successfully.
 
 ## v1.5.3
 
@@ -180,7 +180,7 @@ _December 22, 2022_
 
 ![Fixed issue](../assets/fix.svg)<!-- Issue PAY-3992 --> Improved invoicing in Payment Services when a payment method is declined.
 
-![Fixed issue](../assets/fix.svg)<!-- Issue PAY-3999 --> Payment Services now correctly displays PayPal smart buttons for merchants using [Fire Checkout's](https://commercemarketplace.adobe.com/swissup-firecheckout.html){target=_blank} custom template for the checkout page. Previously, the minicart intermittently displayed the buttons.
+![Fixed issue](../assets/fix.svg)<!-- Issue PAY-3999 --> Payment Services now correctly displays PayPal payment buttons for merchants using [Fire Checkout's](https://commercemarketplace.adobe.com/swissup-firecheckout.html){target=_blank} custom template for the checkout page. Previously, the minicart intermittently displayed the buttons.
 
 ## v1.5.1
 
@@ -190,7 +190,7 @@ _November 23, 2022_
 
 ![New](../assets/new.svg)<!-- Issue PAY-3923 --> Payment Services now includes the version number in the user agent header for requests to be able to track, filter or deprecate unused endpoints.
 
-![Fixed issue](../assets/fix.svg)<!-- Issue PAY-3968 --> Payment Services now correctly displays order data when an order is placed from the product page using smart buttons.
+![Fixed issue](../assets/fix.svg)<!-- Issue PAY-3968 --> Payment Services now correctly displays order data when an order is placed from the product page using payment buttons.
 
 ## v1.5.0
 
@@ -220,7 +220,7 @@ _September 30, 2022_
 
 ![New](../assets/new.svg)<!-- Issue PAY-3231 --> Merchants can [add a [!UICONTROL Soft Descriptor]](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#add-soft-descriptor) to websites or individual store views configuration that show on customer transaction bank statements to delineate brands, stores, or product lines.
 
-![New](../assets/new.svg)<!-- Issue PAY-3707 --> [Enable or disable credit card fields and PayPal smart buttons](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#configure-payment-options) for checkout in Payment Services settings.
+![New](../assets/new.svg)<!-- Issue PAY-3707 --> [Enable or disable credit card fields and PayPal payment buttons](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#configure-payment-options) for checkout in Payment Services settings.
 
 ![Fixed issue](../assets/fix.svg)<!-- Issue PAY-3546 --> When a customer clicks **[!UICONTROL Edit cart]**, the page redirects to the cart page and shows the updated items instead of showing an empty cart.
 
@@ -252,7 +252,7 @@ _June 29, 2022_
 
 ![Fixed issue](../assets/fix.svg)<!-- Issue PAY-3264 --> Previously, when a logged-in user selected a different billing/shipping address other than the default address for their account, checkout failed. We fixed this issue, and now the selected billing/shipping address is sent (instead of the default saved address) and checkout is completed successfully.
 
-![Fixed issue](../assets/fix.svg)<!-- Issue PAY-3314 --> If you disable PayPal smart buttons for checkout, no errors are shown.
+![Fixed issue](../assets/fix.svg)<!-- Issue PAY-3314 --> If you disable PayPal payment buttons for checkout, no errors are shown.
 
 ![Fixed issue](../assets/fix.svg)<!-- Issue PAY-3330 --> Payments no longer fail during checkout when a guest user enters a phone number that includes dashes.
 
@@ -282,7 +282,7 @@ _March 31, 2022_
 
 ![Fixed issue](../assets/fix.svg)<!-- Issue PAY-2742 --> You can now enable and disable available payment methods, such as Venmo, at the store view level. Previously, you could configure payment methods per website only.
 
-![Fixed issue](../assets/fix.svg)<!-- Issue PAY-2277 --> You can now selectively [enable or disable individual PayPal smart buttons](settings.md#payment-buttons).
+![Fixed issue](../assets/fix.svg)<!-- Issue PAY-2277 --> You can now selectively [enable or disable individual PayPal payment buttons](settings.md#payment-buttons).
 
 ![Fixed issue](../assets/fix.svg)<!-- Issue PAY-2561 --> Previously removed products do not appear in the cart on the _Review Order_ page.
 
@@ -308,7 +308,7 @@ _November 29, 2021_
 
 ![New](../assets/new.svg)<!-- Issue PAY-311 --> [!DNL Payment Services] supports flexible tiered pricing, based on total processing volume, adapted to any merchant.
 
-![New](../assets/new.svg)<!-- Issue PAY-1443 --> You can easily [customize the look and feel](payments-options.md) of PayPal smart buttons and credit card fields for the [!DNL Payment Services] extension.
+![New](../assets/new.svg)<!-- Issue PAY-1443 --> You can easily [customize the look and feel](payments-options.md) of PayPal payment buttons and credit card fields for the [!DNL Payment Services] extension.
 
 ![Known issue](../assets/bug.svg)<!-- Issue PAY-2473 --> Using [incorrect Composer keys](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html) during installation of the extension prevents the user from [authenticating](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) with the correct `MAGEID`.
 

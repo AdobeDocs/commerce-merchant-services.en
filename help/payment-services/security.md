@@ -49,9 +49,9 @@ When a shopper [vaults---or "saves"---their credit card information](vaulting.md
 
 See [Credit card vaulting](vaulting.md) for more information.
 
-### PayPal Smart Buttons
+### PayPal payment buttons
 
-With PayPal Smart Buttons, no PCI-regulated data is passed across your services. You don't have to store or maintain that data, which vastly reduces PCI compliance concerns.
+With PayPal payment buttons, no PCI-regulated data is passed across your services. You don't have to store or maintain that data, which vastly reduces PCI compliance concerns.
 
 For security reasons, PayPal does not pass the billing address during checkout---country, email, and name is the only billing information used. You can optionally enable your site's PayPal checkout to return the complete billing address by contacting PayPal and completing a vetting process.
 
