@@ -580,7 +580,7 @@ The following table describes the data collected for this event.
 
 ## Back office events
 
-The back office events contain information about the status of an order, such as if an order was placed, canceled, refunded, shipped, or completed. The data that these server-side events collect shows a 360 view of the shopper order. This view helps merchants better target or analyze the entire order status when developing marketing campaigns. For example, you can spot trends in certain product categories that perform well at different times of the year. Such as, winter clothes that sell better during colder months or certain product colors that shoppers are interested in over the years. In addition, order status data can help you calculate lifetime customer value by understanding a shopper's propensity to convert based on previous orders.
+The back office events contain information about the status of an order, such as if an order was [placed](#orderplaced), [canceled](#ordercancelled), [refunded](#orderitemreturncompleted), [shipped](#ordershipmentcompleted), or [completed](#ordershipmentcompleted). The data that these server-side events collect shows a 360 view of the shopper order. This view helps merchants better target or analyze the entire order status when developing marketing campaigns. For example, you can spot trends in certain product categories that perform well at different times of the year. Such as, winter clothes that sell better during colder months or certain product colors that shoppers are interested in over the years. In addition, order status data can help you calculate lifetime customer value by understanding a shopper's propensity to convert based on previous orders.
 
 >[!NOTE]
 >
