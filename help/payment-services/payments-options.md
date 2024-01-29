@@ -46,7 +46,7 @@ You can also change the layout, width, height, and outer styling of the credit c
 
 Customers can use [[!DNL Apple Pay]](https://www.apple.com/apple-pay/), which utilizes credit and debit card payment credentials stored on an iOS or macOS device, to make purchases.
 
-[!DNL Apple Pay] is only available in the Safari browser.
+[!DNL Apple Pay] is only available in the Safari browser. Merchants can add up to 99 domains per merchant account.
 
 ![Apple Pay button in the minicart](assets/apple-pay-button.png){width="500" zoomable="yes"}
 
