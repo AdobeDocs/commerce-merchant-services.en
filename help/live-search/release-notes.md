@@ -43,13 +43,8 @@ _June 13, 2023_
 
 ### New Features
 
-![New](../assets/new.svg) [!DNL Live Search] now supports color swatches in the PLP widget.
-
-
-### Updates
-
-![Fix](../assets/fix.svg) The [!DNL Live Search] PLP widget is now enabled by default for new installations.
-
+![New](../assets/new.svg) [!DNL Live Search] now supports setting a default rule for Category Merchandising.
+![New](../assets/new.svg) There is now an Add to Cart button for each product on the Product Listing Page.
 
 Merchants must upgrade the [!DNL Live Search] extension to version >= 4.1.0 to access these features.
 
