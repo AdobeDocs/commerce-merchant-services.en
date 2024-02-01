@@ -126,10 +126,6 @@ There are two types of profile data that you can send to the Experience Platform
 
 1. Enter the profile data specific datastream ID in the **Datastream ID for customer profiles** field.
 
-<!-->
-CAVEAT: delete event might not work for beta. If not available for beta, link to topic about how to manually delete: https://experienceleague.adobe.com/docs/experience-platform/data-lifecycle/api/workorder.html?lang=en
--->
-
 ## Send historical order data
 
 Adobe Commerce collects up to five years of [historical order data and status](events.md#back-office-events). You can use the [!DNL Data Connection] extension to send that historical data to the Experience Platform to enrich your customer profiles and personalize the customer experiences based on those past orders. The data is stored in a dataset within Experience Platform.
