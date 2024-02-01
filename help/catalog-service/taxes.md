@@ -1,8 +1,9 @@
 ---
-title: 'Display taxed prices with the API Mesh'
-description: 'Use [!DNL API Mesh] for Adobe Commerce and Catalog Service to display prices including taxes.'
+title: Display taxed prices with the API Mesh
+description: Use [!DNL API Mesh] for Adobe Commerce and Catalog Service to display prices including taxes.
 role: Admin, Developer
 feature: Services, API Mesh, Catalog Service
+exl-id: 0d3da296-4409-4653-b397-99eae35e4cb7
 ---
 # Display taxed prices with API Mesh for Adobe Developer App Builder
 

@@ -40,13 +40,15 @@ Whether you are a small business, mid-market contender, or large enterprise, thi
 
 [!DNL Payment Services] is available for [!DNL Adobe Commerce] and [!DNL Magento Open Source]. The [!DNL Payment Services] extension is now compatible with [!DNL Adobe Commerce] versions 2.4.x.
 
-Currently, [!DNL Payment Services] is available to merchants in the following countries:
+Currently, [!DNL Payment Services] provides full support (via [Advanced onboarding](../payment-services/production.md#advanced-onboarding)) for all payment options in these countries:
 
 * United States (US)
 * Canada (CA)
 * Australia (AUS)
 * France (FR)
 * United Kingdom (UK)
+
+Payment Services provides [Express Checkout capabilities](../payment-services/payments-options.md) (subset of payments options) for other [available countries during onboarding](../payment-services/production.md#complete-merchant-onboarding).
 
 See [Lifecycle policy](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html) and the [[!DNL Payment Services] release notes](release-notes.md) pages for more release and version-specific information.
 
