@@ -43,15 +43,7 @@ Intelligent ranking methods are:
 
 **Manual ranking** allows users to override the automatic product sort order by defining manual pin, boost, bury, and hide rules. 
 
-## Default and inherited ranking
-
-There are a couple options for setting rankings for groups of products: the default rule and inherited rankings.
-
-### Default rule
-
-You may set a default merchandising rule that is applied to all products automatically. This rule is applied when no keyword is sent. If a keyword is sent, any rules that apply to that keyword are applied.
-
-### Inherited rules
+## Inherited ranking
 
 As a merchandiser, you might want to be able to select all of women's wear categories to be sorted by "trending". This includes the subcategories "Women's pants", "Women's shirts", and "Women's accessories". Men's categories should not be affected. You can use inherited rankings to achieve this.
 
