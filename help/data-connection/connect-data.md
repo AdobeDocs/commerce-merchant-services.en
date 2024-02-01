@@ -71,20 +71,6 @@ See the events topic to learn more about [storefront](events.md#storefront-event
     1. Open the dataset associated with your datastream.
     1. In the right-hand pane, view the details about the dataset. Copy the dataset ID.
 
-1. Enter the **Profile Dataset ID** Hey. I just remembered a caveat/limitation for the "Customer Profiles" work which would be nice to call out in the docs. Here is the full context:
-Two types of data are sent to AEP: Profile Event and Profile record
-While the event is available in AEP immediately, AEP takes up to 10 minutes to fully create the profile in AEP. (the way it happens is, AEP immediately creates a skeleton profile the moment it receives the request from Commerce, but it takes upto 10 minutes to fully complete the profile data).
-Further explanation: This might affect use cases in AJO, example: AEP journeys are typically triggered by an event. So if a profile event is immediately available in AEP, and the AJO journey is triggered, the AJO journey will not have immediate access to the profile data. AJO journeys can work around this, by adding a "wait" action on their journeys - this would prompt the journey to wait until the profile is created.
-I thought i'd give you the full context and let you phrase it in the way you see most appropriate. We could call out that: profile events are available immediately but a 10 minute wait period for the profile record. And a very brief description of how AEP applications like AJO can support this with the help of a Wait Activity. (edited) 
-experienceleague.adobe.comexperienceleague.adobe.com
-Wait activity | Adobe Journey Optimizer
-Learn about the wait activity
-
-
-Alex Jose
-  2:54 PM
-The wait activity literally tells AJO: Wait for X amount of time OR wait until X is done.
-
 1. To ensure back office event data updates based on a schedule according to a [cron](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cron.html) job, you must change the `Sales Orders Feed` index to `Update by Schedule`.
 
     1. On the _Admin_ sidebar, go to **[!UICONTROL System]** > _[!UICONTROL Tools]_ > **[!UICONTROL Index Management]**.
@@ -119,6 +105,30 @@ The wait activity literally tells AJO: Wait for X amount of time OR wait until X
 >[!NOTE]
 >
 >After onboarding, storefront data begins to flow to the Experience Platform edge. Back office data takes about five minutes to appear at the edge. Subsequent updates are visible at the edge based on the cron schedule.
+
+### Customer profiles (Beta)
+
+>[!IMPORTANT]
+>
+>This feature is in beta. If you would like to join the beta, send an email to the following address: [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
+
+There are two types of profile data that you can send to the Experience Platform: profile records and profile events. A profile record contains data when a shopper creates a profile in your Commerce instance. Profile events contain data about your shopper's profile information, such as if they create, edit, or delete an account on your site. When that profile data is sent to the Experience Platform, it is forwarded to Adobe's profile management and segmentation service: [Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html). Learn more about [profile records and profile-related data](./update-xdm.md#profile-records-and-profile-related-data) and how you can ensure your customer's profile data can be successfully ingested into the Experience Platform.
+
+1. Place a checkmark in the **Customer profiles** checkbox if you want to send profile data to the Experience Platform.
+
+1. Enter the **Profile Dataset ID**.
+
+    Profile data must use a different dataset than what you are currently using for storefront and back office data.
+
+1. If you want to stream profile data through the same datastream ID that you are using for storefront and back office data, place a checkmark in the **Stream customer profiles using same datastream ID**.
+
+    The **Datastream ID for customer profiles** field appears.
+
+1. Enter the profile data specific datastream ID in the **Datastream ID for customer profiles** field.
+
+<!-->
+CAVEAT: delete event might not work for beta. If not available for beta, link to topic about how to manually delete: https://experienceleague.adobe.com/docs/experience-platform/data-lifecycle/api/workorder.html?lang=en
+-->
 
 ## Send historical order data
 

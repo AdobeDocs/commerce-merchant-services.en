@@ -271,9 +271,9 @@ The following table describes the data collected for this event.
 |`productListItems.selectedOptions.attribute`|Identifies an attribute of the configurable product, such as `size` or `color`.|
 |`productListItems.selectedOptions.value`|Identifies the value of the attribute such as `small` or `black`.|
 
-## Profile events
+## Profile events (storefront)
 
-Profile events include account information, such as `signIn`, `signOut`, `createAccount`, and `editAccount`. This data is used to help populate key customer details that are needed to better define segments or execute marketing campaigns, such as if you want to target shoppers who live in New York.
+Profile events captured from the storefront include account information, such as `signIn`, `signOut`, `createAccount`, and `editAccount`. This data is used to help populate key customer details that are needed to better define segments or execute marketing campaigns, such as if you want to target shoppers who live in New York. There are similar profile events captured from the [server-side](#profile-events-server-side).
 
 ### signIn
 
@@ -391,7 +391,7 @@ The following table describes the data collected for this event.
 
 ## Search events
 
-The search events provide data relevant to the shopper's intent. Insight into a shopper's intent helps merchants see how shoppers are searching for items, what they click, and ultimately purchase or abandon. An example of how you might use this data is if you want to target existing shoppers who search for your top product, but never purchase the product.
+The search events provide data relevant to the shopper's intent. Insight into a shopper's intent helps merchants see how shoppers are searching for items, what they click, and ultimately purchase or abandon. An example of how you might use this data is if you want to target existing shoppers who search for your top product, but never purchase the product. You must install the [[!DNL Live Search]](../live-search/install.md) extension to access these events.
 
 Use the `searchRequest.id` and `searchResponse.id` fields found in both the `searchRequestSent` and `searchResponseReceived` events to cross-reference a search request to the corresponding search response.
 
@@ -462,7 +462,7 @@ The following table describes the data collected for this event.
 
 ## B2B events
 
-![B2B for Adobe Commerce](../assets/b2b.svg) For B2B merchants, you must [install](install.md#install-the-b2b-extension) the `experience-platform-connector-b2b` extension to enable these events.
+![B2B for Adobe Commerce](../assets/b2b.svg) For B2B merchants, you must [install](install.md#install-the-b2b-extension) the `experience-platform-connector-b2b` extension to access these events.
 
 The B2B events contain [requisition list](https://experienceleague.adobe.com/docs/commerce-admin/b2b/requisition-lists/requisition-lists.html) information, such as if a requisition list was created, added to, or deleted from. By tracking events specific to requisition lists, you can see which products your customers purchase frequently and create campaigns based on that data.
 
@@ -557,11 +557,15 @@ The following table describes the data collected for this event.
 
 ## Back office events
 
-The back office events contain information about the status of an order, such as if an order was placed, canceled, refunded, shipped, or completed. The data that these server-side events collect shows a 360 view of the shopper order. This view helps merchants better target or analyze the entire order status when developing marketing campaigns. For example, you can spot trends in certain product categories that perform well at different times of the year. Such as, winter clothes that sell better during colder months or certain product colors that shoppers are interested in over the years. In addition, order status data can help you calculate lifetime customer value by understanding a shopper's propensity to convert based on previous orders.
+Back office events contain server-side data. This data comprises [order status](#order-status) information such as if an order was placed, canceled, refunded, shipped, or completed. Server-side data also includes profile information, such as if an account was created, updated, or deleted.
+
+### Order status
+
+Order status data shows a 360 view of the shopper order. This view helps merchants better target or analyze the entire order status when developing marketing campaigns. For example, you can spot trends in certain product categories that perform well at different times of the year. Such as, winter clothes that sell better during colder months or certain product colors that shoppers are interested in over the years. In addition, order status data can help you calculate lifetime customer value by understanding a shopper's propensity to convert based on previous orders.
 
 >[!NOTE]
 >
->All back office events include the [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html) field, which provides the shopper's email address. By including this profile data in each event, you do not need a separate user account import from Adobe Commerce.
+>All back office events include the [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html) field, which provides the shopper's email address.
 
 ### orderPlaced
 
@@ -937,3 +941,83 @@ The following table describes the data collected for this event.
 |`productListItems.categories.id`|The unique identifier of the category.|
 |`productListItems.categories.name`|The name of the category.|
 |`productListItems.categories.path`|The path to the category.|
+
+### Profile events (server-side)
+
+>[!NOTE]
+>
+>**Beta** Profile events generated from the server-side are available for beta participants. If you would like to join the beta, send an email to the following address: [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
+
+Profile events captured from the server-side include account information, such as `accountCreated`, `accountUpdated`, and `accountDeleted`. This data is used to help populate key customer details that are needed to better define segments or execute marketing campaigns, such as if you want to target shoppers who live in New York. There are similar profile events captured from the [storefront](#profile-events-storefront).
+
+### accountCreated
+
+|Description| XDM event name|
+|---|---|
+|Triggered when a shopper attempts to create an account.|`userAccount.backofficeCreateProfile`|
+
+#### Data collected from accountCreated
+
+The following table describes the data collected for this event.
+
+|Field|Description|
+|---|---|
+|`person`|Contains information about the customer.|
+|`person.name`|Contains information about the name of the customer.|
+|`person.name.firstName`|Contains the first name of the customer.|
+|`person.name.lastName`|Contains the last name of the customer.|
+|`personalEmail`|A personal email address.|
+|`personalEmail.address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards.|
+|`commerce.commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
+|`commerce.commerceScope.environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
+|`commerce.commerceScope.storeCode`|The unique store code. You can have many stores per website.|
+|`commerce.commerceScope.storeViewCode`|The unique store view code. You can have many store views per store.|
+|`commerce.commerceScope.websiteCode`|The unique website code. You can have many websites in an environment.|
+
+### accountUpdated
+
+|Description| XDM event name|
+|---|---|
+|Triggered when a shopper attempts to edit an account.|`userAccount.backofficeUpdateProfile`|
+
+#### Data collected from accountUpdated
+
+The following table describes the data collected for this event.
+
+|Field|Description|
+|---|---|
+|`person`|Contains information about the customer.|
+|`person.name`|Contains information about the name of the customer.|
+|`person.name.firstName`|Contains the first name of the customer.|
+|`person.name.lastName`|Contains the last name of the customer.|
+|`personalEmail`|A personal email address.|
+|`personalEmail.address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards.|
+|`commerce.commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
+|`commerce.commerceScope.environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
+|`commerce.commerceScope.storeCode`|The unique store code. You can have many stores per website.|
+|`commerce.commerceScope.storeViewCode`|The unique store view code. You can have many store views per store.|
+|`commerce.commerceScope.websiteCode`|The unique website code. You can have many websites in an environment.|
+
+### accountDeleted
+
+|Description| XDM event name|
+|---|---|
+|Triggered when a shopper attempts to delete an account.|`userAccount.backofficeDeleteProfile`|
+
+#### Data collected from accountDeleted
+
+The following table describes the data collected for this event.
+
+|Field|Description|
+|---|---|
+|`person`|Contains information about the customer.|
+|`person.name`|Contains information about the name of the customer.|
+|`person.name.firstName`|Contains the first name of the customer.|
+|`person.name.lastName`|Contains the last name of the customer.|
+|`personalEmail`|A personal email address.|
+|`personalEmail.address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards.|
+|`commerce.commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
+|`commerce.commerceScope.environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
+|`commerce.commerceScope.storeCode`|The unique store code. You can have many stores per website.|
+|`commerce.commerceScope.storeViewCode`|The unique store view code. You can have many store views per store.|
+|`commerce.commerceScope.websiteCode`|The unique website code. You can have many websites in an environment.|
