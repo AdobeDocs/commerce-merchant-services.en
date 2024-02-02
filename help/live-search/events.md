@@ -36,7 +36,7 @@ This table describes the events used by [!DNL Live Search] strategies.
 
 Some events are required to populate the [Live Search dashboard](performance.md)
 
-| Dashboard area        | Events      | |
+| Dashboard area        | Events      | Join field |
 | ------------------- | ------------- | ---------- |
 | Unique searches       |`page-view`, `search-request-sent`,  | searchRequestId  |
 | Zero results searches |`page-view`, `search-request-sent`,  | searchRequestId  |
