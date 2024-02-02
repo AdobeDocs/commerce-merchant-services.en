@@ -38,13 +38,13 @@ Some events are required to populate the [Live Search dashboard](performance.md)
 
 | Dashboard area        | Events      | |
 | ------------------- | ------------- | ---------- |
-| Unique searches       |`page-view`,`search-request-sent`,  | searchRequestId  |
-| Zero results searches |`page-view`,`search-request-sent`,  | searchRequestId  |
-| Zero results rate     |`page-view`,`search-request-sent`,  | searchRequestId  |
-| Popular searches      |`page-view`,`search-request-sent`,  | searchRequestId  |
-| Avg. click position   |`page-view`,`search-request-sent`,`search-response-received`,`search-results-view`,`search-product-click`   | searchRequestId      |
-| Click-through rate    |`page-view`,`search-request-sent`,`search-response-received`,`search-results-view`,`search-product-click`   | searchRequestId, sku |
-| Conversion rate       |`page-view`,`search-request-sent`,`search-response-received`,`search-results-view`,`search-product-click`,`product-view`,`add-to-cart`,`place-order`| searchRequestId, sku |
+| Unique searches       |`page-view`, `search-request-sent`,  | searchRequestId  |
+| Zero results searches |`page-view`, `search-request-sent`,  | searchRequestId  |
+| Zero results rate     |`page-view`, `search-request-sent`,  | searchRequestId  |
+| Popular searches      |`page-view`, `search-request-sent`,  | searchRequestId  |
+| Avg. click position   |`page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click`   | searchRequestId      |
+| Click-through rate    |`page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click`   | searchRequestId, sku |
+| Conversion rate       |`page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click`, `product-view`, `add-to-cart`, `place-order`| searchRequestId, sku |
 
 ### Required contexts
 
