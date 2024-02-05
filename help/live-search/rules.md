@@ -43,7 +43,7 @@ When composing a complex rule, it can help to write it out with indentation to d
 
 ## Default rule
 
-You can set a default rule that is applied when no search term is 
+You can set a default rule that is applied when no search term is provided, or no other search rule can be applied. If you set the default rule to "Most Purchased", then all queries will default to that ranking type, unless super-ceded by a more specific search term. No search term can be set for the default rule.
 
 ## Order of precedence with multiple rules
 

@@ -14,9 +14,16 @@ To build a rule, the first step is to use the rule editor to define the conditio
 1. Click the **Search Merchandising** tab.
 1. Click **Add rule** to launch the rule editor.
 
+## Rule type
+
+A Search query is where you define a specific search term, conditions and ranking types.
+
+A Default rule can be set which is applied to all queries, unless a more specific search query is defined. Only one default rule can be set and it cannot contain any conditions. If you select Default, the Conditions interface is not displayed. 
+Choose the default Intelligent ranking type and any manual rankings you want applied to all default searches. Manual rankings are always applied.
+
 ## Conditions
 
-Conditions are the requirements to trigger an event. A rule can have up to ten conditions and 25 events.
+Conditions are the requirements to trigger an event. A rule can have up to ten conditions and 25 events. A default rule cannot have any conditions.
 
    ![Rule - Build your rule](assets/rules-add-workspace.png)
 
