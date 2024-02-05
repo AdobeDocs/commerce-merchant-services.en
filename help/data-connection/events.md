@@ -271,7 +271,7 @@ The following table describes the data collected for this event.
 |`productListItems.selectedOptions.attribute`|Identifies an attribute of the configurable product, such as `size` or `color`.|
 |`productListItems.selectedOptions.value`|Identifies the value of the attribute such as `small` or `black`.|
 
-## Profile events (storefront)
+## Customer profile events (storefront)
 
 Profile events captured from the storefront include account information, such as `signIn`, `signOut`, `createAccount`, and `editAccount`. This data is used to help populate key customer details that are needed to better define segments or execute marketing campaigns, such as if you want to target shoppers who live in New York. There are similar profile events captured from the [server-side](#profile-events-server-side).
 
@@ -580,7 +580,7 @@ The following table describes the data collected for this event.
 
 ## Back office events
 
-Back office events contain server-side data. This data comprises [order status](#order-status) information such as if an order was placed, canceled, refunded, shipped, or completed. Server-side data also includes profile information, such as if an account was created, updated, or deleted.
+Back office events contain server-side data. This data comprises [order status](#order-status) information such as if an order was placed, canceled, refunded, shipped, or completed. Server-side data also includes [customer profile](#customer-profile-events-server-side) information, such as if an account was created, updated, or deleted.
 
 ### Order status
 
@@ -965,7 +965,7 @@ The following table describes the data collected for this event.
 |`productListItems.categories.name`|The name of the category.|
 |`productListItems.categories.path`|The path to the category.|
 
-### Profile events (server-side)
+### Customer profile events (server-side)
 
 >[!NOTE]
 >

@@ -156,7 +156,9 @@ After onboarding, storefront data begins to flow to the Experience Platform edge
 >
 >This feature is in beta. If you would like to join the beta, send an email to the following address: [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
 
-There are two types of profile data that you can send to the Experience Platform: profile records and profile events. A profile record contains data when a shopper creates a profile in your Commerce instance. Profile events contain data about your shopper's profile information, such as if they create, edit, or delete an account on your site. When that profile data is sent to the Experience Platform, it is forwarded to Adobe's profile management and segmentation service: [Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html). Learn more about [profile records and profile-related data](./update-xdm.md#customer-profile-data-beta) and how you can ensure your customer's profile data can be successfully ingested into the Experience Platform.
+There are two types of profile data that you can send to the Experience Platform: profile records and profile events. A profile record contains data that is saved when a shopper creates a profile in your Commerce instance, such as the shopper's name. When a profile record is sent to the Experience Platform, it is forwarded to Adobe's profile management and segmentation service: [Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html). 
+
+Profile events contain data about your shopper's profile information, such as if they create, edit, or delete an account on your site. When profile event data is sent to the Experience Platform, it resides in a dataset where it can be used in other DX products. Learn more about [profile records and events](./update-xdm.md#customer-profile-data-beta) and how you can ensure your customer's profile data can be successfully ingested into the Experience Platform.
 
 1. Make sure you have [provided](#add-service-account-and-credential-details) service account and credential details.
 
@@ -164,13 +166,11 @@ There are two types of profile data that you can send to the Experience Platform
 
 1. Enter the **Profile Dataset ID**.
 
-    Profile data must use a different dataset than what you are currently using for storefront and back office data.
+    Profile record data must use a different dataset than what you are currently using for storefront and back office event data.
 
-1. If you want to stream profile data through the same datastream ID that you are using for storefront and back office data, place a checkmark in the **Stream customer profiles using same datastream ID**.
+1. If you do not want to stream profile events through the same datastream ID that you are using for storefront and back office data, remove the checkmark from the **Stream customer profiles through same datastream ID** and enter the datastream ID you want to use instead.
 
-    The **Datastream ID for customer profiles** field appears.
-
-1. Enter the profile data specific datastream ID in the **Datastream ID for customer profiles** field.
+It can take about 10 minutes for a profile record to be available in Real-Time CDP. Profile events begin streaming immediately.
 
 ## Send historical order data
 

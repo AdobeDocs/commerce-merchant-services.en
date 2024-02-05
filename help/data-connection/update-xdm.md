@@ -110,7 +110,7 @@ If you want to add time series [server-side profile event data](events.md#profil
 
 With the addition of the `Demographic Details` field group in your existing Commerce schema, the dataset and datastream already associated with your Commerce schema is used for this time series profile data.
 
-## Send profile-related data to Experience Platform in a separate schema
+### Send time series profile event data to Experience Platform in a separate schema
 
 If you want to add [server-side profile event data](events.md#profile-events-server-side) to a new profile-specific schema, complete the following steps.
 
