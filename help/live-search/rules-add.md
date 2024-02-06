@@ -54,8 +54,6 @@ Conditions are the requirements to trigger an event. A rule can have up to ten c
 1. To build a rule with multiple conditions, click **Add condition**.
    A rule can have up to ten conditions. The logical operator that joins two conditions is based on the current *Match* setting. By default, *Match* is `All` and the logical operator is `AND`.
 
-   ![Rules - Search query contains](assets/rules-search-query-contains-and.png)
-
 1. Select the second condition and enter the required query text.
 
 1. To change the logic of the rule, change the **Match** setting to determine how closely the shopper's search criteria must match the query condition. Set **Match** to one of the following:

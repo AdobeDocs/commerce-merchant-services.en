@@ -40,7 +40,7 @@ Reports a sync status of:
 - **Failed** - Displays the date and time that the sync was attempted
 - **In Progress** - Displays the date and time of the last successful sync
 
-The catalog sync process automatically runs every hour. If you are not seeing expected products on the storefront, or if the products do not reflect recent changes you made, you can resolve [catalog sync issues](#resolvesync).
+The catalog sync process is run through your cron process. If you are not seeing expected products on the storefront, or if the products do not reflect recent changes you made, you can resolve [catalog sync issues](#resolvesync).
 
 ### Products synced
 
