@@ -13,10 +13,11 @@ recommendations: noDisplay
 - Fundamentals {#fundamentals}
    - [Install the [!DNL Data Connection] extension](install.md)
    - [Connect Commerce Data to the Adobe Experience Platform](connect-data.md)
-   - [Add Field Groups to XDM Schema](update-xdm.md)
    - [Integrate the Adobe Experience Platform Mobile SDK with Commerce](mobile-sdk-epc.md)
 - Capture Data {#event-forwarding}
    - [Events](events.md)
+   - [Schema](update-xdm.md)
+   - [Profile Records](profile-data.md)
    - [Custom Events](custom-events.md)
    - [Use Adobe Experience Platform Tags](using-tags.md)
 - Use Case {#use-cases}

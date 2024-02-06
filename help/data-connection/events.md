@@ -11,21 +11,29 @@ The following lists the Commerce events available when you install the [!DNL Dat
 
 In addition to the data the following events collect, you also get [other data](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html) provided by the Adobe Experience Platform Web SDK.
 
-## Storefront events
+## Behavioral events
 
-The storefront events collect anonymized behavioral data from your shoppers as they browse your site. You can use the data these events collect to create promotions and campaigns targeted to a specific set of shoppers. Storefront event data includes simple and configurable products only.
+The behavioral events collect anonymized behavioral data from your shoppers as they browse your site. You can use the data these events collect to create promotions and campaigns targeted to a specific set of shoppers.
+
+>[!NOTE]
+>
+>All behavioral events include the [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html) field, which includes the shopper's email address, when available, and ECID.
+
+### Storefront events
+
+The storefront event data includes simple and configurable products only.
 
 >[!NOTE]
 >
 >All storefront events include the [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html) field, which includes the shopper's email address, when available, and ECID. By including this profile data in each event, you do not need a separate user account import from Adobe Commerce.
 
-### addToCart
+#### addToCart
 
 |Description| XDM event name|
 |---|---|
 |Triggered when a product is added to the cart or when the quantity of a product in the cart is incremented.|`commerce.productListAdds`|
 
-#### Data collected from addToCart
+##### Data collected from addToCart
 
 The following table describes the data collected for this event.
 
@@ -50,13 +58,13 @@ The following table describes the data collected for this event.
 |`productListItems.selectedOptions.attribute`|Identifies an attribute of the configurable product, such as `size` or `color`.|
 |`productListItems.selectedOptions.value`|Identifies the value of the attribute such as `small` or `black`.|
 
-### openCart
+#### openCart
 
 |Description| XDM event name|
 |---|---|
 |Triggered when a new cart is created, which is when a product is added to an empty cart.|`commerce.productListOpens`|
 
-#### Data collected from openCart
+##### Data collected from openCart
 
 The following table describes the data collected for this event.
 
@@ -81,13 +89,13 @@ The following table describes the data collected for this event.
 |`productListItems.selectedOptions.attribute`|Identifies an attribute of the configurable product, such as `size` or `color`.|
 |`productListItems.selectedOptions.value`|Identifies the value of the attribute such as `small` or `black`.|
 
-### removeFromCart
+#### removeFromCart
 
 |Description| XDM event name|
 |---|---|
 |Triggered every time a product is removed or every time the quantity of a product in the cart is decremented.|`commerce.productListRemovals`|
 
-#### Data collected from removeFromCart
+##### Data collected from removeFromCart
 
 The following table describes the data collected for this event.
 
@@ -112,13 +120,13 @@ The following table describes the data collected for this event.
 |`productListItems.selectedOptions.attribute`|Identifies an attribute of the configurable product, such as `size` or `color`.|
 |`productListItems.selectedOptions.value`|Identifies the value of the attribute such as `small` or `black`.|
 
-### shoppingCartView
+#### shoppingCartView
 
 |Description| XDM event name|
 |---|---|
 |Triggered when any cart page loads.|`commerce.productListViews`|
 
-#### Data collected from shoppingCartView
+##### Data collected from shoppingCartView
 
 The following table describes the data collected for this event.
 
@@ -143,13 +151,13 @@ The following table describes the data collected for this event.
 |`productListItems.selectedOptions.attribute`|Identifies an attribute of the configurable product, such as `size` or `color`.|
 |`productListItems.selectedOptions.value`|Identifies the value of the attribute such as `small` or `black`.|
 
-### pageView
+#### pageView
 
 |Description| XDM event name|
 |---|---|
 |Triggered when any page loads.|`web.webpagedetails.pageViews`|
 
-#### Data collected from pageView
+##### Data collected from pageView
 
 The following table describes the data collected for this event.
 
@@ -165,13 +173,13 @@ The following table describes the data collected for this event.
 |`commerce.commerceScope.storeViewCode`|The unique store view code. You can have many store views per store.|
 |`commerce.commerceScope.websiteCode`|The unique website code. You can have many websites in an environment.|
 
-### productPageView
+#### productPageView
 
 |Description| XDM event name|
 |---|---|
 |Triggered when any product page loads.|`commerce.productViews`|
 
-#### Data collected from productPageView
+##### Data collected from productPageView
 
 The following table describes the data collected for this event.
 
@@ -195,13 +203,13 @@ The following table describes the data collected for this event.
 |`productListItems.selectedOptions.attribute`|Identifies an attribute of the configurable product, such as `size` or `color`.|
 |`productListItems.selectedOptions.value`|Identifies the value of the attribute such as `small` or `black`.|
 
-### startCheckout
+#### startCheckout
 
 |Description| XDM event name|
 |---|---|
 |Triggered when the shopper clicks a checkout button.|`commerce.checkouts`|
 
-#### Data collected from startCheckout
+##### Data collected from startCheckout
 
 The following table describes the data collected for this event.
 
@@ -226,13 +234,13 @@ The following table describes the data collected for this event.
 |`productListItems.selectedOptions.attribute`|Identifies an attribute of the configurable product, such as `size` or `color`.|
 |`productListItems.selectedOptions.value`|Identifies the value of the attribute such as `small` or `black`.|
 
-### completeCheckout
+#### completeCheckout
 
 |Description| XDM event name|
 |---|---|
 |Triggered when the shopper places an order.|`commerce.purchases`|
 
-#### Data collected from completeCheckout
+##### Data collected from completeCheckout
 
 The following table describes the data collected for this event.
 
@@ -271,11 +279,11 @@ The following table describes the data collected for this event.
 |`productListItems.selectedOptions.attribute`|Identifies an attribute of the configurable product, such as `size` or `color`.|
 |`productListItems.selectedOptions.value`|Identifies the value of the attribute such as `small` or `black`.|
 
-## Customer profile events (storefront)
+### Customer profile events (storefront)
 
 Profile events captured from the storefront include account information, such as `signIn`, `signOut`, `createAccount`, and `editAccount`. This data is used to help populate key customer details that are needed to better define segments or execute marketing campaigns, such as if you want to target shoppers who live in New York. There are similar profile events captured from the [server-side](#profile-events-server-side).
 
-### signIn
+#### signIn
 
 |Description| XDM event name|
 |---|---|
@@ -285,7 +293,7 @@ Profile events captured from the storefront include account information, such as
 >
 > This event is triggered when the specific action is attempted. It does not indicate that the action was successful.
 
-#### Data collected from signIn
+##### Data collected from signIn
 
 The following table describes the data collected for this event.
 
@@ -305,7 +313,7 @@ The following table describes the data collected for this event.
 |`commerce.commerceScope.storeViewCode`|The unique store view code. You can have many store views per store.|
 |`commerce.commerceScope.websiteCode`|The unique website code. You can have many websites in an environment.|
 
-### signOut
+#### signOut
 
 |Description| XDM event name|
 |---|---|
@@ -315,7 +323,7 @@ The following table describes the data collected for this event.
 >
 > This event is triggered when the specific action is attempted. It does not indicate that the action was successful.
 
-#### Data collected from signOut
+##### Data collected from signOut
 
 The following table describes the data collected for this event.
 
@@ -329,7 +337,7 @@ The following table describes the data collected for this event.
 |`commerce.commerceScope.storeViewCode`|The unique store view code. You can have many store views per store.|
 |`commerce.commerceScope.websiteCode`|The unique website code. You can have many websites in an environment.|
 
-### createAccount
+#### createAccount
 
 |Description| XDM event name|
 |---|---|
@@ -339,7 +347,7 @@ The following table describes the data collected for this event.
 >
 > This event is triggered when the specific action is attempted. It does not indicate that the action was successful.
 
-#### Data collected from createAccount
+##### Data collected from createAccount
 
 The following table describes the data collected for this event.
 
@@ -359,7 +367,7 @@ The following table describes the data collected for this event.
 |`commerce.commerceScope.storeViewCode`|The unique store view code. You can have many store views per store.|
 |`commerce.commerceScope.websiteCode`|The unique website code. You can have many websites in an environment.|
 
-### editAccount
+#### editAccount
 
 |Description| XDM event name|
 |---|---|
@@ -369,7 +377,7 @@ The following table describes the data collected for this event.
 >
 > This event is triggered when the specific action is attempted. It does not indicate that the action was successful.
 
-#### Data collected from editAccount
+##### Data collected from editAccount
 
 The following table describes the data collected for this event.
 
@@ -389,13 +397,13 @@ The following table describes the data collected for this event.
 |`commerce.commerceScope.storeViewCode`|The unique store view code. You can have many store views per store.|
 |`commerce.commerceScope.websiteCode`|The unique website code. You can have many websites in an environment.|
 
-## Search events
+### Search events
 
 The search events provide data relevant to the shopper's intent. Insight into a shopper's intent helps merchants see how shoppers are searching for items, what they click, and ultimately purchase or abandon. An example of how you might use this data is if you want to target existing shoppers who search for your top product, but never purchase the product. You must install the [[!DNL Live Search]](../live-search/install.md) extension to access these events.
 
 Use the `searchRequest.id` and `searchResponse.id` fields found in both the `searchRequestSent` and `searchResponseReceived` events to cross-reference a search request to the corresponding search response.
 
-### searchRequestSent
+#### searchRequestSent
 
 |Description| XDM event name|
 |---|---|
@@ -405,7 +413,7 @@ Use the `searchRequest.id` and `searchResponse.id` fields found in both the `sea
 >
 >Search events are not supported on an Adobe Commerce Enterprise Edition with the B2B extension installed.
 
-#### Data collected from searchRequestSent
+##### Data collected from searchRequestSent
 
 The following table describes the data collected for this event.
 
@@ -429,7 +437,7 @@ The following table describes the data collected for this event.
 |`commerce.commerceScope.storeViewCode`|The unique store view code. You can have many store views per store.|
 |`commerce.commerceScope.websiteCode`|The unique website code. You can have many websites in an environment.|
 
-### searchResponseReceived
+#### searchResponseReceived
 
 |Description| XDM event name|
 |---|---|
@@ -439,7 +447,7 @@ The following table describes the data collected for this event.
 >
 >Search events are not supported on an Adobe Commerce Enterprise Edition with the B2B extension installed.
 
-#### Data collected from searchResponseReceived
+##### Data collected from searchResponseReceived
 
 The following table describes the data collected for this event.
 
@@ -460,19 +468,19 @@ The following table describes the data collected for this event.
 |`commerce.commerceScope.storeViewCode`|The unique store view code. You can have many store views per store.|
 |`commerce.commerceScope.websiteCode`|The unique website code. You can have many websites in an environment.|
 
-## B2B events
+### B2B events
 
 ![B2B for Adobe Commerce](../assets/b2b.svg) For B2B merchants, you must [install](install.md#install-the-b2b-extension) the `experience-platform-connector-b2b` extension to access these events.
 
 The B2B events contain [requisition list](https://experienceleague.adobe.com/docs/commerce-admin/b2b/requisition-lists/requisition-lists.html) information, such as if a requisition list was created, added to, or deleted from. By tracking events specific to requisition lists, you can see which products your customers purchase frequently and create campaigns based on that data.
 
-### createRequisitionList
+#### createRequisitionList
 
 |Description| XDM event name|
 |---|---|
 |Triggered when a shopper creates a requisition list.|`commerce.requisitionListOpens`|
 
-#### Data collected from createRequisitionList
+##### Data collected from createRequisitionList
 
 The following table describes the data collected for this event.
 
@@ -489,13 +497,13 @@ The following table describes the data collected for this event.
 |`commerce.commerceScope.storeViewCode`|The unique store view code. You can have many store views per store.|
 |`commerce.commerceScope.websiteCode`|The unique website code. You can have many websites in an environment.|
 
-### addToRequisitionList
+#### addToRequisitionList
 
 |Description| XDM event name|
 |---|---|
 |Triggered when a shopper adds a product to an existing requisition list or while creating a list.|`commerce.requisitionListAdds`|
 
-#### Data collected from addToRequisitionList
+##### Data collected from addToRequisitionList
 
 The following table describes the data collected for this event.
 
@@ -522,13 +530,13 @@ The following table describes the data collected for this event.
 |`productListItems.selectedOptions.attribute`|Identifies an attribute of the configurable product, such as `size` or `color`.|
 |`productListItems.selectedOptions.value`|Identifies the value of the attribute such as `small` or `black`.|
 
-### removeFromRequisitionList
+#### removeFromRequisitionList
 
 |Description| XDM event name|
 |---|---|
 |Triggered when a shopper removes a product from a requisition list.|`commerce.requisitionListRemovals`|
 
-#### Data collected from removeFromRequisitionList
+##### Data collected from removeFromRequisitionList
 
 The following table describes the data collected for this event.
 
@@ -555,13 +563,13 @@ The following table describes the data collected for this event.
 |`productListItems.selectedOptions.attribute`|Identifies an attribute of the configurable product, such as `size` or `color`.|
 |`productListItems.selectedOptions.value`|Identifies the value of the attribute such as `small` or `black`.|
 
-### deleteRequisitionList
+#### deleteRequisitionList
 
 |Description| XDM event name|
 |---|---|
 |Triggered when a shopper deletes a requisition list.|`commerce.requisitionListDeletes`|
 
-#### Data collected from deleteRequisitionList
+##### Data collected from deleteRequisitionList
 
 The following table describes the data collected for this event.
 
@@ -580,23 +588,23 @@ The following table describes the data collected for this event.
 
 ## Back office events
 
-Back office events contain server-side data. This data comprises [order status](#order-status) information such as if an order was placed, canceled, refunded, shipped, or completed. Server-side data also includes [customer profile](#customer-profile-events-server-side) information, such as if an account was created, updated, or deleted.
-
-### Order status
-
-Order status data shows a 360 view of the shopper order. This view helps merchants better target or analyze the entire order status when developing marketing campaigns. For example, you can spot trends in certain product categories that perform well at different times of the year. Such as, winter clothes that sell better during colder months or certain product colors that shoppers are interested in over the years. In addition, order status data can help you calculate lifetime customer value by understanding a shopper's propensity to convert based on previous orders.
+Back office events contain server-side data. This data comprises [order status](#order-status) information such as if an order was placed, canceled, refunded, shipped, or completed. Server-side data also includes [customer profile data](#customer-profile-events-server-side) information, such as if an account was created, updated, or deleted.
 
 >[!NOTE]
 >
 >All back office events include the [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html) field, which provides the shopper's email address.
 
-### orderPlaced
+### Order status
+
+Order status data shows a 360 view of the shopper order. This view helps merchants better target or analyze the entire order status when developing marketing campaigns. For example, you can spot trends in certain product categories that perform well at different times of the year. Such as, winter clothes that sell better during colder months or certain product colors that shoppers are interested in over the years. In addition, order status data can help you calculate lifetime customer value by understanding a shopper's propensity to convert based on previous orders.
+
+#### orderPlaced
 
 |Description| XDM event name|
 |---|---|
 |Triggered when a shopper places an order.|`commerce.backofficeOrderPlaced`|
 
-#### Data collected from orderPlaced
+##### Data collected from orderPlaced
 
 The following table describes the data collected for this event.
 
@@ -648,13 +656,13 @@ The following table describes the data collected for this event.
 |`productListItems.categories.path`|The path to the category.|
 |`productListItems.productImageUrl`|Main image URL of the product.|
 
-### orderInvoiced
+#### orderInvoiced
 
 |Description| XDM event name|
 |---|---|
 |Triggered when a merchant submits an invoice to request payment.|`commerce.backofficeOrderInvoiced`|
 
-#### Data collected from orderInvoiced
+##### Data collected from orderInvoiced
 
 The following table describes the data collected for this event.
 
@@ -691,13 +699,13 @@ The following table describes the data collected for this event.
 |`productListItems.categories.name`|The name of the category.|
 |`productListItems.categories.path`|The path to the category.|
 
-### orderItemsShipped
+#### orderItemsShipped
 
 |Description| XDM event name|
 |---|---|
 |Triggered when an order is shipped.|`commerce.backofficeOrderItemsShipped`|
 
-#### Data collected from orderItemsShipped
+##### Data collected from orderItemsShipped
 
 The following table describes the data collected for this event.
 
@@ -757,13 +765,13 @@ The following table describes the data collected for this event.
 |`productListItems.categories.name`|The name of the category.|
 |`productListItems.categories.path`|The path to the category.|
 
-### orderCancelled
+#### orderCancelled
 
 |Description| XDM event name|
 |---|---|
 |Triggered when a shopper cancels an order.|`commerce.backofficeOrderCancelled`|
 
-#### Data collected from orderCancelled
+##### Data collected from orderCancelled
 
 The following table describes the data collected for this event.
 
@@ -782,13 +790,13 @@ The following table describes the data collected for this event.
 |`personalEmail`|A personal email address.|
 |`personalEmail.address`|The technical address, for example, `name@domain.com` as commonly defined in RFC2822 and subsequent standards.|
 
-### orderLineItemRefunded
+#### orderLineItemRefunded
 
 |Description| XDM event name|
 |---|---|
 |Triggered when a shopper is refunded for a returned item.|`commerce.backofficeCreditMemoIssued`|
 
-#### Data collected from orderLineItemRefunded
+##### Data collected from orderLineItemRefunded
 
 The following table describes the data collected for this event.
 
@@ -820,13 +828,13 @@ The following table describes the data collected for this event.
 |`productListItems.categories.name`|The name of the category.|
 |`productListItems.categories.path`|The path to the category.|
 
-### orderItemsReturnInitiated
+#### orderItemsReturnInitiated
 
 |Description| XDM event name|
 |---|---|
 |Triggered when a shopper requests to return an item.|`commerce.backofficeOrderItemsReturnInitiated`|
 
-#### Data collected from orderItemsReturnInitiated
+##### Data collected from orderItemsReturnInitiated
 
 The following table describes the data collected for this event.
 
@@ -865,13 +873,13 @@ The following table describes the data collected for this event.
 |`productListItems.returnItem.eturnQuantityReceived`|The number of returned items received.|
 |`productListItems.returnItem.returnQuantityApproved`|The number of this item with return fully complete and approved.|
 
-### orderItemReturnCompleted
+#### orderItemReturnCompleted
 
 |Description| XDM event name|
 |---|---|
 |Triggered when an item a shopper requested to return is completed.|`commerce.backofficeOrderItemsReturnCompleted`|
 
-#### Data collected from orderItemReturnCompleted
+##### Data collected from orderItemReturnCompleted
 
 The following table describes the data collected for this event.
 
@@ -909,13 +917,13 @@ The following table describes the data collected for this event.
 |`productListItems.returnItem.eturnQuantityReceived`|The number of returned items received.|
 |`productListItems.returnItem.returnQuantityApproved`|The number of this item with return fully complete and approved.|
 
-### orderShipmentCompleted
+#### orderShipmentCompleted
 
 |Description| XDM event name|
 |---|---|
 |Triggered when a shipment is completed.|`commerce.backofficeOrderShipmentCompleted`|
 
-#### Data collected from orderShipmentCompleted
+##### Data collected from orderShipmentCompleted
 
 The following table describes the data collected for this event.
 
@@ -973,13 +981,13 @@ The following table describes the data collected for this event.
 
 Profile events captured from the server-side include account information, such as `accountCreated`, `accountUpdated`, and `accountDeleted`. This data is used to help populate key customer details that are needed to better define segments or execute marketing campaigns, such as if you want to target shoppers who live in New York. There are similar profile events captured from the [storefront](#profile-events-storefront).
 
-### accountCreated
+#### accountCreated
 
 |Description| XDM event name|
 |---|---|
 |Triggered when a shopper attempts to create an account.|`userAccount.backofficeCreateProfile`|
 
-#### Data collected from accountCreated
+##### Data collected from accountCreated
 
 The following table describes the data collected for this event.
 
@@ -997,13 +1005,13 @@ The following table describes the data collected for this event.
 |`commerce.commerceScope.storeViewCode`|The unique store view code. You can have many store views per store.|
 |`commerce.commerceScope.websiteCode`|The unique website code. You can have many websites in an environment.|
 
-### accountUpdated
+#### accountUpdated
 
 |Description| XDM event name|
 |---|---|
 |Triggered when a shopper attempts to edit an account.|`userAccount.backofficeUpdateProfile`|
 
-#### Data collected from accountUpdated
+##### Data collected from accountUpdated
 
 The following table describes the data collected for this event.
 
@@ -1021,13 +1029,13 @@ The following table describes the data collected for this event.
 |`commerce.commerceScope.storeViewCode`|The unique store view code. You can have many store views per store.|
 |`commerce.commerceScope.websiteCode`|The unique website code. You can have many websites in an environment.|
 
-### accountDeleted
+#### accountDeleted
 
 |Description| XDM event name|
 |---|---|
 |Triggered when a shopper attempts to delete an account.|`userAccount.backofficeDeleteProfile`|
 
-#### Data collected from accountDeleted
+##### Data collected from accountDeleted
 
 The following table describes the data collected for this event.
 

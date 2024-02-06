@@ -1,15 +1,26 @@
 ---
-title: Add Field Groups to XDM Schema
-description: Learn how to add Adobe Commerce-specific field groups to an XDM schema.
+title: Prepare Schema for Data Ingestion
+description: Learn how to add Adobe Commerce-specific field groups to a schema.
 exl-id: 4401bbe7-1ccc-4349-a998-9e9ee9db590f
 role: Admin, Developer
 feature: Personalization, Integration
 ---
-# Add field groups to XDM schema
+# Prepare Schema for Data Ingestion
 
-One of the [onboarding steps](overview.md#onboarding-steps) for using the [!DNL Data Connection] extension is to access the datastream workspace and [create a datastream](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html) that is specific to Adobe Commerce. When you create that datastream, you must also select an XDM schema that represents the data you plan to ingest. This topic provides you with the field groups your XDM schema must include to successfully collect the data provided by the Adobe Commerce [events](events.md).
+One of the [onboarding steps](overview.md#onboarding-steps) for using the [!DNL Data Connection] extension is to access the datastream workspace and [create a datastream](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html) that is specific to Adobe Commerce. When you create that datastream, you must also select a schema that describes the data you plan to ingest. That schema must contain commerce-specific field groups.
 
-1. If you do not already have an XDM schema, [create](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#create) one with the class set to **Experience Event**. Otherwise, [edit](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#edit) your existing **Experience Event** XDM schema in the Adobe Experience Platform UI.
+This article provides you with the field groups your schema must include to successfully collect the following time series event data provided by the Adobe Commerce [events](events.md):
+
+- [Behavioral](events.md#behavioral-events)
+- [Back office](events.md#back-office-events)
+
+Learn more about the [basics of schema composition](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html).
+
+## Update schema with time series behavioral and back office event data
+
+In this section, you learn how to update your existing schema or create a new schema to include behavioral and back office event data. See [time series profile event data](#time-series-profile-event-data-beta) to learn how to add profile-specific fields.
+
+1. If you do not already have a schema, [create](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#create) one with the class set to **Experience Event**. If you already have a schema, [edit](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#edit) your schema in the Adobe Experience Platform UI.
 
 1. [Add](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#add-field-groups) the following Commerce-specific field groups:
     
@@ -25,13 +36,13 @@ One of the [onboarding steps](overview.md#onboarding-steps) for using the [!DNL 
     >
     > Do not set any Commerce-specific field groups as `Primary identity`. Doing so identifies the field as required and Experience Platform expects that field in every event. If that field is absent, data ingestion fails.
     
-    Your XDM schema now contains Commerce-specific field groups so that the data collected from the Commerce [events](events.md) is represented in the XDM. If you want to include your shopper's profile data, see [profile records and profile-related data](#profile-records-and-profile-related-data).
+    Your schema now contains Commerce-specific field groups so that the time series data collected from the Commerce [events](events.md) is represented in the schema.
 
 1. [Create a dataset](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html#create-a-dataset) based off the schema you created or updated.
 
     A dataset is a storage and management construct for a collection of data, typically a table that contains a schema (columns) and fields (rows). Datasets also contain metadata that describes various aspects of the data they store.
 
-1. [Create a datastream](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html) and select the XDM schema that contains the Commerce-specific field groups and the corresponding dataset.
+1. [Create a datastream](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html) and select the schema that contains the Commerce-specific field groups and the corresponding dataset.
 
     The datastream forwards the collected data to the dataset. The data is represented in the dataset based on the selected schema.
 
@@ -43,61 +54,25 @@ One of the [onboarding steps](overview.md#onboarding-steps) for using the [!DNL 
 
     The Adobe Commerce team will contact you with more information and next steps.
 
-## Customer profile data (Beta)
+To include your shopper's profile information, see the next section.
+
+## Time series profile event data (Beta)
 
 >[!NOTE]
 >
 >This feature is in beta. If you would like to join the beta, send an email to the following address: [dataconnection@adobe.com](mailto:dataconnection@adobe.com). 
 
-The [Data Connection extension](overview.md) connects your Commerce data to the Experience Platform. Part of that data can comprise your shopper's profile information, such as if they create, edit, or delete an account on your site. When that profile data is sent to the Experience Platform, it is forwarded to Adobe's profile management and segmentation service: [Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html).
+Profile event data comes from the following events:
 
-Data intended for use in Experience Platform is grouped into two behavior types:
+- [`accountCreated`](events.md#accountcreated)
+- [`accountUpdated`](events.md#accountupdated)
+- [`accountDeleted`](events.md#accountdeleted)
 
-- **Record data**: Provides information about the attributes of a subject. A subject could be an organization or an individual.
-- **Time series data**: Provides a snapshot of the system at the time that an action was taken either directly or indirectly by a record subject.
+If you want to ingest your customer's profile event data, you can update your existing Commerce schema and use the same datastream already configured, or you can create a new profile-specific datastream and schema. That decision is based on your company's data governance.
 
-All XDM schemas describe data that can be categorized as record or time series. The data behavior of a schema is defined by the schema's class, which is assigned to a schema when it is first created. Learn [more](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html#class) about classes in schemas.
+### Send time series profile event data to Experience Platform using your existing datastream
 
-This section guides you through the process of collecting and sending record data and time series data from your Commerce site to Real-Time CDP.
-
-### Send record data to Real-Time CDP
-
-When your shoppers create a profile in your Commerce instance, a profile record is created and data is captured. You must create a schema and dataset specific to that profile record before you can stream that profile data into Real-Time CDP.
-
-1. [Create](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#create) a schema and set the class to **Individual Profile**.
-
-1. [Add](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#add-field-groups) the following profile-specific field groups:
-    
-    - identityMap
-    - Demographic Details
-    - Personal Contact Details
-    - User Account Details
-
-1. [Enable](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#profile) the schema for Profile.
-
-    When a schema is enabled for Profile, any datasets created from this schema participate in Real-Time CDP, which merges data from disparate sources to construct a complete view of each customer.
-
-1. [Create a dataset](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html#create-a-dataset) based off the schema you created or updated.
-
-    A dataset is a storage and management construct for a collection of data, typically a table that contains a schema (columns) and fields (rows). Datasets also contain metadata that describes various aspects of the data they store.
-
->[!IMPORTANT]
->
->It can take about 10 minutes for a profile record to be available in Real-Time CDP.
-
-The profile record is now available in Real-Time CDP. In the next two sections, you learn how to stream time series data, which in this case is server-side profile event data, to the Experience Platform. Those events are the following:
-
-- [`accountCreated`](./events.md#accountcreated)
-- [`accountUpdated`](./events.md#accountupdated)
-- [`accountDeleted`](./events.md#accountdeleted)
-
-This data these events collect is linked to the profile record that now exists in Real-Time CDP.
-
-The schema you use for the time series profile event data depends on if you want to use your existing Commerce schema or if you want all profile data to reside in a profile-specific schema. That decision is based on your company's data governance.
-
-### Send time series profile event data to Experience Platform using your existing Commerce schema
-
-If you want to add time series [server-side profile event data](events.md#profile-events-server-side) to your existing Commerce schema, add the following field group: `Demographic Details`. Your existing Commerce schema now contains the following field groups:
+If you want to add time series [server-side profile event data](events.md#profile-events-server-side) to your existing Commerce datastream, add the `Demographic Details` field group to your schema. Your schema now contains the following Commerce-specific field groups:
 
 - Site Search 
 - Visit Web Page
@@ -110,9 +85,9 @@ If you want to add time series [server-side profile event data](events.md#profil
 
 With the addition of the `Demographic Details` field group in your existing Commerce schema, the dataset and datastream already associated with your Commerce schema is used for this time series profile data.
 
-### Send time series profile event data to Experience Platform in a separate schema
+### Send time series profile event data to Experience Platform in a separate datastream
 
-If you want to add [server-side profile event data](events.md#profile-events-server-side) to a new profile-specific schema, complete the following steps.
+If you want to add [server-side profile event data](events.md#profile-events-server-side) to a new profile-specific datastream and schema, complete the following steps.
 
 1. [Create](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#create) a schema and set the class to **Individual Profile**.
 
@@ -134,4 +109,4 @@ If you want to add [server-side profile event data](events.md#profile-events-ser
 
     The datastream forwards the collected data to the dataset. The data is represented in the dataset based on the selected schema.
 
-With the schemas, datasets, and datastreams configured for customer profile data, you can [configure](./connect-data.md#customer-profiles-beta) your storefront to send that data to Experience Platform.
+With the schemas, datasets, and datastreams configured for customer profile data, you can [configure](./connect-data.md#customer-profiles-beta) your Commerce instance to send that data to Experience Platform.
