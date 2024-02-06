@@ -16,7 +16,7 @@ recommendations: noDisplay
    - [Integrate the Adobe Experience Platform Mobile SDK with Commerce](mobile-sdk-epc.md)
 - Capture Data {#event-forwarding}
    - [Events](events.md)
-   - [Schema](update-xdm.md)
+   - [Prepare Schema for Data Ingestion](update-xdm.md)
    - [Profile Records](profile-data.md)
    - [Custom Events](custom-events.md)
    - [Use Adobe Experience Platform Tags](using-tags.md)

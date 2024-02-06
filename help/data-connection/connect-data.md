@@ -156,11 +156,15 @@ After onboarding, storefront data begins to flow to the Experience Platform edge
 >
 >This feature is in beta. If you would like to join the beta, send an email to the following address: [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
 
-There are two types of profile data that you can send to the Experience Platform: profile records and profile events. A profile record contains data that is saved when a shopper creates a profile in your Commerce instance, such as the shopper's name. When a profile record is sent to the Experience Platform, it is forwarded to Adobe's profile management and segmentation service: [Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html). 
+There are two types of profile data that you can send to the Experience Platform: profile records and time series profile events.
 
-Profile events contain data about your shopper's profile information, such as if they create, edit, or delete an account on your site. When profile event data is sent to the Experience Platform, it resides in a dataset where it can be used in other DX products. Learn more about [profile records and events](./update-xdm.md#customer-profile-data-beta) and how you can ensure your customer's profile data can be successfully ingested into the Experience Platform.
+A profile record contains data that is saved when a shopper creates a profile in your Commerce instance, such as the shopper's name. When your schema and dataset are [properly configured](profile-data.md), a profile record is sent to the Experience Platform and forwarded to Adobe's profile management and segmentation service: [Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html).
+
+Time series profile events contain data about your shopper's profile information, such as if they create, edit, or delete an account on your site. When profile event data is sent to the Experience Platform, it resides in a dataset where it can be used by other DX products.
 
 1. Make sure you have [provided](#add-service-account-and-credential-details) service account and credential details.
+
+1. Make sure you have prepared your schema(s) for [profile record data ingestion](profile-data.md) and [time series profile event data ingestion](update-xdm.md#time-series-profile-event-data-beta).
 
 1. Place a checkmark in the **Customer profiles** checkbox if you want to send profile data to the Experience Platform.
 

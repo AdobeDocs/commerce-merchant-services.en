@@ -23,10 +23,6 @@ The behavioral events collect anonymized behavioral data from your shoppers as t
 
 The storefront event data includes simple and configurable products only.
 
->[!NOTE]
->
->All storefront events include the [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html) field, which includes the shopper's email address, when available, and ECID. By including this profile data in each event, you do not need a separate user account import from Adobe Commerce.
-
 #### addToCart
 
 |Description| XDM event name|
@@ -281,7 +277,7 @@ The following table describes the data collected for this event.
 
 ### Customer profile events (storefront)
 
-Profile events captured from the storefront include account information, such as `signIn`, `signOut`, `createAccount`, and `editAccount`. This data is used to help populate key customer details that are needed to better define segments or execute marketing campaigns, such as if you want to target shoppers who live in New York. There are similar profile events captured from the [server-side](#profile-events-server-side).
+Profile events captured from the storefront include account information, such as `signIn`, `signOut`, `createAccount`, and `editAccount`. This data is used to help populate key customer details that are needed to better define segments or execute marketing campaigns, such as if you want to target shoppers who live in New York. There are similar profile events captured from the [server-side](#customer-profile-events-server-side).
 
 #### signIn
 
@@ -979,7 +975,7 @@ The following table describes the data collected for this event.
 >
 >**Beta** Profile events generated from the server-side are available for beta participants. If you would like to join the beta, send an email to the following address: [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
 
-Profile events captured from the server-side include account information, such as `accountCreated`, `accountUpdated`, and `accountDeleted`. This data is used to help populate key customer details that are needed to better define segments or execute marketing campaigns, such as if you want to target shoppers who live in New York. There are similar profile events captured from the [storefront](#profile-events-storefront).
+Profile events captured from the server-side include account information, such as `accountCreated`, `accountUpdated`, and `accountDeleted`. This data is used to help populate key customer details that are needed to better define segments or execute marketing campaigns, such as if you want to target shoppers who live in New York. There are similar profile events captured from the [storefront](#customer-profile-events-storefront).
 
 #### accountCreated
 
