@@ -151,4 +151,4 @@ After you complete the SDK configuration for the Experience platform, add the SD
 
     You have now integrated the Adobe Experience Platform Mobile SDK with your Commerce mobile app. Event data flows from your app to the Experience Platform edge.
 
-To learn how to retrieve Real-Time CDP audiences from your mobile Commerce app to inform cart price rules and dynamic blocks, see [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html).
+To learn how to retrieve Real-Time CDP audiences from your mobile Commerce app to inform cart price rules and dynamic blocks, see [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html#retrieve-audiences-using-the-adobe-experience-platform-mobile-sdk).

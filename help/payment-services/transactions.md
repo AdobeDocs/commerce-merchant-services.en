@@ -35,7 +35,7 @@ You can configure this view, per the sections in this topic, to best present the
 
 See linked Commerce order and provider transaction IDs, transaction amounts, payment method per transaction, and more, all within this report.
 
-Not all payment methods provide the same granularity of information. For instance, credit card transactions provide response, AVS, and CCV codes, and the last four digits of the card in the Transactions report; PayPal Smart buttons do not.
+Not all payment methods provide the same granularity of information. For instance, credit card transactions provide response, AVS, and CCV codes, and the last four digits of the card in the Transactions report; PayPal payment buttons do not.
 
 You can [download transactions](#download-transactions) in a .csv file format for use in existing accounting or order management software.
 

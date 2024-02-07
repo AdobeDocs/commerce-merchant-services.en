@@ -1,41 +1,45 @@
 ---
 title: Onboarding and Installation
-description: Learn how to install [!DNL Catalog Service]
+description: "Learn how to install [!DNL Catalog Service]"
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
 ---
 # Onboarding and Installation
 
-See a walkthrough of the [!DNL Catalog Service] process.
+The following videos walk you through the [!DNL Catalog Service] process.
 
-Part 1:
+**Part 1**: Onboarding and installation
 
 >[!VIDEO](https://video.tv.adobe.com/v/3415599)
 
-Part 2:
+**Part 2**: Using the [!DNL Catalog Service]
 
 >[!VIDEO](https://video.tv.adobe.com/v/3415600)
+
+>[!BEGINSHADEBOX]
 
 ## Prerequisites
 
 The onboarding process for [!DNL Catalog Service] requires access to the command line of the server. If you are not familiar with working from the command line, ask a developer or system integrator to help.
 
-### Software requirements
+**Software requirements**
 
 - Adobe Commerce 2.4.4+
 - PHP 8.1, 8.2
 - Composer: 2.x
 
-### Supported platforms
+**Supported platforms**
 
 - Adobe Commerce on cloud infrastructure: 2.4.4+
 - Adobe Commerce on premises: 2.4.4+
+
+>[!ENDSHADEBOX]
 
 ## Endpoints
 
 [!DNL Catalog Service] has two endpoints available for onboarding:
 
-- Sandbox (https://catalog-service-sandbox.adobe.io/graphql) - used for testing and validation before going live
-- Production (https://catalog-service.adobe.io/graphql)- used for live traffic for Commerce merchants and websites
+- Sandbox (`https://catalog-service-sandbox.adobe.io/graphql`)—used for testing and validation before going live
+- Production (`https://catalog-service.adobe.io/graphql`)—used for live traffic for Commerce merchants and websites
 
 All test instances of Commerce should use the Sandbox endpoint.
 
@@ -55,7 +59,7 @@ The onboarding process for [!DNL Catalog Service] requires access to the command
 
 The [!DNL Catalog Service] extension can be installed on both Adobe Commerce cloud infrastructure and on-premises instances.
 
-The [!DNL Catalog Service] is installed with Composer keys, which are linked to the Commerce account [mageid](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-information/) provided during the signup process. Composer uses these keys during the initial installation of Adobe Commerce, or in situations in which the Composer keys were not previously saved to an external `auth.json` file.
+The [!DNL Catalog Service] is installed with Composer keys, which are linked to the Commerce account [`mageid`](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-information/) provided during the signup process. Composer uses these keys during the initial installation of Adobe Commerce, or in situations in which the Composer keys were not previously saved to an external `auth.json` file.
 
 See [Get your authentication keys](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html) for more information about obtaining Composer keys.
 
@@ -63,21 +67,20 @@ See [Get your authentication keys](https://experienceleague.adobe.com/docs/comme
 
 Use this method for installing the [!DNL Catalog Service] extension for a Commerce Cloud instance.
 
-1. Use Composer to add the Catalog Service module to your project:
+1. On your local workstation, change to your project directory.
+1. Add the Catalog Service module.
 
-  ```bash
-  composer require "magento/catalog-service" "^3.0.1"
-  ```
+   ```bash
+   composer require "magento/catalog-service" "^3.0.1"
+   ```
 
-1. Update dependencies by running:
+1. Update package dependencies.
 
-```bash
-composer update
-```
+   ```bash
+   composer update
+   ```
 
-The command updates all dependencies.
-
-1. Commit and push your changes for `composer.json` and `composer.lock`.
+1. Commit and push code changes for the `composer.json` and `composer.lock` files.
 
 #### On-premises
 
@@ -85,31 +88,29 @@ Use this method for installing the [!DNL Catalog Service] extension for an on-pr
 
 1. Use Composer to add the Catalog Service module to your project:
 
-  ```bash
-  composer require "magento/catalog-service" "^3.0.1"
-  ```
+   ```bash
+   composer require "magento/catalog-service" "^3.0.1"
+   ```
 
 1. Update dependencies and install the extension:
 
-```bash
-composer update
-```
-
-The command updates all dependencies.
+   ```bash
+   composer update
+   ```
 
 1. Upgrade Adobe Commerce:
 
-```bash
-bin/magento setup:upgrade
-```
+   ```bash
+   bin/magento setup:upgrade
+   ```
 
 1. Clear the cache:
 
-```bash
-bin/magento cache:clean
-```
+   ```bash
+   bin/magento cache:clean
+   ```
 
-### Configure the service and data export 
+### Configure the service and data export
 
 After you install [!DNL Catalog Service], you must configure the [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html#apikey) by specifying the API keys and selecting a SaaS Data Space.
 

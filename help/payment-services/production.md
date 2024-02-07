@@ -24,7 +24,7 @@ After you [configure your Commerce Services](connect.md#configure-commerce-servi
    You are directed to the settings area in the Home view with the relevant options expanded (**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_), where you can enable the [!DNL Payment Services] options as your [payment method](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html){target="_blank"}.
 
 1. In _[!UICONTROL General Configuration]_, set **[!UICONTROL Enable]** to `Yes`.
-1. Set **[!UICONTROL Payment Action]**, for both _[!UICONTROL Credit Card Fields]_ and _[!UICONTROL PayPal Smart Buttons]_, to one of the following:
+1. Set **[!UICONTROL Payment Action]**, for both _[!UICONTROL Credit Card Fields]_ and _[!UICONTROL PayPal payment buttons]_, to one of the following:
 
    |Setting|Description|
    |---|---|
@@ -37,22 +37,66 @@ After you [configure your Commerce Services](connect.md#configure-commerce-servi
 
 1. Click **[!UICONTROL Save]**.
 1. Click **[!UICONTROL Go to Payment Services]** to be directed back to the [!DNL Payment Services] Home.
-1. [Clear your cache](https://docs.magento.com/user-guide/system/cache-management.html){target="_blank"}.
+1. [Clear your cache](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cache-management.html).
 
    Clearing should be done after every configuration change.
 
-See [Configure Payment Services](settings.md) for more information about configuring Credit Card Fields and PayPal Smart Buttons.
+See [Configure Payment Services](settings.md) for more information about configuring Credit Card Fields and PayPal payment buttons.
 
 ## Complete merchant onboarding
+
+The next step in enabling your stores to go live with Payment Services is to complete live onboarding.
+
+Payment Services provides [**Advanced** (fully supported) and **Standard** (Express Checkout) payment options](../payment-services/payments-options.md#standard-vs-advanced-payments-experience) and onboarding flows, depending on the country in which you operate and your preferred payment experience.
 
 1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. Click **[!UICONTROL Live onboarding]**.
 
    This option is visible if you have not yet completed live onboarding for [!DNL Payment Services].
 
-   You are presented with a PayPal window.
+1. In the _Select your country_ modal, select the country from which you are operating.
 
-1. Continue with the PayPal flow, using your PayPal account credentials (not your sandbox account credentials) or sign up for a new PayPal account.
+   Payment Services provides full support for all payment options in [five countries](../payment-services/overview.md#availability) currently. Payment Services provides Express Checkout capabilities (a subset of payment options) for all other countries represented in the country list.
+   
+   The country you choose from the list will determine the payment options, and onboarding flow---[Advanced](#advanced-onboarding) (fully supported) or [Standard](#standard-onboarding) (Express Checkout)---available to you.
+
+>[!TIP]
+>
+> Once you choose and proceed with an onboarding option---Standard or Advanced---you must re-complete onboarding to either upgrade or downgrade from your initial selection.
+
+### Advanced onboarding
+
+This onboarding flow is available for merchants in [fully supported countries](../payment-services/overview.md#availability).
+
+After the country is selected:
+
+1. In the modal that appears, select **Advanced**.
+
+   For the **Standard** option, proceed to the [Standard onboarding flow](#standard-onboarding).
+
+1. Click **Continue**.
+1. Continue with the PayPal flow for the fully supported Advanced onboarding, using your PayPal account credentials (not your sandbox account credentials) _or_ sign up for a new PayPal account.
+
+>[!IMPORTANT]
+>
+>**Advanced onboarding** requires merchants to [request payments entitlement](#request-payments-entitlement-from-adobe) to enable live onboarding.
+
+### Standard onboarding
+
+This Standard onboarding flow is available for merchants in available countries for which [only Express Checkout support](../payment-services/overview.md#availability) is provided.
+
+After the country is selected:
+
+1. In the _Payment Services agreement_ modal that appears, click the **Payment Services agreement** link to view the Adobe Commerce Payment Services agreement.
+1. In the _Payment Services agreement_ modal, click **I accept**.
+1. Continue with the PayPal flow for Express Checkout onboarding, using your PayPal account credentials (not your sandbox account credentials) or sign up for a new PayPal account.
+
+>[!IMPORTANT]
+>
+>[Apple Pay and credit card fields](../payment-services/payments-options.md) are not available for **Standard onboarding**.
+
+## Confirm email address
+
 1. On the Admin sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**
 
    The _[!UICONTROL Live onboarding]_ button is no longer visible and you see a "[!UICONTROL Live payments pending]" text box.
@@ -71,7 +115,7 @@ See [Configure Payment Services](settings.md) for more information about configu
 
 ## Request payments entitlement from Adobe
 
-To enable live onboarding, you must request payments entitlement from Adobe:
+To enable your stores to go live, request payments entitlement from Adobe (for [Advanced onboarding only](#advanced-onboarding)):
 
 1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. Click **[!UICONTROL Get Live Payments]** in your [!DNL Payment Services] Home.
@@ -81,7 +125,7 @@ To enable live onboarding, you must request payments entitlement from Adobe:
 1. Complete the form.
 1. A member of the sales team will contact you.
 
-Alternatively, you can request payments entitlements from Adobe at [business.adobe.com](https://business.adobe.com/resources/payment-services.html).
+Alternatively, you can request payments entitlement from Adobe at [business.adobe.com](https://business.adobe.com/resources/payment-services.html).
 
 >[!IMPORTANT]
 >
@@ -89,8 +133,7 @@ Alternatively, you can request payments entitlements from Adobe at [business.ado
 
 ## Configure pricing tier
 
-To get your [!DNL Payment Services] _Merchant ID_:
-
+Get your [!DNL Payment Services] _Merchant ID_:
 
 1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. In the Home view, click **[!UICONTROL Settings]**. See [Home](payments-home.md) for more information.
@@ -100,7 +143,7 @@ To get your [!DNL Payment Services] _Merchant ID_:
 
 A _production merchant ID_ is auto-generated and populated in the [configuration](configure-admin.md). Do not change or alter this ID.
 
-To enable live payments:
+Enable live payments:
 
 1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. On the Home, click **[!UICONTROL Settings]** at the top right of the page. See [Home](payments-home.md) for more information.

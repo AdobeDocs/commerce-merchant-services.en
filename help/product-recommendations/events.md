@@ -10,7 +10,7 @@ When you install and configure SaaS-based Adobe Commerce features such as [Produ
 
 >[!NOTE]
 >
->Data collection for the purposes of Product recommendations does not include personally identifiable information (PII). All user identifiers, such as cookie IDs and IP addresses, are strictly anonymized. [Learn more](https://www.adobe.com/privacy/experience-cloud.html).
+>Data collection for the purposes of Product recommendations does not include personally identifiable information (PII). All user identifiers, such as cookie IDs and IP addresses, are strictly anonymized. Learn [more](https://www.adobe.com/privacy/experience-cloud.html).
 
 The following events are not specific to Product Recommendations, but are required to return results:
 
@@ -20,14 +20,25 @@ The following events are not specific to Product Recommendations, but are requir
 
 The [Adobe Commerce Storefront Event Collector](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/#quick-start) lists all the events deployed to your storefront. From that list, however, there is a subset of events specific to Product Recommendations. These events collect data when shoppers interact with recommendation units on the storefront and power the metrics used to help you analyze how well your recommendations are performing.
 
-| Event | Description | [Used for metrics?](workspace.md) |
+| Event | Description |Used for metrics? |
 | --- | --- | --- |
 |`impression-render` | The recommendation unit is rendered on the page. | Yes|
 |`rec-add-to-cart-click` | The customer clicks the **Add to cart** button for an item in the recommendation unit. | Yes, when an **Add to cart** button is present in the recommendations template.|
 |`rec-click` | The customer clicks a product in the recommendation unit. | Yes|
 |`view` | The recommendation unit becomes viewable on the page, such as by scrolling into view. | Yes|
 
-If your storefront is implemented with PWA Studio, refer to the [PWA documentation](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). If you use a custom frontend technology such as React or Vue JS, refer to the user guide to learn how to integrate Product Recommendations in a [headless](headless.md) environment.
+The following events are required to properly populate the dashboard.
+| Dashboard column | Events    | Join field  |
+| ---------------- | --------- | ----------- |
+| Impressions      |`page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render` | unitId  |
+| Views            |`page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render`, `recs-unit-view` | unitId  |
+| Clicks           |`page-view`, `recs-request-sent`, `recs-response-received`, `recs-item-click`, `recs-add-to-cart-click`    | unitId  |
+| Revenue          |`page-view`, `recs-request-sent`, `recs-response-received`, `recs-item-click`, `recs-add-to-cart-click`, `place-order` | unitId, sku |
+| LT Revenue       |`page-view`, `recs-request-sent`, `recs-response-received`, `recs-item-click`, `recs-add-to-cart-click`, `place-order` | unitId, sku |
+| CTR              |`page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render`, `recs-item-click`, `recs-add-to-cart-click`  | unitId, sku |
+| vCTR             |`page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render`, `recs-unit-view`, `recs-item-click`, `recs-add-to-cart-click` | unitId, sku |
+
+If your storefront is implemented with PWA Studio, refer to the [PWA documentation](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). If you use a custom frontend technology such as React or Vue JS, refer to the user guide to learn how to integrate [Product Recommendations in a headless](headless.md) environment.
 
 ## Caveats
 

@@ -230,7 +230,7 @@ The following table describes the data collected for this event.
 
 |Description| XDM event name|
 |---|---|
-|Triggered when the shopper places an order.|`commerce.order`|
+|Triggered when the shopper places an order.|`commerce.purchases`|
 
 #### Data collected from completeCheckout
 
@@ -479,7 +479,7 @@ The following table describes the data collected for this event.
 |Field|Description|
 |---|---|
 |`commerce.requisitionListOpens`|Indicates initialization of a new requisition list.|
-|`commerce.requisitionList`|The properties of requisition list created by customer.|
+|`commerce.requisitionList`|The properties of the requisition list created by the customer.|
 |`commerce.requisitionList.ID`|Unique identifier of the requisition list.|
 |`commerce.requisitionList.name`|Name of the requisition list specified by the customer.|
 |`commerce.requisitionList.description`|Description of the requisition list specified by the customer.|
@@ -502,7 +502,7 @@ The following table describes the data collected for this event.
 |Field|Description|
 |---|---|
 |`commerce.requisitionListAdds`|Indicates addition of one or more products to a requisition list.|
-|`commerce.requisitionList`|The properties of requisition list created by customer.|
+|`commerce.requisitionList`|The properties of the requisition list created by the customer.|
 |`commerce.requisitionList.ID`|Unique identifier of the requisition list.|
 |`commerce.requisitionList.name`|Name of the requisition list specified by the customer.|
 |`commerce.requisitionList.description`|Description of the requisition list specified by the customer.|
@@ -535,7 +535,7 @@ The following table describes the data collected for this event.
 |Field|Description|
 |---|---|
 |`commerce.requsitionListRemovals`|Indicates removal of one or more products from a requisition list.|
-|`commerce.requisitionList`|The properties of requisition list created by customer.|
+|`commerce.requisitionList`|The properties of the requisition list created by the customer.|
 |`commerce.requisitionList.ID`|Unique identifier of the requisition list.|
 |`commerce.requisitionList.name`|Name of the requisition list specified by the customer.|
 |`commerce.requisitionList.description`|Description of the requisition list specified by the customer.|
@@ -555,9 +555,32 @@ The following table describes the data collected for this event.
 |`productListItems.selectedOptions.attribute`|Identifies an attribute of the configurable product, such as `size` or `color`.|
 |`productListItems.selectedOptions.value`|Identifies the value of the attribute such as `small` or `black`.|
 
+### deleteRequisitionList
+
+|Description| XDM event name|
+|---|---|
+|Triggered when a shopper deletes a requisition list.|`commerce.requisitionListDeletes`|
+
+#### Data collected from deleteRequisitionList
+
+The following table describes the data collected for this event.
+
+|Field|Description|
+|---|---|
+|`commerce.requisitionListDeletes`|Indicates that a requisition list was deleted.|
+|`commerce.requisitionList`|The properties of the requisition list created by the customer.|
+|`commerce.requisitionList.ID`|Unique identifier of the requisition list.|
+|`commerce.requisitionList.name`|Name of the requisition list specified by the customer.|
+|`commerce.requisitionList.description`|Description of the requisition list specified by the customer.|
+|`commerce.commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
+|`commerce.commerceScope.environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
+|`commerce.commerceScope.storeCode`|The unique store code. You can have many stores per website.|
+|`commerce.commerceScope.storeViewCode`|The unique store view code. You can have many store views per store.|
+|`commerce.commerceScope.websiteCode`|The unique website code. You can have many websites in an environment.|
+
 ## Back office events
 
-The back office events contain information about the status of an order, such as if an order was placed, canceled, refunded, shipped, or completed. The data that these server-side events collect shows a 360 view of the shopper order. This view helps merchants better target or analyze the entire order status when developing marketing campaigns. For example, you can spot trends in certain product categories that perform well at different times of the year. Such as, winter clothes that sell better during colder months or certain product colors that shoppers are interested in over the years. In addition, order status data can help you calculate lifetime customer value by understanding a shopper's propensity to convert based on previous orders.
+The back office events contain information about the status of an order, such as if an order was [placed](#orderplaced), [canceled](#ordercancelled), [refunded](#orderitemreturncompleted), [shipped](#ordershipmentcompleted), or [completed](#ordershipmentcompleted). The data that these server-side events collect shows a 360 view of the shopper order. This view helps merchants better target or analyze the entire order status when developing marketing campaigns. For example, you can spot trends in certain product categories that perform well at different times of the year. Such as, winter clothes that sell better during colder months or certain product colors that shoppers are interested in over the years. In addition, order status data can help you calculate lifetime customer value by understanding a shopper's propensity to convert based on previous orders.
 
 >[!NOTE]
 >
