@@ -76,6 +76,7 @@ At a high level, enabling the [!DNL Data Connection] extension involves the foll
 
 1. [Install](install.md) the [!DNL Data Connection] extension.
 1. [Sign in](https://helpx.adobe.com/manage-account/using/access-adobe-id-account.html) to your Adobe account and [view to confirm](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html#concept_EA8AEE5B02CF46ACBDAD6A8508646255) your organization ID. The organization ID is the ID associated with your provisioned Experience Cloud company. This ID is a 24-character alphanumeric string, followed by (and must include) `@AdobeOrg`.
+1. Ensure you have [permission for data collection in Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/collection/permissions.html).
 1. [Create or update](update-xdm.md) your XDM schema with Commerce-specific field groups.
 1. [Create a dataset](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html#create-a-dataset) based off the schema you created or updated. This dataset contains the Commerce data sent to the Experience Platform Edge.
 1. [Create a datastream](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html) and select the XDM schema that contains the Commerce-specific field groups.
