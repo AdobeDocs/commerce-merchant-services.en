@@ -66,6 +66,15 @@ _October 12, 2022_
 
 +++
 
+## 3.1.0-Beta
+
+_February 13, 2024_
+
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.4 and newer
+
+![New](../assets/new.svg) - Added ability to add custom attributes...
+![New](../assets/new.svg) - Added ability to collect and send profile records and data to Experience Platform.
+
 ## 3.1.0
 
 _November 16, 2023_
