@@ -13,7 +13,7 @@ feature: Personalization, Integration
 The [Data Connection extension](overview.md) connects your Commerce data to the Experience Platform. Data intended for use in Experience Platform is grouped into two behavior types:
 
 - **Record data**: Provides information about the attributes of a subject. A subject could be an organization or an individual. For example, record data is generated when a shopper creates an account on your site. This data is ingested into the Experience Platform using a schema that has the class set to **Individual Profile**. You can send that record data to Adobe's profile management and segmentation service: [Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html). See [send record data to Real-Time CDP](#send-record-data-to-real-time-cdp) to learn more.
-- **Time series data**: Provides a snapshot of the system at the time that an action was taken either directly or indirectly by a record subject. For example, when a shopper browses a product on your site, adds a product to their cart, updates their profile, and so on. Time series data is ingested into the Experience Platform using a schema that has the class set to **Experience Event**. See [prepare schema for data ingestion](update-xdm.md) to learn how you can update your Commerce schema to handle time series data.
+- **Time series data**: Provides a snapshot of the system at the time that an action was taken either directly or indirectly by a record subject. For example, when a shopper browses a product on your site, adds a product to their cart, updates their profile, and so on. Time series data is ingested into the Experience Platform using a schema that has the class set to **Experience Event**. See [update schema for Commerce data ingestion](update-xdm.md) to learn how you can update your Commerce schema to handle behavioral, back office, and profile time series data.
 
 ## Send record data to Real-Time CDP
 
@@ -36,6 +36,4 @@ When your shoppers create a profile in your Commerce site, a profile record is c
 
     A dataset is a storage and management construct for a collection of data, typically a table that contains a schema (columns) and fields (rows). Datasets also contain metadata that describes various aspects of the data they store.
 
->[!IMPORTANT]
->
->It can take about 10 minutes for a profile record to be available in Real-Time CDP.
+With the schema and dataset configured for customer profile record data, you can [configure](connect-data.md#data-collection) your Commerce instance to collect and send that data to Experience Platform.

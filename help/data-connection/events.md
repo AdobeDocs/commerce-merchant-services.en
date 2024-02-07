@@ -21,7 +21,7 @@ The behavioral events collect anonymized behavioral data from your shoppers as t
 
 ### Storefront events
 
-The storefront event data includes simple and configurable products only.
+Storefront events capture data from shoppers' interactions on the site and include events such as [`addToCart`](#addtocart), [`pageView`](#pageview), [`createAccount`](#createaccount), [`editAccount`](#editaccount), [`startCheckout`](#startcheckout), [`completeCheckout`](#completecheckout), [`signIn`](#signin), [`signOut`](#signout), and so on. Storefront events apply to simple and configurable products only.
 
 #### addToCart
 
@@ -35,6 +35,9 @@ The following table describes the data collected for this event.
 
 |Field|Description|
 |---|---|
+|`channel`|Contains information about the source of the data. Both `id` and `type` contain [namespaced values](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html).|
+|`channel.id`|The unique identifier of the channel, such as `"https://ns.adobe.com/xdm/channels/web"`.|
+|`channel.type`|Identifies the source of the channel data, such as `"https://ns.adobe.com/xdm/channel-types/web"`.|
 |`commerce.productListAdds`|Indicates if a product was added to a shopping cart. A value of `1` indicates that a product was added.|
 |`commerce.cart.cartID`|The unique ID that identifies the customer's cart.|
 |`commerce.commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
@@ -42,6 +45,9 @@ The following table describes the data collected for this event.
 |`commerce.commerceScope.storeCode`|The unique store code. You can have many stores per website.|
 |`commerce.commerceScope.storeViewCode`|The unique store view code. You can have many store views per store.|
 |`commerce.commerceScope.websiteCode`|The unique website code. You can have many websites in an environment.|
+|`channel`|Contains information about the source of the data.|
+|`channel.id`|The unique identifier of the channel.|
+|`channel.type`|Identifies the source of the data, such as web, mobile, email, and so on.|
 |`productListItems`|An array of products that were added to the shopping cart.|
 |`productListItems.SKU`|Stock Keeping Unit. The unique identifier for the product.|
 |`productListItems.name`|The display name or human-readable name of the product.|
@@ -66,6 +72,9 @@ The following table describes the data collected for this event.
 
 |Field|Description|
 |---|---|
+|`channel`|Contains information about the source of the data. Both `id` and `type` contain [namespaced values](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html).|
+|`channel.id`|The unique identifier of the channel, such as `"https://ns.adobe.com/xdm/channels/web"`.|
+|`channel.type`|Identifies the source of the channel data, such as `"https://ns.adobe.com/xdm/channel-types/web"`.|
 |`commerce.productListOpens`|Indicates if a cart was created. A value of `1` indicates that a cart was created.|
 |`commerce.cart.cartID`|The unique ID that identifies the customer's cart.|
 |`commerce.commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
@@ -97,6 +106,9 @@ The following table describes the data collected for this event.
 
 |Field|Description|
 |---|---|
+|`channel`|Contains information about the source of the data. Both `id` and `type` contain [namespaced values](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html).|
+|`channel.id`|The unique identifier of the channel, such as `"https://ns.adobe.com/xdm/channels/web"`.|
+|`channel.type`|Identifies the source of the channel data, such as `"https://ns.adobe.com/xdm/channel-types/web"`.|
 |`commerce.productListRemovals`|Indicates if a product was removed from the cart. A value of `1` indicates that a product was removed from the cart.|
 |`commerce.cart.cartID`|The unique ID that identifies the customer's cart.|
 |`commerce.commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
@@ -128,6 +140,9 @@ The following table describes the data collected for this event.
 
 |Field|Description|
 |---|---|
+|`channel`|Contains information about the source of the data. Both `id` and `type` contain [namespaced values](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html).|
+|`channel.id`|The unique identifier of the channel, such as `"https://ns.adobe.com/xdm/channels/web"`.|
+|`channel.type`|Identifies the source of the channel data, such as `"https://ns.adobe.com/xdm/channel-types/web"`.|
 |`commerce.productListViews`|Indicates if a product list was viewed.|
 |`commerce.cart.cartID`|The unique ID that identifies the customer's cart.|
 |`commerce.commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
@@ -159,6 +174,9 @@ The following table describes the data collected for this event.
 
 |Field|Description|
 |---|---|
+|`channel`|Contains information about the source of the data. Both `id` and `type` contain [namespaced values](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html).|
+|`channel.id`|The unique identifier of the channel, such as `"https://ns.adobe.com/xdm/channels/web"`.|
+|`channel.type`|Identifies the source of the channel data, such as `"https://ns.adobe.com/xdm/channel-types/web"`.|
 |`web.webPageDetails.pageViews`|Indicates if a page was loaded. A `value` of `1` indicates that the page was loaded.|
 |`web.webPageDetails.URL`|The normative or usual URL of the web page. This can be the actual URL used to reach the page, which would be recorded using `Web Link`.|
 |`web.webPageDetails.name`|The normative name of the web page. This name is not necessarily the page title or directly associated with page content, but is used to organize a site's pages for classification purposes.|
@@ -181,6 +199,9 @@ The following table describes the data collected for this event.
 
 |Field|Description|
 |---|---|
+|`channel`|Contains information about the source of the data. Both `id` and `type` contain [namespaced values](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html).|
+|`channel.id`|The unique identifier of the channel, such as `"https://ns.adobe.com/xdm/channels/web"`.|
+|`channel.type`|Identifies the source of the channel data, such as `"https://ns.adobe.com/xdm/channel-types/web"`.|
 |`commerce.productViews`|Indicates if the product was viewed.|
 |`commerce.commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
 |`commerce.commerceScope.environmentID`|The environment ID. A 32-digit alphanumeric ID separated by hyphens.|
@@ -211,6 +232,9 @@ The following table describes the data collected for this event.
 
 |Field|Description|
 |---|---|
+|`channel`|Contains information about the source of the data. Both `id` and `type` contain [namespaced values](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html).|
+|`channel.id`|The unique identifier of the channel, such as `"https://ns.adobe.com/xdm/channels/web"`.|
+|`channel.type`|Identifies the source of the channel data, such as `"https://ns.adobe.com/xdm/channel-types/web"`.|
 |`commerce.checkouts`|Indicates if an action occurred during the checkout process.|
 |`commerce.cart.cartID`|The unique ID that identifies the customer's cart.|
 |`commerce.commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
@@ -242,6 +266,9 @@ The following table describes the data collected for this event.
 
 |Field|Description|
 |---|---|
+|`channel`|Contains information about the source of the data. Both `id` and `type` contain [namespaced values](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html).|
+|`channel.id`|The unique identifier of the channel, such as `"https://ns.adobe.com/xdm/channels/web"`.|
+|`channel.type`|Identifies the source of the channel data, such as `"https://ns.adobe.com/xdm/channel-types/web"`.|
 |`commerce.purchases`|Indicates if an order has been accepted.|
 |`commerce.order`|Contains information about the placed order for one or more products.|
 |`commerce.order.purchaseID`|Unique identifier assigned by the seller for this purchase or contract. There is no guarantee that the ID is unique.|
@@ -295,6 +322,9 @@ The following table describes the data collected for this event.
 
 |Field|Description|
 |---|---|
+|`channel`|Contains information about the source of the data. Both `id` and `type` contain [namespaced values](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html).|
+|`channel.id`|The unique identifier of the channel, such as `"https://ns.adobe.com/xdm/channels/web"`.|
+|`channel.type`|Identifies the source of the channel data, such as `"https://ns.adobe.com/xdm/channel-types/web"`.|
 |`person`|An individual actor, contact, or owner.|
 |`person.accountID`|Captures the user account ID.|
 |`person.accountType`|Captures the user account type, such as `Personal` or `Company`, if applicable.|
@@ -325,6 +355,9 @@ The following table describes the data collected for this event.
 
 |Field|Description|
 |---|---|
+|`channel`|Contains information about the source of the data. Both `id` and `type` contain [namespaced values](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html).|
+|`channel.id`|The unique identifier of the channel, such as `"https://ns.adobe.com/xdm/channels/web"`.|
+|`channel.type`|Identifies the source of the channel data, such as `"https://ns.adobe.com/xdm/channel-types/web"`.|
 |`userAccount`|Indicates any loyalty details, preferences, login processes, and other account preferences.|
 |`userAccount.logout`|Indicates if a visitor attempted to log out.|
 |`commerce.commerceScope`|Indicates where an event occurred (store view, store, website, and so on).|
@@ -349,6 +382,9 @@ The following table describes the data collected for this event.
 
 |Field|Description|
 |---|---|
+|`channel`|Contains information about the source of the data. Both `id` and `type` contain [namespaced values](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html).|
+|`channel.id`|The unique identifier of the channel, such as `"https://ns.adobe.com/xdm/channels/web"`.|
+|`channel.type`|Identifies the source of the channel data, such as `"https://ns.adobe.com/xdm/channel-types/web"`.|
 |`person`|An individual actor, contact, or owner.|
 |`person.accountID`|Captures the user account ID.|
 |`person.accountType`|Captures the user account type, such as `Personal` or `Company`, if applicable.|
@@ -379,6 +415,9 @@ The following table describes the data collected for this event.
 
 |Field|Description|
 |---|---|
+|`channel`|Contains information about the source of the data. Both `id` and `type` contain [namespaced values](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html).|
+|`channel.id`|The unique identifier of the channel, such as `"https://ns.adobe.com/xdm/channels/web"`.|
+|`channel.type`|Identifies the source of the channel data, such as `"https://ns.adobe.com/xdm/channel-types/web"`.|
 |`person`|An individual actor, contact, or owner.|
 |`person.accountID`|Captures the user account ID.|
 |`person.accountType`|Captures the user account type, such as `Personal` or `Company`, if applicable.|
@@ -415,6 +454,9 @@ The following table describes the data collected for this event.
 
 |Field|Description|
 |---|---|
+|`channel`|Contains information about the source of the data. Both `id` and `type` contain [namespaced values](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html).|
+|`channel.id`|The unique identifier of the channel, such as `"https://ns.adobe.com/xdm/channels/web"`.|
+|`channel.type`|Identifies the source of the channel data, such as `"https://ns.adobe.com/xdm/channel-types/web"`.|
 |`searchRequest`|Indicates if a search request was sent.|
 |`searchRequest.id`|The unique ID for this particular search request.|
 |`searchRequest.value`|The quantifiable value of the request.|
@@ -449,6 +491,9 @@ The following table describes the data collected for this event.
 
 |Field|Description|
 |---|---|
+|`channel`|Contains information about the source of the data. Both `id` and `type` contain [namespaced values](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html).|
+|`channel.id`|The unique identifier of the channel, such as `"https://ns.adobe.com/xdm/channels/web"`.|
+|`channel.type`|Identifies the source of the channel data, such as `"https://ns.adobe.com/xdm/channel-types/web"`.|
 |`searchResponse`|Indicates if a search response has been received.|
 |`searchResponse.id`|The unique ID for this particular search response.|
 |`searchResponse.value`|The quantifiable value of the response.|
@@ -482,6 +527,9 @@ The following table describes the data collected for this event.
 
 |Field|Description|
 |---|---|
+|`channel`|Contains information about the source of the data. Both `id` and `type` contain [namespaced values](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html).|
+|`channel.id`|The unique identifier of the channel, such as `"https://ns.adobe.com/xdm/channels/web"`.|
+|`channel.type`|Identifies the source of the channel data, such as `"https://ns.adobe.com/xdm/channel-types/web"`.|
 |`commerce.requisitionListOpens`|Indicates initialization of a new requisition list.|
 |`commerce.requisitionList`|The properties of the requisition list created by the customer.|
 |`commerce.requisitionList.ID`|Unique identifier of the requisition list.|
@@ -505,6 +553,9 @@ The following table describes the data collected for this event.
 
 |Field|Description|
 |---|---|
+|`channel`|Contains information about the source of the data. Both `id` and `type` contain [namespaced values](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html).|
+|`channel.id`|The unique identifier of the channel, such as `"https://ns.adobe.com/xdm/channels/web"`.|
+|`channel.type`|Identifies the source of the channel data, such as `"https://ns.adobe.com/xdm/channel-types/web"`.|
 |`commerce.requisitionListAdds`|Indicates addition of one or more products to a requisition list.|
 |`commerce.requisitionList`|The properties of the requisition list created by the customer.|
 |`commerce.requisitionList.ID`|Unique identifier of the requisition list.|
@@ -538,6 +589,9 @@ The following table describes the data collected for this event.
 
 |Field|Description|
 |---|---|
+|`channel`|Contains information about the source of the data. Both `id` and `type` contain [namespaced values](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html).|
+|`channel.id`|The unique identifier of the channel, such as `"https://ns.adobe.com/xdm/channels/web"`.|
+|`channel.type`|Identifies the source of the channel data, such as `"https://ns.adobe.com/xdm/channel-types/web"`.|
 |`commerce.requsitionListRemovals`|Indicates removal of one or more products from a requisition list.|
 |`commerce.requisitionList`|The properties of the requisition list created by the customer.|
 |`commerce.requisitionList.ID`|Unique identifier of the requisition list.|
@@ -571,6 +625,9 @@ The following table describes the data collected for this event.
 
 |Field|Description|
 |---|---|
+|`channel`|Contains information about the source of the data. Both `id` and `type` contain [namespaced values](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html).|
+|`channel.id`|The unique identifier of the channel, such as `"https://ns.adobe.com/xdm/channels/web"`.|
+|`channel.type`|Identifies the source of the channel data, such as `"https://ns.adobe.com/xdm/channel-types/web"`.|
 |`commerce.requisitionListDeletes`|Indicates that a requisition list was deleted.|
 |`commerce.requisitionList`|The properties of the requisition list created by the customer.|
 |`commerce.requisitionList.ID`|Unique identifier of the requisition list.|

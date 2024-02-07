@@ -20,7 +20,7 @@ The following image shows how your Commerce data flows from your store to other 
 
 ![How data flows to the Experience Platform edge](assets/commerce-edge.png)
 
-In the above image, your storefront and back office data is sent to the Experience Platform edge using an SDK, API, and a source connector. You do not need to fully understand how those pieces work as the extension handles the data sharing complexity for you. When the event data is at the edge, you can pull that data into other Experience Platform applications. For example:
+In the above image, your behavioral, back office, and customer profile data is sent to the Experience Platform edge using an SDK, API, and a source connector. You do not need to fully understand how those pieces work as the extension handles the data sharing complexity for you. When the event data is at the edge, you can pull that data into other Experience Platform applications. For example:
 
 |Application|Purpose|Use Cases|
 |---|---|---|
@@ -77,7 +77,7 @@ At a high level, enabling the [!DNL Data Connection] extension involves the foll
 1. [Install](install.md) the [!DNL Data Connection] extension.
 1. [Sign in](https://helpx.adobe.com/manage-account/using/access-adobe-id-account.html) to your Adobe account and [view to confirm](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html#concept_EA8AEE5B02CF46ACBDAD6A8508646255) your organization ID. The organization ID is the ID associated with your provisioned Experience Cloud company. This ID is a 24-character alphanumeric string, followed by (and must include) `@AdobeOrg`.
 1. [Create or update](update-xdm.md) your XDM schema with Commerce-specific field groups.
-1. [Create a dataset](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html#create-a-dataset) based off the schema you created or updated. This dataset contains the Commerce data that you send.
+1. [Create a dataset](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html#create-a-dataset) based off the schema you created or updated. This dataset contains the Commerce data sent to the Experience Platform Edge.
 1. [Create a datastream](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html) and select the XDM schema that contains the Commerce-specific field groups.
 1. [Connect to Commerce Services](../landing/saas.md).
 1. [Connect to Adobe Experience Platform](connect-data.md).
