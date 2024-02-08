@@ -18,7 +18,7 @@ Learn more about the [basics of schema composition](https://experienceleague.ado
 
 ## Update schema with time series behavioral and back office event data
 
-In this section, you learn how to update your existing schema or create a new schema to include behavioral and back office event data. See [time series profile event data](#time-series-profile-event-data-beta) to learn how to add profile-specific fields.
+In this section, you learn how to update your existing schema or create a new schema to include behavioral and back office event data. See [time series profile event data](#time-series-profile-event-data) to learn how to add profile-specific fields.
 
 1. If you do not already have a schema, [create](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#create) one with the class set to **Experience Event**. If you already have a schema, [edit](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#edit) your schema in the Adobe Experience Platform UI.
 
@@ -58,7 +58,7 @@ With the schemas, datasets, and datastreams configured for behavioral and back o
 
 To include your shopper's profile information, see the next section.
 
-## Time series profile event data (Beta)
+## Time series profile event data
 
 >[!NOTE]
 >
