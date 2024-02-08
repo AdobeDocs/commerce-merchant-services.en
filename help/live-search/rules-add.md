@@ -179,6 +179,7 @@ The information that is entered here appears in the [Rule Details](rules-workspa
 |Field |Description |
 |--- |--- |
 | Name | The name of the rule. Rule names must be unique. |
+| Rule Type | Default or Query. Default is applied to all rules, unless a more specific Query rule is defined.|
 | Start date | The start date of the rule, if scheduled. |
 | End date | The end date of the rule, if scheduled. |
 | Description | A brief description of the rule. |

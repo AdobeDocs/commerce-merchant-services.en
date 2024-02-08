@@ -16,21 +16,20 @@ Updates include:
 
 ## Current major version
 
-### V1.13 Release
+### V1.16 Release
 
-_October 12, 2023_
+_Feb 13, 2023_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
-![New](../assets/new.svg) Catalog Service supports the `inStock` flag for product variants.
-![New](../assets/new.svg) `urlKey` and `externalId` have been added to the GraphQL schema.
-![New](../assets/new.svg) Downloadable products and gift cards are now supported.
+![New](../assets/new.svg) Product videos are now supported by the Catalog Service API.
+![Fix](../assets/fix.svg) Bundle products with fixed prices are now supported.
+![Fix](../assets/fix.svg) Out-of-stock options are now shown in the PDP widget.
 
 #### Known limitations
 
 These features are not yet supported:
 
-* Bundle products with fixed price
 * Maximum size for dynamic attributes payload is 9 MB.
 * Group product price. Can be calculated with simple product prices.
 * In an image array, only the first image contains roles.
@@ -43,6 +42,16 @@ The following limitations can be solved by using the API Mesh and the Core Graph
 ## Previous versions
 
 +++ Previous versions
+
+### V1.13 Release
+
+_October 12, 2023_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+![New](../assets/new.svg) Catalog Service supports the `inStock` flag for product variants.
+![New](../assets/new.svg) `urlKey` and `externalId` have been added to the GraphQL schema.
+![New](../assets/new.svg) Downloadable products and gift cards are now supported.
 
 ### V1.12 Release
 
