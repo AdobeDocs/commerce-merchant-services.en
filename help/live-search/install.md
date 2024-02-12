@@ -43,7 +43,7 @@ In this scenario, storefront operations are interrupted while the [!DNL Live Sea
 1. To download the `live-search` package, run the following from the command line:
 
    ```bash
-   composer require magento/live-search
+   composer require magento/module-live-search
    ```
 
 1. Run the following commands to disable [!DNL OpenSearch] and related modules, and install [!DNL Live Search]:
