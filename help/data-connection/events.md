@@ -642,7 +642,7 @@ Back office events contain server-side data. This data comprises [order status](
 
 >[!NOTE]
 >
->All back office events include the [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html) field, which provides the shopper's email address.
+>All back office events include the [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html) field, which includes the shopper's email address, when available, and ECID.
 
 ### Order status
 
@@ -1027,7 +1027,7 @@ The following table describes the data collected for this event.
 
 >[!NOTE]
 >
->**Beta** Profile events generated from the server-side are available for beta participants. If you would like to join the beta, send an email to the following address: [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
+>**Beta** Profile events generated from the server-side are available for beta participants. If you would like to join the beta program, send a request to [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
 
 Profile events captured from the server-side include account information, such as `accountCreated`, `accountUpdated`, and `accountDeleted`. This data is used to help populate key customer details that are needed to better define segments or execute marketing campaigns, such as if you want to target shoppers who live in New York. There are similar profile events captured from the [storefront](#customer-profile-events-storefront).
 

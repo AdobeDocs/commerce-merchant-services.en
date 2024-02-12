@@ -69,7 +69,7 @@ Download the [workspace configuration file](https://developer.adobe.com/commerce
 
 1. Click **Save Config**.
 
-## General
+### General
 
 1. In the Admin, go to **System** > Services > **[!DNL Data Connection]**.
 
@@ -83,7 +83,7 @@ Download the [workspace configuration file](https://developer.adobe.com/commerce
     >
     >If you specify your own AEP Web SDK, the [!DNL Data Connection] extension uses the datastream ID associated with that SDK and not the datastream ID specified on this page (if any).
 
-## Data collection
+### Data collection
 
 In this section, you specify the type of data you want to collect and send to the Experience Platform edge. There are three types of data:
 
@@ -135,6 +135,8 @@ See the events topic to learn more about [storefront](events.md#storefront-event
         bin/magento saas:resync --feed orders
         ```
 
+#### Field descriptions
+
 | Field | Description |
 |--- |--- |
 | Scope | Specific website where you want the configuration settings to apply. |
@@ -148,11 +150,11 @@ See the events topic to learn more about [storefront](events.md#storefront-event
 
 After onboarding, storefront data begins to flow to the Experience Platform edge. Back office data takes about five minutes to appear at the edge. Subsequent updates are visible at the edge based on the cron schedule.
 
-## Send customer profile data
+### Send customer profile data
 
 >[!IMPORTANT]
 >
->This feature is in beta. If you would like to join the beta, send an email to the following address: [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
+>This feature is in beta. If you would like to join the beta program, send a request to [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
 
 There are two types of profile data that you can send to the Experience Platform: profile records and time series profile events.
 
@@ -162,7 +164,7 @@ Time series profile events contain data about your shopper's profile information
 
 1. Make sure you have [provided](#add-service-account-and-credential-details) service account and credential details.
 
-1. Make sure you have a schema and dataset specified for [profile record data ingestion](profile-data.md) and [time series profile event data ingestion](update-xdm.md#time-series-profile-event-data-beta).
+1. Make sure you have a schema and dataset specified for [profile record data ingestion](profile-data.md) and [time series profile event data ingestion](update-xdm.md#time-series-profile-event-data).
 
 1. Place a checkmark in the **Customer profiles** checkbox if you want to send profile data to the Experience Platform.
 
@@ -174,6 +176,8 @@ Time series profile events contain data about your shopper's profile information
 
 It can take about 10 minutes for a profile record to be available in Real-Time CDP. Profile events begin streaming immediately.
 
+#### Field descriptions
+
 | Field | Description |
 |--- |--- |
 |Customer profiles|Select this checkbox if you want to collect and send customer profile records.|
@@ -181,7 +185,7 @@ It can take about 10 minutes for a profile record to be available in Real-Time C
 |Stream customer profiles through same datastream ID|Decide if you want to use the same datastream currently used for your behavioral and back office events or not.|
 |Datastream for customer profiles|Specify the customer profile record-specific datastream.|
 
-## Send historical order data
+### Send historical order data
 
 Adobe Commerce collects up to five years of [historical order data and status](events.md#back-office-events). You can use the [!DNL Data Connection] extension to send that historical data to the Experience Platform to enrich your customer profiles and personalize the customer experiences based on those past orders. The data is stored in a dataset within Experience Platform.
 
@@ -191,7 +195,7 @@ Watch this video to learn more about historical orders then complete the followi
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424672)
 
-### Set up the Order Sync service
+#### Set up the Order Sync service
 
 The order sync service uses the [Message Queue Framework](https://developer.adobe.com/commerce/php/development/components/message-queues/) and RabbitMQ. After you complete these steps, order status data can sync to SaaS, which is required before it is sent to Experience Platform.
 
@@ -218,7 +222,7 @@ The order sync service uses the [Message Queue Framework](https://developer.adob
 
 With the order sync service enabled, you can then specify the historical order date range in the **[!UICONTROL [!DNL Data Connection]]** page.
 
-### Specify order history date range
+#### Specify order history date range
 
 Specify the date range for the historical orders that you want to send to Experience Platform.
 
@@ -231,6 +235,8 @@ Specify the date range for the historical orders that you want to send to Experi
 1. In the **From** and **To** fields, specify the date range for the historical order data you want to send. You cannot select a date range that exceeds five years.
 
 1. Select **[!UICONTROL Start Sync]** to trigger the sync to begin. Historical order data is batched data as opposed to storefront and back office data that is streaming data. Batched data takes about 45 minutes to arrive in Experience Platform.
+
+##### Field descriptions
 
 | Field | Description |
 |--- |--- |

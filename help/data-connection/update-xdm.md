@@ -46,7 +46,7 @@ In this section, you learn how to update your existing schema or create a new sc
 
     The datastream forwards the collected data to the dataset. The data is represented in the dataset based on the selected schema.
 
-1. **Beta** (Optional) You can use custom attributes if you want to pass custom back office event data from your Commerce instance to the Experience Platform. This feature is in beta. If you would like to join the beta, send an email to the following address: [dataconnection@adobe.com](mailto:dataconnection@adobe.com). In your request, include the following:
+1. **Beta** (Optional) You can use custom attributes if you want to pass custom back office event data from your Commerce instance to the Experience Platform. This feature is in beta. If you would like to join the beta program, send a request to [dataconnection@adobe.com](mailto:dataconnection@adobe.com). In your request, include the following:
 
     - Your [Adobe Org ID](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html#concept_EA8AEE5B02CF46ACBDAD6A8508646255). For example `organization_id@AdobeOrg`.
     - List of Order level custom attributes.
@@ -62,7 +62,7 @@ To include your shopper's profile information, see the next section.
 
 >[!NOTE]
 >
->This feature is in beta. If you would like to join the beta, send an email to the following address: [dataconnection@adobe.com](mailto:dataconnection@adobe.com). 
+>This feature is in beta. If you would like to join the beta program, send a request to [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
 
 Time series profile event data is generated from the following events:
 
