@@ -13,7 +13,7 @@ feature: Services, Catalog Service
 - [Onboarding and installation](installation.md)
 - [Catalog Service and API Mesh](mesh.md)
 - [Display Taxed Prices with the API Mesh](taxes.md)
-- [Feed Ingestion Service (Beta)](feed-ingestion.md) 
+- [Data Ingestion Service](data-ingestion.md) 
 - GraphQL queries {#graphql}
     - [categories query](https://developer.adobe.com/commerce/services/graphql/catalog-service/categories/)
     - [products query](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/)
