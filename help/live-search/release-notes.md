@@ -18,6 +18,8 @@ Updates include:
 
 These notes describe updates that were published outside of a versioned release or improvements to the hosted service.
 
+_February 13, 2024_ ![New](../assets/new.svg) [!DNL Live Search] now supports setting a default rule for [Search Merchandising](rules.md).
+
 _October 27, 2023_
 
 ![New](../assets/new.svg) The [!DNL Live Search] PLP widget now supports color swatches.
@@ -35,15 +37,14 @@ _June 13, 2023_
 
 ![New](../assets/new.svg) [!DNL Live Search] customers can now take advantage of the new [SaaS price indexer](../price-index/index.md).
 
-## [!DNL Live Search] 4.1.0 {#410}
+<!--## [!DNL Live Search] 4.1.0 {#410}
 
- _Feb 13, 2024_
+_Feb 13, 2024_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
 ### New Features
 
-![New](../assets/new.svg) [!DNL Live Search] now supports setting a default rule for [Search Merchandising](rules.md).
 ![New](../assets/new.svg) Multiple new features have been added to the [PLP widget](plp-styling.md):
 
 * List/grid view toggling
@@ -55,17 +56,7 @@ _June 13, 2023_
 
 Merchants must upgrade the [!DNL Live Search] extension to version >= 4.1.0 to access these features.
 
-After installing version 3.1.1 or higher, enable the new indexers: 
-
-* Product Prices Feed
-* Scopes website data feed
-* Scopes customer groups data feed
-
-After upgrading, test the updated configuration in QA or Staging before pushing the changes to production. 
-
-## Previous versions
-
-+++4.0.0 and prior
+--->
 
 ## [!DNL Live Search] 4.0.0 {#400}
 
@@ -86,6 +77,18 @@ After upgrading, test the updated configuration in QA or Staging before pushing 
 ![Fix](../assets/fix.svg) The [!DNL Live Search] PLP widget is now enabled by default for new installations.
 ![Fix](../assets/fix.svg) Reconfigured CSS styles to better isolate widget classes.
 ![Fix](../assets/fix.svg) Minor bug fixes
+
+After installing version 3.1.1 or higher, enable the new indexers: 
+
+* Product Prices Feed
+* Scopes website data feed
+* Scopes customer groups data feed
+
+After upgrading, test the updated configuration in QA or Staging before pushing the changes to production. 
+
+## Previous versions
+
++++3.1.1 and prior
 
 ## [!DNL Live Search] 3.1.1 {#311}
 
