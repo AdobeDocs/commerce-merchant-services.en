@@ -1,10 +1,10 @@
 ---
-title: Update Profile Record Event Schema for Commerce Data Ingestion
+title: Update Profile Record Schema for Commerce Data Ingestion
 description: Learn how to create a schema, dataset, and datastream to collect and send Commerce profile record data to the Experience Platform.
 role: Admin, Developer
 feature: Personalization, Integration
 ---
-# Update Profile Record Event Schema for Commerce Data Ingestion
+# Update Profile Record Schema for Commerce Data Ingestion
 
 >[!NOTE]
 >
