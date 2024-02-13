@@ -35,6 +35,38 @@ _June 13, 2023_
 
 ![New](../assets/new.svg) [!DNL Live Search] customers can now take advantage of the new [SaaS price indexer](../price-index/index.md).
 
+## [!DNL Live Search] 4.1.0 {#410}
+
+ _Feb 13, 2024_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+### New Features
+
+![New](../assets/new.svg) [!DNL Live Search] now supports setting a default rule for [Search Merchandising](rules.md).
+![New](../assets/new.svg) Multiple new features have been added to the [PLP widget](plp-styling.md):
+
+* List/grid view toggling
+* Add to Cart buttons
+* Swatch support
+* Multiple images per product
+* Price sliders
+* Language support
+
+Merchants must upgrade the [!DNL Live Search] extension to version >= 4.1.0 to access these features.
+
+After installing version 3.1.1 or higher, enable the new indexers: 
+
+* Product Prices Feed
+* Scopes website data feed
+* Scopes customer groups data feed
+
+After upgrading, test the updated configuration in QA or Staging before pushing the changes to production. 
+
+## Previous versions
+
++++4.0.0 and prior
+
 ## [!DNL Live Search] 4.0.0 {#400}
 
  _Nov 13, 2023_
@@ -55,27 +87,11 @@ _June 13, 2023_
 ![Fix](../assets/fix.svg) Reconfigured CSS styles to better isolate widget classes.
 ![Fix](../assets/fix.svg) Minor bug fixes
 
-Merchants must upgrade the [!DNL Live Search] extension to version >= 4.0.0 to access these features.
-
-After installing version 3.1.1 or higher, enable the new indexers: 
-
-* Product Prices Feed
-* Scopes website data feed
-* Scopes customer groups data feed
-
-After upgrading, test the updated configuration in QA or Staging before pushing the changes to production. 
-
-## Previous versions
-
-+++3.1.1 and prior
-
 ## [!DNL Live Search] 3.1.1 {#311}
 
  _Sept 15, 2023_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
-
-
 
 ![New](../assets/new.svg) New Category Merchandising tab has been added. Users can now add Intelligent Rankings and Manual Rankings (pin, boost, bury, hide) per category
 ![New](../assets/new.svg) Users can add a single category rule with intelligent or manual ranking

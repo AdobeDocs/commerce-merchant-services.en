@@ -5,13 +5,9 @@ exl-id: bb5aec74-faca-42ec-9fdb-3261677d451e
 ---
 # Feed Ingestion Service
 
->[!NOTE]
->
->The Feed Ingestion Service is currently in private beta. It is not yet available for general use.
-
 The Feed Ingestion Service allows customers with large and/or complex catalogs to send data to Adobe Commerce services directly.
 
-The Feed Ingestion Service decreases the time it takes to process product changes (price updates, adding new attributes) by bypassing the Adobe Commerce instance and moving catalog data from a third-party Enterprise Resource Planning (ERP) directly to Adobe Commerce services.
+The Feed Ingestion Service decreases the time that it takes to process product changes (price updates, adding new attributes) by bypassing the Adobe Commerce instance and moving catalog data from a third-party Enterprise Resource Planning (ERP) directly to Adobe Commerce services.
 
 This service is for customers that store and manage their product catalog in a system external to the core Adobe Commerce application. It is provided as an API, so that customers can integrate it into their existing systems, providing added flexibility in how it is deployed.
 
@@ -30,12 +26,6 @@ Depending on the Adobe Commerce configuration, data storage and data flows can t
 
 By bypassing the core Commerce application and moving data directly to the Commerce services, product updates are reflected in the store quicker. Core catalog data, such as SKUs, are sent to the core Commerce application for separate processing.
 
-## Join the beta
+## API
 
-The Feed Ingestion Service is designed for:
-
-* Mid-enterprise customers with headless implementations
-* Customers with large, complex catalogs
-* Customers not using the Adobe Commerce Admin to manage catalog data, instead using an ERP or third-party system to manage catalog data
-
-If you are interested in joining the beta program, contact the team at sagonzal@adobe.com.
+The [Feed Ingestion Service API documentation](https://developer.adobe.com/commerce/services/feed-ingestion) provides details on how to implement the service.

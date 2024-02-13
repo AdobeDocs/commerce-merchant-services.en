@@ -13,7 +13,7 @@ Each rule has three main components:
 * Events – The actions that take place when the conditions are met.
 * Details – The name of the rule, and optional time frame and description.
 
-You can combine multiple conditions and actions, and schedule a rule to be active for a period.
+You can combine multiple conditions and actions, and schedule a rule to be active for a period. You can also set a default rule that is applied even when no search term is set.
 
 ## Requirements
 
@@ -40,6 +40,10 @@ The Match operators `All` and `Any` determine the logical operator that is used 
 * `Any` - Uses the `OR` logical operator to join multiple conditions.
 
 When composing a complex rule, it can help to write it out with indentation to describe the conditions, associated events, and product names or SKUs that are needed to return the results you want to achieve. Then, build the rule and test the result.
+
+## Default rule
+
+You can set a default rule that is applied when no search term is provided, or no other search rule can be applied. If you set the default rule to "Most Purchased", then all queries will default to that ranking type, unless super-ceded by a more specific search term. No search term can be set for the default rule.
 
 ## Order of precedence with multiple rules
 

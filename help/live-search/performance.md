@@ -1,9 +1,9 @@
 ---
-title: "Performance"
+title: "Performance Dashboard"
 description: "The [!DNL Live Search] Performance dashboard provides insight into the search terms that shoppers use."
 exl-id: ee2053fc-98c5-4d2c-9345-4d1f9a3180fb
 ---
-# Performance
+# Performance dashboard
 
 The [!DNL Live Search] Performance dashboard provides insight into the search terms that shoppers use. The information can be used to identify trends, increase click-through, and improve the conversion rate. The Performance dashboard provides a snapshot of search metrics for a specific date range and includes the following reports:
 
@@ -12,6 +12,8 @@ The [!DNL Live Search] Performance dashboard provides insight into the search te
 * Popular results
 
 ![Performance](assets/performance-unique-searches.png)
+
+You can also refer to the [Data Management Dashboard](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) for more data about data syncing.
 
 ## View a report
 
@@ -23,7 +25,6 @@ The [!DNL Live Search] Performance dashboard provides insight into the search te
 >[!NOTE]
 >
 >The performance dashboard is updated every 12 hours.
-
 
 ## Field descriptions
 

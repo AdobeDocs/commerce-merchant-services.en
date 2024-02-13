@@ -18,6 +18,16 @@ To disable the PLP widget:
 1. Go to **Stores** > Settings > **Configuration** > **[!DNL Live Search]** > **Storefront Features** and set **Enable Product Listing Widgets** to "No".
 1. Select **Save Config** to save the setting.
 
+## Widget features
+
+The PLP widget provides a range of features that are expected in a searchable product page. These include:
+
+* Filtering by attributes.
+* Support for color swatches
+* Add to Cart functionality
+* Multiple language support
+* Price sliders
+
 ## Styling example
 
 You can customize the look and feel of the PLP widget to match your site using [CSS](https://developer.adobe.com/commerce/frontend-core/guide/css/).
