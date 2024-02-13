@@ -40,7 +40,7 @@ _November 16, 2023_
 
 _October 10, 2023_
 
-![New](../assets/new.svg) - Added new order status events: [Order Invoiced](events.md#orderinvoiced), [Order Item Return Initiated](events.md#orderitemsreturninitiated), and [Order Item Return Completed](events.md#orderitemreturncompleted).
+![New](../assets/new.svg) - Added new order status events: [Order Invoiced](events-backoffice.md#orderinvoiced), [Order Item Return Initiated](events.md#orderitemsreturninitiated), and [Order Item Return Completed](events.md#orderitemreturncompleted).
 ![Fix](../assets/fix.svg) - Fixed an issue where currency configuration changes were not reflected in the events after refreshing the cache.
 ![Fix](../assets/fix.svg) - Fixed error when order confirmation message does not appear if asynchronous order placement is enabled.
 ![New](../assets/new.svg) - Added data to [addToRequisitionList](events.md#addtorequisitionlist) event for simple products on the Category view page.
@@ -123,8 +123,8 @@ _March 30, 2023_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.3 and newer
 
-![New](../assets/new.svg) - Bundled the `commerce-data-export` and `saas-export` dependencies with the `experience-platform-connector` extension. Previously, you had to install these dependencies separately. These dependencies, along with merchant configuration, enables server-side processing of [back office events](events.md#back-office-events).
-![New](../assets/new.svg) - Added new back office event called [`orderShipmentCompleted`](events.md#ordershipmentcompleted).
+![New](../assets/new.svg) - Bundled the `commerce-data-export` and `saas-export` dependencies with the `experience-platform-connector` extension. Previously, you had to install these dependencies separately. These dependencies, along with merchant configuration, enables server-side processing of [back office events](events-backoffice.md).
+![New](../assets/new.svg) - Added new back office event called [`orderShipmentCompleted`](events-backoffice.md#ordershipmentcompleted).
 
 ## 2.1.1
 

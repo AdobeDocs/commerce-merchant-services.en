@@ -29,7 +29,7 @@ In this section, you learn how to configure the [!DNL Data Connection] extension
 
 ### Add service account and credential details
 
-If you plan to collect and send [historical order data](#send-historical-order-data) or [(Beta) customer profile data](#send-customer-profile-data), you need to add service account and credential details. Also, if you are configuring the [Audience Acivation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) extension, you need to complete these steps.
+If you plan to collect and send [historical order data](#send-historical-order-data) or [(Beta) customer profile data](#send-customer-profile-data), you must add service account and credential details. Also, if you are configuring the [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) extension, you must complete these steps.
 
 If you are only collecting and sending storefront or back office data, you can skip to the [general](#general) section.
 
@@ -181,7 +181,7 @@ It can take about 10 minutes for a profile record to be available in Real-Time C
 | Field | Description |
 |--- |--- |
 |Customer profiles|Select this checkbox if you want to collect and send customer profile records.|
-|Profile Dataset ID|A profile record must use a different dataset then the dataset used for behavioral and back office events.|
+|Profile Dataset ID|A profile record must use a different dataset than the dataset used for behavioral and back office events.|
 |Stream customer profiles through same datastream ID|Decide if you want to use the same datastream currently used for your behavioral and back office events or not.|
 |Datastream for customer profiles|Specify the customer profile record-specific datastream.|
 
