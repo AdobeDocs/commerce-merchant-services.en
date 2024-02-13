@@ -18,7 +18,9 @@ Updates include:
 
 These notes describe updates that were published outside of a versioned release or improvements to the hosted service.
 
-_February 13, 2024_ ![New](../assets/new.svg) [!DNL Live Search] now supports setting a default rule for [Search Merchandising](rules.md).
+_February 13, 2024_
+
+![New](../assets/new.svg) [!DNL Live Search] now supports setting a default rule for [Search Merchandising](rules.md).
 
 _October 27, 2023_
 
