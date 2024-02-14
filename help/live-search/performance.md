@@ -13,8 +13,6 @@ The [!DNL Live Search] Performance dashboard provides insight into the search te
 
 ![Performance](assets/performance-unique-searches.png)
 
-You can also refer to the [Data Management Dashboard](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) for more data about data syncing.
-
 ## View a report
 
 1. To enter the **Date range**, click the calendar (![Calendar](assets/btn-calendar.png)) and do one of the following:

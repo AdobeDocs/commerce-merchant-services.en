@@ -20,8 +20,6 @@ Product recommendations are surfaced on the storefront as units with labels, suc
 
 Data collection for the purposes of [!DNL Product Recommendations] does not include any personally identifiable information (PII). Also, all user identifiers like cookie IDs and IP addresses are strictly anonymized. To learn more, see the [Adobe Privacy Policy](https://www.adobe.com/privacy/policy.html).
 
-[!DNL Product Recommendations] users can refer to the [Data Management Dashboard](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) for more data about data syncing.
-
 ## Product recommendations versus product relationships
 
 Given the ever-changing complexities of online shopping, what works best for your storefront is often a combination of multiple key technologies. Using both [!DNL Product Recommendations] and [Product Relationships](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/product-relationships/product-relationships.html) gives you more flexibility when promoting products. You can leverage [!DNL Product Recommendations] powered by Adobe Sensei to intelligently automate your recommendations at scale. Then, you can leverage [Related Product Rules](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/product-relationships/product-related-rules.html) when you must manually intervene and ensure that a specific recommendation is being made to a target shopper segment, or when certain business goals must be met.
