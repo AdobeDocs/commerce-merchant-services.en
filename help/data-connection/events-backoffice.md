@@ -403,8 +403,6 @@ The following table describes the data collected for this event.
 
 Profile events captured from the server-side include account information, such as `accountCreated`, `accountUpdated`, and `accountDeleted`. This data is used to help populate key customer details that are needed to better define segments or execute marketing campaigns, such as sending sign-up discount offers, account change confirmations, and so on. There are similar profile events captured from the [storefront](#customer-profile-events-storefront).
 
-A merchant could use these events to send sign-up discount offers, account change confirmations, and so on - something like that might be better to mention. Same applies for storefront profile events
-
 ### accountCreated
 
 |Description| XDM event name|

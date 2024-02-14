@@ -6,9 +6,9 @@ feature: Personalization, Integration
 ---
 # Types of Commerce Data
 
-The [Data Connection extension](overview.md) connects your Commerce data to the Experience Platform. Data intended for use in the Experience Platform is grouped into two behavior types: time series data, which belongs to the **Experience Event** class, and record data, which belongs to the **Individual Profile** class. These behavior types and classes make up the basics of schema composition in Experience Platform.
+The [Data Connection extension](overview.md) connects your Commerce data to the Experience Platform. Data intended for use in the Experience Platform is grouped into two behavior types: time series data, which belongs to the **Experience Event** class, and record data, which belongs to the **Individual Profile** class.
 
-Learn [more](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html#data-behaviors) about data behavior and [classes](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html#class) in Experience Platform.
+Learn more about [data behavior](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html#data-behaviors) and [classes](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html#class) in Experience Platform.
 
 ## Time series data
 

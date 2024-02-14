@@ -43,7 +43,7 @@ In this section, you learn how to update your existing schema or create a schema
     >
     > Do not set any Commerce-specific field groups as `Primary identity`. Doing so identifies the field as required and Experience Platform expects that field in every event. If that field is absent, data ingestion fails.
     
-    Your schema now contains Commerce-specific field groups so that the time series data collected from the Commerce [events](events.md) is represented in the schema.
+    Your schema now contains Commerce-specific field groups so that the time series data collected from the Commerce [behavioral](events.md) and [back office](events-backoffice.md) events is represented in the schema.
 
 1. [Enable](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#profile) the schema for Profile.
 
