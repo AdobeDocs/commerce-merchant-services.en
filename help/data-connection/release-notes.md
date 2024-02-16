@@ -40,7 +40,7 @@ _November 16, 2023_
 
 _October 10, 2023_
 
-![New](../assets/new.svg) - Added new order status events: [Order Invoiced](events.md#orderinvoiced), [Order Item Return Initiated](events.md#orderitemsreturninitiated), and [Order Item Return Completed](events.md#orderitemreturncompleted).
+![New](../assets/new.svg) - Added new order status events: [Order Invoiced](events-backoffice.md#orderinvoiced), [Order Item Return Initiated](events.md#orderitemsreturninitiated), and [Order Item Return Completed](events.md#orderitemreturncompleted).
 ![Fix](../assets/fix.svg) - Fixed an issue where currency configuration changes were not reflected in the events after refreshing the cache.
 ![Fix](../assets/fix.svg) - Fixed error when order confirmation message does not appear if asynchronous order placement is enabled.
 ![New](../assets/new.svg) - Added data to [addToRequisitionList](events.md#addtorequisitionlist) event for simple products on the Category view page.
@@ -65,6 +65,16 @@ _October 12, 2022_
 ![New](../assets/new.svg) - Added support for an [AEM storefront](overview.md#aem-support).
 
 +++
+
+## 3.2.0-beta1
+
+_February 16, 2024_
+
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.4 and newer
+
+![New](../assets/new.svg) - If you are participating in the beta, make sure your `composer.json` file has the following on the root level: ` "minimum-stability": "beta"`.
+![New](../assets/new.svg) - Added ability to [add custom attributes](update-xdm.md#update-schema-with-time-series-behavioral-and-back-office-event-data).
+![New](../assets/new.svg) - Added ability to [collect and send profile records](connect-data.md#send-customer-profile-data) and data to Experience Platform.
 
 ## 3.1.0
 
@@ -114,8 +124,8 @@ _March 30, 2023_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.3 and newer
 
-![New](../assets/new.svg) - Bundled the `commerce-data-export` and `saas-export` dependencies with the `experience-platform-connector` extension. Previously, you had to install these dependencies separately. These dependencies, along with merchant configuration, enables server-side processing of [back office events](events.md#back-office-events).
-![New](../assets/new.svg) - Added new back office event called [`orderShipmentCompleted`](events.md#ordershipmentcompleted).
+![New](../assets/new.svg) - Bundled the `commerce-data-export` and `saas-export` dependencies with the `experience-platform-connector` extension. Previously, you had to install these dependencies separately. These dependencies, along with merchant configuration, enables server-side processing of [back office events](events-backoffice.md).
+![New](../assets/new.svg) - Added new back office event called [`orderShipmentCompleted`](events-backoffice.md#ordershipmentcompleted).
 
 ## 2.1.1
 
