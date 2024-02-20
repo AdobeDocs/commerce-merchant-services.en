@@ -7,19 +7,15 @@ feature: Catalog Management, Data Import/Export, Catalog Service
 
 # Catalog Sync
 
+>[!NOTE]
+>
+> The Catalog Sync Dashboard is now the Data Management Dashboard. This revamped dashboard now supports [!DNL Product Recommendations], [!DNL Live Search], and [!DNL Catalog Service]. Customers can get the Data Management Dashboard by updating to the latest version of one of those services. Read more about it in the [Data Management Dashboard](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) documentation. This current topic remains for those users who have yet to upgrade and still have the Catalog Sync dashboard.
+
 Adobe Commerce uses indexers to compile catalog data into tables. The process is automatically triggered by [events](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html#events-that-trigger-full-reindexing) such as a change to a product price or inventory level.
 
 The Catalog Sync service moves product data from an [!DNL Adobe Commerce] instance to the [!DNL Commerce Services] platform on an ongoing basis to keep the data up to date. For example, [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) requires current catalog information to accurately return recommendations with correct names, pricing, and availability. Use the _Catalog Sync_ dashboard to observe and manage the synchronization process or the [command-line interface](#resynccmdline) to trigger a catalog sync and to reindex product data for consumption by [!DNL Commerce Services].
 
->[!NOTE]
->
-> To use the _Catalog Sync_ dashboard or the command-line interface, you must have an [API key and a SaaS data space configured](saas.md).
-
 ## Accessing the Catalog Sync dashboard
-
->[!NOTE]
->
-> The _Catalog Sync_ dashboard is only available when the _Product Recommendations_ modules are installed and reflects data projections related to that feature only. Support for other Commerce Services such as _Live Search_ and _Catalog Service_ are planned for the future.
 
 To access the Catalog Sync dashboard, select **System** > _Data Transfer_ > **Catalog Sync**.
 
