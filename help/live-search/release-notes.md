@@ -39,9 +39,9 @@ _June 13, 2023_
 
 ![New](../assets/new.svg) [!DNL Live Search] customers can now take advantage of the new [SaaS price indexer](../price-index/index.md).
 
-<!--## [!DNL Live Search] 4.1.0 {#410}
+## [!DNL Live Search] 4.1.0 {#410}
 
-_Feb 13, 2024_
+_Feb 20, 2024_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
@@ -57,8 +57,6 @@ _Feb 13, 2024_
 * Language support
 
 Merchants must upgrade the [!DNL Live Search] extension to version >= 4.1.0 to access these features.
-
---->
 
 ## [!DNL Live Search] 4.0.0 {#400}
 
