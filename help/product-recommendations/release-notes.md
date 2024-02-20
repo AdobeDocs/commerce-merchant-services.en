@@ -39,6 +39,19 @@ These notes describe updates that were published outside of a versioned release 
 
 ## Current major version
 
+### 6.0.0 of magento/product-recommendations
+
+ _February 20, 2024_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+![New](../assets/new.svg) The [!DNL Catalog Sync Dashboard] is now the [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html). This revamped dashboard provides insights into data streams for [!DNL Product Recommendations], [!DNL Live Search], and [!DNL Catalog Service].
+![Fix](../assets/fix.svg) Fixed an issue that caused checkout errors for Product Recommendations.
+
+### Previous versions
+
++++5.0.0 and prior
+
 ### 5.0.1 of magento/product-recommendations
 
  _September 15, 2023_
@@ -52,10 +65,6 @@ These notes describe updates that were published outside of a versioned release 
 #### Known limitations
 
 * The `websiteCode` value is incorrectly returned if it contains an underscore (_).
-
-### Previous versions
-
-+++5.0.0 and prior
 
 ### 5.0.0 of magento/product-recommendations
 
