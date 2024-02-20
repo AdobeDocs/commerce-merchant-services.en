@@ -70,6 +70,16 @@ _June 28, 2021_
 
 +++
 
+## v2.3.3
+
+_February 14, 2024_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+![New](../assets/new.svg)<!-- PAY-5048 --> Added support for PHP 8.3
+
+![Fix](../assets/fix.svg)<!-- PAY-5048 --> Fixed an error with the `is_deleted` flag. Now, orders do not fail due to the `Rejected` status sent from the extension.
+
 ## v2.3.2
 
 _January 26, 2024_
