@@ -22,7 +22,7 @@ To disable the PLP widget:
 
 The PLP widget provides a range of features that are expected in a searchable product page. These include:
 
-* Filtering by attributes.
+* Filtering by attributes
 * Support for color swatches
 * Add to Cart functionality
 * Multiple language support
