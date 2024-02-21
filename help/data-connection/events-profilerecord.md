@@ -14,7 +14,7 @@ The following describes the Commerce profile record data that is available when 
 
 ## Profile record
 
-Profile record updates are available in the Experience Platform when a new profile is created, updated or deleted.
+Profile record updates are available in the Experience Platform when a new profile is created, updated, or deleted.
 
 ### Data collected from profile record
 

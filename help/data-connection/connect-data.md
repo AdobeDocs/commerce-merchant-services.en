@@ -95,7 +95,7 @@ In this section, you specify the type of data you want to collect and send to th
 
 To ensure that your Adobe Commerce instance can begin data collection, review the [prerequisites](overview.md#prerequisites).
 
-See the events topic to learn more about [storefront](events.md#storefront-events), [back office](events.md#back-office-events), and [profile](events.md#customer-profile-events-server-side) events.
+See the events topic to learn more about [storefront](events.md#storefront-events), [back office](events-backoffice.md), and [profile](events-backoffice.md#customer-profile-events-server-side) events.
 
 >[!NOTE]
 >
@@ -187,7 +187,7 @@ It can take about 10 minutes for a profile record to be available in Real-Time C
 
 ### Send historical order data
 
-Adobe Commerce collects up to five years of [historical order data and status](events.md#back-office-events). You can use the [!DNL Data Connection] extension to send that historical data to the Experience Platform to enrich your customer profiles and personalize the customer experiences based on those past orders. The data is stored in a dataset within Experience Platform.
+Adobe Commerce collects up to five years of [historical order data and status](events-backoffice.md#back-office-events). You can use the [!DNL Data Connection] extension to send that historical data to the Experience Platform to enrich your customer profiles and personalize the customer experiences based on those past orders. The data is stored in a dataset within Experience Platform.
 
 While Commerce already collects the historical order data, there are several steps you must complete to send that data to Experience Platform.
 
