@@ -22,6 +22,7 @@ _Feb 13, 2023_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
+![New](../assets/new.svg) The [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) is now available. This revamped dashboard provides insights into data streams for [!DNL Product Recommendations], [!DNL Live Search], and [!DNL Catalog Service].
 ![New](../assets/new.svg) Product videos are now supported by the Catalog Service API.
 ![Fix](../assets/fix.svg) Bundle products with fixed prices are now supported.
 ![Fix](../assets/fix.svg) Out-of-stock options are now shown in the PDP widget.
