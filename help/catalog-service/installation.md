@@ -122,7 +122,7 @@ To ensure that the catalog export is running correctly:
 - Verify that the indexers are running.
 - Ensure that the `Catalog Attributes Feed, Product Feed, Product Overrides Feed`, and `Product Variant Feed` indexers are set to "Update by Schedule".
 
-The initial sync could take from a few minutes to hours depending on the catalog size. After the initial sync, the Catalog exports product data from the Commerce server to Commerce services on an ongoing basis to keep the services up to date.
+The initial sync could take from a few minutes to hours depending on the catalog size. After the initial sync, the Catalog exports product data from the Commerce server to Commerce services on an ongoing basis to keep the services up to date. To monitor the status of the sync, refer to the [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html).
 
 ### Access the service
 
@@ -139,3 +139,7 @@ To allow [!DNL Catalog Service] through a firewall, add `commerce.adobe.io` to t
 The [API Mesh for Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) enables developers to integrate private or third-party APIs and other interfaces with Adobe products using Adobe IO.
 
 See the  [[!DNL Catalog Service] and API Mesh](mesh.md) topic for installation and configuration details.
+
+## Data Management Dashboard
+
+Users can refer to the [Data Management Dashboard](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) for more data about [!DNL Catalog Service] data syncing.

@@ -16,6 +16,18 @@ Updates include:
 
 ## Current major version
 
+### V1.17 Release
+
+_Feb 22, 2023_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+![New](../assets/new.svg) The [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) is now available. This revamped dashboard provides insights into data streams for [!DNL Product Recommendations], [!DNL Live Search], and [!DNL Catalog Service].
+
+## Previous versions
+
++++ Previous versions
+
 ### V1.16 Release
 
 _Feb 13, 2023_
@@ -38,10 +50,6 @@ The following limitations can be solved by using the API Mesh and the Core Graph
 
 * Minimum Advertised Price
 * [Tier pricing](mesh.md)
-
-## Previous versions
-
-+++ Previous versions
 
 ### V1.13 Release
 

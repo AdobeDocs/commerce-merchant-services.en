@@ -39,14 +39,15 @@ _June 13, 2023_
 
 ![New](../assets/new.svg) [!DNL Live Search] customers can now take advantage of the new [SaaS price indexer](../price-index/index.md).
 
-<!--## [!DNL Live Search] 4.1.0 {#410}
+## [!DNL Live Search] 4.1.0 {#410}
 
-_Feb 13, 2024_
+_Feb 22, 2024_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
 ### New Features
 
+![New](../assets/new.svg) The [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) is now available. This revamped dashboard provides insights into data streams for [!DNL Product Recommendations], [!DNL Live Search], and [!DNL Catalog Service].
 ![New](../assets/new.svg) Multiple new features have been added to the [PLP widget](plp-styling.md):
 
 * List/grid view toggling
@@ -58,7 +59,11 @@ _Feb 13, 2024_
 
 Merchants must upgrade the [!DNL Live Search] extension to version >= 4.1.0 to access these features.
 
---->
+### Updates
+
+![Fix](../assets/fix.svg) Fixed an issue that caused an error when guest users added products to a cart in non-default store views.
+![Fix](../assets/fix.svg) Fixed an issue that caused the search popover to always display the currency symbol in front of the price value regardless of locale setttings.
+![Fix](../assets/fix.svg) Removed unnecessary type definitions for disabled core plugins to fix compatibility issues on installation.
 
 ## [!DNL Live Search] 4.0.0 {#400}
 
