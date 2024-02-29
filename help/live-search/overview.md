@@ -51,7 +51,7 @@ Each of these attributes can be defined as ["searchable"](https://experienceleag
 
 ## [!DNL Live Search] workspace
 
-The [!DNL Live Search] [workspace](workspace.md) is the area in the Amin where you configure [!DNL Live Search] features such as synonyms, facets, and Category Merchandising.
+The [!DNL Live Search] [workspace](workspace.md) is the area in the Admin where you configure [!DNL Live Search] features such as synonyms, facets, and Category Merchandising.
 
 ## Events
 
