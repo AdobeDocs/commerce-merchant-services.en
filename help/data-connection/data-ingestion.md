@@ -24,10 +24,6 @@ Learn how to [create a schema](update-xdm.md) that can ingest behavioral and bac
 
 ## Record data
 
->[!NOTE]
->
->This feature is in beta. If you would like to join the beta program, send a request to [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
-
 Record data provides information about the attributes of a subject. A subject could be an organization or an individual. For example, a shopper on your site creates an account and that generates record data. This data is ingested into the Experience Platform using a schema that has the class set to **Individual Profile**. You can send that record data to Adobe's profile management and segmentation service: [Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html).
 
 ### Captured profile record data

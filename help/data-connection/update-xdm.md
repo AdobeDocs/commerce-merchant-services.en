@@ -71,10 +71,6 @@ To include your shopper's profile information, see the next section.
 
 ## Time series profile event data
 
->[!NOTE]
->
->This feature is in beta. If you would like to join the beta program, send a request to [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
-
 Time series profile event data is generated from the following events:
 
 - [`accountCreated`](events-backoffice.md#accountcreated)
