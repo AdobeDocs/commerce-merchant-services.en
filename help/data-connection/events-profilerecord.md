@@ -4,11 +4,7 @@ description: Learn what data a profile record captures.
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
 ---
-# [!DNL Data Connection] Profile Records (Beta)
-
->[!NOTE]
->
->This feature is in beta. If you would like to join the beta program, send a request to [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
+# [!DNL Data Connection] Profile Records
 
 The following describes the Commerce profile record data that is available when you install the [!DNL Data Connection] extension. The data in profile records is sent to the Adobe Experience Platform.
 

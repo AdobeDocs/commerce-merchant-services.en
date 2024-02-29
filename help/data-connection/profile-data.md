@@ -6,10 +6,6 @@ feature: Personalization, Integration
 ---
 # Update Profile Record Schema for Commerce Data Ingestion
 
->[!NOTE]
->
->This feature is in beta. If you would like to join the beta program, send a request to [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
-
 When your shoppers create a profile in your Commerce site, a profile record is created and data is captured. You must create a schema and dataset specific to that profile record before you can stream that profile data to the Experience Platform.
 
 1. [Create](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#create) a schema and set the class to **Individual Profile**.

@@ -397,10 +397,6 @@ The following table describes the data collected for this event.
 
 ## Customer profile events (back office)
 
->[!NOTE]
->
->**Beta** Profile events generated from the server-side are available for beta participants. If you would like to join the beta program, send a request to [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
-
 Profile events captured from the server-side include account information, such as `accountCreated`, `accountUpdated`, and `accountDeleted`. This data is used to help populate key customer details that are needed to better define segments or execute marketing campaigns, such as sending sign-up discount offers, account change confirmations, and so on. There are similar profile events captured from the [storefront](#customer-profile-events-storefront).
 
 ### accountCreated

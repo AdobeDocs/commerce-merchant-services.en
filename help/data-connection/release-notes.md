@@ -116,7 +116,7 @@ _June 13, 2023_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.3 and newer
 
-![New](../assets/new.svg) - (Beta) Added ability to [send historical order](connect-data.md#beta-send-historical-order-data) data and status to the Experience Platform. This feature is available for beta users only. You can join the beta by sending an email to the following address: `dataconnection@adobe.com`.
+![New](../assets/new.svg) - (Beta) Added ability to [send historical order](connect-data.md#beta-send-historical-order-data) data and status to the Experience Platform.
 
 ## 2.2.0
 

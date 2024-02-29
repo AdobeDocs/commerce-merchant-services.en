@@ -31,7 +31,7 @@ In the above image, your behavioral, back office, and customer profile data is s
 
 ## Pull Experience Platform data back into Commerce
 
-Sending your Commerce data to the Experience Platform using the [!DNL Data Connection] extension is one side of Commerce's data sharing capabilities. The other side, which is an optional extension, is called [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html). This extension allows you to build audiences in Real-Time CDP and deploy those audiences to your Commerce store to inform cart price rules, related product rules (beta), and dynamic blocks.
+Sending your Commerce data to the Experience Platform using the [!DNL Data Connection] extension is one side of Commerce's data sharing capabilities. The other side, which is an optional extension, is called [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html). This extension allows you to build audiences in Real-Time CDP and deploy those audiences to your Commerce store to inform cart price rules, related product rules, and dynamic blocks.
 
 At a high level, the flow of data from your Commerce store to the Experience Platform and back through the Audience Activation extension looks like the following:
 

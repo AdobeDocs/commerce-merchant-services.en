@@ -29,7 +29,7 @@ In this section, you learn how to configure the [!DNL Data Connection] extension
 
 ### Add service account and credential details
 
-If you plan to collect and send [historical order data](#send-historical-order-data) or [(Beta) customer profile data](#send-customer-profile-data), you must add service account and credential details. Also, if you are configuring the [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) extension, you must complete these steps.
+If you plan to collect and send [historical order data](#send-historical-order-data) or [customer profile data](#send-customer-profile-data), you must add service account and credential details. Also, if you are configuring the [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) extension, you must complete these steps.
 
 If you are only collecting and sending storefront or back office data, you can skip to the [general](#general) section.
 
@@ -91,7 +91,7 @@ In this section, you specify the type of data you want to collect and send to th
 
 - **Back office** (server-side data) is data captured in the Commerce servers. This includes information about the status of an order, such as if an order was placed, canceled, refunded, shipped, or completed. It also includes [historical order data](#send-historical-order-data).
 
-- (**Beta**) **Profile** is data related to your shopper's profile information. Learn [more](#send-customer-profile-data).
+- **Profile** is data related to your shopper's profile information. Learn [more](#send-customer-profile-data).
 
 To ensure that your Adobe Commerce instance can begin data collection, review the [prerequisites](overview.md#prerequisites).
 
@@ -151,10 +151,6 @@ See the events topic to learn more about [storefront](events.md#storefront-event
 After onboarding, storefront data begins to flow to the Experience Platform edge. Back office data takes about five minutes to appear at the edge. Subsequent updates are visible at the edge based on the cron schedule.
 
 ### Send customer profile data
-
->[!IMPORTANT]
->
->This feature is in beta. If you would like to join the beta program, send a request to [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
 
 There are two types of profile data that you can send to the Experience Platform: profile records and time series profile events.
 
