@@ -70,6 +70,16 @@ _June 28, 2021_
 
 +++
 
+## v2.3.4
+
+_March 4, 2024_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+![New](../assets/new.svg)<!-- PAY-5244 --> Fixed async checkout compatibility.
+
+![Fix](../assets/fix.svg)<!-- PAY-5253 --> Fixed an error where a vault token not belonging to Payment Services could not be deleted.
+
 ## v2.3.3
 
 _February 14, 2024_
