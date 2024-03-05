@@ -142,7 +142,7 @@ This allows developers to fully customize the functionality and styling. These u
 
 ## Price indexer
 
-Live Search customers can use the new [SaaS price indexer](../price-index/index.md), which provides faster price change updates and synchronization time.
+Live Search customers can use the new [SaaS price indexer](../price-index/price-indexing.md), which provides faster price change updates and synchronization time.
 
 ## Price support
 

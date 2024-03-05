@@ -37,7 +37,7 @@ _June 13, 2023_
 
  _April 25, 2023_
 
-![New](../assets/new.svg) [!DNL Live Search] customers can now take advantage of the new [SaaS price indexer](../price-index/index.md).
+![New](../assets/new.svg) [!DNL Live Search] customers can now take advantage of the new [SaaS price indexer](../price-index/price-indexing.md).
 
 ## [!DNL Live Search] 4.1.0 {#410}
 
