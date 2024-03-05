@@ -8,6 +8,6 @@ feature: Services, Price Indexer
 ---
 # Saas Price Indexer {#price-indexer}
 
-- [Guide Overview](index.md)
+- [Guide Overview](price-indexing.md)
 - [Catalog Adapter](catalog-adapter.md)
 

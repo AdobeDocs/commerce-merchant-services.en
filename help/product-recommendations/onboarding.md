@@ -36,7 +36,7 @@ See [[!DNL Page Builder] Integration](page-builder.md) for instructions on how t
 
 ### SaaS price indexing
 
-Product Recommendation customers can use [SaaS price indexing](../price-index/index.md), which provides faster price changes updates and synchornization time.
+Product Recommendation customers can use [SaaS price indexing](../price-index/price-indexing.md), which provides faster price changes updates and synchornization time.
 
 ### B2B support {#b2bsupport}
 

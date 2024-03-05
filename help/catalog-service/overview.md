@@ -19,7 +19,7 @@ The [!DNL Catalog Service] uses [GraphQL](https://graphql.org/) to request and r
 
 Adobe Commerce has two GraphQL systems. The core GraphQL system provides a wide range of queries (read operations) and mutations (write operations) that allow a shopper to interact with many types of pages, including product, customer account, cart, checkout, and more. However, the queries that return product information are not optimized for speed. The services GraphQL system can only perform queries on products and related information. These queries are more performant than similar core queries.
 
-[!DNL Catalog Service] customers can use the new [SaaS price indexer](../price-index/index.md), which provides faster price change updates and synchronization time.
+[!DNL Catalog Service] customers can use the new [SaaS price indexer](../price-index/price-indexing.md), which provides faster price change updates and synchronization time.
 
 ## Architecture
 
@@ -62,7 +62,7 @@ A complex product does not have a set price. Instead, Catalog Service returns th
 
 >[!NOTE]
 >
-> Commerce customers with [!DNL Catalog Service] can take advantage of faster price changes updates and synchronization time on their websites with the [SaaS price indexer](../price-index/index.md).
+> Commerce customers with [!DNL Catalog Service] can take advantage of faster price changes updates and synchronization time on their websites with the [SaaS price indexer](../price-index/price-indexing.md).
 
 ## Implementation
 
