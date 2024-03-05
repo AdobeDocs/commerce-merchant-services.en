@@ -12,6 +12,10 @@ feature: Payments, Checkout, Configuration, Saas
 * If you still *need to connect your instance*, see the information in this topic about [obtaining API credentials](#obtain-api-credentials) and [configuring Commerce Services](#configure-commerce-services).
 * If you are *unsure whether your instance is connected*, navigate to **System** > Services > **Commerce Services Connector** and view the public and private API key values in the [!UICONTROL Sandbox Keys] and [!UICONTROL Production Keys] sections, and the *Project* and *Data Space* fields in the [!UICONTROL SaaS Identifier] section. If those values are present, then your instance is connected.
 
+>[!NOTE]
+>
+>All merchants entitled for Payment Services can use one production data space and two testing data spaces.
+
 ## Obtain API credentials
 
 To consume a Commerce SaaS service, you must use your instance's API keys (Commerce public API key and a private key) for both sandbox and production, which are created and managed in your [My Account Dashboard](https://account.magento.com/customer/account/login). [The key pair](https://docs.magento.com/user-guide/configuration/services/saas.html) can be created for a Commerce account---one for sandbox and one for production---though only one pair can be actively used at a time.
