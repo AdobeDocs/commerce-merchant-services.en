@@ -11,7 +11,7 @@ The following lists the Commerce back office events available when you install t
 
 In addition to the data the following events collect, you also get [other data](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html) provided by the Adobe Experience Platform Web SDK.
 
-Back office events contain server-side data. This data comprises [order status](#order-status) information such as if an order was placed, canceled, refunded, shipped, or completed. Server-side data also includes [customer profile events](#customer-profile-events-back-office) information, such as if an account was created, updated, or deleted.
+Back office events contain server-side data. This data comprises [order status](#order-status) information such as if an order was placed, canceled, refunded, shipped, or completed. Server-side data also includes [customer profile events](#customer-profile-events) information, such as if an account was created, updated, or deleted.
 
 >[!NOTE]
 >
@@ -396,9 +396,9 @@ The following table describes the data collected for this event.
 |`productListItems.categories.name`|The name of the category.|
 |`productListItems.categories.path`|The path to the category.|
 
-## Customer profile events (back office)
+## Customer profile events
 
-Profile events captured from the server-side include account information, such as `accountCreated`, `accountUpdated`, and `accountDeleted`. This data is used to help populate key customer details that are needed to better define segments or execute marketing campaigns, such as sending sign-up discount offers, account change confirmations, and so on. There are similar profile events captured from the [storefront](#customer-profile-events-storefront).
+Profile events captured from the server-side include account information, such as `accountCreated`, `accountUpdated`, and `accountDeleted`. This data is used to help populate key customer details that are needed to better define segments or execute marketing campaigns, such as sending sign-up discount offers, account change confirmations, and so on. There are similar profile events captured from the [storefront](events.md#customer-profile-events).
 
 ### accountCreated
 

@@ -297,9 +297,9 @@ The following table describes the data collected for this event.
 |`productListItems.selectedOptions.attribute`|Identifies an attribute of the configurable product, such as `size` or `color`.|
 |`productListItems.selectedOptions.value`|Identifies the value of the attribute such as `small` or `black`.|
 
-## Customer profile events (behavioral)
+## Customer profile events
 
-Profile events captured from the storefront include account information, such as `signIn`, `signOut`, `createAccount`, and `editAccount`. This data is used to help populate key customer details that are needed to better define segments or execute marketing campaigns, such as sending sign-up discount offers, account change confirmations, and so on. There are similar profile events captured from the [server-side](events-backoffice.md#customer-profile-events-back-office).
+Profile events captured from the storefront include account information, such as `signIn`, `signOut`, `createAccount`, and `editAccount`. This data is used to help populate key customer details that are needed to better define segments or execute marketing campaigns, such as sending sign-up discount offers, account change confirmations, and so on. There are similar profile events captured from the [server-side](events-backoffice.md#customer-profile-events).
 
 ### signIn
 

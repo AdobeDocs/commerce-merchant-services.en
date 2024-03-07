@@ -29,6 +29,10 @@ Product Recommendations require the following data:
 
 When you install the `magento/product-recommendations` module, Adobe Sensei aggregates the behavioral and catalog data, creating Product Recommendations for each recommendation type. The Product Recommendations service then deploys those recommendations to your storefront.
 
+>[!NOTE]
+>
+>For configurable products, Product Recommendations uses the image of the parent product in the recommendation unit. If the configurable product does not have an image specified, the recommendation unit will be empty for that specific product.
+
 ## Next steps
 
 Read the following topics to get started with Product Recommendations:
