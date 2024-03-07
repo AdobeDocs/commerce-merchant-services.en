@@ -29,6 +29,12 @@ Product Recommendations require the following data:
 
 When you install the `magento/product-recommendations` module, Adobe Sensei aggregates the behavioral and catalog data, creating Product Recommendations for each recommendation type. The Product Recommendations service then deploys those recommendations to your storefront.
 
+## Data synchronization tips
+
+Product Recommendations data is synchronized in these ways:
+
+- **Configurable Product** - A rec unit image is taken from the top product (configurable). If the configurable product does not have images attached, the recs unit image will be empty on the store and admin side.
+
 ## Next steps
 
 Read the following topics to get started with Product Recommendations:
