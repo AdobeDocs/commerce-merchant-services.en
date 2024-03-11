@@ -44,7 +44,3 @@ It is not necessary to define both the singular and plural forms of a word as a 
 ### Consistency
 
 Be consistent with the way terminology is used in your catalog. Keep in mind that there might be regional differences in usage, and sometimes differences within an industry.
-
-### Keyword mapping
-
-This technique uses searchable product attributes, rather than synonyms, to create keyword-based associations between products. As a result, a mapped product can appear in the search results of another product. To learn more, see [Search Results](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html).
