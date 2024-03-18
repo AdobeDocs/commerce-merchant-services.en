@@ -103,6 +103,7 @@ To restrict customer groups using Catalog permissions:
 |Latvian|Latvia|lv_LV|lv_LV|
 |Norwegian|Norway Bokmal|nb_NO|nb_NO|
 |Dutch|Netherlands|nl_NL|nl_NL|
+|Polish|Poland|pl_PL|pl_PL|
 |Portuguese|Brazil|pt_BR|pt_BR|
 |Portuguese|Portugal|pt_PT|pt_PT|
 |Romanian|Romania|ro_RO|ro_RO|

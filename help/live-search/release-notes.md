@@ -39,6 +39,16 @@ _June 13, 2023_
 
 ![New](../assets/new.svg) [!DNL Live Search] customers can now take advantage of the new [SaaS price indexer](../price-index/price-indexing.md).
 
+## [!DNL Live Search] 4.1.1 {#411}
+
+_Mar 13, 2024_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+### New Features
+
+![New](../assets/new.svg) Added language support for [Polish](technical-overview.md#language-support).
+
 ## [!DNL Live Search] 4.1.0 {#410}
 
 _Feb 22, 2024_
