@@ -48,6 +48,7 @@ _Mar 13, 2024_
 ### New Features
 
 ![New](../assets/new.svg) Added language support for [Polish](technical-overview.md#language-support).
+![New](../assets/new.svg) [!DNL Live Search] now supports PHP 8.3 for installations running Adobe Commerce 2.4.4.
 
 ## [!DNL Live Search] 4.1.0 {#410}
 

@@ -68,6 +68,8 @@ In this scenario, storefront operations are interrupted while the [!DNL Live Sea
    * Product Prices Feed
    * Scopes Website Data feed
    * Scopes Customer Groups Data feed
+   * Categories Feed
+   * Category Permissions Feed
 
 1. Configure your [API keys](#configure-api-keys) and verify that your catalog data is [synchronized](#synchronize-catalog-data) with [!DNL Live Search] services.
 
