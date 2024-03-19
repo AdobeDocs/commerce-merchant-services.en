@@ -39,7 +39,7 @@ To construct a dynamic query, the search service needs to know which attributes 
 
 ### Full index
 
-When [!DNL Live Search] is configured and synchronized during onboarding, it can take up to 30 minutes to build the initial index. Large catalogs can take longer to index. The process begins after `cron` submits the feed and finishes running.
+When [!DNL Live Search] is configured and synchronized during onboarding, it can take up to 60 minutes to build the initial index. Large catalogs can take longer to index. The process begins after `cron` submits the feed and finishes running.
 
 The following events trigger a full sync and index build:
 

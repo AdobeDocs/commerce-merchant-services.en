@@ -18,7 +18,7 @@ This topic provides instructions to do the following:
 
 Do the following:
 
-1. Confirm that [cron jobs](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) and [indexers](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) are running.
+1. Confirm that [cron jobs](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) and [indexers](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) are running.
 
 1. Choose the onboarding method that meets your requirements and follow the instructions.
 
@@ -27,7 +27,7 @@ Do the following:
 
 >[!IMPORTANT]
 >
->Due to the Elasticsearch 7 end-of-support announcement for August 2023, it is recommended that all Adobe Commerce customers migrate to the OpenSearch 2.x search engine. For information about migrating your search engine during product upgrade, see [Migrating to OpenSearch](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/prepare/opensearch-migration.html) in the _Upgrade Guide_.
+>Due to the Elasticsearch 7 end-of-support announcement for August 2023, it is recommended that all Adobe Commerce customers migrate to the OpenSearch 2.x search engine. For information about migrating your search engine during product upgrade, see [Migrating to OpenSearch](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/prepare/opensearch-migration) in the _Upgrade Guide_.
 
 ## Method 1: Install without OpenSearch {#method-1}
 
@@ -60,7 +60,7 @@ In this scenario, storefront operations are interrupted while the [!DNL Live Sea
    >
    > While the data is indexed and synchronized, the search and category browse operations are not available in the storefront. Depending on the size of your catalog, the process can take at least an hour from the time `cron` runs to synchronize your data to [!DNL Live Search] services.
 
-1. Verify that the following [indexers](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) are set to "Update by Schedule":
+1. Verify that the following [indexers](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) are set to "Update by Schedule":
 
    * Product Feed
    * Product Variant Feed
@@ -68,6 +68,8 @@ In this scenario, storefront operations are interrupted while the [!DNL Live Sea
    * Product Prices Feed
    * Scopes Website Data feed
    * Scopes Customer Groups Data feed
+   * Categories Feed
+   * Category Permissions Feed
 
 1. Configure your [API keys](#configure-api-keys) and verify that your catalog data is [synchronized](#synchronize-catalog-data) with [!DNL Live Search] services.
 
@@ -119,7 +121,7 @@ In this scenario, [!DNL OpenSearch] temporarily manages search requests from the
 
    [!DNL Elasticsearch] continues to manage search requests from the storefront while the [!DNL Live Search] service synchronizes catalog data and indexes products in the background.
 
-1. Verify that the following [indexers](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) are set to "Update by Schedule":
+1. Verify that the following [indexers](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) are set to "Update by Schedule":
 
    * Product Feed
    * Product Variant Feed
@@ -195,7 +197,7 @@ To verify that the catalog data has been exported from your Adobe Commerce insta
 * `catalog_data_exporter_products`
 * `catalog_data_exporter_product_attributes`
 
-For additional help, refer to [[!DNL Live Search] catalog not synchronized](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-catalog-data-sync.html) in the Support Knowledge Base.
+For additional help, refer to [[!DNL Live Search] catalog not synchronized](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-catalog-data-sync) in the Support Knowledge Base.
 
 ### Future product updates
 
@@ -217,7 +219,7 @@ To allow Live Search through a firewall, add `commerce.adobe.io` to the allow li
 
 ## Checking the installed version
 
-Before updating Live Search, run the following from the command line to check the version of Live Search that is currently installed:
+Before updating Live Search, run the following from the command line to check the version of Live Search that is installed:
 
 ```bash
 composer show magento/module-live-search | grep version
@@ -265,14 +267,14 @@ To update to a major version such as from 3.1.1 to 4.0.0, edit the project's roo
 
 ## Uninstalling [!DNL Live Search] {#uninstall}
 
-To uninstall [!DNL Live Search], refer to [Uninstall modules](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html).
+To uninstall [!DNL Live Search], refer to [Uninstall modules](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/uninstall-modules).
 
 ## [!DNL Live Search] packages {#packages}
 
 | Package | Description |
 |--- |--- |
-| `module-live-search` | Allows merchants to configure their search settings for faceting, synonyms, query rules, etc., and provides access to a read-only GraphQL playground to test queries from the *Admin*. |
-| `module-live-search-adapter` | Routes search requests from the storefront to the [!DNL Live Search] service and renders the results in the storefront. <br />- Category browse - Routes requests from the storefront [top navigation](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-top.html) to the search service.<br />- Global search - Routes requests from the [quick search](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) box in the upper-right of the storefront to the [!DNL Live Search] service. |
+| `module-live-search` | Allows merchants to configure their search settings for faceting, synonyms, query rules, and so on, and provides access to a read-only GraphQL playground to test queries from the *Admin*. |
+| `module-live-search-adapter` | Routes search requests from the storefront to the [!DNL Live Search] service and renders the results in the storefront. <br />- Category browse - Routes requests from the storefront [top navigation](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/navigation/navigation-top) to the search service.<br />- Global search - Routes requests from the [quick search](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) box in the upper-right of the storefront to the [!DNL Live Search] service. |
 | `module-live-search-storefront-popover` | A "search as you type" popover replaces the standard quick search and returns data and thumbnails of top search results. |
 
 ## [!DNL Live Search] dependencies {#dependencies}

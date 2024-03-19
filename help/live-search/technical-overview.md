@@ -25,7 +25,7 @@ This topic reviews technical requirements and tips for installing and optimizing
 
 As [!DNL Live Search] does not have access to the complete product database, [!DNL Live Search] GraphQL and Commerce core GraphQL will not have complete parity.
 
-It is recommended to call the SaaS API's directly - specifically the Catalog Service endpoint.
+It is recommended to call the SaaS APIs directly - specifically the Catalog Service endpoint.
 
 * Gain performance and reduce processor load by bypassing the Commerce database/Graphql process
 * Take advantage of the [!DNL Catalog Service] federation to call [!DNL Live Search], [!DNL Catalog Service], and [!DNL Product Recommendations] from a single endpoint.
@@ -37,8 +37,8 @@ If you have a custom headless implementation, check out the [!DNL Live Search] r
 * [PLP widget](https://github.com/adobe/storefront-product-listing-page)
 * [Live Search field](https://github.com/adobe/storefront-search-as-you-type)
 
-If you do not use the default components, such as Search Adapter or widgets on Luma, or AEM CIF Widgets, be aware that eventing (clickstream data that feeds Adobe Sensei for Intelligent Merchandising and performance metrics) will not work out of the box and requires custom development to implement headless eventing.
-The latest version of [!DNL Live Search] already uses [!DNL Catalog Service] and the installs [!DNL Catalog Service] modules.
+If you do not use the default components, such as Search Adapter or widgets on Luma, or AEM CIF Widgets, eventing (clickstream data that feeds Adobe Sensei for Intelligent Merchandising and performance metrics) will not work out of the box and requires custom development to implement headless eventing.
+The latest version of [!DNL Live Search] already uses [!DNL Catalog Service].
 
 ## Boundaries and thresholds
 
@@ -103,6 +103,7 @@ To restrict customer groups using Catalog permissions:
 |Latvian|Latvia|lv_LV|lv_LV|
 |Norwegian|Norway Bokmal|nb_NO|nb_NO|
 |Dutch|Netherlands|nl_NL|nl_NL|
+|Polish|Poland|pl_PL|pl_PL|
 |Portuguese|Brazil|pt_BR|pt_BR|
 |Portuguese|Portugal|pt_PT|pt_PT|
 |Romanian|Romania|ro_RO|ro_RO|
@@ -136,7 +137,7 @@ This allows developers to fully customize the functionality and styling. These u
 
 ## Inventory Management
 
-[!DNL Live Search] supports [Inventory Management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/introduction.html) capabilities in Commerce (formerly knows as Multi-Source Inventory, or MSI). To enable full support, you must [update](install.md#update) the dependency module `commerce-data-export` to version 102.2.0+.
+[!DNL Live Search] supports [Inventory Management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) capabilities in Commerce (formerly knows as Multi-Source Inventory, or MSI). To enable full support, you must [update](install.md#update) the dependency module `commerce-data-export` to version 102.2.0+.
 
 [!DNL Live Search] returns a boolean noting whether a product is available within Inventory Management, but does not contain information about which source has the stock.
 
@@ -146,7 +147,7 @@ Live Search customers can use the new [SaaS price indexer](../price-index/price-
 
 ## Price support
 
-Live Search widgets support most but not all of the price types supported by Adobe Commerce.
+Live Search widgets support most but not all price types supported by Adobe Commerce.
 
 Currently, basic prices are supported. Advanced prices that are not supported are:
 
@@ -187,9 +188,9 @@ To use [!DNL Live Search] with PWA Studio, integrators must also:
 
 ## Not currently supported
 
-* The [Advanced Search](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#advanced-search) module is disabled when [!DNL Live Search] is installed, and the Advanced Search link in the storefront footer is removed.
-* [Tier Pricing](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-tier.html) and [Special Pricing](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-special.html) are not supported in the [!DNL Live Search] field and Product Listing Page Widget.
+* The [Advanced Search](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) module is disabled when [!DNL Live Search] is installed, and the Advanced Search link in the storefront footer is removed.
+* [Tier Pricing](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier) and [Special Pricing](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-special) are not supported in the [!DNL Live Search] field and Product Listing Page Widget.
 
 ## Cookies
 
-[!DNL Live Search] collects user interaction data as part of its base functionality and cookies are used to store this data. When collecting any user information, the user must agree to store cookies. [!DNL Live Search] and [!DNL Product Recommendations] share the data stream and therefore the same cookie mechanism. Read more about it in [Handle Cookie Restrictions](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/setting-cookie.html).
+[!DNL Live Search] collects user interaction data as part of its base functionality and cookies are used to store this data. When collecting any user information, the user must agree to store cookies. [!DNL Live Search] and [!DNL Product Recommendations] share the data stream and therefore the same cookie mechanism. Read more about it in [Handle Cookie Restrictions](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/product-recommendations/developer/setting-cookie).

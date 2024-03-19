@@ -145,6 +145,8 @@ The following table describes the data collected for this event.
 |`commerce.commerceScope.storeCode`|The unique store code. You can have many stores per website.|
 |`commerce.commerceScope.storeViewCode`|The unique store view code. You can have many store views per store.|
 |`commerce.commerceScope.websiteCode`|The unique website code. You can have many websites in an environment.|
+|`commerce.order`|Contains information about the pending order for one or more products.|
+|`commerce.order.discountAmount`|Indicates the discount amount applied to the whole order.|
 |`productListItems`|An array of products that were added to the shopping cart.|
 |`productListItems.SKU`|Stock Keeping Unit. The unique identifier for the product.|
 |`productListItems.name`|The display name or human-readable name of the product.|
