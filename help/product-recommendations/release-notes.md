@@ -41,9 +41,9 @@ These notes describe updates that were published outside of a versioned release 
 
 ### 6.0.1 of magento/product-recommendations
 
- _March 18, 2024_
+ _March 19, 2024_
 
-[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.7 and newer
 
 ![New](../assets/new.svg) Added PHP 8.3 support.
 
