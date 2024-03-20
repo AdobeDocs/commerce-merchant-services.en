@@ -99,7 +99,7 @@ To select or create a SaaS project, request the [!DNL Commerce] API key from the
 >
 > If you generate new keys in the API Portal section of My Account, immediately update the API keys in the Admin configuration. If you generate new keys and do not update them in the Admin, your SaaS extensions no longer work and you lose valuable data.
 
-To change the SaaS project or data space names, click **Rename**.
+To change the names of your SaaS project or data space, click **Rename** next to either one. Changing the name does not affect your service  because the name is only a label to help you identify and differentiate  between projects and data spaces.
 
 ## IMS Organization (optional) {#organizationid}
 
