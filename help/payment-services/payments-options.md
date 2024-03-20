@@ -28,11 +28,11 @@ There are different behaviors for each payment method depending on where you are
 * **Advanced** - All available [payments options](../payment-services/payments-options.md) are available for current [fully supported countries](../payment-services/overview.md#availability). During onboarding to enable live payments, select the [Advanced onboarding option](../payment-services/production.md#advanced-onboarding).
 * **Standard** - A subset of payments options (Express Checkout)---PayPal credit and debit cards---is available for other available supported countries. [Credit card fields](#credit-card-fields) and [Apple Pay](#apple-pay-button) are not available for this onboarding option. During onboarding to enable live payments, select the [Standard onboarding option](../payment-services/production.md#standard-onboarding).
 
-See [Enable [!DNL Payment Services] for production](../payment-services/production.md#complete-merchant-onboarding) for for information about completing Advanced and Standard onboarding.
+See [Enable [!DNL Payment Services] for production](../payment-services/production.md#complete-merchant-onboarding) for information about completing Advanced and Standard onboarding.
 
 ## [!UICONTROL Credit Card Fields]
 
-[!UICONTROL Credit Card Fields] provide a simple and secure checkout for credit card or debit card payment methods. When a shopper checks out using credit card fields, they enter their name, billing address, and credit or debit card information, to place their order. Their customer information is securely used during the purchase session to seamlessly guide them through the checkout flow.
+[!UICONTROL Credit Card Fields] provide a simple and secure checkout for credit card or debit card payment methods. When a shopper checks out using credit card fields, they enter their name, billing address, and credit or debit card information to place their order. Their customer information is securely used during the purchase session to seamlessly guide them through the checkout flow.
 
 ![Credit card fields in checkout](assets/credit-card-fields.png){width="500" zoomable="yes"}
 
@@ -44,7 +44,7 @@ You can also change the layout, width, height, and outer styling of the credit c
 
 ## [!DNL Apple Pay] button
 
-Customers can use [[!DNL Apple Pay]](https://www.apple.com/apple-pay/), which utilizes credit and debit card payment credentials stored on an iOS or macOS device, to make purchases.
+Customers can use [[!DNL Apple Pay]](https://www.apple.com/apple-pay/), which uses credit and debit card payment credentials stored on an iOS or macOS device, to make purchases.
 
 [!DNL Apple Pay] is only available in the Safari browser. Merchants can add up to 99 domains per merchant account.
 
@@ -58,15 +58,31 @@ The [!DNL Apple Pay] button is visible from the product page, mini-cart, shoppin
 
 You can configure [!UICONTROL Apple Pay] in the store configuration or the Payment Services Home. See [Settings](settings.md#apple-pay) for more information.
 
+## [!DNL Google Pay] button
+
+Customers can use [[!DNL Google Pay]](https://pay.google.com/about/) by adding payment details to their Google Account, where they are stored safely for a seamless checkout experience.
+
+[!DNL Google Pay] is only available in certain countries or regions and on certain devices. See [[!DNL Google Pay] documentation](https://developer.paypal.com/docs/checkout/apm/google-pay/#link-googlepayintegration) for more information.
+
+![Google Pay button in the checkout](assets/google-pay-button.png){width="500" zoomable="yes"}
+
+The [!DNL Google Pay] button is visible from the product page, mini-cart, shopping cart, and checkout views.
+
+You can configure [!UICONTROL Google Pay] in the store configuration or the Payment Services Home. See [Settings](settings.md) for more information.
+
+   >[!NOTE]
+   >
+   > The [!DNL Google Pay] API can only be used on websites in a secure context. See [Troubleshooting](https://developers.google.com/pay/api/web/support/troubleshooting) documentation for more information.
+
 ## [!DNL PayPal Payment Buttons]
 
 [!DNL PayPal payment buttons], which use PayPal to complete a purchase, stores your shopper's shipping address, billing addresses, and payment details for later use. Shoppers can use any payment method previously stored or offered by PayPal.
 
 ![PayPal button](assets/paypal-button.png){width="350" zoomable="yes"}
 
-You can configure [!UICONTROL PayPal payment buttons] in the store configuration or the [!DNL Payment Services] Home.  See [Settings](settings.md#payment-buttons) for more information.
+You can configure [!UICONTROL PayPal payment buttons] in the store configuration or the [!DNL Payment Services] Home. See [Settings](settings.md#payment-buttons) for more information.
 
-See PayPal's [Payment methods documentation](https://developer.paypal.com/docs/checkout/payment-methods/) to learn in which countries each payment method is currently available.
+Learn about availability of payment methods by country in PayPal's [Payment methods documentation](https://developer.paypal.com/docs/checkout/payment-methods/).
 
 ### [!DNL PayPal] button
 
@@ -96,27 +112,27 @@ The [!DNL Pay Later] button is visible from the product page, mini-cart, shoppin
 
 See information about the Pay Later offers in [PayPal's Pay Later offers documentation](https://developer.paypal.com/docs/checkout/pay-later/us/). Use the **Country or region** dropdown to select a region of interest.
 
-See [Settings](settings.md#payment-buttons) to learn how to disable/enable the [!DNL Pay Later] messaging.
+Learn how to disable or enable the [!DNL Pay Later] messaging by updating the [Settings](settings.md#payment-buttons) configuration.
 
 ## Use only PayPal payment buttons
 
-To quickly get your store into production mode you can configure _only_ PayPal payment buttons (Venmo, PayPal, etc.)---instead of also using the PayPal credit card payment option.
+To quickly get your store into production mode, you can configure _only_ PayPal payment buttons (Venmo, PayPal, and so on.)---instead of also using the PayPal credit card payment option.
 
 This allows you to:
 
-* Provide a variety of payment options for your customers, including Venmo and PayPal payment buttons, with the option to turn off PayPal hosted card fields and use an existing credit card provider.
-* Use your existing credit card provider for credit card payments, while also utilizing PayPal's other payment options.
-* Use PayPal's payment buttons in a region in which PayPal does not support credit cards as a payment option.
+* Provide various payment options for your customers, including Venmo and PayPal payment buttons, with the option to turn off PayPal hosted card fields and use an existing credit card provider.
+* Use your existing credit card provider for credit card payments, while also using PayPal's other payment options.
+* Use PayPal's payment buttons in regions where PayPal does not support credit cards as a payment option.
 
 To **capture payments with _only_ PayPal payment buttons (_not_ the PayPal credit card payment option)**:
 
-1. Ensure your store is [in production mode](settings.md#enable-payment-services).
+1. Ensure that your store is [in production mode](settings.md#enable-payment-services).
 1. [Configure the desired PayPal payment buttons](settings.md#payment-buttons) in Settings.
 1. Turn _Off_ the **[[!UICONTROL Show PayPal Credit and Debit card button]](settings.md#payment-buttons)** option in the _[!UICONTROL Payment buttons]_ section.
 
 To **capture payments with your existing credit card provider _and_ PayPal payment buttons**:
 
-1. Ensure your store is [in production mode](settings.md#enable-payment-services).
+1. Ensure that your store is [in production mode](settings.md#enable-payment-services).
 1. [Configure the desired PayPal payment buttons](settings.md#payment-buttons).
 1. Turn _Off_ the **[[!UICONTROL PayPal Show Credit and Debit card button]](settings.md#payment-buttons)** option in the _[!UICONTROL Payment buttons]_ section.
 1. Turn _Off_ the **[[!UICONTROL Show on checkout page]](settings.md#credit-card-fields)** option in the _[!UICONTROL Credit card fields]_ section and use your [existing credit card provider account](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html#payments).

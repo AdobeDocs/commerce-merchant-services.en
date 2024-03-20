@@ -12,15 +12,13 @@ These release notes describe the initial release of [!DNL Payment Services] and 
 ![Fixed issue](../assets/fix.svg) Fixes and improvements
 ![Known issue](../assets/bug.svg) Known issues
 
-For feature changes and fixes released outside of the regular versioned feature release, see the Hosted service updates section(s).
+For feature changes and fixes released outside of the regular feature release version, review the _Hosted service updates_ sections.
 
-See [Upcoming Releases](https://devdocs.magento.com/release/) to learn about release schedules and support.
-
-See [Product Availability](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html) to learn which Adobe Commerce versions support this extension.
+Learn more about upcoming releases, product support, and which Adobe Commerce versions support the Payment Services extension, see the Adobe Commerce [Release schedule](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule) and [Product Availability](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability) topics.
 
 ## Hosted service updates
 
-These release notes describe feature changes and fixes that occurred and were released outside of the regular versioned feature releases for the hosted service.
+These release notes describe feature changes and fixes that occurred and were released outside of the regular feature releases for the hosted service.
 
 +++Hosted service updates
 
@@ -38,7 +36,7 @@ _July 12, 2023_
 
 _June 9, 2023_
 
-![New](../assets/new.svg)<!-- Issue PAY-4288 --> Now, merchants can [configure _only_ PayPal payment buttons](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#use-only-paypal-payment-buttons)---and _not_ use the PayPal credit card payment option. This allows merchants to provide a variety of payment options, including Venmo and PayPal payment buttons, and use an existing credit card provider instead of the PayPal credit card payment option.
+![New](../assets/new.svg)<!-- Issue PAY-4288 --> Now, merchants can [configure _only_ PayPal payment buttons](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#use-only-paypal-payment-buttons)---and _not_ use the PayPal credit card payment option. This allows merchants to provide various payment options, including Venmo and PayPal payment buttons, and use an existing credit card provider instead of the PayPal credit card payment option.
 
 ![New](../assets/new.svg)<!-- Issue PAY-4050 --> Added a [data visualization view](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#order-payment-status-data-visualization-view), which appears on the Payment Service Home, for the Order payment status report.
 
@@ -64,7 +62,7 @@ _August 9, 2021_
 
 _June 28, 2021_
 
-![New](../assets/new.svg)<!-- Issue PAY-1720 --> Disputes for store orders are now available in [the Order payment status report](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#view-disputes). You can take action on disputes by navigating directly to the PayPal Resolution Center from [!DNL Payment Services].
+![New](../assets/new.svg)<!-- Issue PAY-1720 --> Disputes for store orders are now available in [the Order payment status report](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#view-disputes). You can address disputes by navigating directly to the PayPal Resolution Center from [!DNL Payment Services].
 
 ![New](../assets/new.svg)<!-- Issue PAY-2854 --> User experience improvements from [!DNL Payment Services] Home include the ability to modify a configuration at the current inheritance level and improvements to the display of the header and navigation.
 
@@ -73,6 +71,20 @@ _June 28, 2021_
 ![New](../assets/new.svg)<!-- Issue PAY-2761 --> You can now customize the data that displays in the [Order payment status report](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) and the [Payouts report](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) by showing or hiding columns using the Column settings control.
 
 +++
+
+## v2.4.0
+
+_March 14, 2024_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.6 and newer
+
+![New](../assets/new.svg)<!-- PAY-4868 --> Merchants can successfully [configure Google Pay throughout the purchase experience](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html), similar to other payment buttons in Payment Services through the Admin.
+
+![New](../assets/new.svg)<!-- PAY-4381 --> [Payment Services supports Google Pay through GraphQL](https://developer.adobe.com/commerce/webapi/graphql/payment-services/) allowing merchants to have a headless Commerce experience with the Google Pay payment method.
+
+![New](../assets/new.svg)<!-- PAY-4878 --> Now, the Payment Services basic checkout feature is bundled for Adobe Commerce and Magento Open Source merchants. Payment Services can now support merchants with businesses in any of 200 geographies worldwide. Payment Services basic checkout provides debit/credit, PayPal, Venmo (where available), and PayLater (where available) options in a self-service onboarding.
+
+![Fix](../assets/fix.svg)<!-- PAY-5291 --> Receiving payment confirmation for some transactions may be delayed. In that case, now merchants can get an updated payment status for an order. [Payment services detects the pending status of a payment transaction](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html) in an order by detecting pending transactions and proactively monitoring these transactions and updating when the pending status has been captured.
 
 ## v2.3.4
 
@@ -108,7 +120,10 @@ _December 7, 2023_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
-![New](../assets/new.svg)<!-- PAY-5047 --> The credit/debit card brand or payment method type is now available on the customer order page on the storefront, in the order confirmation email sent to the shopper, and in the [order details view](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-processing.html#view-an-order) in the Commerce Admin.
+![New](../assets/new.svg)<!-- PAY-5047 --> The credit/debit card brand or payment method type is now available from the following locations:
+- the customer order page on the storefront
+- the order confirmation email sent to the shopper
+- from the [order details view](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-processing.html#view-an-order) in the Commerce Admin.
 
 ## v2.3.0
 
@@ -140,7 +155,7 @@ _August 30, 2023_
 
 ![New](../assets/new.svg)<!-- PAY-4002 --> Added functionality to allow merchants to [sort the order of their payment options](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#payment-buttons) to prioritize certain payment options. This functionality encourages a higher checkout conversation rate.
 
-![New](../assets/new.svg)<!-- PAY-4035 --> Added a new [Transactions report](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/transactions.html) to the Payment Service's Admin home to provide visibility to transaction authorization rates and negative transaction trends so merchants can effectively monitor the health of their stores and identify any transaction issues.
+![New](../assets/new.svg)<!-- PAY-4035 --> Merchants can now efficiently monitor the health of their stores and identify any transaction issues using the new [Transactions report](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/transactions.html) available from the Payment Services Admin home page. The report presents data about transaction authorization rates and negative transaction trends as well.
 
 ## v2.1.0
 
@@ -220,7 +235,7 @@ _November 23, 2022_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.0 and newer
 
-![New](../assets/new.svg)<!-- Issue PAY-3923 --> Payment Services now includes the version number in the user agent header for requests to be able to track, filter or deprecate unused endpoints.
+![New](../assets/new.svg)<!-- Issue PAY-3923 --> Payment Services now includes the version number in the user agent header so that requests can track, filter, or deprecate unused endpoints.
 
 ![Fixed issue](../assets/fix.svg)<!-- Issue PAY-3968 --> Payment Services now correctly displays order data when an order is placed from the product page using payment buttons.
 
@@ -240,7 +255,7 @@ _October 14, 2022_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.0 and newer
 
-![Fix](../assets/fix.svg)<!-- Issue PAY-3766 --> When a customer's payment method is declined, the visible error message is more descriptive. It advises the customer to re-enter payment information and try again, try another payment method, or to contact their bank about the declined the transaction.
+![Fix](../assets/fix.svg)<!-- Issue PAY-3766 --> When a customer's payment method is declined, the visible error message is more descriptive. It advises the customer to reenter payment information and try again, try another payment method, or to contact their bank about the declined the transaction.
 
 ## v1.4.0
 
@@ -282,15 +297,15 @@ _June 29, 2022_
 
 ![Known issue](../assets/bug.svg)<!-- Issue PAY-x --> Apple Pay is incompatible with the Safari browser v15.5 on mobile and desktop. When using Safari version 15.5, you are not able to complete checkout with Apple Pay.
 
-![Fixed issue](../assets/fix.svg)<!-- Issue PAY-3264 --> Previously, when a logged-in user selected a different billing/shipping address other than the default address for their account, checkout failed. We fixed this issue, and now the selected billing/shipping address is sent (instead of the default saved address) and checkout is completed successfully.
+![Fixed issue](../assets/fix.svg)<!-- Issue PAY-3264 --> Previously, when a logged-in user selected a billing/shipping address other than the default address for their account, checkout failed. Now, the selected billing/shipping address is sent (instead of the default saved address) and checkout is completed successfully.
 
 ![Fixed issue](../assets/fix.svg)<!-- Issue PAY-3314 --> If you disable PayPal payment buttons for checkout, no errors are shown.
 
 ![Fixed issue](../assets/fix.svg)<!-- Issue PAY-3330 --> Payments no longer fail during checkout when a guest user enters a phone number that includes dashes.
 
-![Fixed issue](../assets/fix.svg)<!-- Issue PAY-3338 PAY-2502 --> When Commerce Services credentials are invalid, the [!DNL Payment Services] Home will now appear in the Admin. A credentials error appears to alert you that your credentials are invalid.
+![Fixed issue](../assets/fix.svg)<!-- Issue PAY-3338 PAY-2502 --> When Commerce Services credentials are invalid, Payment Services now alerts you by displaying a credentials error from the [!DNL Payment Services] Home in the Admin.
 
-![Known issue](../assets/bug.svg)<!-- Issue PAY-0 --> [!DNL Payment Services] is currently incompatible with `commerce-data-export` v101.20 and higher, which renders it incompatible with the [[!DNL Channel manager] extension](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html).
+![Known issue](../assets/bug.svg)<!-- Issue PAY-0 --> [!DNL Payment Services] is incompatible with `commerce-data-export` v101.20 and higher, which renders it incompatible with the [[!DNL Channel manager] extension](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html).
 
 ## v1.1.0
 

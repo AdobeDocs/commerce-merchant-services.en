@@ -46,7 +46,7 @@ From the Order payment status visualization view, you can customize the timefram
 
 ### Statuses information
 
-The payment statuses for a selected date range are shown on the left of the Order payment status data visualization view. The dates for the selected date range are shown on the bottom of the view. If there were no orders on a particular date, that date will not appear.
+The payment statuses for a selected date range are shown on the left of the Order payment status data visualization view. The dates for the selected date range are shown on the bottom of the view. If there were no orders on a particular date, that date does not appear.
 
 The Order payment status data visualization view includes the following information.
 
@@ -77,9 +77,36 @@ You can [download payout transactions](#download-order-payment-statuses) in a .c
 >
 >The data shown in this table is sorted in descending order (`DESC`) by default using the `TRANS DATE`. The `TRANS DATE` is the date and time when the transaction was initiated.
 
+### Payment status updates
+
+Certain payment methods require a period of time to capture the payment. [!DNL Payment Services] now detects the pending statuses of a payment transaction in an order by:
+
+* Synchronously detecting `pending capture` transactions
+* Asynchronously monitoring `pending capture` transactions
+
+>[!NOTE]
+>
+>Detecting the pending statuses of payment transactions in an order prevents accidentally shipping orders if the payment has not yet been received. This can occur for e-check and PayPal transactions.
+
+#### Synchronous detection of Pending capture transactions
+
+Automatically detect capture transactions in a `Pending` status and prevent orders from entering a `Processing` status when such a transaction is detected.
+
+During customer checkout or when an admin creates an invoice for a previously authorized payment, [!DNL Payment Services] automatically detects capture transactions in a `Pending` status and shifts corresponding orders into `Payment Review` status.
+
+#### Asynchronous monitoring of Pending capture transactions
+
+Detect when a pending capture transaction enters a `Completed` status so merchants can resume processing the affected order.
+
+To make sure this process works as expected, merchants must configure a new cron job. Once the job is configured to run automatically, no other interventions are expected from the merchant.
+
+See [Configure cron jobs](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html). Once configured, the new job runs every 30 minutes to fetch updates for orders that are in a `Payment Review` status.
+
+Merchants can check the updated payment status via the Order payment status report view.
+
 ### Data used in the report
 
-The [!DNL Payment Services] module uses order data, and combines it with aggregated payment data from other sources (including PayPal), to provide meaningful and highly useful reports.
+[!DNL Payment Services] uses order data, and combines it with aggregated payment data from other sources (including PayPal), to provide meaningful and highly useful reports.
 
 Order data is exported and persisted in the payment service. When you [change or add order statuses](https://docs.magento.com/user-guide/sales/order-status-custom.html) or [edit a store view](https://docs.magento.com/user-guide/stores/stores-all-view-edit.html), [store](https://docs.magento.com/user-guide/stores/store-information.html), or website name, that data is combined with payment data and the Order payment status report is populated with the combined info.
 
@@ -126,9 +153,9 @@ To select the data source for your [!UICONTROL Order Payment Status] report:
 
    The report results regenerate based on the data source selected.
 
-### Customize dates timeframe
+### Customize Order dates timeframe
 
-From the Order payment status report view, you can customize the timeframe of the statuses you want to view by selecting specific dates. By default, 30 days of order payment statuses are shown in the grid.
+From the Order payment status report view, you can customize the timeframe of the status results you want to view by selecting specific dates. By default, 30 days of order payment statuses are shown in the grid.
 
 1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_ > **[!UICONTROL View Report]**.
 1. Click the _[!UICONTROL Order dates]_ calendar selector filter.
@@ -142,7 +169,7 @@ From the Order payment status report view, you can filter the statuses results y
 1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_ > **[!UICONTROL View Report]**.
 1. Click the **[!UICONTROL Filter]** selector.
 1. Toggle the _Pay Status_ options to see report results for only selected order payment statuses.
-1. Enter a _Min Order Amount_ or _Max Order Amount_ to see report results within that order amount range.
+1. View report results within an order amount range by entering a _[!UICONTROL Min Order Amount]_ or _[!UICONTROL Max Order Amount_].
 1. Click **[!UICONTROL Hide filters]** to hide the filter.
 
 ### Show and hide columns
@@ -153,7 +180,7 @@ The Order Payment Status report shows all available columns of information by de
 1. Click the _Column settings_ icon (![column settings icon](assets/column-settings.png){width="20" zoomable="yes"}).
 1. To customize which columns you see in the report, check or uncheck columns in the list.
 
-   The Order payment status report will immediately show any changes you made in the Column settings menu. The column preferences will be saved and will remain in effect if you navigate away from the report view.
+   The Order payment status report immediately shows any changes that you made in the Column settings menu. The column preferences are saved and remain in effect if you navigate away from the report view.
 
 ### View statuses
 
@@ -191,10 +218,10 @@ You can view any disputes on your store's orders, and navigate to the PayPal Res
 1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_ > **[!UICONTROL View Report]**.
 1. Navigate to the **[!UICONTROL Disputes column]**.
 1. View any disputes for a specific order and see [the dispute status](#order-payment-status-information).
-1. Click the dispute ID link (beginning with _PP-D-_) to go to the [PayPal Resolution Center](https://www.paypal.com/us/smarthelp/article/what-is-the-resolution-center-faq3327).
+1. Review dispute details from the [PayPal Resolution Center](https://www.paypal.com/us/cshelp/article/what-is-the-resolution-center-help246) by clicking the dispute ID link that begins with _PP-D-_.
 1. Take appropriate action for the dispute, as needed.
 
-   To sort order disputes by status, click the Disputes column header.
+   To sort order disputes by status, click the [!UICONTROL Disputes] column header.
 
 ### Download order payment statuses
 
