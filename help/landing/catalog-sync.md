@@ -9,7 +9,7 @@ feature: Catalog Management, Data Import/Export, Catalog Service
 
 >[!NOTE]
 >
-> The Catalog Sync Dashboard is now the Data Management Dashboard. This revamped dashboard now supports [!DNL Product Recommendations], [!DNL Live Search], and [!DNL Catalog Service]. Customers can get the Data Management Dashboard by updating to the latest version of one of those services. Read more about it in the [Data Management Dashboard](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) documentation. This current topic remains for those users who have yet to upgrade and still have the Catalog Sync dashboard.
+> The Catalog Sync Dashboard is now the Data Management Dashboard. This revamped dashboard now supports [[!DNL Product Recommendations]](../product-recommendations/guide-overview.md), [[!DNL Live Search]](../live-search/guide-overview.md), and [[!DNL Catalog Service]](../catalog-service/overview.md). Customers can get the Data Management Dashboard by updating to the latest version of one of those services. Read more about it in the [Data Management Dashboard](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) documentation. This current topic remains for those users who have yet to upgrade and still have the Catalog Sync dashboard.
 
 Adobe Commerce uses indexers to compile catalog data into tables. The process is automatically triggered by [events](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html#events-that-trigger-full-reindexing) such as a change to a product price or inventory level.
 
