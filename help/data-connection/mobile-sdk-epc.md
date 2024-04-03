@@ -151,4 +151,10 @@ After you complete the SDK configuration for the Experience platform, add the SD
 
     You have now integrated the Adobe Experience Platform Mobile SDK with your Commerce mobile app. Event data flows from your app to the Experience Platform edge.
 
-To learn how to retrieve Real-Time CDP audiences from your mobile Commerce app to inform cart price rules and dynamic blocks, see [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html#retrieve-audiences-using-the-adobe-experience-platform-mobile-sdk).
+## How to distinguish Commerce events generated from mobile applications
+
+All [events](events.md) contain a field called `channel`. The `channel` field contains `channel._id` and `channel._type` which for a Luma storefront has namespace values of `"https://ns.adobe.com/xdm/channels/web"` and `"https://ns.adobe.com/xdm/channel-types/web"` respectively. For a mobile storefront however, the namespace values are `"https://ns.adobe.com/xdm/channels/mobile-app"` and `"https://ns.adobe.com/xdm/channel-types/mobile"` respectively.
+
+## Next steps
+
+To learn how to retrieve Real-Time CDP audiences from your mobile Commerce app to inform cart price rules, dynamic blocks, and related product rules, see [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html#retrieve-audiences-using-the-adobe-experience-platform-mobile-sdk).

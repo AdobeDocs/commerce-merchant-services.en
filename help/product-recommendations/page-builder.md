@@ -15,6 +15,11 @@ Product Recommendations can be integrated within any Page Builder content that y
 ## Using Product Recommendations with Page Builder content
 
 1. Create a Recommendation unit in the default store view of a website. They must be created in the default store view even if you plan to use them in different store views.
+
+    >[!NOTE]
+    >
+    >Metrics for Page Builder recommendation units only appear on the default store view [!DNL Product Recommendations] workspace. Even if you place a Page Builder recommendation unit on a store view that is not the default store view, metrics related to those Page Builder recommendation units still only display on the default store view [!DNL Product Recommendations] workspace. To see Page Builder metrics on a non-default storeview [!DNL Product Recommendations] workspace, open and [edit](edit.md) the Page Builder recommendation unit in the non-default storeview, then click [!UICONTROL **Save**]. The Page Builder metrics now appear on the [!DNL Product Recommendations] workspace under the non-default storeview.
+
 1. In Page Builder, select the Product Recommendations content widget and place on your site. 
 
 ![Insert Recommendation unit](assets/pb-insert.png)
