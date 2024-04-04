@@ -68,7 +68,7 @@ Customers can use [[!DNL Google Pay]](https://pay.google.com/about/) by adding p
 
 The [!DNL Google Pay] button is visible from the product page, mini-cart, shopping cart, and checkout views.
 
-You can configure [!UICONTROL Google Pay] in the store configuration or the Payment Services Home. See [Settings](settings.md) for more information.
+You can configure [!UICONTROL Google Pay] in the store configuration or the Payment Services Home. See [Settings](configure-admin.md) for more information.
 
    >[!NOTE]
    >
