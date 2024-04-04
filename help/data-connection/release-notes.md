@@ -70,7 +70,7 @@ _October 12, 2022_
 
 [!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.4 and newer
 
-_April 9, 2024_
+_April 4, 2024_
 
 ![New](../assets/new.svg) - Added support for PHP 8.3 for all [!DNL Data Connection] extensions.
 ![New](../assets/new.svg) - Added article about how to [integrate](mobile-sdk-epc.md) the Adobe Experience Platform Mobile SDK with Commerce.
