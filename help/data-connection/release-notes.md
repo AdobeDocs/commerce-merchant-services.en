@@ -68,7 +68,7 @@ _October 12, 2022_
 
 ## 3.1.1
 
-[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.7 and newer
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.4 and newer
 
 _April 9, 2024_
 
