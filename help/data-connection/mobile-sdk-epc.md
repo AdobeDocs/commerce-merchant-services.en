@@ -153,7 +153,7 @@ After you complete the SDK configuration for the Experience platform, add the SD
 
 ## How to distinguish Commerce events generated from mobile applications
 
-All [events](events.md) contain a field called `channel`. The `channel` field contains `channel._id` and `channel._type` which for a Luma and other web-based storefronts has namespace values of `"https://ns.adobe.com/xdm/channels/web"` and `"https://ns.adobe.com/xdm/channel-types/web"` respectively. For a mobile storefront however, the namespace values are `"https://ns.adobe.com/xdm/channels/mobile-app"` and `"https://ns.adobe.com/xdm/channel-types/mobile"` respectively.
+All [events](events.md) contain a field called `channel`. The `channel` field contains `channel._id` and `channel._type` which for a Luma storefront has namespace values of `"https://ns.adobe.com/xdm/channels/web"` and `"https://ns.adobe.com/xdm/channel-types/web"` respectively. For a mobile storefront however, the namespace values are `"https://ns.adobe.com/xdm/channels/mobile-app"` and `"https://ns.adobe.com/xdm/channel-types/mobile"` respectively.
 
 ## Next steps
 
