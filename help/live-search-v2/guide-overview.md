@@ -4,7 +4,19 @@ description: "[!DNL Live Search] from Adobe Commerce delivers a lightning fast, 
 exl-id: 11e2ed97-ce80-4826-b914-71688dd29e4b
 recommendations: noCatalog
 ---
-# [!DNL Live Search] Guide Overview
+# Set up for success with [!DNL Catalog Service] and [!DNL Live Search]
+
+
+In this guide you learn the benefits of [speed/scale], follow this guide..." -> we pull in quant benefits for LS + CS
+
+Then, it is a step by step flow of implementing catalog service together with Live Search
+^That ends up providing the "sizzle" we need + ends up covering the implementation flow
+If a customer needs to get onboarded to Live Search, that is the page we send them to
+
+
+
+
+
 
 [!DNL Live Search] for Adobe Commerce delivers a fast, relevant, and intuitive search experience at no additional cost. [!DNL Live Search] powered by [Adobe Sensei](https://www.adobe.com/sensei.html) uses artificial intelligence and machine-learning algorithms to perform a deep analysis of aggregated visitor data. This data, when combined with your Adobe Commerce catalog, results in a relevant and personalized shopping experiences. 
 

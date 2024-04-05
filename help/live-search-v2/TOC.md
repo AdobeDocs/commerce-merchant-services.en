@@ -7,8 +7,10 @@ feature: Services, Search
 ---
 # [!DNL Live Search] for Commerce {#live-search}
 
-- [Guide Overview](guide-overview.md)
-- [Introduction to [!DNL Live Search]](overview.md)
+- Getting Started {#guideoverview}
+   - [What is [!DNL Live Search]?](overview.md)
+   - [Set up for success with [!DNL Live Search]]()
+   - [Quick Tour](quick-tour.md)
 - Onboard Live Search {#onboard}
    - [Technical Overview](technical-overview.md)
    - [Install [!DNL Live Search]](install.md)
