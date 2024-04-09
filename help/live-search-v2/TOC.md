@@ -9,7 +9,7 @@ feature: Services, Search
 
 - Getting Started {#guideoverview}
    - [What is [!DNL Live Search]?](overview.md)
-   - [Set up for success with [!DNL Live Search]]()
+   - [Set up for success with [!DNL Live Search] and [!DNL Catalog Service]](install.md)
    - [Quick Tour](quick-tour.md)
 - Onboard Live Search {#onboard}
    - [Technical Overview](technical-overview.md)
