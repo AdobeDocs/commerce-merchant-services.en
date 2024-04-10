@@ -114,7 +114,7 @@ Use this method for installing the [!DNL Catalog Service] extension for an on-pr
 
 After you install [!DNL Catalog Service], you must configure the [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html#apikey) by specifying the API keys and selecting a SaaS Data Space.
 
-After the SaaS configuration is complete, perform an initial data sync by following the [Catalog Sync](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) guide. 
+After the SaaS configuration is complete, perform an initial data sync by using the [Data Management Dashboard](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard). You can use this dashboard to monitor the synchronization status for product data transferred from the Commerce database to Commerce SaaS services.
 
 To ensure that the catalog export is running correctly:
 
