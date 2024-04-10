@@ -190,7 +190,7 @@ The developer or SI configures the SaaS data space as described in the *Commerce
 
 `vendor/magento/module-catalog-data-exporter/etc/et_schema.xml`
 
-Use the [Data Management Dashboard](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard) to monitor the synchronization status for product data transferred from the Commerce database to Commerce SaaS services.
+Use the [Data Management Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard) to monitor the synchronization status for product data transferred from the Commerce database to Commerce SaaS services.
 
 ### Verify export {#verify-export}
 
