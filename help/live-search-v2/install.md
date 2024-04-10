@@ -7,35 +7,15 @@ role: Admin, Developer
 
 This comprehensive article provides step-by-step instructions for integrating Adobe Commerce Live Search into your e-commerce platform effortlessly. Whether you are a seasoned developer or a newcomer to Adobe Commerce, this guide equips you with the necessary technical knowledge to seamlessly implement Live Search and enhance your customers' shopping experience.
 
-When you install and configure the [!DNL Live Search] and [!DNL Catalog Service] extensions, data begins to flow between your storefront and backend to SaaS Services.
+When you install [!DNL Live Search] you also get [!DNL Catalog Service], which provides speed and performance handling of your catalog the  extensions. , data begins to flow between your storefront and backend to SaaS Services.
 
 ![Live Search Data Flow](assets/ls-cs-data-flow.png)
 
-
+!!!EMPHASIZE the power of catalog service!!!
 
 ## Audience
 
 This article is intended for the developer or systems integrator on your team who is responsible for installing and configuring your Adobe Commerce instance.
-
-## 
-
-
-
-FROM ROHAN
-
-Guide should start with common steps spanning all storefront architectures (e.g., "Configure and Sync Your Data", "Set Up Eventing" then break into branches with links for each storefront architecture, with the "recommended approach" for each.
-This can happen using a block:
-"Select your storefront architecture"
-[Reference: See Algolia docs on this page under "Choose your bootstrap tutorial"] -> links jump down to sections of the guide.
-After all the recommended implementation options, we can have a section at the bottom of the guide called "Alternative Implementation Options" -> this includes Search Adapter, etc.
-
-
-
-
-
-
-
-
 
 ## Choose your storefront architecture
 
@@ -67,6 +47,10 @@ Explore different integration methods and choose the one that best suits your pr
 #### Install
 
 Clear and concise instructions to install Live Search seamlessly. 
+
+
+#### Sync your catalog
+
 
 #### Customization Guidelines
 
