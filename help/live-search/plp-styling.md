@@ -13,6 +13,12 @@ When the [!DNL Live Search] service is installed, the default search functionali
 
 The [!DNL Live Search] PLP widget is enabled by default for new installations. If you are upgrading [!DNL Live Search] and the PLP widget has already been turned off, it will remain so.
 
+>[!IMPORTANT]
+>
+>When the [!DNL Live Search Product Listing Page Widget] is enabled, the sort order direction on a product listing page cannot be changed.
+
+## Disabling the PLP widget
+
 To disable the PLP widget:
 
 1. Go to **Stores** > Settings > **Configuration** > **[!DNL Live Search]** > **Storefront Features** and set **Enable Product Listing Widgets** to "No".
