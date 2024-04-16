@@ -72,6 +72,14 @@ _June 28, 2021_
 
 +++
 
+## v2.4.3
+
+_April 16, 2024_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+![Fix](../assets/fix.svg)<!-- Issue PAY-5106 --> Fixed an issue that incorrectly populated the order amount totals during checkout between PayPal and Adobe Commerce. Now, Merchants can ensure that order amount totals are correct when placing an order.
+
 ## v2.4.2
 
 _April 11, 2024_
