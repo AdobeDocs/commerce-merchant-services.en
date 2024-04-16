@@ -43,12 +43,12 @@ _June 13, 2023_
 
 _Mar 19, 2024_
 
-[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.7 and newer
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
 ### New Features
 
 ![New](../assets/new.svg) Added language support for [Polish](technical-overview.md#language-support).
-![New](../assets/new.svg) [!DNL Live Search] now supports PHP 8.3 for installations running Adobe Commerce 2.4.4.
+![New](../assets/new.svg) [!DNL Live Search] now supports PHP 8.3 for installations running Adobe Commerce 2.4.7.
 
 ## [!DNL Live Search] 4.1.0 {#410}
 
