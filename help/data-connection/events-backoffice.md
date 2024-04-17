@@ -400,6 +400,10 @@ The following table describes the data collected for this event.
 
 Profile events captured from the server-side include account information, such as `accountCreated`, `accountUpdated`, and `accountDeleted`. This data is used to help populate key customer details that are needed to better define segments or execute marketing campaigns, such as sending sign-up discount offers, account change confirmations, and so on. There are similar profile events captured from the [storefront](events.md#customer-profile-events).
 
+>[!NOTE]
+>
+>Each customer profile event also includes the [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html) field, which includes the system generated Commerce Customer ID as the primary identifier for the profile and an email ID that is used as a secondary identifier.
+
 ### accountCreated
 
 |Description| XDM event name|

@@ -5,7 +5,7 @@ role: Admin, Developer
 feature: Personalization, Integration
 exl-id: 86a3ba12-7f26-4f7e-98a0-9af0d1d8d881
 ---
-# Update Profile Record Schema for Commerce Data Ingestion
+# Update Profile Record Schema for Commerce Data Ingestion (Beta)
 
 When your shoppers create a profile in your Commerce site, a profile record is created and data is captured. You must create a schema and dataset specific to that profile record before you can stream that profile data to the Experience Platform.
 
@@ -21,6 +21,16 @@ When your shoppers create a profile in your Commerce site, a profile record is c
 1. [Enable](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#profile) the schema for Profile.
 
     When a schema is enabled for Profile, any datasets created from this schema participate in Real-Time CDP, which merges data from disparate sources to construct a complete view of each customer.
+    
+1. Create a [custom name space](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces#create-namespaces) in Experience Platform with the following values:
+
+    - **Display Name**: _Commerce Customer ID_
+    - **Identity Symbol**: _CustomerId_
+    - **Type**: _Individual cross-device ID_
+
+    ![Create custom namespace](assets/custom-namespace.png){width="700" zoomable="yes"}
+
+    Click **[!UICONTROL Create]**.
 
 1. [Create a dataset](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html#create-a-dataset) based off the schema you created or updated.
 
