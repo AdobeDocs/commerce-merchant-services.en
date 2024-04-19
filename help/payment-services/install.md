@@ -7,6 +7,12 @@ feature: Payments, Checkout, Install, Upgrade
 ---
 # Install [!DNL Payment Services]
 
+To get started using Payment Services for [!DNL Adobe Commerce] and [!DNL Magento Open Source], you must complete a few onboarding steps.
+
+>[!INFO]
+>
+> See our [Configure [!DNL Payment Services] for Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-payment-services) video for additional information.
+
 Downloading and installing the [!DNL Payment Services] extension for [!DNL Adobe Commerce] and [!DNL Magento Open Source] is a prerequisite step for using [!DNL Payment Services].
 
 ![[!DNL Payment Services] extension Admin view](assets/admin-view.png){width="300" zoomable="yes"}
@@ -23,7 +29,8 @@ You must first download the extension from [Commerce Marketplace](https://experi
 
 ## Install the extension
 
-You can install the [!DNL Payment Services] extension for both [!DNL Adobe Commerce] on cloud infrastructure and on-premises instances, which are linked to your Commerce account [mageid](https://devdocs.magento.com/marketplace/sellers/profile-personal.html#field-descriptions) provided in the signup process. [!DNL Magento Open Source] customers use the on-premises instructions.
+You can install the [!DNL Payment Services] extension for both [!DNL Adobe Commerce] on cloud infrastructure and on-premises instances, which are linked to your Commerce account [mageid](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-information/#access-keys) provided in the signup process.
+[!DNL Magento Open Source] customers use the on-premises instructions.
 
 Composer uses these keys during the initial installation of [!DNL Adobe Commerce], or in situations in which the Composer keys were not previously saved to the `auth.json` file.
 

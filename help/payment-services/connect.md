@@ -8,6 +8,10 @@ feature: Payments, Checkout, Configuration, Saas
 
 [!DNL Payment Services] is powered by Commerce Services and deployed as SaaS (software as a service). You connect your Commerce instance using an API key and a private key, and specify the data space in the configuration using the [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html). **You set up this connection only once.**
 
+>[!INFO]
+>
+> See our [[!DNL Adobe Commerce] Services Connector](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector.html?lang=en) video for additional information.
+
 * If you have *already connected your instance*, by obtaining and using your API credentials and configuring Commerce Services, you can proceed to [setting up your testing sandbox](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/sandbox.html).
 * If you still *need to connect your instance*, see the information in this topic about [obtaining API credentials](#obtain-api-credentials) and [configuring Commerce Services](#configure-commerce-services).
 * If you are *unsure whether your instance is connected*, navigate to **System** > Services > **Commerce Services Connector** and view the public and private API key values in the [!UICONTROL Sandbox Keys] and [!UICONTROL Production Keys] sections, and the *Project* and *Data Space* fields in the [!UICONTROL SaaS Identifier] section. If those values are present, then your instance is connected.
@@ -56,3 +60,7 @@ Now that you have obtained your credentials, you can configure your SaaS project
    You are directed to the configuration area in the Admin, **[!UICONTROL Stores]** > _[!UICONTROL Settings]_ > **[!UICONTROL Configuration]** > **[!UICONTROL Commerce Services Connector]**, to configure your Commerce Services Connector.
 
 1. To configure your Commerce Services, follow the steps described in [SaaS configuration](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html#saasenv).
+
+   >[!INFO]
+   >
+   > See our [[!DNL Adobe Commerce] Services Connector](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector.html?lang=en#configuration-faqs) video for additional information.

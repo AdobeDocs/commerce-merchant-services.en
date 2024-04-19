@@ -48,7 +48,7 @@ Customers can use [[!DNL Apple Pay]](https://www.apple.com/apple-pay/), which us
 
 [!DNL Apple Pay] is only available in the Safari browser. Merchants can add up to 99 domains per merchant account.
 
-![Apple Pay button in the minicart](assets/apple-pay-button.png){width="500" zoomable="yes"}
+![Apple Pay button in the minicart](assets/applepay-button.png){width="500" zoomable="yes"}
 
 The [!DNL Apple Pay] button is visible from the product page, mini-cart, shopping cart, and checkout views.
 
