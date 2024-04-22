@@ -5,271 +5,127 @@ role: Admin, Developer
 ---
 # Set up for success with [!DNL Live Search] and [!DNL Catalog Service]
 
-This comprehensive article provides step-by-step instructions for integrating Adobe Commerce Live Search into your e-commerce platform effortlessly. Whether you are a seasoned developer or a newcomer to Adobe Commerce, this guide equips you with the necessary technical knowledge to seamlessly implement Live Search and enhance your customers' shopping experience.
+This article provides step-by-step instructions for integrating Adobe Commerce [!DNL Live Search] and [!DNL Catalog Service] into your commerce platform.
 
-When you install [!DNL Live Search] you also get [!DNL Catalog Service], which provides speed and performance handling of your catalog the  extensions. , data begins to flow between your storefront and backend to SaaS Services.
+When you install [!DNL Live Search] with [!DNL Catalog Service] you enable a fast, relevant, and intuitive search system that can personalize your customers' shopping experience.
+
+These two services connect your Commerce storefront to the SaaS backend.
 
 ![Live Search Data Flow](assets/ls-cs-data-flow.png)
-
-!!!EMPHASIZE the power of catalog service!!!
 
 ## Audience
 
 This article is intended for the developer or systems integrator on your team who is responsible for installing and configuring your Adobe Commerce instance.
 
-## Choose your storefront architecture
+## Requirements
 
-This section provides instructions for how to install [!DNL Live Search] and [!DNL Catalog Service] on your Adobe Commerce instance. Choose your storefront architecture.
+- [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) 2.4.4+
+- PHP 8.1 / 8.2 / 8.3
+- [!DNL Composer]
 
-|Storefront|Install scenario|Link|
-|---|---|---|
-|Luma|New install||
-|Luma|Updating from 3.x to 4.x+||
-|AEM + CIF adapter|New install||
-|AEM + CIF adapter|Updating from 3.x to 4.x+||
-|EDS + CIF adapter|New install||
-|EDS + CIF adapter|Updating from 3.x to 4.x+||
+## Supported platforms
 
+- Adobe Commerce on-prem (EE) : 2.4.4+
+- Adobe Commerce on Cloud (ECE) : 2.4.4+
 
+## Boundaries and limits
 
+Review the following boundaries and limits to ensure [!DNL Live Search] and [!DNL Catalog Service] will meet the needs of your business.
 
-### New install on Luma
+### General
 
+- The [Advanced Search](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) module is disabled when [!DNL Live Search] is installed, and the Advanced Search link in the storefront footer is removed.
+- [Tier Pricing](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier) and [Special Pricing](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-special) are not supported in the [!DNL Live Search] field and Product Listing Page Widget.
+- [!DNL Live Search] cannot aggregate inventory data from multiple sources.
+- Product prices do not include value added tax (VAT).
+- Content search is not supported.
+- There is a limit of 10k products that can be paginated.
 
-#### Technical Requirements
+### Indexing
 
-Learn about the prerequisites and technical specifications required for successful installation based on your architecture. This should be included if there are any specific requirements for the architecture used, like for AEM, must use CIF and the Adapter.
+- [!DNL Live Search] [indexes](indexing.md) up to a total of 450 product attributes per storeview. These are distributed as follows:
+   - 50 sortable attributes
+   - 200 filterable attributes
+   - 200 searchable attributes
+- Indexes only products from the Adobe Commerce database.
+- CMS pages are not indexed.
 
-#### Integration Options
+### Facets
 
-Explore different integration methods and choose the one that best suits your project requirements.
+- A maximum of 100 attributes can be configured as facets from the 200 filterable attributes that can be indexed.
+- Within a facet, a maximum of 30 buckets can be configured to be returned. If more than 30 buckets need to be returned, [create a support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) so Adobe can analyze the performance impact and determine if it is feasible to increase this limit for your environment.
+- Dynamic facets can cause performance issues in large indexes and indexes with high ordinality. If you have created dynamic facets and notice any performance deterioration or page not loading with timeout errors, try changing your facets to pinned to determine if that resolves your performance issue.
+- Stock status (`quantity_and_stock_status`) is not supported as a facet. You can use `inStock: 'true'` to filter out of stock products. This is supported out of the box in the `LiveSearchAdapter` module when "Display out of stock products" is set to "True" in the  [!DNL Commerce] admin.
 
-#### Install
+### Query
 
-Clear and concise instructions to install Live Search seamlessly. 
+- [!DNL Live Search] does not have access to the full taxonomy of the category tree, which makes some layered navigation search scenarios beyond its reach.
+- [!DNL Live Search] uses a unique GraphQL endpoint for queries to support features such as dynamic faceting and search-as-you-type. Although similar to the [GraphQL API](https://developer.adobe.com/commerce/webapi/graphql/), there are a few differences and some fields may not be fully compatible.
 
+### Rules
 
-#### Sync your catalog
+- Maximum number of search merchandising [rules](rules.md) per storeview is 50.
+- Category merchandising can have one rule per category.
+- Maximum number of conditions per rule is 10.
+- Maximum number of events per rule is 25.
 
+### Synonyms
 
-#### Customization Guidelines
+- [!DNL Live Search] can manage up to 200 [synonyms](synonyms.md) per storeview.
+- Multiword synonyms are not supported.
 
-Discover how to customize Live Search to align with your brand identity and optimize user experience.
+### Search merchandising
 
-#### Troubleshooting Tips
+- A maximum of 50 query rules can be created for each storeview. Each rule can have:
+   - Up to ten conditions
+   - Up to 25 events
 
-Resolve common installation issues quickly with troubleshooting tips and solutions.
+### Category merchandising
 
-#### Use Cases
+- One rule per category can be created for each storeview. Each rule can have:
+   - Up to ten conditions
+   - Up to 25 events
 
-Gain insights into real-world scenarios where Live Search can add value to your e-commerce website.
+### B2B and category permissions
 
-#### Best Practices
+- Products are not displayed if they are not added to a default shared catalog.
+- To restrict customer groups using Catalog permissions:
+   - Products must be assigned to the Root category.
+   - The "Not Logged in" customer group must be given "Allow" browsing permissions.
+   - To restrict products to the "Not Logged In" customer group, go to each category and set permission for each customer group.
+- Support for B2B with Live Search for PWA Studio is not supported at this time.
 
-Learn industry best practices to maximize the effectiveness of Live Search and drive conversions.
+## Install [!DNL Live Search]
 
-### Update Luma install from 3.x to 4.x+
+[!DNL Live Search] is installed as an extension from Adobe Marketplace. After you install and configure [!DNL Live Search], Adobe [!DNL Commerce] begins sharing search and catalog data with SaaS services. At this point, *Admin* users can set up, customize, and manage search facets, synonyms, and merchandising rules.
 
-#### Technical Requirements
+>[!NOTE]
+>
+>As of [!DNL Live Search] 3.0.2, the [!DNL Catalog Service] extension is bundled in with the [!DNL Live Search] installation.
 
-Learn about the prerequisites and technical specifications required for successful installation based on your architecture. This should be included if there are any specific requirements for the architecture used, like for AEM, must use CIF and the Adapter.
+### Before you begin {#before-you-begin}
 
-#### Integration Options
-
-Explore different integration methods and choose the one that best suits your project requirements.
-
-#### Install
-
-Clear and concise instructions to install Live Search seamlessly. 
-
-#### Customization Guidelines
-
-Discover how to customize Live Search to align with your brand identity and optimize user experience.
-
-#### Troubleshooting Tips
-
-Resolve common installation issues quickly with troubleshooting tips and solutions.
-
-#### Use Cases
-
-Gain insights into real-world scenarios where Live Search can add value to your e-commerce website.
-
-#### Best Practices
-
-Learn industry best practices to maximize the effectiveness of Live Search and drive conversions.
-
-
-### New install on AEM + CIF adapter
-
-#### Technical Requirements
-
-Learn about the prerequisites and technical specifications required for successful installation based on your architecture. This should be included if there are any specific requirements for the architecture used, like for AEM, must use CIF and the Adapter.
-
-#### Integration Options
-
-Explore different integration methods and choose the one that best suits your project requirements.
-
-#### Install
-
-Clear and concise instructions to install Live Search seamlessly. 
-
-#### Customization Guidelines
-
-Discover how to customize Live Search to align with your brand identity and optimize user experience.
-
-#### Troubleshooting Tips
-
-Resolve common installation issues quickly with troubleshooting tips and solutions.
-
-#### Use Cases
-
-Gain insights into real-world scenarios where Live Search can add value to your e-commerce website.
-
-#### Best Practices
-
-Learn industry best practices to maximize the effectiveness of Live Search and drive conversions.
-
-### Update AEM + CIF adapter install from 3.x to 4.x+
-
-#### Technical Requirements
-
-Learn about the prerequisites and technical specifications required for successful installation based on your architecture. This should be included if there are any specific requirements for the architecture used, like for AEM, must use CIF and the Adapter.
-
-#### Integration Options
-
-Explore different integration methods and choose the one that best suits your project requirements.
-
-#### Install
-
-Clear and concise instructions to install Live Search seamlessly. 
-
-#### Customization Guidelines
-
-Discover how to customize Live Search to align with your brand identity and optimize user experience.
-
-#### Troubleshooting Tips
-
-Resolve common installation issues quickly with troubleshooting tips and solutions.
-
-#### Use Cases
-
-Gain insights into real-world scenarios where Live Search can add value to your e-commerce website.
-
-#### Best Practices
-
-Learn industry best practices to maximize the effectiveness of Live Search and drive conversions.
-
-
-### New install on EDS + CIF adapter
-
-#### Technical Requirements
-
-Learn about the prerequisites and technical specifications required for successful installation based on your architecture. This should be included if there are any specific requirements for the architecture used, like for AEM, must use CIF and the Adapter.
-
-#### Integration Options
-
-Explore different integration methods and choose the one that best suits your project requirements.
-
-#### Install
-
-Clear and concise instructions to install Live Search seamlessly. 
-
-#### Customization Guidelines
-
-Discover how to customize Live Search to align with your brand identity and optimize user experience.
-
-#### Troubleshooting Tips
-
-Resolve common installation issues quickly with troubleshooting tips and solutions.
-
-#### Use Cases
-
-Gain insights into real-world scenarios where Live Search can add value to your e-commerce website.
-
-#### Best Practices
-
-Learn industry best practices to maximize the effectiveness of Live Search and drive conversions.
-
-### Update EDS + CIF adapter install from 3.x to 4.x+
-
-#### Technical Requirements
-
-Learn about the prerequisites and technical specifications required for successful installation based on your architecture. This should be included if there are any specific requirements for the architecture used, like for AEM, must use CIF and the Adapter.
-
-#### Integration Options
-
-Explore different integration methods and choose the one that best suits your project requirements.
-
-#### Install
-
-Clear and concise instructions to install Live Search seamlessly. 
-
-#### Customization Guidelines
-
-Discover how to customize Live Search to align with your brand identity and optimize user experience.
-
-#### Troubleshooting Tips
-
-Resolve common installation issues quickly with troubleshooting tips and solutions.
-
-#### Use Cases
-
-Gain insights into real-world scenarios where Live Search can add value to your e-commerce website.
-
-#### Best Practices
-
-Learn industry best practices to maximize the effectiveness of Live Search and drive conversions.
-
-
-
-
-
-
-
-
-
-
-
-
-
-## Before you begin {#before-you-begin}
-
-Do the following:
+Before you install [!DNL Live Search] with the [!DNL Catalog Service] extension, there are a few steps you need to complete in your existing Commerce instance.
 
 1. Confirm that [cron jobs](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) and [indexers](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) are running.
 
+   >[!IMPORTANT]
+   >
+   >Due to the Elasticsearch 7 end-of-support announcement for August 2023, it is recommended that all Adobe Commerce customers migrate to the OpenSearch 2.x search engine. For information about migrating your search engine during product upgrade, see [Migrating to OpenSearch](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/prepare/opensearch-migration) in the _Upgrade Guide_.
 
+1. Choose your installation method:
 
->[!IMPORTANT]
->
->Due to the Elasticsearch 7 end-of-support announcement for August 2023, it is recommended that all Adobe Commerce customers migrate to the OpenSearch 2.x search engine. For information about migrating your search engine during product upgrade, see [Migrating to OpenSearch](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/prepare/opensearch-migration) in the _Upgrade Guide_.
- 
-Then, it is a step by step flow of implementing catalog service together with Live Search
-^That ends up providing the "sizzle" we need + ends up covering the implementation flow
-If a customer needs to get onboarded to Live Search, that is the page we send them to
-
-[!DNL Live Search] is installed as an extension from Adobe Marketplace. After the [!DNL Live Search] module (with catalog modules as dependencies) is installed and configured, [!DNL Commerce] begins sharing search and catalog data with SaaS services. At this point, *Admin* users can set up, customize, and manage search facets, synonyms, and merchandising rules.
-
-This topic provides instructions to do the following:
-
-* Install [!DNL Live Search] (Methods 1 and 2)
-* [Update [!DNL Live Search]](#update)
-* [Uninstall [!DNL Live Search]](#uninstall)
-
-
+   - **Install without OpenSearch** - Storefront operations are interrupted while the [!DNL Live Search] service indexes all products in the catalog. During the installation, [!DNL Live Search] modules are enabled and [!DNL OpenSearch] modules are disabled.
+   - **Install with OpenSearch** - [!DNL OpenSearch] temporarily manages search requests from the storefront while the [!DNL Live Search] service indexes all products in the background, without any interruption to normal storefront operations. [!DNL OpenSearch] is disabled and [!DNL Live Search] is enabled after all catalog data is indexed and synchronized.
 
 ## Method 1: Install without OpenSearch {#method-1}
 
 This onboarding method is recommended when installing [!DNL Live Search] to a:
 
-* New [!DNL Commerce] installation
-* Staging environment
+- New [!DNL Commerce] installation
+- Staging environment
 
-In this scenario, storefront operations are interrupted while the [!DNL Live Search] service indexes all products in the catalog. During the installation, [!DNL Live Search] modules are enabled and [!DNL OpenSearch] modules are disabled.
-
-1. Install Adobe Commerce 2.4.4+ without [!DNL Live Search].
-
-1. To download the `live-search` package, run the following from the command line:
+1. Download the `live-search` package and run the following from the command line:
 
    ```bash
    composer require magento/live-search
@@ -291,14 +147,14 @@ In this scenario, storefront operations are interrupted while the [!DNL Live Sea
 
 1. Verify that the following [indexers](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) are set to "Update by Schedule":
 
-   * Product Feed
-   * Product Variant Feed
-   * Catalog Attributes Feed
-   * Product Prices Feed
-   * Scopes Website Data feed
-   * Scopes Customer Groups Data feed
-   * Categories Feed
-   * Category Permissions Feed
+   - Product Feed
+   - Product Variant Feed
+   - Catalog Attributes Feed
+   - Product Prices Feed
+   - Scopes Website Data feed
+   - Scopes Customer Groups Data feed
+   - Categories Feed
+   - Category Permissions Feed
 
 1. Configure your [API keys](#configure-api-keys) and verify that your catalog data is [synchronized](#synchronize-catalog-data) with [!DNL Live Search] services.
 
@@ -328,11 +184,9 @@ In this scenario, storefront operations are interrupted while the [!DNL Live Sea
 
 This onboarding method is recommended when installing [!DNL Live Search] to:
 
-* An existing production [!DNL Commerce] installation
+- An existing production [!DNL Commerce] installation
 
-In this scenario, [!DNL OpenSearch] temporarily manages search requests from the storefront while the [!DNL Live Search] service indexes all products in the background, without any interruption to normal storefront operations. [!DNL OpenSearch] is disabled and [!DNL Live Search] enabled after all catalog data is indexed and synchronized.
-
-1. To download the `live-search` package, run the following from the command line:
+1. Download the `live-search` package and run the following from the command line:
 
    ```bash
    composer require magento/live-search
@@ -352,12 +206,12 @@ In this scenario, [!DNL OpenSearch] temporarily manages search requests from the
 
 1. Verify that the following [indexers](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) are set to "Update by Schedule":
 
-   * Product Feed
-   * Product Variant Feed
-   * Catalog Attributes Feed
-   * Product Prices Feed
-   * Scopes website data feed
-   * Scopes customer groups data feed
+   - Product Feed
+   - Product Variant Feed
+   - Catalog Attributes Feed
+   - Product Prices Feed
+   - Scopes website data feed
+   - Scopes customer groups data feed
 
 1. Configure your [API keys](#configure-api-keys) and verify that your catalog data is [synchronized](#synchronize-catalog-data) with [!DNL Live Search] services.
 
@@ -381,8 +235,8 @@ In this scenario, [!DNL OpenSearch] temporarily manages search requests from the
 
 1. After the sync is complete, use the [GraphQL playground](https://developer.adobe.com/commerce/services/graphql/live-search/) with the default query to verify the following:
 
-   * The returned product count is close to what you expect for the store view.
-   * Facet(s) are returned.
+   - The returned product count is close to what you expect for the storeview.
+   - Facet(s) are returned.
 
 1. Run the following commands to enable [!DNL Live Search] modules, disable [!DNL OpenSearch], and run `setup`.
 
@@ -401,9 +255,37 @@ In this scenario, [!DNL OpenSearch] temporarily manages search requests from the
 
 1. [Test](#test-the-connection) the connection from the storefront.
 
+You have now installed [!DNL Live Search] with [!DNL Catalog Service] based on your chosen method. In the next section, you will configure the extensions.
+
+### Post installation configuration
+
+In this section, you set the scope where the Live Search storefront features are configured and you enable the product listing widgets.
+
+#### Set the scope
+
+[!DNL Live Search] storefront features are configured within the storeview scope.
+   Stores > Configuration Managing scopes for LS 
+
+#### Enable Product Listing Widgets
+
+Live Search > Storefront Features > Enable Product Listing Widgets
+Product Listing Widgets are enabled by default  (when the module is enabled after installation) for version >= 4.0.0
+On changing this configuration, you will see a message that Page Cache is invalidated, navigate to Cache Management page using the link from the message and clean the cache with the button "Flush Magento Cache". Please do so for the changes to take effect on your storefront.
+
+If widgets are enabled, a different UI component will be used for the search results page and category browse product listing page which will make direct calls to Catalog Service API resulting in faster response times. Otherwise, calls are routed through the Adobe Commerce PHP monolith to the Live Search API which is slower.
+Options: Yes | No
+How long will it take for configuration changes to be reflected in the storefront?
+The changes will be immediate after you clear page cache.
+Limitations
+See this wiki (updates in progress): Live Search Limitations. Note that these limitations are not specific to Luma
+
+
+
+
+
 ## Configure API keys {#configure-api-keys}
 
-The Adobe Commerce API key and its associated private key are required to connect [!DNL Live Search] to an installation of Adobe Commerce. The API key is generated and maintained in the account of the [!DNL Commerce] license holder, who can share it with the developer or SI. The developer can then create and manage the SaaS Data Spaces on behalf of the license holder.  If you already have a set of API keys, you do not need to regenerate them.
+The Adobe Commerce API key and its associated private key are required to connect [!DNL Live Search] to an installation of Adobe Commerce. The API key is generated and maintained in the account of the [!DNL Commerce] license holder, who can share it with the developer or SI. The developer can then create and manage the SaaS Data Spaces on behalf of the license holder. If you already have a set of API keys, you do not need to regenerate them.
 
 ### Adobe Commerce license holder
 
@@ -411,20 +293,22 @@ To generate an API key and private key, refer to [Commerce Services Connector](.
 
 ### Adobe Commerce developer or SI
 
-The developer or SI configures the SaaS data space as described in the *Commerce Services* section of the configuration. In the *Admin*, Commerce Services becomes available in the *Configuration* sidebar when a SaaS module is installed.
+The developer or SI configures the SaaS data space as described in the *Commerce Services- section of the configuration. In the *Admin*, Commerce Services becomes available in the **Configuration** sidebar when a SaaS module is installed.
 
 ## Synchronize catalog data {#synchronize-catalog-data}
 
-[!DNL Live Search] requires synchronized product data for search operations, and synchronized attribute data to configure facets. The initial synchronization between the product catalog and the catalog service begins when [!DNL Live Search] is first connected. Depending on the installation method and size of the catalog, it can take up to 30 minutes for the data to be exported and indexed by [!DNL Live Search]. The list of data that is synchronized and shared with the catalog service can be found in the schema, which is defined in:
+[!DNL Live Search] requires synchronized product data for search operations, and synchronized attribute data to configure facets. The initial synchronization between the product catalog and the catalog service begins when [!DNL Live Search] is first connected. Depending on the installation method and size of the catalog, it can take up to 30 minutes for the data to be exported and indexed by [!DNL Live Search].
 
-`vendor/magento/module-catalog-data-exporter/etc/et_schema.xml`
+You can view the data that is synchronized and shared with the catalog service using the [Data Management Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard). This dashboard provides valuable insights into the availability of product data for your storefront, ensuring it can be promptly displayed to your shoppers.
+
+![Data Management Dashboard](assets/data-management-dashboard.png)
 
 ### Verify export {#verify-export}
 
 To verify that the catalog data has been exported from your Adobe Commerce instance and is synchronized for [!DNL Live Search], look for entries in the following tables:
 
-* `catalog_data_exporter_products`
-* `catalog_data_exporter_product_attributes`
+- `catalog_data_exporter_products`
+- `catalog_data_exporter_product_attributes`
 
 For additional help, refer to [[!DNL Live Search] catalog not synchronized](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-catalog-data-sync) in the Support Knowledge Base.
 
@@ -436,9 +320,9 @@ After the initial synchronization, it can take up to 15 minutes for incremental 
 
 In the storefront, verify the following:
 
-* The [!UICONTROL Search] box returns results correctly
-* Category browse returns results correctly
-* Facet(s) are available as filters on search results pages
+- The [!UICONTROL Search] box returns results correctly
+- Category browse returns results correctly
+- Facet(s) are available as filters on search results pages
 
 If everything works correctly, congratulations! [!DNL Live Search] is installed, connected, and ready to use.
 
@@ -488,7 +372,7 @@ To update to a major version such as from 3.1.1 to 4.0.0, edit the project's roo
     }
    ```
 
-1. **Save** `composer.json`. Then, run the following from the command line:
+1. **Save*- `composer.json`. Then, run the following from the command line:
 
    ```bash
    composer update magento/live-search --with-dependencies
@@ -510,47 +394,33 @@ To uninstall [!DNL Live Search], refer to [Uninstall modules](https://experience
 
 The following [!DNL Live Search] dependencies are captured by [!DNL Composer].
   
-* `magento/module-saas-catalog`
-* `magento/module-saas-category`
-* `magento/module-saas-category-permissions`
-* `magento/module-saas-product-override`
-* `magento/module-saas-product-variant`
-* `magento/module-saas-price`
-* `magento/module-saas-scopes`
-* `magento/module-bundle-product-data-exporter`
-* `magento/module-catalog-inventory-data-exporter`
-* `magento/module-catalog-url-rewrite-data-exporter`
-* `magento/module-configurable-product-data-exporter`
-* `magento/module-parent-product-data-exporter`
-* `magento/module-gift-card-product-data-exporter`
-* `magento/module-bundle-product-override-data-exporter`
-* `data-services`
-* `services-id`
+- `magento/module-saas-catalog`
+- `magento/module-saas-category`
+- `magento/module-saas-category-permissions`
+- `magento/module-saas-product-override`
+- `magento/module-saas-product-variant`
+- `magento/module-saas-price`
+- `magento/module-saas-scopes`
+- `magento/module-bundle-product-data-exporter`
+- `magento/module-catalog-inventory-data-exporter`
+- `magento/module-catalog-url-rewrite-data-exporter`
+- `magento/module-configurable-product-data-exporter`
+- `magento/module-parent-product-data-exporter`
+- `magento/module-gift-card-product-data-exporter`
+- `magento/module-bundle-product-override-data-exporter`
+- `data-services`
+- `services-id`
 
 
 
 
 
 
-
+--------------------------------------------------------------------------
 
 
 TECHNICAL OVERVIEW ARTICLE CONTENT BEGINS HERE
 
-# Technical Overview
-
-This topic reviews technical requirements and tips for installing and optimizing [!DNL Live Search] for Adobe Commerce.
-
-## Requirements {#requirements}
-
-* [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) 2.4.4+
-* PHP 8.1 / 8.2
-* [!DNL Composer]
-
-### Supported platforms
-
-* Adobe Commerce on-prem (EE) : 2.4.4+
-* Adobe Commerce on Cloud (ECE) : 2.4.4+
 
 ## Endpoint
 
@@ -560,50 +430,19 @@ As [!DNL Live Search] does not have access to the complete product database, [!D
 
 It is recommended to call the SaaS APIs directly - specifically the Catalog Service endpoint.
 
-* Gain performance and reduce processor load by bypassing the Commerce database/Graphql process
-* Take advantage of the [!DNL Catalog Service] federation to call [!DNL Live Search], [!DNL Catalog Service], and [!DNL Product Recommendations] from a single endpoint.
+- Gain performance and reduce processor load by bypassing the Commerce database/Graphql process
+- Take advantage of the [!DNL Catalog Service] federation to call [!DNL Live Search], [!DNL Catalog Service], and [!DNL Product Recommendations] from a single endpoint.
 
 For some use cases, it maybe better to call [!DNL Catalog Service] for product details and similar cases. See [refineProduct](https://developer.adobe.com/commerce/services/graphql/catalog-service/refine-product/) for more information.
 
 If you have a custom headless implementation, check out the [!DNL Live Search] reference implementations:
 
-* [PLP widget](https://github.com/adobe/storefront-product-listing-page)
-* [Live Search field](https://github.com/adobe/storefront-search-as-you-type)
+- [PLP widget](https://github.com/adobe/storefront-product-listing-page)
+- [Live Search field](https://github.com/adobe/storefront-search-as-you-type)
 
 If you do not use the default components, such as Search Adapter or widgets on Luma, or AEM CIF Widgets, eventing (clickstream data that feeds Adobe Sensei for Intelligent Merchandising and performance metrics) will not work out of the box and requires custom development to implement headless eventing.
+
 The latest version of [!DNL Live Search] already uses [!DNL Catalog Service].
-
-## Boundaries and thresholds
-
-Currently, the [!DNL Live Search] search/category API has the following supported limits and static boundaries:
-
-### Indexing
-
-* [Indexes](indexing.md) up to 300 product attributes per store view.
-* Indexes only products from the Adobe Commerce database.
-* CMS pages are not indexed.
-
-### Query
-
-* [!DNL Live Search] does not have access to the full taxonomy of the category tree, which makes some layered navigation search scenarios beyond its reach.
-* [!DNL Live Search] uses a unique GraphQL endpoint for queries to support features such as dynamic faceting and search-as-you-type. Although similar to the [GraphQL API](https://developer.adobe.com/commerce/webapi/graphql/), there are a few differences and some fields may not be fully compatible.
-
-To restrict customer groups using Catalog permissions:
-
-* Products must be assigned to the Root category.
-* The "Not Logged in" customer group must be given "Allow" browsing permissions.
-* To restrict products to the Not Logged In customer group, go to each category and set permission for each customer group.
-
-### Rules
-
-* Maximum number of search merchandising [rules](rules.md) per store view is 50.
-* Category merchandising can have one rule per category.
-* Maximum number of conditions per rule is 10.
-* Maximum number of events per rule is 25.
-
-### Synonyms
-
-* [!DNL Live Search] can manage up to 200 [synonyms](synonyms.md) per store view.
 
 ## Language support
 
@@ -651,22 +490,14 @@ If the widget detects that the Commerce Admin language setting (_Stores_ > Setti
 
 Admins can also set the language of the [search index](settings.md#language), to help ensure better search results.
 
-## Category Merchandising
-
-[Category Merchandising](category-merch.md) allows you to configure [!DNL Live Search] to work on the product category level.
-
-This video is an introduction to Category Merchandising.
-
->[!VIDEO](https://video.tv.adobe.com/v/3424617)
-
 ## Widget code repository
 
 The Product Listing Page widget and the Live Search field widget are both available for download from their github repository.
 
 This allows developers to fully customize the functionality and styling. These users host the code themselves while still taking advantage of the [!DNL Live Search] service.
 
-* [PLP widget](https://github.com/adobe/storefront-product-listing-page)
-* [Search bar](https://github.com/adobe/storefront-search-as-you-type)
+- [PLP widget](https://github.com/adobe/storefront-product-listing-page)
+- [Search bar](https://github.com/adobe/storefront-search-as-you-type)
 
 ## Inventory Management
 
@@ -684,20 +515,20 @@ Live Search widgets support most but not all price types supported by Adobe Comm
 
 Currently, basic prices are supported. Advanced prices that are not supported are:
 
-* Cost
-* Minimum Advertised Price
+- Cost
+- Minimum Advertised Price
 
 Look at [API Mesh](../catalog-service/mesh.md) for more complex price calculations.
 
-The price format supports the locale configuration setting within the Commerce instance: *Stores* > Settings > *Configuration* > General > *General* > Local Options > Locale.
+The price format supports the locale configuration setting within the Commerce instance: *Stores- > Settings > *Configuration- > General > *General- > Local Options > Locale.
 
 ## PWA support
 
 [!DNL Live Search] works with PWA Studio but users may see slight differences compared to other Commerce implementations. Basic functionality such as search and product listing page work in Venia but some permutations of Graphql may not work correctly. There may also be performance differences.
 
-* The current PWA implementation of [!DNL Live Search] requires more processing time to return search results than [!DNL Live Search] with the native Commerce storefront.
-* [!DNL Live Search] in PWA does not support [event handling](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/). As a result, search reporting nor intelligent merchandising will work.
-* Filtering directly on `description`, `name`, `short_description` is not supported by GraphQL when used with [PWA](https://developer.adobe.com/commerce/pwa-studio/), but they are returned with a more general filter.
+- The current PWA implementation of [!DNL Live Search] requires more processing time to return search results than [!DNL Live Search] with the native Commerce storefront.
+- [!DNL Live Search] in PWA does not support [event handling](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/). As a result, search reporting nor intelligent merchandising will work.
+- Filtering directly on `description`, `name`, `short_description` is not supported by GraphQL when used with [PWA](https://developer.adobe.com/commerce/pwa-studio/), but they are returned with a more general filter.
 
 To use [!DNL Live Search] with PWA Studio, integrators must also:
 
@@ -718,11 +549,6 @@ To use [!DNL Live Search] with PWA Studio, integrators must also:
             },
         };
     ```
-
-## Not currently supported
-
-* The [Advanced Search](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) module is disabled when [!DNL Live Search] is installed, and the Advanced Search link in the storefront footer is removed.
-* [Tier Pricing](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier) and [Special Pricing](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-special) are not supported in the [!DNL Live Search] field and Product Listing Page Widget.
 
 ## Cookies
 

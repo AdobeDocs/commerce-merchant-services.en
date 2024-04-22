@@ -8,6 +8,10 @@ exl-id: 24f159c1-b175-47c1-aca1-8bada118b4b4
 
 Category Merchandising allows store owners to apply [!DNL Live Search] Intelligent ranking [rules](rules.md) to product categories and subcategories.
 
+This video is an introduction to Category Merchandising.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3424617)
+
 The feature is accessed in the Admin at **Marketing** > SEO & Search > **[!DNL Live Search]** > **Category Merchandising**.
 
 >[!NOTE]
