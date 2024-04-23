@@ -7,15 +7,11 @@ feature: Services, Search
 ---
 # [!DNL Live Search] for Commerce {#live-search}
 
-- [Guide Overview](guide-overview.md)
-- [Introduction to [!DNL Live Search]](overview.md)
+- [What is [!DNL Live Search]?](overview.md)
+- [Install [!DNL Live Search]](install.md)
 - [Release Notes](release-notes.md)
-- Onboard Live Search {#onboard}
-   - [Technical Overview](technical-overview.md)
-   - [Install [!DNL Live Search]](install.md)
 - [!DNL Live Search] Storefront {#live-search-storefront}
    - [Product Listing Page Widget](plp-styling.md)
-   - [Quick Tour](quick-tour.md)
    - [Storefront [!DNL Popover]](storefront-popover.md)
    - [Styling [!DNL Popover] Elements](storefront-popover-styling.md)
 - [!DNL Live Search] Admin{#live-search-admin}

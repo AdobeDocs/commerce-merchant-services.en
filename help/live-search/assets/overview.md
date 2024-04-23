@@ -1,6 +1,7 @@
 ---
-title: What is [!DNL Live Search]?
+title: Introduction to [!DNL Live Search]
 description: "[!DNL Live Search] from Adobe Commerce delivers a fast, relevant, and intuitive search experience."
+exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
 recommendations: noCatalog
 ---
 # What is [!DNL Live Search]?
@@ -14,7 +15,9 @@ The products on your site are only purchased if they can be found. Many traditio
 - Do not allow active merchandising so you can sell what you want to sell
 - Are slow or lagging
 
-[!DNL Live Search] for Adobe Commerce delivers a fast, relevant, and intuitive search experience at no additional cost. [!DNL Live Search] powered by [Adobe Sensei](https://www.adobe.com/sensei.html) uses artificial intelligence and machine-learning algorithms to perform a deep analysis of aggregated visitor data. This data, when combined with your Adobe Commerce catalog, results in a relevant and personalized shopping experience. 
+[!DNL Live Search] is a service for Adobe Commerce that replaces the standard search capabilities. The [!DNL Live Search] module is installed with Composer and connects your [!DNL Commerce] installation to the [!DNL Live Search] [service](../landing/saas.md). When it is configured, the default search text field is replaced with the [!DNL Live Search] text field. 
+
+Powered by [Adobe Sensei](https://www.adobe.com/sensei.html), [!DNL Live Search] uses artificial intelligence and machine-learning algorithms to perform a deep analysis of aggregated visitor data. This data, when combined with your Adobe Commerce catalog, results in a relevant and personalized shopping experience. 
 
 With [!DNL Live Search], you can:
 
@@ -22,19 +25,17 @@ With [!DNL Live Search], you can:
 <tbody>
 <tr style="border: 0;">
 <td><img src="assets/fast-search.png"></td>
-<td><b>Fast, intuitive search experience</b></td><td>Create meaningful search experiences to help shoppers and buyers find what they want with as little effort as possible.</td>
+<td>Create meaningful search experiences to help shoppers and buyers find what they want with as little effort as possible.</td>
 </tr>
 <tr style="border: 0;">
-<td><img src="assets/ai-powered.png"></td><td><b>AI-Powered feature set</b></td><td>Take advantage of AI-powered dynamic faceting and re-ranking of search results in response to in-session shopper behaviors.</td>
+<td><img src="assets/ai-powered.png"></td><td>Take advantage of AI-powered dynamic faceting and re-ranking of search results in response to in-session shopper behaviors.</td>
 </tr>
 <tr style="border: 0;">
 <td><img src="assets/saas-service.png"></td>
-<td><b>SaaS Service, included with license</b></td>
 <td>Use a lightweight SaaS-based service that offers easy updates and is included in your license, reducing TCO.</td>
 </tr>
 <tr style="border: 0;">
 <td><img src="assets/dev-framework.png"></td>
-<td><b>Flexible framework for developers</b></td>
 <td>Get technical by enabling graphQL API, headless flexibility, API sandbox environments, ultra fast SaaS; storefront widget optionality.</td></tr>
 </tbody>
 </table>
@@ -74,3 +75,37 @@ Merchandising [rules](rules.md) shape the shopping experience with if-then state
 ### Search terms support
 
 [!DNL Live Search] supports Commerce [search term redirects](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html). For example, users can search for a term such as "Shipping Rates" and be taken directly to the the shipping rates page.
+
+## Live Search components
+
+- [!DNL Live Search] [popover widget](storefront-popover.md) is the box that opens under the search field that contains the search results.
+- [Product Listing Page widget](plp-styling.md) provides a searchable product listing page with facets and synonym support.
+- [[!DNL Live Search] Admin](workspace.md) is where rules, facets, and synonyms are configured.
+
+## [!DNL Live Search] workspace
+
+The [!DNL Live Search] [workspace](workspace.md) is the area in the Admin where you configure [!DNL Live Search] features such as synonyms, facets, and Category Merchandising.
+
+## Events
+
+[!DNL Live Search] uses [events](events.md) to calculate [Intelligent Merchandising](category-merch.md) and [performance](performance.md) dashboards. Eventing is provided with default implementations. Eventing for headless storefronts should be manually enabled.
+
+## Customizing widgets
+
+Most store owners will want to ensure that the [!DNL Live Search] widgets conform to their store look and feel.
+
+The popover and PLP widgets can be styled by defining custom CSS rules as needed. See [Styling Popover Elements](storefront-popover-styling.md) and [Product Listing Page Widget](plp-styling.md).
+
+If you wish to extend the functionality of the widgets, the source code for each is available in a public repo.
+In this scenario, you can customize the JavaScript for your own needs and then host your custom code on your CDN. This custom script communicates with the [!DNL Live Search] service and returns the results like normal, allowing you to control the functionality of the widget.
+
+- [PLP widget repo](https://github.com/adobe/storefront-product-listing-page)
+- [Search bar repo](https://github.com/adobe/storefront-search-as-you-type)
+
+## [!DNL Live Search] demo
+
+Watch this video to learn about [!DNL Live Search]:
+
+>[!VIDEO](https://video.tv.adobe.com/v/3418679?quality=12&learn=on)
+
+For a more in-depth video of how to use and configure Live Search, see the [Full Demonstration on [!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration.html) topic.
