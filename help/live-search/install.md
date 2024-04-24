@@ -246,7 +246,7 @@ To allow [!DNL Live Search] through a firewall, add `commerce.adobe.io` to the a
 
 Learn how you can customize the look and feel of the [!DNL Live Search] Product Listing Page Widget and Storefront Popover:
 
-- [Product Listing Page Widget](plp-styling#styling-example)
+- [Product Listing Page Widget](plp-styling.md#styling-example)
 - [Popover](storefront-popover-styling.md)
 
 ## Updating [!DNL Live Search] {#update}

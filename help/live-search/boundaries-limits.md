@@ -1,6 +1,6 @@
 ---
 title: "[!DNL Live Search] Boundaries and Limits"
-description: "Learn the system requirements and installation steps for [!DNL Live Search] from Adobe Commerce."
+description: "Learn about the boundaries and limits for [!DNL Live Search] to ensure it meets the needs of your business."
 role: Admin, Developer
 ---
 # Boundaries and limits
