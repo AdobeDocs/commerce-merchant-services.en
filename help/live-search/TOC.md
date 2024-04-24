@@ -8,7 +8,8 @@ feature: Services, Search
 # [!DNL Live Search] for Commerce {#live-search}
 
 - [What is [!DNL Live Search]?](overview.md)
-- [Install [!DNL Live Search]](install.md)
+- [Install](install.md)
+- [Boundaries and Limits](boundaries-limits.md)
 - [Release Notes](release-notes.md)
 - [!DNL Live Search] Storefront {#live-search-storefront}
    - [Product Listing Page Widget](plp-styling.md)

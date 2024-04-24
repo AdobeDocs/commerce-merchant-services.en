@@ -12,24 +12,14 @@ Powered by [Adobe Sensei](https://www.adobe.com/sensei.html), [!DNL Live Search]
 
 With [!DNL Live Search], you can:
 
-<table>
-<tbody>
-<tr style="border: 0;">
-<td><img src="assets/fast-search.png"></td>
-<td>Create meaningful search experiences to help shoppers and buyers find what they want with as little effort as possible.</td>
-</tr>
-<tr style="border: 0;">
-<td><img src="assets/ai-powered.png"></td><td>Take advantage of AI-powered dynamic faceting and re-ranking of search results in response to in-session shopper behaviors.</td>
-</tr>
-<tr style="border: 0;">
-<td><img src="assets/saas-service.png"></td>
-<td>Use a lightweight SaaS-based service that offers easy updates and is included in your license, reducing TCO.</td>
-</tr>
-<tr style="border: 0;">
-<td><img src="assets/dev-framework.png"></td>
-<td>Get technical by enabling graphQL API, headless flexibility, API sandbox environments, ultra fast SaaS; storefront widget optionality.</td></tr>
-</tbody>
-</table>
+- Create meaningful search experiences to help shoppers and buyers find what they want with as little effort as possible.
+- Take advantage of AI-powered dynamic faceting and re-ranking of search results in response to in-session shopper behaviors.
+- Use a lightweight SaaS-based service that offers easy updates and is included in your license, reducing TCO.
+- Get technical by enabling graphQL API, headless flexibility, API sandbox environments, ultra fast SaaS; storefront widget optionality.
+
+## Boundaries and limits
+
+Review the [boundaries and limits](boundaries-limits.md) to ensure that [!DNL Live Search] and [!DNL Catalog Service] meet the needs of your business.
 
 ## Quick Tour
 
