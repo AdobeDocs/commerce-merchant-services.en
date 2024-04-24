@@ -63,13 +63,13 @@ At a high level, onboarding [!DNL Live Search] requires that you install the ext
    composer require magento/live-search
    ```
 
-   If you are adding the [!DNL Live Search] extension to a **new** Adobe Commerce installation, run the following to disable [!DNL OpenSearch] and related modules, and install [!DNL Live Search]:
+   If you are adding the [!DNL Live Search] extension to a **new** Adobe Commerce installation, run the following to disable [!DNL OpenSearch] and related modules, and install [!DNL Live Search] then proceed to step 4:
 
    ```bash
       bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch7 Magento_OpenSearch Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch Magento_ElasticsearchCatalogPermissionsGraphQl
    ```
 
-   If you are adding the [!DNL Live Search] extension to an **existing** Adobe Commerce installation, run the following to temporarily disable the [!DNL Live Search] modules that serve storefront search results:
+   If you are adding the [!DNL Live Search] extension to an **existing** Adobe Commerce installation, run the following to temporarily disable the [!DNL Live Search] modules that serve storefront search results then proceed to step 4:
 
    ```bash
       bin/magento module:disable Magento_LiveSearchAdapter Magento_LiveSearchStorefrontPopover Magento_LiveSearchProductListing 
@@ -113,7 +113,7 @@ At a high level, onboarding [!DNL Live Search] requires that you install the ext
 
  If you are installing [!DNL Live Search] on an existing Commerce instance, you are done and can proceed to the [2. Configure API keys](#2-configure-api-keys) section.
 
-## 2. Configure API keys {#configure-api-keys}
+## 2. Configure API keys
 
 The Adobe Commerce API key and its associated private key are required to connect [!DNL Live Search] to an installation of Adobe Commerce. The API key is generated and maintained in the account of the [!DNL Commerce] license holder, who can share it with the developer or SI. The developer can then create and manage the SaaS Data Spaces on behalf of the license holder. If you already have a set of API keys, you do not need to regenerate them.
 
