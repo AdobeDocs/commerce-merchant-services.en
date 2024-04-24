@@ -33,7 +33,7 @@ This article is intended for the developer or systems integrator on your team wh
 
 ## Boundaries and limits
 
-Review the following boundaries and limits to ensure that [!DNL Live Search] and [!DNL Catalog Service] meets the needs of your business.
+Review the following boundaries and limits to ensure that [!DNL Live Search] and [!DNL Catalog Service] meet the needs of your business.
 
 ### General
 
