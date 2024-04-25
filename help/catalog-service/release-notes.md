@@ -16,9 +16,19 @@ Updates include:
 
 ## Current major version
 
+### V1.18 Release
+
+_April 11, 2023_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+![New](../assets/new.svg) Added support for PHP 8.3.
+
+![New](../assets/new.svg) The [`products`](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/) query now returns customizable options data for both simple and complex products.<!--DATA-5538-->
+
 ### V1.17 Release
 
-_Feb 22, 2023_
+_February 22, 2023_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
@@ -30,7 +40,7 @@ _Feb 22, 2023_
 
 ### V1.16 Release
 
-_Feb 13, 2023_
+_February 13, 2023_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
@@ -43,10 +53,10 @@ _Feb 13, 2023_
 These features are not yet supported:
 
 * Maximum size for dynamic attributes payload is 9 MB.
-* Group product price. Can be calculated with simple product prices.
+* Group product price. This value can be calculated with simple product prices.
 * In an image array, only the first image contains roles.
 
-The following limitations can be solved by using the API Mesh and the Core GraphQL API:
+The following limitations can be solved by using API Mesh and the Core GraphQL API:
 
 * Minimum Advertised Price
 * [Tier pricing](mesh.md)
@@ -58,7 +68,7 @@ _October 12, 2023_
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
 ![New](../assets/new.svg) Catalog Service supports the `inStock` flag for product variants.
-![New](../assets/new.svg) `urlKey` and `externalId` have been added to the GraphQL schema.
+![New](../assets/new.svg) The `urlKey` and `externalId` fields have been added to the GraphQL schema.
 ![New](../assets/new.svg) Downloadable products and gift cards are now supported.
 
 ### V1.12 Release
@@ -84,7 +94,7 @@ _June 27, 2023_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
-![New](../assets/new.svg) Catalog Service API now supports "related products".
+![New](../assets/new.svg) The Catalog Service API now supports `related products`.
 
 ### V1.7 Release
 
@@ -178,5 +188,3 @@ _August 9, 2022_
 * A specific price for simple products and price ranges for configurable products.
 * Customer group prices and price ranges. They return a fallback default price on shoppers without a customer group.
 * Product types that use B2B customer-specific pricing.
-
-+++
