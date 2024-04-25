@@ -24,7 +24,7 @@ _April 11, 2023_
 
 ![New](../assets/new.svg) Added support for PHP 8.3.
 
-![New](../assets/new.svg) The [`products`](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/) and [`refineProduct`](https://developer.adobe.com/commerce/services/graphql/catalog-service/refine-product/) queries now returns customizable options data for both simple and complex products.<!--DATA-5538-->
+![New](../assets/new.svg) The [`products`](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/) and [`refineProduct`](https://developer.adobe.com/commerce/services/graphql/catalog-service/refine-product/) queries now return customizable options data for both simple and complex products.<!--DATA-5538-->
 
 ### V1.17 Release
 
