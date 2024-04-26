@@ -36,6 +36,7 @@ Review the following boundaries and limits to ensure that [!DNL Live Search] and
 
 - [!DNL Live Search] does not have access to the full taxonomy of the category tree, which makes some layered navigation search scenarios beyond its reach.
 - [!DNL Live Search] uses a unique GraphQL endpoint for queries to support features such as dynamic faceting and search-as-you-type. Although similar to the [GraphQL API](https://developer.adobe.com/commerce/webapi/graphql/), there are a few differences and some fields may not be fully compatible.
+- The maximum number of results that can be retured in a search query is 10,000.
 
 ## Rules
 
