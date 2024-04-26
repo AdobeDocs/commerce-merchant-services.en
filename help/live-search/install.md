@@ -232,10 +232,15 @@ To allow [!DNL Live Search] through a firewall, add `commerce.adobe.io` to the a
 
 ## 7. Customize for your storefront
 
-You have installed, synced, validated, and configured your data. Now, you can customize the look and feel of the [!DNL Live Search] Product Listing Page Widget and Storefront Popover to conform to your company's branding guidelines.
+You have installed the [!DNL Live Search] extension, synced, validated, and configured your data. Now, you will want to ensure that the [!DNL Live Search] widgets conform to your store's look and feel.
 
-- [Product Listing Page Widget](plp-styling.md#styling-example)
-- [Popover](storefront-popover-styling.md)
+You can style the popover and PLP widgets by defining custom CSS rules as needed. See [Styling Popover Elements](storefront-popover-styling.md) and [Product Listing Page Widget](plp-styling.md).
+
+If you wish to extend the functionality of the widgets, the source code for each is available in a public repo.
+In this scenario, you can customize the JavaScript for your own needs and then host your custom code on your CDN. This custom script communicates with the [!DNL Live Search] service and returns the results like normal, allowing you to control the functionality of the widget.
+
+- [PLP widget repo](https://github.com/adobe/storefront-product-listing-page)
+- [Search bar repo](https://github.com/adobe/storefront-search-as-you-type)
 
 ## Updating [!DNL Live Search] {#update}
 

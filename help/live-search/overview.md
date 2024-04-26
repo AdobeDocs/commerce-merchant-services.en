@@ -6,16 +6,14 @@ recommendations: noCatalog
 ---
 # What is [!DNL Live Search]?
 
-Powered by [Adobe Sensei](https://www.adobe.com/sensei.html), [!DNL Live Search] uses artificial intelligence and machine-learning algorithms to perform a deep analysis of aggregated visitor data. This data, when combined with your Adobe Commerce catalog, results in a relevant and personalized shopping experience. 
-
-[!DNL Live Search] replaces the standard search capabilities in Adobe Commerce. The [!DNL Live Search] extension is installed with Composer and connects your [!DNL Commerce] installation to the [!DNL Live Search] [service](../landing/saas.md). When it is configured, the default search text field is replaced with the [!DNL Live Search] text field. [!DNL Live Search] also installs the Product Listing Page (PLP) widget, which provides robust filtering capabilities when browsing search results.
+[!DNL Live Search] is an extension that replaces the standard search capabilities in Adobe Commerce. The [!DNL Live Search] extension is installed with Composer and connects your [!DNL Commerce] installation to the [!DNL Live Search] [service](../landing/saas.md). When it is configured, the default search text field is replaced with the [!DNL Live Search] text field. [!DNL Live Search] also installs the Product Listing Page (PLP) widget, which provides robust filtering capabilities when browsing search results.
 
 With [!DNL Live Search], you can:
 
 - Create meaningful search experiences to help shoppers and buyers find what they want with as little effort as possible.
 - Take advantage of AI-powered dynamic faceting and re-ranking of search results in response to in-session shopper behaviors.
-- Use a lightweight SaaS-based service that offers easy updates and is included in your license, reducing TCO.
-- Get technical by enabling graphQL API, headless flexibility, API sandbox environments, ultra fast SaaS; storefront widget optionality.
+- Use a lightweight SaaS-based service that offers easy updates and is included in your license, reducing total cost of ownership.
+- Get technical by enabling graphQL API, headless flexibility, API sandbox environments, and ultra fast SaaS.
 
 ## Architecture
 
@@ -76,18 +74,6 @@ The [!DNL Live Search] [workspace](workspace.md) is the area in the Admin where 
 ## Events
 
 [!DNL Live Search] uses [events](events.md) to calculate [Intelligent Merchandising](category-merch.md) and [performance](performance.md) dashboards. Eventing is provided with default implementations. Eventing for headless storefronts should be manually enabled.
-
-## Customizing widgets
-
-Most store owners will want to ensure that the [!DNL Live Search] widgets conform to their store look and feel.
-
-The popover and PLP widgets can be styled by defining custom CSS rules as needed. See [Styling Popover Elements](storefront-popover-styling.md) and [Product Listing Page Widget](plp-styling.md).
-
-If you wish to extend the functionality of the widgets, the source code for each is available in a public repo.
-In this scenario, you can customize the JavaScript for your own needs and then host your custom code on your CDN. This custom script communicates with the [!DNL Live Search] service and returns the results like normal, allowing you to control the functionality of the widget.
-
-- [PLP widget repo](https://github.com/adobe/storefront-product-listing-page)
-- [Search bar repo](https://github.com/adobe/storefront-search-as-you-type)
 
 ## [!DNL Live Search] demo
 
