@@ -6,9 +6,9 @@ recommendations: noCatalog
 ---
 # What is [!DNL Live Search]?
 
-[!DNL Live Search] is a service for Adobe Commerce that replaces the standard search capabilities. The [!DNL Live Search] module is installed with Composer and connects your [!DNL Commerce] installation to the [!DNL Live Search] [service](../landing/saas.md). When it is configured, the default search text field is replaced with the [!DNL Live Search] text field. 
-
 Powered by [Adobe Sensei](https://www.adobe.com/sensei.html), [!DNL Live Search] uses artificial intelligence and machine-learning algorithms to perform a deep analysis of aggregated visitor data. This data, when combined with your Adobe Commerce catalog, results in a relevant and personalized shopping experience. 
+
+[!DNL Live Search] replaces the standard search capabilities in Adobe Commerce. The [!DNL Live Search] extension is installed with Composer and connects your [!DNL Commerce] installation to the [!DNL Live Search] [service](../landing/saas.md). When it is configured, the default search text field is replaced with the [!DNL Live Search] text field. [!DNL Live Search] also installs the Product Listing Page (PLP) widget, which provides robust filtering capabilities when browsing search results.
 
 With [!DNL Live Search], you can:
 
@@ -16,6 +16,12 @@ With [!DNL Live Search], you can:
 - Take advantage of AI-powered dynamic faceting and re-ranking of search results in response to in-session shopper behaviors.
 - Use a lightweight SaaS-based service that offers easy updates and is included in your license, reducing TCO.
 - Get technical by enabling graphQL API, headless flexibility, API sandbox environments, ultra fast SaaS; storefront widget optionality.
+
+## Architecture
+
+The Adobe Commerce side of the architecture includes hosting the search *Admin*, synchronizing catalog data, and running the query service. After [!DNL Live Search] is installed and configured, Adobe Commerce begins sharing search and catalog data with SaaS services. At this point, Admin users can set up, customize, and manage search [facets](facets.md), [synonyms](synonyms.md), and [merchandising rules](category-merch.md).
+
+![Live Search Data Flow](assets/ls-cs-data-flow.png)
 
 ## Boundaries and limits
 

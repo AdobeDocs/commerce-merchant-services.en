@@ -10,12 +10,6 @@ This article provides step-by-step instructions for integrating Adobe Commerce [
 
 When you install [!DNL Live Search] with [!DNL Catalog Service] you enable a fast, relevant, and intuitive search system that can personalize your customers' shopping experience.
 
-[!DNL Live Search] also installs the Product Listing Page (PLP) widget, which provides robust filtering capabilities when browsing search results.
-
-The Adobe Commerce side of the architecture includes hosting the search *Admin*, synchronizing catalog data, and running the query service. After [!DNL Live Search] is installed and configured, Adobe Commerce begins sharing search and catalog data with SaaS services. At this point, Admin users can set up, customize, and manage search [facets](facets.md), [synonyms](synonyms.md), and [merchandising rules](category-merch.md).
-
-![Live Search Data Flow](assets/ls-cs-data-flow.png)
-
 ## Audience
 
 This article is intended for the developer or systems integrator on your team who is responsible for installing and configuring your Adobe Commerce instance.
@@ -37,7 +31,15 @@ Review the [boundaries and limits](boundaries-limits.md) to ensure that [!DNL Li
 
 ## Workflow overview
 
-At a high level, onboarding [!DNL Live Search] requires that you install the extension, configure your API keys, sync your catalog data, verify the data was exported, configure your data, test the connection, then customize for your storefront.
+At a high level, onboarding [!DNL Live Search] requires that you:
+
+- Install the extension
+- Configure your API keys
+- Sync your catalog data
+- Verify the data was exported
+- Configure your data
+- Test the connection
+- Customize for your storefront
 
 ![Live Search Workflow](assets/livesearch-workflow.png)
 
@@ -63,7 +65,7 @@ At a high level, onboarding [!DNL Live Search] requires that you install the ext
    composer require magento/live-search
    ```
 
-   If you are adding the [!DNL Live Search] extension to a **new** Adobe Commerce installation, run the following to disable [!DNL OpenSearch] and related modules, and install [!DNL Live Search] then proceed to step 4:
+   If you are adding the [!DNL Live Search] extension to a **new** Adobe Commerce installation, run the following to disable [!DNL OpenSearch] and related modules, and install [!DNL Live Search]. Then proceed to step 4.
 
    ```bash
       bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch7 Magento_OpenSearch Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch Magento_ElasticsearchCatalogPermissionsGraphQl
@@ -96,7 +98,7 @@ At a high level, onboarding [!DNL Live Search] requires that you install the ext
 
 1. If you are installing [!DNL Live Search] on a new Commerce instance, you are done and can skip to the [2. Configure API keys](#2-configure-api-keys) section. If you are installing Live Search to an existing Commerce instance, proceed to the next step.
 
-1. Run the following commands to enable [!DNL Live Search] modules, disable [!DNL OpenSearch], and run `setup`.
+1. Run the following commands to enable the [!DNL Live Search] extension, disable [!DNL OpenSearch], and run `setup`.
 
    ```bash
    bin/magento module:enable Magento_LiveSearchAdapter Magento_LiveSearchStorefrontPopover  Magento_LiveSearchProductListing 
@@ -117,13 +119,7 @@ At a high level, onboarding [!DNL Live Search] requires that you install the ext
 
 The Adobe Commerce API key and its associated private key are required to connect [!DNL Live Search] to an installation of Adobe Commerce. The API key is generated and maintained in the account of the [!DNL Commerce] license holder, who can share it with the developer or SI. The developer can then create and manage the SaaS Data Spaces on behalf of the license holder. If you already have a set of API keys, you do not need to regenerate them.
 
-### Adobe Commerce license holder
-
-To generate an API key and private key, refer to [Commerce Services Connector](../landing/saas.md).
-
-### Adobe Commerce developer or SI
-
-The developer or SI configures the SaaS data space as described in the *Commerce Services* section of the configuration. In the *Admin*, Commerce Services becomes available in the **Configuration** sidebar when a SaaS module is installed.
+Learn how to configure your API keys in the [Commerce Services Connector](../landing/saas.md) article.
 
 ## 3. Sync your catalog data {#synchronize-catalog-data}
 
@@ -181,15 +177,7 @@ For additional help, see [[!DNL Live Search] catalog not synchronized](https://e
 
 ## 5. Configure the data
 
-Getting your product data configured correctly ensures good search results for your customers. In this section, you set the store view where the Live Search storefront features are configured, enable the product listing widgets, and assign categories and attributes.
-
-### Set the store view
-
-[!DNL Live Search] storefront features are configured within the store view scope. To set the store view where you want the Live Search features to appear, launch [!DNL Live Search] from the *Admin* and go to **[!UICONTROL Marketing]** > _[!UICONTROL SEO and Search]_ > **[!UICONTROL [!DNL Live Search]]**. Under **[!UICONTROL Scope]**, select the store view.
-
-![Select Live Search Store View](assets/ls-set-scope.png)
-
-All configurations you set on the [!DNL Live Search] page pertain to the selected store view.
+Getting your product data configured correctly ensures good search results for your customers. In this section, you enable the product listing widgets and assign categories and attributes.
 
 ### Enable Product Listing Widgets
 
@@ -244,7 +232,7 @@ To allow [!DNL Live Search] through a firewall, add `commerce.adobe.io` to the a
 
 ## 7. Customize for your storefront
 
-Learn how you can customize the look and feel of the [!DNL Live Search] Product Listing Page Widget and Storefront Popover:
+You have installed, synced, validated, and configured your data. Now, you can customize the look and feel of the [!DNL Live Search] Product Listing Page Widget and Storefront Popover to conform to your company's branding guidelines.
 
 - [Product Listing Page Widget](plp-styling.md#styling-example)
 - [Popover](storefront-popover-styling.md)
