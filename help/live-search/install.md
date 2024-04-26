@@ -145,13 +145,9 @@ When you run these commands, the initial sync of your catalog data to SaaS servi
 >
 > While the data is indexed and synchronized, the search and category browse operations are not available in the storefront. Depending on the size of your catalog, the process can take at least an hour from the time `cron` runs to synchronize your data to SaaS services.
 
-With your catalog data now available in SaaS, you can make facets [available as filters](facets-add.md) in the storefront, according to the [faceting requirements](facets.md).
-
 ### Monitor sync progress
 
-[!DNL Live Search] requires synchronized product data for search operations, and synchronized attribute data to configure facets. The initial synchronization between the product catalog and the [!DNL Catalog Service] begins when [!DNL Live Search] is first connected.
-
-You can view the data that is synchronized and shared with the [!DNL Catalog Service] using the [Data Management Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard). This dashboard provides valuable insights into the availability of product data for your storefront, ensuring it can be promptly displayed to your shoppers.
+You can view the data that is synchronized and shared using the [Data Management Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard). This dashboard provides valuable insights into the availability of product data for your storefront, ensuring it can be promptly displayed to your shoppers.
 
 ![Data Management Dashboard](assets/data-management-dashboard.png)
 
@@ -218,13 +214,13 @@ Each of these attributes can be defined as ["searchable"](https://experienceleag
 
 ## 6. Test the connection {#test-connection}
 
-In the storefront, verify the following:
+With your catalog data now in SaaS, test to make sure product data is returned in the following scenarios:
 
 - The [!UICONTROL Search] box returns results correctly
 - Category browse returns results correctly
 - Facets are available as filters on search results pages
 
-If everything works correctly, congratulations! [!DNL Live Search] is installed, connected, and ready to use.
+If everything works correctly, [!DNL Live Search] is installed, connected, and ready to use.
 
 If you encounter problems in the storefront, check the `var/log/system.log` file for API communication failures or errors on the services side.
 
