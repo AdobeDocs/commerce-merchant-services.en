@@ -5,7 +5,7 @@ role: Admin, Developer
 ---
 # Boundaries and limits
 
-Review the following boundaries and limits to ensure that [!DNL Live Search] and [!DNL Catalog Service] meet the needs of your business.
+When it comes to site search, Adobe Commerce gives you options. Review the following boundaries and limits to ensure that [!DNL Live Search] and [!DNL Catalog Service] meet the needs of your business. If you need advanced search capabilities such as content search, bring-your-own-algorithm (BYOA), or attribute-based merchandising, consider a third-party search solution.
 
 ## General
 
