@@ -57,7 +57,7 @@ The production and sandbox API keys are generated from the [!DNL Commerce] accou
 
 1. Repeat the above steps for each environment (production and sandbox).
 
-   The **API Keys** section now displays your API keys. You need both the production and sandbox keys when you [select or create a SaaS project](#createsaasenv).
+   The **API Keys** section now displays your API (Public) keys. You need both the production and sandbox keys (Public+Private) when you [select or create a SaaS project](#createsaasenv).
 
 ## SaaS configuration {#saasenv}
 
