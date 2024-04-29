@@ -71,13 +71,11 @@ For [!DNL Product Recommendations], the SaaS data space contains catalog and beh
 
 ### Select or create a SaaS project {#createsaasenv}
 
->[!NOTE]
->
-> If you do not see the **[!UICONTROL Commerce Services Connector]** section in the [!DNL Commerce] configuration, you must install the [!DNL Commerce] modules for your desired [[!DNL Commerce] service](#availableservices).
-
 To select or create a SaaS project, request the [!DNL Commerce] API key from the [!DNL Commerce] license holder for your store.
 
 1. On the _Admin_ sidebar, go to **System** > Services > **Commerce Services Connector**.
+
+   If you do not see the **[!UICONTROL Commerce Services Connector]** section in the [!DNL Commerce] configuration, install the [!DNL Commerce] modules for your desired [[!DNL Commerce] service](#availableservices). Also, make sure that the `magento/module-services-id` package is installed.
 
 1. In the _Sandbox API Keys_ and _Production API Keys_ sections, paste your key values.
 
