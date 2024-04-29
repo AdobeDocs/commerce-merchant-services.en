@@ -15,15 +15,15 @@ With [!DNL Live Search], you can:
 - Use a lightweight SaaS-based service that offers easy updates and is included in your license, reducing total cost of ownership.
 - Get technical by enabling graphQL API, headless flexibility, API sandbox environments, and ultra fast SaaS.
 
+>[!IMPORTANT]
+>
+>When it comes to site search, Adobe Commerce gives you options. Be sure to read [Boundaries and Limits](boundaries-limits.md) before implementing, to ensure [!DNL Live Search] is a fit for your business needs.
+
 ## Architecture
 
 The Adobe Commerce side of the architecture includes hosting the search *Admin*, synchronizing catalog data, and running the query service. After [!DNL Live Search] is installed and configured, Adobe Commerce begins sharing search and catalog data with SaaS services. At this point, Admin users can set up, customize, and manage search [facets](facets.md), [synonyms](synonyms.md), and [merchandising rules](category-merch.md).
 
 ![Live Search Data Flow](assets/ls-cs-data-flow.png)
-
-## Boundaries and limits
-
-Review the [boundaries and limits](boundaries-limits.md) to ensure that [!DNL Live Search] and [!DNL Catalog Service] meet the needs of your business.
 
 ## Quick Tour
 
