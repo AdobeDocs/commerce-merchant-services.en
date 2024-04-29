@@ -72,11 +72,35 @@ _June 28, 2021_
 
 +++
 
+## v2.5.0
+
+_April 23, 2024_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+![Fix](../assets/fix.svg)<!-- Issue PAY-5396 --> Payment Services now supports [Adobe Commerce guidelines for the `--db-prefix` parameter](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/advanced#install-from-the-command-line) for Adobe Commerce versions 2.4.7 and newer.
+
+## v2.4.3
+
+_April 16, 2024_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+![Fix](../assets/fix.svg)<!-- Issue PAY-5106 --> Fixed an issue that incorrectly populated the order amount totals during checkout between PayPal and Adobe Commerce. Now, Merchants can ensure that order amount totals are correct when placing an order.
+
+## v2.4.2
+
+_April 11, 2024_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+![New](../assets/new.svg)<!-- Issue xxx --> Added support for Adobe Commerce 2.4.7.
+
 ## v2.4.1
 
 _April 4, 2024_
 
-[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.6 and newer
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
 ![Fix](../assets/fix.svg)<!-- PAY-5322 --> Fixed a PCI compatibility issue with newer Adobe Commerce releases. Now, Payment Services is adapted to checkout requirements in Adobe Commerce as the payment option.
 
@@ -86,7 +110,7 @@ _April 4, 2024_
 
 _March 20, 2024_
 
-[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.6 and newer
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
 ![New](../assets/new.svg)<!-- PAY-4868 --> Merchants can successfully [configure Google Pay throughout the purchase experience](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html), similar to other payment buttons in Payment Services through the Admin.
 

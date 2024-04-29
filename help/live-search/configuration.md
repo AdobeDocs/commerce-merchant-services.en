@@ -35,3 +35,4 @@ Prices in the Widget Product Listing Page and Popover are now converted to the D
 |Stores > Configuration > Catalog > Storefront > List Mode|Renders correctly but events are not sent for some page interactions|
 |Stores > Configuration > Catalog > Catalog > Catalog Search > Maximum Query Length|Not implemented; Search Services accepts up to 255 characters|
 |Configuration > Sales > Tax > Price Display Settings > Display Product Prices In Catalog||
+|Stores > Configuration > Catalog > Storefront > Product Listing Sort By|Does not apply to the [!DNL Live Search] [Product Listing Page Widget](plp-styling.md)|
