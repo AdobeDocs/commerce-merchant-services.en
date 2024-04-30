@@ -91,7 +91,7 @@ In this section, you specify the type of data you want to collect and send to th
 
 - **Back office** (server-side data) is data captured in the Commerce servers. This includes information about the status of an order, such as if an order was placed, canceled, refunded, shipped, or completed. It also includes [historical order data](#send-historical-order-data).
 
-- **Profile** is data related to your shopper's profile information. Learn [more](#send-customer-profile-data).
+- **Profile (Beta)** is data related to your shopper's profile information. Learn [more](#send-customer-profile-data).
 
 To ensure that your Adobe Commerce instance can begin data collection, review the [prerequisites](overview.md#prerequisites).
 
@@ -151,6 +151,10 @@ See the events topic to learn more about [storefront](events.md#storefront-event
 After onboarding, storefront data begins to flow to the Experience Platform edge. Back office data takes about five minutes to appear at the edge. Subsequent updates are visible at the edge based on the cron schedule.
 
 ### Send customer profile data
+
+>[!IMPORTANT]
+>
+>This feature is in beta.
 
 There are two types of profile data that you can send to the Experience Platform: profile records and time series profile events.
 

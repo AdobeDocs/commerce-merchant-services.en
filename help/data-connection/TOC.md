@@ -14,13 +14,13 @@ recommendations: noDisplay
    - [Install the [!DNL Data Connection] extension](install.md)
    - [Types of Commerce Data](data-ingestion.md)
    - [Update Time Series Event Schemas for Commerce Data Ingestion](update-xdm.md)
-   - [Update Profile Record Schema for Commerce Data Ingestion](profile-data.md)
+   - [Update Profile Record Schema for Commerce Data Ingestion (Beta)](profile-data.md)
    - [Connect Commerce Data to the Adobe Experience Platform](connect-data.md)
    - [Integrate the Adobe Experience Platform Mobile SDK with Commerce](mobile-sdk-epc.md)
 - Capture Data {#event-forwarding}
    - [Behavioral Events](events.md)
    - [Back Office Events](events-backoffice.md)
-   - [Profile Records](events-profilerecord.md)
+   - [Profile Records (Beta)](events-profilerecord.md)
    - [Custom Events](custom-events.md)
    - [Use Adobe Experience Platform Tags](using-tags.md)
 - Use Case {#use-cases}
