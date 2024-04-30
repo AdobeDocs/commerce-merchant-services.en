@@ -1,7 +1,8 @@
 ---
-title: "[!DNL Live Search] Boundaries and Limits"
-description: "Learn about the boundaries and limits for [!DNL Live Search] to ensure it meets the needs of your business."
+title: '[!DNL Live Search] Boundaries and Limits'
+description: Learn about the boundaries and limits for [!DNL Live Search] to ensure it meets the needs of your business.
 role: Admin, Developer
+exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
 ---
 # Boundaries and limits
 
