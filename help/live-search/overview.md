@@ -27,7 +27,7 @@ The Adobe Commerce side of the architecture includes hosting the search *Admin*,
 
 ## Quick Tour
 
-With a focus on speed, relevance, and ease of use, [!DNL Live Search] is a game changer for shoppers and merchants alike. Watch the following video then take a quick tour of [!DNL Live Search] from the storefront.
+With a focus on speed, relevance, and ease of use, [!DNL Live Search] is a game changer for shoppers and merchants alike. Watch the following video, then take a quick tour of [!DNL Live Search] from the storefront.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418679?quality=12&learn=on)
 
