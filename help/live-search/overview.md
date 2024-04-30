@@ -33,7 +33,7 @@ With a focus on speed, relevance, and ease of use, [!DNL Live Search] is a game 
 
 [!DNL Live Search] responds with suggested products and a thumbnail image of top search results in a [popover](storefront-popover.md) as shoppers type queries into the [Search](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) box. The [product detail](https://experienceleague.adobe.com/docs/commerce-admin/start/storefront/storefront.html#product-page) page appears when shoppers  click a suggested or featured product. A _View all_ link in the footer of the popover displays the search results page.
 
-[!DNL Live Search] returns "search as you type" results for a query of two or more characters. For a partial match, the maximum number of characters per word is 20. The number of characters in the query is not configurable. The following fields are included in the popover: `name`, `sku`, and `category_ids`.
+[!DNL Live Search] returns "search as you type" results for a query of two or more characters. For a partial match, the maximum number of characters per word is 20. The number of characters in the query is not configurable. The popover includes the`name`, `sku`, and `category_ids` fields.
 
 ![Example storefront - search as you type](assets/storefront-search-as-you-type.png)
 
@@ -59,7 +59,7 @@ Merchandising [rules](rules.md) shape the shopping experience with if-then state
 
 ### Search terms support
 
-[!DNL Live Search] supports Commerce [search term redirects](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html). For example, users can search for a term such as "Shipping Rates" and be taken directly to the the shipping rates page.
+[!DNL Live Search] supports Commerce [search term redirects](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html). For example, users can search for a term such as "Shipping Rates" and be taken directly to the shipping rates page.
 
 ## Live Search components
 

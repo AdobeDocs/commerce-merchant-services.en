@@ -71,7 +71,7 @@ At a high level, onboarding [!DNL Live Search] requires that you:
       bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch7 Magento_OpenSearch Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch Magento_ElasticsearchCatalogPermissionsGraphQl
    ```
 
-   If you are adding the [!DNL Live Search] extension to an **existing** Adobe Commerce installation, run the following to temporarily disable the [!DNL Live Search] modules that serve storefront search results then proceed to step 4:
+   If you are adding the [!DNL Live Search] extension to an **existing** Adobe Commerce installation, run the following to temporarily disable the [!DNL Live Search] modules that serve storefront search results. Then proceed to step 4:
 
    ```bash
       bin/magento module:disable Magento_LiveSearchAdapter Magento_LiveSearchStorefrontPopover Magento_LiveSearchProductListing 
@@ -278,7 +278,7 @@ To update to a major version such as from 3.1.1 to 4.0.0, edit the project's roo
     }
    ```
 
-1. **Save*- `composer.json`. Then, run the following from the command line:
+1. Save `composer.json`. Then, run the following from the command line:
 
    ```bash
    composer update magento/live-search --with-dependencies
