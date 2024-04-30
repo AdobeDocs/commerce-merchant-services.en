@@ -36,7 +36,7 @@ This guide describes how SaaS price indexing works and how to enable it.
 * At least one of the following Commerce Services with the latest version of Adobe Commerce extension:
 
     * [Catalog Service](../catalog-service/overview.md) 
-    * [Live Search](../live-search/guide-overview.md)
+    * [Live Search](../live-search/overview.md)
     * [Product Recommendations](../product-recommendations/guide-overview.md)
 
 Luma and Adobe Commerce Core GraphQL users can install the [`catalog-adapter`](catalog-adapter.md) extension that provides Luma and Core GraphQl compatibility and disables the Adobe Commerce Product Price indexer.
