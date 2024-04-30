@@ -26,8 +26,8 @@ This article is intended for the developer or systems integrator on your team wh
 
 ## Supported platforms
 
-- Adobe Commerce on-prem (EE) : 2.4.4+
 - Adobe Commerce on Cloud (ECE) : 2.4.4+
+- Adobe Commerce on-prem (EE) : 2.4.4+
 
 ## Workflow overview
 
@@ -113,11 +113,9 @@ At a high level, onboarding [!DNL Live Search] requires that you:
    bin/magento setup:upgrade
    ```
 
- If you are installing [!DNL Live Search] on an existing Commerce instance, you are done and can proceed to the [2. Configure API keys](#2-configure-api-keys) section.
-
 ## 2. Configure API keys
 
-The Adobe Commerce API key and its associated private key are required to connect [!DNL Live Search] to an installation of Adobe Commerce. The API key is generated and maintained in the account of the [!DNL Commerce] license holder, who can share it with the developer or SI. The developer can then create and manage the SaaS Data Spaces on behalf of the license holder. If you already have a set of API keys, you do not need to regenerate them.
+The Adobe Commerce API key and its associated private key are required to connect [!DNL Live Search] to an installation of Adobe Commerce. The API key is generated and maintained in the account of the [!DNL Commerce] license holder, who can share it with the developer or systems integrator. The developer can then create and manage the SaaS Data Spaces on behalf of the license holder. If you already have a set of API keys, you do not need to regenerate them.
 
 Learn how to configure your API keys in the [Commerce Services Connector](../landing/saas.md) article.
 
