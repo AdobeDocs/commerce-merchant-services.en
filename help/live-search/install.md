@@ -4,9 +4,9 @@ description: "Learn the system requirements and installation steps for [!DNL Liv
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
 ---
-# Set up for success with [!DNL Live Search] and [!DNL Catalog Service]
+# Set up for success with [!DNL Live Search]
 
-Adobe Commerce [!DNL Live Search] and [!DNL Catalog Service] work together to provide a performant, relevant, and intuitive search solution to allow your customers to find exactly what they need, fast. Specifically, [!DNL Catalog Service] surfaces your catalog data for SaaS services, such as [!DNL Live Search] to use.
+Adobe Commerce [!DNL Live Search] and [[!DNL Catalog Service]](../catalog-service/guide-overview.md) work together to provide a performant, relevant, and intuitive search solution to allow your customers to find exactly what they need, fast. Specifically, [!DNL Catalog Service] surfaces your catalog data for SaaS services, such as [!DNL Live Search] to use.
 
 This article provides step-by-step instructions for implementing [!DNL Live Search] with [!DNL Catalog Service].
 
