@@ -34,6 +34,8 @@ The PLP widget provides a range of features that are expected in a searchable pr
 * Multiple language support
 * Price sliders
 
+For information about how to customize the PLP widget to handle the above features, see the `storefront-product-listing-page` readme in the following [repo](https://github.com/adobe/storefront-product-listing-page/).
+
 ## Styling example
 
 You can customize the look and feel of the PLP widget to match your site using [CSS](https://developer.adobe.com/commerce/frontend-core/guide/css/).
