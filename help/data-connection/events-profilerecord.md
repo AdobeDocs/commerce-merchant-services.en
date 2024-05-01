@@ -35,16 +35,20 @@ The following describes the data that is captured for a profile record.
 |`billingAddress.city`|The name of the city.|
 |`billingAddress.state`|The name of the state. This is a free-form field.|
 |`billingAddress.country`|The name of the government-administered territory. Other than `xdm:countryCode`, this is a free-form field that can have the country name in any language.|
+|`billingAddress.primary`|Indicates if this is the primary billing address. Value is always `False`.|
 |`billingAddressPhone`|The phone number associated with the billing address.|
 |`billingAddressPhone.number`|The phone number. Note the phone number is a string and may include meaningful characters such as brackets `()`, hyphens `-`, or characters to indicate sub-dialing identifiers like extensions `x` for example,  `1-353(0)18391111` or `+613 9403600x1234`.|
+|`billingAddressPhone.primary`|Indicates if this is the primary phone number for the billing address. Value is always `False`.|
 |`shippingAddress`|The shipping postal address.|
 |`shippingAddress.street1`|Primary street level information, apartment number, street number, and street name.|
 |`shippingAddress.street2`|Optional street information second line.|
 |`shippingAddress.city`|The name of the city.|
 |`shippingAddress.state`|The name of the state. This is a free-form field.|
 |`shippingAddress.country`|The name of the government-administered territory. Other than `xdm:countryCode`, this is a free-form field that can have the country name in any language.|
+|`shippingAddress.primary`|Indicates if this is the primary shipping address. Value is always `False`.|
 |`shippingAddressPhone`|Phone number associated with the shipping address.|
 |`shippingAddressPhone.number`|The phone number. Note the phone number is a string and may include meaningful characters such as brackets `()`, hyphens `-`, or characters to indicate sub-dialing identifiers like extensions `x` for example,  `1-353(0)18391111` or `+613 9403600x1234`.|
+|`shippingAddressPhone.primary`|Indicates if this is the primary phone number for the shipping address. Value is always `False`.|
 |`userAccount`| Indicates any loyalty details, preferences, login processes, and other account preferences.|
 |`userAccount.startDate`| The date the profile was first created.|
 

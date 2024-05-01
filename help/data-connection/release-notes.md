@@ -81,7 +81,7 @@ _March 4, 2024_
 
 [!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.4 and newer
 
-![New](../assets/new.svg) - If you are participating in the beta, make sure your `composer.json` file has the following on the root level: ` "minimum-stability": "beta"`.
+![New](../assets/new.svg) - If you are participating in the beta, make sure your `composer.json` file has the following on the root level: ` "minimum-stability": "beta"`. Also, add `composer require "magento/customers-connector: ^1.2.0"` to send customer profiles from your Commerce instance to SaaS. 
 ![New](../assets/new.svg) - Added ability to [add custom attributes](update-xdm.md#update-schema-with-time-series-behavioral-and-back-office-event-data).
 ![New](../assets/new.svg) - Added ability to [collect and send profile records](connect-data.md#send-customer-profile-data) and data to Experience Platform.
 
