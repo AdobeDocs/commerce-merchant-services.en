@@ -19,7 +19,7 @@ The following describes the data that is captured for a profile record.
 
 |Field|Description|
 |---|---|
-|`channel`|Contains information about the source of the data. Both `_id` and `_type` contain [namespaced values](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html).|
+|`channel`|Contains information about the source of the data. Both `_id` and `_type` contain [namespaced values](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/namespaces).|
 |`channel._id`|The unique identifier of the channel, such as `"https://ns.adobe.com/xdm/channels/web"`.|
 |`channel._type`|Identifies the source of the channel data, such as `"https://ns.adobe.com/xdm/channel-types/web"`.|
 |`person`|Contains information about the customer.|
@@ -35,21 +35,25 @@ The following describes the data that is captured for a profile record.
 |`billingAddress.city`|The name of the city.|
 |`billingAddress.state`|The name of the state. This is a free-form field.|
 |`billingAddress.country`|The name of the government-administered territory. Other than `xdm:countryCode`, this is a free-form field that can have the country name in any language.|
+|`billingAddress.primary`|Indicates if this is the primary billing address. Value is always `False`.|
 |`billingAddressPhone`|The phone number associated with the billing address.|
-|`billingAddressPhone.number`|The phone number. Note the phone number is a string and may include meaningful characters such as brackets `()`, hyphens `-`, or characters to indicate sub-dialing identifiers like extensions `x` for example,  `1-353(0)18391111` or `+613 9403600x1234`.|
+|`billingAddressPhone.number`|The phone number. Note that the phone number is a string and may include meaningful characters such as brackets `()`, hyphens `-`, or characters to indicate sub-dialing identifiers like extensions `x` for example,  `1-353(0)18391111` or `+613 9403600x1234`.|
+|`billingAddressPhone.primary`|Indicates if this is the primary phone number for the billing address. Value is always `False`.|
 |`shippingAddress`|The shipping postal address.|
 |`shippingAddress.street1`|Primary street level information, apartment number, street number, and street name.|
 |`shippingAddress.street2`|Optional street information second line.|
 |`shippingAddress.city`|The name of the city.|
 |`shippingAddress.state`|The name of the state. This is a free-form field.|
 |`shippingAddress.country`|The name of the government-administered territory. Other than `xdm:countryCode`, this is a free-form field that can have the country name in any language.|
-|`shippingAddressPhone`|Phone number associated with the shipping address.|
-|`shippingAddressPhone.number`|The phone number. Note the phone number is a string and may include meaningful characters such as brackets `()`, hyphens `-`, or characters to indicate sub-dialing identifiers like extensions `x` for example,  `1-353(0)18391111` or `+613 9403600x1234`.|
+|`shippingAddress.primary`|Indicates if this is the primary shipping address. Value is always `False`.|
+|`shippingAddressPhone`|The phone number associated with the shipping address.|
+|`shippingAddressPhone.number`|The phone number. Note that the phone number is a string and may include meaningful characters such as brackets `()`, hyphens `-`, or characters to indicate sub-dialing identifiers like extensions `x` for example,  `1-353(0)18391111` or `+613 9403600x1234`.|
+|`shippingAddressPhone.primary`|Indicates if this is the primary phone number for the shipping address. Value is always `False`.|
 |`userAccount`| Indicates any loyalty details, preferences, login processes, and other account preferences.|
 |`userAccount.startDate`| The date the profile was first created.|
 
 >[!NOTE]
 >
->Each profile record also includes the [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html) field, which includes the system generated Commerce Customer ID as the primary identifier for the profile and an email ID that is used as a secondary identifier.
+>Each profile record also includes the [`identityMap`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/identitymap) field, which includes the system generated Commerce Customer ID as the primary identifier for the profile and an email ID that is used as a secondary identifier.
 
 Learn how to [create a profile record-specific schema](profile-data.md) that can ingest the data from your profile records.
