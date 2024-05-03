@@ -10,7 +10,7 @@ exl-id: 49fb7609-64b3-4ae8-928d-54c99032d919
 * Pinned facets  - The most commonly-used facets can be pinned to the top of the list. The remaining facets are listed in *Sort type* order after the pinned facets.
 * Dynamic facets - Product attributes that [Adobe Sensei](https://www.adobe.com/sensei.html) finds most relevant to a product set and query. The calculation takes into account the attribute metadata of the entire catalog and determines at query time the most relevant facets for the query.
 * Popular facets - Product attributes that are most often present in search results.
-* Price facets - Return products by price range. You can specify the number of selections and the price range interval on the [*Settings*](settings.md) tab.
+* Price facets - Return products by price range. You can specify the number of selections and the price range interval on the [*Settings*](settings.md) workspace.
 
 At query time, [!DNL Live Search] generates the search results in groups of dynamic and popular facets.
 
@@ -24,7 +24,7 @@ In contrast, [headless](https://developer.adobe.com/commerce/php/architecture/te
 
 ### Facet labels
 
-For [!DNL Commerce] storefronts, the facet label is determined by the [*Attribute Properties*](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html). For stores with multiple views, additional labels can be defined under *Manage Labels*. For headless implementations, labels are edited from the [faceting tab](faceting-workspace.md).
+For [!DNL Commerce] storefronts, the facet label is determined by the [*Attribute Properties*](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html). For stores with multiple views, additional labels can be defined under *Manage Labels*. For headless implementations, labels are edited from the [faceting workspace](faceting-workspace.md).
 
 ### Sort type
 
