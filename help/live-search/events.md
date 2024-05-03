@@ -1,10 +1,10 @@
 ---
-title: 'Events'
+title: '[!DNL Live Search] Events'
 description: Learn how events collect data for [!DNL Live Search].
 feature: Services, Eventing
 exl-id: b0c72212-9be0-432d-bb8d-e4c639225df3
 ---
-# Events
+# [!DNL Live Search] Events
 
 [!DNL Live Search] uses events to power search algorithms such as "Most Viewed", and "Viewed This, Viewed That". While LUMA users get eventing out of the box, headless and other custom implementations have to implement eventing for their own needs.
 
