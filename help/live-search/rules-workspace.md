@@ -13,7 +13,7 @@ The *Search Merchandising* workspace lists the current selection of rules and th
 * Delete rules
 * Access the rule editor
 
-![Search Merchandising tab](assets/rules-workspace.png)
+![Search Merchandising Workspace](assets/rules-workspace.png)
 
 ## Set the scope
 
@@ -51,7 +51,7 @@ Search finds the matching rule(s) as you type. The string of matching characters
 
 The details panel shows the rule name, status, conditions and events, start and end date, description, and date last edited. Rules can be enabled, edited, and deleted from the details panel.
 
-1. On the *Search Merchandising* tab, find the rule in the grid that you want to view and click **More** (…).
+1. On the *Search Merchandising* workspace, find the rule in the grid that you want to view and click **More** (…).
 1. Click **View details**.
    You can do any of the following from the View details panel:
 
