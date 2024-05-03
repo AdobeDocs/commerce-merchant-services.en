@@ -6,7 +6,7 @@ recommendations: noCatalog
 ---
 # What is [!DNL Live Search]?
 
-[!DNL Live Search] is an extension that replaces the standard search capabilities in Adobe Commerce. The [!DNL Live Search] extension is installed with Composer and connects your [!DNL Commerce] installation to the [!DNL Live Search] [service](../landing/saas.md). When it is configured, the default search text field is replaced with the [!DNL Live Search] text field. [!DNL Live Search] also installs the Product Listing Page (PLP) widget, which provides robust filtering capabilities when browsing search results.
+[!DNL Live Search] is a feature that replaces the standard search capabilities in Adobe Commerce. The [!DNL Live Search] feature is installed with Composer and connects your [!DNL Commerce] store to the [Commerce Services Connector](../landing/saas.md). When it is configured, the default search text field is replaced with the [!DNL Live Search] text field. [!DNL Live Search] also installs the Product Listing Page (PLP) widget, which provides robust filtering capabilities when browsing search results.
 
 With [!DNL Live Search], you can:
 
@@ -69,7 +69,7 @@ Merchandising [rules](rules.md) shape the shopping experience with if-then state
 
 - [!DNL Live Search] [popover widget](storefront-popover.md) is the box that opens under the search field that contains the search results.
 - [Product Listing Page widget](plp-styling.md) provides a searchable product listing page with facets and synonym support.
-- [[!DNL Live Search] Admin](workspace.md) is where rules, facets, and synonyms are configured.
+- [[!DNL Live Search] Workspace](workspace.md) is where rules, facets, and synonyms are configured.
 
 ## [!DNL Live Search] workspace
 
