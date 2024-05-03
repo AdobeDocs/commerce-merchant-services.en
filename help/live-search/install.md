@@ -33,14 +33,6 @@ This article is intended for the developer or systems integrator on your team wh
 
 At a high level, onboarding [!DNL Live Search] requires that you:
 
-- Install the extension
-- Configure your API keys
-- Sync your catalog data
-- Verify the data was exported
-- Configure your data
-- Test the connection
-- Customize for your storefront
-
 ![Live Search Workflow](assets/livesearch-workflow.png)
 
 ## 1. Install the [!DNL Live Search] extension
