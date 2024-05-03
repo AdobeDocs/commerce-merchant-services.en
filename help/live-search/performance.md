@@ -1,11 +1,11 @@
 ---
-title: "Performance Dashboard"
-description: "The [!DNL Live Search] Performance dashboard provides insight into the search terms that shoppers use."
+title: "Performance"
+description: "The [!DNL Live Search] Performance workspace provides insight into the search terms that shoppers use."
 exl-id: ee2053fc-98c5-4d2c-9345-4d1f9a3180fb
 ---
-# Performance dashboard
+# Performance
 
-The [!DNL Live Search] Performance dashboard provides insight into the search terms that shoppers use. The information can be used to identify trends, increase click-through, and improve the conversion rate. The Performance dashboard provides a snapshot of search metrics for a specific date range and includes the following reports:
+The *Performance* workspace provides insight into the search terms that shoppers use. The information can be used to identify trends, increase click-through, and improve the conversion rate. The Performance workspace provides a snapshot of search metrics for a specific date range and includes the following reports:
 
 * Unique searches
 * Zero results
@@ -24,7 +24,7 @@ You can also refer to the [Data Management Dashboard](https://experienceleague.a
 
 >[!NOTE]
 >
->The performance dashboard is updated every 12 hours.
+>The performance workspace is updated every 12 hours.
 
 ## Field descriptions
 

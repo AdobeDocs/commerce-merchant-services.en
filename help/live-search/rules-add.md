@@ -11,7 +11,7 @@ To build a rule, the first step is to use the rule editor to define the conditio
 
 1. In the Admin, go to **Marketing** > SEO & Search > **[!DNL Live Search]**.
 1. Set the **Scope** to identify the [store view](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) where the rule applies.
-1. Click the **Search Merchandising** tab.
+1. Click the **Search Merchandising** workspace.
 1. Click **Add rule** to launch the rule editor.
 
 ## Rule type
@@ -136,7 +136,7 @@ The information that is entered here appears in the [Rule Details](rules-workspa
 1. If the rule has multiple queries, test each one that might be affected by the rule.
 1. When complete, click **Save and publish**.
 
-   The rule is added to the list in the rules workspace. 
+   The rule is added to the list in the *Rules* workspace. 
 
 1. Although active rules go into effect immediately, you might have to wait up to 15 minutes for the cached query results in the storefront to be refreshed.
 

@@ -10,8 +10,6 @@ exl-id: b0c72212-9be0-432d-bb8d-e4c639225df3
 
 Since [!DNL Live Search] and [!DNL Product Recommendations] use the same backend algorithm, some events are shared by both services. Some Product Recommendations events are required to populate the Recommendations Dashboard.
 
-## Events
-
 This table describes the events used by [!DNL Live Search] strategies.
 
 | Strategy | Products | Events | Page |

@@ -7,7 +7,7 @@ exl-id: 0df6c21b-55b3-41ce-94f4-f70b70ffb84e
 
 Any filterable product attribute can be used as a facet. The *Add facets* panel lists the current facets and makes it easy to assign additional product attributes as facets. During this three-step process, an attribute is chosen to be used as a facet, properties are edited if needed, and the changes published to the storefront.
 
-![Faceting workspace](assets/facets-add.png)
+![Add Facets](assets/facets-add.png)
 
 ## Step 1: Add a facet
 
@@ -42,7 +42,7 @@ Any filterable product attribute can be used as a facet. The *Add facets* panel 
 
 1. When complete, click **Save**.
 
-   ![Faceting workspace](assets/facet-edit.png)
+   ![Edit Facets](assets/facet-edit.png)
 
 1. To pin the facet to the top of the *Filters* list, click the gray pushpin (![Pin selector](assets/btn-pin-gray.png)).
 1. To change the order of the pinned facet, click the **Move** (![Move selector](assets/btn-move.png)) icon and drag the row to a new position in the *Pinned Facets* section.

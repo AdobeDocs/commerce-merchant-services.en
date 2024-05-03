@@ -11,34 +11,34 @@ feature: Services, Search
 - [Install](install.md)
 - [Boundaries and Limits](boundaries-limits.md)
 - [Release Notes](release-notes.md)
-- [!DNL Live Search] Storefront {#live-search-storefront}
+- Storefront {#live-search-storefront}
    - [Product Listing Page Widget](plp-styling.md)
    - [Storefront [!DNL Popover]](storefront-popover.md)
    - [Styling [!DNL Popover] Elements](storefront-popover-styling.md)
-- [!DNL Live Search] Admin{#live-search-admin}
-   - [Commerce Configuration Settings](configuration.md)
+- Admin {#live-search-admin}
+   - [Workspace](workspace.md)
+   - [Performance](performance.md)
    - Facets {#facets}
       - [Overview](facets.md)
-      - [Faceting Workspace](faceting-workspace.md)
+      - [Workspace](faceting-workspace.md)
       - [Types of Facets](facets-type.md)
       - [Add Facets](facets-add.md)
       - [Manage Facets](facets-manage.md)
-   - [Indexing](indexing.md)
-   - [Performance](performance.md)
-   - [GraphQL](graphql.md)
-   - [Category Merchandising](category-merch.md)
-   - Search Merchandising {#rules}
-      - [Overview](rules.md)
-      - [Search Merchandising Workspace](rules-workspace.md)
-      - [Add Rules](rules-add.md)
-      - [Manage Rules](rules-manage.md)
-   - [Settings](settings.md)
    - Synonyms {#synonyms}
       - [Overview](synonyms.md)
       - [Types of Synonyms](synonyms-type.md)
       - [Add Synonyms](synonyms-add.md)
       - [Manage Synonyms](synonyms-manage.md)
-   - [Workspace](workspace.md)
+   - Search Merchandising {#rules}
+      - [Overview](rules.md)
+      - [Workspace](rules-workspace.md)
+      - [Add Rules](rules-add.md)
+      - [Manage Rules](rules-manage.md)
+   - [Category Merchandising](category-merch.md)
+   - [Indexing](indexing.md)
+   - [GraphQL](graphql.md)
+   - [Settings](settings.md)
+   - [Commerce Configuration Settings](configuration.md)
 - [Events](events.md)
 - GraphQL queries {#graphql}
    - [attributeMetadata](https://developer.adobe.com/commerce/services/graphql/live-search/attribute-metadata/)

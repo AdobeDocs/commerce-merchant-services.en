@@ -16,7 +16,7 @@ The feature is accessed in the Admin at **Marketing** > SEO & Search > **[!DNL L
 
 >[!NOTE]
 >
->Category Merchandising is available with [!DNL Live Search] [3.0.0 or higher](release-notes.md). If you see the Category Merchandising tab but it is not populated with data, update the [!DNL Live Search] module.
+>Category Merchandising is available with [!DNL Live Search] [3.0.0 or higher](release-notes.md). If you see the Category Merchandising workspace but it is not populated with data, update the [!DNL Live Search] module.
 
 ![Categry Merchandising](assets/category_workspace.png)
 
