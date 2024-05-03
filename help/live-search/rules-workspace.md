@@ -5,7 +5,7 @@ exl-id: a52839fb-2264-4443-83c3-9eaa2ccb6996
 ---
 # Search Merchandising Workspace
 
-The Search Merchandising workspace lists the current selection of rules and their status, and provides access to tools you need to create and manage rules. From the workspace you can:
+The *Search Merchandising* workspace lists the current selection of rules and their status, and provides access to tools you need to create and manage rules. From the workspace you can:
 
 * Search for rules
 * View rule details
@@ -13,7 +13,7 @@ The Search Merchandising workspace lists the current selection of rules and thei
 * Delete rules
 * Access the rule editor
 
-![Search Merchandising workspace](assets/rules-workspace.png)
+![Search Merchandising tab](assets/rules-workspace.png)
 
 ## Set the scope
 

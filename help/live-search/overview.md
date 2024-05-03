@@ -69,7 +69,6 @@ Merchandising [rules](rules.md) shape the shopping experience with if-then state
 
 - [!DNL Live Search] [popover widget](storefront-popover.md) is the box that opens under the search field that contains the search results.
 - [Product Listing Page widget](plp-styling.md) provides a searchable product listing page with facets and synonym support.
-- [[!DNL Live Search] Workspace](workspace.md) is where rules, facets, and synonyms are configured.
 
 ## [!DNL Live Search] workspace
 
