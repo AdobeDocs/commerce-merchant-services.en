@@ -50,13 +50,6 @@ See [what's new in our documentation](whats-new.md) or [release notes](release-n
   </td>
     </tr>
 <tr>
-  <td valign="top" width="200px">
-    <img alt="Quick Checkout" src="assets/quick-checkout.png" width="170px"/></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/overview.html"><strong>Quick Checkout</strong></a>  <br><em>(Available for Magento Open Source)</em>
-    <div>Convert one-time shoppers into loyal account holders by delivering a fast and intuitive shopping experience.</div>
-  </td>
-    </tr>
-<tr>
     <td valign="top" width="200px">
        <img alt="Store Fulfillment" src="assets/store-fulfillment-landing-graphic.png" width="170px"/></td>
    <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/guide-overview.html"> <strong>Store Fulfillment</strong></a></br>
