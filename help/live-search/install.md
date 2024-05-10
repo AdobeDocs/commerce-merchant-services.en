@@ -427,7 +427,6 @@ This module adds additional contexts to GraphQL queries:
 - dataServicesMagentoExtensionContext
 - dataServicesStoreConfigurationContext
 
-
 ### PWA support
 
 [!DNL Live Search] works with PWA Studio but users may see slight differences compared to other Commerce implementations. Basic functionality such as search and product listing page work in Venia but some permutations of Graphql may not work correctly. There may also be performance differences.
