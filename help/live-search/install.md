@@ -413,6 +413,21 @@ Look at [API Mesh](../catalog-service/mesh.md) for more complex price calculatio
 
 The price format supports the locale configuration setting within the Commerce instance: *Stores* > Settings > *Configuration* > General > *General* > Local Options > Locale.
 
+### Headless storefronts support
+
+Optionally, you may need to install the module-data-services-graphql module that expands the application's existing GraphQL coverage to include fields required for storefront behavioral data collection.
+
+   ```bash
+   composer require magento/module-data-services-graphql
+   ```
+
+This module adds additional contexts to GraphQL queries:
+
+- dataServicesStorefrontInstanceContext
+- dataServicesMagentoExtensionContext
+- dataServicesStoreConfigurationContext
+
+
 ### PWA support
 
 [!DNL Live Search] works with PWA Studio but users may see slight differences compared to other Commerce implementations. Basic functionality such as search and product listing page work in Venia but some permutations of Graphql may not work correctly. There may also be performance differences.
