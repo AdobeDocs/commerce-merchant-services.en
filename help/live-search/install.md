@@ -415,7 +415,7 @@ The price format supports the locale configuration setting within the Commerce i
 
 ### Headless storefronts support
 
-Optionally, you may need to install the module-data-services-graphql module that expands the application's existing GraphQL coverage to include fields required for storefront behavioral data collection.
+Optionally, you may need to install the `module-data-services-graphql` module that expands the application's existing GraphQL coverage to include fields required for storefront behavioral data collection.
 
    ```bash
    composer require magento/module-data-services-graphql
