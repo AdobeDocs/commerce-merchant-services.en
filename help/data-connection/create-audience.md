@@ -122,15 +122,29 @@ To make the audience available in [!DNL Commerce], you need to activate it to th
 
 ## 3. View the audience in the Audiences Dashboard
 
-You can view all [active](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/activate-edge-personalization-destinations.html) audiences that are available to personalize within your [!DNL Commerce] instance using the **Real-Time CDP Audiences** dashboard.
+In [!DNL Commerce], you can view all [active](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/activate-edge-personalization-destinations.html) audiences that are available to personalize within your [!DNL Commerce] instance using the **Real-Time CDP Audiences** dashboard.
 
 To access the **Real-Time CDP Audiences** dashboard, go to the _Admin_ sidebar, then go to **[!UICONTROL Customers]** > **[!UICONTROL Real-time CDP Audience]**.
 
-In the dashboard, look for the audience you created.
+In the dashboard, look for the audience you created. Notice it is not being used in a cart price rule or dynamic block.
 
 ![Real-Time CDP Audiences Dashboard](assets/real-time-cdp-dashboard.png)
 
 ## 4. Create a cart price rule based on the audience
+
+In this section, you create a cart price rule based on your new audience.
+
+1. Confirm your new audience appears in the **Real-Time CDP Audiences** dashboard.
+1. [Create a cart price rule](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create).
+1. [Set the condition](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create#use-real-time-cdp-audiences-to-set-a-condition) of the cart price rule using your new audience.
+1. [Set what action](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create#step-3-define-the-actions) you want to occur when the product is added to the cart.
+1. Continue to configure your cart price rule.
+1. Go to the customer view of your sandbox instance.
+1. Add the product you based the audience off of to the cart. Notice the cart price rule is enabled.
+
+## Wrap up
+
+In this exercise, you created an audience in Real-Time CDP and activated it to the [!DNL Commerce] destination. You then created a cart price rule based on that audience and enabled the rule on your sandbox storefront when you added the product to your cart.
 
 ## Metrics
 
