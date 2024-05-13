@@ -66,7 +66,7 @@ In the next section, you will use the data from the [productPageView](events.md#
 
 To simplify this exercise, you will only use event data from the [productPageView](events.md#productpageview) event. This event captures details about the product that was viewed, such as product name, SKU, price, and so on.
 
-​You will use this event data to specify that the audience includes individuals who have at least one "Product Views" event where the SKU (product identifier) equals "Samsung-galaxy-s22ultra" and the event occurs within the last 1 day. ​
+​You will use this event data to specify that the audience includes individuals who have at least one "Product Views" event where the SKU (product identifier) equals a specific product on your site and the event occurs within the last 1 day. ​
 
 1. Open Experience Platform and select **[!UICONTROL Audiences]** from the left rail.
 
@@ -90,7 +90,7 @@ To simplify this exercise, you will only use event data from the [productPageVie
 
 1. Search for the "Product Views" event type. Drag and drop it to the **Segment Builder** workspace.
 
-1. Return to the **Events** tab again and search for "SKU". Drag and drop it to the **Segment Builder** workspace on top of the **Product View** event. The **Event Rules** section appears where you can specify the specific product you want to build your audience off of.
+1. Return to the **Events** tab and search for "SKU". Drag and drop it to the **Segment Builder** workspace on top of the **Product View** event. The **Event Rules** section appears where you can specify the specific product you want to build your audience off of.
 
     ![Select SKU](assets/audience-addsku.png)
 
@@ -104,7 +104,7 @@ To simplify this exercise, you will only use event data from the [productPageVie
 
     The details of your audience appears.
 
-## 2. Activate the audience to the Commerce destination
+## 2. Activate the audience to the [!DNL Commerce] destination
 
 To make the audience available in [!DNL Commerce], you need to activate it to the [!DNL Commerce] destination.
 
@@ -122,13 +122,18 @@ To make the audience available in [!DNL Commerce], you need to activate it to th
 
 ## 3. View the audience in the Audiences Dashboard
 
-Use the Audiences dashboard to see the activated audiences you can use in Commerce.
+You can view all [active](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/activate-edge-personalization-destinations.html) audiences that are available to personalize within your [!DNL Commerce] instance using the **Real-Time CDP Audiences** dashboard.
+
+To access the **Real-Time CDP Audiences** dashboard, go to the _Admin_ sidebar, then go to **[!UICONTROL Customers]** > **[!UICONTROL Real-time CDP Audience]**.
+
+In the dashboard, look for the audience you created.
+
+![Real-Time CDP Audiences Dashboard](assets/real-time-cdp-dashboard.png)
 
 ## 4. Create a cart price rule based on the audience
 
-Metrics
+## Metrics
 
 - 1 source of truth, 10s of millions of unified customer profiles
 - 40+ unique audiences of "high intent customers" to engage across channels. Webinar: https://engage.adobe.com/Q1PersWBR-register1.html
-- COCA-COLA GLOBAL:
-- 98 million customer profiles from over 100 countries" 
+- COCA-COLA GLOBAL: 98 million customer profiles from over 100 countries
