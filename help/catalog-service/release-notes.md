@@ -18,7 +18,7 @@ Updates include:
 
 ### V1.18 Release
 
-_April 11, 2023_
+_April 11, 2024_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
@@ -32,7 +32,7 @@ _April 11, 2023_
 
 ### V1.17 Release
 
-_February 22, 2023_
+_February 22, 2024_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
@@ -40,7 +40,7 @@ _February 22, 2023_
 
 ### V1.16 Release
 
-_February 13, 2023_
+_February 13, 2024_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
