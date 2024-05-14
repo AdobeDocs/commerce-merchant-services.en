@@ -12,12 +12,12 @@ With [!DNL Live Search], you can:
 
 - Create meaningful search experiences to help shoppers and buyers find what they want with as little effort as possible.
 - Take advantage of AI-powered dynamic faceting and re-ranking of search results in response to in-session shopper behaviors.
-- Use a lightweight SaaS-based service that offers easy updates and is included in your license, reducing total cost of ownership.
+- Use a lightweight SaaS-based service that offers easy updates and is included in your license, reducing the total cost of ownership.
 - Get technical by enabling graphQL API, headless flexibility, API sandbox environments, and ultra fast SaaS.
 
 >[!IMPORTANT]
 >
->When it comes to site search, Adobe Commerce gives you options. Be sure to read [Boundaries and Limits](boundaries-limits.md) before implementing, to ensure [!DNL Live Search] is a fit for your business needs.
+>When it comes to site search, Adobe Commerce gives you options. Be sure to read [Boundaries and Limits](boundaries-limits.md) before implementing, to ensure that [!DNL Live Search] is a fit for your business needs.
 
 ## Architecture
 
@@ -31,11 +31,11 @@ With a focus on speed, relevance, and ease of use, [!DNL Live Search] is a game 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418679?quality=12&learn=on)
 
-For a more in-depth video of how to use and configure Live Search, see the [Full Demonstration on [!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration.html) topic.
+For a more in-depth video of how to use and configure Live Search, see the [Full Demonstration on [!DNL Live Search]](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration) topic.
 
 ### Search as you type
 
-[!DNL Live Search] responds with suggested products and a thumbnail image of top search results in a [popover](storefront-popover.md) as shoppers type queries into the [Search](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) box. The [product detail](https://experienceleague.adobe.com/docs/commerce-admin/start/storefront/storefront.html#product-page) page appears when shoppers  click a suggested or featured product. A _View all_ link in the footer of the popover displays the search results page.
+[!DNL Live Search] responds with suggested products and a thumbnail image of top search results in a [popover](storefront-popover.md) as shoppers type queries into the [Search](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) box. The [product detail](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront) page appears when shoppers click a suggested or featured product. A _View all_ link in the footer of the popover displays the search results page.
 
 [!DNL Live Search] returns "search as you type" results for a query of two or more characters. For a partial match, the maximum number of characters per word is 20. The number of characters in the query is not configurable. The popover includes the`name`, `sku`, and `category_ids` fields.
 
@@ -49,7 +49,7 @@ To list all products returned by the "search as you type" query, click _View all
 
 ### Filtered search with facets
 
-Filtered search uses multiple dimensions of attribute values, or [facets](facets.md), as search criteria. The selection of filters is defined by the merchant and changes according to the products returned, with the most commonly-used facets pinned to the top of the list.
+Filtered search uses multiple dimensions of attribute values, or [facets](facets.md), as search criteria. The selection of filters is defined by the merchant and changes according to the products returned, with the most commonly used facets pinned to the top of the list.
 
 Use facets as URL parameters:`http://yourwebsite.com?color=red`, and Live Search filters results based on these attribute values. 
 
@@ -63,12 +63,13 @@ Merchandising [rules](rules.md) shape the shopping experience with if-then state
 
 ### Search terms support
 
-[!DNL Live Search] supports Commerce [search term redirects](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html). For example, users can search for a term such as "Shipping Rates" and be taken directly to the shipping rates page.
+[!DNL Live Search] supports Commerce [search term redirects](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-terms). For example, users can search for a term such as "Shipping Rates" and be taken directly to the shipping rates page.
 
 ## Live Search components
 
 - [!DNL Live Search] [popover widget](storefront-popover.md) is the box that opens under the search field that contains the search results.
-- [Product Listing Page widget](plp-styling.md) provides a searchable product listing page with facets and synonym support.
+- [Product Listing Page widget](plp-styling.md) (PLP) provides a searchable product listing page with facets and synonym support. The widget is installed and enabled in Live Search 4.0.0+.
+- Search adapter is the precursor to the PLP widget and is installed with Live Search < 4.0.0. The search adapter sends search queries to the Live Search GraphQL API. Product IDs returned in that response are used to get the rest of the information about the products needed to render the search results page listing. The search adapter renders search result pages slower than the Product Listing Page widget due to the time that it takes to retrieve product data from the Commerce database. While it is recommended you upgrade to use the PLP widget, there may be cases where you need the functionality of the search adapter. In this case, you can disable the PLP widget. Learn how to [disable the PLP widget](plp-styling.md#disabling-the-plp-widget).
 
 ## [!DNL Live Search] workspace
 
