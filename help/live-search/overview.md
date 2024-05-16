@@ -69,7 +69,7 @@ Merchandising [rules](rules.md) shape the shopping experience with if-then state
 
 - [!DNL Live Search] [popover widget](storefront-popover.md) is the box that opens under the search field that contains the search results.
 - [Product Listing Page widget](plp-styling.md) (PLP) provides a searchable product listing page with facets and synonym support. The widget is installed and enabled in Live Search 4.0.0+.
-- Search adapter is the precursor to the PLP widget and is installed with Live Search < 4.0.0. The search adapter sends search queries to the Live Search GraphQL API. Product IDs returned in that response are used to get the rest of the information about the products that is required to render the search results page listing. The search adapter renders search result pages more slowly than the Product Listing Page widget due to the time required to retrieve product data from the Commerce database. While it is recommended that you upgrade to use the PLP widget, there might be cases where you need the functionality of the search adapter. In these cases, you can [disable the PLP widget](plp-styling.md#disabling-the-plp-widget).
+- (**Deprecated**) Search adapter was the precursor to the PLP widget and was installed with Live Search < 4.0.0. If you are using a version of Live Search earlier than 4.0.0, Commerce recommends you upgrade to receive the benefits of the PLP widget features and future improvements.
 
 ## [!DNL Live Search] workspace
 
