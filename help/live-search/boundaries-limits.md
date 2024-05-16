@@ -15,7 +15,7 @@ When it comes to site search, Adobe Commerce gives you options. Review the follo
 - Product prices do not include value-added tax (VAT).
 - Content search is not supported.
 - There is a limit of 10k products that can be paginated.
-- The search adapter does not support product attributes created with a custom source model and used as facets. To support this functionality, you must use the [Product Listing Page Widget](plp-styling.md).
+- The search adapter does not support product attributes that are created with a custom source model and used as facets. To support this functionality, you must use the [Product Listing Page Widget](plp-styling.md).
 
 ## Indexing
 

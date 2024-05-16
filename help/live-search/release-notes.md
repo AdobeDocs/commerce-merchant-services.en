@@ -47,7 +47,7 @@ _May 16, 2024_
 
 ### Updates
 
-![Fix](../assets/fix.svg) Fixed the [`productSearch`](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering-by-categories) GraphQL query to correctly filter based on `categoryPath` and `categoryList` for categories.
+![Fix](../assets/fix.svg) Fixed the [`productSearch`](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering-by-categories) GraphQL query to correctly filter based on the `categoryPath` and `categoryList` for categories.
 
 ## [!DNL Live Search] 4.1.1 {#411}
 

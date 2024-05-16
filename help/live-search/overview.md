@@ -17,7 +17,7 @@ With [!DNL Live Search], you can:
 
 >[!IMPORTANT]
 >
->When it comes to site search, Adobe Commerce gives you options. Be sure to read [Boundaries and Limits](boundaries-limits.md) before implementing, to ensure that [!DNL Live Search] is a fit for your business needs.
+>When it comes to site search, Adobe Commerce gives you options. Before implementation, review the [Boundaries and Limits](boundaries-limits.md) information to ensure that [!DNL Live Search] is a fit for your business needs.
 
 ## Architecture
 
@@ -31,11 +31,11 @@ With a focus on speed, relevance, and ease of use, [!DNL Live Search] is a game 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418679?quality=12&learn=on)
 
-For a more in-depth video of how to use and configure Live Search, see the [Full Demonstration on [!DNL Live Search]](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration) topic.
+For a more in-depth video about using and configuring Live Search, see the [Full Demonstration on [!DNL Live Search]](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration) topic.
 
 ### Search as you type
 
-[!DNL Live Search] responds with suggested products and a thumbnail image of top search results in a [popover](storefront-popover.md) as shoppers type queries into the [Search](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) box. The [product detail](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront) page appears when shoppers click a suggested or featured product. A _View all_ link in the footer of the popover displays the search results page.
+[!DNL Live Search] responds with suggested products and a thumbnail image of top search results in a [popover](storefront-popover.md) as shoppers type queries into the [Search](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) box. The [product detail](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront) page displays when shoppers click a suggested or featured product. A _View all_ link in the footer of the popover displays the search results page.
 
 [!DNL Live Search] returns "search as you type" results for a query of two or more characters. For a partial match, the maximum number of characters per word is 20. The number of characters in the query is not configurable. The popover includes the`name`, `sku`, and `category_ids` fields.
 
@@ -69,7 +69,7 @@ Merchandising [rules](rules.md) shape the shopping experience with if-then state
 
 - [!DNL Live Search] [popover widget](storefront-popover.md) is the box that opens under the search field that contains the search results.
 - [Product Listing Page widget](plp-styling.md) (PLP) provides a searchable product listing page with facets and synonym support. The widget is installed and enabled in Live Search 4.0.0+.
-- Search adapter is the precursor to the PLP widget and is installed with Live Search < 4.0.0. The search adapter sends search queries to the Live Search GraphQL API. Product IDs returned in that response are used to get the rest of the information about the products needed to render the search results page listing. The search adapter renders search result pages slower than the Product Listing Page widget due to the time that it takes to retrieve product data from the Commerce database. While it is recommended you upgrade to use the PLP widget, there may be cases where you need the functionality of the search adapter. In this case, you can [disable the PLP widget](plp-styling.md#disabling-the-plp-widget).
+- Search adapter is the precursor to the PLP widget and is installed with Live Search < 4.0.0. The search adapter sends search queries to the Live Search GraphQL API. Product IDs returned in that response are used to get the rest of the information about the products that is required to render the search results page listing. The search adapter renders search result pages more slowly than the Product Listing Page widget due to the time required to retrieve product data from the Commerce database. While it is recommended that you upgrade to use the PLP widget, there might be cases where you need the functionality of the search adapter. In these cases, you can [disable the PLP widget](plp-styling.md#disabling-the-plp-widget).
 
 ## [!DNL Live Search] workspace
 
