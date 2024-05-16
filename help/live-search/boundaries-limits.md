@@ -38,6 +38,7 @@ When it comes to site search, Adobe Commerce gives you options. Review the follo
 - [!DNL Live Search] does not have access to the full taxonomy of the category tree, which makes some layered navigation search scenarios beyond its reach.
 - [!DNL Live Search] uses a unique [GraphQL endpoint](https://developer.adobe.com/commerce/services/graphql/live-search/) for queries to support features such as dynamic faceting and search-as-you-type. Although similar to the [GraphQL API](https://developer.adobe.com/commerce/webapi/graphql/), there are a few differences and some fields may not be fully compatible.
 - The maximum number of results that can be retured in a search query is 10,000.
+- For [productSearch](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/) query, Live Search and Catalog Service may return different results due to different caching strategies. This behavior can be altered by utilizing a unified caching strategy on the client side.
 
 ## Rules
 
