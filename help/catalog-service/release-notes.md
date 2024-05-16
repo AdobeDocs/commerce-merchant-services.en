@@ -16,12 +16,6 @@ Updates include:
 
 ## Current major version
 
-### V1.19 Release
-
-_May 11, 2024_
-
-![Fix](../assets/fix.svg) The Catalog Service now supports the `enabled` flag for product variants.
-
 ### V1.18 Release
 
 _April 11, 2024_
