@@ -55,10 +55,10 @@ Before you begin, ensure:
 
 When creating audiences in Real-Time CDP using data from your [!DNL Commerce] store, you typically use data from the following events:
 
-|Event Type|Events Captured by Adobe Commerce|
-|---|---|
-|**Time-Series Event Data** - Includes data related to user interactions and behaviors on your website or mobile app.|[productPageView](events.md#productpageview)<br>[addToCart](events.md#addtocart)<br>[placeOrder](events.md#completecheckout)<br>[orderplaced](events-backoffice.md#orderplaced)<br>[orderLineItemRefunded](events-backoffice.md#orderlineitemrefunded)<br>[order Canceled](events-backoffice.md#ordercancelled)<br>[order history](connect-data.md#send-historical-order-data)|
-|**Profile Data** - Refers to the attributes and characteristics of individuals. This can include information such as first name, last name, email address, age, gender, location, preferences, and any other relevant demographic or behavioral data that can help define and segment your audience.|[createAccount](events.md#createaccount)<br>[editAccount](events.md#editaccount)<br>[Profile Record](events-profilerecord.md)|
+|Event Type|Description|Events Captured by Adobe Commerce|
+|---|---|---|
+|**Time-Series Event Data**|Includes data related to user interactions and behaviors on your website or mobile app.|[productPageView](events.md#productpageview)<br>[addToCart](events.md#addtocart)<br>[placeOrder](events.md#completecheckout)<br>[orderplaced](events-backoffice.md#orderplaced)<br>[orderLineItemRefunded](events-backoffice.md#orderlineitemrefunded)<br>[order Canceled](events-backoffice.md#ordercancelled)<br>[order history](connect-data.md#send-historical-order-data)|
+|**Profile Data**|Refers to the attributes and characteristics of individuals. This can include information such as first name, last name, email address, age, gender, location, preferences, and any other relevant demographic or behavioral data that can help define and segment your audience.|[createAccount](events.md#createaccount)<br>[editAccount](events.md#editaccount)<br>[Profile Record](events-profilerecord.md)|
 
 Capturing and sending this data is handled for you when you [install](install.md) and [configure](connect-data.md) the [!DNL Data Connection] extension, so no additional steps are needed from you.
 
