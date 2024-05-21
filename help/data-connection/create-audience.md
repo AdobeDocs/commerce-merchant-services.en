@@ -30,6 +30,19 @@ This solution uses the following applications:
 - Adobe [!DNL Commerce]
 - Real-Time CDP
 
+### What have other customers achieved?
+
+Adobe [!DNL Commerce] customers have achieved significant business impacts from activating audiences built in Real-Time and deploying them to their [!DNL Commerce] instance.
+
+A global, multi-brand apparel retailer achieved:
+
+- 1 source of truth, 10s of millions of unified customer profiles
+- 40+ unique audiences of "high intent customers" to engage across channels
+
+A global beverage company achieved:
+
+- 98 million customer profiles from over 100 countries
+
 ## Prerequisites
 
 Before you begin, ensure:
@@ -42,21 +55,10 @@ Before you begin, ensure:
 
 When creating audiences in Real-Time CDP using data from your [!DNL Commerce] store, you typically use data from the following events:
 
-- **Time-Series Event Data** - This includes data related to user interactions and behaviors on your website or mobile app.
-
-    - [productPageView](events.md#productpageview)
-    - [addToCart](events.md#addtocart)
-    - [placeOrder](events.md#completecheckout)
-    - [orderplaced](events-backoffice.md#orderplaced)
-    - [orderLineItemRefunded](events-backoffice.md#orderlineitemrefunded)
-    - [order Canceled](events-backoffice.md#ordercancelled)
-    - [order history](connect-data.md#send-historical-order-data)
-
-- **Profile Data** - This refers to the attributes and characteristics of individuals. This can include information such as first name, last name, email address, age, gender, location, preferences, and any other relevant demographic or behavioral data that can help define and segment your audience.
-
-    - [createAccount](events.md#createaccount)
-    - [editAccount](events.md#editaccount)
-    - [Profile Record](events-profilerecord.md)
+|Event Type|Events Captured by Adobe Commerce|
+|---|---|
+|**Time-Series Event Data** - Includes data related to user interactions and behaviors on your website or mobile app.|[productPageView](events.md#productpageview)<br>[addToCart](events.md#addtocart)<br>[placeOrder](events.md#completecheckout)<br>[orderplaced](events-backoffice.md#orderplaced)<br>[orderLineItemRefunded](events-backoffice.md#orderlineitemrefunded)<br>[order Canceled](events-backoffice.md#ordercancelled)<br>[order history](connect-data.md#send-historical-order-data)|
+|**Profile Data** - Refers to the attributes and characteristics of individuals. This can include information such as first name, last name, email address, age, gender, location, preferences, and any other relevant demographic or behavioral data that can help define and segment your audience.|[createAccount](events.md#createaccount)<br>[editAccount](events.md#editaccount)<br>[Profile Record](events-profilerecord.md)|
 
 Capturing and sending this data is handled for you when you [install](install.md) and [configure](connect-data.md) the [!DNL Data Connection] extension, so no additional steps are needed from you.
 
@@ -145,9 +147,3 @@ In this section, you create a cart price rule based on your new audience.
 ## Wrap up
 
 In this exercise, you created an audience in Real-Time CDP and activated it to the [!DNL Commerce] destination. You then created a cart price rule based on that audience and enabled the rule on your sandbox storefront when you added the product to your cart.
-
-## Metrics
-
-- 1 source of truth, 10s of millions of unified customer profiles
-- 40+ unique audiences of "high intent customers" to engage across channels. Webinar: https://engage.adobe.com/Q1PersWBR-register1.html
-- COCA-COLA GLOBAL: 98 million customer profiles from over 100 countries
