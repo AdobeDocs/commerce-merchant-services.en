@@ -39,6 +39,16 @@ _June 13, 2023_
 
 ![New](../assets/new.svg) [!DNL Live Search] customers can now take advantage of the new [SaaS price indexer](../price-index/price-indexing.md).
 
+## [!DNL Live Search] 4.1.2 {#412}
+
+_May 16, 2024_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+### Updates
+
+![Fix](../assets/fix.svg) Fixed the [`productSearch`](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering-by-categories) GraphQL query to correctly filter based on the `categoryPath` and `categoryList` for categories.
+
 ## [!DNL Live Search] 4.1.1 {#411}
 
 _Mar 19, 2024_
