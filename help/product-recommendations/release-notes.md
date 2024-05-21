@@ -39,6 +39,16 @@ These notes describe updates that were published outside of a versioned release 
 
 ## Current major version
 
+### 6.0.2 of magento/product-recommendations
+
+ _May 9, 2024_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+![Fix](../assets/fix.svg) Fixed an issue where clicking the **[!DNL Add to Cart]** button on a simple product inside a Product Recommendations unit redirected the shopper to the home page rather than staying on the current page.
+
+### Previous versions
+
 ### 6.0.1 of magento/product-recommendations
 
  _March 19, 2024_
@@ -46,8 +56,6 @@ These notes describe updates that were published outside of a versioned release 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
 ![New](../assets/new.svg) Added PHP 8.3 support.
-
-### Previous versions
 
 ### 6.0.0 of magento/product-recommendations
 

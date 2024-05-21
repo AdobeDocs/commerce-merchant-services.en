@@ -5,15 +5,11 @@ exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
 ---
 # Onboarding and Installation
 
-The following videos walk you through the [!DNL Catalog Service] process.
+Install the Catalog Service to request and receive product data from a Commerce instance using the [Catalog Service GraphQL API](https://developer.adobe.com/commerce/services/graphql/catalog-service/).
 
-**Part 1**: Onboarding and installation
-
->[!VIDEO](https://video.tv.adobe.com/v/3415599)
-
-**Part 2**: Using the [!DNL Catalog Service]
-
->[!VIDEO](https://video.tv.adobe.com/v/3415600)
+>[!NOTE]
+>
+>If your Commerce instance uses Live Search or Product Recommendations, the Catalog Service is installed or updated automatically when you onboard or upgrade those services. For details, see the installation instructions for [Live Search](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/install) and [Product Recommendations](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/product-recommendations/getting-started/install-configure).
 
 >[!BEGINSHADEBOX]
 
@@ -41,9 +37,9 @@ The onboarding process for [!DNL Catalog Service] requires access to the command
 - Sandbox (`https://catalog-service-sandbox.adobe.io/graphql`)—used for testing and validation before going live
 - Production (`https://catalog-service.adobe.io/graphql`)—used for live traffic for Commerce merchants and websites
 
-All test instances of Commerce should use the Sandbox endpoint.
+All Commerce test instances use the Sandbox endpoint.
 
-Load testing should only be performed on the Sandbox endpoint. It is recommended that a [Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) be opened when load testing so the Services team can anticipate the additional server traffic.
+Perform all Load testing on the Sandbox endpoint. Before you begin load testing, submit a [Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) so that the Services team can anticipate the additional server traffic.
 
 ## Installation and configuration
 
@@ -55,47 +51,70 @@ To get started with [!DNL Catalog Service] for Adobe Commerce, the following ste
 
 ### Install the data export extensions
 
-The onboarding process for [!DNL Catalog Service] requires access to the command line of the server.
-
-The [!DNL Catalog Service] extension can be installed on both Adobe Commerce cloud infrastructure and on-premises instances.
+You must have access to the command line of the server to complete the [!DNL Catalog Service] onboarding process.
 
 The [!DNL Catalog Service] is installed with Composer keys, which are linked to the Commerce account [`mageid`](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-information/) provided during the signup process. Composer uses these keys during the initial installation of Adobe Commerce, or in situations in which the Composer keys were not previously saved to an external `auth.json` file.
 
 See [Get your authentication keys](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html) for more information about obtaining Composer keys.
 
-#### Adobe Commerce on cloud infrastructure
+The [!DNL Catalog Service] extension can be installed on both Adobe Commerce cloud infrastructure and on-premises instances.
 
-Use this method for installing the [!DNL Catalog Service] extension for a Commerce Cloud instance.
+>[!BEGINTABS]
 
-1. On your local workstation, change to your project directory.
+>[!TAB Cloud infrastructure]
+
+Use this method to install the [!DNL Catalog Service] extension for a Commerce Cloud instance.
+
+1. On your local workstation, change to the project directory for your Adobe Commerce on cloud infrastructure project.
+
+   >[!NOTE]
+   >
+   >For information about managing Commerce project environments locally, see [Managing branches with the CLI](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/cli-branches) in the _Adobe Commerce on Cloud Infrastructure User Guide_.
+
+1. Check out the environment branch to update using the Adobe Commerce Cloud CLI.
+
+   ```shell
+   magento-cloud environment:checkout <environment-id>
+   ```
+   
 1. Add the Catalog Service module.
 
    ```bash
-   composer require "magento/catalog-service" "^3.0.1"
+   composer require "magento/catalog-service" "^3.0.1" --no-update
    ```
 
 1. Update package dependencies.
 
    ```bash
-   composer update
+   composer update "magento/catalog-service"
    ```
 
 1. Commit and push code changes for the `composer.json` and `composer.lock` files.
 
-#### On-premises
+1. Add, commit, and push the code changes for the `composer.json` and `composer.lock` files to the cloud environment.
 
-Use this method for installing the [!DNL Catalog Service] extension for an on-premises instance.
+   ```shell
+   git add -A
+   git commit -m "Add catalog service module"
+   git push origin <branch-name>
+   ```
+   
+   Pushing the updates initiates the [Commerce cloud deployment process](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/process) to apply the changes. Check the deployment status from the [deploy log](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log).
+
+>[!TAB On-premises]
+
+Use this method to install the [!DNL Catalog Service] extension for an on-premises instance.
 
 1. Use Composer to add the Catalog Service module to your project:
 
    ```bash
-   composer require "magento/catalog-service" "^3.0.1"
+   composer require "magento/catalog-service" "^3.0.1"  --no-update
    ```
 
 1. Update dependencies and install the extension:
 
    ```bash
-   composer update
+   composer update  "magento/catalog-service"
    ```
 
 1. Upgrade Adobe Commerce:
@@ -110,27 +129,37 @@ Use this method for installing the [!DNL Catalog Service] extension for an on-pr
    bin/magento cache:clean
    ```
 
+   >[!TIP]
+   >
+   >In some cases, particularly when deploying to production, you might wish to avoid clearing compiled code because it can take some time. Ensure that you back up your system before making any changes.
+
+>[!ENDTABS]
+
 ### Configure the service and data export
 
-After you install [!DNL Catalog Service], you must configure the [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html#apikey) by specifying the API keys and selecting a SaaS Data Space.
+After you install the [!DNL Catalog Service], complete the following tasks to integrate the Catalog service with your Adobe Commerce instance. This integration enables data synchronization and communication between the Commerce instance, the Catalog Service, and other supporting services.
 
-After the SaaS configuration is complete, perform an initial data sync by using the [Data Management Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard). You can use this dashboard to monitor the synchronization status for product data transferred from the Commerce database to Commerce SaaS services.
+1. Set up the [Commerce Services Connector](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/integration-services/saas) by specifying the API keys and selecting a SaaS Data Space.
+
+   Commerce Services Connector setup is a one-time process required to use Adobe Commerce services like the Catalog Service, Live Search, and Product Recommendations. If you have already configured the connector for another service, skip this step.
+
+1. Perform an initial data sync from the [Data Management Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard).
+
+   The initial sync could take from a few minutes to hours depending on the catalog size. You can monitor the synchronization status from the Data Management dashboard. After the initial sync, the Catalog exports product data on an ongoing basis to keep the services up to date.
 
 To ensure that the catalog export is running correctly:
 
-- Confirm that cron jobs are running.
-- Verify that the indexers are running.
-- Ensure that the `Catalog Attributes Feed, Product Feed, Product Overrides Feed`, and `Product Variant Feed` indexers are set to "Update by Schedule".
-
-The initial sync could take from a few minutes to hours depending on the catalog size. After the initial sync, the Catalog exports product data from the Commerce server to Commerce services on an ongoing basis to keep the services up to date. To monitor the status of the sync, refer to the [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html).
+- [Confirm that cron jobs are running](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues).
+- Verify that the indexers are running from the [Admin](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) or by using the Commerce CLI command `bin/magento indexer:info`.
+- Verify that the `Catalog Attributes Feed, Product Feed, Product Overrides Feed`, and `Product Variant Feed` indexers are set to `Update by Schedule`.
 
 ### Access the service
 
-The [!DNL Catalog Service] API is accessible using POST commands over HTTPS.
+The [!DNL Catalog Service] GraphQL API is accessible from the ` https://catalog-service.adobe.io/graphql` endpoint using POST commands over HTTPS.
 
-To obtain the api-key, go to the Commerce Service Connector area in the admin and copy the public API key.
+In your GraphQL queries, you must specify multiple HTTP headers including the public API key you added to the Adobe Commerce Services Connector configuration in the Admin. For details, see the [Storefront Services GraphQL](https://developer.adobe.com/commerce/services/graphql/) documentation.
 
-Read the [GraphQL documentation](https://developer.adobe.com/commerce/services/graphql/) to understand how to query and send the headers that are needed for generating API requests. 
+### Firewall configuration
 
 To allow [!DNL Catalog Service] through a firewall, add `commerce.adobe.io` to the allowlist.
 
@@ -138,8 +167,8 @@ To allow [!DNL Catalog Service] through a firewall, add `commerce.adobe.io` to t
 
 The [API Mesh for Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) enables developers to integrate private or third-party APIs and other interfaces with Adobe products using Adobe IO.
 
-See the  [[!DNL Catalog Service] and API Mesh](mesh.md) topic for installation and configuration details.
+See the [[!DNL Catalog Service] and API Mesh](mesh.md) topic for installation and configuration details.
 
 ## Data Management Dashboard
 
-Users can refer to the [Data Management Dashboard](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) for more data about [!DNL Catalog Service] data syncing.
+For more information about [!DNL Catalog Service] data synchronization, see the [Data Management Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard).
