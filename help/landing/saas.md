@@ -7,7 +7,7 @@ role: Admin, User
 ---
 # [!DNL Commerce Services Connector]
 
-Some Adobe Commerce and Magento Open Source features are powered by [!DNL Commerce Services]  and deployed as SaaS (software as a service). To use these services, you must connect your [!DNL Commerce] instance using production and sandbox API keys, and specify the data space in the [configuration](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html). You only need to set this up once.
+Some Adobe Commerce and Magento Open Source features are powered by [!DNL Commerce Services] and deployed as SaaS (software as a service). To use these services, you must connect your [!DNL Commerce] instance using production and sandbox API keys, and specify the data space in the [configuration](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html). You only need to set this up once.
 
 ## Available services {#availableservices}
 
