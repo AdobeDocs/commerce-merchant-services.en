@@ -25,7 +25,8 @@ When it comes to site search, Adobe Commerce gives you options. Review the follo
    - 200 searchable attributes
 - [!DNL Live Search] indexes only products from the Adobe Commerce database.
 - CMS pages are not indexed.
-- SKU, name, and category attributes are searchable by default and cannot be excluded from the search.
+- SKU, name, and category attributes are searchable by default and cannot be excluded from the search:
+   - Ensure to un-assign the products from the categories if they are not intended to be in such categories.
 
 ## Facets
 
