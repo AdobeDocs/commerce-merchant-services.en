@@ -7,21 +7,70 @@ exl-id: 5e4e7c0a-c00b-4278-bd73-6b6f2fcbe770
 ---
 # Use Adobe Journey Optimizer to Send an Abandoned Cart Email
 
+Learn how to deliver a personalized re-engagement email or notification if a cart or browser session has been abandoned. You will use data generated from customers that have viewed a number of products and categories, engaged with a product, or spent time on a page.
+
+## What data should I consider using?
+
+To build an abandoned cart or browse email or notification, you need data from storefront and back office events.
+
+|Data Types|Storefront Data (Behavioral Events)|Back office Data (Server-Side Events)|
+|---|---|---|
+|**Definition**|Clicks or actions customers take on your site.|Information on the lifecycle and details of each order (past and current).|
+|**Events Captured by Adobe Commerce**|[pageView](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#pageview)<br>[productPageView](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events)<br>[addToCart](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#addtocart)<br>[openCart](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#opencart)<br>[startCheckout](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#startcheckout)<br>[completeCheckout](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#completecheckout)|[orderPlaced](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events-backoffice#orderplaced)<br>[Order history](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/fundamentals/connect-data#send-historical-order-data)|
+
+### What can I do with just Adobe Commerce? 
+
+Adobe [!DNL Commerce] enables you to set up rules-based email reminders, which can serve as cart or browse abandonment emails. Learn how here.  
+
+### What can I do with Adobe [!DNL Commerce] and Experience Cloud? 
+
+- **Adobe [!DNL Commerce] with Adobe Journey Optimizer** - Using Adobe [!DNL Commerce] with Adobe Journey Optimizer lets you use [!DNL Commerce] data as the trigger for an omni-channel abandonment journey. You can personalize that journey based on customer attributes, items they abandoned, other shopping behaviors, and past purchase behaviors.  
+
+- **Adobe Commerce, Adobe Journey Optimizer, and Adobe Real-Time CDP** - Adding Real-Time CDP would allow you to further refine abandonment campaigns based on unified customer profiles and centrally managed rules-based or AI-powered audiences. For example, you could create:  
+
+   - A "strong converters" audience that has a low abandonment rate
+   - A "high consideration" audience that has revisited certain categories multiple times
+   - A "high potential" audience that has high spend and loyalty but has recently abandoned 
+
+### What have other customers achieved?
+
+Adobe [!DNL Commerce] customers have achieved significant business impacts from implementing personalized abandonment campaigns using Adobe [!DNL Commerce], Adobe [!DNL Journey Optimizer], and Adobe [!DNL Real-Time CDP].
+
+A global, multi-brand apparel retailers achieved:
+
+- 1.9x conversion on click from new campaigns
+- 57% increase in revenue flowing from omni-channel abandonment journeys
+- 41% increase in conversion rate of re-engagement campaigns
+- 1000+ new shoppers engaged per week
+
+A global beverage company achieved:
+
+- 36% re-engagement email open rates
+- 21% lift in clickthrough rates
+- 8.5% lift in conversion rate
+- 89% of re-engaged abandoners convert
+
+## Let's get started
+
+For this particular use-case, we'll focus on creating an abandoned cart email using data from your [!DNL Commerce] instance and sending it to Adobe [!DNL Journey Optimizer].
+
+### What is Adobe Journey Optimizer?
+
 [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/get-started.html) helps you personalize the commerce experience for your shoppers. For example, you can use Journey Optimizer to create and deliver scheduled marketing campaigns, such as weekly promotions for a retail store, or generate an abandoned cart email if a customer added a product to a cart but then did not complete the checkout process.
 
-By following these steps, you can learn how to listen to a `checkout` event generated from your Commerce instance and respond to that event in Journey Optimizer to build an abandoned cart email.
+In this article, you learn how to listen to a `checkout` event generated from your Commerce instance and respond to that event in Journey Optimizer to build an abandoned cart email.
 
 >[!IMPORTANT]
 >
 >For demonstration purposes, make sure that you are using your Commerce sandbox environment. This ensures that the storefront and back office event data you send to Experience Platform does not dilute your production event data.
 
-## Prerequisites
+### Prerequisites
 
 Before you begin with these steps, ensure:
 
-- You are provisioned to use Adobe Journey Optimizer
-- You [configured](connect-data.md) the [!DNL Data Connection] extension
-- You [confirmed](connect-data.md#confirm-that-event-data-is-collected) that your Commerce event data is arriving at the Experience Platform edge
+- You are provisioned to use Adobe [!DNL Journey Optimizer]. If you are not sure, check with your systems integrator or development team that manages projects and environments.
+- You [installed](install.md) and [configured](connect-data.md) the [!DNL Data Connection] extension in [!DNL Commerce].
+- You [confirmed](connect-data.md#confirm-that-event-data-is-collected) that your [!DNL Commerce] event data is arriving at the Experience Platform edge.
 
 ## Step 1: Create a user in your Commerce sandbox environment
 
