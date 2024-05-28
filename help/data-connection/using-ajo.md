@@ -7,7 +7,7 @@ exl-id: 5e4e7c0a-c00b-4278-bd73-6b6f2fcbe770
 ---
 # Use Adobe Journey Optimizer to Send an Abandoned Cart Email
 
-Learn how to deliver a personalized re-engagement email or notification if a cart or browser session has been abandoned. You will use data generated from customers that have viewed a number of products and categories, engaged with a product, or spent time on a page.
+Learn how to deliver a personalized re-engagement email or notification if a cart or browser session has been abandoned. In this article, you use data generated from customers that have viewed a number of products and categories, engaged with a product, or spent time on a page.
 
 ## What data should I consider using?
 
