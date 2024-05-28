@@ -113,7 +113,7 @@ In your [!DNL Commerce] sandbox environment, view product pages, add items to a 
         } 
     ```
 
-    As you can see, the full event payload contains rich event data. The next section demonstrates how to  configure events in Journey Optimizer to listen for and respond to the `commerce.checkouts` event generated from your [!DNL Commerce] storefront.
+As you can see, the full event payload contains rich event data. The next section demonstrates how to  configure events in Journey Optimizer to listen for and respond to the `commerce.checkouts` event generated from your [!DNL Commerce] storefront.
 
 ## Step 3: Configure events in Journey Optimizer
 
