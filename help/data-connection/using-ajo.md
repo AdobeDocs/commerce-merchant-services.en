@@ -90,7 +90,7 @@ Create a user in your sandbox environment and confirm that that user account inf
 
 ## Step 2: View events in Journey Optimizer
 
-In your [!DNL Commerce] sandbox environment, view product pages, add items to a cart, and complete various other activities that a shopper would perform. These activities trigger events on your storefront. Then, confirm that these events are flowing to Journey Optimizer.
+In your [!DNL Commerce] sandbox environment, trigger events on your storefront by viewing product pages, adding items to a cart, and completing various other activities that a shopper would perform. Then, confirm that these events are flowing to Journey Optimizer.
 
 1. Launch [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/user-interface.html).
 1. Select **[!UICONTROL Profiles]**.
@@ -206,7 +206,7 @@ In this section, you test the event in real time.
 
     ![Enable test mode](assets/ajo-enable-test.png){width="700" zoomable="yes"}
 
-1. To test this journey in real time, open another browser tab and go to your sandbox [!DNL Commerce] website.
+1. To test this journey in real time, open another browser tab and go to the [!DNL Commerce] website in your sandbox environment.
 
     1. Add a product to your cart.
     1. Go to the checkout page.
