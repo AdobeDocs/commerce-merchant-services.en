@@ -113,7 +113,7 @@ In your [!DNL Commerce] sandbox environment, view product pages, add items to a 
         } 
     ```
 
-As you can see, the full event payload contains rich event data. The next section demonstrates how to  configure events in Journey Optimizer to listen for and respond to the `commerce.checkouts` event generated from your [!DNL Commerce] storefront.
+    As you can see, the full event payload contains rich event data. The next section demonstrates how to  configure events in Journey Optimizer to listen for and respond to the `commerce.checkouts` event generated from your [!DNL Commerce] storefront.
 
 ## Step 3: Configure events in Journey Optimizer
 
@@ -136,7 +136,7 @@ Configure two events in Journey Optimizer: one event listens for the `commerce.c
     1. Set the **[!UICONTROL Name]** to: `firstname_lastname_checkout`.
     1. Set **[!UICONTROL Type]** to **[!UICONTROL Unitary]**.
     1. Set **[!UICONTROL Event id typ]e** to **[!UICONTROL Rule based]**.
-    1. Set **[!UICONTROL Schema]** to your[!DNL Commerce][schema](update-xdm.md).
+    1. Set **[!UICONTROL Schema]** to your [!DNL Commerce] [schema](update-xdm.md).
     1. Select **[!UICONTROL Fields]** to open the **[!UICONTROL Fields]** page. Then, select the fields that are useful for this event. For example, select all fields under the **[!UICONTROL Product list items]**, **[!UICONTROL Commerce]**, **[!UICONTROL eventType]**, and **[!UICONTROL Web]**.
     1. Click **[!UICONTROL OK]** to save the selected fields.
     1. Click inside the **[!UICONTROL Event id condition]** field. Then, create a condition: `eventType` is equal to `commerce.checkouts` AND `personalEmail.address` is equal to the email address you used when you created the profile in the previous section.
