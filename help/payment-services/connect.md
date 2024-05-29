@@ -64,3 +64,10 @@ Now that you have obtained your credentials, you can configure your SaaS project
    >[!INFO]
    >
    > See our [[!DNL Adobe Commerce] Services Connector](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector.html?lang=en#configuration-faqs) video for additional information.
+
+## Endpoint
+
+[!DNL Payment Services] uses the [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html) to connect to Commerce Services and deploy as SaaS. This [!DNL Commerce Services Connector] communicates through the endpoint at:
+
+* `commerce-beta.adobe.io` for sandbox environments.
+* `commerce.adobe.io for` for live environments.

@@ -25,6 +25,7 @@ When it comes to site search, Adobe Commerce gives you options. Review the follo
    - 200 searchable attributes
 - [!DNL Live Search] indexes only products from the Adobe Commerce database.
 - CMS pages are not indexed.
+- SKU, name, and category attributes are searchable by default and cannot be excluded from the search. Make sure you unassign the products from the categories if they are not intended to be in those categories.
 
 ## Facets
 
@@ -37,7 +38,7 @@ When it comes to site search, Adobe Commerce gives you options. Review the follo
 
 - [!DNL Live Search] does not have access to the full taxonomy of the category tree, which makes some layered navigation search scenarios beyond its reach.
 - [!DNL Live Search] uses a unique [GraphQL endpoint](https://developer.adobe.com/commerce/services/graphql/live-search/) for queries to support features such as dynamic faceting and search-as-you-type. Although similar to the [GraphQL API](https://developer.adobe.com/commerce/webapi/graphql/), there are a few differences and some fields may not be fully compatible.
-- The maximum number of results that can be retured in a search query is 10,000.
+- The maximum number of results that can be returned in a search query is 10,000.
 
 ## Rules
 
