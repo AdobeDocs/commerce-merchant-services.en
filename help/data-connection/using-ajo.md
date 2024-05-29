@@ -102,18 +102,18 @@ In your [!DNL Commerce] sandbox environment, view product pages, add items to a 
 
     Look for the `commerce.checkouts` event and examine the event payload:
 
-    ```json
-    "personID": "84281643067178465783746543501073369488", 
-    "eventType": "commerce.checkouts", 
-    "_id": "4b41703f-e42e-485b-8d63-7001e3580856-0", 
-    "commerce": { 
-        "cart": {}, 
-        "checkouts": { 
-            "value": 1 
-        } 
-    ```
+        ```json
+        "personID": "84281643067178465783746543501073369488", 
+        "eventType": "commerce.checkouts", 
+        "_id": "4b41703f-e42e-485b-8d63-7001e3580856-0", 
+        "commerce": { 
+            "cart": {}, 
+            "checkouts": { 
+                "value": 1 
+            } 
+        ```
 
-    As you can see, the full event payload contains rich event data. In the next section, you will configure events in Journey Optimizer to listen for and respond to the `commerce.checkouts` event generated from your Commerce storefront.
+    As you can see, the full event payload contains rich event data. In the next section, you will configure events in Journey Optimizer to listen for and respond to the `commerce.checkouts` event generated from your [!DNL Commerce] storefront.
 
 ## Step 3: Configure events in Journey Optimizer
 
