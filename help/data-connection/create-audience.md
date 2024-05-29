@@ -6,31 +6,18 @@ feature: Personalization, Integration
 ---
 # Create Audiences in Real-Time CDP using [!DNL Commerce] Event Data
 
-You can use event data captured from your [!DNL Commerce] store to create audiences in Real-Time CDP. The data captured is based on browsing behavior, past purchases, profile attributes, propensities to convert or to churn, loyalty status, high and low customer value, and more.
+Use event data captured from your [!DNL Commerce] store to create audiences in Real-Time CDP. The data captured is based on browsing behavior, past purchases, profile attributes, propensities to convert or to churn, loyalty status, high and low customer value, and more.
 
-In this article, you learn:
+## What data should I consider using?
 
-- The specific [!DNL Commerce] events used
-- How to create an audience in Real-Time CDP based on the data the events collect
-- How to activate that audience to your [!DNL Commerce] store
-- How to use the audience in [!DNL Commerce] to inform a cart price rule
+Create audiences in Real-Time CDP using data from storefront, back office, and profile events.
 
->[!IMPORTANT]
->
->As you go through the steps outlined in this article, make sure that you are using your [!DNL Commerce] sandbox environment. This ensures that the storefront and back office event data you send to Experience Platform does not dilute your production event data.
+|Data Types|Storefront Data (Behavioral Events)|Back office Data (Server-Side Events)|Customer Profile and Segment Data|
+|---|---|---|---|
+|**Definition**|Clicks or actions customers take on your site.|Information on the lifecycle and details of each order (past and current).|Who your shoppers are and what segments do they qualify for.| 
+|**Events Captured by Adobe Commerce**|[productPageView](events.md#productpageview)<br>[addToCart](events.md#addtocart)|[placeOrder](events.md#completecheckout)<br>[orderplaced](events-backoffice.md#orderplaced)<br>[orderLineItemRefunded](events-backoffice.md#orderlineitemrefunded)<br>[order Canceled](events-backoffice.md#ordercancelled)<br>[order history](connect-data.md#send-historical-order-data)|[createAccount](events.md#createaccount)<br>[editAccount](events.md#editaccount)<br>[Profile Record](events-profilerecord.md)|
 
-## What is an audience?
-
-An audience is a set of customers that share similar behavior or characteristics. In this exercise, you will create an audience that qualifies people that are interested in a particular product from your store.
-
-## Solutions
-
-This solution uses the following applications:
-
-- Adobe [!DNL Commerce]
-- Real-Time CDP
-
-### What have other customers achieved?
+## What have other customers achieved?
 
 Adobe [!DNL Commerce] customers have achieved significant business impacts from activating audiences built in Real-Time and deploying them to their [!DNL Commerce] instance.
 
@@ -43,7 +30,19 @@ A global beverage company achieved:
 
 - 98 million customer profiles from over 100 countries
 
-## Prerequisites
+## Let's get started
+
+In this article, you learn:
+
+- How to create an audience in Real-Time CDP based on the [!DNL Commerce] data the events collect
+- How to activate that audience to your [!DNL Commerce] store
+- How to use the audience in [!DNL Commerce] to inform a cart price rule
+
+>[!IMPORTANT]
+>
+>As you go through the steps outlined in this article, make sure that you are using your [!DNL Commerce] sandbox environment. This ensures that the storefront and back office event data you send to Experience Platform does not dilute your production event data.
+
+### Prerequisites
 
 Before you begin, ensure:
 
@@ -51,24 +50,13 @@ Before you begin, ensure:
 - You [installed](install.md) and [configured](connect-data.md) the [!DNL Data Connection] extension in [!DNL Commerce].
 - You [confirmed](connect-data.md#confirm-that-event-data-is-collected) that your [!DNL Commerce] event data is arriving at the Experience Platform edge.
 
-## Data types
+### 1. Create an audience
 
-When creating audiences in Real-Time CDP using data from your [!DNL Commerce] store, you typically use data from the following events:
+An audience is a set of customers that share similar behavior or characteristics. In this exercise, you create an audience that qualifies people that are interested in a particular product from your store.
 
-|Data Types|Storefront Data (Behavioral Events)|Back office Data (Server-Side Events)|Customer Profile and Segment Data|
-|---|---|---|---|
-|**Definition**|Clicks or actions customers take on your site.|Information on the lifecycle and details of each order (past and current).|Who your shoppers are and what segments do they qualify for.| 
-|**Events Captured by Adobe Commerce**|[productPageView](events.md#productpageview)<br>[addToCart](events.md#addtocart)|[placeOrder](events.md#completecheckout)<br>[orderplaced](events-backoffice.md#orderplaced)<br>[orderLineItemRefunded](events-backoffice.md#orderlineitemrefunded)<br>[order Canceled](events-backoffice.md#ordercancelled)<br>[order history](connect-data.md#send-historical-order-data)|[createAccount](events.md#createaccount)<br>[editAccount](events.md#editaccount)<br>[Profile Record](events-profilerecord.md)|
+To simplify this exercise, you use event data from the [productPageView](events.md#productpageview) event. This event captures details about the product that was viewed, such as product name, SKU, price, and so on.
 
-Capturing and sending this data is handled for you when you [install](install.md) and [configure](connect-data.md) the [!DNL Data Connection] extension, so no additional steps are needed from you.
-
-In the next section, you will use the data from the [productPageView](events.md#productpageview) event to build an audience in Real-Time CDP.
-
-## 1. Create an audience
-
-To simplify this exercise, you will only use event data from the [productPageView](events.md#productpageview) event. This event captures details about the product that was viewed, such as product name, SKU, price, and so on.
-
-​You will use this event data to specify that the audience includes individuals who have at least one "Product Views" event where the SKU (product identifier) equals a specific product on your site and the event occurs within the last 1 day. ​
+Use this event data to specify that the audience includes individuals who have at least one "Product Views" event where the SKU (product identifier) equals a specific product on your site and the event occurs within the last 1 day. ​
 
 1. Open Experience Platform and select **[!UICONTROL Audiences]** from the left rail.
 
@@ -96,7 +84,7 @@ To simplify this exercise, you will only use event data from the [productPageVie
 
     ![Select SKU](assets/audience-addsku.png)
 
-1. Set the time internal to 1 day by clicking on **Any Time** and selecting *In last* with a value of *1*.
+1. Set the time interval to 1 day by clicking on **Any Time** and selecting *In last* with a value of *1*.
 
     When building an audience, you can specify a time interval to capture recent activity. Setting a time interval allows you to target users based on their recent interactions or behaviors within a specific timeframe.
 
@@ -106,7 +94,7 @@ To simplify this exercise, you will only use event data from the [productPageVie
 
     The details of your audience appears.
 
-## 2. Activate the audience to the [!DNL Commerce] destination
+### 2. Activate the audience to the [!DNL Commerce] destination
 
 To make the audience available in [!DNL Commerce], you need to activate it to the [!DNL Commerce] destination.
 
@@ -124,7 +112,7 @@ To make the audience available in [!DNL Commerce], you need to activate it to th
 
 ## 3. View the audience in the Audiences Dashboard
 
-In [!DNL Commerce], you can view all [active](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/activate-edge-personalization-destinations.html) audiences that are available to personalize within your [!DNL Commerce] instance using the **Real-Time CDP Audiences** dashboard.
+In [!DNL Commerce], you can view all [active](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activate-edge-personalization-destinations) audiences that are available to personalize within your [!DNL Commerce] instance using the **Real-Time CDP Audiences** dashboard.
 
 To access the **Real-Time CDP Audiences** dashboard, go to the _Admin_ sidebar, then go to **[!UICONTROL Customers]** > **[!UICONTROL Real-time CDP Audience]**.
 
@@ -132,17 +120,17 @@ In the dashboard, look for the audience you created. Notice it is not being used
 
 ![Real-Time CDP Audiences Dashboard](assets/real-time-cdp-dashboard.png)
 
-## 4. Create a cart price rule based on the audience
+### 4. Create a cart price rule based on the audience
 
 In this section, you create a cart price rule based on your new audience.
 
 1. Confirm your new audience appears in the **Real-Time CDP Audiences** dashboard.
 1. [Create a cart price rule](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create).
 1. [Set the condition](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create#use-real-time-cdp-audiences-to-set-a-condition) of the cart price rule using your new audience.
-1. [Set what action](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create#step-3-define-the-actions) you want to occur when the product is added to the cart.
+1. [Set what action](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create#step-3-define-the-actions) that you want to occur when the product is added to the cart.
 1. Continue to configure your cart price rule.
 1. Go to the customer view of your sandbox instance.
-1. Add the product you based the audience off of to the cart. Notice the cart price rule is enabled.
+1. Add the product you based the audience off of to the cart. Notice that the cart price rule is enabled.
 
 ## Wrap up
 
