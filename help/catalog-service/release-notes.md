@@ -16,6 +16,12 @@ Updates include:
 
 ## Current major version
 
+### V1.19 Release
+
+_May 23, 2024_
+
+![Fix](../assets/fix.svg) The `InStock` flag for option values now takes into account the scoped `enabled` status of the product variant.
+
 ### V1.18 Release
 
 _April 11, 2024_
