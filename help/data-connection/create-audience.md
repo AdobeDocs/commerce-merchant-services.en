@@ -23,10 +23,10 @@ Adobe [!DNL Commerce] customers have achieved significant business impacts from 
 
 A global, multi-brand apparel retailer achieved:
 
-- 1 source of truth, 10s of millions of unified customer profiles
+- One source of truth with 10s of millions of unified customer profiles
 - Created 40+ unique audiences of "high intent customers" to engage across channels
 
-A global beverage company achieved:
+A global beverage company collected:
 
 - 98 million customer profiles from over 100 countries
 
@@ -80,7 +80,9 @@ Use this event data to specify that the audience includes individuals who have a
 
 1. Search for the "Product Views" event type. Then, drag and drop it into the **Segment Builder** workspace.
 
-1. Return to the **Events** tab and search for "SKU". Drag and drop it to the **Segment Builder** workspace on top of the **Product View** event. The **Event Rules** section appears where you can specify the specific product you want to build your audience off of.
+1. Return to the **Events** tab and search for "SKU", which is data field under the `productListItems` field. Drag and drop it to the **Segment Builder** workspace on top of the **Product View** event.
+
+    The **Event Rules** section displays where you can specify the specific product you want to build your audience off of.
 
     ![Select SKU](assets/audience-addsku.png)
 
@@ -88,16 +90,15 @@ Use this event data to specify that the audience includes individuals who have a
 
     When building an audience, you can specify a time interval to capture recent activity. Setting a time interval allows you to target users based on their recent interactions or behaviors within a specific timeframe.
 
-1. In the right rail, set the audience properties by providing a name, description, and evaluation method for the audience.
+1. In the **Audience Properties** section on the right-hand side of the workspace, set the audience properties by providing a name, description, and evaluation method for the audience.
 
 1. To save the audience, click **[!UICONTROL Save and Close]**.
 
-    The details of your audience appears.
+    The details of your audience displays on the **Audience** dashboard.
 
 ### 2. Activate the audience to the [!DNL Commerce] destination
 
-You make an audience available in [!DNL Commerce by activating it for the [!DNL Commerce] destination.
-``
+You make an audience available in [!DNL Commerce] by activating it for the [!DNL Commerce] destination.
 
 >[!IMPORTANT]
 >
@@ -115,7 +116,7 @@ In [!DNL Commerce], you can view all [active](https://experienceleague.adobe.com
 
 To access the **Real-Time CDP Audiences** dashboard, go to the _Admin_ sidebar, then go to **[!UICONTROL Customers]** > **[!UICONTROL Real-time CDP Audience]**.
 
-In the dashboard, look for the audience you created. Notice it is not being used in a cart price rule or dynamic block.
+In the dashboard, look for the audience you created. Notice it is not being used in a cart price rule or dynamic block. In the next section, you link the audience to a cart price rule. 
 
 ![Real-Time CDP Audiences Dashboard](assets/real-time-cdp-dashboard.png)
 
@@ -133,4 +134,4 @@ This section shows you how to create a cart price rule based on your new audienc
 
 ## Wrap up
 
-In this exercise, you created an audience in Real-Time CDP and activated it to the [!DNL Commerce] destination. You then created a cart price rule based on that audience and enabled the rule on your sandbox storefront when you added the product to your cart.
+In this exercise, you created an audience in Real-Time CDP and activated it to the [!DNL Commerce] destination. Then, in the [!DNL Commerce] admin, you created a cart price rule based on that audience and enabled the rule in your sandbox environment.
