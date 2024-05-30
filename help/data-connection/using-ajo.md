@@ -18,20 +18,6 @@ Build an abandoned cart, browse email, or notification using data from storefron
 |**Definition**|Clicks or actions customers take on your site.|Information on the lifecycle and details of each order (past and current).|
 |**Events Captured by Adobe Commerce**|[pageView](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#pageview)<br>[productPageView](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events)<br>[addToCart](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#addtocart)<br>[openCart](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#opencart)<br>[startCheckout](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#startcheckout)<br>[completeCheckout](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#completecheckout)|[orderPlaced](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events-backoffice#orderplaced)<br>[Order history](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/fundamentals/connect-data#send-historical-order-data)|
 
-### What can I do with just Adobe Commerce? 
-
-Use Adobe [!DNL Commerce] to set up rules-based email reminders, which can serve as cart or browse abandonment emails. Learn how here.  
-
-### What can I do with Adobe [!DNL Commerce] and Experience Cloud? 
-
-- **Adobe [!DNL Commerce] with Adobe Journey Optimizer** - Using Adobe [!DNL Commerce] with Adobe Journey Optimizer lets you use [!DNL Commerce] data as the trigger for an omni-channel abandonment journey. You can personalize that journey based on customer attributes, items they abandoned, other shopping behaviors, and past purchase behaviors.  
-
-- **Adobe Commerce, Adobe Journey Optimizer, and Adobe Real-Time CDP** - Adding Real-Time CDP allows you to further refine abandonment campaigns based on unified customer profiles and centrally managed rules-based or AI-powered audiences. For example, you could create:  
-
-   - A "strong converters" audience that has a low abandonment rate
-   - A "high consideration" audience that has revisited certain categories multiple times
-   - A "high potential" audience that has high spend and loyalty but has recently abandoned 
-
 ### What have other customers achieved?
 
 Adobe [!DNL Commerce] customers have achieved significant business impacts by implementing personalized abandonment campaigns using Adobe [!DNL Commerce], Adobe [!DNL Journey Optimizer], and Adobe [!DNL Real-Time CDP].
