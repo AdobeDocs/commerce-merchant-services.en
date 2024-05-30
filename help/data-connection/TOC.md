@@ -25,3 +25,4 @@ recommendations: noDisplay
    - [Use Adobe Experience Platform Tags](using-tags.md)
 - Use Case {#use-cases}
    - [Use Adobe Journey Optimizer to Send an Abandoned Cart Email](using-ajo.md)
+   - [Create an Audience in Real-Time CDP using Commerce Event Data](create-audience.md)
