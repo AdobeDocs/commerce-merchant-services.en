@@ -50,7 +50,7 @@ When it comes to site search, Adobe Commerce gives you options. Review the follo
 ## Synonyms
 
 - [!DNL Live Search] can manage up to 200 [synonyms](synonyms.md) per store view.
-- Multiword synonyms are not supported.
+- Multiword synonyms are limited to 20 per store view.
 
 ## Category merchandising
 
