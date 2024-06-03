@@ -14,11 +14,11 @@ Using the Adobe Commerce catalog data model, you can map your unique business mo
 
 Adobe Commerce's catalog data model allows you to set up your catalog to match your business model and go-to-market strategy.
 
-- Integrate with backend systems and use Adobe's ingestion APIs to import product data including prices, attributes, and other data from your Product Information Management (PIM), Enterprise Resource Planning (ERP) or other system
+- Integrate with backend systems and use Adobe's ingestion APIs to import product data including prices, attributes, and other data from Product Information Management (PIM), Enterprise Resource Planning (ERP), and other systems.
 
 - Create unique versions of your base catalog to match how you run your business including distribution and sales channels, locale, customer type, and more.
 
-- Power lightning fast storefront experiences by querying your catalog data model using Adobe's headless APIs and delivering data via Adobe Edge delivery services or other headless storefront implementations.
+- Power lightning fast storefront experiences by querying your catalog data model using Adobe's headless APIs and delivering data via Adobe Edge delivery services or other headless storefront services.
 
 ## Architecture
 
