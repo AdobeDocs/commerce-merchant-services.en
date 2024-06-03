@@ -3,7 +3,7 @@ title: '[!DNL Catalog data model]'
 description: 'Learn how the [!DNL Catalog data model] for Adobe Commerce helps you setup your catalog to match your business model and go-to-market strategy'
 recommendations: noCatalog
 ---
-# [!DNL Catalog Service] for Adobe Commerce
+# [!DNL Catalog data model] for Adobe Commerce
 
 Using the Adobe Commerce catalog data model, you can map your unique business model to your ecommerce channels with ease including:
 
