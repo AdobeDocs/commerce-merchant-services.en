@@ -35,6 +35,7 @@ recommendations: noDisplay
   - [Order payment status report](order-payment-status.md)
   - [Payouts report](payouts.md)
   - [Available data](data.md)
+  - [Level 2 and level 3 processing](levels-card-payment-transactions.md)
 - Manage payments {#manage}
   - [Refunds](refunds.md)
   - [Voids](voids.md)
