@@ -60,6 +60,8 @@ Simple products represent the base selling unit that has a price. [!DNL Catalog 
 
 A complex product does not have a set price. Instead, Catalog Service returns the prices of linked simples. As an example, a merchant can initially assign the same prices to all the variants of a configurable product. If certain sizes or colors are unpopular, the merchant can reduce the prices of those variants. Thus, the price of the complex (configurable) product at first shows a price range, reflecting the price of both standard and unpopular variants. After the shopper has selected a value for all the available options, the storefront displays a single price.
 
+The Catalog Service ensures accurate price updates and calculations by supporting prices with large values (up to 16 digits) and high decimal precision (up to 4 decimal places).
+
 >[!NOTE]
 >
 > Commerce customers with [!DNL Catalog Service] can take advantage of faster price changes updates and synchronization time on their websites with the [SaaS price indexer](../price-index/price-indexing.md).

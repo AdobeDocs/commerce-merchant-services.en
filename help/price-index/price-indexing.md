@@ -8,7 +8,8 @@ exl-id: 5b92d6ea-cfd6-4976-a430-1a3aeaed51fd
 # SaaS Price Indexing
 
 SaaS price indexing speeds up the time that it takes for price changes to get reflected on [Commerce Services ](../landing/saas.md) after they have been submitted. This allows merchants with large, complex catalogs, or with multiple websites or customer groups, to continually process price changes.
-If you have a headless storefront or use the [catalog-adapter](./catalog-adapter.md) extension, customers can disable the Adobe Commerce core price indexer.
+
+If you have a headless storefront or use the [catalog-adapter](./catalog-adapter.md) extension, customers can use SaaS Price Indexing by disabling the Adobe Commerce core price indexer.
 
 Computational heavy processes such as indexation and price calculation have been moved from the Commerce core to Adobe's Cloud infrastructure. This allows merchants to quickly scale up resources to boost price indexation times, and reflect those changes faster.
 
@@ -23,7 +24,7 @@ With SaaS price indexing, the flow is:
 All merchants can benefit from these improvements, but those who will see the greatest gains are customers with: 
 
 * Constant price changes: Merchants that require repeated changes to their prices to meet strategic goals such as frequent promotions, seasonal discounts, or inventory markdowns.
-* Multiple websites and/or customer groups: Merchants with shared product catalogs across multiple websites (domains/brands) and/or customer groups. 
+* Multiple websites and/or customer groups: Merchants with shared product catalogs across multiple websites (domains/brands) and/or customer groups.
 * Large number of unique prices across websites or customer groups: merchants with extensive shared product catalogs that contain unique prices across websites or customer groups, such as B2B merchants with pre-negotiated prices, brands with different pricing strategies.
 
 SaaS price indexing is available for free for customers using Adobe Commerce services and supports price calculation for all built-in Adobe Commerce product types.
