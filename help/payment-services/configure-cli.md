@@ -83,3 +83,15 @@ bin/magento cron:run --group payment_services_data_export
 ```
 
 To learn more about reindexing and indexers, see the [Manage the indexers](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html) topic in the developer documentation.
+
+## Configure L2/L3 processing
+
+[!DNL Payment Services] can process level 2 and level 3 data from card payment transactions to provide additional information for merchants.
+
+>[!WARNING]
+>
+> Integration with Level 2 and Level 3 processing with PayPal is available for US merchants only. See [payment processing](https://developer.paypal.com/docs/checkout/advanced/processing/){target=_blank} in the PayPal Developer documentation for more information.
+
+If you want to use L2/L3 processing data for [!DNL Payment Services], or if you have any questions, please reach out to your [!DNL Payment Services] account manager.
+
+To learn about L2 and L3 processing used in [!DNL Payment Services], see [Level 2 and level 3 processing](levels-card-payment-transactions.md).

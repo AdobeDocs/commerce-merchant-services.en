@@ -20,7 +20,13 @@ Updates include:
 
 _May 23, 2024_
 
-![Fix](../assets/fix.svg) The `InStock` flag for option values now takes into account the scoped `enabled` status of the product variant.
+![Fix](../assets/fix.svg) <!--DATA-5033-->The `InStock` flag for option values now takes into account the scoped `enabled` status of the product variant.
+
+![Fix](../assets/fix.svg) <!--DATA-5888-->Add support for product prices that require large numbers (up to 16 digits) and greater decimal precision (up to 4 decimal places). To apply the price configuration updates to your existing catalog, resync catalog data from the [Data Management dashboard ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard), or by using the [Adobe Commerce command-line interface](../landing/catalog-sync.md#command-line-interface).
+
+## Previous versions
+
++++ Previous versions
 
 ### V1.18 Release
 
@@ -31,10 +37,6 @@ _April 11, 2024_
 ![New](../assets/new.svg) Added support for PHP 8.3.
 
 ![New](../assets/new.svg) The [`products`](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/) and [`refineProduct`](https://developer.adobe.com/commerce/services/graphql/catalog-service/refine-product/) queries now return customizable options data for both simple and complex products.<!--DATA-5538-->
-
-## Previous versions
-
-+++ Previous versions
 
 ### V1.17 Release
 
