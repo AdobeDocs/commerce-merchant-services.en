@@ -33,12 +33,14 @@ When it comes to site search, Adobe Commerce gives you options. Review the follo
 - Within a facet, a maximum of 30 buckets can be returned. If more than 30 buckets need to be returned, [create a support ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) so Adobe can analyze the performance impact and determine if it is feasible to increase this limit for your environment.
 - Dynamic facets can cause performance issues in large indexes and indexes with high ordinality. If you have created dynamic facets and notice any performance deterioration or page not loading with timeout errors, try changing your facets to pinned to determine if that resolves your performance issue.
 - Stock status (`quantity_and_stock_status`) is not supported as a facet. You can use `inStock: 'true'` to filter out of stock products. This is supported out of the box in the `LiveSearchAdapter` module when "Display out of stock products" is set to "True" in the [!DNL Commerce] Admin.
+- Date type attributes are not supported as a facet.
 
 ## Query
 
 - [!DNL Live Search] does not have access to the full taxonomy of the category tree, which makes some layered navigation search scenarios beyond its reach.
 - [!DNL Live Search] uses a unique [GraphQL endpoint](https://developer.adobe.com/commerce/services/graphql/live-search/) for queries to support features such as dynamic faceting and search-as-you-type. Although similar to the [GraphQL API](https://developer.adobe.com/commerce/webapi/graphql/), there are a few differences and some fields may not be fully compatible.
 - The maximum number of results that can be returned in a search query is 10,000.
+- It is not possible to filter results using a date type attribute.
 
 ## Rules
 
@@ -50,7 +52,7 @@ When it comes to site search, Adobe Commerce gives you options. Review the follo
 ## Synonyms
 
 - [!DNL Live Search] can manage up to 200 [synonyms](synonyms.md) per store view.
-- Multiword synonyms are not supported.
+- Multiword synonyms are limited to 20 per store view.
 
 ## Category merchandising
 
