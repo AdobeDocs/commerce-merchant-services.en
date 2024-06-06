@@ -70,7 +70,7 @@ _October 12, 2022_
 
 [!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.4 and newer
 
-_April 4, 2024_
+_June 5, 2024_
 
 ![Fix](../assets/new.svg) - Fixed an issue where the wrong date format was being used when initiating a [historical sync](connect-data.md#specify-order-history-date-range).
 ![Fix](../assets/new.svg) - Fixed an issue where the [startCheckout](events.md#startcheckout) event was not being sent on Adobe Commerce 2.4.7.
