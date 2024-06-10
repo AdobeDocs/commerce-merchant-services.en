@@ -33,7 +33,11 @@ The following sections discuss each of these elements in more detail.
 
 ## Credentials {#apikey}
 
-The production and sandbox API keys are generated from the [!DNL Commerce] account of the [license owner](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/start/onboarding) which is identified by a unique [!DNL Commerce] ID (MageID). To pass entitlement validation for services such as [!DNL Product Recommendations] or [!DNL Live Search], the license owner for the merchant's organization can generate the set of API keys as long as the account is in good standing. The keys can be shared on a "need to know" basis with the systems integrator or development team that manages projects and environments on behalf of the license holder. Additionally, solution integrators are also entitled to use [!DNL Commerce Services]. If you are a solution integrator, the signer of the [!DNL Commerce] partner contract should generate the API keys.
+The production and sandbox API keys are generated from the [!DNL Commerce] account of the [license owner](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/start/onboarding) which is identified by a unique [!DNL Commerce] ID (MageID). To pass entitlement validation for services such as [!DNL Product Recommendations] or [!DNL Live Search], the license owner for the merchant's organization can generate the set of API keys, as long as the account is in good standing. 
+
+The keys can be shared on a "need-to-know" basis with the systems integrator or development team that manages projects and environments on behalf of the license holder. Developers who have been granted [!DNL Shared Access] by the license owner cannot  generate the keys on their behalf even if the merchant's organization is present in the [!DNL Switch Accounts] dropdown on their account.
+
+Additionally, solution integrators are also entitled to use [!DNL Commerce Services]. If you are a solution integrator, the signer of the [!DNL Commerce] partner contract should generate the API keys.
 
 >[!NOTE]
 >
