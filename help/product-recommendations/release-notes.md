@@ -46,6 +46,7 @@ These notes describe updates that were published outside of a versioned release 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
 ![Fix](../assets/fix.svg) Fixed an issue where clicking the **[!DNL Add to Cart]** button on a simple product inside a Product Recommendations unit redirected the shopper to the home page rather than staying on the current page.
+![Bug](../assets/bug.svg) There is a validation error caused by the `referenceBlock` element in the `ProductRecommendations Layout` XML file.
 
 ### Previous versions
 
