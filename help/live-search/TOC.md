@@ -38,7 +38,6 @@ feature: Services, Search
    - [Indexing](indexing.md)
    - [GraphQL](graphql.md)
    - [Settings](settings.md)
-   - [Commerce Configuration Settings](configuration.md)
 - [Events](events.md)
 - GraphQL queries {#graphql}
    - [attributeMetadata](https://developer.adobe.com/commerce/services/graphql/live-search/attribute-metadata/)
