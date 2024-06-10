@@ -23,6 +23,7 @@ recommendations: noDisplay
 - Integration services {#integration-services}
    - [[!DNL Data Connection]](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/overview.html)
    - [Services Connector](/help/landing/saas.md)
-- Data services {#data-services}
-   - [SaaS Price Indexing](https://experienceleague.adobe.com/docs/commerce-merchant-services/price-index/price-indexing.html)
-   - [Catalog Sync](/help/landing/catalog-sync.md)
+- Data tools {#data-services}
+  - [SaaS Price Indexing](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/price-indexer/price-indexing)
+  - [Catalog Sync](/help/landing/catalog-sync.md)
+ 
