@@ -25,6 +25,30 @@ Initially the [scope](https://experienceleague.adobe.com/docs/commerce-admin/sta
 | [GraphQL](graphql.md) | Developers who are logged into the Admin of your store can compose and test queries with actual catalog data. To learn more, go to [GraphQL Overview](https://developer.adobe.com/commerce/webapi/graphql/) in the [!DNL Live Search] developer documentation. |
 | [Settings](settings.md) | Determine how price facet values are grouped by price range in the storefront and set the indexing language. |
 
+## Set attributes as searchable
+
+To produce highly-targeted results, review the set of [searchable](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) (`searchable=true`) product attributes. To ensure relevancy, make attributes searchable only if they contain content that has a clear and concise meaning. Avoid using attributes that contain less precise, lengthy text such as `description`, which although search-enabled by default, can reduce the precision of search results. For example, if a person searches for "shorts" and there are shirts with a description that includes the term "short sleeves", then the shirts will be included in the search results.
+
+To allow attributes to be searchable, complete the following steps:
+
+1. In the Admin, go to **Stores** > *Attribute* > **Product**.
+1. Select the attribute you want to be searchable, such as `color`.
+1. Select **Storefront Properties** and set **Use in Search** to `yes`.
+
+    ![Workspace](assets/attribute-searchable.png)
+
+[!DNL Live Search] also respects the [weight](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html#weighted-search) of a product attribute, as set within Adobe Commerce. Attributes with a higher weight will appear higher within the search results.
+
+The following attributes are always searchable:
+
+* `sku`
+* `name`
+* `categories`
+
+[Facets](facets.md) are product attributes that are defined in [!DNL Live Search] to be filterable. You can set any filterable attribute as a facet in [!DNL Live Search], but there are [limits](boundaries-limits.md) to how many facets you can search for at one time.
+
+[Synonyms](synonyms.md) are terms that you can define to help guide users to the correct product. Users looking for pants might type in "trousers" or "slacks". You can set synonyms so that these search terms will get users to the "pants" results.
+
 ## Commerce Configuration Settings
 
 The following section describes the supported and unsupported Commerce configuration settings for [!DNL Live Search].
@@ -55,27 +79,3 @@ Prices in the Widget Product Listing Page and Popover are converted to the Defau
 ### Search terms
 
 [!DNL Live Search] supports [search term redirects](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html) on implementations where Adobe Commerce handles the routing, such as on Luma and other php-based themes.
-
-## Set attributes as searchable
-
-Products are assigned [attributes](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes) that can be used for searching and filtering. Attributes are things such as "Color", "Size", "Material Type". With these attributes, users can look for "green tops". Each product may have many attributes defined in the [!DNL Commerce] Admin.
-
-Each of these attributes can be defined as "searchable" in the Admin. When set as "searchable", those attributes are available to be searched by [!DNL Live Search].
-
-To set an attribute as searchable, complete the following steps:
-
-1. In the Admin, go to **Stores** > *Attribute* > **Product**.
-1. Select the attribute you want to be searchable, such as `color`.
-1. Select **Storefront Properties** and set **Use in Search** to `yes`.
-
-    ![Workspace](assets/attribute-searchable.png)
-
-1. (Optional) You can assign a weight to product attributes that are enabled for catalog search to give them a higher value in search results. [Learn more](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search).
-
->[!IMPORTANT]
->
->SKU, name, and category attributes are searchable by default and cannot be excluded from the search. Make sure you unassign the products from the categories if they are not intended to be in those categories.
-
-[Facets](facets.md) are product attributes that are defined in [!DNL Live Search] to be filterable. You can set any filterable attribute as a facet in [!DNL Live Search], but there are limits to how many facets you can search for at one time.
-
-[Synonyms](synonyms.md) are terms that you can define to help guide users to the correct product. Users looking for pants might type in "trousers" or "slacks". You can set synonyms so that these search terms will get users to the "pants" results.

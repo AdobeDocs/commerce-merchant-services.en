@@ -13,19 +13,6 @@ By default, [!DNL Live Search] supports [search term redirects](https://experien
 
 ![[!DNL Live Search popover]](assets/storefront-search-as-you-type.png)
 
-## Searchable attributes
-
-To produce highly-targeted results, review the set of [searchable](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) (`searchable=true`) product attributes. To ensure relevancy, make attributes searchable only if they contain content that has a clear and concise meaning. Avoid using attributes that contain less precise, lengthy text such as `description`, which although search-enabled by default, can reduce the precision of search results. 
-For example, if a person searches for "shorts" and there are shirts with a description that includes the term "short sleeves", then the shirts will be included in the search results.
-
-[!DNL Live Search] also respects the [weight](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html#weighted-search) of a product attribute, as set within Adobe Commerce. Attributes with a higher weight will appear higher within the search results.
-
-The following attributes are always searchable:
-
-* `sku`
-* `name`
-* `categories`
-
 ## [!DNL Popover] page size
 
 The page size of the [!DNL popover] determines how many lines of autocompleted products can be returned. Previously, the page size was hardcoded as six lines. However, the `page_size` value is now a setting that can be configured from the *Admin*. During the Live Search installation, the `page_size` value changes to the current value of the [Catalog Search](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/catalog.html) - `Autocomplete Limit` setting.
