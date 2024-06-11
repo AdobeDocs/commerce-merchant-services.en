@@ -79,7 +79,11 @@ For [!DNL Product Recommendations], the SaaS data space contains catalog and beh
 
 ### Select or create a SaaS project {#createsaasenv}
 
-To select or create a SaaS project, request the [!DNL Commerce] API key from the [!DNL Commerce] license holder for your store.
+To select or create a SaaS project, request the [!DNL Commerce] API key from the [!DNL Commerce] license owner for your store:
+
+>[!NOTE]
+>
+> If you do not see the **[!UICONTROL Commerce Services Connector]** section in the [!DNL Commerce] configuration, you must install the [!DNL Commerce] modules for your desired [[!DNL Commerce] service](#availableservices).
 
 1. On the _Admin_ sidebar, go to **System** > Services > **Commerce Services Connector**.
 
@@ -96,10 +100,14 @@ To select or create a SaaS project, request the [!DNL Commerce] API key from the
 1. If no SaaS projects exist, click **Create Project**. Then in the **Project** field, enter a name for your SaaS project.
 
    When you create a SaaS project, [!DNL Commerce] generates one or more SaaS data spaces depending on your [!DNL Commerce] license:
-   - Adobe Commerce - One production data space; two testing data spaces
+   - Adobe Commerce - One production data space; two testing data spaces only. On Cloud Pro projects with mutliple Staging environments, you can request additional testing data spaces for each Staging environment by [submitting a Support request](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
    - Magento Open Source - One production data space; no testing data spaces
 
 1. Select the **Data Space** to use for the current configuration of your [!DNL Commerce] store.
+
+>[!NOTE]
+>
+>If you have separate instances to integrate with Commerce Services, [submit a Support ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) to request a new SaaS Project for each additional instance. After support has created the SaaS Project, configure the Commerce Services integration for the instance using the same API key and selecting the new SaaS project for the data space.
 
 >[!WARNING]
 >
