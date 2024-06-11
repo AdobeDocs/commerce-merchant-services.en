@@ -427,6 +427,10 @@ This module adds additional contexts to GraphQL queries:
 - `dataServicesMagentoExtensionContext`
 - `dataServicesStoreConfigurationContext`
 
+### B2B support
+
+[!DNL Live Search] supports [B2B functionality](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/guide-overview) with additional [limitations](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/boundaries-limits#b2b-and-category-permissions)
+
 ### PWA support
 
 [!DNL Live Search] works with PWA Studio but users might see slight differences compared to other Commerce implementations. Basic functionality such as search and product listing page work in Venia but some permutations of Graphql might not work correctly. There might also be performance differences.
