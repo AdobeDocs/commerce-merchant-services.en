@@ -27,7 +27,7 @@ Initially the [scope](https://experienceleague.adobe.com/docs/commerce-admin/sta
 
 ## Commerce Configuration Settings
 
-The following section describes the Commerce configuration settings that [!DNL Live Search] supports and the settings that [!DNL Live Search] does not support.
+The following section describes the supported and unsupported Commerce configuration settings for [!DNL Live Search].
 
 ### Supported configuration values
 
@@ -47,7 +47,7 @@ Prices in the Widget Product Listing Page and Popover are converted to the Defau
 
 |Commerce Configuration Setting|Description|Notes|
 |---|---|---|
-|Stores > Configuration > Catalog > Storefront > List Mode|Determines the format of the search results list.|Renders correctly but events are not sent for some page interactions|
+|Stores > Configuration > Catalog > Storefront > List Mode|Determines the format of the search results list.|Renders correctly, but events are not sent for some page interactions|
 |Stores > Configuration > Catalog > Catalog > Catalog Search > Maximum Query Length|The maximum number of characters allowed in a catalog search.|Not implemented; Search Services accepts up to 255 characters|
 |Configuration > Sales > Tax > Price Display Settings > Display Product Prices In Catalog|Determines if product prices published in the catalog include or exclude tax, or show two versions of the price; one with, and the other without tax||
 |Stores > Configuration > Catalog > Storefront > Product Listing Sort By|Determines the sort order of the search results list.|Does not apply to the [!DNL Live Search] [Product Listing Page Widget](plp-styling.md)|
@@ -62,7 +62,7 @@ Products are assigned [attributes](https://experienceleague.adobe.com/en/docs/co
 
 Each of these attributes can be defined as "searchable" in the Admin. When set as "searchable", those attributes are available to be searched by [!DNL Live Search].
 
-To set an attribute as searchable, complete the following steps.
+To set an attribute as searchable, complete the following steps:
 
 1. In the Admin, go to **Stores** > *Attribute* > **Product**.
 1. Select the attribute you want to be searchable, such as `color`.
@@ -76,6 +76,6 @@ To set an attribute as searchable, complete the following steps.
 >
 >SKU, name, and category attributes are searchable by default and cannot be excluded from the search. Make sure you unassign the products from the categories if they are not intended to be in those categories.
 
-[Facets](facets.md) are product attributes that are defined in [!DNL Live Search] to be filterable. Any filterable attribute may be set as a facet in [!DNL Live Search] but there are limits to how many facets can be searched at one time.
+[Facets](facets.md) are product attributes that are defined in [!DNL Live Search] to be filterable. You can set any filterable attribute as a facet in [!DNL Live Search], but there are limits to how many facets you can search for at one time.
 
 [Synonyms](synonyms.md) are terms that you can define to help guide users to the correct product. Users looking for pants might type in "trousers" or "slacks". You can set synonyms so that these search terms will get users to the "pants" results.
