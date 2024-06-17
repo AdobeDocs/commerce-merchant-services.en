@@ -163,7 +163,7 @@ For additional help, see [[!DNL Live Search] catalog not synchronized](https://e
 
 ## 5. Configure the data
 
-Getting your product data configured correctly ensures good search results for your customers. In this section, you enable the product listing widgets and assign categories and attributes.
+Getting your product data configured correctly ensures good search results for your customers. In this section, you enable the product listing widgets and assign categories.
 
 ### Enable Product Listing Widgets
 
@@ -191,16 +191,6 @@ When you change this configuration, the message `Page cache is invalidated` appe
 ### Assign categories
 
 Products returned in [!DNL Live Search] must be assigned to a [category](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/categories). In Luma, for example, products are put into categories such as "Men", "Women", and "Gear". Subcategories are also set up for "Tops", "Bottoms", and "Watches". This allows for better granularity when filtering.
-
-### Searchable and filterable fields
-
-Products are assigned [attributes](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes) that can be used for searching and filtering. Attributes are things such as "Color", "Size", "Material Type". With these attributes, users can look for "green tops". Each product may have many attributes defined in the [!DNL Commerce] Admin.
-
-Each of these attributes can be defined as ["searchable"](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) in the Admin. When set as "searchable", those attributes are available to be searched by [!DNL Live Search].
-
-[Facets](facets.md) are product attributes that are defined in [!DNL Live Search] to be filterable. Any filterable attribute may be set as a facet in [!DNL Live Search] but there are limits to how many facets can be searched at one time.
-
-[Synonyms](synonyms.md) are terms that you can define to help guide users to the correct product. Users looking for pants might type in "trousers" or "slacks". You can set synonyms so that these search terms will get users to the "pants" results.
 
 ## 6. Test the connection {#test-connection}
 
@@ -426,6 +416,10 @@ This module adds additional contexts to GraphQL queries:
 - `dataServicesStorefrontInstanceContext`
 - `dataServicesMagentoExtensionContext`
 - `dataServicesStoreConfigurationContext`
+
+### B2B support
+
+[!DNL Live Search] supports [B2B functionality](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/guide-overview) with additional [limitations](boundaries-limits.md#b2b-and-category-permissions).
 
 ### PWA support
 
