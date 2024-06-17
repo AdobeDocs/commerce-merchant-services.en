@@ -19,17 +19,25 @@ The [!DNL Live Search] PLP widget is enabled by default for new installations. I
 
 ## Widget features
 
-The PLP widget provides a range of features that are expected in a searchable product page. These include:
+The PLP widget provides the following out-of-the-box features:
 
-* Filtering by attributes
-* Support for color swatches. Note that the color attribute must be spelled `color` for the code to properly validate.
-* Add to Cart functionality
-* Multiple language support
-* Price sliders
+- Add to Cart buttons - Available only for simple products.
+- Multiple images per product - Image can change when a different color is chosen for a configurable product.
+- Support for color swatches - Note that the color attribute must be spelled `color` for the code to properly validate.
 
->[!TIP]
+### Customizing the widget
+
+In addition to the out-of-the-box features of the PLP widget, you can further customize the widget to include the following features:
+
+- Filtering by attributes
+- Multiple language support
+- Price sliders
+
+For information about how to customize the PLP widget to handle the above features, see the `storefront-product-listing-page` readme in the following [repo](https://github.com/adobe/storefront-product-listing-page/).
+
+>[!WARNING]
 >
->For information about how to customize the PLP widget to handle the above features, see the `storefront-product-listing-page` readme in the following [repo](https://github.com/adobe/storefront-product-listing-page/).
+>If you customize the PLP widget using the code available in the repo, you are responsible for the maintenance and any updates needed. Any new PLP widget features that Adobe releases might be incompatible with your customized implementation.
 
 ## Styling example
 

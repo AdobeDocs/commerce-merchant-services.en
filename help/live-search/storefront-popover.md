@@ -31,7 +31,7 @@ By default, the Catalog Search - Autocomplete Limit value is set to eight lines 
 
 ## Styling [!DNL Popover] example
 
-You can customize the look and feel of the [!DNL Popover] widget to match your site.
+You can customize the look and feel of the [!DNL Popover] widget to match your company's style and branding guidelines.
 
 The [!DNL storefront popover] always displays the product `name` and `price`, and the selection of fields is not configurable. However, [!DNL popover] elements can be styled using [CSS](https://developer.adobe.com/commerce/frontend-core/guide/css/) classes. For example, the following declarations change the background color of the [!DNL popover] container and footer.
 
