@@ -68,3 +68,10 @@ When it comes to site search, Adobe Commerce gives you options. Review the follo
    - The "Not Logged in" customer group must be given "Allow" browsing permissions.
    - To restrict products to the "Not Logged In" customer group, go to each category and set permission for each customer group.
 - Support for B2B with Live Search for PWA Studio is not supported at this time.
+
+## [!DNL Storefront popover]
+
+- The [[!DNL popover]](storefront-popover.md) is available only for stores that use the *Luma* theme, or a customized theme that is based on *Luma*. Breadcrumbs on the search results page will not have *Luma* styling.
+- The [!DNL popover] does not support the *Blank* theme.
+- The [!DNL popover] is not supported on the Quick Order form.
+- Wishlists and product comparisons are not supported.

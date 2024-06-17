@@ -17,24 +17,19 @@ The [!DNL Live Search] PLP widget is enabled by default for new installations. I
 >
 >When the [!DNL Live Search Product Listing Page Widget] is enabled, the sort order direction on a product listing page cannot be changed.
 
-## Disabling the PLP widget
-
-To disable the PLP widget:
-
-1. Go to **Stores** > Settings > **Configuration** > **[!DNL Live Search]** > **Storefront Features** and set **Enable Product Listing Widgets** to "No".
-1. Select **Save Config** to save the setting.
-
 ## Widget features
 
 The PLP widget provides a range of features that are expected in a searchable product page. These include:
 
 * Filtering by attributes
-* Support for color swatches
+* Support for color swatches. Note that the color attribute must be spelled `color` for the code to properly validate.
 * Add to Cart functionality
 * Multiple language support
 * Price sliders
 
-For information about how to customize the PLP widget to handle the above features, see the `storefront-product-listing-page` readme in the following [repo](https://github.com/adobe/storefront-product-listing-page/).
+>[!TIP]
+>
+>For information about how to customize the PLP widget to handle the above features, see the `storefront-product-listing-page` readme in the following [repo](https://github.com/adobe/storefront-product-listing-page/).
 
 ## Styling example
 
@@ -42,8 +37,7 @@ You can customize the look and feel of the PLP widget to match your site using [
 
 >[!NOTE]
 >
->Elements with custom classes within an Adobe Commerce theme are not inherited. These elements must be targeted by their specific class to match the custom classes; primary action classes will not work on a widget button.
->Generic targeted elements within the CSS are inherited; `button` applies to widget buttons.
+>Elements with custom classes within an Adobe Commerce theme are not inherited. These elements must be targeted by their specific class to match the custom classes; primary action classes will not work on a widget button. Generic targeted elements within the CSS are inherited; `button` applies to widget buttons.
 
 The highlighted divs contain the target class `ds-sdk-product-item__product-name`. 
 
@@ -177,3 +171,10 @@ Customize the product name by adding a rule to make them uppercase.
 * `.ds-sdk-loading__spinner-label`
 
 ![Loading indicator](assets/plp-css-loading.png)
+
+## Disabling the PLP widget
+
+To disable the PLP widget:
+
+1. Go to **Stores** > Settings > **Configuration** > **[!DNL Live Search]** > **Storefront Features** and set **Enable Product Listing Widgets** to "No".
+1. Select **Save Config** to save the setting.
