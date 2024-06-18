@@ -66,7 +66,7 @@ When it comes to site search, Adobe Commerce gives you options. Review the follo
    - Products must be assigned to the Root category.
    - The "Not Logged in" customer group must be given "Allow" browsing permissions.
    - To restrict products to the "Not Logged In" customer group, go to each category and set permission for each customer group.
-- Support for B2B with Live Search for PWA Studio is not supported at this time.
+- Out-of-the-box support for B2B with the PLP widget on PWA Studio is not supported at this time. However, you can [use the API](install.md#pwa-support) to implement this functionality.
 - Category facets in [!DNL Live Search] might display categories that are not displayable to a specific customer group.
 
 ## [!DNL Storefront popover]
