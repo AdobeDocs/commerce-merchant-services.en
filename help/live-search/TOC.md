@@ -13,7 +13,7 @@ feature: Services, Search
 - [Boundaries and Limits](boundaries-limits.md)
 - [Release Notes](release-notes.md)
 - Storefront {#live-search-storefront}
-   - [Types of Widgets](storefront-widgets.md)
+   - [Storefront Widgets](storefront-widgets.md)
    - [Product Listing Page](plp-styling.md)
    - [Storefront [!DNL Popover]](storefront-popover.md)
 - Admin {#live-search-admin}
