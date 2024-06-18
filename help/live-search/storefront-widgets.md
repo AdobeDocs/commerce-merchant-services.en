@@ -1,6 +1,7 @@
 ---
 title: Types of Widgets
 description: Learn about the storefront popover and the product listing page widgets.
+exl-id: 689f0faa-8b0e-4945-9889-503e1eed5960
 ---
 # Types of Widgets
 
