@@ -67,7 +67,7 @@ Set the Language setting to the primary language of the catalog. When changing t
 |Indonesian|id|
 |Irish|ga|
 |Italian|it|
-|Japanese|ja|
+|Japanese (Katakana)|ja|
 |Korean|ko|
 |Latvian|lv|
 |Lithuanian|lt|
