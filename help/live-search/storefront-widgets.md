@@ -1,9 +1,9 @@
 ---
-title: Types of Widgets
+title: Storefront Widgets
 description: Learn about the storefront popover and the product listing page widgets.
 exl-id: 689f0faa-8b0e-4945-9889-503e1eed5960
 ---
-# Types of Widgets
+# Storefront Widgets
 
 When you install [!DNL Live Search] you get two new widgets on your storefront:
 
