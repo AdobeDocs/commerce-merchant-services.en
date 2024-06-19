@@ -1,8 +1,9 @@
 ---
 title: Estimate data volume and transmission time
-description: "Learn to estimate the data volume and transmission time required for the [!DNL data export] tool to synchronize feed data between Adobe Commerce and connected services."
+description: Learn to estimate the data volume and transmission time required for the [!DNL data export] tool to synchronize feed data between Adobe Commerce and connected services.
 role: Admin, Developer
 recommendations: noCatalog
+exl-id: 51ea98fd-cf90-44bd-a639-992bfc7f3eca
 ---
 # Estimate data volume and transmission time for data sync
 
@@ -43,4 +44,3 @@ Use the values and formulas in the following table to calculate the data volume 
 | Category Permissions | Count of all Category Permissions + 4 fallback records (CP): 10000 | CP = 10000 | 10000 / Batch Size (100) = 100 requests | (100 requests * 0.5 seconds per request) / 60 = 0.8 minutes (50 seconds) |
 | Inventory Stock Status | Products (P): 10000, Stocks products assigned to (S): 5 (assuming every product is assigned to every stock) | P * S = 50000 | 50000 / Batch Size (100) = 500 requests | (500 requests * 0.5 seconds per request) / 60 = 4.2 minutes |
 | Sales Orders | All order records (including invoices, shipments, and so on) (SO): 10000 | SO = 10000 | 10000 / Batch Size (100) = 100 requests | (100 requests * 0.5 seconds per request) / 60 = 0.8 minutes (50 seconds) |
-

@@ -1,8 +1,9 @@
 ---
-title: "[!DNL SaaS Data Export Guide]"
-description: "Learn about using the [!DNL data export] extension for Adobe Commerce SaaS services that synchronizes data between Adobe Commerce and connected Commerce services."
+title: '[!DNL SaaS Data Export Guide]'
+description: Learn about using the [!DNL data export] extension for Adobe Commerce SaaS services that synchronizes data between Adobe Commerce and connected Commerce services.
 role: Admin, Developer
 recommendations: noCatalog
+exl-id: c5711fa6-09e2-42b0-a7af-4d7b866c871d
 ---
 # [!DNL SaaS Data Export] Guide
 
@@ -36,6 +37,3 @@ The data export extension supports several methods to initiate and manage the da
   - In cases where the sync needs to happen more quickly, SaaS data export provides customization options to improve export processing performance. See [Improve data export performance](customize-export-processing.md).
 
 - **Track and troubleshoot data export activities**—Use data-export and saas-export logs to review sync status and feed payloads during the synchronization and indexation process. See [Logging and troubleshooting](troubleshooting-logging.md).
-
-
-
