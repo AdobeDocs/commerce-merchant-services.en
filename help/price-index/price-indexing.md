@@ -7,44 +7,46 @@ exl-id: 5b92d6ea-cfd6-4976-a430-1a3aeaed51fd
 ---
 # SaaS Price Indexing
 
-SaaS price indexing speeds up the time that it takes for price changes to get reflected on [Commerce Services ](../landing/saas.md) after they have been submitted. This allows merchants with large, complex catalogs, or with multiple websites or customer groups, to continually process price changes.
+SaaS pricing indexing improves site performance by moving heavy computational processes such as indexation and price calculation from the Commerce application to Adobe's Cloud infrastructure. This approach allows merchants to scale up resources quickly to boost price indexation times to reflect price changes faster when sending data to the storefront and connected Commerce services.
 
-If you have a headless storefront or use the [catalog-adapter](./catalog-adapter.md) extension, customers can use SaaS Price Indexing by disabling the Adobe Commerce core price indexer.
-
-Computational heavy processes such as indexation and price calculation have been moved from the Commerce core to Adobe's Cloud infrastructure. This allows merchants to quickly scale up resources to boost price indexation times, and reflect those changes faster.
-
-The Core indexing data flow to SaaS services looks like:
+The following diagram shows the indexing data flow to SaaS services when Commerce is using the [price indexing](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) process included in the Commerce application:
 
 ![Default data flow](assets/old_way.png)
 
-With SaaS price indexing, the flow is:
+With SaaS price indexing enabled, the data flow changes. Price indexing is performed using [Commerce SaaS data export](../data-export/data-synchronization.md).
 
 ![SaaS price indexing data flow](assets/new_way.png)
 
-All merchants can benefit from these improvements, but those who will see the greatest gains are customers with: 
+All merchants can benefit from using SaaS price indexing, but merchants that have projects with the following characteristics can realize the greatest gains:
 
-* Constant price changes: Merchants that require repeated changes to their prices to meet strategic goals such as frequent promotions, seasonal discounts, or inventory markdowns.
-* Multiple websites and/or customer groups: Merchants with shared product catalogs across multiple websites (domains/brands) and/or customer groups.
-* Large number of unique prices across websites or customer groups: merchants with extensive shared product catalogs that contain unique prices across websites or customer groups, such as B2B merchants with pre-negotiated prices, brands with different pricing strategies.
+* **Constant price changes**–Merchants that require repeated changes to their prices to meet strategic goals such as frequent promotions, seasonal discounts, or inventory markdowns.
+* **Multiple websites and/or customer groups**–Merchants with shared product catalogs across multiple websites (domains/brands) and/or customer groups.
+* **Many unique prices across websites or customer groups**–Merchants with extensive shared product catalogs that contain unique prices across websites or customer groups. Examples include B2B merchants that have pre-negotiated prices or brands with different pricing strategies.
 
-SaaS price indexing is available for free for customers using Adobe Commerce services and supports price calculation for all built-in Adobe Commerce product types.
+## Use SaaS Price Indexing
 
-This guide describes how SaaS price indexing works and how to enable it.
+SaaS price indexing is enabled automatically when you install Adobe Commerce Services. It supports price calculation for all built-in Adobe Commerce product types.
 
-## Requirements
+### Requirements
 
 * Adobe Commerce 2.4.4+
-* At least one of the following Commerce Services with the latest version of Adobe Commerce extension:
 
-    * [Catalog Service](../catalog-service/overview.md) 
-    * [Live Search](../live-search/overview.md)
-    * [Product Recommendations](../product-recommendations/guide-overview.md)
+### Prerequisites
 
-Luma and Adobe Commerce Core GraphQL users can install the [`catalog-adapter`](catalog-adapter.md) extension that provides Luma and Core GraphQl compatibility and disables the Adobe Commerce Product Price indexer.
+* One of the following Commerce Services must be installed with the latest version of the Commerce extension:
 
-## Usage
+  * [Catalog Service](../catalog-service/overview.md)
+  * [Live Search](../live-search/overview.md)
+  * [Product Recommendations](../product-recommendations/guide-overview.md)
 
-After upgrading your Adobe Commerce instance with SaaS price indexing support, sync the new feeds: 
+
+>[!NOTE]
+>
+>If needed, the default price indexer in the Commerce application can be disabled using the [Catalog Adapter](catalog-adapter.md).
+
+## Synchronize prices with SaaS price indexing
+
+After enabling SaaS price indexing for Adobe Commerce, update prices on the Storefront and in Commerce Services by synchronizing the new feeds:
 
 ```bash
 bin/magento saas:resync --feed=scopesCustomerGroup
@@ -52,11 +54,11 @@ bin/magento saas:resync --feed=scopesWebsite
 bin/magento saas:resync --feed=prices
 ```
 
-## Prices for custom product types
+### Prices for custom product types
 
-Price calculations are supported for custom product types such as base price, special price, group price, catalog rule price, etc.
+Price calculations are supported for custom product types such as base price, special price, group price, catalog rule price, and so on.
 
-If you have a custom product type that uses a specific formula to calculate final price, you can extend the behavior of the product price feed.
+If you have a custom product type that uses a specific formula to calculate the final price, you can extend the behavior of the product price feed.
 
 1. Create a plugin on the `Magento\ProductPriceDataExporter\Model\Provider\ProductPrice` class.
 
@@ -88,3 +90,4 @@ If you have a custom product type that uses a specific formula to calculate fina
        }
    }
    ```
+
