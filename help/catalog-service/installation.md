@@ -147,6 +147,10 @@ After you install the [!DNL Catalog Service], complete the following tasks to in
 
    The initial sync can take from a few minutes to hours depending on the catalog size. You can monitor the synchronization status from the Data Management dashboard. After the initial sync, the Catalog exports product data on an ongoing basis to keep the services up to date.
 
+   >[!NOTE]
+   >
+   >You can also start the initial sync from the command line using the Commerce CLI. See [Initial sync](../data-export/data-export-cli-commands.md#initial-sync) in the _SaaS Data Export Guide_.
+
 To ensure that the catalog export is running correctly:
 
 - [Confirm that cron jobs are running](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues).
