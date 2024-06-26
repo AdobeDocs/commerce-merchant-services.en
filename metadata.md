@@ -1,5 +1,6 @@
 ---
 solution: Commerce
+solution-title: Commerce
 product: magento
 type: Documentation
 audience: end-user
