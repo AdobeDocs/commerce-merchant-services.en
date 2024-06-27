@@ -16,10 +16,24 @@ Adobe does not recommend using the `saas:resync` command regularly. Typical scen
 
 ## Initial Sync
 
+>[!NOTE]
+>If you are using Live Search or Product Recommendations, you do not need to run the initial sync. The process is initiated automatically after you connect the service to your Commerce instance.
+
 When you trigger a `saas:resync` from the command line, depending on your catalog size, it can take from a few minutes to a few hours for the data to update.
 
->[!NOTE]
->If you are using Live Search or Product Recommendations, you do not need to initiate the sync. The process is initiated automatically after you connect the service to your Commerce instance.
+For the initial sync, Adobe recommends running the commands in the following order:
+
+```bash
+bin/magento saas:resync --feed productattributes
+bin/magento saas:resync --feed products
+bin/magento saas:resync --feed scopesCustomerGroup
+bin/magento saas:resync --feed scopesWebsite
+bin/magento saas:resync --feed prices
+bin/magento saas:resync --feed productoverrides
+bin/magento saas:resync --feed variants
+bin/magento saas:resync --feed categories
+bin/magento saas:resync --feed categoryPermissions
+```
 
 ## Command examples
 

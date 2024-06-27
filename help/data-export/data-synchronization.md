@@ -7,7 +7,11 @@ exl-id: 530a6ed7-46ec-45fc-94e9-c850168e8aed
 ---
 # Synchronize data with SaaS Data Export
 
-When you install a Commerce Service that requires data export such as Catalog Service, Live Search, or Product Recommendations, a collection of Saas data export modules is installed to manage the data collection and synchronization process. The following diagram shows the SaaS data export flow.
+When you install a Commerce Service that requires data export such as Catalog Service, Live Search, or Product Recommendations, a collection of Saas data export modules is installed to manage the data collection and synchronization process.
+
+SaaS data export moves product data from an Adobe Commerce instance to the Commerce Services platform on an ongoing basis to keep the data up to date. For example, Product Recommendations requires current catalog information to accurately return recommendations with correct names, pricing, and availability. Use the [Data Management dashboard](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/data-services/catalog-sync) to observe and manage the synchronization process, or the command-line interface to trigger a sync and to reindex product data for consumption by Commerce Services.
+
+ The following diagram shows the SaaS data export flow.
 
 ![SaaS data export collection and synchronization flow for Adobe Commerce](assets/data-export-flow.png){width="900" zoomable="yes"}
 

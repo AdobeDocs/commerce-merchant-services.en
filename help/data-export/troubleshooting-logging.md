@@ -20,9 +20,7 @@ Logs are available in the `var/log` directory on the Commerce application server
 | SaaS export log | `saas-export.log` | Provides information about the data sent to Commerce SaaS services.|
 | SaaS export error log | `saas-export-errors.log` | Provides information about errors that occur when sending data to Commerce SaaS services.|
 
-If you do not see expected data for an Adobe Commerce Service, use the error logs for the data export extension to determine where the problem occurred.
-
-You can extend logs with additional data for tracking and troubleshooting. See [Extended logging](#extended-logging).
+If you do not see expected data for an Adobe Commerce Service, use the error logs for the data export extension to determine where the problem occurred. Also, you can extend logs with additional data for tracking and troubleshooting. See [Extended logging](#extended-logging).
 
 ### Log format
 
@@ -79,7 +77,7 @@ In this example, the `status` values provide information about the sync operatio
     - **`"synced" < "processed"`** means that the feed table didn't detect any changes in the item, compared to the previously synced version. Such items are ignored during the sync operation.
     - **`"synced" > "processed"`** the same entity id (for example, `Product ID`) can have multiple values in different scopes. For example, one product can be assigned to five websites. In this case, you might have "1 processed" item and "5 synced" items.
 
-+++ Example: Full resync log for the price feed
++++ **Example: Full resync log for the price feed**
 
 ```
 Price feed full resync:
@@ -119,7 +117,42 @@ This example adds a rule that allows you to query New Relic logs by specific fee
 
 **Example query string**—`feed.feed:"products" and feed.status:"Complete"`
 
+## Troubleshooting
+
+If data is missing or incorrect in Commerece Services, check the logs to see if a problem occurred during the sync from the Adobe Commerce instance to the Commerce Service platform. If needed, use extended logging to add additional information to the logs for troubleshooting.
+
+- commerce-data-export-errors.log - if an error happened during collecting phase
+- saas-export-errors.log - if an error happened during transmitting phase
+
+If you see errors not related to configuration or third-party extensions, submit a [support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket) with as much information as possible.
+
+### Resolve catalog sync issues {#resolvesync}
+
+When you trigger a data resync, it can take up to an hour for the data to update and be reflected in UI components such as live search and recommendation units. If you still see discrepancies between your catalog and data on the Commerce storefront, or if the catalog sync failed, refer to the following:
+
+#### Data discrepancy
+
+1. Display the detailed view of the product in question in the search results.
+1. Copy the JSON output and verify that the content matches what you have in the [!DNL Commerce] catalog.
+1. If the content does not match, make a minor change to the product in your catalog, such as adding a space or a period.
+1. Wait for a resync or [trigger a manual resync](#resync).
+
+#### Sync not running
+
+If the sync is not running on a schedule or nothing is synced, see this [KnowledgeBase](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html) article.
+
+#### Sync failed
+
+If the catalog sync has a status of **Failed**, submit a [support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
+
 ## Extended logging
+
+For additional log information, you can use environment variables to extend logs with additional data for tracking and troubleshooting.
+
+There are two log files in the `var/log/` directory:
+
+- commerce-data-export-errors.log - if an error happened during collecting phase
+- saas-export-errors.log - if an error happened during transmitting phase
 
 You can use environment variables to extend logs with additional data for tracking and troubleshooting.
 
