@@ -14,7 +14,7 @@ The workspace is where you configure, manage, and monitor the performance of [!D
 To ensure that each functional area on the workspace contains the correct data, you need to configure data collection based on the selected storefront implementation:
 
 1. Luma - Data collection is available out-of-the-box.
-2. Headless - Data collection must be configured manually, depending on storefront implementation.
+1. Headless - Data collection must be configured manually, depending on storefront implementation.
 
 If you are using a headless storefront, refer to the following documentation to get more information about the required events that you need to add:
 
@@ -54,9 +54,9 @@ To allow attributes to be searchable, complete the following steps:
 
 The following attributes are always searchable:
 
-* `sku`
-* `name`
-* `categories`
+- `sku`
+- `name`
+- `categories`
 
 [Facets](facets.md) are product attributes that are defined in [!DNL Live Search] to be filterable. You can set any filterable attribute as a facet in [!DNL Live Search], but there are [limits](boundaries-limits.md) to how many facets you can search for at one time.
 
