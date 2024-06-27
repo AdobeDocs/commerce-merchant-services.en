@@ -9,6 +9,21 @@ The workspace is where you configure, manage, and monitor the performance of [!D
 
 ![Workspace](assets/workspace.png)
 
+
+## Data collection
+
+Properly configured data collection is required for the Live Search dashboards to work correctly and may need to be constructed depending on the selected storefront implementation:
+
+1. Luma - Data collection is available out-of-the-box.
+2. Headless - Data collection must be configured manually, depending on storefront implementation.
+
+If you're using a Headless storefront, please refer to the following documentation pages to get more information about the required events to be added:
+
+- [Required events](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/events) for Live Search Dashboard.
+- [Storefront events collector](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/) that need to be added as pre-requisite.
+- [Examples](https://github.com/adobe/commerce-events/tree/main/examples) of the events structure.
+
+
 ## Set the scope
 
 Initially the [scope](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) of all [!DNL Live Search] settings is set to `Default Store View`. If your [!DNL Commerce] installation includes multiple store views, set **Scope** to the [store view](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) where your facet settings apply.
