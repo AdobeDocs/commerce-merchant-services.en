@@ -63,19 +63,7 @@ The following steps apply to both Adobe Commerce on cloud infrastructure and on-
    bin/magento module:enable Magento_AdobeCommerceEventsClient Magento_AdobeCommerceEventsGenerator Magento_AdobeIoEventsClient Magento_AdobeCommerceOutOfProcessExtensibility
    ```
 
-Finalize installation based on the deployment type: on-premises or Adobe Commerce on Cloud infrastructure.
-
-#### On-premises
-
-In on-premises environments, you must manually enable code generation and Adobe Commerce Events:
-
-   ```bash
-   bin/magento events:generate:module
-   bin/magento module:enable Magento_AdobeCommerceEvents
-   bin/magento setup:upgrade
-   bin/magento setup:di:compile
-   bin/magento config:set adobe_io_events/eventing/enabled 1
-   ```
+Finalize installation based on the deployment type: Adobe Commerce on Cloud infrastructure or on-premises.
 
 #### On Cloud infrastructure
 
@@ -90,6 +78,18 @@ In Adobe Commerce on Cloud infrastructure, enable the `ENABLE_EVENTING` global v
 Commit and push updated files to the Cloud environment. When deployment is finished, enable sending events with the following command:
 
    ```bash
+   bin/magento config:set adobe_io_events/eventing/enabled 1
+   ```
+
+#### On-premises
+
+In on-premises environments, you must manually enable code generation and Adobe Commerce Events:
+
+   ```bash
+   bin/magento events:generate:module
+   bin/magento module:enable Magento_AdobeCommerceEvents
+   bin/magento setup:upgrade
+   bin/magento setup:di:compile
    bin/magento config:set adobe_io_events/eventing/enabled 1
    ```
 
