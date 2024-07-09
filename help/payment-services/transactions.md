@@ -29,7 +29,7 @@ The Transactions report view is available in the Transactions view of Payment Se
 
 On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Transactions]_ > **[!UICONTROL View Report]** to see the detailed tabular Transactions report view.
 
-![Transactions report view](assets/transactions-report-detail.png){width="600" zoomable="yes"}
+![Transactions report view](assets/transactions-report-view.png){width="600" zoomable="yes"}
 
 You can configure this view, per the sections in this topic, to best present the data you desire to see.
 
@@ -38,6 +38,10 @@ See linked Commerce order and provider transaction IDs, transaction amounts, pay
 Not all payment methods provide the same granularity of information. For instance, credit card transactions provide response, AVS, and CCV codes, and the last four digits of the card in the Transactions report; PayPal payment buttons do not.
 
 You can [download transactions](#download-transactions) in a .csv file format for use in existing accounting or order management software.
+
+>[!WARNING]
+>
+> The transactions report will not include any capture made outside [!DNL Payment Services].
 
 ### Select data source
 
@@ -123,6 +127,7 @@ Transactions reports include the following information.
 | ------------ | -------------------- |
 | [!UICONTROL Order ID] | Commerce order ID (contains only values for successful transactions and is empty for rejected transactions)<br> <br>To see related [order info](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"}, click the ID. |
 | [!UICONTROL Provider Transaction ID] | Transaction ID provided by the payment provider; contains only values for successful transactions and contains a dash for rejected transactions. |
+| [!UICONTROL Customer ID] | Commerce customer ID of an order<br> <br>See [customer info](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/account-create){target="_blank"} topic for more information. |
 | [!UICONTROL Transaction Date] | Transaction date timestamp |
 | [!UICONTROL Payment Method] |  Payment method of transaction with detailed information about brand and card type. See [card types](https://developer.paypal.com/docs/api/orders/v2/#definition-card_type) for more information; available for Payment Services versions 1.6.0 and newer |
 | [!UICONTROL Card Last Four Digits] | Last four digits of the credit or debit cards used for the transaction  |
