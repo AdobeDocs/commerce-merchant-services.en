@@ -24,6 +24,22 @@ _May 23, 2024_
 
 ![Fix](../assets/fix.svg) <!--DATA-5888-->Add support for product prices that require large numbers (up to 16 digits) and greater decimal precision (up to 4 decimal places). To apply the price configuration updates to your existing catalog, resync catalog data from the [Data Management dashboard ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard), or by using the [Adobe Commerce command-line interface](../landing/catalog-sync.md#command-line-interface).
 
+#### Known limitations
+
+The following features are not yet supported:
+
+* The maximum size for dynamic attributes payload is 9 MB.
+* The Group product price can be calculated with simple product prices.
+* In an image array, only the first image contains roles.
+
+Solve the following limitations by using API Mesh and the Core GraphQL API:
+
+* Minimum Advertised Price
+* Tier pricing
+* Bundle products with fixed prices
+
+For details and examples, see [Catalog Service and API Mesh](mesh.md)
+
 ## Previous versions
 
 +++ Previous versions
@@ -53,14 +69,13 @@ _February 13, 2024_
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
 ![New](../assets/new.svg) Product videos are now supported by the Catalog Service API.
-![Fix](../assets/fix.svg) Bundle products with fixed prices are now supported.
 ![Fix](../assets/fix.svg) Out-of-stock options are now shown in the PDP widget.
 
 #### Known limitations
 
 These features are not yet supported:
 
-* Maximum size for dynamic attributes payload is 9 MB.
+* The maximum size for dynamic attributes payload is 9 MB.
 * Group product price. This value can be calculated with simple product prices.
 * In an image array, only the first image contains roles.
 
@@ -128,7 +143,7 @@ _March 6, 2023_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
-![New](../assets/new.svg) Added [`categories`](https://developer.adobe.com/commerce/services/graphql/schema/catalog-service/categories/) GraphQL functionality.
+![New](../assets/new.svg) Added [`categories`](https://developer.adobe.com/commerce/services/graphql/catalog-service/categories/) GraphQL functionality.
 ![Fix](../assets/fix.svg) Improved performance and API scalability.
 
 ### V1.4 Release

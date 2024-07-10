@@ -63,7 +63,7 @@ Install the latest version of the Catalog Services extension (`magento/catalog-s
 
 >[!TAB Cloud infrastructure]
 
-Use this method to install the [!DNL Catalog Adapter] for a Commerce Cloud instance.
+Use this method to install the [!DNL Catalog Service] for a Commerce Cloud instance.
 
 1. On your local workstation, change to the project directory for your Adobe Commerce on cloud infrastructure project.
 
@@ -77,16 +77,16 @@ Use this method to install the [!DNL Catalog Adapter] for a Commerce Cloud insta
    magento-cloud environment:checkout <environment-id>
    ```
 
-1. Add the Catalog Adapter module.
+1. Add the Catalog Service module.
 
    ```bash
-   composer require magento/catalog-adapter --no-update
+   composer require magento/catalog-service --no-update
    ```
 
 1. Update package dependencies.
 
    ```bash
-   composer update "magento/catalog-adapter"
+   composer update "magento/catalog-service"
    ```
 
 1. Commit and push code changes for the `composer.json` and `composer.lock` files.
@@ -103,18 +103,18 @@ Use this method to install the [!DNL Catalog Adapter] for a Commerce Cloud insta
 
 >[!TAB On-premises]
 
-Use this method to install the [!DNL Catalog Adapter] for an on-premises instance.
+Use this method to install the [!DNL Catalog Service] for an on-premises instance.
 
 1. Use Composer to add the Catalog Service module to your project:
 
    ```bash
-   composer require magento/catalog-adapter --no-update
+   composer require magento/catalog-service --no-update
    ```
 
 1. Update dependencies and install the extension:
 
    ```bash
-   composer update  "magento/catalog-adapter"
+   composer update  "magento/catalog-service"
    ```
 
 1. Upgrade Adobe Commerce:
