@@ -85,7 +85,9 @@ From the Transactions report view, you can filter the statuses results you want 
 1. Toggle the _[!UICONTROL Payment Method]_ options to see report results for only selected payment methods.
 1. Enter a _Min Order Amount_ or _Max Order Amount_ to see report results within that order amount range.
 1. Enter an _[!UICONTROL Order ID]_ to search for a specific transaction.
-1. Enter the _[!UICONTROL Card Last Four Digits]_ to search for a specific credit or debit card.
+1. Introduce the _[!UICONTROL Card Last Four Digits]_ to search for a specific credit or debit card.
+1. Enter a _[!UICONTROL Customer ID]_ to show all transactions of a specific customer.
+1. Enter the _[!UICONTROL Customer Email]_ to filter transactions for that email.
 1. Click **[!UICONTROL Hide filters]** to hide the filter.
 
 ### Show and hide columns
