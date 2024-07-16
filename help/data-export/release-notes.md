@@ -22,6 +22,17 @@ Updates include:
 
 ## Current major version
 
+## 103.3.7 Release
+
+![Fix](../assets/fix.svg) Removed unnecessary dependencies from the InventoryDataExporter module.
+![Fix](../assets/fix.svg) Changed required versions for inventory modules included in the CatalogInventoryDataExporter module to support Adobe Commerce version 2.4.4.
+
+## 103.3.6 Release
+
+![Fix](../assets/fix.svg) Fixed deadlocks that occurred during feed reindexing in multi-thread mode. Queries are now separated into Insert and Update operations.
+![Fix](../assets/fix.svg) Optimized the Prices query for large catalogs with many websites.
+![New](../assets/new.svg) Added retry logic to re-run failed transactions when deadlocks occurs.
+
 ## 103.3.5 Release
 
 ![Fix](../assets/fix.svg) Set dependency for latest compatible data export version for the SaaS common module.
