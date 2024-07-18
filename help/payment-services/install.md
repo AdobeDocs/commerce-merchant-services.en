@@ -113,7 +113,7 @@ You may see errors when attempting to install the [!DNL Payment Services] extens
 
 If you see the following error denoting that you have the incorrect Composer keys:
 
-```terminal
+```bash
 Could not find a matching version of package magento/payment-services. Check the package spelling, your version constraint and that the package is available in a stability which matches your minimum-stability (stable).
 ```
 
@@ -139,7 +139,7 @@ To see which Composer keys are configured:
 
 If you see the following error denoting you do not have enough memory for PHP:
 
-```terminal
+```bash
 Fatal error: Allowed memory size of 2146435072 bytes exhausted (tried to allocate 4096 bytes) in phar:///usr/local/bin/composer/src/Composer/DependencyResolver/RuleWatchGraph.php on line 52
 ```
 
