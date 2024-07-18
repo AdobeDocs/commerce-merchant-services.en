@@ -21,7 +21,7 @@ Review the [requirements](solution-requirements.md) for the Store Fulfillment so
 
 If you have installed a pre-release or beta version of the Store Fulfillment for Adobe Commerce extension, use the following command to remove it before installing the current version.
 
-```terminal
+```bash
 rm -rf composer.lock vendor/walmart &&
 composer require walmart/magento-bopis-metapackage:1.0.0
 ```
@@ -101,7 +101,7 @@ Complete the installation by using the `bin/magento setup:upgrade` to update the
 
 1. Register the extension with Adobe Commerce by using the `setup:upgrade` Magento CLI command.
 
-   ```terminal
+   ```bash
    bin/magento setup:upgrade
    ```
 
@@ -185,7 +185,7 @@ From the Adobe Commerce server, verify that the modules for the Store Fulfillmen
 
 If needed, use the [setup:static-content:deploy](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html){target="_blank"} CLI command to deploy static view files to your production environment.
 
-```terminal
+```bash
 php bin/magento setup:static-content:deploy -f
 ```
 
