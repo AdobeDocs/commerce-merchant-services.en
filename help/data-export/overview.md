@@ -7,16 +7,16 @@ exl-id: c5711fa6-09e2-42b0-a7af-4d7b866c871d
 ---
 # [!DNL SaaS Data Export] Guide
 
-[!DNL SaaS data export] improves frontend performance by optimizing data synchronization between an Adobe Commerce instance and connected Commerce Services. When you add Live Search, Product Recommendations, or the Catalog Service to an Adobe Commerce installation, the [!DNL Data export] extension is installed automatically.
+[!DNL SaaS data export] synchronizes data between an Adobe Commerce instance and connected Commerce Services. When you add Live Search, Product Recommendations, or the Catalog Service to an Adobe Commerce installation, the [!DNL Data export] extension is installed automatically.
 
-The SaaS data export collects and exports various types of data, referred to as _feeds_, which aggregate specific types of information. Depending on which Commerce services are installed, the SaaS data export feeds include:
+SaaS data export collects and exports various types of data, referred to as _feeds_, which aggregate specific types of information. Depending on which Commerce services are installed, the SaaS data export feeds include:
 
 - **Catalog entity feeds** aggregate product data. Data includes products, product attributes, product prices, product variations, categories, category permissions, and product permissions.
 - The **Scopes feed** aggregates data for customer groups, websites, stores, and store views.
 - The **Sales Order feed** aggregates orders data including their related entities such as invoices, shipments, credit memos, and so on.
 - The **Multi-Source Inventory feed** aggregates data about inventory stock status items.
 
-The data export extension supports several methods to initiate and manage the data synchronization process.
+SaaS data export is delivered as a PHP extension. It supports several methods to initiate and manage the data synchronization process.
 
 - **Manual synchronization from the Admin or the command line**
 

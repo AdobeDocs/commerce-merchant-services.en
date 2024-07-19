@@ -45,11 +45,19 @@ composer require magento/module-visual-product-recommendations
 
 ## Configure [!DNL Product Recommendations] {#configure}
 
-After you install the `magento/product-recommendations` module, you must configure the [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) by specifying API Keys and selecting a SaaS Data Space.
+1. After you install the `magento/product-recommendations` module, configure the [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) by specifying API Keys and selecting a SaaS Data Space.
 
-To ensure that catalog export is running correctly, confirm that the [cron](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) jobs and the [indexers](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) are running and the `Product Feed` indexer is set to `Update by Schedule`.
+   Configuring this connection enables the data synchronization and communication between the Commerce instance, the Catalog Service, and other supporting services. Data synchronization is handled by the [SaaS Data Export extension](../data-export/overview.md).
 
-When you successfully link to Commerce Services through API keys and specify the SaaS Data Space, the catalog sync begins. You can then [verify](verify.md) that behavioral data is being sent to your storefront.
+1. To ensure that catalog export can run correctly, confirm that the [cron](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) jobs and the [indexers](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) are running and the `Product Feed` indexer is set to `Update by Schedule`.
+
+After you successfully link the Commerce application to Commerce Services and specify the SaaS Data Space, the catalog sync begins. You can then [verify](verify.md) that behavioral data is being sent to your storefront.
+
+## Monitor and troubleshoot data synchronization
+
+From the Commerce Admin, you can monitor the synchronization process using the [Data Management Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard). Use the [Commerce CLI](../data-export/data-export-cli-commands.md#troubleshooting) and logs to manage and troubleshoot the process.
+
+ You can then [verify](verify.md) that behavioral data is being sent to your storefront.
 
 ## Update your [!DNL Product Recommendations] installation {#update}
 

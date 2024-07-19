@@ -42,3 +42,4 @@ recommendations: noDisplay
 - Security {#security-compliance}
   - [Security and compliance](security.md)
   - [Signifyd fraud protection](fraud-protection.md)
+- [Return to Commerce Services Home](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)

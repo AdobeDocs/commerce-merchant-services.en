@@ -137,7 +137,7 @@ Use this method to install the [!DNL Catalog Service] for an on-premises instanc
 
 ### Configure the service and data export
 
-After you install the [!DNL Catalog Service], complete the following tasks to integrate the Catalog service with your Adobe Commerce instance. This integration enables data synchronization and communication between the Commerce instance, the Catalog Service, and other supporting services.
+After you install the [!DNL Catalog Service], complete the following tasks to integrate the Catalog service with your Adobe Commerce instance. This integration enables the data synchronization and communication between the Commerce instance, the Catalog Service, and other supporting services. Data synchronization is handled by the [SaaS Data Export extension](../data-export/overview.md).
 
 1. Set up the [Commerce Services Connector](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/integration-services/saas) by specifying the API keys and selecting a SaaS Data Space.
 
@@ -156,6 +156,10 @@ To ensure that the catalog export is running correctly:
 - [Confirm that cron jobs are running](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues).
 - Verify that the indexers are running from the [Admin](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) or by using the Commerce CLI command `bin/magento indexer:info`.
 - Verify that the `Catalog Attributes Feed, Product Feed, Product Overrides Feed`, and `Product Variant Feed` indexers are set to `Update by Schedule`.
+
+### Monitor and troubleshoot data synchronization
+
+From the Commerce Admin, you can monitor the synchronization process using the [Data Management Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard). Use the [Commerce CLI](../data-export/data-export-cli-commands.md#troubleshooting) and logs to manage and troubleshoot the process.
 
 ### Access the service
 

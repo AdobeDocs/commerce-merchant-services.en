@@ -19,4 +19,4 @@ feature: Services, Catalog Service
     - [productSearch query](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/)
     - [refineProduct query](https://developer.adobe.com/commerce/services/graphql/catalog-service/refine-product/)
 - [Release Notes](release-notes.md)
-- [Return to Commerce Services](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/home)
+- [Return to Commerce Services Home](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/home)

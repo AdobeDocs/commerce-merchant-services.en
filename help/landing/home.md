@@ -13,7 +13,7 @@ Adobe provides a collection of Commerce, integration, and data services to help 
 
 >[!BEGINSHADEBOX "Release information"]
 
-See [what's new in our documentation](whats-new.md) or [release notes](release-notes-all.md) for each Commerce service.
+See the [release notes](release-notes-all.md) for each Commerce service.
 
 >[!ENDSHADEBOX]
 
@@ -92,9 +92,23 @@ See [what's new in our documentation](whats-new.md) or [release notes](release-n
    </tr>
 </table>
 
-## Data services
+## Data tools
 
 <table>
+<tr>
+   <td valign="top" width="200">
+      <img alt="[!DNL SaaS Data Export]" src="assets/live-search.png" width="170px"/></td>
+   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/saas-data-export/overview"><strong>[!DNL SaaS Data Export]</strong></a>
+    <div>The SaaS Data Export exports catalog, order, and inventory data from the Commerce server to connected Commerce services to keep the services up to date. Indexers compile data when triggered by events such as a change to a product price or inventory level. You can observe and manage this process via the *Data Management dashboard* or the command-line interface.</div>
+  </td>
+</tr>
+<tr>
+   <td valign="top" width="200">
+      <img alt="[!DNL SaaS Price Indexer]" src="assets/live-search.png" width="170px"/></td>
+   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/price-index/price-indexing.md"><strong>[!DNL SaaS Price Indexer]</strong></a>
+    <div>SaaS pricing indexing optimizes site performance by offloading resource-intensive tasks—like indexation and price calculation—from the Commerce application to Adobe's Cloud infrastructure. This approach enables merchants to rapidly scale resources to accelerate price indexation times and deliver price updates to the storefront and connected Commerce services more quickly.</div>
+  </td>
+</tr>
 <tr>
    <td valign="top" width="200">
       <img alt="[!DNL Catalog Sync]" src="assets/live-search.png" width="170px"/></td>

@@ -6,7 +6,7 @@ recommendations: noCatalog
 ---
 # [!DNL Catalog Service] for Adobe Commerce
 
-The [!DNL Catalog Service] for Adobe Commerce extension provides rich view-model (read-only) catalog data to quickly and fully render product-related storefront experiences, including:
+The [!DNL Catalog Service] for Adobe Commerce extension provides rich view-model (read-only) catalog data to render product-related storefront experiences quickly and fully, including:
 
 * Product detail pages
 * Product list and category pages
@@ -15,11 +15,13 @@ The [!DNL Catalog Service] for Adobe Commerce extension provides rich view-model
 * Product comparison pages
 * Any other pages that render product data, such as cart, order, and wish list pages
 
-The [!DNL Catalog Service] uses [GraphQL](https://graphql.org/) to request and receive product data. GraphQL is a query language that a frontend client uses to communicate with the application programming interface (API) defined on a backend such as Adobe Commerce. GraphQL is a popular method of communication because it is lightweight and allows a system integrator to specify the contents and order of each response.
+The [!DNL Catalog Service] uses [GraphQL](https://graphql.org/) to request and receive catalog data including products, product attributes, inventory, and prices. GraphQL is a query language that a frontend client uses to communicate with the application programming interface (API) defined on a backend such as Adobe Commerce. GraphQL is a popular method of communication because it is lightweight and allows a system integrator to specify the contents and order of each response.
 
 Adobe Commerce has two GraphQL systems. The core GraphQL system provides a wide range of queries (read operations) and mutations (write operations) that allow a shopper to interact with many types of pages, including product, customer account, cart, checkout, and more. However, the queries that return product information are not optimized for speed. The services GraphQL system can only perform queries on products and related information. These queries are more performant than similar core queries.
 
-[!DNL Catalog Service] customers can use the new [SaaS price indexer](../price-index/price-indexing.md), which provides faster price change updates and synchronization time.
+The data available to the Catalog Service is delivered by the SaaS Data Export extension. This extension synchronizes data between the Commerce application and connected Commerce Services to ensure that queries to the services GraphQL API endpoints return the most current catalog data. For information about managing and troubleshooting SaaS data export operations, see the [SaaS Data Export Guide](../data-export/overview.md).
+
+[!DNL Catalog Service] customers can use the [SaaS price indexer](../price-index/price-indexing.md), which provides faster price updates and synchronization time.
 
 ## Architecture
 
@@ -48,7 +50,7 @@ Since Catalog Service operates as a service, integrators do not need to be conce
 
 The schema reduces the diversity of product types to two use cases:
 
-* Simple products are those that are defined with a single price and quantity. Catalog Service maps the simple, virtual, downloadable, and gift card product types to `simpleProductViews`.
+* Simple products are products that are defined with a single price and quantity. Catalog Service maps the simple, virtual, downloadable, and gift card product types to `simpleProductViews`.
 
 * Complex products are comprised of multiple simple products. The component simple products can have different prices. A complex product can also be defined so that the shopper can specify the quantity of component simple products. Catalog Service maps the configurable, bundle, and grouped product types to `complexProductViews`.
 
