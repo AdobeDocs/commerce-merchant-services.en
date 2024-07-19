@@ -66,6 +66,14 @@ _October 12, 2022_
 
 +++
 
+## 3.1.3
+
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.4 and newer
+
+_July 22, 2024_
+
+![Fix](../assets/new.svg) - Updated the Experience Platform Connector metapackage to remove unused data exporters and indexers.
+
 ## 3.1.2
 
 [!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.4 and newer
