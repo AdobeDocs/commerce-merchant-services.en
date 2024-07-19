@@ -17,4 +17,4 @@ feature: Services
 - [Review logs and troubleshoot](troubleshooting-logging.md)
 - [Manage the SaaS data export extension](manage-extension.md)
 - [Release Notes](release-notes.md)
-- [Return to Commerce Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)
+- [Return to Commerce Services Home](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)

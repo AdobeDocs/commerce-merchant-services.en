@@ -22,6 +22,12 @@ Updates include:
 
 ## Current major version
 
+## 103.3.8 Release
+
+![Fix](../assets/fix.svg) Disabled configuration options are no longer exported as active options.<!--MDEE-812-->
+![Fix](../assets/fix.svg) Options and values are now updated on a configurable product when changes are made to a child product. <!--MDEE-835-->
+![New](../assets/new.svg) Added the ability to include additional system attribute data in the product attributes feed.
+
 ## 103.3.7 Release
 
 ![Fix](../assets/fix.svg) Removed unnecessary dependencies from the InventoryDataExporter module.

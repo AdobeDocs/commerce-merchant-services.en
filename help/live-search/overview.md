@@ -51,7 +51,7 @@ To list all products returned by the "search as you type" query, click _View all
 
 Filtered search uses multiple dimensions of attribute values, or [facets](facets.md), as search criteria. The selection of filters is defined by the merchant and changes according to the products returned, with the most commonly used facets pinned to the top of the list.
 
-Use facets as URL parameters:`http://yourwebsite.com?color=red`, and Live Search filters results based on these attribute values. 
+Use facets as URL parameters:`http://yourwebsite.com?color=red`, and Live Search filters results based on these attribute values.
 
 ### Synonyms
 
