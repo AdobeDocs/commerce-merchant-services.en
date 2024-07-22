@@ -22,6 +22,10 @@ Updates include:
 
 ## Current major version
 
+## 103.3.9 Release
+
+![Fix](../assets/fix.svg) When an entity is deleted, the `deleted` flag is now propagated for the scoping service feeds for website (`scopesWebsite`) and customer group (`scopesCustomerGroup`).<!--MDEE-839-->
+
 ## 103.3.8 Release
 
 ![Fix](../assets/fix.svg) Disabled configuration options are no longer exported as active options.<!--MDEE-812-->
