@@ -66,20 +66,28 @@ _October 12, 2022_
 
 +++
 
-## 3.1.2
+## 3.1.3
+
+_July 22, 2024_
 
 [!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.4 and newer
 
+![Fix](../assets/new.svg) - Updated the Experience Platform Connector metapackage to remove unused data exporters and indexers.
+
+## 3.1.2
+
 _June 5, 2024_
+
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.4 and newer
 
 ![Fix](../assets/new.svg) - Fixed an issue where the wrong date format was being used when initiating a [historical sync](connect-data.md#specify-order-history-date-range).
 ![Fix](../assets/new.svg) - Fixed an issue where the [startCheckout](events.md#startcheckout) event was not being sent on Adobe Commerce 2.4.7.
 
 ## 3.1.1
 
-[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.4 and newer
-
 _April 4, 2024_
+
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.4 and newer
 
 ![New](../assets/new.svg) - Added support for PHP 8.3 for all [!DNL Data Connection] extensions.
 ![New](../assets/new.svg) - Added article about how to [integrate](mobile-sdk-epc.md) the Adobe Experience Platform Mobile SDK with Commerce.
@@ -126,7 +134,6 @@ _June 27, 2023_
 ![Fix](../assets/fix.svg) - Updated Content Security Policy configurations.
 ![Fix](../assets/fix.svg) - Fixed support for back office events on Commerce 2.4.7 version.
 ![New](../assets/new.svg) - Added a notification message about cache invalidation when you save changes to the [!DNL Data Connection] extension form.
-
 
 ## 3.0.0-beta1 (internal only)
 

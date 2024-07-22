@@ -52,6 +52,10 @@ Adobe Commerce recommends you use the following category filter configuration wh
 
 Product filters specify which specific products are eligible, or not eligible, to be displayed in recommendations. You cannot select products that are disabled or not visible individually because those products can never appear in recommendations.
 
+>[!NOTE]
+>
+>Child products of a configurable product are not displayed in a recommendation unit because those child products have the visibility of _Not Visible Individually_.
+
 ### Type
 
 A filter based on product type either includes or excludes all products of a specific type. Supported types include _Simple_, _Configurable_, _Virtual_, _Downloadable_, or _Gift card_. _Bundle_ and _Grouped_ products are not yet supported.
