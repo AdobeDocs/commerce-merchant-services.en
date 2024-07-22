@@ -40,7 +40,7 @@ The [!DNL Data Connection] extension is available from the [Adobe Marketplace](h
 
 ### Install Adobe I/O Events
 
-After you install the `experience-platform-connector` extension, you must install the Adobe I/O Events for Adobe Commerce and configure the `magento/customers-connector` extension.
+After you install the `experience-platform-connector` extension, you must install the Adobe I/O Events for Adobe Commerce.
 
 The following steps apply to both Adobe Commerce on cloud infrastructure and on-premises installations.
 
