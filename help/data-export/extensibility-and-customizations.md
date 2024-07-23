@@ -3,6 +3,7 @@ title: Extend and customize SaaS data export feed data
 description: Learn how to extend and customize the [!DNL SaaS Data Export] feed data.
 role: Admin, Developer
 recommendations: noCatalog
+exl-id: 69300242-d317-4ec8-86d0-0cd5d0c9c958
 ---
 # Extend and customize SaaS data export feed data
 
