@@ -33,7 +33,7 @@ In addition to the out-of-the-box features of the PLP widget, you can further cu
 - Multiple language support
 - Price sliders
 
-For information about how to customize the PLP widget to handle the above features, see the `storefront-product-listing-page` readme in the following [repo](https://github.com/adobe/storefront-product-listing-page/).
+For information about how to customize the PLP widget to handle the above features, see the `storefront-product-listing-page` readme in the following [repository](https://github.com/adobe/storefront-product-listing-page/). The readme in this repository provides an example for how to customize the PLP widget and deploy those customizations to your site.
 
 >[!WARNING]
 >

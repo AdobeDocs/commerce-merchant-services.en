@@ -63,7 +63,7 @@ Install the latest version of the Catalog Services extension (`magento/catalog-s
 
 >[!TAB Cloud infrastructure]
 
-Use this method to install the [!DNL Catalog Adapter] for a Commerce Cloud instance.
+Use this method to install the [!DNL Catalog Service] for a Commerce Cloud instance.
 
 1. On your local workstation, change to the project directory for your Adobe Commerce on cloud infrastructure project.
 
@@ -77,16 +77,16 @@ Use this method to install the [!DNL Catalog Adapter] for a Commerce Cloud insta
    magento-cloud environment:checkout <environment-id>
    ```
 
-1. Add the Catalog Adapter module.
+1. Add the Catalog Service module.
 
    ```bash
-   composer require magento/catalog-adapter --no-update
+   composer require magento/catalog-service --no-update
    ```
 
 1. Update package dependencies.
 
    ```bash
-   composer update "magento/catalog-adapter"
+   composer update "magento/catalog-service"
    ```
 
 1. Commit and push code changes for the `composer.json` and `composer.lock` files.
@@ -103,18 +103,18 @@ Use this method to install the [!DNL Catalog Adapter] for a Commerce Cloud insta
 
 >[!TAB On-premises]
 
-Use this method to install the [!DNL Catalog Adapter] for an on-premises instance.
+Use this method to install the [!DNL Catalog Service] for an on-premises instance.
 
 1. Use Composer to add the Catalog Service module to your project:
 
    ```bash
-   composer require magento/catalog-adapter --no-update
+   composer require magento/catalog-service --no-update
    ```
 
 1. Update dependencies and install the extension:
 
    ```bash
-   composer update  "magento/catalog-adapter"
+   composer update  "magento/catalog-service"
    ```
 
 1. Upgrade Adobe Commerce:
@@ -137,7 +137,7 @@ Use this method to install the [!DNL Catalog Adapter] for an on-premises instanc
 
 ### Configure the service and data export
 
-After you install the [!DNL Catalog Service], complete the following tasks to integrate the Catalog service with your Adobe Commerce instance. This integration enables data synchronization and communication between the Commerce instance, the Catalog Service, and other supporting services.
+After you install the [!DNL Catalog Service], complete the following tasks to integrate the Catalog service with your Adobe Commerce instance. This integration enables the data synchronization and communication between the Commerce instance, the Catalog Service, and other supporting services. Data synchronization is handled by the [SaaS Data Export extension](../data-export/overview.md).
 
 1. Set up the [Commerce Services Connector](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/integration-services/saas) by specifying the API keys and selecting a SaaS Data Space.
 
@@ -156,6 +156,10 @@ To ensure that the catalog export is running correctly:
 - [Confirm that cron jobs are running](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues).
 - Verify that the indexers are running from the [Admin](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) or by using the Commerce CLI command `bin/magento indexer:info`.
 - Verify that the `Catalog Attributes Feed, Product Feed, Product Overrides Feed`, and `Product Variant Feed` indexers are set to `Update by Schedule`.
+
+### Monitor and troubleshoot data synchronization
+
+From the Commerce Admin, you can monitor the synchronization process using the [Data Management Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard). Use the [Commerce CLI](../data-export/data-export-cli-commands.md#troubleshooting) and logs to manage and troubleshoot the process.
 
 ### Access the service
 

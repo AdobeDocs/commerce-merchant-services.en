@@ -22,6 +22,14 @@ These release notes describe feature changes and fixes that occurred and were re
 
 +++Hosted service updates
 
+_July 15, 2024_
+
+![New issue](../assets/new.svg)<!-- Issue PAY-5571 --> Now, merchants can filter transactions by the Commerce customer email in the [transactions report](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/transactions.html). Enter the customer email to filter transactions for that specific email.
+
+_July 9, 2024_
+
+![New issue](../assets/new.svg)<!-- Issue PAY-5488 --> Now, merchants can view the Commerce customer ID as a column in the [transactions report](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/transactions.html) to help identify transactions that a particular customer has placed. In addition, merchants can filter the transactions report by this Commerce customer ID for associated orders.
+
 _March 5, 2024_
 
 ![Fixed issue](../assets/fix.svg)<!-- Issue PAY-5252 --> Now, merchants can copy data from the Dashboard grids by selecting the content of a single cell.
@@ -165,6 +173,7 @@ _December 7, 2023_
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
 ![New](../assets/new.svg)<!-- PAY-5047 --> The credit/debit card brand or payment method type is now available from the following locations:
+
 - the customer order page on the storefront
 - the order confirmation email sent to the shopper
 - from the [order details view](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-processing.html#view-an-order) in the Commerce Admin.

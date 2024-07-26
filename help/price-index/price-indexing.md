@@ -7,7 +7,7 @@ exl-id: 5b92d6ea-cfd6-4976-a430-1a3aeaed51fd
 ---
 # SaaS Price Indexing
 
-SaaS pricing indexing improves site performance by moving heavy computational processes such as indexation and price calculation from the Commerce application to Adobe's Cloud infrastructure. This approach allows merchants to scale up resources quickly to boost price indexation times to reflect price changes faster when sending data to the storefront and connected Commerce services.
+SaaS pricing indexing optimizes site performance by offloading resource-intensive tasks—like indexation and price calculation—from the Commerce application to Adobe's Cloud infrastructure. This approach enables merchants to rapidly scale resources to accelerate price indexation times and deliver price updates to the storefront and connected Commerce services more quickly.
 
 The following diagram shows the indexing data flow to SaaS services when Commerce is using the [price indexing](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) process included in the Commerce application:
 

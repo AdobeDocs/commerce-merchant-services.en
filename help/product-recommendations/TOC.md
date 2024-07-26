@@ -32,3 +32,4 @@ feature: Services, Recommendations
    - [Collect Data](events.md)
    - [Customize](customize.md)
    - [Handle Cookie Restrictions](setting-cookie.md)
+- [Return to Commerce Services Home](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)

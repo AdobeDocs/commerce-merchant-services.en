@@ -141,6 +141,8 @@ You can view the data that is synchronized and shared using the [Data Management
 
 ![Data Management Dashboard](assets/data-management-dashboard.png)
 
+You can also run sync commands and troubleshoot the synchronization process using the [Commerce CLI](../data-export/data-export-cli-commands.md#troubleshooting) and the data export extension logs.
+
 #### Future product updates
 
 After the initial synchronization, it can take up to 15 minutes for incremental product updates to become available to storefront search. To learn more, see [Indexing - Streaming Product Updates](indexing.md).
@@ -380,6 +382,10 @@ This allows developers to fully customize the functionality and styling. These u
 - [PLP widget](https://github.com/adobe/storefront-product-listing-page)
 - [Search bar](https://github.com/adobe/storefront-search-as-you-type)
 
+### Data Export extension
+
+After Live Search is enabled, the Data Export extension synchronizes Commerce data between the Commerce application and Live Search. This process ensures that the most current Commerce data is available on the storefront. In the Admin, you can check synchronization status using the Data Management dashboard. You can manage and troubleshoot the data export process using the Commerce CLI and logs. For details, see the [Data Export Guide](../data-export/overview.md).
+
 ### Inventory Management
 
 [!DNL Live Search] supports [Inventory Management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) capabilities in Commerce (formerly knows as Multi-Source Inventory, or MSI). To enable full support, you must [update](install.md#update) the dependency module `commerce-data-export` to version 102.2.0+.
@@ -388,7 +394,7 @@ This allows developers to fully customize the functionality and styling. These u
 
 ### Price indexer
 
-Live Search customers can use the new [SaaS price indexer](../price-index/price-indexing.md), which provides faster price change updates and synchronization time.
+Live Search customers can use the [SaaS price indexer](../price-index/price-indexing.md), which provides faster price change updates and synchronization time.
 
 ### Price support
 

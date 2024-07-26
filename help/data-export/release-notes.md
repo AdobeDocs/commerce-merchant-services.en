@@ -22,6 +22,27 @@ Updates include:
 
 ## Current major version
 
+## 103.3.9 Release
+
+![Fix](../assets/fix.svg) When an entity is deleted, the `deleted` flag is now propagated for the scoping service feeds for website (`scopesWebsite`) and customer group (`scopesCustomerGroup`).<!--MDEE-839-->
+
+## 103.3.8 Release
+
+![Fix](../assets/fix.svg) Disabled configuration options are no longer exported as active options.<!--MDEE-812-->
+![Fix](../assets/fix.svg) Options and values are now updated on a configurable product when changes are made to a child product. <!--MDEE-835-->
+![New](../assets/new.svg) Added the ability to include additional system attribute data in the product attributes feed.
+
+## 103.3.7 Release
+
+![Fix](../assets/fix.svg) Removed unnecessary dependencies from the InventoryDataExporter module.
+![Fix](../assets/fix.svg) Changed required versions for inventory modules included in the CatalogInventoryDataExporter module to support Adobe Commerce version 2.4.4.
+
+## 103.3.6 Release
+
+![Fix](../assets/fix.svg) Fixed deadlocks that occurred during feed reindexing in multi-thread mode. Queries are now separated into Insert and Update operations.
+![Fix](../assets/fix.svg) Optimized the Prices query for large catalogs with many websites.
+![New](../assets/new.svg) Added retry logic to re-run failed transactions when deadlocks occurs.
+
 ## 103.3.5 Release
 
 ![Fix](../assets/fix.svg) Set dependency for latest compatible data export version for the SaaS common module.
