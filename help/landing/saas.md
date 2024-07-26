@@ -96,9 +96,7 @@ To select or create a SaaS project, request the [!DNL Commerce] API key from the
 
 1. If no SaaS projects exist, click **Create Project**. Then in the **Project** field, enter a name for your SaaS project.
 
-   When you create a SaaS project, [!DNL Commerce] generates one or more SaaS data spaces depending on your [!DNL Commerce] license:
-   - Adobe Commerce - One production data space; two testing data spaces only. On Cloud Pro projects with multiple Staging environments, you can request additional testing data spaces for each Staging environment by [submitting a Support request](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
-   - Magento Open Source - One production data space; no testing data spaces
+   All merchants can access one production data space and two testing data spaces per SaaS project. For On Cloud Pro projects with multiple staging environments, you can request additional testing data spaces for each staging environment by [submitting a Support request](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/).
 
 1. Select the **Data Space** to use for the current configuration of your [!DNL Commerce] store.
 

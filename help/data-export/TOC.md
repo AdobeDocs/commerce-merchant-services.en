@@ -16,5 +16,6 @@ feature: Services
 - [CLI Command reference](data-export-cli-commands.md)
 - [Review logs and troubleshoot](troubleshooting-logging.md)
 - [Manage the SaaS data export extension](manage-extension.md)
+- [Extend and customize SaaS data export feeds](extensibility-and-customizations.md)
 - [Release Notes](release-notes.md)
 - [Return to Commerce Services Home](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)
