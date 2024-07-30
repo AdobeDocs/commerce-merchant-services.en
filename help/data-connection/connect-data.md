@@ -176,6 +176,10 @@ Time series profile events contain data about your shopper's profile information
 
 It can take about 10 minutes for a profile record to be available in Real-Time CDP. Profile events begin streaming immediately.
 
+>[!TIP]
+>
+>If you are not seeing profile data in the Experience Platform, see the [Commerce KnowledgeBase](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-connection-customer-profiles-not-exported) for troubleshooting suggestions.
+
 #### Field descriptions
 
 | Field | Description |
@@ -271,6 +275,10 @@ To confirm that data is being collected from your Commerce store, use the [Adobe
 In this example, you see event data from the [`commerce.productListAdds`](events.md#addtocart), [`commerce.productViews`](events.md#productpageview), [`web.webpagedetails.pageViews`](events.md#pageview), and so on. This view allows you to verify that your Commerce data arrived at the edge.
 
 If the results are not what you expect, open your dataset and look for any failed batches imports. Learn more about [troubleshooting batch imports](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/troubleshooting.html).
+
+### Verify profile data appears in the Experience Platform
+
+If you are not seeing profile data in the Experience Platform, see the [Commerce KnowledgeBase](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-connection-customer-profiles-not-exported) for troubleshooting suggestions.
 
 ## Next steps
 
