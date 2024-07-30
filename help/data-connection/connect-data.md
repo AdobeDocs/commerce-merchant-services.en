@@ -178,7 +178,7 @@ It can take about 10 minutes for a profile record to be available in Real-Time C
 
 >[!TIP]
 >
->If you are not seeing profile data in the Experience Platform, see the [Commerce KnowledgeBase](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/?????????) for troubleshooting suggestions.
+>If you are not seeing profile data in the Experience Platform, see the [Commerce KnowledgeBase](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-connection-customer-profiles-not-exported) for troubleshooting suggestions.
 
 #### Field descriptions
 
@@ -276,9 +276,9 @@ In this example, you see event data from the [`commerce.productListAdds`](events
 
 If the results are not what you expect, open your dataset and look for any failed batches imports. Learn more about [troubleshooting batch imports](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/troubleshooting.html).
 
-### Verify profile data is appears in the Experience Platform
+### Verify profile data appears in the Experience Platform
 
-If you are not seeing profile data in the Experience Platform, see the [Commerce KnowledgeBase](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/?????????) for troubleshooting suggestions.
+If you are not seeing profile data in the Experience Platform, see the [Commerce KnowledgeBase](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-connection-customer-profiles-not-exported) for troubleshooting suggestions.
 
 ## Next steps
 
