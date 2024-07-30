@@ -7,7 +7,7 @@ role: Admin, User
 ---
 # [!DNL Commerce Services Connector]
 
-Some Adobe Commerce and Magento Open Source features are powered by [!DNL Commerce Services] and deployed as SaaS (software as a service). To use these services, you must connect your [!DNL Commerce] instance using production and sandbox API keys, and specify the data space in the [configuration](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html). You only need to configure the connection one time for each Commerce instance.
+Some Adobe Commerce and Magento Open Source features are powered by [!DNL Commerce Services] and deployed as SaaS (software as a service). To use these services, you must connect your [!DNL Commerce] instance using production and sandbox API keys, and specify the data space in the [configuration](#saas-configuration). You only need to configure the connection one time for each Commerce instance.
 
 ## Available services {#availableservices}
 
@@ -18,7 +18,7 @@ The following lists the [!DNL Commerce] features you can access through the [!DN
 |[[!DNL Product Recommendations]](/help/product-recommendations/overview.md) powered by Adobe Sensei| Adobe Commerce|
 |[[!DNL Live Search]](/help/live-search/overview.md) powered by Adobe Sensei | Adobe Commerce|
 |[[!DNL Payment Services]](/help/payment-services/overview.md) | Adobe Commerce and Magento Open Source|
-|[[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html)|Adobe Commerce|
+|[[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/intro)|Adobe Commerce|
 |[[!DNL Catalog Service]](/help/catalog-service/overview.md)|Adobe Commerce|
 |[[!DNL Data Connection]](/help/data-connection/overview.md)|Adobe Commerce|
 
@@ -44,7 +44,7 @@ Additionally, solution integrators are also entitled to use [!DNL Commerce Servi
 
 ### Generate the production and sandbox API keys {#genapikey}
 
-1. Log in to your [!DNL Commerce] account at [https://account.magento.com](https://account.magento.com/){:target="_blank"}.
+1. Log in to your [!DNL Commerce] account at [https://account.magento.com](https://account.magento.com/customer/account/login){:target="_blank"}.
 
 1. Under the **Magento** tab, select **API Portal** on the sidebar.
 
@@ -66,13 +66,17 @@ Additionally, solution integrators are also entitled to use [!DNL Commerce Servi
 
 ## SaaS configuration {#saasenv}
 
-[!DNL Commerce] instances must be configured with a SaaS project and a SaaS data space so that [!DNL Commerce Services] can send data to the right location. A SaaS project groups all SaaS data spaces. The SaaS Data Spaces are used to collect and store data that enables [!DNL Commerce Services] to work. Some of this data may be exported from the [!DNL Commerce] instance and some may be collected from shopper behavior on the storefront. That data is then persisted to secure cloud storage.
+[!DNL Commerce] instances must be configured with a SaaS project and a SaaS data space so that [!DNL Commerce Services] can send data to the right location. A SaaS project groups all SaaS data spaces. The SaaS data spaces are used to collect and store data that enables [!DNL Commerce Services] to work. Some of this data may be exported from the [!DNL Commerce] instance and some may be collected from shopper behavior on the storefront. That data is then persisted to secure cloud storage.
 
 For [!DNL Product Recommendations], the SaaS data space contains catalog and behavioral data. You can point a [!DNL Commerce] instance to a SaaS data space by [selecting it](https://docs.magento.com/user-guide/configuration/services/saas.html) in the [!DNL Commerce] configuration.
 
 >[!WARNING]
 >
 > Use your production SaaS data space only on your production [!DNL Commerce] installation to avoid data collisions. Otherwise, you risk polluting your production site data with testing data, which causes deployment delays. For example, your production product data could be mistakenly overwritten from staging data, such as staging URLs.
+
+### SaaS data space provisioning
+
+All merchants can access one production data space and two testing data spaces per SaaS project. For Adobe Commerce Cloud Pro projects with multiple staging environments, you can request additional testing data spaces for each staging environment by [submitting a Support request](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview).
 
 ### Select or create a SaaS project {#createsaasenv}
 
@@ -86,17 +90,15 @@ To select or create a SaaS project, request the [!DNL Commerce] API key from the
 
    If you do not see the **[!UICONTROL Commerce Services Connector]** section in the [!DNL Commerce] configuration, install the [!DNL Commerce] modules for your desired [[!DNL Commerce] service](#availableservices). Also, make sure that the `magento/module-services-id` package is installed.
 
-1. In the _Sandbox API Keys_ and _Production API Keys_ sections, paste your key values.
+1. In the _[!UICONTROL Sandbox API Keys]_ and _[!UICONTROL Production API Keys]_ sections, paste your key values.
 
-   Private keys must include `----BEGIN PRIVATE KEY---` at the beginning of the key and `----END PRIVATE KEY----` at the end of the private key.
+   Private keys must include `----BEGIN PRIVATE KEY---` at the beginning of the key and `----END PRIVATE KEY----` at the end of the key.
 
 1. Click **Save**.
 
   Any SaaS projects that are associated with your keys appear in the **Project** field in the **SaaS Identifier** section.
 
 1. If no SaaS projects exist, click **Create Project**. Then in the **Project** field, enter a name for your SaaS project.
-
-   All merchants can access one production data space and two testing data spaces per SaaS project. For On Cloud Pro projects with multiple staging environments, you can request additional testing data spaces for each staging environment by [submitting a Support request](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/).
 
 1. Select the **Data Space** to use for the current configuration of your [!DNL Commerce] store.
 
