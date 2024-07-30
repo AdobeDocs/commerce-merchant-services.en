@@ -39,7 +39,7 @@ The [!DNL Data Connection] extension is available from the [Adobe Marketplace](h
 
 1. (Optional) To include B2B data, which comprises [requisition events](events.md#b2b-events), install the [B2B extension](#install-the-b2b-extension).
 
-### Install Adobe I/O Events and Configure the customers-connector module
+### Install Adobe I/O Events and configure the customers-connector module
 
 After you install the `experience-platform-connector` extension, you must install Adobe I/O Events for Adobe Commerce and configure the `customers-connector` module.
 
