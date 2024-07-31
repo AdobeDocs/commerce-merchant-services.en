@@ -28,6 +28,7 @@ The [Adobe Commerce Storefront Event Collector](https://developer.adobe.com/comm
 |`view` | The recommendation unit becomes viewable on the page, such as by scrolling into view. | Yes|
 
 The following events are required to properly populate the dashboard.
+
 | Dashboard column | Events    | Join field  |
 | ---------------- | --------- | ----------- |
 | Impressions      |`page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render` | unitId  |
