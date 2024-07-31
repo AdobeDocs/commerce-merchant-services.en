@@ -55,7 +55,7 @@ _July 31, 2024_
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
 ![Fix](../assets/fix.svg) Fixed an issue where certain scripts were not loading on the checkout page.
-![Fix](../assets/fix.svg) Fixed a a dependency version in the `composer.json` file.
+![Fix](../assets/fix.svg) Fixed a dependency version in the `composer.json` file.
 
 ## [!DNL Live Search] 4.2.0 {#420}
 
