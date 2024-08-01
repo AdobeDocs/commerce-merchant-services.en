@@ -28,6 +28,12 @@ These release notes describe feature changes and fixes related to extensions use
 
 +++Supported service updates
 
+_August 2, 2024_
+
+![Fix](../assets/fix.svg) - Fixed payments total amount when order total configured to include taxes.
+![New](../assets/new.svg) - Added a `taxAmount` field to order purchase events.
+![New](../assets/new.svg) - Added ability to add custom data to events. See the following for an [example](https://github.com/adobe/commerce-events/blob/main/examples/events/custom-event-override.md).
+
 _January 24, 2024_
 
 ![New](../assets/new.svg) - Updated the `data-services-b2b` extension to include a new requisition event called [deleteRequisitionList](events.md#deleterequisitionlist) for B2B merchants.
