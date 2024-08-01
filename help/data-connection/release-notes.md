@@ -18,9 +18,9 @@ These release notes contain updates to the [!DNL Data Connection] extension and 
 
 For feature changes and fixes related to extensions used by the [!DNL Data Connection] extension, see **Supported service updates**.
 
-See [Upcoming Releases](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html) to learn about release schedules and support.
+See [Upcoming Releases](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule) to learn about release schedules and support.
 
-See the developer documentation to [learn which Commerce versions support this module](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
+See the developer documentation to [learn which Commerce versions support this module](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability).
 
 ## Supported service updates
 
