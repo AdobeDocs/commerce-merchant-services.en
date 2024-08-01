@@ -86,6 +86,8 @@ Custom attributes are supported at two levels:
 
 1. Make sure that the datastream associated with your XDM schema is the same datastream specified on the [Data Collection](connect-data.md#data-collection) tab.
 
+1. Click **[!UICONTROL Save]** on the **Data Collection** tab to retrieve any custom attributes you have specified.
+
 ## Time series profile event data
 
 Time series profile event data is generated from the following events:
