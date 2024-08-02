@@ -15,8 +15,6 @@ To get started using Payment Services for [!DNL Adobe Commerce] and [!DNL Magent
 
 Downloading and installing the [!DNL Payment Services] extension for [!DNL Adobe Commerce] and [!DNL Magento Open Source] is a prerequisite step for using [!DNL Payment Services].
 
-![[!DNL Payment Services] extension Admin view](assets/admin-view.png){width="300" zoomable="yes"}
-
 ## Download the extension
 
 You must first download the extension from [Commerce Marketplace](https://experienceleague.adobe.com/docs/commerce-admin/start/resources/commerce-marketplace.html) before installing it.
@@ -26,6 +24,10 @@ You must first download the extension from [Commerce Marketplace](https://experi
 1. Click **[!UICONTROL Add to Cart]**.
 1. Complete checkout and click **[!UICONTROL Place Order]**.
 1. Check the email associated with your Marketplace download for order confirmation and details.
+
+>[!NOTE]
+>
+> For Adobe Commerce versions 2.4.7 or newer [!DNL Payment Services] is available out-of-the-box.
 
 ## Install the extension
 
@@ -91,6 +93,10 @@ This method is used for installing the [!DNL Payment Services] extension for an 
 1. Commit changes.
 1. To ensure that the committed code is deployed, update your instance .
 
+>[!NOTE]
+>
+> [!DNL Payment Services] 1.6.1 is compatible with PHP versions 7.x. However, it is highly recommended to update to the latest [!DNL Payment Services] version.
+
 ## Upgrade the extension
 
 When a new version of [!DNL Payment Services] is released, you can easily upgrade your extension.
@@ -103,11 +109,21 @@ When a new version of [!DNL Payment Services] is released, you can easily upgrad
 
    Use the `composer update` command to update all root dependencies.
 
+1. After composer update, run: 
+
+   ```bash
+   bin/magento setup:upgrade
+   ```
+
 1. Commit and push your changes.
 
 ## Troubleshooting
 
 You may see errors when attempting to install the [!DNL Payment Services] extension. Use the following troubleshooting methods to resolve the errors.
+
+### List of repositories
+
+Verify that `repo.magento.com` is present in your list of repositories.
 
 ### Incorrect Composer keys
 

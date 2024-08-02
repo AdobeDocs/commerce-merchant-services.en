@@ -12,7 +12,7 @@ You can customize Payment Services to your needs using [[!DNL Payment Services] 
 
 ## Hosted credit card fields
 
-[!DNL Payment Services] are available as a payment method when creating an order in the Admin:
+[!DNL Payment Services] is available in the Admin as a payment method when creating an order:
 
 1. On the _Admin_ sidebar, expand **[!UICONTROL Sales]** and choose **[!UICONTROL Orders]**.
 1. Click **[!UICONTROL Create New Order]**.
