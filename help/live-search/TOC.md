@@ -11,6 +11,7 @@ feature: Services, Search
 - [Install](install.md)
 - [Setting up Live Search](workspace.md)
 - [Boundaries and Limits](boundaries-limits.md)
+- [Best Practices](best-practice.md)
 - [Release Notes](release-notes.md)
 - Storefront {#live-search-storefront}
    - [Storefront Widgets](storefront-widgets.md)
