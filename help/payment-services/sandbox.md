@@ -76,4 +76,6 @@ This feature is `off` by default. When you enable it, store administrators can s
 
 ## Test in sandbox environment
 
+It is highly recommended that you use testing dataspaces for integration and staging environments, and to test Payments in production, with real credit cards and banks, before exposing this functionality to shoppers.
+
 See [Test and validate](test-validate.md) for more information.

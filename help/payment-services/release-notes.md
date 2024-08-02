@@ -4,6 +4,7 @@ description: Review the release notes for information about all [!DNL Payment Se
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
 ---
+
 # Release Notes
 
 These release notes describe the initial release of [!DNL Payment Services] and include:
