@@ -30,9 +30,9 @@ These release notes describe feature changes and fixes related to extensions use
 
 _August 2, 2024_
 
-![Fix](../assets/fix.svg) - Fixed payments total amount when order total configured to include taxes.
+![Fix](../assets/fix.svg) - Fixed the payments total amount when the order total is configured to include taxes.
 ![New](../assets/new.svg) - Added a `taxAmount` field to order purchase events.
-![New](../assets/new.svg) - Added ability to add custom data to events. See the following for an [example](https://github.com/adobe/commerce-events/blob/main/examples/events/custom-event-override.md).
+![New](../assets/new.svg) - Added the ability to add custom data to events. See the following for an [example](https://github.com/adobe/commerce-events/blob/main/examples/events/custom-event-override.md).
 
 _January 24, 2024_
 
