@@ -12,9 +12,13 @@ To get started using [!DNL Payment Services] for [!DNL Adobe Commerce] and [!DNL
 
 ## Onboarding flow
 
+This flow diagram shows the general process for onboarding [!DNL Payment Services].
+
 ![Onboarding flow](assets/onboarding-diagram.svg){width="600" zoomable="yes"}
 
-This onboarding flow diagram shows the general process for onboarding [!DNL Payment Services].
+>[!NOTE]
+>
+> For Adobe Commerce versions 2.4.7 or newer, you can skip the Marketplace extension step, as [!DNL Payment Services] is available out-of-the-box.
 
 After you complete onboarding for sandbox or live payments, financial reporting is accessible from [!DNL Payment Services] in the Admin.
 
@@ -22,13 +26,15 @@ If both sandbox and live payments are onboarded and enabled, you can easily swit
 
 ## Prerequisites
 
-In order to use [!DNL Payment Services], you must have the following available for your instance:
+In order to use [!DNL Payment Services], you must have  all dependent modules enabled and the following available for your instance:
 
 * Services Connector module
 * Services ID module
 * API keys
 
-The Services Connector and Services ID modules are automatically installed during the [installation of [!DNL Payment Services]](install.md). When installation is complete, you can see a new section in the configuration settings (**[!UICONTROL Stores]** > _[!UICONTROL Settings]_ > **[!UICONTROL Configuration]**) when you expand **[!UICONTROL Services]**---**[!UICONTROL Commerce Services Connector]**.
+The Services Connector and Services ID modules are automatically installed during the [installation of [!DNL Payment Services]](install.md).
+
+When installation is complete, you can see a new section in the configuration settings (**[!UICONTROL Stores]** > _[!UICONTROL Settings]_ > **[!UICONTROL Configuration]**) if you expand **[!UICONTROL Services]**---**[!UICONTROL Commerce Services Connector]**.
 
 To learn how to create or access your API keys, see [API credentials](#obtain-api-credentials).
 

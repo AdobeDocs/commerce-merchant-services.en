@@ -4,6 +4,7 @@ description: Review the release notes for information about all [!DNL Payment Se
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
 ---
+
 # Release Notes
 
 These release notes describe the initial release of [!DNL Payment Services] and include:
@@ -80,6 +81,26 @@ _June 28, 2021_
 
 +++
 
+## v2.7.0
+
+_August 2, 2024_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+![New](../assets/new.svg)<!-- PAY-4844 --> [!DNL Payment Services] now supports [line item data at the order level](line-items.md). This feature allows merchants to see detailed information about the items in an order, such as product details, quantity, and price (including sales tax, discounts, and other relevant information).
+
+![New](../assets/new.svg)<!-- PAY-5380 --> [!DNL Payment Services] improves the [Configuration in the Admin](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/configure/configure-admin#general-configuration) experience for merchants for an easier and more intuitive onboarding process. This feature allows merchants to reset their [!DNL Payment Services] IDs.
+
+![New](../assets/new.svg)<!-- PAY-5255 --> [!DNL Payment Services] includes a [Payment failure notification](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/checkout/checkout-payment-failed-emails). This feature provides near real-time notifications of payment failures to merchants, so orders can be saved by reaching out to the shopper and potentially improve issue resolution.
+
+![Fix](../assets/fix.svg)<!-- PAY-5469 --> Fixed an issue where the **Google Pay popup was blocked by Safari**. Shoppers can now complete their Google Pay payment transactions on Safari.
+
+![Fix](../assets/fix.svg)<!-- PAY-5492 --> Fixed an issue when a merchant adds customized terms and conditions to the checkout page. During an [express checkout](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options#standard-vs-advanced-payments-experience) a shopper now has the ability to accept these terms and conditions to complete the checkout without any issues.
+
+![Fix](../assets/fix.svg)<!-- PAY-5532 --> Improved In-Store Pickup (ISPU) functionalities with **InstantPurchase**. **ISPU Delivery Methods** are no longer displayed when a shopper places an order with **InstantPurchase**.
+
+![Fix](../assets/fix.svg)<!-- PAY-5606 --> Fixed an issue within the **Configuration Page** country selector that occurred when the merchant's country is set to **Germany**.
+
 ## v2.6.0
 
 _June 4, 2024_
@@ -130,7 +151,7 @@ _March 20, 2024_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
-![New](../assets/new.svg)<!-- PAY-4868 --> Merchants can successfully [configure Google Pay throughout the purchase experience](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html), similar to other payment buttons in[!DNL Payment Services] through the Admin.
+![New](../assets/new.svg)<!-- PAY-4868 --> Merchants can successfully [configure Google Pay throughout the purchase experience](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html), similar to other payment buttons in [!DNL Payment Services] through the Admin.
 
 ![New](../assets/new.svg)<!-- PAY-4381 --> [Payment Services supports Google Pay through GraphQL](https://developer.adobe.com/commerce/webapi/graphql/payment-services/) allowing merchants to have a headless Commerce experience with the Google Pay payment method.
 
