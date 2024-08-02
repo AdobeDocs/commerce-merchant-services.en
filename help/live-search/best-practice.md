@@ -4,48 +4,48 @@ description: Learn the best practices for implementing [!DNL Live Search] for yo
 ---
 # Best Practices
 
-This comprehensive guide is designed to help merchandisers enhance their site search functionality, ensuring a seamless and efficient user experience that maximizes conversion rates. By following the strategies outlined, you will learn how implement advanced search features, and continuously refine your search tool for optimal performance with Adobe Commerce Live Search.
+This article is designed to help merchandisers enhance their site search functionality, ensuring a seamless and efficient user experience that maximizes conversion rates. By following the strategies outlined, you learn how to implement advanced search features, and continuously refine your search tool for optimal performance with Adobe Commerce [!DNL Live Search].
 
 There are several key factors that determine the relevance and effectiveness of search results:
 
-- **Product Data Quality** is vital, a detailed, accurate, and well-structured information ensures that search algorithms can effectively match products to queries. Low quality data will lead to low relevant search results, setting up the correct **attributes as searchable** with their corresponding **weight** and making sure **data** within those attributes is relevant will directly impact the success of your merchandising strategy. 
+- Well-structured product data ensures that search algorithms can effectively match products to queries. Low quality product data leads to low relevant search results. Setting up the correct **attributes as searchable** with their corresponding **weight** and making sure **data** within those attributes is relevant directly impacts the success of your merchandising strategy.
 - User experience and overall design.
 - Search rules are critical as they can elevate the visibility of certain products based on popularity, new arrivals, promotional criteria or any other merchandising strategy to met your business requirements.
-- Faceted Navigation to allow users to refine their search and get relevant results as quickly as possible
+- Faceted navigation allows users to refine their search and get relevant results as quickly as possible.
 
-To manage [!DNL Live Search] go to Marketing \> SEO & Search - [!DNL Live Search] within your Adobe Commerce admin panel. 
+To manage [!DNL Live Search], go to **Marketing** > *SEO & Search* > **[!DNL Live Search]** in the Adobe Commerce Admin. 
 
-## Optimize your Search Functionality
+## Optimize your search functionality
 
-In this section, you learn how to optimize your search functionality by using features such as autocomplete to provide real-time suggestions as users type, synonyms and spellings to ensure users find products even if they use different words, and facets to allow shoppers to narrow down search results.
+In this section, you learn how to optimize your search functionality by using features such as autocomplete to provide real-time suggestions as users type, synonyms and spellings to ensure users find products even if they use different words, facets to allow shoppers to narrow down search results, and search redirects to automatically redirect users from a search query to a specific page.
 
 ### Autocomplete
 
-An autocomplete functionality, also known as typeahead or autosuggest, is an interactive search feature that dynamically displays suggestions to users as they enter their search terms. This helps users find products more quickly and easily by offering real-time suggestions based on their input.
+Autocomplete, also known as type-ahead or auto-suggest, is an interactive search feature that dynamically displays suggestions to users as they enter their search terms. This helps users find products more quickly and easily by offering real-time suggestions based on their input.
 
-The [!DNL Live Search] [Popover Widget](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/live-search-storefront/storefront-popover)  will enable autocomplete search options to suggest popular products. With each character typed by the user, the popover is updated with suggested products and thumbnail images of the top search results.
+The [!DNL Live Search] [[!DNL popover]](storefront-popover.md) widget enables autocomplete search options to suggest popular products. With each character typed by the user, the popover updates with suggested products and thumbnail images of the top search results.
 
 [!DNL Live Search] returns results for a query of two characters or more. For a partial match, the maximum number of characters per word is 20. The number of characters in a "search as you type" query is not configurable.
 
-Learn more about the Popover widget [here](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/live-search-storefront/storefront-popover).
+Learn more about the [popover](storefront-popover.md) widget.
 
-### Synonyms and Spellings
+### Synonyms and spellings
 
-Incorporate synonyms and common misspellings to ensure comprehensive search results and expand the search query to include words that shoppers might use that differ from those in your catalog. You don't want to lose a sale because someone is looking for a "sofa", while your product is listed as a "couch". You can capture a broad range of search terms by entering all the possible words that customers might use to find your products. Synonyms can be set as one way or two way to facilitate set up and improve results. 
+Incorporate synonyms and common misspellings to ensure comprehensive search results and expand the search query to include words that shoppers might use that differ from those in your catalog. You do not want to lose a sale because someone is looking for a "sofa", while your product is listed as a "couch". You can capture a broad range of search terms by entering all the possible words that customers might use to find your products. Synonyms can be set as one way or two way to improve results.
 
-Best practices:
+#### Tips
 
-- Map brand names and abbreviations to their full names (e.g., "HP" to "Hewlett-Packard") and common product nicknames (e.g., "iPhone" to "Apple iPhone").
-- Include industry-specific jargon and terms that users might use interchangeably (e.g., "sneakers" and "running shoes").
+- Map brand names and abbreviations to their full names, for example "HP" to "Hewlett-Packard" and common product nicknames, for example "iPhone" to "Apple iPhone".
+- Include industry-specific jargon and terms that users might use interchangeably, for example "sneakers" and "running shoes".
 - Regularly update the synonym list based on new search trends, product additions, and user behavior.
 - Test the effectiveness of synonym mappings by analyzing search results and user feedback. Refine mappings to improve accuracy and relevance.
 
-Learn more about how to set up synonyms:
+Learn more about synonyms:
 
-- [Type of synonyms](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/live-search-admin/synonyms/synonyms-type)
-- [Create synonyms](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/live-search-admin/synonyms/synonyms-add)
-- [Manage synonyms](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/live-search-admin/synonyms/synonyms-manage)
-- [Language support](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/live-search-admin/settings#language)
+- [Type of synonyms](synonyms-type.md)
+- [Create synonyms](synonyms-add.md)
+- [Manage synonyms](synonyms-manage.md)
+- [Language support](settings.md#language)
 
 ### Facets
 
@@ -59,7 +59,7 @@ For a product attribute to be set up as a facet it must have properties set up a
 
 To do this you have to go to "**Stores**  \> Attributes >  **Product**   " ([+info](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/live-search-admin/facets/facets-add#step-2-edit-facet-properties-optional))
 
-Best practices:
+#### Tips
 
 - Determine the most relevant and useful attributes for your products, such as title, category, brand, price range, color, and size and set them as [dynamic facets](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/live-search-admin/facets/facets-type) . 
 - Product attributes that are consistent across your catalog and highly relevant for your products can be set as pinned facets and sorted to improve relevancy and filtering capabilities for your users.
@@ -71,10 +71,10 @@ Best practices:
 
 Learn more about facets:
 
-- [Type of facets](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/live-search-admin/facets/facets-type)
-- [Add facets](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/live-search-admin/facets/facets-add)
-- [Manage facets](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/live-search-admin/facets/facets-manage) (edit, pin a facet, delete, publish)
-- [Price faceting](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/live-search-admin/settings#price-faceting)
+- [Type of facets](facets-type.md)
+- [Add facets](facets-add.md)
+- [Manage facets](facets-manage.md) (edit, pin a facet, delete, publish)
+- [Price faceting](settings.md#price-faceting)
 
 ### Search redirects
 
@@ -96,7 +96,7 @@ It is always recommended to test the search redirects to ensure they are working
 
 Learn how to manage search redirects [here](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-terms).
 
-## Improving Search Results Relevance
+## Improve search result relevance
 
 Intro text...
 
@@ -106,7 +106,7 @@ To optimize your conversion rate and revenue, implementing effective search rule
 
 It's crucial to establish a well-thought-out default search rule. Your [default rule](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/live-search-admin/rules/rules#default-rule) will determine how search results are initially sorted and displayed to users, enhancing their overall experience and increasing the likelihood of purchase. Regular monitoring and adjustment of this rule will ensure that it continues to meet user needs and business objectives effectively.
 
-Here are best practices you can apply to search rules:
+#### Tips
 
 - Pin or boost products with high sales volumes or recent sales activity.
 - Prioritize products with high ratings and positive reviews.
