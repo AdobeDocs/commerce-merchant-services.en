@@ -11,7 +11,7 @@ There are several key factors that determine the relevance and effectiveness of 
 
 - Well-structured product data ensures that search algorithms can effectively match products to queries. Low quality product data leads to low relevant search results. Setting up the correct **attributes as searchable** with their corresponding **weight** and making sure that data within those attributes is relevant directly impacts the success of your merchandising strategy.
 - User experience and overall design.
-- Search rules are critical as they can elevate the visibility of certain products based on popularity, new arrivals, promotional criteria or any other merchandising strategy to meet your business requirements.
+- Search rules are critical, as they can elevate the visibility of certain products based on popularity, new arrivals, promotional criteria, or any other merchandising strategy to meet your business requirements.
 - Faceted navigation allows users to refine their search and get relevant results quickly.
 
 To manage [!DNL Live Search], go to **Marketing** > *SEO & Search* > **[!DNL Live Search]** in the Adobe Commerce Admin. 
@@ -24,9 +24,9 @@ In this section, you learn how to optimize your search functionality by using fe
 
 Autocomplete, also known as type-ahead or autosuggest, is an interactive search feature that dynamically displays suggestions to users as they enter their search terms. This helps users quickly and easily find products by offering real-time suggestions based on their input.
 
-The [!DNL Live Search] [[!DNL popover]](storefront-popover.md) widget enables autocomplete search options to suggest popular products. With each character typed by the user, the popover updates with suggested products and thumbnail images of the top search results.
+The [!DNL Live Search] [[!DNL popover]](storefront-popover.md) widget enables autocomplete search options to suggest popular products. As the user types in the search box, the popover updates with suggested products and thumbnail images of the top search results.
 
-[!DNL Live Search] returns results for a query of two characters or more. For a partial match, the maximum number of characters per word is 20. The number of characters in a "search as you type" query is not configurable.
+[!DNL Live Search] starts returning results when the user has typed in two characters. For a partial match, the maximum number of characters per word is 20. The number of characters in a "search as you type" query is not configurable.
 
 Learn more about the [popover](storefront-popover.md) widget.
 
