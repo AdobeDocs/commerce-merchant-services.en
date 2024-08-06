@@ -18,15 +18,21 @@ These release notes contain updates to the [!DNL Data Connection] extension and 
 
 For feature changes and fixes related to extensions used by the [!DNL Data Connection] extension, see **Supported service updates**.
 
-See [Upcoming Releases](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html) to learn about release schedules and support.
+See [Upcoming Releases](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule) to learn about release schedules and support.
 
-See the developer documentation to [learn which Commerce versions support this module](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
+See the developer documentation to [learn which Commerce versions support this module](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability).
 
 ## Supported service updates
 
 These release notes describe feature changes and fixes related to extensions used by the [!DNL Data Connection] extension.
 
 +++Supported service updates
+
+_August 2, 2024_
+
+![Fix](../assets/fix.svg) - Fixed the payments total amount when the order total is configured to include taxes.
+![New](../assets/new.svg) - Added a `taxAmount` field to order purchase events.
+![New](../assets/new.svg) - Added the ability to add custom data to events. See the following for an [example](https://github.com/adobe/commerce-events/blob/main/examples/events/custom-event-override.md).
 
 _January 24, 2024_
 
@@ -72,7 +78,7 @@ _July 22, 2024_
 
 [!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.4 and newer
 
-![Fix](../assets/new.svg) - Updated the Experience Platform Connector metapackage to remove unused data exporters and indexers.
+![Fix](../assets/fix.svg) - Updated the Experience Platform Connector metapackage to remove unused data exporters and indexers.
 
 ## 3.1.2
 
@@ -80,8 +86,8 @@ _June 5, 2024_
 
 [!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.4 and newer
 
-![Fix](../assets/new.svg) - Fixed an issue where the wrong date format was being used when initiating a [historical sync](connect-data.md#specify-order-history-date-range).
-![Fix](../assets/new.svg) - Fixed an issue where the [startCheckout](events.md#startcheckout) event was not being sent on Adobe Commerce 2.4.7.
+![Fix](../assets/fix.svg) - Fixed an issue where the wrong date format was being used when initiating a [historical sync](connect-data.md#specify-order-history-date-range).
+![Fix](../assets/fix.svg) - Fixed an issue where the [startCheckout](events.md#startcheckout) event was not being sent on Adobe Commerce 2.4.7.
 
 ## 3.1.1
 
@@ -109,8 +115,8 @@ _November 16, 2023_
 [!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.4 and newer
 
 ![New](../assets/new.svg) - The Experience Platform connector has been renamed to [!DNL Data Connection].
-![Fix](../assets/new.svg) - Added ability to log error response if Adobe IMS cannot generate the access token.
-![Fix](../assets/new.svg) - Added a notification message if you attempt to sync Historical Orders but have not specified account credentials.
+![Fix](../assets/fix.svg) - Added ability to log error response if Adobe IMS cannot generate the access token.
+![Fix](../assets/fix.svg) - Added a notification message if you attempt to sync Historical Orders but have not specified account credentials.
 
 ## 3.0.0
 
