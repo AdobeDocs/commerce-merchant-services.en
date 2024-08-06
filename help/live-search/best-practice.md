@@ -5,14 +5,14 @@ role: Admin, Developer
 ---
 # Best Practices
 
-This article is designed to help merchandisers enhance their site search functionality, ensuring a seamless and efficient user experience that maximizes conversion rates. By following the strategies outlined, you learn how to implement advanced search features, and continuously refine your search tool for optimal performance with Adobe Commerce [!DNL Live Search].
+This article helps merchandisers enhance their site search functionality, ensuring a seamless and efficient user experience that maximizes conversion rates. By following the strategies outlined, you learn how to implement advanced search features, and continuously refine your search tool for optimal performance with Adobe Commerce [!DNL Live Search].
 
 There are several key factors that determine the relevance and effectiveness of search results:
 
 - Well-structured product data ensures that search algorithms can effectively match products to queries. Low quality product data leads to low relevant search results. Setting up the correct **attributes as searchable** with their corresponding **weight** and making sure that data within those attributes is relevant directly impacts the success of your merchandising strategy.
 - User experience and overall design.
 - Search rules are critical as they can elevate the visibility of certain products based on popularity, new arrivals, promotional criteria or any other merchandising strategy to meet your business requirements.
-- Faceted navigation allows users to refine their search and get relevant results as quickly as possible.
+- Faceted navigation allows users to refine their search and get relevant results quickly.
 
 To manage [!DNL Live Search], go to **Marketing** > *SEO & Search* > **[!DNL Live Search]** in the Adobe Commerce Admin. 
 
@@ -22,7 +22,7 @@ In this section, you learn how to optimize your search functionality by using fe
 
 ### Autocomplete
 
-Autocomplete, also known as type-ahead or autosuggest, is an interactive search feature that dynamically displays suggestions to users as they enter their search terms. This helps users find products more quickly and easily by offering real-time suggestions based on their input.
+Autocomplete, also known as type-ahead or autosuggest, is an interactive search feature that dynamically displays suggestions to users as they enter their search terms. This helps users quickly and easily find products by offering real-time suggestions based on their input.
 
 The [!DNL Live Search] [[!DNL popover]](storefront-popover.md) widget enables autocomplete search options to suggest popular products. With each character typed by the user, the popover updates with suggested products and thumbnail images of the top search results.
 
@@ -32,7 +32,7 @@ Learn more about the [popover](storefront-popover.md) widget.
 
 ### Synonyms and spellings
 
-Incorporate synonyms and common misspellings to ensure comprehensive search results. Additionally, you can expand the search query to include words that shoppers might use that differ from words specified in your catalog. You do not want to lose a sale because someone is looking for a "sofa", while your product is listed as a "couch". You can capture a broad range of search terms by entering all the possible words that customers might use to find your products. Synonyms can be set as one way or two way to improve results.
+Incorporate synonyms and common misspellings to ensure comprehensive search results. Additionally, you can expand the search query to include words that shoppers might use that differ from words specified in your catalog. You do not want to lose a sale because someone is looking for a "sofa", while your product is listed as a "couch". You can capture a broad range of search terms by entering all the possible words that customers might use to find your products. You can set synonyms as one way or two way to improve results.
 
 #### Tips to optimize synonyms
 
@@ -63,8 +63,9 @@ To set up a product attribute as a facet, it must have the following [properties
 - Determine the most relevant and useful attributes for your products, such as title, category, brand, price range, color, and size and set them as [dynamic facets](facets-type.md). 
 - Set and sort product attributes that are consistent across your catalog and highly relevant for your products to improve relevancy and filtering capabilities for your users.
 - Ensure that facet labels are easy to understand and consistently named across the site. For example, use "Price Range" instead of "Cost".
-- Avoid overwhelming users by limiting the number of facets to the most important ones. Too many options can cause decision fatigue. [!DNL Live Search] is by default limited to a maximum of 100 attributes configured as facets and 30 buckets returned within each facet. Learn more about [facet limitations](boundaries-limits.md#facets). 
-- Allow users to select multiple filter criteria simultaneously to refine results. For example, letting users select both "Red" and "Blue" colors. - Display the number of available products next to each facet option to give users an idea of the search results they can expect.
+- Avoid overwhelming users by limiting the number of facets to the most important ones. Too many options can cause decision fatigue. By default, [!DNL Live Search] is limited to a maximum of 100 attributes configured as facets and 30 buckets returned within each facet. Learn more about [facet limitations](boundaries-limits.md#facets). 
+- Allow users to select multiple filter criteria simultaneously to refine results. For example, letting users select both "Red" and "Blue" colors.
+- Display the number of available products next to each facet option to give users an idea of the search results they can expect.
 - Implement collapsible facet sections to keep the interface clean and manageable, especially on mobile devices.
 - Allow users to easily reset individual facets or all selected filters to start a new search.
 
@@ -87,7 +88,7 @@ Recommended use cases for setting up search redirects:
     
 - **Brand Searches** - When users search for a brand name, redirect them to the brand's dedicated page where all products from that brand are listed.
     
-- **Product Discontinuation** - If a product is discontinued, searches for that product can be redirected to similar products or the new version of the product.
+- **Product Discontinuation** - If a product is discontinued, you can redirect searches for that product to similar products or the new version of the product.
 
 Search redirects help users find relevant content quickly. When users can find content quickly, you reduce frustration, improve satisfaction, and reduce the likelihood of them leaving the site without finding what they need. By directing users to the most relevant pages, search redirects can help increase the likelihood of purchases.
 
@@ -97,7 +98,7 @@ Learn how to [manage search redirects](https://experienceleague.adobe.com/en/doc
 
 ## Improve search result relevance
 
-In this section, you learn how to improve search result relevance by implementing effective search rules and using product metadata to ensure accurate and detailed attributes are searchable.
+This section discusses how to improve search result relevance by implementing effective search rules and using product metadata to ensure accurate and detailed attributes are searchable.
 
 ### Search rules
 
@@ -113,7 +114,7 @@ It is crucial to establish a well thought out default search rule. Your [default
 - Slightly prioritize products with higher profit margins without compromising relevance.
 - Highlight products that are on sale or part of special promotions.
 - Set search rules during promotion or sales periods automatically by using the date range during your promotion period.
-- Tailor search results based on individual user behavior using [intelligent ranking](rules-add.md#intelligent-ranking), such as recommended for you, most viewed and so on. To tailor user behavior, you must ensure that eventing is correctly implemented. For Luma users, eventing is available out-of-the-box. For headless or custom implementations, you must [implement eventing](events.md) based on your specific needs.
+- Tailor search results based on individual user behavior using [intelligent ranking](rules-add.md#intelligent-ranking), such as "recommended for you", "most viewed" and so on. To tailor user behavior, you must ensure that eventing is correctly implemented. For Luma users, eventing is available out-of-the-box. For headless or custom implementations, you must [implement eventing](events.md) based on your specific needs.
 
 Learn more about search rules:
 
@@ -132,9 +133,9 @@ Learn more about search rules:
 
 Ensure that accurate and detailed product attributes are [set up as searchable](workspace.md#set-attributes-as-searchable). Note that SKU, name, and category attributes are searchable by default and cannot be excluded from search. 
 
-To increase search relevance, assign a weight to each searchable attribute. Attributes with a higher weight should appear higher within the search results. Sorting by relevance is affected by multiple criteria. Search weight is one of those criteria. This means that sometimes attributes with lower search weight may still have more relevance than attributes with higher search weight. Other criteria can include the number of matches in any given attribute, position of found search term, and overall text structure before and after a search term.
+To increase search relevance, assign a weight to each searchable attribute. Attributes with a higher weight should appear higher within the search results. Sorting by relevance is affected by multiple criteria, such as search weight. This means that sometimes attributes with lower search weight can still have more relevance than attributes with higher search weight. Other criteria can include the number of matches in any given attribute, position of found search term, and overall text structure before and after a search term.
 
-Ensure that each product has relevant content within each searchable attribute. It is not recommended to set an attribute as searchable if it has large amounts of content as that can reduce the relevancy of results.
+Ensure that each product has relevant content within each searchable attribute. It is not recommended to set an attribute as searchable if it has large amounts of content as that can reduce search result relevance.
 
 Learn more about product attributes for search:
 
@@ -143,7 +144,7 @@ Learn more about product attributes for search:
 
 ## Monitoring Search Results
 
-To optimize search results with [!DNL Live Search], it is key to monitor relevant KPIs such as search queries, average click position, click-through rates, conversion rate, and zero results rate to understand how users interact with your search functionality. This data guides you to regularly update and refine your search rules.
+To optimize search results with [!DNL Live Search], monitor relevant KPIs such as search queries, average click position, click-through rates, conversion rate, and zero results rate to understand how users interact with your search functionality. This data guides you to regularly update and refine your search rules.
 
 You can monitor these KPIs within the [!DNL Live Search] [Performance workspace](performance.md) where you find the following metrics: 
 
@@ -174,10 +175,10 @@ You can monitor these KPIs within the [!DNL Live Search] [Performance workspace]
 You can use this metric data to optimize your search functionality in the following ways:
 
 - Implement rules to automatically rank popular products higher in search results. Products frequently clicked on or purchased can be given priority to appear at the top. Manually curate lists of popular products for specific search queries and ensure that these items are prominently displayed.
-- Highlight products that are currently trending or have recently seen a spike in popularity. This can be particularly effective during seasonal events, holidays, or promotional periods. To achieve this use the intelligent ranking that better suit your use case and business need when setting up a search rule.
+- Highlight products that are currently trending or have recently seen a spike in popularity. This can be particularly effective during seasonal events, holidays, or promotional periods. To achieve this use the intelligent ranking that better suits your use case and business need when setting up a search rule.
 - Highlight popular filters or facets, if users frequently filter by certain brands or price ranges, make those options more prominent by pinning those facets and sort them accordingly.
 - When a search yields zero results, use popular results data to suggest alternative products or related categories that have high user engagement.
-- Analyze popular search terms and product data to identify important keywords. Optimize your product searchable attributes with these keywords to improve search relevancy.
+- Analyze popular search terms and product data to identify important keywords. Optimize your product searchable attributes with these keywords to improve search relevance.
 - Regularly analyze your results data to understand changing trends, user preferences and behavior, identify top search terms, and detect issues. Use this feedback loop to continuously refine and improve your search rules and product offerings
 
 To get correct data within your [!DNL Live Search] report, you must ensure that eventing is correctly implemented. For Luma users, eventing is available out-of-the-box. For headless or custom implementations, you must [implement eventing](events.md) based on your specific needs.
