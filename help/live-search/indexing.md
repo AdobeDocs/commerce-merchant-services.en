@@ -15,7 +15,7 @@ Product attribute properties (metadata) determine:
 
 The scope of attribute metadata is `website/store/store view`.
 
-The [!DNL Live Search] API allows a client to sort by any product attribute that has the [storefront property](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) `Use in Search` set to `Yes` in the Adobe Commerce Admin. When enabled, `Search Weight` and `Visible in Advanced Search` can be set for the attribute.
+The [!DNL Live Search] API allows a client to sort by any product attribute that has the [storefront property](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) `Use in Search` set to `Yes` in the Adobe Commerce Admin. When enabled, `Search Weight` can be set for the attribute.
 
 [!DNL Live Search] does not index deleted products or those set to `Not Visible Individually`.
 

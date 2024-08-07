@@ -18,6 +18,10 @@ Updates include:
 
 These notes describe updates that were published outside of a versioned release or improvements to the hosted service.
 
+_August 7, 2024_
+
+![Fix](../assets/fix.svg) Increased the maximum interval value, or price range for [price faceting](settings.md#price-faceting) from 10,000 to 40,000,000.
+
 _February 13, 2024_
 
 ![New](../assets/new.svg) [!DNL Live Search] now supports setting a default rule for [Search Merchandising](rules.md).
