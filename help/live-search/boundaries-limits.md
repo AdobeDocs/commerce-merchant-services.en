@@ -48,6 +48,7 @@ When it comes to site search, Adobe Commerce gives you options. Review the follo
 - Category merchandising can have one rule per category.
 - The maximum number of conditions per rule is 10.
 - The maximum number of events per rule is 25.
+- To avoid unpredictable results in paginated responses, the number of pinned products should not exceed the requested page size.
 
 ## Synonyms
 
