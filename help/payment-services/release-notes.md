@@ -87,7 +87,7 @@ _August 2, 2024_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
-![New](../assets/new.svg)<!-- PAY-4844 --> [!DNL Payment Services] now supports [line item data at the order level](line-items.md). This feature allows merchants to see detailed information about the items in an order, such as product details, quantity, and price (including sales tax, discounts, and other relevant information).
+![New](../assets/new.svg)<!-- PAY-4844 --> [!DNL Payment Services] now supports [line item data at the order level](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/payments-checkout/manage/line-items). This feature allows merchants to see detailed information about the items in an order, such as product details, quantity, and price (including sales tax, discounts, and other relevant information).
 
 ![New](../assets/new.svg)<!-- PAY-5380 --> [!DNL Payment Services] improves the [Configuration in the Admin](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/configure/configure-admin#general-configuration) experience for merchants for an easier and more intuitive onboarding process. This feature allows merchants to reset their [!DNL Payment Services] IDs.
 
@@ -259,7 +259,7 @@ _March 10, 2023_
 
 _March 10, 2023_
 
-[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.0-2.4.5-p2
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
 ![Fix](../assets/fix.svg)<!-- Issue PAY-4226 --> Fixed an issue that prevented new [!DNL Payment Services] merchants from using checkout in the Admin.[!DNL Payment Services] was previously using the Commerce customer ID, which does not exist for new customers.
 
