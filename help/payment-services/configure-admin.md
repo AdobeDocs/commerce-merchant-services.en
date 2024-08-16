@@ -42,7 +42,7 @@ You can enable [!DNL Payment Services] for your store and your  _[!UICONTROL Mer
 | [!UICONTROL Enable] | website | Enable or disable [!DNL Payment Services] for your website. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Method] | store view | Set the method, or environment, for your store. Options: [!UICONTROL Sandbox] / [!UICONTROL Production] |
 | [!UICONTROL Payment Services Sandbox ID] | store view | Your sandbox merchant ID, which is auto-generated during sandbox onboarding. |
-| [!UICONTROL Payment Services Production ID] | store view | Your production merchant ID, which is auto-generated during sandbox onboarding. |
+| [!UICONTROL Payment Services Production ID] | store view | Your production merchant ID, which is auto-generated during production (live) onboarding. |
 | [!UICONTROL Soft Descriptor] | website or store view | Add a soft descriptor to your website(s) and store view(s) to add information to customer transactions which delineate brands, stores, or product lines. |
 
 ## [!UICONTROL Credit Card Fields]
