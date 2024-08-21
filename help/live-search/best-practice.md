@@ -32,7 +32,7 @@ The [!DNL Live Search] [[!DNL popover]](storefront-popover.md) widget enables au
 
 Learn more about the [popover](storefront-popover.md) widget.
 
-### Synonyms and spellings
+### Synonyms and misspellings
 
 Incorporate synonyms and common misspellings to ensure comprehensive search results. Additionally, you can expand the search query to include words that shoppers might use that differ from words specified in your catalog. You do not want to lose a sale because someone is looking for a "sofa", while your product is listed as a "couch". You can capture a broad range of search terms by entering all the possible words that customers might use to find your products. You can [set synonyms as one way or two way](synonyms-add.md#step-2-define-the-synonym-by-type) to improve results.
 
