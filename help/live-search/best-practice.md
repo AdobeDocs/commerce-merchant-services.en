@@ -34,7 +34,7 @@ Learn more about the [popover](storefront-popover.md) widget.
 
 ### Synonyms and misspellings
 
-Live Search manages misspellings by default, additionally you can set up synonyms to include words that shoppers might use that differ from words specified in your catalog. You do not want to lose a sale because someone is looking for a "sofa", while your product is listed as a "couch". You can capture a broad range of search terms by entering all the possible words that customers might use to find your products. You can [set synonyms as one way or two way](synonyms-add.md#step-2-define-the-synonym-by-type) to improve results.
+Live Search manages misspellings by default. You can set up synonyms to include words that shoppers might use that differ from words specified in your catalog. You do not want to lose a sale because someone is looking for a "sofa", while your product is listed as a "couch". You can capture a broad range of search terms by entering all the possible words that customers might use to find your products. You can [set synonyms as one way or two way](synonyms-add.md#step-2-define-the-synonym-by-type) to improve results.
 
 #### Tips to optimize synonyms
 
