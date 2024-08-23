@@ -99,7 +99,12 @@ To select or create a SaaS project, request the [!DNL Commerce] API key from the
 
 1. In the _[!UICONTROL Sandbox API Keys]_ and _[!UICONTROL Production API Keys]_ sections, paste your key values.
 
-   Private keys must include `----BEGIN PRIVATE KEY---` at the beginning of the key and `----END PRIVATE KEY----` at the end of the key.
+   - Private keys must include `----BEGIN PRIVATE KEY---` at the beginning of the key and `----END PRIVATE KEY----` at the end of the key.
+   - If you do not have a copy of the actual keys, ask the Account Owner for them, then plug the values into the configuration.
+
+   >[!WARNING]
+   >
+   > If you add key values by querying a database backup or snapshot and pasting the values into the configuration, an additional layer of encryption is applied, and the keys will not work. 
 
 1. Click **Save**.
 
