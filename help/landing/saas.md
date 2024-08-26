@@ -73,10 +73,17 @@ For [!DNL Product Recommendations], the SaaS data space contains catalog and beh
 >[!WARNING]
 >
 > Use your production SaaS data space only on your production [!DNL Commerce] installation to avoid data collisions. Otherwise, you risk polluting your production site data with testing data, which causes deployment delays. For example, your production product data could be mistakenly overwritten from staging data, such as staging URLs.
+> If this should happen, [submit a Support request](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview) to request data cleanup.
 
 ### SaaS data space provisioning
 
-All merchants can access one production data space and two testing data spaces per SaaS project. For Adobe Commerce Cloud Pro projects with multiple staging environments, you can request additional testing data spaces for each staging environment by [submitting a Support request](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview).
+All Adobe Commerce merchants can access one production data space and two testing data spaces per SaaS project. 
+
+You can use the testing data spaces in any non-production environment as long as you don't use the same data space in multiple environments at the same time. To use the test data space in a different environment, perform a data cleanup before you select and configure the data space in that environment.
+
+For Adobe Commerce Cloud Pro projects with multiple staging environments, you can request additional testing data spaces for each staging environment by [submitting a Support request](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview). However, if you only have one staging environment and require additional testing data spaces, you have the following options:
+- Contact the Customer Success team or your appointed Customer Success Manager to request an additional Staging environment. There is an additional cost involved.
+- [Submit a Support request](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview) for an additional testing data space and indicate the business justification for the extra dataspace. This request is subject to approval.
 
 ### Select or create a SaaS project {#createsaasenv}
 
@@ -92,7 +99,12 @@ To select or create a SaaS project, request the [!DNL Commerce] API key from the
 
 1. In the _[!UICONTROL Sandbox API Keys]_ and _[!UICONTROL Production API Keys]_ sections, paste your key values.
 
-   Private keys must include `----BEGIN PRIVATE KEY---` at the beginning of the key and `----END PRIVATE KEY----` at the end of the key.
+   - Private keys must include `----BEGIN PRIVATE KEY---` at the beginning of the key and `----END PRIVATE KEY----` at the end of the key.
+   - If you do not have a copy of the actual keys, ask the Account Owner for them, then plug the values into the configuration.
+
+   >[!WARNING]
+   >
+   > If you add key values by querying a database backup or snapshot and pasting the values into the configuration, an additional layer of encryption is applied, and the keys will not work. 
 
 1. Click **Save**.
 

@@ -86,3 +86,22 @@ Partial sync and Retry failed items sync work only if the Commerce instance has 
 - Verify that the indexers are running from the [Admin](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) or by using the Commerce CLI command `bin/magento indexer:info`.
 
 - Verify that the indexers for the following feeds are set to `Update by Schedule`: Catalog Attributes, Product, Product Overrides, and Product Variant. You can check the indexers from [Index Management](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) in the Admin or using the CLI (`bin/magento indexer:show-mode | grep -i feed`).
+
+### Event manager notifications for data transfer logging
+
+In version 103.3.4 and later, SaaS Data Export dispatches the `data_sent_outside` event when data is sent from the Commerce instance to Adobe Commerce services.
+
+```php
+$this->eventManager->dispatch(
+   "data_sent_outside",
+   [
+       "timestamp" => time(),
+       "type" => $metadata->getFeedName(),
+       "data" => $data
+   ]
+);
+```
+
+>[!NOTE]
+>
+>For information about events and how to subscribe to them, see [Events and Observers](https://developer.adobe.com/commerce/php/development/components/events-and-observers) in the Adobe Commerce Developer documentation.

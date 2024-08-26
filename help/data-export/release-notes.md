@@ -51,7 +51,7 @@ Updates include:
 
 ## 103.3.4 Release
 
-![Fix](../assets/fix.svg) Improve Commerce SaaS data export logging by adding more details about the reindexing process.
+![Fix](../assets/fix.svg) Added support for data transfer audit logging by adding a mechanism to dispatch a `data_sent_outside` event each time data is transmitted from the Commerce instance to a Commerce service  <!--MDEE-785-->
 
 ## 103.3.3 Release
 
