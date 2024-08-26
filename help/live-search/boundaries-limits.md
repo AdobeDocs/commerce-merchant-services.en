@@ -31,7 +31,7 @@ When it comes to site search, Adobe Commerce gives you options. Review the follo
 ## Facets
 
 - A maximum of 100 attributes can be configured as facets from the 200 filterable attributes that can be indexed.
-- Within a facet, a maximum of 100 buckets can be returned. If more than 100 buckets need to be returned, [create a support ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) so Adobe can analyze the performance impact and determine if it is feasible to increase this limit for your environment.
+- Within a facet, a maximum of 100 buckets can be returned. If you need to return more than 100 buckets, [create a support ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) so Adobe can analyze the performance impact and determine if it is feasible to increase this limit for your environment.
 - Dynamic facets can cause performance issues in large indexes and indexes with high ordinality. If you have created dynamic facets and notice any performance deterioration or page not loading with timeout errors, try changing your facets to pinned to determine if that resolves your performance issue.
 - Stock status (`quantity_and_stock_status`) is not supported as a facet. You can use `inStock: 'true'` to filter out of stock products. This is supported out of the box in the `LiveSearchAdapter` module when "Display out of stock products" is set to "True" in the [!DNL Commerce] Admin.
 - Date type attributes are not supported as a facet.
