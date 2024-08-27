@@ -72,6 +72,15 @@ _October 12, 2022_
 
 +++
 
+## 3.2.0-beta3
+
+_August 27, 2024_
+
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.4 and newer
+
+![New](../assets/new.svg) - If you are participating in the beta, make sure your `composer.json` file has the following on the root level: ` "minimum-stability": "beta"`. Also, add `composer require "magento/customers-connector: ^1.2.0"` to send customer profiles from your Commerce instance to SaaS.
+![New](../assets/new.svg) - This release contains the features released in 3.1.1, 3.1.2, 3.1.3, and 3.1.4.
+
 ## 3.1.4
 
 _August 9, 2024_
