@@ -327,7 +327,7 @@ If you have a custom headless implementation, check out the [!DNL Live Search] r
 - [PLP widget](https://github.com/adobe/storefront-product-listing-page)
 - [Live Search field](https://github.com/adobe/storefront-search-as-you-type)
 
-If you don’t use the standard components like the Search Adapter, Luma widgets, or AEM CIF Widgets, the automatic collection of user interaction data does not work by default. This collected data is used by Adobe Sensei for intelligent merchandising and performance tracking. To resolve this issue, you need to develop a custom solution to implement this data collection in a headless manner.
+If you do not use the standard components like the Search Adapter, Luma widgets, or AEM CIF Widgets, the automatic collection of user interaction data does not work by default. This collected data is used by Adobe Sensei for intelligent merchandising and performance tracking. To resolve this issue, you need to develop a custom solution to implement this data collection in a headless manner.
 
 The latest version of [!DNL Live Search] already uses [!DNL Catalog Service].
 
@@ -390,7 +390,7 @@ Developers who have access to the code can completely customize how it works and
 
 After Live Search is enabled, the Data Export extension synchronizes Commerce data between the Commerce application and Live Search. This process ensures that the most current Commerce data is available on the storefront. In the Admin, you can check synchronization status using the Data Management dashboard. You can manage and troubleshoot the data export process using the Commerce CLI and logs. For details, see the [Data Export Guide](../data-export/overview.md).
 
-### Inventory Management
+### Inventory management
 
 [!DNL Live Search] supports [Inventory Management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) capabilities in Commerce (formerly knows as Multi-Source Inventory, or MSI). To enable full support, you must [update](install.md#update) the dependency module `commerce-data-export` to version 102.2.0+.
 

@@ -14,7 +14,7 @@ When it comes to site search, Adobe Commerce gives you options. Review the follo
 - [Tier Pricing](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier) and [Special Pricing](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-special) are not supported in the [!DNL Live Search] field and Product Listing Page Widget.
 - Product prices do not include value-added tax (VAT).
 - Content search is not supported.
-- There is a limit of 10k products that can be paginated.
+- There is a limit of 10k products that can be paginated. While this limit can be increased, it can impact performance. Make sure you provide meaningful ways to filter products in case a category or search result has lots of products so that shoppers do not have to use deep pagination.
 - There is a hard limit of 1MB per attribute, including description and custom attributes.
 - The search adapter does not support product attributes that are created with a custom source model and used as facets. To support this functionality, you must use the [Product Listing Page Widget](plp-styling.md).
 
@@ -78,3 +78,15 @@ When it comes to site search, Adobe Commerce gives you options. Review the follo
 - The [!DNL popover] does not support the *Blank* theme.
 - The [!DNL popover] is not supported on the Quick Order form.
 - Wishlists and product comparisons are not supported.
+- The currency symbol for the Peruvian sol (PEN) is not supported.
+
+## Troubleshooting
+
+For help with troubleshooting some common issues in [!DNL Live Search], see the following knowledgebase articles:
+
+- [[!DNL Live Search] catalog not synchronized](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-catalog-data-sync)
+- [[!DNL Live Search] dashboard and search result ranking is incorrect](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-dashboard-ranking-incorrect)
+- [[!DNL Live Search] displays out-of-stock products regardless of stock status settings in Admin](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-displays-out-of-stock-products)
+- [[!DNL Live Search] facets are not alphabetically sorted](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-facets-not-sorted)
+
+If you need additional assistance, contact [support](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
