@@ -18,7 +18,7 @@ Updates include:
 
 These notes describe updates that were published outside of a versioned release or improvements to the hosted service.
 
-_August 27, 2024_
+_September 4, 2024_
 
 ![Fix](../assets/fix.svg) Increased the maximum number of buckets that can be returned [within a facet](boundaries-limits.md#facets) to 100.
 
