@@ -75,29 +75,35 @@ When you activate the recommendation unit, Adobe Commerce starts to [collect dat
 
 ## Readiness indicators
 
-Some recommendation types use behavioral data from your shoppers to [train machine learning models](behavioral-data.md) to build personalized recommendations. 
+The goal of readiness indicators is to show which recommendation types will perform best based on the catalog and behavioral data available right now. Readiness indicators categorize recommendation types into either static-based or dynamic-based. Static-based use catalog data only; whereas dynamic-based use behavioral data from your shoppers. That behavioral data is used to [train machine learning models](behavioral-data.md) to build personalized recommendations.
 
-Requires only catalog data. No behavioral data is needed for these:
+### Static-based
+
+The following recommendation types are static-based because they only require catalog data. No behavioral data is needed for these:
 
 * _Most Like This_
 * _Recently Viewed_
 * _Visual Similarity_
 
-Based on last six months of storefront behavioral data:
+### Dynamic-based
+
+The following recommendation types are dynamic-based because they use storefront behavioral data.
+
+Last six months of storefront behavioral data:
 
 * _Viewed this, viewed that_
 * _Viewed this, bought that_
 * _Bought this, bought that_
 * _Recommended for you_
 
-Popularity-based recommendation types use the last seven days of storefront behavioral data:
+Last seven days of storefront behavioral data:
 
 * Most Viewed
 * Most Purchased
 * Added to Cart
 * Trending
 
-Readiness indicator values are expected to fluctuate due to factors such as the overall size of the catalog, volume of product interaction events (views, adds to cart, purchases), and percentage of skus that register those events within a certain time window, as listed above. For example, during peak holiday season traffic, the readiness indicators might show higher values than in times of normal volume.
+### Visualize progress
 
 To help you visualize the training progress of each recommendation type, the _Select Recommendation type_ section displays a measure of readiness for each type. These readiness indicators are calculated based on a couple factors:
 
@@ -105,7 +111,13 @@ To help you visualize the training progress of each recommendation type, the _Se
 
 * Sufficient result set variety: Do the products being returned represent a variety of products from your catalog? The goal with this factor is to avoid having a minority of products being the only items recommended across the site. 
 
-Based on the above factors, a readiness value is calculated and displayed. A recommendation type is considered ready to deploy when its readiness value is 75% or higher. A recommendation type is considered partially ready when its readiness is at least 50%. A recommendation type is considered not ready to deploy when its readiness value is less than 50%. These are general guidelines but each individual case can differ based on the nature of collected data as outlined above. 
+Based on the above factors, a readiness value is calculated and displayed as follows:
+
+* 75% or higher means the recommendation type is ready to deploy.
+* At least 50% means the recommendation type is partially ready.
+* Less than 50% means the recommendation type is not ready to deploy.
+
+These are general guidelines but each individual case can differ based on the nature of collected data as outlined above. Learn more about [how readiness indicators are calculated](#understand-how-readiness-indicators-are-calculated) and [why readiness indicators might be low](#what-to-do-if-the-readiness-indicator-percent-is-low).
 
 ![Recommendation type](assets/create-recommendation-select-type.png)
 _Recommendation type_
@@ -114,112 +126,28 @@ _Recommendation type_
 >
 >Indicators may never reach 100%.
 
+#### What to do if the readiness indicator percent is low
 
+A low readiness percentage indicates that there are not a lot of products from your catalog that would be included in recommendations for this recommendation type. This means that there is a high probability that [backup recommendations](behavioral-data.md#backuprecs) are returned if you deploy this recommendation type anyway.
 
-FROM THE WIKI
+For specific causes based on if the recommendation type is static- or dynamic-based, see the following:
 
-What do they mean?
-------------------
+* **Static-based** - Low percentages for these indicators can be caused by missing catalog data for the displayable products. If they are lower than expected, a full sync can fix this issue.
+* **Dynamic-based** - Low percentages for dynamic-based indicators can be caused by:
 
-The readiness indicators are a percentage of products that have the statistics or rfIndicators field in their Elastic Search document for the given recommendation type. It is a simple calculation that may indicate how many products might be recommended depending on the recommendation type. The products get statistics based on the volume of interactions (views, clicks, add-to-carts), that means if some products are never interacted with it's possible for them to never be recommended depending on the recommendation type.
+   * Missing fields in the required events for the respective recommendations (requestId, product context, and so on.)
+   * Your store does not have a lot of traffic so the event volume is low
+   * The variety of events across different products in your store is low. For example, if only ten percent of your products are viewed or bought most of the time then the respective readiness indicators will be low.
 
-What do customers/support think they mean? (Based on communication/feedback received in Jira tickets)
------------------------------------------------------------------------------------------------------
+#### Understand how readiness indicators are calculated
 
-The readiness indicators are an indication of how much the model is trained and independent of types of events collected, the breadth of products interacted with and size of catalog. From the tickets received in Jira there is a misunderstanding of how the readiness indicators are calculated and how they should approach 100%.
+The readiness indicators are an indication of how much the model is trained and independent of the types of events collected, the breadth of products interacted with, and the size of the catalog.
 
-There is a misunderstanding of how the readiness indicators are being calculated. Before the migration to URIS, we didn't clear old statistics/rfIndicators data so the readiness indicators would steadily increase if products eventually got some data. Since the recommendations types are re-calculated over a sliding window, the readiness indicators can fluctuate up and down which can cause confusion around what readiness means. It can be confusing if recommendation types come in and out of being "Ready".
+The readiness indicator percentage is derived from a calculation that indicates how many products might be recommended depending on the recommendation type. The products get statistics applied to them based on the overall size of the catalog, the volume of interactions, such as views, clicks, add-to-carts, and so on, and the percentage of SKUs that register those events within a certain time window. For example, during peak holiday season traffic, the readiness indicators might show higher values than in times of normal volume.
 
-The customers don't have any real feedback as to why the readiness indicators fluctuate which causes confusion and this is why we get lots of support cases.
+As a result of these variables, the readiness indicator percent can fluctuate. This explains why you might see recommendation types come in and out of being "Ready to deploy".
 
-### Current Documentation
-
-Documentation is clear but has no guidance on what to do if they are low.
-
-  
-
-### Static Indicators
-
-Indicators that depend on the customer's catalog only. 
-
-* More Like This
-* Recently Viewed
-* Visual Similarity
-
-Low percentages for these indicators may be caused by missing catalog data for the displayable products.
-
-If they are lower than expected a full sync may fix this issue. This has worked in the past for Visual Similarity as the images had to go through processing again.
-
-### Dynamic Indicators
-
-Based on last six months of storefront behavioral data:
-
-* Viewed this, viewed that
-* Viewed this, bought that
-* Bought this, bought that
-* Recommended for you
-
-Popularity-based recommendation types use the last seven days of storefront behavioral data:
-
-* Most Viewed
-* Most Purchased
-* Added to Cart
-* Trending
-
-Low percentages for these indicators may be caused by
-
-1. Missing fields in the required events for the respective recommendations (correct requestId, product context etc.)
-1. Low traffic = low event volume, therefore cannot formulate recommendation data
-1. The variety of events across different products in your store is low.
-
-
-WIKI COMMENTS
-
-A useful first step might be to call out the difference between static and dynamic indicators :
-
-Static will remain the same as long the catalog is synced and there are displayable products with catalog data populated. 
-Dynamic indicators will vary depending on the shopper activity across products
-
-
-Understanding a low percentage of readiness indicators:
-
-Static - Not all products in your catalog that are displayable have the correct catalog data populated
-Dynamic - This could point to two things
-Your events are not coming through with the correct context(correct requestId, product context etc)
-Your store does not have a lot of traffic so the events volume is low
-The variety of events across different products in your store is low. Eg: if only 10% of your products are viewed/bought most of the time then the respective readiness indicators will be low. This does not mean that there's a problem with training the recommendations model. (internal note - just a tip, they could run a campaign to increase variety across more skus)
-
-Krithika Chandran
-Erik Marr Adding this additional note from our Slack conversation:
-
-I want to change the wording to clarify two things:
-
-These are indicators that show which rec types will perform best based on the catalog and behavioral data we have right now
-A low readiness % indicates that there are not a lot of products from their catalog that would be included in recommendations for this rec type. This means there's a chance backup recs will be returned if they deployed this rec type anyway.
-  
-
-### Next Steps
-
-Doc updates explaining what to do when the indicators are low. There should be a level of understanding between support and the customer so that any and all issues do not results in tickets.
-
-The readiness indicators do provide value if they are understood correctly. They should be a simple way for the customers to understand whether or not a recommendation type should be used given their shopping data. They can also be used to determine if they have issues with their eventing or if they do not have enough traffic to populate the recommendation type. We should link to other docs to make sure they have eventing set up correctly and to make sure customers/support know what they are looking at if issues do come up.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Readiness indicators are a powerful tool you can use to determine which recommendation types will perform best based on the catalog and behavioral data available right now. They can provide a simple way for merchants to understand whether or not a recommendation type should be used given their shopping data. They can also be used to determine if they have issues with their eventing or if they do not have enough traffic to populate the recommendation type.
 
 ## Preview Recommendations {#preview}
 
