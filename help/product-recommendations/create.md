@@ -14,11 +14,11 @@ When you activate the recommendation unit, Adobe Commerce starts to [collect dat
 
 1. On the _Admin_ sidebar, go to **Marketing** > _Promotions_ > **Product Recommendations** to display the _Product Recommendations_ workspace.
 
-1. Specify the [Store View](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) where you want the recommendations to display.
+1. Specify the [Store View](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views) where you want the recommendations to display.
 
    >[!NOTE]
    >
-   > Page Builder recommendation units must be created in the default store view, but then can be used anywhere. To learn more about creating product recommendations with Page Builder, see [Add Content - Product Recommendations](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html).
+   > Page Builder recommendation units must be created in the default store view, but then can be used anywhere. To learn more about creating product recommendations with Page Builder, see [Add Content - Product Recommendations](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations).
 
 1. Click **Create Recommendation**.
 
@@ -28,14 +28,14 @@ When you activate the recommendation unit, Adobe Commerce starts to [collect dat
 
    >[!NOTE]
    >
-   > Product Recommendations are not supported on the Cart page when your store is configured to [display the shopping cart page immediately after adding a product to the cart](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration.html#redirect-to-cart).
+   > Product Recommendations are not supported on the Cart page when your store is configured to [display the shopping cart page immediately after adding a product to the cart](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration).
 
    * Home Page
    * Category
    * Product Detail
    * Cart
    * Confirmation
-   * [Page Builder](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html)
+   * [Page Builder](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations)
 
    You can create up to five active recommendation units for each page type, and up to 25 for Page Builder. The page type is grayed out When the limit is reached.
 
@@ -79,7 +79,7 @@ The goal of readiness indicators is to show which recommendation types will perf
 
 ### Static-based
 
-The following recommendation types are static-based because they only require catalog data. No behavioral data is needed for these:
+The following recommendation types are static-based because they only require catalog data. No behavioral data is used.
 
 * _Most Like This_
 * _Recently Viewed_
@@ -113,9 +113,9 @@ To help you visualize the training progress of each recommendation type, the _Se
 
 Based on the above factors, a readiness value is calculated and displayed as follows:
 
-* 75% or higher means the recommendation type is ready to deploy.
-* At least 50% means the recommendation type is partially ready.
-* Less than 50% means the recommendation type is not ready to deploy.
+* 75% or higher means that the recommendation type is ready to deploy.
+* At least 50% means that the recommendation type is partially ready.
+* Less than 50% means that the recommendation type is not ready to deploy.
 
 These are general guidelines but each individual case can differ based on the nature of collected data as outlined above. Learn more about [how readiness indicators are calculated](#understand-how-readiness-indicators-are-calculated) and [why readiness indicators might be low](#what-to-do-if-the-readiness-indicator-percent-is-low).
 
@@ -128,7 +128,7 @@ _Recommendation type_
 
 #### What to do if the readiness indicator percent is low
 
-A low readiness percentage indicates that there are not a lot of products from your catalog that would be included in recommendations for this recommendation type. This means that there is a high probability that [backup recommendations](behavioral-data.md#backuprecs) are returned if you deploy this recommendation type anyway.
+A low readiness percentage indicates that there are not many products from your catalog that would be included in recommendations for this recommendation type. This means that there is a high probability that [backup recommendations](behavioral-data.md#backuprecs) are returned if you deploy this recommendation type anyway.
 
 For specific causes based on if the recommendation type is static- or dynamic-based, see the following:
 
@@ -136,7 +136,7 @@ For specific causes based on if the recommendation type is static- or dynamic-ba
 * **Dynamic-based** - Low percentages for dynamic-based indicators can be caused by:
 
    * Missing fields in the required events for the respective recommendations (requestId, product context, and so on.)
-   * Your store does not have a lot of traffic so the event volume is low
+   * Your store does not have much traffic so the event volume is low
    * The variety of events across different products in your store is low. For example, if only ten percent of your products are viewed or bought most of the time then the respective readiness indicators will be low.
 
 #### Understand how readiness indicators are calculated
@@ -145,9 +145,9 @@ The readiness indicators are an indication of how much the model is trained and 
 
 The readiness indicator percentage is derived from a calculation that indicates how many products might be recommended depending on the recommendation type. The products get statistics applied to them based on the overall size of the catalog, the volume of interactions, such as views, clicks, add-to-carts, and so on, and the percentage of SKUs that register those events within a certain time window. For example, during peak holiday season traffic, the readiness indicators might show higher values than in times of normal volume.
 
-As a result of these variables, the readiness indicator percent can fluctuate. This explains why you might see recommendation types come in and out of being "Ready to deploy".
+As a result of these variables, the readiness indicator percent can fluctuate. This explains why you might see that recommendation types come in and out of being "Ready to deploy".
 
-Readiness indicators are a powerful tool you can use to determine which recommendation types will perform best based on the catalog and behavioral data available right now. They can provide a simple way for merchants to understand whether or not a recommendation type should be used given their shopping data. They can also be used to determine if they have issues with their eventing or if they do not have enough traffic to populate the recommendation type.
+Readiness indicators are a powerful tool that you can use to determine which recommendation types will perform best based on the catalog and behavioral data available right now. They can provide a simple way for merchants to understand whether or not a recommendation type should be used given their shopping data. They can also be used to determine if they have issues with their eventing or if they do not have enough traffic to populate the recommendation type.
 
 ## Preview Recommendations {#preview}
 
