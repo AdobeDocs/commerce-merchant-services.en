@@ -22,6 +22,11 @@ Updates include:
 
 ## Current major version
 
+## 103.3.10 Release
+
+![Fix](../assets/fix.svg) Fixed Multiple storeview filtration for the product custom options feed. <!--MDEE-842-->
+![Fix](../assets/fix.svg) Invalid feeds are not resubmitted until the feed's hash value has changed.<!--MDEE-848-->
+
 ## 103.3.9 Release
 
 ![Fix](../assets/fix.svg) When an entity is deleted, the `deleted` flag is now propagated for the scoping service feeds for website (`scopesWebsite`) and customer group (`scopesCustomerGroup`).<!--MDEE-839-->

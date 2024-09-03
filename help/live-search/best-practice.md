@@ -2,6 +2,7 @@
 title: '[!DNL Live Search] Best Practices'
 description: Learn the best practices for implementing [!DNL Live Search] in your store.
 role: Admin, Developer
+exl-id: 69b2c2a6-c8a9-4640-8d2b-08fcd7a96034
 ---
 # Best Practices
 
