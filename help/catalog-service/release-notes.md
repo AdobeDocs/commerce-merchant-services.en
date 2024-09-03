@@ -16,9 +16,25 @@ Updates include:
 
 ## Current major version
 
+### V1.22 Release
+
+_August 13, 2024_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+![New](../assets/new.svg) Added support to retrieve all variants by product SKU. See the [Catalog Service API Reference](https://developer.adobe.com/commerce/services/graphql/catalog-service/). <!--DATA-6067-->
+
+
+## Previous versions
+
++++ Previous versions
+
 ### V1.19 Release
 
 _May 23, 2024_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
 
 ![Fix](../assets/fix.svg) <!--DATA-5033-->The `InStock` flag for option values now takes into account the scoped `enabled` status of the product variant.
 
@@ -39,10 +55,6 @@ Solve the following limitations by using API Mesh and the Core GraphQL API:
 * Bundle products with fixed prices
 
 For details and examples, see [Catalog Service and API Mesh](mesh.md)
-
-## Previous versions
-
-+++ Previous versions
 
 ### V1.18 Release
 
@@ -194,7 +206,7 @@ _September 12, 2022_
 ![New](../assets/new.svg) Images for variants support: product images are returned based on the selected options
 ![New](../assets/new.svg) Roles for prices support: allow only members of specific customer groups to see the price of products
 ![Fix](../assets/fix.svg) Improved stability and performance of the service
-![New](../assets/new.svg) Updates are received when products are deleted from the catalog 
+![New](../assets/new.svg) Updates are received when products are deleted from the catalog
 
 ### Beta Release
 
