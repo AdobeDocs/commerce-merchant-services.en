@@ -154,7 +154,7 @@ The readiness indicator percentage is derived from a calculation that indicates 
 
 As a result of these variables, the readiness indicator percent can fluctuate. This explains why you might see that recommendation types come in and out of being "Ready to deploy".
 
-Readiness indicators are a powerful tool that you can use to determine which recommendation types will perform best based on the catalog and behavioral data available right now. They can provide a simple way for merchants to understand whether or not a recommendation type should be used given their shopping data. They can also be used to determine if they have issues with their eventing or if they do not have enough traffic to populate the recommendation type.
+Readiness indicators are a powerful tool that you can use to determine which recommendation types will perform best based on the catalog and behavioral data available. They can provide a simple way for merchants to understand if a recommendation type should be used given their shopping data. They can also be used to determine if they have issues with their eventing or if they do not have enough traffic to populate the recommendation type.
 
 ## Preview Recommendations {#preview}
 
