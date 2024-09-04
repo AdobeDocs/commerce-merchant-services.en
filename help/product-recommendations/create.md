@@ -150,7 +150,7 @@ For specific causes based on if the recommendation type is static- or dynamic-ba
 
 #### Understand how readiness indicators are calculated
 
-The readiness indicators are an indication of how much the model is trained and independent of the types of events collected, the breadth of products interacted with, and the size of the catalog.
+The readiness indicators are an indication of how much the model is trained. Indicators are independent of the types of events collected, the breadth of products interacted with, and the size of the catalog.
 
 The readiness indicator percentage is derived from a calculation that indicates how many products might be recommended depending on the recommendation type. Statistics are applied to products based on the overall size of the catalog, the volume of interactions (such as views, clicks, add-to-carts), and the percentage of SKUs that register those events within a certain time window. For example, during peak holiday season traffic, the readiness indicators might show higher values than in times of normal volume.
 
