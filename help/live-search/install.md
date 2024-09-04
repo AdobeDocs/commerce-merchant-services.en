@@ -327,7 +327,7 @@ If you have a custom headless implementation, check out the [!DNL Live Search] r
 - [PLP widget](https://github.com/adobe/storefront-product-listing-page)
 - [Live Search field](https://github.com/adobe/storefront-search-as-you-type)
 
-If you do not use the standard components like the Search Adapter, Luma widgets, or AEM CIF Widgets, the automatic collection of user interaction data does not work by default. This collected data is used by Adobe Sensei for intelligent merchandising and performance tracking. To resolve this issue, you need to develop a custom solution to implement this data collection in a headless manner.
+Automatic collection of user interaction data does not work by default when you do not use the standard components like the Search Adapter, Luma widgets, or AEM CIF Widgets. Adobe Sensei uses this collected data for intelligent merchandising and performance tracking. To resolve this issue, you need to develop a custom solution to implement this data collection in a headless manner.
 
 The latest version of [!DNL Live Search] already uses [!DNL Catalog Service].
 

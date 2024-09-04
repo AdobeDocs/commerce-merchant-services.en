@@ -75,7 +75,7 @@ When you activate the recommendation unit, Adobe Commerce starts to [collect dat
 
 ## Readiness indicators
 
-The goal of readiness indicators is to show which recommendation types will perform best based on the catalog and behavioral data available. Readiness indicators are categorize into either [static-based](#static-based) or [dynamic-based](#dynamic-based). Static-based use catalog data only; whereas dynamic-based use behavioral data from your shoppers. That behavioral data is used to [train machine learning models](behavioral-data.md) to build personalized recommendations and to calculate their readiness score.
+The goal of readiness indicators is to show which recommendation types will perform best based on the catalog and behavioral data available. Readiness indicators are categorized into either [static-based](#static-based) or [dynamic-based](#dynamic-based). Static-based use catalog data only; whereas dynamic-based use behavioral data from your shoppers. That behavioral data is used to [train machine learning models](behavioral-data.md) to build personalized recommendations and to calculate their readiness score.
 
 Readiness indicators are calculated based on a couple factors:
 
@@ -89,7 +89,7 @@ Based on the above factors, a readiness value is calculated and displayed as fol
 * At least 50% means that the recommendations suggested for that recommendation type will be less relevant.
 * Less than 50% means that the recommendations suggested for that recommendation type will not be relevant.
 
-These are general guidelines but each individual case can differ based on the nature of collected data as outlined above. Learn more about [how readiness indicators are calculated](#understand-how-readiness-indicators-are-calculated) and [why readiness indicators might be low](#what-to-do-if-the-readiness-indicator-percent-is-low).
+These are general guidelines, but each individual case can differ based on the nature of collected data, as outlined above. Learn more about [how readiness indicators are calculated](#understand-how-readiness-indicators-are-calculated) and [why readiness indicators might be low](#what-to-do-if-the-readiness-indicator-percent-is-low).
 
 ### Static-based
 
@@ -116,7 +116,7 @@ Last seven days of storefront behavioral data:
 * Added to Cart
 * Trending
 
-Most recent shopper behavioral data (only views)
+Most recent shopper behavioral data (only views):
 
 * _Recently Viewed_
 
