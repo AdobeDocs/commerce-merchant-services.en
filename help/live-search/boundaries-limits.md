@@ -17,6 +17,7 @@ When it comes to site search, Adobe Commerce gives you options. Review the follo
 - There is a limit of 10k products that can be paginated. While this limit can be increased, it can impact performance. Make sure you provide meaningful ways to filter products in case a category or search result has a large number of products so that shoppers do not have to use deep pagination.
 - There is a hard limit of 1MB per attribute, including description and custom attributes.
 - The search adapter does not support product attributes that are created with a custom source model and used as facets. To support this functionality, you must use the [Product Listing Page Widget](plp-styling.md).
+- Custom product types are not supported.
 
 ## Indexing
 

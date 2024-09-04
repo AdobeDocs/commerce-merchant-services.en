@@ -75,7 +75,9 @@ When you activate the recommendation unit, Adobe Commerce starts to [collect dat
 
 ## Readiness indicators
 
-The goal of readiness indicators is to show which recommendation types will perform best based on the catalog and behavioral data available. Readiness indicators are categorized into either [static-based](#static-based) or [dynamic-based](#dynamic-based). Static-based use catalog data only; whereas dynamic-based use behavioral data from your shoppers. That behavioral data is used to [train machine learning models](behavioral-data.md) to build personalized recommendations and to calculate their readiness score.
+Readiness indicators show which recommendation types will perform best based on the catalog and behavioral data available. You can also use readiness indicators to determine if you have issues with your eventing or if you do not have enough traffic to populate the recommendation type.
+
+Readiness indicators are categorize into either [static-based](#static-based) or [dynamic-based](#dynamic-based). Static-based use catalog data only; whereas dynamic-based use behavioral data from your shoppers. That behavioral data is used to [train machine learning models](behavioral-data.md) to build personalized recommendations and to calculate their readiness score.
 
 Readiness indicators are calculated based on a couple factors:
 
@@ -150,11 +152,9 @@ For specific causes based on if the recommendation type is static- or dynamic-ba
 
 The readiness indicators are an indication of how much the model is trained and independent of the types of events collected, the breadth of products interacted with, and the size of the catalog.
 
-The readiness indicator percentage is derived from a calculation that indicates how many products might be recommended depending on the recommendation type. The products get statistics applied to them based on the overall size of the catalog, the volume of interactions, such as views, clicks, add-to-carts, and so on, and the percentage of SKUs that register those events within a certain time window. For example, during peak holiday season traffic, the readiness indicators might show higher values than in times of normal volume.
+The readiness indicator percentage is derived from a calculation that indicates how many products might be recommended depending on the recommendation type. Statistics are applied to products based on the overall size of the catalog, the volume of interactions (such as views, clicks, add-to-carts), and the percentage of SKUs that register those events within a certain time window. For example, during peak holiday season traffic, the readiness indicators might show higher values than in times of normal volume.
 
 As a result of these variables, the readiness indicator percent can fluctuate. This explains why you might see that recommendation types come in and out of being "Ready to deploy".
-
-Readiness indicators are a powerful tool that you can use to determine which recommendation types will perform best based on the catalog and behavioral data available. They can provide a simple way for merchants to understand if a recommendation type should be used given their shopping data. They can also be used to determine if they have issues with their eventing or if they do not have enough traffic to populate the recommendation type.
 
 ## Preview Recommendations {#preview}
 
