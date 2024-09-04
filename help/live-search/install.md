@@ -171,7 +171,7 @@ For additional help, see [[!DNL Live Search] catalog not synchronized](https://e
 
 Getting your product data configured correctly ensures good search results for your customers. In this section, you enable the product listing widgets and assign categories.
 
-### Enable Product listing widgets
+### Enable product listing widgets
 
 When you install [!DNL Live Search] 4.0.0+, product listing widgets are enabled by default. When widgets are enabled, a different UI component is used for the search results page and the category browse product listing page. This UI component makes direct calls to the [Catalog Service API](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/), which results in faster response times.
 
