@@ -18,6 +18,10 @@ Updates include:
 
 These notes describe updates that were published outside of a versioned release or improvements to the hosted service.
 
+_September 4, 2024_
+
+![Fix](../assets/fix.svg) Increased the maximum number of buckets that can be returned [within a facet](boundaries-limits.md#facets) to 100.
+
 _August 7, 2024_
 
 ![Fix](../assets/fix.svg) Increased the maximum interval value, or price range for [price faceting](settings.md#price-faceting) from 10,000 to 40,000,000.
