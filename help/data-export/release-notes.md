@@ -24,8 +24,8 @@ Updates include:
 
 ## 103.3.11 Release
 
-![Fix](../assets/fix.svg) The data export service now sends special price data for bundle products as a percentage, correcting a previous issue where it was sent as a final price.<!-MDEE-854-->
-![Fix](../assets/fix.svg) Updated the monolog implementation for compatibility with Monolog 3.<!-MDEE-858-->
+![Fix](../assets/fix.svg) The data export service now sends special price data for bundle products as a percentage, correcting a previous issue where it was sent as a final price. <!--MDEE-854-->
+![Fix](../assets/fix.svg) Updated the monolog implementation for compatibility with Monolog 3. <!--MDEE-858-->
 
 ## 103.3.10 Release
 
