@@ -18,6 +18,7 @@ When it comes to site search, Adobe Commerce gives you options. Review the follo
 - There is a hard limit of 1MB per attribute, including description and custom attributes.
 - The search adapter does not support product attributes that are created with a custom source model and used as facets. To support this functionality, you must use the [Product Listing Page Widget](plp-styling.md).
 - Custom product types are not supported.
+- You can filter results using the "starts with" or "contains" conditions with some limitations as described [here](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#limitations).
 
 ## Indexing
 

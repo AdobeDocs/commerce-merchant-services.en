@@ -105,6 +105,31 @@ At a high level, onboarding [!DNL Live Search] requires that you:
    bin/magento setup:upgrade
    ```
 
+### Install the [!DNL Live Search] beta
+
+If you want to explore new features available in [!DNL Live Search], consider installing the beta.
+
+This beta adds two new conditions to the filtering section of the [`productSearch` query](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/). These new conditions let you filter product attributes using `contains` and `startsWith`.
+
+- `contains` - Lets shoppers search for products containing specific attribute values.
+- `startsWith` - Lets shoppers search for products where the attribute value starts with a particular string.
+
+These new conditions enhance the search query filtering mechanism to refine search results. These new conditions do not affect the main search query.
+
+You can implement these new conditions on your search results page. For example, you can add a new section on the page where the shopper can further refine their search results. You can allow shoppers to select specific product attributes, such as "Manufacturer", "Part Number", and "Description". From there, they search within those attributes using the `contains` or `startsWith` conditions. See the Admin guide for a list of searchable [attributes](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types).
+
+1. To install the beta, run the following from the command line:
+
+    ```bash
+    composer require magento/module-live-search-search-types:"^1.0-beta"
+    ```
+
+1. In the Admin, [set a product attribute](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes-add#step-5-describe-the-storefront-properties) to be searchable and specify the search capability for that attribute, such as **Contains** or **Starts with**. You can specify a maximum of 6 attributes to search.
+
+    ![Specify search capability](./assets/search-filters-admin.png)
+
+1. See the [developer documentation](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering-using-search-capability) to learn how to update your [!DNL Live Search] API calls using the new `contains` and `startsWith` conditions.
+
 ## 2. Configure API keys
 
 The Adobe Commerce API key and its associated private key are required to connect [!DNL Live Search] to an installation of Adobe Commerce. The API key is generated and maintained in the account of the [!DNL Commerce] license holder, who can share it with the developer or systems integrator. The developer can then create and manage the SaaS Data Spaces on behalf of the license holder. If you already have a set of API keys, you do not need to regenerate them.
