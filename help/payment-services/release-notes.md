@@ -23,6 +23,10 @@ These release notes describe feature changes and fixes that occurred and were re
 
 +++Hosted service updates
 
+_August 30, 2024_
+
+![New issue](../assets/new.svg)<!-- Issue PAY-5658 --> Now, merchants can filter transactions by the Payment Detail in the [transactions report](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/transactions.html) for more detailed and accurate payment methods data.
+
 _July 15, 2024_
 
 ![New issue](../assets/new.svg)<!-- Issue PAY-5571 --> Now, merchants can filter transactions by the Commerce customer email in the [transactions report](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/transactions.html). Enter the customer email to filter transactions for that specific email.
@@ -80,6 +84,20 @@ _June 28, 2021_
 ![New](../assets/new.svg)<!-- Issue PAY-2761 --> You can now customize the data that displays in the [Order payment status report](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) and the [Payouts report](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) by showing or hiding columns using the Column settings control.
 
 +++
+
+## v2.8.0
+
+_September 13, 2024_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+![New](../assets/new.svg)<!-- PAY-5499 --> [!DNL Payment Services] now supports sending tracking number information to PayPal when a [tracking number is entered](track-shipment.md) in Adobe Commerce.
+
+![Fix](../assets/fix.svg)<!-- PAY-5626 --> [!DNL Payment Services] has optimised the request process to the merchant registry when customers visit the Commerce checkout page. Previously, separate requests were made for each Payment Method (Hosted Fields, Google Pay, Apple Pay, and Smart Buttons). This improvement reduces the number of calls, enhancing performance and efficiency during the checkout process.
+
+![Fix](../assets/fix.svg)<!-- PAY-5645 --> [!DNL Payment Services] now prevents the PayPal/Google Pay popup from opening if the shopper has not agreed to merchant created custom terms and conditions on the checkout page.
+
+![Fix](../assets/fix.svg)<!-- PAY-5648 -->  [!DNL Payment Services] has addressed an issue related to the line item breakdown of tax on the PayPal portal. If the shipping cost of an order has tax associated with it, the tax will be included as part of the shipping cost, and will be visible this way in the line item details shown in the PayPal portal.
 
 ## v2.7.0
 

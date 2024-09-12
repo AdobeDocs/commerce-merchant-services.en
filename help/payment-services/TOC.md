@@ -28,12 +28,13 @@ recommendations: noDisplay
 - Payments and checkout {#payments-checkout}
   - [Payment options](payments-options.md)
   - [Credit card vaulting](vaulting.md)
-  - [Checkout](checkout.md)
-  - [Create an order in the Admin](create-order.md)
+  - [Checkout in [!DNL Payment Services]](checkout.md)
   - Manage payments {#manage}
     - [Line items for [!DNL Payment Services]](line-items.md)
     - [Refunds](refunds.md)
     - [Voids](voids.md)
+  - [Create an order in the Admin](create-order.md)
+  - [Tracking your shipments in [!DNL Payment Services]](track-shipment.md)
 - Financial reporting {#reporting}
   - [Transactions report](transactions.md)
   - [Order payment status report](order-payment-status.md)
