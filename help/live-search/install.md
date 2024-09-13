@@ -107,7 +107,9 @@ At a high level, onboarding [!DNL Live Search] requires that you:
 
 ### Install the [!DNL Live Search] beta
 
-If you want to explore new features available in [!DNL Live Search], consider installing the beta.
+>[!IMPORTANT]
+>
+>If you want to explore new features available in [!DNL Live Search], consider installing the beta.
 
 This beta adds two new conditions to the filtering section of the [`productSearch` query](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/). These new conditions let you filter product attributes using `contains` and `startsWith`.
 
