@@ -42,4 +42,4 @@ The following instructions will walk you through the process to create a shipmen
 
 ### Compatibility with third parties
 
-Any third-party extension is compatible with the functionality when a shipment entity is created through [Commerce API](https://developer.adobe.com/commerce/webapi/rest/attributes/#magentosalesapishipmentrepositoryinterface-shipmentrepositoryinterface){target=_blank}.
+Any third-party extension is compatible with the functionality when a shipment entity is created through [Commerce API](https://developer.adobe.com/commerce/webapi/rest/attributes/#ShipmentRepositoryInterface){target=_blank}.
