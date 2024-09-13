@@ -11,7 +11,8 @@ When it comes to site search, Adobe Commerce gives you options. Review the follo
 ## General
 
 - The [Advanced Search](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) module is disabled when [!DNL Live Search] is installed, and the Advanced Search link in the storefront footer is removed.
-- [Tier Pricing](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier) and [Special Pricing](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-special) are not supported in the [!DNL Live Search] field and Product Listing Page Widget.
+- [Tier Pricing](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier) is not supported in the [!DNL Live Search] field and Product Listing Page Widget.
+- [Special Pricing](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-special) is supported in the [!DNL Live Search] field and Product Listing Page Widget, however the start date and end date for the special pricing is not supported.
 - Product prices do not include value-added tax (VAT).
 - Content search is not supported.
 - There is a limit of 10k products that can be paginated. While this limit can be increased, it can impact performance. Make sure you provide meaningful ways to filter products in case a category or search result has a large number of products so that shoppers do not have to use deep pagination.
