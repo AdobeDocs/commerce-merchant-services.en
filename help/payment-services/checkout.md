@@ -1,10 +1,11 @@
 ---
-title: Checkout
-description: Customize checkout to fit your customer's needs.
+title: Checkout in [!DNL Payment Services]
+description: Customize [!DNL Payment Services] checkout to fit your customer's needs.
 feature: Payments, Checkout
 exl-id: 47df165f-2145-4e0e-b272-54b8e768cf19
 ---
-# Checkout
+
+# Checkout in [!DNL Payment Services]
 
 You can configure checkout for Adobe Commerce [!DNL Payment Services] to best suit your shoppers. Functionality such as [order auto-voiding](#order-auto-voided-if-error) and [credit card vaulting](#credit-card-vaulting) ensure your shoppers have a smooth user experience.
 
