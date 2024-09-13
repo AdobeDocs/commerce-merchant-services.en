@@ -85,6 +85,14 @@ _June 28, 2021_
 
 +++
 
+## v2.8.1
+
+_September 13, 2024_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+![Fix](../assets/fix.svg)<!-- PAY-5644 --> Fixed an issue with the cache of SDK parameters when using multiple scopes in [!DNL Payment Services]. SDK configuration is now cached separately for each scope instead of under a single key. This ensures that each scope's cache is invalidated independently, improving reliability when managing multiple scopes.
+
 ## v2.8.0
 
 _September 13, 2024_
