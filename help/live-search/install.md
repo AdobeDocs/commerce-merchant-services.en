@@ -111,10 +111,17 @@ At a high level, onboarding [!DNL Live Search] requires that you:
 >
 >If you want to explore new features available in [!DNL Live Search], consider installing the beta.
 
-This beta adds two new conditions to the filtering section of the [`productSearch` query](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/). These new conditions let you filter product attributes using `contains` and `startsWith`.
+This beta supports two new capabilities in the [`productSearch` query](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/):
 
-- `contains` - Lets shoppers search for products containing specific attribute values.
-- `startsWith` - Lets shoppers search for products where the attribute value starts with a particular string.
+- **Layered search** - Ability to search within another search context. With this capability, you can undertake up to two layers of search for your search queries. For example:
+  
+  - **Layer 1 search** - Search for "motor" on "product_attribute_1".
+  - **Layer 2 search** - Search for "part number 123" on "product_attribute_2". In this example, "part number 123" is searched for within the results for "motor".
+
+- **startsWith search indexation** - Ability to search using `startsWith` indexation. This new capability allows you to:
+
+  - Let shoppers search for products where the attribute value starts with a particular string.
+  - Configure an ends with search so shoppers can search for products where the attribute value ends with a particular string. To enable an ends with search, the product attribute needs to be ingested in reverse and the API call should also be a reversed string.
 
 These new conditions enhance the search query filtering mechanism to refine search results. These new conditions do not affect the main search query.
 
@@ -126,11 +133,13 @@ You can implement these new conditions on your search results page. For example,
     composer require magento/module-live-search-search-types:"^1.0-beta"
     ```
 
-1. In the Admin, [set a product attribute](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes-add#step-5-describe-the-storefront-properties) to be searchable and specify the search capability for that attribute, such as **Contains** or **Starts with**. You can specify a maximum of 6 attributes to search.
+   This beta adds "Contains" and "Starts with" checkboxes in the Admin. It also updates the `productSearch` GraphQL API to include these new search capabilities.
+
+1. In the Admin, [set a product attribute](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes-add#step-5-describe-the-storefront-properties) to be searchable and specify the search capability for that attribute, such as **Contains** (default) or **Starts with**. You can specify a maximum of 6 attributes to search.
 
     ![Specify search capability](./assets/search-filters-admin.png)
 
-1. See the [developer documentation](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering-using-search-capability) to learn how to update your [!DNL Live Search] API calls using the new `contains` and `startsWith` conditions.
+1. See the [developer documentation](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering-using-search-capability) to learn how to update your [!DNL Live Search] API calls using the new `contains` and `startsWith` search capabilities.
 
 ## 2. Configure API keys
 
