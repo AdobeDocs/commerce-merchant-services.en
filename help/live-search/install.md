@@ -135,7 +135,7 @@ You can implement these new conditions on your search results page. For example,
 
    This beta adds "Contains" and "Starts with" checkboxes in the Admin. It also updates the `productSearch` GraphQL API to include these new search capabilities.
 
-1. In the Admin, [set a product attribute](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes-add#step-5-describe-the-storefront-properties) to be searchable and specify the search capability for that attribute, such as **Contains** (default) or **Starts with**. You can specify a maximum of 6 attributes to search.
+1. In the Admin, [set a product attribute](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes-add#step-5-describe-the-storefront-properties) to be searchable and specify the search capability for that attribute, such as **Contains** (default) or **Starts with**. You can specify a maximum of six attributes to be enabled for **Contains** or **Starts with**. For beta, be aware that the Admin does not enforce this restriction but it is enforced in API searches.
 
     ![Specify search capability](./assets/search-filters-admin.png)
 
