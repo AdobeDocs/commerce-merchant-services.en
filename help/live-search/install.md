@@ -138,7 +138,7 @@ You can implement these new conditions on your search results page. For example,
 1. To install the beta, run the following from the command line:
 
     ```bash
-    composer require magento/module-live-search-search-types:"^1.0-beta"
+    composer require magento/module-live-search-search-types:"^1.0.0-beta1"
     ```
 
    This beta adds **[!UICONTROL Search types]** checkboxes for **[!UICONTROL Autocomplete]**, **[!UICONTROL Contains]**, and **[!UICONTROL Starts with]** in the Admin. It also updates the `productSearch` GraphQL API to include these new search capabilities.
