@@ -38,7 +38,7 @@ Any filterable product attribute can be used as a facet. The *Add facets* panel 
 
      * Label - ([Headless](facets-type.md) only) Enter the facet label that you want to use.
      * Sort type - Facets are sorted alphabetically for all [!DNL Commerce] storefronts. For headless implementations, facets can be sorted either alphabetically or by count. Options: Alphabetical, Count (headless only)
-     * Max Value - Enter the maximum number of facet values displayed in the storefront. Valid entries: 0 - 30; Default: 8
+     * Max Value - Enter the maximum number of facet values displayed in the storefront. Valid entries: 0 - 100; Default: 8
 
 1. When complete, click **Save**.
 
@@ -59,7 +59,7 @@ Any filterable product attribute can be used as a facet. The *Add facets* panel 
 |--- |--- |
 | Label | ([Headless](facets-type.md) only) The [facet label](facets-type.md) that is visible in the storefront can be edited for consistency with your brand. |
 | Sort Type | The method that is used to [sort](facets-type.md) facets. All [!DNL Commerce] storefronts sort facets alphabetically only. Headless implementations can also sort by `Count`. Options:<br />Alphabetical - Sorts facets alphabetically.<br />Count - (Headless only) Sorts facets based on the number of matches found. |
-| Max Value | The maximum number of values that can be displayed in the storefront for each facet. Facets that represent a range of values are evenly distributed. Valid entries: 0 - 30; Default: 8 |
+| Max Value | The maximum number of values that can be displayed in the storefront for each facet. Facets that represent a range of values are evenly distributed. Valid entries: 0 - 100; Default: 8 |
 
 ### Controls
 
