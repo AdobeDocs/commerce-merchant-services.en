@@ -78,6 +78,271 @@ Custom attributes are supported at two levels:
 
     You need to modify the example code to expose additional custom attributes. The implementation varies based on where these attributes are stored and the logic required to extract them. 
 
+Step 1: Create Custom module to add custom attributes
+Step 1.0: Create the Module Directory for custom attributes.
+
+1. Navigate to the `app/code` directory in your Commerce installation and create a directory structure for your module. Magento/AepCustomAttributes.
+
+```xml
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\AepCustomAttributes\Model\Provider\CustomAttribute">
+        <arguments>
+            <argument name="usingField" xsi:type="string">commerceOrderId</argument>
+        </arguments>
+    </type>
+    <type name="Magento\AepCustomAttributes\Model\Provider\OrderItemCustomAttribute">
+        <arguments>
+            <argument name="usingField" xsi:type="string">entityId</argument>
+        </arguments>
+    </type>
+    <type name="Magento\DataServices\Model\ProductContext">
+        <plugin name="product-context-plugin" type="Magento\AepCustomAttributes\Plugin\Model\ProductContext"/>
+    </type>
+</config>
+```
+
+Step 1.1: Define the Module
+
+Create a module.xml file and query.xml at app/code/Magento/AepCustomAttributes/etc with the following content:
+
+module.xml
+
+```xml
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright (c) [year], [name]. All rights reserved.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <module name="Magento_SalesRuleStaging" setup_version="2.0.0">
+        <sequence>
+            <module name="Magento_Staging"/>
+            <module name="Magento_SalesRule"/>
+        </sequence>
+    </module>
+</config>
+```
+
+query.xml
+
+```xml
+<query>
+    <source name="sales_order" type="sales">
+        <attribute name="increment_id" operator="eq" alias="order_increment_id"/>
+        <link source="inventory_source_item" condition_type="by_sku"/>
+    </source>
+</query>
+```
+
+Step 1.2: Set Up Dependency Injection
+Create a di.xml file at app/code/Magento/AepCustomAttributes/etc with the following content:
+
+```xml
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.instrumentedtest"
+          android:versionCode="1"
+          android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="15"/>
+    
+    <instrumentation
+        android:name=".MyInstrumentationTestRunner"
+        android:targetPackage="com.example.instrumentedtest"/>
+    
+    <!-- More instrumentation elements might be here -->
+</manifest>
+```
+
+Step 1.3: Define the Custom Attributes
+Create an et_schema.xml file at app/code/Magento/AepCustomAttributes/etc with the following content:
+
+```xml
+<services>
+    <service id="App\Controller\MainController" class="App\Controller\MainController">
+        <argument type="service" id="doctrine.orm.default_entity_manager"/>
+        <argument type="service" id="form.factory"/>
+        <argument type="service" id="security.authorization_checker"/>
+    </service>
+
+    <!-- ... -->
+
+    <service id="App\Controller\SecurityController" class="App\Controller\SecurityController">
+        <argument type="service" id="security.authentication_utils"/>
+        <tag name="controller.service_arguments"/>
+    </service>
+
+    <!-- ... -->
+</services>
+```
+
+OrderCustomAttributes:
+
+```php
+<?php
+
+namespace App\Transformers;
+
+use League\Fractal\TransformerAbstract;
+use Illuminate\Support\Collection;
+
+class CustomAttributeTransformer extends TransformerAbstract
+{
+    protected $availableIncludes = [];
+    protected $defaultIncludes = [];
+
+    public function __construct($signsField, $jsonSignsField = null)
+    {
+        $this->signsField = $signsField;
+        $this->jsonSignsField = $jsonSignsField;
+    }
+
+    public function transform(Collection $collection)
+    {
+        // Initialize array for additional information.
+        $additionalInformation = [];
+
+        // Source - this comes from values sent to this transformer.
+        foreach ($collection->{$this->signsField} ?: [] as $value) {
+            if (is_array($value)) {
+                // If value is an array, serialize it.
+                foreach ($value as &$item) {
+                    if (isset($item['custom_attr'])) {
+                        // Serialize custom attribute data.
+                        ...
+                    }
+                }
+            } else {
+                // Add non-array values directly.
+                ...
+            }
+        }
+
+        ...
+
+        return [
+            'current' => ...,
+            'additional_information' => ...,
+            'source' => ...,
+        ];
+    }
+
+    private function flatten(array $values)
+    {
+       return Arr::flatten($values);
+   }
+}
+```
+
+OrderItemCustomAttributes:
+
+```php
+<?php
+
+namespace Magento\AepCustomAttributes\Model\Provider;
+
+use Magento\Framework\Serialize\Serializer\Json;
+
+class OrderItemCustomAttribute
+{
+    private Json $jsonSerializer;
+    private string $usingField;
+
+    public function __construct(Json $jsonSerializer, string $usingField)
+    {
+        $this->jsonSerializer = $jsonSerializer;
+        $this->usingField = $usingField;
+    }
+
+    public function get(array $values): array
+    {
+        $output = [];
+        $values = $this->flatten($values);
+
+        foreach ($values as $row) {
+            $info = \is_string($row['additionalInformation']) ? $row['additionalInformation'] : '{}';
+            $unserializedData = $this->jsonSerializer->unserialize($info) ?? [];
+
+            $attrLabel = implode(',', ['label1', 'label2']);
+            $unserializedData['custom_attr1'] = $attrLabel;
+
+            $additionalInformation = [];
+            foreach ($unserializedData as $name => $value) {
+                $additionalInformation[] = [
+                    'name' => $name,
+                    'value' => \is_string($value) ? $value : $this->jsonSerializer->serialize($value),
+                ];
+            }
+
+            foreach ($additionalInformation as $information) {
+                $output[] = [
+                    'additionalInformation' => $information,
+                    $this->usingField => $row[$this->usingField],
+                ];
+            }
+        }
+
+        return $output;
+    }
+
+    private function flatten(array $values): array
+    {
+        return array_merge([], ...array_values($values));
+    }
+}
+```
+
+Define the `ProductContext` class for handling product data.
+
+```php
+<?php
+namespace Magento\Catalog\Model\Product;
+
+use Magento\Framework\App\ResourceConnection;
+use Magento\Quote\Api\Data\CartInterface;
+
+class ProductContext
+{
+    private $brandCache = [];
+    private $resourceConnection;
+
+    public function __construct(
+        ResourceConnection $resourceConnection
+    ) {
+        $this->resourceConnection = $resourceConnection;
+    }
+
+    public function afterGetProductData($subject, array $result)
+    {
+        if (isset($result['brand_id'])) {
+            if (!isset($this->brandCache[$result['brand_id']])) {
+                // @todo load brand label by brand id.
+                $this->brandCache[$result['brand_id']] = 'Brand Label ' . $result['brand_id'];
+            }
+            $result['brands'] = ['label' => $this->brandCache[$result['brand_id']]];
+        }
+
+        return $result;
+    }
+}
+```
+
+Step 1.4: Register the Module
+
+Create a registration.php file at app/code/Magento/AepCustomAttributes with the following content:
+
+```php
+<?php
+use \Magento\Framework\Component\ComponentRegistrar;
+
+ComponentRegistrar::register(
+    ComponentRegistrar::MODULE,
+    'Dfe_Stripe',
+    __DIR__
+);
+```
+
 1. Extend your existing XDM schema. Refer to the following [guide](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas#custom-fields-for-standard-groups) to create custom attributes for Order and Order item levels. The Tenant ID field is dynamically generated, however the field structure should resemble the example provided.
 
     >[!IMPORTANT]
@@ -87,6 +352,53 @@ Custom attributes are supported at two levels:
 1. Make sure that the datastream associated with your XDM schema is the same datastream specified on the [Data Collection](connect-data.md#data-collection) tab.
 
 1. Click **[!UICONTROL Save]** on the **Data Collection** tab to retrieve any custom attributes you have specified.
+
+Step 2: Extend XDM schema
+Important: XDM custom attributes must match the attributes sent from Commerce in Steps 1-3.
+Follow this guide to create custom attribute for Order and Order item levels, Incorporating the requested custom attributes. Tenant ID field will be generated dynamically, but the field structure should resemble the example provided.
+For order level.
+Click the + button next to commerce.order:
+
+INSERT SCREENSHOT OF UPDATED SCHEMA WITH ORDER ITEM
+
+
+For order line-item level.
+Click the + button next to productListItems:
+
+INSERT SCREENSHOT OF UPDATED SCHEMA WITH ORDER LINE ITEM
+
+
+Step 3: Ensure the Adobe Provisioning process is complete
+- Confirm with the Adobe Commerce team that the provisioning requested in step 1 is complete.
+
+Note You will not be able to send custom attributes from commerce to AEP if provisioning and onboarding has not been completed.
+
+Step 4: Confirm the changes
+
+- Begin sending the data to Adobe Experience Platform (AEP) and verify that the custom attributes are appearing correctly.
+
+- Access the UI page for data connection custom attributes to check for proper configuration of custom attributes in Adobe experience platform (AEP) and Commerce backend.
+
+
+INSERT SCREENSHOT OF ADMIN AND THE CUSTOM ORDER ATTRIBUTES TAB
+
+ACTUALLY LINK TO CONFIGURATION PAGE WHERE WE'LL ADD THIS NEW TAB AND TALK ABOUT THE VARIOUS FIELDS.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Time series profile event data
 
