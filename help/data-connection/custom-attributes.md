@@ -33,229 +33,229 @@ Adding custom attributes to back office events requires that you:
 
 1. In the module directory, create a subdirectory called `etc`. Inside the `etc` directory, create a `module.xml` file that defines the dependencies and the setup version. For example:
 
-```xml
-<?xml version="1.0"?>
-<!--
-/**
- * Copyright (c) [year], [name]. All rights reserved.
- */
--->
-<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
-    <module name="Magento_SalesRuleStaging" setup_version="2.0.0">
-        <sequence>
-            <module name="Magento_Staging"/>
-            <module name="Magento_SalesRule"/>
-        </sequence>
-    </module>
-</config>
-```
+  ```xml
+  <?xml version="1.0"?>
+  <!--
+  /**
+  * Copyright (c) [year], [name]. All rights reserved.
+  */
+  -->
+  <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+      <module name="Magento_SalesRuleStaging" setup_version="2.0.0">
+          <sequence>
+              <module name="Magento_Staging"/>
+              <module name="Magento_SalesRule"/>
+          </sequence>
+      </module>
+  </config>
+  ```
 
 1. In the same `etc` subdirectory, create a `query.xml` file to retrieve sales order data. For example:
 
-```xml
-<query>
-    <source name="sales_order" type="sales">
-        <attribute name="increment_id" operator="eq" alias="order_increment_id"/>
-        <link source="inventory_source_item" condition_type="by_sku"/>
-    </source>
-</query>
-```
+  ```xml
+  <query>
+      <source name="sales_order" type="sales">
+          <attribute name="increment_id" operator="eq" alias="order_increment_id"/>
+          <link source="inventory_source_item" condition_type="by_sku"/>
+      </source>
+  </query>
+  ```
 
 1. Inside the `etc` subdirectory, create a `di.xml` file that sets up the dependency injection. For example:
 
-```xml
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.example.instrumentedtest"
-          android:versionCode="1"
-          android:versionName="1.0">
-    <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="15"/>
-    
-    <instrumentation
-        android:name=".MyInstrumentationTestRunner"
-        android:targetPackage="com.example.instrumentedtest"/>
-    
-    <!-- More instrumentation elements might be here -->
-</manifest>
-```
+  ```xml
+  <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+            package="com.example.instrumentedtest"
+            android:versionCode="1"
+            android:versionName="1.0">
+      <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="15"/>
+      
+      <instrumentation
+          android:name=".MyInstrumentationTestRunner"
+          android:targetPackage="com.example.instrumentedtest"/>
+      
+      <!-- More instrumentation elements might be here -->
+  </manifest>
+  ```
 
 1. Inside the `etc` directory, create an `et_schema.xml` configuration file to define the services used for the dependency injection. For example:
 
-```xml
-<services>
-    <service id="App\Controller\MainController" class="App\Controller\MainController">
-        <argument type="service" id="doctrine.orm.default_entity_manager"/>
-        <argument type="service" id="form.factory"/>
-        <argument type="service" id="security.authorization_checker"/>
-    </service>
+  ```xml
+  <services>
+      <service id="App\Controller\MainController" class="App\Controller\MainController">
+          <argument type="service" id="doctrine.orm.default_entity_manager"/>
+          <argument type="service" id="form.factory"/>
+          <argument type="service" id="security.authorization_checker"/>
+      </service>
 
-    <!-- ... -->
+      <!-- ... -->
 
-    <service id="App\Controller\SecurityController" class="App\Controller\SecurityController">
-        <argument type="service" id="security.authentication_utils"/>
-        <tag name="controller.service_arguments"/>
-    </service>
+      <service id="App\Controller\SecurityController" class="App\Controller\SecurityController">
+          <argument type="service" id="security.authentication_utils"/>
+          <tag name="controller.service_arguments"/>
+      </service>
 
-    <!-- ... -->
-</services>
-```
+      <!-- ... -->
+  </services>
+  ```
 
 1. Define the `OrderCustomAttributes` in PHP. For example:
 
-```php
-namespace App\Transformers;
+  ```php
+  namespace App\Transformers;
 
-use League\Fractal\TransformerAbstract;
-use Illuminate\Support\Collection;
+  use League\Fractal\TransformerAbstract;
+  use Illuminate\Support\Collection;
 
-class CustomAttributeTransformer extends TransformerAbstract
-{
-    protected $availableIncludes = [];
-    protected $defaultIncludes = [];
+  class CustomAttributeTransformer extends TransformerAbstract
+  {
+      protected $availableIncludes = [];
+      protected $defaultIncludes = [];
 
-    public function __construct($signsField, $jsonSignsField = null)
-    {
-        $this->signsField = $signsField;
-        $this->jsonSignsField = $jsonSignsField;
+      public function __construct($signsField, $jsonSignsField = null)
+      {
+          $this->signsField = $signsField;
+          $this->jsonSignsField = $jsonSignsField;
+      }
+
+      public function transform(Collection $collection)
+      {
+          // Initialize array for additional information.
+          $additionalInformation = [];
+
+          // Source - this comes from values sent to this transformer.
+          foreach ($collection->{$this->signsField} ?: [] as $value) {
+              if (is_array($value)) {
+                  // If value is an array, serialize it.
+                  foreach ($value as &$item) {
+                      if (isset($item['custom_attr'])) {
+                          // Serialize custom attribute data.
+                          ...
+                      }
+                  }
+              } else {
+                  // Add non-array values directly.
+                  ...
+              }
+          }
+
+          ...
+
+          return [
+              'current' => ...,
+              'additional_information' => ...,
+              'source' => ...,
+          ];
+      }
+
+      private function flatten(array $values)
+      {
+        return Arr::flatten($values);
     }
-
-    public function transform(Collection $collection)
-    {
-        // Initialize array for additional information.
-        $additionalInformation = [];
-
-        // Source - this comes from values sent to this transformer.
-        foreach ($collection->{$this->signsField} ?: [] as $value) {
-            if (is_array($value)) {
-                // If value is an array, serialize it.
-                foreach ($value as &$item) {
-                    if (isset($item['custom_attr'])) {
-                        // Serialize custom attribute data.
-                        ...
-                    }
-                }
-            } else {
-                // Add non-array values directly.
-                ...
-            }
-        }
-
-        ...
-
-        return [
-            'current' => ...,
-            'additional_information' => ...,
-            'source' => ...,
-        ];
-    }
-
-    private function flatten(array $values)
-    {
-       return Arr::flatten($values);
-   }
-}
-```
+  }
+  ```
 
 1. Define the `OrderItemCustomAttributes` in PHP. For example:
 
-```php
-namespace Magento\AepCustomAttributes\Model\Provider;
+  ```php
+  namespace Magento\AepCustomAttributes\Model\Provider;
 
-use Magento\Framework\Serialize\Serializer\Json;
+  use Magento\Framework\Serialize\Serializer\Json;
 
-class OrderItemCustomAttribute
-{
-    private Json $jsonSerializer;
-    private string $usingField;
+  class OrderItemCustomAttribute
+  {
+      private Json $jsonSerializer;
+      private string $usingField;
 
-    public function __construct(Json $jsonSerializer, string $usingField)
-    {
-        $this->jsonSerializer = $jsonSerializer;
-        $this->usingField = $usingField;
-    }
+      public function __construct(Json $jsonSerializer, string $usingField)
+      {
+          $this->jsonSerializer = $jsonSerializer;
+          $this->usingField = $usingField;
+      }
 
-    public function get(array $values): array
-    {
-        $output = [];
-        $values = $this->flatten($values);
+      public function get(array $values): array
+      {
+          $output = [];
+          $values = $this->flatten($values);
 
-        foreach ($values as $row) {
-            $info = \is_string($row['additionalInformation']) ? $row['additionalInformation'] : '{}';
-            $unserializedData = $this->jsonSerializer->unserialize($info) ?? [];
+          foreach ($values as $row) {
+              $info = \is_string($row['additionalInformation']) ? $row['additionalInformation'] : '{}';
+              $unserializedData = $this->jsonSerializer->unserialize($info) ?? [];
 
-            $attrLabel = implode(',', ['label1', 'label2']);
-            $unserializedData['custom_attr1'] = $attrLabel;
+              $attrLabel = implode(',', ['label1', 'label2']);
+              $unserializedData['custom_attr1'] = $attrLabel;
 
-            $additionalInformation = [];
-            foreach ($unserializedData as $name => $value) {
-                $additionalInformation[] = [
-                    'name' => $name,
-                    'value' => \is_string($value) ? $value : $this->jsonSerializer->serialize($value),
-                ];
-            }
+              $additionalInformation = [];
+              foreach ($unserializedData as $name => $value) {
+                  $additionalInformation[] = [
+                      'name' => $name,
+                      'value' => \is_string($value) ? $value : $this->jsonSerializer->serialize($value),
+                  ];
+              }
 
-            foreach ($additionalInformation as $information) {
-                $output[] = [
-                    'additionalInformation' => $information,
-                    $this->usingField => $row[$this->usingField],
-                ];
-            }
-        }
+              foreach ($additionalInformation as $information) {
+                  $output[] = [
+                      'additionalInformation' => $information,
+                      $this->usingField => $row[$this->usingField],
+                  ];
+              }
+          }
 
-        return $output;
-    }
+          return $output;
+      }
 
-    private function flatten(array $values): array
-    {
-        return array_merge([], ...array_values($values));
-    }
-}
-```
+      private function flatten(array $values): array
+      {
+          return array_merge([], ...array_values($values));
+      }
+  }
+  ```
 
 1. Define the `ProductContext` class in PHP to handle the product data.
 
-```php
-namespace Magento\Catalog\Model\Product;
+  ```php
+  namespace Magento\Catalog\Model\Product;
 
-use Magento\Framework\App\ResourceConnection;
-use Magento\Quote\Api\Data\CartInterface;
+  use Magento\Framework\App\ResourceConnection;
+  use Magento\Quote\Api\Data\CartInterface;
 
-class ProductContext
-{
-    private $brandCache = [];
-    private $resourceConnection;
+  class ProductContext
+  {
+      private $brandCache = [];
+      private $resourceConnection;
 
-    public function __construct(
-        ResourceConnection $resourceConnection
-    ) {
-        $this->resourceConnection = $resourceConnection;
-    }
+      public function __construct(
+          ResourceConnection $resourceConnection
+      ) {
+          $this->resourceConnection = $resourceConnection;
+      }
 
-    public function afterGetProductData($subject, array $result)
-    {
-        if (isset($result['brand_id'])) {
-            if (!isset($this->brandCache[$result['brand_id']])) {
-                // @todo load brand label by brand id.
-                $this->brandCache[$result['brand_id']] = 'Brand Label ' . $result['brand_id'];
-            }
-            $result['brands'] = ['label' => $this->brandCache[$result['brand_id']]];
-        }
+      public function afterGetProductData($subject, array $result)
+      {
+          if (isset($result['brand_id'])) {
+              if (!isset($this->brandCache[$result['brand_id']])) {
+                  // @todo load brand label by brand id.
+                  $this->brandCache[$result['brand_id']] = 'Brand Label ' . $result['brand_id'];
+              }
+              $result['brands'] = ['label' => $this->brandCache[$result['brand_id']]];
+          }
 
-        return $result;
-    }
-}
-```
+          return $result;
+      }
+  }
+  ```
 
-1. Create a `registration.php` file inside `app/code/Magento/AepCustomAttributes`. For example:
+  1. Create a `registration.php` file inside `app/code/Magento/AepCustomAttributes`. For example:
 
-```php
-use \Magento\Framework\Component\ComponentRegistrar;
+  ```php
+  use \Magento\Framework\Component\ComponentRegistrar;
 
-ComponentRegistrar::register(
-    ComponentRegistrar::MODULE,
-    'Dfe_Stripe',
-    __DIR__
-);
-```
+  ComponentRegistrar::register(
+      ComponentRegistrar::MODULE,
+      'Dfe_Stripe',
+      __DIR__
+  );
+  ```
 
 ## Step 2: Extend your existing XDM schema
 
