@@ -248,22 +248,27 @@ Specify the date range for the historical orders that you want to send to Experi
 
 ### Data Customization
 
-On the **Data Customization** tab, you can view any custom attributes configured for your system. Learn more about how to [set up custom attributes](custom-attributes.md).
+On the **Data Customization** tab, you can view any custom attributes configured in [!DNL Commerce] and sent to Experience Platform.
+
+When you create custom attributes for orders and want to send those attributes to the Experience Platform, you must ensure the attribute names given in Commerce match the attribute names specified in your Commerce schema in Experience Platform. If they do not match, it can be challenging to know how the names are different. The **Custom Order Attributes** table solves this problem.
 
 ![Custom Order Attributes](assets/custom-order-attribute.png)
+
+The **Custom Order Attributes** table provides visibility into the configuration and mapping of custom order attributes between Commerce and the Experience Platform schema. In this table, you can view Order level and Order item level custom attributes across the different sources, making it easier to identify missing or misaligned attributes. This view allows you to maintain consistent attribute names between the sources. The table also displays dataset IDs to help you differentiate between live and historic datasets as different datasets can have their own custom attributes.
+
+In this table, if you do not see a green checkmark next to the custom attribute, it means the name of the attribute in either source does not match. Fix the attribute name in one place and a green checkmark appears indicating that the attribute names now match.
+
+Learn more about how to [set up custom attributes](custom-attributes.md).
 
 #### Field descriptions
 
 | Field | Description |
 |--- |--- |
+|Scope | changes the data displayed...different datasets and different custom attributes |
 |Dataset | Displays the datasets |
 |Adobe Commerce | Displays any custom attributes in your Commerce back office.|
 |Experience Platform | Displays any custom attributes in Experience Platform.|
 |Refresh|Retrieves any custom attributes you have created. |
-
-1. Make sure that the datastream associated with your XDM schema is the same datastream specified on the [Data Collection](connect-data.md#data-collection) tab.
-
-1. Click **[!UICONTROL Refresh]** to 
 
 ## Confirm that event data is collected
 

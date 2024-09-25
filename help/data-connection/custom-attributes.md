@@ -259,7 +259,7 @@ Adding custom attributes to back office events requires that you:
 
 ## Step 2: Extend your existing XDM schema
 
-Refer to the following [article](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas#custom-fields-for-standard-groups) to learn how to update your existing XDM schema. The Tenant ID field is dynamically generated, however the field structure should resemble the example provided.
+Refer to the following [article](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas#custom-fields-for-standard-groups) to learn how to update your existing XDM schema to include custom fields. The Tenant ID field is dynamically generated, however the field structure should resemble the example provided.
 
 >[!IMPORTANT]
 >
@@ -276,3 +276,11 @@ To `productListItems`, add a field(s) for Order item level:
 ## Step 3: Confirm data is being captured
 
 You can confirm that custom attribute data is being captured and sent to the Experience Platform using the **Custom Order Attributes** table on the [Data Customization](connect-data.md#data-customization) tab in the Admin.
+
+### Troubleshooting
+
+If you see the message "No custom order attributes found." on the **Data Customization** tab, try the following:
+
+1. Confirm you have completed the prerequisits to enable the [Data Connector extension](overview.md#prerequisites).
+1. Confirm you have configured [custom order attributes](#add-custom-order-attributes).
+1. Open the **Order History** tab and click to [send order history](connect-data.md#send-historical-order-data). It takes about 45 minutes for order history data to arrive in Experience Platform.
