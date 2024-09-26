@@ -14,7 +14,7 @@ When you install and configure SaaS-based Adobe Commerce features such as [Produ
 
 ## Data types and events
 
-There are two types data used in Product Recommendations:
+There are two types of data used in Product Recommendations:
 
 - **Behavioral** - Data from a shopper's engagement on your site, such as product views, items added to a cart, and purchases.
 - **Catalog** - Product metadata, such as name, price, availability, and so on.
