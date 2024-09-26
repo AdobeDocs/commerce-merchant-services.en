@@ -19,20 +19,6 @@ At a high level, Commerce Product Recommendations are deployed as SaaS. The Comm
 
 Once the recommendation modules are installed and configured, your storefront will begin collecting behavioral data. Adobe Sensei processes this behavioral data along with your catalog data and calculates product associations that are leveraged by the recommendations service. At this point, the merchant can create, manage, and deploy product recommendation units to their storefront directly from the Admin UI.
 
-## Types of data
-
-Product Recommendations require the following data:
-
-- **Behavioral** - Data from a shopper's engagement on your site, such as product views, items added to a cart, and purchases. Commerce and Adobe Sensei do not collect personally identifiable information.
-
-- **Catalog** - Product metadata, such as name, price, availability, and so on.
-
-When you install the `magento/product-recommendations` module, Adobe Sensei aggregates the behavioral and catalog data, creating Product Recommendations for each recommendation type. The Product Recommendations service then deploys those recommendations to your storefront.
-
->[!NOTE]
->
->For configurable products, Product Recommendations uses the image of the parent product in the recommendation unit. If the configurable product does not have an image specified, the recommendation unit will be empty for that specific product.
-
 ## Next steps
 
 Read the following topics to get started with Product Recommendations:
