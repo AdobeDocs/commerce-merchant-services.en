@@ -21,7 +21,7 @@ There are two types of data used in Product Recommendations:
 
 When you install the `magento/product-recommendations` module, Adobe Sensei aggregates the behavioral and catalog data, creating Product Recommendations for each recommendation type. The Product Recommendations service then deploys those recommendations to your storefront.
 
-Some recommendation types use behavioral data from your shoppers to train machine learning models to build personalized recommendations. Other recommendation types use catalog data only and do not use any behavioral data. If you want to start quickly, you can use the following, catalog-only recommendation types:
+Some recommendation types use behavioral data from your shoppers to train machine learning models to build personalized recommendations. Other recommendation types use catalog data only and do not use any behavioral data. If you want to quickly start using Product Recommendations on your site, you can use the following, catalog-only recommendation types:
 
 - `More like this`
 - `Visual similarity`
@@ -31,6 +31,10 @@ Some recommendation types use behavioral data from your shoppers to train machin
 So when can you start using recommendation types that use behavioral data? It depends. This is referred to as the _Cold Start_ problem.
 
 The _Cold Start_ problem is a measure of how much time that a model needs to train before it can be considered high quality. In product recommendations, it translates to waiting for Adobe Sensei to train its machine learning models before deploying recommendation units on your site. The more data that these models have, the more accurate and useful the recommendations are. Collecting this data takes time and varies based on traffic volume. Because this data can be collected only on a production site, it is in your best interest to deploy data collection there as early as possible. You can do this by [installing and configuring](install-configure.md) the `magento/production-recommendations` module.
+
+>[!INFO]
+>
+>A recommendation unit is a widget that contains the recommended product _items_.
 
 The following table provides some general guidance for the amount of time that it takes to collect enough data for each recommendation type:
 
@@ -82,10 +86,6 @@ The [Adobe Commerce Storefront Event Collector](https://developer.adobe.com/comm
 |`rec-click` | The shopper clicks a product in the recommendation unit. | Yes|
 |`view` | Sent when the recommendation unit becomes at least 50 percent viewable, such as by scrolling down the page. For example, if a recommendation unit has two lines, a `view` event is sent when one line plus one pixel of the second line becomes visible to the shopper. If the shopper scrolls the page up and down several times, the `view` event is sent as many times as the shopper sees the whole recommendation unit again on the page.| Yes|
 
->[!INFO]
->
->A recommendation unit is a widget that contains the recommended product _items_.
-
 The following events are required to properly populate the dashboard.
 
 | Dashboard column | Events    | Join field  |
@@ -98,13 +98,13 @@ The following events are required to properly populate the dashboard.
 | CTR              |`page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render`, `recs-item-click`, `recs-add-to-cart-click`  | unitId, sku, parentSku |
 | vCTR             |`page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render`, `recs-unit-view`, `recs-item-click`, `recs-add-to-cart-click` | unitId, sku, parentSku |
 
-If your storefront is implemented with PWA Studio, refer to the [PWA documentation](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). If you use a custom frontend technology such as React or Vue JS, refer to the user guide to learn how to integrate [Product Recommendations in a headless](headless.md) environment.
-
 The following events are not specific to Product Recommendations, but are the minimum required set of events that enables Adobe Sensei to interpret shopper data correctly:
 
 - `view`
 - `add-to-cart`
 - `place-order`
+
+If your storefront is implemented with PWA Studio, refer to the [PWA documentation](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). If you use a custom frontend technology such as React or Vue JS, refer to the user guide to learn how to integrate [Product Recommendations in a headless](headless.md) environment.
 
 ### Caveats
 
