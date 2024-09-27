@@ -98,7 +98,7 @@ The following events are required to properly populate the dashboard.
 | CTR              |`page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render`, `recs-item-click`, `recs-add-to-cart-click`  | unitId, sku, parentSku |
 | vCTR             |`page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render`, `recs-unit-view`, `recs-item-click`, `recs-add-to-cart-click` | unitId, sku, parentSku |
 
-The following events are not specific to Product Recommendations, but are the minimum required set of events that enables Adobe Sensei to interpret shopper data correctly:
+The following events are not specific to Product Recommendations, but are required so Adobe Sensei can interpret shopper data correctly:
 
 - `view`
 - `add-to-cart`
