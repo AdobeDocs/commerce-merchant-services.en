@@ -71,22 +71,24 @@ The following recommendation types fallback to `Most viewed` recommendation type
 - `Conversion (view to purchase)`
 - `Conversion (view to cart)`
 
-### Required events
+### Events
 
 The [Adobe Commerce Storefront Event Collector](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/#quick-start) lists all the events deployed to your storefront. From that list, however, there is a subset of events specific to Product Recommendations. These events collect data when shoppers interact with recommendation units on the storefront and power the metrics used to help you analyze how well your recommendations are performing.
 
+| Event | Description |
+| --- | --- | --- |
+|`impression-render` | Sent when the recommendation unit is rendered on the page. If a page has two recommendation units (bought-bought, view-view) then two `impression-render` events are sent. This event is used to track the metric for impressions. |
+|`rec-add-to-cart-click` | The shopper clicks the **Add to cart** button for an item in the recommendation unit. |
+|`rec-click` | The shopper clicks a product in the recommendation unit. |
+|`view` | Sent when the recommendation unit becomes at least 50 percent viewable, such as by scrolling down the page. For example, if a recommendation unit has two lines, a `view` event is sent when one line plus one pixel of the second line becomes visible to the shopper. If the shopper scrolls the page up and down several times, the `view` event is sent as many times as the shopper sees the whole recommendation unit again on the page.|
+
 >[!NOTE]
 >
->Product Recommendation metrics are optiimized for Luma storefronts. If your storefront is non-Luma based, how the metrics track data depends on how you implement the event collection.
+>Product Recommendation metrics are optiimized for Luma storefronts. If your storefront is implemented with PWA Studio, refer to the [PWA documentation](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). If you use a custom frontend technology such as React or Vue JS, learn how to integrate [Product Recommendations in a headless](headless.md) environment.
 
-| Event | Description |Used for metrics? |
-| --- | --- | --- |
-|`impression-render` | Sent when the recommendation unit is rendered on the page. If a page has two recommendation units (bought-bought, view-view) then two `impression-render` events are sent. This event is used to track the metric for impressions. | Yes|
-|`rec-add-to-cart-click` | The shopper clicks the **Add to cart** button for an item in the recommendation unit. | Yes, when an **Add to cart** button is present in the recommendations template.|
-|`rec-click` | The shopper clicks a product in the recommendation unit. | Yes|
-|`view` | Sent when the recommendation unit becomes at least 50 percent viewable, such as by scrolling down the page. For example, if a recommendation unit has two lines, a `view` event is sent when one line plus one pixel of the second line becomes visible to the shopper. If the shopper scrolls the page up and down several times, the `view` event is sent as many times as the shopper sees the whole recommendation unit again on the page.| Yes|
+#### Required dashboard events
 
-The following events are required to properly populate the dashboard.
+The following events are required to populate the [[!DNL Product Recommendations] dashboard](workspace.md)
 
 | Dashboard column | Events    | Join field  |
 | ---------------- | --------- | ----------- |
@@ -104,12 +106,28 @@ The following events are not specific to Product Recommendations, but are requir
 - `add-to-cart`
 - `place-order`
 
-If your storefront is implemented with PWA Studio, refer to the [PWA documentation](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). If you use a custom frontend technology such as React or Vue JS, refer to the user guide to learn how to integrate [Product Recommendations in a headless](headless.md) environment.
+#### Strategies
+
+This table describes the events used by [!DNL Product Recommendations] strategies.
+
+| Strategy | Products | Events | Page |
+| --- | --- | --- | ---|
+| Most Viewed | Live Search<br>Product Recs | `page-view`<br>`product-view` | Product detail page |
+| Most Purchased | Live Search<br>Product Recs | `page-view`<br>`complete-checkout` | Cart/Checkout |
+| Most added to cart | Live Search<br>Product Recs | `page-view`<br>`add-to-cart` | Product detail page<br>Product listing page<br>Cart<br>Wish List |
+| Viewed this, viewed that | Live Search<br>Product Recs | `page-view`<br>`product-view` | Product detail page |
+| Viewed this, bought that | Product Recs | `page-view`<br>`product-view` | Product detail page<br>Cart/Checkout |
+| Bought this, bought that | Product Recs | `page-view`<br>`product-view` | Product detail page |
+| Trending | Live Search<br>Product Recs | `page-view`<br>`product-view` | Product detail page |
+| Conversion: View to purchase | Product Recs | `page-view`<br>`product-view` | Product detail page |
+| Conversion: View to purchase | Product Recs | `page-view`<br>`complete-checkout` | Cart/Checkout |
+| Conversion: View to cart | Product Recs | `page-view`<br>`product-view` | Product detail page |
+| Conversion: View to cart | Product Recs | `page-view`<br>`add-to-cart` | Product detail page<br>Product listing page<br>Cart<br>Wishlist |
 
 ### Caveats
 
-- Ad blockers and privacy settings can prevent the `magento/product-recommendations` module from capturing events and might cause the engagement and revenue [metrics](workspace.md) to be underreported.
-- Eventing does not capture every transaction happening on the merchant's site. Eventing is meant to give the merchant a general idea of events that are happening on the site. ???(this needs to be clarified, why is eventing not capturing all transactions??? what do we mean with this?)???
+- Ad blockers and privacy settings can prevent events from being captured and might cause the engagement and revenue [metrics](workspace.md) to be under-reported.
+- Eventing does not capture every transaction that occurs on the merchant's site. Eventing is meant to give the merchant a general idea of events that are happening on the site. However, some events might not be sent due to shoppers leaving the page or network issues.
 - [Headless implementations](headless.md) must implement eventing to power the Product Recommendations dashboard.
 - For configurable products, Product Recommendations use the image of the parent product in the recommendation unit. If the configurable product does not have an image specified, the recommendation unit will be empty for that specific product.
 
