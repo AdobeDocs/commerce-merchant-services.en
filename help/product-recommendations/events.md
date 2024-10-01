@@ -19,7 +19,7 @@ There are two types of data used in Product Recommendations:
 - **Behavioral** - Data from a shopper's engagement on your site, such as product views, items added to a cart, and purchases.
 - **Catalog** - Product metadata, such as name, price, availability, and so on.
 
-When you install the `magento/product-recommendations` module, Adobe Sensei aggregates the behavioral and catalog data, creating Product Recommendations for each recommendation type. The Product Recommendations service then deploys those recommendations to your storefront.
+When you install the `magento/product-recommendations` module, Adobe Sensei aggregates the behavioral and catalog data, creating Product Recommendations for each recommendation type. The Product Recommendations service then deploys those recommendations to your storefront in the form of a that contains the recommended product _items_.
 
 Some recommendation types use behavioral data from your shoppers to train machine learning models to build personalized recommendations. Other recommendation types use catalog data only and do not use any behavioral data. If you want to quickly start using Product Recommendations on your site, you can use the following, catalog-only recommendation types:
 
@@ -31,10 +31,6 @@ Some recommendation types use behavioral data from your shoppers to train machin
 So when can you start using recommendation types that use behavioral data? It depends. This is referred to as the _Cold Start_ problem.
 
 The _Cold Start_ problem is a measure of how much time that a model needs to train before it can be considered high quality. In product recommendations, it translates to waiting for Adobe Sensei to train its machine learning models before deploying recommendation units on your site. The more data that these models have, the more accurate and useful the recommendations are. Collecting this data takes time and varies based on traffic volume. Because this data can be collected only on a production site, it is in your best interest to deploy data collection there as early as possible. You can do this by [installing and configuring](install-configure.md) the `magento/production-recommendations` module.
-
->[!INFO]
->
->A recommendation unit is a widget that contains the recommended product _items_.
 
 The following table provides some general guidance for the amount of time that it takes to collect enough data for each recommendation type:
 
@@ -124,7 +120,7 @@ This table describes the events used by [!DNL Product Recommendations] strategie
 | Conversion: View to cart | Product Recs | `page-view`<br>`product-view` | Product detail page |
 | Conversion: View to cart | Product Recs | `page-view`<br>`add-to-cart` | Product detail page<br>Product listing page<br>Cart<br>Wishlist |
 
-### Caveats
+#### Caveats
 
 - Ad blockers and privacy settings can prevent events from being captured and might cause the engagement and revenue [metrics](workspace.md) to be under-reported.
 - Eventing does not capture every transaction that occurs on the merchant's site. Eventing is meant to give the merchant a general idea of events that are happening on the site. However, some events might not be sent due to shoppers leaving the page or network issues.
