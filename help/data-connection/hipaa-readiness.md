@@ -8,12 +8,16 @@ feature: Security, Compliance
 
 The [!DNL Data Connection] extension allows you to share Commerce data with the Experience Platform and maintain HIPAA compliance.
 
+W.R.T to Data Connection, server-side event data is hipaa ready. storefront event data is not hipaa ready.
+
 In this article, you learn:
 
-- How to install the [!DNL Data Connection] extension with HIPAA support
-- How to ensure data sent to the Experience Platform is HIPAA compliant
-- What encryption methods exist in Commerce
-- How Commerce services handles privacy requests
+- How to install the [!DNL Data Connection] extension with HIPAA support...nothing else you need to install.
+- How to ensure data sent to the Experience Platform is HIPAA compliant (update your commerce schema in aep based on your company's guidance)
+- What encryption methods exist in Commerce (just an fyi...user don't take any action...it's how it's encrypted in aep...higher standard of encryption)
+- How Commerce services handles privacy requests. Self-service...they can delete themselves. call out how to delete data in commerce core. we have existing docs we can link to. is there a code freeze for aep docs?
+
+
 
 ## Installation
 
@@ -27,7 +31,7 @@ In this article, you learn:
 >[!ENDSHADEBOX]
 
 
-As of `experience-platform-connector` version 3.2.0-beta4 the hipaa-ready installer specific for data sharing is part of the experience platform connector extension
+There's nothing you need to do specifically to enable HIPAA for Data Connection. You just need to install the HIPAA add on for Commerce.
 https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service#installation
 
 ## How to ensure data sent to the Experience Platform is HIPAA compliant
