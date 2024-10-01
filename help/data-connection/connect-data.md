@@ -250,13 +250,20 @@ Specify the date range for the historical orders that you want to send to Experi
 
 On the **Data Customization** tab, you can view any custom attributes configured in [!DNL Commerce] and sent to Experience Platform.
 
-When you create custom attributes for orders and want to send those attributes to the Experience Platform, you must ensure the attribute names given in Commerce match the attribute names specified in your Commerce schema in Experience Platform. If they do not match, it can be challenging to know how the names are different. The **Custom Order Attributes** table solves this problem.
+>[!IMPORTANT]
+>
+>Make sure the datastream ID you [specified](#data-collection) on the **Data Collection** tab is the same ID linked to the schema configured to ingest custom attributes.
+
+When you create custom attributes for orders and send those attributes to the Experience Platform, you must ensure the attribute names given in [!DNL Commerce] match the attribute names specified in your [!DNL Commerce] schema in Experience Platform. If they do not match, it can be challenging to know how the names are different. The **Custom Order Attributes** table helps to solve this problem.
 
 ![Custom Order Attributes](assets/custom-order-attribute.png)
 
-The **Custom Order Attributes** table provides visibility into the configuration and mapping of custom order attributes between Commerce and the Experience Platform schema. In this table, you can view Order level and Order item level custom attributes across the different sources, making it easier to identify missing or misaligned attributes. This view allows you to maintain consistent attribute names between the sources. The table also displays dataset IDs to help you differentiate between live and historic datasets as different datasets can have their own custom attributes.
+The **Custom Order Attributes** table provides visibility into the configuration and mapping of custom order attributes between the [!DNL Commerce] back office and the [!DNL Commerce] schema in Experience Platform. In this table, you can view Order level and Order item level custom attributes across the different sources, making it easier to identify missing or misaligned attributes. This view allows you to maintain consistent attribute names between the sources. The table also displays dataset IDs to help you differentiate between live and historic datasets as different datasets can have their own custom attributes.
 
-In this table, if you do not see a green checkmark next to the custom attribute, it means the name of the attribute in either source does not match. Fix the attribute name in one place and a green checkmark appears indicating that the attribute names now match.
+In this table, if you do not see a green checkmark next to the custom attribute name, it means the name of the attribute in either source does not match. Fix the attribute name in one place and a green checkmark appears indicating that the attribute names now match.
+
+- If the attribute name is updated in the schema in Experience Platform, you need to explicitly save the config on the **Data Customization** tab to trigger Experience Platform schema change. It takes about 60 minutes for the Experience Platform schema change to be reflected in the **Custom Order Attributes** table.
+- If the attribute name is updated in [!DNL Commerce], an order event needs to be generated so the name can be updated in the **Custom Order Attributes** table.
 
 Learn more about how to [set up custom attributes](custom-attributes.md).
 
@@ -264,11 +271,11 @@ Learn more about how to [set up custom attributes](custom-attributes.md).
 
 | Field | Description |
 |--- |--- |
-|Scope | changes the data displayed...different datasets and different custom attributes |
-|Dataset | Displays the datasets |
-|Adobe Commerce | Displays any custom attributes in your Commerce back office.|
-|Experience Platform | Displays any custom attributes in Experience Platform.|
-|Refresh|Retrieves any custom attributes you have created. |
+|Scope | Switches storeviews. You can see different datasets and the corresponding custom attributes based on the storeview selected.|
+|Dataset | Displays the datasets that contain the custom attributes. Live and historic datasets can have their own custom attributes.|
+|Adobe Commerce | Displays any custom attributes created in the [!DNL Commerce] back office.|
+|Experience Platform | Displays any custom attributes specified in your [!DNL Commerce] schema in Experience Platform.|
+|Refresh|Retrieves any custom attribute names from the [!DNL Commerce] back office. |
 
 ## Confirm that event data is collected
 

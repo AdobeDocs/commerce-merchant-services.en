@@ -275,7 +275,7 @@ To `productListItems`, add a field(s) for Order item level:
 
 ## Step 3: Confirm data is being captured
 
-You can confirm that custom attribute data is being captured and sent to the Experience Platform using the **Custom Order Attributes** table on the [Data Customization](connect-data.md#data-customization) tab in the Admin.
+View the [Data Customization](connect-data.md#data-customization) tab in the Admin to confirm that custom attribute data is being captured and sent to the Experience Platform.
 
 ### Troubleshooting
 
@@ -283,4 +283,4 @@ If you see the message "No custom order attributes found." on the **Data Customi
 
 1. Confirm you have completed the prerequisits to enable the [Data Connector extension](overview.md#prerequisites).
 1. Confirm you have configured [custom order attributes](#add-custom-order-attributes).
-1. Open the **Order History** tab and click to [send order history](connect-data.md#send-historical-order-data). It takes about 45 minutes for order history data to arrive in Experience Platform.
+1. Make sure at least one order event has been generated.
