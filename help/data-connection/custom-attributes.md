@@ -20,12 +20,12 @@ Custom attributes are supported at two levels:
 Adding custom attributes to back office events requires that you:
 
 1. Create a project in your [!DNL Commerce] installation.
-1. Update your schema so the new custom attributes can be properly ingested into Experience Platform.
-1. Confirm in the Admin that the custom attributes are being captured and sent to Experience Platform.
+1. Update your schema so that the new custom attributes can be properly ingested into Experience Platform.
+1. In the Admin, confirm that the custom attributes are being captured and sent to Experience Platform.
 
 >[!IMPORTANT]
 >
->The directory structure and code samples below are examples for how you can implement custom attributes. The actual directory structure and code you need depends on your store configuration and environment.
+>The directory structure and code samples below illustrate how you can implement custom attributes. The actual directory structure and code required depends on your store configuration and environment.
 
 ## Step 1: Create a custom module to add custom attributes
 
@@ -259,7 +259,7 @@ Adding custom attributes to back office events requires that you:
 
 ## Step 2: Extend your existing XDM schema
 
-Refer to the following [article](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas#custom-fields-for-standard-groups) to learn how to update your existing XDM schema to include custom fields. The Tenant ID field is dynamically generated, however the field structure should resemble the example provided.
+For details on extending your existing XDM schema to include custom fields, see the [Create and edit schemas in the UI](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas#custom-fields-for-standard-groups) topic in the Experience Platform documentation. The Tenant ID field is dynamically generated, however the field structure should resemble the example provided in the Experience Platform documentation.
 
 >[!IMPORTANT]
 >
@@ -279,8 +279,8 @@ View the [Data Customization](connect-data.md#data-customization) tab in the Adm
 
 ### Troubleshooting
 
-If you see the message "No custom order attributes found." on the **Data Customization** tab, try the following:
+If you see the message `No custom order attributes found.` on the **[!UICONTROL Data Customization]** tab, confirm the following:
 
-1. Confirm you have completed the prerequisits to enable the [Data Connector extension](overview.md#prerequisites).
-1. Confirm you have configured [custom order attributes](#add-custom-order-attributes).
-1. Make sure at least one order event has been generated.
+1. You have completed the prerequisites to enable the [Data Connector extension](overview.md#prerequisites).
+1. You have configured [custom order attributes](#add-custom-order-attributes).
+1. At least one order event has been generated.
