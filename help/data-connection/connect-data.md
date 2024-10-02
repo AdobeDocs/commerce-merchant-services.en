@@ -262,8 +262,8 @@ The **Custom Order Attributes** table provides visibility into the configuration
 
 If you do not see a green checkmark next to a custom attribute name in the table, it indicates a mismatch between attribute names in the sources. Correct the attribute name in one source, and a green checkmark will appear, indicating that the names now match.
 
-- If the attribute name is updated in the schema in Experience Platform, you must save the configuration on the **Data Customization** tab to trigger the Experience Platform schema change. This change will be reflected in the  **Custom Order Attributes** table in about 60 minutes.
-- If the attribute name is updated in [!DNL Commerce], an order event must be generated to update the name in the **Custom Order Attributes** table.
+- If the attribute name is updated in the schema in Experience Platform, you must save the configuration on the **Data Customization** tab to trigger the Experience Platform schema change. This change will be reflected in the  **Custom Order Attributes** table when you click the **[!UICONTROL Refresh]** button.
+- If the attribute name is updated in [!DNL Commerce], an order event must be generated to update the name in the **Custom Order Attributes** table. The change will be reflected in about 60 minutes.
 
 Learn more about how to [set up custom attributes](custom-attributes.md).
 

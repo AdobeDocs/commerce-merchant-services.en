@@ -15,7 +15,7 @@ Custom attributes are supported at two levels:
 
 >[!NOTE]
 >
->Adobe [!DNL Commerce] supports custom attributes that have a datatype of string or string array.
+>Adobe [!DNL Commerce] supports custom attributes that have a datatype of string, Boolean, or date.
 
 Adding custom attributes to back office events requires that you:
 
@@ -27,11 +27,14 @@ Adding custom attributes to back office events requires that you:
 >
 >The directory structure and code samples below illustrate how you can implement custom attributes. The actual directory structure and code required depends on your store configuration and environment.
 
-## Step 1: Create a custom module to add custom attributes
+## Step 1: Create the directory structure
 
-1. Navigate to the `app/code` directory in your [!DNL Commerce] installation and create a module directory. For example: `Magento/AepCustomAttributes`. This directory will contain the files necessary for your custom attributes.
+1. Navigate to the `app/code` directory in your [!DNL Commerce] installation and create a module directory. For example: `Magento/AepCustomAttributes`. This directory contains the files necessary for your custom attributes.
+1. In the module directory, create a subdirectory called `etc`. The `etc` directory contains the `module.xml`, `query.xml`, `di.xml`, and `et_schema.xml` files.
 
-1. In the module directory, create a subdirectory called `etc`. Inside the `etc` directory, create a `module.xml` file that defines the dependencies and the setup version. For example:
+## Step 2: Define the dependencies and the setup version
+
+Create a `module.xml` file that defines the dependencies and the setup version. For example:
 
   ```xml
   <?xml version="1.0"?>
@@ -50,7 +53,9 @@ Adding custom attributes to back office events requires that you:
   </config>
   ```
 
-1. In the same `etc` subdirectory, create a `query.xml` file to retrieve sales order data. For example:
+## Step 3: Retrieve sales order data
+
+Create a `query.xml` file that retrieves sales order data. For example:
 
   ```xml
   <query>
@@ -61,7 +66,9 @@ Adding custom attributes to back office events requires that you:
   </query>
   ```
 
-1. Inside the `etc` subdirectory, create a `di.xml` file that sets up the dependency injection. For example:
+## Step 4: Set up the dependency injection
+
+Create a `di.xml` file that sets up the dependency injection. For example:
 
   ```xml
   <manifest xmlns:android="http://schemas.android.com/apk/res/android"
@@ -78,7 +85,9 @@ Adding custom attributes to back office events requires that you:
   </manifest>
   ```
 
-1. Inside the `etc` directory, create an `et_schema.xml` configuration file to define the services used for the dependency injection. For example:
+## Step 5: Define the services used for the dependency injection
+
+Create a `et_schema.xml` file that defines the services used for the dependency injection. For example:
 
   ```xml
   <services>
@@ -99,7 +108,13 @@ Adding custom attributes to back office events requires that you:
   </services>
   ```
 
-1. Define the `OrderCustomAttributes` in PHP. For example:
+## Step 6: Create a directory for the PHP files
+
+At the same level as the `etc` directory, create a directory called `Module/Provider`. This directory contains the `OrderCustomAttributes` and `OrderItemCustomAttributes` PHP files.
+
+## Step 7: Define the OrderCustomAttributes
+
+Create a `OrderCustomAttributes.php` file that defines the order custom attributes. For example:
 
   ```php
   namespace App\Transformers;
@@ -155,7 +170,9 @@ Adding custom attributes to back office events requires that you:
   }
   ```
 
-1. Define the `OrderItemCustomAttributes` in PHP. For example:
+## Step 8: Define the OrderItemCustomAttributes
+
+Create a `OrderItemCustomAttributes.php` file that defines the order item custom attributes. For example:
 
   ```php
   namespace Magento\AepCustomAttributes\Model\Provider;
@@ -211,7 +228,13 @@ Adding custom attributes to back office events requires that you:
   }
   ```
 
-1. Define the `ProductContext` class in PHP to handle the product data.
+## Step 9: Create a directory for the productContext file
+
+At the same level as the `etc` directory, create a directory called `Plugin/Module`. This directory contains the `ProductContext.php` file.
+
+## Step 10: Define the ProductContext class
+
+Create a file called `ProductContext.php`that defines the `ProductContext` class. For example:
 
   ```php
   namespace Magento\Catalog\Model\Product;
@@ -245,7 +268,9 @@ Adding custom attributes to back office events requires that you:
   }
   ```
 
-  1. Create a `registration.php` file inside `app/code/Magento/AepCustomAttributes`. For example:
+## Step 11: Register the module
+ 
+ At the same level as the `etc` directory, create a `registration.php` file registers the module. For example:
 
   ```php
   use \Magento\Framework\Component\ComponentRegistrar;
@@ -257,9 +282,11 @@ Adding custom attributes to back office events requires that you:
   );
   ```
 
-## Step 2: Extend your existing XDM schema
+## Step 12: Extend your existing XDM schema
 
-For details on extending your existing XDM schema to include custom fields, see the [Create and edit schemas in the UI](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas#custom-fields-for-standard-groups) topic in the Experience Platform documentation. The Tenant ID field is dynamically generated, however the field structure should resemble the example provided in the Experience Platform documentation.
+To ensure that the new custom order attributes can be ingested by your [!DNL Commerce] schema in Experience Platform, you need to extend the schema to include these custom fields.
+
+To learn how to extend an existing XDM schema to include these custom fields, see the [Create and edit schemas in the UI](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas#custom-fields-for-standard-groups) article in the Experience Platform documentation. The Tenant ID field is dynamically generated; however, the field structure should resemble the example provided in the Experience Platform documentation.
 
 >[!IMPORTANT]
 >
@@ -269,11 +296,11 @@ To `commerce.order`, add a field for Order level:
 
 ![Order Level](assets/order-level.png)
 
-To `productListItems`, add a field(s) for Order item level:
+To `productListItems`, add fields for Order item level:
 
 ![Order Item Level](assets/order-item-level.png)
 
-## Step 3: Confirm data is being captured
+## Step 12: Confirm that data is being captured
 
 View the [Data Customization](connect-data.md#data-customization) tab in the Admin to confirm that custom attribute data is being captured and sent to the Experience Platform.
 

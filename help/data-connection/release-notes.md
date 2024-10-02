@@ -72,6 +72,15 @@ _October 12, 2022_
 
 +++
 
+## 3.2.0
+
+_October 7, 2024_
+
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.4 and newer
+
+![New](../assets/new.svg) - GA for the ability to add [custom attributes](custom-attributes.md) to back office data.
+![New](../assets/new.svg) - Added new [Custom Order Attributes](connect-data.md#data-customization) table to help you view any custom attributes configured in [!DNL Commerce] and sent to Experience Platform.
+
 ## 3.2.0-beta3
 
 _August 27, 2024_
