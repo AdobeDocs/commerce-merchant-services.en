@@ -275,7 +275,7 @@ Learn more about how to [set up custom attributes](custom-attributes.md).
 |Dataset | Displays the datasets that contain the custom attributes. Live and historic datasets can have their own custom attributes.|
 |Adobe Commerce | Displays any custom attributes created in the [!DNL Commerce] back office.|
 |Experience Platform | Displays any custom attributes specified in your [!DNL Commerce] schema in Experience Platform.|
-|Refresh|Retrieves any custom attribute names from the [!DNL Commerce] back office. |
+|Refresh|Retrieves any custom attribute names from the [!DNL Commerce] schema in Experience Platform. |
 
 ## Confirm that event data is collected
 

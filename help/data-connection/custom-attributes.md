@@ -270,7 +270,7 @@ Create a file called `ProductContext.php`that defines the `ProductContext` class
 
 ## Step 11: Register the module
  
- At the same level as the `etc` directory, create a `registration.php` file registers the module. For example:
+ At the same level as the `etc` directory, create a `registration.php` file that registers the module. For example:
 
   ```php
   use \Magento\Framework\Component\ComponentRegistrar;
