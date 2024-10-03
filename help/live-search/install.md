@@ -135,7 +135,7 @@ These new conditions enhance the search query filtering mechanism to refine sear
 
 You can implement these new conditions on your search results page. For example, you can add a new section on the page where the shopper can further refine their search results. You can allow shoppers to select specific product attributes, such as "Manufacturer", "Part Number", and "Description". From there, they search within those attributes using the `contains` or `startsWith` conditions. See the Admin guide for a list of searchable [attributes](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types).
 
-1. 1. To install the beta, add the following dependency to your project:
+1. To install the beta, add the following dependency to your project:
 
     ```bash
     composer require magento/module-live-search-search-types:"^1.0.0-beta1"
