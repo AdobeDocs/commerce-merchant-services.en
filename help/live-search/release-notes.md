@@ -20,7 +20,7 @@ These notes describe updates that were published outside of a versioned release 
 
 _September 19, 2024_
 
-![New](../assets/fix.svg) Released a beta version that supports three new search capabilities: layered, starts with, and contains. [Learn more](install.md#install-the-live-search-beta).
+![New](../assets/new.svg) Released a beta version that supports three new search capabilities: layered, starts with, and contains. [Learn more](install.md#install-the-live-search-beta).
 
 _September 4, 2024_
 
