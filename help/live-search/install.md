@@ -109,7 +109,7 @@ At a high level, onboarding [!DNL Live Search] requires that you:
 
 >[!IMPORTANT]
 >
->The following feature is in beta. To participate in the beta, send an email request to [Sandra Gonzales Mangana](mailto:sagonzal@adobe.com) or [Alex Jose](mailto:alexj@adobe.com).
+>The following feature is in beta. To participate in the beta, send an email request to [commerce-storefront-services](mailto:commerce-storefront-services@adobe.com).
 
 This beta supports three new capabilities in the [`productSearch` query](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/):
 
