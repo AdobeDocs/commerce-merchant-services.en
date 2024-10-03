@@ -18,6 +18,10 @@ Updates include:
 
 These notes describe updates that were published outside of a versioned release or improvements to the hosted service.
 
+_September 19, 2024_
+
+![New](../assets/fix.svg) Released a beta version that supports three new search capabilities: layered, starts with, and contains. [Learn more](install.md#install-the-live-search-beta).
+
 _September 4, 2024_
 
 ![Fix](../assets/fix.svg) Increased the maximum number of buckets that can be returned [within a facet](boundaries-limits.md#facets) to 100.
