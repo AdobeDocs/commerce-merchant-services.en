@@ -74,3 +74,5 @@ Integration with privacy service for saas https://wiki.corp.adobe.com/display/AC
 Core handled by customer directly via support requests
 Link to privacy service docs where applicable
 Make sure privacy service docs are updated to include Commerce
+
+https://experienceleague.adobe.com/en/docs/experience-platform/privacy/experience-cloud-apps

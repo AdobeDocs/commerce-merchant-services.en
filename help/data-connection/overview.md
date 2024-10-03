@@ -92,7 +92,7 @@ The remainder of this guide walks you through all of these steps in more detail 
 
 ## HIPAA Readiness
 
-The [!DNL Data Connection] extension allows you to share Commerce data with the Experience Platform and maintain HIPAA compliance. [Learn more](hipaa-readiness.md).
+The [!DNL Data Connection] extension allows you to share [!DNL Commerce] back office data with the Experience Platform and maintain HIPAA compliance. [Learn more](hipaa-readiness.md).
 
 ## Audience
 
