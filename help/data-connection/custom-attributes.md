@@ -172,7 +172,7 @@ Create a `OrderCustomAttributes.php` file that defines the order custom attribut
 
 ## Step 8: Define the OrderItemCustomAttributes
 
-Create a `OrderItemCustomAttributes.php` file that defines the order item custom attributes. For example:
+Create an `OrderItemCustomAttributes.php` file that defines the order item custom attributes. For example:
 
   ```php
   namespace Magento\AepCustomAttributes\Model\Provider;
