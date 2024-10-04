@@ -78,8 +78,9 @@ _October 7, 2024_
 
 [!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.4 and newer
 
-![New](../assets/new.svg) - GA for the ability to add [custom attributes](custom-attributes.md) to back office data.
+![New](../assets/new.svg) - Added ability to create [custom order attributes](custom-attributes.md) to back office data.
 ![New](../assets/new.svg) - Added new [Custom Order Attributes](connect-data.md#data-customization) table to help you view any custom attributes configured in [!DNL Commerce] and sent to Experience Platform.
+![New](../assets/new.svg) - Added ability to [collect and send profile records](connect-data.md#send-customer-profile-data) and data to Experience Platform.
 
 ## 3.2.0-beta3
 

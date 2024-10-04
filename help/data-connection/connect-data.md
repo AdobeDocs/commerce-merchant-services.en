@@ -69,9 +69,13 @@ Download the [workspace configuration file](https://developer.adobe.com/commerce
 
 1. Click **Save Config**.
 
+1. Click the **[!UICONTROL Test connection]** button to make sure the service account and credential information you entered is correct.
+
 ### General
 
 1. In the Admin, go to **System** > Services > **[!DNL Data Connection]**.
+
+    ![[!DNL Data Connection] Settings](./assets/epc-settings.png){width="700" zoomable="yes"}
 
 1. On the **Settings** tab under **General**, verify the ID associated with your Adobe Experience Platform account, as configured in the [Commerce Services Connector](../landing/saas.md#organizationid). The organization ID is global. Only one organization ID can be associated per Adobe Commerce instance.
 
@@ -230,6 +234,8 @@ Specify the date range for the historical orders that you want to send to Experi
 
 1. Select the **Order History** tab.
 
+    ![[!DNL Data Connection] Order History](./assets/epc-order-history.png){width="700" zoomable="yes"}
+
 1. Under **Order History Sync**, the **Copy Dataset ID from Settings** checkbox is already enabled. This ensures you are using the same dataset specified in the **Settings** tab.
 
 1. In the **From** and **To** fields, specify the date range for the historical order data you want to send. You cannot select a date range that exceeds five years.
@@ -250,13 +256,13 @@ Specify the date range for the historical orders that you want to send to Experi
 
 On the **Data Customization** tab, you can view any custom attributes configured in [!DNL Commerce] and sent to Experience Platform.
 
+![[!DNL Data Connection] Data Customization](./assets/epc-data-customization.png){width="700" zoomable="yes"}
+
 >[!IMPORTANT]
 >
 >Ensure that the datastream ID you [specified](#data-collection) on the **Data Collection** tab matches the ID linked to the schema for ingesting custom attributes.
 
 When creating custom attributes for orders and sending them to the Experience Platform, the attribute names in Commerce must match those in the [!DNL Commerce] schema on the Experience Platform. If they do not match, it can be difficult to identify the differences. If you have mismatched names, the **Custom Order Attributes** table can help solve the problem.
-
-![Custom Order Attributes](assets/custom-order-attribute.png)
 
 The **Custom Order Attributes** table provides visibility into the configuration and mapping of custom order attributes between the [!DNL Commerce] back office and the [!DNL Commerce] schema in Experience Platform. This table allows you to view order level and order item level custom attributes across different sources, making it easier to identify missing or misaligned attributes. It also displays dataset IDs to help differentiate between live and historic datasets, as each can have its own custom attributes.
 
@@ -271,7 +277,6 @@ Learn more about how to [set up custom attributes](custom-attributes.md).
 
 | Field | Description |
 |--- |--- |
-|Scope | Switches storeviews. You can see different datasets and the corresponding custom attributes based on the storeview selected.|
 |Dataset | Displays the datasets that contain the custom attributes. Live and historic datasets can have their own custom attributes.|
 |Adobe Commerce | Displays any custom attributes created in the [!DNL Commerce] back office.|
 |Experience Platform | Displays any custom attributes specified in your [!DNL Commerce] schema in Experience Platform.|
