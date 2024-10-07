@@ -10,7 +10,7 @@ The [!DNL Data Connection] extension allows you to share [!DNL Commerce] back of
 
 >[!IMPORTANT]
 >
->Storefront event data is not HIPAA compliant. It is the merchant's responibility to not send storefront event data to Experience Platform.
+>Storefront event data is not HIPAA compliant. It is the merchant's responibility to [not send storefront event data](connect-data.md#data-collection) to Experience Platform.
 
 In this article, you learn:
 
@@ -22,9 +22,9 @@ In this article, you learn:
 
 Merchants that have purchased the health care add-on for Adobe [!DNL Commerce] need to install the [HIPAA-Ready extension](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service#installation). Merchants also need to make sure they are using Data Connection version `3.2.1` (???? not sure what EPC version is compatible) or later.
 
-## How to ensure data sent to the Experience Platform is HIPAA compliant
+## How to ensure data sent to the Experience Platform is HIPAA-compliant
 
-All back office event data that the [!DNL Data Connection] extension sends to the Experience Platform is considered sensitive. However, it is the responsibility of the merchant to apply data usage labels in their [!DNL Commerce] schema in Experience Platform to explictly identify particular data as sensitive. When you apply data usage labels directly to a schema, those labels are propagated to all existing and future datasets that are based on that schema.
+All back office event data that the [!DNL Data Connection] extension sends to the Experience Platform is considered sensitive. However, it is the responsibility of the merchant to apply data usage labels to their [!DNL Commerce] schema in Experience Platform to explictly identify particular data as sensitive. When you apply data usage labels directly to a schema, those labels are propagated to all existing and future datasets that are based on that schema.
 
 For an overview of data usage labels and their role within the Data Governance framework, see [data usage labels overview](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview) in the Experience Platform documentation.
 
