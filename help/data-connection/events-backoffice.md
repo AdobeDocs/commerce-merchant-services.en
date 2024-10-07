@@ -398,10 +398,6 @@ The following table describes the data collected for this event.
 
 ## Customer profile events
 
->[!IMPORTANT]
->
->This feature is in beta.
-
 Profile events captured from the server-side include account information, such as `accountCreated`, `accountUpdated`, and `accountDeleted`. This data is used to help populate key customer details that are needed to better define segments or execute marketing campaigns, such as sending sign-up discount offers, account change confirmations, and so on. There are similar profile events captured from the [storefront](events.md#customer-profile-events).
 
 >[!NOTE]

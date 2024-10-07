@@ -72,6 +72,16 @@ _October 12, 2022_
 
 +++
 
+## 3.2.0
+
+_October 7, 2024_
+
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.4 and newer
+
+![New](../assets/new.svg) - Added ability to create [custom order attributes](custom-attributes.md) to back office data.
+![New](../assets/new.svg) - Added new [Custom Order Attributes](connect-data.md#data-customization) table to help you view any custom attributes configured in [!DNL Commerce] and sent to Experience Platform.
+![New](../assets/new.svg) - Added ability to [collect and send profile records](connect-data.md#send-customer-profile-data) and data to Experience Platform.
+
 ## 3.2.0-beta3
 
 _August 27, 2024_
@@ -122,7 +132,7 @@ _March 4, 2024_
 [!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.4 and newer
 
 ![New](../assets/new.svg) - If you are participating in the beta, make sure your `composer.json` file has the following on the root level: ` "minimum-stability": "beta"`. Also, add `composer require "magento/customers-connector: ^1.2.0"` to send customer profiles from your Commerce instance to SaaS. 
-![New](../assets/new.svg) - Added ability to [add custom attributes](update-xdm.md#update-schema-with-time-series-behavioral-and-back-office-event-data).
+![New](../assets/new.svg) - Added ability to [add custom attributes](custom-attributes.md).
 ![New](../assets/new.svg) - Added ability to [collect and send profile records](connect-data.md#send-customer-profile-data) and data to Experience Platform.
 
 ## 3.1.0
