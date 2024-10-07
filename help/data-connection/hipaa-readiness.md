@@ -24,11 +24,17 @@ Merchants that have purchased the health care add-on for Adobe [!DNL Commerce] n
 
 ## How to ensure data sent to the Experience Platform is HIPAA compliant
 
-All back office event data that the [!DNL Data Connection] extension sends to the Experience Platform is considered sensitive. To ensure that back office event data is HIPAA-compliant, merchants need to apply a PHI/sensitive label in the schema or dataset in Experience Platform.
+All back office event data that the [!DNL Data Connection] extension sends to the Experience Platform is considered sensitive. However, it is the responsibility of the merchant to apply data usage labels in their [!DNL Commerce] schema in Experience Platform to explictly identify particular data as sensitive. When you apply data usage labels directly to a schema, those labels are propagated to all existing and future datasets that are based on that schema.
 
-Learn how to [apply sensitive labels](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview) to your data in Experience Platform.
+For an overview of data usage labels and their role within the Data Governance framework, see [data usage labels overview](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview) in the Experience Platform documentation.
 
-When that data is labeled as sensitive, that data cannot be sent to Adobe [!DNL Target] or Adobe [!DNL Analytics] (these applications are disabled). Additionally, you cannot use this data in segments or destinations.
+### Apply data usage labels to Commerce fields
+
+Follow the steps in the [manage data usage labels for a schema](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/labels) tutorial to learn how to apply labels to your [!DNL Commerce] schema.
+
+See the [glossary of sensitive labels](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/reference#sensitive) to learn about the available labels you can apply to the fields in your [!DNL Commerce] schema. For example, the label `RHD` identifies Protected Health Information (PHI) or information about a patient that you are contractually permitted by Adobe to upload.
+
+When your [!DNL Commerce] data is labeled as sensitive, you can enforce those policies to prevent data operations that constitute policy violations. Learn more about [policy enforcement](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/enforcement/overview) in Experience Platform.
 
 ## What encryption methods exist in Commerce
 
