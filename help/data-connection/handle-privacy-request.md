@@ -24,7 +24,7 @@ The Privacy Service supports two types of requests: **data access** and **data d
 
 ## Data access
 
-For **access requests**, specify "Commerce Data for Marketing" from the UI (or "???" as a product code in the API).
+For **access requests**, specify "Commerce Data for Marketing" from the UI (or `commerceMarketingData` as a product code in the API).
 
 ## Data deletion
 
@@ -57,7 +57,7 @@ To make requests to access and delete data for Adobe [!DNL Commerce], you must h
         "value": <Data Subject's Identity Identifier>
 
 "include":
-    ??? (which is the Adobe product code for Adobe [!DNL Commerce])
+    "commerceMarketingData" (which is the Adobe product code for Adobe Commerce)
     profileService (product code for Profile)
     AdobeCloudPlatform (product code for AEP Data Lake)
     identity (product code for Identity)
@@ -66,40 +66,133 @@ To make requests to access and delete data for Adobe [!DNL Commerce], you must h
     gdpr, ccpa, pdpa, lgpd_bra, or nzpa_nzl (which is the privacy regulation that applies to the request)
 ```
 
-### GDPR Access Request example:
+### GDPR Request/delete access example:
 
-From the UI:
+To send access and delete requests through the Privacy API, you must authenticate and manage permissions for the Privacy Service:
 
-NEED SCREENSHOT ![](assets/accessrequest.png)
+* [Authenticate and access the Privacy Service API](https://experienceleague.adobe.com/en/docs/experience-platform/privacy/api/getting-started)
+* [Manage permissions for Privacy Service](https://experienceleague.adobe.com/en/docs/experience-platform/privacy/permissions)
 
-Through the API:
-NEED JSON FROM KIRAN
+**Required headers**
+
+```bash
+curl --location --request POST 'https://platform.adobe.io/data/core/privacy/jobs' \
+--header 'Content-Type: application/json' \
+--header 'x-api-key: {{CLIENT_ID}}' \
+--header 'x-gw-ims-org-id: {{IMS_ORGID}}' \
+--header 'Authorization: Bearer {{ACCESS_TOKEN}}' \
+```
+
+**Request**
 
 ```json
-// JSON Request
+{
+    "companyContexts": [
+      {
+        "namespace": "imsOrgID",
+        "value": "{{IMS_ORGID}}"
+      }
+    ],
+    "users": [
+      {
+        "key": "sampleUserKey1",
+        "action": ["access"],
+        "userIDs": [
+          {
+            "namespace": "email",
+            "value": "dsmith@sample.com",
+            "type": "standard"
+          }
+        ]
+      },
+      {
+        "key": "sampleUserKey2",
+        "action": ["access","delete"],
+        "userIDs": [
+          {
+            "namespace": "email",
+            "value": "ajones@sample.com",
+            "type": "standard"
+          }
+        ]
+      }
+    ],
+    "include": ["commerceMarketingData"],
+    "expandIds": false,
+    "priority": "normal",
+    "regulation": "gdpr"
+}'
 
 ```
 
-```json
-// JSON Response
-
-```
-
-### GDPR Delete Request example:
-
-From the UI:
-
-NEED SCREENSHOT ![](assets/deleterequest.png)
-
-Through the API:
-NEED JSON FROM KIRAN
+**Response**
 
 ```json
-// JSON Request
-
-```
-
-```json
-// JSON Response
+{
+    "requestId": "17284033173196154RX-223",
+    "totalRecords": 3,
+    "jobs": [
+        {
+            "jobId": "a52ca032-858e-11ef-bbb4-27391388a0a6",
+            "customer": {
+                "user": {
+                    "key": "sampleUserKey1",
+                    "action": [
+                        "access"
+                    ],
+                    "userIDs": [
+                        {
+                            "namespace": "email",
+                            "value": "dsmith@sample.com",
+                            "type": "standard",
+                            "namespaceId": 6,
+                            "isDeletedClientSide": false
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "jobId": "a52ca034-858e-11ef-bbb4-d5d952d69769",
+            "customer": {
+                "user": {
+                    "key": "sampleUserKey2",
+                    "action": [
+                        "delete"
+                    ],
+                    "userIDs": [
+                        {
+                            "namespace": "email",
+                            "value": "ajones@sample.com",
+                            "type": "standard",
+                            "namespaceId": 6,
+                            "isDeletedClientSide": false
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "jobId": "a52ca033-858e-11ef-bbb4-8361a5022341",
+            "customer": {
+                "user": {
+                    "key": "sampleUserKey2",
+                    "action": [
+                        "access"
+                    ],
+                    "userIDs": [
+                        {
+                            "namespace": "email",
+                            "value": "ajones@sample.com",
+                            "type": "standard",
+                            "namespaceId": 6,
+                            "isDeletedClientSide": false
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}
 
 ```

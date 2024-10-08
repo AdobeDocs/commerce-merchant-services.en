@@ -36,19 +36,19 @@ See the [glossary of sensitive labels](https://experienceleague.adobe.com/en/doc
 
 When your [!DNL Commerce] data is labeled as sensitive, you can enforce those policies to prevent data operations that constitute policy violations. Learn more about [policy enforcement](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/enforcement/overview) in Experience Platform.
 
-## What encryption methods exist in Commerce
+## How Commerce handles data encryption
 
-DINT-1569
-[Doc] Commerce Encryption Methods
- (just an fyi...user don't take any action...it's how it's encrypted in aep...higher standard of encryption)
-Document how encryption at rest and encryption in transit is handled in Commerce.
-For customers with other Adobe products, the encryption methods may not be the same - Explain the difference and how customers can handle it.
-For example, AEP has implemented customer managed keys. For customers sending data from Commerce to AEP, customers revoking access in AEP will have to turn off the integration in Commerce.
-AEP docs:
-(https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/encryption).
-Commerce encryption:
-https://wiki.corp.adobe.com/display/MC/Data+Encryption+in+Adobe+Commerce
-DINT-1442
+Adobe Commerce uses block-level encryption. For storage, Commerce uses Amazon Elastic Block Store (EBS). All EBS volumes are encrypted using the AES-256 algorithm, which means that the data is encrypted at rest. Commerce data in transit is conducted over secure, encrypted connections using HTTPS [TLS v1.2](https://datatracker.ietf.org/doc/html/rfc5246).
+
+>[!IMPORTANT]
+>
+>Commerce does not support column- or row-level encryption or encryption when the data is not at rest or not in transit between servers.
+
+You [can manage](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key) encryption keys in Commerce. Commerce stores those encryption keys in the AWS Key Management System and must be managed by [Managed Services](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/maintenance/adobe-managed-services#security).
+
+### Data encryption in Experience Platform
+
+When merchants send their data to the Experience Platform, that data is sent using HTTPS TLS v1.2. Learn more about how [Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/encryption) encrypts data.
 
 ## How Commerce handles privacy requests
 
