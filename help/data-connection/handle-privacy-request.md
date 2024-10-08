@@ -41,31 +41,6 @@ To make requests to access and delete data for Adobe [!DNL Commerce], you must h
 * an IMS Org ID
 * an Identity identifier of the person you want to act on and the corresponding namespace(s).For more information about identity namespaces in Adobe [!DNL Commerce]and Experience Platform, see the [identity namespace overview](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces).
 
-### Required field values in Adobe [!DNL Commerce] for API requests
-
-```json
-"companyContexts":
-    "namespace": imsOrgID
-    "value": <Your IMS Org ID Value>
-
-"users":
-    "action": either access or delete
-
-    "userIDs":
-        "namespace": e.g. email, aaid, ecid, etc.
-        "type": standard
-        "value": <Data Subject's Identity Identifier>
-
-"include":
-    "commerceMarketingData" (which is the Adobe product code for Adobe Commerce)
-    profileService (product code for Profile)
-    AdobeCloudPlatform (product code for AEP Data Lake)
-    identity (product code for Identity)
-
-"regulation":
-    gdpr, ccpa, pdpa, lgpd_bra, or nzpa_nzl (which is the privacy regulation that applies to the request)
-```
-
 ### GDPR Request/delete access example:
 
 To send access and delete requests through the Privacy API, you must authenticate and manage permissions for the Privacy Service:
