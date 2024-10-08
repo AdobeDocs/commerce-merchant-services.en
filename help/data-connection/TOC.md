@@ -10,7 +10,7 @@ recommendations: noDisplay
 
 - [Guide Overview](overview.md)
 - [HIPAA Readiness](hipaa-readiness.md)
-- [How Data Connection Handles Privacy Requests]()
+- [How Data Connection Handles Privacy Requests](handle-privacy-request.md)
 - [Release Notes](release-notes.md)
 - Fundamentals {#fundamentals}
    - [Install the [!DNL Data Connection] extension](install.md)
