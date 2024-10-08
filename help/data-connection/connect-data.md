@@ -69,9 +69,13 @@ Download the [workspace configuration file](https://developer.adobe.com/commerce
 
 1. Click **Save Config**.
 
+1. Click the **[!UICONTROL Test connection]** button to make sure the service account and credential information you entered is correct.
+
 ### General
 
 1. In the Admin, go to **System** > Services > **[!DNL Data Connection]**.
+
+    ![[!DNL Data Connection] Settings](./assets/epc-settings.png){width="700" zoomable="yes"}
 
 1. On the **Settings** tab under **General**, verify the ID associated with your Adobe Experience Platform account, as configured in the [Commerce Services Connector](../landing/saas.md#organizationid). The organization ID is global. Only one organization ID can be associated per Adobe Commerce instance.
 
@@ -91,7 +95,7 @@ In this section, you specify the type of data you want to collect and send to th
 
 - **Back office** (server-side data) is data captured in the Commerce servers. This includes information about the status of an order, such as if an order was placed, canceled, refunded, shipped, or completed. It also includes [historical order data](#send-historical-order-data).
 
-- **Profile (Beta)** is data related to your shopper's profile information. Learn [more](#send-customer-profile-data).
+- **Profile** is data related to your shopper's profile information. Learn [more](#send-customer-profile-data).
 
 To ensure that your Adobe Commerce instance can begin data collection, review the [prerequisites](overview.md#prerequisites).
 
@@ -151,10 +155,6 @@ See the events topic to learn more about [storefront](events.md#storefront-event
 After onboarding, storefront data begins to flow to the Experience Platform edge. Back office data takes about five minutes to appear at the edge. Subsequent updates are visible at the edge based on the cron schedule.
 
 ### Send customer profile data
-
->[!IMPORTANT]
->
->This feature is in beta.
 
 There are two types of profile data that you can send to the Experience Platform: profile records and time series profile events.
 
@@ -234,6 +234,8 @@ Specify the date range for the historical orders that you want to send to Experi
 
 1. Select the **Order History** tab.
 
+    ![[!DNL Data Connection] Order History](./assets/epc-order-history.png){width="700" zoomable="yes"}
+
 1. Under **Order History Sync**, the **Copy Dataset ID from Settings** checkbox is already enabled. This ensures you are using the same dataset specified in the **Settings** tab.
 
 1. In the **From** and **To** fields, specify the date range for the historical order data you want to send. You cannot select a date range that exceeds five years.
@@ -249,6 +251,36 @@ Specify the date range for the historical orders that you want to send to Experi
 | From | Date from which you want to begin collecting order history data.|
 | To |  Date from which you want to end collecting order history data.|
 | Start Sync | Begins the process of syncing the order history data to the Experience Platform edge. This button is disabled if the **[!UICONTROL Dataset ID]** field is blank or the dataset ID is invalid.|
+
+### Data Customization
+
+On the **Data Customization** tab, you can view any custom attributes configured in [!DNL Commerce] and sent to Experience Platform.
+
+![[!DNL Data Connection] Data Customization](./assets/epc-data-customization.png){width="700" zoomable="yes"}
+
+>[!IMPORTANT]
+>
+>Ensure that the datastream ID you [specified](#data-collection) on the **Data Collection** tab matches the ID linked to the schema for ingesting custom attributes.
+
+When creating custom attributes for orders and sending them to the Experience Platform, the attribute names in Commerce must match those in the [!DNL Commerce] schema on the Experience Platform. If they do not match, it can be difficult to identify the differences. If you have mismatched names, the **Custom Order Attributes** table can help solve the problem.
+
+The **Custom Order Attributes** table provides visibility into the configuration and mapping of custom order attributes between the [!DNL Commerce] back office and the [!DNL Commerce] schema in Experience Platform. This table allows you to view order level and order item level custom attributes across different sources, making it easier to identify missing or misaligned attributes. It also displays dataset IDs to help differentiate between live and historic datasets, as each can have its own custom attributes.
+
+If you do not see a green checkmark next to a custom attribute name in the table, it indicates a mismatch between attribute names in the sources. Correct the attribute name in one source, and a green checkmark will appear, indicating that the names now match.
+
+- If the attribute name is updated in the schema in Experience Platform, you must save the configuration on the **Data Customization** tab to trigger the Experience Platform schema change. This change will be reflected in the  **Custom Order Attributes** table when you click the **[!UICONTROL Refresh]** button.
+- If the attribute name is updated in [!DNL Commerce], an order event must be generated to update the name in the **Custom Order Attributes** table. The change will be reflected in about 60 minutes.
+
+Learn more about how to [set up custom attributes](custom-attributes.md).
+
+#### Field descriptions
+
+| Field | Description |
+|--- |--- |
+|Dataset | Displays the datasets that contain the custom attributes. Live and historic datasets can have their own custom attributes.|
+|Adobe Commerce | Displays any custom attributes created in the [!DNL Commerce] back office.|
+|Experience Platform | Displays any custom attributes specified in your [!DNL Commerce] schema in Experience Platform.|
+|Refresh|Retrieves any custom attribute names from the [!DNL Commerce] schema in Experience Platform. |
 
 ## Confirm that event data is collected
 

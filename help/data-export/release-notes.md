@@ -22,6 +22,14 @@ Updates include:
 
 ## Current major version
 
+## 103.3.13 Release
+
+![Fix](../assets/fix.svg) Improved performance of the data synchronization process by adding a local cache for attribute options data.<!-MDEE-864-->
+
+## 103.3.12 Release
+
+![Fix](../assets/fix.svg) Resolved an issue that increased synchronization time for simple and virtual products. <!-MDEE-861-->
+
 ## 103.3.11 Release
 
 ![Fix](../assets/fix.svg) The data export service now sends special price data for bundle products as a percentage, correcting a previous issue where it was sent as a final price. <!--MDEE-854-->

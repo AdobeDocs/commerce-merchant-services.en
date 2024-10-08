@@ -61,33 +61,6 @@ With the schemas, datasets, and datastreams configured for behavioral and back o
 
 To include your shopper's profile information, see [time series profile event data](#time-series-profile-event-data).
 
-### Add custom attributes
-
-You can use custom attributes if you want to pass custom back office event data from your Commerce instance to the Experience Platform.
-
-Custom attributes are supported at two levels:
-
-- Order level 
-- Order item level
-
->[!NOTE]
->
->Adobe Commerce supports custom attributes that have a datatype of string or string array.
-
-1. Add and enable an additional module in your [!DNL Commerce] application. See the following [example](https://github.com/shiftedreality/beacon-backoffice-custom-events/blob/main/BeaconDemo/Plugin/ModifyOrder.php).
-
-    You need to modify the example code to expose additional custom attributes. The implementation varies based on where these attributes are stored and the logic required to extract them. 
-
-1. Extend your existing XDM schema. Refer to the following [guide](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas#custom-fields-for-standard-groups) to create custom attributes for Order and Order item levels. The Tenant ID field is dynamically generated, however the field structure should resemble the example provided.
-
-    >[!IMPORTANT]
-    >
-    >XDM custom attributes must match the attributes sent from [!DNL Commerce].
-
-1. Make sure that the datastream associated with your XDM schema is the same datastream specified on the [Data Collection](connect-data.md#data-collection) tab.
-
-1. Click **[!UICONTROL Save]** on the **Data Collection** tab to retrieve any custom attributes you have specified.
-
 ## Time series profile event data
 
 Time series profile event data is generated from the following events:

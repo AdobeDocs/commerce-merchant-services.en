@@ -61,6 +61,8 @@ The [!DNL Data Connection] extension is available on the following architectures
 - [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/aep/)
 - [AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/aep.html)
 
+>[!BEGINSHADEBOX]
+
 ## Prerequisites
 
 To use the [!DNL Data Connection] extension, you must have the following:
@@ -69,6 +71,8 @@ To use the [!DNL Data Connection] extension, you must have the following:
 - Adobe ID and Organization ID
 - [Adobe Client Data Layer (ACDL)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/client-data-layer/overview.html), which is required to collect storefront event data
 - Entitlements to other Adobe DX products.
+
+>[!ENDSHADEBOX]
 
 ## Onboarding steps
 
