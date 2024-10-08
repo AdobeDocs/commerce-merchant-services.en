@@ -2,7 +2,6 @@
 title: Review logs and troubleshoot
 description: Learn how to troubleshoot [!DNL data export] errors using the data-export and saas-export logs.
 feature: Services
-recommendations: noCatalog
 exl-id: 55903c19-af3a-4115-a7be-9d1efaed8140
 ---
 # Review Logs and Troubleshoot
