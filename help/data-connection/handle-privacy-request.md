@@ -96,7 +96,7 @@ curl --location --request POST 'https://platform.adobe.io/data/core/privacy/jobs
     "expandIds": false,
     "priority": "normal",
     "regulation": "gdpr"
-}'
+}
 
 ```
 
