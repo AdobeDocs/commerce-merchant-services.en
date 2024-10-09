@@ -14,7 +14,7 @@ When you activate the recommendation unit, Adobe Commerce starts to [collect dat
 
 >[!NOTE]
 >
->Product Recommendation metrics are optiimized for Luma storefronts. If your storefront is non-Luma based, how the metrics track data depends on how you [implement the event collection](events.md).
+>Product Recommendation metrics are optimized for Luma storefronts. If your storefront is non-Luma based, how the metrics track data depends on how you [implement the event collection](events.md).
 
 1. On the _Admin_ sidebar, go to **Marketing** > _Promotions_ > **Product Recommendations** to display the _Product Recommendations_ workspace.
 

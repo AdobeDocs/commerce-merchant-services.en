@@ -6,25 +6,16 @@ exl-id: b0c72212-9be0-432d-bb8d-e4c639225df3
 ---
 # [!DNL Live Search] Events
 
-[!DNL Live Search] uses events to power search algorithms such as "Most Viewed", and "Viewed This, Viewed That". While Luma users get eventing out of the box, headless and other custom implementations have to implement eventing for their own needs.
+[!DNL Live Search] uses events to power search algorithms such as "Most Viewed", and "Viewed This, Viewed That". While the [Commerce sample Luma theme](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/design/themes/themes#the-default-theme) gets eventing out of the box, headless and other custom implementations have to implement eventing for their own needs.
 
-Since [!DNL Live Search] and [!DNL Product Recommendations] use the same backend algorithm, some events are shared by both services. Some Product Recommendations events are required to populate the Recommendations Dashboard.
+This table describes the events used by [!DNL Live Search] [ranking strategies](rules-add.md#intelligent-ranking).
 
-This table describes the events used by [!DNL Live Search] strategies.
-
-| Strategy | Products | Events | Page |
+| Ranking Strategy | Events | Page |
 | --- | --- | --- | ---|
-| Most Viewed | Live Search<br>Product Recs | `page-view`<br>`product-view` | Product detail page |
-| Most Purchased | Live Search<br>Product Recs | `page-view`<br>`complete-checkout` | Cart/Checkout |
-| Most added to cart | Live Search<br>Product Recs | `page-view`<br>`add-to-cart` | Product detail page<br>Product listing page<br>Cart<br>Wish List |
-| Viewed this, viewed that | Live Search<br>Product Recs | `page-view`<br>`product-view` | Product detail page |
-| Viewed this, bought that | Product Recs | `page-view`<br>`product-view` | Product detail page<br>Cart/Checkout |
-| Bought this, bought that | Product Recs | `page-view`<br>`product-view` | Product detail page |
-| Trending | Live Search<br>Product Recs | `page-view`<br>`product-view` | Product detail page |
-| Conversion: View to purchase | Product Recs | `page-view`<br>`product-view` | Product detail page |
-| Conversion: View to purchase | Product Recs | `page-view`<br>`complete-checkout` | Cart/Checkout |
-| Conversion: View to cart | Product Recs | `page-view`<br>`product-view` | Product detail page |
-| Conversion: View to cart | Product Recs | `page-view`<br>`add-to-cart` | Product detail page<br>Product listing page<br>Cart<br>Wishlist |
+| Most Viewed |  `page-view`<br>`product-view` | Product detail page |
+| Most Purchased |  `page-view`<br>`complete-checkout` | Cart/Checkout |
+| Most added to cart |  `page-view`<br>`add-to-cart` | Product detail page<br>Product listing page<br>Cart<br>Wish List |
+| Viewed this, viewed that |  `page-view`<br>`product-view` | Product detail page |
 
 >[!NOTE]
 >
@@ -66,7 +57,7 @@ mse.publish.searchRequestSent("search-bar");
 
 ## Caveats
 
-- Ad blockers and privacy settings can prevent events from being captured and might cause the engagement and revenue [metrics](workspace.md) to be under-reported.
+- Ad blockers and privacy settings can prevent events from being captured and might cause the engagement and revenue [metrics](performance.md) to be under-reported.
 - Eventing does not capture every transaction that occurs on the merchant's site. Eventing is meant to give the merchant a general idea of events that are happening on the site. However, some events might not be sent due to shoppers leaving the page or network issues.
 - Headless implementations must implement eventing to power intelligent merchandising.
 

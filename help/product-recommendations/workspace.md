@@ -32,7 +32,7 @@ Initially the [scope](https://experienceleague.adobe.com/docs/commerce-admin/sta
 
    >[!NOTE]
    >
-   >Product Recommendation metrics are optiimized for Luma storefronts. If your storefront is non-Luma based, how the metrics track data depends on how you [implement the event collection](events.md).
+   >Product Recommendation metrics are optimized for Luma storefronts. If your storefront is non-Luma based, how the metrics track data depends on how you [implement the event collection](events.md).
 
 ## Show/hide columns
 

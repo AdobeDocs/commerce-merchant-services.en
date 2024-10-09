@@ -80,7 +80,7 @@ The [Adobe Commerce Storefront Event Collector](https://developer.adobe.com/comm
 
 >[!NOTE]
 >
->Product Recommendation metrics are optiimized for Luma storefronts. If your storefront is implemented with PWA Studio, refer to the [PWA documentation](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). If you use a custom frontend technology such as React or Vue JS, learn how to integrate [Product Recommendations in a headless](headless.md) environment.
+>Product Recommendation metrics are optimized for Luma storefronts. If your storefront is implemented with PWA Studio, refer to the [PWA documentation](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). If you use a custom frontend technology such as React or Vue JS, learn how to integrate [Product Recommendations in a headless](headless.md) environment.
 
 #### Required dashboard events
 
@@ -102,19 +102,19 @@ The following events are not specific to Product Recommendations, but are requir
 - `add-to-cart`
 - `place-order`
 
-#### Strategies
+#### Recommendation Type
 
-This table describes the events used by [!DNL Product Recommendations] strategies.
+This table describes the events used by each recommendation type.
 
-| Strategy | Products | Events | Page |
+| Recommendation Type | Events | Page |
 | --- | --- | --- | ---|
-| Most Viewed | Live Search<br>Product Recs | `page-view`<br>`product-view` | Product detail page |
-| Most Purchased | Live Search<br>Product Recs | `page-view`<br>`complete-checkout` | Cart/Checkout |
-| Most added to cart | Live Search<br>Product Recs | `page-view`<br>`add-to-cart` | Product detail page<br>Product listing page<br>Cart<br>Wish List |
-| Viewed this, viewed that | Live Search<br>Product Recs | `page-view`<br>`product-view` | Product detail page |
+| Most Viewed | `page-view`<br>`product-view` | Product detail page |
+| Most Purchased | `page-view`<br>`complete-checkout` | Cart/Checkout |
+| Most added to cart | `page-view`<br>`add-to-cart` | Product detail page<br>Product listing page<br>Cart<br>Wish List |
+| Viewed this, viewed that | `page-view`<br>`product-view` | Product detail page |
 | Viewed this, bought that | Product Recs | `page-view`<br>`product-view` | Product detail page<br>Cart/Checkout |
 | Bought this, bought that | Product Recs | `page-view`<br>`product-view` | Product detail page |
-| Trending | Live Search<br>Product Recs | `page-view`<br>`product-view` | Product detail page |
+| Trending | `page-view`<br>`product-view` | Product detail page |
 | Conversion: View to purchase | Product Recs | `page-view`<br>`product-view` | Product detail page |
 | Conversion: View to purchase | Product Recs | `page-view`<br>`complete-checkout` | Cart/Checkout |
 | Conversion: View to cart | Product Recs | `page-view`<br>`product-view` | Product detail page |
@@ -122,7 +122,7 @@ This table describes the events used by [!DNL Product Recommendations] strategie
 
 #### Caveats
 
-- Ad blockers and privacy settings can prevent events from being captured and might cause the engagement and revenue [metrics](workspace.md) to be under-reported.
+- Ad blockers and privacy settings can prevent events from being captured and might cause the engagement and revenue [metrics](workspace.md#column-descriptions) to be under-reported.
 - Eventing does not capture every transaction that occurs on the merchant's site. Eventing is meant to give the merchant a general idea of events that are happening on the site. However, some events might not be sent due to shoppers leaving the page or network issues.
 - [Headless implementations](headless.md) must implement eventing to power the Product Recommendations dashboard.
 - For configurable products, Product Recommendations use the image of the parent product in the recommendation unit. If the configurable product does not have an image specified, the recommendation unit will be empty for that specific product.
