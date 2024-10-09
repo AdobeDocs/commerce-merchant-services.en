@@ -6,7 +6,7 @@ feature: Services, Recommendations, Eventing
 ---
 # Collect Data
 
-When you install and configure SaaS-based Adobe Commerce features such as [Product Recommendations](install-configure.md) or [Live Search](../live-search/install.md), the modules deploy behavioral data collection to your storefront. This mechanism collects anonymized behavioral data from your shoppers and powers product recommendations. For example, the `view` event is used to compute the `Viewed this, viewed that` recommendation type, and the `place-order` event is used to compute the `Bought this, bought that` recommendation type.
+When you install and configure SaaS-based Adobe Commerce features such as [Product Recommendations](install-configure.md) or [Live Search](../live-search/install.md), the modules deploy behavioral data collection to your storefront. This mechanism collects anonymized behavioral data from your shoppers and powers product recommendations and [Live Search](../live-search/overview.md) results. For example, the `view` event is used to compute the `Viewed this, viewed that` recommendation type, and the `place-order` event is used to compute the `Bought this, bought that` recommendation type.
 
 >[!NOTE]
 >
