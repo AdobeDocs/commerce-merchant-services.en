@@ -38,7 +38,7 @@ The following table provides some general guidance for the amount of time that i
 |---|---|---|
 |Popularity-based (`Most viewed`, `Most purchased`, `Most added to cart`) | Varies | Depends on volume of events - views are most common, and therefore learns faster; then adds to cart, then purchases|
 |`Viewed this, viewed that` | Requires more training |Product views are decently high in volume|
-|`Viewed this, bought that`, `Bought this, bought that`| Requires the most training |Purchase events are the most rare events on commerce site, especially compared to product views|
+|`Viewed this, bought that`, `Bought this, bought that`| Requires the most training |Purchase events are the most rare events on a commerce site, especially compared to product views|
 |`Trending` | Requires three days of data to establish a popularity baseline| Trending is a measure of recent momentum in a product's popularity compared with its own popularity baseline. A product's trending score is computed using a foreground set (recent popularity over 24 hours) and a background set (popularity baseline over 72 hours). If the popularity of an item increases significantly within a 24 hour period as compared with its baseline popularity, then it receives a high trending score. Every product has this score, and the items with the highes score  at any time comprise the set of top trending products. |
 
 Other variables that can impact the time needed to train:
