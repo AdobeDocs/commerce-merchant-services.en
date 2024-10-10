@@ -28,9 +28,9 @@ Some recommendation types use behavioral data from your shoppers to train machin
 
 ### Cold start
 
-So when can you start using recommendation types that use behavioral data? It depends. This is referred to as the _Cold Start_ problem.
+When can you start using recommendation types that use behavioral data? It depends. This is referred to as the _Cold Start_ problem.
 
-The _Cold Start_ problem is a measure of how much time that a model needs to train before it can be considered high quality. In product recommendations, it translates to waiting for Adobe Sensei to train its machine learning models before deploying recommendation units on your site. The more data that these models have, the more accurate and useful the recommendations are. Collecting this data takes time and varies based on traffic volume. Because this data can be collected only on a production site, it is in your best interest to deploy data collection there as early as possible. You can do this by [installing and configuring](install-configure.md) the `magento/production-recommendations` module.
+The _Cold Start_ problem refers to the time it takes for a model to train and become effective. For product recommendations, this means waiting for Adobe Sensei to gather enough data to train its machine learning models before deploying recommendation units on your site. The more data the models have, the more accurate and useful the recommendations are. Since data collection happens on a live site, it's best to start this process early by installing and setting up the `magento/production-recommendations` module.
 
 The following table provides some general guidance for the amount of time that it takes to collect enough data for each recommendation type:
 
@@ -39,7 +39,7 @@ The following table provides some general guidance for the amount of time that i
 |Popularity-based (`Most viewed`, `Most purchased`, `Most added to cart`) | Varies | Depends on volume of events - views are most common, and therefore learns faster; then adds to cart, then purchases|
 |`Viewed this, viewed that` | Requires more training |Product views are decently high in volume|
 |`Viewed this, bought that`, `Bought this, bought that`| Requires the most training |Purchase events are the most rare events on commerce site, especially compared to product views|
-|`Trending` | Requires three days of data to establish a popularity baseline| Trending is a measure of recent momentum in a product's popularity compared with its own popularity baseline. A product's trending score is computed using a foreground set (recent popularity over 24 hours) and a background set (popularity baseline over 72 hours). If an item has become much more popular within the last 24 hours as compared with its baseline popularity, then it receives a high trending score. Every product has this score, and the highest ones at any time comprise the set of top trending products. |
+|`Trending` | Requires three days of data to establish a popularity baseline| Trending is a measure of recent momentum in a product's popularity compared with its own popularity baseline. A product's trending score is computed using a foreground set (recent popularity over 24 hours) and a background set (popularity baseline over 72 hours). If the popularity of an item increases significantly within a 24 hour period as compared with its baseline popularity, then it receives a high trending score. Every product has this score, and the items with the highes score  at any time comprise the set of top trending products. |
 
 Other variables that can impact the time needed to train:
 
@@ -49,15 +49,15 @@ Other variables that can impact the time needed to train:
 
 To help you visualize the training progress of each recommendation type, the [create recommendation](create.md#readiness-indicators) page displays readiness indicators.
 
-While data is collected on production and machine learning models are trained, you can implement the [remaining tasks](implementation-workflow.md) necessary to deploy recommendations to your storefront. By the time you have finished testing and configuring recommendations, the machine learning models have collected and computed enough data to build relevant recommendations thus allowing you to deploy the recommendations to your storefront.
+While data is being collected on your live site and the machine learning models are training, you can finish other testing and configuration tasks needed to set up recommendations. By the time you’re done with this work, the models will have enough data to create useful recommendations, allowing you to deploy them to your storefront.
 
-If there is insufficient traffic (views, products bought, trending) for the majority of SKUs, there may not be enough data to complete the learning process. This may cause the readiness indicator in the Admin to look as if it were stuck. The readiness indicators are meant to provide merchants with another data point in choosing what recommendations type is better for their store. The numbers are a guide and may never reach 100%. [Learn more](create.md#readiness-indicators) about readiness indicators.
+If your site doesn’t get enough traffic (views, purchases, trends) for most product SKUs, there might not be enough data to complete the learning process. This can make the readiness indicator in the Admin seem stuck. The readiness indicators are meant to provide merchants with another data point in choosing what recommendations type is better for their store. The numbers are a guide and may never reach 100%. [Learn more](create.md#readiness-indicators) about readiness indicators.
 
 ### Backup recommendations {#backuprecs}
 
-If there is not sufficient input data to provide all requested recommendation items in a unit, Adobe Commerce provides backup recommendations to populate recommendation units. For example, if you deploy the `Recommended for you` recommendation type to your homepage, a first-time shopper on your site has not generated enough behavioral data to accurately recommended personalized products. In this case, Adobe Commerce surfaces items based on the `Most viewed` recommendation type to this shopper.
+If the input data is insufficient for providing all requested recommendation items in a unit, Adobe Commerce provides backup recommendations to populate recommendation units. For example, if you deploy the `Recommended for you` recommendation type to your homepage, a first-time shopper on your site has not generated enough behavioral data to accurately recommended personalized products. In this case, Adobe Commerce surfaces items based on the `Most viewed` recommendation type to this shopper.
 
-The following recommendation types fallback to `Most viewed` recommendation type if there is not sufficient input data collected:
+In the case of insufficient input data collection, the following recommendation types fallback to `Most viewed` recommendation type:
 
 - `Recommended for you`
 - `Viewed this, viewed that`
@@ -73,7 +73,7 @@ The [Adobe Commerce Storefront Event Collector](https://developer.adobe.com/comm
 
 | Event | Description |
 | --- | --- | --- |
-|`impression-render` | Sent when the recommendation unit is rendered on the page. If a page has two recommendation units (bought-bought, view-view) then two `impression-render` events are sent. This event is used to track the metric for impressions. |
+|`impression-render` | Sent when the recommendation unit is rendered on the page. If a page has two recommendation units (bought-bought, view-view), then two `impression-render` events are sent. This event is used to track the metric for impressions. |
 |`rec-add-to-cart-click` | The shopper clicks the **Add to cart** button for an item in the recommendation unit. |
 |`rec-click` | The shopper clicks a product in the recommendation unit. |
 |`view` | Sent when the recommendation unit becomes at least 50 percent viewable, such as by scrolling down the page. For example, if a recommendation unit has two lines, a `view` event is sent when one line plus one pixel of the second line becomes visible to the shopper. If the shopper scrolls the page up and down several times, the `view` event is sent as many times as the shopper sees the whole recommendation unit again on the page.|
@@ -96,7 +96,7 @@ The following events are required to populate the [[!DNL Product Recommendations
 | CTR              |`page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render`, `recs-item-click`, `recs-add-to-cart-click`  | `unitId`, `sku`, `parentSku` |
 | vCTR             |`page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render`, `recs-unit-view`, `recs-item-click`, `recs-add-to-cart-click` | `unitId`, `sku`, `parentSku` |
 
-The following events are not specific to Product Recommendations, but are required so Adobe Sensei can interpret shopper data correctly:
+The following events are not specific to Product Recommendations, but are required for Adobe Sensei to interpret shopper data correctly:
 
 - `view`
 - `add-to-cart`
@@ -123,7 +123,7 @@ This table describes the events used by each recommendation type.
 #### Caveats
 
 - Ad blockers and privacy settings can prevent events from being captured and might cause the engagement and revenue [metrics](workspace.md#column-descriptions) to be under-reported.
-- Eventing does not capture every transaction that occurs on the merchant's site. Eventing is meant to give the merchant a general idea of events that are happening on the site. However, some events might not be sent due to shoppers leaving the page or network issues.
+- Eventing is meant to give the merchant a general idea of events that are happening on the site. It does not capture every transaction that occurs on the merchant's site. For example, some events might not be sent due to shoppers leaving the page or network issues.
 - [Headless implementations](headless.md) must implement eventing to power the Product Recommendations dashboard.
 - For configurable products, Product Recommendations use the image of the parent product in the recommendation unit. If the configurable product does not have an image specified, the recommendation unit will be empty for that specific product.
 
