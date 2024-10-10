@@ -19,7 +19,7 @@ There are two types of data used in Product Recommendations:
 - **Behavioral** - Data from a shopper's engagement on your site, such as product views, items added to a cart, and purchases.
 - **Catalog** - Product metadata, such as name, price, availability, and so on.
 
-When you install the `magento/product-recommendations` module, Adobe Sensei aggregates the behavioral and catalog data, creating Product Recommendations for each recommendation type. The Product Recommendations service then deploys those recommendations to your storefront in the form of a that contains the recommended product _items_.
+When you install the `magento/product-recommendations` module, Adobe Sensei aggregates the behavioral and catalog data, creating Product Recommendations for each recommendation type. The Product Recommendations service then deploys those recommendations to your storefront in the form of a widget that contains the recommended product _items_.
 
 Some recommendation types use behavioral data from your shoppers to train machine learning models to build personalized recommendations. Other recommendation types use catalog data only and do not use any behavioral data. If you want to quickly start using Product Recommendations on your site, you can use the following, catalog-only recommendation types:
 
@@ -49,9 +49,9 @@ Other variables that can impact the time needed to train:
 
 To help you visualize the training progress of each recommendation type, the [create recommendation](create.md#readiness-indicators) page displays readiness indicators.
 
-While data is being collected on your live site and the machine learning models are training, you can finish other testing and configuration tasks needed to set up recommendations. By the time you’re done with this work, the models will have enough data to create useful recommendations, allowing you to deploy them to your storefront.
+While data is being collected on your live site and the machine learning models are training, you can finish other testing and configuration tasks needed to set up recommendations. By the time you're done with this work, the models will have enough data to create useful recommendations, allowing you to deploy them to your storefront.
 
-If your site doesn’t get enough traffic (views, purchases, trends) for most product SKUs, there might not be enough data to complete the learning process. This can make the readiness indicator in the Admin seem stuck. The readiness indicators are meant to provide merchants with another data point in choosing what recommendations type is better for their store. The numbers are a guide and may never reach 100%. [Learn more](create.md#readiness-indicators) about readiness indicators.
+If your site doesn't get enough traffic (views, purchases, trends) for most product SKUs, there might not be enough data to complete the learning process. This can make the readiness indicator in the Admin seem stuck. The readiness indicators are meant to provide merchants with another data point in choosing what recommendations type is better for their store. The numbers are a guide and may never reach 100%. [Learn more](create.md#readiness-indicators) about readiness indicators.
 
 ### Backup recommendations {#backuprecs}
 
@@ -122,8 +122,7 @@ This table describes the events used by each recommendation type.
 
 #### Caveats
 
-- Ad blockers and privacy settings can prevent events from being captured and might cause the engagement and revenue [metrics](workspace.md#column-descriptions) to be under-reported.
-- Eventing is meant to give the merchant a general idea of events that are happening on the site. It does not capture every transaction that occurs on the merchant's site. For example, some events might not be sent due to shoppers leaving the page or network issues.
+- Ad blockers and privacy settings can prevent events from being captured and might cause the engagement and revenue [metrics](workspace.md#column-descriptions) to be under-reported. Additionally, some events might not be sent due to shoppers leaving the page or network issues.
 - [Headless implementations](headless.md) must implement eventing to power the Product Recommendations dashboard.
 - For configurable products, Product Recommendations use the image of the parent product in the recommendation unit. If the configurable product does not have an image specified, the recommendation unit will be empty for that specific product.
 

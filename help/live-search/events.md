@@ -57,8 +57,7 @@ mse.publish.searchRequestSent("search-bar");
 
 ## Caveats
 
-- Ad blockers and privacy settings can prevent events from being captured and might cause the engagement and revenue [metrics](performance.md) to be under-reported.
-- Eventing does not capture every transaction that occurs on the merchant's site. Eventing is meant to give the merchant a general idea of events that are happening on the site. However, some events might not be sent due to shoppers leaving the page or network issues.
+- Ad blockers and privacy settings can prevent events from being captured and might cause the engagement and revenue [metrics](performance.md) to be under-reported. Additionally, some events might not be sent due to shoppers leaving the page or network issues.
 - Headless implementations must implement eventing to power intelligent merchandising.
 
 >[!NOTE]
