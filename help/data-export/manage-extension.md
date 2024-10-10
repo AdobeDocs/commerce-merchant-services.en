@@ -2,7 +2,6 @@
 title: '[!DNL Manage the Data Export extension]'
 description: Learn how to upgrade the [!DNL Data Export] extension and to remove or disable data export services that are not required.
 role: Admin, Developer
-recommendations: noCatalog
 exl-id: d2326673-0f82-4266-bf56-74d55e32fcab
 ---
 # Manage the SaaS data export Extension

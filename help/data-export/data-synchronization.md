@@ -2,7 +2,6 @@
 title: Synchronize Data with SaaS Data Export
 description: Learn how the [!DNL SaaS Data Export] collects and synchronizes data between Adobe Commerce instances and connected SaaS services.
 role: Admin, Developer
-recommendations: noCatalog
 exl-id: 530a6ed7-46ec-45fc-94e9-c850168e8aed
 ---
 # Synchronize data with SaaS Data Export

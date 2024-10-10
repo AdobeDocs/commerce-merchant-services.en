@@ -2,7 +2,6 @@
 user-guide-title: "[!DNL Data Export] Guide for SaaS Services"
 user-guide-description: "This guide provides detailed instructions for using the [!DNL Data Export] extension for Adobe Commerce SaaS services."
 breadcrumb-title: "[!DNL Data Export] Guide for SaaS Services"
-hide: yes
 role: Admin
 feature: Services
 ---
