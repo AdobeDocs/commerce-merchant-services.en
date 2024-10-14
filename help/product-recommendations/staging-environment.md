@@ -8,7 +8,7 @@ feature: Services, Recommendations, Staging
 
 Before you deploy recommendations to your production environment, test the service in a non-production environment to ensure that everything is working as expected.
 
-[!DNL Product Recommendations] return products based on [shopper-behavioral data](behavioral-data.md) collected from your storefront. In a non-production environment, however, it is likely you do not have any behavioral data from shoppers. The only recommendation type that you can test without behavioral data is `More like this`. This recommendation type does not require any input data, as it uses a direct content similarity match.
+[!DNL Product Recommendations] return products based on [shopper-behavioral data](events.md) collected from your storefront. In a non-production environment, however, it is likely you do not have any behavioral data from shoppers. The only recommendation type that you can test without behavioral data is `More like this`. This recommendation type does not require any input data, as it uses a direct content similarity match.
 
 The following recommendation types require behavioral data:
 
