@@ -20,7 +20,7 @@ In this article, you learn:
 
 ## Installation
 
-Merchants that have purchased the health care add-on for Adobe [!DNL Commerce] need to install the [HIPAA-Ready extension](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service#installation). Merchants also need to make sure they are using Data Connection version `3.2.1` (???? not sure what EPC version is compatible) or later.
+Merchants that have purchased the health care add-on for Adobe [!DNL Commerce] need to install the [HIPAA-Ready extension](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service#installation). Merchants who want to send back office event data to Experience Platform need to make sure they are using the [latest version](release-notes.md) of the [!DNL Data Connection] extension, which is compatible with the HIPAA-Ready extension.
 
 ## How to ensure data sent to the Experience Platform is HIPAA-compliant
 

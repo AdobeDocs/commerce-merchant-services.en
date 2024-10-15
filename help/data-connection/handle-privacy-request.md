@@ -8,10 +8,10 @@ feature: Security, Compliance
 
 Adobe Experience Platform Privacy Service provides a RESTful API and user interface to help you manage customer data requests. With Privacy Service, you can submit requests to access and delete personal customer data from Adobe Experience Cloud applications, facilitating automated compliance with legal and organizational privacy regulations.
 
-For more information on the Privacy Service and how to create and manage privacy requests, see the Adobe Experience Platform documentation:
+For more information on Privacy Service and how to create and manage privacy requests, see Adobe Experience Platform documentation:
 
 * [Privacy Service overview](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html)
-* [Managing privacy jobs in the Privacy Service UI](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/user-guide.html)
+* [Managing privacy jobs in Privacy Service UI](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/user-guide.html)
 
 ## Managing individual data privacy requests
 
@@ -20,7 +20,7 @@ You can submit individual requests to access and delete consumer data from [!DNL
 * Through the **Privacy Service UI**. See the documentation [here](https://experienceleague.adobe.com/en/docs/experience-platform/privacy/ui/user-guide#_blank).
 * Through the **Privacy Service API**. See the documentation [here](https://developer.adobe.com/experience-platform-apis/references/privacy-service/#_blank) and API information [here](https://developer.adobe.com/experience-platform-apis/#_blank).
 
-The Privacy Service supports two types of requests: **data access** and **data deletion**.
+Privacy Service supports two types of requests: **data access** and **data deletion**.
 
 ## Data access
 
@@ -28,7 +28,7 @@ For **access requests**, specify "Commerce Data for Marketing" from the UI (or `
 
 ## Data deletion
 
-For deletion requests, the Privacy Service deletes all [!DNL Commerce] data stored in the Experience Platform for marketing purposes, meaning profiles and orders of data subjects are no longer sent to Adobe marketing applications for use in campaigns and customer journeys. However, the Privacy Service does not delete data in the [!DNL Commerce] application, as it may still be needed for merchant transactional needs. Merchants are responsible for any data deletion/access requests in the [!DNL Commerce] application. See [Shared responsibility security and operational model](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility) to learn more.
+For deletion requests, Privacy Service deletes all [!DNL Commerce] data stored in Experience Platform for marketing purposes, meaning profiles and orders of data subjects are no longer sent to Adobe marketing applications for use in campaigns and customer journeys. However, Privacy Service does not delete data in the [!DNL Commerce] application, as it may still be needed for merchant transactional needs. Merchants are responsible for any data deletion/access requests in the [!DNL Commerce] application. See [Shared responsibility security and operational model](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility) to learn more.
 
 [!DNL Commerce] will notify merchants about deletion requests by sending them information for data subjects requesting deletion of certain data.
 
@@ -43,7 +43,17 @@ To make requests to access and delete data for Adobe [!DNL Commerce], you must h
 
 ### GDPR Request/delete access example:
 
-To send access and delete requests through the Privacy API, you must authenticate and manage permissions for the Privacy Service:
+For **access requests**, specify "Commerce Data for Marketing" from the UI (or "commerceMarketingData" as a product code in the API).
+
+For **delete requests**, in addition to the "Commerce Data for Marketing" request, you must also submit delete requests to three upstream services to prevent Adobe Commerce from reinjecting the deleted data. If these upstream services are not specified, the "Commerce Data for Marketing" request will remain in the "processing" state until delete requests for the upstream services are created.
+
+The three upstream services are:
+
+* Profile (product code: "profileService")
+* AEP Data Lake (product code: "AdobeCloudPlatform")
+* Identity (product code: "identity")
+
+To send access and delete requests through the Privacy API, you must authenticate and manage permissions for Privacy Service:
 
 * [Authenticate and access the Privacy Service API](https://experienceleague.adobe.com/en/docs/experience-platform/privacy/api/getting-started)
 * [Manage permissions for Privacy Service](https://experienceleague.adobe.com/en/docs/experience-platform/privacy/permissions)
