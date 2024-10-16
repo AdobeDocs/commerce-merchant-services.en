@@ -37,7 +37,7 @@ These recommendation types are social-proof driven to help shoppers find what ot
 
 >[!NOTE]
 >
->The "viewed this, viewed that", "viewed this, bought that", and "bought this, bought that" recommendation types are not based on a simple-occurrence metric but rather a more sophisticated collaborative-filtering machine-learning algorithm that looks for "interesting similarities" that are not skewed towards popular products.
+>The "viewed this, viewed that", "viewed this, bought that", and "bought this, bought that" recommendation types are not based on a simple-occurrence metric but rather a more sophisticated collaborative-filtering machine-learning algorithm that looks for *interesting similarities* that are not skewed towards popular products.
 
 |Type|Description|
 |---|---|
