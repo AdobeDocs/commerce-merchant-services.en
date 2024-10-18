@@ -2,7 +2,6 @@
 title: Estimate data volume and transmission time
 description: Learn to estimate the data volume and transmission time required for the [!DNL data export] tool to synchronize feed data between Adobe Commerce and connected services.
 role: Admin, Developer
-recommendations: noCatalog
 exl-id: 51ea98fd-cf90-44bd-a639-992bfc7f3eca
 ---
 # Estimate data volume and transmission time for data sync

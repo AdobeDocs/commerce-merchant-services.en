@@ -5,7 +5,7 @@ role: Admin, Developer
 feature: Personalization, Integration
 exl-id: 86a3ba12-7f26-4f7e-98a0-9af0d1d8d881
 ---
-# Update Profile Record Schema for Commerce Data Ingestion (Beta)
+# Update Profile Record Schema for Commerce Data Ingestion
 
 When your shoppers create a profile in your Commerce site, a profile record is created and data is captured. You must create a schema and dataset specific to that profile record before you can stream that profile data to the Experience Platform.
 

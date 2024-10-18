@@ -22,6 +22,10 @@ Updates include:
 
 ## Current major version
 
+## 103.3.14 Release
+
+![Fix](../assets/fix.svg)  The exporter indexer now maintains the correct status for dependent indexers. Previously, these indexes were incorrectly invalidated and required additional checks and validation that slowed indexing performance. <!-MDEE-866-->
+
 ## 103.3.13 Release
 
 ![Fix](../assets/fix.svg) Improved performance of the data synchronization process by adding a local cache for attribute options data.<!-MDEE-864-->

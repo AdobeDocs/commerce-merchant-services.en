@@ -2,7 +2,6 @@
 title: Improve SaaS Data Export Performance
 description: Learn how to improve SaaS data export performance for Commerce Services by using multi-thread data export mode.
 role: Admin, Developer
-recommendations: noCatalog
 exl-id: 20c81ef4-5a97-45cd-9401-e82910a2ccc3
 ---
 # Improve SaaS Data Export Performance
