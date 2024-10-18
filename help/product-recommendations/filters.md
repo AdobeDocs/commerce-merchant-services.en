@@ -36,7 +36,9 @@ The logical operators `AND` and `OR` are used to join multiple conditions. If us
 
 ### Category
 
-Filters based on a product's category use direct category assignments and their subcategories. For example, enabling an exclusion condition for category `Gear` excludes products assigned to `Gear` and all of its subcategories such as `Gear/Bags` or `Gear/Fitness Equipment`. The same applies for an inclusion filter on a category. For example, enabling an inclusion condition for category `Gear` includes products assigned to `Gear` and all of its subcategories such as `Gear/Bags` or `Gear/Fitness Equipment`.
+Filters products based on their category. The category filter uses direct category assignments and their subcategories. For example, enabling an exclusion condition for category `Gear` excludes products assigned to `Gear` and all of its subcategories such as `Gear/Bags` or `Gear/Fitness Equipment`. The same applies for an inclusion filter on a category. For example, enabling an inclusion condition for category `Gear` includes products assigned to `Gear` and all of its subcategories such as `Gear/Bags` or `Gear/Fitness Equipment`.
+
+The category field displays categories that belong to the current storeview. 
 
 >[!NOTE]
 >
