@@ -16,6 +16,18 @@ Updates include:
 
 ## Current major version
 
+### V1.26 Release
+
+_October 22, 2024_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+![New](../assets/new.svg) The GraphQL schema now includes the `lastModifiedAt` attribute in the product information. This precise timestamp helps customers ensure that sitemaps accurately reflect the most recent updates to their products. It also helps search engines like Google determine when reindexing is necessary, optimizing the crawling process and preventing issues related to aggressive last modified dates used when precise information is not available. <!--DATA-6209-->
+
+## Previous versions
+
++++ Previous versions
+
 ### V1.23 Release
 
 _August 22, 2024_
@@ -32,11 +44,6 @@ _August 13, 2024_
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
 ![New](../assets/new.svg) Added support to retrieve all variants by product SKU. See the [Catalog Service API Reference](https://developer.adobe.com/commerce/services/graphql/catalog-service/). <!--DATA-6067-->
-
-
-## Previous versions
-
-+++ Previous versions
 
 ### V1.22 Release
 
