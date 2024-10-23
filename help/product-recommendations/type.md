@@ -22,9 +22,13 @@ As a best practice, Adobe recommends the following guidelines when using recomme
 
 - If your store sells clothing, the `More like this` recommendation can suggest gender-specific products that do not match the gender of the product being viewed. Consider using this recommendation type only for non-clothing categories.
 
+>[!NOTE]
+>
+>For more information about the events described in this article, see [events](events.md).
+
 ## Personalized {#personalized}
 
-These recommendation types recommend products based on the specific shopper's behavioral history on your site.
+These recommendation types recommend products based on the specific shopper's behavioral history on your site. For example, if a shopper previously browsed or purchased a jacket on your site, these recommendations essentially pick up where they left off and recommend other jackets or other similar products.
 
 |Type|Description|
 |---|---|
@@ -33,18 +37,18 @@ These recommendation types recommend products based on the specific shopper's be
 
 ## Cross-sells and up-sells {#crossup}
 
-These recommendation types are social-proof driven to help shoppers find what others liked or product-driven to help them find other similar products
+These recommendation types are social-proof driven to help shoppers find what others liked or product-driven to help them find other similar products. The products recommended are often items that go well together.
 
 >[!NOTE]
 >
->The "viewed this, viewed that", "viewed this, bought that", and "bought this, bought that" recommendation types are not based on a simple-occurrence metric but rather a more sophisticated collaborative-filtering machine-learning algorithm that looks for *interesting similarities* that are not skewed towards popular products.
+>The "viewed this, viewed that", "viewed this, bought that", and "bought this, bought that" recommendation types do not use a simple-occurrence metric but rather a more sophisticated collaborative-filtering algorithm that looks for *interesting similarities* that are not skewed towards popular products. The data used to inform these recommendation types is based on the shopper's aggregate behavior derived from multiple sessions on your site. The data is not based on shopper behavior derived from a single in-session occurrence on your site. These recommendation types help shoppers find those adjacent products that might not be obvious to pair with the currently viewed product.
 
 |Type|Description|
 |---|---|
 |Viewed this, viewed that|Recommends products that shoppers view disproportionately more often with the currently viewed product.<br/><br/>**Where used:**<br/>- Product detail<br/>- Cart<br/>- Confirmation<br/><br/>**Suggested labels:**<br/>- Customers who viewed this product also viewed (PDP)|
-|Viewed this, bought that|Recommends products that shoppers tend to buy disproportionately more often after viewing the current product. Helps guide shoppers to discover products that they might not have otherwise noticed.<br/><br/>**Where used:**<br/>- Product detail<br/>- Cart<br/>- Confirmation<br/><br/>**Suggested labels:**<br/>- Customers who viewed this ultimate bought<br/>- Customers ultimately purchased<br/>- What do others buy after viewing this product?|
-|Bought this, bought that|Recommends products that shoppers buy disproportionately more often with the currently viewed product. Displays highly relevant products shoppers can add to their cart by aggregating what other shoppers have bought with the current product.<br/><br/>**Where used:**<br/>- Product detail<br/>- Cart<br/>- Confirmation<br/><br/>**Suggested labels:**<br/>- Get everything that you need<br/>- Don't forget these<br/>- Frequently bought together|
-|More like this|Recommends products based on similar metadata such as name, description, category assignment, and attributes. By evaluating the attributes for the products being viewed, recommends similar products in the same category. For example, if a shopper is browsing yoga mats, other products in the equipment category are recommended. Because this recommendation type does not distinguish genders, it is not recommended for apparel, fashion, or other gender-specific verticals.<br/><br/>**Where used:**<br/>- Product detail<br/>- Cart<br/>- Confirmation<br/><br/>**Suggested labels:**<br/> - More products like this<br/>- Similar to this|
+|Viewed this, bought that|Recommends products that shoppers tend to buy disproportionately more often after viewing the current product. This type helps guide shoppers to discover products that they might not have otherwise noticed.<br/><br/>**Where used:**<br/>- Product detail<br/>- Cart<br/>- Confirmation<br/><br/>**Suggested labels:**<br/>- Customers who viewed this ultimate bought<br/>- Customers ultimately purchased<br/>- What do others buy after viewing this product?|
+|Bought this, bought that|Recommends products that shoppers buy disproportionately more often with the currently viewed product. This type displays highly relevant products shoppers can add to their cart by aggregating what other shoppers have bought with the current product.<br/><br/>**Where used:**<br/>- Product detail<br/>- Cart<br/>- Confirmation<br/><br/>**Suggested labels:**<br/>- Get everything that you need<br/>- Don't forget these<br/>- Frequently bought together|
+|More like this|Recommends products based on similar metadata such as name, description, category assignment, and attributes. By evaluating the attributes for the products being viewed, this type recommends similar products in the same category. For example, if a shopper is browsing yoga mats, other products in the equipment category are recommended. Because this recommendation type does not distinguish genders, it is not recommended for apparel, fashion, or other gender-specific verticals.<br/><br/>**Where used:**<br/>- Product detail<br/>- Cart<br/>- Confirmation<br/><br/>**Suggested labels:**<br/> - More products like this<br/>- Similar to this|
 |[Visual similarity](#visualsim)|Recommends similar looking products to the product being viewed. This recommendation type is most useful if images and the visual aspects of products are important to the shopping experience.|
 
 ## Popularity {#popularity}
