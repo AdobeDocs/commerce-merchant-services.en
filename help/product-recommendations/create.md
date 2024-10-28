@@ -153,6 +153,10 @@ The readiness indicator percent for recommendation types that depend on catalog 
 
 A low readiness percentage indicates that there are not many products from your catalog that are eligible to be included in recommendations for this recommendation type. This means that there is a high probability that [backup recommendations](events.md#backuprecs) are returned if you deploy this recommendation type anyway.
 
+>[!IMPORTANT]
+>
+>_Bundle_, _Grouped_, and custom product types are not supported. If a large portion of your catalog has these product types, you can expect a low readiness score.Additionally, any SKUs with spaces can reduce recommendation relevancy and should be avoided.
+
 The following lists possible reasons and solutions to common low readiness scores:
 
 * **Static-based** - Low percentages for these indicators can be caused by missing catalog data for the displayable products. If they are lower than expected, a full sync can fix this issue.
