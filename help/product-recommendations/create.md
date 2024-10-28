@@ -155,7 +155,7 @@ A low readiness percentage indicates that there are not many products from your 
 
 >[!IMPORTANT]
 >
->_Bundle_, _Grouped_, and custom product types are not supported. If a large portion of your catalog has these product types, you can expect a low readiness score.Additionally, any SKUs with spaces can reduce recommendation relevancy and should be avoided.
+>_Bundle_, _Grouped_, and custom product types are not supported. If a large portion of your catalog has these product types, you can expect a low readiness score. Additionally, any SKUs with spaces can reduce recommendation relevancy and should be avoided.
 
 The following lists possible reasons and solutions to common low readiness scores:
 
