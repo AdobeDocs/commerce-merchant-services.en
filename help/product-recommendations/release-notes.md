@@ -40,6 +40,15 @@ _July 18, 2023_
 
 ## Current major version
 
+### 6.0.3 of magento/product-recommendations
+
+ _October 28, 2024_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+![Fix](../assets/fix.svg) Fixed an issue where the [category filter](filters.md#category) included categories that did not belong to the current storeview.
+![Fix](../assets/fix.svg) Fixed an issue where the `magento/product-recommendations` metapackage did not include the `magento/module-saas-category` dependency.
+
 ### 6.0.2 of magento/product-recommendations
 
  _May 9, 2024_
