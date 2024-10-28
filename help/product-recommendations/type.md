@@ -28,7 +28,7 @@ As a best practice, Adobe recommends the following guidelines when using recomme
 
 ## Personalized {#personalized}
 
-These recommendation types recommend products based on the specific shopper's behavioral history on your site. For example, if a shopper previously browsed or purchased a jacket on your site, these recommendations essentially pick up where they left off and recommend other jackets or other similar products.
+These recommendation types recommend products based on the specific shopper's behavioral history on your site. For example, if a shopper previously browsed for a jacket or purchased a jacket on your site, these recommendations essentially pick up where they left off and recommend other jackets or similar products.
 
 |Type|Description|
 |---|---|
@@ -37,7 +37,7 @@ These recommendation types recommend products based on the specific shopper's be
 
 ## Cross-sells and up-sells {#crossup}
 
-These recommendation types are social-proof driven to help shoppers find what others liked or product-driven to help them find other similar products. The products recommended are often items that go well together.
+These recommendation types are social-proof driven to help shoppers find what others liked or product-driven to help them find other similar products. The recommended products often complement the selected product.
 
 >[!NOTE]
 >
