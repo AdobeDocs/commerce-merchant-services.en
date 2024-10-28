@@ -10,8 +10,6 @@ feature: Payments, Checkout
 
 [!DNL Payment Services] for [!DNL Adobe Commerce] and [!DNL Magento Open Source] is your turnkey self-service solution, including sandbox testing and a simple setup, for providing robust and secure payment processing for your Commerce websites.
 
-![[!DNL Payment Services] extension Admin view](assets/admin-view.png){width="300" zoomable="yes"}
-
 Whether you are a small business, mid-market contender, or large enterprise, this payments solution helps you reduce operational overhead, increase revenue, and give you useful tools to improve the entire shopper experience.
 
 [!DNL Payment Services] is:

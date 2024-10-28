@@ -11,7 +11,7 @@ exl-id: b0c72212-9be0-432d-bb8d-e4c639225df3
 This table describes the events used by [!DNL Live Search] [ranking strategies](rules-add.md#intelligent-ranking).
 
 | Ranking Strategy | Events | Page |
-| --- | --- | --- | ---|
+| --- | --- | --- |
 | Most Viewed |  `page-view`<br>`product-view` | Product detail page |
 | Most Purchased |  `page-view`<br>`complete-checkout` | Cart/Checkout |
 | Most added to cart |  `page-view`<br>`add-to-cart` | Product detail page<br>Product listing page<br>Cart<br>Wish List |
