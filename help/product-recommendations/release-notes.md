@@ -47,7 +47,7 @@ _July 18, 2023_
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
 ![Fix](../assets/fix.svg) Fixed an issue where the [category filter](filters.md#category) included categories that did not belong to the current storeview.
-![Fix](../assets/fix.svg) Fixed an issue where the `magento/product-recommendations` metapackage did not include the `magento/module-saas-category` dependency.
+![Fix](../assets/fix.svg) Fixed a dependency issue in the `magento/product-recommendations` metapackage.
 
 ### 6.0.2 of magento/product-recommendations
 
