@@ -12,7 +12,7 @@ This article provides step-by-step instructions for implementing [!DNL Live Sear
 
 >[!IMPORTANT]
 >
->When it comes to site search, Adobe Commerce gives you options. Be sure to read [Boundaries and Limits](boundaries-limits.md) before implementing, to ensure [!DNL Live Search] is a fit for your business needs.
+>When it comes to site search, Adobe Commerce gives you options. Be sure to read [Boundaries and Limits](boundaries-limits.md) before implementing, to ensure that [!DNL Live Search] is a fit for your business needs.
 
 ## Audience
 
@@ -21,7 +21,7 @@ This article is intended for the developer or systems integrator on your team wh
 ## Requirements
 
 - [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) 2.4.4+
-- PHP 8.1 / 8.2 / 8.3
+- PHP version 8.1, 8.2, or 8.3
 - [!DNL Composer]
 
 ## Supported platforms
@@ -33,7 +33,14 @@ This article is intended for the developer or systems integrator on your team wh
 
 At a high level, onboarding [!DNL Live Search] requires that you:
 
-![Live Search Workflow](assets/livesearch-workflow.png)
+1. [Install](#1-install-the-live-search-extension) the [!DNL Live Search] extension
+1. [Configure](#2-configure-api-keys) the API keys
+1. [Sync](#3-sync-your-catalog-data) your catalog data
+1. [Verify](#4-verify-that-the-data-was-exported) that the catalog data was exported
+1. [Configure](#5-configure-the-data) the data
+1. [Test](#6-test-the-connection) the connection
+1. [Verify](#7-validate-events-are-capturing-data) that events are capturing data
+1. [Customize](#8-customize-for-your-storefront) your storefront
 
 ## 1. Install the [!DNL Live Search] extension
 
@@ -57,13 +64,13 @@ At a high level, onboarding [!DNL Live Search] requires that you:
    composer require magento/live-search
    ```
 
-   If you are adding the [!DNL Live Search] extension to a **new** Adobe Commerce installation, run the following to disable [!DNL OpenSearch] and related modules, and install [!DNL Live Search]. Then proceed to step 4.
+   If you are adding the [!DNL Live Search] extension to a **new** Adobe Commerce installation, run the following command to disable [!DNL OpenSearch] and related modules temporarily, and install [!DNL Live Search]. Then, proceed to step 4.
 
    ```bash
       bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch7 Magento_OpenSearch Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch Magento_ElasticsearchCatalogPermissionsGraphQl
    ```
 
-   If you are adding the [!DNL Live Search] extension to an **existing** Adobe Commerce installation, run the following to temporarily disable the [!DNL Live Search] modules that serve storefront search results. Then proceed to step 4:
+   If you are adding the [!DNL Live Search] extension to an **existing** Adobe Commerce installation, run the following to disable the [!DNL Live Search] modules that serve storefront search results. Then, proceed to step 4:
 
    ```bash
       bin/magento module:disable Magento_LiveSearchAdapter Magento_LiveSearchStorefrontPopover Magento_LiveSearchProductListing 
@@ -105,6 +112,60 @@ At a high level, onboarding [!DNL Live Search] requires that you:
    bin/magento setup:upgrade
    ```
 
+### Install the [!DNL Live Search] beta
+
+>[!IMPORTANT]
+>
+>The following feature is in beta. To participate in the beta, send an email request to [commerce-storefront-services](mailto:commerce-storefront-services@adobe.com).
+
+This beta supports three new capabilities in the [`productSearch` query](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/):
+
+- **Layered search** - Search within another search context - With this capability, you can undertake up to two layers of search for your search queries. For example:
+  
+  - **Layer 1 search** - Search for "motor" on "product_attribute_1".
+  - **Layer 2 search** - Search for "part number 123" on "product_attribute_2". This example searches for "part number 123" within the results for "motor".
+
+  Layered search is available for both `startsWith` search indexation and `contains` search indexation as described below:
+
+- **startsWith search indexation** - Search using `startsWith` indexation. This new capability allows:
+
+  - Searching for products where the attribute value starts with a particular string.
+  - Configuring an "ends with" search so shoppers can search for products where the attribute value ends with a particular string. To enable an "ends with" search, the product attribute needs to be ingested in reverse and the API call should also be a reversed string.
+
+- **contains search indexation** -Search an attribute using contains indexation. This new capability allows:
+
+    - Searching for a query within a larger string. For example, if a shopper searches for the product number "PE-123" in the string "HAPE-123".
+        
+        - Note: This search type is different from the existing [phrase search](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#phrase), which performs an autocomplete search. For example, if your product attribute value is "outdoor pants", a phrase search returns a response for "out pan", but does not return a response for "oor ants". A contains search, however, does return a response for "oor ants".
+
+These new conditions enhance the search query filtering mechanism to refine search results. These new conditions do not affect the main search query.
+
+You can implement these new conditions on your search results page. For example, you can add a new section on the page where the shopper can further refine their search results. You can allow shoppers to select specific product attributes, such as "Manufacturer", "Part Number", and "Description". From there, they search within those attributes using the `contains` or `startsWith` conditions. See the Admin guide for a list of searchable [attributes](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types).
+
+1. To install the beta, add the following dependency to your project:
+
+    ```bash
+    composer require magento/module-live-search-search-types:"^1.0.0-beta1"
+    ```
+
+1. Commit and push the changes to your `composer.json` and `composer.lock` files to your cloud project. [Learn more](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions#upgrade-an-extension).
+
+   This beta adds **[!UICONTROL Search types]** checkboxes for **[!UICONTROL Autocomplete]**, **[!UICONTROL Contains]**, and **[!UICONTROL Starts with]** in the Admin. It also updates the [`productSearch`](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering-using-search-capability) GraphQL API to include these new search capabilities.
+
+1. In the Admin, [set a product attribute](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes-add#step-5-describe-the-storefront-properties) to be searchable and specify the search capability for that attribute, such as **Contains** (default) or **Starts with**. You can specify a maximum of six attributes to be enabled for **Contains** and six attributes to be enabled for **Starts with**. For beta, be aware that the Admin does not enforce this restriction but it is enforced in API searches.
+
+    ![Specify search capability](./assets/search-filters-admin.png)
+
+1. See the [developer documentation](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering-using-search-capability) to learn how to update your [!DNL Live Search] API calls using the new `contains` and `startsWith` search capabilities.
+
+### Field descriptions
+
+| Field | Description |
+|--- |--- |
+|`Autocomplete`| Enabled by default and cannot be modified. With `Autocomplete` you can use `contains` in the [search filter](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering). Here, the search query in `contains` returns an autocomplete type search response. Adobe recommends you use this type of search for description fields, which typically have more than 50 characters.|
+|`Contains`| Enables a true "text contained in a string" search instead of an autocomplete search. Use `contains` in the [search filter](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering-using-search-capability). Refer to the [Limitations](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#limitations) for more information.|
+|`Starts with`| Lets you query strings which start with a particular value. Use `startsWith` in the [search filter](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering-using-search-capability).|
+
 ## 2. Configure API keys
 
 The Adobe Commerce API key and its associated private key are required to connect [!DNL Live Search] to an installation of Adobe Commerce. The API key is generated and maintained in the account of the [!DNL Commerce] license holder, who can share it with the developer or systems integrator. The developer can then create and manage the SaaS Data Spaces on behalf of the license holder. If you already have a set of API keys, you do not need to regenerate them.
@@ -141,18 +202,24 @@ You can view the data that is synchronized and shared using the [Data Management
 
 ![Data Management Dashboard](assets/data-management-dashboard.png)
 
+You can also run sync commands and troubleshoot the synchronization process using the [Commerce CLI](../data-export/data-export-cli-commands.md#troubleshooting) and the data export extension logs.
+
 #### Future product updates
 
-After the initial synchronization, it can take up to 15 minutes for incremental product updates to become available to storefront search. To learn more, see [Indexing - Streaming Product Updates](indexing.md).
+After the initial synchronization, it can take up to 15 minutes for incremental product updates to become available to storefront search. To learn more, see [Streaming Product Updates](indexing.md) in the Indexing documentation.
 
-## 4. Verify the data was exported {#verify-export}
+## 4. Verify that the data was exported {#verify-export}
 
-To verify that the catalog data has been exported from your Adobe Commerce instance and is synchronized for [!DNL Live Search], you have a couple of options:
+To check if your catalog data has been exported from Adobe Commerce and synced with [!DNL Live Search], you have a few options:
 
 - Look for entries in the following tables:
 
-   - `catalog_data_exporter_products`
-   - `catalog_data_exporter_product_attributes`
+   - `cde_products_feed`
+   - `cde_product_attributes_feed`
+
+  >[!NOTE]
+  >
+  >If you get a `table does not exist` error, look for entries in the `catalog_data_exporter_products` and `catalog_data_exporter_product_attributes` tables. These table names are used in [!DNL Live Search] versions earlier than 4.2.1.
 
 - Use the [GraphQL playground](https://developer.adobe.com/commerce/services/graphql/live-search/) with the default query to verify the following:
 
@@ -163,13 +230,13 @@ For additional help, see [[!DNL Live Search] catalog not synchronized](https://e
 
 ## 5. Configure the data
 
-Getting your product data configured correctly ensures good search results for your customers. In this section, you enable the product listing widgets and assign categories and attributes.
+Getting your product data configured correctly ensures good search results for your customers. In this section, you enable the product listing widgets and assign categories.
 
-### Enable Product Listing Widgets
+### Enable product listing widgets
 
-When you install [!DNL Live Search] 4.0.0+, Product Listing Widgets are enabled by default. When widgets are enabled, a different UI component is used for the search results page and category browse Product Listing Page. This UI component makes direct calls to the [Catalog Service API](https://developer.adobe.com/commerce/services/graphql/catalog-service/product-search/), which results in faster response times.
+When you install [!DNL Live Search] 4.0.0+, product listing widgets are enabled by default. When widgets are enabled, a different UI component is used for the search results page and the category browse product listing page. This UI component makes direct calls to the [Catalog Service API](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/), which results in faster response times.
 
-If you have a [!DNL Live Search] version older than 4.0.0+, you need to manually enable the Product Listing Widget.
+If you have a [!DNL Live Search] version older than 4.0.0+, you must manually enable the Product Listing Widget.
 
 1. From the *Admin*, go to **[!UICONTROL Stores]** > _[!UICONTROL Settings]_ > **[!UICONTROL Configuration]**.
 1. Under **[!UICONTROL Live Search]**, select **[!UICONTROL Storefront Features]**.
@@ -190,17 +257,7 @@ When you change this configuration, the message `Page cache is invalidated` appe
 
 ### Assign categories
 
-Products returned in [!DNL Live Search] must be assigned to a [category](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/categories). In Luma, for example, products are put into categories such as "Men", "Women", and "Gear". Subcategories are also set up for "Tops", "Bottoms", and "Watches". This allows for better granularity when filtering.
-
-### Searchable and filterable fields
-
-Products are assigned [attributes](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes) that can be used for searching and filtering. Attributes are things such as "Color", "Size", "Material Type". With these attributes, users can look for "green tops". Each product may have many attributes defined in the [!DNL Commerce] Admin.
-
-Each of these attributes can be defined as ["searchable"](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) in the Admin. When set as "searchable", those attributes are available to be searched by [!DNL Live Search].
-
-[Facets](facets.md) are product attributes that are defined in [!DNL Live Search] to be filterable. Any filterable attribute may be set as a facet in [!DNL Live Search] but there are limits to how many facets can be searched at one time.
-
-[Synonyms](synonyms.md) are terms that you can define to help guide users to the correct product. Users looking for pants might type in "trousers" or "slacks". You can set synonyms so that these search terms will get users to the "pants" results.
+Products returned in [!DNL Live Search] must be assigned to a [category](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/categories). In Luma, for example, products are put into categories such as "Men", "Women", and "Gear". Subcategories are also set up for "Tops", "Bottoms", and "Watches". These category assignments improve granularity when filtering.
 
 ## 6. Test the connection {#test-connection}
 
@@ -216,11 +273,19 @@ If you encounter problems in the storefront, check the `var/log/system.log` file
 
 To allow [!DNL Live Search] through a firewall, add `commerce.adobe.io` to the allowlist.
 
-## 7. Customize for your storefront
+## 7. Verify that events are capturing data
 
-You have installed the [!DNL Live Search] extension, synced, validated, and configured your data. Now, you will want to ensure that the [!DNL Live Search] widgets conform to your store's look and feel.
+Ensure that the storefront events deployed to your site are working. This is especially important for headless implementations.
 
-You can style the popover and PLP widgets by defining custom CSS rules as needed. See [Styling Popover Elements](storefront-popover-styling.md) and [Product Listing Page Widget](plp-styling.md).
+- Review the [events](events.md) that are required for [!DNL Live Search].
+- Ensure that the [Live Search dashboard](performance.md) is displaying data from your non-production environment(s).
+- [Verify event collection](../product-recommendations/verify.md). While this page is in the [!DNL Product Recommendations] guide, the verification steps apply to [!DNL Live Search] as well.
+
+## 8. Customize for your storefront
+
+You have installed the [!DNL Live Search] extension, synced, validated, and configured your data. The next step is to ensure that the [!DNL Live Search] widgets conform to your store's look and feel.
+
+You can style the popover and PLP widgets by defining custom CSS rules as needed. See [Styling Popover Elements](storefront-popover.md#styling-popover-example) and [product listing page widget](plp-styling.md#styling-example).
 
 If you wish to extend the functionality of the widgets, the source code for each is available in a public repo.
 In this scenario, you can customize the JavaScript for your own needs and then host your custom code on your CDN. This custom script communicates with the [!DNL Live Search] service and returns the results like normal, allowing you to control the functionality of the widget.
@@ -290,7 +355,7 @@ The [!DNL Live Search] extension consists of the following packages:
 
 ## [!DNL Live Search] dependencies {#dependencies}
 
-The following [!DNL Live Search] dependencies are captured by [!DNL Composer].
+The [!DNL Composer] metapackage to install the [!DNL Live Search] extension includes the following module dependencies.
   
 - `magento/module-saas-catalog`
 - `magento/module-saas-category`
@@ -317,9 +382,9 @@ The following sections provide more advanced topics when using [!DNL Live Search
 
 [!DNL Live Search] communicates through the endpoint at `https://catalog-service.adobe.io/graphql`.
 
-As [!DNL Live Search] does not have access to the complete product database, [!DNL Live Search] GraphQL and Commerce core GraphQL will not have complete parity.
+As [!DNL Live Search] does not have access to the complete product database, the [!DNL Live Search] GraphQL and Commerce core GraphQL APIs do not have complete parity.
 
-It is recommended to call the SaaS APIs directly - specifically the Catalog Service endpoint.
+Adobe recommends calling the SaaS APIs directly — specifically the Catalog Service endpoint.
 
 - Gain performance and reduce processor load by bypassing the Commerce database/Graphql process
 - Take advantage of the [!DNL Catalog Service] federation to call [!DNL Live Search], [!DNL Catalog Service], and [!DNL Product Recommendations] from a single endpoint.
@@ -331,7 +396,7 @@ If you have a custom headless implementation, check out the [!DNL Live Search] r
 - [PLP widget](https://github.com/adobe/storefront-product-listing-page)
 - [Live Search field](https://github.com/adobe/storefront-search-as-you-type)
 
-If you do not use the default components, such as Search Adapter or widgets on Luma, or AEM CIF Widgets, eventing (clickstream data that feeds Adobe Sensei for Intelligent Merchandising and performance metrics) will not work out of the box and requires custom development to implement headless eventing.
+Automatic collection of user interaction data does not work by default when you do not use the standard components like the Search Adapter, Luma widgets, or AEM CIF Widgets. Adobe Sensei uses this collected data for intelligent merchandising and performance tracking. To resolve this issue, you need to develop a custom solution to implement this data collection in a headless manner.
 
 The latest version of [!DNL Live Search] already uses [!DNL Catalog Service].
 
@@ -377,20 +442,24 @@ The latest version of [!DNL Live Search] already uses [!DNL Catalog Service].
 |Chinese|China|zh_CN|zh_Hans_CN|
 |Chinese|Taiwan|zh_TW|zh_Hant_TW|
 
-If the widget detects that the Commerce Admin language setting (_Stores_ > Settings > _Configuration_ > _General_ > Country Options) matches a supported language, it defaults to that language. Otherwise, the widgets default to English.
+If the widget detects that the Commerce Admin language setting matches a supported language, it defaults to that language. Otherwise, the widget default to English. In the Admin, the language setting is configured by navigating to _[!UICONTROL Stores]_ > [!UICONTROL Settings] > _[!UICONTROL Configuration]_ > _[!UICONTROL General]_ > [!UICONTROL Country Options]. 
 
 Admins can also set the language of the [search index](settings.md#language), to help ensure better search results.
 
 ### Widget code repository
 
-The Product Listing Page widget and the Live Search field widget are both available for download from their github repository.
+The code for the product listing page widget and the Live Search field widget is available for download from GitHub.
 
-This allows developers to fully customize the functionality and styling. These users host the code themselves while still taking advantage of the [!DNL Live Search] service.
+Developers who have access to the code can completely customize how it works and looks. They host the code on their own servers but still use the [!DNL Live Search] service.
 
 - [PLP widget](https://github.com/adobe/storefront-product-listing-page)
 - [Search bar](https://github.com/adobe/storefront-search-as-you-type)
 
-### Inventory Management
+### Data Export extension
+
+After Live Search is enabled, the Data Export extension synchronizes Commerce data between the Commerce application and Live Search. This process ensures that the most current Commerce data is available on the storefront. In the Admin, you can check synchronization status using the Data Management dashboard. You can manage and troubleshoot the data export process using the Commerce CLI and logs. For details, see the [Data Export Guide](../data-export/overview.md).
+
+### Inventory management
 
 [!DNL Live Search] supports [Inventory Management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) capabilities in Commerce (formerly knows as Multi-Source Inventory, or MSI). To enable full support, you must [update](install.md#update) the dependency module `commerce-data-export` to version 102.2.0+.
 
@@ -398,7 +467,7 @@ This allows developers to fully customize the functionality and styling. These u
 
 ### Price indexer
 
-Live Search customers can use the new [SaaS price indexer](../price-index/price-indexing.md), which provides faster price change updates and synchronization time.
+Live Search customers can use the [SaaS price indexer](../price-index/price-indexing.md), which provides faster price change updates and synchronization time.
 
 ### Price support
 
@@ -427,13 +496,17 @@ This module adds additional contexts to GraphQL queries:
 - `dataServicesMagentoExtensionContext`
 - `dataServicesStoreConfigurationContext`
 
+### B2B support
+
+[!DNL Live Search] supports [B2B functionality](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/guide-overview) with additional [limitations](boundaries-limits.md#b2b-and-category-permissions).
+
 ### PWA support
 
 [!DNL Live Search] works with PWA Studio but users might see slight differences compared to other Commerce implementations. Basic functionality such as search and product listing page work in Venia but some permutations of Graphql might not work correctly. There might also be performance differences.
 
 - The current PWA implementation of [!DNL Live Search] requires more processing time to return search results than [!DNL Live Search] with the native Commerce storefront.
-- [!DNL Live Search] in PWA does not support [event handling](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/). As a result, search reporting nor intelligent merchandising will work.
-- Filtering directly on `description`, `name`, `short_description` is not supported by GraphQL when used with [PWA](https://developer.adobe.com/commerce/pwa-studio/), but they are returned with a more general filter.
+- [!DNL Live Search] in PWA does not support [event handling](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/). As a result, search reporting and intelligent merchandising do not work on PWA storefronts.
+- When using [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/), GraphQL does not support filtering directly on `description`, `name`, `short_description`, but these fields can be returned with a more general filter.
 
 To use [!DNL Live Search] with PWA Studio, integrators must also:
 

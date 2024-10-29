@@ -13,10 +13,6 @@ recommendations: noDisplay
 - [Guide overview](guide-overview.md)
 - [Introduction to [!DNL Payment Services]](overview.md)
 - [Release notes](release-notes.md)
-- Payments and checkout {#payments-checkout}
-  - [Payment options](payments-options.md)
-  - [Credit card vaulting](vaulting.md)
-  - [Checkout](checkout.md)
 - Onboard [!DNL Payment Services] {#get-started}
   - [Onboarding overview](onboard.md)
   - [Install the [!DNL Payment Services] extension](install.md)
@@ -28,16 +24,24 @@ recommendations: noDisplay
   - [[!DNL Payment Services] Settings](settings.md)
   - [Command line configuration](configure-cli.md)
   - [Legacy configuration](configure-admin.md)
-- [Test and validate](test-validate.md)
-- [Create an order](create-order.md)
+  - [Test and validate](test-validate.md)
+- Payments and checkout {#payments-checkout}
+  - [Payment options](payments-options.md)
+  - [Credit card vaulting](vaulting.md)
+  - [Checkout in [!DNL Payment Services]](checkout.md)
+  - Manage payments {#manage}
+    - [Line items for [!DNL Payment Services]](line-items.md)
+    - [Refunds](refunds.md)
+    - [Voids](voids.md)
+  - [Create an order in the Admin](create-order.md)
+  - [Tracking your shipments in [!DNL Payment Services]](track-shipment.md)
 - Financial reporting {#reporting}
   - [Transactions report](transactions.md)
   - [Order payment status report](order-payment-status.md)
   - [Payouts report](payouts.md)
   - [Available data](data.md)
-- Manage payments {#manage}
-  - [Refunds](refunds.md)
-  - [Voids](voids.md)
-- Security {#security-compliance}
-  - [Security and compliance](security.md)
+  - [Level 2 and level 3 processing](levels-card-payment-transactions.md)
+- Security and compliance {#security-compliance}
+  - [Security](security.md)
   - [Signifyd fraud protection](fraud-protection.md)
+- [Return to Commerce Services Home](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)

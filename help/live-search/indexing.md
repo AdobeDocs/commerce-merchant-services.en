@@ -5,7 +5,7 @@ exl-id: 04441e58-ffac-4335-aa26-893988a89720
 ---
 # Indexing
 
-The [!DNL Live Search] indexing process reads through the catalog for product attributes and builds an index so that products can be searched, filtered and presented rapidly.
+The [!DNL Live Search] indexing process reads through the catalog for product attributes and builds an index so that products can be searched, filtered, and presented rapidly.
 
 Product attribute properties (metadata) determine:
 
@@ -15,9 +15,9 @@ Product attribute properties (metadata) determine:
 
 The scope of attribute metadata is `website/store/store view`.
 
-The [!DNL Live Search] API allows a client to sort by any product attribute that has the [storefront property](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) `Use in Search` set to `Yes` in the Adobe Commerce Admin. When enabled, `Search Weight` and `Visible in Advanced Search` can be set for the attribute.
+The [!DNL Live Search] API allows a client to sort by any product attribute that has the [storefront property](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes) `Use in Search` set to `Yes` in the Adobe Commerce Admin. When enabled, `Search Weight` can be set for the attribute.
 
-[!DNL Live Search] does not index deleted products or those set to `Not Visible Individually`.
+[!DNL Live Search] does not index deleted products or products set to `Not Visible Individually`.
 
 >[!NOTE]
 >
@@ -26,7 +26,8 @@ The [!DNL Live Search] API allows a client to sort by any product attribute that
 ## Indexing pipeline
 
 The client calls the search service from the storefront to retrieve (filterable, sortable) index metadata. Only searchable product attributes with the *Use in Layered Navigation* property set to `Filterable (with results)` and *Use for Sorting in Product Listing* set to `Yes` can be called by the search service.
-To construct a dynamic query, the search service needs to know which attributes are searchable and their [weight](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html#weighted-search). [!DNL Live Search] honors Adobe Commerce search weights (1-10, where 10 is the highest priority). The list of data that is synced and shared with the catalog service can be found in the schema, which is defined in:
+
+To construct a dynamic query, the search service needs to know which attributes are searchable and their [weight](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results). [!DNL Live Search] honors Adobe Commerce search weights (1-10, where 10 is the highest priority). The list of data that is synced and shared with the catalog service can be found in the schema, which is defined in:
 
 `vendor/magento/module-catalog-data-exporter/etc/et_schema.xml`
 
@@ -35,7 +36,7 @@ To construct a dynamic query, the search service needs to know which attributes 
 1. Check merchant for [!DNL Live Search] entitlement.
 1. Get store views with changes to attribute metadata.
 1. Store indexing attributes.
-1. Reindex search index.
+1. Reindex the search index.
 
 ### Full index
 
@@ -61,24 +62,39 @@ After the initial index is built during [onboarding](install.md#synchronize-cata
 * Changes to product attribute values
 
 For example, adding a new swatch value to the `color` attribute is handled as a streaming product update.
+
 Streaming update workflow:
 
 1. Updated products are synced from the Adobe Commerce instance to the catalog service.
 1. The indexing service continuously looks for product updates from the catalog service. Updated products are indexed as they arrive in the catalog service.
 1. It can take up to 15 minutes for a product update to become available in [!DNL Live Search].
 
+#### Updates that affect product visibility
+
+When you make updates to [!DNL Live Search] Admin configuration settings, Adobe Commerce Admin configuration settings, or updates to catalog data, you can expect a delay before those changes appear on the storefront.
+
+The following table describes various changes and the approximate wait time before they appear on the storefront.
+
+|Updates|Delay until visible on storefront|
+|---|---|
+|[!DNL Live Search] Admin changes to facets, price settings, search or category merchandising rules.|15-20 minutes.|
+|[!DNL Live Search] Admin changes that require reindexation: language settings or synonyms.|Up to 15 minutes after the reindexation is complete.|
+|Adobe Commerce Admin changes that require a full reindex: searchable, sortable, or filterable attribute metadata|Up to 15 minutes after the reindexation is complete.|
+|Incremental changes in catalog data that do not need reindexation: product inventory, price, name, and so on.|Up to 15 minutes after the Elastic Search index is updated with the latest data.|
+
 ## Client search
 
-The [!DNL Live Search] API allows a client to sort by any sortable product attribute by setting the [storefront property](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html), *Used for sorting in product listings* to `Yes`. Depending on the theme, this setting causes the attribute to be included as an option in the [Sort by](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation.html) pagination control on catalog pages. Up to 200 product attributes can be indexed by [!DNL Live Search], with [storefront properties](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) that are searchable and filterable.
+The [!DNL Live Search] API allows a client to sort by any sortable product attribute by setting the [storefront property](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes), *Used for sorting in product listings* to `Yes`. Depending on the theme, this setting causes the attribute to be included as an option in the [Sort by](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/navigation/navigation) pagination control on catalog pages. Up to 200 product attributes can be indexed by [!DNL Live Search], with [storefront properties](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes) that are searchable and filterable.
+
 The index metadata is stored in the indexing pipeline and is accessible by the search service.
 
 ![[!DNL Live Search] index metadata API diagram](assets/index-metadata-api.svg)
 
 ### Sortable attribute workflow
 
-1. Client calls Search Service.
-1. Search Service calls Search Admin Service.
-1. Search Service calls Indexing Pipeline.
+1. The client calls the search service.
+1. The search service calls the Search Admin Service.
+1. The search service calls the indexing pipeline.
 
 ## Indexed for all products
 

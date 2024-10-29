@@ -23,19 +23,20 @@ See the developer documentation to [learn about product support](https://experie
 
 ## Hosted service updates
 
-These notes describe updates that were published outside of a versioned release or improvements to the hosted service.
+These notes describe updates or known issues that were published or discovered outside of a versioned release or improvements to the hosted service.
 
-+++Hosted service updates
+  _June 28, 2024_
 
- _July 18, 2023_
+![Bug](../assets/bug.svg) Products added to the cart from a [!DNL Product Recommendations] unit on the cart page are not removed from the list of recommended products when the cart page reloads.
+![Bug](../assets/bug.svg) Products removed from the cart continue to persist in the `cartSkus` array until the cart page reloads.
+
+_July 18, 2023_
 
 ![New](../assets/new.svg) [!DNL Product Recommendations] now has a GraphQL [`recommendations`](https://developer.adobe.com/commerce/services/graphql/recommendations/recommendations/) query.
 
  _April 25, 2023_
 
 ![New](../assets/new.svg) [!DNL Product Recommendations] customers can now take advantage of [SaaS price indexing](../price-index/price-indexing.md).
-
-+++
 
 ## Current major version
 
@@ -46,6 +47,7 @@ These notes describe updates that were published outside of a versioned release 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
 ![Fix](../assets/fix.svg) Fixed an issue where clicking the **[!DNL Add to Cart]** button on a simple product inside a Product Recommendations unit redirected the shopper to the home page rather than staying on the current page.
+![Bug](../assets/bug.svg) There is a validation error caused by the `referenceBlock` element in the `ProductRecommendations Layout` XML file.
 
 ### Previous versions
 

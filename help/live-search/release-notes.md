@@ -18,13 +18,21 @@ Updates include:
 
 These notes describe updates that were published outside of a versioned release or improvements to the hosted service.
 
+_September 19, 2024_
+
+![New](../assets/new.svg) Released a beta version that supports three new search capabilities: layered, starts with, and contains. [Learn more](install.md#install-the-live-search-beta).
+
+_September 4, 2024_
+
+![Fix](../assets/fix.svg) Increased the maximum number of buckets that can be returned [within a facet](boundaries-limits.md#facets) to 100.
+
+_August 7, 2024_
+
+![Fix](../assets/fix.svg) Increased the maximum interval value, or price range for [price faceting](settings.md#price-faceting) from 10,000 to 40,000,000.
+
 _February 13, 2024_
 
 ![New](../assets/new.svg) [!DNL Live Search] now supports setting a default rule for [Search Merchandising](rules.md).
-
-_October 27, 2023_
-
-![New](../assets/new.svg) The [!DNL Live Search] PLP widget now supports color swatches.
 
 _October 12, 2023_
 
@@ -38,6 +46,36 @@ _June 13, 2023_
  _April 25, 2023_
 
 ![New](../assets/new.svg) [!DNL Live Search] customers can now take advantage of the new [SaaS price indexer](../price-index/price-indexing.md).
+
+### PLP widget
+
+_May 31, 2024_
+
+![New](../assets/new.svg) Released version 2.0.0 of the PLP widget, which adds support for the following features:
+
+- Add to Cart buttons - Available only for simple products.
+- Multiple images per product - Image can change when a different color is chosen for a configurable product.
+
+_October 27, 2023_
+
+![New](../assets/new.svg) The [!DNL Live Search] PLP widget now supports color swatches.
+
+## [!DNL Live Search] 4.2.1 {#421}
+
+_July 31, 2024_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+![Fix](../assets/fix.svg) Fixed an issue where certain scripts were not loading on the checkout page.
+![Fix](../assets/fix.svg) Fixed a dependency version in the `composer.json` file.
+
+## [!DNL Live Search] 4.2.0 {#420}
+
+_May 31, 2024_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+![New](../assets/new.svg) Updated Live Search extension to use PLP widgets version 2.0.0.
 
 ## [!DNL Live Search] 4.1.2 {#412}
 
@@ -69,16 +107,6 @@ _Feb 22, 2024_
 ### New Features
 
 ![New](../assets/new.svg) The [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard) is now available. This revamped dashboard provides insights into data streams for [!DNL Product Recommendations], [!DNL Live Search], and [!DNL Catalog Service].
-![New](../assets/new.svg) Multiple new features have been added to the [PLP widget](plp-styling.md):
-
-* List/grid view toggling
-* Add to Cart buttons
-* Swatch support
-* Multiple images per product
-* Price sliders
-* Language support
-
-Merchants must upgrade the [!DNL Live Search] extension to version >= 4.1.0 to access these features.
 
 ### Updates
 
@@ -108,9 +136,9 @@ Merchants must upgrade the [!DNL Live Search] extension to version >= 4.1.0 to a
 
 After installing version 3.1.1 or higher, enable the new indexers: 
 
-* Product Prices Feed
-* Scopes website data feed
-* Scopes customer groups data feed
+- Product Prices Feed
+- Scopes website data feed
+- Scopes customer groups data feed
 
 After upgrading, test the updated configuration in QA or Staging before pushing the changes to production. 
 
@@ -140,9 +168,9 @@ After upgrading, test the updated configuration in QA or Staging before pushing 
 ![Fix](../assets/fix.svg) The table size of the Products and Price feeds have been greatly reduced. Tables `catalog_data_exporter_products` and `catalog_data_exporter_product_prices` should see a substantial size reduction.
 ![Fix](../assets/fix.svg) The 'Rules' tab is renamed to 'Search Rules'
 ![Fix](../assets/fix.svg) When ranking by 'trending', you can now choose between:
-    * 3 days (default)
-    * 14 days
-    * 30 days
+    - 3 days (default)
+    - 14 days
+    - 30 days
 ![Fix](../assets/fix.svg) 'Events' (Boost/Pin/Bury/Hide) has been renamed to 'Manual Ranking'
 ![Fix](../assets/fix.svg) 'Ranking Type' has been renamed to 'Intelligent ranking'
 ![Fix](../assets/fix.svg) Minor bug fixes
@@ -167,11 +195,11 @@ After upgrading, test the updated configuration in QA or Staging before pushing 
 
 ![New](../assets/new.svg) The following values have been added to the `storeDetails` object:
 
-* "Allow All Products per Page"
-* Currency rate
-* "Products per Page on Grid Allowed Values"
-* "Products per Page on Grid Default Value"
-* Store language
+- "Allow All Products per Page"
+- Currency rate
+- "Products per Page on Grid Allowed Values"
+- "Products per Page on Grid Default Value"
+- Store language
 
 ### Updates
 
@@ -199,10 +227,10 @@ Using the Live Search Product Listing Page widget causes Google Tag Manager to f
 ![New](../assets/new.svg) [Category filtering options](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#facets)
 ![New](../assets/new.svg) Added the ability to drag and drop to create Pin events
 ![New](../assets/new.svg) New Pin actions:
-    * Pin to spot - Pin button to create Pin event with one click
-    * Pin to top - Places product in the first position
-    * Pin to bottom - Places the product at the bottom of the results
-    * Unpin an event with one click
+    - Pin to spot - Pin button to create Pin event with one click
+    - Pin to top - Places product in the first position
+    - Pin to bottom - Places the product at the bottom of the results
+    - Unpin an event with one click
 ![New](../assets/new.svg) [Intelligent Ranking for rules](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/live-search-admin/rules/rules-add)
 ![New](../assets/new.svg) [!DNL Live Search] now supports full [Inventory Management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) capabilities in Commerce (formerly knows as Multi-Source Inventory, or MSI). To enable full support, you must [update](install.md#update) the dependency module `commerce-data-export` to version 102.2.0+.
 
@@ -327,6 +355,6 @@ Existing [!DNL Live Search] installations must be upgraded to [!DNL Live Search]
 
 To learn more:
 
-* [Adobe Commerce Developer Documentation](https://developer.adobe.com/commerce/docs)
-* [Adobe Commerce User Guide](https://experienceleague.adobe.com/en/docs/commerce)
-* [[!DNL Live Search] on Marketplace](https://commercemarketplace.adobe.com/magento-live-search.html)
+- [Adobe Commerce Developer Documentation](https://developer.adobe.com/commerce/docs)
+- [Adobe Commerce User Guide](https://experienceleague.adobe.com/en/docs/commerce)
+- [[!DNL Live Search] on Marketplace](https://commercemarketplace.adobe.com/magento-live-search.html)

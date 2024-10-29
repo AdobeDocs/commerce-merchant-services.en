@@ -29,15 +29,19 @@ The Transactions report view is available in the Transactions view of Payment Se
 
 On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Transactions]_ > **[!UICONTROL View Report]** to see the detailed tabular Transactions report view.
 
-![Transactions report view](assets/transactions-report-detail.png){width="600" zoomable="yes"}
+![Transactions report view](assets/transactions-report-view.png){width="800" zoomable="yes"}
 
 You can configure this view, per the sections in this topic, to best present the data you desire to see.
 
-See linked Commerce order and provider transaction IDs, transaction amounts, payment method per transaction, and more, all within this report.
+See linked Commerce order and PayPal Transaction IDs, transaction amounts, payment method per transaction, and more, all within this report.
 
 Not all payment methods provide the same granularity of information. For instance, credit card transactions provide response, AVS, and CCV codes, and the last four digits of the card in the Transactions report; PayPal payment buttons do not.
 
 You can [download transactions](#download-transactions) in a .csv file format for use in existing accounting or order management software.
+
+>[!WARNING]
+>
+> The transactions report will not include any capture made outside [!DNL Payment Services].
 
 ### Select data source
 
@@ -76,12 +80,13 @@ From the Transactions report view, you can filter the statuses results you want 
 1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_ > **[!UICONTROL View Report]**.
 1. Click the **[!UICONTROL Filter]** selector.
 1. Toggle the _[!UICONTROL Transaction Result]_ options to see report results for only selected order transactions.
-1. Select the _[!UICONTROL Card Type]_ to see report results for the selected card type. A tooltip with more information is shown when the payment processor is unable to identify the card type.
-1. Select the _[!UICONTROL Card Brand]_ to see report results for the selected card brand. A tooltip with more information is shown when the payment processor is unable to identify the card brand.
-1. Toggle the _[!UICONTROL Payment Method]_ options to see report results for only selected payment methods.
+1. Toggle the _[!UICONTROL Payment Method]_ options to see report results for the type of payment used for the transaction.
+1. Toggle the _[!UICONTROL Payment Detail]_ options to see additional information for the type of payment used, when available.
 1. Enter a _Min Order Amount_ or _Max Order Amount_ to see report results within that order amount range.
 1. Enter an _[!UICONTROL Order ID]_ to search for a specific transaction.
-1. Enter the _[!UICONTROL Card Last Four Digits]_ to search for a specific credit or debit card.
+1. Introduce the _[!UICONTROL Card Last Four]_ to search for a specific credit or debit card.
+1. Enter a _[!UICONTROL Customer ID]_ to show all transactions of a specific customer.
+1. Enter the _[!UICONTROL Customer Email]_ to filter transactions for that email.
 1. Click **[!UICONTROL Hide filters]** to hide the filter.
 
 ### Show and hide columns
@@ -122,10 +127,12 @@ Transactions reports include the following information.
 | Column | Description |
 | ------------ | -------------------- |
 | [!UICONTROL Order ID] | Commerce order ID (contains only values for successful transactions and is empty for rejected transactions)<br> <br>To see related [order info](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"}, click the ID. |
-| [!UICONTROL Provider Transaction ID] | Transaction ID provided by the payment provider; contains only values for successful transactions and contains a dash for rejected transactions. |
+| [!UICONTROL PayPal Transaction ID] | Transaction ID provided by the payment provider; contains only values for successful transactions and contains a dash for rejected transactions. You can click on this ID to access the PayPal transaction detail page. |
+| [!UICONTROL Customer ID] | Commerce customer ID of an order<br> <br>See [customer info](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/account-create){target="_blank"} topic for more information. |
 | [!UICONTROL Transaction Date] | Transaction date timestamp |
-| [!UICONTROL Payment Method] |  Payment method of transaction with detailed information about brand and card type. See [card types](https://developer.paypal.com/docs/api/orders/v2/#definition-card_type) for more information; available for Payment Services versions 1.6.0 and newer |
-| [!UICONTROL Card Last Four Digits] | Last four digits of the credit or debit cards used for the transaction  |
+| [!UICONTROL Payment Method] |  Type of payment used for the transaction with information about brand and card type. See [card types](https://developer.paypal.com/docs/api/orders/v2/#definition-card_type) for more information; available for Payment Services versions 1.6.0 and newer |
+| [!UICONTROL Payment Detail] |  Provides additional information on the type of payment used for the transaction, when available. |
+| [!UICONTROL Card Last Four] | Last four digits of the credit or debit cards used for the transaction  |
 | [!UICONTROL Result] | The result of the transaction---*[!UICONTROL OK]* (successful transaction), *[!UICONTROL Rejected by Payment Provider]* (rejected by PayPal), *[!UICONTROL Rejected by Bank]* (rejected by bank that issued card) |
 | [!UICONTROL Response Code] | Error code that provides rejection reason from payment provider or bank; see list of possible response codes and descriptions for [`Rejected by Bank` status](https://developer.paypal.com/docs/api/orders/v2/#definition-processor_response) and [`Rejected by Payment Provider` status](https://developer.paypal.com/api/rest/reference/orders/v2/errors/). |
 | [!UICONTROL AVS Code] | Address Verification Service code; the processor response information for payment requests. See [list of possible codes and descriptions](https://developer.paypal.com/docs/api/orders/v2/#definition-processor_response) for more information. |

@@ -63,7 +63,7 @@ Install the latest version of the Catalog Services extension (`magento/catalog-s
 
 >[!TAB Cloud infrastructure]
 
-Use this method to install the [!DNL Catalog Service] extension for a Commerce Cloud instance.
+Use this method to install the [!DNL Catalog Service] for a Commerce Cloud instance.
 
 1. On your local workstation, change to the project directory for your Adobe Commerce on cloud infrastructure project.
 
@@ -80,7 +80,7 @@ Use this method to install the [!DNL Catalog Service] extension for a Commerce C
 1. Add the Catalog Service module.
 
    ```bash
-   composer require "magento/catalog-service" "^3.0.1" --no-update
+   composer require magento/catalog-service --no-update
    ```
 
 1. Update package dependencies.
@@ -99,16 +99,16 @@ Use this method to install the [!DNL Catalog Service] extension for a Commerce C
    git push origin <branch-name>
    ```
 
-   Pushing the updates initiates the [Commerce cloud deployment process](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/process) to apply the changes. Check the deployment status from the [deploy log](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log).
+   Pushing the updates to the cloud environment initiates the [Commerce cloud deployment process](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/process) to apply the changes. Check the deployment status from the [deploy log](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log).
 
 >[!TAB On-premises]
 
-Use this method to install the [!DNL Catalog Service] extension for an on-premises instance.
+Use this method to install the [!DNL Catalog Service] for an on-premises instance.
 
 1. Use Composer to add the Catalog Service module to your project:
 
    ```bash
-   composer require "magento/catalog-service" "^3.0.1"  --no-update
+   composer require magento/catalog-service --no-update
    ```
 
 1. Update dependencies and install the extension:
@@ -137,7 +137,7 @@ Use this method to install the [!DNL Catalog Service] extension for an on-premis
 
 ### Configure the service and data export
 
-After you install the [!DNL Catalog Service], complete the following tasks to integrate the Catalog service with your Adobe Commerce instance. This integration enables data synchronization and communication between the Commerce instance, the Catalog Service, and other supporting services.
+After you install the [!DNL Catalog Service], complete the following tasks to integrate the Catalog service with your Adobe Commerce instance. This integration enables the data synchronization and communication between the Commerce instance, the Catalog Service, and other supporting services. Data synchronization is handled by the [SaaS Data Export extension](../data-export/overview.md).
 
 1. Set up the [Commerce Services Connector](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/integration-services/saas) by specifying the API keys and selecting a SaaS Data Space.
 
@@ -147,11 +147,19 @@ After you install the [!DNL Catalog Service], complete the following tasks to in
 
    The initial sync can take from a few minutes to hours depending on the catalog size. You can monitor the synchronization status from the Data Management dashboard. After the initial sync, the Catalog exports product data on an ongoing basis to keep the services up to date.
 
+   >[!NOTE]
+   >
+   >You can also start the initial sync from the command line using the Commerce CLI. See [Initial sync](../data-export/data-export-cli-commands.md#initial-sync) in the _SaaS Data Export Guide_.
+
 To ensure that the catalog export is running correctly:
 
 - [Confirm that cron jobs are running](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues).
 - Verify that the indexers are running from the [Admin](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) or by using the Commerce CLI command `bin/magento indexer:info`.
 - Verify that the `Catalog Attributes Feed, Product Feed, Product Overrides Feed`, and `Product Variant Feed` indexers are set to `Update by Schedule`.
+
+### Monitor and troubleshoot data synchronization
+
+From the Commerce Admin, you can monitor the synchronization process using the [Data Management Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard). Use the [Commerce CLI](../data-export/data-export-cli-commands.md#troubleshooting) and logs to manage and troubleshoot the process.
 
 ### Access the service
 

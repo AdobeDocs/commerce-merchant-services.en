@@ -16,13 +16,10 @@ Use the following table to find release notes and important information related 
       <td><strong>Commerce services</strong>
         <p>Learn about the latest improvements to innovative Commerce services that are available as extensions.</p>
           <ul>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-channels/amazon/release-notes.html">Amazon Sales Channels</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/release-notes.html">[!DNL Catalog Service]</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/release-notes.html">[!DNL Channel Manager]</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/release-notes.html">[!DNL Live Search]</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/release-notes.html">[!DNL Payment Services]</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html">Product Recommendations</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/release-notes.html">[!DNL Store Fulfillment]</a></li>
           </ul>
         </td>
       <td><strong>Integration services</strong>
@@ -35,6 +32,7 @@ Use the following table to find release notes and important information related 
       <td><strong>Data services</strong>
         <p>Learn about the latest improvements to the data service that enables our Commerce Services to manage product data.</p>
           <ul>
+           <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-export/release-notes.html">SaaS Data Export extension</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html">Catalog Sync</a></li>
           </ul>
       </td>

@@ -5,7 +5,7 @@ role: Admin, Developer
 feature: Personalization, Integration, Eventing
 exl-id: bd04730d-e37a-48a9-822b-0f4aa68a4651
 ---
-# [!DNL Data Connection] Profile Records (Beta)
+# [!DNL Data Connection] Profile Records
 
 The following describes the Commerce profile record data that is available when you install the [!DNL Data Connection] extension. The data in profile records is sent to the Adobe Experience Platform.
 

@@ -18,20 +18,18 @@ You can enable [!DNL Payment Services] for your store and your  _[!UICONTROL Mer
 
 1. On the _Admin_ sidebar, go to **[!UICONTROL Stores]** > _[!UICONTROL Settings]_ > **[!UICONTROL Configuration]**.
 1. In the left panel, expand **[!UICONTROL Sales]** and choose **[!UICONTROL Payment Methods]**.
-
-   ![Methods view](assets/methods-view.png){width="400" zoomable="yes"}
-
-1. Set the _[!UICONTROL Merchant Country]_ field in the _[!UICONTROL Merchant Location]_.
+1. Set the _[!UICONTROL Merchant Country]_ field in the _[!UICONTROL Merchant Location]_. If a _[!UICONTROL Merchant Country]_ is not specified, the _[!UICONTROL Default Country]_ from the general configuration is used.
 1. Expand the _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_ section to access the _[!UICONTROL [!DNL Payment Services]]_ section.
 1. In the _[!UICONTROL [!DNL Payment Services]]_ section, expand the _[!UICONTROL General Configuration]_ section.
 1. For **Enable**, set it to `Yes` to enable [!DNL Payment Services] for your store.
 1. For **Method**, set it to `Sandbox` if you are still testing [!DNL Payment Services] for your store or `Production` if you are ready to enable live payments.
+1. Your **[!UICONTROL Payment Services Sandbox ID]** and **[!UICONTROL Payment Services Production ID]** values are automatically populated once you setup the [Commerce Services Connector](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/integration-services/saas){target=_blank} and visit the [!DNL Payment Services] dashboard for the first time. Do this to finish the onboarding for your sandbox and/or production environments. These values associate your SaaS ID to [!DNL Payment Services].
 
-   >[!WARNING]
-   >
-   >Your _[!UICONTROL Sandbox Merchant ID]_ and _[!UICONTROL Production Merchant ID]_ are auto-generated and present in their respectable fields when you have finished onboarding for the sandbox and/or production. Do not remove or change these IDs.
+    >[!WARNING]
+    >
+    > If you need to change your dataspace ID in the Commerce Services Connector, you need to reset your [!DNL Payment Services] ID. Click **Reset Payment Services ID** to reset your Sandbox or Production IDs. If you reset your [!DNL Payment Services] IDs, you must onboard again.
 
-1. For **Soft Descriptor** (custom values which show on customer transaction bank statements to delineate between stores/brands/catalogs), add your custom text (up to 22 characters) in the text field, replacing `Custom descriptor` or the existing value.
+1. For **Soft Descriptor** (custom values which show on customer transaction bank statements to delineate between stores/brands/catalogs), add your custom text (up to 22 characters) in the text field, replacing `Soft descriptor` or the existing value.
 1. Click **[!UICONTROL Save Config]** to save your changes.
 1. Navigate to **[!UICONTROL System]** > **[!UICONTROL Cache Management]**, and then click **[!UICONTROL Flush Cache]** to refresh all invalid caches.
 
@@ -43,8 +41,8 @@ You can enable [!DNL Payment Services] for your store and your  _[!UICONTROL Mer
 |---|---|---|
 | [!UICONTROL Enable] | website | Enable or disable [!DNL Payment Services] for your website. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Method] | store view | Set the method, or environment, for your store. Options: [!UICONTROL Sandbox] / [!UICONTROL Production] |
-| [!UICONTROL Sandbox Merchant ID] | store view | Your sandbox merchant ID, which is auto-generated during sandbox onboarding. Do not change or alter this ID. |
-| [!UICONTROL Production Merchant ID] | store view | Your production merchant ID, which is auto-generated during sandbox onboarding. Do not change or alter this ID. |
+| [!UICONTROL Payment Services Sandbox ID] | store view | Your sandbox merchant ID, which is auto-generated during sandbox onboarding. |
+| [!UICONTROL Payment Services Production ID] | store view | Your production merchant ID, which is auto-generated during production (live) onboarding. |
 | [!UICONTROL Soft Descriptor] | website or store view | Add a soft descriptor to your website(s) and store view(s) to add information to customer transactions which delineate brands, stores, or product lines. |
 
 ## [!UICONTROL Credit Card Fields]

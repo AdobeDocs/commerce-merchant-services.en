@@ -36,7 +36,13 @@ The logical operators `AND` and `OR` are used to join multiple conditions. If us
 
 ### Category
 
-Filters based on a product's category use direct category assignments and their subcategories. For example, enabling an exclusion condition for category `Gear` excludes products assigned to `Gear` and all of its subcategories such as `Gear/Bags` or `Gear/Fitness Equipment`. For B2B merchants, the Category filter adheres to any [customer-specific product categories](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html) you have configured.
+Filters products based on their category. The category filter uses direct category assignments and their subcategories. For example, enabling an exclusion condition for category `Gear` excludes products assigned to `Gear` and all of its subcategories such as `Gear/Bags` or `Gear/Fitness Equipment`. The same applies for an inclusion filter on a category. For example, enabling an inclusion condition for category `Gear` includes products assigned to `Gear` and all of its subcategories such as `Gear/Bags` or `Gear/Fitness Equipment`.
+
+The category field displays categories that belong to the current storeview. 
+
+>[!NOTE]
+>
+>For B2B merchants, the Category filter adheres to any [customer-specific product categories](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html) you have configured.
 
 Adobe Commerce recommends you use the following category filter configuration when you deploy recommendations to your page types:
 
@@ -51,6 +57,10 @@ Adobe Commerce recommends you use the following category filter configuration wh
 ### Product
 
 Product filters specify which specific products are eligible, or not eligible, to be displayed in recommendations. You cannot select products that are disabled or not visible individually because those products can never appear in recommendations.
+
+>[!NOTE]
+>
+>Child products of a configurable product are not displayed in a recommendation unit because those child products have the visibility of _Not Visible Individually_.
 
 ### Type
 

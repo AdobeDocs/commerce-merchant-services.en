@@ -3,6 +3,7 @@ title: Create an audience in Real-Time CDP using [!DNL Commerce] event data
 description: Learn how to use [!DNL Commerce] event data to create an audience in Real-Time CDP
 role: Admin, Developer
 feature: Personalization, Integration
+exl-id: b637f40b-0d35-4c41-a4eb-563085966dc0
 ---
 # Create Audiences in Real-Time CDP using [!DNL Commerce] Event Data
 

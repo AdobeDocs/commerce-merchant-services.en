@@ -27,19 +27,21 @@ The [!DNL Data Connection] extension is available from the [Adobe Marketplace](h
 
    This metapackage contains the following modules and extensions:
 
-   * `module-experience-connector-admin` - Updates the Admin UI so you can select the Datastream ID for a specific Adobe Commerce instance.
-   * `module-experience-connector` - Sets the `Organization ID` and `datastreamId` in the Storefront Events SDK.
-   * `data-services` - Provides attribute context for storefront events. For example, when a checkout event occurs, information about how many items were in the cart and product attribute data for those items are included.
-   * `services-id` - Connects your Adobe Commerce instance to [Adobe Commerce SaaS](../landing/saas.md) using sandbox and production API keys and to the Adobe Experience Platform to retrieve the IMS Organization ID.
-   * `orders-connector` - Connects the order status service to your Adobe Commerce instance.
+   - `magento/orders-connector`
+   - `magento/data-services`
+   - `magento/customers-connector`
+   - `magento/module-experience-connector`
+   - `magento/module-experience-connector-admin`
+   - `magento/module-experience-connector-admin-graph-ql`
+   - `magento/module-experience-connector-aep-integration`
 
 1. (Optional) To include [!DNL Live Search] data, which comprises [search events](events.md#search-events), install the [[!DNL Live Search]](../live-search/install.md) extension.
 
 1. (Optional) To include B2B data, which comprises [requisition events](events.md#b2b-events), install the [B2B extension](#install-the-b2b-extension).
 
-### Install the Adobe I/O Events
+### Install Adobe I/O Events and configure the customers-connector module
 
-After you install the `experience-platform-connector` extension, you must install the Adobe I/O Events for Adobe Commerce.
+After you install the `experience-platform-connector` extension, you must install Adobe I/O Events for Adobe Commerce and configure the `customers-connector` module.
 
 The following steps apply to both Adobe Commerce on cloud infrastructure and on-premises installations.
 
@@ -63,19 +65,7 @@ The following steps apply to both Adobe Commerce on cloud infrastructure and on-
    bin/magento module:enable Magento_AdobeCommerceEventsClient Magento_AdobeCommerceEventsGenerator Magento_AdobeIoEventsClient Magento_AdobeCommerceOutOfProcessExtensibility
    ```
 
-Finalize installation based on the deployment type: on-premises or Adobe Commerce on Cloud infrastructure.
-
-#### On-premises
-
-In on-premises environments, you must manually enable code generation and Adobe Commerce Events:
-
-   ```bash
-   bin/magento events:generate:module
-   bin/magento module:enable Magento_AdobeCommerceEvents
-   bin/magento setup:upgrade
-   bin/magento setup:di:compile
-   bin/magento config:set adobe_io_events/eventing/enabled 1
-   ```
+Finalize installation based on the deployment type: Adobe Commerce on Cloud infrastructure or on-premises.
 
 #### On Cloud infrastructure
 
@@ -90,6 +80,18 @@ In Adobe Commerce on Cloud infrastructure, enable the `ENABLE_EVENTING` global v
 Commit and push updated files to the Cloud environment. When deployment is finished, enable sending events with the following command:
 
    ```bash
+   bin/magento config:set adobe_io_events/eventing/enabled 1
+   ```
+
+#### On-premises
+
+In on-premises environments, you must manually enable code generation and Adobe Commerce Events:
+
+   ```bash
+   bin/magento events:generate:module
+   bin/magento module:enable Magento_AdobeCommerceEvents
+   bin/magento setup:upgrade
+   bin/magento setup:di:compile
    bin/magento config:set adobe_io_events/eventing/enabled 1
    ```
 

@@ -10,13 +10,13 @@ recommendations: noCatalog
 >
 >The Experience Platform connector has been renamed to [!DNL Data Connection].
 
-The [!DNL Data Connection] extension connects your Adobe Commerce web instance to the Adobe Experience Platform and the Edge Network. Learn how to [integrate](./mobile-sdk-epc.md) the Adobe Experience Platform Mobile SDK with Commerce.
+The [!DNL Data Connection] extension connects your Adobe Commerce web instance to the Adobe Experience Platform and the Edge Network. For mobile app developers, you use the Adobe Experience Platform Mobile SDK with Commerce to capture and send Commerce data to the Experience Platform. [Learn more](./mobile-sdk-epc.md).
 
 Your Commerce store contains a wealth of data. Information about how your shoppers browse, view, and ultimately purchase the products on your site can reveal opportunities to create a more personalized shopping experience. While that data can inform native Commerce features such as cart price rules and dynamic blocks, the data remains siloed in your Commerce instance. 
 
 The Adobe Experience Platform provides a suite of technologies, that when hydrated with data from your Commerce store, can distribute that data through the Edge Network to other Adobe DX products to unlock insights into your shopper's buying behavior. With these deep insights, you can create a more personalized shopping experience across all channels.
 
-The following image shows how your Commerce data flows from your store to other Adobe DX products:
+The following image shows how your Commerce data flows from your store to other Adobe DX products when the [!DNL Data Connection] extension is installed and configured.
 
 ![How data flows to the Experience Platform edge](assets/commerce-edge.png)
 
@@ -61,6 +61,8 @@ The [!DNL Data Connection] extension is available on the following architectures
 * [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/aep/)
 * [AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/aep.html)
 
+>[!BEGINSHADEBOX]
+
 ## Prerequisites
 
 To use the [!DNL Data Connection] extension, you must have the following:
@@ -69,6 +71,8 @@ To use the [!DNL Data Connection] extension, you must have the following:
 * Adobe ID and Organization ID
 * [Adobe Client Data Layer (ACDL)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/client-data-layer/overview.html), which is required to collect storefront event data
 * Entitlements to other Adobe DX products.
+
+>[!ENDSHADEBOX]
 
 ## Onboarding steps
 

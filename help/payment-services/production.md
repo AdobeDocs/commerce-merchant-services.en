@@ -139,6 +139,8 @@ Get your [!DNL Payment Services] _Merchant ID_:
 1. In the Home view, click **[!UICONTROL Settings]**. See [Home](payments-home.md) for more information.
 1. Select the required _Merchant ID_ and submit it to your Sales representative, who will configure the correct pricing tier.
 
+See [Level 2 and level 3 processing](levels-card-payment-transactions.md) for more information on payment transactions.
+
 ## Enable live payments
 
 A _production merchant ID_ is auto-generated and populated in the [configuration](configure-admin.md). Do not change or alter this ID.

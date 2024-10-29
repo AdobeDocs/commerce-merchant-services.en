@@ -9,6 +9,11 @@ exl-id: 49fb7609-64b3-4ae8-928d-54c99032d919
 
 * Pinned facets  - The most commonly-used facets can be pinned to the top of the list. The remaining facets are listed in *Sort type* order after the pinned facets.
 * Dynamic facets - Product attributes that [Adobe Sensei](https://www.adobe.com/sensei.html) finds most relevant to a product set and query. The calculation takes into account the attribute metadata of the entire catalog and determines at query time the most relevant facets for the query.
+
+    >[!NOTE]
+    >
+    >If you notice that timeout errors are appearing in the GraphQL query response after creating dynamic facets, change all facets to pinned to see if that resolves the performance issues.
+
 * Popular facets - Product attributes that are most often present in search results.
 * Price facets - Return products by price range. You can specify the number of selections and the price range interval on the [*Settings*](settings.md) workspace.
 

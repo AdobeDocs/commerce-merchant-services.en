@@ -9,14 +9,15 @@ feature: Services, Search
 
 - [What is [!DNL Live Search]?](overview.md)
 - [Install](install.md)
+- [Setting up Live Search](workspace.md)
 - [Boundaries and Limits](boundaries-limits.md)
+- [Best Practices](best-practice.md)
 - [Release Notes](release-notes.md)
 - Storefront {#live-search-storefront}
-   - [Product Listing Page Widget](plp-styling.md)
+   - [Storefront Widgets](storefront-widgets.md)
+   - [Product Listing Page](plp-styling.md)
    - [Storefront [!DNL Popover]](storefront-popover.md)
-   - [Styling [!DNL Popover] Elements](storefront-popover-styling.md)
 - Admin {#live-search-admin}
-   - [Workspace](workspace.md)
    - [Performance](performance.md)
    - Facets {#facets}
       - [Overview](facets.md)
@@ -38,8 +39,8 @@ feature: Services, Search
    - [Indexing](indexing.md)
    - [GraphQL](graphql.md)
    - [Settings](settings.md)
-   - [Commerce Configuration Settings](configuration.md)
 - [Events](events.md)
 - GraphQL queries {#graphql}
    - [attributeMetadata](https://developer.adobe.com/commerce/services/graphql/live-search/attribute-metadata/)
    - [productSearch](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/)
+- [Return to Commerce Services Home](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)

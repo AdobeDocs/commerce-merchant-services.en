@@ -24,9 +24,9 @@ You can enable [!DNL Payment Services] for your website, and enable either sandb
 
 1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 
-   ![Home view](assets/payment-services-menu-small.png){width="400" zoomable="yes"}
-
 1. Click **[!UICONTROL Settings]**. See [Introduction to [!DNL Payment Services] Home](payments-home.md) for more information.
+
+   ![React settings view](assets/react-settings-view.png){width="500" zoomable="yes"}
 
    The _[!UICONTROL General]_ section includes settings used to enable [!DNL Payment Services] as the payment method.
 
@@ -34,9 +34,11 @@ You can enable [!DNL Payment Services] for your website, and enable either sandb
 
 1. If you are still testing [!DNL Payment Services] for your store, set **Payment mode** to `Sandbox`. If you are ready to enable live payments, set it to `Production`.
 
-   >[!NOTE]
-   >
-   >Your _[!UICONTROL Sandbox Merchant ID]_ and _[!UICONTROL Production Merchant ID]_ are auto-generated and present in their respectable fields when you finish onboarding for the sandbox and/or production.
+1. Your **[!UICONTROL Payment Services Sandbox ID]** and **[!UICONTROL Payment Services Production ID]** values are automatically populated once you setup the [Commerce Services Connector](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/integration-services/saas){target=_blank} and visit the [!DNL Payment Services] dashboard for the first time. Do this to finish the onboarding for your sandbox and/or production environments. These values associate your SaaS ID to [!DNL Payment Services].
+
+    >[!WARNING]
+    >
+    > If you reset your [!DNL Payment Services] IDs, you must onboard again.
 
 1. Click **[!UICONTROL Save]**.
 
@@ -53,7 +55,7 @@ You can add a [!UICONTROL Soft Descriptor] to your website(s) or individual stor
 1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. Click **[!UICONTROL Settings]**. See [Introduction to [!DNL Payment Services] Home](payments-home.md) for more information.
 1. Select the website or store view, in the **[!UICONTROL Scope]** dropdown menu, for which you want to create a soft descriptor. For initial setup, leave this as **[!UICONTROL Default]** to set the default value.
-1. Add your custom text (up to 22 characters) in the text field, replacing `Custom descriptor`.
+1. Add your custom text (up to 22 characters) in the text field, replacing `Soft descriptor`.
 1. Click **[!UICONTROL Save]**.
 1. To create a soft descriptor other than the configured default for a website or store view:
    1. Select the website or store view, in the **[!UICONTROL Scope]** dropdown menu, for which you want to create a soft descriptor.
@@ -73,8 +75,8 @@ You can add a [!UICONTROL Soft Descriptor] to your website(s) or individual stor
 |---|---|---|
 | [!UICONTROL Enable] | website | Enable or disable [!DNL Payment Services] for your website. Options: [!UICONTROL Off] / [!UICONTROL On] |
 | [!UICONTROL Payment mode] | store view | Set the method, or environment, for your store. Options: [!UICONTROL Sandbox] / [!UICONTROL Production] |
-| [!UICONTROL Sandbox Merchant ID] | store view | Your sandbox merchant ID, which is auto-generated during sandbox onboarding. |
-| [!UICONTROL Production Merchant ID] | store view | Your production merchant ID, which is auto-generated during sandbox onboarding. |
+| [!UICONTROL Payment Services Sandbox ID] | store view | Your sandbox merchant ID, which is auto-generated during sandbox onboarding. |
+| [!UICONTROL Payment Services Production ID] | store view | Your production merchant ID, which is auto-generated during production (live) onboarding. |
 | [!UICONTROL Soft Descriptor] | website or store view | Add a soft descriptor to your website(s) and store view(s) to add information to customer transactions which delineate brands, stores, or product lines. The [!UICONTROL Use website] toggle applies any soft descriptor added at the website level. The [!UICONTROL Use default] toggle applies any soft descriptor added as the default.|
 
 ## Configure payment options

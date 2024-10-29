@@ -13,24 +13,15 @@ By default, [!DNL Live Search] supports [search term redirects](https://experien
 
 ![[!DNL Live Search popover]](assets/storefront-search-as-you-type.png)
 
-## Searchable attributes
-
-To produce highly-targeted results, review the set of [searchable](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) (`searchable=true`) product attributes. To ensure relevancy, make attributes searchable only if they contain content that has a clear and concise meaning. Avoid using attributes that contain less precise, lengthy text such as `description`, which although search-enabled by default, can reduce the precision of search results. 
-For example, if a person searches for "shorts" and there are shirts with a description that includes the term "short sleeves", then the shirts will be included in the search results.
-
-[!DNL Live Search] also respects the [weight](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html#weighted-search) of a product attribute, as set within Adobe Commerce. Attributes with a higher weight will appear higher within the search results.
-
-The following attributes are always searchable:
-
-* `sku`
-* `name`
-* `categories`
+>[!TIP]
+>
+>Learn how to set product attributes as searchable in the [Setting up Live Search](workspace.md) article.
 
 ## [!DNL Popover] page size
 
-The page size of the [!DNL popover] determines how many lines of autocompleted products can be returned. Previously, the page size was hardcoded as six lines. However, the `page_size` value is now a setting that can be configured from the *Admin*. During the Live Search installation, the `page_size` value changes to the current value of the [Catalog Search](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/catalog.html) - `Autocomplete Limit` setting.
+The page size of the [!DNL popover] determines how many lines of autocompleted products can be returned. During the Live Search installation, the `page_size` value changes to the current value of the [Catalog Search](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/catalog.html) - `Autocomplete Limit` setting.
 
- By default, the Catalog Search - Autocomplete Limit value is set to eight lines (or rows). To change the page size of the [!DNL popover], do the following:
+By default, the Catalog Search - Autocomplete Limit value is set to eight lines (or rows). To change the page size of the [!DNL popover], do the following:
 
 1. On the *Admin* sidebar, go to **Stores** > Settings > **Configuration**.
 1. In the left panel, expand **Catalog** and choose **Catalog** from the list of settings.
@@ -38,22 +29,98 @@ The page size of the [!DNL popover] determines how many lines of autocompleted p
 1. Set the **Autocomplete Limit** to the number of lines that you want to allow in the [!DNL popover].
 1. When complete, click **Save Config**.
 
-## Catalog Service
+## Styling [!DNL Popover] example
 
-The [Catalog Service for Adobe Commerce](../catalog-service/overview.md) extension provides rich view-model catalog data to quickly and fully render product-related storefront experiences. Catalog Service can be used in conjunction with Live Search to provide functionality that is not currently supported by the native extension:
+You can customize the look and feel of the [!DNL Popover] widget to match your company's style and branding guidelines.
 
-* Extended attributes
-* Other product information can be brought in
+The [!DNL storefront popover] always displays the product `name` and `price`, and the selection of fields is not configurable. However, [!DNL popover] elements can be styled using [CSS](https://developer.adobe.com/commerce/frontend-core/guide/css/) classes. For example, the following declarations change the background color of the [!DNL popover] container and footer.
 
- Merchants may customize and extend widgets or storefront elements by using Catalog Service, but this is out of scope for Adobe's support team.
+```css
+.livesearch.popover-container {
+    background-color: lavender;
+}
+
+.livesearch.view-all-footer {
+    background-color: magenta;
+}
+```
+
+## Container visibility
+
+The parent component of the `.livesearch.popover-container` is `.search-autocomplete`.  The `.active` class indicates the visibility of the container. The `.active` class is conditionally added when the [!DNL popover] is open.
+
+```css
+.search-autocomplete.active   /* visible */
+.search-autocomplete          /* not visible */
+```
+
+For more information about styling storefront elements, refer to [Cascading style sheets (CSS)](https://developer.adobe.com/commerce/frontend-core/guide/css/) in the [Frontend Developer Guide](https://developer.adobe.com/commerce/frontend-core/guide/).
+
+## Class selectors
+
+You can use the following class selectors to style the container and product elements in the [!DNL popover].
+
+- `.livesearch.popover-container`
+- `.livesearch.view-all-footer`
+- `.livesearch.products-container`
+- `.livesearch.product-result`
+- `.livesearch.product-name`
+- `.livesearch.product-price`
+
+### Container Class Selectors
+
+#### .livesearch.popover-container
+
+![[!DNL Popover] container](assets/livesearch-popover-container.png)
+
+#### .livesearch.view-all-footer
+
+![View all footer](assets/livesearch-view-all-footer.png)
+
+### Product Class Selectors
+
+#### .livesearch.products-container
+
+![Product container](assets/livesearch-product-container.png)
+
+#### .livesearch.product-result
+
+![Product result](assets/livesearch-product-result.png)
+
+#### .livesearch.product-name
+
+![Product name](assets/livesearch-product-name.png)
+
+#### .livesearch.product-price
+
+![Product price](assets/livesearch-product-price.png)
+
+#### .livesearch product-link
+
+![Product result](assets/livesearch-product-link.png)
+
+## Working with a modified theme {#working-with-modified-theme}
+
+You can use the [!DNL storefront popover] with a customized [theme](https://developer.adobe.com/commerce/frontend-core/guide/themes/) that inherits the required files from *Luma*. The `top.search` block in the `header-wrapper` of the `Magento_Search` module must not be modified.
+
+```html
+<referenceContainer name="header-wrapper">
+   <block class="Magento\Framework\View\Element\Template" name="top.search" as="topSearch" template="Magento_Search::form.mini.phtml">
+      <arguments>
+         <argument name="configProvider" xsi:type="object">Magento\Search\ViewModel\ConfigProvider</argument>
+      </arguments>
+   </block>
+</referenceContainer>
+```
+
+## Disabling the [!DNL popover]
+
+To disable the [!DNL popover] and restore the standard [Quick Search](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) functionality, enter the following command:
+
+```bash
+bin/magento module:disable Magento_LiveSearchStorefrontPopover
+```
 
 ## Headless implementations
 
-For those with headless implementations, it is possible to install the Live Search popover with an [npm package](https://www.npmjs.com/package/@magento/ds-livesearch-storefront-utils).
-
-## Limitations
-
-* The [!DNL Live Search] [!DNL storefront popover] is available only for stores that use the *Luma* theme, or a customized theme that is based on *Luma*. Breadcrumbs on the search results page will not have *Luma* styling.
-* The [!DNL popover] does not support the *Blank* theme. See [Styling [!DNL Popover] Elements](storefront-popover-styling.md) to learn more.
-* The [!DNL popover] is not supported on the Quick Order form.
-* Wishlists and product comparisons are not supported.
+For those with headless implementations, you can install the [!DNL Live Search popover] using an [npm package](https://www.npmjs.com/package/@magento/ds-livesearch-storefront-utils).

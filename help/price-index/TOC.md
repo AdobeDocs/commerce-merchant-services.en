@@ -1,5 +1,5 @@
 ---
-user-guide-title: "SaaS price indexer Guide"
+user-guide-title: "SaaS Price Indexing Guide"
 user-guide-description: "This guide provides detailed instructions for using the SaaS price indexer."
 breadcrumb-title: "Saas price indexer Guide"
 hide: yes
@@ -8,6 +8,8 @@ feature: Services, Price Indexer
 ---
 # Saas Price Indexer {#price-indexer}
 
-- [Guide Overview](price-indexing.md)
+- [SaaS Price Indexing overview](price-indexing.md)
 - [Catalog Adapter](catalog-adapter.md)
+- [Return to Commerce Services Home](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)
+
 
