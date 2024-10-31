@@ -9,8 +9,8 @@ recommendations: noDisplay
 # [!DNL Data Connection] extension for Adobe Commerce {#data-connection}
 
 - [Guide Overview](overview.md)
-- [HIPAA Readiness](hipaa-readiness.md)
-- [How Data Connection Handles Privacy Requests](handle-privacy-request.md)
+- [HIPAA Readiness for Data Connection](hipaa-readiness.md)
+- [How Commerce Services Handles Privacy Requests](handle-privacy-request.md)
 - [Release Notes](release-notes.md)
 - Fundamentals {#fundamentals}
    - [Install the [!DNL Data Connection] extension](install.md)
