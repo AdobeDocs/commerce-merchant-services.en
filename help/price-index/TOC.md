@@ -9,7 +9,7 @@ feature: Services, Price Indexer
 # Saas Price Indexer {#price-indexer}
 
 - [SaaS Price Indexing overview](price-indexing.md)
-- [Catalog Adapter](catalog-adapter.md)
+- Catalog Adapter {#catalog-adapter}
+   - [Overview](catalog-adapter.md)
+   - [Release Notes](release-notes.md)
 - [Return to Commerce Services Home](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)
-
-
