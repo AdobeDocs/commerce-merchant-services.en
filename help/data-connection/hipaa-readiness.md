@@ -44,8 +44,6 @@ Adobe Commerce uses block-level encryption. For storage, Commerce uses Amazon El
 >
 >Commerce does not support column- or row-level encryption or encryption when the data is not at rest or not in transit between servers.
 
-You [can manage](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key) encryption keys in Commerce. Commerce stores those encryption keys in the AWS Key Management System and must be managed by [Managed Services](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/maintenance/adobe-managed-services#security).
-
 ### Data encryption in Experience Platform
 
 When merchants send their data to the Experience Platform, that data is sent using HTTPS TLS v1.2. Learn more about how [Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/encryption) encrypts data.
