@@ -7,7 +7,7 @@ role: Admin, User
 ---
 # [!DNL Commerce Services Connector]
 
-Some Adobe Commerce and Magento Open Source features are powered by [!DNL Commerce Services] and deployed as SaaS (software as a service). To use these services, you must connect your [!DNL Commerce] instance using production and sandbox API keys, and specify the data space in the [configuration](#saas-configuration). You only need to configure the connection one time for each Commerce instance.
+Some Adobe Commerce and Magento Open Source features are powered by [!DNL Commerce Services] and deployed as SaaS (software as a service). To use these services, you must connect your [!DNL Commerce] instance using production and sandbox API keys, and specify the data space in the [configuration](#saas-configuration). You only need to configure the connection one time for each instance.
 
 ## Available services {#availableservices}
 
@@ -39,6 +39,7 @@ The keys can be shared on a "need-to-know" basis with the systems integrator or 
 Additionally, solution integrators are also entitled to use [!DNL Commerce Services]. If you are a solution integrator, the signer of the [!DNL Commerce] partner contract should generate the API keys.
 
 >[!NOTE]
+>The key identifiers *Production* and *Sandbox* do not refer to your environment. You use the same set of API keys to for each of your environments, for example local, development, Staging, or Production environments.
 >
 >The license owner is typically the Primary Contact on the Adobe Commerce account and is not always the same as the Project Owner of the Adobe Commerce on cloud infrastructure project.
 
@@ -62,7 +63,7 @@ Additionally, solution integrators are also entitled to use [!DNL Commerce Servi
 
 1. Repeat the above steps for each environment (production and sandbox).
 
-   The **API Keys** section now displays your API (Public) keys. You need both the production and sandbox keys (Public+Private) when you [select or create a SaaS project](#createsaasenv).
+   The **API Keys** section now displays your API (Public) keys. You need all four keys (both the production and sandbox keys, Public+Private) when you [select or create a SaaS project](#createsaasenv) in any of the environments/installations associated with the license.
 
 ## SaaS configuration {#saasenv}
 
@@ -72,7 +73,7 @@ For [!DNL Product Recommendations], the SaaS data space contains catalog and beh
 
 >[!WARNING]
 >
-> Use your production SaaS data space only on your production [!DNL Commerce] installation to avoid data collisions. Otherwise, you risk polluting your production site data with testing data, which causes deployment delays. For example, your production product data could be mistakenly overwritten from staging data, such as staging URLs.
+> Use your **production SaaS data space** only on your production [!DNL Commerce] installation to avoid data collisions. Otherwise, you risk polluting your production site data with testing data, which causes deployment delays. For example, your production product data could be mistakenly overwritten from staging data, such as staging URLs.
 > If this should happen, [submit a Support request](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview) to request data cleanup.
 
 ### SaaS data space provisioning
