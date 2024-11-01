@@ -126,7 +126,7 @@ Transactions reports include the following information.
 
 | Column | Description |
 | ------------ | -------------------- |
-| [!UICONTROL Order ID] | Commerce order ID (contains only values for successful transactions and is empty for rejected transactions)<br> <br>To see related [order info](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"}, click the ID. |
+| [!UICONTROL Order ID] | Commerce order ID (contains only values for successful transactions and is empty for rejected transactions)<br> <br>To see related [order info](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/orders){target="_blank"}, click the ID. |
 | [!UICONTROL PayPal Transaction ID] | Transaction ID provided by the payment provider; contains only values for successful transactions and contains a dash for rejected transactions. You can click on this ID to access the PayPal transaction detail page. |
 | [!UICONTROL Customer ID] | Commerce customer ID of an order<br> <br>See [customer info](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/account-create){target="_blank"} topic for more information. |
 | [!UICONTROL Transaction Date] | Transaction date timestamp |
