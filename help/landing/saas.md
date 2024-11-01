@@ -69,7 +69,7 @@ Additionally, solution integrators are also entitled to use [!DNL Commerce Servi
 
 [!DNL Commerce] instances must be configured with a SaaS project and a SaaS data space so that [!DNL Commerce Services] can send data to the right location. A SaaS project groups all SaaS data spaces. The SaaS data spaces are used to collect and store data that enables [!DNL Commerce Services] to work. Some of this data may be exported from the [!DNL Commerce] instance and some may be collected from shopper behavior on the storefront. That data is then persisted to secure cloud storage.
 
-For [!DNL Product Recommendations], the SaaS data space contains catalog and behavioral data. You can point a [!DNL Commerce] instance to a SaaS data space by [selecting it](https://docs.magento.com/user-guide/configuration/services/saas.html) in the [!DNL Commerce] configuration.
+For [!DNL Product Recommendations], the SaaS data space contains catalog and behavioral data. You can point a [!DNL Commerce] instance to a SaaS data space by [selecting it](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/saas) in the [!DNL Commerce] configuration.
 
 >[!WARNING]
 >

@@ -13,13 +13,13 @@ Security is of the utmost concern in [!DNL Payment Services] and no private or P
 
 [!DNL Adobe Commerce] and [!DNL Magento Open Source] include support for several security features.
 
-See [Security](https://docs.magento.com/user-guide/stores/security.html){target="_blank"} in the core user guide to review security best practices, and learn how to manage Admin sessions and credentials, implement CAPTCHA, and manage website restrictions.
+See [Security](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security){target="_blank"} in the core user guide to review security best practices, and learn how to manage Admin sessions and credentials, implement CAPTCHA, and manage website restrictions.
 
 ## PCI compliance
 
 The Payment Card Industry (PCI) established a set of requirements for businesses that accept payment by credit card over the Internet. In addition to maintaining a secure environment, merchants who handle customer credit card information are responsible for meeting some standard guidelines.
 
-See [PCI Compliance Guidelines](https://docs.magento.com/user-guide/stores/compliance-pci.html){target="_blank"} for more information.
+See [PCI Compliance Guidelines](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/payments/compliance-pci){target="_blank"} for more information.
 
 Merchants can complete a [self-assessment questionnaire (SAQ)](https://www.pcisecuritystandards.org/pci_security/completing_self_assessment){target="_blank"}, which is a self-validation tool to assess security for cardholder data.
 

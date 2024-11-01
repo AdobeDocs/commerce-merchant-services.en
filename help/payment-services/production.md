@@ -21,7 +21,7 @@ After you [configure your Commerce Services](connect.md#configure-commerce-servi
 
    This option is visible if you have not yet configured [!DNL Payment Services] as the payment method for one or more of your websites.
 
-   You are directed to the settings area in the Home view with the relevant options expanded (**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_), where you can enable the [!DNL Payment Services] options as your [payment method](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html){target="_blank"}.
+   You are directed to the settings area in the Home view with the relevant options expanded (**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_), where you can enable the [!DNL Payment Services] options as your [payment method](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/payment-methods/payment-methods){target="_blank"}.
 
 1. In _[!UICONTROL General Configuration]_, set **[!UICONTROL Enable]** to `Yes`.
 1. Set **[!UICONTROL Payment Action]**, for both _[!UICONTROL Credit Card Fields]_ and _[!UICONTROL PayPal payment buttons]_, to one of the following:
@@ -151,7 +151,7 @@ Enable live payments:
 1. On the Home, click **[!UICONTROL Settings]** at the top right of the page. See [Home](payments-home.md) for more information.
 1. In the _[!UICONTROL General Configuration]_ section set **[!UICONTROL Payment mode]** to `Production`.
 1. Click **[!UICONTROL Save]**.
-1. [Clear your cache](https://docs.magento.com/user-guide/system/cache-management.html){target="_blank"}.
+1. [Clear your cache](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management){target="_blank"}.
 
    >[!IMPORTANT]
    >

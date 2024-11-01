@@ -21,7 +21,7 @@ You can [download payout transactions](#download-transactions) in a .csv file fo
 
 >[!NOTE]
 >
->Payouts reports only show orders that are captured (payment action is set to [`Authorize and Capture`](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/production.html#set-payment-services-as-payment-method))---or [marked as `Invoiced`](https://docs.magento.com/user-guide/sales/invoice-create.html).
+>Payouts reports only show orders that are captured (payment action is set to [`Authorize and Capture`](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/production.html#set-payment-services-as-payment-method))---or [marked as `Invoiced`](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice).
 
 ## Payouts data visualization view
 
@@ -149,7 +149,7 @@ Payout reports include the following information.
 | [!UICONTROL Code] | Transaction code that indicates either Credit (*CR*) or Debit (*DR*) |
 | [!UICONTROL Reference ID] | Original transaction ID for which this event is related |
 | [!UICONTROL Invoice] | Invoice ID (one per order) of the transaction |
-| [!UICONTROL Commerce order] | Commerce order ID <br> <br>To see related [order info](https://docs.magento.com/user-guide/sales/orders.html), click the ID. |
+| [!UICONTROL Commerce order] | Commerce order ID <br> <br>To see related [order info](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/orders), click the ID. |
 | [!UICONTROL Commerce trans] | Commerce transaction ID |
 | [!UICONTROL Pay method] | Credit card type---*[!UICONTROL BANK]*, *[!UICONTROL PAYPAL]*, *[!UICONTROL CREDIT_CARD]*---and associated card provider (such as *Visa* or *MasterCard*) |
 | [!UICONTROL TRANS AMT] | Amount of the transaction |
