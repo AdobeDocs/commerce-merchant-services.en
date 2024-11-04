@@ -312,8 +312,8 @@ Existing [!DNL Live Search] installations must be upgraded to [!DNL Live Search]
 
 [!BADGE Supported]{type="Informative" tooltip="Supported"} Adobe Commerce versions 2.4.x and newer
 
-![Fix](../assets/fix.svg) [Custom price attribute](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types) no longer returns an error when configured as a [facet]({% link live-search/facets-add.md %}).
-![Fix](../assets/fix.svg) Fixed issue that caused an error to occur when no [currency symbol](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration(optional)) (`data-currency-symbol`) is available.
+![Fix](../assets/fix.svg) [Custom price attribute](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types) no longer returns an error when configured as a [facet](facets-add.md).
+![Fix](../assets/fix.svg) Fixed issue that caused an error to occur when no [currency symbol](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration#step-5-customize-currency-symbols-optional) (`data-currency-symbol`) is available.
 ![Fix](../assets/fix.svg) [[!DNL Storefront popover]](storefront-popover.md) now shows the [Special Price](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-special) (minimum final price) when available.
 
 ### [!DNL Live Search] 1.3.0 {#130}

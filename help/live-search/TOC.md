@@ -40,7 +40,4 @@ feature: Services, Search
    - [GraphQL](graphql.md)
    - [Settings](settings.md)
 - [Events](events.md)
-- GraphQL queries {#graphql}
-   - [attributeMetadata](https://developer.adobe.com/commerce/services/graphql/live-search/attribute-metadata/)
-   - [productSearch](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/)
 - [Return to Commerce Services Home](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)

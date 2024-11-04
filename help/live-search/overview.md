@@ -13,7 +13,7 @@ With [!DNL Live Search], you can:
 - Create meaningful search experiences to help shoppers and buyers find what they want with as little effort as possible.
 - Take advantage of AI-powered dynamic faceting and re-ranking of search results in response to in-session shopper behaviors.
 - Use a lightweight SaaS-based service that offers easy updates and is included in your license, reducing the total cost of ownership.
-- Get technical by enabling graphQL API, headless flexibility, API sandbox environments, and ultra fast SaaS.
+- Get technical by enabling GraphQL API, headless flexibility, API sandbox environments, and ultra fast SaaS.
 
 >[!IMPORTANT]
 >
