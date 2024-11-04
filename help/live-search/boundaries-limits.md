@@ -37,6 +37,7 @@ When it comes to site search, Adobe Commerce gives you options. Review the follo
 - Dynamic facets can cause performance issues in large indexes and indexes with high ordinality. If you have created dynamic facets and notice any performance deterioration or page not loading with timeout errors, try changing your facets to pinned to determine if that resolves your performance issue.
 - Stock status (`quantity_and_stock_status`) is not supported as a facet. You can use `inStock: 'true'` to filter out of stock products. This is supported out of the box in the `LiveSearchAdapter` module when "Display out of stock products" is set to "True" in the [!DNL Commerce] Admin.
 - Date type attributes are not supported as a facet.
+- Any changes made to the attribute metadata after that attribute is added as a facet, are not reflected in the facet.
 
 ## Query
 
