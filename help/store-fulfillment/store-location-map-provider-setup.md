@@ -8,11 +8,11 @@ exl-id: d09c4652-e2eb-49dc-8c42-2aa9b6be5d6b
 ---
 # Store Location and Mapping Setup
 
-Enable the store location and mapping capabilities for Store Fulfillment by configuring a [distance provider](https://docs.magento.com/user-guide/catalog/inventory-configure-distance-priority.html) to search for retail store locations.
+Enable the store location and mapping capabilities for Store Fulfillment by configuring a [distance provider](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/configuration/distance-priority-algorithm) to search for retail store locations.
 
 **Requirements**
 
-During the configuration process, you provide a Google API key for the Google Maps platform. If you do not have one, [generate one from the Google Maps platform](https://docs.magento.com/user-guide/catalog/inventory-configure-distance-priority.html#configure-google-maps).
+During the configuration process, you provide a Google API key for the Google Maps platform. If you do not have one, [generate one from the Google Maps platform](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/configuration/distance-priority-algorithm#configure-google-maps).
 
 To configure the distance provider:
 

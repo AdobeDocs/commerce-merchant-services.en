@@ -350,7 +350,7 @@ Configure these settings from the Admin by selecting <strong>[!UICONTROL Stores 
 
 >[!NOTE]
 >
->For additional information about configuring in-store delivery options, see [In-Store Delivery](https://docs.magento.com/user-guide/shipping/shipping-in-store-delivery.html) in the _Adobe Commerce User Guide_.
+>For additional information about configuring in-store delivery options, see [In-Store Delivery](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/delivery/basic-methods/shipping-in-store-delivery) in the _Adobe Commerce User Guide_.
 
 
 ### Delivery Methods configuration

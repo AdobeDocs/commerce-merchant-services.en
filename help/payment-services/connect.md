@@ -22,11 +22,11 @@ feature: Payments, Checkout, Configuration, Saas
 
 ## Obtain API credentials
 
-To consume a Commerce SaaS service, you must use your instance's API keys (Commerce public API key and a private key) for both sandbox and production, which are created and managed in your [My Account Dashboard](https://account.magento.com/customer/account/login). [The key pair](https://docs.magento.com/user-guide/configuration/services/saas.html) can be created for a Commerce account---one for sandbox and one for production---though only one pair can be actively used at a time.
+To consume a Commerce SaaS service, you must use your instance's API keys (Commerce public API key and a private key) for both sandbox and production, which are created and managed in your [My Account Dashboard](https://account.magento.com/customer/account/login). [The key pair](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/saas) can be created for a Commerce account---one for sandbox and one for production---though only one pair can be actively used at a time.
 
 >[!NOTE]
 >
->Need help with accessing your [!UICONTROL My Account] dashboard? See [Create a Commerce account](https://docs.magento.com/user-guide/magento/magento-account-create.html).
+>Need help with accessing your [!UICONTROL My Account] dashboard? See [Create a Commerce account](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-create).
 
 A public API key, once created, is always available in your My Account Dashboard. It can be copied or deleted as needed. The private API key becomes visible when you create a public API key for either sandbox or production; it is only available for copying or saving from the ensuing dialog box and cannot be accessed later.
 
@@ -34,7 +34,7 @@ A given API key pair is valid for all Commerce Services in an environment, so if
 
 If your API key is lost, a new API key pair must be [generated](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html#generate-an-api-key-and-private-key) and [applied](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html#configure-saas-project) to the Commerce Services Connector configuration in the Admin. If the wrong keys are configured or none exist in the config, an account verification error dialog appears in Payment Services notifying you that the account was not verified.
 
-See a [list of available Commerce Services that use the API](https://docs.magento.com/user-guide/system/saas.html#available-services).
+See a [list of available Commerce Services that use the API](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/integration-services/saas#availableservices).
 
 To learn how to generate an API key for either sandbox or production environments, see [Credentials](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html#apikey).
 
