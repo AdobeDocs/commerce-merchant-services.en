@@ -42,7 +42,7 @@ _July 18, 2023_
 
 ### 6.0.3 of magento/product-recommendations
 
- _November 5, 2024_
+ _November 6, 2024_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
