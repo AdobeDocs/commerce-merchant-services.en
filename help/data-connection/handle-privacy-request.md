@@ -10,8 +10,8 @@ Adobe Experience Platform Privacy Service provides a RESTful API and user interf
 
 For more information on Privacy Service and how to create and manage privacy requests, see Adobe Experience Platform documentation:
 
-* [Privacy Service overview](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html)
-* [Managing privacy jobs in Privacy Service UI](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/user-guide.html)
+* [Privacy Service overview](https://experienceleague.adobe.com/en/docs/experience-platform/privacy/home)
+* [Managing privacy jobs in Privacy Service UI](https://experienceleague.adobe.com/en/docs/experience-platform/privacy/ui/user-guide)
 
 ## Managing individual data privacy requests
 
@@ -24,7 +24,7 @@ Privacy Service supports two types of requests: **data access** and **data delet
 
 >[!NOTE]
 >
->This article only covers how to make privacy requests for [!DNL Commerce]. If you also plan to make privacy requests for the Platform data lake, refer to this [guide](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/privacy) in addition to this article. For Real-Time Customer Profile, please refer to this [guide](https://experienceleague.adobe.com/en/docs/experience-platform/profile/privacy) and for Identity Service, please refer to this [guide](https://experienceleague.adobe.com/en/docs/experience-platform/identity/privacy). For delete and access requests you need to call these individual systems to make sure the requests are handled by each of them. Making a privacy request to [!DNL Commerce] will not remove data from all these systems.
+>This article only covers how to make privacy requests for [!DNL Commerce]. If you also plan to make privacy requests for the Platform data lake, refer to this [guide](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/privacy) in addition to this article. For Real-Time Customer Profile, please refer to this [guide](https://experienceleague.adobe.com/en/docs/experience-platform/profile/privacy) and for Identity Service, please refer to this [guide](https://experienceleague.adobe.com/en/docs/experience-platform/identity/privacy). For delete and access requests, you need to call these individual systems to make sure the requests are handled by each of them. Making a privacy request to [!DNL Commerce] will not remove data from all these systems.
 
 ## Data access
 
@@ -49,7 +49,7 @@ To make requests to access and delete data for Adobe [!DNL Commerce], you must h
 
 For **access requests**, specify "Commerce Data for Marketing" from the UI (or "commerceMarketingData" as a product code in the API).
 
-For **delete requests**, make sure the "Commerce Data for Marketing" checkbox is enabled. Additionally, if customer profile and order data has already been sent from [!DNL Commerce] to Adobe Experience Platform, you need to submit delete requests to three downstream services. If these downstream services are not specified, the "Commerce Data for Marketing" request will remain in the "processing" state until delete requests for the downstream services are created.
+For **delete requests**, make sure that the "Commerce Data for Marketing" checkbox is enabled. Additionally, if customer profile and order data has already been sent from [!DNL Commerce] to Adobe Experience Platform, you need to submit delete requests to three downstream services.
 
 The three downstream services are:
 

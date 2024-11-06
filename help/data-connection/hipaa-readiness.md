@@ -1,34 +1,47 @@
 ---
-title: 'HIPAA Readiness for Commerce Services'
-description: Learn how you can use the [!DNL Data Connection] extension to share [!DNL Commerce] data with the Experience Platform and maintain HIPAA compliance.
+title: 'HIPAA Readiness for [!DNL Commerce] Services'
+description: Learn how you can use the [!DNL Data Connection] extension to share [!DNL Commerce] data with Experience Platform and maintain HIPAA compliance.
 role: Admin, Leader
 feature: Security, Compliance
 ---
-# HIPAA Readiness for Commerce Services
+# HIPAA Readiness for [!DNL Commerce] Services
 
-The [!DNL Data Connection] extension allows you to share [!DNL Commerce] back office event data with the Experience Platform and maintain HIPAA compliance.
+The [!DNL Data Connection] extension allows you to share [!DNL Commerce] back office event data with Experience Platform and maintain HIPAA compliance.
 
 >[!IMPORTANT]
 >
->Storefront event data is not HIPAA compliant. It is the merchant's responibility to [not send storefront event data](connect-data.md#data-collection) to Experience Platform.
+>Because storefront events are implemented on the client-side, it is the merchant's responsibility [not to send storefront event data](connect-data.md#data-collection) to Experience Platform.
 
 In this article, you learn:
 
-- How to ensure data sent to the Experience Platform is HIPAA-compliant
-- What encryption methods exist in [!DNL Commerce]
-- How [!DNL Commerce] handles privacy requests
+- What to install
+- How to ensure data sent to Experience Platform is HIPAA-compliant
+- Data encryption in [!DNL Commerce]
 
 ## Installation
 
-Merchants that have purchased the health care add-on for Adobe [!DNL Commerce] need to install the [HIPAA-Ready extension](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service#installation). Merchants who want to send back office event data to Experience Platform need to make sure they are using the [latest version](release-notes.md) of the [!DNL Data Connection] extension, which is compatible with the HIPAA-Ready extension.
+Merchants who have purchased the health care add-on for Adobe [!DNL Commerce] need to install the [HIPAA-Ready extension](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service#installation). After that extension is installed, you need to install the [!DNL Data Connection] extension with the additional `data-services-hipaa` module. This module ensures that any back office data you send to Experience Platform is HIPAA-compliant.
 
-## How to ensure data sent to the Experience Platform is HIPAA-compliant
+1. If you have not already done so, [install](install.md#install-the-extension) the [!DNL Data Connection] extension. Follow all installation steps in that section.
+1. Download and install the `data-services-hipaa` module by running the following from the command line:
 
-All back office event data that the [!DNL Data Connection] extension sends to the Experience Platform is considered sensitive. However, it is the responsibility of the merchant to apply data usage labels to their [!DNL Commerce] schema in Experience Platform to explictly identify particular data as sensitive. When you apply data usage labels directly to a schema, those labels are propagated to all existing and future datasets that are based on that schema.
+    ```bash
+    composer require magento/data-services-hipaa
+    ```
 
-For an overview of data usage labels and their role within the Data Governance framework, see [data usage labels overview](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview) in the Experience Platform documentation.
+1. what now...
 
-### Apply data usage labels to Commerce fields
+>[!IMPORTANT]
+>
+>When the `data-services-hipaa` module is installed, storefront event data that is used by Live Search and Product Recommendations is no longer captured. To re-enable event collection for these services, see [topic](topic.md).
+
+## How to ensure data sent to Experience Platform is HIPAA-compliant
+
+All back office event data that the [!DNL Data Connection] extension sends to Experience Platform is considered sensitive within [!DNL Commerce]. However, it is the responsibility of the merchant to apply data usage labels to their [!DNL Commerce] schema in Experience Platform to explicitly identify particular data as sensitive. When you apply data usage labels directly to a schema, those labels are propagated to all existing and future datasets that are based on that schema.
+
+For an overview of data usage labels and their role within the Data Governance framework, see the [data usage labels overview](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview) in Experience Platform documentation.
+
+### Apply data usage labels to [!DNL Commerce] fields
 
 Follow the steps in the [manage data usage labels for a schema](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/labels) tutorial to learn how to apply labels to your [!DNL Commerce] schema.
 
@@ -36,9 +49,9 @@ See the [glossary of sensitive labels](https://experienceleague.adobe.com/en/doc
 
 When your [!DNL Commerce] data is labeled as sensitive, you can enforce those policies to prevent data operations that constitute policy violations. Learn more about [policy enforcement](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/enforcement/overview) in Experience Platform.
 
-## How Commerce handles data encryption
+## Data encryption in Commerce
 
-Adobe Commerce uses block-level encryption. For storage, Commerce uses Amazon Elastic Block Store (EBS). All EBS volumes are encrypted using the AES-256 algorithm, which means that the data is encrypted at rest. Commerce data in transit is conducted over secure, encrypted connections using HTTPS [TLS v1.2](https://datatracker.ietf.org/doc/html/rfc5246).
+Adobe [!DNL Commerce] uses block-level encryption. For storage, [!DNL Commerce] uses Amazon Elastic Block Store (EBS). All EBS volumes are encrypted using the AES-256 algorithm, which means that the data is encrypted at rest. [!DNL Commerce] data in transit is conducted over secure, encrypted connections using HTTPS [TLS v1.2](https://datatracker.ietf.org/doc/html/rfc5246).
 
 >[!IMPORTANT]
 >
@@ -46,8 +59,8 @@ Adobe Commerce uses block-level encryption. For storage, Commerce uses Amazon El
 
 ### Data encryption in Experience Platform
 
-When merchants send their data to the Experience Platform, that data is sent using HTTPS TLS v1.2. Learn more about how [Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/encryption) encrypts data.
+When merchants send their data to Experience Platform, that data is sent using HTTPS TLS v1.2. Learn more about how [Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/encryption) encrypts data.
 
-## How Commerce handles privacy requests
+## How [!DNL Commerce] handles privacy requests
 
 Learn how [!DNL Commerce] [handles privacy requests](handle-privacy-request.md).
