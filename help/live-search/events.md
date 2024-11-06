@@ -31,7 +31,7 @@ Some events are required to populate the [Live Search dashboard](performance.md)
 | Zero results searches |`page-view`, `search-request-sent`,  `search-response-received` | `searchRequestId`  |
 | Zero results rate     |`page-view`, `search-request-sent`,  `search-response-received` | `searchRequestId`  |
 | Popular searches      |`page-view`, `search-request-sent`,  `search-response-received` | `searchRequestId`  |
-| Avg. click position   |`page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click`   | searchRequestId      |
+| Avg. click position   |`page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click`   | `searchRequestId`      |
 | Click-through rate    |`page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click`   | `searchRequestId`, `sku`, `parentSku` |
 | Conversion rate       |`page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click`, `product-view`, `add-to-cart`, `place-order`| `searchRequestId`, `sku`, `parentSku` |
 
