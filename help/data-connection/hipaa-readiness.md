@@ -10,7 +10,7 @@ The [!DNL Data Connection] extension allows you to share [!DNL Commerce] back of
 
 >[!IMPORTANT]
 >
->Because storefront events are implemented on the client-side, it is the merchant's responsibility [not to send storefront event data](connect-data.md#data-collection) to Experience Platform.
+>Because storefront events are generated client-side, it is the merchant's responsibility [not to send storefront event data](connect-data.md#data-collection) to Experience Platform.
 
 In this article, you learn:
 
@@ -20,20 +20,11 @@ In this article, you learn:
 
 ## Installation
 
-Merchants who have purchased the health care add-on for Adobe [!DNL Commerce] need to install the [HIPAA-Ready extension](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service#installation). After that extension is installed, you need to install the [!DNL Data Connection] extension with the additional `data-services-hipaa` module. This module ensures that any back office data you send to Experience Platform is HIPAA-compliant.
-
-1. If you have not already done so, [install](install.md#install-the-extension) the [!DNL Data Connection] extension. Follow all installation steps in that section.
-1. Download and install the `data-services-hipaa` module by running the following from the command line:
-
-    ```bash
-    composer require magento/data-services-hipaa
-    ```
-
-1. what now...
+If you purchased the health care add-on for Adobe [!DNL Commerce], you most likely already installed the [HIPAA-Ready extension](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service#installation). If you want to ensure that your [!DNL Commerce] back office event data is HIPAA-compliant, you also need to install the [!DNL Data Connection] extension with the additional **Data Services HIPAA** extension. The **Data Services HIPAA** extension ensures that any back office data you send to Experience Platform is HIPAA-compliant. Learn [how to install the extension](install.md#install-the-data-services-hipaa-extension).
 
 >[!IMPORTANT]
 >
->When the `data-services-hipaa` module is installed, storefront event data that is used by Live Search and Product Recommendations is no longer captured. To re-enable event collection for these services, see [topic](topic.md).
+>When you install the **Data Services HIPAA** extension, storefront event data that is used by Live Search and Product Recommendations is no longer captured. This is because storefront event data is generated client-side. If you want to continue to capture and send storefront event data, you can re-enable event collection for these services. See [general configuration](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/general.html#data-services) to learn more.
 
 ## How to ensure data sent to Experience Platform is HIPAA-compliant
 
