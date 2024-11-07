@@ -35,8 +35,8 @@ Remember that thoughtful planning, including estimating data volume and synchron
 
 Multi-thread mode is supported for all [synchronization methods](data-synchronization.md#synchronization-process)—full sync, partial sync, and failed items sync. To configure multi-threading, you specify the number of threads and batch size to use during synchronization.
 
-- `threadCount` is the number of threads that are activated to process entities. The default `threadCount` is `1`.
-- `batchSize` is the number of entities that are processed in one iteration. The default `batchSize` is `100` records for all feeds except the price feed. For the price feed, the default value is `500` records.
+- `thread-count` is the number of threads that are activated to process entities. The default `thread-count` is `1`.
+- `batch-size` is the number of entities that are processed in one iteration. The default `batch-size` is `100` records for all feeds except the price feed. For the price feed, the default value is `500` records.
 
 You can configure multi-threading as a temporary option when running a resync command, or by adding the multi-thread configuration to the Adobe Commerce application configuration.
 
@@ -46,10 +46,10 @@ You can configure multi-threading as a temporary option when running a resync co
 
 ### Configure multi-threading at runtime
 
-When you run a full sync command from the command line, specify multi-thread processing by adding the `threadCount` and `batchSize` options to the CLI command.
+When you run a full sync command from the command line, specify multi-thread processing by adding the `thread-count` and `batch-size` options to the CLI command.
 
 ```
-bin/magento saas:resync --feed=products --threadCount=2 --batchSize=200
+bin/magento saas:resync --feed=products --thread-count=2 --batch-size=200
 ```
 
 Options specified on the command line override the data export configuration specified in the Adobe Commerce application `config.php` file.
