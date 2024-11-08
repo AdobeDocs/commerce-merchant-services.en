@@ -5,12 +5,16 @@ exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
 ---
 # Create New Recommendation
 
-When you create a recommendation, you create a _recommendation unit_ that contains the recommended product _items_.
+When you create a recommendation, you create a _recommendation unit_, or widget, that contains the recommended product _items_.
 
 ![Recommendation unit](assets/unit.png)
 _Recommendation unit_
 
 When you activate the recommendation unit, Adobe Commerce starts to [collect data](workspace.md) to measure impressions, views, clicks, and so on. The [!DNL Product Recommendations] table displays the metrics for each recommendation unit to help you make informed business decisions.
+
+>[!NOTE]
+>
+>Product Recommendation metrics are optimized for Luma storefronts. If your storefront is non-Luma based, how the metrics track data depends on how you [implement the event collection](events.md).
 
 1. On the _Admin_ sidebar, go to **Marketing** > _Promotions_ > **Product Recommendations** to display the _Product Recommendations_ workspace.
 
@@ -77,7 +81,7 @@ When you activate the recommendation unit, Adobe Commerce starts to [collect dat
 
 Readiness indicators show which recommendation types will perform best based on the catalog and behavioral data available. You can also use readiness indicators to determine if you have issues with your [eventing](events.md) or if you do not have enough traffic to populate the recommendation type.
 
-Readiness indicators are categorized into either [static-based](#static-based) or [dynamic-based](#dynamic-based). Static-based use catalog data only; whereas dynamic-based use behavioral data from your shoppers. That behavioral data is used to [train machine learning models](behavioral-data.md) to build personalized recommendations and to calculate their readiness score.
+Readiness indicators are categorized into either [static-based](#static-based) or [dynamic-based](#dynamic-based). Static-based use catalog data only; whereas dynamic-based use behavioral data from your shoppers. That behavioral data is used to [train machine learning models](events.md) to build personalized recommendations and to calculate their readiness score.
 
 ### How readiness indicators are calculated
 
@@ -89,7 +93,7 @@ As a result of these variables, the readiness indicator percent can fluctuate. T
 
 Readiness indicators are calculated based on a couple factors:
 
-* Sufficient result set size: Are there enough results being returned in most scenarios to avoid using [backup recommendations](behavioral-data.md#backuprecs)? 
+* Sufficient result set size: Are there enough results being returned in most scenarios to avoid using [backup recommendations](events.md#backuprecs)? 
 
 * Sufficient result set variety: Do the products being returned represent a variety of products from your catalog? The goal with this factor is to avoid having a minority of products being the only items recommended across the site. 
 
@@ -97,7 +101,7 @@ Based on the above factors, a readiness value is calculated and displayed as fol
 
 * 75% or higher means that the recommendations suggested for that recommendation type will be highly relevant.
 * At least 50% means that the recommendations suggested for that recommendation type will be less relevant.
-* Less than 50% means that the recommendations suggested for that recommendation type may not be relevant. In this case, [backup recommendations](behavioral-data.md#backuprecs) are used.
+* Less than 50% means that the recommendations suggested for that recommendation type may not be relevant. In this case, [backup recommendations](events.md#backuprecs) are used.
 
 Learn more about [why readiness indicators might be low](#what-to-do-if-the-readiness-indicator-percent-is-low).
 
@@ -147,7 +151,11 @@ The readiness indicator percent for recommendation types that depend on catalog 
 
 #### What to do if the readiness indicator percent is low
 
-A low readiness percentage indicates that there are not many products from your catalog that are eligible to be included in recommendations for this recommendation type. This means that there is a high probability that [backup recommendations](behavioral-data.md#backuprecs) are returned if you deploy this recommendation type anyway.
+A low readiness percentage indicates that there are not many products from your catalog that are eligible to be included in recommendations for this recommendation type. This means that there is a high probability that [backup recommendations](events.md#backuprecs) are returned if you deploy this recommendation type anyway.
+
+>[!IMPORTANT]
+>
+>_Bundle_, _grouped_, and custom product types are not supported. If your catalog contains a large number of these product types, you can expect a low readiness score. Additionally, any SKUs with spaces can reduce recommendation relevancy and should be avoided.
 
 The following lists possible reasons and solutions to common low readiness scores:
 
@@ -169,7 +177,7 @@ To test a recommendation when working in a non-production environment, you can f
 |Name|The name of the product.|
 |SKU|The Stock Keeping Unit assigned to the product|
 |Price|The price of the product.|
-|Result Type|Primary - indicates that there is enough training data collected to display a recommendation.<br />Backup - indicates that there is not enough training data collected so a backup recommendation is used to fill the slot. Go to [Behavioral Data](behavioral-data.md) to learn more about machine learning models and backup recommendations.|
+|Result Type|Primary - indicates that there is enough training data collected to display a recommendation.<br />Backup - indicates that there is not enough training data collected so a backup recommendation is used to fill the slot. Go to [Behavioral Data](events.md) to learn more about machine learning models and backup recommendations.|
 
 As you create your recommendation unit, experiment with the page type, recommendation type, and filters to get immediate real-time feedback about the products that will be included. As you begin to understand which products appear, you can configure the recommendation unit to meet your business needs.
 

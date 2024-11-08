@@ -8,7 +8,7 @@ exl-id: 3ac217f7-e823-4578-8416-5ecceb76aa87
 ---
 # Product Stock Management
 
-As a merchant, you can use Adobe Commerce [Inventory Management](https://docs.magento.com/user-guide/catalog/inventory-management.html) stock and source options. Also, you can use the Store Fulfillment solution to control other inventory availability options related to your merchant store operations.
+As a merchant, you can use Adobe Commerce [Inventory Management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) stock and source options. Also, you can use the Store Fulfillment solution to control other inventory availability options related to your merchant store operations.
 
 - Home delivery option from Merchant stores
 

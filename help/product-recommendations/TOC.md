@@ -13,11 +13,9 @@ feature: Services, Recommendations
 - Get Started {#getting-started}
    - [Onboarding](onboarding.md)
    - [Implementation Workflow](implementation-workflow.md)
-   - [Behavioral Data](behavioral-data.md)
    - [Headless](headless.md)
    - [Install](install-configure.md)
    - [Settings](settings.md)
-   - [Verify](verify.md)
    - [Staging Environment](staging-environment.md)
    - [Page Builder Integration](page-builder.md)
 - [!DNL Product Recommendations] Admin {#admin}
@@ -30,6 +28,7 @@ feature: Services, Recommendations
 - [!DNL Product Recommendations] Developer {#developer}
    - [Overview](development-overview.md)
    - [Collect Data](events.md)
+   - [Verify](verify.md)
    - [Customize](customize.md)
    - [Handle Cookie Restrictions](setting-cookie.md)
 - [Return to Commerce Services Home](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)

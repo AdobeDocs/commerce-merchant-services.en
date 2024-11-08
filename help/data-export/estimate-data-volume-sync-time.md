@@ -8,12 +8,12 @@ exl-id: 51ea98fd-cf90-44bd-a639-992bfc7f3eca
 
 Adobe recommends estimating data volume and sync time before starting any data feed synchronization to ensure smooth scheduling and avoid disruptions in site operations. This estimation is important when planning for initial syncs or large scale catalog updates, such as mass price changes.
 
-By default the data export tool processes data in single-thread mode with a default batch size. With the default configuration, there is no parallelization of the feed submission process. Additionally, the default throttling policy allows Adobe Commerce to accept two requests per second (RPS) which translates to the following:
+By default the data export tool processes data in single-thread mode with a default batch size. With the default configuration, there is no parallelization of the feed submission process. Additionally, this component accepts requests per second (RPS) which translates to the following:
 
 - Up to 10,000 products per minute where a product is a SKU with attributes in a specific storeview
 - Up to 50,000 prices per minute
 
-Based on the default configuration, the following factors affect data transmission time during synchronization.
+The following factors affect data transmission time during synchronization.
 
 - Thread count is set to 1 (by default)
 - Batch size is set to _100_ for all feeds except for the `prices` feed, where it is set to _500_.
@@ -21,9 +21,6 @@ Based on the default configuration, the following factors affect data transmissi
 - All products are assigned to all existing websites
 - For the price calculation scenarios, all products have special and grouped prices assigned to them
 
->[!NOTE]
->
->If needed, the throttling policy limit can be increased based on a performance impact analysis. For assistance, contact your Technical Account Manager (TAM) or submit a support ticket.
 
 ## Calculate data transmission per feed
 

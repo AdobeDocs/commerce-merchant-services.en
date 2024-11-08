@@ -14,7 +14,7 @@ Shoppers use the stored token to complete a future checkout with their saved cre
 
 ![Use stored credentials for future purchase](assets/use-stored-card.png){width="400" zoomable="yes"}
 
-They can also easily delete their vaulted credit cards from [Stored Payment Methods](https://docs.magento.com/user-guide/customers/account-dashboard-stored-payment-methods.html) in their My Account.
+They can also easily delete their vaulted credit cards from [Stored Payment Methods](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/stored-payment-methods) in their My Account.
 
 ![Stored Payment Methods in My Account](assets/stored-payment-methods.png){width="400" zoomable="yes"}
 

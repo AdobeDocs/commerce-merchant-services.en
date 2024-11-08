@@ -639,4 +639,4 @@ Deployment and testing vary depending on your infrastructure and capabilities.
 
 >[!TIP]
 >
->For deployment guidelines, checklists, and best practices for Adobe Commerce on cloud infrastructure projects, see [Deploy your store](https://devdocs.magento.com/cloud/live/stage-prod-live.html) in the Adobe Commerce Developer documentation.
+>For deployment guidelines, checklists, and best practices for Adobe Commerce on cloud infrastructure projects, see [Deploy your store](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/staging-production) in the Adobe Commerce Developer documentation.

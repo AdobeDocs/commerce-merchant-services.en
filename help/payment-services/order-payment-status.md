@@ -108,11 +108,11 @@ Merchants can check the updated payment status via the Order payment status repo
 
 [!DNL Payment Services] uses order data, and combines it with aggregated payment data from other sources (including PayPal), to provide meaningful and highly useful reports.
 
-Order data is exported and persisted in the payment service. When you [change or add order statuses](https://docs.magento.com/user-guide/sales/order-status-custom.html) or [edit a store view](https://docs.magento.com/user-guide/stores/stores-all-view-edit.html), [store](https://docs.magento.com/user-guide/stores/store-information.html), or website name, that data is combined with payment data and the Order payment status report is populated with the combined info.
+Order data is exported and persisted in the payment service. When you [change or add order statuses](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-status#custom-order-status) or [edit a store view](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-views#edit-a-store-view), [store](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/store-details#store-information), or website name, that data is combined with payment data and the Order payment status report is populated with the combined info.
 
 There are two steps in this process:
 
-1. The index is changed data either `ON SAVE` (every time order info or store info is changed) or `BY SCHEDULE` (on a pre-configured cron schedule), depending on how it is configured in [Index Management](https://docs.magento.com/user-guide/system/index-management.html) in the Admin.
+1. The index is changed data either `ON SAVE` (every time order info or store info is changed) or `BY SCHEDULE` (on a pre-configured cron schedule), depending on how it is configured in [Index Management](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) in the Admin.
 
     By default, data indexation occurs `ON SAVE`, which means that whenever something changes in the order, the order status, the store view, the store, or the website, the reindexation process happens immediately.
 
@@ -128,7 +128,7 @@ The only data that is exported and collated for reporting purposes is data used 
 
 Even though, by default, reindexing happens in `ON SAVE` mode, it is recommended that you index in `BY SCHEDULE` mode. The `BY SCHEDULE` index runs on a cron schedule of one minute, and any changed data appears in your Order status report within two minutes of any data change. This scheduled reindexing helps you reduce any strain on your store, especially if you have a large volume of incoming orders, because it happens on a schedule (not as each order is placed).
 
-You can change the index mode---`ON SAVE` or `BY SCHEDULE`---[in the Admin](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode).
+You can change the index mode---`ON SAVE` or `BY SCHEDULE`---[in the Admin](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management#change-the-index-mode).
 
 To learn how to configure the data export, see [Command-line configuration](configure-cli.md#configure-data-export).
 
@@ -239,10 +239,10 @@ Order payment status reports include the following information.
 
 | Column | Description |
 | ------------ | -------------------- |
-| [!UICONTROL Order ID] | Commerce order ID<br> <br>To see related [order info](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"}, click the ID. |
+| [!UICONTROL Order ID] | Commerce order ID<br> <br>To see related [order info](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/orders){target="_blank"}, click the ID. |
 | [!UICONTROL Order Date] | Order date timestamp |
 | [!UICONTROL Authorized Date] | Date timestamp of payment authorization |
-| [!UICONTROL Order Status] | Current Commerce [order status](https://docs.magento.com/user-guide/sales/order-status.html){target="_blank"} |
+| [!UICONTROL Order Status] | Current Commerce [order status](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-status){target="_blank"} |
 | [!UICONTROL Invoiced] | Invoice status of order---*[!UICONTROL No]*, *[!UICONTROL Partial]*, or *[!UICONTROL Yes]* |
 | [!UICONTROL Shipped] | Shipping status of order---*[!UICONTROL No]*, *[!UICONTROL Partial]*, or *[!UICONTROL Yes]* |
 | [!UICONTROL Order Amt] | Grand total amount of the order |

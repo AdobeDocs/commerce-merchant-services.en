@@ -33,7 +33,14 @@ This article is intended for the developer or systems integrator on your team wh
 
 At a high level, onboarding [!DNL Live Search] requires that you:
 
-![Live Search Workflow](assets/livesearch-workflow.png)
+1. [Install](#1-install-the-live-search-extension) the [!DNL Live Search] extension
+1. [Configure](#2-configure-api-keys) the API keys
+1. [Sync](#3-sync-your-catalog-data) your catalog data
+1. [Verify](#4-verify-that-the-data-was-exported) that the catalog data was exported
+1. [Configure](#5-configure-the-data) the data
+1. [Test](#6-test-the-connection) the connection
+1. [Verify](#7-validate-events-are-capturing-data) that events are capturing data
+1. [Customize](#8-customize-for-your-storefront) your storefront
 
 ## 1. Install the [!DNL Live Search] extension
 
@@ -266,7 +273,15 @@ If you encounter problems in the storefront, check the `var/log/system.log` file
 
 To allow [!DNL Live Search] through a firewall, add `commerce.adobe.io` to the allowlist.
 
-## 7. Customize for your storefront
+## 7. Verify that events are capturing data
+
+Ensure that the storefront events deployed to your site are working. This is especially important for headless implementations.
+
+- Review the [events](events.md) that are required for [!DNL Live Search].
+- Ensure that the [Live Search dashboard](performance.md) is displaying data from your non-production environment(s).
+- [Verify event collection](../product-recommendations/verify.md). While this page is in the [!DNL Product Recommendations] guide, the verification steps apply to [!DNL Live Search] as well.
+
+## 8. Customize for your storefront
 
 You have installed the [!DNL Live Search] extension, synced, validated, and configured your data. The next step is to ensure that the [!DNL Live Search] widgets conform to your store's look and feel.
 

@@ -8,9 +8,9 @@ exl-id: 8939046e-1c26-4380-83be-ff8e074e591d
 ---
 # Multiple Website and Scope Configuration
 
-You can set the [Scope](https://docs.magento.com/user-guide/configuration/scope.html) for a few elements to accommodate multiple websites, stores, and store views:
+You can set the [Scope](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views#scope-settings) for a few elements to accommodate multiple websites, stores, and store views:
 
-- [Manage Stock](https://docs.magento.com/user-guide/catalog/inventory-stock.html) per scope
+- [Manage Stock](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-manage) per scope
 
 - Manage [!DNL Delivery Methods] per scope
 
