@@ -1,9 +1,10 @@
 ---
 title: '[!DNL Catalog Adapter] Release Notes'
-description: 'The latest release information for [!DNL Catalog Adapter] for Adobe Commerce.'
+description: The latest release information for [!DNL Catalog Adapter] for Adobe Commerce.
 feature: Services, Release Notes
 recommendations: noCatalog
 roles: Admin, Developer
+exl-id: d7aeee8f-9043-4517-9fde-ffe24aa77b19
 ---
 # [!DNL Catalog Adapter] Extension Release Notes
 
@@ -25,4 +26,3 @@ Updates include:
 ## 1.0.8 Release
 
 ![Fix](../assets/fix.svg) Fixed an issue that caused an error in the exception log when adding configurable product variants with numeric SKUs to the wishlist. <!-MDEE-876-->
-
