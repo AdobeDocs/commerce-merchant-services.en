@@ -14,7 +14,7 @@ When you install and configure SaaS-based Adobe Commerce features such as [[!DNL
 
 ## Healthcare customers
 
-If you are a healthcare customer and you installed the [Data Services HIPAA extension](../data-connection/hipaa-readiness.md#installation), which is part of the [Data Connection](../data-connection/overview.md) extension, storefront event data that is used by [!DNL Product Recommendations] is no longer captured. This is because storefront event data is generated client-side. If you want to continue to capture and send storefront event data, you can re-enable event collection for [!DNL Product Recommendations]. See [general configuration](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/general.html#data-services) to learn more.
+If you are a healthcare customer and you installed the [Data Services HIPAA extension](../data-connection/hipaa-readiness.md#installation), which is part of the [Data Connection](../data-connection/overview.md) extension, storefront event data that is used by [!DNL Product Recommendations] is no longer captured. This is because storefront event data is generated client-side. To continue to capturing and sending storefront event data, re-enable event collection for [!DNL Product Recommendations]. See [general configuration](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/general.html#data-services) to learn more.
 
 ## Data types and events
 
@@ -73,7 +73,7 @@ In the case of insufficient input data collection, the following recommendation 
 
 ### Events
 
-The [Adobe Commerce Storefront Event Collector](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/#quick-start) lists all the events deployed to your storefront. From that list, however, there is a subset of events specific to [!DNL Product Recommendations]. These events collect data when shoppers interact with recommendation units on the storefront and power the metrics used to help you analyze how well your recommendations are performing.
+The [Adobe Commerce Storefront Event Collector](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/#quick-start) lists all the events deployed to your storefront. In that list, there is a subset of events specific to [!DNL Product Recommendations]. These events collect data when shoppers interact with recommendation units on the storefront and power the metrics to analyze how well your recommendations are performing.
 
 | Event | Description |
 | --- | --- |

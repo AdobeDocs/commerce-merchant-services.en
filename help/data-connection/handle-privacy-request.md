@@ -24,7 +24,7 @@ Privacy Service supports two types of requests: **data access** and **data delet
 
 >[!NOTE]
 >
->This article only covers how to make privacy requests for [!DNL Commerce]. If you also plan to make privacy requests for the Platform data lake, refer to this [guide](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/privacy) in addition to this article. For Real-Time Customer Profile, please refer to this [guide](https://experienceleague.adobe.com/en/docs/experience-platform/profile/privacy) and for Identity Service, please refer to this [guide](https://experienceleague.adobe.com/en/docs/experience-platform/identity/privacy). For delete and access requests, you need to call these individual systems to make sure the requests are handled by each of them. Making a privacy request to [!DNL Commerce] will not remove data from all these systems.
+>This article focuses on making privacy requests for [!DNL Commerce]. If you plan to make privacy requests for [Platform data lake](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/privacy), [ Real-Time Customer Profile](https://experienceleague.adobe.com/en/docs/experience-platform/profile/privacy), or [Identity Service](https://experienceleague.adobe.com/en/docs/experience-platform/identity/privacy), refer to their respective user guides. Note that delete and access requests must be made to each system individually, as a privacy request to Commerce does not remove data from all of these systems.
 
 ## Data access
 
@@ -32,7 +32,7 @@ For **access requests**, specify "Commerce Data for Marketing" from the UI (or `
 
 ## Data deletion
 
-For deletion requests, Privacy Service deletes [!DNL Commerce] data stored in Commerce SaaS services for marketing purposes, meaning profiles and orders of data subjects are no longer sent to Adobe marketing applications for use in campaigns and customer journeys. However, Privacy Service does not delete data in the [!DNL Commerce] application, as it may still be needed for merchant transactional needs. Merchants are responsible for any data deletion/access requests in the [!DNL Commerce] application. See [Shared responsibility security and operational model](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility) to learn more.
+For deletion requests, Privacy Service deletes [!DNL Commerce] data stored in Commerce SaaS services for marketing purposes, meaning profiles and orders of data subjects are no longer sent to Adobe marketing applications for use in campaigns and customer journeys. However, Privacy Service does not delete data in the [!DNL Commerce] application, as it might be required for merchant transactional needs. Merchants are responsible for any data deletion/access requests in the [!DNL Commerce] application. See [Shared responsibility security and operational model](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility) to learn more.
 
 [!DNL Commerce] will notify merchants about deletion requests by sending them information for data subjects requesting deletion of certain data.
 
@@ -49,9 +49,7 @@ To make requests to access and delete data for Adobe [!DNL Commerce], you must h
 
 For **access requests**, specify "Commerce Data for Marketing" from the UI (or "commerceMarketingData" as a product code in the API).
 
-For **delete requests**, make sure that the "Commerce Data for Marketing" checkbox is enabled. Additionally, if customer profile and order data has already been sent from [!DNL Commerce] to Adobe Experience Platform, you need to submit delete requests to three downstream services.
-
-The three downstream services are:
+For **delete requests**, make sure that the "Commerce Data for Marketing" checkbox is enabled. Additionally, if customer profile and order data has already been sent from [!DNL Commerce] to Adobe Experience Platform, you must submit delete requests to the following downstream services.
 
 * Profile (product code: "profileService")
 * AEP Data Lake (product code: "AdobeCloudPlatform")

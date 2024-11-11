@@ -20,11 +20,11 @@ In this article, you learn:
 
 ## Installation
 
-If you purchased the health care add-on for Adobe [!DNL Commerce], you most likely already installed the [HIPAA-Ready extension](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service#installation). To ensure that your [!DNL Commerce] back office event data is HIPAA-compliant, you also need to install the [!DNL Data Connection] extension with the additional **Data Services HIPAA** extension. The **Data Services HIPAA** extension ensures that any back office data you send to Experience Platform is HIPAA-compliant. Learn [how to install the extension](install.md#install-the-data-services-hipaa-extension).
+If you purchased the health care add-on for Adobe [!DNL Commerce], you most likely already installed the [HIPAA-Ready extension](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service#installation). To ensure that your [!DNL Commerce] back office event data is HIPAA-compliant, you must also install the [!DNL Data Connection] extension with the additional **Data Services HIPAA** extension. The **Data Services HIPAA** extension ensures that any back office data you send to Experience Platform is HIPAA-compliant. Learn [how to install the extension](install.md#install-the-data-services-hipaa-extension).
 
 >[!IMPORTANT]
 >
->When you install the **Data Services HIPAA** extension, storefront event data that is used by Live Search and Product Recommendations is no longer captured. This is because storefront event data is generated client-side. If you want to continue to capture and send storefront event data, you can re-enable event collection for these services. See [general configuration](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/general.html#data-services) to learn more.
+>When you install the **Data Services HIPAA** extension, storefront event data that is used by Live Search and Product Recommendations is no longer captured. This is because storefront event data is generated client-side. To continue capturing and sending storefront event data, re-enable event collection for these services. See [general configuration](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/general.html#data-services) to learn more.
 
 ## How to ensure data sent to Experience Platform is HIPAA-compliant
 
@@ -38,7 +38,7 @@ Follow the steps in the [manage data usage labels for a schema](https://experien
 
 See the [glossary of sensitive labels](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/reference#sensitive) to learn about the available labels you can apply to the fields in your [!DNL Commerce] schema. For example, the label `RHD` identifies Protected Health Information (PHI) or information about a patient that you are contractually permitted by Adobe to upload.
 
-When your [!DNL Commerce] data is labeled as sensitive, you can enforce those policies to prevent data operations that constitute policy violations. Learn more about [policy enforcement](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/enforcement/overview) in Experience Platform.
+When your [!DNL Commerce] data is labeled as sensitive, you can enforce policies to prevent data operations that constitute policy violations. Learn more about [policy enforcement](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/enforcement/overview) in Experience Platform.
 
 ## Data encryption in Commerce
 
