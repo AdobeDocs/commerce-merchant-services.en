@@ -39,7 +39,7 @@ The [!DNL Data Connection] extension is available from the [Adobe Marketplace](h
 
 1. (Optional) To include B2B data, which comprises [requisition events](events.md#b2b-events), install the [B2B extension](#install-the-b2b-extension).
 
-1. (Optional) If you are a healthcare merchant, install the [Data Services HIPAA](#install-the-data-services-hipaa-extension) extension so that your [!DNL Commerce] back office data is HIPAA-compliant.
+1. (Optional) If you are a healthcare merchant, install the [Data Services HIPAA](#install-the-data-services-hipaa-extension) extension so that your [!DNL Commerce] back office data is HIPAA-ready.
 
 ### Install Adobe I/O Events and configure the customers-connector module
 
@@ -109,7 +109,7 @@ Download the `magento/experience-platform-connector-b2b` extension by running th
 
 ### Install the Data Services HIPAA extension
 
-For healthcare merchants, install the following extension to ensure back office event data is HIPAA-compliant.
+For healthcare merchants, install the following extension to ensure back office event data is HIPAA-ready.
 
 Download the `magento/module-data-services-hipaa` extension by running the following from the command line:
 

@@ -15,18 +15,18 @@ The [!DNL Data Connection] extension allows you to share [!DNL Commerce] back of
 In this article, you learn:
 
 - What to install
-- How to ensure data sent to Experience Platform is HIPAA-compliant
+- How to ensure data sent to Experience Platform is HIPAA-ready
 - Data encryption in [!DNL Commerce]
 
 ## Installation
 
-If you purchased the health care add-on for Adobe [!DNL Commerce], you most likely already installed the [HIPAA-Ready extension](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service#installation). To ensure that your [!DNL Commerce] back office event data is HIPAA-compliant, you must also install the [!DNL Data Connection] extension with the additional **Data Services HIPAA** extension. The **Data Services HIPAA** extension ensures that any back office data you send to Experience Platform is HIPAA-compliant. Learn [how to install the extension](install.md#install-the-data-services-hipaa-extension).
+If you purchased the health care add-on for Adobe [!DNL Commerce], you most likely already installed the [HIPAA-Ready extension](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service#installation). To ensure that your [!DNL Commerce] back office event data is HIPAA-ready, you also need to install the [!DNL Data Connection] extension with the additional **Data Services HIPAA** extension. The **Data Services HIPAA** extension ensures that any back office data you send to Experience Platform is HIPAA-ready. Learn [how to install the extension](install.md#install-the-data-services-hipaa-extension).
 
 >[!IMPORTANT]
 >
 >When you install the **Data Services HIPAA** extension, storefront event data that is used by Live Search and Product Recommendations is no longer captured. This is because storefront event data is generated client-side. To continue capturing and sending storefront event data, re-enable event collection for these services. See [general configuration](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/general.html#data-services) to learn more.
 
-## How to ensure data sent to Experience Platform is HIPAA-compliant
+## How to ensure data sent to Experience Platform is HIPAA-ready
 
 All back office event data that the [!DNL Data Connection] extension sends to Experience Platform is considered sensitive within [!DNL Commerce]. However, it is the responsibility of the merchant to apply data usage labels to their [!DNL Commerce] schema in Experience Platform to explicitly identify particular data as sensitive. When you apply data usage labels directly to a schema, those labels are propagated to all existing and future datasets that are based on that schema.
 
