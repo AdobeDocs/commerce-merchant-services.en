@@ -1,12 +1,12 @@
 ---
-user-guide-title: Services for Adobe Commerce
+user-guide-title: Data Services for Adobe Commerce
 user-guide-description: Documentation and resources for hosted services that provide extended capabilities to Adobe Commerce and Magento Open Source.
 title: Services for Adobe Commerce
 role: Admin, Leader, User
 feature: Personalization, Integration
 recommendations: noDisplay
 ---
-# Services for Adobe Commerce documentation {#user-guides}
+# Data Services for Adobe Commerce documentation {#user-guides}
 
 - [Overview](home.md)
 - Release information {#release-information}
