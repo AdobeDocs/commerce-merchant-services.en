@@ -16,7 +16,7 @@ You can customize the look and feel of these widgets to best match your company'
 
 When you begin to type in the Commerce storefront search box, [!DNL Live Search] responds with suggested products and a thumbnail image of top search results in the [popover widget](storefront-popover.md).
 
-![Popover widget](assets/ls-search-popover.png)
+![[!DNL Live Search popover]](assets/storefront-search-as-you-type.png)
 
 To learn more about the popover widget and how to customize the widget for your storefront, see [[!DNL Storefront Popover]](storefront-popover.md).
 
@@ -24,6 +24,6 @@ To learn more about the popover widget and how to customize the widget for your 
 
 When you click to see all results from the storefront popover, the product listing page widget displays features you can use to continually refine your search.
 
-![Product listing page widget](assets/ls-plp.png)
+![Product listing page widget results](assets/plp-css-widgets.png)
 
 To learn more about the product listing page widget and how to customize the widget for your storefront, see [product listing page widget](plp-styling.md).
