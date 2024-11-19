@@ -1,6 +1,7 @@
 ---
 title: '[!DNL Composable Catalog Data Model]'
 description: 'Learn how the [!DNL Composable catalog data model] for Adobe Commerce helps you setup your catalog to match your business model and go-to-market strategy'
+hidefromtoc:
 recommendations: noCatalog
 ---
 
