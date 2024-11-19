@@ -10,7 +10,7 @@ A product catalog is the backbone of online shopping experiences. They are essen
 
 >[!NOTE]
 >
->To learn more about the APIs CCDM uses to help you create and manage your commerce catalog, see the [developer documentation](https://developer-stage.adobe.com/commerce/services/composable-catalog/).
+>To learn more about the APIs that CCDM uses to help you create and manage your commerce catalog, see the [developer documentation](https://developer-stage.adobe.com/commerce/services/composable-catalog/).
 
 ## Product catalog management
 
