@@ -72,6 +72,14 @@ _October 12, 2022_
 
 +++
 
+## 3.2.1
+
+_November 21, 2024_
+
+[!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.4 and newer
+
+![Fix](../assets/fix.svg) - Fixed an issue where the [!DNL Data Connection] extension was overwriting eventForwarding data.
+
 ## 3.2.0
 
 _October 7, 2024_
