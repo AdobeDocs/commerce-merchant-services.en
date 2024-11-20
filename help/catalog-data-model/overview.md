@@ -92,9 +92,18 @@ The definitions of Channels and Policies are created via dedicated APIs:
 - **Channel** - Definition created via dedicated APIs. ​
 - **Policies** - Definition created via dedicated APIs.
 
+## Overall commerce architecture – to be added 
+
 With the above context, the full data model of CCDM can now be understood below:
 
+??? Do we want to include the whole architecture diagram???
 
 The above architecture diagram sheds light on how ecommerce Catalog Administrators and Merchandisers can leverage the Composable Catalog Data Model to craft and manage an entire product portfolio which scales for multi-brand, multi-language, multi-business unit use cases with ease without introducing data duplication.
 
-CCDM enables you to map your Catalog Model to your Business structure and delivers high scalability and operational efficiency.
+### SaaS + Monolith  
+
+### Migration strategy 
+
+## FAQ - to be added 
+
+## Limitations- to be added 
