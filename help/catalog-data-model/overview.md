@@ -46,7 +46,7 @@ Product context management covers the following aspects:
 |Key features|Benefit|
 |---|---|
 |**Direct catalog data ingestion into storefront services pipeline**: Ingest your catalog data directly into the catalog service pipeline for the storefront browse and search lifecycle (Product Display Page, Product List Page, Search Results Page, Categories, Breadcrumb, and so on.) and avoid the data ingestion into Adobe Commerce core.|- Avoid multiple time-consuming indexations of Adobe Commerce core and directly ingest data into the storefront service pipeline which powers: Catalog Service, Catalog Browse (Live Search) and Product Recommendations.<br>- Effortlessly decouple your backend commerce implementation to create modern, seamless storefront experiences.|
-|**New catalog product scopes**: Channels, policies, and locale are new product scopes introduced by CCDM. These product scopes replace the website, store, and storeview scopes in the storefront services layer. [Learn more](#channels-policies-and-scopes).|- With the new scopes, CCDM unlocks the ability to scale to multi-geography, multi-business unit, multi-brand and multi-language use cases with ease using a single base catalog.<br>- Eliminate data redundancy in your catalog management.|
+|**New catalog product scopes**: Channel, policy, and scope are new product scopes introduced by CCDM. These product scopes replace the website, store, and storeview scopes in the storefront services layer. [Learn more](#channel-policy-and-scope).|- With the new scopes, CCDM unlocks the ability to scale to multi-geography, multi-business unit, multi-brand and multi-language use cases with ease using a single base catalog.<br>- Eliminate data redundancy in your catalog management.|
 |**Scale to tens of millions of SKUs**|- Support tens of millions of SKUs in your product catalog browse and discovery lifecycle with ease by leveraging the direct catalog data ingestion to storefront services pipeline. With CCDM, you are no longer bound by the catalog limits in the Adobe Commerce core admin.<br>- Decouple your experiences to support scale: (1) Direct storefront services pipeline data ingestion for large scale SKUs; (2) Ingest only your transactional SKUs to Adobe Commerce core admin.|
 |**Product type support**|- Simple, configurable<br>- Bundles and bundles of bundles (future roadmap)<br>- Subscriptions and plans (future roadmap)|
 |**Headless commerce**|- Full support for headless commerce implementations through Catalog Service, Catalog Browse (Live Search) and Product Recommendations APIs.|
@@ -63,7 +63,7 @@ Product context management covers the following aspects:
 
 ## Architecture
 
-CCDM is a highly scalable and flexible catalog data model which unlocks multi-brand, multi-business unit, multi-language use cases with ease. The model replaces the use of the classic Adobe Commerce product scopes (website, store, storeview) with new CCDM product scopes (channel, policy, and locale).
+CCDM is a highly scalable and flexible catalog data model which unlocks multi-brand, multi-business unit, multi-language use cases with ease. The model replaces the use of the classic Adobe Commerce product scopes (website, store, storeview) with new CCDM product scopes (channel, policy, and scope (locale)).
 
 ### Use cases
 
@@ -73,7 +73,7 @@ CCDM is a highly scalable and flexible catalog data model which unlocks multi-br
 |Automobile/Manufacturing parts conglomerate| - Sells auto or machine parts. The products are the same for all customers.<br>- Different dealers sell parts to customers<br>- Each dealer has its own prices, stock and shipping methods|To have different shipping integrations, each dealer should have a separate website. But separate websites force the classic data model to duplicate catalogs.<br> So, if there are 3000 dealers in USA, a merchant creates 3000 catalog copies even though the same catalog is used by all dealers .<br> Data duplication interferes with performance limits.|
 |Packaging/logistics company|- They have several shipping locations<br>- They have a different price for each customer<br>- The same product available in 2 locations for 2 customers have 4 possible prices|Despite the use of customer groups to cover pricing per customer, the classic model does not have the scope to manage price per location.<br> The only option is to copy each product for each location which means it is not the same root product anymore.<br> Data duplication interferes with performance limits.|
 
-### Channels, Policies and Scopes
+### Channel, Policy, and Scope
 
 During product data ingestion and update, a SKU contains the details of scopes and attributes (the attributes map to channels and policies). These define the product context identifiers to which a SKU belongs:
 
@@ -90,7 +90,7 @@ In the above image, each SKU contains:
 
 The channel and policy definitions are created using dedicated APIs:
 
-![[!DNL Composable Catalog Data Model] Channel, Policy, and Locale Mapping](assets/ccdm-scope-map.png)
+![[!DNL Composable Catalog Data Model] Channel, Policy, and Scope Mapping](assets/ccdm-scope-map.png)
 
 - **Scope** (locale) - Set at a SKU level during product data ingestion.​
 - **Channel** - Definition created using dedicated APIs. ​
