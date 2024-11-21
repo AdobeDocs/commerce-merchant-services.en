@@ -78,7 +78,7 @@ _November 21, 2024_
 
 [!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.4 and newer
 
-![Fix](../assets/fix.svg) - Fixed an issue where the [!DNL Data Connection] extension was overwriting eventForwarding data.
+![Fix](../assets/fix.svg) - Fixed an issue where the [!DNL Data Connection] extension was overwriting eventForwarding data and setting the HIPAA flag for all customers. With the latest fix only HIPAA customers will have the flag set.
 
 ## 3.2.0
 
