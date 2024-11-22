@@ -113,6 +113,10 @@ To select or create a SaaS project, request the [!DNL Commerce] API key from the
 
 1. If no SaaS projects exist, click **Create Project**. Then in the **Project** field, enter a name for your SaaS project.
 
+>[!NOTE]
+>
+>To avoid confusion, do not use a specific Commerce Service as the name for your project, for example *Live Search*, *Product Recommendations*, or *Data Connection*.  Unless your license has been provisioned for multiple SaaS projects, you can use the same SaaS project for multiple services. 
+
 1. Select the **Data Space** to use for the current configuration of your [!DNL Commerce] store.
 
 >[!NOTE]
