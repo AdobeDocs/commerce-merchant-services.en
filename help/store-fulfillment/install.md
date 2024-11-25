@@ -183,7 +183,7 @@ From the Adobe Commerce server, verify that the modules for the Store Fulfillmen
 
 ### Additional Steps
 
-If needed, use the [setup:static-content:deploy](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html){target="_blank"} CLI command to deploy static view files to your production environment.
+If needed, use the [setup:static-content:deploy](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises){target="_blank"} CLI command to deploy static view files to your production environment.
 
 ```bash
 php bin/magento setup:static-content:deploy -f
