@@ -32,7 +32,7 @@ Use the following table to find release notes and important information related 
       <td><strong>Data services</strong>
         <p>Learn about the latest improvements to the data service that enables our Commerce Services to manage product data.</p>
           <ul>
-           <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-export/release-notes.html">SaaS Data Export extension</a></li>
+           <li><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/saas-data-export/release-notes">SaaS Data Export extension</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html">Catalog Sync</a></li>
           </ul>
       </td>
