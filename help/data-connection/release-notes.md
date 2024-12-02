@@ -78,6 +78,7 @@ _December 2, 2024_
 
 [!BADGE Compatibility]{type=Informative tooltip="Compatibility"} Adobe Commerce versions 2.4.4 and newer
 
+![New](../assets/new.svg) - Added the HIPAA-ready extension to [!DNL Data Connection] so merchants can share [!DNL Commerce] back office event data with Experience Platform and maintain HIPAA compliance.
 ![Fix](../assets/fix.svg) - Fixed an issue where the [!DNL Data Connection] extension was overwriting `eventForwarding` data and setting the `HIPAA` flag for all customers. Now the extension only sets the flag for HIPAA customers.
 
 ## 3.2.0
