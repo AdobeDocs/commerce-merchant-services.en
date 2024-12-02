@@ -2,6 +2,7 @@
 title: '[!DNL Catalog Service]'
 description: '[!DNL Catalog Service] for Adobe Commerce provides a way to retrieve the contents of Product Display Pages and Product List Pages much more quickly than the native Adobe Commerce GraphQL queries.'
 exl-id: 266faca4-6a65-4590-99a9-65b1705cac87
+role: Admin, Developer
 recommendations: noCatalog
 ---
 # [!DNL Catalog Service] for Adobe Commerce
@@ -55,6 +56,14 @@ The schema reduces the diversity of product types to two use cases:
 * Complex products are comprised of multiple simple products. The component simple products can have different prices. A complex product can also be defined so that the shopper can specify the quantity of component simple products. Catalog Service maps the configurable, bundle, and grouped product types to `complexProductViews`.
 
 Complex product options are unified and distinguished by their behavior, not type. Each option value represents a simple product. This option value has access to the simple product attributes, including price. When the shopper selects all the options for a complex product, the combination of selected options points to a specific simple product. The simple product remains ambiguous until the shopper selects a value for all the available options.
+
+#### Product view attributes
+
+Both simple and complex products have customer-defined attributes that can be displayed on the storefront. These attributes are returned as [ProductViewAttributes](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/#productviewattribute-type). In Adobe Commerce, the available attributes are defined when the product is created. You can add additional attributes from the Adobe Commerce backend or programmatically. See [Extend and customize SaaS data export feed data](../data-export/extensibility-and-customizations.md).
+
+>[!TIP]
+>
+>Instead of adding data types to the Commerce backend, you can use [API Mesh with the Catalog Service](mesh.md) to extend the Catalog Service GraphQL schema to add data or configure existing catalog data to enable new functionality.
 
 ### Prices
 
