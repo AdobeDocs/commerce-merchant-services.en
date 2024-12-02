@@ -68,3 +68,4 @@ PayPal provides other options for [fraud protection](https://www.paypal.com/us/c
 
 * See [Fraud protection advanced](https://www.paypal.com/us/enterprise/fraud-protection-advanced#fraud-protection-advanced){target=_blank} for more information.
 * See [Chargeback protection](https://www.paypal.com/us/cshelp/article/what-is-chargeback-protection-help608){target=_blank} for more information.
+
