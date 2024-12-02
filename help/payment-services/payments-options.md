@@ -156,4 +156,3 @@ See [Credit card vaulting](vaulting.md) for more information.
 ## Security
 
 See [PCI compliance](security.md#pci-compliance) for more information.
-
