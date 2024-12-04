@@ -107,7 +107,7 @@ Make sure that configurable products' child products have images with the correc
 
 >[!NOTE]
 >
-Images in search results might be different depending on the search term. If the search term determines that a child product is more relevant, images from the child product will be used instead of images from the parent product.
+>Images in search results might be different depending on the search term. If the search term determines that a child product is more relevant, images from the child product will be used instead of images from the parent product.
 
 ### Search rules
 
