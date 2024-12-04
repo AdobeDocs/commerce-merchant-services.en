@@ -106,7 +106,7 @@ This section discusses how to improve search result relevance by implementing ef
 Make sure that configurable products' child products have images with the correct roles. Having parent or child products might result in the search result not having images.
 
 >[!NOTE]
-
+>
 Images in search results might be different depending on the search term. If the search term determines that a child product is more relevant, images from the child product will be used instead of images from the parent product.
 
 ### Search rules
