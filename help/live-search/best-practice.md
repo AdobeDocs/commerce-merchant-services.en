@@ -101,6 +101,14 @@ Learn how to [manage search redirects](https://experienceleague.adobe.com/en/doc
 
 This section discusses how to improve search result relevance by implementing effective search rules and using product metadata to ensure accurate and detailed attributes are searchable.
 
+### Images
+
+Make sure that configurable products' child products have images with the correct roles. Having parent or child products might result in the search result not having images.
+
+**Note**
+
+Images in search results might be different depending on the search term. If the search term determines that a child product is more relevant, images from the child product will be used instead of images from the parent product.
+
 ### Search rules
 
 To optimize your conversion rate and revenue, you must implement effective search rules. Adjust product rankings based on sales data, stock levels, and promotions with [Search Merchandising](rules.md).
