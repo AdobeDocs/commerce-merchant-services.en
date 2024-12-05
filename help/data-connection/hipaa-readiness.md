@@ -20,7 +20,7 @@ In this article, you learn:
 
 ## Installation
 
-If you purchased the health care add-on for Adobe [!DNL Commerce], you most likely already installed the [HIPAA-Ready extension](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service#installation). To ensure that your [!DNL Commerce] back office event data is HIPAA-ready, you also need to install the [!DNL Data Connection] extension with the additional **Data Services HIPAA** extension. The **Data Services HIPAA** extension ensures that any back office data you send to Experience Platform is HIPAA-ready. Learn [how to install the extension](install.md#install-the-data-services-hipaa-extension).
+If you purchased the health care add-on for Adobe [!DNL Commerce], you most likely already installed the [HIPAA-Ready extension](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service/overview#installation). To ensure that your [!DNL Commerce] back office event data is HIPAA-ready, you also need to install the [!DNL Data Connection] extension with the additional **Data Services HIPAA** extension. The **Data Services HIPAA** extension ensures that any back office data you send to Experience Platform is HIPAA-ready. Learn [how to install the extension](install.md#install-the-data-services-hipaa-extension).
 
 >[!IMPORTANT]
 >
