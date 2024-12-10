@@ -131,7 +131,7 @@ You can download a .csv file containing all the transactions visible in the Payo
 
 1. On the _Admin_ sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_ > **[!UICONTROL View Report]**.
 1. [Customize the date range timeframe for your transactions](#customize-transactions-timeframe).
-1. Click the _Download_ (![](assets/icon-download.png){width="20" zoomable="yes"}) icon.
+1. Click the _Download_ (![Download icon](assets/icon-download.png){width="20" zoomable="yes"}) icon.
 
 Your payout transactions are downloaded in a .csv format.
 
