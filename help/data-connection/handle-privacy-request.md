@@ -28,7 +28,7 @@ Privacy Service supports two types of requests: **data access** and **data delet
 
 ## Data access
 
-For **access requests**, specify "Commerce Data for Marketing" from the UI (or `commerceMarketingData` as a product code in the API).
+For **access requests**, specify "Commerce (Personalization)" from the UI (or `commerceMarketingData` as a product code in the API).
 
 ## Data deletion
 
@@ -47,9 +47,9 @@ To make requests to access and delete data for Adobe [!DNL Commerce], you must h
 
 ### GDPR Request/delete access example:
 
-For **access requests**, specify "Commerce Data for Marketing" from the UI (or "commerceMarketingData" as a product code in the API).
+For **access requests**, specify "Commerce (Personalization)" from the UI (or "commerceMarketingData" as a product code in the API).
 
-For **delete requests**, make sure that the "Commerce Data for Marketing" checkbox is enabled. Additionally, if customer profile and order data has already been sent from [!DNL Commerce] to Adobe Experience Platform, you must submit delete requests to the following downstream services.
+For **delete requests**, make sure that the "Commerce (Personalization)" checkbox is enabled. Additionally, if customer profile and order data has already been sent from [!DNL Commerce] to Adobe Experience Platform, you must submit delete requests to the following downstream services.
 
 * Profile (product code: "profileService")
 * AEP Data Lake (product code: "AdobeCloudPlatform")
