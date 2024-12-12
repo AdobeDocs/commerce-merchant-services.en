@@ -5,6 +5,7 @@ exl-id: 266faca4-6a65-4590-99a9-65b1705cac87
 role: Admin, Developer
 recommendations: noCatalog
 ---
+
 # [!DNL Catalog Service] for Adobe Commerce
 
 The [!DNL Catalog Service] for Adobe Commerce extension provides rich view-model (read-only) catalog data to render product-related storefront experiences quickly and fully, including:
