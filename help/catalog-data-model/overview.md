@@ -104,10 +104,10 @@ With the above context, the full data model of CCDM can now be understood below:
 
 The above architecture diagram sheds light on how ecommerce Catalog Administrators and Merchandisers can leverage the Composable Catalog Data Model to craft and manage an entire product portfolio which scales for multi-brand, multi-language, multi-business unit use cases with ease without introducing data duplication.
 
-### SaaS + Monolith  
+### Use case
 
-### Migration strategy 
+See the developer documentation for an end-to-end example that demonstrates how a company with a single base catalog can use CCDM to:
 
-## FAQ - to be added 
-
-## Limitations- to be added 
+- Support products across two geographical markets and two different brands.
+- Attain operational efficiency by not duplicating their product catalog across different websites.
+- Limit product visibility on the websites based on the geographical market and the brand of the product.
