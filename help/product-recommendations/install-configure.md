@@ -17,6 +17,10 @@ Deploying [!DNL Product Recommendations] to your storefront and Admin requires t
 
 Because the [!DNL Product Recommendations] module is a stand-alone metapackage, updates are released more frequently than Adobe Commerce. To make sure you are up to date with the latest bug fixes and features, refer to the [release notes](release-notes.md).
 
+>[!IMPORTANT]
+>
+>Make sure you have the correct [entitlements](../landing/saas.md#credentials) to use Product Recommendations.
+
 Install the `magento/product-recommendations` module with Composer:
 
 ```bash
