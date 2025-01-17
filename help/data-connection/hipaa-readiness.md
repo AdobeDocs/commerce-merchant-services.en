@@ -1,8 +1,9 @@
 ---
-title: 'HIPAA Readiness for [!DNL Commerce] Services'
+title: HIPAA Readiness for [!DNL Commerce] Services
 description: Learn how you can use the [!DNL Data Connection] extension to share [!DNL Commerce] data with Experience Platform and maintain HIPAA compliance.
 role: Admin, Leader
 feature: Security, Compliance
+exl-id: a7344e22-e6af-4e0c-9e56-078a4fce13ef
 ---
 # HIPAA Readiness for [!DNL Commerce] Services
 
