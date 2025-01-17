@@ -2,6 +2,7 @@
 title: Add product attributes dynamically
 description: Learn how to add custom product attributes to data export feed dynamically during the data synchronization process.
 role: Admin, Developer
+exl-id: fd0e142e-eb39-4c4b-90da-6c9279b7706c
 ---
 # Add product attributes dynamically during data synchronization
 
@@ -157,7 +158,3 @@ If you dynamically create a custom product attribute and want to use it for disp
      ```
      bin/magento saas:resync --feed=productattributes
      ```
-
-
-
-

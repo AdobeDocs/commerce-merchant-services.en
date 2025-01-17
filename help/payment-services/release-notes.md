@@ -85,6 +85,24 @@ _June 28, 2021_
 
 +++
 
+## v2.10.0
+
+_December 13, 2024_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+![New](../assets/new.svg)<!-- PAY-5702 --> [!DNL Payment Services] now supports GraphQL endpoints for vaulting without purchase, allowing customers to save their payment methods without completing a transaction.
+
+![New](../assets/fix.svg)<!-- PAY-5789 --> [!DNL Payment Services] now supports [3D Secure authentication with Google Pay](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/security-compliance/security#3ds), enhancing security for merchants and customers during payment transactions.
+
+![Fix](../assets/fix.svg)<!-- PAY-5703 --> [!DNL Payment Services] adds the ability for [customers to save cards directly in their **My Account**](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting), improving convenience and simplifying future checkouts. `Vault without purchase functionality might not be 100% compatible with Adobe Commerce 2.4.4 due to a known issue with` [`GraphQL authorization mechanisms`](https://developer.adobe.com/commerce/webapi/graphql/usage/authorization-tokens/).
+
+![Fix](../assets/fix.svg)<!-- PAY-5762 --> Fixed an issue where coupon codes were not applied on the order review page when the order was initiated from the product detail page (PDP).
+
+![Fix](../assets/fix.svg)<!-- PAY-5792 --> [!DNL Payment Services] now displays descriptions and billing addresses for [vaulted cards on the checkout page](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting), giving customers more visibility into their saved payment methods.
+
+![Fix](../assets/fix.svg)<!-- PAY-5793 --> [!DNL Payment Services] enables merchants to store the billing address for vaulted cards directly from the checkout page, ensuring accurate and complete payment information.
+
 ## v2.9.0
 
 _November 7, 2024_

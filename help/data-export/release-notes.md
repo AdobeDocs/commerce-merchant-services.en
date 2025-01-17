@@ -22,6 +22,13 @@ Updates include:
 
 ## Current major version
 
+## 103.3.15 Release
+
+![Fix](../assets/fix.svg) Ensured stable operation of integration tests on older configurations. <!-MDEE-869-->
+![Fix](../assets/fix.svg) Stop propagating unnecessary attribute options. <!-MDEE-882-->
+![Fix](../assets/fix.svg) Fixed the error message sent to the data export log when data serialization fails. <!-MDEE-913-->
+![Fix](../assets/fix.svg) Enhanced the reliability of simple product updates with additional test coverage. <!-MDEE-886-->
+
 ## 103.3.14 Release
 
 ![Fix](../assets/fix.svg)  The exporter indexer now maintains the correct status for dependent indexers. Previously, these indexes were incorrectly invalidated and required additional checks and validation that slowed indexing performance. <!-MDEE-866-->
