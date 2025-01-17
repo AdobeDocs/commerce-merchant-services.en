@@ -1,16 +1,20 @@
 ---
 title: Collect Data
-description: Learn how events collect data for product recommendations.
+description: Learn how events collect data for [!DNL Product Recommendations].
 exl-id: b827d88c-327f-4986-8239-8f1921d8383c
 feature: Services, Recommendations, Eventing
 ---
 # Collect Data
 
-When you install and configure SaaS-based Adobe Commerce features such as [Product Recommendations](install-configure.md) or [Live Search](../live-search/install.md), the modules deploy behavioral data collection to your storefront. This mechanism collects anonymized behavioral data from your shoppers and powers product recommendations and [Live Search](../live-search/overview.md) results. For example, the `view` event is used to compute the `Viewed this, viewed that` recommendation type, and the `place-order` event is used to compute the `Bought this, bought that` recommendation type.
+When you install and configure SaaS-based Adobe Commerce features such as [[!DNL Product Recommendations]](install-configure.md) or [[!DNL Live Search]](../live-search/install.md), the modules deploy behavioral data collection to your storefront. This mechanism collects anonymized behavioral data from your shoppers and powers [!DNL Product Recommendations]. For example, the `view` event is used to compute the `Viewed this, viewed that` recommendation type, and the `place-order` event is used to compute the `Bought this, bought that` recommendation type.
 
 >[!NOTE]
 >
->Data collection for the purposes of Product recommendations does not include personally identifiable information (PII). All user identifiers, such as cookie IDs and IP addresses, are strictly anonymized. Learn [more](https://www.adobe.com/privacy/experience-cloud.html).
+>Data collection for the purposes of [!DNL Product Recommendations] does not include personally identifiable information (PII). All user identifiers, such as cookie IDs and IP addresses, are strictly anonymized. Learn [more](https://www.adobe.com/privacy/experience-cloud.html).
+
+## Healthcare customers
+
+If you are a healthcare customer and you installed the [Data Services HIPAA extension](../data-connection/hipaa-readiness.md#installation), which is part of the [Data Connection](../data-connection/overview.md) extension, storefront event data that is used by [!DNL Product Recommendations] is no longer captured. This is because storefront event data is generated client-side. To continue to capturing and sending storefront event data, re-enable event collection for [!DNL Product Recommendations]. See [general configuration](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/general.html#data-services) to learn more.
 
 ## Data types and events
 
@@ -69,7 +73,7 @@ In the case of insufficient input data collection, the following recommendation 
 
 ### Events
 
-The [Adobe Commerce Storefront Event Collector](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/#quick-start) lists all the events deployed to your storefront. From that list, however, there is a subset of events specific to Product Recommendations. These events collect data when shoppers interact with recommendation units on the storefront and power the metrics used to help you analyze how well your recommendations are performing.
+The [Adobe Commerce Storefront Event Collector](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/#quick-start) lists all the events deployed to your storefront. In that list, there is a subset of events specific to [!DNL Product Recommendations]. These events collect data when shoppers interact with recommendation units on the storefront and power the metrics to analyze how well your recommendations are performing.
 
 | Event | Description |
 | --- | --- |
