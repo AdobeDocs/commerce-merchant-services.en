@@ -68,8 +68,8 @@ Merchandising [rules](rules.md) shape the shopping experience with if-then state
 ## Live Search components
 
 - [!DNL Live Search] [popover widget](storefront-popover.md) is the box that opens under the search field that contains the search results.
-- [Product Listing Page widget](plp-styling.md) (PLP) provides a searchable product listing page with facets and synonym support. The widget is installed and enabled in Live Search 4.0.0+.
-- (**Deprecated**) Search adapter was the precursor to the PLP widget and was installed with Live Search < 4.0.0. If you are using a version of Live Search earlier than 4.0.0, Commerce recommends you upgrade to receive the benefits of the PLP widget features and future improvements.
+- [Product Listing Page widget](plp-styling.md) (PLP) provides a searchable product listing page with facets and synonym support. The widget is installed and enabled in Live Search 4.0.0+ and replaces the Search Adapter.
+- (**Deprecated**) Search Adapter was the precursor to the PLP widget and was installed with Live Search < 4.0.0. If you are using a version of Live Search earlier than 4.0.0, Commerce recommends you upgrade to receive the benefits of the PLP widget features and future improvements. Going forward, the Search Adapter will only be updated to address security issues.
 
 ## [!DNL Live Search] workspace
 
