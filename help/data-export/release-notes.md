@@ -22,6 +22,14 @@ Updates include:
 
 ## Current major version
 
+## 103.3.17 Release
+
+![Fix](../assets/fix.svg) Added compatibility for PHP 8.4. <!-MDEE-941-->
+
+## 103.3.16 Release
+
+![Fix](../assets/fix.svg) Option values can be empty for configurable products for multiple store views. <!-MDEE-926-->
+
 ## 103.3.15 Release
 
 ![Fix](../assets/fix.svg) Ensured stable operation of integration tests on older configurations. <!-MDEE-869-->
