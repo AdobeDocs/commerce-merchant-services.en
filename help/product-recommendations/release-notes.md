@@ -25,7 +25,11 @@ See the developer documentation to [learn about product support](https://experie
 
 These notes describe updates or known issues that were published or discovered outside of a versioned release or improvements to the hosted service.
 
-  _June 28, 2024_
+_January 31, 2025_
+
+![New](../assets/new.svg) There is a new data retention policy for unused catalog data in your staging envionment. [Learn more](overview.md#catalog-data-retention-policy).
+
+_June 28, 2024_
 
 ![Bug](../assets/bug.svg) Products added to the cart from a [!DNL Product Recommendations] unit on the cart page are not removed from the list of recommended products when the cart page reloads.
 ![Bug](../assets/bug.svg) Products removed from the cart continue to persist in the `cartSkus` array until the cart page reloads.
@@ -34,7 +38,7 @@ _July 18, 2023_
 
 ![New](../assets/new.svg) [!DNL Product Recommendations] now has a GraphQL [`recommendations`](https://developer.adobe.com/commerce/services/graphql/recommendations/recommendations/) query.
 
- _April 25, 2023_
+_April 25, 2023_
 
 ![New](../assets/new.svg) [!DNL Product Recommendations] customers can now take advantage of [SaaS price indexing](../price-index/price-indexing.md).
 
@@ -42,7 +46,7 @@ _July 18, 2023_
 
 ### 6.0.3 of magento/product-recommendations
 
- _November 6, 2024_
+_November 6, 2024_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
@@ -51,7 +55,7 @@ _July 18, 2023_
 
 ### 6.0.2 of magento/product-recommendations
 
- _May 9, 2024_
+_May 9, 2024_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
@@ -62,7 +66,7 @@ _July 18, 2023_
 
 ### 6.0.1 of magento/product-recommendations
 
- _March 19, 2024_
+_March 19, 2024_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
@@ -70,7 +74,7 @@ _July 18, 2023_
 
 ### 6.0.0 of magento/product-recommendations
 
- _February 22, 2024_
+_February 22, 2024_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
@@ -81,7 +85,7 @@ _July 18, 2023_
 
 ### 5.0.1 of magento/product-recommendations
 
- _September 15, 2023_
+_September 15, 2023_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 

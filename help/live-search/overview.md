@@ -78,3 +78,9 @@ The [!DNL Live Search] [workspace](workspace.md) is the area in the Admin where 
 ## Events
 
 [!DNL Live Search] uses [events](events.md) to calculate [Intelligent Merchandising](category-merch.md) and [performance](performance.md) dashboards. Eventing is provided with default implementations. Eventing for headless storefronts should be manually enabled.
+
+## Catalog data retention policy
+
+If [!DNL Live Search] catalog data remains unused in your staging environment for 90 consecutive days, the catalog data is set to hibernation mode and no data is returned for any search query. The data used in your production environment is not affected by this policy.
+
+To re-activate [!DNL Live Search] catalog data in your staging environment, [submit a support request](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page) and include your environment name and any additional details requested.

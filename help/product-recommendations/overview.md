@@ -37,3 +37,9 @@ Product recommendations allow you to:
 Watch this video to learn about [!DNL Product Recommendations]:
 
 >[!VIDEO](https://video.tv.adobe.com/v/343991?quality=12)
+
+## Catalog data retention policy
+
+If [!DNL Product Recommendations] catalog data remains unused in your staging environment for 90 consecutive days, the catalog data is set to hibernation mode and no data is returned for any queries. The data used in your production environment is not affected by this policy.
+
+To re-activate [!DNL Product Recommendations] catalog data in your staging environment, [submit a support request](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page) and include your environment name and any additional details requested.
