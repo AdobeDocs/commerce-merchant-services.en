@@ -20,7 +20,7 @@ These notes describe updates that were published outside of a versioned release 
 
 _January 31, 2025_
 
-![New](../assets/new.svg) There is a new data retention policy for unused catalog data in your staging envionment. [Learn more](overview.md#catalog-data-retention-policy).
+![New](../assets/new.svg) There is a new data retention policy for unqueried catalog data in your staging envionment. [Learn more](overview.md#catalog-data-retention-policy).
 
 _September 19, 2024_
 
