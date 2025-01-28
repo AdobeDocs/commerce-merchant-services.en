@@ -81,6 +81,6 @@ The [!DNL Live Search] [workspace](workspace.md) is the area in the Admin where 
 
 ## Catalog data retention policy
 
-If [!DNL Live Search] catalog data remains unused in your staging environment for 90 consecutive days, the catalog data is set to hibernation mode and no data is returned for any search query. The data used in your production environment is not affected by this policy.
+If you do not submit a search query for the catalog data in your staging environment for 90 consecutive days, the catalog data is set to hibernation mode and no data is returned for any search query. Catalog data in your production environment is not affected by this policy.
 
-To re-activate [!DNL Live Search] catalog data in your staging environment, [submit a support request](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page) and include your environment name and any additional details requested.
+To re-activate the catalog data in your staging environment, [submit a support request](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page) and include your environment name and any additional details requested.
