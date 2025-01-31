@@ -18,7 +18,7 @@ Updates include:
 
 >[!NOTE]
 >
->The SaaS data export extension is a collection of modules that is installed automatically with Live Search, Product Recommendations, and the Catalog Service. You can check the version installed on your system using composer. In some cases, you might want to upgrade the data export extension on your system to pick up fixes or new capabilities without updating the Commerce Service version.
+>The SaaS data export extension is a collection of modules that is installed automatically with Live Search, Product Recommendations, and the Catalog Service. You can check the version installed on your system using Composer. In some cases, you might want to upgrade the data export extension on your system to pick up fixes or new capabilities without updating the Commerce Service version.
 
 ## Current major version
 
