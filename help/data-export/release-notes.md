@@ -24,7 +24,7 @@ Updates include:
 
 ## 103.3.18 Release
 
-![Fix](../assets/fix.svg) Staging updates for product and category entities are now triggered correctly on Data Export data updates.<!-MDEE-963-->
+![Fix](../assets/fix.svg) Staging updates for product and category entities are now triggered correctly on Data Export data updates.<!--MDEE-963-->
 
 ## 103.3.17 Release
 
