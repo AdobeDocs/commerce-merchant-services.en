@@ -22,32 +22,36 @@ Updates include:
 
 ## Current major version
 
+## 103.3.18 Release
+
+![Fix](../assets/fix.svg) Staging updates for product and category entities are now triggered correctly on Data Export data updates.<!-MDEE-963-->
+
 ## 103.3.17 Release
 
-![Fix](../assets/fix.svg) Added compatibility for PHP 8.4. <!-MDEE-941-->
+![Fix](../assets/fix.svg) Added compatibility for PHP 8.4. <!--MDEE-941-->
 
 ## 103.3.16 Release
 
-![Fix](../assets/fix.svg) Option values can be empty for configurable products for multiple store views. <!-MDEE-926-->
+![Fix](../assets/fix.svg) Option values can be empty for configurable products for multiple store views. <!--MDEE-926-->
 
 ## 103.3.15 Release
 
-![Fix](../assets/fix.svg) Ensured stable operation of integration tests on older configurations. <!-MDEE-869-->
-![Fix](../assets/fix.svg) Stop propagating unnecessary attribute options. <!-MDEE-882-->
-![Fix](../assets/fix.svg) Fixed the error message sent to the data export log when data serialization fails. <!-MDEE-913-->
-![Fix](../assets/fix.svg) Enhanced the reliability of simple product updates with additional test coverage. <!-MDEE-886-->
+![Fix](../assets/fix.svg) Ensured stable operation of integration tests on older configurations. <!--MDEE-869-->
+![Fix](../assets/fix.svg) Stop propagating unnecessary attribute options. <!--MDEE-882-->
+![Fix](../assets/fix.svg) Fixed the error message sent to the data export log when data serialization fails. <!--MDEE-913-->
+![Fix](../assets/fix.svg) Enhanced the reliability of simple product updates with additional test coverage. <!--MDEE-886-->
 
 ## 103.3.14 Release
 
-![Fix](../assets/fix.svg)  The exporter indexer now maintains the correct status for dependent indexers. Previously, these indexes were incorrectly invalidated and required additional checks and validation that slowed indexing performance. <!-MDEE-866-->
+![Fix](../assets/fix.svg)  The exporter indexer now maintains the correct status for dependent indexers. Previously, these indexes were incorrectly invalidated and required additional checks and validation that slowed indexing performance. <!--MDEE-866-->
 
 ## 103.3.13 Release
 
-![Fix](../assets/fix.svg) Improved performance of the data synchronization process by adding a local cache for attribute options data.<!-MDEE-864-->
+![Fix](../assets/fix.svg) Improved performance of the data synchronization process by adding a local cache for attribute options data.<!--MDEE-864-->
 
 ## 103.3.12 Release
 
-![Fix](../assets/fix.svg) Resolved an issue that increased synchronization time for simple and virtual products. <!-MDEE-861-->
+![Fix](../assets/fix.svg) Resolved an issue that increased synchronization time for simple and virtual products. <!--MDEE-861-->
 
 ## 103.3.11 Release
 
