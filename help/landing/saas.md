@@ -49,7 +49,11 @@ Additionally, solution integrators are also entitled to use [!DNL Commerce Servi
 
 1. Under the **Magento** tab, select **API Portal** on the sidebar.
 
-1. From the _Environment_ menu, select **Production** or **Sandbox**.
+1. From the _Environment_ menu, select **Production** or **Sandbox**. 
+
+   >[!NOTE]
+   >
+   >*Production* and *Sandbox* refer to the data space environments where data is stored in Adobe SaaS backend systems. It does not refer to commerce environment(s) where you will be using the keys.
 
 1. Enter a name in the _API Keys_ section, and click **Add New** to open the dialog to download the new key.
 
@@ -63,7 +67,7 @@ Additionally, solution integrators are also entitled to use [!DNL Commerce Servi
 
 1. Repeat the above steps for each environment (production and sandbox).
 
-   The **API Keys** section now displays your API (Public) keys. You need all four keys (both the production and sandbox keys, Public+Private) when you [select or create a SaaS project](#createsaasenv) in any of the environments/installations associated with the license.
+   The **API Keys** section now displays your API (Public) keys. You need all four keys (both the production and sandbox keys, Public+Private) when you [select or create a SaaS project](#createsaasenv) in any of the environments or installations associated with the license.
 
 ## SaaS configuration {#saasenv}
 
