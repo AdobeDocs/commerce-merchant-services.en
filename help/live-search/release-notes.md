@@ -18,6 +18,10 @@ Updates include:
 
 These notes describe updates that were published outside of a versioned release or improvements to the hosted service.
 
+_January 31, 2025_
+
+![New](../assets/new.svg) There is a new data retention policy for unqueried catalog data in your testing envionment. [Learn more](overview.md#catalog-data-retention-policy).
+
 _September 19, 2024_
 
 ![New](../assets/new.svg) Released a beta version that supports three new search capabilities: layered, starts with, and contains. [Learn more](install.md#install-the-live-search-beta).
@@ -43,7 +47,7 @@ _June 13, 2023_
 
 ![Fix](../assets/fix.svg) Fixed an issue where some characters such as quotes or apostrophes caused ranking issues. Reindexing solves these issues.
 
- _April 25, 2023_
+_April 25, 2023_
 
 ![New](../assets/new.svg) [!DNL Live Search] customers can now take advantage of the new [SaaS price indexer](../price-index/price-indexing.md).
 

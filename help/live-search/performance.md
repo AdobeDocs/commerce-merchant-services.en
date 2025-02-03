@@ -15,6 +15,10 @@ The *Performance* workspace provides insight into the search terms that shoppers
 
 You can also refer to the [Data Management Dashboard](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) for more data about data syncing.
 
+>[!NOTE]
+>
+>The performance workspace is updated every 12 hours.
+
 ## View a report
 
 1. To enter the **Date range**, click the calendar (![Calendar](assets/btn-calendar.png)) and do one of the following:
@@ -24,7 +28,7 @@ You can also refer to the [Data Management Dashboard](https://experienceleague.a
 
 >[!NOTE]
 >
->The performance workspace is updated every 12 hours.
+>The range of dates cannot exceed one year.
 
 ## Field descriptions
 
