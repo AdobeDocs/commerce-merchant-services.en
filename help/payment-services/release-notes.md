@@ -85,13 +85,23 @@ _June 28, 2021_
 
 +++
 
+## v2.10.1
+
+_February 5, 2025_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+![New](../assets/new.svg)<!-- PAY-5813 --> Added support for Adobe Commerce 2.4.8 and PHP 8.4.
+
 ## v2.10.0
 
 _December 13, 2024_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
-![New](../assets/new.svg)<!-- PAY-5702 --> [!DNL Payment Services] now supports GraphQL endpoints for vaulting without purchase, allowing customers to save their payment methods without completing a transaction.
+![New](../assets/new.svg)<!-- PAY-5873 --> [!DNL Payment Services] now supports a [[!DNL Payment Services] drop-in component](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/payment-services/) in the [Edge Delivery Services storefront for Adobe Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/).
+
+![New](../assets/new.svg)<!-- PAY-5702 --> [!DNL Payment Services] now supports [GraphQL endpoints for vaulting without purchase](https://developer.adobe.com/commerce/webapi/graphql/payment-services-extension/queries/get-vault-config/), allowing customers to save their payment methods without completing a transaction.
 
 ![New](../assets/fix.svg)<!-- PAY-5789 --> [!DNL Payment Services] now supports [3D Secure authentication with Google Pay](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/security-compliance/security#3ds), enhancing security for merchants and customers during payment transactions.
 
