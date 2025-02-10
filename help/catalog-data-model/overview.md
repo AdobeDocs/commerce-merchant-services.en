@@ -6,11 +6,25 @@ recommendations: noCatalog
 ---
 # [!DNL Composable Catalog Data Model]
 
-A product catalog is the backbone of online shopping experiences. They are essential for enabling customers to browse, search, and make purchases. To achieve operational efficiency, an ecommerce product catalog benefits from reflecting the company's business structure as closely as possible. Businesses need to sell different products at different prices depending on geographic market, distribution channel, customer segment, and other variables. To achieve this flexibility, an ecommerce platform must provide a flexible catalog data model that allows companies to produce variations of their product catalog that adapt to these scenarios. Adobe Commerce's Composable catalog data model (CCDM) helps to solve these friction points. CCDM is a collection of APIs that merchants can use to create and manage product catalogs for headless commerce implementations. This API-first approach allows businesses to set up catalogs that align with their business structure and go-to-market strategies.
+A product catalog is the backbone of online shopping experiences. Product catalogs enable customers to browse, search, and make purchases. To achieve operational efficiency, an ecommerce product catalog benefits from reflecting the company's business structure as closely as possible. Businesses need to sell different products at different prices depending on geographic market, distribution channel, customer segment, and other variables. To achieve this flexibility, an ecommerce platform must provide a flexible catalog data model that allows companies to produce variations of their product catalog that adapt to these scenarios. Adobe Commerce's Composable catalog data model (CCDM) helps to solve these friction points. CCDM is a collection of APIs that merchants can use to create and manage product catalogs for headless commerce implementations. This API-first approach allows businesses to set up catalogs that align with their business structure and go-to-market strategies.
 
->[!NOTE]
->
->To learn about the APIs that CCDM provides for creating and managing your commerce catalog, see the [developer documentation](https://developer-stage.adobe.com/commerce/services/composable-catalog/).
+## Architecture
+
+CCDM is a highly scalable and flexible catalog data model which unlocks multi-brand, multi-business unit, multi-language use cases with ease. The model replaces the use of the classic Adobe Commerce product scopes (website, store, storeview) with new CCDM product scopes (channel, policy, and scope (locale)).
+
+The following diagram displays a high-level view of the CCDM framework.
+
+![[!DNL Composable Catalog Data Model] Architecture](assets/ccdm-architecture.png)
+
+At the top of this diagram, catalog data (PIM, ERP, and so on) is ingested into the CCDM framework. This catalog data contains SKUs. Each SKU contains scope details (locale) and product attributes, which map to the new CCDM product scopes (channels, policies, and price books).
+
+When all this data is ingested into the CCDM framework, the result is a new base catalog that is available in the Catalog Service data pipeline. In the next part of the diagram, you see multiple channels. Each channel represents a business unit. For example, "Texas retail", "Texas retail seasonal", and so on. As you can see from the diagram, locales, policies, and price books can all be shared across channels.​
+
+Finally, the diagram shows how this distinct catalog data can be surfaced in various locations, such as in an Edge Delivery Services storefront, marketplace, advertisement channel, a custom micro-storefront, and so on.
+
+To learn how you can ingest your catalog data into CCDM using the catalog data ingestion API and how set up your locales, policies, and price books using the catalog management and rules API, see the [developer documentation](https://developer-stage.adobe.com/commerce/services/composable-catalog/).
+
+To learn more about the concepts that make up CCDM, see the following sections.
 
 ## Product catalog management
 
@@ -41,40 +55,6 @@ Product context management covers the following aspects:
   - Example: Point of sale physical stores, marketplaces, advertisement pipelines (Google, Facebook, Instagram)
 - **Scope** - Represents the language (locale), currency, and unit of measurement for catalogs. Scope is set at a SKU level during catalog data ingestion. The mandatory scope to be added is 'locale', however the scope is extensible and concepts such as 'markets' and 'brands' can also be added.
 
-## Key features
-
-|Key features|Benefit|
-|---|---|
-|**Direct catalog data ingestion into storefront services pipeline**: Ingest your catalog data directly into the catalog service pipeline for the storefront browse and search lifecycle (Product Display Page, Product List Page, Search Results Page, Categories, Breadcrumb, and so on.) and avoid the data ingestion into Adobe Commerce core.|- Avoid multiple time-consuming indexations of Adobe Commerce core and directly ingest data into the storefront service pipeline which powers: Catalog Service, Catalog Browse (Live Search) and Product Recommendations.<br>- Effortlessly decouple your backend commerce implementation to create modern, seamless storefront experiences.|
-|**New catalog product scopes**: Channel, policy, and scope are new product scopes introduced by CCDM. These product scopes replace the website, store, and storeview scopes in the storefront services layer. [Learn more](#channel-policy-and-scope).|- With the new scopes, CCDM unlocks the ability to scale to multi-geography, multi-business unit, multi-brand and multi-language use cases with ease using a single base catalog.<br>- Eliminate data redundancy in your catalog management.|
-|**Scale to tens of millions of SKUs**|- Support tens of millions of SKUs in your product catalog browse and discovery lifecycle with ease by leveraging the direct catalog data ingestion to storefront services pipeline. With CCDM, you are no longer bound by the catalog limits in the Adobe Commerce core admin.<br>- Decouple your experiences to support scale: (1) Direct storefront services pipeline data ingestion for large scale SKUs; (2) Ingest only your transactional SKUs to Adobe Commerce core admin.|
-|**Product type support**|- Simple, configurable<br>- Bundles and bundles of bundles (future roadmap)<br>- Subscriptions and plans (future roadmap)|
-|**Headless commerce**|- Full support for headless commerce implementations through Catalog Service, Catalog Browse (Live Search) and Product Recommendations APIs.|
-|**Modern lightning-fast UI components**|- Out of the box UI component support for product search and product recommendations.<br>- The UI components are extensible and flexible so that they can be used by both Adobe's Edge Delivery Service as well as any other storefront implementation.|
-
-## Overall benefits of [!DNL Composable Catalog Data Model]
-
-- Use a single base catalog for all your business needs. Scale your catalog quickly across new brands, markets, business-units, go-to-market channels, and customer segments without the need for complete re-architecture. This eliminates data duplication and sets up your ecommerce platform for high operational efficiency.
-- Deliver lightning-fast shopping experiences without the overhead of re-platforming your entire commerce system. Use CCDM for your storefront while using your existing commerce platform for your backend requirements.
-- Unlock catalog syndication and deliver the right content to the right destination by designing your product catalog to reflect how you do business including which products you sell, who you sell them to, what price they pay, and how you distribute these products. 
-- Quickly ingest and update catalog data and rapidly deliver the updates to the storefront for your promotions and campaign needs.
-- Add ready-to-use, lightning-fast UI components compatible with Edge Delivery Services for seamless product browsing and recommendations.
-- Adopt a modern composable architecture using Adobe's extensibility architecture ([App Builder](https://experienceleague.adobe.com/en/playlists/commerce-get-started-app-builder-development)) to import product data and power headless commerce storefronts using Adobe's [API Mesh](https://experienceleague.adobe.com/en/playlists/commerce-get-started-app-builder-and-api-mesh).
-
-## Architecture
-
-CCDM is a highly scalable and flexible catalog data model which unlocks multi-brand, multi-business unit, multi-language use cases with ease. The model replaces the use of the classic Adobe Commerce product scopes (website, store, storeview) with new CCDM product scopes (channel, policy, and scope (locale)).
-
-### Use cases
-
-|Merchant type|Use case|Problems solved|
-|---|---|---|
-|Multi-brand conglomerate|- They sell several brands<br>- They sell in several countries<br>- They sell in different languages|Classic Adobe Commerce scopes (website, store, and storeview) would lead to data explosion. One would need a website for each brand, country and language.|
-|Automobile/Manufacturing parts conglomerate| - Sells auto or machine parts. The products are the same for all customers.<br>- Different dealers sell parts to customers<br>- Each dealer has its own prices, stock and shipping methods|To have different shipping integrations, each dealer should have a separate website. But separate websites force the classic data model to duplicate catalogs.<br> So, if there are 3000 dealers in USA, a merchant creates 3000 catalog copies even though the same catalog is used by all dealers .<br> Data duplication interferes with performance limits.|
-|Packaging/logistics company|- They have several shipping locations<br>- They have a different price for each customer<br>- The same product available in 2 locations for 2 customers have 4 possible prices|Despite the use of customer groups to cover pricing per customer, the classic model does not have the scope to manage price per location.<br> The only option is to copy each product for each location which means it is not the same root product anymore.<br> Data duplication interferes with performance limits.|
-
-### Channel, Policy, and Scope
-
 During product data ingestion and update, a SKU contains the details of scopes and attributes (the attributes map to channels and policies). These define the product context identifiers to which a SKU belongs:
 
 ![[!DNL Composable Catalog Data Model] Product Context Identifiers](assets/ccdm-product-id.png)
@@ -96,18 +76,38 @@ The channel and policy definitions are created using dedicated APIs:
 - **Channel** - Definition created using dedicated APIs. ​
 - **Policy** - Definition created using dedicated APIs.
 
-## Overall commerce architecture – to be added 
+## Use cases
 
-With the above context, the full data model of CCDM can now be understood below:
+|Merchant type|Use case|Problems solved|
+|---|---|---|
+|Multi-brand conglomerate|- They sell several brands<br>- They sell in several countries<br>- They sell in different languages|Classic Adobe Commerce scopes (website, store, and storeview) would lead to data explosion. One would need a website for each brand, country and language.|
+|Automobile/Manufacturing parts conglomerate| - Sells auto or machine parts. The products are the same for all customers.<br>- Different dealers sell parts to customers<br>- Each dealer has its own prices, stock and shipping methods|To have different shipping integrations, each dealer should have a separate website. But separate websites force the classic data model to duplicate catalogs.<br> So, if there are 3000 dealers in USA, a merchant creates 3000 catalog copies even though the same catalog is used by all dealers .<br> Data duplication interferes with performance limits.|
+|Packaging/logistics company|- They have several shipping locations<br>- They have a different price for each customer<br>- The same product available in 2 locations for 2 customers have 4 possible prices|Despite the use of customer groups to cover pricing per customer, the classic model does not have the scope to manage price per location.<br> The only option is to copy each product for each location which means it is not the same root product anymore.<br> Data duplication interferes with performance limits.|
 
-??? Do we want to include the whole architecture diagram???
+## Key features
 
-The above architecture diagram sheds light on how ecommerce Catalog Administrators and Merchandisers can leverage the Composable Catalog Data Model to craft and manage an entire product portfolio which scales for multi-brand, multi-language, multi-business unit use cases with ease without introducing data duplication.
+|Key features|Benefit|
+|---|---|
+|**Direct catalog data ingestion into storefront services pipeline**: Ingest your catalog data directly into the catalog service pipeline for the storefront browse and search lifecycle (Product Display Page, Product List Page, Search Results Page, Categories, Breadcrumb, and so on.) and avoid the data ingestion into Adobe Commerce core.|- Avoid multiple time-consuming indexations of Adobe Commerce core and directly ingest data into the storefront service pipeline which powers: Catalog Service, Catalog Browse (Live Search) and Product Recommendations.<br>- Effortlessly decouple your backend commerce implementation to create modern, seamless storefront experiences.|
+|**New catalog product scopes**: Channel, policy, and scope are new product scopes introduced by CCDM. These product scopes replace the website, store, and storeview scopes in the storefront services layer. [Learn more](#channel-policy-and-scope).|- With the new scopes, CCDM unlocks the ability to scale to multi-geography, multi-business unit, multi-brand and multi-language use cases with ease using a single base catalog.<br>- Eliminate data redundancy in your catalog management.|
+|**Scale to tens of millions of SKUs**|- Support tens of millions of SKUs in your product catalog browse and discovery lifecycle with ease by leveraging the direct catalog data ingestion to storefront services pipeline. With CCDM, you are no longer bound by the catalog limits in the Adobe Commerce core admin.<br>- Decouple your experiences to support scale: (1) Direct storefront services pipeline data ingestion for large scale SKUs; (2) Ingest only your transactional SKUs to Adobe Commerce core admin.|
+|**Product type support**|- Simple, configurable<br>- Bundles and bundles of bundles (future roadmap)<br>- Subscriptions and plans (future roadmap)|
+|**Headless commerce**|- Full support for headless commerce implementations through Catalog Service, Catalog Browse (Live Search) and Product Recommendations APIs.|
+|**Modern lightning-fast UI components**|- Out of the box UI component support for product search and product recommendations.<br>- The UI components are extensible and flexible so that they can be used by both Adobe's Edge Delivery Service as well as any other storefront implementation.|
 
-### Use case
+## Overall benefits of [!DNL Composable Catalog Data Model]
 
-See the developer documentation for an end-to-end example that demonstrates how a company with a single base catalog can use CCDM to:
+- Use a single base catalog for all your business needs. Scale your catalog quickly across new brands, markets, business-units, go-to-market channels, and customer segments without the need for complete re-architecture. This eliminates data duplication and sets up your ecommerce platform for high operational efficiency.
+- Deliver lightning-fast shopping experiences without the overhead of re-platforming your entire commerce system. Use CCDM for your storefront while using your existing commerce platform for your backend requirements.
+- Unlock catalog syndication and deliver the right content to the right destination by designing your product catalog to reflect how you do business including which products you sell, who you sell them to, what price they pay, and how you distribute these products. 
+- Quickly ingest and update catalog data and rapidly deliver the updates to the storefront for your promotions and campaign needs.
+- Add ready-to-use, lightning-fast UI components compatible with Edge Delivery Services for seamless product browsing and recommendations.
+- Adopt a modern composable architecture using Adobe's extensibility architecture ([App Builder](https://experienceleague.adobe.com/en/playlists/commerce-get-started-app-builder-development)) to import product data and power headless commerce storefronts using Adobe's [API Mesh](https://experienceleague.adobe.com/en/playlists/commerce-get-started-app-builder-and-api-mesh).
 
-- Support products across two geographical markets and two different brands.
-- Attain operational efficiency by not duplicating their product catalog across different websites.
-- Limit product visibility on the websites based on the geographical market and the brand of the product.
+### Where to go from here
+
+- Ingest data into CCDM using the [data ingestion API](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/using-the-api/).
+- Manage your catalog and define the channels, policies, and scopes using the [catalog management and rules API](https://developer-stage.adobe.com/commerce/services/composable-catalog/admin/using-the-api/)
+- [Complete a tutorial](https://developer-stage.adobe.com/commerce/services/composable-catalog/ccdm-use-case/) that shows how a company with a single base catalog can use the CCDM APIs to add product data, define catalogs using projections, and retrieve the catalog data for display in a headless storefront.
+
+With your catalog data in CCDM, you can support your businesses need to sell different products at different prices depending on geographic market, distribution channel, customer segment, and other variables.
