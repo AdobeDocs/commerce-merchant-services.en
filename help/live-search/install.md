@@ -172,7 +172,7 @@ The Adobe Commerce API key and its associated private key are required to connec
 
 Learn how to configure your API keys in the [Commerce Services Connector](../landing/saas.md) article.
 
-## 3. Sync your catalog data {#synchronize-catalog-data}
+## 3. Sync your catalog data
 
 [!DNL Live Search] moves catalog data to Adobe's SaaS infrastructure. The data is indexed and search results are delivered from this index directly to the storefront. Depending on the size and complexity, indexing can take from 30 minutes to a couple of hours.
 
@@ -208,7 +208,7 @@ You can also run sync commands and troubleshoot the synchronization process usin
 
 After the initial synchronization, it can take up to 15 minutes for incremental product updates to become available to storefront search. To learn more, see [Streaming Product Updates](indexing.md) in the Indexing documentation.
 
-## 4. Verify that the data was exported {#verify-export}
+## 4. Verify that the data was exported
 
 To check if your catalog data has been exported from Adobe Commerce and synced with [!DNL Live Search], you have a few options:
 
@@ -259,7 +259,7 @@ When you change this configuration, the message `Page cache is invalidated` appe
 
 Products returned in [!DNL Live Search] must be assigned to a [category](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/categories). In Luma, for example, products are put into categories such as "Men", "Women", and "Gear". Subcategories are also set up for "Tops", "Bottoms", and "Watches". These category assignments improve granularity when filtering.
 
-## 6. Test the connection {#test-connection}
+## 6. Test the connection
 
 With your catalog data now in SaaS, test to make sure product data is returned in the following scenarios:
 
@@ -293,7 +293,7 @@ In this scenario, you can customize the JavaScript for your own needs and then h
 - [PLP widget repo](https://github.com/adobe/storefront-product-listing-page)
 - [Search bar repo](https://github.com/adobe/storefront-search-as-you-type)
 
-## Updating [!DNL Live Search] {#update}
+## Updating [!DNL Live Search]
 
 Before updating Live Search, run the following from the command line to check the version of Live Search that is installed:
 
@@ -339,11 +339,11 @@ To update to a major version such as from 3.1.1 to 4.0.0, edit the project's roo
    composer update magento/live-search --with-dependencies
    ```
 
-## Uninstalling [!DNL Live Search] {#uninstall}
+## Uninstalling [!DNL Live Search]
 
 To uninstall [!DNL Live Search], refer to [Uninstall modules](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/uninstall-modules).
 
-## [!DNL Live Search] packages {#packages}
+## [!DNL Live Search] packages
 
 The [!DNL Live Search] extension consists of the following packages:
 
@@ -353,7 +353,7 @@ The [!DNL Live Search] extension consists of the following packages:
 | `module-live-search-adapter` | Routes search requests from the storefront to the [!DNL Live Search] service and renders the results in the storefront. <br />- Category browse - Routes requests from the storefront [top navigation](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/navigation/navigation-top) to the search service.<br />- Global search - Routes requests from the [quick search](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) box in the upper-right of the storefront to the [!DNL Live Search] service. |
 | `module-live-search-storefront-popover` | A "search as you type" popover replaces the standard quick search and returns data and thumbnails of top search results. |
 
-## [!DNL Live Search] dependencies {#dependencies}
+## [!DNL Live Search] dependencies
 
 The [!DNL Composer] metapackage to install the [!DNL Live Search] extension includes the following module dependencies.
   

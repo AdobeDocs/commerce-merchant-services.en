@@ -61,7 +61,7 @@ See [Payments options](payments-options.md#paypal-smart-buttons) for more inform
 1. For **[!UICONTROL Show on checkout page]**, choose `Yes` to enable credit card fields on the checkout page.
 1. For **[!UICONTROL Vault Enabled]**, choose `Yes` to enable credit card vaulting for checkout.
 1. For **[!UICONTROL Vault Enabled in Admin]**, choose `Yes` to enable the merchant to create orders for customers using their vaulted credit card.
-1. To enable **[!UICONTROL 3DS Secure authentication]** (`Off` by default) choose `Always` or `When required`.
+1. To enable **[!UICONTROL 3D Secure authentication]** (`Off` by default) choose `Always` or `When required`.
 1. For **[!UICONTROL Debug Mode]**, choose `Yes` to enable debug mode, or `No` to disable it.
 1. Click **[!UICONTROL Save Config]** to save your changes.
 1. Navigate to **[!UICONTROL System]** > **[!UICONTROL Cache Management]**, and then click **[!UICONTROL Flush Cache]** to refresh all invalid caches.
@@ -76,7 +76,7 @@ See [Payments options](payments-options.md#paypal-smart-buttons) for more inform
 | [!UICONTROL Show on checkout page] | website | Enable or disable credit card fields on the checkout page. Options: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Vault enabled] | store view | Enable or disable [credit card vaulting](vaulting.md). Options: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Vault enabled in Admin] | store view | Enable or disable ability for [merchant to complete orders for customers in the Admin](vaulting.md) using a vaulted payment method. Options: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL 3DS Secure authentication] | website | Enable or disable [3DS Secure authentication](security.md#3ds). Options: [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
+| [!UICONTROL 3D Secure authentication] | website | Enable or disable [3DS Secure authentication](security.md#3ds). Options: [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
 | [!UICONTROL Debug Mode] | website | Enable or disable Debug Mode. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 
 ## [!UICONTROL Apple Pay]
@@ -130,6 +130,7 @@ See [Payments options](payments-options.md#google-pay-button) for more informati
     * **[!UICONTROL Show Google Pay on product detail page]**
     * **[!UICONTROL Show Google Pay in mini cart preview]**
     * **[!UICONTROL Show Google Pay on cart page]**
+1. To enable **[!UICONTROL 3D Secure authentication]** (`Off` by default) choose `Always` or `When required`.
 1. To enable debug mode, select `Yes` for the **[!UICONTROL Debug Mode]** (`No` disables it).
 1. Configure the appearance of the _[!UICONTROL Google Pay]_ button by selecting the **[!UICONTROL Button Color]**, **[!UICONTROL Button Type]**, and **[!UICONTROL Button Style]** as needed.
 1. To set the height, uses the default value for height defined in **[!UICONTROL Button Style]**.
@@ -147,6 +148,7 @@ See [Payments options](payments-options.md#google-pay-button) for more informati
 | [!UICONTROL Show buttons on product detail page] | store view | Enable or disable [!DNL Google Pay] on the product detail page. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Show buttons in mini-cart preview] | store view | Enable or disable [!DNL Google Pay] in the mini-cart preview. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Show buttons on cart page] | store view | Enable or disable [!DNL Google Pay] on the cart page. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL 3D Secure authentication] | store view | Enable or disable [3D Secure authentication](security.md#3ds). Options: [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
 | [!UICONTROL Debug Mode] | website | Enable or disable Debug Mode. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Button Color] | Store View | Define color of the [!DNL Google Pay] button. Options: `[!UICONTROL Default]` / `[!UICONTROL Black]` / `[!UICONTROL White]` |
 | [!UICONTROL Button Type] | Store View | Define type of the [!DNL Google Pay] button. Options: `[!UICONTROL buy]` / `[!UICONTROL checkout]` / `[!UICONTROL order]` / `[!UICONTROL pay]` / `[!UICONTROL plain]` |
@@ -188,7 +190,7 @@ You can enable and configure the PayPal payment buttons payment options within t
 | Field | Scope | Description |
 |---|---|---|
 | [!UICONTROL Title] | store view | Add the text to be displayed as the title for this payment option in the Payment Method view during checkout. Options: text field |
-| [!UICONTROL Payment Action] | website | The [payment action](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} for the specified payment method. Options: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | website | The [payment action](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/payment-methods/payment-methods#payment-actions){target="_blank"} for the specified payment method. Options: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Display Pay Later Message] | website | Enable or disable the Pay Later messaging in the shopping cart, product page, mini-cart, and during the checkout flow. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Show buttons on checkout page] | store view | Enable or disable [!DNL PayPal payment buttons] on the checkout page. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Show buttons on product detail page] | store view | Enable or disable [!DNL PayPal payment buttons] on the product detail page. Options: `[!UICONTROL Yes]` / `[!UICONTROL No]` |

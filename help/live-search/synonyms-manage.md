@@ -27,8 +27,6 @@ To make it easy to find a synonym, you can filter the list by type and search by
    The keyword is the first term in the list, and each term is separated by a comma. The keyword and expansion terms can be updated, but the type of the synonym cannot be changed.
 1. Click the item you want to edit. Then, update the text as needed.
 
-   ![edit two-way synonym](assets/synonym-two-way-edit.png)
-
 1. When complete, click **Save**.
 
 ## Delete synonym

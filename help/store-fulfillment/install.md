@@ -30,17 +30,17 @@ composer require walmart/magento-bopis-metapackage:1.0.0
 
 - **Access to the Store Fulfillment by Walmart Commerce Technologies software archive (.zip file)**—During the onboarding and enablement process, work with your Account Manager to get access to the installation file for the Store Fulfillment extension.
 
-- **Adobe Commerce account information**-Installing the [!DNL Store Fulfillment] solution requires a [[!DNL Commerce] account](https://docs.magento.com/user-guide/magento/magento-account.html){target="_blank"}. You need an account ID and credentials with Owner or Admin access to the [!DNL Adobe Commerce] project.
+- **Adobe Commerce account information**-Installing the [!DNL Store Fulfillment] solution requires a [[!DNL Commerce] account](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-create){target="_blank"}. You need an account ID and credentials with Owner or Admin access to the [!DNL Adobe Commerce] project.
 
-- For [!DNL Adobe Commerce] on cloud infrastructure projects, software installers must have administrator access to the Cloud project. See [Manage user access](https://devdocs.magento.com/cloud/project/user-admin.html).
+- For [!DNL Adobe Commerce] on cloud infrastructure projects, software installers must have administrator access to the Cloud project. See [Manage user access](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/project/user-access).
 
-- **Experience using Composer and the [!DNL Commerce CLI]**—See [General CLI Installation](https://devdocs.magento.com/extensions/install/){target="_blank"} for information about using these tools to install and manage extensions on the [!DNL Adobe Commerce] platform.
+- **Experience using Composer and the [!DNL Commerce CLI]**—See [General CLI Installation](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions){target="_blank"} for information about using these tools to install and manage extensions on the [!DNL Adobe Commerce] platform.
 
 - **Experience installing third-party extensions on Adobe Commerce**—For reference, see the Adobe Commerce documentation.
 
-  - [Install an extension for an Adobe Commerce on cloud infrastructure instance](https://devdocs.magento.com/cloud/howtos/install-components.html#install-an-extension).
+  - [Install an extension for an Adobe Commerce on cloud infrastructure instance](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions#install-an-extension).
 
-  - [Install an extension for an Adobe Commerce on-premises instance](https://devdocs.magento.com/extensions/install/).
+  - [Install an extension for an Adobe Commerce on-premises instance](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions).
 
 ### Step 1: Download the extension bundle
 
@@ -129,7 +129,7 @@ From the Adobe Commerce server, verify that the modules for the Store Fulfillmen
 
 1. Log in to the server.
 
-   For installations on Adobe Commerce on cloud infrastructure, [use SSH to log in to the remote environment](https://devdocs.magento.com/cloud/env/environments-ssh.html#ssh).
+   For installations on Adobe Commerce on cloud infrastructure, [use SSH to log in to the remote environment](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections#ssh).
 
 1. Verify that the Store Fulfillment Services modules are enabled.
 
@@ -183,7 +183,7 @@ From the Adobe Commerce server, verify that the modules for the Store Fulfillmen
 
 ### Additional Steps
 
-If needed, use the [setup:static-content:deploy](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html){target="_blank"} CLI command to deploy static view files to your production environment.
+If needed, use the [setup:static-content:deploy](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises){target="_blank"} CLI command to deploy static view files to your production environment.
 
 ```bash
 php bin/magento setup:static-content:deploy -f

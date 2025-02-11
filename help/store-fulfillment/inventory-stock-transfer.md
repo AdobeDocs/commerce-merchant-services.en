@@ -17,27 +17,27 @@ The [!DNL Store Fulfillment] solution uses native Adobe Commerce Inventory Manag
 
 These configuration changes help you accomplish three things:
 
-1. [Transfer inventory to source](https://docs.magento.com/user-guide/catalog/inventory-bulk-transfer-inventory.html) to move inventory from the default stock/source to the new stock/source.
+1. [Transfer inventory to source](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/quantities/inventory-transfer) to move inventory from the default stock/source to the new stock/source.
 
-1.  [Bulk assign sources](https://docs.magento.com/user-guide/catalog/inventory-bulk-assign-sources.html) to add the new sources for all your products.
+1.  [Bulk assign sources](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/quantities/bulk-assignment) to add the new sources for all your products.
 
-1.  [Complete bulk updates for product attributes](https://docs.magento.com/user-guide/stores/bulk-product-attribute-update.html) to add the `Allow Store Pickup` and `Allow Home Delivery` attributes to existing products. When the solution is installed, the attributes have the optimal *default* values. However, these attributes are not applied to existing products until you complete the bulk updaContes process.
+1.  [Complete bulk updates for product attributes](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/bulk-product-attribute-update) to add the `Allow Store Pickup` and `Allow Home Delivery` attributes to existing products. When the solution is installed, the attributes have the optimal *default* values. However, these attributes are not applied to existing products until you complete the bulk updaContes process.
 
-Inventory is deducted from the selected source (retail store location or ecommerce warehouse). Sources used as ecommerce warehouses must be assigned to the same stock as the store pickup location and prioritized before the retail locations. For additional information, see [Prioritizing Sources for a Stock](https://docs.magento.com/user-guide/catalog/inventory-stock-priority.html).
+Inventory is deducted from the selected source (retail store location or ecommerce warehouse). Sources used as ecommerce warehouses must be assigned to the same stock as the store pickup location and prioritized before the retail locations. For additional information, see [Prioritizing Sources for a Stock](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-prioritize-sources).
 
 For more information on managing inventory, stocks, and sources, see the Adobe Commerce user documentation:
 
-- [Managing Inventory](https://docs.magento.com/user-guide/catalog/inventory-management.html)
+- [Managing Inventory](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction)
 
-- [Managing Inventory Quantities](https://docs.magento.com/user-guide/catalog/inventory-manage-inventory-quantities.html)
+- [Managing Inventory Quantities](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/quantities/quantities-manage)
 
-- [Managing Stock](https://docs.magento.com/user-guide/catalog/inventory-stock.html)
+- [Managing Stock](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-manage)
 
-- [Managing Sources](https://docs.magento.com/user-guide/catalog/inventory-sources.html)
+- [Managing Sources](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/sources/sources-manage)
 
-- [Prioritizing Sources for a Stock](https://docs.magento.com/user-guide/catalog/inventory-stock-priority.html)
+- [Prioritizing Sources for a Stock](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-prioritize-sources)
 
-- [Bulk Updates for Product Attributes](https://docs.magento.com/user-guide/stores/bulk-product-attribute-update.html)
+- [Bulk Updates for Product Attributes](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/bulk-product-attribute-update)
 
 
 >[!IMPORTANT]

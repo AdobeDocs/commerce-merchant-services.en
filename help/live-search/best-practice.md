@@ -101,6 +101,14 @@ Learn how to [manage search redirects](https://experienceleague.adobe.com/en/doc
 
 This section discusses how to improve search result relevance by implementing effective search rules and using product metadata to ensure accurate and detailed attributes are searchable.
 
+### Images
+
+Make sure that configurable products' child products have images with the correct roles. Having parent or child products might result in the search result not having images.
+
+>[!NOTE]
+>
+>Images in search results might be different depending on the search term. If the search term determines that a child product is more relevant, images from the child product will be used instead of images from the parent product.
+
 ### Search rules
 
 To optimize your conversion rate and revenue, you must implement effective search rules. Adjust product rankings based on sales data, stock levels, and promotions with [Search Merchandising](rules.md).
@@ -132,7 +140,7 @@ Learn more about search rules:
 
 ### Leverage Product Metadata
 
-Ensure that accurate and detailed product attributes are [set up as searchable](workspace.md#set-attributes-as-searchable). Note that SKU, name, and category attributes are searchable by default and cannot be excluded from search. 
+Ensure that accurate and detailed product attributes are [set up as searchable](workspace.md#set-attributes-as-searchable). Note that SKU, name, and category attributes are searchable by default and cannot be excluded from search. For best results, do not use spaces in your SKUs.
 
 To increase search relevance, assign a weight to each searchable attribute. Attributes with a higher weight should appear higher within the search results. Sorting by relevance is affected by multiple criteria, such as search weight. This means that sometimes attributes with lower search weight can still have more relevance than attributes with higher search weight. Other criteria can include the number of matches in any given attribute, position of found search term, and overall text structure before and after a search term.
 

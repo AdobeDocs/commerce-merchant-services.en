@@ -52,9 +52,11 @@ Customers can use [[!DNL Apple Pay]](https://www.apple.com/apple-pay/), which us
 
 The [!DNL Apple Pay] button is visible from the product page, mini-cart, shopping cart, and checkout views.
 
+To use [!DNL Apple Pay] for your stores, complete [self-registration with [!DNL Apple Pay]](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) (_Register your live domain_ section only) and [configure it for your stores in [!DNL Payment Services]](settings.md#payment-buttons).
+
    >[!NOTE]
    >
-   > To use [!DNL Apple Pay] for your stores, complete [self-registration with [!DNL Apple Pay]](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) (_Register your live domain_ section only) and [configure it for your stores in [!DNL Payment Services]](settings.md#payment-buttons).
+   > See [advanced checkout](https://www.paypal.com/us/cshelp/article/what-is-paypal-advanced-checkout-and-how-do-i-get-started-help953){target=_blank} in the PayPal developer documentation to check how to enable enable buyers to pay with Apple Pay on your site.
 
 You can configure [!UICONTROL Apple Pay] in the store configuration or the Payment Services Home. See [Settings](settings.md#apple-pay) for more information.
 

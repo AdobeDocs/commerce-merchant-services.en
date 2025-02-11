@@ -13,7 +13,7 @@ With [!DNL Live Search], you can:
 - Create meaningful search experiences to help shoppers and buyers find what they want with as little effort as possible.
 - Take advantage of AI-powered dynamic faceting and re-ranking of search results in response to in-session shopper behaviors.
 - Use a lightweight SaaS-based service that offers easy updates and is included in your license, reducing the total cost of ownership.
-- Get technical by enabling graphQL API, headless flexibility, API sandbox environments, and ultra fast SaaS.
+- Get technical by enabling GraphQL API, headless flexibility, API sandbox environments, and ultra fast SaaS.
 
 >[!IMPORTANT]
 >
@@ -68,8 +68,8 @@ Merchandising [rules](rules.md) shape the shopping experience with if-then state
 ## Live Search components
 
 - [!DNL Live Search] [popover widget](storefront-popover.md) is the box that opens under the search field that contains the search results.
-- [Product Listing Page widget](plp-styling.md) (PLP) provides a searchable product listing page with facets and synonym support. The widget is installed and enabled in Live Search 4.0.0+.
-- (**Deprecated**) Search adapter was the precursor to the PLP widget and was installed with Live Search < 4.0.0. If you are using a version of Live Search earlier than 4.0.0, Commerce recommends you upgrade to receive the benefits of the PLP widget features and future improvements.
+- [Product Listing Page widget](plp-styling.md) (PLP) provides a searchable product listing page with facets and synonym support. The widget is installed and enabled in Live Search 4.0.0+ and replaces the Search Adapter.
+- (**Deprecated**) Search Adapter was the precursor to the PLP widget and was installed with Live Search < 4.0.0. If you are using a version of Live Search earlier than 4.0.0, Commerce recommends you upgrade to receive the benefits of the PLP widget features and future improvements. Going forward, the Search Adapter will only be updated to address security issues.
 
 ## [!DNL Live Search] workspace
 
@@ -78,3 +78,9 @@ The [!DNL Live Search] [workspace](workspace.md) is the area in the Admin where 
 ## Events
 
 [!DNL Live Search] uses [events](events.md) to calculate [Intelligent Merchandising](category-merch.md) and [performance](performance.md) dashboards. Eventing is provided with default implementations. Eventing for headless storefronts should be manually enabled.
+
+## Catalog data retention policy
+
+If you do not submit a search query for the catalog data in your testing environment for 90 consecutive days, the catalog data is set to hibernation mode and no data is returned for any search query. Catalog data in your production environment is not affected by this policy.
+
+To re-activate the catalog data in your testing environment, [submit a support request](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page)  with the title: "Reactivate [!DNL Live Search]" and include the environment IDs. The catalog data in your testing environment should be restored within couple of hours.

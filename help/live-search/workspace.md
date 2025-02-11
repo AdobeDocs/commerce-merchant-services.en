@@ -22,6 +22,10 @@ If you are using a headless storefront, refer to the following documentation to 
 - [Storefront events collector](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/) that needs to be added as a prerequisite.
 - [Examples](https://github.com/adobe/commerce-events/tree/main/examples) of the events structure.
 
+### Healthcare customers
+
+If you are a healthcare customer and you installed the [Data Services HIPAA extension](../data-connection/hipaa-readiness.md#installation), which is part of the [Data Connection](../data-connection/overview.md) extension, storefront event data that is used by [!DNL Live Search] is no longer captured. This is because storefront event data is generated client-side. To continue capturing and sending storefront event data, re-enable event collection for [!DNL Live Search]. See [general configuration](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/general.html#data-services) to learn more.
+
 ## Set the scope
 
 Initially the [scope](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) of all [!DNL Live Search] settings is set to `Default Store View`. If your [!DNL Commerce] installation includes multiple store views, set **Scope** to the [store view](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) where your facet settings apply.
@@ -35,7 +39,7 @@ Initially the [scope](https://experienceleague.adobe.com/docs/commerce-admin/sta
 | [Synonyms](synonyms.md) | Extend the reach of search to include words shoppers might use to find products that differ from those in your catalog. |
 | [Search Merchandising](rules.md) | Shape the search experience with logical rules that trigger scheduled actions. Boost, bury, pin, or hide products to calibrate search results to support your business goals. |
 | [Category Merchandising](category-merch.md) | Apply rules and Intelligent Merchandising on the Category level. |
-| [GraphQL](graphql.md) | Developers who are logged into the Admin of your store can compose and test queries with actual catalog data. To learn more, go to [GraphQL Overview](https://developer.adobe.com/commerce/webapi/graphql/) in the [!DNL Live Search] developer documentation. |
+| [GraphQL](graphql.md) | Developers who are logged into the Admin of your store can compose and test queries with actual catalog data. To learn more, go to [GraphQL Overview](https://developer.adobe.com/commerce/services/graphql/live-search/) in the [!DNL Live Search] developer documentation. |
 | [Settings](settings.md) | Determine how price facet values are grouped by price range in the storefront and set the indexing language. |
 
 ## Set attributes as searchable

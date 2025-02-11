@@ -18,7 +18,7 @@ To learn about the data used in [!DNL Payment Services] reporting, See [Order pa
 
 ### Configure cron on [!DNL Magento Open Source]
 
-If you want to use a `BY SCHEDULE` index mode on [!DNL Magento Open Source], you must configure cron. See [Configure and run cron](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html).
+If you want to use a `BY SCHEDULE` index mode on [!DNL Magento Open Source], you must configure cron. See [Configure and run cron](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs).
 
 ### Set indexers
 
@@ -42,13 +42,13 @@ bin/magento indexer:set-mode schedule sales_order_data_exporter sales_order_stat
 >
 >If you don't specify any indexers in your command, all indexers are updated to the same value. If you want to change a specific indexer, you must list it in your command.
 
-To learn more about manually changing the mode of an indexer, see [Configure indexers](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#configure-indexers){target="_blank"} in the developer documentation. To learn how to change it in the Admin, see [Index management](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode){target="_blank"} in the core user guide.
+To learn more about manually changing the mode of an indexer, see [Configure indexers](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers#configure-indexers){target="_blank"} in the developer documentation. To learn how to change it in the Admin, see [Index management](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management#change-the-index-mode){target="_blank"} in the core user guide.
 
 ### Manually reindex data
 
-You can manually reindex data, instead of waiting for it to happen automatically. See [Reindex](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#reindex){target="_blank"} in [Manage the Indexers](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html){target="_blank"} for more information.
+You can manually reindex data, instead of waiting for it to happen automatically. See [Reindex](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers#reindex){target="_blank"} in [Manage the Indexers](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers){target="_blank"} for more information.
 
-When `BY SCHEDULE` mode is set, the system tracks changed entities and the cron job updates the index for them based on a set schedule. See [Run cron from the command line](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html#config-cli-cron-group-run) in [Configure and run cron](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html)) to learn how to manually trigger indexation using cron jobs.
+When `BY SCHEDULE` mode is set, the system tracks changed entities and the cron job updates the index for them based on a set schedule. See [Run cron from the command line](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs#config-cli-cron-group-run) in [Configure and run cron](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs)) to learn how to manually trigger indexation using cron jobs.
 
 ### Send reindexed data to payment service
 
@@ -82,7 +82,7 @@ All data needed for the reports is sent to [!DNL Payment Services] automatically
 bin/magento cron:run --group payment_services_data_export
 ```
 
-To learn more about reindexing and indexers, see the [Manage the indexers](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html) topic in the developer documentation.
+To learn more about reindexing and indexers, see the [Manage the indexers](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) topic in the developer documentation.
 
 ## Configure L2/L3 processing
 

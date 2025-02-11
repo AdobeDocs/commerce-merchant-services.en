@@ -64,7 +64,7 @@ Product filters specify which specific products are eligible, or not eligible, t
 
 ### Type
 
-A filter based on product type either includes or excludes all products of a specific type. Supported types include _Simple_, _Configurable_, _Virtual_, _Downloadable_, or _Gift card_. _Bundle_ and _Grouped_ products are not yet supported.
+A filter based on product type either includes or excludes all products of a specific type. Supported types include _simple_, _configurable_, _virtual_, _downloadable_, or _gift card_. _Bundle_, _grouped_, and custom product types are not supported.
 
 ### Visibility
 

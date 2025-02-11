@@ -13,13 +13,13 @@ Security is of the utmost concern in [!DNL Payment Services] and no private or P
 
 [!DNL Adobe Commerce] and [!DNL Magento Open Source] include support for several security features.
 
-See [Security](https://docs.magento.com/user-guide/stores/security.html){target="_blank"} in the core user guide to review security best practices, and learn how to manage Admin sessions and credentials, implement CAPTCHA, and manage website restrictions.
+See [Security](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security){target="_blank"} in the core user guide to review security best practices, and learn how to manage Admin sessions and credentials, implement CAPTCHA, and manage website restrictions.
 
 ## PCI compliance
 
 The Payment Card Industry (PCI) established a set of requirements for businesses that accept payment by credit card over the Internet. In addition to maintaining a secure environment, merchants who handle customer credit card information are responsible for meeting some standard guidelines.
 
-See [PCI Compliance Guidelines](https://docs.magento.com/user-guide/stores/compliance-pci.html){target="_blank"} for more information.
+See [PCI Compliance Guidelines](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/payments/compliance-pci){target="_blank"} for more information.
 
 Merchants can complete a [self-assessment questionnaire (SAQ)](https://www.pcisecuritystandards.org/pci_security/completing_self_assessment){target="_blank"}, which is a self-validation tool to assess security for cardholder data.
 
@@ -35,13 +35,16 @@ PCI 3-D Secure (3DS) enables buyer authentication with their credit card issuer 
 
 If you are a merchant within the EU or Britain where 3DS compliance is required, you must manually turn on 3DS (it is `Off` by default) in [Settings](settings.md#credit-card-fields).
 
-   >[!NOTE]
+   >[!IMPORTANT]
    >
    >The 3DS requirement applies to transactions where the business and cardholder's bank are located in the [European Economic Area](https://www.efta.int/eea) (EEA) and Britain. United States merchants do not require 3DS, but can enable it for their transactions if desired.
 
 Orders placed for the buyer by the merchant/store personnel are not configured with 3DS compliance measures.
 
-See [3DS in Settings](settings.md#3ds) for more information.
+>[!MORELIKETHIS]
+>
+> * See [3DS in settings](settings.md#3ds) for more information.
+> * See [test cards](https://developer.paypal.com/docs/checkout/advanced/customize/3d-secure/test/) in the PayPal developer documentation for more information on specific credit cards for 3DS testing.
 
 ### Card vaulting
 
@@ -59,7 +62,9 @@ PayPal also has integrated fraud protection that uses machine learning to help y
 
 ## Fraud protection
 
-You can enable automated fraud protection for Payment Services with the [Signifyd extension](https://commercemarketplace.adobe.com/signifyd-module-connect.html).
+You can enable automated fraud protection for Payment Services with the [Signifyd extension](https://commercemarketplace.adobe.com/signifyd-module-connect.html). See [Signifyd fraud protection](fraud-protection.md) for more information.
 
-See [Signifyd fraud protection](fraud-protection.md) for more information.
+PayPal provides other options for [fraud protection](https://www.paypal.com/us/cshelp/article/what-is-fraud-protection-help1014){target=_blank} in their developer documentation:
 
+* See [Fraud protection advanced](https://www.paypal.com/us/enterprise/fraud-protection-advanced#fraud-protection-advanced){target=_blank} for more information.
+* See [Chargeback protection](https://www.paypal.com/us/cshelp/article/what-is-chargeback-protection-help608){target=_blank} for more information.

@@ -18,6 +18,10 @@ Updates include:
 
 These notes describe updates that were published outside of a versioned release or improvements to the hosted service.
 
+_January 31, 2025_
+
+![New](../assets/new.svg) There is a new data retention policy for unqueried catalog data in your testing envionment. [Learn more](overview.md#catalog-data-retention-policy).
+
 _September 19, 2024_
 
 ![New](../assets/new.svg) Released a beta version that supports three new search capabilities: layered, starts with, and contains. [Learn more](install.md#install-the-live-search-beta).
@@ -43,7 +47,7 @@ _June 13, 2023_
 
 ![Fix](../assets/fix.svg) Fixed an issue where some characters such as quotes or apostrophes caused ranking issues. Reindexing solves these issues.
 
- _April 25, 2023_
+_April 25, 2023_
 
 ![New](../assets/new.svg) [!DNL Live Search] customers can now take advantage of the new [SaaS price indexer](../price-index/price-indexing.md).
 
@@ -59,6 +63,14 @@ _May 31, 2024_
 _October 27, 2023_
 
 ![New](../assets/new.svg) The [!DNL Live Search] PLP widget now supports color swatches.
+
+## [!DNL Live Search] 4.2.2 {#422}
+
+_January 6, 2025_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+![Fix](../assets/fix.svg) Fixed an issue that was causing an error with the `categoryList` GraphqL query on Adobe Commerce version 2.4.5 and earlier.
 
 ## [!DNL Live Search] 4.2.1 {#421}
 
@@ -131,6 +143,7 @@ _Feb 22, 2024_
 ### Updates
 
 ![Fix](../assets/fix.svg) The [!DNL Live Search] PLP widget is now enabled by default for new installations.
+![Fix](../assets/fix.svg) The Search Adapter is deprecated. Going forward, the Search Adapter will only be updated to address security issues.
 ![Fix](../assets/fix.svg) Reconfigured CSS styles to better isolate widget classes.
 ![Fix](../assets/fix.svg) Minor bug fixes
 
@@ -312,8 +325,8 @@ Existing [!DNL Live Search] installations must be upgraded to [!DNL Live Search]
 
 [!BADGE Supported]{type="Informative" tooltip="Supported"} Adobe Commerce versions 2.4.x and newer
 
-![Fix](../assets/fix.svg) [Custom price attribute](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types) no longer returns an error when configured as a [facet]({% link live-search/facets-add.md %}).
-![Fix](../assets/fix.svg) Fixed issue that caused an error to occur when no [currency symbol](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration(optional)) (`data-currency-symbol`) is available.
+![Fix](../assets/fix.svg) [Custom price attribute](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types) no longer returns an error when configured as a [facet](facets-add.md).
+![Fix](../assets/fix.svg) Fixed issue that caused an error to occur when no [currency symbol](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration#step-5-customize-currency-symbols-optional) (`data-currency-symbol`) is available.
 ![Fix](../assets/fix.svg) [[!DNL Storefront popover]](storefront-popover.md) now shows the [Special Price](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-special) (minimum final price) when available.
 
 ### [!DNL Live Search] 1.3.0 {#130}

@@ -36,9 +36,9 @@ You can install the [!DNL Payment Services] extension for both [!DNL Adobe Comme
 
 Composer uses these keys during the initial installation of [!DNL Adobe Commerce], or in situations in which the Composer keys were not previously saved to the `auth.json` file.
 
-See [Get your authentication keys](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) for more information about obtaining Composer keys.
+See [Get your authentication keys](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) for more information about obtaining Composer keys.
 
-See [Install an extension](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/extensions.html) for more information about what to consider before downloading and installing an extension.
+See [Install an extension](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions) for more information about what to consider before downloading and installing an extension.
 
 ### [!DNL Adobe Commerce] on cloud infrastructure
 
@@ -149,7 +149,7 @@ To see which Composer keys are configured:
    cat /path/to/auth.json
    ```
 
-1. See [which keys are associated with your Commerce account `MageID`](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html).
+1. See [which keys are associated with your Commerce account `MageID`](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys).
 
 ### Not enough memory for PHP
 
@@ -159,7 +159,7 @@ If you see the following error denoting you do not have enough memory for PHP:
 Fatal error: Allowed memory size of 2146435072 bytes exhausted (tried to allocate 4096 bytes) in phar:///usr/local/bin/composer/src/Composer/DependencyResolver/RuleWatchGraph.php on line 52
 ```
 
-[Increase the memory limit](https://devdocs.magento.com/cloud/project/magento-app-php-ini.html#increase-php-memory-limit) for PHP on your environment in `php.ini`.
+[Increase the memory limit](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/php-settings#increase-php-memory-limit) for PHP on your environment in `php.ini`.
 
 Alternatively, you can specify the memory limit using this command: `php -d memory_limit=-1 [path to composer]/composer require magento/payment-services`.
 

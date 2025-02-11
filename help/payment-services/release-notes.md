@@ -85,6 +85,52 @@ _June 28, 2021_
 
 +++
 
+## v2.10.1
+
+_February 5, 2025_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+![New](../assets/new.svg)<!-- PAY-5813 --> Added support for Adobe Commerce 2.4.8 and PHP 8.4.
+
+## v2.10.0
+
+_December 13, 2024_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+![New](../assets/new.svg)<!-- PAY-5873 --> [!DNL Payment Services] now supports a [[!DNL Payment Services] drop-in component](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/payment-services/) in the [Edge Delivery Services storefront for Adobe Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/).
+
+![New](../assets/new.svg)<!-- PAY-5702 --> [!DNL Payment Services] now supports [GraphQL endpoints for vaulting without purchase](https://developer.adobe.com/commerce/webapi/graphql/payment-services-extension/queries/get-vault-config/), allowing customers to save their payment methods without completing a transaction.
+
+![New](../assets/fix.svg)<!-- PAY-5789 --> [!DNL Payment Services] now supports [3D Secure authentication with Google Pay](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/security-compliance/security#3ds), enhancing security for merchants and customers during payment transactions.
+
+![Fix](../assets/fix.svg)<!-- PAY-5703 --> [!DNL Payment Services] adds the ability for [customers to save cards directly in their **My Account**](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting), improving convenience and simplifying future checkouts. `Vault without purchase functionality might not be 100% compatible with Adobe Commerce 2.4.4 due to a known issue with` [`GraphQL authorization mechanisms`](https://developer.adobe.com/commerce/webapi/graphql/usage/authorization-tokens/).
+
+![Fix](../assets/fix.svg)<!-- PAY-5762 --> Fixed an issue where coupon codes were not applied on the order review page when the order was initiated from the product detail page (PDP).
+
+![Fix](../assets/fix.svg)<!-- PAY-5792 --> [!DNL Payment Services] now displays descriptions and billing addresses for [vaulted cards on the checkout page](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting), giving customers more visibility into their saved payment methods.
+
+![Fix](../assets/fix.svg)<!-- PAY-5793 --> [!DNL Payment Services] enables merchants to store the billing address for vaulted cards directly from the checkout page, ensuring accurate and complete payment information.
+
+## v2.9.0
+
+_November 7, 2024_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+![New](../assets/new.svg)<!-- PAY-5629 --> [!DNL Payment Services] now supports an **upgraded SDK URL for Apple Pay**, improving the integration for merchants using Apple Pay. This feature is compatible with macOS 14 and later, devices running earlier versions of macOS will not display this functionality.
+
+![New](../assets/new.svg)<!-- PAY-5630 --> Updated the **Checkout**, **Product**, **Cart**, and **MiniCart** pages to support the **upgraded SDK URL for Apple Pay**, enhancing the user experience for merchants who offer Apple Pay as a payment option.
+
+![New](../assets/new.svg)<!-- PAY-5635 --> Improved shipping estimates **based on Apple Pay address**, allowing customers to view accurate shipping costs during checkout.
+
+![Fix](../assets/fix.svg)<!-- PAY-5661 --> Fixed various **[!DNL Payment Services] issues at checkout**, improving the reliability of the payment process for merchants and shoppers.
+
+![Fix](../assets/fix.svg)<!-- PAY-5692 --> Fixed an issue where the **customer's first and last names** were not added to the order when using **smart buttons for express checkout**.
+
+![Fix](../assets/fix.svg)<!-- PAY-5712 --> Resolved an issue where merchants were **unable to complete checkout using the Zero Subtotal Checkout payment option** when the total amount was free.
+
 ## v2.8.1
 
 _September 13, 2024_
@@ -385,7 +431,7 @@ _August 9, 2022_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.0 and newer
 
-![New](../assets/new.svg)<!-- Issue PAY-XX --> General availability release---[!DNL Payment Services] is now [supported by [!DNL Adobe Commerce] and [!DNL Magento Open Source] versions 2.4.0 to 2.4.5](https://devdocs.magento.com/release/availability.html#compatibility).
+![New](../assets/new.svg)<!-- Issue PAY-XX --> General availability release---[!DNL Payment Services] is now [supported by [!DNL Adobe Commerce] and [!DNL Magento Open Source] versions 2.4.0 to 2.4.5](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability).
 
 ![Fixed issue](../assets/fix.svg)<!-- Issue PAY-x --> Apple Pay is now compatible with the Safari browser v15.5 on mobile and desktop.
 
@@ -413,7 +459,7 @@ _March 31, 2022_
 
 [!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.0 and newer
 
-![New](../assets/new.svg)<!-- Issue PAY-2127 --> General availability release---[!DNL Payment Services] is now [supported by [!DNL Adobe Commerce] and [!DNL Magento Open Source] versions 2.4.0 to 2.4.4](https://devdocs.magento.com/release/availability.html#compatibility).
+![New](../assets/new.svg)<!-- Issue PAY-2127 --> General availability release---[!DNL Payment Services] is now [supported by [!DNL Adobe Commerce] and [!DNL Magento Open Source] versions 2.4.0 to 2.4.4](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability).
 
 ![New](../assets/new.svg)<!-- Issue PAY-2682 --> The [!DNL Payment Services] extension for [!DNL Adobe Commerce] and [!DNL Magento Open Source] is now available for Canadian merchants. Merchants can view payments configuration in either [French](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html?lang=fr#carte-de-cr%C3%A9dit-et-devises-accept%C3%A9es) or [English](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html#accepted-credit-cards-and-currencies).
 
@@ -457,7 +503,7 @@ _November 29, 2021_
 
 ![New](../assets/new.svg)<!-- Issue PAY-1443 --> You can easily [customize the look and feel](payments-options.md) of PayPal payment buttons and credit card fields for the [!DNL Payment Services] extension.
 
-![Known issue](../assets/bug.svg)<!-- Issue PAY-2473 --> Using [incorrect Composer keys](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html) during installation of the extension prevents the user from [authenticating](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) with the correct `MAGEID`.
+![Known issue](../assets/bug.svg)<!-- Issue PAY-2473 --> Using [incorrect Composer keys](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html) during installation of the extension prevents the user from [authenticating](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) with the correct `MAGEID`.
 
 ![Known issue](../assets/bug.svg)<!-- Issue PAY-2474 --> [!DNL Payment Services] reports [may not synchronize immediately](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-report-info-delayed.html).
 

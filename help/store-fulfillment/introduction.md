@@ -30,7 +30,7 @@ The Store Fulfillment solution supports and enhances native Adobe Commerce capab
 
 * Supports most product types–simple, configurable, grouped, bundled, and virtual
 
-* Integrates with [[!DNL Adobe Commerce] Inventory Management](https://docs.magento.com/user-guide/catalog/inventory-learn-more.html)
+* Integrates with [[!DNL Adobe Commerce] Inventory Management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/basics/sources-stocks)
 
 * Integrates with point of sale (POS) merchant inventory management systems like ERP, OMS, and WMS
 
