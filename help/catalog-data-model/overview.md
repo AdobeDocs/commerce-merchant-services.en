@@ -6,11 +6,11 @@ recommendations: noCatalog
 ---
 # [!DNL Composable Catalog Data Model]
 
-A product catalog is the backbone of online shopping experiences. Product catalogs enable customers to browse, search, and make purchases. To achieve operational efficiency, an ecommerce product catalog benefits from reflecting the company's business structure as closely as possible. Businesses need to sell different products at different prices depending on geographic market, distribution channel, customer segment, and other variables. To achieve this flexibility, an ecommerce platform must provide a flexible catalog data model that allows companies to produce variations of their product catalog that adapt to these scenarios. Adobe Commerce's Composable catalog data model (CCDM) helps to solve these friction points. CCDM is a collection of APIs that merchants can use to create and manage product catalogs for headless commerce implementations. This API-first approach allows businesses to set up catalogs that align with their business structure and go-to-market strategies.
+A product catalog is essential for online shopping experiences, enabling customers to browse, search, and make purchases. For operational efficiency, a product catalog should closely mirror the company's business structure. Businesses often need to sell products at varying prices based on geographic market, distribution channel, customer segment, and other variables. To accommodate this, an ecommerce platform must offer a flexible catalog data model that allows companies to produce variations of their catalog tailored to these scenarios. Adobe Commerce's composable catalog data model (CCDM) addresses these needs. CCDM is a set of APIs that merchants can use to create and manage catalogs for headless commerce implementations. This API-first approach enables businesses to configure catalogs that align with their business structure and go-to-market strategies.
 
 ## Architecture
 
-CCDM is a highly scalable and flexible catalog data model which unlocks multi-brand, multi-business unit, multi-language use cases with ease. The model replaces the use of the classic Adobe Commerce product scopes (website, store, storeview) with new CCDM product scopes (channel, policy, and scope (locale)).
+CCDM is a highly scalable, flexible catalog data model which unlocks multi-brand, multi-business unit, multi-language use cases with ease. The model replaces the use of the classic Adobe Commerce product scopes (website, store, storeview) with new CCDM product scopes (channel, policy, and scope (locale)).
 
 The following diagram displays a high-level view of the CCDM framework.
 
@@ -18,9 +18,9 @@ The following diagram displays a high-level view of the CCDM framework.
 
 At the top of this diagram, catalog data (PIM, ERP, and so on) is ingested into the CCDM framework. This catalog data contains SKUs. Each SKU contains scope details (locale) and product attributes, which map to the new CCDM product scopes (channels, policies, and price books).
 
-When all this data is ingested into the CCDM framework, the result is a new base catalog that is available in the Catalog Service data pipeline. In the next part of the diagram, you see multiple channels. Each channel represents a business unit. For example, "Texas retail", "Texas retail seasonal", and so on. As you can see from the diagram, locales, policies, and price books can all be shared across channels.​
+When all this data is ingested into the CCDM framework, the result is a new base catalog that is available in the Catalog Service data pipeline. In the next part of the diagram, you see multiple channels. Each channel represents a business unit. For example, *Texas retail*, *Texas retail seasonal*, and so on. As you can see from the diagram, locales, policies, and price books can all be shared across channels.​
 
-Finally, the diagram shows how this distinct catalog data can be surfaced in various locations, such as in an Edge Delivery Services storefront, marketplace, advertisement channel, a custom micro-storefront, and so on.
+Finally, the diagram shows how this distinct catalog data can be surfaced in various locations, such as an Edge Delivery Services storefront, a marketplace, an advertisement channel, a custom micro-storefront, and so on.
 
 To learn how you can ingest your catalog data into CCDM using the catalog data ingestion API and how set up your locales, policies, and price books using the catalog management and rules API, see the [developer documentation](https://developer-stage.adobe.com/commerce/services/composable-catalog/).
 
@@ -39,9 +39,9 @@ Product catalog management encompasses two distinct aspects: product data and pr
 
 Product data includes the following types:
 
-- **Products** - Individual SKUs or collections of SKUs that represent physical goods or intangible services. Products can be grouped into various product types such as simple, configurable, bundle, bundle of bundles, subscriptions, and more.
-- **Attributes** - Meta data associated with products including description, weight, dimensions, and more.
-- **Prices** - Amounts for which a product is sold. Prices for the same product can differ based on other variables such as channel, currency, quantity, and more. Prices can be listed in price books for specific channels, customers, or geographies.
+- **Products** - Individual SKUs or collections of SKUs that represent physical goods or intangible services with attributes that represent the product including description, weight, size, dimensions, and more. Attributes also specify the channel and policy scopes for a SKU. Products can be grouped into various product types such as simple, configurable, bundle, bundle of bundles, subscriptions, and more.
+- **Metadata** - Product attribute metadata defines and manages how product attribute are displayed on the storefront in product listings, detail pages, search results, and so on. Metadata also defines how product attributes are used in search—sorting, filtering, search weights, and so on.
+- **Price books and prices** - Determines the selling prices of products. Price books define and manage unique scopes—specific channels, customers, or geographies that can be used to manage price discounts across customer tiers. Prices define the regular and discounted price for a product SKU in the scope of each price book.
 - **Assets** - Artifacts associated with products, such as images, videos, PDFs or other file types.
 - **Stock** - Represents the available inventory of product that can be sold to customers. Stock can be a combination of sources from multiple warehouses.
 
@@ -59,7 +59,7 @@ During product data ingestion and update, a SKU contains the details of scopes a
 
 ![[!DNL Composable Catalog Data Model] Product Context Identifiers](assets/ccdm-product-id.png)
 
-In the above image, each SKU contains:
+In the above image, each SKU provides:
 
 - Scope identifiers​
     - Locale: Mandatory​
