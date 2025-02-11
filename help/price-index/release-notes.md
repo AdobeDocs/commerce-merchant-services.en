@@ -23,6 +23,10 @@ Updates include:
 
 ## Current major version
 
+## 1.0.9 Release
+
+![Fix](../assets/fix.svg) Added compatibility for PHP 8.4. <!--MDEE-941-->
+
 ## 1.0.8 Release
 
-![Fix](../assets/fix.svg) Fixed an issue that caused an error in the exception log when adding configurable product variants with numeric SKUs to the wishlist. <!-MDEE-876-->
+![Fix](../assets/fix.svg) Fixed an issue that caused an error in the exception log when adding configurable product variants with numeric SKUs to the wishlist. <!--MDEE-876-->
