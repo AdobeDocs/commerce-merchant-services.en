@@ -109,5 +109,3 @@ The channel and policy definitions are created using dedicated APIs:
 - Ingest data into CCDM using the [data ingestion API](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/using-the-api/).
 - Manage your catalog and define the channels, policies, and scopes using the [catalog management and rules API](https://developer-stage.adobe.com/commerce/services/composable-catalog/admin/using-the-api/)
 - [Complete a tutorial](https://developer-stage.adobe.com/commerce/services/composable-catalog/ccdm-use-case/) that shows how a company with a single base catalog can use the CCDM APIs to add product data, define catalogs using projections, and retrieve the catalog data for display in a headless storefront.
-
-With your catalog data in CCDM, you can support your businesses need to sell different products at different prices depending on geographic market, distribution channel, customer segment, and other variables.
