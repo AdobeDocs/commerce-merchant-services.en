@@ -1,12 +1,12 @@
 ---
 title: '[!DNL Composable Catalog Data Model]'
-description: 'Learn how the [!DNL Composable catalog data model] for Adobe Commerce helps you setup your catalog to match your business model and go-to-market strategy'
+description: 'Learn how the [!DNL Composable Catalog Data Model] for Adobe Commerce helps you setup your catalog to match your business model and go-to-market strategy'
 hidefromtoc: yes
 recommendations: noCatalog
 ---
 # [!DNL Composable Catalog Data Model]
 
-A product catalog is essential for online shopping experiences, enabling customers to browse, search, and make purchases. For operational efficiency, a product catalog should closely mirror the company's business structure. Businesses often need to sell products at varying prices based on geographic market, distribution channel, customer segment, and other variables. To accommodate this, an ecommerce platform must offer a flexible catalog data model that allows companies to produce variations of their catalog tailored to these scenarios. Adobe Commerce's composable catalog data model (CCDM) addresses these needs. CCDM is a set of APIs that merchants can use to create and manage catalogs for headless commerce implementations. This API-first approach enables businesses to configure catalogs that align with their business structure and go-to-market strategies.
+A product catalog is essential for online shopping experiences, enabling customers to browse, search, and make purchases. For operational efficiency, a product catalog should closely mirror the company's business structure. Businesses often need to sell products at varying prices based on geographic market, distribution channel, customer segment, and other variables. To accommodate this, an ecommerce platform must offer a flexible catalog data model that allows companies to produce variations of their catalog tailored to these scenarios. Adobe Commerce's Composable Catalog Data Model (CCDM) addresses these needs. CCDM is a set of APIs that merchants can use to create and manage catalogs for headless commerce implementations. This API-first approach enables businesses to configure catalogs that align with their business structure and go-to-market strategies.
 
 ## Architecture
 
