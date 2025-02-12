@@ -83,7 +83,7 @@ Product context management covers the following aspects:
   - Example: Dealers for the automobile industry. Subsidiaries for multi-brand conglomerates. Manufacturing location for suppliers.
 - **Policy** - Data access filter which empowers you to deliver the right content to the right destination. This concept enables catalog syndication capabilities.
   - Example: Point of sale physical stores, marketplaces, advertisement pipelines (Google, Facebook, Instagram)
-- **Scope** - Represents the language (locale), currency, and unit of measurement for catalogs. Scope is set at a SKU level during catalog data ingestion. The mandatory scope to be added is 'locale', however the scope is extensible and concepts such as 'markets' and 'brands' can also be added.
+- **Scope** - Represents the language (locale), currency, and unit of measurement for catalogs. Scope is set at a SKU level during catalog data ingestion.
 
 During product data ingestion and update, a SKU contains the details of scopes and attributes (the attributes map to channels and policies). These define the product context identifiers to which a SKU belongs:
 
