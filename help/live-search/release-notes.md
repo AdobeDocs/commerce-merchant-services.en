@@ -64,6 +64,14 @@ _October 27, 2023_
 
 ![New](../assets/new.svg) The [!DNL Live Search] PLP widget now supports color swatches.
 
+## [!DNL Live Search] 4.2.3 {#422}
+
+_February 13, 2025_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+![Fix](../assets/fix.svg) Fixed an issue where the order detail page was missing the order number, date, and the **[!UICONTROL Reorder]** button.
+
 ## [!DNL Live Search] 4.2.2 {#422}
 
 _January 6, 2025_
