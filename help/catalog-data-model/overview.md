@@ -97,6 +97,9 @@ In the above image, each SKU provides:
 - Product attributes
     - Product attributes are used to map to the relevant channels and policies​
     - Example: As an automobile manufacturer, you can choose to create a channel and policy combination for product attributes: (1) Dealers (2) Car brands.​
+- Prices and assigned price books
+   - Each SKU has a pricing structure that specifies the regular price and any available discounts based on customer segment.
+   - Example: You offer employees a reduced regular price on auto parts with an additional discount of 25%. You offer VIP customers a higher regular price with a discount of 10%. The product SKU price information ensures that the right price is displayed for each customer segment.
 
 The channel and policy definitions are created using dedicated APIs:
 
