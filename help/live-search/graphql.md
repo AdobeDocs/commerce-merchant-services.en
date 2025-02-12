@@ -9,5 +9,5 @@ The *GraphQL* workspace allows administrators to build and test GraphQL queries 
 
 This workspace supports the [`productSearch`](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/) and [`attributeMetadata`](https://developer.adobe.com/commerce/services/graphql/live-search/attribute-metadata/) queries.
 
-![GraphQL workspace](https://git.corp.adobe.com/storage/user/38345/files/ef99a7bd-1102-4e5b-9d05-ecf0524e303c){width="700" zoomable="yes"}
+![GraphQL workspace](assets/graphql.png){width="700" zoomable="yes"}
 
