@@ -39,7 +39,7 @@ The following table highlights common challenges merchants encounter and how CCD
 
 ## Architecture
 
-CCDM is a highly scalable, flexible catalog data model which unlocks multi-brand, multi-business unit, multi-language use cases with ease. The model replaces the use of the classic Adobe Commerce product scopes (website, store, storeview) with new CCDM product scopes (channel, policy, and scope (locale)).
+CCDM is a highly scalable, flexible catalog data model which unlocks multi-brand, multi-business unit, multi-language use cases with ease. The model replaces the use of the classic Adobe Commerce product scopes (website, store, storeview) with new CCDM product scopes (channel, policy, and locale).
 
 The following diagram provides a high-level view of the CCDM framework.
 
