@@ -64,7 +64,15 @@ _October 27, 2023_
 
 ![New](../assets/new.svg) The [!DNL Live Search] PLP widget now supports color swatches.
 
-## [!DNL Live Search] 4.2.2 {#422}
+## [!DNL Live Search] 4.2.3
+
+_February 13, 2025_
+
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+
+![Fix](../assets/fix.svg) Fixed an issue where the order detail page was missing the order number, date, and the **[!UICONTROL Reorder]** button.
+
+## [!DNL Live Search] 4.2.2
 
 _January 6, 2025_
 
@@ -72,7 +80,7 @@ _January 6, 2025_
 
 ![Fix](../assets/fix.svg) Fixed an issue that was causing an error with the `categoryList` GraphqL query on Adobe Commerce version 2.4.5 and earlier.
 
-## [!DNL Live Search] 4.2.1 {#421}
+## [!DNL Live Search] 4.2.1
 
 _July 31, 2024_
 
@@ -81,7 +89,7 @@ _July 31, 2024_
 ![Fix](../assets/fix.svg) Fixed an issue where certain scripts were not loading on the checkout page.
 ![Fix](../assets/fix.svg) Fixed a dependency version in the `composer.json` file.
 
-## [!DNL Live Search] 4.2.0 {#420}
+## [!DNL Live Search] 4.2.0
 
 _May 31, 2024_
 
@@ -89,7 +97,7 @@ _May 31, 2024_
 
 ![New](../assets/new.svg) Updated Live Search extension to use PLP widgets version 2.0.0.
 
-## [!DNL Live Search] 4.1.2 {#412}
+## [!DNL Live Search] 4.1.2
 
 _May 16, 2024_
 
@@ -99,7 +107,7 @@ _May 16, 2024_
 
 ![Fix](../assets/fix.svg) Fixed the [`productSearch`](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering-by-categories) GraphQL query to correctly filter based on the `categoryPath` and `categoryList` for categories.
 
-## [!DNL Live Search] 4.1.1 {#411}
+## [!DNL Live Search] 4.1.1
 
 _Mar 19, 2024_
 
@@ -110,7 +118,7 @@ _Mar 19, 2024_
 ![New](../assets/new.svg) Added language support for Polish.
 ![New](../assets/new.svg) [!DNL Live Search] now supports PHP 8.3 for installations running Adobe Commerce 2.4.4.
 
-## [!DNL Live Search] 4.1.0 {#410}
+## [!DNL Live Search] 4.1.0
 
 _Feb 22, 2024_
 
@@ -126,7 +134,7 @@ _Feb 22, 2024_
 ![Fix](../assets/fix.svg) Fixed an issue that caused the search popover to always display the currency symbol in front of the price value regardless of locale settings.
 ![Fix](../assets/fix.svg) Removed unnecessary type definitions for disabled core plugins to fix compatibility issues on installation.
 
-## [!DNL Live Search] 4.0.0 {#400}
+## [!DNL Live Search] 4.0.0
 
  _Nov 13, 2023_
 
@@ -159,7 +167,7 @@ After upgrading, test the updated configuration in QA or Staging before pushing 
 
 +++3.1.1 and prior
 
-## [!DNL Live Search] 3.1.1 {#311}
+## [!DNL Live Search] 3.1.1
 
  _Sept 15, 2023_
 
@@ -188,7 +196,7 @@ After upgrading, test the updated configuration in QA or Staging before pushing 
 ![Fix](../assets/fix.svg) 'Ranking Type' has been renamed to 'Intelligent ranking'
 ![Fix](../assets/fix.svg) Minor bug fixes
 
-## [!DNL Live Search] 3.1.0 {#310}
+## [!DNL Live Search] 3.1.0
 
  _Sept 1, 2023_
 
@@ -198,7 +206,7 @@ After upgrading, test the updated configuration in QA or Staging before pushing 
 
 ![Fix](../assets/fix.svg) The Product Listing widget has been updated to use the [Catalog Service API](https://developer.adobe.com/commerce/services/graphql/catalog-service/product-search/).
 
-## [!DNL Live Search] 3.0.2 {#302}
+## [!DNL Live Search] 3.0.2
 
  _August 7, 2023_
 
@@ -227,7 +235,7 @@ It is recommended to upgrade and test before pushing to production. Consider upg
 
 Using the Live Search Product Listing Page widget causes Google Tag Manager to fail. Use the default Search Adapter if Google Tag Manager is needed.
 
-## [!DNL Live Search] 3.0.1 {#301}
+## [!DNL Live Search] 3.0.1
 
  _March 14, 2023_
 
@@ -272,7 +280,7 @@ Merchants must upgrade the [!DNL Live Search] extension version >= 3.0.1 to acce
 
 It is recommended to upgrade and test before pushing to production. Consider upgrading the production environment during off-peak hours after verifying their testing environment results.
 
-## [!DNL Live Search] 2.0.5 {#205}
+## [!DNL Live Search] 2.0.5
 
 [!BADGE Supported]{type="Informative" tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
@@ -282,7 +290,7 @@ Merchants must upgrade the Live Search extension version >= 2.0.5 to access thes
 
 It is recommended to upgrade and test before pushing to production. Consider upgrading the production environment during off-peak hours after verifying their testing environment results.
 
-### [!DNL Live Search] 2.0.4 {#204}
+### [!DNL Live Search] 2.0.4
 
 [!BADGE Supported]{type="Informative" tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
@@ -296,7 +304,7 @@ Merchants must upgrade the [!DNL Live Search] extension version >= 2.0.4 to acce
 
 Users are advised to upgrade and test before pushing to production. Consider upgrading the production environment during off-peak hours after verifying their testing environment results.
 
-### [!DNL Live Search] 2.0.3 {#203}
+### [!DNL Live Search] 2.0.3
 
 [!BADGE Supported]{type="Informative" tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
@@ -306,7 +314,7 @@ Merchants must upgrade the [!DNL Live Search] extension version >= 2.0.3 to acce
 
 Users are advised to upgrade and test before pushing to production. Consider upgrading the production environment during off-peak hours after verifying their testing environment results.
 
-### [!DNL Live Search] 2.0 {#20}
+### [!DNL Live Search] 2.0
 
 [!BADGE Supported]{type="Informative" tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
@@ -321,7 +329,7 @@ Existing [!DNL Live Search] installations must be upgraded to [!DNL Live Search]
 ![Bug](../assets/bug.svg) The following product attributes are not supported by [Commerce GraphQL API](https://developer.adobe.com/commerce/services/graphql/live-search/) when used in relation to the beta release of PWA: `description`, `name`, `short_description`
 ![Bug](../assets/bug.svg) The beta release of PWA for [!DNL Live Search] does not support [event handling](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/).
 
-### [!DNL Live Search] 1.3.1 {#131}
+### [!DNL Live Search] 1.3.1
 
 [!BADGE Supported]{type="Informative" tooltip="Supported"} Adobe Commerce versions 2.4.x and newer
 
@@ -329,7 +337,7 @@ Existing [!DNL Live Search] installations must be upgraded to [!DNL Live Search]
 ![Fix](../assets/fix.svg) Fixed issue that caused an error to occur when no [currency symbol](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration#step-5-customize-currency-symbols-optional) (`data-currency-symbol`) is available.
 ![Fix](../assets/fix.svg) [[!DNL Storefront popover]](storefront-popover.md) now shows the [Special Price](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-special) (minimum final price) when available.
 
-### [!DNL Live Search] 1.3.0 {#130}
+### [!DNL Live Search] 1.3.0
 
 [!BADGE Supported]{type="Informative" tooltip="Supported"} Adobe Commerce versions 2.4.x and newer
 
@@ -340,7 +348,7 @@ Existing [!DNL Live Search] installations must be upgraded to [!DNL Live Search]
 ![Bug](../assets/bug.svg) Patch for Search adapter handles duplicate products.
 ![Bug](../assets/bug.svg) [!DNL Live Search] supports [single-source](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/sources/sources-manage) (physical) inventory locations with multiple (virtual) [stocks](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-manage). Multiple inventory sources are not supported now.
 
-### [!DNL Live Search] 1.2.0 {#120}
+### [!DNL Live Search] 1.2.0
 
 [!BADGE Supported]{type="Informative" tooltip="Supported"} Adobe Commerce versions 2.4.x and newer
 
@@ -353,7 +361,7 @@ Existing [!DNL Live Search] installations must be upgraded to [!DNL Live Search]
 ![Fix](../assets/fix.svg) [!DNL Live Search] no longer throws an error if search criteria contains empty sort order value
 ![Fix](../assets/fix.svg) Range filtering no longer breaks if attribute codes contain strings "to" or "from"
 
-### [!DNL Live Search] 1.1.0 {#110}
+### [!DNL Live Search] 1.1.0
 
 [!BADGE Supported]{type="Informative" tooltip="Supported"} Adobe Commerce versions 2.4.x and newer
 
