@@ -45,7 +45,7 @@ The following diagram provides a high-level view of the CCDM framework.
 
 ![[!DNL Composable Catalog Data Model] Architecture](assets/ccdm-architecture.png)
 
-At the top of this diagram, catalog data (PIM, ERP, and so on) is ingested into the CCDM framework. This catalog data contains SKUs. Each SKU contains scope details (locale) and product attributes, which map to the new CCDM product scopes (channels, policies, and price books).
+At the top of this diagram, catalog data (PIM, ERP, and so on) is ingested into the CCDM framework. This catalog data contains SKUs. Each SKU contains scope details (locale) and product attributes, which map to the new CCDM product scopes (channels, policies, and locale).
 
 When all this data is ingested into the CCDM framework, the result is a new unified base catalog that is available in the Catalog Service data pipeline. In the next part of the diagram, you see multiple channels. Each channel represents a business unit. For example, *Texas retail*, *Texas retail seasonal*, and so on. As you can see from the diagram, locales, policies, and price books can all be shared across channels.​
 
