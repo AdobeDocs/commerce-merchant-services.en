@@ -22,6 +22,14 @@ Updates include:
 
 ## Current major version
 
+## 103.3.19 Release
+
+![Fix](../assets/fix.svg) Multiple changes to improve feeds extensibility <!--MDEE-936-->
+- Allow to disable specific field for feed.
+- Check indexer status before resync to prevent accidental data loss in feed table.
+- Filter by already deleted entities when select IDs that should be marked for deletion.
+- Pass metadata to IndexStateProvider for extensibility purpose.
+
 ## 103.3.18 Release
 
 ![Fix](../assets/fix.svg) Staging updates for product and category entities are now triggered correctly on Data Export data updates.<!--MDEE-963-->
