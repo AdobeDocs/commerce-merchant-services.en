@@ -24,7 +24,7 @@ At a high level, with CCDM you can:
 |**New catalog product scopes**: Channel, policy, and scope are new product scopes introduced by CCDM. These product scopes replace the website, store, and storeview scopes in the storefront services layer. [Learn more](#channel-policy-and-scope).|<ul><li>With the new scopes, CCDM unlocks the ability to scale to multi-geography, multi-business unit, multi-brand and multi-language use cases with ease using a single base catalog.</li><li>Eliminate data redundancy in your catalog management.</li></ul>|
 |**Scale to tens of millions of SKUs**|Unlock catalog management at scale. Here you can ingest and manage over 200MM SKUs with ease.|
 |**Product type support**|<ul><li>Simple, configurable</li><li>Bundles and bundles of bundles (future roadmap)</li><li>Subscriptions and plans (future roadmap)</li></ul>|
-|**Headless commerce**|<ul><li>Full support for headless commerce implementations through Catalog Service, Catalog Browse (Live Search) and Product Recommendations APIs.</li></ul>|
+|**Headless commerce**|<ul><li>Full support for headless commerce implementations through Catalog Service, Product Discovery (Live Search) and Product Recommendations APIs.</li></ul>|
 |**Modern lightning-fast UI components**|<ul><li>Out of the box UI component support for product search and product recommendations.</li><li>The UI components are extensible and flexible so that they can be used by both Adobe's Edge Delivery Service as well as any other storefront implementation.</li></ul>|
 
 ## What type of merchant benefits the most from CCDM?
