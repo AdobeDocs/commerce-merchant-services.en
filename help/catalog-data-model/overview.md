@@ -55,7 +55,6 @@ Product data includes the following types:
 - **Metadata** - Product attribute metadata defines and manages how product attributes are displayed on the storefront in product listings, detail pages, search results, and so on. Metadata also defines how product attributes are used in search—sorting, filtering, search weights, and so on.
 - **Price books and prices** - Determines the selling prices of products. In CCDM, a product SKU and price are decoupled, hence you are empowered to define multiple price books for a single SKU. By decoupling the prices from the SKU, you can unlock scope-specific prices across different customers tiers, business units, and geographies. You can define regular and discounted prices and manage all of this at scale.
 - **Assets** - Artifacts associated with products, such as images, videos, PDFs or other file types (future roadmap).
-- **Stock** - Represents the available inventory of product that can be sold to customers. Stock can be a combination of sources from multiple warehouses.
 
 ### Product context management
 
@@ -65,7 +64,7 @@ Product context management covers the following aspects:
   - Example: Dealers for the automobile industry. Subsidiaries for multi-brand conglomerates. Manufacturing location for suppliers.
 - **Policy** - Data access filter which empowers you to deliver the right content to the right destination. This concept enables catalog syndication capabilities.
   - Example: Point of sale physical stores, marketplaces, advertisement pipelines (Google, Facebook, Instagram)
-- **Scope** - Represents the language (locale), currency, and unit of measurement for catalogs. Scope is set at a SKU level during catalog data ingestion.
+- **Scope** - Represents the language (locale) for catalogs, for example `en-US`. Scope is set at a SKU level during catalog data ingestion.
 
 During product data ingestion and update, a SKU contains the details of scopes and attributes (the attributes map to channels and policies). These define the product context identifiers to which a SKU belongs:
 
