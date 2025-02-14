@@ -16,26 +16,9 @@ At a high level, with CCDM you can:
 - Accomplish perfect lighthouse scores with ready-to-use, lightning-fast UI components powered by Edge Delivery Services for seamless product browsing and recommendations.
 - Adopt a modern composable architecture using Adobe's extensibility architecture ([App Builder](https://experienceleague.adobe.com/en/playlists/commerce-get-started-app-builder-development)) to import product data and power headless commerce storefronts using Adobe's [API Mesh](https://experienceleague.adobe.com/en/playlists/commerce-get-started-app-builder-and-api-mesh).
 
-## Key features
-
-|Key features|Benefit|
-|---|---|
-|**Direct catalog data ingestion into storefront services pipeline**: Ingest your catalog data directly into the catalog service pipeline for the storefront browse and search lifecycle (Product Display Page, Product List Page, Search Results Page, Categories, Breadcrumb, and so on.)|<ul><li>Directly ingest catalog data into the storefront service pipeline which powers: Catalog Service, Product Discovery (Live Search), and Product Recommendations. With this, you can deliver catalog updates at scale for millions of SKUs. This unlocks time sensitive large scale promotion management. </li></ul>|
-|**New catalog product scopes**: Channel, policy, and scope are new product scopes introduced by CCDM. These product scopes replace the website, store, and storeview scopes in the storefront services layer. [Learn more](#channel-policy-and-scope).|<ul><li>With the new scopes, CCDM unlocks the ability to scale to multi-geography, multi-business unit, multi-brand and multi-language use cases with ease using a single base catalog.</li><li>Eliminate data redundancy in your catalog management.</li></ul>|
-|**Scale to tens of millions of SKUs**|Unlock catalog management at scale. Here you can ingest and manage over 200MM SKUs with ease.|
-|**Product type support**|<ul><li>Simple, configurable</li><li>Bundles and bundles of bundles (future roadmap)</li><li>Subscriptions and plans (future roadmap)</li></ul>|
-|**Headless commerce**|<ul><li>Full support for headless commerce implementations through Catalog Service, Product Discovery (Live Search) and Product Recommendations APIs.</li></ul>|
-|**Modern lightning-fast UI components**|<ul><li>Out of the box UI component support for product search and product recommendations.</li><li>The UI components are extensible and flexible so that they can be used by both Adobe's Edge Delivery Service as well as any other storefront implementation.</li></ul>|
-
-## What type of merchant benefits the most from CCDM?
-
-The following table highlights common challenges merchants encounter and how CCDM addresses them.
-
-|Merchant type|Use case|Problems solved|
-|---|---|---|
-|Multi-brand conglomerate|<ul><li>They sell several brands</li><li>They sell in several countries</li><li>They sell in different languages</li></ul>|Use a single base unified catalog and achieve operational efficiency while expanding to several brands, geographies and languages.|
-|Automobile/Manufacturing parts conglomerate|<ul><li>Sells auto or machine parts. The products are the same for all customers.</li><li>Different dealers sell parts to customers</li><li>Each dealer has its own prices, stock and shipping methods</li></ul>|To have different shipping integrations, each dealer should have a separate website. But separate websites force the typical catalog data model to duplicate the data. So, if there are 3000 dealers in USA, a merchant creates 3000 catalog copies even though the same catalog is used by all dealers. This data duplication interferes with performance limits. CCDM eliminates data duplication.|
-|Packaging/logistics company|<ul><li>They have several shipping locations</li><li>They have a different price for each customer</li><li>The same product available in 2 locations for 2 customers have 4 possible prices</li></ul>|Despite the use of customer groups to cover pricing per customer, the typical catalog data model does not have the capability to manage price per location. Additionally, merchants want unique visibility rules per location/website. Management of such complex price and visibility rules can be unlocked at scale with CCDM. |
+>[!INFO]
+>
+>To learn about the APIs available in CCDM, see the [developer documentation](https://developer-stage.adobe.com/commerce/services/composable-catalog).
 
 ## Architecture
 
@@ -107,8 +90,29 @@ The channel and policy definitions are created using dedicated APIs:
 - **Channel** - Definition created using dedicated APIs. ​
 - **Policy** - Definition created using dedicated APIs.
 
+## Key features
+
+|Key features|Benefit|
+|---|---|
+|**Direct catalog data ingestion into storefront services pipeline**: Ingest your catalog data directly into the catalog service pipeline for the storefront browse and search lifecycle (Product Display Page, Product List Page, Search Results Page, and so on.)|<ul><li>Directly ingest catalog data into the storefront service pipeline which powers: Catalog Service, Product Discovery (Live Search), and Product Recommendations. With this, you can deliver catalog updates at scale for millions of SKUs. This unlocks time sensitive large scale promotion management. </li></ul>|
+|**New catalog product scopes**: Channel, policy, and scope are new product scopes introduced by CCDM. These product scopes replace the website, store, and storeview scopes in the storefront services layer. [Learn more](#product-context-management).|<ul><li>With the new scopes, CCDM unlocks the ability to scale to multi-geography, multi-business unit, multi-brand and multi-language use cases with ease using a single base catalog.</li><li>Eliminate data redundancy in your catalog management.</li></ul>|
+|**Scale to tens of millions of SKUs**|Unlock catalog management at scale. Here you can ingest and manage over 200MM SKUs with ease.|
+|**Product type support**|<ul><li>Simple, configurable</li><li>Bundles and bundles of bundles (future roadmap)</li><li>Subscriptions and plans (future roadmap)</li></ul>|
+|**Headless commerce**|<ul><li>Full support for headless commerce implementations through Catalog Service, Product Discovery (Live Search) and Product Recommendations APIs.</li></ul>|
+|**Modern lightning-fast UI components**|<ul><li>Out of the box UI component support for product search and product recommendations.</li><li>The UI components are extensible and flexible so that they can be used by both Adobe's Edge Delivery Service as well as any other storefront implementation.</li></ul>|
+
+## What type of merchant benefits the most from CCDM?
+
+The following table highlights common challenges merchants encounter and how CCDM addresses them.
+
+|Merchant type|Use case|Problems solved|
+|---|---|---|
+|Multi-brand conglomerate|<ul><li>They sell several brands</li><li>They sell in several countries</li><li>They sell in different languages</li></ul>|Use a single base unified catalog and achieve operational efficiency while expanding to several brands, geographies and languages.|
+|Automobile/Manufacturing parts conglomerate|<ul><li>Sells auto or machine parts. The products are the same for all customers.</li><li>Different dealers sell parts to customers</li><li>Each dealer has its own prices, stock and shipping methods</li></ul>|To have different shipping integrations, each dealer should have a separate website. But separate websites force the typical catalog data model to duplicate the data. So, if there are 3000 dealers in USA, a merchant creates 3000 catalog copies even though the same catalog is used by all dealers. This data duplication interferes with performance limits. CCDM eliminates data duplication.|
+|Packaging/logistics company|<ul><li>They have several shipping locations</li><li>They have a different price for each customer</li><li>The same product available in 2 locations for 2 customers have 4 possible prices</li></ul>|Despite the use of customer groups to cover pricing per customer, the typical catalog data model does not have the capability to manage price per location. Additionally, merchants want unique visibility rules per location/website. Management of such complex price and visibility rules can be unlocked at scale with CCDM. |
+
 ### Where to go from here
 
 - Ingest data into CCDM using the [data ingestion API](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/using-the-api/).
-- Manage your catalog and define the channels, policies, and scopes using the [catalog management and rules API](https://developer-stage.adobe.com/commerce/services/composable-catalog/admin/using-the-api/)
+- Manage your catalog and define the channels, policies, and scopes using the [catalog management API](https://developer-stage.adobe.com/commerce/services/composable-catalog/admin/using-the-api/)
 - [Complete a tutorial](https://developer-stage.adobe.com/commerce/services/composable-catalog/ccdm-use-case/) that shows how a company with a single base catalog can use the CCDM APIs to add product data, define catalogs using projections, and retrieve the catalog data for display in a headless storefront.
