@@ -9,5 +9,34 @@ The *GraphQL* workspace allows administrators to build and test GraphQL queries 
 
 This workspace supports the [`productSearch`](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/) and [`attributeMetadata`](https://developer.adobe.com/commerce/services/graphql/live-search/attribute-metadata/) queries.
 
-![GraphQL workspace](assets/graphql.png){width="700" zoomable="yes"}
+![GraphQL workspace](assets/graphql.png)
+
+```graphql
+query productSearch {
+  productSearch(phrase: "a306") {
+    total_count
+    items {
+      product {
+        sku
+		name
+      }
+    }
+    facets {
+      title
+    }
+  }
+}
+```
+
+Variables:
+
+```json
+{
+  "Magento-Environment-Id": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+  "Magento-Website-Code": "base",
+  "Magento-Store-Code": "base",
+  "Magento-Store-View-Code": "default",
+  "X-Api-Key": "search_gql"
+}
+```
 
