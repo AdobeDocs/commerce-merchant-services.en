@@ -221,7 +221,7 @@ To check if your catalog data has been exported from Adobe Commerce and synced w
   >
   >If you get a `table does not exist` error, look for entries in the `catalog_data_exporter_products` and `catalog_data_exporter_product_attributes` tables. These table names are used in [!DNL Live Search] versions earlier than 4.2.1.
 
-- Use the [GraphQL playground](https://developer.adobe.com/commerce/services/graphql/live-search/) with the default query to verify the following:
+- Use the [GraphQL playground](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/live-search-admin/graphql) with the default query (see [GraphQL reference](https://developer.adobe.com/commerce/services/graphql/live-search/) for more details) to verify the following:
 
    - The returned product count is close to what you expect for the store view.
    - Facets are returned.
