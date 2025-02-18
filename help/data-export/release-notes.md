@@ -22,6 +22,12 @@ Updates include:
 
 ## Current major version
 
+
+## 103.3.19 Release
+
+![Fix](../assets/fix.svg) Updated the data export extension to improve feeds extensibility. <!--MDEE-936-->
+![Fix](../assets/fix.svg) The data export processor now verifies the indexer status before a full resync to avoid accidental data loss in the feed table.
+
 ## 103.3.18 Release
 
 ![Fix](../assets/fix.svg) Staging updates for product and category entities are now triggered correctly on Data Export data updates.<!--MDEE-963-->
