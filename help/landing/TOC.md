@@ -11,8 +11,6 @@ recommendations: noDisplay
 - [Overview](home.md)
 - Release information {#release-information}
    - [Release notes](/help/landing/release-notes-all.md)
-- Composable catalog {#composable-catalog}
-   - [Composable Catalog Data Model](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-data-model/overview.html)
 - Commerce services {#commerce-services}
    - Commerce services {#commerce-services}
    - [[!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/overview.html)
